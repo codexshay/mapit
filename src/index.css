@@ -1,0 +1,1142 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Press+Start+2P&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-pixel: "Press Start 2P", "Courier New", Courier, monospace;
+}
+
+/* Custom scrollbars for arcade dashboard look */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #05070c;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #1e2e54;
+  border-radius: 0px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ef4444;
+}
+
+/* Animations block */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 4px #10b981;
+  }
+  50% {
+    box-shadow: 0 0 12px #10b981;
+  }
+}
+
+@keyframes borderBlinkEffect {
+  0%, 100% {
+    border-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.95);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.15);
+  }
+}
+
+.border-blink {
+  animation: borderBlinkEffect 0.35s ease-in-out infinite;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.95) !important;
+  border-width: 2px !important;
+}
+
+.glow-pulse {
+  animation: pulseGlow 3s infinite;
+}
+
+.fade-in {
+  animation: fadeInEffect 0.25s ease-out forwards;
+}
+
+@keyframes fadeInEffect {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom selection highlight styles that blink for high contrast readability */
+::selection {
+  background-color: #facc15 !important;
+  color: #000000 !important;
+  text-shadow: none !important;
+  font-weight: bold !important;
+}
+
+/* Target-text is used by browsers like Chrome/Edge when searching using Ctrl+F find commands */
+::target-text {
+  background-color: #facc15 !important;
+  color: #000000 !important;
+  animation: ctrlf-blink-highlight 1.2s infinite alternate-reverse !important;
+  font-weight: 800 !important;
+}
+
+@keyframes ctrlf-blink-highlight {
+  0% {
+    background-color: #facc15; /* Bright Amber */
+    color: #000000;
+    box-shadow: 0 0 8px #facc15;
+  }
+  50% {
+    background-color: #ec4899; /* Hot Pink */
+    color: #ffffff;
+    box-shadow: 0 0 12px #ec4899;
+  }
+  100% {
+    background-color: #10b981; /* Emerald */
+    color: #000000;
+    box-shadow: 0 0 8px #10b981;
+  }
+}
+
+/* Checkerboard pattern for background bases */
+:root {
+  --checker-bg: #03060c;
+  --checker-color: #0d162a;
+}
+
+.light-theme {
+  --checker-bg: #ffffff;
+  --checker-color: #f1f5f9;
+}
+
+.checker-pattern {
+  background-color: var(--checker-bg) !important;
+  background-image: 
+    linear-gradient(45deg, var(--checker-color) 25%, transparent 25%, transparent 75%, var(--checker-color) 75%, var(--checker-color)), 
+    linear-gradient(45deg, var(--checker-color) 25%, var(--checker-bg) 25%, var(--checker-bg) 75%, var(--checker-color) 75%, var(--checker-color)) !important;
+  background-size: 32px 32px !important;
+  background-position: 0 0, 16px 16px !important;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth transition for theme toggle adjustments on outer components */
+body, #root, .min-h-screen, aside, main, .bg-slate-950, .border-slate-800, button, span, div {
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.15s cubic-bezier(0.4, 0, 0.2, 1), font-family 0.2s ease-in-out;
+}
+
+/* ==========================================================================
+   LIGHT THEME OVERRIDES SYSTEM (MapIT Clean light slate aesthetic)
+   ========================================================================== */
+.light-theme {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* Base Body Containers & Outer Wrappers */
+.light-theme,
+.light-theme .bg-\[\#03060c\],
+.light-theme .bg-\[\#05070c\],
+.light-theme .bg-\[\#070b13\],
+.light-theme .bg-\[\#0b1329\],
+.light-theme .bg-\[\#02050a\],
+.light-theme .bg-slate-950,
+.light-theme .bg-black {
+  background-color: #ffffff !important; /* Premium pure clean white background */
+}
+
+/* Ensure buttons and anchor links with bg-black maintain a dark high-contrast appearance in light mode */
+.light-theme button.bg-black,
+.light-theme a.bg-black,
+.light-theme span.bg-black {
+  background-color: #1e293b !important;
+  color: #ffffff !important;
+  border-color: #475569 !important;
+}
+.light-theme button.bg-black:hover,
+.light-theme a.bg-black:hover {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+}
+
+/* Sidebar aside panel, sticky headers, overlays */
+.light-theme header.bg-transparent,
+.light-theme .bg-transparent {
+  background-color: transparent !important;
+}
+.light-theme aside,
+.light-theme header,
+.light-theme .bg-\[\#070b13\],
+.light-theme .bg-\[\#04070e\]\/80,
+.light-theme .bg-\[\#080d19\]\/90,
+.light-theme .bg-\[\#060a12\]\/95 {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+/* Convert all primary dark backgrounds to crisp clean white with standard light borders */
+.light-theme .bg-\[\#0a0f1d\],
+.light-theme .bg-\[\#070b13\],
+.light-theme .bg-\[\#080b14\],
+.light-theme .bg-\[\#05080f\],
+.light-theme .bg-\[\#080d1a\],
+.light-theme .bg-\[\#080e1a\],
+.light-theme .bg-\[\#060b14\],
+.light-theme .bg-\[\#040914\],
+.light-theme .bg-\[\#080d19\],
+.light-theme .bg-\[\#04060b\]\/95,
+.light-theme .bg-slate-900,
+.light-theme .bg-slate-950,
+.light-theme .bg-slate-900\/60,
+.light-theme .bg-slate-950\/40,
+.light-theme .bg-slate-950\/20,
+.light-theme .bg-slate-900\/80,
+.light-theme .bg-slate-900\/55,
+.light-theme .bg-slate-950\/60,
+.light-theme .bg-slate-900\/50,
+.light-theme .bg-slate-900\/30,
+.light-theme .bg-slate-950\/70,
+.light-theme .bg-\[\#0d1527\],
+.light-theme .bg-\[\#0c1428\]\/95,
+.light-theme .bg-\[\#0e162a\],
+.light-theme .bg-\[\#111a2e\],
+.light-theme .bg-\[\#05080f\],
+.light-theme .bg-\[\#04070d\],
+.light-theme .bg-\[\#050912\],
+.light-theme .bg-\[\#070b13\],
+.light-theme .bg-\[\#070b14\],
+.light-theme .bg-\[\#070c18\],
+.light-theme .bg-\[\#0b1324\],
+.light-theme .bg-\[\#040810\],
+.light-theme .bg-\[\#090f1e\],
+.light-theme .bg-\[\#090f1e\]\/80,
+.light-theme .bg-\[\#050912\]\/90,
+.light-theme .bg-\[\#070b13\]\/95,
+.light-theme .bg-\[\#070b13\]\/90,
+.light-theme .bg-\[\#0a0f1d\],
+.light-theme .bg-\[\#0a0f1d\]\/80,
+.light-theme .bg-\[\#090f1e\]\/80,
+.light-theme .bg-\[\#121c38\]\/60 {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+/* Floating headers / popup details and overlays */
+.light-theme .bg-\[\#1ac38\]\/60 {
+  background-color: #f1f5f9 !important;
+}
+
+.light-theme .bg-black\/75 {
+  background-color: rgba(15, 23, 42, 0.45) !important; /* Clean modern glass shadow backdrop */
+}
+
+.light-theme .bg-\[\#000\] {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* Secondary inset gray zones of contrast (inputs, nested lists, table cells, inactive panels) */
+.light-theme .bg-\[\#05070a\],
+.light-theme .bg-\[\#03050a\],
+.light-theme .bg-\[\#05070c\],
+.light-theme .bg-\[\#03060c\],
+.light-theme .bg-\[\#0c1224\],
+.light-theme .bg-\[\#0c1224\]\/80,
+.light-theme .bg-\[\#0c1224\]\/50,
+.light-theme .bg-\[\#0c0810\],
+.light-theme .bg-\[\#081121\],
+.light-theme .bg-\[\#0c162b\],
+.light-theme .border-dashed,
+.light-theme .bg-\[\#121c38\]\/85,
+.light-theme .bg-\[\#060b13\],
+.light-theme .bg-\[\#121c3a\]\/50,
+.light-theme .bg-\[\#1c1326\],
+.light-theme .bg-\[\#0c101b\]\/50,
+.light-theme .bg-\[\#11192d\],
+.light-theme .bg-\[\#02050a\],
+.light-theme .bg-\[\#0d0f1a\],
+.light-theme .bg-\[\#050914\],
+.light-theme .bg-\[\#050810\] {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* Active selected nodes or checklist elements (should be darker or blue-slate shaded) */
+.light-theme .bg-\[\#0f1d3a\],
+.light-theme .bg-\[\#0f1d3a\]\/80 {
+  background-color: #cbd5e1 !important;
+  color: #0f172a !important;
+  border-color: #94a3b8 !important;
+}
+
+/* Clean up input textboxes, select tags, dropdown controls */
+.light-theme input,
+.light-theme select,
+.light-theme textarea,
+.light-theme option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.03) !important;
+}
+
+.light-theme input::placeholder {
+  color: #64748b !important;
+}
+
+/* Global tag text safety colors (excluding specific badge custom styles) */
+.light-theme h1,
+.light-theme h2,
+.light-theme h3,
+.light-theme h4,
+.light-theme h5,
+.light-theme h6 {
+  color: #0f172a !important;
+}
+
+.light-theme p,
+.light-theme li,
+.light-theme td,
+.light-theme th,
+.light-theme label,
+.light-theme a {
+  color: #334155 !important;
+}
+
+/* Borders mapping to elegant light pewter slate borders */
+.light-theme .border-slate-800,
+.light-theme .border-slate-705,
+.light-theme .border-slate-700,
+.light-theme .border-\[\#121c38\],
+.light-theme .border-\[\#121c38\]\/80,
+.light-theme .border-\[\#121c38\]\/60,
+.light-theme .border-\[\#121c38\]\/50,
+.light-theme .border-\[\#121c38\]\/44,
+.light-theme .border-\[\#1e2e54\]\/50,
+.light-theme .border-\[\#1e2e54\],
+.light-theme .border-\[\#1e293b\],
+.light-theme .border-slate-900,
+.light-theme .border-gray-800,
+.light-theme .border-red-950\/40,
+.light-theme .border-yellow-950\/40,
+.light-theme .border-amber-500\/30,
+.light-theme .border-cyan-500\/30,
+.light-theme .border-purple-500\/30,
+.light-theme .border-cyan-500\/20,
+.light-theme .border-yellow-500\/20,
+.light-theme .border-red-900\/60,
+.light-theme .border-\[\#1e2e54\]\/80,
+.light-theme .border-red-900\/40 {
+  border-color: #cbd5e1 !important;
+}
+
+/* Light theme high contrast text overrides - maps standard slate grey variables */
+.light-theme .text-white,
+.light-theme .text-slate-100,
+.light-theme .text-slate-200,
+.light-theme .text-gray-100,
+.light-theme .text-gray-200 {
+  color: #0f172a !important; /* Crisp high contrast charcoal/graphite for main items */
+}
+
+.light-theme .text-slate-300,
+.light-theme .text-gray-300,
+.light-theme .text-slate-400,
+.light-theme .text-gray-400 {
+  color: #334155 !important; /* Steel deep grey for body copy */
+}
+
+.light-theme .text-slate-500,
+.light-theme .text-gray-500,
+.light-theme .text-zinc-500 {
+  color: #64748b !important; /* Slate grey for helper labels */
+}
+
+.light-theme .text-slate-600,
+.light-theme .text-gray-600 {
+  color: #94a3b8 !important; /* Muted label colors */
+}
+
+/* Active tab color and highlight system in side navigation list styles */
+.light-theme .text-white.bg-\[\#121c38\] {
+  background-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+/* Hover background styling mappings */
+.light-theme .hover\:bg-slate-900:hover,
+.light-theme .hover\:bg-slate-900\/60:hover,
+.light-theme .hover\:bg-slate-800:hover,
+.light-theme .hover\:bg-slate-850:hover,
+.light-theme .group-hover\:bg-slate-900,
+.light-theme .hover\:bg-\[\#121c38\]:hover,
+.light-theme .hover\:bg-\[\#121c38\]\/5:hover,
+.light-theme .hover\:bg-cyan-950\/20:hover,
+.light-theme .hover\:bg-yellow-950\/20:hover,
+.light-theme .hover\:bg-red-950\/30:hover,
+.light-theme .active\:bg-slate-950:active,
+.light-theme .hover\:bg-\[\#121c38\]\/40:hover {
+  background-color: #e2e8f0 !important;
+}
+
+/* Specific Interactive Accents calibration (neon colors mapped to beautiful saturated high-contrast colors) */
+.light-theme .text-\[\#eab308\] { color: #b45309 !important; }
+.light-theme .text-yellow-400, 
+.light-theme .text-yellow-500 { color: #a16207 !important; }
+
+.light-theme .text-emerald-400, 
+.light-theme .text-\[\#10b981\], 
+.light-theme .text-emerald-500 { color: #047857 !important; }
+
+.light-theme .text-\[\#ec4899\], 
+.light-theme .text-pink-400 { color: #be185d !important; }
+
+.light-theme .text-\[\#8b5cf6\], 
+.light-theme .text-purple-400,
+.light-theme .text-purple-500 { color: #6d28d9 !important; }
+
+.light-theme .text-\[\#22d3ee\], 
+.light-theme .text-cyan-400,
+.light-theme .text-cyan-500 { color: #0369a1 !important; }
+
+.light-theme .text-red-400, 
+.light-theme .text-red-500 { color: #b91c1c !important; }
+
+.light-theme .text-amber-400,
+.light-theme .text-amber-500, 
+.light-theme .text-amber-600 { color: #b45309 !important; }
+
+.light-theme .text-cyan-300,
+.light-theme .text-teal-400 { color: #0f766e !important; }
+
+/* Inset Soft Background Color Blocks matching each colorful category/badge style */
+.light-theme .bg-\[\#ec4899\]\/15,
+.light-theme .bg-\[\#ec4899\]\/20,
+.light-theme .hover\:bg-\[\#ec4899\]\/10:hover {
+  background-color: #fce7f3 !important;
+  color: #be185d !important;
+}
+
+.light-theme .bg-\[\#10b981\]\/10,
+.light-theme .bg-\[\#10b981\]\/15,
+.light-theme .bg-\[\#10b981\]\/20,
+.light-theme .bg-\[\#10b981\]\/25,
+.light-theme .hover\:bg-\[\#10b981\]\/15:hover {
+  background-color: #d1fae5 !important;
+  color: #047857 !important;
+}
+
+.light-theme .bg-\[\#8b5cf6\]\/10,
+.light-theme .bg-\[\#8b5cf6\]\/15,
+.light-theme .bg-\[\#8b5cf6\]\/20,
+.light-theme .bg-\[\#8b5cf6\]\/25 {
+  background-color: #ede9fe !important;
+  color: #6d28d9 !important;
+}
+
+.light-theme .bg-cyan-950\/30,
+.light-theme .bg-cyan-950\/20,
+.light-theme .bg-\[\#22d3ee\]\/10,
+.light-theme .bg-\[\#22d3ee\]\/20 {
+  background-color: #ecfeff !important;
+  color: #0369a1 !important;
+}
+
+.light-theme .bg-amber-950\/30,
+.light-theme .bg-amber-950\/20,
+.light-theme .bg-yellow-950\/25,
+.light-theme .bg-yellow-950\/20,
+.light-theme .bg-yellow-950\/10,
+.light-theme .hover\:bg-amber-950\/20:hover {
+  background-color: #fef3c7 !important;
+  color: #a16207 !important;
+}
+
+.light-theme .bg-red-950\/30,
+.light-theme .bg-red-950\/20,
+.light-theme .hover\:bg-red-950\/20:hover {
+  background-color: #fef2f2 !important;
+  color: #b91c1c !important;
+}
+
+/* Ensure the retro screen mask scanner is beautiful and low-contrast in light mode */
+.light-theme .bg-\[radial-gradient\(\#fff_1px\,transparent_1px\)\] {
+  background-image: radial-gradient(#94a3b8 1px, transparent 1px) !important;
+  opacity: 0.05 !important;
+}
+
+.light-theme .scroll-mt-6 {
+  scroll-margin-top: 1.5rem;
+}
+
+/* Ant Crossing Game and miscellaneous overlay overrides for pure Light Theme optimization */
+.light-theme .bg-purple-950\/85,
+.light-theme .bg-red-950\/80,
+.light-theme .bg-\[\#061512\]\/95,
+.light-theme .bg-black\/95,
+.light-theme .bg-black\/90,
+.light-theme .bg-black\/80,
+.light-theme .bg-black\/70 {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* Ensure the game control panels and terminal logs are well-defined in light mode */
+.light-theme .bg-\[\#04060c\],
+.light-theme .bg-\[\#0c1224\] {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light-theme .text-gray-400 {
+  color: #475569 !important;
+}
+
+.light-theme .text-gray-500 {
+  color: #64748b !important;
+}
+
+/* Specific overrides to prevent dark hardcoded background utilities in the game dashboard */
+.light-theme select.bg-black,
+.light-theme .bg-black select {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+.light-theme select.bg-black option,
+.light-theme option.bg-\[\#05070c\] {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.light-theme .bg-cyan-500\/10 {
+  background-color: rgba(6, 182, 212, 0.08) !important;
+  color: #0369a1 !important;
+}
+.light-theme .bg-cyan-500\/25,
+.light-theme .bg-cyan-500\/20 {
+  background-color: rgba(6, 182, 212, 0.15) !important;
+  color: #0369a1 !important;
+}
+
+.light-theme .bg-purple-900\/15 {
+  background-color: rgba(139, 92, 246, 0.08) !important;
+  color: #6d28d9 !important;
+}
+
+.light-theme .bg-blue-900\/15 {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  color: #1d4ed8 !important;
+}
+
+.light-theme .bg-red-950\/15,
+.light-theme .bg-red-950\/20 {
+  background-color: rgba(239, 68, 68, 0.08) !important;
+  color: #b91c1c !important;
+}
+
+.light-theme .bg-purple-900\/20,
+.light-theme .bg-purple-900\/30 {
+  background-color: rgba(139, 92, 246, 0.12) !important;
+  color: #6d28d9 !important;
+}
+
+.light-theme .bg-blue-600\/10,
+.light-theme .bg-blue-600\/20 {
+  background-color: rgba(37, 99, 235, 0.1) !important;
+  color: #1d4ed8 !important;
+}
+
+.light-theme .shadow-\[4px_4px_0px_0px_\#1e2e54\],
+.light-theme .shadow-\[6px_6px_0px_0px_\#ef4444\],
+.light-theme .shadow-\[4px_4px_0px_0px_\#ef4444\] {
+  box-shadow: 4px 4px 0px 0px rgba(15, 23, 42, 0.15) !important;
+}
+
+/* LIGHT THEME SOLID OVERRIDES FOR TABLES AND TOOLS */
+.light-theme #role-comparison-block {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light-theme #role-comparison-block .bg-\[\#0a0f1d\],
+.light-theme #role-comparison-block select {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light-theme #role-comparison-block table {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light-theme #role-comparison-block thead tr,
+.light-theme #role-comparison-block tbody tr {
+  background-color: #ffffff !important;
+  border-bottom-color: #e2e8f0 !important;
+}
+
+.light-theme #role-comparison-block th,
+.light-theme #role-comparison-block td {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light-theme #role-comparison-block td.bg-black\/40 {
+  background-color: #f1f5f9 !important;
+  color: #334155 !important;
+}
+
+.light-theme #role-comparison-block .text-gray-300,
+.light-theme #role-comparison-block .text-slate-400,
+.light-theme #role-comparison-block .text-gray-400,
+.light-theme #role-comparison-block .text-white,
+.light-theme #role-comparison-block .text-gray-500 {
+  color: #0f172a !important;
+}
+
+/* UNIVERSAL & FAMILY IT TOOLS CARD OVERRIDES IN LIGHT THEME */
+.light-theme .bg-black\/40,
+.light-theme .bg-black\/50,
+.light-theme .bg-black\/60,
+.light-theme .bg-black\/80,
+.light-theme .bg-black\/90,
+.light-theme .bg-black\/95,
+.light-theme .bg-\[\#0c1224\]\/50,
+.light-theme .bg-\[\#090f1e\]\/80 {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.light-theme .text-slate-400,
+.light-theme .text-gray-400,
+.light-theme .text-gray-300,
+.light-theme .text-slate-300 {
+  color: #334155 !important;
+}
+
+.light-theme .text-slate-500,
+.light-theme .text-gray-500 {
+  color: #64748b !important;
+}
+
+.light-theme .bg-black\/60 {
+  background-color: #ffffff !important;
+}
+
+.light-theme .bg-\[\#05070c\] {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light-theme .bg-cyan-500\/15 {
+  background-color: #ecfeff !important;
+  color: #0891b2 !important;
+  border-color: #a5f3fc !important;
+}
+
+.light-theme .bg-\[\#121c38\]\/85 {
+  background-color: #f1f5f9 !important;
+}
+
+/* ==========================================================================
+   FONT AND THEME OVERRIDES SYSTEM (Inter/Roboto default & sidebar Mono preservation)
+   ========================================================================== */
+
+/* Apply Inter, Roboto, Arial, sans-serif when user switches to Light mode */
+.light-theme {
+  font-family: Inter, Roboto, Arial, sans-serif !important;
+}
+
+/* All section page elements in light theme use Inter/Roboto, but NOT titles or headings! */
+.light-theme div,
+.light-theme section,
+.light-theme p,
+.light-theme span,
+.light-theme a,
+.light-theme button,
+.light-theme input,
+.light-theme select,
+.light-theme textarea,
+.light-theme label,
+.light-theme table,
+.light-theme td,
+.light-theme li {
+  font-family: Inter, Roboto, Arial, sans-serif !important;
+}
+
+/* Titles of sections, labels, and core page headings keep the original Space Grotesk aesthetic from dark mode */
+.light-theme h1,
+.light-theme h2,
+.light-theme h3,
+.light-theme h4,
+.light-theme h5,
+.light-theme h6,
+.light-theme th,
+.light-theme .font-sans-title,
+.light-theme [class*="title"],
+.light-theme [class*="header"] {
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif !important;
+}
+
+/* KEEP the side panel (aside) with same font as dark mode: "JetBrains Mono", "IBM Plex Mono", "Roboto Mono", monospace */
+.light-theme aside,
+.light-theme aside *,
+.light-theme aside div,
+.light-theme aside p,
+.light-theme aside span,
+.light-theme aside button,
+.light-theme aside text {
+  font-family: "JetBrains Mono", "IBM Plex Mono", "Roboto Mono", monospace !important;
+}
+
+/* ==========================================================================
+   CHATBOT SPECIFIC STYLING - Inter/Roboto Font, Light Mode Default, Black Text
+   ========================================================================== */
+
+#toggle-ai-assistant,
+#toggle-ai-assistant *,
+#ai-assistant-drawer,
+#ai-assistant-drawer * {
+  font-family: Inter, Roboto, Arial, sans-serif !important;
+}
+
+/* Chat drawer container style */
+#ai-assistant-drawer {
+  background-color: #ffffff !important;
+  color: #0c1527 !important;
+  border-left: 3px solid #10b981 !important;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Header inside chatbot */
+#ai-assistant-drawer .bg-\[\#070c18\] {
+  background-color: #f8fafc !important; 
+  border-bottom: 2px solid #e2e8f0 !important;
+}
+
+/* Main messaging log background container */
+#ai-assistant-drawer .bg-\[\#020409\]\/60 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Explicit text black overrides inside chatbot */
+#ai-assistant-drawer h2,
+#ai-assistant-drawer .text-white,
+#ai-assistant-drawer .text-slate-100 {
+  color: #0f172a !important;
+}
+
+#ai-assistant-drawer p,
+#ai-assistant-drawer span {
+  color: #1e293b !important;
+}
+
+#ai-assistant-drawer .text-slate-500,
+#ai-assistant-drawer .text-gray-500,
+#ai-assistant-drawer .text-gray-650,
+#ai-assistant-drawer .text-gray-600 {
+  color: #475569 !important;
+}
+
+/* Chat bubble styling overrides for user messages */
+#ai-assistant-drawer .bg-\[\#ec4899\]\/5 {
+  background-color: #fdf2f8 !important;
+  border-color: #fbcfe8 !important;
+  color: #1a0815 !important;
+}
+
+/* Chat bubble styling overrides for Pam (AI Coordinator) messages */
+#ai-assistant-drawer .bg-\[\#071318\]\/70 {
+  background-color: #f0fdf4 !important;
+  border-color: #bbf7d0 !important;
+  color: #0f2d1e !important;
+}
+
+#ai-assistant-drawer .text-emerald-300 {
+  color: #047857 !important;
+}
+
+/* Processing indicator */
+#ai-assistant-drawer .text-emerald-500 {
+  color: #059669 !important;
+}
+
+#ai-assistant-drawer .bg-\[\#071318\]\/50 {
+  background-color: #d1fae5 !important;
+  border-color: #a7f3d0 !important;
+  color: #065f46 !important;
+}
+
+/* Chatbot Starter Diagnostics suggestions area */
+#ai-assistant-drawer .bg-\[\#03060c\] {
+  background-color: #f8fafc !important;
+  border-top: 1px solid #e2e8f0 !important;
+}
+
+#ai-assistant-drawer .grid button {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #334155 !important;
+}
+
+#ai-assistant-drawer .grid button:hover {
+  background-color: #f1f5f9 !important;
+  border-color: #10b981 !important;
+  color: #0f172a !important;
+}
+
+/* Bottom Input Bar form overrides */
+#ai-assistant-drawer form {
+  background-color: #f8fafc !important;
+  border-top: 2px solid #e2e8f0 !important;
+}
+
+#ai-assistant-drawer input {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+#ai-assistant-drawer input::placeholder {
+  color: #94a3b8 !important;
+}
+
+#ai-assistant-drawer button[type="submit"] {
+  border-color: #10b981 !important;
+  color: #10b981 !important;
+}
+
+#ai-assistant-drawer button[type="submit"]:hover {
+  background-color: rgba(16, 185, 129, 0.1) !important;
+  color: #047857 !important;
+}
+
+/* Bold strong highlights tags matches in messages */
+#ai-assistant-drawer strong.text-white {
+  color: #0f172a !important;
+  background-color: rgba(15, 23, 42, 0.08) !important;
+  border-bottom: 1px solid #94a3b8 !important;
+}
+
+/* Code backticks quotes */
+#ai-assistant-drawer code {
+  background-color: #f1f5f9 !important;
+  color: #db2777 !important;
+  border-color: #fbcfe8 !important;
+}
+
+/* Navigation button links action triggers */
+#ai-assistant-drawer button.text-\[\#10b981\] {
+  color: #047857 !important;
+  background-color: #ecfdf5 !important;
+  border-color: #a7f3d0 !important;
+}
+
+#ai-assistant-drawer button.text-\[\#10b981\]:hover {
+  color: #ffffff !important;
+  background-color: #10b981 !important;
+  border-color: #10b981 !important;
+}
+
+/* External anchor web targets */
+#ai-assistant-drawer a.text-sky-400 {
+  color: #0369a1 !important;
+  background-color: #f0f9ff !important;
+  border-color: #bae6fd !important;
+}
+
+#ai-assistant-drawer a.text-sky-400:hover {
+  color: #025085 !important;
+  border-color: #0369a1 !important;
+}
+
+/* Custom Preserved Styles for MapIT Branding */
+aside .preserve-logo,
+.preserve-logo {
+  color: #ffffff !important;
+  font-weight: 950 !important;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif !important;
+}
+aside .preserve-logo-green,
+.preserve-logo-green {
+  color: #10b981 !important;
+  font-weight: 950 !important;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif !important;
+}
+.preserve-logo-bg {
+  background-color: #0c1224 !important;
+  border-color: #1e2e54 !important;
+}
+
+/* Light theme overrides to ensure visibility of MapIT branding with requested colors */
+.light-theme aside .preserve-logo,
+.light-theme .preserve-logo {
+  color: #10b981 !important; /* Green color for 'Map' */
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif !important;
+}
+.light-theme aside .preserve-logo-green,
+.light-theme .preserve-logo-green {
+  color: #000000 !important; /* Black color for 'IT' */
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif !important;
+}
+.light-theme .preserve-logo-bg {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* ==========================================================================
+   MOBILE ADOPTION & RESPONSIVENESS (Career Domains and Map Dimensions)
+   ========================================================================== */
+@media (max-width: 767px) {
+  /* Prevent overflow, adjust extreme paddings & outer borders on mobile */
+  #career-map-block {
+    padding: 0.75rem !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  
+  /* Custom margin, padding and border reduction for Domain nodes */
+  #career-map-block [id^="domain-node-"] {
+    border-width: 1px !important;
+    padding: 0.625rem 0.75rem !important;
+    margin-bottom: 0.25rem !important;
+    box-shadow: 2px 2px 0px 0px currentColor !important;
+  }
+
+  /* Optimize roles card panel on small screens */
+  #career-map-roles-panel {
+    border-width: 1px !important;
+    padding: 0.75rem !important;
+    margin-top: 0.25rem !important;
+  }
+
+  /* Clean up filter box spacing and borders */
+  #career-map-advanced-filters {
+    padding: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #121c38 !important;
+  }
+}
+
+/* ==========================================================================
+   LINKEDIN STYLE CAREER ROLE DETAIL PANEL OVERRIDES FOR LIGHT THEME
+   ========================================================================== */
+.light-theme .career-role-detail-panel {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Make overall layout and headers white/slate with soft borders rather than hard dark borders */
+.light-theme .career-role-detail-panel,
+.light-theme .career-role-detail-panel * {
+  border-color: #e2e8f0 !important;
+}
+
+/* Header Banner - light theme styling */
+.light-theme .career-role-detail-panel [class*="bg-[#000]"],
+.light-theme .career-role-detail-panel div[class*="bg-[#000]"],
+.light-theme .career-role-detail-panel .bg-black {
+  background-color: #f8fafc !important;
+  background-image: none !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+/* High readability for title in light theme */
+.light-theme .career-role-detail-panel h3,
+.light-theme .career-role-detail-panel h3 * {
+  color: #0f172a !important;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Specific pill classification badges inside header banner */
+.light-theme .career-role-detail-panel span[class*="bg-white"] {
+  background-color: #f1f5f9 !important;
+  color: #334155 !important;
+  border: 1px solid #cbd5e1 !important;
+  font-weight: 600 !important;
+  border-radius: 9999px !important;
+  padding: 0.25rem 0.75rem !important;
+  font-size: 11px !important;
+}
+
+/* Brief explanation block */
+.light-theme .career-role-detail-panel div[class*="bg-[#05070c]"],
+.light-theme .career-role-detail-panel [class*="bg-[#05070c]"] {
+  background-color: #f0fdf4 !important; /* soft emerald/green tint for pleasant reading */
+  border: 1px solid #bcf0da !important;
+  color: #1e293b !important;
+  border-radius: 6px !important;
+  padding: 1.25rem !important;
+}
+.light-theme .career-role-detail-panel div[class*="bg-[#05070c]"] span,
+.light-theme .career-role-detail-panel div[class*="bg-[#05070c]"] p {
+  color: #1e293b !important;
+  font-family: ui-sans-serif, system-ui, sans-serif !important;
+}
+.light-theme .career-role-detail-panel div[class*="bg-[#05070c]"] .text-cyan-400 {
+  color: #0d9488 !important; /* teal link color instead of dark cyan-400 */
+}
+
+/* Table overall grid and background */
+.light-theme .career-role-detail-panel div[class*="bg-[#03060c]"],
+.light-theme .career-role-detail-panel [class*="bg-[#03060c]"] {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Base classification categories columns in table rows */
+.light-theme .career-role-detail-panel [class*="bg-black/30"] {
+  background-color: #f8fafc !important;
+  color: #475569 !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  letter-spacing: 0.05em !important;
+  border-right: 1px solid #e2e8f0 !important;
+}
+
+/* Right-side table columns */
+.light-theme .career-role-detail-panel [class*="bg-[#070b13]/20"] {
+  background-color: #f8fafc !important;
+  color: #334155 !important;
+}
+
+/* Specific text elements within inner structures */
+.light-theme .career-role-detail-panel p,
+.light-theme .career-role-detail-panel li,
+.light-theme .career-role-detail-panel div,
+.light-theme .career-role-detail-panel span {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  color: #1e293b !important;
+}
+
+/* Force specific colors for category subtitle tags */
+.light-theme .career-role-detail-panel span[class*="text-[#818cf8]"],
+.light-theme .career-role-detail-panel span[class*="text-[#f43f5e]"],
+.light-theme .career-role-detail-panel span[class*="text-[#c084fc]"] {
+  color: #4f46e5 !important; /* beautiful indigo */
+  font-weight: 700 !important;
+}
+
+/* Correcting small paragraph lines to have comfortable sizes */
+.light-theme .career-role-detail-panel p {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  color: #334155 !important;
+}
+
+/* Bold values in tables */
+.light-theme .career-role-detail-panel .text-gray-100 {
+  color: #0f172a !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+}
+
+/* Mini heading labels in lists */
+.light-theme .career-role-detail-panel span[class*="text-gray-400"],
+.light-theme .career-role-detail-panel span[class*="text-slate-400"] {
+  color: #64748b !important;
+  font-weight: 600 !important;
+}
+
+/* Bullet list inner blocks */
+.light-theme .career-role-detail-panel div[class*="p-2 border border-[#121c38]"],
+.light-theme .career-role-detail-panel div[class*="bg-[#05070c] p-2"] {
+  background-color: #f1f5f9 !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 4px !important;
+}
+
+/* Custom pills for tech tools and skills */
+.light-theme .career-role-detail-panel span[class*="bg-[#10b981]/15"] {
+  background-color: #ecfdf5 !important;
+  color: #065f46 !important;
+  border: 1px solid #a7f3d0 !important;
+  font-weight: 600 !important;
+}
+
+/* Course match links / study advice buttons */
+.light-theme .career-role-detail-panel [class*="bg-[#1e293b]/50"],
+.light-theme .career-role-detail-panel [class*="bg-[#0c101b]/50"] {
+  background-color: #f1f5f9 !important;
+  color: #1d4ed8 !important;
+  border: 1px solid #cbd5e1 !important;
+}
+.light-theme .career-role-detail-panel [class*="bg-[#1e293b]/50"]:hover,
+.light-theme .career-role-detail-panel [class*="bg-[#0c101b]/50"]:hover {
+  background-color: #e2e8f0 !important;
+  color: #1e40af !important;
+  border-color: #94a3b8 !important;
+}
+
+/* Standard table header hidden on mobile but visible on desktop */
+.light-theme .career-role-detail-panel div[class*="bg-black/95"] {
+  background-color: #f1f5f9 !important;
+  border-bottom: 2px solid #cbd5e1 !important;
+}
+.light-theme .career-role-detail-panel div[class*="bg-black/95"] div {
+  color: #475569 !important;
+  font-weight: 700 !important;
+  font-family: ui-sans-serif, system-ui, sans-serif !important;
+}
+
+/* Certification item box style in light theme */
+.light-theme .career-role-detail-panel [className*="bg-black/40"],
+.light-theme .career-role-detail-panel div[class*="bg-black/40"] {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Interactive Calculator controls section */
+.light-theme .career-role-detail-panel [class*="bg-[#070b13]/60"] {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+.light-theme .career-role-detail-panel input[type="range"] {
+  accent-color: #2563eb !important;
+}
+
+/* Redirection or close buttons */
+.light-theme .career-role-detail-panel button[id="close-detail-panel"],
+.light-theme .career-role-detail-panel button[id="bookmark-role-button"] {
+  background-color: #eff6ff !important;
+  border-color: #bfdbfe !important;
+  color: #1d4ed8 !important;
+}
+.light-theme .career-role-detail-panel button[id="close-detail-panel"]:hover,
+.light-theme .career-role-detail-panel button[id="bookmark-role-button"]:hover {
+  background-color: #dbeafe !important;
+  color: #1e40af !important;
+}
+
+
+
+
+

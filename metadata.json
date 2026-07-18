@@ -1,0 +1,6 @@
+{
+  "name": "MapIT",
+  "description": "An interactive, minimalistic career mind-map and navigation platform for IT pathways.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
