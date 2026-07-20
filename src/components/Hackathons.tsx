@@ -1084,9 +1084,9 @@ export default function Hackathons({
             {selectedItem ? (
               <motion.div
                 key={selectedItem.id}
-                initial={{ opacity: 0, x: 10 }}
+                initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -10 }}
+                exit={{ opacity: 0, x: 10 }}
                 transition={{ duration: 0.15 }}
                 className={`border-2 p-5 flex flex-col justify-between h-full relative ${isLight ? 'bg-white border-gray-200 text-slate-800 shadow-[4px_4px_0px_0px_#cbd5e1]' : 'bg-[#080d1a] border-[#121c38] text-white shadow-[4px_4px_0px_#121c38]'} border-emerald-950/40`}
               >

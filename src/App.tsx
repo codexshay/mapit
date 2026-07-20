@@ -2038,9 +2038,9 @@ export default function App() {
           <AnimatePresence mode="wait">
             <motion.div
               key={globalSearchQuery.trim() !== '' ? 'search-results' : activeTab}
-              initial={{ opacity: 0, x: 24 }}
+              initial={{ opacity: 0, x: -24 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -24 }}
+              exit={{ opacity: 0, x: 24 }}
               transition={{ duration: 0.55, ease: "easeInOut" }}
               className="w-full h-full"
             >
