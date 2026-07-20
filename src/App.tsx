@@ -739,6 +739,12 @@ export default function App() {
     };
   }, []);
 
+  useEffect(() => {
+    if (introStage === 'done') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [introStage]);
+
   const [mobileSearchQuery, setMobileSearchQuery] = useState('');
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   
@@ -1119,10 +1125,9 @@ export default function App() {
   }, [isSidebarExpanded]);
 
   useEffect(() => {
-    // Determine the target element ID to scroll to
-    let targetId = `section-${activeTab}`;
+    // Determine the target element ID to scroll to if focusing on details
+    let targetId: string | null = null;
 
-    // If a profiling section is active/triggered, prioritize scrolling to that instead!
     if (activeTab === 'map' && selectedRoleId) {
       targetId = 'selected-role-focus-anchor';
     } else if (activeTab === 'pathfinder' && document.getElementById('pathfinder-role-detail-anchor')) {
@@ -1139,12 +1144,14 @@ export default function App() {
       targetId = 'section-comparison';
     }
 
-    // Scroll to the resolved target element
+    // Scroll to the resolved target element or just to the absolute top of the viewport
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
-      const el = document.getElementById(targetId);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (targetId) {
+        const el = document.getElementById(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }
     }, 100);
   }, [activeTab, selectedRoleId]);

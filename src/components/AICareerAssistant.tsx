@@ -30,23 +30,25 @@ const AntIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
     strokeLinejoin="round"
     className={className}
   >
-    {/* Abdomen */}
-    <ellipse cx="7" cy="12" rx="3.5" ry="2.5" fill="currentColor" />
-    {/* Thorax */}
-    <circle cx="13" cy="12" r="2" fill="currentColor" />
-    {/* Head */}
-    <circle cx="18" cy="12" r="1.5" fill="currentColor" />
-    {/* Antennae */}
-    <path d="M19 11.5 Q20.5 10.5 21 11" />
-    <path d="M19 12.5 Q20.5 13.5 21 13" />
-    {/* Left (top) legs */}
-    <path d="M14 10 Q15.5 7.5 17 8.5" />
-    <path d="M13 10 Q13 7 13 7.5" />
-    <path d="M12 10 Q10.5 7.5 9.5 8" />
-    {/* Right (bottom) legs */}
-    <path d="M14 14 Q15.5 16.5 17 15.5" />
-    <path d="M13 14 Q13 17 13 16.5" />
-    <path d="M12 14 Q10.5 16.5 9.5 16" />
+    <g transform="rotate(-90 12 12)">
+      {/* Abdomen */}
+      <ellipse cx="7" cy="12" rx="3.5" ry="2.5" fill="currentColor" />
+      {/* Thorax */}
+      <circle cx="13" cy="12" r="2" fill="currentColor" />
+      {/* Head */}
+      <circle cx="18" cy="12" r="1.5" fill="currentColor" />
+      {/* Antennae */}
+      <path d="M19 11.5 Q20.5 10.5 21 11" />
+      <path d="M19 12.5 Q20.5 13.5 21 13" />
+      {/* Left (top) legs */}
+      <path d="M14 10 Q15.5 7.5 17 8.5" />
+      <path d="M13 10 Q13 7 13 7.5" />
+      <path d="M12 10 Q10.5 7.5 9.5 8" />
+      {/* Right (bottom) legs */}
+      <path d="M14 14 Q15.5 16.5 17 15.5" />
+      <path d="M13 14 Q13 17 13 16.5" />
+      <path d="M12 14 Q10.5 16.5 9.5 16" />
+    </g>
   </svg>
 );
 
@@ -216,11 +218,11 @@ export default function AICareerAssistant({
           onClick={() => setIsOpen(!isOpen)}
           id="toggle-ai-assistant"
           style={{ cursor: "pointer" }}
-          className="relative bg-[#070b13] border-2 border-[#10b981] p-3.5 shadow-[0_0_15px_rgba(16,185,129,0.4)] text-[#10b981] hover:text-white hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all cursor-pointer select-none group flex items-center justify-center gap-2 rounded-none"
+          className="relative bg-[#070b13] border-2 border-[#10b981] p-3 shadow-[0_0_15px_rgba(16,185,129,0.4)] text-[#10b981] hover:text-white hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all cursor-pointer select-none group flex items-center justify-center gap-2 rounded-none"
           title="Open Pam Space Coach Link"
         >
-          <Bot className="w-5 h-5 animate-pulse" />
-          <span className="hidden md:inline font-mono text-xs font-black tracking-widest uppercase">
+          <MessageSquare className="w-4 h-4 text-[#10b981] group-hover:text-white" />
+          <span className="font-mono text-xs font-black tracking-widest uppercase">
             sPAM me
           </span>
           {messages.length > 1 && (
@@ -236,27 +238,17 @@ export default function AICareerAssistant({
         {isOpen && (
           <motion.div
             ref={drawerRef}
-            initial={{ x: "100%", opacity: 0.8 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: "100%", opacity: 0.8 }}
-            transition={{ type: "tween", ease: "easeInOut", duration: 0.55 }}
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: "100%", opacity: 0 }}
+            transition={{ type: "tween", ease: "easeOut", duration: 0.4 }}
             id="ai-assistant-drawer"
-            className={`fixed top-0 bottom-0 right-0 h-[100dvh] w-full sm:w-[450px] border-l-3 border-[#10b981] z-[9999] flex flex-col font-mono shadow-[0_0_50px_rgba(0,0,0,0.8)] backdrop-blur-md ${
-              isLight 
-                ? "bg-[#f8fafc]/95 text-slate-800" 
-                : "bg-[#040710]/95 text-white"
-            }`}
+            className="fixed bottom-0 right-0 sm:right-6 w-full sm:w-[450px] h-[520px] max-h-[70vh] border-t-4 border-x-2 border-[#10b981] z-[9999] flex flex-col font-mono shadow-[0_-10px_40px_rgba(0,0,0,0.3)] bg-white text-slate-800 rounded-t-xl"
           >
             {/* Header */}
-            <div className={`p-4 flex items-center justify-between select-none shrink-0 border-b-2 ${
-              isLight 
-                ? "bg-slate-50 border-slate-200" 
-                : "bg-[#070c18] border-[#121c38]"
-            }`}>
+            <div className="p-4 flex items-center justify-between select-none shrink-0 border-b-2 bg-slate-50 border-slate-200">
               <div className="flex items-center gap-2">
-                <h2 className={`text-sm font-black uppercase tracking-wider flex items-center gap-1 ${
-                  isLight ? "text-slate-800" : "text-white"
-                }`}>
+                <h2 className="text-sm font-black uppercase tracking-wider flex items-center gap-1 text-slate-800">
                   <span className="text-[#10b981]">PAM</span>
                 </h2>
               </div>
@@ -312,12 +304,8 @@ export default function AICareerAssistant({
                   <div
                     className={`p-3 max-w-[85%] text-xs leading-relaxed space-y-1 rounded-none border break-words ${
                       msg.role === "user"
-                        ? (isLight 
-                            ? "bg-[#ec4899]/5 border-[#ec4899]/30 text-slate-800" 
-                            : "bg-[#ec4899]/5 border-[#ec4899]/30 text-slate-100")
-                        : (isLight 
-                            ? "bg-emerald-50/90 border-[#10b981]/30 text-emerald-950 shadow-[0_0_8px_rgba(16,185,129,0.05)]" 
-                            : "bg-[#071318]/70 border-[#10b981]/30 text-emerald-300 shadow-[0_0_8px_rgba(16,185,129,0.05)]")
+                        ? "bg-[#ec4899]/5 border-[#ec4899]/30 text-slate-800"
+                        : "bg-emerald-50/90 border-[#10b981]/30 text-emerald-950 shadow-[0_0_8px_rgba(16,185,129,0.05)]"
                     }`}
                   >
                     {/* Render basic markdown parsing: lines, paragraphs, lists, bold */}
@@ -328,15 +316,15 @@ export default function AICareerAssistant({
                           {para.split("\n").map((line, lIdx) => {
                             if (line.startsWith("- ") || line.startsWith("* ")) {
                               return (
-                                <span key={lIdx} className={`block pl-3 relative ${isLight ? "text-slate-700" : "text-slate-200"}`}>
+                                <span key={lIdx} className="block pl-3 relative text-slate-700">
                                   <span className="absolute left-0 text-[#10b981]">›</span>
-                                  {parseLineContent(line.substring(2), setActiveTab, onNavigateToSection, messages, isLight, onCompareRoles)}
+                                  {parseLineContent(line.substring(2), setActiveTab, onNavigateToSection, messages, true, onCompareRoles)}
                                 </span>
                               );
                             }
                             return (
                               <span key={lIdx} className="block">
-                                {parseLineContent(line, setActiveTab, onNavigateToSection, messages, isLight, onCompareRoles)}
+                                {parseLineContent(line, setActiveTab, onNavigateToSection, messages, true, onCompareRoles)}
                               </span>
                             );
                           })}
@@ -387,9 +375,7 @@ export default function AICareerAssistant({
 
             {/* Preset Starters */}
             {messages.length <= 1 && (
-              <div className={`p-3 border-t shrink-0 select-none ${
-                isLight ? "bg-slate-50 border-slate-200" : "bg-[#03060c] border-t border-[#121c38]"
-              }`}>
+              <div className="p-3 border-t shrink-0 select-none bg-slate-50 border-slate-200">
                 <p className="text-[10px] text-gray-500 font-bold uppercase mb-2 flex items-center gap-1">
                   <Sparkles className="w-3 h-3 text-[#10b981]" /> SUGGESTED DIAGNOSTIC TRIGGERS:
                 </p>
@@ -399,11 +385,7 @@ export default function AICareerAssistant({
                       key={i}
                       onClick={() => handleSendMessage(s.prompt)}
                       style={{ cursor: "pointer" }}
-                      className={`p-2 border text-left hover:border-[#10b981] hover:bg-[#10b981]/5 transition duration-200 text-[10px] rounded-none truncate cursor-pointer leading-tight font-mono select-none ${
-                        isLight 
-                          ? "border-slate-200 bg-white text-slate-600 hover:text-slate-900" 
-                          : "border-[#1e2e54] bg-[#060a14] text-slate-300 hover:text-white"
-                      }`}
+                      className="p-2 border text-left hover:border-[#10b981] hover:bg-[#10b981]/5 transition duration-200 text-[10px] rounded-none truncate cursor-pointer leading-tight font-mono select-none border-slate-200 bg-white text-slate-600 hover:text-slate-900"
                     >
                       {s.label}
                     </button>
@@ -418,20 +400,14 @@ export default function AICareerAssistant({
                 e.preventDefault();
                 handleSendMessage(input);
               }}
-              className={`p-3 border-t-2 flex gap-2 shrink-0 select-none ${
-                isLight ? "bg-slate-50 border-slate-200" : "bg-[#070c18] border-t-2 border-[#121c38]"
-              }`}
+              className="p-3 border-t-2 flex gap-2 shrink-0 select-none bg-slate-50 border-slate-200"
             >
               <input
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask Pam about skills, certs, paths..."
-                className={`flex-1 border focus:border-[#10b981] text-base md:text-xs p-2.5 outline-none font-mono rounded-none shrink-0 ${
-                  isLight 
-                    ? "bg-white border-slate-300 text-slate-800 placeholder-slate-400" 
-                    : "bg-black/50 border border-[#1e2e54] text-white placeholder-slate-600"
-                }`}
+                className="flex-1 border focus:border-[#10b981] text-base md:text-xs p-2.5 outline-none font-mono rounded-none shrink-0 bg-white border-slate-300 text-slate-800 placeholder-slate-400"
                 disabled={isLoading}
               />
               <button
