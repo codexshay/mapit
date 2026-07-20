@@ -300,7 +300,7 @@ export default function RoleComparison({
               onClick={() => onSelectRole(roleAId)}
               className="w-full mt-3 py-1.5 bg-[#8b5cf6]/10 hover:bg-[#8b5cf6]/25 border border-[#8b5cf6]/40 hover:border-[#8b5cf6] text-white text-[11px] font-bold uppercase transition flex items-center justify-center gap-1.5 cursor-pointer rounded-none"
             >
-              🔍 View {roleA.title} Profile
+              Profile
             </button>
           )}
         </div>
@@ -326,7 +326,7 @@ export default function RoleComparison({
               onClick={() => onSelectRole(roleBId)}
               className="w-full mt-3 py-1.5 bg-[#10b981]/15 hover:bg-[#10b981]/35 border border-[#10b981]/40 hover:border-[#10b981] text-white text-[11px] font-bold uppercase transition flex items-center justify-center gap-1.5 cursor-pointer rounded-none"
             >
-              🔍 View {roleB.title} Profile
+              Profile
             </button>
           )}
         </div>
@@ -337,29 +337,29 @@ export default function RoleComparison({
         <table className="w-full text-left font-mono text-xs border-collapse border-2 border-[#121c38]">
           <thead>
             <tr className="bg-black/80 border-b-2 border-[#121c38]">
-              <th className="p-3 w-1/4 text-gray-500 uppercase border-r border-[#121c38]">Comparison Dimension</th>
-              <th className="p-3 w-3/8 text-[#8b5cf6] uppercase border-r border-[#121c38]">
+              <th className="p-3 w-1/4 text-gray-500 uppercase border-r border-[#121c38] hidden md:table-cell">Comparison Dimension</th>
+              <th className="p-3 w-1/2 md:w-3/8 text-[#8b5cf6] uppercase border-r border-[#121c38]">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                  <span>{roleA ? roleA.title : 'Role A (Not Selected)'}</span>
+                  <span className="truncate max-w-[120px] sm:max-w-none">{roleA ? roleA.title : 'Role A (Not Selected)'}</span>
                   {onSelectRole && roleA && (
                     <button
                       onClick={() => onSelectRole(roleAId)}
                       className="px-2 py-0.5 bg-[#8b5cf6]/15 hover:bg-[#8b5cf6]/30 border border-[#8b5cf6]/30 hover:border-[#8b5cf6] text-[9px] text-[#8b5cf6] uppercase font-bold tracking-wider select-none shrink-0 transition cursor-pointer"
                     >
-                      view profile ➔
+                      Profile
                     </button>
                   )}
                 </div>
               </th>
-              <th className="p-3 w-3/8 text-[#10b981] uppercase font-bold text-[#10b981]">
+              <th className="p-3 w-1/2 md:w-3/8 text-[#10b981] uppercase font-bold text-[#10b981]">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                  <span>{roleB ? roleB.title : 'Role B (Not Selected)'}</span>
+                  <span className="truncate max-w-[120px] sm:max-w-none">{roleB ? roleB.title : 'Role B (Not Selected)'}</span>
                   {onSelectRole && roleB && (
                     <button
                       onClick={() => onSelectRole(roleBId)}
                       className="px-2 py-0.5 bg-[#10b981]/15 hover:bg-[#10b981]/30 border border-[#10b981]/30 hover:border-[#10b981] text-[9px] text-[#10b981] uppercase font-bold tracking-wider select-none shrink-0 transition cursor-pointer"
                     >
-                      view profile ➔
+                      Profile
                     </button>
                   )}
                 </div>
@@ -370,15 +370,19 @@ export default function RoleComparison({
           <tbody className="divide-y divide-[#121c38] bg-[#03060c]">
             {/* Domain */}
             <tr>
-              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40">IT Domain Group</td>
-              <td className="p-3 border-r border-[#121c38] text-white font-bold">{roleA ? roleA.domain : '—'}</td>
+              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40 hidden md:table-cell">IT Domain Group</td>
+              <td className="p-3 border-r border-[#121c38] text-white font-bold">
+                <div className="block md:hidden text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-1">IT Domain Group</div>
+                {roleA ? roleA.domain : '—'}
+              </td>
               <td className="p-3 text-white font-bold">{roleB ? roleB.domain : '—'}</td>
             </tr>
 
             {/* Level */}
             <tr>
-              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40">Difficulty Level</td>
+              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40 hidden md:table-cell">Difficulty Level</td>
               <td className="p-3 border-r border-[#121c38]">
+                <div className="block md:hidden text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-1">Difficulty Level</div>
                 {roleA ? (
                   <span className="bg-[#8b5cf6]/10 text-[#8b5cf6] border border-[#8b5cf6]/30 px-2 py-0.5 font-bold uppercase text-[10px]">
                     {roleA.level}
@@ -396,41 +400,49 @@ export default function RoleComparison({
 
             {/* Coding requirement */}
             <tr>
-              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40">Coding requirement</td>
+              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40 hidden md:table-cell">Coding requirement</td>
               <td className="p-3 border-r border-[#121c38] text-gray-300">
+                <div className="block md:hidden text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-1">Coding requirement</div>
                 {roleA ? (roleA.isCoding ? (
-                  <span className="text-red-400 font-bold">⚠️ Yes, Programming/Scripting</span>
+                  <span className="text-red-400 font-bold text-[10px] sm:text-xs">⚠️ Yes, Programming</span>
                 ) : (
-                  <span className="text-green-400">🛡️ No programming required</span>
+                  <span className="text-green-400 text-[10px] sm:text-xs">🛡️ No programming</span>
                 )) : '—'}
               </td>
               <td className="p-3 text-gray-300">
                 {roleB ? (roleB.isCoding ? (
-                  <span className="text-red-400 font-bold">⚠️ Yes, Programming/Scripting</span>
+                  <span className="text-red-400 font-bold text-[10px] sm:text-xs">⚠️ Yes, Programming</span>
                 ) : (
-                  <span className="text-green-400">🛡️ No programming required</span>
+                  <span className="text-green-400 text-[10px] sm:text-xs">🛡️ No programming</span>
                 )) : '—'}
               </td>
             </tr>
 
             {/* India Salary */}
             <tr>
-              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40">Salary Potential (India)</td>
-              <td className="p-3 border-r border-[#132c38] text-[#10b981] font-bold">{roleA ? `${roleA.indiaSalary} / yr` : '—'}</td>
+              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40 hidden md:table-cell">Salary Potential (India)</td>
+              <td className="p-3 border-r border-[#121c38] text-[#10b981] font-bold">
+                <div className="block md:hidden text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-1">Salary Potential (India)</div>
+                {roleA ? `${roleA.indiaSalary} / yr` : '—'}
+              </td>
               <td className="p-3 text-[#10b981] font-bold">{roleB ? `${roleB.indiaSalary} / yr` : '—'}</td>
             </tr>
 
             {/* Global Salary */}
             <tr>
-              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40">Salary Potential (Global)</td>
-              <td className="p-3 border-r border-[#121c38] text-amber-400 font-bold">{roleA ? `${roleA.globalSalary} / yr` : '—'}</td>
+              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40 hidden md:table-cell">Salary Potential (Global)</td>
+              <td className="p-3 border-r border-[#121c38] text-amber-400 font-bold">
+                <div className="block md:hidden text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-1">Salary Potential (Global)</div>
+                {roleA ? `${roleA.globalSalary} / yr` : '—'}
+              </td>
               <td className="p-3 text-amber-400 font-bold">{roleB ? `${roleB.globalSalary} / yr` : '—'}</td>
             </tr>
 
             {/* Required Skills */}
             <tr>
-              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40">Must-Have Tech Skills</td>
+              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40 hidden md:table-cell">Must-Have Tech Skills</td>
               <td className="p-3 border-r border-[#121c38] text-gray-300 space-y-1">
+                <div className="block md:hidden text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-1">Must-Have Tech Skills</div>
                 {roleA ? roleA.mustHaves.tech.map((s, idx) => (
                   <div key={idx} className="flex items-center gap-1.5 text-[11px]">
                     <span className="w-1 h-1 bg-[#8b5cf6] inline-block shrink-0" />
@@ -450,8 +462,9 @@ export default function RoleComparison({
 
             {/* Certifications */}
             <tr>
-              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40">Primary Certifications</td>
+              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40 hidden md:table-cell">Primary Certifications</td>
               <td className="p-3 border-r border-[#121c38] text-gray-300 space-y-2">
+                <div className="block md:hidden text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-1">Primary Certifications</div>
                 {roleA ? roleA.recommendedCertifications.map((c, idx) => (
                   <div key={idx} className="text-[11px] leading-tight">
                     <strong className="text-white font-normal">{c.name}</strong>{' '}
@@ -471,8 +484,9 @@ export default function RoleComparison({
 
             {/* Software/Hardware Tools */}
             <tr>
-              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40">Tools of the Trade</td>
+              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40 hidden md:table-cell">Tools of the Trade</td>
               <td className="p-3 border-r border-[#121c38] text-gray-300">
+                <div className="block md:hidden text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-1">Tools of the Trade</div>
                 <div className="flex flex-wrap gap-1 text-[10px]">
                   {roleA ? roleA.toolsToLearn.map((tool, idx) => (
                     <span key={idx} className="bg-white px-1.5 py-0.5 border border-slate-300 text-black font-bold">{tool}</span>
@@ -490,8 +504,9 @@ export default function RoleComparison({
 
             {/* Interview Prep assessment */}
             <tr>
-              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40">Interview Complexity</td>
+              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40 hidden md:table-cell">Interview Complexity</td>
               <td className="p-3 border-r border-[#121c38] text-gray-300">
+                <div className="block md:hidden text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-1">Interview Complexity</div>
                 {roleA ? (
                   <>
                     <div className="text-[11px] font-bold text-white mb-1">Scenario focus:</div>
@@ -515,8 +530,9 @@ export default function RoleComparison({
 
             {/* Next Moves/Future Potential */}
             <tr>
-              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40">Future Career Moves</td>
+              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40 hidden md:table-cell">Future Career Moves</td>
               <td className="p-3 border-r border-[#121c38] text-gray-300">
+                <div className="block md:hidden text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-1">Future Career Moves</div>
                 <div className="flex flex-wrap gap-1 text-[10px]">
                   {roleA ? roleA.nextCareerMoves.map((mov, i) => (
                     <span key={i} className="bg-[#8b5cf6]/10 border border-[#8b5cf6]/40 text-[#8b5cf6] px-2 py-0.5">{mov}</span>
@@ -534,8 +550,11 @@ export default function RoleComparison({
 
             {/* Market indicators */}
             <tr>
-              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40">Growth & Market Demand</td>
-              <td className="p-3 border-r border-[#121c38] text-[#10b981] font-bold uppercase">{roleA ? roleA.marketDemandSignal.index : '—'}</td>
+              <td className="p-3 font-bold text-slate-400 border-r border-[#121c38] bg-black/40 hidden md:table-cell">Growth & Market Demand</td>
+              <td className="p-3 border-r border-[#121c38] text-[#10b981] font-bold uppercase">
+                <div className="block md:hidden text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-1">Growth & Market Demand</div>
+                {roleA ? roleA.marketDemandSignal.index : '—'}
+              </td>
               <td className="p-3 text-[#10b981] font-bold uppercase">{roleB ? roleB.marketDemandSignal.index : '—'}</td>
             </tr>
           </tbody>

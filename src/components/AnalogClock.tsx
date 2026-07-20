@@ -171,8 +171,13 @@ export const AnalogClock: React.FC<AnalogClockProps> = ({ timeZone, label, flag,
           </span>
         </div>
       ) : (
-        <div className="text-center mt-1 font-mono select-none">
-          <span className={`text-[8px] font-extrabold leading-none ${isDark ? 'text-[#10b981]' : 'text-emerald-600'}`}>
+        <div className="text-center mt-0.5 font-mono select-none flex flex-col items-center">
+          <span className={`text-[8px] font-bold uppercase tracking-tighter block leading-none truncate max-w-[50px] ${
+            isDark ? 'text-gray-400' : 'text-slate-500'
+          }`} title={label}>
+            {label === "United Kingdom" ? "UK" : label}
+          </span>
+          <span className={`text-[7px] font-extrabold block mt-0.5 leading-none ${isDark ? 'text-[#10b981]' : 'text-emerald-600'}`}>
             {amPm}
           </span>
         </div>

@@ -32,6 +32,33 @@ export default function MobileRolesViewer({
   const [swiperIndex, setSwiperIndex] = useState<number>(0);
   const [expandedRoleId, setExpandedRoleId] = useState<string | null>(null);
 
+  // Swipe support state
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [touchEndX, setTouchEndX] = useState<number | null>(null);
+
+  const minSwipeDistance = 50;
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchEndX(null);
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX === null || touchEndX === null) return;
+    const distance = touchStartX - touchEndX;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    if (isLeftSwipe) {
+      handleNext();
+    } else if (isRightSwipe) {
+      handlePrev();
+    }
+  };
+
   // Filter local roles based on experience level
   const filteredLevelRoles = roles.filter((role) => {
     if (levelFilter === 'all') return true;
@@ -200,6 +227,9 @@ export default function MobileRolesViewer({
               isLight ? 'bg-gradient-to-b from-slate-50 to-white' : 'bg-gradient-to-b from-[#090f1e] to-[#040810]'
             }`}
             id={`mobile-swiper-card-${activeRole.id}`}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           >
             {/* Corner classification / bookmark info header */}
             <div className={`flex items-center justify-between border-b pb-2 mb-3 ${
@@ -408,7 +438,7 @@ export default function MobileRolesViewer({
               }`}
               style={{ minHeight: '48px' }}
             >
-              {selectedRoleId === activeRole.id ? '📍 SELECTED' : '🔍 CHOOSE'}
+              {selectedRoleId === activeRole.id ? '📍 PROFILE' : '👤 PROFILE'}
             </button>
 
             <button
@@ -579,7 +609,7 @@ export default function MobileRolesViewer({
                               : 'bg-[#10b981]/10 border-[#10b981]/40 text-[#10b981] hover:bg-[#10b981]/20'
                         }`}
                       >
-                        {isSelected ? '📍 SELECTED' : '🔍 INSPECT SPEC'}
+                        {isSelected ? '📍 PROFILE' : '👤 PROFILE'}
                       </button>
                     </div>
                   </div>

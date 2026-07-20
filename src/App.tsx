@@ -11,6 +11,7 @@ import YoutubeTeachers, { TEACHERS_DIRECTORY } from './components/YoutubeTeacher
 import Hackathons, { GLOBAL_HACKATHONS, GLOBAL_FESTS, Hackathon } from './components/Hackathons';
 import { AnalogClock } from './components/AnalogClock';
 import AICareerAssistant from './components/AICareerAssistant';
+import HRContacts from './components/HRContacts';
 import { ALL_ROLES_DATA, IT_DOMAINS } from './data/rolesData';
 import { CORNER_TIPS, CERTIFICATIONS_LIBRARY } from './data/librariesData';
 import { RECOMMENDED_BOOKS } from './components/LibrariesDashboard';
@@ -58,6 +59,11 @@ const TAB_DETAILS: Record<string, { label: string; activeStyle: string; hoverSty
     label: '🔖 Bookmarks',
     activeStyle: 'text-yellow-400 font-bold bg-[#121c38] border-yellow-600/30 shadow-[0_0_10px_rgba(250,204,21,0.25)]',
     hoverStyle: 'hover:text-yellow-400 hover:bg-yellow-950/20 border border-transparent'
+  },
+  'hr-contacts': {
+    label: '👥 HR CONTACTS',
+    activeStyle: 'text-slate-200 font-bold bg-[#121c38] border-slate-700/40 shadow-[0_0_10px_rgba(255,255,255,0.05)]',
+    hoverStyle: 'hover:text-slate-200 hover:bg-slate-800/40 border border-transparent'
   }
 };
 
@@ -97,6 +103,12 @@ const TAB_METADATA: Record<string, { label: string; icon: React.ComponentType<an
     icon: CustomBookmarkIcon,
     colorClass: 'text-yellow-400',
     activeStyle: 'text-yellow-400 border-yellow-400 bg-yellow-950/25 shadow-[0_0_12px_rgba(250,204,21,0.2)] font-bold'
+  },
+  'hr-contacts': {
+    label: 'HR CONTACTS',
+    icon: UserCheck,
+    colorClass: 'text-slate-300',
+    activeStyle: 'text-slate-200 border-slate-700 bg-slate-900/40 shadow-[0_0_12px_rgba(255,255,255,0.05)] font-bold'
   }
 };
 
@@ -209,10 +221,6 @@ export default function App() {
     setPresetRoleAId(roleId);
     setActiveTab('comparison');
     setGlobalSearchQuery('');
-    
-    setTimeout(() => {
-      handleScrollToSection('section-comparison');
-    }, 150);
   };
 
   const handleCompareRoles = (roleAId: string, roleBId: string) => {
@@ -222,10 +230,6 @@ export default function App() {
     setPresetRoleBId(roleBId);
     setActiveTab('comparison');
     setGlobalSearchQuery('');
-    
-    setTimeout(() => {
-      handleScrollToSection('section-comparison');
-    }, 150);
   };
 
   const handleNavigateToSection = (
@@ -533,99 +537,6 @@ export default function App() {
     return () => clearInterval(interval);
   }, []);
 
-  const selectedRole = selectedRoleId ? ALL_ROLES_DATA[selectedRoleId] : null;
-
-  // Filter domains, roles, and resources for global search results
-  const globalSearchResults = React.useMemo(() => {
-    if (!globalSearchQuery.trim()) return { domains: [], roles: [], certs: [], books: [], teachers: [] };
-    const query = globalSearchQuery.toLowerCase().trim();
-    
-    // 1. Search domains
-    const matchedDomains = IT_DOMAINS.filter(domain => 
-      domain.name.toLowerCase().includes(query) || 
-      domain.description.toLowerCase().includes(query)
-    );
-    
-    // 2. Search roles
-    const matchedRoles = Object.values(ALL_ROLES_DATA).filter(role => {
-      const titleMatch = role.title.toLowerCase().includes(query);
-      const descMatch = role.roleAsk.explanation.toLowerCase().includes(query);
-      const techMatch = role.mustHaves.tech.some(t => t.toLowerCase().includes(query));
-      const processMatch = role.mustHaves.process.some(p => p.toLowerCase().includes(query));
-      const toolsMatch = role.toolsToLearn.some(t => t.toLowerCase().includes(query));
-      const certsMatch = role.recommendedCertifications.some(c => c.name.toLowerCase().includes(query));
-      const pathMatch = role.upskillingPath.some(step => step.toLowerCase().includes(query));
-      
-      return titleMatch || descMatch || techMatch || processMatch || toolsMatch || certsMatch || pathMatch;
-    });
-
-    // 3. Search Certifications
-    const matchedCerts = CERTIFICATIONS_LIBRARY.filter(cert => 
-      cert.name.toLowerCase().includes(query) ||
-      cert.provider.toLowerCase().includes(query) ||
-      cert.description.toLowerCase().includes(query) ||
-      cert.relatedRoles.some(r => r.toLowerCase().includes(query))
-    );
-
-    // 4. Search Books
-    const matchedBooks = RECOMMENDED_BOOKS.filter(book => 
-      book.title.toLowerCase().includes(query) ||
-      book.author.toLowerCase().includes(query) ||
-      book.bestFor.toLowerCase().includes(query) ||
-      book.summary.toLowerCase().includes(query)
-    );
-
-    // 5. Search YouTube study channels / Teachers
-    const matchedTeachers: any[] = [];
-    const seenTeacherNames = new Set<string>();
-    try {
-      if (Array.isArray(TEACHERS_DIRECTORY)) {
-        TEACHERS_DIRECTORY.forEach(cat => {
-          if (cat.subcategories) {
-            cat.subcategories.forEach(sub => {
-              if (sub.teachers) {
-                sub.teachers.forEach((t: any) => {
-                  if (seenTeacherNames.has(t.name)) return;
-                  const nameMatch = t.name.toLowerCase().includes(query);
-                  const areaMatch = sub.skillArea.toLowerCase().includes(query);
-                  const reasonMatch = t.reason?.toLowerCase().includes(query) || false;
-                  if (nameMatch || areaMatch || reasonMatch) {
-                    seenTeacherNames.add(t.name);
-                    matchedTeachers.push({
-                      name: t.name,
-                      url: t.url,
-                      skillArea: sub.skillArea,
-                      reason: t.reason,
-                      catId: cat.id
-                    });
-                  }
-                });
-              }
-            });
-          }
-        });
-      }
-    } catch (e) {}
-    
-    return { 
-      domains: matchedDomains, 
-      roles: matchedRoles,
-      certs: matchedCerts,
-      books: matchedBooks,
-      teachers: matchedTeachers
-    };
-  }, [globalSearchQuery]);
-
-  // Controlled sub-state variables to communicate selections across sections
-  const [careerMapDomainId, setCareerMapDomainId] = useState<string | null>('green-computing');
-  const [librariesActiveTab, setLibrariesActiveTab] = useState<'youtubeTeachers' | 'hackathons' | 'channels' | 'tools-skills' | 'certs' | 'bookshelf'>('hackathons');
-  const [librariesQuery, setLibrariesQuery] = useState<string>('');
-  const [librariesRoleFamily, setLibrariesRoleFamily] = useState<string>('green-computing');
-  const [youtubeSearchQuery, setYoutubeSearchQuery] = useState<string>('');
-  const [youtubeCategoryId, setYoutubeCategoryId] = useState<string>('green-computing');
-  const [hackathonsSelectedItemId, setHackathonsSelectedItemId] = useState<string | null>(null);
-  const [hackathonsSearchQuery, setHackathonsSearchQuery] = useState<string>('');
-
   const [appHackathons, setAppHackathons] = useState<Hackathon[]>([]);
   const [isLoadingHackathons, setIsLoadingHackathons] = useState<boolean>(true);
 
@@ -673,6 +584,115 @@ export default function App() {
     };
     fetchLatest();
   }, []);
+
+  const selectedRole = selectedRoleId ? ALL_ROLES_DATA[selectedRoleId] : null;
+
+  // Filter domains, roles, and resources for global search results
+  const globalSearchResults = React.useMemo(() => {
+    if (!globalSearchQuery.trim()) return { domains: [], roles: [], certs: [], books: [], teachers: [], hackathons: [] };
+    const query = globalSearchQuery.toLowerCase().trim();
+    
+    // 1. Search domains
+    const matchedDomains = IT_DOMAINS.filter(domain => {
+      const nameMatch = domain.name ? domain.name.toLowerCase().includes(query) : false;
+      const descMatch = domain.description ? domain.description.toLowerCase().includes(query) : false;
+      return nameMatch || descMatch;
+    });
+    
+    // 2. Search roles
+    const matchedRoles = Object.values(ALL_ROLES_DATA).filter(role => {
+      const titleMatch = role.title ? role.title.toLowerCase().includes(query) : false;
+      const descMatch = (role.roleAsk && role.roleAsk.explanation) ? role.roleAsk.explanation.toLowerCase().includes(query) : false;
+      const techMatch = Array.isArray(role.mustHaves?.tech) ? role.mustHaves.tech.some(t => t && t.toLowerCase().includes(query)) : false;
+      const processMatch = Array.isArray(role.mustHaves?.process) ? role.mustHaves.process.some(p => p && p.toLowerCase().includes(query)) : false;
+      const toolsMatch = Array.isArray(role.toolsToLearn) ? role.toolsToLearn.some(t => t && t.toLowerCase().includes(query)) : false;
+      const certsMatch = Array.isArray(role.recommendedCertifications) ? role.recommendedCertifications.some(c => c && c.name && c.name.toLowerCase().includes(query)) : false;
+      const pathMatch = Array.isArray(role.upskillingPath) ? role.upskillingPath.some(step => step && step.toLowerCase().includes(query)) : false;
+      
+      return titleMatch || descMatch || techMatch || processMatch || toolsMatch || certsMatch || pathMatch;
+    });
+
+    // 3. Search Certifications
+    const matchedCerts = CERTIFICATIONS_LIBRARY.filter(cert => {
+      const nameMatch = cert.name ? cert.name.toLowerCase().includes(query) : false;
+      const providerMatch = cert.provider ? cert.provider.toLowerCase().includes(query) : false;
+      const descMatch = cert.description ? cert.description.toLowerCase().includes(query) : false;
+      const rolesMatch = Array.isArray(cert.relatedRoles) ? cert.relatedRoles.some(r => r && r.toLowerCase().includes(query)) : false;
+      return nameMatch || providerMatch || descMatch || rolesMatch;
+    });
+
+    // 4. Search Books
+    const matchedBooks = RECOMMENDED_BOOKS.filter(book => {
+      const titleMatch = book.title ? book.title.toLowerCase().includes(query) : false;
+      const authorMatch = book.author ? book.author.toLowerCase().includes(query) : false;
+      const bestForMatch = book.bestFor ? book.bestFor.toLowerCase().includes(query) : false;
+      const summaryMatch = book.summary ? book.summary.toLowerCase().includes(query) : false;
+      return titleMatch || authorMatch || bestForMatch || summaryMatch;
+    });
+
+    // 5. Search YouTube study channels / Teachers
+    const matchedTeachers: any[] = [];
+    const seenTeacherNames = new Set<string>();
+    try {
+      if (Array.isArray(TEACHERS_DIRECTORY)) {
+        TEACHERS_DIRECTORY.forEach(cat => {
+          if (cat.subcategories) {
+            cat.subcategories.forEach(sub => {
+              if (sub.teachers) {
+                sub.teachers.forEach((t: any) => {
+                  if (seenTeacherNames.has(t.name)) return;
+                  const nameMatch = t.name.toLowerCase().includes(query);
+                  const areaMatch = sub.skillArea.toLowerCase().includes(query);
+                  const reasonMatch = t.reason?.toLowerCase().includes(query) || false;
+                  if (nameMatch || areaMatch || reasonMatch) {
+                    seenTeacherNames.add(t.name);
+                    matchedTeachers.push({
+                      name: t.name,
+                      url: t.url,
+                      skillArea: sub.skillArea,
+                      reason: t.reason,
+                      catId: cat.id
+                    });
+                  }
+                });
+              }
+            });
+          }
+        });
+      }
+    } catch (e) {}
+
+    // 6. Search Hackathons & Events
+    const matchedHackathons = appHackathons.filter(item => {
+      if (!item) return false;
+      const titleMatch = item.title ? item.title.toLowerCase().includes(query) : false;
+      const orgMatch = item.organizer ? item.organizer.toLowerCase().includes(query) : false;
+      const descMatch = item.description ? item.description.toLowerCase().includes(query) : false;
+      const prizesMatch = item.prizes ? item.prizes.toLowerCase().includes(query) : false;
+      const categoryMatch = item.category ? item.category.toLowerCase().includes(query) : false;
+      const themesMatch = Array.isArray(item.themes) ? item.themes.some(t => t && t.toLowerCase().includes(query)) : false;
+      return titleMatch || orgMatch || descMatch || prizesMatch || categoryMatch || themesMatch;
+    });
+    
+    return { 
+      domains: matchedDomains, 
+      roles: matchedRoles,
+      certs: matchedCerts,
+      books: matchedBooks,
+      teachers: matchedTeachers,
+      hackathons: matchedHackathons
+    };
+  }, [globalSearchQuery, appHackathons]);
+
+  // Controlled sub-state variables to communicate selections across sections
+  const [careerMapDomainId, setCareerMapDomainId] = useState<string | null>('green-computing');
+  const [librariesActiveTab, setLibrariesActiveTab] = useState<'youtubeTeachers' | 'hackathons' | 'channels' | 'tools-skills' | 'certs' | 'bookshelf'>('hackathons');
+  const [librariesQuery, setLibrariesQuery] = useState<string>('');
+  const [librariesRoleFamily, setLibrariesRoleFamily] = useState<string>('green-computing');
+  const [youtubeSearchQuery, setYoutubeSearchQuery] = useState<string>('');
+  const [youtubeCategoryId, setYoutubeCategoryId] = useState<string>('green-computing');
+  const [hackathonsSelectedItemId, setHackathonsSelectedItemId] = useState<string | null>(null);
+  const [hackathonsSearchQuery, setHackathonsSearchQuery] = useState<string>('');
 
   // Tab states to isolate sections independently
   const [activeTab, setActiveTab] = useState<string>('about');
@@ -1087,28 +1107,53 @@ export default function App() {
     );
   };
 
-  const [isSidebarMinimized, setIsSidebarMinimized] = useState<boolean>(() => {
-    try {
-      const saved = localStorage.getItem('mapit_sidebar_collapsed');
-      if (saved !== null) {
-        return JSON.parse(saved);
-      }
-    } catch (e) {}
-    // Default to collapsed on mobile screens, open on large screens
-    return typeof window !== 'undefined' ? window.innerWidth < 768 : false;
-  });
+  const [isSidebarMinimized, setIsSidebarMinimized] = useState<boolean>(true);
+  const [isSidebarHovered, setIsSidebarHovered] = useState<boolean>(false);
+  const [isHoveringBottomArea, setIsHoveringBottomArea] = useState<boolean>(false);
+  const isSidebarExpanded = !isSidebarMinimized || (isSidebarHovered && !isHoveringBottomArea);
 
   useEffect(() => {
-    if (!isSidebarMinimized) {
+    if (isSidebarExpanded) {
       setIsFloatingSearchOpen(false);
     }
-  }, [isSidebarMinimized]);
+  }, [isSidebarExpanded]);
+
+  useEffect(() => {
+    // Determine the target element ID to scroll to
+    let targetId = `section-${activeTab}`;
+
+    // If a profiling section is active/triggered, prioritize scrolling to that instead!
+    if (activeTab === 'map' && selectedRoleId) {
+      targetId = 'selected-role-focus-anchor';
+    } else if (activeTab === 'pathfinder' && document.getElementById('pathfinder-role-detail-anchor')) {
+      targetId = 'pathfinder-role-detail-anchor';
+    } else if (activeTab === 'saved' && document.getElementById('saved-role-detail-anchor')) {
+      targetId = 'saved-role-detail-anchor';
+    } else if (activeTab === 'comparison') {
+      if (selectedRoleId) {
+        // Pre-encode the active selected role as Role A
+        setPresetRoleAId(selectedRoleId);
+        localStorage.setItem('comparator_roleAId', selectedRoleId);
+      }
+      setSelectedRoleId(null);
+      targetId = 'section-comparison';
+    }
+
+    // Scroll to the resolved target element
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const el = document.getElementById(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  }, [activeTab, selectedRoleId]);
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [isChatOpen, setIsChatOpen] = useState<boolean>(false);
 
   // Dynamic order of tabs - Sorted alphabetically by their visible section labels
-  const [tabOrder, setTabOrder] = useState<string[]>(['about', 'saved', 'map', 'comparison', 'pathfinder', 'libraries']);
+  const [tabOrder, setTabOrder] = useState<string[]>(['about', 'saved', 'map', 'comparison', 'pathfinder', 'libraries', 'hr-contacts']);
 
   const [draggedTabId, setDraggedTabId] = useState<string | null>(null);
 
@@ -1195,14 +1240,6 @@ export default function App() {
     setTimeout(() => {
       setBlinkSectionId((curr) => curr === tabId ? null : curr);
     }, 1200);
-
-    // Scroll to the active tab's container block so its primary content is visible
-    setTimeout(() => {
-      const el = document.getElementById(`section-${tabId}`);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }, 120);
   };
 
   const handleOpenEventInResources = (eventId: string) => {
@@ -1355,35 +1392,27 @@ export default function App() {
 
       {/* LEFT SIDE PANEL - Locked & Frozen on scroll, hidden completely on mobile */}
       <aside 
-        className={`hidden md:flex bg-[#070b13] md:border-r-2 border-[#121c38]/80 flex-col justify-between transition-all duration-[1000ms] ease-in-out z-50 shrink-0 select-none pb-4 h-screen fixed left-0 top-0 ${
-          isSidebarMinimized 
-            ? 'w-[72px]' 
-            : 'w-[260px]'
+        className={`hidden md:flex md:border-r-2 border-[#121c38]/80 flex-col justify-between transition-all duration-[300ms] ease-in-out z-50 shrink-0 select-none pb-4 h-screen fixed left-0 top-0 ${
+          isSidebarExpanded 
+            ? 'w-[260px] bg-[#070b13]/20 backdrop-blur-md sidebar-expanded' 
+            : 'w-[72px] bg-[#070b13] sidebar-collapsed'
         } ${introStage === 'blank' || introStage === 'centered' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+        onMouseEnter={() => {
+          setIsSidebarHovered(true);
+        }}
+        onMouseLeave={() => {
+          setIsSidebarHovered(false);
+          setIsSidebarMinimized(true);
+        }}
       >
         {/* Friendly scrolling ant guest inside side panel */}
         {activeTab !== 'about' && <SidebarAnt theme={theme} />}
-
-        {/* Sleek thin bar toggle handle on right border */}
-        <button 
-          onClick={() => setIsSidebarMinimized(!isSidebarMinimized)}
-          className="hidden md:flex absolute top-0 right-[-10px] w-[18px] h-full cursor-col-resize hover:cursor-pointer group items-center justify-center transition-all duration-200 z-50 focus:outline-none"
-          title={isSidebarMinimized ? "Expand Sidebar" : "Minimize Sidebar"}
-        >
-          <div className="absolute top-1/2 -translate-y-1/2 right-[1px] bg-[#070b13] hover:bg-[#0c1224] border-2 border-[#121c38] hover:border-[#10b981] w-5 h-12 flex items-center justify-center text-[#10b981] transition shadow-[3px_3px_0px_rgba(18,28,56,0.5)]">
-            {isSidebarMinimized ? (
-              <ChevronRight className="w-4 h-4 animate-pulse" />
-            ) : (
-              <ChevronLeft className="w-4 h-4" />
-            )}
-          </div>
-        </button>
 
         <div className="flex flex-col h-full overflow-y-auto custom-scrollbar">
           {/* Logo / branding block */}
           <div className="p-4 border-b border-[#121c38]/60 flex items-center justify-between min-h-[64px]">
             <div className={`w-full flex items-center justify-between ${introStage !== 'done' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-              {!isSidebarMinimized ? (
+              {isSidebarExpanded ? (
                 <div className="flex items-center justify-between w-full">
                   <div className="flex items-center gap-1.5 justify-between w-full">
                     <h1 className="text-2xl font-black font-sans leading-none flex items-center tracking-tighter">
@@ -1447,15 +1476,11 @@ export default function App() {
                         ? tabDetails.activeStyle 
                         : 'text-gray-400 hover:text-slate-200 hover:bg-slate-900/60'
                     } ${isDraggedThis ? 'opacity-30 border-dashed border-gray-600 bg-slate-950' : ''}`}
-                    title={isSidebarMinimized ? `${tabDetails.label} (Drag to reorder)` : "Drag up/down or click arrows to reorder!"}
+                    title={!isSidebarExpanded ? `${tabDetails.label} (Drag to reorder)` : "Drag up/down or click arrows to reorder!"}
                   >
                     <button
                       onClick={() => {
                         handleTabClick(tabId);
-                        // Auto collapse sidebar on mobile after clicking
-                        if (window.innerWidth < 768) {
-                          setIsSidebarMinimized(true);
-                        }
                       }}
                       className="flex-1 flex items-center py-1.5 px-2 text-left transition-colors duration-150 relative cursor-pointer"
                     >
@@ -1475,25 +1500,30 @@ export default function App() {
 
                       {/* Text block width transition section */}
                       <div 
-                        className={`overflow-hidden transition-all duration-[700ms] ease-in-out whitespace-nowrap flex-1 ${
-                          isSidebarMinimized 
-                            ? 'max-w-0 opacity-0 pointer-events-none' 
-                            : 'max-w-[200px] opacity-100'
+                        className={`overflow-hidden transition-all duration-[300ms] ease-in-out whitespace-nowrap flex-1 ${
+                          isSidebarExpanded 
+                            ? 'max-w-[200px] opacity-100' 
+                            : 'max-w-0 opacity-0 pointer-events-none'
                         }`}
                       >
-                        <span className="text-[11px] font-mono font-bold tracking-tight uppercase">
+                        <span className="text-[11px] font-mono font-bold tracking-tight uppercase flex items-center gap-1.5">
+                          {tabId === 'hr-contacts' && (
+                            <span className="bg-yellow-400 text-black px-1.5 py-0.5 text-[8.5px] font-extrabold uppercase rounded-xs tracking-wide">
+                              beta
+                            </span>
+                          )}
                           {tabDetails.label}
                         </span>
                       </div>
 
                       {/* Active indicator badge when minimized */}
-                      {isSidebarMinimized && isActive && (
+                      {!isSidebarExpanded && isActive && (
                         <span className={`absolute right-1 top-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full ${tabDetails.colorClass} shadow-lg`} />
                       )}
                     </button>
 
                     {/* Move Up/Down Arrow utilities inside sidebar hover */}
-                    {!isSidebarMinimized && (
+                    {isSidebarExpanded && (
                       <div className="opacity-0 group-hover:opacity-100 flex items-center gap-0.5 pr-1 transition-all duration-150 shrink-0">
                         {index > 0 && (
                           <button
@@ -1518,8 +1548,8 @@ export default function App() {
                       </div>
                     )}
 
-                    {/* Chevron toggle button for Resources tab dropdown */}
-                    {!isSidebarMinimized && tabId === 'libraries' && (
+                     {/* Chevron toggle button for Resources tab dropdown */}
+                    {isSidebarExpanded && tabId === 'libraries' && (
                       <button
                         type="button"
                         onClick={(e) => {
@@ -1538,7 +1568,7 @@ export default function App() {
                     )}
 
                     {/* Popover text tooltips for minimized state */}
-                    {isSidebarMinimized && (
+                    {!isSidebarExpanded && (
                       <div className="absolute left-[76px] bg-[#070b13] border border-[#1e2e54] text-[9.5px] tracking-wider px-2.5 py-1.5 whitespace-nowrap hidden group-hover:block transition-all z-50 pointer-events-none font-mono font-bold rounded-xs shadow-[3px_3px_0px_#121c38]">
                         <span className={`${tabDetails.colorClass} mr-1.5 font-bold`}>►</span> {tabDetails.label.toUpperCase()}
                       </div>
@@ -1546,7 +1576,7 @@ export default function App() {
                   </div>
 
                   {/* Dropdown sub-menu if tabId is 'libraries' and expanded */}
-                  {tabId === 'libraries' && !isSidebarMinimized && isResourcesDropdownOpen && (
+                  {tabId === 'libraries' && isSidebarExpanded && isResourcesDropdownOpen && (
                     <div className="mt-0.5 ml-3 pl-2 border-l border-cyan-800/40 space-y-0.5 flex flex-col">
                       {[
                         { id: 'hackathons', label: 'Hackathons & Events', icon: Trophy },
@@ -1564,9 +1594,6 @@ export default function App() {
                             onClick={() => {
                               setLibrariesActiveTab(sub.id as any);
                               handleTabClick('libraries');
-                              if (window.innerWidth < 768) {
-                                setIsSidebarMinimized(true);
-                              }
                             }}
                             className={`w-full flex items-center py-1 px-1.5 text-left text-[10px] font-mono font-bold tracking-tight rounded-xs transition-all cursor-pointer ${
                               isSubActive
@@ -1586,7 +1613,7 @@ export default function App() {
             })}
 
             {/* Global Search Box - Styled beautifully */}
-            {!isSidebarMinimized && (
+            {isSidebarExpanded && (
               <div className="px-2 py-3 border-t border-[#121c38]/40 mt-3 font-mono">
                 <div className="relative">
                   <input
@@ -1625,7 +1652,7 @@ export default function App() {
               </div>
             )}
 
-            {isSidebarMinimized && (
+            {!isSidebarExpanded && (
               <div className="px-2 py-3 border-t border-[#121c38]/40 mt-3 font-mono flex justify-center relative">
                 <button
                   ref={floatingTriggerRef}
@@ -1651,7 +1678,7 @@ export default function App() {
           </nav>
 
           {/* FLOATING HOVER SEARCH BOX FOR MINIMIZED SIDEBAR */}
-          {isSidebarMinimized && isFloatingSearchOpen && (
+          {!isSidebarExpanded && isFloatingSearchOpen && (
             <div 
               ref={floatingSearchRef}
               className={`fixed left-[72px] bottom-[140px] sm:bottom-[180px] md:bottom-auto md:top-[180px] z-[999] p-3 border-2 shadow-[6px_6px_0px_0px_rgba(16,185,129,0.25)] rounded-none w-72 ${
@@ -1703,9 +1730,13 @@ export default function App() {
           )}
 
           {/* Sidebar Bottom Sync Diagnostics & Theme */}
-          <div className="p-2 border-t border-[#121c38]/50 space-y-1.5 mt-auto bg-[#04070e]/80">
+          <div 
+            onMouseEnter={() => setIsHoveringBottomArea(true)}
+            onMouseLeave={() => setIsHoveringBottomArea(false)}
+            className="p-2 border-t border-[#121c38]/50 space-y-1.5 mt-auto bg-[#04070e]/80"
+          >
             {/* Visual Theme Selector */}
-            {!isSidebarMinimized ? (
+            {isSidebarExpanded ? (
               <div className="pb-1.5 border-b border-[#121c38]/40 mb-1">
                 <button
                   onClick={toggleTheme}
@@ -1732,28 +1763,37 @@ export default function App() {
             ) : (
               <button
                 onClick={toggleTheme}
+                onDoubleClick={() => {
+                  setIsSidebarMinimized(false);
+                }}
                 data-theme-switch="true"
                 className="w-full flex items-center justify-center p-2 mb-1.5 hover:bg-slate-900 text-gray-400 hover:text-white transition rounded-sm border border-[#1e2e54]/50 cursor-pointer"
-                title={theme === 'dark' ? "Switch to Light Theme" : "Switch to Dark Theme"}
+                title={theme === 'dark' ? "Switch to Light Theme (Double click to expand)" : "Switch to Dark Theme (Double click to expand)"}
               >
                 {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-cyan-500" />}
               </button>
             )}
 
             {/* World clocks section */}
-            {!isSidebarMinimized ? (
+            {isSidebarExpanded ? (
               <div className="space-y-1 pt-1.5 border-t border-[#121c38]/40">
-                <div className="grid grid-cols-2 gap-1 animate-fade-in">
-                  <AnalogClock timeZone="Asia/Kolkata" label="India" countryCode="IN" flag="🇮🇳" theme={theme} />
-                  <AnalogClock timeZone="America/New_York" label="USA" countryCode="US" flag="🇺🇸" theme={theme} />
-                  <AnalogClock timeZone="Asia/Tokyo" label="Japan" countryCode="JP" flag="🇯🇵" theme={theme} />
-                  <AnalogClock timeZone="Europe/London" label="United Kingdom" countryCode="GB" flag="🇬🇧" theme={theme} />
+                <div className="grid grid-cols-2 gap-1.5 justify-center justify-items-center w-full px-1 animate-fade-in">
+                  <AnalogClock timeZone="Asia/Kolkata" label="India" countryCode="IN" flag="🇮🇳" isMinimized={true} theme={theme} />
+                  <AnalogClock timeZone="America/New_York" label="USA" countryCode="US" flag="🇺🇸" isMinimized={true} theme={theme} />
+                  <AnalogClock timeZone="Asia/Tokyo" label="Japan" countryCode="JP" flag="🇯🇵" isMinimized={true} theme={theme} />
+                  <AnalogClock timeZone="Europe/London" label="United Kingdom" countryCode="GB" flag="🇬🇧" isMinimized={true} theme={theme} />
                 </div>
               </div>
             ) : (
-              <div className="flex flex-col items-center gap-1 pt-1.5 border-t border-[#121c38]/30">
+              <div 
+                onClick={() => {
+                  setIsSidebarMinimized(false);
+                }}
+                className="flex flex-col items-center gap-1 pt-1.5 border-t border-[#121c38]/30 cursor-pointer w-full group/clocks"
+                title="Click to expand side panel"
+              >
                 {/* Minimized round clocks in a 2x2 grid to save space and prevent scrolling */}
-                <div className="grid grid-cols-2 gap-1.5 justify-center justify-items-center w-full px-1">
+                <div className="grid grid-cols-2 gap-1.5 justify-center justify-items-center w-full px-1 group-hover/clocks:scale-105 transition-transform duration-200">
                   <AnalogClock timeZone="Asia/Kolkata" label="India" countryCode="IN" flag="🇮🇳" isMinimized={true} theme={theme} />
                   <AnalogClock timeZone="America/New_York" label="USA" countryCode="US" flag="🇺🇸" isMinimized={true} theme={theme} />
                   <AnalogClock timeZone="Asia/Tokyo" label="Japan" countryCode="JP" flag="🇯🇵" isMinimized={true} theme={theme} />
@@ -1773,9 +1813,9 @@ export default function App() {
       </aside>
 
       {/* CORE PAGE AREA CONTAINER */}
-      <div className={`flex-1 min-w-0 flex flex-col min-h-screen relative transition-all duration-[1000ms] ease-in-out checker-pattern ${
-        isSidebarMinimized ? 'md:pl-[72px]' : 'md:pl-[260px]'
-      } ${introStage === 'blank' || introStage === 'centered' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+      <div className={`flex-1 min-w-0 flex flex-col min-h-screen relative transition-all duration-[300ms] ease-in-out checker-pattern md:pl-[72px] ${
+        introStage === 'blank' || introStage === 'centered' ? 'opacity-0 pointer-events-none' : 'opacity-100'
+      }`}>
         
         {/* NEW FLOATING HEADER DOCK - DESKTOP ONLY */}
         <header className={`hidden md:flex transition-all duration-[700ms] ease-in-out p-3 items-center justify-between sticky top-0 z-30 backdrop-blur-md ${
@@ -2024,17 +2064,18 @@ export default function App() {
                      globalSearchResults.roles.length === 0 &&
                      globalSearchResults.certs.length === 0 &&
                      globalSearchResults.books.length === 0 &&
-                     globalSearchResults.teachers.length === 0 ? (
+                     globalSearchResults.teachers.length === 0 &&
+                     globalSearchResults.hackathons.length === 0 ? (
                       <div className="py-12 text-center font-mono space-y-3">
-                        <div className="text-gray-500 text-sm">No exact domains, roles, tools, or certifications matched your keyword.</div>
-                        <div className="text-xs text-gray-600">Try searching for other terms like "AWS", "SQL", "Cybersecurity", "Python", or "SRE".</div>
+                        <div className="text-gray-500 text-sm">No exact career domains, roles, certifications, books, instructors, or tech events matched your keyword.</div>
+                        <div className="text-xs text-gray-600">Try searching for other terms like "AWS", "SQL", "Cybersecurity", "Python", "SRE", or "Hackathon".</div>
                       </div>
                     ) : (
                       <div className="space-y-8">
                         {/* Matching Domains */}
                         {globalSearchResults.domains.length > 0 && (
                           <div className="space-y-3">
-                            <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-gray-400 border-b border-gray-800/20 pb-1 flex items-center gap-2">
+                            <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-[#eab308] border-b border-yellow-500/20 pb-1 flex items-center gap-2">
                               📂 Matching Career Domains ({globalSearchResults.domains.length})
                             </h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -2043,8 +2084,8 @@ export default function App() {
                                   key={domain.id}
                                   className={`border-2 p-4 flex flex-col justify-between rounded-none transition-all duration-300 hover:translate-y-[-2px] ${
                                     theme === 'light'
-                                      ? 'bg-slate-50 border-gray-200 hover:border-emerald-500 text-slate-800'
-                                      : 'bg-[#0a101f] border-[#1e2e54] hover:border-[#10b981] text-white'
+                                      ? 'bg-slate-50 border-gray-200 hover:border-[#eab308] text-slate-800'
+                                      : 'bg-[#0a101f] border-[#1e2e54] hover:border-[#eab308] text-white'
                                   }`}
                                 >
                                   <div>
@@ -2070,11 +2111,11 @@ export default function App() {
                                         }
                                       }, 150);
                                     }}
-                                    className="w-full py-1.5 px-2.5 bg-emerald-500 hover:bg-emerald-600 text-black text-[10px] font-mono font-bold uppercase tracking-wider transition-all rounded-none cursor-pointer text-center"
+                                    className="w-full py-1.5 px-2.5 bg-[#eab308] hover:bg-yellow-600 text-black text-[10px] font-mono font-bold uppercase tracking-wider transition-all rounded-none cursor-pointer text-center"
                                   >
                                     Explore Domain Map
-                              </button>
-                            </div>
+                                  </button>
+                                </div>
                               ))}
                             </div>
                           </div>
@@ -2083,7 +2124,7 @@ export default function App() {
                         {/* Matching Roles */}
                         {globalSearchResults.roles.length > 0 && (
                           <div className="space-y-3">
-                            <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-gray-400 border-b border-gray-800/20 pb-1 flex items-center gap-2">
+                            <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-[#8b5cf6] border-b border-purple-500/20 pb-1 flex items-center gap-2">
                               📋 Matching Career Roles ({globalSearchResults.roles.length})
                             </h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
@@ -2169,16 +2210,112 @@ export default function App() {
                           </div>
                         )}
 
-                        {/* Matching Resources (Certifications, Books, and Instructors) */}
-                        {(globalSearchResults.certs.length > 0 || globalSearchResults.books.length > 0 || globalSearchResults.teachers.length > 0) && (
-                          <div className="space-y-4 pt-4 border-t border-gray-800/20">
-                            <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-gray-400 border-b border-gray-800/20 pb-1 flex items-center gap-2">
-                              📚 Matched Learning Resources & Channels ({globalSearchResults.certs.length + globalSearchResults.books.length + globalSearchResults.teachers.length})
+                        {/* Matching Hackathons & Tech Events */}
+                        {globalSearchResults.hackathons.length > 0 && (
+                          <div className="space-y-3 pt-4 border-t border-gray-800/20">
+                            <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-orange-500 border-b border-orange-500/20 pb-1 flex items-center gap-2">
+                              🏆 Matching Hackathons & Tech Events ({globalSearchResults.hackathons.length})
                             </h3>
-                            
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                              {/* Certifications matches (up to 2) */}
-                              {globalSearchResults.certs.slice(0, 2).map(cert => (
+                              {globalSearchResults.hackathons.slice(0, 3).map(item => (
+                                <div 
+                                  key={item.id}
+                                  className={`border-2 p-4 flex flex-col justify-between rounded-none transition-all duration-300 hover:translate-y-[-2px] ${
+                                    theme === 'light'
+                                      ? 'bg-slate-50 border-gray-200 hover:border-orange-500 text-slate-800'
+                                      : 'bg-[#0a101f] border-[#1e2e54] hover:border-orange-500 text-white'
+                                  }`}
+                                >
+                                  <div>
+                                    <div className="flex items-center justify-between gap-1.5 mb-2">
+                                      <div className="flex items-center gap-1.5">
+                                        <Trophy className="w-4 h-4 text-orange-500 shrink-0" />
+                                        <span className="text-[10px] font-mono text-orange-500 uppercase font-bold tracking-wider">Tech Event</span>
+                                      </div>
+                                      {item.daysLeft !== undefined && item.daysLeft > 0 && (
+                                        <span className="text-[9px] font-mono uppercase px-1.5 py-0.5 rounded border border-orange-500/20 bg-orange-500/10 text-orange-500">
+                                          {item.daysLeft}d left
+                                        </span>
+                                      )}
+                                    </div>
+                                    <h4 className="font-mono font-bold text-xs tracking-tight uppercase truncate" title={item.title}>{item.title}</h4>
+                                    <p className="text-[9px] text-gray-500 font-mono mb-2">Organizer: {item.organizer} | Region: {item.region}</p>
+                                    <p className="text-[11px] text-gray-400 leading-relaxed line-clamp-3 mb-4">{item.description}</p>
+                                  </div>
+                                  <button 
+                                    onClick={() => {
+                                      setLastGlobalSearchQuery(globalSearchQuery);
+                                      setHackathonsSelectedItemId(item.id);
+                                      setLibrariesActiveTab('hackathons');
+                                      setActiveTab('libraries');
+                                      setGlobalSearchQuery('');
+                                      
+                                      window.scrollTo({ top: 0, behavior: 'auto' as any });
+                                      setTimeout(() => {
+                                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                                        const el = document.getElementById('section-libraries');
+                                        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                      }, 150);
+                                    }}
+                                    className="w-full py-1.5 bg-orange-500/10 hover:bg-orange-500/20 border border-orange-500/30 text-orange-500 text-[10px] font-mono font-bold uppercase tracking-wider transition-all rounded-none cursor-pointer text-center block"
+                                  >
+                                    Inspect Event &rarr;
+                                  </button>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Matching YouTube Channels & Teachers */}
+                        {globalSearchResults.teachers.length > 0 && (
+                          <div className="space-y-3 pt-4 border-t border-gray-800/20">
+                            <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-red-500 border-b border-red-500/20 pb-1 flex items-center gap-2">
+                              🎥 YouTube Study Channels & Teachers ({globalSearchResults.teachers.length})
+                            </h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                              {globalSearchResults.teachers.slice(0, 3).map(teacher => (
+                                <div 
+                                  key={teacher.name}
+                                  className={`border-2 p-4 flex flex-col justify-between rounded-none transition-all duration-300 hover:translate-y-[-2px] ${
+                                    theme === 'light'
+                                      ? 'bg-slate-50 border-gray-200 hover:border-red-500 text-slate-800'
+                                      : 'bg-[#0a101f] border-[#1e2e54] hover:border-[#ef4444] text-white'
+                                  }`}
+                                >
+                                  <div>
+                                    <div className="flex items-center gap-1.5 mb-2">
+                                      <Video className="w-4 h-4 text-red-500 shrink-0" />
+                                      <span className="text-[10px] font-mono text-red-500 uppercase font-bold tracking-wider">YouTube Instructor</span>
+                                    </div>
+                                    <h4 className="font-mono font-bold text-xs tracking-tight uppercase truncate" title={teacher.name}>{teacher.name}</h4>
+                                    <p className="text-[9px] text-gray-500 font-mono mb-2">Specialty: {teacher.skillArea}</p>
+                                    {teacher.reason && (
+                                      <p className="text-[11px] text-gray-400 leading-relaxed line-clamp-3 mb-4">{teacher.reason}</p>
+                                    )}
+                                  </div>
+                                  <a 
+                                    href={teacher.url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="w-full py-1.5 bg-red-500/10 hover:bg-red-500/20 border border-red-500/30 text-red-400 text-[10px] font-mono font-bold uppercase tracking-wider transition-all rounded-none cursor-pointer text-center block"
+                                  >
+                                    Visit Channel &rarr;
+                                  </a>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Matching Certifications */}
+                        {globalSearchResults.certs.length > 0 && (
+                          <div className="space-y-3 pt-4 border-t border-gray-800/20">
+                            <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-amber-500 border-b border-amber-500/20 pb-1 flex items-center gap-2">
+                              🎓 Matching Industry Certifications ({globalSearchResults.certs.length})
+                            </h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                              {globalSearchResults.certs.slice(0, 3).map(cert => (
                                 <div 
                                   key={cert.id}
                                   className={`border-2 p-4 flex flex-col justify-between rounded-none transition-all duration-300 hover:translate-y-[-2px] ${
@@ -2189,8 +2326,8 @@ export default function App() {
                                 >
                                   <div>
                                     <div className="flex items-center gap-1.5 mb-2">
-                                      <Award className="w-4 h-4 text-amber-400 shrink-0" />
-                                      <span className="text-[10px] font-mono text-amber-400 uppercase font-bold tracking-wider">Certification</span>
+                                      <Award className="w-4 h-4 text-amber-500 shrink-0" />
+                                      <span className="text-[10px] font-mono text-amber-500 uppercase font-bold tracking-wider">Certification</span>
                                     </div>
                                     <h4 className="font-mono font-bold text-xs tracking-tight uppercase truncate" title={cert.name}>{cert.name}</h4>
                                     <p className="text-[9px] text-gray-500 font-mono mb-2">Provider: {cert.provider} | Level: {cert.difficulty}</p>
@@ -2206,21 +2343,30 @@ export default function App() {
                                   </a>
                                 </div>
                               ))}
+                            </div>
+                          </div>
+                        )}
 
-                              {/* Books matches (up to 2) */}
-                              {globalSearchResults.books.slice(0, 2).map(book => (
+                        {/* Matching Books */}
+                        {globalSearchResults.books.length > 0 && (
+                          <div className="space-y-3 pt-4 border-t border-gray-800/20">
+                            <h3 className="text-sm font-mono font-bold uppercase tracking-wider text-[#8b4513] dark:text-[#d2691e] border-b border-[#8b4513]/20 pb-1 flex items-center gap-2">
+                              📖 Matching Edtech Bookshelf ({globalSearchResults.books.length})
+                            </h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                              {globalSearchResults.books.slice(0, 3).map(book => (
                                 <div 
                                   key={book.title}
                                   className={`border-2 p-4 flex flex-col justify-between rounded-none transition-all duration-300 hover:translate-y-[-2px] ${
                                     theme === 'light'
-                                      ? 'bg-slate-50 border-gray-200 hover:border-cyan-500 text-slate-800'
-                                      : 'bg-[#0a101f] border-[#1e2e54] hover:border-cyan-500 text-white'
+                                      ? 'bg-slate-50 border-gray-200 hover:border-[#8b4513] text-slate-800'
+                                      : 'bg-[#0a101f] border-[#1e2e54] hover:border-[#d2691e] text-white'
                                   }`}
                                 >
                                   <div>
                                     <div className="flex items-center gap-1.5 mb-2">
-                                      <BookOpen className="w-4 h-4 text-cyan-400 shrink-0" />
-                                      <span className="text-[10px] font-mono text-cyan-400 uppercase font-bold tracking-wider">Recommended Book</span>
+                                      <BookOpen className="w-4 h-4 text-[#8b4513] dark:text-[#d2691e] shrink-0" />
+                                      <span className="text-[10px] font-mono text-[#8b4513] dark:text-[#d2691e] uppercase font-bold tracking-wider">Recommended Book</span>
                                     </div>
                                     <h4 className="font-mono font-bold text-xs tracking-tight uppercase truncate" title={book.title}>{book.title}</h4>
                                     <p className="text-[9px] text-gray-500 font-mono mb-2">Author: {book.author}</p>
@@ -2230,74 +2376,42 @@ export default function App() {
                                     href={book.url}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="w-full py-1.5 bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-400 text-[10px] font-mono font-bold uppercase tracking-wider transition-all rounded-none cursor-pointer text-center block"
+                                    className="w-full py-1.5 bg-[#8b4513]/10 hover:bg-[#8b4513]/20 border border-[#8b4513]/30 text-[#8b4513] dark:text-[#d2691e] text-[10px] font-mono font-bold uppercase tracking-wider transition-all rounded-none cursor-pointer text-center block"
                                   >
                                     Explore Book &rarr;
                                   </a>
                                 </div>
                               ))}
-
-                              {/* Teachers matches (up to 2) */}
-                              {globalSearchResults.teachers.slice(0, 2).map(teacher => (
-                                <div 
-                                  key={teacher.name}
-                                  className={`border-2 p-4 flex flex-col justify-between rounded-none transition-all duration-300 hover:translate-y-[-2px] ${
-                                    theme === 'light'
-                                      ? 'bg-slate-50 border-gray-200 hover:border-emerald-500 text-slate-800'
-                                      : 'bg-[#0a101f] border-[#1e2e54] hover:border-[#10b981] text-white'
-                                  }`}
-                                >
-                                  <div>
-                                    <div className="flex items-center gap-1.5 mb-2">
-                                      <Video className="w-4 h-4 text-emerald-400 shrink-0" />
-                                      <span className="text-[10px] font-mono text-emerald-400 uppercase font-bold tracking-wider">YouTube Instructor</span>
-                                    </div>
-                                    <h4 className="font-mono font-bold text-xs tracking-tight uppercase truncate" title={teacher.name}>{teacher.name}</h4>
-                                    <p className="text-[9px] text-gray-500 font-mono mb-2">Specialty: {teacher.skillArea}</p>
-                                    {teacher.reason && (
-                                      <p className="text-[11px] text-gray-400 leading-relaxed line-clamp-3 mb-4">{teacher.reason}</p>
-                                    )}
-                                  </div>
-                                  <a 
-                                    href={teacher.url}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="w-full py-1.5 bg-emerald-500/10 hover:bg-emerald-500/20 border border-[#10b981]/30 text-[#10b981] text-[10px] font-mono font-bold uppercase tracking-wider transition-all rounded-none cursor-pointer text-center block"
-                                  >
-                                    Visit Channel &rarr;
-                                  </a>
-                                </div>
-                              ))}
-                            </div>
-
-                            {/* Option to explore more and use the resync engine */}
-                            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 border border-[#1e2e54]/30 bg-[#0c1328]/30 mt-4 rounded-none">
-                              <div className="text-xs text-gray-400 font-mono">
-                                Want custom recommendations or more guides? Visit our Resources and use the Google-grounded **Live Search Sync** engine!
-                              </div>
-                              <button
-                                onClick={() => {
-                                  setLastGlobalSearchQuery(globalSearchQuery);
-                                  setLibrariesQuery(globalSearchQuery);
-                                  setYoutubeSearchQuery(globalSearchQuery);
-                                  setActiveTab('libraries');
-                                  setGlobalSearchQuery('');
-                                  
-                                  window.scrollTo({ top: 0, behavior: 'auto' as any });
-                                  setTimeout(() => {
-                                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                                    const el = document.getElementById('section-libraries');
-                                    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                                  }, 150);
-                                }}
-                                className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-mono font-bold uppercase tracking-wider transition-all rounded-none cursor-pointer flex items-center gap-1.5 shrink-0 shadow-[3px_3px_0px_#121c38]"
-                              >
-                                <RefreshCw className="w-3.5 h-3.5 animate-spin" />
-                                Explore Resources & Sync &rarr;
-                              </button>
                             </div>
                           </div>
                         )}
+
+                        {/* Option to explore more and use the resync engine */}
+                        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 border border-[#1e2e54]/30 bg-[#0c1328]/30 mt-4 rounded-none">
+                          <div className="text-xs text-gray-400 font-mono">
+                            Want custom recommendations or more guides? Visit our Resources and use the Google-grounded **Live Search Sync** engine!
+                          </div>
+                          <button
+                            onClick={() => {
+                              setLastGlobalSearchQuery(globalSearchQuery);
+                              setLibrariesQuery(globalSearchQuery);
+                              setYoutubeSearchQuery(globalSearchQuery);
+                              setActiveTab('libraries');
+                              setGlobalSearchQuery('');
+                              
+                              window.scrollTo({ top: 0, behavior: 'auto' as any });
+                              setTimeout(() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                                const el = document.getElementById('section-libraries');
+                                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                              }, 150);
+                            }}
+                            className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-mono font-bold uppercase tracking-wider transition-all rounded-none cursor-pointer flex items-center gap-1.5 shrink-0 shadow-[3px_3px_0px_#121c38]"
+                          >
+                            <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                            Explore Resources & Sync &rarr;
+                          </button>
+                        </div>
                       </div>
                     )}
                   </div>
@@ -2641,48 +2755,6 @@ export default function App() {
 
               return (
                 <>
-                  <div className="bg-[#070b13] border-2 border-yellow-500/70 p-5 relative overflow-hidden shadow-[4px_4px_0px_0px_#121c38] flex flex-col md:flex-row md:items-center justify-between gap-4">
-                    <div className="space-y-1.5">
-                      <h3 className="text-xl font-mono text-white font-bold select-none flex items-center gap-2">
-                        ⭐ BOOKMARKS & PATHWAYS ({bookmarks.length + savedPathways.length})
-                      </h3>
-                    </div>
-                    {(bookmarks.length > 0 || savedPathways.length > 0) && (
-                      <div className="flex gap-2">
-                        {isConfirmingClear ? (
-                          <>
-                            <button
-                              onClick={() => {
-                                setBookmarks([]);
-                                setSavedPathways([]);
-                                localStorage.setItem('mapit_bookmarks_v3', JSON.stringify([]));
-                                localStorage.setItem('mapit_saved_roles', JSON.stringify([]));
-                                localStorage.setItem('mapit_saved_pathways_v3', JSON.stringify([]));
-                                setIsConfirmingClear(false);
-                              }}
-                              className="px-3 py-1.5 text-xs font-mono bg-red-600 hover:bg-red-500 text-white font-bold transition cursor-pointer flex items-center gap-1.5"
-                            >
-                              <Trash2 className="w-3.5 h-3.5" /> [YES, CLEAR ALL]
-                            </button>
-                            <button
-                              onClick={() => setIsConfirmingClear(false)}
-                              className="px-3 py-1.5 text-xs font-mono bg-slate-800 hover:bg-slate-700 text-gray-300 border border-slate-700 transition cursor-pointer"
-                            >
-                              [CANCEL]
-                            </button>
-                          </>
-                        ) : (
-                          <button
-                            onClick={() => setIsConfirmingClear(true)}
-                            className="px-3 py-1.5 text-xs font-mono bg-red-950/30 text-red-400 border border-red-900/50 hover:bg-red-900/20 active:bg-red-950/50 transition cursor-pointer flex items-center gap-1.5 self-start md:self-center bg-black/40"
-                          >
-                            <Trash2 className="w-3.5 h-3.5 text-red-500" /> [Clear All]
-                          </button>
-                        )}
-                      </div>
-                    )}
-                  </div>
-
                   {bookmarks.length === 0 && savedPathways.length === 0 ? (
                     <div className="border-2 border-dashed border-[#121c38] bg-[#070b13] py-16 px-12 text-center rounded-none font-mono space-y-4 min-h-[224px] flex flex-col items-center justify-center">
                       <p className="text-gray-400 text-sm">No bookmarks or saved pathways found.</p>
@@ -3158,6 +3230,13 @@ export default function App() {
           </section>
         </div>
 
+        {/* HR CONTACTS VIEW */}
+        <div id="section-hr-contacts" className={activeTab === 'hr-contacts' ? 'block' : 'hidden'}>
+          <section className="fade-in space-y-6">
+            <HRContacts theme={theme} />
+          </section>
+        </div>
+
               </>
             )}
             </motion.div>
@@ -3166,7 +3245,7 @@ export default function App() {
 
         <footer className="w-full max-w-full px-4 sm:px-6 md:px-8 border-t border-[#121c38]/40 pt-6 pb-24 md:pb-12 mt-12 text-center text-xs font-mono text-gray-600">
           <p className="leading-relaxed">
-            MapIT Labs - Career Roadmaps and Study Decks Sandbox.
+            MapIT 2026
           </p>
         </footer>
 

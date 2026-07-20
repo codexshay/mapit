@@ -540,6 +540,7 @@ export default function Hackathons({
 
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [showAllHackathons, setShowAllHackathons] = useState<boolean>(false);
+  const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -828,17 +829,32 @@ export default function Hackathons({
   return (
     <div className="space-y-6 animate-fade-in">
       
+      {/* Collapsible Mobile Preferences Button */}
+      <div className="flex items-center justify-between lg:hidden p-3 border-2 border-red-500/20 bg-red-950/5 font-mono text-xs">
+        <div className="flex items-center gap-1.5 text-slate-400">
+          <Filter className="w-3.5 h-3.5 text-red-500" />
+          <span className="font-bold text-white uppercase text-[10px]">Filter Options</span>
+        </div>
+        <button 
+          type="button"
+          onClick={() => setIsMobileFiltersOpen(!isMobileFiltersOpen)}
+          className="flex items-center gap-1.5 px-3 py-1.5 border-2 border-red-500 bg-red-500/10 hover:bg-red-500/20 text-red-500 font-bold uppercase transition cursor-pointer select-none"
+        >
+          <span>Preferences {isMobileFiltersOpen ? '▲' : '▼'}</span>
+        </button>
+      </div>
+
       {/* 3. FILTERS BAR */}
-      <div className={`border-2 p-4 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 font-mono text-xs ${isLight ? 'bg-white border-gray-200 text-slate-800 shadow-[3px_3px_0px_0px_#cbd5e1]' : 'bg-[#070b14] border-[#121c38] text-white shadow-[3px_3px_0px_#121c38]'}`}>
+      <div className={`${isMobile ? (isMobileFiltersOpen ? 'flex flex-col' : 'hidden') : 'flex flex-col lg:flex-row'} border-2 p-4 items-stretch lg:items-center justify-between gap-4 font-mono text-xs ${isLight ? 'bg-white border-gray-200 text-slate-800 shadow-[3px_3px_0px_0px_#cbd5e1]' : 'bg-[#070b14] border-[#121c38] text-white shadow-[3px_3px_0px_#121c38]'}`}>
         
         <div className="flex flex-wrap items-center gap-3">
-          <span className={`font-bold flex items-center gap-1 uppercase mr-1 ${isLight ? 'text-slate-900 font-extrabold' : 'text-white'}`}>
+          <span className={`font-bold flex items-center gap-1 uppercase mr-1 hidden lg:flex ${isLight ? 'text-slate-900 font-extrabold' : 'text-white'}`}>
             <Filter className="w-3.5 h-3.5 text-red-500" />
           </span>
 
           {/* Region selector */}
           <div className={`flex items-center gap-1 border px-2 py-1 ${isLight ? 'bg-gray-50 border-gray-200 text-slate-800' : 'bg-[#050912] border-[#121c38]'}`}>
-            <span className="text-gray-500 text-[10px] uppercase">REGION/COUNTRY:</span>
+            <span className="text-gray-500 text-[10px] uppercase font-bold">REGION:</span>
             <select 
               value={regionFilter} 
               onChange={(e) => setRegionFilter(e.target.value)}
@@ -921,7 +937,7 @@ export default function Hackathons({
       </div>
 
       {/* 4. MAIN LAYOUT: MASTER LIST AND DETAIL CARD VIEW */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+      <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-5 items-stretch">
         
         {/* Left list: Master list of matches */}
         <div className="lg:col-span-5 flex flex-col gap-2 max-h-[550px] overflow-y-auto pr-1">
