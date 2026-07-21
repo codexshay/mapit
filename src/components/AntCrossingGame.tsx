@@ -254,8 +254,11 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
     });
   };
 
+  const isProcessingEventRef = useRef<boolean>(false);
+
   // Reset Ant player starting location in compact view
   const resetAntPosition = () => {
+    isProcessingEventRef.current = false;
     antRef.current.x = 400;
     antRef.current.y = 190;
     antRef.current.isMoving = false;
@@ -379,9 +382,9 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
       ctx.lineTo(800, 176);
       ctx.stroke();
 
-      ctx.font = '8px monospace';
+      ctx.font = '12px monospace';
       ctx.fillStyle = isLightTheme ? '#047857' : '#10b981';
-      ctx.fillText('⚡ BASE_STATION // DEPLOYMENT_PAD', 12, 210);
+      ctx.fillText('⚡', 12, 210);
 
       // Draw safe top arrival zone (y = 0 to 40)
       ctx.fillStyle = isLightTheme ? 'rgba(168, 85, 247, 0.1)' : 'rgba(88, 28, 135, 0.15)';
@@ -585,16 +588,12 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
       // Draw cyber vehicles
       lanesRef.current.forEach((lane) => {
         lane.vehicles.forEach((vehicle) => {
-          ctx.shadowBlur = 4;
-          ctx.shadowColor = vehicle.color;
-
           ctx.fillStyle = vehicle.color;
           ctx.fillRect(vehicle.x, lane.y + 4, vehicle.width, lane.height - 8);
 
           ctx.fillStyle = '#ffffff';
           ctx.fillRect(vehicle.x, lane.y + 6, 3, lane.height - 12);
 
-          ctx.shadowBlur = 0;
           ctx.fillStyle = '#000000';
           ctx.font = 'bold 7px monospace';
           ctx.fillText(vehicle.label, vehicle.x + 4, lane.y + 21);
@@ -604,9 +603,6 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
       // Draw security segway if active
       const segway = segwayRef.current;
       if (segway.active) {
-        ctx.shadowBlur = 8;
-        ctx.shadowColor = '#f43f5e';
-
         // Draw warning siren/flashing lights on the footpath
         ctx.fillStyle = 'rgba(244, 63, 94, 0.12)';
         ctx.fillRect(0, 0, 800, 40);
@@ -651,8 +647,6 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
         ctx.arc(segway.x + 14, segway.y, 2, 0, Math.PI * 2);
         ctx.fill();
 
-        ctx.shadowBlur = 0;
-
         // Overlay Text Warning Alert
         ctx.fillStyle = '#f43f5e';
         ctx.font = 'bold 7.5px monospace';
@@ -662,9 +656,6 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
       // Draw second security segway (bottom road) if active
       const bottomSegway = bottomSegwayRef.current;
       if (bottomSegway.active) {
-        ctx.shadowBlur = 8;
-        ctx.shadowColor = '#eb5e28';
-
         // Draw warning siren/flashing lights on the starting area road
         ctx.fillStyle = 'rgba(235, 94, 40, 0.12)';
         ctx.fillRect(0, 176, 800, 44);
@@ -709,8 +700,6 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
         ctx.arc(bottomSegway.x + 14, bottomSegway.y, 2, 0, Math.PI * 2);
         ctx.fill();
 
-        ctx.shadowBlur = 0;
-
         // Overlay Text Warning Alert
         ctx.fillStyle = '#eb5e28';
         ctx.font = 'bold 7.5px monospace';
@@ -721,9 +710,6 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
       ant.glowTicks++;
       const antX = ant.x;
       const antY = ant.y;
-
-      ctx.shadowBlur = 6;
-      ctx.shadowColor = '#06b6d4';
 
       ctx.fillStyle = '#06b6d4'; 
       ctx.strokeStyle = '#22d3ee';
@@ -780,8 +766,6 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
       ctx.moveTo(antX + ant.width / 2 + 1, antY + 1.5);
       ctx.quadraticCurveTo(antX + ant.width / 2 + 4, antY - 2, antX + ant.width / 2 + 5, antY - 4);
       ctx.stroke();
-
-      ctx.shadowBlur = 0;
 
       // Collisions evaluation
       if (isPlaying && gameResult === 'idle') {
@@ -841,6 +825,9 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
 
   // Collisions / Respawn
   const handleAntDeath = () => {
+    if (isProcessingEventRef.current) return;
+    isProcessingEventRef.current = true;
+
     playSound('crash');
     setGameResult('collided');
     setLives((prev) => {
@@ -862,6 +849,9 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
 
   // Uplink Level Victory logic up to Level 10 max
   const handleUplinkSuccess = () => {
+    if (isProcessingEventRef.current) return;
+    isProcessingEventRef.current = true;
+
     playSound('win');
     
     setScore((prev) => {

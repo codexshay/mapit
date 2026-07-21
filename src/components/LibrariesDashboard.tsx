@@ -1679,19 +1679,23 @@ export default function LibrariesDashboard({
     const ytSamples: string[] = [];
     if (Array.isArray(TEACHERS_DIRECTORY)) {
       for (const cat of TEACHERS_DIRECTORY) {
-        if (cat.name.toLowerCase().includes(searchLower)) {
+        if (cat && cat.name && cat.name.toLowerCase().includes(searchLower)) {
           ytCount++;
           if (ytSamples.length < 2) ytSamples.push(cat.name);
         }
-        for (const sub of cat.subcategories) {
-          if (sub.skillArea.toLowerCase().includes(searchLower)) {
-            ytCount++;
-            if (ytSamples.length < 2) ytSamples.push(sub.skillArea);
-          }
-          for (const t of sub.teachers) {
-            if (t.name.toLowerCase().includes(searchLower)) {
+        if (cat && Array.isArray(cat.subcategories)) {
+          for (const sub of cat.subcategories) {
+            if (sub && sub.skillArea && sub.skillArea.toLowerCase().includes(searchLower)) {
               ytCount++;
-              if (ytSamples.length < 2 && !ytSamples.includes(t.name)) ytSamples.push(t.name);
+              if (ytSamples.length < 2) ytSamples.push(sub.skillArea);
+            }
+            if (sub && Array.isArray(sub.teachers)) {
+              for (const t of sub.teachers) {
+                if (t && t.name && t.name.toLowerCase().includes(searchLower)) {
+                  ytCount++;
+                  if (ytSamples.length < 2 && !ytSamples.includes(t.name)) ytSamples.push(t.name);
+                }
+              }
             }
           }
         }
@@ -1711,17 +1715,18 @@ export default function LibrariesDashboard({
     const hackSamples: string[] = [];
     const allHackathons = [...(GLOBAL_HACKATHONS || []), ...(GLOBAL_FESTS || [])];
     for (const item of allHackathons) {
+      if (!item) continue;
       const matchesSearch = 
-        item.title.toLowerCase().includes(searchLower) ||
-        item.organizer.toLowerCase().includes(searchLower) ||
-        item.description.toLowerCase().includes(searchLower) ||
-        item.prizes.toLowerCase().includes(searchLower) ||
-        (Array.isArray(item.themes) && item.themes.some(t => t.toLowerCase().includes(searchLower))) ||
+        (item.title && item.title.toLowerCase().includes(searchLower)) ||
+        (item.organizer && item.organizer.toLowerCase().includes(searchLower)) ||
+        (item.description && item.description.toLowerCase().includes(searchLower)) ||
+        (item.prizes && item.prizes.toLowerCase().includes(searchLower)) ||
+        (Array.isArray(item.themes) && item.themes.some(t => t && t.toLowerCase().includes(searchLower))) ||
         (item.category && item.category.toLowerCase().includes(searchLower));
 
       if (matchesSearch) {
         hackCount++;
-        if (hackSamples.length < 2) hackSamples.push(item.title);
+        if (hackSamples.length < 2 && item.title) hackSamples.push(item.title);
       }
     }
     if (hackCount > 0) {
@@ -1738,15 +1743,16 @@ export default function LibrariesDashboard({
     const channelSamples: string[] = [];
     if (Array.isArray(LEARNING_CHANNELS)) {
       for (const ch of LEARNING_CHANNELS) {
+        if (!ch) continue;
         const matchesSearch = 
-          ch.name.toLowerCase().includes(searchLower) ||
-          ch.description.toLowerCase().includes(searchLower) ||
-          ch.category.toLowerCase().includes(searchLower) ||
-          (Array.isArray(ch.badges) && ch.badges.some(t => t.toLowerCase().includes(searchLower)));
+          (ch.name && ch.name.toLowerCase().includes(searchLower)) ||
+          (ch.description && ch.description.toLowerCase().includes(searchLower)) ||
+          (ch.category && ch.category.toLowerCase().includes(searchLower)) ||
+          (Array.isArray(ch.badges) && ch.badges.some(t => t && t.toLowerCase().includes(searchLower)));
 
         if (matchesSearch) {
           channelCount++;
-          if (channelSamples.length < 2) channelSamples.push(ch.name);
+          if (channelSamples.length < 2 && ch.name) channelSamples.push(ch.name);
         }
       }
     }
@@ -1764,14 +1770,18 @@ export default function LibrariesDashboard({
     const toolsSamples: string[] = [];
     if (Array.isArray(ROLE_FAMILY_MAPS)) {
       for (const rf of ROLE_FAMILY_MAPS) {
+        if (!rf) continue;
         const matchesSearch = 
-          rf.name.toLowerCase().includes(searchLower) ||
-          (Array.isArray(rf.roles) && rf.roles.some(r => r.toLowerCase().includes(searchLower))) ||
-          (Array.isArray(rf.groups) && rf.groups.some(g => g.name.toLowerCase().includes(searchLower) || g.skills.toLowerCase().includes(searchLower)));
+          (rf.name && rf.name.toLowerCase().includes(searchLower)) ||
+          (Array.isArray(rf.roles) && rf.roles.some(r => r && r.toLowerCase().includes(searchLower))) ||
+          (Array.isArray(rf.groups) && rf.groups.some(g => 
+            (g.name && g.name.toLowerCase().includes(searchLower)) || 
+            (g.skills && g.skills.toLowerCase().includes(searchLower))
+          ));
 
         if (matchesSearch) {
           toolsCount++;
-          if (toolsSamples.length < 2) toolsSamples.push(rf.name);
+          if (toolsSamples.length < 2 && rf.name) toolsSamples.push(rf.name);
         }
       }
     }
@@ -1788,16 +1798,20 @@ export default function LibrariesDashboard({
     let certCount = 0;
     const certSamples: string[] = [];
     if (Array.isArray(certifications)) {
-      for (const cert of certifications) {
+      for (const certItem of certifications) {
+        if (!certItem) continue;
+        const cert = certItem as any;
         const matchesSearch = 
-          cert.name.toLowerCase().includes(searchLower) ||
-          cert.provider.toLowerCase().includes(searchLower) ||
-          (Array.isArray(cert.skillsMeasured) && cert.skillsMeasured.some(s => s.toLowerCase().includes(searchLower))) ||
-          cert.focusTrack.toLowerCase().includes(searchLower);
+          (cert.name && cert.name.toLowerCase().includes(searchLower)) ||
+          (cert.provider && cert.provider.toLowerCase().includes(searchLower)) ||
+          (Array.isArray(cert.skillsMeasured) && cert.skillsMeasured.some((s: string) => s && s.toLowerCase().includes(searchLower))) ||
+          (cert.focusTrack && cert.focusTrack.toLowerCase().includes(searchLower)) ||
+          (cert.difficulty && cert.difficulty.toLowerCase().includes(searchLower)) ||
+          (cert.description && cert.description.toLowerCase().includes(searchLower));
 
         if (matchesSearch) {
           certCount++;
-          if (certSamples.length < 2) certSamples.push(cert.name);
+          if (certSamples.length < 2 && cert.name) certSamples.push(cert.name);
         }
       }
     }
@@ -1814,18 +1828,21 @@ export default function LibrariesDashboard({
     let bookCount = 0;
     const bookSamples: string[] = [];
     if (Array.isArray(books)) {
-      for (const bk of books) {
+      for (const bkItem of books) {
+        if (!bkItem) continue;
+        const bk = bkItem as any;
         const matchesSearch = 
-          bk.title.toLowerCase().includes(searchLower) ||
-          bk.author.toLowerCase().includes(searchLower) ||
-          bk.department.toLowerCase().includes(searchLower) ||
-          (Array.isArray(bk.recommendedFor) && bk.recommendedFor.some(r => r.toLowerCase().includes(searchLower))) ||
-          (Array.isArray(bk.syllabiAligned) && bk.syllabiAligned.some(s => s.toLowerCase().includes(searchLower))) ||
-          bk.whyRecommended.toLowerCase().includes(searchLower);
+          (bk.title && bk.title.toLowerCase().includes(searchLower)) ||
+          (bk.author && bk.author.toLowerCase().includes(searchLower)) ||
+          (bk.department && bk.department.toLowerCase().includes(searchLower)) ||
+          (Array.isArray(bk.recommendedFor) && bk.recommendedFor.some((r: string) => r && r.toLowerCase().includes(searchLower))) ||
+          (Array.isArray(bk.syllabiAligned) && bk.syllabiAligned.some((s: string) => s && s.toLowerCase().includes(searchLower))) ||
+          (bk.whyRecommended && bk.whyRecommended.toLowerCase().includes(searchLower)) ||
+          (bk.description && bk.description.toLowerCase().includes(searchLower));
 
         if (matchesSearch) {
           bookCount++;
-          if (bookSamples.length < 2) bookSamples.push(bk.title);
+          if (bookSamples.length < 2 && bk.title) bookSamples.push(bk.title);
         }
       }
     }
@@ -1869,6 +1886,52 @@ export default function LibrariesDashboard({
   }, []);
 
   React.useEffect(() => {
+    // Preload server-cached certifications and books permanently synced
+    const preloadServerCache = async () => {
+      try {
+        const res = await fetch('/api/resources/get-cached-resources');
+        if (res.ok) {
+          const data = await res.json();
+          if (data.certifications && Array.isArray(data.certifications) && data.certifications.length > 0) {
+            setCertifications(prev => {
+              const merged = [...data.certifications];
+              CERTIFICATIONS_LIBRARY.forEach(c => {
+                if (!merged.some(item => item.id === c.id)) {
+                  merged.push(c);
+                }
+              });
+              try {
+                localStorage.setItem('pathfinder_synced_certifications', JSON.stringify(merged));
+              } catch (e) {
+                console.error(e);
+              }
+              return merged;
+            });
+          }
+          if (data.books && Array.isArray(data.books) && data.books.length > 0) {
+            setBooks(prev => {
+              const merged = [...data.books];
+              RECOMMENDED_BOOKS.forEach(b => {
+                if (!merged.some(item => item.title.toLowerCase() === b.title.toLowerCase())) {
+                  merged.push(b);
+                }
+              });
+              try {
+                localStorage.setItem('pathfinder_synced_books', JSON.stringify(merged));
+              } catch (e) {
+                console.error(e);
+              }
+              return merged;
+            });
+          }
+        }
+      } catch (err) {
+        console.warn("Could not load cached resources from server:", err);
+      }
+    };
+
+    preloadServerCache();
+
     // Dynamic synchronization from other tabs / sessions
     try {
       const storedCerts = localStorage.getItem('pathfinder_synced_certifications');
@@ -1966,10 +2029,10 @@ export default function LibrariesDashboard({
         });
       }
 
-      if (data.books && data.books.length > 0) {
-        const existingTitles = new Set(books.map(b => b.title.toLowerCase()));
+      if (data.books && Array.isArray(data.books) && data.books.length > 0) {
+        const existingTitles = new Set(books.filter(b => b && b.title).map(b => b.title.toLowerCase()));
         data.books.forEach((b: any) => {
-          if (!existingTitles.has(b.title.toLowerCase())) {
+          if (b && b.title && !existingTitles.has(b.title.toLowerCase())) {
             newlyAddedBooksCount++;
             newlyAddedBookTitlesList.push(b.title.toLowerCase());
           }
@@ -1978,7 +2041,8 @@ export default function LibrariesDashboard({
         setBooks(prev => {
           const merged = [...prev];
           data.books.forEach((newBook: any) => {
-            const idx = merged.findIndex(b => b.title.toLowerCase() === newBook.title.toLowerCase());
+            if (!newBook || !newBook.title) return;
+            const idx = merged.findIndex(b => b && b.title && b.title.toLowerCase() === newBook.title.toLowerCase());
             if (idx > -1) {
               merged[idx] = { ...merged[idx], ...newBook };
             } else {
@@ -2176,157 +2240,164 @@ export default function LibrariesDashboard({
             </button>
           </div>
 
-          {redirectionMatch.type === 'certification' ? (
-            <div>
-              <div className="flex flex-wrap items-center gap-2 mb-2">
-                <span className="px-2 py-0.5 text-[9px] font-mono font-bold uppercase bg-emerald-500 text-white rounded-none">
-                  {redirectionMatch.data.provider}
-                </span>
-                <span className="px-2 py-0.5 text-[9px] font-mono font-bold uppercase bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-none">
-                  Level: {redirectionMatch.data.difficulty}
-                </span>
-              </div>
-              
-              <h4 className="text-lg font-mono font-bold text-emerald-600 dark:text-emerald-400 mb-1.5 uppercase">
-                {redirectionMatch.data.name}
-              </h4>
-              
-              <p className="text-xs leading-relaxed opacity-95 mb-4 max-w-4xl">
-                {redirectionMatch.data.description}
-              </p>
-
-              <div className="p-3 bg-black/10 dark:bg-white/5 border border-emerald-500/25 mb-4 text-xs font-mono">
-                <span className="text-emerald-500 font-bold block mb-1 uppercase tracking-wider text-[10px]">💰 ESTIMATE EXAM BUDGET:</span>
-                <span className="opacity-80">{redirectionMatch.data.costRange}</span>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="flex flex-wrap gap-2.5">
-                <a 
-                  href={redirectionMatch.data.officialLink}
-                  target="_blank" 
-                  rel="noreferrer"
-                  referrerPolicy="no-referrer"
-                  className="px-3.5 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono uppercase font-bold tracking-wider hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer flex items-center gap-1.5"
-                >
-                  <ExternalLink className="w-3.5 h-3.5" />
-                  Official Cert Site
-                </a>
-
-                {redirectionMatch.data.freeYouTubeLink && (
-                  <a 
-                    href={redirectionMatch.data.freeYouTubeLink}
-                    target="_blank" 
-                    rel="noreferrer"
-                    referrerPolicy="no-referrer"
-                    className="px-3.5 py-1.5 bg-red-600 hover:bg-red-500 text-white text-xs font-mono uppercase font-bold tracking-wider hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer flex items-center gap-1.5"
-                  >
-                    <Youtube className="w-3.5 h-3.5" />
-                    YouTube Course Playlists
-                  </a>
-                )}
-
-                <button 
-                  onClick={() => toggleBookmark?.({ id: redirectionMatch.data.id, name: redirectionMatch.data.name, type: 'cert' })}
-                  className={`px-3.5 py-1.5 border uppercase text-xs font-mono font-bold tracking-wider cursor-pointer flex items-center gap-1.5 ${
-                    isBookmarked?.(redirectionMatch.data.id, 'cert')
-                      ? 'bg-yellow-500/10 border-yellow-500 text-yellow-500'
-                      : 'border-slate-400 text-slate-600 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-slate-800'
-                  }`}
-                >
-                  <CustomBookmarkIcon isMatched={isBookmarked?.(redirectionMatch.data.id, 'cert')} />
-                  {isBookmarked?.(redirectionMatch.data.id, 'cert') ? 'Saved!' : 'Save Cert'}
-                </button>
-              </div>
-            </div>
-          ) : (
-            <div>
-              <div className="flex flex-wrap items-center gap-2 mb-2">
-                <span className="px-2 py-0.5 text-[9px] font-mono font-bold uppercase bg-red-500 text-white rounded-none">
-                  {redirectionMatch.data.emoji} {redirectionMatch.data.categoryName}
-                </span>
-                <span className="px-2 py-0.5 text-[9px] font-mono font-bold uppercase bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-none">
-                  Core Area
-                </span>
-              </div>
-
-              <h4 className="text-lg font-mono font-bold text-emerald-600 dark:text-emerald-400 mb-1.5 uppercase">
-                YouTube Teacher Topic: {redirectionMatch.data.skillArea}
-              </h4>
-
-              {redirectionMatch.data.matchedTeacher && (
-                <div className="p-3.5 bg-red-500/5 border border-red-500/25 mb-4 rounded-sm">
-                  <span className="text-red-500 font-bold block mb-1 text-[10px] font-mono uppercase tracking-wider">📺 REDIRECTED TEACHER CHANNEL:</span>
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-mono">
-                    <span className="text-sm font-bold text-slate-800 dark:text-white">
-                      {redirectionMatch.data.matchedTeacher.name}
+          {(() => {
+            const rData = redirectionMatch.data as any;
+            if (redirectionMatch.type === 'certification') {
+              return (
+                <div>
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <span className="px-2 py-0.5 text-[9px] font-mono font-bold uppercase bg-emerald-500 text-white rounded-none">
+                      {rData.provider}
                     </span>
-                    <div className="flex flex-wrap gap-2">
+                    <span className="px-2 py-0.5 text-[9px] font-mono font-bold uppercase bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-none">
+                      Level: {rData.difficulty}
+                    </span>
+                  </div>
+                  
+                  <h4 className="text-lg font-mono font-bold text-emerald-600 dark:text-emerald-400 mb-1.5 uppercase">
+                    {rData.name}
+                  </h4>
+                  
+                  <p className="text-xs leading-relaxed opacity-95 mb-4 max-w-4xl">
+                    {rData.description}
+                  </p>
+
+                  <div className="p-3 bg-black/10 dark:bg-white/5 border border-emerald-500/25 mb-4 text-xs font-mono">
+                    <span className="text-emerald-500 font-bold block mb-1 uppercase tracking-wider text-[10px]">💰 ESTIMATE EXAM BUDGET:</span>
+                    <span className="opacity-80">{rData.costRange}</span>
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className="flex flex-wrap gap-2.5">
+                    <a 
+                      href={rData.officialLink}
+                      target="_blank" 
+                      rel="noreferrer"
+                      referrerPolicy="no-referrer"
+                      className="px-3.5 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono uppercase font-bold tracking-wider hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer flex items-center gap-1.5"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      Official Cert Site
+                    </a>
+
+                    {rData.freeYouTubeLink && (
                       <a 
-                        href={redirectionMatch.data.matchedTeacher.url}
-                        target="_blank"
+                        href={rData.freeYouTubeLink}
+                        target="_blank" 
                         rel="noreferrer"
                         referrerPolicy="no-referrer"
-                        className="px-3 py-1 bg-[#1e293b] hover:bg-[#334155] text-white text-[10px] uppercase font-bold flex items-center gap-1 cursor-pointer transition-all border border-slate-700"
-                        title={`Go to ${redirectionMatch.data.matchedTeacher.name}'s main channel`}
-                      >
-                        <ExternalLink className="w-3.5 h-3.5" />
-                        Channel Home
-                      </a>
-                      <a 
-                        href={`https://www.youtube.com/results?search_query=${encodeURIComponent(redirectionMatch.data.matchedTeacher.name + ' ' + (redirectionMatch.data.skillArea || query))}`}
-                        target="_blank"
-                        rel="noreferrer"
-                        referrerPolicy="no-referrer"
-                        className="px-3 py-1 bg-red-600 hover:bg-red-500 text-white text-[10px] uppercase font-bold flex items-center gap-1 cursor-pointer hover:scale-105 transition-all"
-                        title={`Directly search ${redirectionMatch.data.matchedTeacher.name} lessons for "${redirectionMatch.data.skillArea || query}"`}
+                        className="px-3.5 py-1.5 bg-red-600 hover:bg-red-500 text-white text-xs font-mono uppercase font-bold tracking-wider hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer flex items-center gap-1.5"
                       >
                         <Youtube className="w-3.5 h-3.5" />
-                        Search Lessons
+                        YouTube Course Playlists
                       </a>
+                    )}
+
+                    <button 
+                      onClick={() => toggleBookmark?.({ id: rData.id, name: rData.name, type: 'cert' })}
+                      className={`px-3.5 py-1.5 border uppercase text-xs font-mono font-bold tracking-wider cursor-pointer flex items-center gap-1.5 ${
+                        isBookmarked?.(rData.id, 'cert')
+                          ? 'bg-yellow-500/10 border-yellow-500 text-yellow-500'
+                          : 'border-slate-400 text-slate-600 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-slate-800'
+                      }`}
+                    >
+                      <CustomBookmarkIcon fill={isBookmarked?.(rData.id, 'cert') ? 'currentColor' : 'none'} />
+                      {isBookmarked?.(rData.id, 'cert') ? 'Saved!' : 'Save Cert'}
+                    </button>
+                  </div>
+                </div>
+              );
+            }
+
+            return (
+              <div>
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <span className="px-2 py-0.5 text-[9px] font-mono font-bold uppercase bg-red-500 text-white rounded-none">
+                    {rData.emoji} {rData.categoryName}
+                  </span>
+                  <span className="px-2 py-0.5 text-[9px] font-mono font-bold uppercase bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-none">
+                    Core Area
+                  </span>
+                </div>
+
+                <h4 className="text-lg font-mono font-bold text-emerald-600 dark:text-emerald-400 mb-1.5 uppercase">
+                  YouTube Teacher Topic: {rData.skillArea}
+                </h4>
+
+                {rData.matchedTeacher && (
+                  <div className="p-3.5 bg-red-500/5 border border-red-500/25 mb-4 rounded-sm">
+                    <span className="text-red-500 font-bold block mb-1 text-[10px] font-mono uppercase tracking-wider">📺 REDIRECTED TEACHER CHANNEL:</span>
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-mono">
+                      <span className="text-sm font-bold text-slate-800 dark:text-white">
+                        {rData.matchedTeacher.name}
+                      </span>
+                      <div className="flex flex-wrap gap-2">
+                        <a 
+                          href={rData.matchedTeacher.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          referrerPolicy="no-referrer"
+                          className="px-3 py-1 bg-[#1e293b] hover:bg-[#334155] text-white text-[10px] uppercase font-bold flex items-center gap-1 cursor-pointer transition-all border border-slate-700"
+                          title={`Go to ${rData.matchedTeacher.name}'s main channel`}
+                        >
+                          <ExternalLink className="w-3.5 h-3.5" />
+                          Channel Home
+                        </a>
+                        <a 
+                          href={`https://www.youtube.com/results?search_query=${encodeURIComponent(rData.matchedTeacher.name + ' ' + (rData.skillArea || query))}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          referrerPolicy="no-referrer"
+                          className="px-3 py-1 bg-red-600 hover:bg-red-500 text-white text-[10px] uppercase font-bold flex items-center gap-1 cursor-pointer hover:scale-105 transition-all"
+                          title={`Directly search ${rData.matchedTeacher.name} lessons for "${rData.skillArea || query}"`}
+                        >
+                          <Youtube className="w-3.5 h-3.5" />
+                          Search Lessons
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              )}
+                )}
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div className="p-3 bg-black/10 dark:bg-white/5 border border-slate-200 dark:border-slate-800">
-                  <span className="text-emerald-500 font-bold block mb-1 font-mono text-[10px] uppercase tracking-wider">💼 TRUST AUDIT DETAILS:</span>
-                  <p className="text-xs opacity-90 leading-relaxed text-slate-700 dark:text-gray-300">
-                    {redirectionMatch.data.whyTrust}
-                  </p>
-                </div>
-                <div className="p-3 bg-black/10 dark:bg-white/5 border border-slate-200 dark:border-slate-800">
-                  <span className="text-amber-500 font-bold block mb-1 font-mono text-[10px] uppercase tracking-wider">🗓️ SUGGESTED SYLLABUS:</span>
-                  <p className="text-xs opacity-90 leading-relaxed text-slate-700 dark:text-gray-300">
-                    {redirectionMatch.data.suggestedStudy}
-                  </p>
-                </div>
-              </div>
-
-              {/* Show alternate teachers in this area */}
-              {!redirectionMatch.data.matchedTeacher && redirectionMatch.data.teachers && (
-                <div className="mb-4">
-                  <span className="text-slate-500 font-bold block mb-2 font-mono text-[10px] uppercase tracking-wider">📺 CHANNELS IN THIS CATEGORY:</span>
-                  <div className="flex flex-wrap gap-2">
-                    {redirectionMatch.data.teachers.map((t: any, idx: number) => (
-                      <a 
-                        key={idx}
-                        href={t.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        referrerPolicy="no-referrer"
-                        className="px-3 py-1 bg-slate-100 dark:bg-slate-800 hover:bg-red-500/10 text-xs font-mono text-slate-800 dark:text-gray-200 border border-slate-300 dark:border-slate-700 hover:border-red-500/50 flex items-center gap-1.5 transition-all cursor-pointer"
-                      >
-                        <Youtube className="w-3.5 h-3.5 text-red-500" />
-                        {t.name}
-                      </a>
-                    ))}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div className="p-3 bg-black/10 dark:bg-white/5 border border-slate-200 dark:border-slate-800">
+                    <span className="text-emerald-500 font-bold block mb-1 font-mono text-[10px] uppercase tracking-wider">💼 TRUST AUDIT DETAILS:</span>
+                    <p className="text-xs opacity-90 leading-relaxed text-slate-700 dark:text-gray-300">
+                      {rData.whyTrust}
+                    </p>
+                  </div>
+                  <div className="p-3 bg-black/10 dark:bg-white/5 border border-slate-200 dark:border-slate-800">
+                    <span className="text-amber-500 font-bold block mb-1 font-mono text-[10px] uppercase tracking-wider">🗓️ SUGGESTED SYLLABUS:</span>
+                    <p className="text-xs opacity-90 leading-relaxed text-slate-700 dark:text-gray-300">
+                      {rData.suggestedStudy}
+                    </p>
                   </div>
                 </div>
-              )}
-            </div>
-          )}
+
+                {/* Show alternate teachers in this area */}
+                {!rData.matchedTeacher && rData.teachers && (
+                  <div className="mb-4">
+                    <span className="text-slate-500 font-bold block mb-2 font-mono text-[10px] uppercase tracking-wider">📺 CHANNELS IN THIS CATEGORY:</span>
+                    <div className="flex flex-wrap gap-2">
+                      {rData.teachers.map((t: any, idx: number) => (
+                        <a 
+                          key={idx}
+                          href={t.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          referrerPolicy="no-referrer"
+                          className="px-3 py-1 bg-slate-100 dark:bg-slate-800 hover:bg-red-500/10 text-xs font-mono text-slate-800 dark:text-gray-200 border border-slate-300 dark:border-slate-700 hover:border-red-500/50 flex items-center gap-1.5 transition-all cursor-pointer"
+                        >
+                          <Youtube className="w-3.5 h-3.5 text-red-500" />
+                          {t.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })()}
           
           <div className="border-t border-dashed border-[#10b981]/25 pt-2 mt-2 text-[10px] font-mono text-slate-500 dark:text-gray-400">
             💡 You are currently viewing the targeted redirection detail above. You are fully free to click on and surf any main section tabs below as well.
@@ -2671,10 +2742,10 @@ export default function LibrariesDashboard({
                 <strong className="text-[10px] text-cyan-400 block p-1 border-b border-slate-800 mb-2 uppercase">SELECT CAREER FAMILY:</strong>
                 {ROLE_FAMILY_MAPS.map((rf) => {
                   const isSelected = selectedRoleFamily === rf.id;
-                  const isMatchingQuery = query !== '' && (
-                    rf.name.toLowerCase().includes(query.toLowerCase()) || 
-                    rf.roles.some(r => r.toLowerCase().includes(query.toLowerCase())) ||
-                    rf.groups.some(g => g.name.toLowerCase().includes(query.toLowerCase()) || g.skills.toLowerCase().includes(query.toLowerCase()))
+                  const isMatchingQuery = Boolean(query) && Boolean(query.trim()) && Boolean(
+                    (rf?.name && rf.name.toLowerCase().includes(query.toLowerCase())) || 
+                    (Array.isArray(rf?.roles) && rf.roles.some(r => r && typeof r === 'string' && r.toLowerCase().includes(query.toLowerCase()))) ||
+                    (Array.isArray(rf?.groups) && rf.groups.some(g => (g?.name && g.name.toLowerCase().includes(query.toLowerCase())) || (g?.skills && g.skills.toLowerCase().includes(query.toLowerCase()))))
                   );
 
                   return (
@@ -2895,12 +2966,12 @@ export default function LibrariesDashboard({
                   return false;
                 }
                 if (query === '') return true;
-                return (
-                  b.title.toLowerCase().includes(query.toLowerCase()) ||
-                  b.author.toLowerCase().includes(query.toLowerCase()) ||
-                  b.bestFor.toLowerCase().includes(query.toLowerCase()) ||
-                  b.summary.toLowerCase().includes(query.toLowerCase())
-                );
+                const lowerQ = query.toLowerCase();
+                const titleMatch = b.title ? b.title.toLowerCase().includes(lowerQ) : false;
+                const authorMatch = b.author ? b.author.toLowerCase().includes(lowerQ) : false;
+                const bestForMatch = b.bestFor ? b.bestFor.toLowerCase().includes(lowerQ) : false;
+                const summaryMatch = b.summary ? b.summary.toLowerCase().includes(lowerQ) : false;
+                return titleMatch || authorMatch || bestForMatch || summaryMatch;
               });
 
               if (filtered.length === 0) {

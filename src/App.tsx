@@ -7,6 +7,7 @@ import LibrariesDashboard from './components/LibrariesDashboard';
 import ITTaxonomyExplorer from './components/ITTaxonomyExplorer';
 import AntCrossingGame from './components/AntCrossingGame';
 import SidebarAnt from './components/SidebarAnt';
+import ErrorBoundary from './components/ErrorBoundary';
 import YoutubeTeachers, { TEACHERS_DIRECTORY } from './components/YoutubeTeachers';
 import Hackathons, { GLOBAL_HACKATHONS, GLOBAL_FESTS, Hackathon } from './components/Hackathons';
 import { AnalogClock } from './components/AnalogClock';
@@ -640,10 +641,10 @@ export default function App() {
             cat.subcategories.forEach(sub => {
               if (sub.teachers) {
                 sub.teachers.forEach((t: any) => {
-                  if (seenTeacherNames.has(t.name)) return;
-                  const nameMatch = t.name.toLowerCase().includes(query);
-                  const areaMatch = sub.skillArea.toLowerCase().includes(query);
-                  const reasonMatch = t.reason?.toLowerCase().includes(query) || false;
+                  if (!t || !t.name || seenTeacherNames.has(t.name)) return;
+                  const nameMatch = t.name ? t.name.toLowerCase().includes(query) : false;
+                  const areaMatch = sub?.skillArea ? sub.skillArea.toLowerCase().includes(query) : false;
+                  const reasonMatch = t?.reason ? t.reason.toLowerCase().includes(query) : false;
                   if (nameMatch || areaMatch || reasonMatch) {
                     seenTeacherNames.add(t.name);
                     matchedTeachers.push({
@@ -853,8 +854,8 @@ export default function App() {
     if (!mobileSearchQuery.trim()) return [];
     const q = mobileSearchQuery.toLowerCase();
     return searchableIndex.filter(item => 
-      item.name.toLowerCase().includes(q) || 
-      item.subtext.toLowerCase().includes(q)
+      (item?.name && item.name.toLowerCase().includes(q)) || 
+      (item?.subtext && item.subtext.toLowerCase().includes(q))
     ).slice(0, 10);
   }, [mobileSearchQuery, searchableIndex]);
 
@@ -2105,7 +2106,7 @@ export default function App() {
                                 >
                                   <div>
                                     <div className="flex items-center gap-2 mb-2">
-                                      <span className="text-xl">{domain.icon || '📂'}</span>
+                                      <span className="text-xl">{(domain as any).icon || '📂'}</span>
                                       <h4 className="font-mono font-bold text-sm tracking-tight">{domain.name}</h4>
                                     </div>
                                     <p className="text-[11px] text-gray-400 leading-relaxed line-clamp-3 mb-4">{domain.description}</p>
@@ -2732,29 +2733,38 @@ export default function App() {
         {/* 6. LIBRARIES VIEW */}
         <div id="section-libraries" className={activeTab === 'libraries' ? 'block' : 'hidden'}>
           <section className="fade-in space-y-6">
-            <LibrariesDashboard 
-              theme={theme}
-              isHighlighted={blinkSectionId === 'libraries'} 
-              bookmarks={bookmarks}
-              toggleBookmark={toggleBookmark}
-              isBookmarked={isBookmarked}
-              activeTab={librariesActiveTab}
-              setActiveTab={setLibrariesActiveTab}
-              query={librariesQuery}
-              setQuery={setLibrariesQuery}
-              selectedRoleFamily={librariesRoleFamily}
-              setSelectedRoleFamily={setLibrariesRoleFamily}
-              youtubeSearchQuery={youtubeSearchQuery}
-              setYoutubeSearchQuery={setYoutubeSearchQuery}
-              youtubeCategoryId={youtubeCategoryId}
-              setSelectedCategoryId={setYoutubeCategoryId}
-              hackathonsSelectedItemId={hackathonsSelectedItemId}
-              setHackathonsSelectedItemId={setHackathonsSelectedItemId}
-              hackathonsSearchQuery={hackathonsSearchQuery}
-              setHackathonsSearchQuery={setHackathonsSearchQuery}
-              tipIndex={tipIndex}
-              globalActiveTab={activeTab}
-            />
+            <ErrorBoundary 
+              fallbackTitle="Resources Directory View Error"
+              onReset={() => {
+                setLibrariesQuery('');
+                setYoutubeSearchQuery('');
+                setHackathonsSearchQuery('');
+              }}
+            >
+              <LibrariesDashboard 
+                theme={theme}
+                isHighlighted={blinkSectionId === 'libraries'} 
+                bookmarks={bookmarks}
+                toggleBookmark={toggleBookmark}
+                isBookmarked={isBookmarked}
+                activeTab={librariesActiveTab}
+                setActiveTab={setLibrariesActiveTab}
+                query={librariesQuery}
+                setQuery={setLibrariesQuery}
+                selectedRoleFamily={librariesRoleFamily}
+                setSelectedRoleFamily={setLibrariesRoleFamily}
+                youtubeSearchQuery={youtubeSearchQuery}
+                setYoutubeSearchQuery={setYoutubeSearchQuery}
+                youtubeCategoryId={youtubeCategoryId}
+                setSelectedCategoryId={setYoutubeCategoryId}
+                hackathonsSelectedItemId={hackathonsSelectedItemId}
+                setHackathonsSelectedItemId={setHackathonsSelectedItemId}
+                hackathonsSearchQuery={hackathonsSearchQuery}
+                setHackathonsSearchQuery={setHackathonsSearchQuery}
+                tipIndex={tipIndex}
+                globalActiveTab={activeTab}
+              />
+            </ErrorBoundary>
           </section>
         </div>
 

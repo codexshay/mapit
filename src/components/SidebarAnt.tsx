@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { AnimatePresence, motion } from 'motion/react';
 
 interface SidebarAntProps {
   theme: 'light' | 'dark';
@@ -12,21 +11,28 @@ export default function SidebarAnt({ theme }: SidebarAntProps) {
   // Current Ant Coordinates & Orientation
   const [x, setX] = useState<number>(30);
   const [y, setY] = useState<number>(150);
-  const [angle, setAngle] = useState<number>(45); // degrees (0 is looking right)
-  
-  // Navigation Targets
-  const [targetX, setTargetX] = useState<number>(100);
-  const [targetY, setTargetY] = useState<number>(300);
+  const [angle, setAngle] = useState<number>(45);
   
   // Ant State
-  // 'walking' | 'idle' | 'carrying' | 'panicked'
   const [state, setState] = useState<'walking' | 'idle' | 'carrying' | 'panicked'>('idle');
   const [hasLeaf, setHasLeaf] = useState<boolean>(false);
-  const [panicTicks, setPanicTicks] = useState<number>(0);
-  const [idleTicks, setIdleTicks] = useState<number>(0);
 
   // High resolution visual leg-oscillation phase
   const [wigglePhase, setWigglePhase] = useState<number>(0);
+
+  // Physics refs to avoid React state dispatch thrashing on every frame
+  const posRef = useRef({
+    x: 30,
+    y: 150,
+    angle: 45,
+    targetX: 100,
+    targetY: 300,
+    state: 'idle' as 'walking' | 'idle' | 'carrying' | 'panicked',
+    idleTicks: 1000,
+    panicTicks: 0,
+    hasLeaf: false,
+    wigglePhase: 0
+  });
 
   // Monitor the container bounds to constrain coordinates correctly
   useEffect(() => {
@@ -44,275 +50,170 @@ export default function SidebarAnt({ theme }: SidebarAntProps) {
     return () => observer.disconnect();
   }, []);
 
-  // Clamp position to bounds when bounds change (e.g. sidebar expand/minimize)
-  useEffect(() => {
-    setX((prev) => {
-      const margin = 12;
-      const maxW = bounds.width - margin;
-      return Math.max(margin, Math.min(prev, maxW));
-    });
-    setY((prev) => {
-      const margin = 12;
-      const maxH = bounds.height - margin;
-      return Math.max(margin, Math.min(prev, maxH));
-    });
-  }, [bounds]);
-
-  // Main high-performance simulation loop (runs on requestAnimationFrame)
+  // Main high-performance simulation loop
   useEffect(() => {
     let animationFrameId: number;
     let lastTime = performance.now();
 
     const loop = (time: number) => {
       const deltaTime = time - lastTime;
-      // Cap delta time to prevent giant jumps when tab sits inactive
       const dt = Math.min(deltaTime, 100); 
       lastTime = time;
 
-      setState((currentState) => {
-        let nextState = currentState;
-        let speed = 0.22; // pixels per ms max walking (gentler and less distractive)
-        
-        if (currentState === 'panicked') {
-          speed = 0.9; // paced scurrying!
-        } else if (currentState === 'carrying') {
-          speed = 0.14; // loaded ant travels slightly slower
-        } else if (currentState === 'idle') {
-          speed = 0;
+      const p = posRef.current;
+      let speed = 0.22;
+
+      if (p.state === 'panicked') {
+        speed = 0.85;
+      } else if (p.state === 'carrying') {
+        speed = 0.14;
+      } else if (p.state === 'idle') {
+        speed = 0;
+      }
+
+      // Idle behavior
+      if (p.state === 'idle') {
+        p.idleTicks -= dt;
+        if (p.idleTicks <= 0) {
+          p.state = Math.random() < 0.25 ? 'carrying' : 'walking';
+          p.hasLeaf = Math.random() < 0.4;
+          const margin = 16;
+          const w = Math.max(40, bounds.width);
+          const h = Math.max(40, bounds.height);
+          p.targetX = margin + Math.random() * (w - margin * 2);
+          p.targetY = margin + Math.random() * (h - margin * 2);
+          
+          setHasLeaf(p.hasLeaf);
+          setState(p.state);
         }
+      }
 
-        if (currentState === 'idle') {
-          setIdleTicks((ticksLeft) => {
-            if (ticksLeft <= dt) {
-              // Walk to a new spot inside our container bounds
-              nextState = Math.random() < 0.2 ? 'carrying' : 'walking';
-              setHasLeaf(Math.random() < 0.4);
-              const margin = 16;
-              const w = Math.max(40, bounds.width);
-              const h = Math.max(40, bounds.height);
-              setTargetX(margin + Math.random() * (w - margin * 2));
-              setTargetY(margin + Math.random() * (h - margin * 2));
-              return 0;
-            }
-            return ticksLeft - dt;
-          });
+      // Panic behavior
+      if (p.state === 'panicked') {
+        p.panicTicks -= dt;
+        if (p.panicTicks <= 0) {
+          p.state = 'walking';
+          setState('walking');
         }
+      }
 
-        if (currentState === 'panicked') {
-          setPanicTicks((ticksLeft) => {
-            if (ticksLeft <= dt) {
-              nextState = 'walking';
-              return 0;
-            }
-            return ticksLeft - dt;
-          });
+      // Movement behavior
+      if (speed > 0) {
+        const dx = p.targetX - p.x;
+        const dy = p.targetY - p.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < 4) {
+          p.state = 'idle';
+          p.idleTicks = 1200 + Math.random() * 2500;
+          setState('idle');
+        } else {
+          const targetRad = Math.atan2(dy, dx);
+          let targetDeg = targetRad * (180 / Math.PI);
+          
+          let diff = targetDeg - p.angle;
+          while (diff < -180) diff += 360;
+          while (diff > 180) diff -= 360;
+
+          const maxRotationSpeed = p.state === 'panicked' ? 1.2 : 0.45;
+          const stepAngle = Math.max(-maxRotationSpeed * dt, Math.min(maxRotationSpeed * dt, diff));
+          p.angle = (p.angle + stepAngle + 360) % 360;
+
+          p.wigglePhase = (p.wigglePhase + speed * dt * 0.1) % (Math.PI * 2);
+
+          const sAngleRad = (p.angle + Math.sin(time * 0.02) * (p.state === 'panicked' ? 8 : 2)) * (Math.PI / 180);
+          const stepLen = speed * dt;
+          
+          const nextX = p.x + Math.cos(sAngleRad) * stepLen;
+          const nextY = p.y + Math.sin(sAngleRad) * stepLen;
+
+          const margin = 12;
+          p.x = Math.max(margin, Math.min(nextX, bounds.width - margin));
+          p.y = Math.max(margin, Math.min(nextY, bounds.height - margin));
+
+          // Sync position to React state cleanly once per frame
+          setX(p.x);
+          setY(p.y);
+          setAngle(p.angle);
+          setWigglePhase(p.wigglePhase);
         }
-
-        // 2. Physics & Navigation updates if moving
-        if (speed > 0) {
-          setX((currX) => {
-            setY((currY) => {
-              setAngle((currAngle) => {
-                const dx = targetX - currX;
-                const dy = targetY - currY;
-                const dist = Math.sqrt(dx * dx + dy * dy);
-
-                // Distance threshold to reach coordinate target
-                if (dist < 4) {
-                  // Arrived at destination!
-                  nextState = 'idle';
-                  setIdleTicks(800 + Math.random() * 2000);
-                  return currAngle;
-                }
-
-                // Smooth angle turn towards target
-                const targetRad = Math.atan2(dy, dx);
-                let targetDeg = targetRad * (180 / Math.PI);
-                
-                // Keep target angle and current angle in continuous interval for beautiful interpolation
-                let diff = targetDeg - currAngle;
-                while (diff < -180) diff += 360;
-                while (diff > 180) diff -= 360;
-
-                const maxRotationSpeed = currentState === 'panicked' ? 1.2 : 0.45; // degrees per ms
-                const stepAngle = Math.max(-maxRotationSpeed * dt, Math.min(maxRotationSpeed * dt, diff));
-                const newAngle = (currAngle + stepAngle + 360) % 360;
-
-                // Alternate foot wiggling phase!
-                setWigglePhase((prev) => (prev + speed * dt * 0.1) % (Math.PI * 2));
-
-                // Step along current angle (with dynamic micro wiggle for biological scurrying feel)
-                const sAngleRad = (newAngle + Math.sin(time * 0.02) * (currentState === 'panicked' ? 8 : 2)) * (Math.PI / 180);
-                const stepLen = speed * dt;
-                
-                const nextX = currX + Math.cos(sAngleRad) * stepLen;
-                const nextY = currY + Math.sin(sAngleRad) * stepLen;
-
-                // Commit positions inside valid margins
-                const margin = 12;
-                const boundedX = Math.max(margin, Math.min(nextX, bounds.width - margin));
-                const boundedY = Math.max(margin, Math.min(nextY, bounds.height - margin));
-
-                // Trigger state synchronization by assigning locally
-                setTimeout(() => {
-                  setX(boundedX);
-                  setY(boundedY);
-                }, 0);
-
-                return newAngle;
-              });
-              return currY;
-            });
-            return currX;
-          });
-        }
-
-        return nextState;
-      });
+      }
 
       animationFrameId = requestAnimationFrame(loop);
     };
 
     animationFrameId = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(animationFrameId);
-  }, [targetX, targetY, bounds.width, bounds.height]);
+  }, [bounds.width, bounds.height]);
 
-  // Handle click / taps on the ant (shock / panic response)
+  // Handle click / taps on the ant
   const handleAntClick = (e: React.MouseEvent) => {
-    e.stopPropagation(); // Avoid unwanted parent bubble events
-    const willCarryLeaf = Math.random() < 0.5; // 50% chance to carry a cute tiny leaf on this journey!
-    setHasLeaf(willCarryLeaf);
-    setState('panicked');
-    setPanicTicks(1200 + Math.random() * 1200); // Scurry frantically at first, then transition back to normal walk and stop
+    e.stopPropagation();
+    const p = posRef.current;
+    p.hasLeaf = Math.random() < 0.5;
+    p.state = 'panicked';
+    p.panicTicks = 1200 + Math.random() * 1200;
 
-    // Pick a frantic getaway spot far away!
     const margin = 14;
-    setTargetX(margin + Math.random() * (bounds.width - margin * 2));
-    setTargetY(margin + Math.random() * (bounds.height - margin * 2));
+    p.targetX = margin + Math.random() * (bounds.width - margin * 2);
+    p.targetY = margin + Math.random() * (bounds.height - margin * 2);
+
+    setHasLeaf(p.hasLeaf);
+    setState('panicked');
   };
 
-  // Ant element color definition based on current theme to guarantee high visibility
-  const antBodyColor = theme === 'light' ? '#334155' : '#10b981'; // slate dark vs. neon emerald green
-  const antLeafColor = '#22c55e'; // Vibrant green for the leaf
+  const antBodyColor = theme === 'light' ? '#334155' : '#10b981';
+  const antLeafColor = '#22c55e';
 
-  // Calculate leg rotations based on leg wiggle phase
   const legAngle1 = Math.sin(wigglePhase) * 22;
   const legAngle2 = Math.cos(wigglePhase) * 22;
-  const legAngle3 = Math.sin(wigglePhase + Math.PI / 2) * 22;
 
   return (
-    <div 
-      ref={containerRef}
-      className="absolute inset-0 pointer-events-none select-none z-10 overflow-hidden"
-      id="sidebar-strolling-ant-container"
-    >
-      {/* The Ant Body Group */}
+    <div ref={containerRef} className="absolute inset-0 pointer-events-none overflow-hidden z-20">
       <div
-        onClick={handleAntClick}
+        className="absolute pointer-events-auto cursor-pointer transition-transform duration-75 ease-out select-none"
         style={{
-          left: `${x}px`,
-          top: `${y}px`,
-          transform: `translate(-50%, -50%) rotate(${angle + 90}deg)`,
-          transition: 'transform 0.04s linear',
+          transform: `translate3d(${x - 12}px, ${y - 12}px, 0px) rotate(${angle}deg)`,
+          width: '24px',
+          height: '24px',
         }}
-        className="absolute w-8 h-8 pointer-events-auto cursor-pointer group flex items-center justify-center"
-        id="crawling-ant-element"
-        title="Friendly MapIT crawling support ant! Click him to play."
+        onClick={handleAntClick}
+        title="Interactive Pathfinder Ant Companion"
       >
-        <svg 
-          width="28" 
-          height="28" 
-          viewBox="0 0 32 32" 
-          fill="none" 
-          xmlns="http://www.w3.org/2000/svg"
-          className="filter drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"
-        >
-          {/* Ant Legs Left */}
-          {/* Front Left */}
-          <line 
-            x1="12" y1="12" x2="4" y2="9" 
-            stroke={antBodyColor} strokeWidth="1.5" strokeLinecap="round" 
-            style={{ transformOrigin: '12px 12px', transform: `rotate(${legAngle1}deg)` }}
-          />
-          {/* Middle Left */}
-          <line 
-            x1="12" y1="15" x2="3" y2="15" 
-            stroke={antBodyColor} strokeWidth="1.5" strokeLinecap="round"
-            style={{ transformOrigin: '12px 15px', transform: `rotate(${legAngle2}deg)` }}
-          />
-          {/* Back Left */}
-          <line 
-            x1="12" y1="18" x2="4" y2="21" 
-            stroke={antBodyColor} strokeWidth="1.5" strokeLinecap="round"
-            style={{ transformOrigin: '12px 18px', transform: `rotate(${legAngle3}deg)` }}
-          />
+        <svg viewBox="0 0 40 40" className="w-full h-full overflow-visible drop-shadow-md">
+          {/* Ant Body */}
+          <g>
+            {/* Abdomen */}
+            <ellipse cx="12" cy="20" rx="7" ry="5" fill={antBodyColor} />
+            {/* Thorax */}
+            <ellipse cx="22" cy="20" rx="4" ry="3.5" fill={antBodyColor} />
+            {/* Head */}
+            <circle cx="30" cy="20" r="3.5" fill={antBodyColor} />
 
-          {/* Ant Legs Right */}
-          {/* Front Right */}
-          <line 
-            x1="20" y1="12" x2="28" y2="9" 
-            stroke={antBodyColor} strokeWidth="1.5" strokeLinecap="round"
-            style={{ transformOrigin: '20px 12px', transform: `rotate(${-legAngle2}deg)` }}
-          />
-          {/* Middle Right */}
-          <line 
-            x1="20" y1="15" x2="29" y2="15" 
-            stroke={antBodyColor} strokeWidth="1.5" strokeLinecap="round"
-            style={{ transformOrigin: '20px 15px', transform: `rotate(${-legAngle3}deg)` }}
-          />
-          {/* Back Right */}
-          <line 
-            x1="20" y1="18" x2="28" y2="21" 
-            stroke={antBodyColor} strokeWidth="1.5" strokeLinecap="round"
-            style={{ transformOrigin: '20px 18px', transform: `rotate(${-legAngle1}deg)` }}
-          />
+            {/* Left Legs */}
+            <line x1="22" y1="20" x2="16" y2="12" stroke={antBodyColor} strokeWidth="1.2" transform={`rotate(${legAngle1}, 22, 20)`} />
+            <line x1="22" y1="20" x2="22" y2="10" stroke={antBodyColor} strokeWidth="1.2" transform={`rotate(${-legAngle2}, 22, 20)`} />
+            <line x1="22" y1="20" x2="28" y2="11" stroke={antBodyColor} strokeWidth="1.2" transform={`rotate(${legAngle1}, 22, 20)`} />
 
-          {/* Antennae */}
-          <path 
-            d="M13,8 C11,4 9,5 8,6" 
-            stroke={antBodyColor} strokeWidth="1.2" strokeLinecap="round" fill="none" 
-          />
-          <path 
-            d="M19,8 C21,4 23,5 24,6" 
-            stroke={antBodyColor} strokeWidth="1.2" strokeLinecap="round" fill="none" 
-          />
+            {/* Right Legs */}
+            <line x1="22" y1="20" x2="16" y2="28" stroke={antBodyColor} strokeWidth="1.2" transform={`rotate(${-legAngle1}, 22, 20)`} />
+            <line x1="22" y1="20" x2="22" y2="30" stroke={antBodyColor} strokeWidth="1.2" transform={`rotate(${legAngle2}, 22, 20)`} />
+            <line x1="22" y1="20" x2="28" y2="29" stroke={antBodyColor} strokeWidth="1.2" transform={`rotate(${-legAngle1}, 22, 20)`} />
 
-          {/* Head */}
-          <circle cx="16" cy="10" r="3.2" fill={antBodyColor} />
-          
-          {/* Thorax (Middle segment) */}
-          <circle cx="16" cy="15" r="2.4" fill={antBodyColor} />
-          
-          {/* Abdomen (Rear segment) */}
-          <ellipse cx="16" cy="21.5" rx="3.5" ry="4.8" fill={antBodyColor} />
+            {/* Antennae */}
+            <path d="M32 18 Q36 14 38 12" fill="none" stroke={antBodyColor} strokeWidth="1" />
+            <path d="M32 22 Q36 26 38 28" fill="none" stroke={antBodyColor} strokeWidth="1" />
 
-          {/* Small shiny accents on the abdomen */}
-          <ellipse cx="15.2" cy="19.5" rx="0.8" ry="1.5" fill="white" opacity="0.3" />
-
-          {/* Tiny Glow Eyes (Helpful indicator of orientation and alertness) */}
-          <circle cx="14.8" cy="9.2" r="0.6" fill={state === 'panicked' ? '#ef4444' : '#ffffff'} />
-          <circle cx="17.2" cy="9.2" r="0.6" fill={state === 'panicked' ? '#ef4444' : '#ffffff'} />
-
-          {/* Optional Leaf being carried by the ant! */}
-          {hasLeaf && (
-            <g style={{ transform: 'translate(10px, 1px) rotate(-15deg)' }}>
-              {/* Stem */}
-              <line x1="5" y1="7" x2="8" y2="3" stroke={antLeafColor} strokeWidth="1.2" />
-              {/* Leaf Blade */}
-              <path 
-                d="M8,3 C12,-1 15,-1 14,3 C13,7 9,5 8,3 Z" 
-                fill={antLeafColor} 
-                opacity="0.95" 
+            {/* Tiny Leaf */}
+            {hasLeaf && (
+              <path
+                d="M 30 18 C 34 12, 40 12, 38 18 C 36 24, 30 20, 30 18 Z"
+                fill={antLeafColor}
+                opacity={0.9}
               />
-              {/* Leaf veins */}
-              <path d="M9.5,2.5 L12.5,1.5" stroke="#15803d" strokeWidth="0.8" />
-              <path d="M10.5,3.5 L13.5,3" stroke="#15803d" strokeWidth="0.8" />
-            </g>
-          )}
+            )}
+          </g>
         </svg>
-
-        {/* Small pointer indicators when hovered inside sidebar to prompt click */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-9 h-9 border-2 border-dashed border-cyan-400/0 rounded-full group-hover:border-cyan-400/40 opacity-0 group-hover:opacity-100 transition-all duration-300" />
       </div>
     </div>
   );

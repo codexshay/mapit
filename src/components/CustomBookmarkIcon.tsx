@@ -20,8 +20,8 @@ export const CustomBookmarkIcon: React.FC<CustomBookmarkIconProps> = ({
       fill={fill}
       stroke="currentColor"
       strokeWidth="2.2"
-      strokeLinecap="miter"
-      strokeLinejoin="miter"
+      strokeLinecap="square"
+      strokeLinejoin="round"
       className={className}
       {...dimensionProps}
       {...props}

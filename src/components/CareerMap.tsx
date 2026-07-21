@@ -116,7 +116,7 @@ export default function CareerMap({
   }, []);
 
   useEffect(() => {
-    if (viewMode !== 'taxonomy') {
+    if ((viewMode as string) !== 'taxonomy') {
       setTaxonomyCategoryId?.(null);
       setTaxonomyRoleSlug?.(null);
     }
@@ -740,7 +740,7 @@ export default function CareerMap({
                                             }}
                                             className="w-[30px] h-[30px] border-2 flex items-center justify-center font-mono text-xs shrink-0 z-10 transition-colors"
                                           >
-                                            <span className="w-1.5 h-1.5 rounded-full bg-current" stroke="current" />
+                                            <span className="w-1.5 h-1.5 rounded-full bg-current" />
                                           </div>
 
                                           {/* Dynamic Certifications & Skills Hover Preview Card */}
