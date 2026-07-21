@@ -80,7 +80,22 @@ function SearchableRoleSelect({
         <span className={selectedRole ? 'text-white' : 'text-gray-500'}>
           {selectedRole ? selectedRole.title : placeholder}
         </span>
-        <span className={`transition-transform duration-200 text-gray-500 ${isOpen ? 'rotate-180' : ''}`}>▼</span>
+        <div className="flex items-center gap-2">
+          {selectedRole && (
+            <span
+              onClick={(e) => {
+                e.stopPropagation();
+                onChange('');
+                setSearchQuery('');
+              }}
+              className="text-gray-500 hover:text-red-400 font-bold p-1 hover:bg-slate-800 transition-colors flex items-center justify-center rounded"
+              title="Clear selection"
+            >
+              ×
+            </span>
+          )}
+          <span className={`transition-transform duration-200 text-gray-500 ${isOpen ? 'rotate-180' : ''}`}>▼</span>
+        </div>
       </button>
 
       {/* Dropdown Popover */}
@@ -111,6 +126,22 @@ function SearchableRoleSelect({
 
           {/* List of categories & roles */}
           <div className="overflow-y-auto max-h-56 divide-y divide-slate-800/40 custom-scrollbar">
+            {value && (
+              <div className="p-1 bg-[#090d16]">
+                <button
+                  type="button"
+                  onClick={() => {
+                    onChange('');
+                    setIsOpen(false);
+                    setSearchQuery('');
+                  }}
+                  className="w-full text-left px-2.5 py-1.5 text-[11px] font-bold text-red-400 hover:bg-red-950/20 hover:text-red-300 transition-all cursor-pointer flex items-center justify-between"
+                >
+                  <span className="flex items-center gap-1.5">❌ Clear Selected Role</span>
+                  <span className="text-[9px] uppercase tracking-wider bg-red-950/30 px-1.5 py-0.5 border border-red-900/40 font-mono">Reset</span>
+                </button>
+              </div>
+            )}
             {Object.keys(filteredGroups).length === 0 ? (
               <div className="p-3 text-center text-xs text-gray-500 italic">No roles match search terms.</div>
             ) : (

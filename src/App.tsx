@@ -363,11 +363,11 @@ export default function App() {
       }
       setActiveTab('map');
     } else if (sectionType === 'taxonomy') {
-      setTaxonomyCategoryId(mapping.cId);
+      setCareerMapDomainId(mapping.dId);
       if (mapping.rSlug) {
-        setTaxonomyRoleSlug(mapping.rSlug);
+        setSelectedRoleId(mapping.rSlug);
       }
-      setCareerMapViewMode('taxonomy');
+      setCareerMapViewMode('mindmap');
       setActiveTab('map');
     } else if (sectionType === 'libraries') {
       setLibrariesQuery(queryText);
@@ -696,7 +696,7 @@ export default function App() {
 
   // Tab states to isolate sections independently
   const [activeTab, setActiveTab] = useState<string>('about');
-  const [careerMapViewMode, setCareerMapViewMode] = useState<'mindmap' | 'taxonomy' | 'comparison'>('mindmap');
+  const [careerMapViewMode, setCareerMapViewMode] = useState<'mindmap' | 'comparison'>('mindmap');
   const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState<boolean>(false);
 
   // Mobile navigation and search states
@@ -1124,6 +1124,8 @@ export default function App() {
     }
   }, [isSidebarExpanded]);
 
+  const prevTabRef = useRef<string>(activeTab);
+
   useEffect(() => {
     // Determine the target element ID to scroll to if focusing on details
     let targetId: string | null = null;
@@ -1135,13 +1137,17 @@ export default function App() {
     } else if (activeTab === 'saved' && document.getElementById('saved-role-detail-anchor')) {
       targetId = 'saved-role-detail-anchor';
     } else if (activeTab === 'comparison') {
-      if (selectedRoleId) {
-        // Pre-encode the active selected role as Role A
-        setPresetRoleAId(selectedRoleId);
-        localStorage.setItem('comparator_roleAId', selectedRoleId);
+      if (prevTabRef.current !== 'comparison') {
+        if (selectedRoleId) {
+          // Pre-encode the active selected role as Role A
+          setPresetRoleAId(selectedRoleId);
+          localStorage.setItem('comparator_roleAId', selectedRoleId);
+        }
+        setSelectedRoleId(null);
+        targetId = 'section-comparison';
+      } else if (selectedRoleId) {
+        targetId = 'comparison-role-detail-anchor';
       }
-      setSelectedRoleId(null);
-      targetId = 'section-comparison';
     }
 
     // Scroll to the resolved target element or just to the absolute top of the viewport
@@ -1154,6 +1160,8 @@ export default function App() {
         }
       }
     }, 100);
+
+    prevTabRef.current = activeTab;
   }, [activeTab, selectedRoleId]);
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -2644,7 +2652,7 @@ export default function App() {
                   // Direct tab switcher bridges! Redirects users seamlessly to respective tabs
                   if (sectionId === 'libraries-section') setActiveTab('libraries');
                   else if (sectionId === 'interactive-map-section') { setCareerMapViewMode('mindmap'); setActiveTab('map'); }
-                  else if (sectionId === 'it-taxonomy-explorer-section') { setCareerMapViewMode('taxonomy'); setActiveTab('map'); }
+                  else if (sectionId === 'it-taxonomy-explorer-section') { setCareerMapViewMode('mindmap'); setActiveTab('map'); }
                   else if (sectionId === 'comparison-section') setActiveTab('comparison');
                 }}
                 savedPathways={savedPathways}
@@ -3252,7 +3260,7 @@ export default function App() {
 
         <footer className="w-full max-w-full px-4 sm:px-6 md:px-8 border-t border-[#121c38]/40 pt-6 pb-24 md:pb-12 mt-12 text-center text-xs font-mono text-gray-600">
           <p className="leading-relaxed">
-            MapIT 2026
+            MapIT
           </p>
         </footer>
 

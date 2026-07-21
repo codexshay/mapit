@@ -62,8 +62,8 @@ interface CareerMapProps {
   setTaxonomyCategoryId?: (id: string | null) => void;
   taxonomyRoleSlug?: string | null;
   setTaxonomyRoleSlug?: (slug: string | null) => void;
-  viewMode?: 'mindmap' | 'taxonomy' | 'comparison';
-  setViewMode?: (mode: 'mindmap' | 'taxonomy' | 'comparison') => void;
+  viewMode?: 'mindmap' | 'comparison';
+  setViewMode?: (mode: 'mindmap' | 'comparison') => void;
 }
 
 export default function CareerMap({
@@ -92,7 +92,7 @@ export default function CareerMap({
   const [localActiveDomainId, setLocalActiveDomainId] = useState<string | null>('green-computing');
   const activeDomainId = activeDomainIdProp !== undefined ? activeDomainIdProp : localActiveDomainId;
   const setActiveDomainId = setActiveDomainIdProp || setLocalActiveDomainId;
-  const [localViewMode, setLocalViewMode] = useState<'mindmap' | 'taxonomy' | 'comparison'>('mindmap');
+  const [localViewMode, setLocalViewMode] = useState<'mindmap' | 'comparison'>('mindmap');
   const viewMode = viewModeProp !== undefined ? viewModeProp : localViewMode;
   const setViewMode = setViewModeProp || setLocalViewMode;
   const [showFilters, setShowFilters] = useState<boolean>(false);
@@ -288,40 +288,30 @@ export default function CareerMap({
           <button 
             id="btn-view-mindmap"
             onClick={() => setViewMode('mindmap')}
-            className={`px-3 py-1.5 font-mono text-xs border-2 uppercase transition-all rounded-none cursor-pointer flex items-center justify-center gap-1.5 ${
+            className={`px-4 py-2 font-mono text-xs border-2 uppercase transition-all rounded-none cursor-pointer flex items-center justify-center gap-2 ${
               viewMode === 'mindmap' 
                 ? 'bg-[#10b981] text-black border-[#10b981] font-bold shadow-[2px_2px_0px_#05402a]'
                 : (isLight ? 'text-gray-600 border-gray-300 hover:text-[#10b981] hover:border-[#10b981] bg-white' : 'text-gray-400 border-[#121c38] hover:text-[#10b981] hover:border-[#10b981]')
             }`}
-            title="Mind-Map Nodes"
+            title="Domains & Roles"
           >
             <Network className="w-4 h-4 shrink-0" />
-          </button>
-          
-          <button 
-            id="btn-view-taxonomy"
-            onClick={() => setViewMode('taxonomy')}
-            className={`px-3 py-1.5 font-mono text-xs border-2 uppercase transition-all rounded-none cursor-pointer flex items-center justify-center gap-1.5 ${
-              viewMode === 'taxonomy' 
-                ? 'bg-[#10b981] text-black border-[#10b981] font-bold shadow-[2px_2px_0px_#05402a]'
-                : (isLight ? 'text-gray-600 border-gray-300 hover:text-[#10b981] hover:border-[#10b981] bg-white' : 'text-gray-400 border-[#121c38] hover:text-[#10b981] hover:border-[#10b981]')
-            }`}
-            title="Taxonomy Map"
-          >
-            <Layers className="w-4 h-4 shrink-0" />
+            <span className="hidden sm:inline font-bold">Domains & Roles</span>
+            <span className="inline sm:hidden font-bold">Domains</span>
           </button>
 
           <button 
             id="btn-view-comparison"
             onClick={() => setViewMode('comparison')}
-            className={`px-3 py-1.5 font-mono text-xs border-2 uppercase transition-all rounded-none cursor-pointer flex items-center justify-center gap-1.5 ${
+            className={`px-4 py-2 font-mono text-xs border-2 uppercase transition-all rounded-none cursor-pointer flex items-center justify-center gap-2 ${
               viewMode === 'comparison' 
                 ? 'bg-[#10b981] text-black border-[#10b981] font-bold shadow-[2px_2px_0px_#05402a]'
                 : (isLight ? 'text-gray-600 border-gray-300 hover:text-[#10b981] hover:border-[#10b981] bg-white' : 'text-gray-400 border-[#121c38] hover:text-[#10b981] hover:border-[#10b981]')
             }`}
-            title="Comparator"
+            title="Side-by-Side Comparator"
           >
             <Scale className="w-4 h-4 shrink-0" />
+            <span className="font-bold">Comparator</span>
           </button>
         </div>
       </div>
@@ -919,19 +909,6 @@ export default function CareerMap({
               )}
             </AnimatePresence>
           </div>
-        </div>
-      ) : viewMode === 'taxonomy' ? (
-        <div className="relative z-10 animate-fade-in">
-          <ITTaxonomyExplorer 
-            onSelectRole={onSelectRole}
-            marketRegion={activeFilters.marketRegion}
-            onNavigateToSection={onNavigateToSection}
-            activeCategoryId={taxonomyCategoryId}
-            selectedRoleSlug={taxonomyRoleSlug}
-            onActiveCategoryChange={setTaxonomyCategoryId}
-            onSelectedRoleSlugChange={setTaxonomyRoleSlug}
-            isEmbedded={true}
-          />
         </div>
       ) : (
         <div className="relative z-10 animate-fade-in">
