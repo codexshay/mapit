@@ -1591,42 +1591,10 @@ export default function LibrariesDashboard({
     return defaultCerts;
   });
 
-  // Find matches for redirection target
+  // Find matches for redirection target (Disabled to ensure search results are listed first)
   const redirectionMatch = React.useMemo(() => {
-    // 1. Check for Certification matching on query
-    if (query && query.trim().length >= 2) {
-      const cleanCertQuery = query.trim().toLowerCase();
-      const matchedCert = certifications.find(c => 
-        c.name.toLowerCase() === cleanCertQuery || 
-        c.id.toLowerCase() === cleanCertQuery ||
-        c.name.toLowerCase().includes(cleanCertQuery)
-      );
-      if (matchedCert) {
-        return { type: 'certification', data: matchedCert };
-      }
-    }
-
-    // 2. Check for YouTube channel matching on either ytSearchQuery or query
-    const ytQuery = ytSearchQuery || query;
-    if (ytQuery && ytQuery.trim().length >= 2) {
-      const cleanYtQuery = ytQuery.trim().toLowerCase();
-      for (const cat of TEACHERS_DIRECTORY) {
-        for (const sub of cat.subcategories) {
-          if (sub.skillArea.toLowerCase().includes(cleanYtQuery)) {
-            return { type: 'youtubeTeacher', data: { ...sub, categoryName: cat.name, emoji: cat.emoji } };
-          }
-          const matchedTeacher = sub.teachers.find(t => 
-            t.name.toLowerCase().includes(cleanYtQuery) || cleanYtQuery.includes(t.name.toLowerCase())
-          );
-          if (matchedTeacher) {
-            return { type: 'youtubeTeacher', data: { ...sub, matchedTeacher, categoryName: cat.name, emoji: cat.emoji } };
-          }
-        }
-      }
-    }
-
     return null;
-  }, [query, ytSearchQuery, certifications]);
+  }, []);
 
   const [books, setBooks] = useState<RecommendedBook[]>(() => {
     const defaultBooks = RECOMMENDED_BOOKS;

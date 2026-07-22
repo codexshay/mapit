@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   Flame, Globe, Search, RefreshCw, Calendar, Tag, MapPin, 
   ExternalLink, Trophy, Users, CheckCircle2, AlertCircle, ArrowUpRight, 
-  Compass, Radio, Sparkles, Filter, Bookmark, Info
+  Compass, Radio, Sparkles, Filter, Bookmark, Info, Bell, BellOff
 } from 'lucide-react';
 import CustomBookmarkIcon from './CustomBookmarkIcon';
 import { motion, AnimatePresence } from 'motion/react';
@@ -42,7 +42,7 @@ export const GLOBAL_HACKATHONS: Hackathon[] = [
     themes: ['AI/ML', 'Cloud', 'UN SDGs Solvers'],
     difficulty: 'All Levels',
     daysLeft: 12,
-    url: 'https://developers.google.com/community/gdsc-solution-challenge',
+    url: 'https://promptwars.in/solutionchallenge2026.html',
     type: 'Online',
     location: 'Online (Global Broadcast / Self-Submitted)',
     description: 'Build real-world solutions for one or more of the United Nations Sustainable Development Goals using Google products and AI models like Gemini.',
@@ -530,7 +530,7 @@ export default function Hackathons({
   const [categoryFilter, setCategoryFilter] = useState<string>('All');
   const [statusFilter, setStatusFilter] = useState<string>('All');
   
-  const [localSelectedItemId, setLocalSelectedItemId] = useState<string | null>(COMBINED_EVENTS[0]?.id || null);
+  const [localSelectedItemId, setLocalSelectedItemId] = useState<string | null>(null);
   const selectedItemId = selectedItemIdProp !== undefined ? selectedItemIdProp : localSelectedItemId;
   const setSelectedItemId = setSelectedItemIdProp || setLocalSelectedItemId;
 
@@ -584,6 +584,113 @@ export default function Hackathons({
       handleManualSync();
     }
   }, [syncTrigger]);
+
+  const [toastMessage, setToastMessage] = useState<{ id: string; text: string; type: 'success' | 'info' | 'warning' } | null>(null);
+
+  // Show a beautiful temporary toast
+  const showToast = (text: string, type: 'success' | 'info' | 'warning' = 'success') => {
+    const id = Math.random().toString(36).substr(2, 9);
+    setToastMessage({ id, text, type });
+  };
+
+  // Auto-dismiss toast
+  useEffect(() => {
+    if (toastMessage) {
+      const timer = setTimeout(() => {
+        setToastMessage(null);
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [toastMessage]);
+
+  const handleGoogleCalendarReminder = (item: Hackathon, e?: React.MouseEvent) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    
+    // 1. Calculate and open Google Calendar template in a new window/tab
+    const url = getGoogleCalendarUrl(item);
+    window.open(url, '_blank');
+
+    // 2. Inform the user with a dynamic success notification toast!
+    showToast(`📅 Opening Google Calendar for "${item.title}"!`, "success");
+  };
+
+  const triggerInAppAlert = (item: Hackathon) => {
+    showToast(`🔔 ALERT: "${item.title}" is closing in ${item.daysLeft} days!`, "warning");
+    
+    // Also try standard browser notification if permission is granted
+    if (typeof window !== 'undefined' && 'Notification' in window && Notification.permission === 'granted') {
+      try {
+        new Notification(`MapIT Event Alert!`, {
+          body: `"${item.title}" organized by ${item.organizer} is closing in ${item.daysLeft} days. Get ready to submit!`,
+          icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2310b981'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ffffff'/%3E%3C/svg%3E"
+        });
+      } catch (e) {
+        console.error("Browser notification failed", e);
+      }
+    }
+  };
+
+  const getGoogleCalendarUrl = (item: Hackathon) => {
+    const startDate = new Date();
+    startDate.setDate(startDate.getDate() + item.daysLeft);
+    startDate.setHours(9, 0, 0, 0);
+    const endDate = new Date(startDate);
+    endDate.setHours(17, 0, 0, 0);
+
+    const formatTargetDate = (d: Date) => {
+      return d.toISOString().replace(/-|:|\.\d\d\d/g, "");
+    };
+
+    const dates = `${formatTargetDate(startDate)}/${formatTargetDate(endDate)}`;
+    const title = encodeURIComponent(item.title);
+    const details = encodeURIComponent(
+      `${item.description}\n\nOrganizer: ${item.organizer}\nType: ${item.type}\nLocation: ${item.location}\nURL: ${item.url}`
+    );
+    const location = encodeURIComponent(item.location);
+
+    return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${dates}&details=${details}&location=${location}`;
+  };
+
+  const downloadIcsFile = (item: Hackathon) => {
+    const startDate = new Date();
+    startDate.setDate(startDate.getDate() + item.daysLeft);
+    startDate.setHours(9, 0, 0, 0);
+    const endDate = new Date(startDate);
+    endDate.setHours(17, 0, 0, 0);
+
+    const formatIcsDate = (d: Date) => {
+      return d.toISOString().replace(/-|:|\.\d\d\d/g, "");
+    };
+
+    const icsContent = [
+      "BEGIN:VCALENDAR",
+      "VERSION:2.0",
+      "PRODID:-//MapIT//Hackathon Reminders//EN",
+      "BEGIN:VEVENT",
+      `UID:${item.id}-${Date.now()}@mapit.app`,
+      `DTSTAMP:${formatIcsDate(new Date())}`,
+      `DTSTART:${formatIcsDate(startDate)}`,
+      `DTEND:${formatIcsDate(endDate)}`,
+      `SUMMARY:${item.title}`,
+      `DESCRIPTION:${item.description.replace(/\n/g, "\\n")} \\n\\nOrganizer: ${item.organizer} \\nURL: ${item.url}`,
+      `LOCATION:${item.location}`,
+      "END:VEVENT",
+      "END:VCALENDAR"
+    ].join("\r\n");
+
+    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', `${item.id}-reminder.ics`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    showToast("📅 ICS Calendar file download started!");
+  };
 
   // Website automatic silent background resync on initial boot
   useEffect(() => {
@@ -824,10 +931,307 @@ export default function Hackathons({
     return bNew - aNew;
   });
 
-  const selectedItem = COMBINED_EVENTS.find(item => item.id === selectedItemId) || filteredItems[0] || COMBINED_EVENTS[0];
+  const selectedItemDesktop = selectedItemId 
+    ? COMBINED_EVENTS.find(item => item.id === selectedItemId) || filteredItems[0] || COMBINED_EVENTS[0] 
+    : filteredItems[0] || COMBINED_EVENTS[0];
+
+  const selectedItemMobile = selectedItemId 
+    ? COMBINED_EVENTS.find(item => item.id === selectedItemId) || null 
+    : null;
+
+  const renderDetailCard = (item: typeof COMBINED_EVENTS[0], showBackButton: boolean) => (
+    <motion.div
+      key={item.id}
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{ duration: 0.15 }}
+      className={`border-2 p-5 sm:p-6 flex flex-col justify-between relative ${
+        isLight 
+          ? 'bg-white border-emerald-500/30 text-slate-800 shadow-[4px_4px_0px_0px_#10b981]' 
+          : 'bg-[#080d1a] border-emerald-500/40 text-white shadow-[4px_4px_0px_#10b981]'
+      }`}
+    >
+      {/* Top Bar: Back to Primary List Arrow Button */}
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b pb-4 mb-5 border-emerald-500/20 font-mono">
+        {showBackButton ? (
+          <button
+            type="button"
+            onClick={() => setSelectedItemId(null)}
+            className="px-4 py-2 border-2 border-emerald-500 bg-emerald-500/10 hover:bg-emerald-500 text-emerald-400 hover:text-black font-mono font-bold uppercase text-xs flex items-center gap-2 cursor-pointer transition-all shadow-[2px_2px_0px_#10b981]"
+          >
+            <span>← Back to Hackathons List</span>
+          </button>
+        ) : (
+          <span className="text-[10px] uppercase font-bold tracking-widest text-emerald-400">
+            EVENT SPECIFICATIONS & BLUEPRINT
+          </span>
+        )}
+
+        {/* Event Counter & Prev/Next Quick Cycle Controls */}
+        <div className="flex items-center gap-2 text-xs">
+          <span className="text-gray-400 font-bold uppercase text-[10px]">
+            {filteredItems.findIndex(i => i.id === item.id) + 1} of {filteredItems.length} Events
+          </span>
+          {filteredItems.length > 1 && (
+            <div className="flex items-center gap-1">
+              <button
+                onClick={() => {
+                  const idx = filteredItems.findIndex(i => i.id === item.id);
+                  const prevIdx = idx > 0 ? idx - 1 : filteredItems.length - 1;
+                  setSelectedItemId(filteredItems[prevIdx].id);
+                }}
+                className="px-2 py-1 border border-emerald-500/40 hover:border-emerald-500 text-emerald-400 text-[10px] uppercase font-bold cursor-pointer"
+              >
+                ← Prev
+              </button>
+              <button
+                onClick={() => {
+                  const idx = filteredItems.findIndex(i => i.id === item.id);
+                  const nextIdx = idx < filteredItems.length - 1 ? idx + 1 : 0;
+                  setSelectedItemId(filteredItems[nextIdx].id);
+                }}
+                className="px-2 py-1 border border-emerald-500/40 hover:border-emerald-500 text-emerald-400 text-[10px] uppercase font-bold cursor-pointer"
+              >
+                Next →
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Header detail */}
+      <div className="space-y-4">
+        <div className={`flex flex-wrap items-center justify-between border-b pb-3 font-mono gap-2 ${isLight ? 'border-gray-200' : 'border-[#121c38]'}`}>
+          <div className="flex-1 min-w-[200px]">
+            <span className="text-[10px] uppercase font-bold tracking-widest block leading-none mb-1 text-emerald-400">
+              {item.prizes.toLowerCase().includes('cash') || item.prizes.toLowerCase().includes('$') ? 'ACTIVE BUILD OPPORTUNITY SPECIFICATIONS' : 'EXPERT TECHNOLOGY SUMMIT/FEST'}
+            </span>
+            <div className="flex items-center gap-2">
+              <h4 className={`font-bold font-sans text-md uppercase leading-tight ${isLight ? 'text-slate-800' : 'text-slate-100'}`}>
+                {item.organizer}
+              </h4>
+              {toggleBookmark && isBookmarked && (
+                <button
+                  onClick={() => toggleBookmark({
+                    id: item.id,
+                    name: item.title,
+                    type: 'hackathon',
+                    subtext: `${item.organizer} • ${item.region}`,
+                    url: item.url
+                  })}
+                  className="p-1 text-gray-500 hover:text-yellow-400 transition cursor-pointer flex items-center justify-center animate-pulse"
+                  title={isBookmarked(item.id, 'hackathon') ? 'Remove bookmark' : 'Bookmark this item'}
+                >
+                  <CustomBookmarkIcon className={`w-4 h-4 ${isBookmarked(item.id, 'hackathon') ? 'text-yellow-400 fill-yellow-400' : ''}`} />
+                </button>
+              )}
+
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  handleGoogleCalendarReminder(item, e);
+                }}
+                className="p-1 text-gray-500 hover:text-emerald-400 transition cursor-pointer flex items-center justify-center"
+                title="Add to Google Calendar"
+              >
+                <Bell className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+
+          <div className="text-right">
+            <span className="text-[9px] text-gray-500 block uppercase font-mono">
+              Difficulty / Format
+            </span>
+            <span className={`text-xs font-bold uppercase ${isLight ? 'text-slate-800 font-extrabold' : 'text-white'}`}>{item.difficulty}</span>
+          </div>
+        </div>
+
+        {/* Large Name */}
+        <div className="space-y-1.5 font-mono">
+          <h2 className={`text-xl sm:text-2xl font-bold font-sans tracking-tight uppercase leading-snug text-emerald-400`}>
+            {item.title}
+          </h2>
+          
+          <div className="flex flex-wrap gap-1.5">
+            <span className={`text-[11px] border px-2.5 py-0.5 font-mono uppercase font-semibold ${getCategoryStyle(getCategory(item))}`}>
+              CATEGORY: {getCategory(item)}
+            </span>
+            <span className={`text-[11px] border px-2.5 py-0.5 font-mono uppercase font-semibold flex items-center gap-1.5 ${getStatusStyle(getScheduleStatus(item))}`}>
+              {getScheduleStatus(item) === 'Active' && <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-ping shrink-0" />}
+              STATUS: {getScheduleStatus(item)}
+            </span>
+            <span className="text-[11px] px-2.5 py-0.5 font-mono uppercase font-semibold bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+              {item.region} Focus
+            </span>
+            <span className={`text-[11px] border px-2.5 py-0.5 font-mono uppercase font-semibold ${isLight ? 'bg-slate-100 border-slate-300 text-slate-700' : 'bg-slate-900 border-slate-700/80 text-gray-300'}`}>
+              {item.type} Access
+            </span>
+          </div>
+        </div>
+
+        {/* Location Banner */}
+        <div className={`flex items-start gap-2.5 text-xs font-mono border p-3 ${isLight ? 'bg-slate-50 border-gray-200 text-slate-800 font-medium' : 'bg-black/40 border-[#1e2e54]/40 text-slate-300'}`}>
+          <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-emerald-400 animate-pulse" />
+          <div className="space-y-0.5">
+            <span className="text-[9px] text-gray-500 uppercase block font-bold leading-none">EVENT COORDINATES & LOCATION</span>
+            <strong className={`font-sans font-semibold text-[13px] ${isLight ? 'text-slate-850' : 'text-white'}`}>{item.location}</strong>
+          </div>
+        </div>
+
+        {/* Core Description Panel */}
+        <div className={`p-4 font-mono text-xs border space-y-2 ${isLight ? 'bg-gray-50 border-gray-200 text-slate-800' : 'bg-[#050810] border-[#1e2e54]/50 text-slate-300'}`}>
+          <span className="font-bold block uppercase text-[10px] text-emerald-400">
+            ✔ OVERVIEW & OBJECTIVES
+          </span>
+          <p className={`leading-relaxed font-sans font-normal text-[12.5px] normal-case ${isLight ? 'text-slate-705' : 'text-slate-200'}`}>
+            {item.description}
+          </p>
+        </div>
+
+        {/* Target Audience & Career Growth Advantages */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4.5 font-mono text-xs">
+          <div className="space-y-1.5">
+            <span className="text-slate-500 uppercase text-[9px] block">TARGET DEMOGRAPHICS:</span>
+            <div className={`leading-relaxed font-sans border-l-2 border-indigo-500 pl-2.5 ${isLight ? 'text-slate-700 font-medium' : 'text-slate-200'}`}>
+              {item.targetAudience}
+            </div>
+          </div>
+
+          <div className="space-y-1.5">
+            <span className="text-slate-500 uppercase text-[9px] block">CAREER ADVANCEMENT & SKILLS:</span>
+            <div className={`leading-relaxed font-sans border-l-2 border-[#10b981] pl-2.5 ${isLight ? 'text-slate-700 font-medium' : 'text-slate-200'}`}>
+              {item.careerBenefit}
+            </div>
+          </div>
+        </div>
+
+        {/* Prizes and Themes highlights */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-mono text-xs pt-2">
+          <div className="p-3 border flex items-start gap-2.5 bg-emerald-950/10 border-emerald-900/35">
+            <Trophy className="w-5 h-5 shrink-0 mt-0.5 text-emerald-400" />
+            <div>
+              <span className="text-[9px] uppercase block font-bold leading-none mb-1 text-emerald-400">
+                PRIZES, CERTIFICATES & ADVANTAGES
+              </span>
+              <strong className={`text-[12px] uppercase leading-tight font-sans tracking-wide ${isLight ? 'text-slate-850 font-extrabold' : 'text-white'}`}>
+                {item.prizes}
+              </strong>
+            </div>
+          </div>
+
+          <div className="p-3 bg-indigo-950/10 border border-indigo-900/35 flex items-start gap-2.5">
+            <Tag className="w-5 h-5 text-indigo-400 shrink-0 mt-0.5" />
+            <div>
+              <span className="text-[9px] text-indigo-400 uppercase block font-bold leading-none mb-1">THEMATIC SKILL MATRICES</span>
+              <div className="flex flex-wrap gap-1 mt-1">
+                {item.themes.map(t => (
+                  <span key={t} className="bg-white border border-gray-300 text-black text-[9px] font-bold px-1.5 py-0.5 font-sans">
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Footer Controls & Redirect Portal URI */}
+      {item.daysLeft <= 0 || item.isConcluded ? (
+        <div className={`mt-6 border-t pt-5 space-y-4 font-mono text-xs ${isLight ? 'border-gray-200' : 'border-[#121c38]'}`}>
+          <div className="flex items-center gap-2 p-2 bg-[#ef4444]/10 border border-[#ef4444]/30 text-red-500 font-bold">
+            <AlertCircle className="w-4 h-4 shrink-0 animate-pulse" />
+            <span>🔴 REGISTRATION CLOSED / EVENT CONCLUDED</span>
+          </div>
+          
+          <div className={`p-4 leading-relaxed border ${isLight ? 'bg-slate-50 border-gray-200 text-slate-700' : 'bg-[#0f1423] border-[#1e2e54] text-slate-300'}`}>
+            <p className="font-sans text-[12.5px] mb-3">
+              This opportunity is currently concluded. Below are official online recommended portals, videos, or Minutes of Meetings (MOM) to see performance highlights and project portfolios:
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-3">
+              {item.momUrl && (
+                <a
+                  href={item.momUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white font-bold text-center flex items-center justify-center gap-1.5 rounded-none shadow-[2px_2px_0px_#091d3e] transition-all cursor-pointer"
+                >
+                  📄 {item.momTitle || 'View Event MOM'} <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              )}
+              {item.replayUrl && (
+                <a
+                  href={item.replayUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 px-4 py-2 bg-red-650 hover:bg-red-600 text-white font-bold text-center flex items-center justify-center gap-1.5 rounded-none shadow-[2px_2px_0px_#4c0505] transition-all cursor-pointer"
+                >
+                  🎥 {item.replayTitle || 'Watch Event Replay'} <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div className={`mt-6 border-t pt-4.5 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs ${isLight ? 'border-gray-200' : 'border-[#121c38]'}`}>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full animate-pulse shrink-0 bg-[#10b981]" />
+            <span className={`text-[11px] ${isLight ? 'text-slate-600' : 'text-slate-400'}`}>
+              Closes in:{' '}
+              <strong className="text-red-500 font-bold">
+                {getCountdownString(item.id, item.daysLeft)}
+              </strong>
+            </span>
+          </div>
+
+          <div className="flex flex-col items-end gap-1.5 w-full sm:w-auto">
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-6 py-2.5 bg-[#10b981] hover:bg-[#059669] text-black font-bold uppercase transition flex items-center justify-center gap-2 rounded-none shadow-[3px_3px_0px_#064e3b] text-xs cursor-pointer tracking-wider"
+            >
+              <span>REGISTER / GO TO OFFICIAL PORTAL</span>
+              <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+            </a>
+          </div>
+        </div>
+      )}
+    </motion.div>
+  );
 
   return (
     <div className="space-y-6 animate-fade-in">
+      
+      {toastMessage && (
+        <div className="fixed bottom-4 right-4 z-50 pointer-events-none">
+          <motion.div
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            className={`pointer-events-auto flex items-center gap-3 px-4 py-3 border-2 shadow-lg font-mono text-xs ${
+              toastMessage.type === 'success' 
+                ? 'bg-emerald-950/90 border-emerald-500 text-emerald-400' 
+                : toastMessage.type === 'warning'
+                ? 'bg-amber-950/90 border-amber-500 text-amber-400'
+                : 'bg-indigo-950/90 border-indigo-500 text-indigo-450'
+            }`}
+          >
+            <span className="text-sm">🔔</span>
+            <span className="font-semibold">{toastMessage.text}</span>
+            <button 
+              onClick={() => setToastMessage(null)} 
+              className="ml-2 hover:text-white transition font-bold"
+            >
+              ×
+            </button>
+          </motion.div>
+        </div>
+      )}
       
       {/* Collapsible Mobile Preferences Button */}
       <div className="flex items-center justify-between lg:hidden p-3 border-2 border-red-500/20 bg-red-950/5 font-mono text-xs">
@@ -918,53 +1322,28 @@ export default function Hackathons({
           </div>
         </div>
 
-        {/* Title Search Input */}
-        {!hideInternalSearch && (
-          <div className="relative w-full lg:w-80">
-            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">
-              <Search className="w-3.5 h-3.5" />
-            </span>
-            <input
-              type="text"
-              placeholder="Search events, registries or hosts..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className={`w-full ${isLight ? 'bg-gray-50 border-gray-200 text-slate-800' : 'bg-[#050912] border-[#121c38] text-white'} border pl-9 pr-4 py-1.5 uppercase tracking-wider text-[11px] focus:outline-none focus:border-red-500 placeholder-gray-500 rounded-none`}
-            />
-          </div>
-        )}
+
 
       </div>
 
-      {/* 4. MAIN LAYOUT: MASTER LIST AND DETAIL CARD VIEW */}
-      <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-5 items-stretch">
-        
+      {/* 4. MAIN LAYOUT: DESKTOP SPLIT VIEW vs MOBILE SINGLE VIEW */}
+      
+      {/* DESKTOP VIEW (lg: grid split view) */}
+      <div className="hidden lg:grid lg:grid-cols-12 gap-5 items-stretch">
         {/* Left list: Master list of matches */}
-        <div className="lg:col-span-5 flex flex-col gap-2 max-h-[550px] overflow-y-auto pr-1">
-          {filteredItems.slice(0, isMobile && !showAllHackathons ? 4 : undefined).map((item) => {
-            const isSelected = selectedItemId === item.id;
+        <div className="lg:col-span-5 flex flex-col gap-2 max-h-[650px] overflow-y-auto pr-1">
+          {filteredItems.map((item) => {
+            const isSelected = selectedItemId ? selectedItemId === item.id : selectedItemDesktop?.id === item.id;
             return (
               <div
                 key={item.id}
                 role="button"
                 tabIndex={0}
-                onClick={() => {
-                  setSelectedItemId(item.id);
-                  if (isMobile) {
-                    setTimeout(() => {
-                      document.getElementById('hackathon-detail-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }, 80);
-                  }
-                }}
+                onClick={() => setSelectedItemId(item.id)}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
                     setSelectedItemId(item.id);
-                    if (isMobile) {
-                      setTimeout(() => {
-                        document.getElementById('hackathon-detail-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                      }, 80);
-                    }
                   }
                 }}
                 style={{
@@ -973,7 +1352,7 @@ export default function Hackathons({
                 }}
                 className={`w-full p-4 text-left border-2 transition-all relative rounded-none flex flex-col gap-2 font-mono text-xs cursor-pointer ${
                   isSelected 
-                    ? (isLight ? 'bg-slate-100 text-slate-900' : 'bg-[#0f2c20]/40 text-white') 
+                    ? (isLight ? 'bg-slate-100 text-slate-900 border-emerald-500' : 'bg-[#0f2c20]/40 text-white border-emerald-500') 
                     : item.isNewAddition
                       ? (isLight ? 'bg-[#f0fdf4] text-slate-850' : 'bg-[#0a1e16] text-gray-300')
                       : (isLight ? 'bg-white hover:bg-slate-50 text-slate-700' : 'bg-[#090f1e] hover:bg-[#0c162b] text-gray-400')
@@ -986,18 +1365,16 @@ export default function Hackathons({
                   
                   <div className="flex items-center gap-1.5 shrink-0 flex-wrap justify-end">
                     {item.isNewAddition && (
-                      <span className="px-1.5 py-0.5 text-[8px] md:text-[8.5px] border border-[#10b981] bg-[#10b981]/15 text-[#10b981] font-bold rounded-none uppercase animate-pulse flex items-center gap-1">
+                      <span className="px-1.5 py-0.5 text-[8px] border border-[#10b981] bg-[#10b981]/15 text-[#10b981] font-bold rounded-none uppercase animate-pulse flex items-center gap-1">
                         <span className="w-1.5 h-1.5 bg-[#10b981] rounded-full inline-block animate-ping" />
-                        LATEST ADDITION
+                        LATEST
                       </span>
                     )}
                     
-                    {/* Category Label */}
                     <span className={`px-1.5 py-0.5 text-[8.2px] border font-bold uppercase rounded-none font-mono ${getCategoryStyle(getCategory(item))}`}>
                       {getCategory(item)}
                     </span>
 
-                    {/* Status Badge */}
                     <span className={`px-1.5 py-0.5 text-[8.2px] border font-bold uppercase rounded-none font-mono flex items-center gap-1 ${getStatusStyle(getScheduleStatus(item))}`}>
                       {getScheduleStatus(item) === 'Active' && <span className="w-1 h-1 bg-emerald-400 rounded-full animate-ping shrink-0" />}
                       {getScheduleStatus(item)}
@@ -1022,16 +1399,11 @@ export default function Hackathons({
                         <CustomBookmarkIcon className={`w-3.5 h-3.5 ${isBookmarked(item.id, 'hackathon') ? 'text-yellow-400 fill-yellow-400' : ''}`} />
                       </button>
                     )}
-                    <span className={`px-1.5 py-0.5 text-[8.2px] border font-bold rounded-none uppercase ${isLight ? 'border-gray-200 bg-gray-100/50 text-slate-800' : 'border-gray-650 bg-slate-900/40 text-gray-400'}`}>
-                      {item.type}
-                    </span>
                   </div>
                 </div>
 
-                <h3 className={`font-sans font-bold text-sm block tracking-tight leading-tight uppercase transition-colors ${
-                  isSelected 
-                    ? 'text-emerald-400 font-extrabold' 
-                    : (isLight ? 'text-slate-800' : 'text-slate-200')
+                <h3 className={`font-sans font-bold text-sm block tracking-tight leading-snug uppercase ${
+                  isSelected ? 'text-emerald-400 font-extrabold' : (isLight ? 'text-slate-800' : 'text-slate-200')
                 }`}>
                   {item.title}
                 </h3>
@@ -1042,14 +1414,13 @@ export default function Hackathons({
                     <span className="truncate" title={`${item.region} • ${item.location}`}>{item.region} • {item.location}</span>
                   </span>
                   
-                  <span className={`${item.daysLeft <= 0 ? 'text-gray-500' : 'text-yellow-450'} font-semibold flex items-center gap-1 font-mono shrink-0`}>
+                  <span className={`${item.daysLeft <= 0 ? 'text-gray-500' : 'text-amber-400'} font-semibold flex items-center gap-1 font-mono shrink-0`}>
                     <Calendar className="w-3" />
                     {getCountdownString(item.id, item.daysLeft)}
                   </span>
                 </div>
 
-                {/* Themes tag chips */}
-                <div className="flex flex-wrap gap-1 mt-1.5">
+                <div className="flex flex-wrap gap-1 mt-1">
                   {item.themes.map(t => (
                     <span key={t} className="text-[8.5px] bg-white text-black border border-gray-300 font-bold uppercase px-1.5 py-0.5">
                       #{t}
@@ -1065,220 +1436,13 @@ export default function Hackathons({
               ⚠️ No entry matched the active search filters and keywords.
             </div>
           )}
-
-          {isMobile && filteredItems.length > 4 && (
-            <div className="mt-2 flex justify-center">
-              <button
-                onClick={() => setShowAllHackathons(!showAllHackathons)}
-                className="w-full py-2.5 bg-slate-950 hover:bg-[#121c38] border border-[#1e2e54] hover:border-[#10b981] text-[#10b981] font-mono text-xs font-bold uppercase transition focus:outline-none flex items-center justify-center gap-1.5 cursor-pointer"
-              >
-                <span>{showAllHackathons ? '▲ Show Fewer Hackathons' : `▼ Show All Hackathons (${filteredItems.length})`}</span>
-              </button>
-            </div>
-          )}
         </div>
 
         {/* Right panel: Detail breakdown */}
-        <div id="hackathon-detail-panel" className="lg:col-span-7 scroll-mt-20">
+        <div className="lg:col-span-7">
           <AnimatePresence mode="wait">
-            {selectedItem ? (
-              <motion.div
-                key={selectedItem.id}
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 10 }}
-                transition={{ duration: 0.15 }}
-                className={`border-2 p-5 flex flex-col justify-between h-full relative ${isLight ? 'bg-white border-gray-200 text-slate-800 shadow-[4px_4px_0px_0px_#cbd5e1]' : 'bg-[#080d1a] border-[#121c38] text-white shadow-[4px_4px_0px_#121c38]'} border-emerald-950/40`}
-              >
-                
-                {/* Header detail */}
-                <div className="space-y-3.5">
-                  <div className={`flex items-center justify-between border-b pb-3 font-mono ${isLight ? 'border-gray-200' : 'border-[#121c38]'}`}>
-                    <div className="flex-1">
-                      <span className="text-[10px] uppercase font-bold tracking-widest block leading-none mb-1 text-emerald-400">
-                        {selectedItem.prizes.toLowerCase().includes('cash') || selectedItem.prizes.toLowerCase().includes('$') ? 'ACTIVE BUILD OPPORTUNITY SPECIFICATIONS' : 'EXPERT TECHNOLOGY SUMMIT/FEST'}
-                      </span>
-                      <div className="flex items-center gap-2">
-                        <h4 className={`font-bold font-sans text-md uppercase leading-tight ${isLight ? 'text-slate-800' : 'text-slate-100'}`}>
-                          {selectedItem.organizer}
-                        </h4>
-                        {toggleBookmark && isBookmarked && (
-                          <button
-                            onClick={() => toggleBookmark({
-                              id: selectedItem.id,
-                              name: selectedItem.title,
-                              type: 'hackathon',
-                              subtext: `${selectedItem.organizer} • ${selectedItem.region}`,
-                              url: selectedItem.url
-                            })}
-                            className="p-1 text-gray-500 hover:text-yellow-400 transition cursor-pointer flex items-center justify-center animate-pulse"
-                            title={isBookmarked(selectedItem.id, 'hackathon') ? 'Remove bookmark' : 'Bookmark this item'}
-                          >
-                            <CustomBookmarkIcon className={`w-4 h-4 ${isBookmarked(selectedItem.id, 'hackathon') ? 'text-yellow-400 fill-yellow-400' : ''}`} />
-                          </button>
-                        )}
-                      </div>
-                    </div>
-
-                    <div className="text-right">
-                      <span className="text-[9px] text-gray-500 block uppercase font-mono">
-                        Difficulty / Format
-                      </span>
-                      <span className={`text-xs font-bold uppercase ${isLight ? 'text-slate-800 font-extrabold' : 'text-white'}`}>{selectedItem.difficulty}</span>
-                    </div>
-                  </div>
-
-                  {/* Large Name */}
-                  <div className="space-y-1.5 font-mono">
-                    <h2 className={`text-xl font-bold font-sans tracking-tight uppercase leading-snug text-emerald-400`}>
-                      {selectedItem.title}
-                    </h2>
-                    
-                    <div className="flex flex-wrap gap-1.5">
-                      <span className={`text-[11px] border px-2.5 py-0.5 font-mono uppercase font-semibold ${getCategoryStyle(getCategory(selectedItem))}`}>
-                        CATEGORY: {getCategory(selectedItem)}
-                      </span>
-                      <span className={`text-[11px] border px-2.5 py-0.5 font-mono uppercase font-semibold flex items-center gap-1.5 ${getStatusStyle(getScheduleStatus(selectedItem))}`}>
-                        {getScheduleStatus(selectedItem) === 'Active' && <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-ping shrink-0" />}
-                        STATUS: {getScheduleStatus(selectedItem)}
-                      </span>
-                      <span className="text-[11px] px-2.5 py-0.5 font-mono uppercase font-semibold bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
-                        {selectedItem.region} Focus
-                      </span>
-                      <span className={`text-[11px] border px-2.5 py-0.5 font-mono uppercase font-semibold ${isLight ? 'bg-slate-100 border-slate-300 text-slate-700' : 'bg-slate-900 border-slate-700/80 text-gray-300'}`}>
-                        {selectedItem.type} Access
-                      </span>
-                    </div>
-                  </div>
-
-                      {/* Location Banner */}
-                  <div className={`flex items-start gap-2.5 text-xs font-mono border p-3 ${isLight ? 'bg-slate-50 border-gray-200 text-slate-800 font-medium' : 'bg-black/40 border-[#1e2e54]/40 text-slate-300'}`}>
-                    <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-emerald-400 animate-pulse" />
-                    <div className="space-y-0.5">
-                      <span className="text-[9px] text-gray-500 uppercase block font-bold leading-none">EVENT COORDINATES & LOCATION</span>
-                      <strong className={`font-sans font-semibold text-[13px] ${isLight ? 'text-slate-850' : 'text-white'}`}>{selectedItem.location}</strong>
-                    </div>
-                  </div>
-
-                  {/* Core Description Panel */}
-                  <div className={`p-4 font-mono text-xs border space-y-2 ${isLight ? 'bg-gray-50 border-gray-200 text-slate-800' : 'bg-[#050810] border-[#1e2e54]/50 text-slate-300'}`}>
-                    <span className="font-bold block uppercase text-[10px] text-emerald-400">
-                      ✔ OVERVIEW & OBJECTIVES
-                    </span>
-                    <p className={`leading-relaxed font-sans font-normal text-[12.5px] normal-case ${isLight ? 'text-slate-705' : 'text-slate-200'}`}>
-                      {selectedItem.description}
-                    </p>
-                  </div>
-
-                  {/* Target Audience & Career Growth Advantages */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4.5 font-mono text-xs">
-                    <div className="space-y-1.5">
-                      <span className="text-slate-500 uppercase text-[9px] block">TARGET DEMOGRAPHICS:</span>
-                      <div className={`leading-relaxed font-sans border-l-2 border-indigo-500 pl-2.5 ${isLight ? 'text-slate-700 font-medium' : 'text-slate-200'}`}>
-                        {selectedItem.targetAudience}
-                      </div>
-                    </div>
-
-                    <div className="space-y-1.5">
-                      <span className="text-slate-500 uppercase text-[9px] block">CAREER ADVANCEMENT & SKILLS:</span>
-                      <div className={`leading-relaxed font-sans border-l-2 border-[#10b981] pl-2.5 ${isLight ? 'text-slate-700 font-medium' : 'text-slate-200'}`}>
-                        {selectedItem.careerBenefit}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Prizes and Themes highlights */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-mono text-xs pt-2">
-                    <div className="p-3 border flex items-start gap-2.5 bg-emerald-950/10 border-emerald-900/35">
-                      <Trophy className="w-5 h-5 shrink-0 mt-0.5 text-emerald-400" />
-                      <div>
-                        <span className="text-[9px] uppercase block font-bold leading-none mb-1 text-emerald-400">
-                          PRIZES, CERTIFICATES & ADVANTAGES
-                        </span>
-                        <strong className={`text-[12px] uppercase leading-tight font-sans tracking-wide ${isLight ? 'text-slate-850 font-extrabold' : 'text-white'}`}>
-                          {selectedItem.prizes}
-                        </strong>
-                      </div>
-                    </div>
-
-                    <div className="p-3 bg-indigo-950/10 border border-indigo-900/35 flex items-start gap-2.5">
-                      <Tag className="w-5 h-5 text-indigo-400 shrink-0 mt-0.5" />
-                      <div>
-                        <span className="text-[9px] text-indigo-400 uppercase block font-bold leading-none mb-1">THEMATIC SKILL MATRICES</span>
-                        <div className="flex flex-wrap gap-1 mt-1">
-                          {selectedItem.themes.map(t => (
-                            <span key={t} className="bg-white border border-gray-300 text-black text-[9px] font-bold px-1.5 py-0.5 font-sans">
-                              {t}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-                {/* Footer Controls & Redirect Portal URI */}
-                {selectedItem.daysLeft <= 0 || selectedItem.isConcluded ? (
-                  <div className={`mt-6 border-t pt-5 space-y-4 font-mono text-xs ${isLight ? 'border-gray-200' : 'border-[#121c38]'}`}>
-                    <div className="flex items-center gap-2 p-2 bg-[#ef4444]/10 border border-[#ef4444]/30 text-red-500 font-bold">
-                      <AlertCircle className="w-4 h-4 shrink-0 animate-pulse" />
-                      <span>🔴 REGISTRATION CLOSED / EVENT CONCLUDED</span>
-                    </div>
-                    
-                    <div className={`p-4 leading-relaxed border ${isLight ? 'bg-slate-50 border-gray-200 text-slate-700' : 'bg-[#0f1423] border-[#1e2e54] text-slate-300'}`}>
-                      <p className="font-sans text-[12.5px] mb-3">
-                        This opportunity is currently concluded. Below are official online recommended portals, videos, or Minutes of Meetings (MOM) to see performance highlights and project portfolios:
-                      </p>
-                      
-                      <div className="flex flex-col sm:flex-row gap-3">
-                        {selectedItem.momUrl && (
-                          <a
-                            href={selectedItem.momUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white font-bold text-center flex items-center justify-center gap-1.5 rounded-none shadow-[2px_2px_0px_#091d3e] transition-all cursor-pointer"
-                          >
-                            📄 {selectedItem.momTitle || 'View Event MOM'} <ArrowUpRight className="w-3.5 h-3.5" />
-                          </a>
-                        )}
-                        {selectedItem.replayUrl && (
-                          <a
-                            href={selectedItem.replayUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex-1 px-4 py-2 bg-red-650 hover:bg-red-600 text-white font-bold text-center flex items-center justify-center gap-1.5 rounded-none shadow-[2px_2px_0px_#4c0505] transition-all cursor-pointer"
-                          >
-                            🎥 {selectedItem.replayTitle || 'Watch Event Replay'} <ArrowUpRight className="w-3.5 h-3.5" />
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                ) : (
-                  <div className={`mt-6 border-t pt-4.5 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs ${isLight ? 'border-gray-200' : 'border-[#121c38]'}`}>
-                    <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full animate-pulse shrink-0 bg-[#10b981]" />
-                      <span className={`text-[11px] ${isLight ? 'text-slate-600' : 'text-slate-400'}`}>
-                        Closes in:{' '}
-                        <strong className="text-red-500 font-bold">
-                          {getCountdownString(selectedItem.id, selectedItem.daysLeft)}
-                        </strong>
-                      </span>
-                    </div>
-
-                    <a
-                      href={selectedItem.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`w-full sm:w-auto px-5 py-2.5 text-black font-semibold uppercase tracking-wider text-xs font-sans text-center transition flex items-center justify-center gap-1.5 cursor-pointer bg-[#10b981] hover:bg-emerald-400 ${isLight ? 'shadow-[2px_2px_0px_#1e2e54]' : 'shadow-[2px_2px_0px_#fff]'}`}
-                    >
-                      Open Official Portal <ArrowUpRight className="w-4 h-4 shrink-0" />
-                    </a>
-                  </div>
-                )}
-
-              </motion.div>
+            {selectedItemDesktop ? (
+              renderDetailCard(selectedItemDesktop, false)
             ) : (
               <div className="flex items-center justify-center h-full border-2 border-dashed border-slate-800 p-8 text-center text-gray-500 font-mono text-xs">
                 Select an item from the left registry panel to view full specifications.
@@ -1286,7 +1450,146 @@ export default function Hackathons({
             )}
           </AnimatePresence>
         </div>
+      </div>
 
+      {/* MOBILE VIEW (lg:hidden single detail card view or primary list view) */}
+      <div className="block lg:hidden">
+        {selectedItemMobile ? (
+          /* Dedicated Mobile Detail Card View */
+          renderDetailCard(selectedItemMobile, true)
+        ) : (
+          /* Primary Mobile Listings View */
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {filteredItems.slice(0, showAllHackathons ? undefined : 4).map((item) => (
+              <div
+                key={item.id}
+                role="button"
+                tabIndex={0}
+                onClick={() => setSelectedItemId(item.id)}
+                className={`w-full p-4 text-left border-2 transition-all relative rounded-none flex flex-col justify-between gap-3 font-mono text-xs cursor-pointer group ${
+                  item.isNewAddition
+                    ? (isLight ? 'bg-[#f0fdf4] text-slate-850' : 'bg-[#0a1e16] text-gray-300')
+                    : (isLight ? 'bg-white hover:bg-slate-50 text-slate-700 hover:border-emerald-500/60' : 'bg-[#090f1e] hover:bg-[#0c162b] text-gray-400 hover:border-emerald-500/60')
+                }`}
+                style={{
+                  borderColor: item.isNewAddition ? '#10b981' : (isLight ? '#cbd5e1' : '#121c38'),
+                  boxShadow: item.isNewAddition ? '3px 3px 0px 0px rgba(16,185,129,0.3)' : 'none'
+                }}
+              >
+                <div className="space-y-2">
+                  <div className="flex justify-between items-start gap-2 w-full">
+                    <span className="text-[10px] text-gray-400 uppercase font-sans font-bold block truncate">
+                      {item.organizer}
+                    </span>
+                    
+                    <div className="flex items-center gap-1.5 shrink-0 flex-wrap justify-end">
+                      {item.isNewAddition && (
+                        <span className="px-1.5 py-0.5 text-[8px] border border-[#10b981] bg-[#10b981]/15 text-[#10b981] font-bold rounded-none uppercase animate-pulse flex items-center gap-1">
+                          <span className="w-1.5 h-1.5 bg-[#10b981] rounded-full inline-block animate-ping" />
+                          LATEST
+                        </span>
+                      )}
+                      
+                      <span className={`px-1.5 py-0.5 text-[8.2px] border font-bold uppercase rounded-none font-mono ${getCategoryStyle(getCategory(item))}`}>
+                        {getCategory(item)}
+                      </span>
+
+                      <span className={`px-1.5 py-0.5 text-[8.2px] border font-bold uppercase rounded-none font-mono flex items-center gap-1 ${getStatusStyle(getScheduleStatus(item))}`}>
+                        {getScheduleStatus(item) === 'Active' && <span className="w-1 h-1 bg-emerald-400 rounded-full animate-ping shrink-0" />}
+                        {getScheduleStatus(item)}
+                      </span>
+
+                      {toggleBookmark && isBookmarked && (
+                        <button
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            toggleBookmark({
+                              id: item.id,
+                              name: item.title,
+                              type: 'hackathon',
+                              subtext: `${item.organizer} • ${item.region}`,
+                              url: item.url
+                            });
+                          }}
+                          className="p-0.5 text-gray-500 hover:text-yellow-400 transition cursor-pointer flex items-center justify-center"
+                          title={isBookmarked(item.id, 'hackathon') ? 'Remove bookmark' : 'Bookmark this item'}
+                        >
+                          <CustomBookmarkIcon className={`w-3.5 h-3.5 ${isBookmarked(item.id, 'hackathon') ? 'text-yellow-400 fill-yellow-400' : ''}`} />
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  <h3 className={`font-sans font-bold text-sm block tracking-tight leading-snug uppercase group-hover:text-emerald-400 transition-colors ${
+                    isLight ? 'text-slate-850' : 'text-slate-100'
+                  }`}>
+                    {item.title}
+                  </h3>
+
+                  <p className={`text-[11px] font-sans line-clamp-2 ${isLight ? 'text-slate-600' : 'text-gray-400'}`}>
+                    {item.description}
+                  </p>
+                </div>
+
+                <div className="space-y-2.5 pt-2 border-t border-gray-500/20">
+                  <div className="flex items-center justify-between text-[11px] select-none w-full gap-2">
+                    <span className="text-gray-400 flex items-center gap-1 min-w-0 flex-1">
+                      <MapPin className="w-3.5 h-3.5 text-red-500 shrink-0" />
+                      <span className="truncate" title={`${item.region} • ${item.location}`}>{item.region} • {item.location}</span>
+                    </span>
+                    
+                    <span className={`${item.daysLeft <= 0 ? 'text-gray-500' : 'text-amber-400'} font-semibold flex items-center gap-1 font-mono shrink-0`}>
+                      <Calendar className="w-3" />
+                      {getCountdownString(item.id, item.daysLeft)}
+                    </span>
+                  </div>
+
+                  <div className="flex flex-wrap gap-1">
+                    {item.themes.map(t => (
+                      <span key={t} className="text-[8.5px] bg-white text-black border border-gray-300 font-bold uppercase px-1.5 py-0.5">
+                        #{t}
+                      </span>
+                    ))}
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelectedItemId(item.id);
+                    }}
+                    className={`w-full py-1.5 px-3 border text-center text-[10.5px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition ${
+                      isLight 
+                        ? 'bg-emerald-50 border-emerald-300 text-emerald-800 hover:bg-emerald-500 hover:text-black hover:border-emerald-500' 
+                        : 'bg-emerald-950/40 border-emerald-500/40 text-emerald-400 hover:bg-emerald-500 hover:text-black hover:border-emerald-500'
+                    }`}
+                  >
+                    <span>View Event Specs & Apply</span>
+                    <span>➔</span>
+                  </button>
+                </div>
+              </div>
+            ))}
+
+            {filteredItems.length === 0 && (
+              <div className="col-span-full border-2 border-dashed border-red-500/20 bg-red-950/10 p-10 text-center text-red-400 font-mono text-xs">
+                ⚠️ No entry matched the active search filters and keywords.
+              </div>
+            )}
+
+            {filteredItems.length > 4 && (
+              <div className="col-span-full mt-2 flex justify-center">
+                <button
+                  onClick={() => setShowAllHackathons(!showAllHackathons)}
+                  className="w-full py-2.5 bg-slate-950 hover:bg-[#121c38] border border-[#1e2e54] hover:border-[#10b981] text-[#10b981] font-mono text-xs font-bold uppercase transition focus:outline-none flex items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  <span>{showAllHackathons ? '▲ Show Fewer Hackathons' : `▼ Show All Hackathons (${filteredItems.length})`}</span>
+                </button>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       {/* 5. CODESPOT ROADMAP BROADCAST FEED */}

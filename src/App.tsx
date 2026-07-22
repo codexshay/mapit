@@ -237,6 +237,7 @@ export default function App() {
     sectionType: 'certs' | 'tools-skills' | 'channels' | 'bookshelf' | 'hackathons' | 'youtubeTeachers' | 'map' | 'taxonomy' | 'libraries',
     queryText: string
   ) => {
+    setGlobalSearchQuery('');
     const qLower = queryText.toLowerCase().trim();
 
     // Helper for matching query text to core domains, categories, and role slugs
@@ -1252,6 +1253,7 @@ export default function App() {
 
   const handleTabClick = (tabId: string) => {
     setActiveTab(tabId);
+    setGlobalSearchQuery('');
     setBlinkSectionId(tabId);
     setTimeout(() => {
       setBlinkSectionId((curr) => curr === tabId ? null : curr);
@@ -1262,6 +1264,7 @@ export default function App() {
     setHackathonsSelectedItemId(eventId);
     setHackathonsSearchQuery('');
     setLibrariesActiveTab('hackathons');
+    setGlobalSearchQuery('');
     setActiveTab('libraries');
     setTimeout(() => {
       const el = document.getElementById('section-libraries');
@@ -1274,6 +1277,7 @@ export default function App() {
   const handleGoToAllEvents = () => {
     setHackathonsSearchQuery('');
     setLibrariesActiveTab('hackathons');
+    setGlobalSearchQuery('');
     setActiveTab('libraries');
     setTimeout(() => {
       const el = document.getElementById('section-libraries');
@@ -1836,11 +1840,10 @@ export default function App() {
         {/* NEW FLOATING HEADER DOCK - DESKTOP ONLY */}
         <header className={`hidden md:flex transition-all duration-[700ms] ease-in-out p-3 items-center justify-between sticky top-0 z-30 backdrop-blur-md ${
           isScrolled 
-            ? 'bg-transparent border-b-0' 
+            ? 'bg-[#070b13]/85 border-b border-[#121c38]/80 shadow-xl' 
             : 'bg-transparent border-b-2 border-[#121c38]/40'
         }`}>
           <div className="flex items-center gap-3">
-            {/* Mobile Navigation Drawer Activation Trigger */}
             <button
               onClick={() => setIsSidebarMinimized(false)}
               className="md:hidden p-2 bg-[#121c38]/60 hover:bg-[#121c38] border border-[#1e2e54] text-white hover:text-[#10b981] rounded-xs cursor-pointer focus:outline-none flex items-center justify-center shrink-0 transition duration-150"
@@ -1849,7 +1852,46 @@ export default function App() {
               <Menu className="w-4 h-4 text-[#10b981]" />
             </button>
 
-            {/* Path indicator - Removed Active Registry label */}
+            {/* Desktop Unified Search Bar - Hidden on Comparator and Path Planner */}
+            {activeTab !== 'comparison' && activeTab !== 'pathfinder' && (
+              <div className="relative w-80 lg:w-96">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
+                  <Search className="w-4 h-4" />
+                </div>
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    setSearchQuery(val);
+                    setLibrariesQuery(val);
+                    setYoutubeSearchQuery(val);
+                    setHackathonsSearchQuery(val);
+                  }}
+                  placeholder={
+                    activeTab === 'map' ? 'Search roles, skills, domains in map...' :
+                    activeTab === 'libraries' ? 'Search books, certs, hackathons in resources...' :
+                    activeTab === 'saved' ? 'Search saved items...' :
+                    'Search within opened tab...'
+                  }
+                  className="w-full pl-9 pr-8 py-1.5 text-xs font-sans rounded-md border text-slate-100 placeholder-slate-400 bg-[#111827]/90 border-slate-700/70 focus:outline-none transition-all focus:bg-[#0f172a] focus:border-[#10b981] focus:ring-1 focus:ring-[#10b981]/50"
+                />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSearchQuery('');
+                      setLibrariesQuery('');
+                      setYoutubeSearchQuery('');
+                      setHackathonsSearchQuery('');
+                    }}
+                    className="absolute inset-y-0 right-0 pr-2.5 flex items-center text-gray-400 hover:text-white cursor-pointer"
+                  >
+                    ✕
+                  </button>
+                )}
+              </div>
+            )}
           </div>
 
           <div className="flex items-center gap-3 select-none text-[10px] font-mono text-gray-400">
@@ -1876,33 +1918,49 @@ export default function App() {
               </button>
             </div>
 
-            {/* Unified Search Bar */}
-            <div className="relative flex-1">
-              <div className="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none text-gray-400">
-                <Search className="w-4 h-4" />
+            {/* Unified Search Bar - Hidden on Comparator and Path Planner */}
+            {activeTab !== 'comparison' && activeTab !== 'pathfinder' && (
+              <div className="relative flex-1">
+                <div className="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none text-gray-400">
+                  <Search className="w-4 h-4" />
+                </div>
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    setSearchQuery(val);
+                    setLibrariesQuery(val);
+                    setYoutubeSearchQuery(val);
+                    setHackathonsSearchQuery(val);
+                  }}
+                  placeholder={
+                    activeTab === 'map' ? 'Search roles, domains...' :
+                    activeTab === 'libraries' ? 'Search books, certs...' :
+                    'Search active tab...'
+                  }
+                  className="w-full pl-8.5 pr-2.5 py-1.5 text-xs font-sans rounded-md border text-slate-100 placeholder-slate-400 bg-[#111827]/80 border-slate-700/60 focus:outline-none transition-all focus:bg-[#0f172a] focus:border-[#10b981] focus:ring-1 focus:ring-[#10b981]/50"
+                />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSearchQuery('');
+                      setLibrariesQuery('');
+                      setYoutubeSearchQuery('');
+                      setHackathonsSearchQuery('');
+                    }}
+                    className="absolute inset-y-0 right-0 pr-2.5 flex items-center text-gray-400 hover:text-white cursor-pointer"
+                  >
+                    ✕
+                  </button>
+                )}
               </div>
-              <input
-                type="text"
-                value={mobileSearchQuery}
-                onFocus={() => setIsSearchFocused(true)}
-                onChange={(e) => setMobileSearchQuery(e.target.value)}
-                placeholder="Search roles, skills, books, certs..."
-                className="w-full pl-8.5 pr-2.5 py-1.5 text-xs font-sans rounded-md border text-slate-100 placeholder-slate-400 bg-[#111827]/80 border-slate-700/60 focus:outline-none transition-all focus:bg-[#0f172a] focus:border-[#10b981] focus:ring-1 focus:ring-[#10b981]/50"
-              />
-              {mobileSearchQuery && (
-                <button
-                  type="button"
-                  onClick={() => setMobileSearchQuery('')}
-                  className="absolute inset-y-0 right-0 pr-2.5 flex items-center text-gray-400 hover:text-white"
-                >
-                  ✕
-                </button>
-              )}
-            </div>
+            )}
 
             {/* About Info Trigger Beside Search Bar */}
             <button
-              onClick={() => setActiveTab('about')}
+              onClick={() => handleTabClick('about')}
               className={`p-2 rounded-full flex items-center justify-center border transition shrink-0 cursor-pointer ${
                 activeTab === 'about'
                   ? 'bg-[#10b981]/15 border-[#10b981] text-[#10b981]'
@@ -1962,73 +2020,12 @@ export default function App() {
               </motion.div>
             )}
           </AnimatePresence>
-
-          {/* Autocomplete Droplist Overlay */}
-          <AnimatePresence>
-            {isSearchFocused && (
-              <>
-                <div 
-                  className="fixed inset-0 bg-transparent z-[39]" 
-                  onClick={() => setIsSearchFocused(false)} 
-                />
-                
-                <motion.div 
-                  initial={{ opacity: 0, y: -8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -8 }}
-                  className="absolute left-0 right-0 top-12 max-h-[280px] overflow-y-auto bg-[#070b13] border border-[#1e2e54] shadow-2xl rounded-md z-40 p-1 divide-y divide-slate-800/60 custom-scrollbar text-left"
-                >
-                  {mobileSearchResults.length > 0 ? (
-                    mobileSearchResults.map((item) => (
-                      <div
-                        key={`${item.category}-${item.id}`}
-                        onClick={() => handleSelectSearchItem(item)}
-                        className="p-2.5 hover:bg-[#10b981]/15 font-sans cursor-pointer flex flex-col transition text-left"
-                      >
-                        <div className="flex items-center justify-between">
-                          <span className="font-bold text-slate-100 text-xs">{item.name}</span>
-                          <span className={`text-[9px] uppercase px-1.5 py-0.5 border font-semibold ${
-                            item.category === 'role' ? 'border-[#10b981]/30 text-[#10b981] bg-[#10b981]/5' :
-                            item.category === 'domain' ? 'border-yellow-500/30 text-yellow-400 bg-yellow-500/5' :
-                            item.category === 'cert' ? 'border-purple-500/30 text-purple-400 bg-purple-500/5' :
-                            item.category === 'book' ? 'border-cyan-500/30 text-cyan-400 bg-cyan-500/5' :
-                            'border-pink-500/30 text-pink-400 bg-pink-500/5'
-                          }`}>
-                            {item.category}
-                          </span>
-                        </div>
-                        <span className="text-[10px] text-slate-400 mt-0.5">{item.subtext}</span>
-                      </div>
-                    ))
-                  ) : mobileSearchQuery.trim() ? (
-                    <div className="p-4 text-center text-slate-400 text-xs font-mono">
-                      No results matched "{mobileSearchQuery}"
-                    </div>
-                  ) : (
-                    <div className="p-3 text-left space-y-2">
-                      <div className="text-[10px] text-gray-500 font-bold uppercase tracking-wider px-1">Suggested Searches</div>
-                      <div className="flex flex-wrap gap-1.5">
-                        {['AWS', 'Cybersecurity', 'DevOps', 'Penetration Tester', 'Cloud Systems Engineer', 'Python'].map(keyword => (
-                          <button
-                            key={keyword}
-                            type="button"
-                            onClick={() => setMobileSearchQuery(keyword)}
-                            className="bg-[#111827] border border-slate-800 hover:border-slate-700 text-slate-300 text-[10px] px-2 py-1 cursor-pointer transition"
-                          >
-                            {keyword}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </motion.div>
-              </>
-            )}
-          </AnimatePresence>
         </header>
 
+
+
         {/* MAIN APPLICATION WINDOW WITH FLUID FRAMER-MOTION ENTRY TRANSITIONS */}
-        <main className="w-full max-w-full px-4 sm:px-6 md:px-8 mt-2 min-h-[500px] flex-1 relative">
+        <main className="w-full max-w-7xl mx-auto px-3 sm:px-6 md:px-8 py-4 sm:py-6 min-h-[500px] flex-1 relative">
           {/* Mobile-only Ant companion box */}
           {isMobile && (
             <div className="relative w-full h-11 bg-[#081121] border border-[#1e2e54] overflow-hidden mb-3.5 px-3 flex items-center justify-between rounded-none shadow-[2px_2px_0px_rgba(30,46,84,0.4)]">
@@ -3327,7 +3324,8 @@ export default function App() {
             { id: 'saved', label: 'Bookmarks', icon: TAB_METADATA.saved.icon, activeColor: 'text-yellow-400 border-yellow-400' },
             { id: 'map', label: 'Career Domains', icon: TAB_METADATA.map.icon, activeColor: 'text-yellow-500 border-yellow-500' },
             { id: 'pathfinder', label: 'Path Planner', icon: TAB_METADATA.pathfinder.icon, activeColor: 'text-[#10b981] border-[#10b981]' },
-            { id: 'libraries', label: 'Resources', icon: TAB_METADATA.libraries.icon, activeColor: 'text-cyan-400 border-cyan-400' }
+            { id: 'libraries', label: 'Resources', icon: TAB_METADATA.libraries.icon, activeColor: 'text-cyan-400 border-cyan-400' },
+            { id: 'hr-contacts', label: 'HR Contacts', icon: TAB_METADATA['hr-contacts'].icon, activeColor: 'text-slate-100 border-slate-100' }
           ].map((item) => {
             const isActive = activeTab === item.id;
             const Icon = item.icon;
@@ -3349,7 +3347,7 @@ export default function App() {
                   <motion.div 
                     layoutId="mobileActiveTabIndicator"
                     className="absolute top-[-6px] left-1/4 right-1/4 h-0.5 rounded-full"
-                    style={{ backgroundColor: isActive ? (item.id === 'saved' ? '#facc15' : item.id === 'libraries' ? '#22d3ee' : item.id === 'pathfinder' ? '#10b981' : '#eab308') : 'transparent' }}
+                    style={{ backgroundColor: isActive ? (item.id === 'saved' ? '#facc15' : item.id === 'libraries' ? '#22d3ee' : item.id === 'pathfinder' ? '#10b981' : item.id === 'hr-contacts' ? '#f8fafc' : '#eab308') : 'transparent' }}
                   />
                 )}
                 <div className={`p-1 ${isActive ? 'scale-105 transition-transform animate-pulse' : ''}`} style={isActive ? { animationDuration: '2s' } : {}}>
