@@ -2886,7 +2886,9 @@ export default function PathFinder(props: PathFinderProps) {
                   <Shield className="w-4 h-4 text-emerald-500 animate-pulse" /> Career Fallback Route Simulator
                 </h4>
                 <p className={`text-xs ${isLight ? 'text-slate-600' : 'text-gray-400'} font-sans leading-relaxed`}>
-                  Compare strategic alternative paths where your existing skills are highly reusable. Protect yourself against LLM automation, high competition, and market shifts with structured action plans.
+                  <span className="bg-yellow-300 text-slate-900 px-1 rounded-sm font-semibold">
+                    Compare strategic alternative paths where your existing skills are highly reusable. Protect yourself against LLM automation, high competition, and market shifts with structured action plans.
+                  </span>
                 </p>
               </div>
             </div>
@@ -2909,7 +2911,6 @@ export default function PathFinder(props: PathFinderProps) {
                         : 'border-slate-800 bg-black/40 text-gray-400 hover:border-slate-700 hover:text-white'
                   }`}
                 >
-                  <span className="font-mono text-[9px] uppercase tracking-wider block opacity-70">Preferred Path:</span>
                   <span className="text-xs font-bold font-sans mt-1 line-clamp-1">{p.title}</span>
                   <div className="flex items-center justify-between mt-3 text-[9px] font-mono">
                     <span className="text-red-500 font-bold">Risk: {p.automationExposure}%</span>

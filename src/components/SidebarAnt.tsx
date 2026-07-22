@@ -182,34 +182,79 @@ export default function SidebarAnt({ theme }: SidebarAntProps) {
       >
         <svg viewBox="0 0 40 40" className="w-full h-full overflow-visible drop-shadow-md">
           {/* Ant Body */}
-          <g>
+          <g className="drop-shadow-sm">
             {/* Abdomen */}
-            <ellipse cx="12" cy="20" rx="7" ry="5" fill={antBodyColor} />
+            <ellipse cx="9" cy="20" rx="5.5" ry="4" fill={antBodyColor} />
             {/* Thorax */}
-            <ellipse cx="22" cy="20" rx="4" ry="3.5" fill={antBodyColor} />
+            <ellipse cx="18" cy="20" rx="4" ry="2.8" fill={antBodyColor} />
             {/* Head */}
-            <circle cx="30" cy="20" r="3.5" fill={antBodyColor} />
+            <circle cx="26" cy="20" r="3.2" fill={antBodyColor} />
+            {/* Tiny Eye Accent */}
+            <circle cx="27.2" cy="18.5" r="0.7" fill={theme === 'light' ? '#ffffff' : '#04070e'} />
+            <circle cx="27.2" cy="21.5" r="0.7" fill={theme === 'light' ? '#ffffff' : '#04070e'} />
 
-            {/* Left Legs */}
-            <line x1="22" y1="20" x2="16" y2="12" stroke={antBodyColor} strokeWidth="1.2" transform={`rotate(${legAngle1}, 22, 20)`} />
-            <line x1="22" y1="20" x2="22" y2="10" stroke={antBodyColor} strokeWidth="1.2" transform={`rotate(${-legAngle2}, 22, 20)`} />
-            <line x1="22" y1="20" x2="28" y2="11" stroke={antBodyColor} strokeWidth="1.2" transform={`rotate(${legAngle1}, 22, 20)`} />
+            {/* Left Legs (Top) - Attached to 3 distinct thorax points */}
+            <path
+              d="M 15 20 Q 11 14 8 11"
+              fill="none"
+              stroke={antBodyColor}
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              transform={`rotate(${legAngle1}, 15, 20)`}
+            />
+            <path
+              d="M 18 20 Q 18 12 17 8"
+              fill="none"
+              stroke={antBodyColor}
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              transform={`rotate(${-legAngle2}, 18, 20)`}
+            />
+            <path
+              d="M 21 20 Q 25 13 28 10"
+              fill="none"
+              stroke={antBodyColor}
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              transform={`rotate(${legAngle1}, 21, 20)`}
+            />
 
-            {/* Right Legs */}
-            <line x1="22" y1="20" x2="16" y2="28" stroke={antBodyColor} strokeWidth="1.2" transform={`rotate(${-legAngle1}, 22, 20)`} />
-            <line x1="22" y1="20" x2="22" y2="30" stroke={antBodyColor} strokeWidth="1.2" transform={`rotate(${legAngle2}, 22, 20)`} />
-            <line x1="22" y1="20" x2="28" y2="29" stroke={antBodyColor} strokeWidth="1.2" transform={`rotate(${-legAngle1}, 22, 20)`} />
+            {/* Right Legs (Bottom) - Attached to 3 distinct thorax points */}
+            <path
+              d="M 15 20 Q 11 26 8 29"
+              fill="none"
+              stroke={antBodyColor}
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              transform={`rotate(${-legAngle1}, 15, 20)`}
+            />
+            <path
+              d="M 18 20 Q 18 28 17 32"
+              fill="none"
+              stroke={antBodyColor}
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              transform={`rotate(${legAngle2}, 18, 20)`}
+            />
+            <path
+              d="M 21 20 Q 25 27 28 30"
+              fill="none"
+              stroke={antBodyColor}
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              transform={`rotate(${-legAngle1}, 21, 20)`}
+            />
 
             {/* Antennae */}
-            <path d="M32 18 Q36 14 38 12" fill="none" stroke={antBodyColor} strokeWidth="1" />
-            <path d="M32 22 Q36 26 38 28" fill="none" stroke={antBodyColor} strokeWidth="1" />
+            <path d="M 28 18 Q 32 13 36 11" fill="none" stroke={antBodyColor} strokeWidth="1" strokeLinecap="round" />
+            <path d="M 28 22 Q 32 27 36 29" fill="none" stroke={antBodyColor} strokeWidth="1" strokeLinecap="round" />
 
-            {/* Tiny Leaf */}
+            {/* Tiny Leaf when carrying */}
             {hasLeaf && (
               <path
-                d="M 30 18 C 34 12, 40 12, 38 18 C 36 24, 30 20, 30 18 Z"
+                d="M 28 18 C 33 11, 40 12, 38 18 C 36 24, 29 22, 28 18 Z"
                 fill={antLeafColor}
-                opacity={0.9}
+                opacity={0.92}
               />
             )}
           </g>

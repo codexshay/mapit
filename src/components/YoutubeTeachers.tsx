@@ -866,6 +866,29 @@ export function getDirectVideoUrl(teacherName: string, skillArea: string, fallba
   return `https://www.youtube.com/results?search_query=${encodeURIComponent(searchQuery)}`;
 }
 
+export function getCategoryColor(catId: string): string {
+  switch (catId) {
+    case 'green-computing': return '#22c55e'; // green / sustainability
+    case 'foundations': return '#3b82f6'; // blue
+    case 'support': return '#38bdf8'; // sky blue
+    case 'sysadmin': return '#a855f7'; // purple
+    case 'networking': return '#10b981'; // emerald
+    case 'cloud': return '#06b6d4'; // cyan
+    case 'security': return '#ef4444'; // red
+    case 'software': return '#ec4899'; // pink
+    case 'qa': return '#d946ef'; // fuchsia
+    case 'devops': return '#6366f1'; // indigo
+    case 'data': return '#f59e0b'; // amber
+    case 'ai-ml': return '#f43f5e'; // rose
+    case 'databases': return '#14b8a6'; // teal
+    case 'business-apps': return '#8b5cf6'; // violet
+    case 'leadership': return '#64748b'; // slate
+    case 'design': return '#e11d48'; // rose
+    case 'automation-rpa': return '#0ea5e9'; // sky
+    default: return '#10b981';
+  }
+}
+
 export default function YoutubeTeachers({
   theme = 'dark',
   bookmarks = [],
@@ -1007,11 +1030,11 @@ export default function YoutubeTeachers({
     }
     const q = searchQuery.toLowerCase();
     return TEACHERS_DIRECTORY.map(cat => {
-      const filteredSubs = cat.subcategories.filter(sub => 
-        sub.skillArea.toLowerCase().includes(q) ||
-        sub.whyTrust.toLowerCase().includes(q) ||
-        sub.suggestedStudy.toLowerCase().includes(q) ||
-        sub.teachers.some(t => t.name.toLowerCase().includes(q))
+      const filteredSubs = (cat.subcategories || []).filter(sub => 
+        (sub?.skillArea && sub.skillArea.toLowerCase().includes(q)) ||
+        (sub?.whyTrust && sub.whyTrust.toLowerCase().includes(q)) ||
+        (sub?.suggestedStudy && sub.suggestedStudy.toLowerCase().includes(q)) ||
+        (Array.isArray(sub?.teachers) && sub.teachers.some(t => t?.name && t.name.toLowerCase().includes(q)))
       );
       return {
         ...cat,
@@ -1044,6 +1067,7 @@ export default function YoutubeTeachers({
               filteredCategories.map((cat) => {
                 const isActive = selectedCategoryId === cat.id;
                 const isHighlighted = highlightedCategoryIds.includes(cat.id);
+                const catColor = getCategoryColor(cat.id);
                 return (
                   <button
                     key={cat.id}
@@ -1057,26 +1081,37 @@ export default function YoutubeTeachers({
                     }}
                     style={{
                       borderColor: isActive 
-                        ? '#10b981' 
+                        ? catColor 
                         : (isHighlighted 
-                            ? (isLight ? '#059669' : '#10b981') 
+                            ? catColor 
                             : (isLight ? '#cbd5e1' : '#121c38')),
                       boxShadow: isActive 
-                        ? '2px 2px 0px 0px #10b981' 
+                        ? `2px 2px 0px 0px ${catColor}` 
                         : (isHighlighted 
-                            ? '0px 0px 8px rgba(16, 185, 129, 0.45)' 
-                            : 'none')
-                    }}
-                    className={`p-3 text-left border-2 transition-all relative group rounded-none cursor-pointer uppercase font-mono text-xs flex justify-between items-center ${
-                      isActive 
-                        ? (isLight ? 'bg-emerald-50 text-emerald-800 font-bold' : 'bg-[#0f1d3a] text-white font-bold') 
+                            ? `0px 0px 8px ${catColor}73` 
+                            : 'none'),
+                      backgroundColor: isActive
+                        ? (isLight ? `${catColor}15` : `${catColor}1c`)
                         : (isHighlighted
-                            ? (isLight ? 'bg-emerald-50/40 text-emerald-950 font-medium' : 'bg-[#061510] text-[#a7f3d0] font-medium')
+                            ? (isLight ? `${catColor}0d` : `${catColor}08`)
+                            : undefined)
+                    }}
+                    className={`p-3 text-left border-2 transition-all relative group rounded-none cursor-pointer uppercase font-mono text-xs flex justify-between items-center pl-6 ${
+                      isActive 
+                        ? (isLight ? 'text-slate-900 font-bold' : 'text-white font-bold') 
+                        : (isHighlighted
+                            ? (isLight ? 'text-slate-800 font-medium' : 'text-slate-200 font-medium')
                             : (isLight ? 'bg-white hover:bg-gray-50 text-slate-700' : 'bg-[#081121] hover:bg-[#0c162b] text-gray-400'))
                     }`}
                   >
+                    {/* Left vertical color indicator bar */}
+                    <div 
+                      className="absolute left-0 top-0 bottom-0 w-1" 
+                      style={{ backgroundColor: catColor }}
+                    />
+                    
                     <span className="flex items-center gap-2">
-                      <span className="text-[#10b981] font-bold text-base select-none">•</span>
+                      <span className="font-bold text-base select-none" style={{ color: catColor }}>•</span>
                       <span className="font-bold tracking-tight">{cat.name}</span>
                       {isHighlighted && (
                         <span className="text-[9px] px-1.5 py-0.5 bg-[#10b981]/15 border border-[#10b981]/20 text-[#10b981] font-bold tracking-wider shrink-0 rounded-xs ml-1 uppercase">
@@ -1095,6 +1130,7 @@ export default function YoutubeTeachers({
               TEACHERS_DIRECTORY.map((cat) => {
                 const isActive = selectedCategoryId === cat.id;
                 const isHighlighted = highlightedCategoryIds.includes(cat.id);
+                const catColor = getCategoryColor(cat.id);
                 return (
                   <button
                     key={cat.id}
@@ -1108,26 +1144,37 @@ export default function YoutubeTeachers({
                     }}
                     style={{
                       borderColor: isActive 
-                        ? '#10b981' 
+                        ? catColor 
                         : (isHighlighted 
-                            ? (isLight ? '#059669' : '#10b981') 
+                            ? catColor 
                             : (isLight ? '#cbd5e1' : '#121c38')),
                       boxShadow: isActive 
-                        ? '2px 2px 0px 0px #10b981' 
+                        ? `2px 2px 0px 0px ${catColor}` 
                         : (isHighlighted 
-                            ? '0px 0px 8px rgba(16, 185, 129, 0.45)' 
-                            : 'none')
-                    }}
-                    className={`p-3 text-left border-2 transition-all relative group rounded-none cursor-pointer uppercase font-mono text-xs flex justify-between items-center ${
-                      isActive 
-                        ? (isLight ? 'bg-emerald-50 text-emerald-800 font-bold' : 'bg-[#0f1d3a] text-white font-bold') 
+                            ? `0px 0px 8px ${catColor}73` 
+                            : 'none'),
+                      backgroundColor: isActive
+                        ? (isLight ? `${catColor}15` : `${catColor}1c`)
                         : (isHighlighted
-                            ? (isLight ? 'bg-emerald-50/40 text-emerald-950 font-medium' : 'bg-[#061510] text-[#a7f3d0] font-medium')
+                            ? (isLight ? `${catColor}0d` : `${catColor}08`)
+                            : undefined)
+                    }}
+                    className={`p-3 text-left border-2 transition-all relative group rounded-none cursor-pointer uppercase font-mono text-xs flex justify-between items-center pl-6 ${
+                      isActive 
+                        ? (isLight ? 'text-slate-900 font-bold' : 'text-white font-bold') 
+                        : (isHighlighted
+                            ? (isLight ? 'text-slate-800 font-medium' : 'text-slate-200 font-medium')
                             : (isLight ? 'bg-white hover:bg-gray-50 text-slate-700' : 'bg-[#081121] hover:bg-[#0c162b] text-gray-400'))
                     }`}
                   >
+                    {/* Left vertical color indicator bar */}
+                    <div 
+                      className="absolute left-0 top-0 bottom-0 w-1" 
+                      style={{ backgroundColor: catColor }}
+                    />
+
                     <span className="flex items-center gap-2">
-                      <span className="text-[#10b981] font-bold text-base select-none">•</span>
+                      <span className="font-bold text-base select-none" style={{ color: catColor }}>•</span>
                       <span className="font-bold tracking-tight">{cat.name}</span>
                       {isHighlighted && (
                         <span className="text-[9px] px-1.5 py-0.5 bg-[#10b981]/15 border border-[#10b981]/20 text-[#10b981] font-bold tracking-wider shrink-0 rounded-xs ml-1 uppercase">
@@ -1135,7 +1182,7 @@ export default function YoutubeTeachers({
                         </span>
                       )}
                     </span>
-                    <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isActive ? 'rotate-90 text-[#10b981]' : 'text-gray-600 group-hover:text-gray-300'}`} />
+                    <ChevronRight className="w-3.5 h-3.5 transition-transform" style={{ color: isActive ? catColor : '#4b5563' }} />
                   </button>
                 );
               })
@@ -1182,13 +1229,19 @@ export default function YoutubeTeachers({
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -15 }}
               transition={{ duration: 0.18, ease: "easeOut" }}
-              className={`border-2 p-4 relative flex flex-col ${isLight ? 'bg-white border-gray-200 text-slate-800 shadow-[3px_3px_0px_0px_#cbd5e1]' : 'bg-[#080d1a] border-[#121c38] shadow-[3px_3px_0px_#121c38]'}`}
+              style={{
+                borderColor: getCategoryColor(currentCategory.id),
+                boxShadow: isLight 
+                  ? `3px 3px 0px 0px #cbd5e1` 
+                  : `3px 3px 0px 0px ${getCategoryColor(currentCategory.id)}55`
+              }}
+              className={`border-2 p-4 relative flex flex-col ${isLight ? 'bg-white text-slate-800' : 'bg-[#080d1a] text-white'}`}
             >
               
               {/* Header section displaying active category specs */}
               <div className={`flex items-center justify-between border-b-2 pb-3 mb-4 font-mono ${isLight ? 'border-gray-100' : 'border-[#121c38]'}`}>
                 <div className="flex items-center gap-2">
-                  <span className="text-[#10b981] font-bold text-lg select-none">•</span>
+                  <span className="font-bold text-lg select-none" style={{ color: getCategoryColor(currentCategory.id) }}>•</span>
                   <div>
                     <div className="flex items-center gap-2">
                       <h3 className={`text-md font-bold uppercase ${isLight ? 'text-slate-900' : 'text-white'}`}>{currentCategory.name}</h3>
@@ -1210,7 +1263,14 @@ export default function YoutubeTeachers({
                 </div>
               </div>
               
-              <span className="text-[11px] text-[#10b981] bg-[#10b981]/15 border border-[#10b981]/25 px-2 py-0.5 uppercase">
+              <span 
+                className="text-[11px] border px-2 py-0.5 uppercase font-mono font-bold"
+                style={{
+                  color: getCategoryColor(currentCategory.id),
+                  borderColor: `${getCategoryColor(currentCategory.id)}33`,
+                  backgroundColor: `${getCategoryColor(currentCategory.id)}15`
+                }}
+              >
                 {searchQuery.trim() 
                   ? `${filteredCategories.find(c => c.id === currentCategory.id)?.subcategories.length || 0} matching tools`
                   : `${currentCategory.subcategories.length} core divisions`
