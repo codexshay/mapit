@@ -1,0 +1,253 @@
+[
+  {
+    "id": "w3schools",
+    "name": "W3Schools",
+    "officialUrl": "https://www.w3schools.com/tutorials/",
+    "learningFormat": "Tutorials, references, exercises, quizzes, code editor",
+    "domains": [
+      "Web Development",
+      "Programming",
+      "Data & Databases",
+      "Cloud, AI & Security",
+      "Developer Tools"
+    ],
+    "totalSkillsCount": 95
+  },
+  {
+    "id": "geeksforgeeks",
+    "name": "GeeksforGeeks",
+    "officialUrl": "https://www.geeksforgeeks.org/courses",
+    "learningFormat": "Articles, tutorials, practice problems, courses, contests, interview preparation",
+    "domains": [
+      "Computer Science Foundations",
+      "Programming",
+      "Web & Mobile Development",
+      "Data, AI & Analytics",
+      "Cloud, DevOps & Security",
+      "Software Engineering & Careers"
+    ],
+    "totalSkillsCount": 116
+  },
+  {
+    "id": "microsoft-learn",
+    "name": "Microsoft Learn",
+    "officialUrl": "https://learn.microsoft.com/training/",
+    "learningFormat": "Modules, learning paths, instructor-led courses, sandboxes, certifications",
+    "domains": [
+      "Azure",
+      "Microsoft 365",
+      "Power Platform",
+      "Dynamics 365",
+      "Developer Platform",
+      "Security & Compliance"
+    ],
+    "totalSkillsCount": 92
+  },
+  {
+    "id": "aws-skill-builder",
+    "name": "AWS Skill Builder",
+    "officialUrl": "https://skillbuilder.aws/",
+    "learningFormat": "Digital courses, learning plans, labs, Cloud Quest, exam preparation",
+    "domains": [
+      "Cloud Foundations",
+      "Architecture",
+      "Development",
+      "Operations & DevOps",
+      "Security",
+      "Data & Analytics",
+      "AI & Machine Learning",
+      "Specialized Services"
+    ],
+    "totalSkillsCount": 86
+  },
+  {
+    "id": "google-cloud-skills-boost",
+    "name": "Google Cloud Skills Boost",
+    "officialUrl": "https://www.cloudskillsboost.google/",
+    "learningFormat": "Courses, learning paths, hands-on labs, skill badges, certification preparation",
+    "domains": [
+      "Cloud Foundations",
+      "Infrastructure",
+      "Data",
+      "AI & ML",
+      "Security & Operations",
+      "DevOps & Application Development"
+    ],
+    "totalSkillsCount": 64
+  },
+  {
+    "id": "grow-with-google",
+    "name": "Grow with Google",
+    "officialUrl": "https://grow.google/",
+    "learningFormat": "Career certificates, short courses, workshops, business and digital-skills resources",
+    "domains": [
+      "Career Certificates",
+      "AI & Productivity",
+      "Small Business"
+    ],
+    "totalSkillsCount": 64
+  },
+  {
+    "id": "green-software-foundation",
+    "name": "Green Software Foundation",
+    "officialUrl": "https://learn.greensoftware.foundation/",
+    "learningFormat": "Open learning modules, principles, patterns and practitioner resources",
+    "domains": [
+      "Green Software Foundations",
+      "Green Software Engineering",
+      "Operations & Culture",
+      "Tools & Standards"
+    ],
+    "totalSkillsCount": 38
+  },
+  {
+    "id": "google-developers-learn",
+    "name": "Google Developers Learn",
+    "officialUrl": "https://developers.google.com/learn",
+    "learningFormat": "Codelabs, documentation, courses, pathways and developer guides",
+    "domains": [
+      "Web",
+      "Android",
+      "Firebase",
+      "Google Maps Platform",
+      "AI & Machine Learning",
+      "Cloud & APIs",
+      "Other Platforms"
+    ],
+    "totalSkillsCount": 41
+  },
+  {
+    "id": "google-tech-dev-guide",
+    "name": "Google Tech Dev Guide",
+    "officialUrl": "https://techdevguide.withgoogle.com/",
+    "learningFormat": "Curated learning paths, coding practice and interview-preparation resources",
+    "domains": [
+      "Programming Foundations",
+      "Data Structures & Algorithms",
+      "Advanced Computer Science",
+      "Interview Preparation"
+    ],
+    "totalSkillsCount": 23
+  },
+  {
+    "id": "futureskills-prime",
+    "name": "FutureSkills Prime",
+    "officialUrl": "https://www.futureskillsprime.in/",
+    "learningFormat": "Courses, pathways, assessments, virtual labs and government-recognized certifications",
+    "domains": [
+      "Emerging Technologies"
+    ],
+    "totalSkillsCount": 44
+  },
+  {
+    "id": "ibm-skillsbuild",
+    "name": "IBM SkillsBuild",
+    "officialUrl": "https://skillsbuild.org/",
+    "learningFormat": "Courses, projects, learning paths, digital credentials and educator resources",
+    "domains": [
+      "Artificial Intelligence",
+      "Cybersecurity",
+      "Data Fundamentals",
+      "Cloud Computing",
+      "Software Engineering",
+      "Professional & Workplace Skills"
+    ],
+    "totalSkillsCount": 34
+  },
+  {
+    "id": "swayam",
+    "name": "SWAYAM",
+    "officialUrl": "https://swayam.gov.in/",
+    "learningFormat": "University MOOCs, video lectures, assignments, proctored examinations and certificates",
+    "domains": [
+      "Computer Science"
+    ],
+    "totalSkillsCount": 19
+  },
+  {
+    "id": "nptel",
+    "name": "NPTEL",
+    "officialUrl": "https://nptel.ac.in/courses",
+    "learningFormat": "IIT/IISc video courses, assignments, examinations and certificates",
+    "domains": [
+      "Computer Science & Engineering"
+    ],
+    "totalSkillsCount": 21
+  },
+  {
+    "id": "infosys-springboard",
+    "name": "Infosys Springboard",
+    "officialUrl": "https://infyspringboard.onwingspan.com/",
+    "learningFormat": "Self-paced courses, virtual labs, assessments, certifications and employability programs",
+    "domains": [
+      "Programming & Development",
+      "Emerging Technologies",
+      "Cloud & Security",
+      "Professional Skills"
+    ],
+    "totalSkillsCount": 20
+  },
+  {
+    "id": "fedvte",
+    "name": "FedVTE",
+    "officialUrl": "https://fedvte.usalearning.gov/",
+    "learningFormat": "Government cybersecurity and IT courses, labs and role-based learning",
+    "domains": [
+      "Cybersecurity Foundations",
+      "Cybersecurity Operations",
+      "Systems & Cloud Security",
+      "Governance & Certification"
+    ],
+    "totalSkillsCount": 21
+  },
+  {
+    "id": "coursera",
+    "name": "Coursera",
+    "officialUrl": "https://www.coursera.org/browse",
+    "learningFormat": "Courses, guided projects, specializations, professional certificates and degrees",
+    "domains": [
+      "Computer Science",
+      "Data Science",
+      "Information Technology",
+      "Business",
+      "Artificial Intelligence"
+    ],
+    "totalSkillsCount": 26
+  },
+  {
+    "id": "edx",
+    "name": "edX",
+    "officialUrl": "https://www.edx.org/learn",
+    "learningFormat": "Courses, professional certificates, MicroBachelors, MicroMasters and degrees",
+    "domains": [
+      "Computer Science",
+      "Data Science",
+      "Business & Management",
+      "Engineering & IT",
+      "Artificial Intelligence"
+    ],
+    "totalSkillsCount": 19
+  },
+  {
+    "id": "linkedin-learning",
+    "name": "LinkedIn Learning",
+    "officialUrl": "https://www.linkedin.com/learning/",
+    "learningFormat": "Video courses, learning paths, exercise files, quizzes and certificates of completion",
+    "domains": [
+      "Technology",
+      "Business",
+      "Creative"
+    ],
+    "totalSkillsCount": 23
+  },
+  {
+    "id": "google-cloud-learning",
+    "name": "Google Cloud Learning",
+    "officialUrl": "https://cloud.google.com/learn",
+    "learningFormat": "Product documentation, training, learning paths, certification and architecture guidance",
+    "domains": [
+      "Cloud Fundamentals"
+    ],
+    "totalSkillsCount": 8
+  }
+]

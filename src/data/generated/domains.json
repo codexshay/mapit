@@ -1,0 +1,794 @@
+[
+  {
+    "id": "web-development",
+    "name": "Web Development",
+    "topics": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Frameworks & Libraries",
+      "Backend Web"
+    ],
+    "portals": [
+      "W3Schools"
+    ]
+  },
+  {
+    "id": "programming",
+    "name": "Programming",
+    "topics": [
+      "Languages",
+      "Programming Foundations",
+      "Competitive Programming"
+    ],
+    "portals": [
+      "W3Schools",
+      "GeeksforGeeks"
+    ]
+  },
+  {
+    "id": "data-databases",
+    "name": "Data & Databases",
+    "topics": [
+      "Databases",
+      "Data Science",
+      "Business Tools"
+    ],
+    "portals": [
+      "W3Schools"
+    ]
+  },
+  {
+    "id": "cloud-ai-security",
+    "name": "Cloud, AI & Security",
+    "topics": [
+      "Cloud",
+      "AI",
+      "Security"
+    ],
+    "portals": [
+      "W3Schools"
+    ]
+  },
+  {
+    "id": "developer-tools",
+    "name": "Developer Tools",
+    "topics": [
+      "Version Control",
+      "Developer Workflow"
+    ],
+    "portals": [
+      "W3Schools"
+    ]
+  },
+  {
+    "id": "computer-science-foundations",
+    "name": "Computer Science Foundations",
+    "topics": [
+      "Data Structures",
+      "Algorithms",
+      "Core CS"
+    ],
+    "portals": [
+      "GeeksforGeeks"
+    ]
+  },
+  {
+    "id": "web-mobile-development",
+    "name": "Web & Mobile Development",
+    "topics": [
+      "Frontend",
+      "Backend",
+      "Full Stack",
+      "Mobile"
+    ],
+    "portals": [
+      "GeeksforGeeks"
+    ]
+  },
+  {
+    "id": "data-ai-analytics",
+    "name": "Data, AI & Analytics",
+    "topics": [
+      "Data Science",
+      "Machine Learning",
+      "Deep Learning",
+      "Generative AI",
+      "Analytics"
+    ],
+    "portals": [
+      "GeeksforGeeks"
+    ]
+  },
+  {
+    "id": "cloud-devops-security",
+    "name": "Cloud, DevOps & Security",
+    "topics": [
+      "Cloud",
+      "DevOps",
+      "Cybersecurity"
+    ],
+    "portals": [
+      "GeeksforGeeks"
+    ]
+  },
+  {
+    "id": "software-engineering-careers",
+    "name": "Software Engineering & Careers",
+    "topics": [
+      "System Design",
+      "Testing",
+      "Interview Preparation"
+    ],
+    "portals": [
+      "GeeksforGeeks"
+    ]
+  },
+  {
+    "id": "azure",
+    "name": "Azure",
+    "topics": [
+      "Cloud Fundamentals",
+      "Compute",
+      "Storage & Databases",
+      "Networking",
+      "Security",
+      "Data & AI",
+      "DevOps"
+    ],
+    "portals": [
+      "Microsoft Learn"
+    ]
+  },
+  {
+    "id": "microsoft-365",
+    "name": "Microsoft 365",
+    "topics": [
+      "Productivity",
+      "Administration",
+      "Copilot"
+    ],
+    "portals": [
+      "Microsoft Learn"
+    ]
+  },
+  {
+    "id": "power-platform",
+    "name": "Power Platform",
+    "topics": [
+      "Low Code",
+      "Analytics"
+    ],
+    "portals": [
+      "Microsoft Learn"
+    ]
+  },
+  {
+    "id": "dynamics-365",
+    "name": "Dynamics 365",
+    "topics": [
+      "Business Applications"
+    ],
+    "portals": [
+      "Microsoft Learn"
+    ]
+  },
+  {
+    "id": "developer-platform",
+    "name": "Developer Platform",
+    "topics": [
+      ".NET",
+      "GitHub",
+      "Developer Tools"
+    ],
+    "portals": [
+      "Microsoft Learn"
+    ]
+  },
+  {
+    "id": "security-compliance",
+    "name": "Security & Compliance",
+    "topics": [
+      "Security",
+      "Compliance"
+    ],
+    "portals": [
+      "Microsoft Learn"
+    ]
+  },
+  {
+    "id": "cloud-foundations",
+    "name": "Cloud Foundations",
+    "topics": [
+      "AWS Fundamentals",
+      "Google Cloud Basics"
+    ],
+    "portals": [
+      "AWS Skill Builder",
+      "Google Cloud Skills Boost"
+    ]
+  },
+  {
+    "id": "architecture",
+    "name": "Architecture",
+    "topics": [
+      "Solutions Architecture",
+      "Serverless"
+    ],
+    "portals": [
+      "AWS Skill Builder"
+    ]
+  },
+  {
+    "id": "development",
+    "name": "Development",
+    "topics": [
+      "Developer"
+    ],
+    "portals": [
+      "AWS Skill Builder"
+    ]
+  },
+  {
+    "id": "operations-devops",
+    "name": "Operations & DevOps",
+    "topics": [
+      "Cloud Operations",
+      "DevOps"
+    ],
+    "portals": [
+      "AWS Skill Builder"
+    ]
+  },
+  {
+    "id": "security",
+    "name": "Security",
+    "topics": [
+      "Cloud Security"
+    ],
+    "portals": [
+      "AWS Skill Builder"
+    ]
+  },
+  {
+    "id": "data-analytics",
+    "name": "Data & Analytics",
+    "topics": [
+      "Data Engineering",
+      "Databases"
+    ],
+    "portals": [
+      "AWS Skill Builder"
+    ]
+  },
+  {
+    "id": "ai-machine-learning",
+    "name": "AI & Machine Learning",
+    "topics": [
+      "Machine Learning",
+      "Generative AI",
+      "AI Development"
+    ],
+    "portals": [
+      "AWS Skill Builder",
+      "Google Developers Learn"
+    ]
+  },
+  {
+    "id": "specialized-services",
+    "name": "Specialized Services",
+    "topics": [
+      "Migration",
+      "Networking",
+      "IoT"
+    ],
+    "portals": [
+      "AWS Skill Builder"
+    ]
+  },
+  {
+    "id": "infrastructure",
+    "name": "Infrastructure",
+    "topics": [
+      "Compute",
+      "Networking",
+      "Storage"
+    ],
+    "portals": [
+      "Google Cloud Skills Boost"
+    ]
+  },
+  {
+    "id": "data",
+    "name": "Data",
+    "topics": [
+      "Databases",
+      "Analytics"
+    ],
+    "portals": [
+      "Google Cloud Skills Boost"
+    ]
+  },
+  {
+    "id": "ai-ml",
+    "name": "AI & ML",
+    "topics": [
+      "Machine Learning",
+      "Generative AI"
+    ],
+    "portals": [
+      "Google Cloud Skills Boost"
+    ]
+  },
+  {
+    "id": "security-operations",
+    "name": "Security & Operations",
+    "topics": [
+      "Security",
+      "Operations"
+    ],
+    "portals": [
+      "Google Cloud Skills Boost"
+    ]
+  },
+  {
+    "id": "devops-application-development",
+    "name": "DevOps & Application Development",
+    "topics": [
+      "DevOps",
+      "Application Development"
+    ],
+    "portals": [
+      "Google Cloud Skills Boost"
+    ]
+  },
+  {
+    "id": "career-certificates",
+    "name": "Career Certificates",
+    "topics": [
+      "IT Support",
+      "Data Analytics",
+      "Project Management",
+      "UX Design",
+      "Cybersecurity",
+      "Digital Marketing & E-commerce",
+      "Advanced Data Analytics",
+      "Business Intelligence"
+    ],
+    "portals": [
+      "Grow with Google"
+    ]
+  },
+  {
+    "id": "ai-productivity",
+    "name": "AI & Productivity",
+    "topics": [
+      "Generative AI",
+      "Digital Skills"
+    ],
+    "portals": [
+      "Grow with Google"
+    ]
+  },
+  {
+    "id": "small-business",
+    "name": "Small Business",
+    "topics": [
+      "Business Growth"
+    ],
+    "portals": [
+      "Grow with Google"
+    ]
+  },
+  {
+    "id": "green-software-foundations",
+    "name": "Green Software Foundations",
+    "topics": [
+      "Core Principles",
+      "Climate Science",
+      "Measurement"
+    ],
+    "portals": [
+      "Green Software Foundation"
+    ]
+  },
+  {
+    "id": "green-software-engineering",
+    "name": "Green Software Engineering",
+    "topics": [
+      "Patterns",
+      "Cloud Sustainability",
+      "Application Design"
+    ],
+    "portals": [
+      "Green Software Foundation"
+    ]
+  },
+  {
+    "id": "operations-culture",
+    "name": "Operations & Culture",
+    "topics": [
+      "Sustainable Operations",
+      "Organizational Practice"
+    ],
+    "portals": [
+      "Green Software Foundation"
+    ]
+  },
+  {
+    "id": "tools-standards",
+    "name": "Tools & Standards",
+    "topics": [
+      "Tooling"
+    ],
+    "portals": [
+      "Green Software Foundation"
+    ]
+  },
+  {
+    "id": "web",
+    "name": "Web",
+    "topics": [
+      "Web Development"
+    ],
+    "portals": [
+      "Google Developers Learn"
+    ]
+  },
+  {
+    "id": "android",
+    "name": "Android",
+    "topics": [
+      "Android Development"
+    ],
+    "portals": [
+      "Google Developers Learn"
+    ]
+  },
+  {
+    "id": "firebase",
+    "name": "Firebase",
+    "topics": [
+      "Application Backend"
+    ],
+    "portals": [
+      "Google Developers Learn"
+    ]
+  },
+  {
+    "id": "google-maps-platform",
+    "name": "Google Maps Platform",
+    "topics": [
+      "Maps Development"
+    ],
+    "portals": [
+      "Google Developers Learn"
+    ]
+  },
+  {
+    "id": "cloud-apis",
+    "name": "Cloud & APIs",
+    "topics": [
+      "Cloud Development"
+    ],
+    "portals": [
+      "Google Developers Learn"
+    ]
+  },
+  {
+    "id": "other-platforms",
+    "name": "Other Platforms",
+    "topics": [
+      "Cross-platform"
+    ],
+    "portals": [
+      "Google Developers Learn"
+    ]
+  },
+  {
+    "id": "programming-foundations",
+    "name": "Programming Foundations",
+    "topics": [
+      "Core Programming"
+    ],
+    "portals": [
+      "Google Tech Dev Guide"
+    ]
+  },
+  {
+    "id": "data-structures-algorithms",
+    "name": "Data Structures & Algorithms",
+    "topics": [
+      "Computer Science"
+    ],
+    "portals": [
+      "Google Tech Dev Guide"
+    ]
+  },
+  {
+    "id": "advanced-computer-science",
+    "name": "Advanced Computer Science",
+    "topics": [
+      "Engineering"
+    ],
+    "portals": [
+      "Google Tech Dev Guide"
+    ]
+  },
+  {
+    "id": "interview-preparation",
+    "name": "Interview Preparation",
+    "topics": [
+      "Career Readiness"
+    ],
+    "portals": [
+      "Google Tech Dev Guide"
+    ]
+  },
+  {
+    "id": "emerging-technologies",
+    "name": "Emerging Technologies",
+    "topics": [
+      "Artificial Intelligence",
+      "Big Data Analytics",
+      "Cloud Computing",
+      "Cybersecurity",
+      "IoT",
+      "Blockchain",
+      "RPA",
+      "AR/VR",
+      "3D Printing",
+      "Web Development"
+    ],
+    "portals": [
+      "FutureSkills Prime",
+      "Infosys Springboard"
+    ]
+  },
+  {
+    "id": "artificial-intelligence",
+    "name": "Artificial Intelligence",
+    "topics": [
+      "AI Foundations",
+      "AI"
+    ],
+    "portals": [
+      "IBM SkillsBuild",
+      "Coursera",
+      "edX"
+    ]
+  },
+  {
+    "id": "cybersecurity",
+    "name": "Cybersecurity",
+    "topics": [
+      "Security Fundamentals"
+    ],
+    "portals": [
+      "IBM SkillsBuild"
+    ]
+  },
+  {
+    "id": "data-fundamentals",
+    "name": "Data Fundamentals",
+    "topics": [
+      "Data Science"
+    ],
+    "portals": [
+      "IBM SkillsBuild"
+    ]
+  },
+  {
+    "id": "cloud-computing",
+    "name": "Cloud Computing",
+    "topics": [
+      "Cloud Foundations"
+    ],
+    "portals": [
+      "IBM SkillsBuild"
+    ]
+  },
+  {
+    "id": "software-engineering",
+    "name": "Software Engineering",
+    "topics": [
+      "Developer Foundations"
+    ],
+    "portals": [
+      "IBM SkillsBuild"
+    ]
+  },
+  {
+    "id": "professional-workplace-skills",
+    "name": "Professional & Workplace Skills",
+    "topics": [
+      "Workplace Readiness"
+    ],
+    "portals": [
+      "IBM SkillsBuild"
+    ]
+  },
+  {
+    "id": "computer-science",
+    "name": "Computer Science",
+    "topics": [
+      "Programming",
+      "Core CS",
+      "Advanced CS"
+    ],
+    "portals": [
+      "SWAYAM",
+      "Coursera",
+      "edX"
+    ]
+  },
+  {
+    "id": "computer-science-engineering",
+    "name": "Computer Science & Engineering",
+    "topics": [
+      "Programming",
+      "Core CS",
+      "AI & Data Science",
+      "Systems & Security"
+    ],
+    "portals": [
+      "NPTEL"
+    ]
+  },
+  {
+    "id": "programming-development",
+    "name": "Programming & Development",
+    "topics": [
+      "Programming"
+    ],
+    "portals": [
+      "Infosys Springboard"
+    ]
+  },
+  {
+    "id": "cloud-security",
+    "name": "Cloud & Security",
+    "topics": [
+      "Cloud & Infrastructure"
+    ],
+    "portals": [
+      "Infosys Springboard"
+    ]
+  },
+  {
+    "id": "professional-skills",
+    "name": "Professional Skills",
+    "topics": [
+      "Professional Skills"
+    ],
+    "portals": [
+      "Infosys Springboard"
+    ]
+  },
+  {
+    "id": "cybersecurity-foundations",
+    "name": "Cybersecurity Foundations",
+    "topics": [
+      "Foundations"
+    ],
+    "portals": [
+      "FedVTE"
+    ]
+  },
+  {
+    "id": "cybersecurity-operations",
+    "name": "Cybersecurity Operations",
+    "topics": [
+      "Specialized Security"
+    ],
+    "portals": [
+      "FedVTE"
+    ]
+  },
+  {
+    "id": "systems-cloud-security",
+    "name": "Systems & Cloud Security",
+    "topics": [
+      "Systems Security"
+    ],
+    "portals": [
+      "FedVTE"
+    ]
+  },
+  {
+    "id": "governance-certification",
+    "name": "Governance & Certification",
+    "topics": [
+      "Management & Prep"
+    ],
+    "portals": [
+      "FedVTE"
+    ]
+  },
+  {
+    "id": "data-science",
+    "name": "Data Science",
+    "topics": [
+      "Data Analysis",
+      "Data Science"
+    ],
+    "portals": [
+      "Coursera",
+      "edX"
+    ]
+  },
+  {
+    "id": "information-technology",
+    "name": "Information Technology",
+    "topics": [
+      "IT & Cloud"
+    ],
+    "portals": [
+      "Coursera"
+    ]
+  },
+  {
+    "id": "business",
+    "name": "Business",
+    "topics": [
+      "Management & Business",
+      "Business & Leadership"
+    ],
+    "portals": [
+      "Coursera",
+      "LinkedIn Learning"
+    ]
+  },
+  {
+    "id": "business-management",
+    "name": "Business & Management",
+    "topics": [
+      "Business"
+    ],
+    "portals": [
+      "edX"
+    ]
+  },
+  {
+    "id": "engineering-it",
+    "name": "Engineering & IT",
+    "topics": [
+      "IT & Cloud"
+    ],
+    "portals": [
+      "edX"
+    ]
+  },
+  {
+    "id": "technology",
+    "name": "Technology",
+    "topics": [
+      "Software Development",
+      "IT & Cloud",
+      "Data Science"
+    ],
+    "portals": [
+      "LinkedIn Learning"
+    ]
+  },
+  {
+    "id": "creative",
+    "name": "Creative",
+    "topics": [
+      "Design & UX"
+    ],
+    "portals": [
+      "LinkedIn Learning"
+    ]
+  },
+  {
+    "id": "cloud-fundamentals",
+    "name": "Cloud Fundamentals",
+    "topics": [
+      "Foundations"
+    ],
+    "portals": [
+      "Google Cloud Learning"
+    ]
+  }
+]
