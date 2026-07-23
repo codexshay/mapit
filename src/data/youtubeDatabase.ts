@@ -25,7 +25,20 @@ export const CHANNELS_POOL: YouTubeChannel[] = [
     trustSignal: 10,
     engagementSanity: 10,
     recencyCheck: 9,
-    bestFor: "Core DSA, Programming Fundamentals, Web Development, Java"
+    bestFor: "Python, C++, Core DSA, Programming Fundamentals, Web Development, Java"
+  },
+  {
+    name: "The Cherno (Yan Chernikov)",
+    url: "https://www.youtube.com/@TheCherno",
+    isIndian: false,
+    domain: "software",
+    studyFramework: 10,
+    explanationClarity: 10,
+    handsOnReadiness: 10,
+    trustSignal: 10,
+    engagementSanity: 10,
+    recencyCheck: 9,
+    bestFor: "C++, Systems Programming, Memory Management, Game Engines, Graphics"
   },
   {
     name: "Khan GS Research Centre (Khan Sir)",

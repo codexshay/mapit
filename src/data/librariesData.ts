@@ -1013,6 +1013,20 @@ export const CERTIFICATIONS_LIBRARY: CertLibraryItem[] = [
     relatedRoles: ['Systems Administrator']
   },
   {
+    id: 'cpp-cpa-cert',
+    name: 'C++ Certified Associate Programmer (CPA / CPP)',
+    provider: 'C++ Institute / Pearson VUE',
+    difficulty: 'Intermediate',
+    costRange: '$195',
+    priorityOrder: 2,
+    description: 'Validates proficiency in C++ syntax, object-oriented programming, STL templates, memory management, and stream I/O.',
+    officialLink: 'https://cppinstitute.org/cpa-c-certified-associate-programmer',
+    freeYouTubeLink: 'https://www.youtube.com/results?search_query=C%2B%2B+Complete+Course+Free',
+    linkedInLearningLink: 'https://www.linkedin.com/learning/topics/c-plus-plus',
+    edxLink: 'https://www.edx.org/learn/c-plus-plus',
+    relatedRoles: ['C++ Developer', 'Systems Engineer', 'Software Developer']
+  },
+  {
     id: 'iaap-cippe',
     name: 'IAPP Certified Information Privacy Professional (CIPP/E)',
     provider: 'IAPP',
@@ -1029,6 +1043,13 @@ export const CERTIFICATIONS_LIBRARY: CertLibraryItem[] = [
 ]) as CertLibraryItem[];
 
 export const SKILLS_LIBRARY: SkillLibraryItem[] = [
+  {
+    name: 'C++ Systems & Memory Management',
+    category: 'Programming & Data',
+    description: 'Developing high-performance software using C++, managing stack/heap memory, smart pointers, RAII, and STL algorithms.',
+    bestFreeTutorial: 'https://www.youtube.com/@TheCherno',
+    associatedTools: ['GCC/Clang', 'GDB', 'CMake', 'Valgrind']
+  },
   {
     name: 'Carbon-Aware Code Optimization',
     category: 'Programming & Data',
@@ -1095,6 +1116,14 @@ export const SKILLS_LIBRARY: SkillLibraryItem[] = [
 ];
 
 export const TOOLS_LIBRARY: ToolLibraryItem[] = [
+  {
+    name: 'CMake & GCC/Clang (C++ Toolkit)',
+    category: 'Containers & Automation',
+    description: 'Cross-platform build system and compiler suite for C and C++ software engineering.',
+    costModel: '100% Free & Open Source',
+    howToPractice: 'Write C++ source files, configure CMakeLists.txt, build native executables, and debug with GDB/LLDB.',
+    freeResourceLink: 'https://cmake.org/'
+  },
   {
     name: 'Scaphandre',
     category: 'Diagnostics',

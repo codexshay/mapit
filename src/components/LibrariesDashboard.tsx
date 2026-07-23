@@ -11,6 +11,8 @@ import YoutubeTeachers, { TEACHERS_DIRECTORY } from './YoutubeTeachers';
 import Hackathons, { GLOBAL_HACKATHONS, GLOBAL_FESTS } from './Hackathons';
 import { auditPrerequisites } from '../utils/prereqAudit';
 import { IT_TAXONOMY_DATA } from './ITTaxonomyExplorer';
+import { useDebounce, getCrossTabSummary, searchUnifiedIndex } from '../utils/searchIndex';
+import { STORAGE_KEYS, getStorageItem, setStorageItem } from '../utils/storageMigration';
 
 const cleanFamilyName = (name: string): string => {
   return name.replace(/^(?:\d+\.\s*|[^a-zA-Z\d\s]+\s*)/, '');
@@ -1672,194 +1674,11 @@ export default function LibrariesDashboard({
     }
   };
 
+  const debouncedQuery = useDebounce(query, 180);
+
   const getCrossTabSearchResults = React.useMemo(() => {
-    if (!query || query.trim().length < 2) return [];
-
-    const searchLower = query.trim().toLowerCase();
-    const matches: { tabId: 'youtubeTeachers' | 'hackathons' | 'channels' | 'tools-skills' | 'certs' | 'bookshelf'; tabLabel: string; count: number; sampleItems: string[] }[] = [];
-
-    // 1. YouTube Teachers
-    let ytCount = 0;
-    const ytSamples: string[] = [];
-    if (Array.isArray(TEACHERS_DIRECTORY)) {
-      for (const cat of TEACHERS_DIRECTORY) {
-        if (cat && cat.name && cat.name.toLowerCase().includes(searchLower)) {
-          ytCount++;
-          if (ytSamples.length < 2) ytSamples.push(cat.name);
-        }
-        if (cat && Array.isArray(cat.subcategories)) {
-          for (const sub of cat.subcategories) {
-            if (sub && sub.skillArea && sub.skillArea.toLowerCase().includes(searchLower)) {
-              ytCount++;
-              if (ytSamples.length < 2) ytSamples.push(sub.skillArea);
-            }
-            if (sub && Array.isArray(sub.teachers)) {
-              for (const t of sub.teachers) {
-                if (t && t.name && t.name.toLowerCase().includes(searchLower)) {
-                  ytCount++;
-                  if (ytSamples.length < 2 && !ytSamples.includes(t.name)) ytSamples.push(t.name);
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    if (ytCount > 0) {
-      matches.push({
-        tabId: 'youtubeTeachers',
-        tabLabel: 'YouTube Teachers',
-        count: ytCount,
-        sampleItems: Array.from(new Set(ytSamples))
-      });
-    }
-
-    // 2. Hackathons & Events
-    let hackCount = 0;
-    const hackSamples: string[] = [];
-    const allHackathons = [...(GLOBAL_HACKATHONS || []), ...(GLOBAL_FESTS || [])];
-    for (const item of allHackathons) {
-      if (!item) continue;
-      const matchesSearch = 
-        (item.title && item.title.toLowerCase().includes(searchLower)) ||
-        (item.organizer && item.organizer.toLowerCase().includes(searchLower)) ||
-        (item.description && item.description.toLowerCase().includes(searchLower)) ||
-        (item.prizes && item.prizes.toLowerCase().includes(searchLower)) ||
-        (Array.isArray(item.themes) && item.themes.some(t => t && t.toLowerCase().includes(searchLower))) ||
-        (item.category && item.category.toLowerCase().includes(searchLower));
-
-      if (matchesSearch) {
-        hackCount++;
-        if (hackSamples.length < 2 && item.title) hackSamples.push(item.title);
-      }
-    }
-    if (hackCount > 0) {
-      matches.push({
-        tabId: 'hackathons',
-        tabLabel: 'Hackathons & Events',
-        count: hackCount,
-        sampleItems: Array.from(new Set(hackSamples))
-      });
-    }
-
-    // 3. Study Portals (channels)
-    let channelCount = 0;
-    const channelSamples: string[] = [];
-    for (const portal of importedPortals) {
-      if (!portal) continue;
-      const pNameMatch = Boolean(portal.name && portal.name.toLowerCase().includes(searchLower));
-      const pCatMatch = Boolean((portal as any).category && (portal as any).category.toLowerCase().includes(searchLower));
-      const pDomainsMatch = Boolean(Array.isArray(portal.domains) && portal.domains.some((d: string) => d && typeof d === 'string' && d.toLowerCase().includes(searchLower)));
-      const pHasMatchingCatalogSkill = Array.isArray(importedCatalog) && importedCatalog.some((rec: any) =>
-        rec && (rec.portalSlug === portal.id || rec.portal === portal.name) &&
-        (
-          (rec.skillOrTool && typeof rec.skillOrTool === 'string' && rec.skillOrTool.toLowerCase().includes(searchLower)) ||
-          (rec.topic && typeof rec.topic === 'string' && rec.topic.toLowerCase().includes(searchLower)) ||
-          (rec.domain && typeof rec.domain === 'string' && rec.domain.toLowerCase().includes(searchLower))
-        )
-      );
-
-      if (pNameMatch || pCatMatch || pDomainsMatch || pHasMatchingCatalogSkill) {
-        channelCount++;
-        if (channelSamples.length < 2 && portal.name) channelSamples.push(portal.name);
-      }
-    }
-    if (channelCount > 0) {
-      matches.push({
-        tabId: 'channels',
-        tabLabel: 'Study Portals',
-        count: channelCount,
-        sampleItems: Array.from(new Set(channelSamples))
-      });
-    }
-
-    // 4. Skills & Tools (tools-skills)
-    let toolsCount = 0;
-    const toolsSamples: string[] = [];
-    for (const sk of importedSkills) {
-      if (!sk) continue;
-      const nameMatch = Boolean(sk.name && sk.name.toLowerCase().includes(searchLower));
-      const domainMatch = Boolean(sk.domain && sk.domain.toLowerCase().includes(searchLower));
-      const topicMatch = Boolean(sk.topic && sk.topic.toLowerCase().includes(searchLower));
-      const portalMatch = Boolean(Array.isArray(sk.portals) && sk.portals.some((p: string) => p && typeof p === 'string' && p.toLowerCase().includes(searchLower)));
-
-      if (nameMatch || domainMatch || topicMatch || portalMatch) {
-        toolsCount++;
-        if (toolsSamples.length < 2 && sk.name) toolsSamples.push(sk.name);
-      }
-    }
-    if (toolsCount > 0) {
-      matches.push({
-        tabId: 'tools-skills',
-        tabLabel: 'Skills & Tools Pool',
-        count: toolsCount,
-        sampleItems: Array.from(new Set(toolsSamples))
-      });
-    }
-
-    // 5. Certifications (certs)
-    let certCount = 0;
-    const certSamples: string[] = [];
-    if (Array.isArray(certifications)) {
-      for (const certItem of certifications) {
-        if (!certItem) continue;
-        const cert = certItem as any;
-        const matchesSearch = 
-          (cert.name && cert.name.toLowerCase().includes(searchLower)) ||
-          (cert.provider && cert.provider.toLowerCase().includes(searchLower)) ||
-          (Array.isArray(cert.skillsMeasured) && cert.skillsMeasured.some((s: string) => s && s.toLowerCase().includes(searchLower))) ||
-          (cert.focusTrack && cert.focusTrack.toLowerCase().includes(searchLower)) ||
-          (cert.difficulty && cert.difficulty.toLowerCase().includes(searchLower)) ||
-          (cert.description && cert.description.toLowerCase().includes(searchLower));
-
-        if (matchesSearch) {
-          certCount++;
-          if (certSamples.length < 2 && cert.name) certSamples.push(cert.name);
-        }
-      }
-    }
-    if (certCount > 0) {
-      matches.push({
-        tabId: 'certs',
-        tabLabel: 'Certifications',
-        count: certCount,
-        sampleItems: Array.from(new Set(certSamples))
-      });
-    }
-
-    // 6. Bookshelf (bookshelf)
-    let bookCount = 0;
-    const bookSamples: string[] = [];
-    if (Array.isArray(books)) {
-      for (const bkItem of books) {
-        if (!bkItem) continue;
-        const bk = bkItem as any;
-        const matchesSearch = 
-          (bk.title && bk.title.toLowerCase().includes(searchLower)) ||
-          (bk.author && bk.author.toLowerCase().includes(searchLower)) ||
-          (bk.department && bk.department.toLowerCase().includes(searchLower)) ||
-          (Array.isArray(bk.recommendedFor) && bk.recommendedFor.some((r: string) => r && r.toLowerCase().includes(searchLower))) ||
-          (Array.isArray(bk.syllabiAligned) && bk.syllabiAligned.some((s: string) => s && s.toLowerCase().includes(searchLower))) ||
-          (bk.whyRecommended && bk.whyRecommended.toLowerCase().includes(searchLower)) ||
-          (bk.description && bk.description.toLowerCase().includes(searchLower));
-
-        if (matchesSearch) {
-          bookCount++;
-          if (bookSamples.length < 2 && bk.title) bookSamples.push(bk.title);
-        }
-      }
-    }
-    if (bookCount > 0) {
-      matches.push({
-        tabId: 'bookshelf',
-        tabLabel: 'Bookshelf',
-        count: bookCount,
-        sampleItems: Array.from(new Set(bookSamples))
-      });
-    }
-
-    return matches;
-  }, [query, certifications, books]);
+    return getCrossTabSummary(debouncedQuery);
+  }, [debouncedQuery]);
 
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [showAllCerts, setShowAllCerts] = useState<boolean>(false);
@@ -2083,33 +1902,33 @@ export default function LibrariesDashboard({
     }
   };
 
-  // Filtering based on search query
+  // Filtering based on debounced search query
   const filteredCerts = certifications.filter(c => 
-    matchesQuery(c.name, query) ||
-    matchesQuery(c.provider, query) ||
-    matchesQuery(c.description, query)
+    matchesQuery(c.name, debouncedQuery) ||
+    matchesQuery(c.provider, debouncedQuery) ||
+    matchesQuery(c.description, debouncedQuery)
   );
 
   const filteredChannels = importedPortals.map(portal => {
     if (!portal) return null;
     const portalRecords = importedCatalog.filter((rec: any) => rec && (rec.portalSlug === portal.id || rec.portal === portal.name));
     
-    const matchingRecords = query.trim() ? portalRecords.filter((rec: any) => 
+    const matchingRecords = debouncedQuery.trim() ? portalRecords.filter((rec: any) => 
       rec && (
-        matchesQuery(rec.skillOrTool, query) ||
-        matchesQuery(rec.topic, query) ||
-        matchesQuery(rec.domain, query) ||
-        matchesQuery(rec.learningFormat, query) ||
-        matchesQuery(rec.notes, query)
+        matchesQuery(rec.skillOrTool, debouncedQuery) ||
+        matchesQuery(rec.topic, debouncedQuery) ||
+        matchesQuery(rec.domain, debouncedQuery) ||
+        matchesQuery(rec.learningFormat, debouncedQuery) ||
+        matchesQuery(rec.notes, debouncedQuery)
       )
     ) : [];
 
     const isDirectPortalMatch = 
-      matchesQuery(portal.name, query) ||
-      matchesQuery((portal as any).category, query) ||
-      matchesQuery(portal.learningFormat, query) ||
-      matchesQuery(portal.officialUrl, query) ||
-      (Array.isArray(portal.domains) && portal.domains.some((d: string) => matchesQuery(d, query)));
+      matchesQuery(portal.name, debouncedQuery) ||
+      matchesQuery((portal as any).category, debouncedQuery) ||
+      matchesQuery(portal.learningFormat, debouncedQuery) ||
+      matchesQuery(portal.officialUrl, debouncedQuery) ||
+      (Array.isArray(portal.domains) && portal.domains.some((d: string) => matchesQuery(d, debouncedQuery)));
 
     return {
       ...portal,
@@ -2117,7 +1936,7 @@ export default function LibrariesDashboard({
       totalSkillsCount: portalRecords.length,
       matchingSkillsCount: matchingRecords.length,
       matchingSkillsList: matchingRecords.slice(0, 6),
-      isMatched: !query.trim() || isDirectPortalMatch || matchingRecords.length > 0
+      isMatched: !debouncedQuery.trim() || isDirectPortalMatch || matchingRecords.length > 0
     };
   }).filter((p): p is NonNullable<typeof p> => Boolean(p && p.isMatched));
 
@@ -2820,13 +2639,13 @@ export default function LibrariesDashboard({
             const filteredSkills = importedSkills.filter((sk: any) => {
               if (skillDomainFilter !== 'All' && sk.domain !== skillDomainFilter) return false;
               if (skillTypeFilter !== 'All' && sk.type !== skillTypeFilter) return false;
-              if (!query.trim()) return true;
+              if (!debouncedQuery.trim()) return true;
               return (
-                matchesQuery(sk.name, query) ||
-                matchesQuery(sk.domain, query) ||
-                matchesQuery(sk.topic, query) ||
-                matchesQuery(sk.type, query) ||
-                (sk.portals && sk.portals.some((p: string) => matchesQuery(p, query)))
+                matchesQuery(sk.name, debouncedQuery) ||
+                matchesQuery(sk.domain, debouncedQuery) ||
+                matchesQuery(sk.topic, debouncedQuery) ||
+                matchesQuery(sk.type, debouncedQuery) ||
+                (sk.portals && sk.portals.some((p: string) => matchesQuery(p, debouncedQuery)))
               );
             });
 

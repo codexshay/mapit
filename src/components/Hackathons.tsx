@@ -1432,8 +1432,15 @@ export default function Hackathons({
           })}
 
           {filteredItems.length === 0 && (
-            <div className="border-2 border-dashed border-red-500/20 bg-red-950/10 p-10 text-center text-red-400 font-mono text-xs">
-              ⚠️ No entry matched the active search filters and keywords.
+            <div className="border-2 border-dashed border-amber-500/30 bg-amber-950/10 p-8 text-center text-amber-400 font-mono text-xs my-2">
+              <p className="font-bold uppercase mb-2">No hackathons or events matched "{searchQuery}"</p>
+              <button
+                type="button"
+                onClick={() => setSearchQuery('')}
+                className="px-3 py-1 bg-amber-500/10 border border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-black font-bold uppercase transition cursor-pointer"
+              >
+                Clear Search Query
+              </button>
             </div>
           )}
         </div>

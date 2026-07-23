@@ -325,6 +325,7 @@ export const TEACHERS_DIRECTORY: TeacherCategory[] = [
         {
           skillArea: 'Python',
           teachers: [
+            { name: 'Apna College (Shradha Khapra)', url: 'https://www.youtube.com/@ApnaCollegeOfficial' },
             { name: 'Corey Schafer', url: 'https://www.youtube.com/@coreyms' },
             { name: 'Programming with Mosh', url: 'https://www.youtube.com/@programmingwithmosh' },
             { name: 'freeCodeCamp.org', url: 'https://www.youtube.com/@freecodecamp' },
@@ -332,6 +333,18 @@ export const TEACHERS_DIRECTORY: TeacherCategory[] = [
           ],
           whyTrust: 'Excellent clarity; long-form courses and project-driven learning.',
           suggestedStudy: 'Python fundamentals, OOP, APIs, automation, Flask/Django, testing, projects.'
+        },
+        {
+          skillArea: 'C++ & Systems Programming',
+          teachers: [
+            { name: 'The Cherno (C++ Series)', url: 'https://www.youtube.com/@TheCherno' },
+            { name: 'Apna College (Shradha Khapra)', url: 'https://www.youtube.com/@ApnaCollegeOfficial' },
+            { name: 'CodeWithHarry', url: 'https://www.youtube.com/@CodeWithHarry' },
+            { name: 'Jenny\'s Lectures CS IT', url: 'https://www.youtube.com/@JennyslecturesCSIT' },
+            { name: 'freeCodeCamp.org', url: 'https://www.youtube.com/@freecodecamp' }
+          ],
+          whyTrust: 'Comprehensive modern C++ pointers, memory management, STL, object-oriented programming, and low-level system optimization tutorials.',
+          suggestedStudy: 'Master pointers, dynamic memory allocation, STL containers, templates, smart pointers, RAII, and C++11/17/20 features.'
         },
         {
           skillArea: 'JavaScript/frontend',
@@ -1028,14 +1041,22 @@ export default function YoutubeTeachers({
     if (!searchQuery.trim()) {
       return TEACHERS_DIRECTORY;
     }
-    const q = searchQuery.toLowerCase();
+    const q = searchQuery.toLowerCase().trim();
+    const isCpp = q === 'c++' || q === 'cpp' || q === 'cplusplus' || q === 'c plus plus';
     return TEACHERS_DIRECTORY.map(cat => {
-      const filteredSubs = (cat.subcategories || []).filter(sub => 
-        (sub?.skillArea && sub.skillArea.toLowerCase().includes(q)) ||
-        (sub?.whyTrust && sub.whyTrust.toLowerCase().includes(q)) ||
-        (sub?.suggestedStudy && sub.suggestedStudy.toLowerCase().includes(q)) ||
-        (Array.isArray(sub?.teachers) && sub.teachers.some(t => t?.name && t.name.toLowerCase().includes(q)))
-      );
+      const filteredSubs = (cat.subcategories || []).filter(sub => {
+        const matchesQuery = 
+          (sub?.skillArea && sub.skillArea.toLowerCase().includes(q)) ||
+          (sub?.whyTrust && sub.whyTrust.toLowerCase().includes(q)) ||
+          (sub?.suggestedStudy && sub.suggestedStudy.toLowerCase().includes(q)) ||
+          (Array.isArray(sub?.teachers) && sub.teachers.some(t => t?.name && t.name.toLowerCase().includes(q)));
+        const matchesCpp = isCpp && (
+          (sub?.skillArea && (sub.skillArea.toLowerCase().includes('c++') || sub.skillArea.toLowerCase().includes('cpp'))) ||
+          (sub?.whyTrust && sub.whyTrust.toLowerCase().includes('c++')) ||
+          (sub?.suggestedStudy && sub.suggestedStudy.toLowerCase().includes('c++'))
+        );
+        return matchesQuery || matchesCpp;
+      });
       return {
         ...cat,
         subcategories: filteredSubs
@@ -1057,9 +1078,22 @@ export default function YoutubeTeachers({
         {/* Left Side: Category Navigator (4/12 or 3/12) */}
         <div className="lg:col-span-4 flex flex-col gap-2">
           
-          <div className={`${isLight ? 'bg-gray-100 border-gray-200 text-slate-700' : 'bg-[#070b14] border-[#1e2e54] text-[#10b981]'} border-2 p-3 text-[10px] text-center flex items-center justify-center`} style={{ fontFamily: '"Press Start 2P", monospace' }}>
-            DOMAINS
-          </div>
+          <button
+            type="button"
+            onClick={() => {
+              if (setSearchQuery) setSearchQuery('');
+            }}
+            className={`w-full ${isLight ? 'bg-gray-100 border-gray-200 text-slate-700 hover:bg-gray-200' : 'bg-[#070b14] border-[#1e2e54] text-[#10b981] hover:bg-[#0d1629]'} border-2 p-3 text-[10px] text-center flex items-center justify-between cursor-pointer transition-all shadow-[2px_2px_0px_#10b981] active:translate-y-0.5`}
+            style={{ fontFamily: '"Press Start 2P", monospace' }}
+            title="Click DOMAINS to reset search query and view complete domains list"
+          >
+            <span>DOMAINS</span>
+            {searchQuery.trim() && (
+              <span className="text-[9px] text-red-400 font-mono font-bold bg-red-500/10 border border-red-500/40 px-1.5 py-0.5 normal-case">
+                Reset Search ✕
+              </span>
+            )}
+          </button>
           
           <div className="flex flex-col gap-1.5 max-h-[500px] overflow-y-auto pr-1">
             {searchQuery.trim() ? (
