@@ -4,11 +4,12 @@ import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
+import { classifyIntentAndExtractEntities, retrievePamRecommendations } from "./src/utils/pamRetrieval";
 
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 app.use(express.json());
 
@@ -41,203 +42,60 @@ app.post("/api/assistant/chat", async (req, res) => {
       return;
     }
 
-    // Convert client messages structure to Gemini's contents structure
-    // Gemini roles: 'user' or 'model'
-    const contents = messages.map((m: any) => {
-      const role = m.role === "assistant" ? "model" : "user";
-      return {
-        role: role,
+    // 1. Run intent classification and MapIT knowledge retrieval
+    const contextEntities = classifyIntentAndExtractEntities(messages);
+    const retrieval = retrievePamRecommendations(contextEntities);
+
+    // 2. Attempt Gemini generation with strict constraints
+    try {
+      const ai = getGeminiClient();
+      const systemInstruction = `You are Pam, MapIT's concise AI career assistant.
+
+STRICT RESPONSE CONSTRAINTS:
+1. **Word Count**: 50 to 120 words MAXIMUM. Plain language, short sentences.
+2. **Strict Response Shape**:
+   - Paragraph 1: 1-2 sentence direct answer to the question.
+   - "Recommended options:" followed by 2 to 4 bullet points (format: "- [Title] — [short reason]").
+   - Paragraph 3: 1 short next-step sentence.
+   - Paragraph 4: 1 to 3 direct clickable markdown links using these EXACT URLs:
+${retrieval.links.map(l => `[${l.text}](${l.href})`).join(' · ')}
+3. **DO NOT include generic intros or headings**:
+   - DO NOT say "A stable career in IT relies on..."
+   - DO NOT say "IT Career Advising"
+   - DO NOT say "Actionable Next Steps"
+   - DO NOT say "Please specify an active tech field..."
+   - DO NOT ask the user to clarify when a topic, domain, or skill is recognizable.
+4. **Verified MapIT Data Context**:
+${JSON.stringify(retrieval.recommendations, null, 2)}`;
+
+      const contents = messages.map((m: any) => ({
+        role: m.role === "assistant" ? "model" : "user",
         parts: [{ text: m.content || "" }],
-      };
-    });
+      }));
 
-    const ai = getGeminiClient();
-    const systemInstruction = `You are Pam, an elite, highly empathetic, and exceptionally detailed IT Career Coach.
+      const response = await ai.models.generateContent({
+        model: "gemini-2.5-flash",
+        contents: contents,
+        config: {
+          systemInstruction: systemInstruction,
+          temperature: 0.3,
+        },
+      });
 
-RULES OF ENGAGEMENT:
-1. **Contemplate & Detail**: Deeply analyze and address the user's specific query, situation, background, and career goals (e.g., graduating with a BCA, wanting to break into Green Computing/sustainable solutions, dealing with layoffs, or changing careers). Provide a thorough, comprehensive, and highly structured response that demonstrates genuine care and deep industry expertise. Avoid generic or superficial answers.
-2. **Personalized Analysis**: Explicitly validate their background (e.g., "A BCA degree provides a strong programming foundation that maps perfectly to..."). Directly explain how their background, degree, or technical interests transition into modern tech roles, specifically focusing on roles like Green Computing Specialist, Carbon-Aware Software Engineer, Sustainable Systems Architect, SysAdmin, Cloud Support, SRE, or Cybersecurity.
-3. **Embed MapIT App Integration**: You MUST actively connect your career advice to the specific features and data available inside this MapIT application. Embed clickable action triggers using markdown link format [Button Title](action:...) directly within your sentences so the user can immediately act on your advice:
-   - To guide them to general tabs, use: [Link Text](action:tab:TAB_ID)
-     * TAB_ID can be:
-       - 'libraries' for the Resources Library (Handpicked Certifications, Books, YouTube Teachers)
-       - 'taxonomy' for the IT Taxonomy Explorer (Roles, duties, salaries)
-       - 'pathfinder' for the Career Path Planner (Weekly milestones, practice labs, certifications)
-       - 'map' for the interactive Pathway Map (Visual progression of roles)
-       - 'comparison' for the Comparison Matrix
-   - To guide them to specific search lists, use: [Link Text](action:navigate:SECTION_TYPE:SEARCH_QUERY)
-     * SECTION_TYPE can be: certs, tools-skills, channels, bookshelf, hackathons, or youtubeTeachers
-     * Example: [Search Green Certs](action:navigate:certs:Green) or [Search Books](action:navigate:bookshelf:Linux)
-   - To compare two roles side-by-side: If the user asks to compare two roles, or if you identify a comparison request, explain the main differences and refer them to the Comparison Matrix by embedding a dual action comparison trigger:
-     * Use the format: [Compare Role A vs Role B](action:compare:role-a-id:role-b-id)
-     * Replace \`role-a-id\` and \`role-b-id\` with their respective lowercase kebab-case IDs from the taxonomy. Examples:
-       - 'green-computing-specialist'
-       - 'sustainable-systems-architect'
-       - 'cloud-support-associate'
-       - 'network-support-specialist'
-       - 'linux-systems-administrator'
-       - 'cybersecurity-analyst'
-       - 'data-analyst'
-       - 'qa-manual-tester'
-       - 'junior-software-developer'
-       - 'it-support-analyst'
-       - 'site-reliability-engineer-sre'
-       - 'cloud-infrastructure-architect'
-       - 'ai-prompt-engineer-agent-architect'
-       - 'it-systems-portfolio-manager-it-pm'
-       - 'sustainable-product-manager'
-4. **Suggest Real Credentials & Tools**: Suggest specific high-fidelity certifications (such as the "Certified Green Software Practitioner (CGSP)" by the Green Software Foundation/Linux Foundation, "AWS Certified Solutions Architect", "CompTIA Network+", or "ISTQB QA") and practical learning resources. Leverage live Google Web Search to get the most accurate and up-to-date credential names and details.
-5. **No Disclosing Search/API/Database**: You are STRICTLY FORBIDDEN from mentioning that you are using Google Search, browsing the web, utilizing search grounding, using api tools, or relying on a structured database feed. Simply answer the user's query naturally with high expertise, as if you know it directly.
-6. **Actionable Next Steps**: Present exactly 2-3 highly actionable next step bullet points to keep the recommendations clear and directly implementable, utilizing embedded action links.
-7. **Reference Source Links**: Provide 1 to 3 real, verified target website markdown links (e.g., [Provider Portal](https://aws.amazon.com/certification/...)) at the very end of your response in a compact "Sources & References" list for the user's reference.`;
-
-    const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
-      contents: contents,
-      config: {
-        systemInstruction: systemInstruction,
-        tools: [{ googleSearch: {} }],
-        temperature: 0.6,
-      },
-    });
-
-    const text = response.text || "I apologize, but I could not formulate a response at this time.";
-    res.json({ message: text });
-  } catch (error: any) {
-    console.log("Coaching query check: processed with offline fallback advisor module.");
-    
-    // Formulate a clean, highly concise fallback response based on user input keywords
-    const userMessageText = (messages && messages.length > 0) 
-      ? String(messages[messages.length - 1].content || "").toLowerCase() 
-      : "";
-
-    let fallbackText = "";
-
-    if (userMessageText.includes("green") || userMessageText.includes("bca") || userMessageText.includes("sustainable") || userMessageText.includes("carbon")) {
-      fallbackText = `### Green Computing & Sustainable IT Advising
-
-As a **BCA graduate**, transitioning into **Green Computing Solutions** is a brilliant, highly forward-thinking strategy! Your software background provides the perfect technical springboard for optimizing algorithm efficiency, carbon-aware cloud systems, and hardware energy profiling.
-
-Here is how you can use **MapIT** to start building your sustainable computing roadmap:
-1. **Explore the Career Planner**: Go to the [Career Path Planner](action:tab:pathfinder) and select the **Green Computing Specialist** or **Sustainable Systems Architect** roles. It provides week-by-week milestones detailing exactly how to measure CPU/GPU power draw, build carbon-aware schedulers, and publish sustainable coding portfolios.
-2. **Study Sustainable Core Resources**: Browse the [Resources Library](action:tab:libraries) where you can access the [Green Software Foundation Learning Directory](action:navigate:certs:Green), search sustainable code guides, and watch eco-conscious tech channels.
-3. **Trace Career Progression**: Visit the [IT Taxonomy Explorer](action:tab:taxonomy) to understand salaries and core duties, or see role hierarchies on the visual [Pathway Map](action:tab:map).
-
-#### Actionable Next Steps:
-- **Target a Validating Credential**: Study the curriculum and sit for the [Certified Green Software Practitioner (CGSP)](action:navigate:certs:Green) from the Green Software Foundation/Linux Foundation.
-- **Build Carbon-Aware Code**: Rehearse energy metrology using open-source tools like Scaphandre or Carbon Aware SDK, hosting your code on GitHub.
-- **Set Up Your Career Map**: Visualize the complete progression in the [Interactive Pathway Map](action:tab:map).
-
-*Sources & References:*
-- [Green Software Foundation learning](https://learn.greensoftware.foundation/)
-- [Linux Foundation LFC131 Course](https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/)
-- [Climate Change AI Community](https://www.climatechange.ai/)`;
-
-    } else if (userMessageText.includes("sysadmin") || userMessageText.includes("system") || userMessageText.includes("server") || userMessageText.includes("linux") || userMessageText.includes("windows")) {
-      fallbackText = `### Systems & Server Administration Advising
-
-Systems Administration centers on OS fundamentals (primarily the **Linux CLI**, user permissions, and cron jobs) along with core network protocols like **TCP/IP, DHCP, and DNS**. Entry-level roles provide the ideal pathway to specialized infrastructure or virtualization.
-
-#### Actionable Next Steps:
-- **Practice standard commands**: Boot a local Linux instance to rehearse filesystem navigation, package management, and basic Bash scripting.
-- **Prepare target credentials**: Focus on reputable beginner certifications like [CompTIA A+](action:navigate:certs:CompTIA) or [Google IT Support](action:navigate:certs:Google).
-- **Review core roles**: Explore the [Systems Administration Taxonomy](action:navigate:taxonomy:sysadmin) to learn about career pathways.
-
-*Sources & References:*
-- [Linux Professional Institute (LPI)](https://www.lpi.org)
-- [CompTIA Official Site](https://www.comptia.org)`;
-
-    } else if (userMessageText.includes("cloud") || userMessageText.includes("aws") || userMessageText.includes("azure") || userMessageText.includes("gcp") || userMessageText.includes("amazon") || userMessageText.includes("microsoft") || userMessageText.includes("google")) {
-      fallbackText = `### Cloud Support & Architecture Advising
-
-All modern applications run on scalable cloud infrastructure. You should master the fundamentals of virtual private networking, storage buckets, IAM user permissions, cluster computing, and serverless compute models across a major cloud vendor platform.
-
-#### Actionable Next Steps:
-- **Build active cloud projects**: Host a simple landing webpage in an Amazon S3 bucket, build custom domain routing, and secure API keys.
-- **Obtain validating credentials**: Target foundational certifications such as [AWS Solutions Architect](action:navigate:certs:AWS) or [Azure Administrator](action:navigate:certs:Azure).
-- **Trace visual structures**: Browse career lanes on the interactive [Cloud Support Pathway Map](action:navigate:map:cloud) and corresponding [Cloud Engineering Taxonomy](action:navigate:taxonomy:cloud).
-
-*Sources & References:*
-- [AWS Training Portal](https://aws.amazon.com/training/)
-- [Microsoft Learn Cloud Guides](https://learn.microsoft.com)`;
-
-    } else if (userMessageText.includes("devops") || userMessageText.includes("ci/cd") || userMessageText.includes("kubernetes") || userMessageText.includes("docker") || userMessageText.includes("container") || userMessageText.includes("jenkins")) {
-      fallbackText = `### DevOps & Site Reliability Engineering
-
-DevOps aligns software creation with stable operations. Key concepts include automated build pipelines (CI/CD), virtual environment encapsulation (containers), and treating infrastructure setup as repeatable program code.
-
-#### Actionable Next Steps:
-- **Configure containers**: Containerize a basic app using Dockerfiles, and coordinate multi-container applications with Docker Compose.
-- **Literature Review**: Read modern release manuals on the [Recommended Bookshelf](action:tab:libraries).
-- **Analyze roles**: Check out responsibilities on the [DevOps / SRE Taxonomy](action:navigate:taxonomy:devops) and check the [DevOps Career Map](action:navigate:map:devops).
-
-*Sources & References:*
-- [The CNCF Organization](https://www.cncf.io)
-- [DevOps Roadmap](https://roadmap.sh/devops)`;
-
-    } else if (userMessageText.includes("security") || userMessageText.includes("hack") || userMessageText.includes("pentest") || userMessageText.includes("cyber") || userMessageText.includes("firewall") || userMessageText.includes("comptia")) {
-      fallbackText = `### Cybersecurity & Network Defense
-
-Information Security focuses on securing physical servers and communication networks from threat vectors. Success requires a solid comprehension of TCP/IP parameters, authorization protocols, firewalls, and continuous SIEM event logs.
-
-#### Actionable Next Steps:
-- **Audit networking protocols**: Examine raw packet payloads and handshakes using local packet diagnostics.
-- **Pass validation exams**: Prepare for fundamental threat-detection exams like [CompTIA Security+](action:navigate:certs:Security%2B).
-- **Compare specializations**: Explore job categories on the interactive [Cyber Security Taxonomy](action:navigate:taxonomy:cybersecurity) and see certification progressions on the [Cyber Security Pathway Map](action:navigate:map:cybersecurity).
-
-*Sources & References:*
-- [OWASP Security Checklist](https://owasp.org)
-- [CompTIA Security Path](https://www.comptia.org/certifications/security)`;
-
-    } else if (userMessageText.includes("troubleshoot") || userMessageText.includes("troubleshooting") || userMessageText.includes("hardware") || userMessageText.includes("laid off") || userMessageText.includes("layoff") || userMessageText.includes("helpdesk") || userMessageText.includes("support")) {
-      fallbackText = `### Troubleshooting to IT Career Transition
-
-I am very sorry to hear about your layoff. Having a strong background in hardware and software troubleshooting is an incredible asset; diagnostic skills are the core foundation of Systems Administration, Cloud Operations, and DevOps!
-
-Your existing skills map directly to advanced roles:
-1. **To Systems Administration**: Diagnosing OS and configuration failures is SysAdmin work. You are already halfway there.
-2. **To Cloud Support**: Cloud incidents are troubleshooting puzzles at a virtual scale.
-3. **To Site Reliability Engineering (SRE)**: Analyzing why systems crash is the primary job of SREs.
-
-#### Actionable Next Steps:
-- **Level up to Linux & Bash**: Move from graphical OS troubleshooting to command-line diagnostics. See the [Systems Administration Taxonomy](action:navigate:taxonomy:sysadmin).
-- **Target a validating cert**: Obtain the [CompTIA Network+](action:navigate:certs:CompTIA) or [AWS Solutions Architect](action:navigate:certs:AWS) to prove your skills to recruiters.
-- **Trace the Career Roads**: Review how support roles progress into high-paying engineering domains on the [IT Pathway Map](action:tab:map) and compare roles in the [Pathways Comparison Tool](action:tab:pathfinder).
-
-*Sources & References:*
-- [CompTIA Career Roadmap](https://www.comptia.org/blog/comptia-career-roadmap)
-- [Indeed IT Career Advice](https://www.indeed.com/career-advice/finding-a-job/it-career-path)`;
-
-    } else if (userMessageText.includes("compare") || userMessageText.includes("versus") || userMessageText.includes(" vs ") || userMessageText.includes("difference between")) {
-      fallbackText = `### Role Comparison Guide & Comparator Tool
-
-You can compare any two roles side-by-side using our interactive **Pathways Comparison Tool** (the Comparison Matrix). It highlights key differences in salaries, technical requirements, typical daily tasks, and recommended training paths.
-
-Try comparing some of the most popular combinations directly:
-1. **Cloud Support vs. Cloud Architect**: [Compare Cloud Support vs Cloud Infrastructure Architect](action:compare:cloud-support-associate:cloud-infrastructure-architect)
-2. **Linux SysAdmin vs. DevOps SRE**: [Compare Linux SysAdmin vs DevOps SRE](action:compare:linux-systems-administrator:site-reliability-engineer-sre)
-3. **Cybersecurity Analyst vs. Network Specialist**: [Compare Cybersecurity Analyst vs Network Specialist](action:compare:cybersecurity-analyst:network-support-specialist)
-4. **Data Analyst vs. AI Specialist**: [Compare Data Analyst vs AI Specialist](action:compare:data-analyst:ai-prompt-engineer-agent-architect)
-
-#### Actionable Next Steps:
-- **Configure Custom Roles**: Visit the [Comparison Matrix](action:tab:comparison) and select any two roles of your choice from the dropdowns.
-- **Trace Progression Paths**: Look at the [Interactive Pathway Map](action:tab:map) to see how entry-level support roles evolve into advanced architectural tracks.
-- **Inspect Role Taxonomy**: Review detailed responsibilities inside the [IT Taxonomy Explorer](action:tab:taxonomy).`;
-
-    } else {
-      fallbackText = `### IT Career Advising
-
-A stable career in the IT industry relies on four core building blocks: operating systems (the Linux CLI), enterprise networking (TCP/IP architectures), system administration, and modern cloud deployment.
-
-#### Actionable Next Steps:
-- **Browse verified credentials**: Visit the Resources tab to explore [Top Handpicked Certifications](action:tab:libraries) and best-selling tech textbooks.
-- **Assess standard scales**: Inspect real-world role hierarchies and salaries in the [IT Taxonomy Explorer](action:navigate:taxonomy:sysadmin).
-- **Examine visual roads**: Look at specific tech disciplines on the [Interactive Pathway Map](action:tab:map).
-
-Please specify an active tech field (e.g., *SysAdmin*, *Cloud Support*, *DevOps*, or *Cybersecurity*) to receive highly targeted recommendations!`;
+      const text = response.text?.trim();
+      if (text && text.length > 20 && !text.includes("IT Career Advising") && !text.includes("Actionable Next Steps")) {
+        res.json({ message: text });
+        return;
+      }
+    } catch (geminiErr) {
+      console.log("Gemini API call skipped or failed, using Pam retrieval engine response.");
     }
 
-    res.json({ message: fallbackText });
+    // 3. Fallback to deterministic MapIT retrieval response
+    res.json({ message: retrieval.formattedResponse });
+  } catch (error: any) {
+    console.error("Assistant chat endpoint error:", error);
+    res.status(500).json({ error: "Internal server error" });
   }
 });
 
@@ -445,7 +303,12 @@ const VERIFIED_SEEDS = [
 
 // In-memory cache for events
 const CACHE_FILE_PATH = path.join(process.cwd(), "hackathons-cache.json");
-let cachedEvents: any[] = [...VERIFIED_SEEDS];
+const initializedSeeds = VERIFIED_SEEDS.map((item: any) => ({
+  ...item,
+  fetchedAt: item.fetchedAt || Date.now(),
+  originalDaysLeft: item.originalDaysLeft !== undefined ? item.originalDaysLeft : item.daysLeft
+}));
+let cachedEvents: any[] = [...initializedSeeds];
 let lastFetchedTime = 0;
 
 // Load hackathons from disk cache if present
@@ -454,9 +317,13 @@ try {
     const diskData = fs.readFileSync(CACHE_FILE_PATH, "utf-8");
     const parsedCache = JSON.parse(diskData);
     if (parsedCache && Array.isArray(parsedCache.events)) {
-      cachedEvents = parsedCache.events;
+      cachedEvents = parsedCache.events.map((item: any) => ({
+        ...item,
+        fetchedAt: item.fetchedAt || parsedCache.lastFetchedTime || Date.now(),
+        originalDaysLeft: item.originalDaysLeft !== undefined ? item.originalDaysLeft : item.daysLeft
+      }));
       lastFetchedTime = parsedCache.lastFetchedTime || 0;
-      console.log(`[Cache] Successfully loaded ${cachedEvents.length} hackathons from disk cache.`);
+      console.log(`[Cache] Successfully loaded ${cachedEvents.length} hackathons from disk cache with dynamic expiration telemetry.`);
     }
   }
 } catch (cacheError) {
@@ -560,8 +427,24 @@ Ensure that each item has:
       let events = JSON.parse(text.trim());
       if (Array.isArray(events) && events.length > 0) {
         const seenUrls = new Set(VERIFIED_SEEDS.map(s => s.url.toLowerCase()));
-        const filteredSearchEvents = events.filter((e: any) => e && e.url && !seenUrls.has(e.url.toLowerCase()));
-        cachedEvents = [...VERIFIED_SEEDS, ...filteredSearchEvents];
+        
+        // Add fetchedAt and originalDaysLeft to newly-synced search events
+        const processedSearchEvents = events
+          .filter((e: any) => e && e.url && !seenUrls.has(e.url.toLowerCase()))
+          .map((e: any) => ({
+            ...e,
+            fetchedAt: Date.now(),
+            originalDaysLeft: e.daysLeft
+          }));
+
+        // Merge keeping custom properties or overwriting appropriately
+        const initializedSeeds = VERIFIED_SEEDS.map((item: any) => ({
+          ...item,
+          fetchedAt: item.fetchedAt || Date.now(),
+          originalDaysLeft: item.originalDaysLeft !== undefined ? item.originalDaysLeft : item.daysLeft
+        }));
+
+        cachedEvents = [...initializedSeeds, ...processedSearchEvents];
         lastFetchedTime = Date.now();
         console.log(`Backend hackathon sync succeeded. Loaded ${cachedEvents.length} events (seeds + live).`);
 
@@ -608,8 +491,31 @@ app.get("/api/hackathons/update-events", async (req, res) => {
     await prefetchEventsInBackground(force);
   }
   
+  const now = Date.now();
+  const dynamicEvents = cachedEvents.map((item: any) => {
+    const itemFetchedAt = item.fetchedAt || lastFetchedTime || now;
+    const elapsedMs = now - itemFetchedAt;
+    const elapsedDays = Math.max(0, Math.floor(elapsedMs / (1000 * 60 * 60 * 24)));
+    
+    const originalDaysLeft = item.originalDaysLeft !== undefined ? item.originalDaysLeft : item.daysLeft;
+    const currentDaysLeft = Math.max(0, originalDaysLeft - elapsedDays);
+    
+    let status = item.scheduleStatus;
+    if (currentDaysLeft <= 0) {
+      status = "Closed";
+    }
+    
+    return {
+      ...item,
+      fetchedAt: itemFetchedAt,
+      originalDaysLeft: originalDaysLeft,
+      daysLeft: currentDaysLeft,
+      scheduleStatus: status
+    };
+  });
+  
   // Filter out older/invalid/expired listings (daysLeft <= 0 or scheduleStatus Closed)
-  const activeEvents = cachedEvents.filter((item: any) => {
+  const activeEvents = dynamicEvents.filter((item: any) => {
     const hasDaysLeft = item.daysLeft !== undefined && item.daysLeft > 0;
     const isNotClosed = item.scheduleStatus !== 'Closed';
     return hasDaysLeft && isNotClosed;
@@ -695,6 +601,27 @@ const FALLBACK_RESOURCES = {
   ]
 };
 
+// In-memory cache for resources
+const RESOURCES_CACHE_FILE_PATH = path.join(process.cwd(), "resources-cache.json");
+let cachedResources: any = { ...FALLBACK_RESOURCES };
+
+try {
+  if (fs.existsSync(RESOURCES_CACHE_FILE_PATH)) {
+    const diskData = fs.readFileSync(RESOURCES_CACHE_FILE_PATH, "utf-8");
+    const parsedCache = JSON.parse(diskData);
+    if (parsedCache && Array.isArray(parsedCache.certifications) && Array.isArray(parsedCache.books)) {
+      cachedResources = parsedCache;
+      console.log(`[Cache] Successfully loaded ${cachedResources.certifications.length} certifications and ${cachedResources.books.length} books from resources disk cache.`);
+    }
+  }
+} catch (cacheError) {
+  console.warn("Failed to load resources disk cache on startup:", cacheError);
+}
+
+app.get("/api/resources/get-cached-resources", (req, res) => {
+  res.json(cachedResources);
+});
+
 app.get("/api/resources/update-search-data", async (req, res) => {
   try {
     const ai = getGeminiClient();
@@ -759,11 +686,48 @@ app.get("/api/resources/update-search-data", async (req, res) => {
 
     const text = response.text || "{}";
     const data = JSON.parse(text.trim());
-    res.json(data);
+    
+    // Merge new certifications permanently on server-side
+    if (data.certifications && Array.isArray(data.certifications)) {
+      const mergedCerts = [...cachedResources.certifications];
+      data.certifications.forEach((newCert: any) => {
+        const idx = mergedCerts.findIndex(c => c.id === newCert.id);
+        if (idx > -1) {
+          mergedCerts[idx] = { ...mergedCerts[idx], ...newCert };
+        } else {
+          mergedCerts.unshift(newCert); // put newest sync items on top
+        }
+      });
+      cachedResources.certifications = mergedCerts;
+    }
+
+    // Merge new books permanently on server-side
+    if (data.books && Array.isArray(data.books)) {
+      const mergedBooks = [...cachedResources.books];
+      data.books.forEach((newBook: any) => {
+        const idx = mergedBooks.findIndex(b => b.title.toLowerCase() === newBook.title.toLowerCase());
+        if (idx > -1) {
+          mergedBooks[idx] = { ...mergedBooks[idx], ...newBook };
+        } else {
+          mergedBooks.unshift(newBook); // put newest sync items on top
+        }
+      });
+      cachedResources.books = mergedBooks;
+    }
+
+    // Persist to disk cache
+    try {
+      fs.writeFileSync(RESOURCES_CACHE_FILE_PATH, JSON.stringify(cachedResources, null, 2), "utf-8");
+      console.log(`[Cache] Successfully persisted ${cachedResources.certifications.length} certifications and ${cachedResources.books.length} books to disk.`);
+    } catch (saveError) {
+      console.warn("Failed to save resources cache to disk:", saveError);
+    }
+
+    res.json(cachedResources);
   } catch (error: any) {
     console.log("Grounded resource update completed. Serving static fallback resource metrics.");
     // Return standard compliant fallback certifications and books so the frontend does not show a crash
-    res.json(FALLBACK_RESOURCES);
+    res.json(cachedResources);
   }
 });
 
@@ -1181,6 +1145,16 @@ app.get("/api/health", (req, res) => {
   res.json({ status: "healthy", timestamp: new Date().toISOString() });
 });
 
+// Serve version info for cache invalidation verification
+app.get("/api/version", (req, res) => {
+  res.setHeader("Cache-Control", "no-cache, must-revalidate");
+  res.json({
+    applicationVersion: "1.4.0",
+    catalogVersion: "v1.4.0-catalog-20260722",
+    generatedAt: "2026-07-22T10:00:00.000Z"
+  });
+});
+
 // Vite Middleware Configuration for full-stack build
 async function setupVite() {
   if (process.env.NODE_ENV !== "production") {
@@ -1191,10 +1165,32 @@ async function setupVite() {
     });
     app.use(vite.middlewares);
   } else {
-    console.log("Serving build artifacts in Production mode...");
+    console.log("Serving build artifacts in Production mode with smart Cache-Control policies...");
     const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
+
+    app.use(express.static(distPath, {
+      setHeaders: (res, filePath) => {
+        if (filePath.endsWith('.html') || filePath.endsWith('index.html')) {
+          // Revalidate application entry document on every load
+          res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+          res.setHeader('Pragma', 'no-cache');
+          res.setHeader('Expires', '0');
+        } else if (filePath.includes('/assets/') || /\-[a-zA-Z0-9_-]{8,}\.(js|css|woff2?|png|jpg|svg|ico)$/.test(filePath)) {
+          // Content-hashed static assets are cached immutably for 1 year
+          res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        } else if (filePath.endsWith('.json')) {
+          // Generated JSON data files must revalidate
+          res.setHeader('Cache-Control', 'no-cache, must-revalidate');
+        } else {
+          res.setHeader('Cache-Control', 'public, max-age=3600');
+        }
+      }
+    }));
+
     app.get("*", (req, res) => {
+      res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+      res.setHeader('Pragma', 'no-cache');
+      res.setHeader('Expires', '0');
       res.sendFile(path.join(distPath, "index.html"));
     });
   }

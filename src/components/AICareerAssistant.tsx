@@ -563,6 +563,29 @@ function parseLineContent(
             {text}
           </button>
         );
+      } else if (href.startsWith("/")) {
+        const handleRouteClick = (e: React.MouseEvent) => {
+          e.preventDefault();
+          window.history.pushState({}, '', href);
+          window.dispatchEvent(new Event('popstate'));
+        };
+
+        return (
+          <a
+            key={i}
+            href={href}
+            onClick={handleRouteClick}
+            className={`inline-flex items-center gap-1 font-bold ${
+              isLight 
+                ? "text-emerald-800 hover:text-emerald-950 bg-emerald-100 hover:bg-emerald-200 border-emerald-300" 
+                : "text-emerald-300 hover:text-emerald-100 bg-emerald-950/40 hover:bg-emerald-900/60 border-emerald-500/40 hover:border-emerald-400"
+            } px-2 py-0.5 border rounded-none text-[11px] align-baseline my-0.5 cursor-pointer shadow-sm transition-all`}
+            title={`Open ${text}`}
+          >
+            <Sparkles className="w-2.5 h-2.5 shrink-0 text-emerald-400" />
+            {text}
+          </a>
+        );
       } else {
         return (
           <a

@@ -9,19 +9,28 @@ import AntCrossingGame from './components/AntCrossingGame';
 import SidebarAnt from './components/SidebarAnt';
 import ErrorBoundary from './components/ErrorBoundary';
 import YoutubeTeachers, { TEACHERS_DIRECTORY } from './components/YoutubeTeachers';
+import { CHANNELS_POOL } from './data/youtubeDatabase';
 import Hackathons, { GLOBAL_HACKATHONS, GLOBAL_FESTS, Hackathon } from './components/Hackathons';
 import { AnalogClock } from './components/AnalogClock';
 import AICareerAssistant from './components/AICareerAssistant';
 import HRContacts from './components/HRContacts';
 import { ALL_ROLES_DATA, IT_DOMAINS } from './data/rolesData';
 import { CORNER_TIPS, CERTIFICATIONS_LIBRARY } from './data/librariesData';
+import importedPortals from './data/generated/portals.json';
+import importedSkills from './data/generated/skills.json';
 import { RECOMMENDED_BOOKS } from './components/LibrariesDashboard';
 import CustomBookmarkIcon from './components/CustomBookmarkIcon';
+import { runStorageMigrations } from './utils/storageMigration';
+import { cleanupStaleServiceWorkers } from './utils/serviceWorkerCleanup';
+import { registerChunkErrorRecovery, checkForAppUpdates } from './utils/versionCheck';
+import { APP_VERSION, CATALOG_VERSION } from './data/version';
+import { useDebounce } from './utils/searchIndex';
 import { 
   Network, Compass, Scale, BookOpen, Clock, Gamepad2, Info, ChevronRight, 
   Terminal, ArrowUpRight, Award, HelpCircle, UserCheck, Flame, ExternalLink,
   Layers, Video, Trophy, Menu, ChevronLeft, Trash2, Sun, Moon,
-  ArrowLeft, ArrowRight, Search, ChevronDown, ChevronUp, Book, RefreshCw
+  ArrowLeft, ArrowRight, Search, ChevronDown, ChevronUp, Book, RefreshCw,
+  Pin, PinOff, Sparkles
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -124,26 +133,91 @@ export interface BookmarkItem {
 export default function App() {
   const [selectedRoleId, setSelectedRoleId] = useState<string | null>(null);
   const [globalSearchQuery, setGlobalSearchQuery] = useState<string>('');
+  const debouncedGlobalSearchQuery = useDebounce(globalSearchQuery, 180);
   const [lastGlobalSearchQuery, setLastGlobalSearchQuery] = useState<string>('');
   const [isFloatingSearchOpen, setIsFloatingSearchOpen] = useState<boolean>(false);
+  const [isSideSearchDropdownOpen, setIsSideSearchDropdownOpen] = useState<boolean>(false);
+  const [isTopSearchDropdownOpen, setIsTopSearchDropdownOpen] = useState<boolean>(false);
+
+  const sideSearchRef = useRef<HTMLDivElement>(null);
+  const topDesktopSearchRef = useRef<HTMLDivElement>(null);
+  const topMobileSearchRef = useRef<HTMLDivElement>(null);
   const floatingSearchRef = useRef<HTMLDivElement>(null);
   const floatingTriggerRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
+    function handleClickOutside(event: MouseEvent | TouchEvent) {
+      const target = event.target as Node;
+
       if (
         floatingSearchRef.current &&
-        !floatingSearchRef.current.contains(event.target as Node) &&
+        !floatingSearchRef.current.contains(target) &&
         floatingTriggerRef.current &&
-        !floatingTriggerRef.current.contains(event.target as Node)
+        !floatingTriggerRef.current.contains(target)
       ) {
         setIsFloatingSearchOpen(false);
       }
+
+      if (
+        sideSearchRef.current &&
+        !sideSearchRef.current.contains(target) &&
+        floatingSearchRef.current &&
+        !floatingSearchRef.current.contains(target)
+      ) {
+        setIsSideSearchDropdownOpen(false);
+      }
+
+      if (
+        topDesktopSearchRef.current &&
+        !topDesktopSearchRef.current.contains(target) &&
+        topMobileSearchRef.current &&
+        !topMobileSearchRef.current.contains(target)
+      ) {
+        setIsTopSearchDropdownOpen(false);
+      }
     }
+
     document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsTopSearchDropdownOpen(false);
+        setIsSideSearchDropdownOpen(false);
+        setIsFloatingSearchOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+      window.removeEventListener('keydown', handleKeyDown);
     };
+  }, []);
+
+  const [hasAppUpdate, setHasAppUpdate] = useState<boolean>(false);
+
+  useEffect(() => {
+    // 1. Perform safe local storage migration (without localStorage.clear)
+    runStorageMigrations();
+
+    // 2. Unregister stale service workers and purge old caches
+    cleanupStaleServiceWorkers();
+
+    // 3. Register chunk load / asset 404 recovery
+    registerChunkErrorRecovery(() => setHasAppUpdate(true));
+
+    // 4. Poll server /api/version periodically for new deployment updates
+    const checkUpdate = async () => {
+      const res = await checkForAppUpdates();
+      if (res.hasUpdate) {
+        setHasAppUpdate(true);
+      }
+    };
+    checkUpdate();
+    const interval = setInterval(checkUpdate, 300000); // Check every 5 mins
+
+    return () => clearInterval(interval);
   }, []);
   const [presetRoleAId, setPresetRoleAId] = useState<string | null>(null);
   const [presetRoleBId, setPresetRoleBId] = useState<string | null>(null);
@@ -199,6 +273,13 @@ export default function App() {
       localStorage.setItem('mapit_saved_roles', JSON.stringify(roleIds));
       return next;
     });
+  };
+
+  const handleSetAllLibrariesQuery = (q: string) => {
+    setLibrariesQuery(q);
+    setYoutubeSearchQuery(q);
+    setHackathonsSearchQuery(q);
+    setSearchQuery(q);
   };
 
   const isBookmarked = (id: string, type: BookmarkItem['type']) => {
@@ -441,6 +522,69 @@ export default function App() {
     }, 150);
   };
 
+  const handleNavigateRoute = (href: string) => {
+    try {
+      const url = new URL(href, window.location.origin);
+      const pathname = url.pathname;
+      const params = url.searchParams;
+      const query = params.get('query') || params.get('domain') || params.get('role') || '';
+
+      if (pathname.includes('/study-portals') || pathname.includes('/channels')) {
+        handleNavigateToSection('channels', query);
+      } else if (pathname.includes('/skills-tools') || pathname.includes('/tools-skills')) {
+        handleNavigateToSection('tools-skills', query);
+      } else if (pathname.includes('/certs')) {
+        handleNavigateToSection('certs', query);
+      } else if (pathname.includes('/youtube-teachers')) {
+        handleNavigateToSection('youtubeTeachers', query);
+      } else if (pathname.includes('/bookshelf')) {
+        handleNavigateToSection('bookshelf', query);
+      } else if (pathname.includes('/hackathons')) {
+        handleNavigateToSection('hackathons', query);
+      } else if (pathname.includes('/resources')) {
+        handleNavigateToSection('libraries', query);
+      } else if (pathname.includes('/path-planner')) {
+        setActiveTab('pathfinder');
+        if (query) {
+          handleNavigateToSection('map', query);
+          setActiveTab('pathfinder');
+        }
+      } else if (pathname.includes('/taxonomy')) {
+        handleNavigateToSection('taxonomy', query);
+      } else if (pathname.includes('/comparison')) {
+        const roleA = params.get('roleA');
+        const roleB = params.get('roleB');
+        if (roleA && roleB) {
+          handleCompareRoles(roleA, roleB);
+        } else {
+          setActiveTab('comparison');
+        }
+      } else if (pathname.includes('/map')) {
+        handleNavigateToSection('map', query);
+      }
+    } catch (e) {
+      console.error('Route navigation error:', e);
+    }
+  };
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const currentPath = window.location.pathname + window.location.search;
+      if (currentPath && currentPath !== '/') {
+        handleNavigateRoute(currentPath);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    if (window.location.pathname && window.location.pathname !== '/') {
+      handleNavigateRoute(window.location.pathname + window.location.search);
+    }
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
+
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [activeFilters, setActiveFilters] = useState({
     beginnerFriendly: false,
@@ -591,44 +735,52 @@ export default function App() {
 
   // Filter domains, roles, and resources for global search results
   const globalSearchResults = React.useMemo(() => {
-    if (!globalSearchQuery.trim()) return { domains: [], roles: [], certs: [], books: [], teachers: [], hackathons: [] };
-    const query = globalSearchQuery.toLowerCase().trim();
+    if (!debouncedGlobalSearchQuery.trim()) return { domains: [], roles: [], certs: [], books: [], teachers: [], hackathons: [] };
+    const query = debouncedGlobalSearchQuery.toLowerCase().trim();
+    const isCpp = query === 'c++' || query === 'cpp' || query === 'cplusplus' || query === 'c plus plus';
     
+    // Helper to check text match or C++ alias match
+    const checkMatch = (str?: string) => {
+      if (!str) return false;
+      const lower = str.toLowerCase();
+      if (lower.includes(query)) return true;
+      if (isCpp && (lower.includes('c++') || lower.includes('cpp') || lower.includes('cplusplus'))) return true;
+      return false;
+    };
+
     // 1. Search domains
     const matchedDomains = IT_DOMAINS.filter(domain => {
-      const nameMatch = domain.name ? domain.name.toLowerCase().includes(query) : false;
-      const descMatch = domain.description ? domain.description.toLowerCase().includes(query) : false;
-      return nameMatch || descMatch;
+      return checkMatch(domain.name) || checkMatch(domain.description);
     });
     
     // 2. Search roles
     const matchedRoles = Object.values(ALL_ROLES_DATA).filter(role => {
-      const titleMatch = role.title ? role.title.toLowerCase().includes(query) : false;
-      const descMatch = (role.roleAsk && role.roleAsk.explanation) ? role.roleAsk.explanation.toLowerCase().includes(query) : false;
-      const techMatch = Array.isArray(role.mustHaves?.tech) ? role.mustHaves.tech.some(t => t && t.toLowerCase().includes(query)) : false;
-      const processMatch = Array.isArray(role.mustHaves?.process) ? role.mustHaves.process.some(p => p && p.toLowerCase().includes(query)) : false;
-      const toolsMatch = Array.isArray(role.toolsToLearn) ? role.toolsToLearn.some(t => t && t.toLowerCase().includes(query)) : false;
-      const certsMatch = Array.isArray(role.recommendedCertifications) ? role.recommendedCertifications.some(c => c && c.name && c.name.toLowerCase().includes(query)) : false;
-      const pathMatch = Array.isArray(role.upskillingPath) ? role.upskillingPath.some(step => step && step.toLowerCase().includes(query)) : false;
+      const titleMatch = checkMatch(role.title);
+      const descMatch = checkMatch(role.roleAsk?.explanation);
+      const techMatch = Array.isArray(role.mustHaves?.tech) ? role.mustHaves.tech.some(t => checkMatch(t)) : false;
+      const processMatch = Array.isArray(role.mustHaves?.process) ? role.mustHaves.process.some(p => checkMatch(p)) : false;
+      const toolsMatch = Array.isArray(role.toolsToLearn) ? role.toolsToLearn.some(t => checkMatch(t)) : false;
+      const certsMatch = Array.isArray(role.recommendedCertifications) ? role.recommendedCertifications.some(c => checkMatch(c?.name)) : false;
+      const pathMatch = Array.isArray(role.upskillingPath) ? role.upskillingPath.some(step => checkMatch(step)) : false;
       
       return titleMatch || descMatch || techMatch || processMatch || toolsMatch || certsMatch || pathMatch;
     });
 
     // 3. Search Certifications
     const matchedCerts = CERTIFICATIONS_LIBRARY.filter(cert => {
-      const nameMatch = cert.name ? cert.name.toLowerCase().includes(query) : false;
-      const providerMatch = cert.provider ? cert.provider.toLowerCase().includes(query) : false;
-      const descMatch = cert.description ? cert.description.toLowerCase().includes(query) : false;
-      const rolesMatch = Array.isArray(cert.relatedRoles) ? cert.relatedRoles.some(r => r && r.toLowerCase().includes(query)) : false;
+      const nameMatch = checkMatch(cert.name);
+      const providerMatch = checkMatch(cert.provider);
+      const descMatch = checkMatch(cert.description);
+      const rolesMatch = Array.isArray(cert.relatedRoles) ? cert.relatedRoles.some(r => checkMatch(r)) : false;
       return nameMatch || providerMatch || descMatch || rolesMatch;
     });
 
     // 4. Search Books
     const matchedBooks = RECOMMENDED_BOOKS.filter(book => {
-      const titleMatch = book.title ? book.title.toLowerCase().includes(query) : false;
-      const authorMatch = book.author ? book.author.toLowerCase().includes(query) : false;
-      const bestForMatch = book.bestFor ? book.bestFor.toLowerCase().includes(query) : false;
-      const summaryMatch = book.summary ? book.summary.toLowerCase().includes(query) : false;
+      const titleMatch = checkMatch(book.title);
+      const authorMatch = checkMatch(book.author);
+      const bestForMatch = checkMatch(book.bestFor);
+      const summaryMatch = checkMatch(book.summary);
       return titleMatch || authorMatch || bestForMatch || summaryMatch;
     });
 
@@ -643,16 +795,16 @@ export default function App() {
               if (sub.teachers) {
                 sub.teachers.forEach((t: any) => {
                   if (!t || !t.name || seenTeacherNames.has(t.name)) return;
-                  const nameMatch = t.name ? t.name.toLowerCase().includes(query) : false;
-                  const areaMatch = sub?.skillArea ? sub.skillArea.toLowerCase().includes(query) : false;
-                  const reasonMatch = t?.reason ? t.reason.toLowerCase().includes(query) : false;
+                  const nameMatch = checkMatch(t.name);
+                  const areaMatch = checkMatch(sub?.skillArea);
+                  const reasonMatch = checkMatch(t?.reason) || checkMatch(sub?.whyTrust) || checkMatch(sub?.suggestedStudy);
                   if (nameMatch || areaMatch || reasonMatch) {
                     seenTeacherNames.add(t.name);
                     matchedTeachers.push({
                       name: t.name,
                       url: t.url,
                       skillArea: sub.skillArea,
-                      reason: t.reason,
+                      reason: t.reason || sub.whyTrust,
                       catId: cat.id
                     });
                   }
@@ -662,17 +814,37 @@ export default function App() {
           }
         });
       }
+
+      // Also check CHANNELS_POOL for comprehensive YouTube channel matching
+      if (Array.isArray(CHANNELS_POOL)) {
+        CHANNELS_POOL.forEach(ch => {
+          if (!ch || !ch.name || seenTeacherNames.has(ch.name)) return;
+          const nameMatch = checkMatch(ch.name);
+          const bestForMatch = checkMatch(ch.bestFor);
+          const domainMatch = checkMatch(ch.domain);
+          if (nameMatch || bestForMatch || domainMatch) {
+            seenTeacherNames.add(ch.name);
+            matchedTeachers.push({
+              name: ch.name,
+              url: ch.url,
+              skillArea: ch.bestFor,
+              reason: ch.bestFor,
+              catId: ch.domain
+            });
+          }
+        });
+      }
     } catch (e) {}
 
     // 6. Search Hackathons & Events
     const matchedHackathons = appHackathons.filter(item => {
       if (!item) return false;
-      const titleMatch = item.title ? item.title.toLowerCase().includes(query) : false;
-      const orgMatch = item.organizer ? item.organizer.toLowerCase().includes(query) : false;
-      const descMatch = item.description ? item.description.toLowerCase().includes(query) : false;
-      const prizesMatch = item.prizes ? item.prizes.toLowerCase().includes(query) : false;
-      const categoryMatch = item.category ? item.category.toLowerCase().includes(query) : false;
-      const themesMatch = Array.isArray(item.themes) ? item.themes.some(t => t && t.toLowerCase().includes(query)) : false;
+      const titleMatch = checkMatch(item.title);
+      const orgMatch = checkMatch(item.organizer);
+      const descMatch = checkMatch(item.description);
+      const prizesMatch = checkMatch(item.prizes);
+      const categoryMatch = checkMatch(item.category);
+      const themesMatch = Array.isArray(item.themes) ? item.themes.some(t => checkMatch(t)) : false;
       return titleMatch || orgMatch || descMatch || prizesMatch || categoryMatch || themesMatch;
     });
     
@@ -685,6 +857,257 @@ export default function App() {
       hackathons: matchedHackathons
     };
   }, [globalSearchQuery, appHackathons]);
+
+  const combinedGlobalResultsList = React.useMemo(() => {
+    const list: Array<{
+      category: 'domain' | 'role' | 'cert' | 'book' | 'teacher' | 'hackathon' | 'portal' | 'skill';
+      id?: string;
+      name: string;
+      subtext: string;
+      itemData?: any;
+    }> = [];
+
+    if (!globalSearchQuery || !globalSearchQuery.trim()) return list;
+    const q = globalSearchQuery.toLowerCase().trim();
+
+    // 1. Study Portals from Catalog
+    importedPortals.filter(p => p && (
+      (p.name && p.name.toLowerCase().includes(q)) ||
+      ((p as any).category && (p as any).category.toLowerCase().includes(q)) ||
+      (p.learningFormat && p.learningFormat.toLowerCase().includes(q))
+    )).slice(0, 3).forEach(p => {
+      list.push({
+        category: 'portal',
+        id: p.id,
+        name: p.name || 'Study Portal',
+        subtext: `${(p as any).category || 'Educational'} • Study Portal`
+      });
+    });
+
+    // 2. Skills & Tools from Catalog
+    importedSkills.filter(s => s && (
+      (s.name && s.name.toLowerCase().includes(q)) ||
+      (s.domain && s.domain.toLowerCase().includes(q)) ||
+      (s.topic && s.topic.toLowerCase().includes(q))
+    )).slice(0, 4).forEach(s => {
+      list.push({
+        category: 'skill',
+        id: s.id,
+        name: s.name || 'Skill',
+        subtext: `${s.domain || 'IT'} • ${s.topic || 'Skill'} (${s.type || 'Tool'})`
+      });
+    });
+
+    // 3. Domains
+    globalSearchResults.domains.slice(0, 3).forEach(d => {
+      list.push({
+        category: 'domain',
+        id: d.id,
+        name: d.name,
+        subtext: d.description || 'Career Domain'
+      });
+    });
+
+    // 4. Roles
+    globalSearchResults.roles.slice(0, 4).forEach(r => {
+      list.push({
+        category: 'role',
+        id: r.id,
+        name: r.title,
+        subtext: (r as any).summary || (r as any).description || 'Career Role'
+      });
+    });
+
+    // 5. Certs
+    globalSearchResults.certs.slice(0, 3).forEach(c => {
+      list.push({
+        category: 'cert',
+        name: c.name,
+        subtext: `${(c as any).issuer || 'Certification'} • ${(c as any).level || ''}`
+      });
+    });
+
+    // 6. Books
+    globalSearchResults.books.slice(0, 3).forEach(b => {
+      list.push({
+        category: 'book',
+        name: b.title,
+        subtext: `${(b as any).author || 'Author'} • ${(b as any).recommendedForRole || 'Book'}`
+      });
+    });
+
+    // 7. Hackathons
+    globalSearchResults.hackathons.slice(0, 3).forEach(h => {
+      list.push({
+        category: 'hackathon',
+        id: h.id,
+        name: h.title,
+        subtext: `${h.organizer || 'Organizer'} • ${h.prizes || 'Event'}`
+      });
+    });
+
+    // 8. Teachers
+    globalSearchResults.teachers.slice(0, 3).forEach(t => {
+      list.push({
+        category: 'teacher',
+        name: t.name,
+        subtext: `${t.skillArea || 'Instructor'} • ${t.reason || ''}`,
+        itemData: t
+      });
+    });
+
+    return list;
+  }, [globalSearchResults, globalSearchQuery]);
+
+  const handleSelectGlobalSearchItem = (item: {
+    category: 'domain' | 'role' | 'cert' | 'book' | 'teacher' | 'hackathon' | 'portal' | 'skill';
+    id?: string;
+    name: string;
+    subtext: string;
+    itemData?: any;
+  }) => {
+    setLastGlobalSearchQuery(globalSearchQuery);
+    setIsSideSearchDropdownOpen(false);
+    setIsTopSearchDropdownOpen(false);
+    setIsFloatingSearchOpen(false);
+
+    if (item.category === 'domain') {
+      if (item.id) setCareerMapDomainId(item.id);
+      setActiveTab('map');
+    } else if (item.category === 'role') {
+      if (item.id) {
+        setSelectedRoleId(item.id);
+        const foundDomain = IT_DOMAINS.find(d => d.roles.includes(item.id!));
+        if (foundDomain) {
+          setCareerMapDomainId(foundDomain.id);
+        }
+      }
+      setActiveTab('map');
+    } else if (item.category === 'portal') {
+      setLibrariesActiveTab('channels');
+      setLibrariesQuery(item.name);
+      setActiveTab('libraries');
+    } else if (item.category === 'skill') {
+      setLibrariesActiveTab('tools-skills');
+      setLibrariesQuery(item.name);
+      setActiveTab('libraries');
+    } else if (item.category === 'cert') {
+      setLibrariesActiveTab('certs');
+      setLibrariesQuery(item.name);
+      setActiveTab('libraries');
+    } else if (item.category === 'book') {
+      setLibrariesActiveTab('bookshelf');
+      setLibrariesQuery(item.name);
+      setActiveTab('libraries');
+    } else if (item.category === 'teacher') {
+      if (item.itemData?.catId) {
+        setYoutubeCategoryId(item.itemData.catId);
+      }
+      setYoutubeSearchQuery(item.name);
+      setLibrariesActiveTab('youtubeTeachers');
+      setActiveTab('libraries');
+    } else if (item.category === 'hackathon') {
+      if (item.id) setHackathonsSelectedItemId(item.id);
+      setHackathonsSearchQuery(item.name);
+      setLibrariesActiveTab('hackathons');
+      setActiveTab('libraries');
+    }
+
+    // Smooth scroll to target view
+    window.scrollTo({ top: 0, behavior: 'auto' as any });
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      let targetId = '';
+      if (item.category === 'domain' || item.category === 'role') {
+        targetId = 'section-map';
+      } else if (['cert', 'book', 'teacher', 'hackathon'].includes(item.category)) {
+        targetId = 'section-libraries';
+      }
+      const el = targetId ? document.getElementById(targetId) : null;
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 120);
+  };
+
+  const renderCategoryBadge = (cat: string) => {
+    switch (cat) {
+      case 'portal':
+        return <span className="text-[9px] font-mono font-extrabold uppercase px-1.5 py-0.5 bg-blue-500/15 border border-blue-500/40 text-blue-400 shrink-0">Portal</span>;
+      case 'skill':
+        return <span className="text-[9px] font-mono font-extrabold uppercase px-1.5 py-0.5 bg-teal-500/15 border border-teal-500/40 text-teal-400 shrink-0">Skill</span>;
+      case 'domain':
+        return <span className="text-[9px] font-mono font-extrabold uppercase px-1.5 py-0.5 bg-amber-500/15 border border-amber-500/40 text-amber-400 shrink-0">Domain</span>;
+      case 'role':
+        return <span className="text-[9px] font-mono font-extrabold uppercase px-1.5 py-0.5 bg-purple-500/15 border border-purple-500/40 text-purple-400 shrink-0">Role</span>;
+      case 'cert':
+        return <span className="text-[9px] font-mono font-extrabold uppercase px-1.5 py-0.5 bg-emerald-500/15 border border-emerald-500/40 text-emerald-400 shrink-0">Cert</span>;
+      case 'book':
+        return <span className="text-[9px] font-mono font-extrabold uppercase px-1.5 py-0.5 bg-cyan-500/15 border border-cyan-500/40 text-cyan-400 shrink-0">Book</span>;
+      case 'hackathon':
+        return <span className="text-[9px] font-mono font-extrabold uppercase px-1.5 py-0.5 bg-pink-500/15 border border-pink-500/40 text-pink-400 shrink-0">Event</span>;
+      case 'teacher':
+        return <span className="text-[9px] font-mono font-extrabold uppercase px-1.5 py-0.5 bg-indigo-500/15 border border-indigo-500/40 text-indigo-400 shrink-0">Teacher</span>;
+      default:
+        return null;
+    }
+  };
+
+  const renderSearchDropdownMenu = (
+    results: typeof combinedGlobalResultsList,
+    query: string,
+    onClose: () => void
+  ) => {
+    if (!query || !query.trim()) return null;
+
+    return (
+      <div className={`absolute left-0 top-full mt-2 w-[280px] sm:w-[320px] md:w-[360px] max-h-[380px] overflow-y-auto border-2 shadow-[0_12px_36px_rgba(0,0,0,0.6)] z-[9999] rounded-none p-1.5 custom-scrollbar ${
+        theme === 'light'
+          ? 'bg-white border-[#10b981] text-slate-800'
+          : 'bg-[#060b14] border-[#10b981] text-white shadow-[0_0_25px_rgba(16,185,129,0.25)]'
+      }`}>
+        <div className="flex items-center justify-between px-2 py-1.5 border-b border-[#121c38]/60 mb-1">
+          <span className="text-[10px] font-mono font-bold text-[#10b981] uppercase tracking-wider flex items-center gap-1.5">
+            <Search className="w-3 h-3 animate-pulse" /> Results ({results.length})
+          </span>
+          <button
+            type="button"
+            onClick={onClose}
+            className="text-gray-400 hover:text-white text-xs font-mono cursor-pointer px-1"
+          >
+            ✕
+          </button>
+        </div>
+
+        {results.length === 0 ? (
+          <div className="p-4 text-center text-xs font-mono text-gray-400">
+            No matches found for "{query}".
+          </div>
+        ) : (
+          <div className="space-y-1">
+            {results.map((res, idx) => (
+              <button
+                key={`${res.category}-${res.id || res.name}-${idx}`}
+                type="button"
+                onClick={() => handleSelectGlobalSearchItem(res)}
+                className={`w-full text-left p-2 transition cursor-pointer border flex flex-col gap-1 ${
+                  theme === 'light'
+                    ? 'hover:bg-emerald-50 border-transparent hover:border-emerald-300 text-slate-800'
+                    : 'hover:bg-[#0c162d] border-transparent hover:border-[#10b981]/50 text-slate-200'
+                }`}
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-xs font-mono font-bold truncate">{res.name}</span>
+                  {renderCategoryBadge(res.category)}
+                </div>
+                <p className="text-[10px] text-gray-400 truncate font-mono">{res.subtext}</p>
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  };
 
   // Controlled sub-state variables to communicate selections across sections
   const [careerMapDomainId, setCareerMapDomainId] = useState<string | null>('green-computing');
@@ -1115,10 +1538,83 @@ export default function App() {
     );
   };
 
+  const [isSidebarPinned, setIsSidebarPinned] = useState<boolean>(() => {
+    try {
+      const saved = localStorage.getItem('mapit_sidebar_pinned');
+      return saved !== null ? JSON.parse(saved) : false;
+    } catch (e) {
+      return false;
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('mapit_sidebar_pinned', JSON.stringify(isSidebarPinned));
+    } catch (e) {
+      // ignore
+    }
+  }, [isSidebarPinned]);
+
   const [isSidebarMinimized, setIsSidebarMinimized] = useState<boolean>(true);
   const [isSidebarHovered, setIsSidebarHovered] = useState<boolean>(false);
   const [isHoveringBottomArea, setIsHoveringBottomArea] = useState<boolean>(false);
-  const isSidebarExpanded = !isSidebarMinimized || (isSidebarHovered && !isHoveringBottomArea);
+  const isSidebarExpanded = isSidebarPinned || !isSidebarMinimized || (isSidebarHovered && !isHoveringBottomArea);
+
+  const sidebarHoverTimerRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleSidebarMouseEnter = () => {
+    if (sidebarHoverTimerRef.current) clearTimeout(sidebarHoverTimerRef.current);
+    sidebarHoverTimerRef.current = setTimeout(() => {
+      setIsSidebarHovered(true);
+    }, 250);
+  };
+
+  const handleSidebarMouseLeave = () => {
+    if (sidebarHoverTimerRef.current) {
+      clearTimeout(sidebarHoverTimerRef.current);
+      sidebarHoverTimerRef.current = null;
+    }
+    setIsSidebarHovered(false);
+    if (!isSidebarPinned) {
+      setIsSidebarMinimized(true);
+    }
+  };
+
+  const handleSidebarItemClick = (action?: () => void) => {
+    if (sidebarHoverTimerRef.current) {
+      clearTimeout(sidebarHoverTimerRef.current);
+      sidebarHoverTimerRef.current = null;
+    }
+    if (!isSidebarPinned) {
+      setIsSidebarHovered(false);
+    }
+    if (action) action();
+  };
+
+  const pinSidebar = () => {
+    setIsSidebarPinned(true);
+    try {
+      localStorage.setItem('mapit_sidebar_pinned', JSON.stringify(true));
+    } catch (e) {
+      console.error('Failed to save pinned state:', e);
+    }
+  };
+
+  const handleSidebarDoubleClick = (e: React.MouseEvent<HTMLElement>) => {
+    const target = e.target as HTMLElement | null;
+    if (target) {
+      const interactiveTags = ['BUTTON', 'A', 'INPUT', 'SELECT', 'TEXTAREA', 'LABEL'];
+      if (
+        interactiveTags.includes(target.tagName) ||
+        target.closest('button, a, input, select, textarea, [role="button"]')
+      ) {
+        return;
+      }
+    }
+    e.preventDefault();
+    e.stopPropagation();
+    setIsSidebarPinned(prev => !prev);
+  };
 
   useEffect(() => {
     if (isSidebarExpanded) {
@@ -1412,71 +1908,79 @@ export default function App() {
 
       {/* LEFT SIDE PANEL - Locked & Frozen on scroll, hidden completely on mobile */}
       <aside 
-        className={`hidden md:flex md:border-r-2 border-[#121c38]/80 flex-col justify-between transition-all duration-[300ms] ease-in-out z-50 shrink-0 select-none pb-4 h-screen fixed left-0 top-0 ${
+        onDoubleClick={handleSidebarDoubleClick}
+        className={`hidden md:flex md:border-r-2 border-[#121c38]/80 flex-col justify-between transition-all duration-[300ms] ease-in-out z-[100] shrink-0 select-none pb-4 h-screen fixed left-0 top-0 ${
           isSidebarExpanded 
-            ? 'w-[260px] bg-[#070b13]/20 backdrop-blur-md sidebar-expanded' 
+            ? (isSidebarPinned ? 'w-[260px] bg-[#070b13] sidebar-expanded' : 'w-[260px] bg-[#070b13]/95 backdrop-blur-md sidebar-expanded')
             : 'w-[72px] bg-[#070b13] sidebar-collapsed'
         } ${introStage === 'blank' || introStage === 'centered' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
-        onMouseEnter={() => {
-          setIsSidebarHovered(true);
-        }}
-        onMouseLeave={() => {
-          setIsSidebarHovered(false);
-          setIsSidebarMinimized(true);
-        }}
+        onMouseEnter={handleSidebarMouseEnter}
+        onMouseLeave={handleSidebarMouseLeave}
       >
         {/* Friendly scrolling ant guest inside side panel */}
         {activeTab !== 'about' && <SidebarAnt theme={theme} />}
 
         <div className="flex flex-col h-full overflow-y-auto custom-scrollbar">
           {/* Logo / branding block */}
-          <div className="p-4 border-b border-[#121c38]/60 flex items-center justify-between min-h-[64px]">
-            <div className={`w-full flex items-center justify-between ${introStage !== 'done' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-              {isSidebarExpanded ? (
-                <div className="flex items-center justify-between w-full">
-                  <div className="flex items-center gap-1.5 justify-between w-full">
-                    <h1 className="text-2xl font-black font-sans leading-none flex items-center tracking-tighter">
-                      <span className="preserve-logo">Map</span>
-                      <span className="preserve-logo-green">IT</span>
-                    </h1>
-                    
-                    {/* Dedicated Close Arrow inside mobile drawer */}
-                    <button 
-                      onClick={() => setIsSidebarMinimized(true)}
-                      className="md:hidden p-1.5 bg-[#04070e] hover:bg-slate-950 border border-[#1e2e54] text-gray-400 hover:text-white rounded-xs focus:outline-none transition cursor-pointer"
-                      title="Close navigation panel"
-                    >
-                      <ChevronLeft className="w-4 h-4" />
-                    </button>
-                  </div>
-                  <div className="hidden md:block">
-                    {!isScrolled && renderHistoryNavigationArrows("", true)}
-                  </div>
+          <div className="border-b border-[#121c38]/60 flex items-center min-h-[64px] relative select-none">
+            <div className={`w-full flex items-center ${introStage !== 'done' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+              {/* Logo icon slot - constant 72px width */}
+              <div className="w-[72px] h-14 flex items-center justify-center shrink-0">
+                <span className="text-md font-black font-sans preserve-logo-bg border border-slate-800 w-8 h-8 flex items-center justify-center rounded-sm">
+                  <span className="preserve-logo">M</span>
+                  <span className="preserve-logo-green">I</span>
+                </span>
+              </div>
+
+              {/* Revealable expanded logo details */}
+              <div className={`overflow-hidden transition-all duration-[300ms] ease-in-out whitespace-nowrap flex-1 pr-3 flex items-center justify-between min-w-0 ${
+                isSidebarExpanded ? 'opacity-100 max-w-[188px]' : 'opacity-0 max-w-0 pointer-events-none'
+              }`}>
+                <h1 className="text-2xl font-black font-sans leading-none flex items-center tracking-tighter shrink-0">
+                  <span className="preserve-logo">Map</span>
+                  <span className="preserve-logo-green">IT</span>
+                </h1>
+
+                <div className="flex items-center gap-1.5 shrink-0">
+                  {/* Desktop Pin / Unpin Button */}
+                  <button 
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      e.preventDefault();
+                      setIsSidebarPinned(!isSidebarPinned);
+                    }}
+                    aria-label={isSidebarPinned ? "Allow sidebar to collapse" : "Keep sidebar expanded"}
+                    aria-pressed={isSidebarPinned}
+                    className={`p-1.5 border transition-all duration-150 cursor-pointer flex items-center justify-center rounded-xs focus:outline-none focus:ring-2 focus:ring-emerald-400 ${
+                      isSidebarPinned
+                        ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400 hover:bg-emerald-500/30 shadow-[0_0_8px_rgba(16,185,129,0.3)]'
+                        : 'bg-[#04070e] hover:bg-slate-900 border-[#1e2e54] text-gray-400 hover:text-white'
+                    }`}
+                    title={isSidebarPinned ? "Allow sidebar to collapse" : "Keep sidebar expanded"}
+                  >
+                    {isSidebarPinned ? (
+                      <PinOff className="w-3.5 h-3.5 text-emerald-400" />
+                    ) : (
+                      <Pin className="w-3.5 h-3.5 text-gray-400" />
+                    )}
+                  </button>
+
+                  {/* Dedicated Close Arrow inside mobile drawer */}
+                  <button 
+                    onClick={() => setIsSidebarMinimized(true)}
+                    className="md:hidden p-1.5 bg-[#04070e] hover:bg-slate-950 border border-[#1e2e54] text-gray-400 hover:text-white rounded-xs focus:outline-none transition cursor-pointer"
+                    title="Close navigation panel"
+                  >
+                    <ChevronLeft className="w-4 h-4" />
+                  </button>
                 </div>
-              ) : (
-                <div className="mx-auto block w-full">
-                  <div className="flex items-center justify-between md:justify-center w-full">
-                    <span className="text-md font-black font-sans preserve-logo-bg border border-slate-800 w-8 h-8 flex items-center justify-center">
-                      <span className="preserve-logo">M</span>
-                      <span className="preserve-logo-green">I</span>
-                    </span>
-                    
-                    {/* Drawer toggle for small screens */}
-                    <button 
-                      onClick={() => setIsSidebarMinimized(true)}
-                      className="md:hidden p-1.5 bg-[#04070e] hover:bg-slate-950 border border-[#1e2e54] text-gray-400 hover:text-white rounded-xs focus:outline-none transition cursor-pointer"
-                      title="Close navigation panel"
-                    >
-                      <ChevronLeft className="w-4 h-4" />
-                    </button>
-                  </div>
-                </div>
-              )}
+              </div>
             </div>
           </div>
 
           {/* Vertical Menu navigation lists */}
-          <nav className="flex-1 px-2.5 py-2 space-y-1 overflow-y-auto">
+          <nav className="flex-1 flex flex-col min-h-0 py-2 space-y-1 overflow-y-auto">
             {tabOrder.map((tabId, index) => {
               const tabDetails = TAB_METADATA[tabId];
               if (!tabDetails) return null;
@@ -1485,13 +1989,13 @@ export default function App() {
               const Icon = tabDetails.icon;
 
               return (
-                <div key={tabId} className="flex flex-col">
+                <div key={tabId} className="shrink-0 flex flex-col">
                   <div
                     draggable
                     onDragStart={(e) => handleDragStart(e, tabId)}
                     onDragOver={(e) => handleDragOver(e, tabId)}
                     onDragEnd={handleDragEnd}
-                    className={`relative group flex items-center justify-between border border-transparent transition-all duration-200 rounded-sm cursor-grab active:cursor-grabbing ${
+                    className={`relative group flex items-center h-10 transition-all duration-200 rounded-sm cursor-grab active:cursor-grabbing border border-transparent select-none ${
                       isActive 
                         ? tabDetails.activeStyle 
                         : 'text-gray-400 hover:text-slate-200 hover:bg-slate-900/60'
@@ -1499,17 +2003,18 @@ export default function App() {
                     title={!isSidebarExpanded ? `${tabDetails.label} (Drag to reorder)` : "Drag up/down or click arrows to reorder!"}
                   >
                     <button
+                      type="button"
                       onClick={() => {
-                        handleTabClick(tabId);
+                        handleSidebarItemClick(() => {
+                          handleTabClick(tabId);
+                        });
                       }}
-                      className="flex-1 flex items-center py-1.5 px-2 text-left transition-colors duration-150 relative cursor-pointer"
+                      className="flex-1 h-full flex items-center text-left relative cursor-pointer focus:outline-none"
                     >
-                      {/* Icon section with transition width */}
-                      <div 
-                        className="flex items-center justify-center shrink-0 w-5 mr-2.5"
-                      >
+                      {/* FIXED 72px ICON RAIL SLOT */}
+                      <div className="w-[72px] h-full flex items-center justify-center shrink-0">
                         <Icon 
-                          className={`w-5 h-5 transition-transform group-hover:scale-105 ${
+                          className={`w-5 h-5 shrink-0 transition-transform group-hover:scale-105 ${
                             isActive 
                               ? `${tabDetails.colorClass} animate-pulse` 
                               : 'text-slate-400 group-hover:text-slate-300'
@@ -1518,27 +2023,27 @@ export default function App() {
                         />
                       </div>
 
-                      {/* Text block width transition section */}
+                      {/* REVEALABLE LABEL TEXT */}
                       <div 
-                        className={`overflow-hidden transition-all duration-[300ms] ease-in-out whitespace-nowrap flex-1 ${
+                        className={`overflow-hidden transition-all duration-[300ms] ease-in-out whitespace-nowrap flex-1 pr-1 ${
                           isSidebarExpanded 
-                            ? 'max-w-[200px] opacity-100' 
+                            ? 'max-w-[170px] opacity-100' 
                             : 'max-w-0 opacity-0 pointer-events-none'
                         }`}
                       >
-                        <span className="text-[11px] font-mono font-bold tracking-tight uppercase flex items-center gap-1.5">
+                        <span className="text-[11px] font-mono font-bold tracking-tight uppercase flex items-center gap-1.5 truncate">
                           {tabId === 'hr-contacts' && (
-                            <span className="bg-yellow-400 text-black px-1.5 py-0.5 text-[8.5px] font-extrabold uppercase rounded-xs tracking-wide">
+                            <span className="bg-yellow-400 text-black px-1.5 py-0.5 text-[8.5px] font-extrabold uppercase rounded-xs tracking-wide shrink-0">
                               beta
                             </span>
                           )}
-                          {tabDetails.label}
+                          <span className="truncate">{tabDetails.label}</span>
                         </span>
                       </div>
 
                       {/* Active indicator badge when minimized */}
-                      {!isSidebarExpanded && isActive && (
-                        <span className={`absolute right-1 top-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full ${tabDetails.colorClass} shadow-lg`} />
+                      {!isSidebarExpanded && isActive && tabId !== 'libraries' && (
+                        <span className={`absolute right-1.5 top-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full ${tabDetails.colorClass} shadow-lg`} />
                       )}
                     </button>
 
@@ -1548,7 +2053,7 @@ export default function App() {
                         {index > 0 && (
                           <button
                             type="button"
-                            onClick={(e) => moveTabLeft(index, e)}
+                            onClick={(e) => handleSidebarItemClick(() => moveTabLeft(index, e))}
                             className="p-0.5 bg-slate-950 hover:bg-[#121c38] border border-slate-800 text-[8px] text-gray-400 hover:text-[#10b981] rounded-xs cursor-pointer select-none font-bold"
                             title="Move Up"
                           >
@@ -1558,7 +2063,7 @@ export default function App() {
                         {index < tabOrder.length - 1 && (
                           <button
                             type="button"
-                            onClick={(e) => moveTabRight(index, e)}
+                            onClick={(e) => handleSidebarItemClick(() => moveTabRight(index, e))}
                             className="p-0.5 bg-slate-950 hover:bg-[#121c38] border border-slate-800 text-[8px] text-gray-400 hover:text-[#10b981] rounded-xs cursor-pointer select-none font-bold"
                             title="Move Down"
                           >
@@ -1568,22 +2073,34 @@ export default function App() {
                       </div>
                     )}
 
-                     {/* Chevron toggle button for Resources tab dropdown */}
-                    {isSidebarExpanded && tabId === 'libraries' && (
+                    {/* Dedicated Chevron toggle button for Resources tab dropdown */}
+                    {tabId === 'libraries' && (
                       <button
                         type="button"
+                        aria-label={isResourcesDropdownOpen ? "Close Resources menu" : "Open Resources menu"}
+                        aria-expanded={isResourcesDropdownOpen}
+                        aria-controls="resources-submenu"
                         onClick={(e) => {
                           e.stopPropagation();
-                          setIsResourcesDropdownOpen(!isResourcesDropdownOpen);
+                          handleSidebarItemClick(() => {
+                            setIsResourcesDropdownOpen(!isResourcesDropdownOpen);
+                          });
                         }}
-                        className="p-1 mr-1 text-slate-400 hover:text-white hover:bg-slate-800/80 rounded transition cursor-pointer shrink-0"
-                        title={isResourcesDropdownOpen ? "Collapse Resources sub-options" : "Expand Resources sub-options"}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            e.stopPropagation();
+                          }
+                        }}
+                        className={`p-1 text-slate-400 hover:text-white hover:bg-slate-800/80 rounded transition cursor-pointer shrink-0 focus:outline-none focus:ring-2 focus:ring-cyan-400 ${
+                          isSidebarExpanded ? 'mr-1' : 'absolute right-1 top-1/2 -translate-y-1/2 z-10'
+                        }`}
+                        title={isResourcesDropdownOpen ? "Close Resources menu" : "Open Resources menu"}
                       >
-                        {isResourcesDropdownOpen ? (
-                          <ChevronUp className="w-3.5 h-3.5 text-cyan-400" />
-                        ) : (
-                          <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
-                        )}
+                        <ChevronDown 
+                          className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                            isResourcesDropdownOpen ? 'rotate-180 text-cyan-400' : 'text-slate-400 hover:text-slate-200'
+                          }`} 
+                        />
                       </button>
                     )}
 
@@ -1595,52 +2112,118 @@ export default function App() {
                     )}
                   </div>
 
-                  {/* Dropdown sub-menu if tabId is 'libraries' and expanded */}
-                  {tabId === 'libraries' && isSidebarExpanded && isResourcesDropdownOpen && (
-                    <div className="mt-0.5 ml-3 pl-2 border-l border-cyan-800/40 space-y-0.5 flex flex-col">
-                      {[
-                        { id: 'hackathons', label: 'Hackathons & Events', icon: Trophy },
-                        { id: 'youtubeTeachers', label: 'YouTube Teachers', icon: Video },
-                        { id: 'channels', label: 'Study Portals', icon: BookOpen },
-                        { id: 'tools-skills', label: 'Skills & Tools Pool', icon: Terminal },
-                        { id: 'certs', label: 'Certifications', icon: Award },
-                        { id: 'bookshelf', label: 'Bookshelf', icon: Book },
-                      ].map((sub) => {
-                        const isSubActive = activeTab === 'libraries' && librariesActiveTab === sub.id;
-                        const SubIcon = sub.icon;
-                        return (
-                          <button
-                            key={sub.id}
-                            onClick={() => {
-                              setLibrariesActiveTab(sub.id as any);
-                              handleTabClick('libraries');
-                            }}
-                            className={`w-full flex items-center py-1 px-1.5 text-left text-[10px] font-mono font-bold tracking-tight rounded-xs transition-all cursor-pointer ${
-                              isSubActive
-                                ? 'text-cyan-400 bg-cyan-950/20 border-l border-cyan-400 pl-2'
-                                : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/40'
-                            }`}
-                          >
-                            <SubIcon className={`w-3 h-3 mr-1.5 shrink-0 ${isSubActive ? 'text-cyan-400' : 'text-slate-500'}`} />
-                            <span className="truncate">{sub.label}</span>
-                          </button>
-                        );
-                      })}
+                  {/* Dropdown sub-menu if tabId is 'libraries' and Resources is open */}
+                  {tabId === 'libraries' && isResourcesDropdownOpen && (
+                    <div id="resources-submenu">
+                      {/* Expanded view: full icon-and-label menu */}
+                      {isSidebarExpanded && (
+                        <div className="mt-1 ml-[72px] pl-2 border-l border-cyan-800/40 space-y-0.5 flex flex-col pr-2">
+                          {[
+                            { id: 'hackathons', label: 'Hackathons & Events', icon: Trophy },
+                            { id: 'youtubeTeachers', label: 'YouTube Teachers', icon: Video },
+                            { id: 'channels', label: 'Study Portals', icon: BookOpen },
+                            { id: 'tools-skills', label: 'Skills & Tools Pool', icon: Terminal },
+                            { id: 'certs', label: 'Certifications', icon: Award },
+                            { id: 'bookshelf', label: 'Bookshelf', icon: Book },
+                          ].map((sub) => {
+                            const isSubActive = activeTab === 'libraries' && librariesActiveTab === sub.id;
+                            const SubIcon = sub.icon;
+                            return (
+                              <button
+                                key={sub.id}
+                                onClick={() => {
+                                  handleSidebarItemClick(() => {
+                                    setLibrariesActiveTab(sub.id as any);
+                                    handleTabClick('libraries');
+                                  });
+                                }}
+                                className={`w-full flex items-center py-1 px-1.5 text-left text-[10px] font-mono font-bold tracking-tight rounded-xs transition-all cursor-pointer ${
+                                  isSubActive
+                                    ? 'text-cyan-400 bg-cyan-950/20 border-l border-cyan-400 pl-2'
+                                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/40'
+                                }`}
+                              >
+                                <SubIcon className={`w-3 h-3 mr-1.5 shrink-0 ${isSubActive ? 'text-cyan-400' : 'text-slate-500'}`} />
+                                <span className="truncate">{sub.label}</span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      )}
+
+                      {/* Minimized view: compact icon-only vertical submenu perfectly aligned in 72px rail */}
+                      {!isSidebarExpanded && (
+                        <div className="my-1 py-1.5 w-[72px] flex flex-col items-center gap-1.5 bg-cyan-950/20 border-y border-cyan-900/40 max-h-[220px] overflow-y-auto custom-scrollbar">
+                          {[
+                            { id: 'hackathons', label: 'Hackathons & Events', icon: Trophy },
+                            { id: 'youtubeTeachers', label: 'YouTube Teachers', icon: Video },
+                            { id: 'channels', label: 'Study Portals', icon: BookOpen },
+                            { id: 'tools-skills', label: 'Skills & Tools Pool', icon: Terminal },
+                            { id: 'certs', label: 'Certifications', icon: Award },
+                            { id: 'bookshelf', label: 'Bookshelf', icon: Book },
+                          ].map((sub) => {
+                            const isSubActive = activeTab === 'libraries' && librariesActiveTab === sub.id;
+                            const SubIcon = sub.icon;
+                            return (
+                              <button
+                                key={sub.id}
+                                type="button"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  handleSidebarItemClick(() => {
+                                    setLibrariesActiveTab(sub.id as any);
+                                    handleTabClick('libraries');
+                                  });
+                                }}
+                                aria-label={sub.label}
+                                aria-current={isSubActive ? 'page' : undefined}
+                                className={`group/sub flex items-center justify-center w-8 h-8 rounded transition-all cursor-pointer relative focus:outline-none focus:ring-1 focus:ring-cyan-400 ${
+                                  isSubActive
+                                    ? 'bg-cyan-500/25 text-cyan-300 border border-cyan-400/80 shadow-[0_0_8px_rgba(34,211,238,0.3)]'
+                                    : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/80 border border-transparent'
+                                }`}
+                                title={sub.label}
+                              >
+                                <SubIcon className={`w-3.5 h-3.5 shrink-0 ${isSubActive ? 'text-cyan-300' : 'text-slate-400 group-hover/sub:text-slate-200'}`} />
+
+                                {/* Tooltip for compact submenu icon */}
+                                <div className="absolute left-[76px] bg-[#070b13] border border-[#1e2e54] text-[9.5px] tracking-wider px-2.5 py-1.5 whitespace-nowrap hidden group-hover/sub:block group-focus/sub:block transition-all z-50 pointer-events-none font-mono font-bold rounded-xs shadow-[3px_3px_0px_#121c38]">
+                                  <span className="text-cyan-400 mr-1.5 font-bold">►</span> {sub.label.toUpperCase()}
+                                </div>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
               );
             })}
 
+            {/* Empty space drop-zone for double-click pinning */}
+            <div
+              data-sidebar-pin-zone
+              onDoubleClick={handleSidebarDoubleClick}
+              className="flex-1 min-h-[48px] w-full cursor-pointer select-none shrink-0"
+              title="Double-click empty space to keep sidebar open"
+              aria-hidden="true"
+            />
+
             {/* Global Search Box - Styled beautifully */}
             {isSidebarExpanded && (
-              <div className="px-2 py-3 border-t border-[#121c38]/40 mt-3 font-mono">
+              <div ref={sideSearchRef} className="px-2 py-3 border-t border-[#121c38]/40 mt-3 font-mono relative">
                 <div className="relative">
                   <input
                     type="text"
                     placeholder=""
                     value={globalSearchQuery}
-                    onChange={(e) => setGlobalSearchQuery(e.target.value)}
+                    onFocus={() => setIsSideSearchDropdownOpen(true)}
+                    onClick={() => setIsSideSearchDropdownOpen(true)}
+                    onChange={(e) => {
+                      setGlobalSearchQuery(e.target.value);
+                      setIsSideSearchDropdownOpen(true);
+                    }}
                     className={`w-full text-xs font-mono p-2 pl-8 pr-8 rounded-none border focus:outline-none focus:border-[#10b981] ${
                       theme === 'light'
                         ? 'bg-slate-50 border-gray-300 text-slate-900 placeholder-gray-500'
@@ -1650,7 +2233,10 @@ export default function App() {
                   <Search className="absolute left-2.5 top-2.5 w-3.5 h-3.5 text-gray-500 animate-pulse" />
                   {globalSearchQuery && (
                     <button
-                      onClick={() => setGlobalSearchQuery('')}
+                      onClick={() => {
+                        setGlobalSearchQuery('');
+                        setIsSideSearchDropdownOpen(false);
+                      }}
                       className="absolute right-2 top-1.5 text-gray-400 hover:text-white text-sm font-bold cursor-pointer px-1"
                       title="Clear search"
                     >
@@ -1658,10 +2244,19 @@ export default function App() {
                     </button>
                   )}
                 </div>
+
+                {/* Dropdown menu attached to side search */}
+                {isSideSearchDropdownOpen && renderSearchDropdownMenu(
+                  combinedGlobalResultsList,
+                  globalSearchQuery,
+                  () => setIsSideSearchDropdownOpen(false)
+                )}
+
                 {lastGlobalSearchQuery && !globalSearchQuery && (
                   <button
                     onClick={() => {
                       setGlobalSearchQuery(lastGlobalSearchQuery);
+                      setIsSideSearchDropdownOpen(true);
                       setLastGlobalSearchQuery('');
                     }}
                     className="text-[10px] text-emerald-400 hover:text-emerald-300 mt-1.5 font-bold font-mono hover:underline cursor-pointer flex items-center gap-1 bg-transparent border-0 p-0 text-left"
@@ -1701,16 +2296,23 @@ export default function App() {
           {!isSidebarExpanded && isFloatingSearchOpen && (
             <div 
               ref={floatingSearchRef}
-              className={`fixed left-[72px] bottom-[140px] sm:bottom-[180px] md:bottom-auto md:top-[180px] z-[999] p-3 border-2 shadow-[6px_6px_0px_0px_rgba(16,185,129,0.25)] rounded-none w-72 ${
+              className={`fixed left-[72px] bottom-[140px] sm:bottom-[180px] md:bottom-auto md:top-[180px] z-[999] p-3 border-2 shadow-[6px_6px_0px_0px_rgba(16,185,129,0.25)] rounded-none w-80 max-h-[420px] overflow-y-auto ${
                 theme === 'light'
                   ? 'bg-white border-emerald-500 text-slate-800'
                   : 'bg-[#060b14] border-[#10b981] text-white shadow-[6px_6px_0px_0px_#121c38]'
               }`}
             >
-              <div className="flex items-center mb-2">
-                <span className="text-[10px] font-mono font-bold text-[#10b981] uppercase tracking-wider flex items-center">
-                  <Search className="w-3.5 h-3.5" />
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[10px] font-mono font-bold text-[#10b981] uppercase tracking-wider flex items-center gap-1.5">
+                  <Search className="w-3.5 h-3.5" /> Consolidated Search
                 </span>
+                <button
+                  type="button"
+                  onClick={() => setIsFloatingSearchOpen(false)}
+                  className="text-gray-400 hover:text-white text-xs font-mono cursor-pointer"
+                >
+                  ✕
+                </button>
               </div>
               <div className="relative font-mono">
                 <input
@@ -1718,7 +2320,12 @@ export default function App() {
                   type="text"
                   placeholder=""
                   value={globalSearchQuery}
-                  onChange={(e) => setGlobalSearchQuery(e.target.value)}
+                  onFocus={() => setIsSideSearchDropdownOpen(true)}
+                  onClick={() => setIsSideSearchDropdownOpen(true)}
+                  onChange={(e) => {
+                    setGlobalSearchQuery(e.target.value);
+                    setIsSideSearchDropdownOpen(true);
+                  }}
                   className={`w-full text-xs font-mono p-2 pl-2 pr-8 rounded-none border focus:outline-none focus:border-[#10b981] ${
                     theme === 'light'
                       ? 'bg-slate-50 border-gray-300 text-slate-900'
@@ -1727,17 +2334,50 @@ export default function App() {
                 />
                 {globalSearchQuery && (
                   <button
-                    onClick={() => setGlobalSearchQuery('')}
+                    onClick={() => {
+                      setGlobalSearchQuery('');
+                      setIsSideSearchDropdownOpen(false);
+                    }}
                     className="absolute right-2 top-1.5 text-gray-400 hover:text-white text-sm font-bold cursor-pointer px-1"
                   >
                     ×
                   </button>
                 )}
               </div>
+
+              {/* Floating search dropdown findings list */}
+              {globalSearchQuery.trim() !== '' && (
+                <div className="mt-2 space-y-1">
+                  {combinedGlobalResultsList.length === 0 ? (
+                    <p className="text-[11px] text-gray-400 font-mono py-2">No matching results found.</p>
+                  ) : (
+                    combinedGlobalResultsList.map((res, idx) => (
+                      <button
+                        key={`float-${res.category}-${res.id || res.name}-${idx}`}
+                        type="button"
+                        onClick={() => handleSelectGlobalSearchItem(res)}
+                        className={`w-full text-left p-2 transition cursor-pointer border flex flex-col gap-1 ${
+                          theme === 'light'
+                            ? 'hover:bg-emerald-50 border-transparent hover:border-emerald-300 text-slate-800'
+                            : 'hover:bg-[#0c162d] border-transparent hover:border-[#10b981]/50 text-slate-200'
+                        }`}
+                      >
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-xs font-mono font-bold truncate">{res.name}</span>
+                          {renderCategoryBadge(res.category)}
+                        </div>
+                        <p className="text-[10px] text-gray-400 truncate font-mono">{res.subtext}</p>
+                      </button>
+                    ))
+                  )}
+                </div>
+              )}
+
               {lastGlobalSearchQuery && !globalSearchQuery && (
                 <button
                   onClick={() => {
                     setGlobalSearchQuery(lastGlobalSearchQuery);
+                    setIsSideSearchDropdownOpen(true);
                     setLastGlobalSearchQuery('');
                   }}
                   className="text-[10px] text-emerald-400 hover:text-emerald-300 mt-1.5 font-bold font-mono hover:underline cursor-pointer flex items-center gap-1 bg-transparent border-0 p-0 text-left"
@@ -1745,7 +2385,6 @@ export default function App() {
                   ↩ Go back to results
                 </button>
               )}
-              {/* Text helper removed per user request */}
             </div>
           )}
 
@@ -1759,7 +2398,7 @@ export default function App() {
             {isSidebarExpanded ? (
               <div className="pb-1.5 border-b border-[#121c38]/40 mb-1">
                 <button
-                  onClick={toggleTheme}
+                  onClick={() => handleSidebarItemClick(toggleTheme)}
                   data-theme-switch="true"
                   className="mt-1 w-full py-1 px-2 bg-slate-950 hover:bg-[#121c38]/40 border border-slate-800 text-[10px] font-mono font-bold flex items-center justify-between transition cursor-pointer text-slate-300"
                   title="Toggle Visual theme of website"
@@ -1782,13 +2421,10 @@ export default function App() {
               </div>
             ) : (
               <button
-                onClick={toggleTheme}
-                onDoubleClick={() => {
-                  setIsSidebarMinimized(false);
-                }}
+                onClick={() => handleSidebarItemClick(toggleTheme)}
                 data-theme-switch="true"
                 className="w-full flex items-center justify-center p-2 mb-1.5 hover:bg-slate-900 text-gray-400 hover:text-white transition rounded-sm border border-[#1e2e54]/50 cursor-pointer"
-                title={theme === 'dark' ? "Switch to Light Theme (Double click to expand)" : "Switch to Dark Theme (Double click to expand)"}
+                title={theme === 'dark' ? "Switch to Light Theme" : "Switch to Dark Theme"}
               >
                 {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-cyan-500" />}
               </button>
@@ -1828,6 +2464,22 @@ export default function App() {
                 </div>
               </div>
             )}
+
+            {/* Version & Catalog Indicator Badge */}
+            <div className="pt-2 mt-1 border-t border-[#121c38]/40 text-[10px] font-mono text-slate-400 flex items-center justify-between px-1">
+              {isSidebarExpanded ? (
+                <>
+                  <span className="flex items-center gap-1 font-bold text-emerald-400">
+                    <Sparkles className="w-3 h-3 text-emerald-400" /> App v{APP_VERSION}
+                  </span>
+                  <span className="text-slate-400 text-[9px] font-mono">Cat: {CATALOG_VERSION}</span>
+                </>
+              ) : (
+                <span className="text-[9px] font-mono text-emerald-400/80 mx-auto" title={`App version: ${APP_VERSION} | Catalog version: ${CATALOG_VERSION}`}>
+                  v{APP_VERSION}
+                </span>
+              )}
+            </div>
           </div>
         </div>
       </aside>
@@ -1836,14 +2488,34 @@ export default function App() {
       <div className={`flex-1 min-w-0 flex flex-col min-h-screen relative transition-all duration-[300ms] ease-in-out checker-pattern md:pl-[72px] ${
         introStage === 'blank' || introStage === 'centered' ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}>
+
+        {/* Application Release / Update Banner */}
+        {hasAppUpdate && (
+          <div className="bg-emerald-600 text-white font-mono text-xs px-4 py-2.5 flex flex-wrap items-center justify-between z-50 sticky top-0 shadow-2xl border-b-2 border-emerald-300">
+            <div className="flex items-center gap-2">
+              <RefreshCw className="w-4 h-4 animate-spin text-white shrink-0" />
+              <span className="font-bold tracking-tight">New MapIT Release Published (Updated Catalog & UI Assets Available)</span>
+            </div>
+            <button
+              onClick={() => {
+                sessionStorage.removeItem('mapit:chunk_reload_attempted');
+                window.location.reload();
+              }}
+              className="px-3 py-1 bg-white text-emerald-950 font-extrabold uppercase hover:bg-emerald-100 transition-all text-[10px] tracking-wider cursor-pointer border border-emerald-200 shadow-sm"
+            >
+              Update Application Now &rarr;
+            </button>
+          </div>
+        )}
         
         {/* NEW FLOATING HEADER DOCK - DESKTOP ONLY */}
-        <header className={`hidden md:flex transition-all duration-[700ms] ease-in-out p-3 items-center justify-between sticky top-0 z-30 backdrop-blur-md ${
+        <header className={`hidden md:flex relative transition-all duration-[300ms] ease-in-out px-4 py-2.5 items-center justify-between sticky top-0 z-30 backdrop-blur-md ${
           isScrolled 
             ? 'bg-[#070b13]/85 border-b border-[#121c38]/80 shadow-xl' 
             : 'bg-transparent border-b-2 border-[#121c38]/40'
         }`}>
-          <div className="flex items-center gap-3">
+          {/* Left Ribbon Controls Region */}
+          <div className="flex items-center gap-3 shrink-0 z-10 min-w-0">
             <button
               onClick={() => setIsSidebarMinimized(false)}
               className="md:hidden p-2 bg-[#121c38]/60 hover:bg-[#121c38] border border-[#1e2e54] text-white hover:text-[#10b981] rounded-xs cursor-pointer focus:outline-none flex items-center justify-center shrink-0 transition duration-150"
@@ -1851,22 +2523,27 @@ export default function App() {
             >
               <Menu className="w-4 h-4 text-[#10b981]" />
             </button>
+          </div>
 
-            {/* Desktop Unified Search Bar - Hidden on Comparator and Path Planner */}
-            {activeTab !== 'comparison' && activeTab !== 'pathfinder' && (
-              <div className="relative w-80 lg:w-96">
+          {/* Independently Centered Search Layer */}
+          {activeTab !== 'comparison' && activeTab !== 'pathfinder' && (
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-auto">
+              <div ref={topDesktopSearchRef} className="relative w-[clamp(220px,28vw,384px)]">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
                   <Search className="w-4 h-4" />
                 </div>
                 <input
                   type="text"
                   value={searchQuery}
+                  onFocus={() => setIsTopSearchDropdownOpen(true)}
+                  onClick={() => setIsTopSearchDropdownOpen(true)}
                   onChange={(e) => {
                     const val = e.target.value;
                     setSearchQuery(val);
                     setLibrariesQuery(val);
                     setYoutubeSearchQuery(val);
                     setHackathonsSearchQuery(val);
+                    setIsTopSearchDropdownOpen(true);
                   }}
                   placeholder={
                     activeTab === 'map' ? 'Search roles, skills, domains in map...' :
@@ -1874,7 +2551,7 @@ export default function App() {
                     activeTab === 'saved' ? 'Search saved items...' :
                     'Search within opened tab...'
                   }
-                  className="w-full pl-9 pr-8 py-1.5 text-xs font-sans rounded-md border text-slate-100 placeholder-slate-400 bg-[#111827]/90 border-slate-700/70 focus:outline-none transition-all focus:bg-[#0f172a] focus:border-[#10b981] focus:ring-1 focus:ring-[#10b981]/50"
+                  className="w-full pl-9 pr-8 py-1.5 text-xs font-sans rounded-md border text-slate-100 placeholder-slate-400 bg-[#111827]/90 border-slate-700/70 focus:outline-none transition-all focus:bg-[#0f172a] focus:border-[#10b981] focus:ring-1 focus:ring-[#10b981]/50 shadow-md"
                 />
                 {searchQuery && (
                   <button
@@ -1884,17 +2561,26 @@ export default function App() {
                       setLibrariesQuery('');
                       setYoutubeSearchQuery('');
                       setHackathonsSearchQuery('');
+                      setIsTopSearchDropdownOpen(false);
                     }}
                     className="absolute inset-y-0 right-0 pr-2.5 flex items-center text-gray-400 hover:text-white cursor-pointer"
                   >
                     ✕
                   </button>
                 )}
-              </div>
-            )}
-          </div>
 
-          <div className="flex items-center gap-3 select-none text-[10px] font-mono text-gray-400">
+                {/* Top Search Dropdown Box */}
+                {isTopSearchDropdownOpen && activeTab !== 'libraries' && renderSearchDropdownMenu(
+                  combinedGlobalResultsList,
+                  searchQuery,
+                  () => setIsTopSearchDropdownOpen(false)
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* Right Ribbon Controls Region */}
+          <div className="flex items-center gap-3 select-none text-[10px] font-mono text-gray-400 shrink-0 z-10 ml-auto">
             {isSidebarMinimized && !isScrolled && (
               <div className="flex items-center font-mono z-40">
                 {renderHistoryNavigationArrows("scale-90", false)}
@@ -1904,7 +2590,7 @@ export default function App() {
         </header>
 
         {/* MOBILE COHESIVE UNIFIED SEARCH HEADER (LinkedIn App Standard) */}
-        <header className="flex md:hidden sticky top-0 z-40 backdrop-blur-md bg-[#070b13]/90 border-b border-[#121c38]/60 p-2.5 flex-col gap-2">
+        <header className="flex md:hidden sticky top-0 z-[100] backdrop-blur-md bg-[#070b13]/90 border-b border-[#121c38]/60 p-2.5 flex-col gap-2">
           <div className="flex items-center justify-between gap-2.5">
             {/* Tiny brand logo showing the initials "MI" */}
             <div className={`${introStage !== 'done' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
@@ -1920,19 +2606,22 @@ export default function App() {
 
             {/* Unified Search Bar - Hidden on Comparator and Path Planner */}
             {activeTab !== 'comparison' && activeTab !== 'pathfinder' && (
-              <div className="relative flex-1">
+              <div ref={topMobileSearchRef} className="relative flex-1">
                 <div className="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none text-gray-400">
                   <Search className="w-4 h-4" />
                 </div>
                 <input
                   type="text"
                   value={searchQuery}
+                  onFocus={() => setIsTopSearchDropdownOpen(true)}
+                  onClick={() => setIsTopSearchDropdownOpen(true)}
                   onChange={(e) => {
                     const val = e.target.value;
                     setSearchQuery(val);
                     setLibrariesQuery(val);
                     setYoutubeSearchQuery(val);
                     setHackathonsSearchQuery(val);
+                    setIsTopSearchDropdownOpen(true);
                   }}
                   placeholder={
                     activeTab === 'map' ? 'Search roles, domains...' :
@@ -1949,11 +2638,19 @@ export default function App() {
                       setLibrariesQuery('');
                       setYoutubeSearchQuery('');
                       setHackathonsSearchQuery('');
+                      setIsTopSearchDropdownOpen(false);
                     }}
                     className="absolute inset-y-0 right-0 pr-2.5 flex items-center text-gray-400 hover:text-white cursor-pointer"
                   >
                     ✕
                   </button>
+                )}
+
+                {/* Mobile Top Search Dropdown Box */}
+                {isTopSearchDropdownOpen && activeTab !== 'libraries' && renderSearchDropdownMenu(
+                  combinedGlobalResultsList,
+                  searchQuery,
+                  () => setIsTopSearchDropdownOpen(false)
                 )}
               </div>
             )}
@@ -2043,14 +2740,14 @@ export default function App() {
 
           <AnimatePresence mode="wait">
             <motion.div
-              key={globalSearchQuery.trim() !== '' ? 'search-results' : activeTab}
+              key={activeTab}
               initial={{ opacity: 0, x: -24 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 24 }}
               transition={{ duration: 0.55, ease: "easeInOut" }}
               className="w-full h-full"
             >
-              {globalSearchQuery.trim() !== '' ? (
+              {false ? (
                 <div className="w-full space-y-6">
                   <div className={`p-6 border-2 rounded-none relative transition-all duration-300 ${
                     theme === 'light'
@@ -2747,17 +3444,17 @@ export default function App() {
                 activeTab={librariesActiveTab}
                 setActiveTab={setLibrariesActiveTab}
                 query={librariesQuery}
-                setQuery={setLibrariesQuery}
+                setQuery={handleSetAllLibrariesQuery}
                 selectedRoleFamily={librariesRoleFamily}
                 setSelectedRoleFamily={setLibrariesRoleFamily}
                 youtubeSearchQuery={youtubeSearchQuery}
-                setYoutubeSearchQuery={setYoutubeSearchQuery}
+                setYoutubeSearchQuery={handleSetAllLibrariesQuery}
                 youtubeCategoryId={youtubeCategoryId}
                 setSelectedCategoryId={setYoutubeCategoryId}
                 hackathonsSelectedItemId={hackathonsSelectedItemId}
                 setHackathonsSelectedItemId={setHackathonsSelectedItemId}
                 hackathonsSearchQuery={hackathonsSearchQuery}
-                setHackathonsSearchQuery={setHackathonsSearchQuery}
+                setHackathonsSearchQuery={handleSetAllLibrariesQuery}
                 tipIndex={tipIndex}
                 globalActiveTab={activeTab}
               />
