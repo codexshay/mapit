@@ -21,7 +21,7 @@ export interface JobsReferralsProps {
   isBookmarked?: (id: string, type: any) => boolean;
 }
 
-// 12 Major Global & Indian Job Portals with Official SVGs
+// 14 Major Global & Indian Job Portals with Official SVGs
 const JOB_PORTALS = [
   {
     name: 'LinkedIn Jobs',
@@ -38,6 +38,42 @@ const JOB_PORTALS = [
     icon: (
       <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5h-2.2l-3.3-5.2v5.2H5.5V7.5h2.2l3.3 5.2V7.5h2v9zm5.5 0h-2V7.5h2v9z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'Hirist (India Tech Jobs)',
+    getSearchUrl: (role: string) => `https://www.hirist.tech/search?keyword=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M4 4h4v6h8V4h4v16h-4v-6H8v6H4V4z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'Instahyre (India Premium Tech)',
+    getSearchUrl: (role: string) => `https://www.instahyre.com/search/jobs/?designation=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.8l7 3.5v7.4l-7 3.5-7-3.5V8.3l7-3.5zM11 9v6h2V9h-2z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'IITjobs (Premium Engineering Jobs)',
+    getSearchUrl: (role: string) => `https://www.iitjobs.com/search?q=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M5 4h3v16H5V4zm5 0h3v16h-3V4zm5 0h4v3h-4V4zm0 5h4v11h-4V9z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'Dice (Global Tech Jobs)',
+    getSearchUrl: (role: string) => `https://www.dice.com/jobs?q=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2 4v2h2V7H7zm8 0v2h2V7h-2zm-4 4v2h2v-2h-2zm-4 4v2h2v-2H7zm8 0v2h2v-2h-2z"/>
       </svg>
     )
   },
@@ -69,15 +105,6 @@ const JOB_PORTALS = [
     )
   },
   {
-    name: 'Instahyre (India Tech)',
-    getSearchUrl: (role: string) => `https://www.instahyre.com/search/jobs/?designation=${encodeURIComponent(role)}`,
-    icon: (
-      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
-        <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.8l7 3.5v7.4l-7 3.5-7-3.5V8.3l7-3.5zM11 9v6h2V9h-2z"/>
-      </svg>
-    )
-  },
-  {
     name: 'Foundit / Monster India',
     getSearchUrl: (role: string) => `https://www.foundit.in/srp/results?query=${encodeURIComponent(role)}`,
     icon: (
@@ -92,15 +119,6 @@ const JOB_PORTALS = [
     icon: (
       <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
         <path d="M12 2L1 21h22L12 2zm0 5.5l6.5 11.5h-13L12 7.5z"/>
-      </svg>
-    )
-  },
-  {
-    name: 'Dice Tech Jobs',
-    getSearchUrl: (role: string) => `https://www.dice.com/jobs?q=${encodeURIComponent(role)}`,
-    icon: (
-      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
-        <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2 4v2h2V7H7zm8 0v2h2V7h-2zm-4 4v2h2v-2h-2zm-4 4v2h2v-2H7zm8 0v2h2v-2h-2z"/>
       </svg>
     )
   },
@@ -479,7 +497,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
                     >
                       <span className="flex items-center gap-2">
                         <Users className="w-4 h-4 text-zinc-400 group-hover:text-black" />
-                        <span>Find Employees for Referral</span>
+                        <span>LOOK FOR REFERRALS</span>
                       </span>
                       <ExternalLink className="w-3.5 h-3.5 shrink-0" />
                     </a>
