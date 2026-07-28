@@ -5,12 +5,12 @@ import {
   Search, 
   Linkedin, 
   Building2, 
-  Filter, 
   Sparkles, 
   Users, 
   UserCheck, 
   Compass,
-  ArrowUpRight
+  ArrowUpRight,
+  XCircle
 } from 'lucide-react';
 import { TOP_50_COMPANIES, CompanyInfo, getCompanyCareerSearchUrl, getLinkedInSearchUrl } from '../data/topCompaniesData';
 import { ALL_ROLES_DATA } from '../data/rolesData';
@@ -27,26 +27,27 @@ export const JobsReferrals: React.FC = () => {
     return Array.from(new Set(list)).sort();
   }, []);
 
-  const activeRoleKeyword = customRoleInput.trim() || selectedRoleTitle;
+  const activeRoleKeyword = customRoleInput.trim() || selectedRoleTitle.trim();
 
   // Filtered Company List
   const filteredCompanies = useMemo(() => {
     return TOP_50_COMPANIES.filter(comp => {
       const matchesSearch = companySearchQuery === '' || 
         comp.name.toLowerCase().includes(companySearchQuery.toLowerCase()) ||
-        comp.rank.toString().includes(companySearchQuery);
+        comp.category.toLowerCase().includes(companySearchQuery.toLowerCase());
       
-      const matchesCategory = selectedCategory === 'All' || comp.category === selectedCategory;
+      const matchesCategory = selectedCategory === 'All' || 
+        comp.category.toLowerCase().includes(selectedCategory.toLowerCase());
 
       return matchesSearch && matchesCategory;
     });
   }, [companySearchQuery, selectedCategory]);
 
-  const categories = ['All', 'Big Tech', 'IT Services', 'SaaS & Cloud', 'CyberSecurity', 'FinTech & Consumer'];
+  const categories = ['All', 'IT services', 'SaaS', 'Big Tech', 'Cybersecurity', 'Fintech', 'Digital'];
 
   return (
     <div className="min-h-screen bg-black text-zinc-100 p-4 md:p-8 font-mono">
-      {/* Top Banner Header - Monochrome Work in Progress Edition */}
+      {/* Top Banner Header */}
       <header className="max-w-7xl mx-auto mb-8 border-2 border-zinc-800 bg-zinc-950 rounded-none p-6 md:p-8 shadow-2xl">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-zinc-800 pb-6 mb-6">
           <div>
@@ -60,15 +61,15 @@ export const JobsReferrals: React.FC = () => {
               </span>
             </div>
             <p className="text-zinc-400 text-sm md:text-base max-w-3xl font-sans">
-              Search for open career opportunities across official tech portals with embedded role keywords and connect with employees directly on LinkedIn for referral requests.
+              Discover {TOP_50_COMPANIES.length}+ curated technology employers, explore official LinkedIn career portals, and connect with employees directly on LinkedIn for referral requests.
             </p>
           </div>
 
           <div className="flex items-center gap-3 text-xs text-zinc-400 bg-zinc-900 px-4 py-3 border border-zinc-700 shrink-0 font-mono">
             <Linkedin className="w-6 h-6 text-white shrink-0" />
             <div>
-              <div className="font-bold text-white uppercase">LinkedIn Network Sync</div>
-              <div className="text-[10px] text-zinc-400">Direct Employee &amp; Recruiter Search</div>
+              <div className="font-bold text-white uppercase">LinkedIn Network Directory</div>
+              <div className="text-[10px] text-zinc-400">{TOP_50_COMPANIES.length}+ Employers • Direct Career Portals</div>
             </div>
           </div>
         </div>
@@ -77,10 +78,22 @@ export const JobsReferrals: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
           {/* Preset Role Selector */}
           <div className="md:col-span-4 space-y-1.5">
-            <label className="text-xs font-bold text-zinc-300 uppercase tracking-wider flex items-center gap-1.5">
-              <Compass className="w-3.5 h-3.5 text-white" />
-              Target Role Profile
-            </label>
+            <div className="flex items-center justify-between">
+              <label className="text-xs font-bold text-zinc-300 uppercase tracking-wider flex items-center gap-1.5">
+                <Compass className="w-3.5 h-3.5 text-white" />
+                Target Role Profile
+              </label>
+              {selectedRoleTitle && (
+                <button
+                  type="button"
+                  onClick={() => setSelectedRoleTitle('')}
+                  className="text-[10px] text-yellow-400 hover:text-yellow-300 uppercase font-bold flex items-center gap-1 cursor-pointer"
+                  title="Clear selected role"
+                >
+                  <XCircle className="w-3 h-3" /> Clear Role
+                </button>
+              )}
+            </div>
             <select
               value={selectedRoleTitle}
               onChange={(e) => {
@@ -89,6 +102,7 @@ export const JobsReferrals: React.FC = () => {
               }}
               className="w-full bg-black border border-zinc-700 rounded-none px-3.5 py-2.5 text-xs text-zinc-200 focus:outline-none focus:border-white transition-all font-mono"
             >
+              <option value="">-- Clear / All Roles (Explore Company Only) --</option>
               {roleOptions.map(r => (
                 <option key={r} value={r}>{r}</option>
               ))}
@@ -118,7 +132,7 @@ export const JobsReferrals: React.FC = () => {
             </label>
             <input
               type="text"
-              placeholder="Filter company (e.g. Google, NVIDIA)..."
+              placeholder="Search among 250+ companies (e.g. TCS, Google, NVIDIA)..."
               value={companySearchQuery}
               onChange={(e) => setCompanySearchQuery(e.target.value)}
               className="w-full bg-black border border-zinc-700 rounded-none px-3.5 py-2.5 text-xs text-zinc-200 placeholder-zinc-500 focus:outline-none focus:border-white transition-all font-mono"
@@ -147,7 +161,9 @@ export const JobsReferrals: React.FC = () => {
 
           <div className="text-xs font-mono text-zinc-400 flex items-center gap-2 bg-zinc-900 px-3 py-1.5 border border-zinc-800">
             <span>Embedded Search Keyword:</span>
-            <span className="text-white font-bold font-sans">"{activeRoleKeyword}"</span>
+            <span className="text-white font-bold font-sans">
+              {activeRoleKeyword ? `"${activeRoleKeyword}"` : '<None - Company Info Mode>'}
+            </span>
           </div>
         </div>
       </header>
@@ -159,7 +175,7 @@ export const JobsReferrals: React.FC = () => {
             <Building2 className="w-12 h-12 text-zinc-500 mx-auto mb-4 animate-bounce" />
             <h2 className="text-xl font-bold text-zinc-200 mb-2 uppercase">No matching companies found</h2>
             <p className="text-zinc-400 text-sm max-w-md mx-auto mb-6 font-sans">
-              Try adjusting your search query or clearing category filters to view the rest of the Top 50 Tech Employers.
+              Try adjusting your search query or clearing category filters to view all {TOP_50_COMPANIES.length} technology employers.
             </p>
             <button
               onClick={() => {
@@ -173,22 +189,21 @@ export const JobsReferrals: React.FC = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredCompanies.map((comp) => {
+            {filteredCompanies.map((comp, idx) => {
               const careerSearchUrl = getCompanyCareerSearchUrl(comp, activeRoleKeyword);
               const linkedInEmployeeUrl = getLinkedInSearchUrl(comp.name, activeRoleKeyword, 'referral');
               const linkedInRecruiterUrl = getLinkedInSearchUrl(comp.name, activeRoleKeyword, 'recruiter');
+              const linkedInJobsUrl = comp.jobsSectionLink || (comp.companySlug ? `https://www.linkedin.com/company/${comp.companySlug}/jobs/` : careerSearchUrl);
+              const linkedInChannelUrl = comp.companyChannelLink || (comp.companySlug ? `https://www.linkedin.com/company/${comp.companySlug}/` : careerSearchUrl);
 
               return (
                 <div
-                  key={comp.rank}
+                  key={`${comp.name}-${idx}`}
                   className="bg-zinc-950 border-2 border-zinc-800 hover:border-zinc-600 rounded-none p-6 transition-all duration-200 shadow-xl flex flex-col justify-between space-y-5"
                 >
                   <div>
-                    {/* Top Header info */}
+                    {/* Top Header Category Badge */}
                     <div className="flex items-center justify-between gap-2 mb-3 font-mono">
-                      <span className="text-xs font-bold px-2.5 py-1 bg-white text-black border border-white">
-                        RANK #{comp.rank}
-                      </span>
                       <span className="text-xs px-2.5 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700 font-medium">
                         {comp.category}
                       </span>
@@ -203,17 +218,17 @@ export const JobsReferrals: React.FC = () => {
 
                   {/* Actions */}
                   <div className="space-y-2.5 pt-4 border-t border-zinc-800 font-mono text-xs">
-                    {/* Official Career Portal Search */}
+                    {/* LinkedIn Company Jobs Listing Tab */}
                     <a
-                      href={careerSearchUrl}
+                      href={linkedInJobsUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full py-2.5 px-4 bg-zinc-900 hover:bg-zinc-800 text-zinc-100 border border-zinc-700 rounded-none flex items-center justify-between font-mono font-bold uppercase transition-all group"
-                      title={`Open official ${comp.name} career portal with keyword "${activeRoleKeyword}"`}
+                      title={`Open official LinkedIn Jobs section for ${comp.name}`}
                     >
                       <span className="flex items-center gap-2 truncate">
                         <Briefcase className="w-4 h-4 text-zinc-400 shrink-0" />
-                        <span className="truncate">Official Career Portal</span>
+                        <span className="truncate">Official LinkedIn Jobs Tab</span>
                       </span>
                       <ArrowUpRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
                     </a>
@@ -247,6 +262,20 @@ export const JobsReferrals: React.FC = () => {
                       </span>
                       <ExternalLink className="w-4 h-4 text-zinc-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
                     </a>
+
+                    {/* LinkedIn Channel Page Link */}
+                    {comp.companyChannelLink && (
+                      <a
+                        href={linkedInChannelUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full py-1.5 px-4 text-zinc-400 hover:text-white flex items-center justify-between text-[11px] transition-colors"
+                        title={`Open ${comp.name} main company page on LinkedIn`}
+                      >
+                        <span className="truncate">Official Company Channel</span>
+                        <ExternalLink className="w-3 h-3 shrink-0" />
+                      </a>
+                    )}
                   </div>
                 </div>
               );
