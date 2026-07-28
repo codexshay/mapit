@@ -16,6 +16,7 @@ const AntCrossingGame = React.lazy(() => import('./components/AntCrossingGame'))
 const AICareerAssistant = React.lazy(() => import('./components/AICareerAssistant'));
 const HRContacts = React.lazy(() => import('./components/HRContacts'));
 const InterviewQ = React.lazy(() => import('./components/InterviewQ'));
+import { interviewQDatabase } from './data/interviewQDatabase';
 import { ALL_ROLES_DATA, IT_DOMAINS } from './data/rolesData';
 import { CORNER_TIPS, CERTIFICATIONS_LIBRARY } from './data/librariesData';
 import importedPortals from './data/generated/portals.json';
@@ -138,7 +139,7 @@ const TAB_METADATA: Record<string, { label: string; icon: React.ComponentType<an
 export interface BookmarkItem {
   id: string;
   name: string;
-  type: 'role' | 'domain' | 'division' | 'youtubeTeacher' | 'hackathon' | 'certification' | 'studyPortal' | 'skill' | 'tool' | 'jobCategory';
+  type: 'role' | 'domain' | 'division' | 'youtubeTeacher' | 'hackathon' | 'certification' | 'studyPortal' | 'skill' | 'tool' | 'jobCategory' | 'interviewQ';
   subtext?: string;
   url?: string;
 }
@@ -969,6 +970,22 @@ export default function App() {
       });
     });
 
+    // 9. InterviewQ & Practical Labs
+    interviewQDatabase.filter(iq => 
+      iq.id.toLowerCase().includes(q) ||
+      iq.prompt.toLowerCase().includes(q) ||
+      iq.preferred_answer.toLowerCase().includes(q) ||
+      iq.domain.toLowerCase().includes(q) ||
+      iq.evaluation_points?.some(pt => pt.toLowerCase().includes(q))
+    ).slice(0, 4).forEach(iq => {
+      list.push({
+        category: 'interviewQ' as any,
+        id: iq.id,
+        name: `[${iq.id}] ${iq.prompt}`,
+        subtext: `${iq.domain} • ${iq.difficulty.toUpperCase()} (${iq.question_type})`
+      });
+    });
+
     return list;
   }, [globalSearchResults, globalSearchQuery]);
 
@@ -1024,6 +1041,8 @@ export default function App() {
       setHackathonsSearchQuery(item.name);
       setLibrariesActiveTab('hackathons');
       setActiveTab('libraries');
+    } else if ((item.category as any) === 'interviewQ') {
+      setActiveTab('interviewq');
     }
 
     // Smooth scroll to target view
@@ -2223,183 +2242,7 @@ export default function App() {
               aria-hidden="true"
             />
 
-            {/* Global Search Box - Styled beautifully */}
-            {isSidebarExpanded && (
-              <div ref={sideSearchRef} className="px-2 py-3 border-t border-[#121c38]/40 mt-3 font-mono relative">
-                <div className="relative">
-                  <input
-                    type="text"
-                    placeholder=""
-                    value={globalSearchQuery}
-                    onFocus={() => setIsSideSearchDropdownOpen(true)}
-                    onClick={() => setIsSideSearchDropdownOpen(true)}
-                    onChange={(e) => {
-                      setGlobalSearchQuery(e.target.value);
-                      setIsSideSearchDropdownOpen(true);
-                    }}
-                    className={`w-full text-xs font-mono p-2 pl-8 pr-8 rounded-none border focus:outline-none focus:border-[#10b981] ${
-                      theme === 'light'
-                        ? 'bg-slate-50 border-gray-300 text-slate-900 placeholder-gray-500'
-                        : 'bg-[#05070c] border-[#1e2e54] text-white placeholder-gray-600'
-                    }`}
-                  />
-                  <Search className="absolute left-2.5 top-2.5 w-3.5 h-3.5 text-gray-500 animate-pulse" />
-                  {globalSearchQuery && (
-                    <button
-                      onClick={() => {
-                        setGlobalSearchQuery('');
-                        setIsSideSearchDropdownOpen(false);
-                      }}
-                      className="absolute right-2 top-1.5 text-gray-400 hover:text-white text-sm font-bold cursor-pointer px-1"
-                      title="Clear search"
-                    >
-                      ×
-                    </button>
-                  )}
-                </div>
-
-                {/* Dropdown menu attached to side search */}
-                {isSideSearchDropdownOpen && renderSearchDropdownMenu(
-                  combinedGlobalResultsList,
-                  globalSearchQuery,
-                  () => setIsSideSearchDropdownOpen(false)
-                )}
-
-                {lastGlobalSearchQuery && !globalSearchQuery && (
-                  <button
-                    onClick={() => {
-                      setGlobalSearchQuery(lastGlobalSearchQuery);
-                      setIsSideSearchDropdownOpen(true);
-                      setLastGlobalSearchQuery('');
-                    }}
-                    className="text-[10px] text-emerald-400 hover:text-emerald-300 mt-1.5 font-bold font-mono hover:underline cursor-pointer flex items-center gap-1 bg-transparent border-0 p-0 text-left"
-                  >
-                    ↩ Go back to results
-                  </button>
-                )}
-              </div>
-            )}
-
-            {!isSidebarExpanded && (
-              <div className="px-2 py-3 border-t border-[#121c38]/40 mt-3 font-mono flex justify-center relative">
-                <button
-                  ref={floatingTriggerRef}
-                  type="button"
-                  onMouseEnter={() => setIsFloatingSearchOpen(true)}
-                  onClick={() => setIsFloatingSearchOpen(!isFloatingSearchOpen)}
-                  className={`p-2 hover:bg-slate-900 text-[#10b981] hover:text-white transition rounded-sm border ${
-                    isFloatingSearchOpen 
-                      ? 'bg-emerald-950/40 border-emerald-400/80 shadow-[0_0_8px_rgba(16,185,129,0.3)]' 
-                      : 'border-[#1e2e54]/50'
-                  } cursor-pointer flex items-center justify-center relative group`}
-                  title="Search Portal"
-                >
-                  <Search className="w-4 h-4 animate-pulse" />
-                  
-                  {/* Tooltip */}
-                  <div className="absolute left-[54px] bg-[#070b13] border border-[#1e2e54] text-[9.5px] tracking-wider px-2.5 py-1.5 whitespace-nowrap hidden group-hover:block transition-all z-50 pointer-events-none font-mono font-bold rounded-xs shadow-[3px_3px_0px_#121c38]">
-                    <span className="text-[#10b981] mr-1.5 font-bold">►</span> SEARCH KEYWORDS
-                  </div>
-                </button>
-              </div>
-            )}
           </nav>
-
-          {/* FLOATING HOVER SEARCH BOX FOR MINIMIZED SIDEBAR */}
-          {!isSidebarExpanded && isFloatingSearchOpen && (
-            <div 
-              ref={floatingSearchRef}
-              className={`fixed left-[72px] bottom-[140px] sm:bottom-[180px] md:bottom-auto md:top-[180px] z-[999] p-3 border-2 shadow-[6px_6px_0px_0px_rgba(16,185,129,0.25)] rounded-none w-80 max-h-[420px] overflow-y-auto ${
-                theme === 'light'
-                  ? 'bg-white border-emerald-500 text-slate-800'
-                  : 'bg-[#060b14] border-[#10b981] text-white shadow-[6px_6px_0px_0px_#121c38]'
-              }`}
-            >
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-[10px] font-mono font-bold text-[#10b981] uppercase tracking-wider flex items-center gap-1.5">
-                  <Search className="w-3.5 h-3.5" /> Consolidated Search
-                </span>
-                <button
-                  type="button"
-                  onClick={() => setIsFloatingSearchOpen(false)}
-                  className="text-gray-400 hover:text-white text-xs font-mono cursor-pointer"
-                >
-                  ✕
-                </button>
-              </div>
-              <div className="relative font-mono">
-                <input
-                  autoFocus
-                  type="text"
-                  placeholder=""
-                  value={globalSearchQuery}
-                  onFocus={() => setIsSideSearchDropdownOpen(true)}
-                  onClick={() => setIsSideSearchDropdownOpen(true)}
-                  onChange={(e) => {
-                    setGlobalSearchQuery(e.target.value);
-                    setIsSideSearchDropdownOpen(true);
-                  }}
-                  className={`w-full text-xs font-mono p-2 pl-2 pr-8 rounded-none border focus:outline-none focus:border-[#10b981] ${
-                    theme === 'light'
-                      ? 'bg-slate-50 border-gray-300 text-slate-900'
-                      : 'bg-[#05070c] border-[#1e2e54] text-white'
-                  }`}
-                />
-                {globalSearchQuery && (
-                  <button
-                    onClick={() => {
-                      setGlobalSearchQuery('');
-                      setIsSideSearchDropdownOpen(false);
-                    }}
-                    className="absolute right-2 top-1.5 text-gray-400 hover:text-white text-sm font-bold cursor-pointer px-1"
-                  >
-                    ×
-                  </button>
-                )}
-              </div>
-
-              {/* Floating search dropdown findings list */}
-              {globalSearchQuery.trim() !== '' && (
-                <div className="mt-2 space-y-1">
-                  {combinedGlobalResultsList.length === 0 ? (
-                    <p className="text-[11px] text-gray-400 font-mono py-2">No matching results found.</p>
-                  ) : (
-                    combinedGlobalResultsList.map((res, idx) => (
-                      <button
-                        key={`float-${res.category}-${res.id || res.name}-${idx}`}
-                        type="button"
-                        onClick={() => handleSelectGlobalSearchItem(res)}
-                        className={`w-full text-left p-2 transition cursor-pointer border flex flex-col gap-1 ${
-                          theme === 'light'
-                            ? 'hover:bg-emerald-50 border-transparent hover:border-emerald-300 text-slate-800'
-                            : 'hover:bg-[#0c162d] border-transparent hover:border-[#10b981]/50 text-slate-200'
-                        }`}
-                      >
-                        <div className="flex items-center justify-between gap-2">
-                          <span className="text-xs font-mono font-bold truncate">{res.name}</span>
-                          {renderCategoryBadge(res.category)}
-                        </div>
-                        <p className="text-[10px] text-gray-400 truncate font-mono">{res.subtext}</p>
-                      </button>
-                    ))
-                  )}
-                </div>
-              )}
-
-              {lastGlobalSearchQuery && !globalSearchQuery && (
-                <button
-                  onClick={() => {
-                    setGlobalSearchQuery(lastGlobalSearchQuery);
-                    setIsSideSearchDropdownOpen(true);
-                    setLastGlobalSearchQuery('');
-                  }}
-                  className="text-[10px] text-emerald-400 hover:text-emerald-300 mt-1.5 font-bold font-mono hover:underline cursor-pointer flex items-center gap-1 bg-transparent border-0 p-0 text-left"
-                >
-                  ↩ Go back to results
-                </button>
-              )}
-            </div>
-          )}
 
           {/* Sidebar Bottom Sync Diagnostics & Theme */}
           <div 
@@ -3491,7 +3334,11 @@ export default function App() {
                   <div>Loading MapIT InterviewQ [BETA] Database...</div>
                 </div>
               }>
-                <InterviewQ />
+                <InterviewQ 
+                  bookmarks={bookmarks}
+                  toggleBookmark={toggleBookmark}
+                  isBookmarked={isBookmarked}
+                />
               </React.Suspense>
             </ErrorBoundary>
           </section>
@@ -3506,6 +3353,7 @@ export default function App() {
               const bookmarkedYoutube = bookmarks.filter(b => b.type === 'youtubeTeacher' || b.type === 'division');
               const bookmarkedHackathons = bookmarks.filter(b => b.type === 'hackathon');
               const bookmarkedResources = bookmarks.filter(b => b.type === 'certification' || b.type === 'studyPortal' || b.type === 'skill' || b.type === 'tool');
+              const bookmarkedInterviewQ = bookmarks.filter(b => b.type === 'interviewQ');
 
               return (
                 <>
@@ -3586,6 +3434,57 @@ export default function App() {
                                 </div>
                               );
                             })}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* 0.5 Bookmarked Interview Questions & Practical Labs */}
+                      {bookmarkedInterviewQ.length > 0 && (
+                        <div className="space-y-3">
+                          <h4 className="text-xs font-mono text-emerald-400 font-bold uppercase tracking-wider flex items-center gap-1.5">
+                            ⚡ BOOKMARKED INTERVIEW QUESTIONS &amp; LABS ({bookmarkedInterviewQ.length})
+                          </h4>
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {bookmarkedInterviewQ.map((item) => (
+                              <div
+                                key={`${item.type}-${item.id}`}
+                                className="bg-[#070b13] border-2 border-[#121c38] hover:border-emerald-500/50 transition-all p-4 duration-150 flex flex-col justify-between space-y-3 shadow-[3px_3px_0px_#121c38]"
+                              >
+                                <div className="space-y-2 font-mono text-xs">
+                                  <div className="flex items-center justify-between text-[10px]">
+                                    <span className="px-1.5 py-0.5 bg-emerald-950/60 text-emerald-300 border border-emerald-800/50 uppercase font-bold text-[9px]">
+                                      {item.subtext || 'InterviewQ'}
+                                    </span>
+                                    <button
+                                      onClick={() => toggleBookmark(item)}
+                                      className="text-red-400 hover:text-red-300 font-bold cursor-pointer"
+                                    >
+                                      Remove
+                                    </button>
+                                  </div>
+                                  <h4 className="text-sm font-semibold text-white leading-snug font-sans">{item.name}</h4>
+                                </div>
+
+                                <div className="pt-2 border-t border-[#121c38]/60 flex items-center justify-between font-mono text-[10px]">
+                                  <button
+                                    onClick={() => setActiveTab('interviewq')}
+                                    className="text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1 cursor-pointer"
+                                  >
+                                    View in InterviewQ &rarr;
+                                  </button>
+                                  {item.url && (
+                                    <a
+                                      href={item.url}
+                                      target="_blank"
+                                      rel="noreferrer"
+                                      className="text-slate-400 hover:text-white flex items-center gap-1"
+                                    >
+                                      Documentation &nearr;
+                                    </a>
+                                  )}
+                                </div>
+                              </div>
+                            ))}
                           </div>
                         </div>
                       )}

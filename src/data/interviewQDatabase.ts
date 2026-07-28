@@ -16,7 +16,7 @@ export interface InterviewQItem {
 
 export const interviewQDatabase: InterviewQItem[] = [
   // ==========================================
-  // SECTION 1: DevOps & SRE (120 Source-Linked Questions from DevOps Intensive Bank)
+  // SECTION 1: DevOps & SRE (Source-Linked Questions from DevOps Intensive Bank)
   // ==========================================
   {
     id: "DVO-001",
@@ -138,120 +138,34 @@ export const interviewQDatabase: InterviewQItem[] = [
     last_verified_at: "2026-07-28",
     status: "published"
   },
+
+  // ==========================================
+  // SECTION 2: 15 PRACTICAL ASSESSMENT LABS (FROM DEVOPS INTENSIVE BANK)
+  // ==========================================
   {
-    id: "DVO-009",
+    id: "LAB-001",
     role_slug: "devops-engineer",
-    domain: "Linux Administration and Shell Automation",
-    difficulty: "foundation",
-    question_type: "concept",
-    prompt: "What is the practical difference between a process and a thread?",
-    preferred_answer: "A process has its own virtual address space and operating-system resources, while threads within a process share most of that process memory and resources. Threads are lighter to create and communicate through shared memory, but a fault or unsafe shared-state change can affect the whole process.",
-    evaluation_points: ["Separate process address spaces", "Shared thread resources", "Performance and isolation trade-off"],
-    resolution_title: "Linux man-pages - proc(5)",
-    resolution_url: "https://man7.org/linux/man-pages/man5/proc.5.html",
+    domain: "DevOps Principles and Delivery Performance",
+    difficulty: "scenario",
+    question_type: "practical",
+    prompt: "LAB-01 [PRACTICAL ASSESSMENT]: Delivery metrics baseline calculation and experiment proposal.",
+    preferred_answer: "Calculate deployment frequency, change lead time, change failure rate and failed deployment recovery time from a supplied month of deployment records. Explain one limitation in each measure and recommend one bottleneck improvement experiment.\n\nScoring rubric: 40% working outcome, 25% diagnostic evidence, 20% security/reliability judgement, 15% clarity.",
+    evaluation_points: ["One-page metric sheet with definitions", "Calculations and assumptions", "Bottleneck-linked experiment proposal"],
+    resolution_title: "DORA - Software Delivery Performance Metrics",
+    resolution_url: "https://dora.dev/guides/dora-metrics/",
     source_tier: "A",
     last_verified_at: "2026-07-28",
     status: "published"
   },
   {
-    id: "DVO-010",
-    role_slug: "devops-engineer",
-    domain: "Linux Administration and Shell Automation",
-    difficulty: "foundation",
-    question_type: "operations",
-    prompt: "Why should a Linux service be managed by systemd instead of starting its daemon manually?",
-    preferred_answer: "systemd provides a declared unit, dependency ordering, controlled startup and shutdown, restart policy, status tracking and centralised logs. A daemon launched manually may not be known to systemd, so service status, restart and boot-time behaviour become unreliable or inconsistent.",
-    evaluation_points: ["Lifecycle supervision", "Dependencies and restart", "Boot persistence", "Status/log integration"],
-    resolution_title: "Red Hat Enterprise Linux - Managing systemd",
-    resolution_url: "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-systemd_configuring-basic-system-settings",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-011",
-    role_slug: "devops-engineer",
-    domain: "Linux Administration and Shell Automation",
-    difficulty: "intermediate",
-    question_type: "operations",
-    prompt: "Explain the meaning of file modes 644 and 755.",
-    preferred_answer: "Mode 644 gives the owner read and write permissions, while group and others receive read only. Mode 755 gives the owner read, write and execute, while group and others receive read and execute. Directory execute permission controls traversal, so the effect differs from an ordinary file.",
-    evaluation_points: ["Correct owner/group/other mapping", "Octal interpretation", "Directory traversal nuance"],
-    resolution_title: "Red Hat Enterprise Linux - Managing File System Permissions",
-    resolution_url: "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-file-system-permissions_configuring-basic-system-settings",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-012",
-    role_slug: "devops-engineer",
-    domain: "Linux Administration and Shell Automation",
-    difficulty: "intermediate",
-    question_type: "concept",
-    prompt: "How do hard links and symbolic links differ?",
-    preferred_answer: "A hard link is another directory entry for the same inode and normally cannot cross filesystems or link directories. A symbolic link stores a path to another object, can cross filesystems and can become dangling if the target moves or disappears. Deleting one hard-link name does not remove the data while another link remains.",
-    evaluation_points: ["Inode versus path", "Filesystem limitation", "Dangling symlink", "Deletion behaviour"],
-    resolution_title: "Red Hat Enterprise Linux - Managing File System Permissions",
-    resolution_url: "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-file-system-permissions_configuring-basic-system-settings",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-013",
-    role_slug: "devops-engineer",
-    domain: "Linux Administration and Shell Automation",
-    difficulty: "intermediate",
-    question_type: "troubleshooting",
-    prompt: "A host has high load average. What would you inspect before adding CPU?",
-    preferred_answer: "Confirm whether the load is CPU pressure, runnable tasks or uninterruptible I/O wait. Inspect CPU utilisation, run queue, memory and swap pressure, disk latency, blocked processes, recent deployments and application-level saturation. High load alone does not prove CPU shortage.",
-    evaluation_points: ["Separates CPU from I/O and blocked tasks", "Checks memory/disk/processes", "Correlates with change history"],
-    resolution_title: "Linux man-pages - proc(5)",
-    resolution_url: "https://man7.org/linux/man-pages/man5/proc.5.html",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-014",
-    role_slug: "devops-engineer",
-    domain: "Linux Administration and Shell Automation",
-    difficulty: "advanced",
-    question_type: "troubleshooting",
-    prompt: "The filesystem is full according to df, but du cannot account for the used space. What is a likely cause?",
-    preferred_answer: "A common cause is a large file that was deleted from the directory tree but is still open by a running process. The blocks remain allocated until the process closes the file or restarts. Check open deleted files, confirm the owning process, then rotate or restart safely rather than deleting more files blindly.",
-    evaluation_points: ["Identifies deleted-but-open file", "Explains block retention", "Proposes safe verification and remediation"],
-    resolution_title: "Red Hat Enterprise Linux - Troubleshooting with Log Files",
-    resolution_url: "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/assembly_troubleshooting-problems-using-log-files_configuring-basic-system-settings",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-015",
-    role_slug: "devops-engineer",
-    domain: "Linux Administration and Shell Automation",
-    difficulty: "advanced",
-    question_type: "operations",
-    prompt: "When should SIGTERM be used instead of SIGKILL?",
-    preferred_answer: "SIGTERM requests graceful termination and allows an application to flush buffers, close connections and release resources. SIGKILL cannot be caught or handled and should be a last resort when the process cannot terminate normally. A production stop procedure should allow a bounded grace period before escalation.",
-    evaluation_points: ["Graceful handling versus forced termination", "Data/connection implications", "Bounded escalation"],
-    resolution_title: "Linux man-pages - signal(7)",
-    resolution_url: "https://man7.org/linux/man-pages/man7/signal.7.html",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-016",
+    id: "LAB-002",
     role_slug: "devops-engineer",
     domain: "Linux Administration and Shell Automation",
     difficulty: "scenario",
-    question_type: "troubleshooting",
-    prompt: "A custom service runs when started manually but fails after reboot. How would you diagnose it?",
-    preferred_answer: "Inspect the systemd unit, status and journal for the boot attempt. Verify the executable path, user, working directory, environment variables, file permissions, dependencies and network readiness; then use explicit unit directives rather than shell-profile assumptions. Reload units, enable the service and retest through a controlled reboot.",
-    evaluation_points: ["Uses systemctl/journalctl", "Checks environment and permissions", "Dependencies/order", "Daemon reload and enable"],
+    question_type: "practical",
+    prompt: "LAB-02 [PRACTICAL ASSESSMENT]: Linux service boot-time failure diagnosis and systemd recovery.",
+    preferred_answer: "Create a systemd service for a simple application, intentionally break its environment variables or permissions, then diagnose the boot-time failure using status and journal evidence.\n\nScoring rubric: 40% working outcome, 25% diagnostic evidence, 20% security/reliability judgement, 15% clarity.",
+    evaluation_points: ["Corrected systemd unit file", "Command transcript & journalctl logs", "Root-cause statement", "Safe restart validation"],
     resolution_title: "Red Hat Enterprise Linux - Working with systemd Unit Files",
     resolution_url: "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_systemd_unit_files_to_customize_and_optimize_your_system/assembly_working-with-systemd-unit-files_working-with-systemd",
     source_tier: "A",
@@ -259,74 +173,14 @@ export const interviewQDatabase: InterviewQItem[] = [
     status: "published"
   },
   {
-    id: "DVO-017",
+    id: "LAB-003",
     role_slug: "devops-engineer",
     domain: "Networking, DNS, HTTP and TLS",
-    difficulty: "foundation",
-    question_type: "concept",
-    prompt: "Describe the main steps that occur when a client resolves a domain name.",
-    preferred_answer: "The client checks local and operating-system caches, then asks a recursive resolver. If the answer is not cached, the resolver follows the DNS hierarchy through root, top-level-domain and authoritative name servers, returns the record and caches it according to its TTL. Exact behaviour can vary with local resolvers and record types.",
-    evaluation_points: ["Cache", "Recursive resolver", "Hierarchical lookup", "Authoritative answer", "TTL"],
-    resolution_title: "Cloudflare Learning Center - What is DNS?",
-    resolution_url: "https://www.cloudflare.com/learning/dns/what-is-dns/",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-018",
-    role_slug: "devops-engineer",
-    domain: "Networking, DNS, HTTP and TLS",
-    difficulty: "foundation",
-    question_type: "concept",
-    prompt: "When would you choose TCP instead of UDP?",
-    preferred_answer: "TCP is appropriate when ordered, reliable delivery and congestion control matter, such as HTTP over TCP or database sessions. UDP has lower protocol overhead and supports latency-sensitive or application-managed reliability use cases, such as DNS queries, streaming or real-time traffic. The application requirements decide the trade-off.",
-    evaluation_points: ["Reliability/order versus lower overhead", "Practical examples", "Avoids claiming UDP is always faster"],
-    resolution_title: "MDN Web Docs - HTTP Overview",
-    resolution_url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-019",
-    role_slug: "devops-engineer",
-    domain: "Networking, DNS, HTTP and TLS",
-    difficulty: "intermediate",
-    question_type: "troubleshooting",
-    prompt: "What do HTTP 502, 503 and 504 usually indicate in a reverse-proxy architecture?",
-    preferred_answer: "A 502 generally means the proxy received an invalid response from an upstream. A 503 means the service is unavailable, overloaded, intentionally drained or has no healthy backends. A 504 means the proxy timed out waiting for an upstream response. The exact meaning should be confirmed in the proxy and application logs.",
-    evaluation_points: ["Correct distinction", "Upstream perspective", "Checks logs and health rather than relying only on status code"],
-    resolution_title: "MDN Web Docs - HTTP Overview",
-    resolution_url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-020",
-    role_slug: "devops-engineer",
-    domain: "Networking, DNS, HTTP and TLS",
-    difficulty: "intermediate",
-    question_type: "operations",
-    prompt: "How do you determine whether a Linux service is listening on the expected interface and port?",
-    preferred_answer: "Inspect listening sockets and the owning process, then verify whether the socket is bound to loopback, a specific address or all interfaces. Test locally and from the required network path, and check host firewall, cloud security rules and container or Kubernetes port mappings. A listening process alone does not prove end-to-end reachability.",
-    evaluation_points: ["Socket/process check", "Bind address", "Local versus remote test", "Firewall and network-layer checks"],
-    resolution_title: "Red Hat Enterprise Linux - Troubleshooting with Log Files",
-    resolution_url: "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/assembly_troubleshooting-problems-using-log-files_configuring-basic-system-settings",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-021",
-    role_slug: "devops-engineer",
-    domain: "Networking, DNS, HTTP and TLS",
-    difficulty: "intermediate",
-    question_type: "security",
-    prompt: "What does a TLS handshake establish before application data is exchanged?",
-    preferred_answer: "The handshake negotiates protocol parameters and cryptographic algorithms, authenticates the server through its certificate chain, establishes shared session keys and verifies handshake integrity. Client authentication may also occur. Certificate validity, hostname matching and trust-chain verification are essential checks.",
-    evaluation_points: ["Negotiation", "Authentication", "Key establishment", "Certificate/hostname trust"],
+    difficulty: "scenario",
+    question_type: "practical",
+    prompt: "LAB-03 [PRACTICAL ASSESSMENT]: DNS and TLS end-to-end connectivity diagnosis.",
+    preferred_answer: "Trace a request from DNS resolution through TCP connection and TLS certificate verification. Introduce one wrong DNS record or hostname mismatch and document the layer-by-layer evidence.\n\nScoring rubric: 40% working outcome, 25% diagnostic evidence, 20% security/reliability judgement, 15% clarity.",
+    evaluation_points: ["Layer-by-layer diagnostic record", "Failure confirmation point", "Certificate verification evidence"],
     resolution_title: "MDN Web Docs - Transport Layer Security",
     resolution_url: "https://developer.mozilla.org/en-US/docs/Web/Security/Transport_Layer_Security",
     source_tier: "A",
@@ -334,113 +188,38 @@ export const interviewQDatabase: InterviewQItem[] = [
     status: "published"
   },
   {
-    id: "DVO-022",
+    id: "LAB-004",
     role_slug: "devops-engineer",
-    domain: "Networking, DNS, HTTP and TLS",
-    difficulty: "advanced",
-    question_type: "design",
-    prompt: "Why can a load balancer mark an instance unhealthy even though the application process is running?",
-    preferred_answer: "The health-check path may return an error, time out, use the wrong port or protocol, depend on an unavailable downstream service, or be blocked by security rules. The process may also be alive but not ready to serve traffic. Compare load-balancer health-check settings with application readiness and inspect target logs and network paths.",
-    evaluation_points: ["Process health versus service readiness", "Path/port/protocol", "Dependencies", "Security and logs"],
-    resolution_title: "AWS - Elastic Load Balancing with Auto Scaling",
-    resolution_url: "https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-023",
-    role_slug: "devops-engineer",
-    domain: "Networking, DNS, HTTP and TLS",
-    difficulty: "advanced",
-    question_type: "concept",
-    prompt: "How does container networking change the meaning of localhost?",
-    preferred_answer: "Inside a container, localhost normally refers to that container's own network namespace, not the host or another container. Services communicate through published host ports, user-defined network DNS names or orchestration Services. Binding only to 127.0.0.1 inside the container can prevent traffic from reaching the application through the container interface.",
-    evaluation_points: ["Network namespace", "Service discovery/published ports", "Bind-address consequence"],
-    resolution_title: "Docker Docs - Networking Overview",
-    resolution_url: "https://docs.docker.com/engine/network/",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-024",
-    role_slug: "devops-engineer",
-    domain: "Networking, DNS, HTTP and TLS",
+    domain: "Git and Collaborative Version Control",
     difficulty: "scenario",
-    question_type: "troubleshooting",
-    prompt: "An API responds to curl on localhost but is unreachable from another machine. Give a diagnostic order.",
-    preferred_answer: "Confirm the application bind address and listening port, then test the host's private address locally. Check the host firewall, cloud security group or network ACL, route and load-balancer listener, followed by DNS and TLS settings if a hostname is used. Use packet capture or connection logs only after the simpler layers are verified.",
-    evaluation_points: ["Layered order", "Bind address first", "Host/cloud controls", "Routing and LB", "DNS/TLS", "Evidence-based escalation"],
-    resolution_title: "AWS - Elastic Load Balancing with Auto Scaling",
-    resolution_url: "https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html",
+    question_type: "practical",
+    prompt: "LAB-04 [PRACTICAL ASSESSMENT]: Git regression recovery with bisect and safe revert.",
+    preferred_answer: "Create a repository with a known-good commit, introduce a regression, identify it using git bisect, and produce a safe revert on a shared branch.\n\nScoring rubric: 40% working outcome, 25% diagnostic evidence, 20% security/reliability judgement, 15% clarity.",
+    evaluation_points: ["Commit graph", "Bisect automated log", "Identified bad commit hash", "Revert commit & test evidence"],
+    resolution_title: "Git Documentation - git bisect",
+    resolution_url: "https://git-scm.com/docs/git-bisect",
     source_tier: "A",
     last_verified_at: "2026-07-28",
     status: "published"
   },
   {
-    id: "DVO-025",
+    id: "LAB-005",
     role_slug: "devops-engineer",
-    domain: "Git and Collaborative Version Control",
-    difficulty: "foundation",
-    question_type: "concept",
-    prompt: "What is the difference between merging and rebasing a branch?",
-    preferred_answer: "Merge combines histories and normally creates a merge commit when the branches have diverged. Rebase reapplies commits onto a new base, creating new commit identities and a linear-looking history. Rebasing private work can simplify history, but rebasing published shared commits can disrupt collaborators.",
-    evaluation_points: ["History combination versus commit replay", "Commit identity changes", "Shared-history warning"],
-    resolution_title: "Git Documentation - git rebase",
-    resolution_url: "https://git-scm.com/docs/git-rebase",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-026",
-    role_slug: "devops-engineer",
-    domain: "Git and Collaborative Version Control",
-    difficulty: "foundation",
-    question_type: "recovery",
-    prompt: "When should git revert be preferred over git reset?",
-    preferred_answer: "Use revert to undo a change in shared history because it creates a new commit that records the inverse change. Reset moves a branch reference and may also change the index and working tree, so it is better suited to local or deliberately rewritten history. The chosen reset mode determines what is preserved.",
-    evaluation_points: ["Shared-safe revert", "History-moving reset", "Mode awareness"],
-    resolution_title: "Git Documentation - git revert",
-    resolution_url: "https://git-scm.com/docs/git-revert",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-027",
-    role_slug: "devops-engineer",
-    domain: "Git and Collaborative Version Control",
-    difficulty: "intermediate",
-    question_type: "concept",
-    prompt: "What does detached HEAD mean?",
-    preferred_answer: "Detached HEAD means HEAD points directly to a commit rather than a named branch. New commits can be created, but they may become difficult to find if no branch or tag is created before moving away. It is useful for inspection and temporary experimentation when handled deliberately.",
-    evaluation_points: ["Direct commit reference", "Risk to new commits", "Safe recovery by creating a branch"],
-    resolution_title: "Git Documentation - git reset",
-    resolution_url: "https://git-scm.com/docs/git-reset",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
-  {
-    id: "DVO-028",
-    role_slug: "devops-engineer",
-    domain: "Git and Collaborative Version Control",
-    difficulty: "intermediate",
-    question_type: "operations",
-    prompt: "When is cherry-pick appropriate, and what is its main trade-off?",
-    preferred_answer: "Cherry-pick applies the change introduced by selected commits onto the current branch. It is useful for targeted backports or urgent fixes, but creates new commit identities and can duplicate logical changes across branches, which may complicate later merges. It should not replace a clear branching and release strategy.",
-    evaluation_points: ["Targeted commit application", "New identity/duplication", "Sensible use cases"],
-    resolution_title: "Git Documentation - git cherry-pick",
-    resolution_url: "https://git-scm.com/docs/git-cherry-pick",
+    domain: "CI/CD Architecture and Release Strategies",
+    difficulty: "scenario",
+    question_type: "practical",
+    prompt: "LAB-05 [PRACTICAL ASSESSMENT]: Production-ready release strategy design.",
+    preferred_answer: "Design a deployment pipeline for a customer-facing API using build-once promotion, automated quality gates and either blue-green or canary release.\n\nScoring rubric: 40% working outcome, 25% diagnostic evidence, 20% security/reliability judgement, 15% clarity.",
+    evaluation_points: ["Pipeline architecture diagram", "Artefact identity tracking", "Automated gate criteria", "Rollback/fix-forward decision tree"],
+    resolution_title: "Argo Rollouts Docs - Concepts",
+    resolution_url: "https://argo-rollouts.readthedocs.io/en/stable/concepts/",
     source_tier: "A",
     last_verified_at: "2026-07-28",
     status: "published"
   },
 
   // ==========================================
-  // SECTION 2: FRONTEND DEVELOPER QUESTIONS
+  // SECTION 3: FRONTEND DEVELOPER QUESTIONS & LABS
   // ==========================================
   {
     id: "FED-001",
@@ -472,24 +251,9 @@ export const interviewQDatabase: InterviewQItem[] = [
     last_verified_at: "2026-07-28",
     status: "published"
   },
-  {
-    id: "FED-003",
-    role_slug: "frontend-developer",
-    domain: "React & Architecture",
-    difficulty: "advanced",
-    question_type: "design",
-    prompt: "Explain how React 19 Server Components (RSC) differ from traditional Client Components and Server-Side Rendering (SSR).",
-    preferred_answer: "Traditional SSR renders HTML on the server but still ships all component JavaScript to the client for hydration. React Server Components execute exclusively on the server at build/request time and stream zero client JavaScript for component logic, reducing bundle footprint. Client Components handle browser state and interactive events. RSCs can fetch data close to the source without waterfall requests.",
-    evaluation_points: ["Zero client JS bundle for RSC", "Server rendering vs Hydration", "Interleaving Client and Server components", "Data fetching close to data layer"],
-    resolution_title: "React Docs - Server Components",
-    resolution_url: "https://react.dev/reference/rsc/server-components",
-    source_tier: "A",
-    last_verified_at: "2026-07-28",
-    status: "published"
-  },
 
   // ==========================================
-  // SECTION 3: BACKEND DEVELOPER QUESTIONS
+  // SECTION 4: BACKEND DEVELOPER QUESTIONS & LABS
   // ==========================================
   {
     id: "BED-001",
@@ -523,7 +287,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
 
   // ==========================================
-  // SECTION 4: CYBERSECURITY ANALYST QUESTIONS
+  // SECTION 5: CYBERSECURITY ANALYST QUESTIONS
   // ==========================================
   {
     id: "SEC-001",
@@ -542,7 +306,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
 
   // ==========================================
-  // SECTION 5: AI & PROMPT ENGINEER QUESTIONS
+  // SECTION 6: PROMPT ENGINEER & AI ARCHITECT
   // ==========================================
   {
     id: "AI-001",
