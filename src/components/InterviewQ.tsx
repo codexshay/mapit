@@ -217,14 +217,6 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
               Role-mapped technical interview questions &amp; practical assessment labs with preferred answers, evaluator checkpoints, and direct links to official documentation.
             </p>
           </div>
-
-          <div className="flex items-center gap-2 text-xs text-zinc-400 bg-zinc-900 px-4 py-3 border border-zinc-700 shrink-0 font-mono">
-            <ShieldCheck className="w-5 h-5 text-white shrink-0" />
-            <div>
-              <div className="font-bold text-white uppercase">MapIT Editorial Standard</div>
-              <div className="text-[10px] text-zinc-400">100% Verified Tier-A/B Documentation</div>
-            </div>
-          </div>
         </div>
 
         {/* Global Search and Counter */}
@@ -233,7 +225,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
             <Search className="absolute left-3.5 top-3 w-4 h-4 text-zinc-400" />
             <input
               type="text"
-              placeholder="Search prompts, answers, IDs (e.g. DVO-001, BED-001)..."
+              placeholder=""
               value={searchQuery}
               onChange={(e) => { setSearchQuery(e.target.value); setCurrentPage(1); }}
               className="w-full bg-black border border-zinc-700 rounded-none pl-10 pr-4 py-2.5 text-xs text-zinc-200 placeholder-zinc-500 focus:outline-none focus:border-white transition-all font-mono"
@@ -398,17 +390,6 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                   );
                 })}
               </div>
-
-              {!isAllDomainsActive && (
-                <button
-                  type="button"
-                  onClick={() => toggleDomainSelect('all')}
-                  className="w-full py-1.5 px-3 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-zinc-300 text-[11px] font-bold uppercase flex items-center justify-center gap-1.5 transition cursor-pointer"
-                >
-                  <RotateCcw className="w-3 h-3" />
-                  <span>Reset to All Sub-Domains</span>
-                </button>
-              )}
             </div>
           )}
         </aside>
