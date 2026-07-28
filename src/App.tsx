@@ -16,6 +16,7 @@ const AntCrossingGame = React.lazy(() => import('./components/AntCrossingGame'))
 const AICareerAssistant = React.lazy(() => import('./components/AICareerAssistant'));
 const HRContacts = React.lazy(() => import('./components/HRContacts'));
 const InterviewQ = React.lazy(() => import('./components/InterviewQ'));
+const JobsReferrals = React.lazy(() => import('./components/JobsReferrals'));
 import { interviewQDatabase } from './data/interviewQDatabase';
 import { ALL_ROLES_DATA, IT_DOMAINS } from './data/rolesData';
 import { CORNER_TIPS, CERTIFICATIONS_LIBRARY } from './data/librariesData';
@@ -33,7 +34,7 @@ import {
   Terminal, ArrowUpRight, Award, HelpCircle, UserCheck, Flame, ExternalLink,
   Layers, Video, Trophy, Menu, ChevronLeft, Trash2, Sun, Moon,
   ArrowLeft, ArrowRight, Search, ChevronDown, ChevronUp, Book, RefreshCw,
-  Pin, PinOff, Sparkles
+  Pin, PinOff, Sparkles, Briefcase
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -82,6 +83,11 @@ const TAB_DETAILS: Record<string, { label: string; activeStyle: string; hoverSty
     label: '⚡ InterviewQ [BETA]',
     activeStyle: 'text-emerald-400 font-bold bg-[#121c38] border-emerald-500/40 shadow-[0_0_10px_rgba(16,185,129,0.25)]',
     hoverStyle: 'hover:text-emerald-400 hover:bg-emerald-950/20 border border-transparent'
+  },
+  jobs: {
+    label: '💼 Jobs & Referrals',
+    activeStyle: 'text-blue-400 font-bold bg-[#121c38] border-blue-500/40 shadow-[0_0_10px_rgba(59,130,246,0.25)]',
+    hoverStyle: 'hover:text-blue-400 hover:bg-blue-950/20 border border-transparent'
   }
 };
 
@@ -121,6 +127,12 @@ const TAB_METADATA: Record<string, { label: string; icon: React.ComponentType<an
     icon: HelpCircle,
     colorClass: 'text-emerald-400',
     activeStyle: 'text-emerald-400 border-emerald-400 bg-emerald-950/20 shadow-[0_0_12px_rgba(16,185,129,0.15)] font-bold'
+  },
+  jobs: {
+    label: 'Jobs & Referrals',
+    icon: Briefcase,
+    colorClass: 'text-blue-400',
+    activeStyle: 'text-blue-400 border-blue-400 bg-blue-950/20 shadow-[0_0_12px_rgba(59,130,246,0.15)] font-bold'
   },
   saved: {
     label: 'Bookmarks',
@@ -1698,7 +1710,7 @@ export default function App() {
   const [isChatOpen, setIsChatOpen] = useState<boolean>(false);
 
   // Dynamic order of tabs - Sorted alphabetically by their visible section labels
-  const [tabOrder, setTabOrder] = useState<string[]>(['about', 'saved', 'map', 'comparison', 'pathfinder', 'libraries', 'interviewq', 'hr-contacts']);
+  const [tabOrder, setTabOrder] = useState<string[]>(['about', 'saved', 'map', 'comparison', 'pathfinder', 'libraries', 'interviewq', 'jobs', 'hr-contacts']);
 
   const [draggedTabId, setDraggedTabId] = useState<string | null>(null);
 
@@ -3344,6 +3356,22 @@ export default function App() {
           </section>
         </div>
 
+        {/* 8. JOBS & LINKEDIN REFERRALS PORTAL */}
+        <div id="section-jobs" className={activeTab === 'jobs' ? 'block' : 'hidden'}>
+          <section className="fade-in space-y-6">
+            <ErrorBoundary fallbackTitle="Jobs Portal Error">
+              <React.Suspense fallback={
+                <div className="min-h-[400px] flex flex-col items-center justify-center bg-[#070b14] text-blue-400 font-mono text-sm border border-slate-800 rounded-2xl p-8 space-y-3">
+                  <div className="w-8 h-8 border-2 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
+                  <div>Loading MapIT Jobs &amp; LinkedIn Referrals...</div>
+                </div>
+              }>
+                <JobsReferrals />
+              </React.Suspense>
+            </ErrorBoundary>
+          </section>
+        </div>
+
         {/* 9. SAVED VIEWS & PERSISTED CAREER PATHS */}
         <div id="section-saved" className={activeTab === 'saved' ? 'block' : 'hidden'}>
           <section className="fade-in space-y-6">
@@ -3961,6 +3989,7 @@ export default function App() {
             { id: 'pathfinder', label: 'Path Planner', icon: TAB_METADATA.pathfinder.icon, activeColor: 'text-[#10b981] border-[#10b981]' },
             { id: 'libraries', label: 'Resources', icon: TAB_METADATA.libraries.icon, activeColor: 'text-cyan-400 border-cyan-400' },
             { id: 'interviewq', label: 'InterviewQ', icon: TAB_METADATA.interviewq.icon, activeColor: 'text-emerald-400 border-emerald-400' },
+            { id: 'jobs', label: 'Jobs', icon: TAB_METADATA.jobs.icon, activeColor: 'text-blue-400 border-blue-400' },
             { id: 'hr-contacts', label: 'HR Contacts', icon: TAB_METADATA['hr-contacts'].icon, activeColor: 'text-slate-100 border-slate-100' }
           ].map((item) => {
             const isActive = activeTab === item.id;
