@@ -23,6 +23,7 @@ export interface Hackathon {
   targetAudience: string;
   careerBenefit: string;
   isConcluded?: boolean;
+  concludedDaysAgo?: number;
   momUrl?: string;
   momTitle?: string;
   replayUrl?: string;
@@ -519,9 +520,15 @@ export default function Hackathons({
     return baseList
       .map((item: any) => ({ ...item, isNewAddition: false }))
       .filter((item: any) => {
-        const hasDaysLeft = item.daysLeft !== undefined && item.daysLeft > 0;
-        const isNotClosed = item.scheduleStatus !== 'Closed';
-        return hasDaysLeft && isNotClosed;
+        const daysSinceClosed = item.concludedDaysAgo !== undefined 
+          ? item.concludedDaysAgo 
+          : (item.daysLeft !== undefined && item.daysLeft <= 0 ? Math.abs(item.daysLeft) : (item.isConcluded || item.scheduleStatus === 'Closed' ? 1 : 0));
+        
+        // Auto-purge events completed more than 15 days ago
+        if (item.isConcluded || item.scheduleStatus === 'Closed' || (item.daysLeft !== undefined && item.daysLeft <= 0)) {
+          return daysSinceClosed <= 15;
+        }
+        return true;
       });
   });
   const COMBINED_EVENTS = eventsList;
@@ -717,11 +724,15 @@ export default function Hackathons({
             }
           });
           
-          // Filter to remove expired/concluded listings
+          // Filter to remove listings concluded over 15 days ago
           const filtered = merged.filter((item: any) => {
-            const hasDaysLeft = item.daysLeft !== undefined && item.daysLeft > 0;
-            const isNotClosed = item.scheduleStatus !== 'Closed';
-            return hasDaysLeft && isNotClosed;
+            const daysSinceClosed = item.concludedDaysAgo !== undefined 
+              ? item.concludedDaysAgo 
+              : (item.daysLeft !== undefined && item.daysLeft <= 0 ? Math.abs(item.daysLeft) : (item.isConcluded || item.scheduleStatus === 'Closed' ? 1 : 0));
+            if (item.isConcluded || item.scheduleStatus === 'Closed' || (item.daysLeft !== undefined && item.daysLeft <= 0)) {
+              return daysSinceClosed <= 15;
+            }
+            return true;
           });
           
           setEventsList(filtered);
@@ -780,11 +791,15 @@ export default function Hackathons({
           }
         });
         
-        // Filter to remove expired/concluded listings
+        // Filter to remove listings concluded over 15 days ago
         const filtered = merged.filter((item: any) => {
-          const hasDaysLeft = item.daysLeft !== undefined && item.daysLeft > 0;
-          const isNotClosed = item.scheduleStatus !== 'Closed';
-          return hasDaysLeft && isNotClosed;
+          const daysSinceClosed = item.concludedDaysAgo !== undefined 
+            ? item.concludedDaysAgo 
+            : (item.daysLeft !== undefined && item.daysLeft <= 0 ? Math.abs(item.daysLeft) : (item.isConcluded || item.scheduleStatus === 'Closed' ? 1 : 0));
+          if (item.isConcluded || item.scheduleStatus === 'Closed' || (item.daysLeft !== undefined && item.daysLeft <= 0)) {
+            return daysSinceClosed <= 15;
+          }
+          return true;
         });
         
         setEventsList(filtered);
@@ -1072,6 +1087,43 @@ export default function Hackathons({
           </div>
         </div>
 
+        {/* SMART CLOSED EVENT PORTAL SUGGESTION BOX */}
+        {(item.isConcluded || item.scheduleStatus === 'Closed' || (item.daysLeft !== undefined && item.daysLeft <= 0)) && (
+          <div className="p-4 border-2 border-yellow-500/50 bg-yellow-950/20 text-xs font-mono space-y-2.5 rounded-none">
+            <div className="flex items-center justify-between text-yellow-300 font-bold uppercase">
+              <span className="flex items-center gap-2">
+                <AlertCircle className="w-4 h-4 text-yellow-400 shrink-0" />
+                <span>Registration Closed for this {getCategory(item)}</span>
+              </span>
+              <span className="text-[10px] text-zinc-400 font-mono">
+                Auto-delists from archive in {Math.max(1, 15 - (item.concludedDaysAgo || Math.abs(item.daysLeft || 0) || 1))} days
+              </span>
+            </div>
+
+            <p className="text-zinc-300 font-sans text-xs">
+              Registration for <strong>"{item.title}"</strong> is currently closed. Explore live upcoming {getCategory(item)}s on official platforms:
+            </p>
+
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              <a href="https://devpost.com/hackathons" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-zinc-900 border border-zinc-700 hover:bg-white hover:text-black text-white font-bold transition flex items-center gap-1.5 cursor-pointer">
+                <span>Devpost</span> <ExternalLink className="w-3 h-3" />
+              </a>
+              <a href="https://unstop.com/hackathons" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-zinc-900 border border-zinc-700 hover:bg-white hover:text-black text-white font-bold transition flex items-center gap-1.5 cursor-pointer">
+                <span>Unstop (India)</span> <ExternalLink className="w-3 h-3" />
+              </a>
+              <a href="https://devfolio.co/hackathons" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-zinc-900 border border-zinc-700 hover:bg-white hover:text-black text-white font-bold transition flex items-center gap-1.5 cursor-pointer">
+                <span>Devfolio</span> <ExternalLink className="w-3 h-3" />
+              </a>
+              <a href="https://mlh.io/seasons/2026/events" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-zinc-900 border border-zinc-700 hover:bg-white hover:text-black text-white font-bold transition flex items-center gap-1.5 cursor-pointer">
+                <span>MLH</span> <ExternalLink className="w-3 h-3" />
+              </a>
+              <a href="https://www.hackerearth.com/challenges/" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-zinc-900 border border-zinc-700 hover:bg-white hover:text-black text-white font-bold transition flex items-center gap-1.5 cursor-pointer">
+                <span>HackerEarth</span> <ExternalLink className="w-3 h-3" />
+              </a>
+            </div>
+          </div>
+        )}
+
         {/* Location Banner */}
         <div className={`flex items-start gap-2.5 text-xs font-mono border p-3 ${isLight ? 'bg-slate-50 border-gray-200 text-slate-800 font-medium' : 'bg-black/40 border-[#1e2e54]/40 text-slate-300'}`}>
           <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-emerald-400 animate-pulse" />
@@ -1246,6 +1298,35 @@ export default function Hackathons({
         >
           <span>Preferences {isMobileFiltersOpen ? '▲' : '▼'}</span>
         </button>
+      </div>
+
+      {/* PROMINENT MULTI-CATEGORY STREAM TABS BAR */}
+      <div className="flex flex-wrap items-center gap-2 font-mono">
+        <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider mr-1">Category Stream:</span>
+        {[
+          { id: 'All', label: 'All Streams', icon: '🌐' },
+          { id: 'Hackathon', label: 'Hackathons', icon: '🏆' },
+          { id: 'Event', label: 'Events & Summits', icon: '🎪' },
+          { id: 'Bootcamp', label: 'Bootcamps', icon: '🚀' },
+          { id: 'Challenge', label: 'Challenges', icon: '⚔️' },
+          { id: 'Webinar', label: 'Webinars', icon: '📡' },
+          { id: 'CFP', label: 'CFP Trackers', icon: '📝' },
+          { id: 'Training', label: 'Trainings', icon: '🎓' },
+        ].map(cat => (
+          <button
+            key={cat.id}
+            type="button"
+            onClick={() => setCategoryFilter(cat.id)}
+            className={`px-3 py-1.5 text-xs font-bold uppercase border transition-all cursor-pointer flex items-center gap-1.5 ${
+              categoryFilter === cat.id
+                ? 'bg-emerald-500 text-black border-emerald-400 font-black shadow-[2px_2px_0px_0px_#ffffff]'
+                : 'bg-zinc-900 text-zinc-300 border-zinc-700 hover:border-white hover:text-white'
+            }`}
+          >
+            <span>{cat.icon}</span>
+            <span>{cat.label}</span>
+          </button>
+        ))}
       </div>
 
       {/* 3. FILTERS BAR */}
