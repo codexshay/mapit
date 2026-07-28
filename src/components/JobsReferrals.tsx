@@ -1,67 +1,231 @@
 import React, { useState, useMemo } from 'react';
 import { 
-  Briefcase, 
-  ExternalLink, 
   Search, 
+  ExternalLink, 
   Linkedin, 
   Building2, 
-  Sparkles, 
   Users, 
-  UserCheck, 
+  Briefcase, 
+  Filter, 
+  Sparkles,
+  Bookmark,
+  Check,
   Compass,
-  ArrowUpRight,
   XCircle
 } from 'lucide-react';
-import { TOP_50_COMPANIES, CompanyInfo, getCompanyCareerSearchUrl, getLinkedInSearchUrl } from '../data/topCompaniesData';
-import { ALL_ROLES_DATA } from '../data/rolesData';
+import { TOP_50_COMPANIES, CompanyInfo } from '../data/topCompaniesData';
 
-export const JobsReferrals: React.FC = () => {
-  const [selectedRoleTitle, setSelectedRoleTitle] = useState<string>('DevOps Engineer');
+export interface JobsReferralsProps {
+  bookmarks?: Array<{ id: string; name: string; type: string; subtext?: string; url?: string }>;
+  toggleBookmark?: (item: { id: string; name: string; type: any; subtext?: string; url?: string }) => void;
+  isBookmarked?: (id: string, type: any) => boolean;
+}
+
+// 12 Major Global & Indian Job Portals with Official SVGs
+const JOB_PORTALS = [
+  {
+    name: 'LinkedIn Jobs',
+    getSearchUrl: (role: string) => `https://www.linkedin.com/jobs/search/?keywords=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.63 1.63 0 1 0 0 3.26 1.63 1.63 0 0 0 0-3.26z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'Naukri.com (India #1)',
+    getSearchUrl: (role: string) => `https://www.naukri.com/jobs-in-india?k=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5h-2.2l-3.3-5.2v5.2H5.5V7.5h2.2l3.3 5.2V7.5h2v9zm5.5 0h-2V7.5h2v9z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'Indeed',
+    getSearchUrl: (role: string) => `https://www.indeed.com/jobs?q=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M12.24 3.75c-4.66 0-8.44 3.78-8.44 8.44 0 4.66 3.78 8.44 8.44 8.44 4.66 0 8.44-3.78 8.44-8.44 0-4.66-3.78-8.44-8.44-8.44zm.2 2.82a1.46 1.46 0 1 1 0 2.92 1.46 1.46 0 0 1 0-2.92zm2.08 10.9h-4.42v-6.9h4.42v6.9z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'Glassdoor Jobs',
+    getSearchUrl: (role: string) => `https://www.glassdoor.com/Job/jobs.htm?sc.keyword=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M5 3h14v18H5V3zm2 2v14h10V5H7zm2 2h6v2H9V7zm0 4h6v2H9v-2zm0 4h4v2H9v-2z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'Google Jobs',
+    getSearchUrl: (role: string) => `https://www.google.com/search?q=${encodeURIComponent(role)}+jobs&ibp=htl;jobs`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.761H12.545z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'Instahyre (India Tech)',
+    getSearchUrl: (role: string) => `https://www.instahyre.com/search/jobs/?designation=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.8l7 3.5v7.4l-7 3.5-7-3.5V8.3l7-3.5zM11 9v6h2V9h-2z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'Foundit / Monster India',
+    getSearchUrl: (role: string) => `https://www.foundit.in/srp/results?query=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2zm0 18a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'Wellfound (AngelList Startups)',
+    getSearchUrl: (role: string) => `https://wellfound.com/jobs?q=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M12 2L1 21h22L12 2zm0 5.5l6.5 11.5h-13L12 7.5z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'Dice Tech Jobs',
+    getSearchUrl: (role: string) => `https://www.dice.com/jobs?q=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2 4v2h2V7H7zm8 0v2h2V7h-2zm-4 4v2h2v-2h-2zm-4 4v2h2v-2H7zm8 0v2h2v-2h-2z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'ZipRecruiter',
+    getSearchUrl: (role: string) => `https://www.ziprecruiter.com/candidate/search?search=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M12 2L2 22h20L12 2zm0 5.8l5.2 10.2H6.8L12 7.8z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'SimplyHired',
+    getSearchUrl: (role: string) => `https://www.simplyhired.com/search?q=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm2 3h8v2H8V9zm0 4h6v2H8v-2z"/>
+      </svg>
+    )
+  },
+  {
+    name: 'FlexJobs (Remote Work)',
+    getSearchUrl: (role: string) => `https://www.flexjobs.com/search?search=${encodeURIComponent(role)}`,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>
+      </svg>
+    )
+  }
+];
+
+export const JobsReferrals: React.FC<JobsReferralsProps> = ({
+  toggleBookmark,
+  isBookmarked
+}) => {
+  const [selectedRoleTitle, setSelectedRoleTitle] = useState<string>('Site Reliability Engineer');
   const [customRoleInput, setCustomRoleInput] = useState<string>('');
   const [companySearchQuery, setCompanySearchQuery] = useState<string>('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [localBookmarkedIds, setLocalBookmarkedIds] = useState<Record<string, boolean>>({});
 
-  // List of MapIT Role Titles
-  const roleOptions = useMemo(() => {
-    const list = Object.values(ALL_ROLES_DATA).map(r => r.title);
-    return Array.from(new Set(list)).sort();
+  // Active role keyword used for embedding into portals & referrals
+  const activeRoleKeyword = useMemo(() => {
+    if (customRoleInput.trim()) return customRoleInput.trim();
+    return selectedRoleTitle.trim();
+  }, [selectedRoleTitle, customRoleInput]);
+
+  // Extract all unique categories
+  const categories = useMemo(() => {
+    const set = new Set<string>();
+    TOP_50_COMPANIES.forEach(c => {
+      if (c.category) set.add(c.category);
+    });
+    return ['All', ...Array.from(set).sort()];
   }, []);
 
-  const activeRoleKeyword = customRoleInput.trim() || selectedRoleTitle.trim();
-
-  // Filtered Company List
+  // Filtered companies based on search query & category
   const filteredCompanies = useMemo(() => {
     return TOP_50_COMPANIES.filter(comp => {
       const matchesSearch = companySearchQuery === '' || 
         comp.name.toLowerCase().includes(companySearchQuery.toLowerCase()) ||
-        comp.category.toLowerCase().includes(companySearchQuery.toLowerCase());
+        comp.category?.toLowerCase().includes(companySearchQuery.toLowerCase());
       
-      const matchesCategory = selectedCategory === 'All' || 
-        comp.category.toLowerCase().includes(selectedCategory.toLowerCase());
+      const matchesCategory = selectedCategory === 'All' || comp.category === selectedCategory;
 
       return matchesSearch && matchesCategory;
     });
   }, [companySearchQuery, selectedCategory]);
 
-  const categories = ['All', 'IT services', 'SaaS', 'Big Tech', 'Cybersecurity', 'Fintech', 'Digital'];
+  const handleBookmarkToggle = (comp: CompanyInfo) => {
+    if (toggleBookmark) {
+      toggleBookmark({
+        id: `comp-${comp.name}`,
+        name: comp.name,
+        type: 'company',
+        subtext: `${comp.category || 'Tech'} • Official Portal & LinkedIn Referral`,
+        url: comp.careerUrl
+      });
+    } else {
+      setLocalBookmarkedIds(prev => ({ ...prev, [comp.name]: !prev[comp.name] }));
+    }
+  };
+
+  const checkIsBookmarked = (compName: string) => {
+    if (isBookmarked) {
+      return isBookmarked(`comp-${compName}`, 'company');
+    }
+    return !!localBookmarkedIds[compName];
+  };
+
+  // Pre-configured popular role options for dropdown
+  const roleOptions = [
+    'DevOps Engineer',
+    'Site Reliability Engineer',
+    'Platform Engineer',
+    'Backend Engineer',
+    'Software Engineer',
+    'Full Stack Engineer',
+    'Frontend Engineer',
+    'Data Engineer',
+    'Cloud Architect',
+    'Cybersecurity Engineer',
+    'AI / ML Engineer',
+    'Product Manager',
+    'System Administrator'
+  ];
 
   return (
     <div className="min-h-screen bg-black text-zinc-100 p-4 md:p-8 font-mono">
-      {/* Top Banner Header */}
-      <header className="max-w-7xl mx-auto mb-8 border-2 border-zinc-800 bg-zinc-950 rounded-none p-6 md:p-8 shadow-2xl">
+      {/* Header Section - Monochrome B&W with Beta Tag */}
+      <header className="max-w-7xl mx-auto mb-8 border-2 border-zinc-800 bg-zinc-950 p-6 md:p-8 shadow-2xl">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-zinc-800 pb-6 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
               <h1 className="text-3xl md:text-4xl font-black tracking-tight text-white flex items-center gap-2 uppercase">
                 <Briefcase className="w-8 h-8 text-white" />
-                MapIT Jobs &amp; LinkedIn Referrals
+                Jobs &amp; Referrals
               </h1>
               <span className="bg-yellow-400 text-black px-2 py-0.5 text-[10px] font-extrabold uppercase rounded-xs tracking-wide shrink-0 font-mono">
                 beta
               </span>
             </div>
             <p className="text-zinc-400 text-sm md:text-base max-w-3xl font-sans">
-              Discover {TOP_50_COMPANIES.length}+ curated technology employers, explore official LinkedIn career portals, and connect with employees directly on LinkedIn for referral requests.
+              Discover {TOP_50_COMPANIES.length}+ technology employers, search global &amp; Indian job portals with role-embedded filters, and request LinkedIn employee referrals.
             </p>
           </div>
 
@@ -140,8 +304,42 @@ export const JobsReferrals: React.FC = () => {
           </div>
         </div>
 
+        {/* DIRECT JOB PORTAL SEARCH ICONS (ROLE EMBEDDED) */}
+        {activeRoleKeyword && (
+          <div className="mt-5 pt-4 border-t border-zinc-800 space-y-2.5">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+              <span className="text-xs font-bold text-zinc-200 uppercase tracking-wider flex items-center gap-2 font-mono">
+                <ExternalLink className="w-4 h-4 text-white" />
+                Global &amp; India Job Portals (Role: <span className="text-yellow-400 font-mono">"{activeRoleKeyword}"</span>)
+              </span>
+              <span className="text-[10px] text-zinc-400 font-mono">
+                Hover over icons for portal name • Click to view live role search results
+              </span>
+            </div>
+
+            {/* 12 Small Official Logo Icons Bar (2 Symmetric Rows) */}
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              {JOB_PORTALS.map((portal) => {
+                const searchUrl = portal.getSearchUrl(activeRoleKeyword);
+                return (
+                  <a
+                    key={portal.name}
+                    href={searchUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={`Search "${activeRoleKeyword}" on ${portal.name}`}
+                    className="w-10 h-10 border border-zinc-700 bg-zinc-900 hover:bg-white text-zinc-200 hover:text-black flex items-center justify-center transition-all cursor-pointer shadow-sm hover:shadow-[3px_3px_0px_0px_#ffffff] shrink-0"
+                  >
+                    {portal.icon}
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {/* Category Pills & Active Keyword Badge */}
-        <div className="mt-6 pt-4 border-t border-zinc-800 flex flex-wrap items-center justify-between gap-3">
+        <div className="mt-5 pt-4 border-t border-zinc-800 flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-2 overflow-x-auto pb-1">
             <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider mr-1">Category:</span>
             {categories.map((cat) => (
@@ -182,102 +380,111 @@ export const JobsReferrals: React.FC = () => {
                 setCompanySearchQuery('');
                 setSelectedCategory('All');
               }}
-              className="px-4 py-2 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 font-bold uppercase border border-zinc-700 text-xs transition-colors"
+              className="px-4 py-2 bg-white text-black border border-white text-xs font-bold uppercase hover:bg-zinc-200 transition cursor-pointer"
             >
               Reset Filters
             </button>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredCompanies.map((comp, idx) => {
-              const careerSearchUrl = getCompanyCareerSearchUrl(comp, activeRoleKeyword);
-              const linkedInEmployeeUrl = getLinkedInSearchUrl(comp.name, activeRoleKeyword, 'referral');
-              const linkedInRecruiterUrl = getLinkedInSearchUrl(comp.name, activeRoleKeyword, 'recruiter');
-              const linkedInJobsUrl = comp.jobsSectionLink || (comp.companySlug ? `https://www.linkedin.com/company/${comp.companySlug}/jobs/` : careerSearchUrl);
-              const linkedInChannelUrl = comp.companyChannelLink || (comp.companySlug ? `https://www.linkedin.com/company/${comp.companySlug}/` : careerSearchUrl);
+            {filteredCompanies.map((comp) => {
+              const bookmarked = checkIsBookmarked(comp.name);
+              
+              // Dynamic URLs with embedded role keyword
+              const careersUrlWithKeyword = activeRoleKeyword
+                ? `${comp.careerUrl}${comp.careerUrl.includes('?') ? '&' : '?'}q=${encodeURIComponent(activeRoleKeyword)}`
+                : comp.careerUrl;
+
+              const linkedinCompanyJobsUrl = comp.jobsSectionLink || comp.companyChannelLink || `https://www.linkedin.com/company/${comp.name.toLowerCase().replace(/[^a-z0-9]/g, '')}/jobs/`;
+
+              const linkedinSearchUrlWithRole = activeRoleKeyword
+                ? `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(comp.name + " " + activeRoleKeyword)}`
+                : comp.indiaJobsSearchLink || comp.companyChannelLink || `https://www.linkedin.com/company/${comp.name.toLowerCase().replace(/[^a-z0-9]/g, '')}/`;
 
               return (
-                <div
-                  key={`${comp.name}-${idx}`}
-                  className="bg-zinc-950 border-2 border-zinc-800 hover:border-zinc-600 rounded-none p-6 transition-all duration-200 shadow-xl flex flex-col justify-between space-y-5"
+                <article
+                  key={comp.name}
+                  className="bg-zinc-950 border-2 border-zinc-800 hover:border-zinc-500 transition-all p-5 rounded-none text-left flex flex-col justify-between relative group hover:shadow-[6px_6px_0px_0px_#ffffff]"
                 >
-                  <div>
-                    {/* Top Header Category Badge */}
-                    <div className="flex items-center justify-between gap-2 mb-3 font-mono">
-                      <span className="text-xs px-2.5 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700 font-medium">
-                        {comp.category}
+                  {/* Top Bar with Category & Bookmark */}
+                  <div className="flex items-start justify-between gap-3 mb-4 border-b border-zinc-800 pb-3">
+                    <div>
+                      <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700">
+                        {comp.category || 'Technology'}
                       </span>
+                      <h3 className="text-xl font-black text-white tracking-tight mt-2 flex items-center gap-2">
+                        <span>{comp.name}</span>
+                      </h3>
                     </div>
 
-                    {/* Company Name */}
-                    <h3 className="text-xl font-bold text-white tracking-tight flex items-center gap-2 uppercase font-sans">
-                      <Building2 className="w-5 h-5 text-zinc-400 shrink-0" />
-                      {comp.name}
-                    </h3>
+                    <button
+                      onClick={() => handleBookmarkToggle(comp)}
+                      title={bookmarked ? "Remove Bookmark" : "Save Bookmark"}
+                      className={`p-2 border transition-all cursor-pointer ${
+                        bookmarked
+                          ? 'bg-white text-black border-white'
+                          : 'bg-zinc-900 text-zinc-300 border-zinc-700 hover:border-white hover:text-white'
+                      }`}
+                    >
+                      <Bookmark className={`w-4 h-4 ${bookmarked ? 'fill-current' : ''}`} />
+                    </button>
                   </div>
 
-                  {/* Actions */}
-                  <div className="space-y-2.5 pt-4 border-t border-zinc-800 font-mono text-xs">
-                    {/* LinkedIn Company Jobs Listing Tab */}
-                    <a
-                      href={linkedInJobsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full py-2.5 px-4 bg-zinc-900 hover:bg-zinc-800 text-zinc-100 border border-zinc-700 rounded-none flex items-center justify-between font-mono font-bold uppercase transition-all group"
-                      title={`Open official LinkedIn Jobs section for ${comp.name}`}
-                    >
-                      <span className="flex items-center gap-2 truncate">
-                        <Briefcase className="w-4 h-4 text-zinc-400 shrink-0" />
-                        <span className="truncate">Official LinkedIn Jobs Tab</span>
+                  {/* Company Info */}
+                  <div className="space-y-3 mb-6 font-sans text-xs">
+                    <div className="text-zinc-400 flex items-center justify-between border-b border-zinc-900 pb-1.5">
+                      <span className="font-mono text-[10px] uppercase text-zinc-500">Target Role</span>
+                      <span className="text-yellow-400 font-mono font-bold">
+                        {activeRoleKeyword ? `"${activeRoleKeyword}"` : 'All Roles'}
                       </span>
-                      <ArrowUpRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
-                    </a>
-
-                    {/* LinkedIn Referral Search */}
-                    <a
-                      href={linkedInEmployeeUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full py-2.5 px-4 bg-white hover:bg-zinc-200 text-black border border-white rounded-none flex items-center justify-between font-mono font-bold uppercase transition-all group"
-                      title={`Find current ${comp.name} employees on LinkedIn for referral`}
-                    >
-                      <span className="flex items-center gap-2 truncate">
-                        <Users className="w-4 h-4 text-black shrink-0" />
-                        <span className="truncate">⚡ Find Referrals on LinkedIn</span>
-                      </span>
-                      <ExternalLink className="w-4 h-4 text-black group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
-                    </a>
-
-                    {/* LinkedIn Recruiter Search */}
-                    <a
-                      href={linkedInRecruiterUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full py-2.5 px-4 bg-zinc-950 hover:bg-zinc-900 text-zinc-300 border border-zinc-800 rounded-none flex items-center justify-between font-mono font-medium transition-all group"
-                      title={`Find recruiters at ${comp.name} on LinkedIn`}
-                    >
-                      <span className="flex items-center gap-2 truncate">
-                        <UserCheck className="w-4 h-4 text-zinc-500 shrink-0" />
-                        <span className="truncate">👔 Find Recruiters on LinkedIn</span>
-                      </span>
-                      <ExternalLink className="w-4 h-4 text-zinc-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
-                    </a>
-
-                    {/* LinkedIn Channel Page Link */}
-                    {comp.companyChannelLink && (
-                      <a
-                        href={linkedInChannelUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full py-1.5 px-4 text-zinc-400 hover:text-white flex items-center justify-between text-[11px] transition-colors"
-                        title={`Open ${comp.name} main company page on LinkedIn`}
-                      >
-                        <span className="truncate">Official Company Channel</span>
-                        <ExternalLink className="w-3 h-3 shrink-0" />
-                      </a>
-                    )}
+                    </div>
                   </div>
-                </div>
+
+                  {/* Action Links */}
+                  <div className="space-y-2 border-t border-zinc-800 pt-4 font-mono text-xs">
+                    {/* Official Careers Portal Link */}
+                    <a
+                      href={careersUrlWithKeyword}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full py-2 px-3 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white font-bold flex items-center justify-between uppercase transition-all cursor-pointer"
+                    >
+                      <span className="flex items-center gap-2">
+                        <Building2 className="w-4 h-4 text-zinc-400 group-hover:text-black" />
+                        <span>Official Careers Portal</span>
+                      </span>
+                      <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                    </a>
+
+                    {/* LinkedIn Company Jobs Link */}
+                    <a
+                      href={linkedinCompanyJobsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full py-2 px-3 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white font-bold flex items-center justify-between uppercase transition-all cursor-pointer"
+                    >
+                      <span className="flex items-center gap-2">
+                        <Briefcase className="w-4 h-4 text-zinc-400 group-hover:text-black" />
+                        <span>LinkedIn Company Jobs</span>
+                      </span>
+                      <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                    </a>
+
+                    {/* LinkedIn Referral Search Link */}
+                    <a
+                      href={linkedinSearchUrlWithRole}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full py-2 px-3 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white font-bold flex items-center justify-between uppercase transition-all cursor-pointer"
+                    >
+                      <span className="flex items-center gap-2">
+                        <Users className="w-4 h-4 text-zinc-400 group-hover:text-black" />
+                        <span>Find Employees for Referral</span>
+                      </span>
+                      <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                    </a>
+                  </div>
+                </article>
               );
             })}
           </div>
