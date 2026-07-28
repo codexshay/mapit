@@ -29,11 +29,113 @@ export interface Hackathon {
   replayUrl?: string;
   replayTitle?: string;
   isNewAddition?: boolean;
-  category?: 'Hackathon' | 'Event' | 'Bootcamp' | 'Challenge' | 'Webinar' | 'CFP' | 'Training';
+  category?: 'Hackathon' | 'Event' | 'Bootcamp' | 'Challenge' | 'Webinar' | 'CFP' | 'Training' | 'Quiz' | 'College Fest' | 'Scholarship' | 'Workshop' | 'Conference' | 'Hiring Challenge';
   scheduleStatus?: 'Active' | 'Upcoming' | 'Closed';
 }
 
 export const GLOBAL_HACKATHONS: Hackathon[] = [
+  {
+    id: 'unstop-tata-imagination-2026',
+    title: 'Tata Imagination Challenge 2026',
+    organizer: 'Tata Group & Unstop',
+    region: 'India',
+    prizes: '₹25 Lakhs Prize Pool + TAS Executive Trainee Direct Fast-Track',
+    themes: ['Business Quiz', 'Case Competition', 'Innovation'],
+    difficulty: 'All Levels',
+    daysLeft: 18,
+    url: 'https://unstop.com/competitions/tata-imagination-challenge-tata-sons-1204859',
+    type: 'Online',
+    location: 'Online via Unstop Platform',
+    description: 'National case study, innovation, and aptitude quiz competition organized by Tata Sons on Unstop for college students across India.',
+    targetAudience: 'Undergraduate & Postgraduate Students in India',
+    careerBenefit: 'Direct fast-track interview opportunity for the prestigious Tata Administrative Services (TAS) program.',
+    category: 'Quiz'
+  },
+  {
+    id: 'unstop-flipkart-grid-6',
+    title: 'Flipkart GRID 6.0 Software & Robotics Challenge',
+    organizer: 'Flipkart & Unstop',
+    region: 'India',
+    prizes: '₹16 Lakhs Cash Pool + SDE-1 Direct Hiring Offers',
+    themes: ['Software Engineering', 'Robotics', 'Supply Chain Tech'],
+    difficulty: 'Intermediate',
+    daysLeft: 9,
+    url: 'https://unstop.com/hackathons/flipkart-grid-60-software-development-track-flipkart-984210',
+    type: 'Online',
+    location: 'Online via Unstop Portal',
+    description: 'Flipkart’s flagship engineering hackathon on Unstop inviting students to build scalable systems, AI algorithms, and logistics robotics.',
+    targetAudience: 'B.Tech / B.E. / M.Tech Students across India',
+    careerBenefit: 'Direct SDE-1 and SDE Intern hiring interviews at Flipkart.',
+    category: 'Hackathon'
+  },
+  {
+    id: 'unstop-iit-bombay-techfest',
+    title: 'IIT Bombay Techfest 2026 (Asia\'s Largest Sci-Tech Fest)',
+    organizer: 'IIT Bombay & Unstop',
+    region: 'India',
+    prizes: '₹45 Lakhs Total Prize Pool + Certificates',
+    themes: ['Robotics', 'Coding Sprint', 'AI Competition', 'Cultural Tech'],
+    difficulty: 'All Levels',
+    daysLeft: 25,
+    url: 'https://unstop.com/college-fests/techfest-iit-bombay-110294',
+    type: 'Hybrid',
+    location: 'IIT Bombay Campus, Powai, Mumbai',
+    description: 'Asia’s premier annual science and technology college festival featuring high-stakes robotics wars, hackathons, international keynotes, and tech exhibitions.',
+    targetAudience: 'Engineering, Science & Management Students Nationwide',
+    careerBenefit: 'Prizes, internships, networking with industry stalwarts and international tech leaders.',
+    category: 'College Fest'
+  },
+  {
+    id: 'unstop-google-generation-scholarship',
+    title: 'Generation Google Scholarship APAC (India Track)',
+    organizer: 'Google & Unstop',
+    region: 'India',
+    prizes: '$2,500 USD (~₹2,10,000) Educational Grant',
+    themes: ['Diversity in Tech', 'Computer Science', 'Women in STEM'],
+    difficulty: 'All Levels',
+    daysLeft: 14,
+    url: 'https://unstop.com/scholarships/generation-google-scholarship-asia-pacific',
+    type: 'Online',
+    location: 'Online Application & Essay Submission',
+    description: 'Scholarship program to inspire and help female students pursuing computer science degrees to excel in technology and become leaders in the field.',
+    targetAudience: 'Female Computer Science Students in Indian Universities',
+    careerBenefit: 'Direct financial assistance, Google community access, and mentorship opportunities.',
+    category: 'Scholarship'
+  },
+  {
+    id: 'unstop-amazon-wow-2026',
+    title: 'Amazon WOW (Women in Tech) Hiring Challenge 2026',
+    organizer: 'Amazon India',
+    region: 'India',
+    prizes: 'Amazon SDE Full-Time & Internship Roles',
+    themes: ['DSA', 'System Design', 'Coding Quiz'],
+    difficulty: 'Intermediate',
+    daysLeft: 7,
+    url: 'https://unstop.com/competitions/amazon-wow-india',
+    type: 'Online',
+    location: 'Online Assessment Platform',
+    description: 'A networking and skill-building platform for women engineering students across India, offering coding tests and interviews for SDE roles.',
+    targetAudience: 'Women Engineering Students in 2nd, 3rd, and 4th Years',
+    careerBenefit: 'Direct recruitment into Amazon Software Development Engineer (SDE) positions.',
+    category: 'Hiring Challenge'
+  },
+  {
+    id: 'unstop-microsoft-ai-workshop',
+    title: 'Microsoft AI & Cloud Masterclass Workshop Series',
+    organizer: 'Microsoft Reactor India',
+    region: 'India',
+    prizes: 'Free Azure Certification Vouchers & Digital Credentials',
+    themes: ['Generative AI', 'Azure Cloud', 'OpenAI API'],
+    difficulty: 'Beginner',
+    daysLeft: 5,
+    url: 'https://unstop.com/workshops/microsoft-ai-developer-workshop',
+    type: 'Online',
+    location: 'Virtual Masterclass Broadcast',
+    description: 'Hands-on technical workshop hosted by Microsoft engineers covering Azure OpenAI services, prompt engineering, and RAG pipeline deployment.',
+    targetAudience: 'Developers, Students & Tech Enthusiasts in India',
+    careerBenefit: 'Industry-recognized Microsoft Certification badge and hands-on portfolio project.',
+    category: 'Workshop'
+  },
   {
     id: 'google-solution-2026',
     title: 'Google Developer Solution Challenge 2026',
@@ -867,12 +969,18 @@ export default function Hackathons({
     const title = item.title.toLowerCase();
     const desc = item.description.toLowerCase();
     const org = item.organizer.toLowerCase();
+    if (title.includes('quiz') || desc.includes('quiz')) return 'Quiz';
+    if (title.includes('fest') || desc.includes('fest') || title.includes('cultural')) return 'College Fest';
+    if (title.includes('scholarship') || desc.includes('scholarship') || title.includes('grant')) return 'Scholarship';
+    if (title.includes('workshop') || desc.includes('workshop')) return 'Workshop';
+    if (title.includes('conference') || desc.includes('conference') || title.includes('summit')) return 'Conference';
+    if (title.includes('hiring') || desc.includes('hiring challenge') || title.includes('placement')) return 'Hiring Challenge';
     if (title.includes('hackathon') || desc.includes('hackathon')) return 'Hackathon';
     if (title.includes('bootcamp') || desc.includes('bootcamp') || org.includes('upgrad') || org.includes('scaler') || title.includes('academy')) return 'Bootcamp';
-    if (title.includes('challenge') || desc.includes('challenge')) return 'Challenge';
+    if (title.includes('challenge') || desc.includes('challenge') || title.includes('competition')) return 'Challenge';
     if (title.includes('webinar') || desc.includes('webinar')) return 'Webinar';
     if (title.includes('cfp') || desc.includes('cfp') || title.includes('speaker') || org.includes('sessionize')) return 'CFP';
-    if (title.includes('training') || desc.includes('training') || title.includes('masterclass') || title.includes('course')) return 'Training';
+    if (title.includes('training') || desc.includes('training') || title.includes('course')) return 'Training';
     return 'Event';
   };
 
@@ -888,16 +996,26 @@ export default function Hackathons({
     switch (category) {
       case 'Hackathon':
         return 'border-amber-500 bg-amber-500/10 text-amber-500';
-      case 'Bootcamp':
+      case 'Quiz':
+        return 'border-emerald-500 bg-emerald-500/10 text-emerald-400';
+      case 'College Fest':
         return 'border-purple-500 bg-purple-500/10 text-purple-400';
-      case 'Event':
-        return 'border-sky-500 bg-sky-500/10 text-sky-450';
+      case 'Scholarship':
+        return 'border-yellow-400 bg-yellow-400/10 text-yellow-300';
+      case 'Workshop':
+        return 'border-cyan-500 bg-cyan-500/10 text-cyan-400';
+      case 'Conference':
+        return 'border-indigo-500 bg-indigo-500/10 text-indigo-400';
+      case 'Hiring Challenge':
+        return 'border-rose-500 bg-rose-500/10 text-rose-450';
+      case 'Bootcamp':
+        return 'border-blue-500 bg-blue-500/10 text-blue-400';
       case 'Challenge':
         return 'border-orange-500 bg-orange-500/10 text-orange-450';
       case 'Webinar':
         return 'border-pink-500 bg-pink-500/10 text-pink-400';
       case 'CFP':
-        return 'border-rose-500 bg-rose-500/10 text-rose-450';
+        return 'border-red-500 bg-red-500/10 text-red-400';
       case 'Training':
         return 'border-teal-500 bg-teal-500/10 text-teal-400';
       default:
@@ -1300,18 +1418,20 @@ export default function Hackathons({
         </button>
       </div>
 
-      {/* PROMINENT MULTI-CATEGORY STREAM TABS BAR */}
+      {/* PROMINENT UNSTOP INDIA & GLOBAL CATEGORY STREAM TABS */}
       <div className="flex flex-wrap items-center gap-2 font-mono">
-        <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider mr-1">Category Stream:</span>
+        <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider mr-1">Unstop &amp; Live Stream Track:</span>
         {[
           { id: 'All', label: 'All Streams', icon: '🌐' },
           { id: 'Hackathon', label: 'Hackathons', icon: '🏆' },
-          { id: 'Event', label: 'Events & Summits', icon: '🎪' },
-          { id: 'Bootcamp', label: 'Bootcamps', icon: '🚀' },
-          { id: 'Challenge', label: 'Challenges', icon: '⚔️' },
-          { id: 'Webinar', label: 'Webinars', icon: '📡' },
+          { id: 'Quiz', label: 'Competitions & Quizzes', icon: '⚔️' },
+          { id: 'College Fest', label: 'College Fests & Cultural', icon: '🚀' },
+          { id: 'Scholarship', label: 'Scholarships & Grants', icon: '🎓' },
+          { id: 'Workshop', label: 'Workshops & Masterclasses', icon: '🛠️' },
+          { id: 'Conference', label: 'Conferences & Summits', icon: '🎙️' },
+          { id: 'Hiring Challenge', label: 'Hiring Challenges', icon: '💼' },
+          { id: 'Bootcamp', label: 'Bootcamps', icon: '⚡' },
           { id: 'CFP', label: 'CFP Trackers', icon: '📝' },
-          { id: 'Training', label: 'Trainings', icon: '🎓' },
         ].map(cat => (
           <button
             key={cat.id}
@@ -1366,24 +1486,6 @@ export default function Hackathons({
               {ALL_DOMAINS.map(domain => (
                 <option key={domain} value={domain}>{domain === 'All' ? 'All Domains' : domain}</option>
               ))}
-            </select>
-          </div>
-
-          {/* Category selector */}
-          <div className={`flex items-center gap-1 border px-2 py-1 ${isLight ? 'bg-gray-50 border-gray-200 text-slate-800' : 'bg-[#050912] border-[#121c38]'}`}>
-            <span className="text-gray-500 text-[10px] uppercase font-bold">CATEGORY:</span>
-            <select 
-              value={categoryFilter} 
-              onChange={(e) => setCategoryFilter(e.target.value)}
-              className={`bg-transparent font-bold text-xs uppercase outline-none cursor-pointer pr-1 ${isLight ? 'text-slate-900 *:bg-white *:text-slate-800' : 'text-white *:bg-[#050912] *:text-white'}`}
-            >
-              <option value="All">All Categories</option>
-              <option value="Hackathon">Hackathons</option>
-              <option value="Event">Events</option>
-              <option value="Bootcamp">Bootcamps</option>
-              <option value="Challenge">Challenges</option>
-              <option value="CFP">CFP Trackers</option>
-              <option value="Training">Trainings</option>
             </select>
           </div>
 
