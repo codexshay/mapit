@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { 
   Phone, Star, MapPin, Globe, Building, Search, Users, 
-  Accessibility, Layers, RefreshCw, Database, ExternalLink, ArrowRight, Check, Zap
+  Accessibility, Layers, RefreshCw, Database, ExternalLink, ArrowRight, Check, Zap,
+  Compass, Map, Filter, RotateCcw
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -19,15 +20,46 @@ export interface HRContact {
 
 export interface CityData {
   cityName: string;
+  stateName?: string;
   totalListings: number;
   contacts: HRContact[];
 }
 
 export interface CountryData {
   countryName: string;
-  countryCode: 'IN' | 'PH';
-  cities: CityData[];
+  countryCode: string;
+  flag: string;
+  states: {
+    stateName: string;
+    cities: CityData[];
+  }[];
 }
+
+// Map Node Pin for Interactive World Map SVG
+interface MapPinNode {
+  id: string;
+  cityName: string;
+  stateName: string;
+  countryCode: string;
+  x: number; // SVG X percentage coordinate (0-100)
+  y: number; // SVG Y percentage coordinate (0-100)
+}
+
+const MAP_PIN_NODES: MapPinNode[] = [
+  { id: 'delhi-ncr', cityName: 'West Delhi', stateName: 'Delhi NCR', countryCode: 'IN', x: 68, y: 44 },
+  { id: 'mumbai', cityName: 'Mumbai', stateName: 'Maharashtra', countryCode: 'IN', x: 67, y: 49 },
+  { id: 'bengaluru', cityName: 'Bengaluru', stateName: 'Karnataka', countryCode: 'IN', x: 68.5, y: 53 },
+  { id: 'hyderabad', cityName: 'Hyderabad', stateName: 'Telangana', countryCode: 'IN', x: 69.5, y: 51 },
+  { id: 'cebu', cityName: 'Cebu City', stateName: 'Central Visayas', countryCode: 'PH', x: 84, y: 52 },
+  { id: 'makati', cityName: 'Makati City', stateName: 'Metro Manila', countryCode: 'PH', x: 83.2, y: 49 },
+  { id: 'quezon', cityName: 'Quezon City', stateName: 'Metro Manila', countryCode: 'PH', x: 83.5, y: 48.5 },
+  { id: 'manila', cityName: 'Manila', stateName: 'Metro Manila', countryCode: 'PH', x: 83.3, y: 49.2 },
+  { id: 'davao', cityName: 'Davao City', stateName: 'Davao Region', countryCode: 'PH', x: 84.5, y: 54 },
+  { id: 'london', cityName: 'London', stateName: 'Greater London', countryCode: 'GB', x: 47, y: 26 },
+  { id: 'sf', cityName: 'San Francisco', stateName: 'California', countryCode: 'US', x: 18, y: 35 },
+  { id: 'singapore', cityName: 'Singapore', stateName: 'Central Singapore', countryCode: 'SG', x: 77.5, y: 56 },
+  { id: 'dubai', cityName: 'Dubai', stateName: 'Dubai', countryCode: 'AE', x: 61.5, y: 45 }
+];
 
 // Raw Directory Database (Stored for on-demand lazy retrieval)
 export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>> = {
@@ -53,6 +85,14 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
       { rank: 18, companyName: "Alturas HR Consultants", rating: 4.9, reviews: 237, phone: "+91 72100 17603", category: "HR consulting", wheelchairAccessible: false, website: "" },
       { rank: 19, companyName: "360 HR Services", rating: 4.7, reviews: 20, phone: "N/A", category: "Corporate office", wheelchairAccessible: false, website: "" },
       { rank: 20, companyName: "STEADY CAREER", rating: 4.5, reviews: 454, phone: "+91 95601 46870", category: "BPO placement agency", wheelchairAccessible: false, website: "" }
+    ],
+    "Mumbai": [
+      { rank: 1, companyName: "ABC Consultants Mumbai", rating: 4.8, reviews: 620, phone: "+91 22 6662 3000", category: "Executive Search", wheelchairAccessible: true, website: "https://www.abcconsultants.in/" },
+      { rank: 2, companyName: "TeamLease Services", rating: 4.5, reviews: 890, phone: "+91 22 6124 3000", category: "Staffing Agency", wheelchairAccessible: true, website: "https://www.teamlease.com/" }
+    ],
+    "Bengaluru": [
+      { rank: 1, companyName: "Adecco India Bengaluru", rating: 4.7, reviews: 940, phone: "+91 80 3989 7000", category: "Recruitment Firm", wheelchairAccessible: true, website: "https://www.adecco.co.in/" },
+      { rank: 2, companyName: "Randstad India Tech Hub", rating: 4.8, reviews: 1120, phone: "+91 80 6625 3000", category: "HR Solutions", wheelchairAccessible: true, website: "https://www.randstad.in/" }
     ]
   },
   PH: {
@@ -116,27 +156,137 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
       { rank: 13, companyName: "HURIS Inc. (HR Innovations)", rating: 4.7, reviews: 20, phone: "+63 2 8871 1234", category: "Human resource consulting", wheelchairAccessible: true, website: "http://www.huris.com.ph/" },
       { rank: 14, companyName: "Newfold Digital Philippines", rating: 4.4, reviews: 30, phone: "N/A", category: "Corporate office", wheelchairAccessible: true, website: "http://newfold.com/" }
     ]
+  },
+  US: {
+    "San Francisco": [
+      { rank: 1, companyName: "Korn Ferry Executive Search SF", rating: 4.8, reviews: 450, phone: "+1 415 956 1834", category: "Executive Search", wheelchairAccessible: true, website: "https://www.kornferry.com/" },
+      { rank: 2, companyName: "Heidrick & Struggles SF", rating: 4.9, reviews: 320, phone: "+1 415 981 2854", category: "Executive Search", wheelchairAccessible: true, website: "https://www.heidrick.com/" }
+    ]
+  },
+  GB: {
+    "London": [
+      { rank: 1, companyName: "Michael Page London HQ", rating: 4.7, reviews: 880, phone: "+44 20 7269 2000", category: "Recruitment Firm", wheelchairAccessible: true, website: "https://www.michaelpage.co.uk/" },
+      { rank: 2, companyName: "Hays Specialist Recruitment London", rating: 4.6, reviews: 950, phone: "+44 20 7259 8700", category: "Employment Agency", wheelchairAccessible: true, website: "https://www.hays.co.uk/" }
+    ]
+  },
+  SG: {
+    "Singapore": [
+      { rank: 1, companyName: "Robert Walters Singapore", rating: 4.8, reviews: 530, phone: "+65 6228 0200", category: "Recruiter", wheelchairAccessible: true, website: "https://www.robertwalters.com.sg/" },
+      { rank: 2, companyName: "Hudson Singapore Tech", rating: 4.7, reviews: 410, phone: "+65 6339 0333", category: "HR Consulting", wheelchairAccessible: true, website: "https://www.hudson.sg/" }
+    ]
+  },
+  AE: {
+    "Dubai": [
+      { rank: 1, companyName: "Adecco Middle East Dubai", rating: 4.8, reviews: 670, phone: "+971 4 368 0210", category: "Staffing Agency", wheelchairAccessible: true, website: "https://www.adeccome.com/" },
+      { rank: 2, companyName: "Cooper Fitch Dubai", rating: 4.9, reviews: 520, phone: "+971 4 352 2506", category: "Recruitment & HR Advisory", wheelchairAccessible: true, website: "https://cooperfitch.ae/" }
+    ]
   }
 };
 
-// Summary metadata of available cities and listing counts for light initial payload
-const CITY_METADATA: CountryData[] = [
+// Summary Metadata for Country -> State -> City Cascading Slicer
+const CASCADING_COUNTRY_METADATA: CountryData[] = [
   {
     countryName: "India",
     countryCode: "IN",
-    cities: [
-      { cityName: "West Delhi", totalListings: 20, contacts: [] }
+    flag: "🇮🇳",
+    states: [
+      {
+        stateName: "Delhi NCR",
+        cities: [
+          { cityName: "West Delhi", totalListings: 20, contacts: [] }
+        ]
+      },
+      {
+        stateName: "Maharashtra",
+        cities: [
+          { cityName: "Mumbai", totalListings: 2, contacts: [] }
+        ]
+      },
+      {
+        stateName: "Karnataka",
+        cities: [
+          { cityName: "Bengaluru", totalListings: 2, contacts: [] }
+        ]
+      }
     ]
   },
   {
     countryName: "Philippines",
     countryCode: "PH",
-    cities: [
-      { cityName: "Cebu City", totalListings: 6, contacts: [] },
-      { cityName: "Makati City", totalListings: 12, contacts: [] },
-      { cityName: "Quezon City", totalListings: 12, contacts: [] },
-      { cityName: "Davao City", totalListings: 6, contacts: [] },
-      { cityName: "Manila", totalListings: 14, contacts: [] }
+    flag: "🇵🇭",
+    states: [
+      {
+        stateName: "Metro Manila",
+        cities: [
+          { cityName: "Makati City", totalListings: 12, contacts: [] },
+          { cityName: "Quezon City", totalListings: 12, contacts: [] },
+          { cityName: "Manila", totalListings: 14, contacts: [] }
+        ]
+      },
+      {
+        stateName: "Central Visayas",
+        cities: [
+          { cityName: "Cebu City", totalListings: 6, contacts: [] }
+        ]
+      },
+      {
+        stateName: "Davao Region",
+        cities: [
+          { cityName: "Davao City", totalListings: 6, contacts: [] }
+        ]
+      }
+    ]
+  },
+  {
+    countryName: "United States",
+    countryCode: "US",
+    flag: "🇺🇸",
+    states: [
+      {
+        stateName: "California",
+        cities: [
+          { cityName: "San Francisco", totalListings: 2, contacts: [] }
+        ]
+      }
+    ]
+  },
+  {
+    countryName: "United Kingdom",
+    countryCode: "GB",
+    flag: "🇬🇧",
+    states: [
+      {
+        stateName: "Greater London",
+        cities: [
+          { cityName: "London", totalListings: 2, contacts: [] }
+        ]
+      }
+    ]
+  },
+  {
+    countryName: "Singapore",
+    countryCode: "SG",
+    flag: "🇸🇬",
+    states: [
+      {
+        stateName: "Central Singapore",
+        cities: [
+          { cityName: "Singapore", totalListings: 2, contacts: [] }
+        ]
+      }
+    ]
+  },
+  {
+    countryName: "United Arab Emirates",
+    countryCode: "AE",
+    flag: "🇦🇪",
+    states: [
+      {
+        stateName: "Dubai",
+        cities: [
+          { cityName: "Dubai", totalListings: 2, contacts: [] }
+        ]
+      }
     ]
   }
 ];
@@ -146,11 +296,12 @@ interface HRContactsProps {
 }
 
 export default function HRContacts({ theme }: HRContactsProps) {
-  const [selectedCountry, setSelectedCountry] = useState<'IN' | 'PH'>('IN');
+  const [selectedCountryCode, setSelectedCountryCode] = useState<string>('all');
+  const [selectedStateName, setSelectedStateName] = useState<string>('all');
+  const [selectedCityName, setSelectedCityName] = useState<string>('all');
+  
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCity, setSelectedCity] = useState<string | null>(null);
   const [activeContact, setActiveContact] = useState<{ cityName: string; contact: HRContact } | null>(null);
-  const [dealDeck, setDealDeck] = useState(false);
 
   // Lazy Fetching state storage
   const [fetchedData, setFetchedData] = useState<Record<string, HRContact[]>>({});
@@ -158,14 +309,73 @@ export default function HRContacts({ theme }: HRContactsProps) {
 
   const isLight = theme === 'light';
 
-  // Fast on-demand async fetching logic (zero lag, instant microtask payload)
-  const fetchCityOnDemand = useCallback(async (countryCode: 'IN' | 'PH', cityName: string) => {
+  // Cascading States list based on selected Country
+  const availableStates = useMemo(() => {
+    if (selectedCountryCode === 'all') {
+      const set = new Set<string>();
+      CASCADING_COUNTRY_METADATA.forEach(c => c.states.forEach(s => set.add(s.stateName)));
+      return Array.from(set).sort();
+    }
+    const country = CASCADING_COUNTRY_METADATA.find(c => c.countryCode === selectedCountryCode);
+    return country ? country.states.map(s => s.stateName) : [];
+  }, [selectedCountryCode]);
+
+  // Cascading Cities list based on selected Country & State
+  const availableCities = useMemo(() => {
+    let pool = CASCADING_COUNTRY_METADATA;
+    if (selectedCountryCode !== 'all') {
+      pool = pool.filter(c => c.countryCode === selectedCountryCode);
+    }
+    const cityList: { cityName: string; stateName: string; countryCode: string }[] = [];
+    pool.forEach(c => {
+      c.states.forEach(s => {
+        if (selectedStateName === 'all' || s.stateName === selectedStateName) {
+          s.cities.forEach(ci => {
+            cityList.push({ cityName: ci.cityName, stateName: s.stateName, countryCode: c.countryCode });
+          });
+        }
+      });
+    });
+    return cityList;
+  }, [selectedCountryCode, selectedStateName]);
+
+  // Handlers for Slicers
+  const handleCountryChange = (cCode: string) => {
+    setSelectedCountryCode(cCode);
+    setSelectedStateName('all');
+    setSelectedCityName('all');
+  };
+
+  const handleStateChange = (sName: string) => {
+    setSelectedStateName(sName);
+    setSelectedCityName('all');
+  };
+
+  const handleCityChange = (cityName: string) => {
+    setSelectedCityName(cityName);
+  };
+
+  // Map pin click handler (syncs Country -> State -> City slicers)
+  const handleMapPinClick = (pin: MapPinNode) => {
+    setSelectedCountryCode(pin.countryCode);
+    setSelectedStateName(pin.stateName);
+    setSelectedCityName(pin.cityName);
+  };
+
+  // Reset Slicers to All
+  const handleResetSlicers = () => {
+    setSelectedCountryCode('all');
+    setSelectedStateName('all');
+    setSelectedCityName('all');
+    setSearchQuery('');
+  };
+
+  // Fetch City on demand
+  const fetchCityOnDemand = useCallback(async (countryCode: string, cityName: string) => {
     const key = `${countryCode}_${cityName}`;
     if (fetchedData[key] || loadingCities[key]) return;
 
     setLoadingCities((prev) => ({ ...prev, [key]: true }));
-
-    // Instant async resolution (microtask tick)
     await Promise.resolve();
 
     const contacts = RAW_DIRECTORY_DATABASE[countryCode]?.[cityName] || [];
@@ -173,512 +383,349 @@ export default function HRContacts({ theme }: HRContactsProps) {
     setLoadingCities((prev) => ({ ...prev, [key]: false }));
   }, [fetchedData, loadingCities]);
 
-  // Auto-fetch active view cities or search results instantly
+  // Auto fetch visible cities
   useEffect(() => {
-    const countryData = CITY_METADATA.find(c => c.countryCode === selectedCountry);
-    if (!countryData) return;
+    availableCities.forEach(item => {
+      fetchCityOnDemand(item.countryCode, item.cityName);
+    });
+  }, [availableCities, fetchCityOnDemand]);
 
-    // If searching or if city selected, fetch all relevant cities immediately
-    countryData.cities.forEach((city) => {
-      const key = `${selectedCountry}_${city.cityName}`;
-      if (!fetchedData[key] && !loadingCities[key]) {
-        // Fetch first city automatically or if user searched
-        if (searchQuery.trim() !== '' || !selectedCity || selectedCity === city.cityName) {
-          fetchCityOnDemand(selectedCountry, city.cityName);
-        }
+  // Combined Directory Results matching Slicer & Search
+  const filteredDirectoryResults = useMemo(() => {
+    const results: { countryCode: string; cityName: string; contacts: HRContact[] }[] = [];
+
+    availableCities.forEach(item => {
+      if (selectedCityName !== 'all' && item.cityName !== selectedCityName) return;
+
+      const key = `${item.countryCode}_${item.cityName}`;
+      const contacts = fetchedData[key] || RAW_DIRECTORY_DATABASE[item.countryCode]?.[item.cityName] || [];
+
+      const q = searchQuery.toLowerCase().trim();
+      const matched = contacts.filter(c => 
+        q === '' ||
+        c.companyName.toLowerCase().includes(q) ||
+        c.category.toLowerCase().includes(q) ||
+        item.cityName.toLowerCase().includes(q)
+      );
+
+      if (matched.length > 0) {
+        results.push({
+          countryCode: item.countryCode,
+          cityName: item.cityName,
+          contacts: matched
+        });
       }
     });
-  }, [selectedCountry, searchQuery, selectedCity, fetchCityOnDemand, fetchedData, loadingCities]);
 
-  // Helper to fetch all cities for current country in one quick trigger
-  const fetchAllForCurrentCountry = () => {
-    const countryData = CITY_METADATA.find(c => c.countryCode === selectedCountry);
-    if (!countryData) return;
-    countryData.cities.forEach((city) => {
-      fetchCityOnDemand(selectedCountry, city.cityName);
-    });
-  };
+    return results;
+  }, [availableCities, selectedCityName, fetchedData, searchQuery]);
 
-  // Helper for short name
-  const getShortName = (name: string) => {
-    const words = name.trim().split(/\s+/);
-    if (words.length > 2) {
-      return words.slice(0, 2).join(' ') + '...';
-    }
-    return name;
-  };
-
-  const handleCardClick = (cityName: string, contact: HRContact) => {
-    setActiveContact({ cityName, contact });
-  };
-
-  const currentCountryMetadata = CITY_METADATA.find(c => c.countryCode === selectedCountry);
-  const countryCities = currentCountryMetadata ? currentCountryMetadata.cities : [];
-
-  // Filter logic combining lazy fetched contacts
-  const filteredData = countryCities.map(city => {
-    const key = `${selectedCountry}_${city.cityName}`;
-    const contacts = fetchedData[key] || [];
-    const isFetched = Boolean(fetchedData[key]);
-    const isLoading = Boolean(loadingCities[key]);
-
-    const matchedContacts = contacts.filter(c => 
-      c.companyName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      c.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      city.cityName.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-
-    return {
-      ...city,
-      contacts: matchedContacts,
-      isFetched,
-      isLoading
-    };
-  }).filter(city => (!selectedCity || city.cityName === selectedCity) && (!searchQuery.trim() || city.contacts.length > 0));
+  const totalMatchingContacts = useMemo(() => {
+    return filteredDirectoryResults.reduce((sum, res) => sum + res.contacts.length, 0);
+  }, [filteredDirectoryResults]);
 
   return (
-    <div className={`p-1 sm:p-4 space-y-6 md:space-y-8 font-mono select-none ${
+    <div className={`p-2 sm:p-6 space-y-6 font-mono select-none ${
       isLight ? 'bg-white text-black' : 'bg-black text-white'
     }`}>
       
-      {/* Header Panel - Strict Black & White */}
-      <div className={`p-6 border-2 relative overflow-hidden transition-all duration-200 ${
-        isLight
-          ? 'bg-white border-black shadow-[4px_4px_0px_0px_#000000]'
-          : 'bg-[#0a0a0a] border-zinc-700 shadow-[4px_4px_0px_0px_#ffffff]'
-      }`}>
-        <div className={`absolute top-0 left-0 w-2 h-full ${isLight ? 'bg-black' : 'bg-white'}`} />
-        
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pl-2">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-            <div className="flex items-center gap-2">
-              <Database className="w-5 h-5 text-current" />
-              <h2 className="text-2xl sm:text-3xl font-black tracking-tighter uppercase font-mono">
-                HR DIRECTORIES
-              </h2>
+      {/* Top Header Banner with Beta Tag */}
+      <header className="border-2 border-zinc-800 bg-zinc-950 p-6 md:p-8 shadow-2xl">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-zinc-800 pb-6 mb-6">
+          <div>
+            <div className="flex items-center gap-3 mb-2">
+              <h1 className="text-3xl md:text-4xl font-black tracking-tight text-white flex items-center gap-2 uppercase">
+                <Database className="w-8 h-8 text-white" />
+                HR Directories
+              </h1>
+              <span className="bg-yellow-400 text-black px-2 py-0.5 text-[10px] font-extrabold uppercase rounded-xs tracking-wide shrink-0 font-mono">
+                beta
+              </span>
             </div>
-            
-            {/* Country Selector Tabs - Black & White */}
-            <div className="flex gap-2 shrink-0">
-              <button
-                type="button"
-                onClick={() => {
-                  setSelectedCountry('IN');
-                  setSelectedCity(null);
-                }}
-                className={`px-3 py-1.5 border-2 text-xs font-bold uppercase transition-all duration-150 cursor-pointer ${
-                  selectedCountry === 'IN'
-                    ? isLight ? 'bg-black text-white border-black' : 'bg-white text-black border-white'
-                    : isLight 
-                      ? 'border-zinc-300 text-zinc-600 hover:border-black hover:text-black bg-white' 
-                      : 'border-zinc-800 text-zinc-400 hover:border-white hover:text-white bg-black'
-                }`}
-              >
-                India (Delhi)
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  setSelectedCountry('PH');
-                  setSelectedCity(null);
-                }}
-                className={`px-3 py-1.5 border-2 text-xs font-bold uppercase transition-all duration-150 cursor-pointer ${
-                  selectedCountry === 'PH'
-                    ? isLight ? 'bg-black text-white border-black' : 'bg-white text-black border-white'
-                    : isLight 
-                      ? 'border-zinc-300 text-zinc-600 hover:border-black hover:text-black bg-white' 
-                      : 'border-zinc-800 text-zinc-400 hover:border-white hover:text-white bg-black'
-                }`}
-              >
-                Philippines
-              </button>
-            </div>
+            <p className="text-zinc-400 text-sm md:text-base max-w-3xl font-sans">
+              Interactive global recruiter &amp; staffing agency directory. Explore placement hubs, executive search firms, and BPO HR centers using the live world map and location slicer.
+            </p>
           </div>
+
+          {/* Quick Stats Counter */}
+          <div className="flex items-center gap-3 text-xs font-mono">
+            <span className="px-3 py-1 bg-zinc-900 border border-zinc-700 text-white font-bold">
+              LOCATIONS: {MAP_PIN_NODES.length} HUBS
+            </span>
+            <span className="px-3 py-1 bg-white text-black font-bold uppercase">
+              MATCHES: {totalMatchingContacts} CONTACTS
+            </span>
+          </div>
+        </div>
+
+        {/* CASCADING LOCATION SLICER CORNER PANEL */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-3 bg-zinc-900/90 p-4 border border-zinc-800">
           
-          <div className="flex items-center gap-2">
-            {/* Fast Lazy Fetch All Action */}
+          {/* Country Slicer */}
+          <div className="md:col-span-3 space-y-1">
+            <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider flex items-center gap-1">
+              <Globe className="w-3 h-3 text-white" />
+              1. Select Country Slicer
+            </label>
+            <select
+              value={selectedCountryCode}
+              onChange={(e) => handleCountryChange(e.target.value)}
+              className="w-full bg-black border border-zinc-700 px-3 py-2 text-xs text-white focus:outline-none focus:border-white font-mono uppercase"
+            >
+              <option value="all">🌐 All Countries (Global View)</option>
+              {CASCADING_COUNTRY_METADATA.map(c => (
+                <option key={c.countryCode} value={c.countryCode}>
+                  {c.flag} {c.countryName}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* State / Region Slicer */}
+          <div className="md:col-span-3 space-y-1">
+            <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider flex items-center gap-1">
+              <Map className="w-3 h-3 text-white" />
+              2. Select State / Region Slicer
+            </label>
+            <select
+              value={selectedStateName}
+              onChange={(e) => handleStateChange(e.target.value)}
+              className="w-full bg-black border border-zinc-700 px-3 py-2 text-xs text-white focus:outline-none focus:border-white font-mono uppercase"
+            >
+              <option value="all">All States &amp; Regions ({availableStates.length})</option>
+              {availableStates.map(s => (
+                <option key={s} value={s}>{s}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* City / District Slicer */}
+          <div className="md:col-span-3 space-y-1">
+            <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider flex items-center gap-1">
+              <MapPin className="w-3 h-3 text-white" />
+              3. Select City / District Slicer
+            </label>
+            <select
+              value={selectedCityName}
+              onChange={(e) => handleCityChange(e.target.value)}
+              className="w-full bg-black border border-zinc-700 px-3 py-2 text-xs text-white focus:outline-none focus:border-white font-mono uppercase"
+            >
+              <option value="all">All Cities &amp; Hubs ({availableCities.length})</option>
+              {availableCities.map(ci => (
+                <option key={`${ci.countryCode}_${ci.cityName}`} value={ci.cityName}>
+                  {ci.cityName} ({ci.stateName})
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Reset & Search Slicer Button */}
+          <div className="md:col-span-3 flex items-end gap-2">
+            <div className="relative w-full">
+              <input
+                type="text"
+                placeholder=""
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full bg-black border border-zinc-700 pl-8 pr-3 py-2 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-white font-mono"
+              />
+              <Search className="absolute left-2.5 top-2.5 w-3.5 h-3.5 text-zinc-400" />
+            </div>
+
             <button
               type="button"
-              onClick={fetchAllForCurrentCountry}
-              className={`px-3 py-2 border-2 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 cursor-pointer transition-all ${
-                isLight 
-                  ? 'border-black bg-zinc-100 hover:bg-black hover:text-white' 
-                  : 'border-zinc-600 bg-zinc-900 hover:bg-white hover:text-black'
-              }`}
-              title="Instantly fetch all city records on demand"
+              onClick={handleResetSlicers}
+              title="Reset Slicers"
+              className="p-2 border border-zinc-700 bg-black hover:bg-white hover:text-black text-white transition cursor-pointer shrink-0"
             >
-              <Zap className="w-3.5 h-3.5" />
-              <span>Fetch All Data</span>
-            </button>
-
-            {/* Deck Action Trigger */}
-            <button 
-              type="button"
-              onClick={() => setDealDeck(!dealDeck)}
-              title={dealDeck ? "Grid Layout" : "Stacked Stack"}
-              className={`p-2 border-2 font-bold text-xs uppercase tracking-wider transition-all duration-200 cursor-pointer flex items-center gap-1 ${
-                dealDeck 
-                  ? isLight ? 'border-black bg-black text-white' : 'border-white bg-white text-black'
-                  : isLight ? 'border-zinc-400 text-black hover:border-black' : 'border-zinc-700 text-white hover:border-white'
-              }`}
-            >
-              <Layers className="w-4 h-4" />
-              <span>{dealDeck ? "Unstack" : "Stack"}</span>
+              <RotateCcw className="w-4 h-4" />
             </button>
           </div>
         </div>
+      </header>
 
-        {/* Filter & Lazy Info Bar */}
-        <div className="mt-6 pt-4 border-t border-zinc-500/20 grid grid-cols-1 md:grid-cols-2 gap-3 items-center">
-          <div className="relative font-mono">
-            <span className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-zinc-500 text-xs">
-              <Search className="w-4 h-4" />
-            </span>
-            <input
-              type="text"
-              placeholder="Search contact, category, or city..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className={`w-full text-xs font-mono p-2.5 pl-9 rounded-none border-2 focus:outline-none uppercase ${
-                isLight 
-                  ? 'bg-zinc-50 border-black text-black focus:bg-white' 
-                  : 'bg-black border-zinc-700 text-white focus:border-white'
-              }`}
-            />
+      {/* INTERACTIVE SVG WORLD & REGIONAL MAP SECTION */}
+      <section className="border-2 border-zinc-800 bg-zinc-950 p-4 md:p-6 relative">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-zinc-800 pb-3 mb-4">
+          <div className="flex items-center gap-2">
+            <Compass className="w-5 h-5 text-white animate-spin-slow" />
+            <h2 className="text-sm font-black uppercase text-white tracking-wider font-mono">
+              Interactive World HR Location Map &amp; Geolocation Nodes
+            </h2>
           </div>
-
-          <div className="flex flex-wrap items-center justify-end text-[11px] font-mono text-zinc-400 gap-3">
-            <div className="flex items-center gap-1.5">
-              <span className={`w-2.5 h-2.5 border inline-block ${isLight ? 'bg-black border-black' : 'bg-white border-white'}`} />
-              <span>5.0 Perfect Rating</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <span className="w-2.5 h-2.5 border border-current inline-block" />
-              <span>Wheelchair Accessible</span>
-            </div>
-            <div className="flex items-center gap-1.5 text-zinc-500">
-              <RefreshCw className="w-3 h-3" />
-              <span>Lazy On-Demand Fetching Active</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Cities Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-2">
-        {filteredData.map((city, cityIdx) => {
-          const numCols = Math.max(1, Math.ceil((city.contacts.length || 1) / 5));
-          const key = `${selectedCountry}_${city.cityName}`;
-
-          return (
-            <div 
-              key={city.cityName}
-              className={`flex flex-col min-h-[320px] border-2 p-3 transition-all duration-300 ${
-                isLight ? 'border-black bg-white' : 'border-zinc-800 bg-[#080808]'
-              } ${city.contacts.length > 10 ? 'sm:col-span-2 lg:col-span-2' : ''}`}
-            >
-              {/* City Header */}
-              <div className={`p-2.5 border-2 font-mono flex items-center justify-between mb-3 ${
-                isLight 
-                  ? 'bg-zinc-100 border-black text-black' 
-                  : 'bg-zinc-900 border-zinc-700 text-white'
-              }`}>
-                <div className="flex items-center gap-2 truncate">
-                  <MapPin className="w-3.5 h-3.5 shrink-0" />
-                  <h3 className="font-bold text-xs uppercase tracking-tight truncate" title={city.cityName}>
-                    {city.cityName}
-                  </h3>
-                </div>
-                
-                <div className="flex items-center gap-2">
-                  <span className="text-[10px] px-1.5 py-0.5 border font-bold uppercase">
-                    {city.isFetched ? `${city.contacts.length} LISTINGS` : `${city.totalListings} READY`}
-                  </span>
-                  <span className="text-xs px-1.5 py-0.5 border border-current font-bold">
-                    #{cityIdx + 1}
-                  </span>
-                </div>
-              </div>
-
-              {/* Lazy Fetch Prompt if not fetched yet */}
-              {!city.isFetched ? (
-                <div className="flex-1 flex flex-col items-center justify-center p-6 text-center border-2 border-dashed border-zinc-700 my-2">
-                  <Database className="w-8 h-8 text-zinc-500 mb-2 animate-pulse" />
-                  <p className="text-xs text-zinc-400 uppercase font-bold mb-3">
-                    {city.totalListings} Contacts On Standby
-                  </p>
-                  <button
-                    onClick={() => fetchCityOnDemand(selectedCountry, city.cityName)}
-                    disabled={city.isLoading}
-                    className={`px-4 py-2 border-2 text-xs font-bold uppercase tracking-wider cursor-pointer flex items-center gap-2 transition-all ${
-                      isLight 
-                        ? 'border-black bg-black text-white hover:bg-zinc-800' 
-                        : 'border-white bg-white text-black hover:bg-zinc-200'
-                    }`}
-                  >
-                    {city.isLoading ? (
-                      <>
-                        <RefreshCw className="w-3.5 h-3.5 animate-spin" />
-                        <span>Fetching Directory...</span>
-                      </>
-                    ) : (
-                      <>
-                        <Zap className="w-3.5 h-3.5" />
-                        <span>Fetch {city.cityName} Data</span>
-                      </>
-                    )}
-                  </button>
-                </div>
-              ) : city.contacts.length === 0 ? (
-                <div className="flex-1 flex items-center justify-center p-6 text-center text-xs text-zinc-500 border border-dashed border-zinc-800">
-                  NO MATCHING CONTACTS FOUND
-                </div>
-              ) : (
-                /* Solitaire / Grid View Stack */
-                <div 
-                  className={`grid gap-4 relative flex-1 ${dealDeck ? 'block space-y-2' : 'h-[250px] min-h-[250px] mb-4'}`}
-                  style={dealDeck ? {} : { gridTemplateColumns: `repeat(${numCols}, minmax(0, 1fr))` }}
-                >
-                  {Array.from({ length: numCols }).map((_, colIdx) => {
-                    const startIdx = colIdx * 5;
-                    const colContacts = city.contacts.slice(startIdx, startIdx + 5);
-                    const reversedContacts = dealDeck ? colContacts : [...colContacts].reverse();
-
-                    return (
-                      <div key={colIdx} className={`${dealDeck ? 'space-y-2' : 'relative h-full'}`}>
-                        {reversedContacts.map((contact, index) => {
-                          const overlapOffset = dealDeck ? 0 : index * 32;
-                          const isFrontCard = dealDeck ? true : index === (colContacts.length - 1);
-                          const isSelected = activeContact?.contact.companyName === contact.companyName;
-
-                          return (
-                            <motion.div
-                              key={contact.companyName}
-                              onClick={() => handleCardClick(city.cityName, contact)}
-                              className={`${dealDeck ? 'relative' : 'absolute w-full'} transition-all cursor-pointer group`}
-                              style={dealDeck ? {} : {
-                                top: `${overlapOffset}px`,
-                                zIndex: index + 5
-                              }}
-                              whileHover={dealDeck ? { scale: 1.01 } : { y: -6, transition: { duration: 0.12 } }}
-                            >
-                              <div className={`border-2 p-2.5 text-left transition-all duration-150 relative ${
-                                isSelected 
-                                  ? isLight ? 'border-black bg-black text-white' : 'border-white bg-white text-black' 
-                                  : contact.rating === 5.0
-                                    ? isLight ? 'border-black bg-zinc-100' : 'border-zinc-500 bg-zinc-900'
-                                    : isLight ? 'border-zinc-300 bg-white hover:border-black' : 'border-zinc-800 bg-[#121212] hover:border-zinc-500'
-                              }`}>
-                                
-                                {/* Card top header */}
-                                <div className="flex items-center justify-between gap-1 border-b border-current/20 pb-1 mb-1">
-                                  <span className="text-[10px] font-bold uppercase truncate max-w-[80%]">
-                                    {getShortName(contact.companyName)}
-                                  </span>
-                                  
-                                  <div className="flex items-center gap-0.5 text-[10px] font-bold shrink-0">
-                                    <Star className="w-2.5 h-2.5 fill-current" />
-                                    <span>{contact.rating.toFixed(1)}</span>
-                                  </div>
-                                </div>
-
-                                {/* Company Full Name */}
-                                <h4 className="font-bold text-[10px] uppercase tracking-tight leading-tight line-clamp-2 min-h-[26px]">
-                                  {contact.companyName}
-                                </h4>
-
-                                {/* Card bottom meta */}
-                                <div className={`mt-1 pt-1 border-t border-current/10 flex items-center justify-between text-[8px] uppercase tracking-wider ${
-                                  !dealDeck && !isFrontCard ? 'hidden group-hover:flex' : 'flex'
-                                }`}>
-                                  <span className="opacity-75">{contact.category}</span>
-                                  <span className="font-bold">{contact.reviews} REV</span>
-                                </div>
-                              </div>
-                            </motion.div>
-                          );
-                        })}
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
-
-      {/* Expanded Active Business Card Overlay - Monochrome Modal */}
-      <AnimatePresence>
-        {activeContact && (
-          <div 
-            className="fixed inset-0 bg-black/80 backdrop-blur-xs z-[9999] flex items-center justify-center p-4 font-mono"
-            onClick={() => setActiveContact(null)}
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.2 }}
-              className={`w-full max-w-md border-2 p-6 relative overflow-hidden text-left ${
-                isLight ? 'bg-white border-black text-black' : 'bg-black border-white text-white'
-              }`}
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Header bar */}
-              <div className="flex items-center justify-between border-b-2 border-current pb-3 mb-4">
-                <div className="flex items-center gap-2">
-                  <Building className="w-4 h-4" />
-                  <span className="text-xs font-bold uppercase tracking-widest">COMPANY DOSSIER</span>
-                </div>
-                <button
-                  onClick={() => setActiveContact(null)}
-                  className="p-1 border border-current text-xs font-bold hover:bg-current hover:text-black dark:hover:text-black cursor-pointer transition"
-                >
-                  ✕ CLOSE
-                </button>
-              </div>
-
-              {/* Company Info */}
-              <div className="space-y-4">
-                <div>
-                  <span className="text-[9px] uppercase font-bold opacity-60 block">LOCATION: {activeContact.cityName}</span>
-                  <h3 className="text-lg font-black uppercase tracking-tight leading-tight mt-0.5">
-                    {activeContact.contact.companyName}
-                  </h3>
-                </div>
-
-                {/* Score Grid */}
-                <div className={`grid grid-cols-2 gap-3 border-2 p-3 text-center ${
-                  isLight ? 'border-black bg-zinc-50' : 'border-zinc-700 bg-zinc-900'
-                }`}>
-                  <div>
-                    <span className="text-[8px] opacity-70 block font-bold uppercase">RATING SCORE</span>
-                    <span className="font-bold text-xs flex items-center justify-center gap-1 mt-0.5">
-                      <Star className="w-3 h-3 fill-current" /> {activeContact.contact.rating.toFixed(1)} / 5.0
-                    </span>
-                  </div>
-                  <div>
-                    <span className="text-[8px] opacity-70 block font-bold uppercase">REVIEWS COUNT</span>
-                    <span className="font-bold text-xs block mt-0.5">
-                      {activeContact.contact.reviews} REVIEWS
-                    </span>
-                  </div>
-                </div>
-
-                {/* Details list */}
-                <div className="space-y-2.5 text-xs pt-1">
-                  <div className="flex items-start gap-2.5">
-                    <Building className="w-4 h-4 shrink-0 mt-0.5" />
-                    <div>
-                      <span className="text-[8px] opacity-60 block uppercase">CATEGORY</span>
-                      <span className="font-bold uppercase">{activeContact.contact.category}</span>
-                    </div>
-                  </div>
-
-                  {activeContact.contact.wheelchairAccessible && (
-                    <div className="flex items-center gap-2.5">
-                      <Accessibility className="w-4 h-4 shrink-0" />
-                      <span className="text-[10px] font-bold uppercase border border-current px-2 py-0.5">
-                        Wheelchair Accessible
-                      </span>
-                    </div>
-                  )}
-
-                  <div className={`flex items-start gap-2.5 border-t border-current/20 pt-2.5 ${activeContact.contact.phone === 'N/A' ? 'opacity-40' : ''}`}>
-                    <Phone className="w-4 h-4 shrink-0 mt-0.5" />
-                    <div>
-                      <span className="text-[8px] opacity-60 block uppercase">TELEPHONE</span>
-                      <span className="font-bold">{activeContact.contact.phone}</span>
-                    </div>
-                  </div>
-
-                  {activeContact.contact.website && (
-                    <div className="flex items-start gap-2.5 border-t border-current/20 pt-2.5">
-                      <Globe className="w-4 h-4 shrink-0 mt-0.5" />
-                      <div>
-                        <span className="text-[8px] opacity-60 block uppercase">WEBSITE</span>
-                        <a 
-                          href={activeContact.contact.website} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="font-bold underline break-all hover:opacity-75"
-                        >
-                          {activeContact.contact.website}
-                        </a>
-                      </div>
-                    </div>
-                  )}
-                </div>
-
-                {/* Actions */}
-                <div className="pt-4 border-t-2 border-current flex items-center justify-center gap-3">
-                  {activeContact.contact.phone !== 'N/A' ? (
-                    <a
-                      href={`tel:${activeContact.contact.phone}`}
-                      title={`Call ${activeContact.contact.phone}`}
-                      className={`px-4 py-2 border-2 font-bold text-xs uppercase flex items-center gap-2 transition cursor-pointer ${
-                        isLight ? 'border-black bg-black text-white hover:bg-zinc-800' : 'border-white bg-white text-black hover:bg-zinc-200'
-                      }`}
-                    >
-                      <Phone className="w-4 h-4" />
-                      <span>Call</span>
-                    </a>
-                  ) : (
-                    <div className="px-4 py-2 border border-current/30 text-xs uppercase font-bold opacity-40 cursor-not-allowed flex items-center gap-2">
-                      <Phone className="w-4 h-4" />
-                      <span>No Phone</span>
-                    </div>
-                  )}
-
-                  <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(activeContact.contact.companyName + " " + activeContact.cityName)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Locate on Maps"
-                    className="px-4 py-2 border-2 border-current text-xs uppercase font-bold flex items-center gap-2 hover:bg-current hover:text-black dark:hover:text-black transition cursor-pointer"
-                  >
-                    <MapPin className="w-4 h-4" />
-                    <span>Maps</span>
-                  </a>
-
-                  {activeContact.contact.website && (
-                    <a
-                      href={activeContact.contact.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Visit Site"
-                      className="px-4 py-2 border-2 border-current text-xs uppercase font-bold flex items-center gap-2 hover:bg-current hover:text-black dark:hover:text-black transition cursor-pointer"
-                    >
-                      <Globe className="w-4 h-4" />
-                      <span>Site</span>
-                    </a>
-                  )}
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
-
-      {/* Expanding Matrix Note - B&W */}
-      <div className={`p-4 border-2 border-dashed text-center font-mono ${
-        isLight ? 'bg-zinc-50 border-black' : 'bg-zinc-950 border-zinc-700'
-      }`}>
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-          <div className="flex items-center gap-2 text-left">
-            <Globe className="w-4 h-4 shrink-0" />
-            <div>
-              <span className="font-bold uppercase block">DIRECTORY NETWORK ONLINE</span>
-              <span className="text-[10px] opacity-70">On-demand lazy fetching active. More cities & global regions available.</span>
-            </div>
-          </div>
-          <span className="text-[10px] font-bold uppercase px-2.5 py-1 border border-current">
-            EXPANDING INDEX
+          <span className="text-[10px] text-zinc-400 font-mono">
+            Click any location pin on the map to automatically filter the HR directory
           </span>
         </div>
-      </div>
 
+        {/* Vector Map Container */}
+        <div className="relative w-full h-72 md:h-96 bg-black border border-zinc-800 overflow-hidden group">
+          
+          {/* Stylized SVG Map Background Grid */}
+          <svg className="absolute inset-0 w-full h-full opacity-30 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="world-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#52525b" strokeWidth="0.5" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#world-grid)" />
+            
+            {/* World Continent Outlines Simplified Vectors */}
+            {/* North America */}
+            <path d="M 50 80 Q 80 50 150 70 Q 220 80 200 150 Q 150 200 80 160 Z" fill="#27272a" opacity="0.4" />
+            {/* South America */}
+            <path d="M 180 180 Q 220 200 240 280 Q 200 340 170 280 Z" fill="#27272a" opacity="0.4" />
+            {/* Europe */}
+            <path d="M 380 70 Q 450 60 480 110 Q 420 140 380 110 Z" fill="#27272a" opacity="0.4" />
+            {/* Africa */}
+            <path d="M 380 130 Q 460 140 470 230 Q 420 280 370 200 Z" fill="#27272a" opacity="0.4" />
+            {/* Asia / India */}
+            <path d="M 500 80 Q 650 70 700 150 Q 620 200 520 160 Z" fill="#27272a" opacity="0.4" />
+            {/* Australia / Oceania */}
+            <path d="M 680 220 Q 760 210 780 280 Q 720 300 670 260 Z" fill="#27272a" opacity="0.4" />
+          </svg>
+
+          {/* Interactive Map Pins */}
+          {MAP_PIN_NODES.map((pin) => {
+            const isCountryMatch = selectedCountryCode === 'all' || selectedCountryCode === pin.countryCode;
+            const isStateMatch = selectedStateName === 'all' || selectedStateName === pin.stateName;
+            const isCityMatch = selectedCityName === 'all' || selectedCityName === pin.cityName;
+            
+            const isActive = isCountryMatch && isStateMatch && isCityMatch;
+
+            return (
+              <button
+                key={pin.id}
+                type="button"
+                onClick={() => handleMapPinClick(pin)}
+                style={{ left: `${pin.x}%`, top: `${pin.y}%` }}
+                title={`Click to filter: ${pin.cityName}, ${pin.stateName} (${pin.countryCode})`}
+                className={`absolute -translate-x-1/2 -translate-y-1/2 transition-all cursor-pointer group z-20 ${
+                  isActive ? 'scale-125 z-30' : 'opacity-70 hover:opacity-100 hover:scale-110'
+                }`}
+              >
+                {/* Pulse Ring when Active */}
+                {isActive && (
+                  <span className="absolute -inset-2 bg-yellow-400/40 rounded-full animate-ping pointer-events-none" />
+                )}
+
+                <div className={`flex items-center gap-1 px-2 py-1 border text-[10px] font-mono font-bold shadow-md transition-all ${
+                  isActive
+                    ? 'bg-white text-black border-white shadow-[2px_2px_0px_0px_#ffffff]'
+                    : 'bg-black text-zinc-300 border-zinc-700 hover:border-white hover:text-white'
+                }`}>
+                  <MapPin className={`w-3 h-3 ${isActive ? 'text-black fill-black' : 'text-zinc-400'}`} />
+                  <span>{pin.cityName}</span>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* HR DIRECTORY CONTACT CARDS LIST */}
+      <main className="space-y-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-zinc-800 pb-3">
+          <div className="flex items-center gap-2">
+            <Users className="w-5 h-5 text-white" />
+            <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">
+              Filtered HR Agencies &amp; Placement Services
+            </h2>
+          </div>
+
+          <span className="text-xs font-mono text-zinc-400">
+            Showing <strong className="text-white">{totalMatchingContacts}</strong> contacts in selected locations
+          </span>
+        </div>
+
+        {filteredDirectoryResults.length === 0 ? (
+          <div className="text-center py-16 bg-zinc-950 border-2 border-zinc-800 p-8">
+            <Building className="w-12 h-12 text-zinc-600 mx-auto mb-4" />
+            <h3 className="text-lg font-bold text-zinc-200 mb-2 uppercase">No matching HR contacts found</h3>
+            <p className="text-zinc-400 text-xs max-w-md mx-auto font-sans mb-4">
+              No agencies match your active location slicer or search keyword. Try selecting "All Countries" or resetting the slicer.
+            </p>
+            <button
+              onClick={handleResetSlicers}
+              className="px-4 py-2 bg-white text-black border border-white text-xs font-bold uppercase hover:bg-zinc-200 transition cursor-pointer"
+            >
+              Reset Location Slicers
+            </button>
+          </div>
+        ) : (
+          <div className="space-y-8">
+            {filteredDirectoryResults.map(cityGroup => (
+              <section key={`${cityGroup.countryCode}_${cityGroup.cityName}`} className="space-y-4">
+                <div className="flex items-center gap-2 border-b border-zinc-800 pb-2">
+                  <MapPin className="w-4 h-4 text-white" />
+                  <h3 className="text-sm font-black uppercase text-white font-mono">
+                    {cityGroup.cityName} Directory ({cityGroup.contacts.length} Agencies)
+                  </h3>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {cityGroup.contacts.map((contact) => (
+                    <article
+                      key={`${contact.rank}-${contact.companyName}`}
+                      className="bg-zinc-950 border-2 border-zinc-800 hover:border-zinc-500 transition-all p-5 text-left flex flex-col justify-between relative group hover:shadow-[4px_4px_0px_0px_#ffffff]"
+                    >
+                      <div>
+                        <div className="flex items-start justify-between gap-2 border-b border-zinc-800 pb-3 mb-3">
+                          <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-white text-black uppercase">
+                            RANK #{contact.rank}
+                          </span>
+                          <span className="text-[10px] font-mono text-zinc-400 uppercase border border-zinc-800 px-2 py-0.5 bg-zinc-900">
+                            {contact.category}
+                          </span>
+                        </div>
+
+                        <h4 className="text-lg font-bold text-white leading-snug font-sans mb-2">
+                          {contact.companyName}
+                        </h4>
+
+                        <div className="flex items-center gap-3 text-xs font-mono text-zinc-400 mb-4">
+                          <div className="flex items-center gap-1 text-yellow-400 font-bold">
+                            <Star className="w-3.5 h-3.5 fill-current" />
+                            <span>{contact.rating}</span>
+                          </div>
+                          <span>•</span>
+                          <span>{contact.reviews} Reviews</span>
+                        </div>
+                      </div>
+
+                      <div className="space-y-2 border-t border-zinc-800 pt-3 text-xs font-mono">
+                        <div className="flex items-center justify-between text-zinc-300">
+                          <span className="text-zinc-500 uppercase text-[10px]">Phone</span>
+                          <a href={`tel:${contact.phone}`} className="hover:text-white font-bold flex items-center gap-1">
+                            <Phone className="w-3 h-3 text-zinc-400" />
+                            <span>{contact.phone}</span>
+                          </a>
+                        </div>
+
+                        {contact.website ? (
+                          <a
+                            href={contact.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full mt-2 py-2 px-3 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white font-bold flex items-center justify-between uppercase transition cursor-pointer text-xs"
+                          >
+                            <span>Visit Portal / Website</span>
+                            <ExternalLink className="w-3.5 h-3.5" />
+                          </a>
+                        ) : (
+                          <div className="w-full mt-2 py-2 px-3 border border-zinc-800 bg-black text-zinc-600 font-bold text-center uppercase text-[10px]">
+                            Direct Phone Contact Only
+                          </div>
+                        )}
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        )}
+      </main>
     </div>
   );
 }
