@@ -30,7 +30,7 @@ export interface CountryData {
 }
 
 // Raw Directory Database (Stored for on-demand lazy retrieval)
-const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>> = {
+export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>> = {
   IN: {
     "West Delhi": [
       { rank: 1, companyName: "Career Innovators", rating: 4.6, reviews: 519, phone: "+91 95828 96540", category: "Employment center", wheelchairAccessible: false, website: "" },
@@ -336,7 +336,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
             </span>
             <input
               type="text"
-              placeholder="SEARCH CONTACT, CATEGORY OR CITY..."
+              placeholder="Search contact, category, or city..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className={`w-full text-xs font-mono p-2.5 pl-9 rounded-none border-2 focus:outline-none uppercase ${

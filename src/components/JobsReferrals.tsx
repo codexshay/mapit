@@ -117,7 +117,7 @@ export const JobsReferrals: React.FC = () => {
             </label>
             <input
               type="text"
-              placeholder="e.g. Site Reliability Engineer, AI Researcher..."
+              placeholder="Custom role keyword..."
               value={customRoleInput}
               onChange={(e) => setCustomRoleInput(e.target.value)}
               className="w-full bg-black border border-zinc-700 rounded-none px-3.5 py-2.5 text-xs text-zinc-200 placeholder-zinc-500 focus:outline-none focus:border-white transition-all font-mono"
@@ -132,7 +132,7 @@ export const JobsReferrals: React.FC = () => {
             </label>
             <input
               type="text"
-              placeholder="Search among 250+ companies (e.g. TCS, Google, NVIDIA)..."
+              placeholder="Search company name or category..."
               value={companySearchQuery}
               onChange={(e) => setCompanySearchQuery(e.target.value)}
               className="w-full bg-black border border-zinc-700 rounded-none px-3.5 py-2.5 text-xs text-zinc-200 placeholder-zinc-500 focus:outline-none focus:border-white transition-all font-mono"

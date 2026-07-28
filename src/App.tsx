@@ -17,6 +17,7 @@ const AICareerAssistant = React.lazy(() => import('./components/AICareerAssistan
 const HRContacts = React.lazy(() => import('./components/HRContacts'));
 const InterviewQ = React.lazy(() => import('./components/InterviewQ'));
 const JobsReferrals = React.lazy(() => import('./components/JobsReferrals'));
+const SearchResultsView = React.lazy(() => import('./components/SearchResultsView'));
 import { interviewQDatabase } from './data/interviewQDatabase';
 import { ALL_ROLES_DATA, IT_DOMAINS } from './data/rolesData';
 import { CORNER_TIPS, CERTIFICATIONS_LIBRARY } from './data/librariesData';
@@ -2442,22 +2443,23 @@ export default function App() {
                 <input
                   type="text"
                   value={searchQuery}
-                  onFocus={() => setIsTopSearchDropdownOpen(true)}
-                  onClick={() => setIsTopSearchDropdownOpen(true)}
                   onChange={(e) => {
                     const val = e.target.value;
                     setSearchQuery(val);
+                    setGlobalSearchQuery(val);
                     setLibrariesQuery(val);
                     setYoutubeSearchQuery(val);
                     setHackathonsSearchQuery(val);
-                    setIsTopSearchDropdownOpen(true);
+                    if (val.trim()) {
+                      setActiveTab('search');
+                    }
                   }}
-                  placeholder={
-                    activeTab === 'map' ? 'Search roles, skills, domains in map...' :
-                    activeTab === 'libraries' ? 'Search books, certs, hackathons in resources...' :
-                    activeTab === 'saved' ? 'Search saved items...' :
-                    'Search within opened tab...'
-                  }
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && searchQuery.trim()) {
+                      setActiveTab('search');
+                    }
+                  }}
+                  placeholder="Search all sections (roles, questions, companies, HR)..."
                   className="w-full pl-9 pr-8 py-1.5 text-xs font-sans rounded-md border text-slate-100 placeholder-slate-400 bg-[#111827]/90 border-slate-700/70 focus:outline-none transition-all focus:bg-[#0f172a] focus:border-[#10b981] focus:ring-1 focus:ring-[#10b981]/50 shadow-md"
                 />
                 {searchQuery && (
@@ -2465,22 +2467,16 @@ export default function App() {
                     type="button"
                     onClick={() => {
                       setSearchQuery('');
+                      setGlobalSearchQuery('');
                       setLibrariesQuery('');
                       setYoutubeSearchQuery('');
                       setHackathonsSearchQuery('');
-                      setIsTopSearchDropdownOpen(false);
+                      setActiveTab('map');
                     }}
                     className="absolute inset-y-0 right-0 pr-2.5 flex items-center text-gray-400 hover:text-white cursor-pointer"
                   >
                     ✕
                   </button>
-                )}
-
-                {/* Top Search Dropdown Box */}
-                {isTopSearchDropdownOpen && activeTab !== 'libraries' && renderSearchDropdownMenu(
-                  combinedGlobalResultsList,
-                  searchQuery,
-                  () => setIsTopSearchDropdownOpen(false)
                 )}
               </div>
             </div>
@@ -2520,21 +2516,23 @@ export default function App() {
                 <input
                   type="text"
                   value={searchQuery}
-                  onFocus={() => setIsTopSearchDropdownOpen(true)}
-                  onClick={() => setIsTopSearchDropdownOpen(true)}
                   onChange={(e) => {
                     const val = e.target.value;
                     setSearchQuery(val);
+                    setGlobalSearchQuery(val);
                     setLibrariesQuery(val);
                     setYoutubeSearchQuery(val);
                     setHackathonsSearchQuery(val);
-                    setIsTopSearchDropdownOpen(true);
+                    if (val.trim()) {
+                      setActiveTab('search');
+                    }
                   }}
-                  placeholder={
-                    activeTab === 'map' ? 'Search roles, domains...' :
-                    activeTab === 'libraries' ? 'Search books, certs...' :
-                    'Search active tab...'
-                  }
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && searchQuery.trim()) {
+                      setActiveTab('search');
+                    }
+                  }}
+                  placeholder="Search all sections..."
                   className="w-full pl-8.5 pr-2.5 py-1.5 text-xs font-sans rounded-md border text-slate-100 placeholder-slate-400 bg-[#111827]/80 border-slate-700/60 focus:outline-none transition-all focus:bg-[#0f172a] focus:border-[#10b981] focus:ring-1 focus:ring-[#10b981]/50"
                 />
                 {searchQuery && (
@@ -2542,22 +2540,16 @@ export default function App() {
                     type="button"
                     onClick={() => {
                       setSearchQuery('');
+                      setGlobalSearchQuery('');
                       setLibrariesQuery('');
                       setYoutubeSearchQuery('');
                       setHackathonsSearchQuery('');
-                      setIsTopSearchDropdownOpen(false);
+                      setActiveTab('map');
                     }}
                     className="absolute inset-y-0 right-0 pr-2.5 flex items-center text-gray-400 hover:text-white cursor-pointer"
                   >
                     ✕
                   </button>
-                )}
-
-                {/* Mobile Top Search Dropdown Box */}
-                {isTopSearchDropdownOpen && activeTab !== 'libraries' && renderSearchDropdownMenu(
-                  combinedGlobalResultsList,
-                  searchQuery,
-                  () => setIsTopSearchDropdownOpen(false)
                 )}
               </div>
             )}
@@ -3955,6 +3947,27 @@ export default function App() {
           <section className="fade-in space-y-6">
             <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-slate-400 border border-slate-800 bg-[#070b13]">Loading HR Contacts...</div>}>
               <HRContacts theme={theme} />
+            </React.Suspense>
+          </section>
+        </div>
+
+        {/* GLOBAL SEARCH RESULTS VIEW */}
+        <div id="section-search" className={activeTab === 'search' ? 'block' : 'hidden'}>
+          <section className="fade-in space-y-6">
+            <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-zinc-400 border border-zinc-800 bg-black">Loading Search Results...</div>}>
+              <SearchResultsView 
+                query={searchQuery}
+                onNavigateTab={(t) => {
+                  setActiveTab(t);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                onSelectRole={(rId) => {
+                  handleToggleBookmark(rId);
+                  setSelectedRoleId(rId);
+                  setActiveTab('map');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+              />
             </React.Suspense>
           </section>
         </div>
