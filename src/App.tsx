@@ -81,13 +81,13 @@ const TAB_DETAILS: Record<string, { label: string; activeStyle: string; hoverSty
   },
   interviewq: {
     label: '⚡ InterviewQ [BETA]',
-    activeStyle: 'text-emerald-400 font-bold bg-[#121c38] border-emerald-500/40 shadow-[0_0_10px_rgba(16,185,129,0.25)]',
-    hoverStyle: 'hover:text-emerald-400 hover:bg-emerald-950/20 border border-transparent'
+    activeStyle: 'text-zinc-100 font-bold bg-[#121c38] border-zinc-500/40 shadow-[0_0_10px_rgba(255,255,255,0.15)]',
+    hoverStyle: 'hover:text-zinc-100 hover:bg-zinc-800/40 border border-transparent'
   },
   jobs: {
-    label: '💼 Jobs & Referrals',
-    activeStyle: 'text-blue-400 font-bold bg-[#121c38] border-blue-500/40 shadow-[0_0_10px_rgba(59,130,246,0.25)]',
-    hoverStyle: 'hover:text-blue-400 hover:bg-blue-950/20 border border-transparent'
+    label: '💼 Jobs & Referrals [BETA]',
+    activeStyle: 'text-zinc-100 font-bold bg-[#121c38] border-zinc-500/40 shadow-[0_0_10px_rgba(255,255,255,0.15)]',
+    hoverStyle: 'hover:text-zinc-100 hover:bg-zinc-800/40 border border-transparent'
   }
 };
 
@@ -125,14 +125,14 @@ const TAB_METADATA: Record<string, { label: string; icon: React.ComponentType<an
   interviewq: {
     label: 'InterviewQ [BETA]',
     icon: HelpCircle,
-    colorClass: 'text-emerald-400',
-    activeStyle: 'text-emerald-400 border-emerald-400 bg-emerald-950/20 shadow-[0_0_12px_rgba(16,185,129,0.15)] font-bold'
+    colorClass: 'text-zinc-200',
+    activeStyle: 'text-zinc-100 border-zinc-100 bg-zinc-900/80 shadow-[0_0_12px_rgba(255,255,255,0.15)] font-bold'
   },
   jobs: {
-    label: 'Jobs & Referrals',
+    label: 'Jobs & Referrals [BETA]',
     icon: Briefcase,
-    colorClass: 'text-blue-400',
-    activeStyle: 'text-blue-400 border-blue-400 bg-blue-950/20 shadow-[0_0_12px_rgba(59,130,246,0.15)] font-bold'
+    colorClass: 'text-zinc-200',
+    activeStyle: 'text-zinc-100 border-zinc-100 bg-zinc-900/80 shadow-[0_0_12px_rgba(255,255,255,0.15)] font-bold'
   },
   saved: {
     label: 'Bookmarks',
@@ -3988,8 +3988,8 @@ export default function App() {
             { id: 'map', label: 'Career Domains', icon: TAB_METADATA.map.icon, activeColor: 'text-yellow-500 border-yellow-500' },
             { id: 'pathfinder', label: 'Path Planner', icon: TAB_METADATA.pathfinder.icon, activeColor: 'text-[#10b981] border-[#10b981]' },
             { id: 'libraries', label: 'Resources', icon: TAB_METADATA.libraries.icon, activeColor: 'text-cyan-400 border-cyan-400' },
-            { id: 'interviewq', label: 'InterviewQ', icon: TAB_METADATA.interviewq.icon, activeColor: 'text-emerald-400 border-emerald-400' },
-            { id: 'jobs', label: 'Jobs', icon: TAB_METADATA.jobs.icon, activeColor: 'text-blue-400 border-blue-400' },
+            { id: 'interviewq', label: 'InterviewQ', icon: TAB_METADATA.interviewq.icon, activeColor: 'text-zinc-100 border-zinc-100' },
+            { id: 'jobs', label: 'Jobs', icon: TAB_METADATA.jobs.icon, activeColor: 'text-zinc-100 border-zinc-100' },
             { id: 'hr-contacts', label: 'HR Contacts', icon: TAB_METADATA['hr-contacts'].icon, activeColor: 'text-slate-100 border-slate-100' }
           ].map((item) => {
             const isActive = activeTab === item.id;

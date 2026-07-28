@@ -159,43 +159,43 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
   const getDifficultyBadge = (diff: string) => {
     switch (diff) {
       case 'foundation':
-        return 'bg-emerald-950/60 text-emerald-300 border-emerald-800/50';
+        return 'bg-zinc-900 text-zinc-200 border-zinc-700';
       case 'intermediate':
-        return 'bg-blue-950/60 text-blue-300 border-blue-800/50';
+        return 'bg-zinc-800 text-zinc-100 border-zinc-600';
       case 'advanced':
-        return 'bg-purple-950/60 text-purple-300 border-purple-800/50';
+        return 'bg-zinc-950 text-zinc-300 border-zinc-700';
       case 'scenario':
-        return 'bg-amber-950/60 text-amber-300 border-amber-800/50';
+        return 'bg-zinc-900 text-zinc-200 border-zinc-700 font-mono';
       default:
-        return 'bg-slate-800 text-slate-300 border-slate-700';
+        return 'bg-zinc-800 text-zinc-300 border-zinc-700';
     }
   };
 
   return (
-    <div className="min-h-screen bg-[#070b14] text-slate-100 p-4 md:p-8 font-sans">
-      {/* Top Header Banner */}
-      <header className="max-w-7xl mx-auto mb-8 border border-slate-800 bg-gradient-to-r from-slate-900/90 via-[#0d1527] to-slate-900/90 rounded-2xl p-6 md:p-8 shadow-2xl backdrop-blur-md">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6 mb-6">
+    <div className="min-h-screen bg-black text-zinc-100 p-4 md:p-8 font-mono">
+      {/* Top Header Banner - Black & White Work in Progress Edition */}
+      <header className="max-w-7xl mx-auto mb-8 border-2 border-zinc-800 bg-zinc-950 rounded-none p-6 md:p-8 shadow-2xl">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-zinc-800 pb-6 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white flex items-center gap-2">
-                <BookOpen className="w-8 h-8 text-emerald-400" />
+              <h1 className="text-3xl md:text-4xl font-black tracking-tight text-white flex items-center gap-2 uppercase">
+                <BookOpen className="w-8 h-8 text-white" />
                 MapIT InterviewQ
               </h1>
-              <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-xs font-bold uppercase tracking-wider animate-pulse">
-                BETA
+              <span className="px-3 py-1 bg-white text-black text-xs font-black uppercase tracking-wider">
+                BETA / WORK IN PROGRESS
               </span>
             </div>
-            <p className="text-slate-400 text-sm md:text-base max-w-3xl">
+            <p className="text-zinc-400 text-sm md:text-base max-w-3xl font-sans">
               Role-mapped technical interview questions &amp; practical assessment labs with concise preferred answers, evaluator checkpoints, and direct links to official documentation.
             </p>
           </div>
 
-          <div className="flex items-center gap-2 text-xs text-slate-400 bg-slate-800/60 px-4 py-3 rounded-xl border border-slate-700/60 shrink-0">
-            <ShieldCheck className="w-5 h-5 text-emerald-400 shrink-0" />
+          <div className="flex items-center gap-2 text-xs text-zinc-400 bg-zinc-900 px-4 py-3 border border-zinc-700 shrink-0 font-mono">
+            <ShieldCheck className="w-5 h-5 text-white shrink-0" />
             <div>
-              <div className="font-semibold text-slate-200">MapIT Editorial Standard</div>
-              <div>100% Verified Tier-A/B Documentation</div>
+              <div className="font-bold text-white uppercase">MapIT Editorial Standard</div>
+              <div className="text-[10px] text-zinc-400">100% Verified Tier-A/B Documentation</div>
             </div>
           </div>
         </div>
@@ -205,13 +205,13 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-12 gap-3">
             {/* Search Input */}
             <div className="md:col-span-4 relative">
-              <Search className="absolute left-3.5 top-3 w-4 h-4 text-slate-400" />
+              <Search className="absolute left-3.5 top-3 w-4 h-4 text-zinc-400" />
               <input
                 type="text"
                 placeholder="Search prompts, answers, IDs (e.g. DVO-001, LAB-001)..."
                 value={searchQuery}
                 onChange={(e) => { setSearchQuery(e.target.value); setCurrentPage(1); }}
-                className="w-full bg-slate-950/80 border border-slate-700/70 rounded-xl pl-10 pr-4 py-2.5 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
+                className="w-full bg-black border border-zinc-700 rounded-none pl-10 pr-4 py-2.5 text-xs text-zinc-200 placeholder-zinc-500 focus:outline-none focus:border-white transition-all font-mono"
               />
             </div>
 
@@ -220,7 +220,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
               <select
                 value={selectedRole}
                 onChange={(e) => handleRoleChange(e.target.value)}
-                className="w-full bg-slate-950/80 border border-slate-700/70 rounded-xl px-3.5 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-emerald-500 transition-all"
+                className="w-full bg-black border border-zinc-700 rounded-none px-3.5 py-2.5 text-xs text-zinc-200 focus:outline-none focus:border-white transition-all font-mono"
               >
                 <option value="all">All Roles ({interviewQDatabase.length} Items)</option>
                 {availableRoles.map(role => (
@@ -236,7 +236,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
               <select
                 value={selectedDomain}
                 onChange={(e) => handleDomainChange(e.target.value)}
-                className="w-full bg-slate-950/80 border border-slate-700/70 rounded-xl px-3.5 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-emerald-500 transition-all"
+                className="w-full bg-black border border-zinc-700 rounded-none px-3.5 py-2.5 text-xs text-zinc-200 focus:outline-none focus:border-white transition-all font-mono"
               >
                 <option value="all">
                   {selectedRole === 'all' ? 'All Domains' : `Domains for ${selectedRole.replace(/-/g, ' ')} (${availableDomains.length})`}
@@ -252,7 +252,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
               <select
                 value={selectedType}
                 onChange={(e) => handleTypeChange(e.target.value)}
-                className="w-full bg-slate-950/80 border border-slate-700/70 rounded-xl px-3.5 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-emerald-500 transition-all"
+                className="w-full bg-black border border-zinc-700 rounded-none px-3.5 py-2.5 text-xs text-zinc-200 focus:outline-none focus:border-white transition-all font-mono"
               >
                 <option value="all">All Types</option>
                 {availableTypes.map(t => (
@@ -265,7 +265,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
           {/* Difficulty Toggles */}
           <div className="flex flex-wrap items-center justify-between gap-3 pt-2">
             <div className="flex items-center gap-2 overflow-x-auto pb-1">
-              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">Difficulty:</span>
+              <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider mr-2">Difficulty:</span>
               {['all', 'foundation', 'intermediate', 'advanced', 'scenario'].map((diff) => {
                 const isAvailable = diff === 'all' || availableDifficulties.includes(diff as any);
                 return (
@@ -273,12 +273,12 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                     key={diff}
                     disabled={!isAvailable}
                     onClick={() => { setSelectedDifficulty(diff); setCurrentPage(1); }}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-medium capitalize border transition-all ${
+                    className={`px-3 py-1.5 rounded-none text-xs font-bold uppercase border transition-all ${
                       selectedDifficulty === diff
-                        ? 'bg-emerald-500 text-slate-950 border-emerald-400 font-bold shadow-lg shadow-emerald-500/20'
+                        ? 'bg-white text-black border-white'
                         : isAvailable
-                        ? 'bg-slate-900/60 text-slate-400 border-slate-800 hover:border-slate-700 hover:text-slate-200'
-                        : 'bg-slate-950/30 text-slate-600 border-slate-900 cursor-not-allowed opacity-50'
+                        ? 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
+                        : 'bg-black text-zinc-700 border-zinc-900 cursor-not-allowed opacity-50'
                     }`}
                   >
                     {diff}
@@ -287,8 +287,8 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
               })}
             </div>
 
-            <div className="text-xs text-slate-400">
-              Showing <span className="font-semibold text-emerald-400">{filteredQuestions.length}</span> matching items
+            <div className="text-xs text-zinc-400 font-mono">
+              Showing <span className="font-bold text-white">{filteredQuestions.length}</span> matching items
             </div>
           </div>
         </div>
@@ -297,10 +297,10 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
       {/* Main Content Grid */}
       <main className="max-w-7xl mx-auto">
         {filteredQuestions.length === 0 ? (
-          <div className="text-center py-16 bg-slate-900/50 border border-slate-800 rounded-2xl p-8">
-            <HelpCircle className="w-12 h-12 text-slate-500 mx-auto mb-4 animate-bounce" />
-            <h2 className="text-xl font-bold text-slate-200 mb-2">No matching questions found</h2>
-            <p className="text-slate-400 text-sm max-w-md mx-auto mb-6">
+          <div className="text-center py-16 bg-zinc-950 border-2 border-zinc-800 rounded-none p-8">
+            <HelpCircle className="w-12 h-12 text-zinc-500 mx-auto mb-4 animate-bounce" />
+            <h2 className="text-xl font-bold text-zinc-200 mb-2 uppercase">No matching questions found</h2>
+            <p className="text-zinc-400 text-sm max-w-md mx-auto mb-6 font-sans">
               Try adjusting your search terms or clearing role/domain filters to explore the rest of the question bank.
             </p>
             <button
@@ -311,7 +311,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                 setSelectedDifficulty('all');
                 setSelectedType('all');
               }}
-              className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl text-sm font-medium border border-slate-700 transition-colors"
+              className="px-4 py-2 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 font-bold uppercase border border-zinc-700 text-xs transition-colors"
             >
               Reset Filters
             </button>
@@ -325,19 +325,19 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
               return (
                 <div
                   key={item.id}
-                  className="bg-slate-900/80 border border-slate-800 hover:border-slate-700/80 rounded-2xl p-6 transition-all duration-200 shadow-xl flex flex-col justify-between"
+                  className="bg-zinc-950 border-2 border-zinc-800 hover:border-zinc-600 rounded-none p-6 transition-all duration-200 shadow-xl flex flex-col justify-between"
                 >
                   <div>
                     {/* Item Metadata Header */}
                     <div className="flex items-center justify-between gap-2 mb-3">
                       <div className="flex flex-wrap items-center gap-2">
-                        <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-md bg-slate-800 text-emerald-400 border border-slate-700">
+                        <span className="text-xs font-mono font-bold px-2.5 py-1 bg-white text-black border border-white">
                           {item.id}
                         </span>
-                        <span className={`text-xs px-2.5 py-0.5 rounded-full border font-semibold capitalize ${getDifficultyBadge(item.difficulty)}`}>
+                        <span className={`text-xs px-2.5 py-0.5 border font-mono font-bold uppercase ${getDifficultyBadge(item.difficulty)}`}>
                           {item.difficulty}
                         </span>
-                        <span className="text-xs px-2 py-0.5 rounded-md bg-slate-800/80 text-slate-400 border border-slate-700/60 uppercase tracking-wider font-mono">
+                        <span className="text-xs px-2 py-0.5 bg-zinc-900 text-zinc-400 border border-zinc-800 uppercase tracking-wider font-mono">
                           {item.question_type}
                         </span>
                       </div>
@@ -346,15 +346,15 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                         <button
                           onClick={() => handleCopy(item)}
                           title="Copy question text"
-                          className="p-1.5 text-slate-400 hover:text-slate-200 hover:bg-slate-800 rounded-lg transition-colors"
+                          className="p-1.5 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
                         >
-                          {copiedId === item.id ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
+                          {copiedId === item.id ? <Check className="w-4 h-4 text-white" /> : <Copy className="w-4 h-4" />}
                         </button>
                         <button
                           onClick={() => handleBookmarkToggle(item)}
                           title={isSaved ? "Remove from global Bookmarks" : "Save to global Bookmarks"}
-                          className={`p-1.5 rounded-lg transition-colors ${
-                            isSaved ? 'text-amber-400 bg-amber-400/10' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800'
+                          className={`p-1.5 transition-colors ${
+                            isSaved ? 'text-white bg-zinc-800 border border-white' : 'text-zinc-400 hover:text-white hover:bg-zinc-800'
                           }`}
                         >
                           <Bookmark className="w-4 h-4" />
@@ -363,41 +363,41 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                     </div>
 
                     {/* Domain Label */}
-                    <div className="text-xs text-slate-400 font-medium mb-2 flex items-center gap-1.5">
-                      <Layers className="w-3.5 h-3.5 text-slate-500" />
+                    <div className="text-xs text-zinc-400 font-bold mb-2 flex items-center gap-1.5 uppercase">
+                      <Layers className="w-3.5 h-3.5 text-zinc-500" />
                       {item.domain}
                     </div>
 
                     {/* Question Prompt */}
-                    <h2 className="text-base md:text-lg font-semibold text-slate-100 leading-snug mb-4">
+                    <h2 className="text-base md:text-lg font-bold text-zinc-100 leading-snug mb-4 font-sans">
                       {item.prompt}
                     </h2>
 
                     {/* Expandable Preferred Answer & Checkpoints */}
                     {isExpanded && (
-                      <div className="mt-4 pt-4 border-t border-slate-800/80 space-y-4 animate-fadeIn">
+                      <div className="mt-4 pt-4 border-t border-zinc-800 space-y-4">
                         {/* Preferred Answer */}
-                        <div className="bg-slate-950/70 rounded-xl p-4 border border-slate-800">
-                          <h3 className="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2 flex items-center gap-1.5">
-                            <Sparkles className="w-3.5 h-3.5" />
+                        <div className="bg-black p-4 border border-zinc-800">
+                          <h3 className="text-xs font-bold uppercase tracking-wider text-white mb-2 flex items-center gap-1.5 font-mono">
+                            <Sparkles className="w-3.5 h-3.5 text-zinc-400" />
                             Preferred Answer Guide / Rubric
                           </h3>
-                          <p className="text-sm text-slate-300 leading-relaxed font-sans whitespace-pre-line">
+                          <p className="text-sm text-zinc-300 leading-relaxed font-sans whitespace-pre-line">
                             {item.preferred_answer}
                           </p>
                         </div>
 
                         {/* Evaluator Checkpoints */}
                         {item.evaluation_points && item.evaluation_points.length > 0 && (
-                          <div className="bg-slate-950/40 rounded-xl p-4 border border-slate-800/60">
-                            <h3 className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2 flex items-center gap-1.5">
-                              <CheckCircle2 className="w-3.5 h-3.5" />
+                          <div className="bg-zinc-900/60 p-4 border border-zinc-800">
+                            <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2 flex items-center gap-1.5 font-mono">
+                              <CheckCircle2 className="w-3.5 h-3.5 text-zinc-400" />
                               Evaluator Checkpoints
                             </h3>
-                            <ul className="space-y-1.5">
+                            <ul className="space-y-1.5 font-sans">
                               {item.evaluation_points.map((pt, idx) => (
-                                <li key={idx} className="text-xs text-slate-300 flex items-start gap-2">
-                                  <span className="text-blue-400 font-bold">•</span>
+                                <li key={idx} className="text-xs text-zinc-300 flex items-start gap-2">
+                                  <span className="text-white font-bold">•</span>
                                   <span>{pt}</span>
                                 </li>
                               ))}
@@ -409,10 +409,10 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                   </div>
 
                   {/* Card Footer Actions */}
-                  <div className="mt-5 pt-4 border-t border-slate-800/60 flex items-center justify-between gap-3">
+                  <div className="mt-5 pt-4 border-t border-zinc-800 flex items-center justify-between gap-3 font-mono">
                     <button
                       onClick={() => toggleExpand(item.id)}
-                      className="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors"
+                      className="text-xs font-bold text-white hover:text-zinc-300 flex items-center gap-1 transition-colors uppercase"
                     >
                       {isExpanded ? (
                         <>Hide Answer <ChevronDown className="w-4 h-4" /></>
@@ -427,10 +427,10 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                         href={item.resolution_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs text-slate-400 hover:text-slate-200 flex items-center gap-1.5 bg-slate-800/80 hover:bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700/60 transition-all truncate max-w-[200px]"
+                        className="text-xs text-zinc-400 hover:text-white flex items-center gap-1.5 bg-zinc-900 hover:bg-zinc-800 px-3 py-1.5 border border-zinc-700 transition-all truncate max-w-[200px]"
                         title={`${item.resolution_title} (Verified: ${item.last_verified_at})`}
                       >
-                        <ExternalLink className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                        <ExternalLink className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
                         <span className="truncate">{item.resolution_title}</span>
                       </a>
                     )}
@@ -443,23 +443,23 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
 
         {/* Pagination Bar */}
         {totalPages > 1 && (
-          <div className="flex items-center justify-between border-t border-slate-800 mt-8 pt-6">
+          <div className="flex items-center justify-between border-t-2 border-zinc-800 mt-8 pt-6 font-mono">
             <button
               disabled={currentPage === 1}
               onClick={() => setCurrentPage(p => Math.max(p - 1, 1))}
-              className="px-4 py-2 bg-slate-900 border border-slate-800 text-slate-300 rounded-xl text-sm font-medium disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-800 transition-colors"
+              className="px-4 py-2 bg-zinc-900 border border-zinc-700 text-zinc-300 rounded-none text-xs font-bold uppercase disabled:opacity-40 disabled:cursor-not-allowed hover:bg-zinc-800 transition-colors"
             >
               Previous Page
             </button>
 
-            <span className="text-xs text-slate-400 font-mono">
-              Page <span className="text-emerald-400 font-bold">{currentPage}</span> of {totalPages}
+            <span className="text-xs text-zinc-400">
+              Page <span className="text-white font-bold">{currentPage}</span> of {totalPages}
             </span>
 
             <button
               disabled={currentPage === totalPages}
               onClick={() => setCurrentPage(p => Math.min(p + 1, totalPages))}
-              className="px-4 py-2 bg-slate-900 border border-slate-800 text-slate-300 rounded-xl text-sm font-medium disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-800 transition-colors"
+              className="px-4 py-2 bg-zinc-900 border border-zinc-700 text-zinc-300 rounded-none text-xs font-bold uppercase disabled:opacity-40 disabled:cursor-not-allowed hover:bg-zinc-800 transition-colors"
             >
               Next Page
             </button>
