@@ -2771,26 +2771,6 @@ export const interviewQDatabase: InterviewQItem[] = [
     "status": "published"
   },
   {
-    "id": "FED-001",
-    "role_slug": "frontend-developer",
-    "domain": "Modern JavaScript & Web Performance",
-    "difficulty": "foundation",
-    "question_type": "concept",
-    "prompt": "What is Event Delegation in JavaScript and why is it beneficial for performance?",
-    "preferred_answer": "Event delegation is a pattern where a single event listener is attached to a parent element to manage events for multiple child elements using event bubbling. Instead of adding listeners to 1,000 table rows or list items, one listener handles target element events, reducing memory consumption and avoiding listener re-attachment when dynamic children are added.",
-    "evaluation_points": [
-      "Event bubbling mechanism",
-      "Memory reduction",
-      "Handling dynamic DOM insertions",
-      "event.target vs event.currentTarget"
-    ],
-    "resolution_title": "MDN Web Docs - Event Delegation",
-    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_delegation",
-    "source_tier": "A",
-    "last_verified_at": "2026-07-28",
-    "status": "published"
-  },
-  {
     "id": "SEC-001",
     "role_slug": "cybersecurity-analyst",
     "domain": "Security Architecture & Zero Trust",
@@ -6397,6 +6377,3786 @@ export const interviewQDatabase: InterviewQItem[] = [
     ],
     "resolution_title": "Microsoft Azure Architecture Center - Best Practices",
     "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-001",
+    "role_slug": "frontend-developer",
+    "domain": "Web Platform and Browser Rendering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What happens from entering a URL until a page becomes visible?",
+    "preferred_answer": "A strong answer traces DNS and connection establishment, the HTTP request and response, HTML parsing into the DOM, CSS parsing into the CSSOM, render-tree construction, style calculation, layout, paint and compositing. JavaScript can alter or block parts of that work. The exact pipeline is browser-dependent, so the useful focus is dependencies, critical resources and when the user can see and interact with meaningful content.",
+    "evaluation_points": [
+      "Network and response phase",
+      "DOM and CSSOM construction",
+      "Layout, paint and compositing",
+      "JavaScript and critical-resource effects"
+    ],
+    "resolution_title": "MDN - How Browsers Work",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-002",
+    "role_slug": "frontend-developer",
+    "domain": "Web Platform and Browser Rendering",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "Differentiate the DOM, CSSOM and render tree.",
+    "preferred_answer": "The DOM represents document nodes and structure. The CSSOM represents parsed styles and cascade results. The render tree combines visible DOM content with computed styles for layout and painting; it normally excludes non-rendered nodes such as metadata and elements hidden with display none. They are related but not identical, and changing one can trigger style, layout or paint work depending on the property and element.",
+    "evaluation_points": [
+      "DOM structure",
+      "CSSOM style representation",
+      "Render-tree purpose",
+      "Visibility and update consequences"
+    ],
+    "resolution_title": "MDN - How Browsers Work",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-003",
+    "role_slug": "frontend-developer",
+    "domain": "Web Platform and Browser Rendering",
+    "difficulty": "intermediate",
+    "question_type": "performance",
+    "prompt": "What is the difference between layout, paint and compositing work?",
+    "preferred_answer": "Layout calculates geometry and positions. Paint records the visual appearance of elements into drawing commands or layers. Compositing assembles already painted layers, often using the GPU, into the final frame. A change to width may require layout and paint, while transform or opacity can often be handled by compositing. Promotion is not free because layers consume memory and can create additional management cost.",
+    "evaluation_points": [
+      "Geometry versus pixels versus layer assembly",
+      "Property-dependent invalidation",
+      "Transform and opacity nuance",
+      "Layer-memory trade-off"
+    ],
+    "resolution_title": "Chrome DevTools - Performance",
+    "resolution_url": "https://developer.chrome.com/docs/devtools/performance",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-004",
+    "role_slug": "frontend-developer",
+    "domain": "Web Platform and Browser Rendering",
+    "difficulty": "intermediate",
+    "question_type": "diagnosis",
+    "prompt": "Why can JavaScript block first rendering even when it does not change the page?",
+    "preferred_answer": "Classic parser-inserted scripts can pause HTML parsing while they are fetched and executed because the browser must assume they may inspect or modify the document. Large execution tasks also occupy the main thread, delaying style, layout and paint. Use deferred or module scripts when ordering permits, reduce critical code and measure the dependency chain rather than assuming that moving a script to the bottom solves every case.",
+    "evaluation_points": [
+      "Parser blocking",
+      "Main-thread execution",
+      "Appropriate defer or module use",
+      "Measurement of dependency chain"
+    ],
+    "resolution_title": "MDN - How Browsers Work",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-005",
+    "role_slug": "frontend-developer",
+    "domain": "Web Platform and Browser Rendering",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "What is progressive rendering, and how should a frontend support it?",
+    "preferred_answer": "Progressive rendering lets useful structure and content become available before every resource or data dependency is complete. Support it with semantic server or static HTML, prioritised critical assets, reserved media dimensions, streaming or staged UI, and loading states that preserve layout. Avoid hiding the entire application behind one global spinner or requiring a large client bundle before any meaningful content can be read.",
+    "evaluation_points": [
+      "Useful content before full completion",
+      "Critical-resource prioritisation",
+      "Stable staged UI",
+      "Avoid all-or-nothing boot"
+    ],
+    "resolution_title": "web.dev - Optimize Largest Contentful Paint",
+    "resolution_url": "https://web.dev/articles/optimize-lcp",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-006",
+    "role_slug": "frontend-developer",
+    "domain": "Web Platform and Browser Rendering",
+    "difficulty": "advanced",
+    "question_type": "performance",
+    "prompt": "How do synchronous layout reads and writes create layout thrashing?",
+    "preferred_answer": "Writing style or DOM geometry invalidates layout. Reading measurements such as offsetHeight may then force the browser to calculate layout immediately. Repeating read-write-read cycles in a loop prevents batching and can consume a frame budget. Group reads before writes, use requestAnimationFrame for visual updates, prefer observers when appropriate and profile the actual call stacks before introducing abstractions.",
+    "evaluation_points": [
+      "Invalidation and forced layout",
+      "Alternating read/write pattern",
+      "Batching and frame scheduling",
+      "Profiler-led remediation"
+    ],
+    "resolution_title": "Chrome DevTools - Performance",
+    "resolution_url": "https://developer.chrome.com/docs/devtools/performance",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-007",
+    "role_slug": "frontend-developer",
+    "domain": "Web Platform and Browser Rendering",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "When should work move from the main thread to a Web Worker?",
+    "preferred_answer": "Move CPU-heavy, independently serialisable work that would otherwise create long tasks, such as parsing, transformation or computation. Workers cannot directly manipulate the DOM and communication copies or transfers data, so frequent fine-grained messaging can erase the benefit. Measure main-thread blocking, design a clear message protocol, use transferable objects when appropriate and keep accessibility and UI state on the main thread.",
+    "evaluation_points": [
+      "CPU-heavy main-thread work",
+      "No direct DOM access",
+      "Messaging and transfer cost",
+      "Measured boundary and protocol"
+    ],
+    "resolution_title": "MDN - JavaScript Execution Model",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Execution_model",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-008",
+    "role_slug": "frontend-developer",
+    "domain": "Web Platform and Browser Rendering",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "A page paints quickly but remains unresponsive for four seconds. How would you investigate?",
+    "preferred_answer": "Capture a performance trace on a representative device, identify long tasks and their initiating scripts, separate download, parse, compile and execution cost, and inspect hydration or startup work. Correlate the trace with INP and user actions. Reduce or defer non-critical JavaScript, split work into smaller tasks, remove duplicate initialization and verify that the improvement holds in field data rather than only on a fast developer laptop.",
+    "evaluation_points": [
+      "Performance trace and long tasks",
+      "Startup/hydration attribution",
+      "Work reduction or scheduling",
+      "Representative and field validation"
+    ],
+    "resolution_title": "web.dev - Optimize Long Tasks",
+    "resolution_url": "https://web.dev/articles/optimize-long-tasks",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-009",
+    "role_slug": "frontend-developer",
+    "domain": "Semantic HTML and Forms",
+    "difficulty": "foundation",
+    "question_type": "semantics",
+    "prompt": "Why does semantic HTML matter when CSS can make any element look correct?",
+    "preferred_answer": "Semantic elements expose meaning and relationships to browsers, assistive technology, search systems and maintainers. Native elements also provide established keyboard, focus, form and interaction behaviour. CSS controls presentation but does not supply the complete semantics or behaviour of a button, heading, landmark or form control. Start with the correct element, then style it, and use ARIA only to fill a genuine semantic gap.",
+    "evaluation_points": [
+      "Meaning beyond appearance",
+      "Native behaviour",
+      "Maintenance and interoperability",
+      "Correct-element-first principle"
+    ],
+    "resolution_title": "MDN - Semantics",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-010",
+    "role_slug": "frontend-developer",
+    "domain": "Semantic HTML and Forms",
+    "difficulty": "foundation",
+    "question_type": "forms",
+    "prompt": "How should a label be associated with a form control?",
+    "preferred_answer": "Use a label element with a for value matching the control id, or wrap the control with its label when suitable. The accessible name should describe the requested value, not only its visual position. Placeholder text is not a replacement for a persistent label. Group related choices with fieldset and legend, and connect help or error text using the appropriate accessible description mechanism.",
+    "evaluation_points": [
+      "Programmatic label association",
+      "Persistent meaningful name",
+      "Placeholder limitation",
+      "Group and description handling"
+    ],
+    "resolution_title": "W3C WAI - Forms Tutorial",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/forms/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-011",
+    "role_slug": "frontend-developer",
+    "domain": "Semantic HTML and Forms",
+    "difficulty": "intermediate",
+    "question_type": "validation",
+    "prompt": "What should client-side form validation do, and what must remain on the server?",
+    "preferred_answer": "Client validation should give timely, specific feedback, prevent avoidable submissions and preserve entered data. Use native constraints where they fit and add custom checks for business rules. The server must independently validate every value because browser checks can be bypassed. Error messages should identify the field and correction, be programmatically associated and support a summary or focus strategy for complex forms.",
+    "evaluation_points": [
+      "Immediate user feedback",
+      "Native and custom constraints",
+      "Independent server validation",
+      "Accessible error recovery"
+    ],
+    "resolution_title": "WHATWG HTML - Forms",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/forms.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-012",
+    "role_slug": "frontend-developer",
+    "domain": "Semantic HTML and Forms",
+    "difficulty": "intermediate",
+    "question_type": "content",
+    "prompt": "When should an image use alt text, an empty alt attribute or a caption?",
+    "preferred_answer": "Provide concise alt text when the image communicates information, describing its purpose in context rather than every pixel. Use alt empty for purely decorative images so assistive technology can ignore them. Use a visible caption when the explanation benefits everyone or when attribution and surrounding interpretation matter. Complex charts may need a short alt plus nearby data, description or table.",
+    "evaluation_points": [
+      "Purpose-based alternative text",
+      "Decorative empty alt",
+      "Caption use",
+      "Complex-image alternative"
+    ],
+    "resolution_title": "MDN - HTML Images",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_images",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-013",
+    "role_slug": "frontend-developer",
+    "domain": "Semantic HTML and Forms",
+    "difficulty": "intermediate",
+    "question_type": "responsive media",
+    "prompt": "How do srcset and sizes help the browser choose an image?",
+    "preferred_answer": "srcset offers candidate resources with width or density descriptors. sizes describes the expected rendered width under layout conditions, allowing the browser to choose an appropriate candidate using viewport, device density and other factors. The browser makes the choice, so sizes must reflect the real layout. Use picture when art direction or format-specific source selection is required, not merely for every responsive image.",
+    "evaluation_points": [
+      "Candidate resources",
+      "Rendered-size hint",
+      "Browser selection",
+      "Picture for art direction or formats"
+    ],
+    "resolution_title": "MDN - Responsive Images",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-014",
+    "role_slug": "frontend-developer",
+    "domain": "Semantic HTML and Forms",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "What problems arise from building a custom button out of a div?",
+    "preferred_answer": "A div lacks button semantics, keyboard activation, focus behaviour, disabled semantics and form integration. Recreating these correctly requires role, tabindex, key handling, focus styling, state exposure and careful event behaviour, and still risks incompatibility. Use a native button unless the platform cannot express the control. Styling limitations are rarely sufficient justification for discarding built-in behaviour.",
+    "evaluation_points": [
+      "Missing semantics",
+      "Keyboard and focus gaps",
+      "Form and disabled behaviour",
+      "Native-first decision"
+    ],
+    "resolution_title": "W3C - ARIA Authoring Practices Guide",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-015",
+    "role_slug": "frontend-developer",
+    "domain": "Semantic HTML and Forms",
+    "difficulty": "advanced",
+    "question_type": "data presentation",
+    "prompt": "How should a complex data table be made understandable?",
+    "preferred_answer": "Use table markup only for genuine row-and-column relationships. Provide a caption, identify header cells with th, and use scope for straightforward associations. Complex spanning headers may require explicit id and headers relationships or a simplified presentation. Ensure keyboard users can reach interactive controls, preserve header context during responsive transformations, and offer alternate views rather than converting structured data into an unreadable card maze.",
+    "evaluation_points": [
+      "Genuine tabular use",
+      "Caption and header associations",
+      "Complex-header strategy",
+      "Responsive and interactive usability"
+    ],
+    "resolution_title": "MDN - HTML Table Basics",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-016",
+    "role_slug": "frontend-developer",
+    "domain": "Semantic HTML and Forms",
+    "difficulty": "scenario",
+    "question_type": "review",
+    "prompt": "A checkout form uses placeholders as labels, clears all values after an error and shows only a red border. What would you change?",
+    "preferred_answer": "Add persistent programmatic labels, preserve valid user input, display specific text errors connected to each control and provide an error summary for the failed submission. Move focus deliberately without trapping it, identify required fields and formats before submission, and use colour as only one signal. Keep server validation authoritative and avoid announcing errors repeatedly on every keystroke.",
+    "evaluation_points": [
+      "Persistent labels",
+      "Preserved input",
+      "Specific associated errors",
+      "Focus, colour and server-validation considerations"
+    ],
+    "resolution_title": "W3C - Web Content Accessibility Guidelines 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-017",
+    "role_slug": "frontend-developer",
+    "domain": "CSS Cascade, Layout and Responsive Design",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How does the CSS cascade decide which declaration wins?",
+    "preferred_answer": "The cascade first considers relevance and origin, then importance, cascade layer, selector specificity and source order, with scoping proximity also relevant in scoped styles. Inheritance supplies some values only when no declaration wins for the element. A good answer distinguishes the cascade from specificity: specificity is one comparison stage, not the whole mechanism.",
+    "evaluation_points": [
+      "Origin and importance",
+      "Layers and specificity",
+      "Source order or scope",
+      "Cascade versus inheritance distinction"
+    ],
+    "resolution_title": "MDN - CSS Cascade",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascade/Introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-018",
+    "role_slug": "frontend-developer",
+    "domain": "CSS Cascade, Layout and Responsive Design",
+    "difficulty": "foundation",
+    "question_type": "layout",
+    "prompt": "When should Flexbox be chosen over Grid?",
+    "preferred_answer": "Flexbox is primarily one-dimensional and is strong for distributing and aligning items along a row or column where content drives the other axis. Grid is two-dimensional and is strong for explicit rows and columns, page sections and component layouts with shared tracks. They are complementary: Grid can define macro structure while Flexbox aligns content inside a grid area.",
+    "evaluation_points": [
+      "One-dimensional Flexbox",
+      "Two-dimensional Grid",
+      "Content versus track control",
+      "Complementary use"
+    ],
+    "resolution_title": "MDN - CSS Flexible Box Layout",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-019",
+    "role_slug": "frontend-developer",
+    "domain": "CSS Cascade, Layout and Responsive Design",
+    "difficulty": "intermediate",
+    "question_type": "sizing",
+    "prompt": "Why does width: 100% sometimes overflow its container?",
+    "preferred_answer": "With the default content-box model, declared width covers only the content box, so padding and border add to the rendered size. Margins, intrinsic minimum sizes, long unbreakable content or viewport units can also overflow. Use box-sizing border-box where appropriate, inspect the containing block and min-width behaviour, and fix the actual sizing constraint rather than hiding overflow globally.",
+    "evaluation_points": [
+      "Content-box calculation",
+      "Other intrinsic overflow causes",
+      "Containing-block inspection",
+      "No blanket overflow hiding"
+    ],
+    "resolution_title": "MDN - CSS Box Model",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-020",
+    "role_slug": "frontend-developer",
+    "domain": "CSS Cascade, Layout and Responsive Design",
+    "difficulty": "intermediate",
+    "question_type": "responsive design",
+    "prompt": "How do container queries differ from media queries?",
+    "preferred_answer": "Media queries respond mainly to viewport or device conditions. Container queries let a component respond to the size or style context of an ancestor containment box. They make reusable components less dependent on where the page places them. The design still needs sensible intrinsic sizing, fallbacks and testing across nested containers; container queries do not replace all global breakpoints.",
+    "evaluation_points": [
+      "Viewport versus container context",
+      "Component reuse",
+      "Containment requirement",
+      "Complementary use with media queries"
+    ],
+    "resolution_title": "MDN - CSS Container Queries",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-021",
+    "role_slug": "frontend-developer",
+    "domain": "CSS Cascade, Layout and Responsive Design",
+    "difficulty": "intermediate",
+    "question_type": "maintainability",
+    "prompt": "What problems do excessive specificity and !important create?",
+    "preferred_answer": "They make overrides depend on selector escalation, source order accidents and hidden coupling, so local changes become risky. Prefer a clear layering strategy, low-specificity component selectors, design tokens and documented utility behaviour. !important can be appropriate for tightly controlled utilities or user-origin accessibility needs, but should not be the default escape from an unclear cascade.",
+    "evaluation_points": [
+      "Override escalation",
+      "Hidden coupling",
+      "Low-specificity architecture",
+      "Narrow legitimate important use"
+    ],
+    "resolution_title": "MDN - CSS Specificity",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascade/Specificity",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-022",
+    "role_slug": "frontend-developer",
+    "domain": "CSS Cascade, Layout and Responsive Design",
+    "difficulty": "advanced",
+    "question_type": "internationalisation",
+    "prompt": "Why are logical properties useful in a design system?",
+    "preferred_answer": "Logical properties describe block and inline dimensions and start/end edges, allowing layouts to adapt to writing mode and text direction without duplicating left/right rules. They reduce assumptions about English horizontal layout. Components must still be tested with real RTL content, bidirectional text, long translations and vertical writing because direction-aware properties alone do not guarantee correct typography or interaction order.",
+    "evaluation_points": [
+      "Block and inline axes",
+      "Writing-mode adaptation",
+      "Reduced directional assumptions",
+      "Real localisation testing"
+    ],
+    "resolution_title": "MDN - CSS Logical Properties",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Logical_properties_and_values",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-023",
+    "role_slug": "frontend-developer",
+    "domain": "CSS Cascade, Layout and Responsive Design",
+    "difficulty": "advanced",
+    "question_type": "debugging",
+    "prompt": "Why can an element with a very large z-index still appear behind another element?",
+    "preferred_answer": "z-index is compared within stacking contexts, not as one global number. Properties such as positioned elements with z-index, transforms, opacity, isolation and certain containment values can create new contexts. A child cannot escape its ancestor's context by increasing its own z-index. Inspect the stacking-context tree and simplify unnecessary contexts instead of adding larger arbitrary numbers.",
+    "evaluation_points": [
+      "Stacking-context scope",
+      "Context-creating properties",
+      "Child cannot escape ancestor",
+      "Inspect and simplify"
+    ],
+    "resolution_title": "MDN - Stacking Context",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Positioned_layout/Stacking_context",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-024",
+    "role_slug": "frontend-developer",
+    "domain": "CSS Cascade, Layout and Responsive Design",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "A card grid works at desktop widths but overflows in a narrow embedded panel. How would you fix it?",
+    "preferred_answer": "Inspect intrinsic minimum sizes, fixed widths, long content and the actual container rather than only the viewport. Use minmax with a zero or suitable minimum, allow text and media to shrink, define aspect ratios, and apply a container query for component-level changes. Verify keyboard order and content priority when columns collapse; do not solve overflow by clipping essential content.",
+    "evaluation_points": [
+      "Intrinsic-size diagnosis",
+      "Flexible track and content rules",
+      "Container-aware adaptation",
+      "Usability after collapse"
+    ],
+    "resolution_title": "MDN - CSS Grid Layout",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-025",
+    "role_slug": "frontend-developer",
+    "domain": "JavaScript Language and Asynchronous Execution",
+    "difficulty": "foundation",
+    "question_type": "language",
+    "prompt": "Differentiate var, let and const.",
+    "preferred_answer": "var is function-scoped, is hoisted with an initial undefined value and can be redeclared in the same scope. let and const are block-scoped and remain in the temporal dead zone until their declaration is evaluated. const prevents rebinding, not mutation of an object. Prefer const by default and let for intentional reassignment; avoid var in modern application code unless interoperating with legacy patterns.",
+    "evaluation_points": [
+      "Function versus block scope",
+      "Hoisting and temporal dead zone",
+      "Const rebinding nuance",
+      "Practical declaration choice"
+    ],
+    "resolution_title": "ECMAScript Language Specification",
+    "resolution_url": "https://tc39.es/ecma262/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-026",
+    "role_slug": "frontend-developer",
+    "domain": "JavaScript Language and Asynchronous Execution",
+    "difficulty": "foundation",
+    "question_type": "asynchrony",
+    "prompt": "What is the relationship between the call stack, task queue and microtask queue?",
+    "preferred_answer": "JavaScript runs one stack of synchronous execution per agent. Browser tasks include events and timers; after a task completes and the stack is empty, the runtime drains queued microtasks such as promise reactions before the next task and rendering opportunity. A long synchronous task or an endless chain of microtasks can delay input and paint even though individual callbacks are asynchronous.",
+    "evaluation_points": [
+      "Single execution stack",
+      "Tasks versus microtasks",
+      "Drain ordering",
+      "Starvation and rendering effect"
+    ],
+    "resolution_title": "MDN - JavaScript Execution Model",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Execution_model",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-027",
+    "role_slug": "frontend-developer",
+    "domain": "JavaScript Language and Asynchronous Execution",
+    "difficulty": "intermediate",
+    "question_type": "language",
+    "prompt": "What is a closure, and where can it cause a frontend bug?",
+    "preferred_answer": "A closure is a function together with access to the lexical environment in which it was created. It enables private state, callbacks and factories. Bugs arise when a callback captures stale values, loop variables are scoped incorrectly, or retained closures keep large objects and DOM nodes alive. The fix depends on intended lifetime: update dependencies, pass current values, narrow captured state or release listeners.",
+    "evaluation_points": [
+      "Lexical environment",
+      "Useful patterns",
+      "Stale capture or retention bugs",
+      "Lifetime-aware remediation"
+    ],
+    "resolution_title": "MDN - Closures",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-028",
+    "role_slug": "frontend-developer",
+    "domain": "JavaScript Language and Asynchronous Execution",
+    "difficulty": "intermediate",
+    "question_type": "data",
+    "prompt": "Why is object equality often surprising in JavaScript UI code?",
+    "preferred_answer": "Objects and arrays are compared by reference, not structural content. Two separately created objects with equal fields are not strictly equal, while mutating one object preserves its reference. UI libraries and memoisation frequently use reference equality, so immutable updates can make changes observable. Deep comparison is not universally better because it can be expensive and may conceal unclear state ownership.",
+    "evaluation_points": [
+      "Reference equality",
+      "Mutation preserves identity",
+      "Immutable update significance",
+      "Deep-comparison trade-off"
+    ],
+    "resolution_title": "ECMAScript Language Specification",
+    "resolution_url": "https://tc39.es/ecma262/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-029",
+    "role_slug": "frontend-developer",
+    "domain": "JavaScript Language and Asynchronous Execution",
+    "difficulty": "intermediate",
+    "question_type": "promises",
+    "prompt": "What is the difference between returning a promise and awaiting it inside an async function?",
+    "preferred_answer": "An async function always returns a promise. Returning an existing promise adopts its eventual state; awaiting pauses that function, unwraps the value or throws locally, and lets try/catch/finally handle the failure at that point. Await can also affect stack traces and sequencing. Avoid unnecessary serial awaits when operations are independent, but do not parallelise actions that require ordering or shared mutation.",
+    "evaluation_points": [
+      "Async return contract",
+      "Await local control flow",
+      "Error handling",
+      "Serial versus parallel judgement"
+    ],
+    "resolution_title": "MDN - Using Promises",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-030",
+    "role_slug": "frontend-developer",
+    "domain": "JavaScript Language and Asynchronous Execution",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How should cancellation be designed for a search-as-you-type interface?",
+    "preferred_answer": "Associate each request with an AbortController or library cancellation mechanism, cancel superseded work, and ensure only the latest request may update visible state. Debouncing reduces request volume but does not itself prevent stale responses. Treat abort as an expected state, clean up on unmount or route change, and make server work idempotent or independently cancellable where possible.",
+    "evaluation_points": [
+      "Abort superseded requests",
+      "Latest-result ownership",
+      "Debounce versus cancellation",
+      "Cleanup and expected abort state"
+    ],
+    "resolution_title": "MDN - AbortController",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-031",
+    "role_slug": "frontend-developer",
+    "domain": "JavaScript Language and Asynchronous Execution",
+    "difficulty": "advanced",
+    "question_type": "modules",
+    "prompt": "What makes an ES module graph suitable for static analysis and tree shaking?",
+    "preferred_answer": "Static import and export declarations make dependencies and exported bindings discoverable before execution. This allows bundlers to trace unused exports, but actual removal depends on side-effect analysis, package metadata and code patterns. Dynamic import creates asynchronous split points. Tree shaking is not guaranteed simply because ESM syntax is present; top-level side effects and CommonJS boundaries can retain code.",
+    "evaluation_points": [
+      "Static imports and exports",
+      "Bundler graph analysis",
+      "Dynamic import split points",
+      "Side-effect and interoperability limits"
+    ],
+    "resolution_title": "MDN - JavaScript Modules",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-032",
+    "role_slug": "frontend-developer",
+    "domain": "JavaScript Language and Asynchronous Execution",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "A typeahead occasionally shows results for an older query after the user has typed a newer one. What is happening and how do you fix it?",
+    "preferred_answer": "The requests are completing out of order, so an earlier response overwrites newer state. Give each request a cancellation signal or monotonically increasing request token, ignore stale completions, and define loading and error state per active query. Test slow and reordered network responses. Debouncing may reduce frequency but cannot by itself guarantee response ordering.",
+    "evaluation_points": [
+      "Race-condition identification",
+      "Cancellation or sequence token",
+      "Active-query state",
+      "Reordered-network testing"
+    ],
+    "resolution_title": "MDN - AbortController",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-033",
+    "role_slug": "frontend-developer",
+    "domain": "TypeScript for Frontend Applications",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does TypeScript guarantee, and what does it not guarantee at runtime?",
+    "preferred_answer": "TypeScript checks program structure at development or build time and then erases most types from emitted JavaScript. It can prevent many invalid property, call and assignment patterns when types are accurate. It does not validate network responses, local storage, user input or untyped third-party values at runtime. Those boundaries need parsing or validation before the data is trusted.",
+    "evaluation_points": [
+      "Compile-time checking",
+      "Type erasure",
+      "Useful defect prevention",
+      "Runtime boundary validation"
+    ],
+    "resolution_title": "TypeScript Handbook - Everyday Types",
+    "resolution_url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-034",
+    "role_slug": "frontend-developer",
+    "domain": "TypeScript for Frontend Applications",
+    "difficulty": "foundation",
+    "question_type": "types",
+    "prompt": "Why is unknown safer than any?",
+    "preferred_answer": "any disables type checking for operations performed on the value and can spread unsafety through the codebase. unknown accepts any incoming value but requires narrowing before properties are read or methods are called. It is therefore suitable for caught errors, parsed external values and uncertain APIs. The goal is not to cast unknown away immediately, but to establish evidence for a narrower type.",
+    "evaluation_points": [
+      "Any disables checking",
+      "Unknown requires narrowing",
+      "Boundary use cases",
+      "Evidence before assertion"
+    ],
+    "resolution_title": "TypeScript Handbook - Narrowing",
+    "resolution_url": "https://www.typescriptlang.org/docs/handbook/2/narrowing.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-035",
+    "role_slug": "frontend-developer",
+    "domain": "TypeScript for Frontend Applications",
+    "difficulty": "intermediate",
+    "question_type": "modelling",
+    "prompt": "When is a discriminated union better than several optional boolean flags?",
+    "preferred_answer": "A discriminated union represents each valid state as a separate object with a shared literal tag, such as loading, success or error. This prevents impossible combinations and enables exhaustive narrowing. Multiple flags can express contradictory states and distribute related fields across optionals. Use a union when state transitions and per-state data matter, while keeping the variants small and aligned with real domain behaviour.",
+    "evaluation_points": [
+      "Explicit valid states",
+      "Impossible-state prevention",
+      "Exhaustive narrowing",
+      "Domain-aligned variants"
+    ],
+    "resolution_title": "TypeScript Handbook - Narrowing",
+    "resolution_url": "https://www.typescriptlang.org/docs/handbook/2/narrowing.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-036",
+    "role_slug": "frontend-developer",
+    "domain": "TypeScript for Frontend Applications",
+    "difficulty": "intermediate",
+    "question_type": "generics",
+    "prompt": "What makes a useful generic component API?",
+    "preferred_answer": "A generic should preserve meaningful relationships between inputs and outputs that would otherwise be lost, such as a table column key matching the row type. Add constraints only for operations the implementation requires. Avoid a type parameter used once, over-general APIs or casts inside the component that hide an unsound design. Inference should handle the common case, with explicit type arguments available for ambiguous cases.",
+    "evaluation_points": [
+      "Preserves type relationships",
+      "Minimal constraints",
+      "Avoid meaningless generics",
+      "Useful inference"
+    ],
+    "resolution_title": "TypeScript Handbook - Generics",
+    "resolution_url": "https://www.typescriptlang.org/docs/handbook/2/generics.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-037",
+    "role_slug": "frontend-developer",
+    "domain": "TypeScript for Frontend Applications",
+    "difficulty": "intermediate",
+    "question_type": "configuration",
+    "prompt": "Why should strict compiler options be enabled deliberately rather than adding casts until the build passes?",
+    "preferred_answer": "Strict checks expose nullable paths, implicit any values, unsafe indexed access and function variance issues that often reflect real assumptions. Turning them on may require staged migration, boundary adapters and clearer models. Broad type assertions merely silence the compiler without proving the value. Record temporary exceptions, constrain their scope and remove them as the source or runtime validation improves.",
+    "evaluation_points": [
+      "Strict checks reveal assumptions",
+      "Staged migration",
+      "Assertion is not proof",
+      "Scoped temporary exceptions"
+    ],
+    "resolution_title": "TypeScript TSConfig Reference",
+    "resolution_url": "https://www.typescriptlang.org/tsconfig/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-038",
+    "role_slug": "frontend-developer",
+    "domain": "TypeScript for Frontend Applications",
+    "difficulty": "advanced",
+    "question_type": "libraries",
+    "prompt": "How should a frontend package publish JavaScript and type declarations for different consumers?",
+    "preferred_answer": "Publish declarations that match the actual runtime entry points, use package exports to define supported import paths, and test ESM and any supported CommonJS conditions. Ensure typesVersions or conditional types are used only when required, and do not expose internal files accidentally. Consumer tests should verify editor resolution, emitted imports and tree-shaking behaviour across the supported toolchain matrix.",
+    "evaluation_points": [
+      "Declarations match runtime",
+      "Controlled export map",
+      "ESM/CommonJS compatibility",
+      "Consumer resolution tests"
+    ],
+    "resolution_title": "TypeScript Handbook - Type Declarations",
+    "resolution_url": "https://www.typescriptlang.org/docs/handbook/2/type-declarations",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-039",
+    "role_slug": "frontend-developer",
+    "domain": "TypeScript for Frontend Applications",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "When should runtime schema validation be paired with inferred TypeScript types?",
+    "preferred_answer": "Use it at untrusted boundaries such as API responses, browser storage, messages and configuration. A schema can validate runtime data and often generate or infer a static type, reducing duplication. The schema still needs versioning, error policy and performance consideration. Internal objects already created by typed code usually do not need repeated validation unless they cross a trust or persistence boundary.",
+    "evaluation_points": [
+      "Untrusted-boundary use",
+      "Static and runtime alignment",
+      "Version and failure policy",
+      "Avoid redundant internal validation"
+    ],
+    "resolution_title": "TypeScript Handbook - Everyday Types",
+    "resolution_url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-040",
+    "role_slug": "frontend-developer",
+    "domain": "TypeScript for Frontend Applications",
+    "difficulty": "scenario",
+    "question_type": "refactoring",
+    "prompt": "A codebase uses any for every API response and has frequent production crashes on missing fields. How would you migrate it?",
+    "preferred_answer": "Inventory high-impact endpoints, replace any with unknown at the client boundary, add runtime parsers and explicit success/error models, then expose typed domain objects to components. Enable stricter compiler checks in stages and use generated contract types where trustworthy. Track parser failures and server drift. Avoid a mass cast to interfaces, which would preserve the same runtime risk under cleaner-looking syntax.",
+    "evaluation_points": [
+      "Prioritised endpoint inventory",
+      "Unknown plus runtime parsing",
+      "Typed domain boundary",
+      "Staged strictness without mass casting"
+    ],
+    "resolution_title": "TypeScript Handbook - Narrowing",
+    "resolution_url": "https://www.typescriptlang.org/docs/handbook/2/narrowing.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-041",
+    "role_slug": "frontend-developer",
+    "domain": "DOM, Events and Browser APIs",
+    "difficulty": "foundation",
+    "question_type": "dom",
+    "prompt": "What is the DOM, and why is it not the original HTML source?",
+    "preferred_answer": "The DOM is the browser's live object model of the parsed document. Parsing can repair invalid markup, scripts can add or remove nodes, and browser features may reflect state that was not present in the original response. Developer tools commonly show the current DOM, not the untouched source. Frontend code should reason about the live tree and avoid assuming source text and runtime structure are always identical.",
+    "evaluation_points": [
+      "Live object model",
+      "Parser repair",
+      "Script-driven mutation",
+      "Source versus runtime distinction"
+    ],
+    "resolution_title": "MDN - Document Object Model",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-042",
+    "role_slug": "frontend-developer",
+    "domain": "DOM, Events and Browser APIs",
+    "difficulty": "foundation",
+    "question_type": "events",
+    "prompt": "Explain event capture, target and bubble phases.",
+    "preferred_answer": "An event travels from the window toward the target during capture, reaches the target, and then usually bubbles back through ancestors. Listeners can be registered for capture or bubble. Propagation and default browser behaviour are separate concepts: stopPropagation affects traversal, while preventDefault requests cancellation of a cancelable default action. Use both sparingly because global interruption can break composition and accessibility.",
+    "evaluation_points": [
+      "Three phases",
+      "Listener phase choice",
+      "Propagation versus default action",
+      "Cautious interruption"
+    ],
+    "resolution_title": "WHATWG DOM Standard",
+    "resolution_url": "https://dom.spec.whatwg.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-043",
+    "role_slug": "frontend-developer",
+    "domain": "DOM, Events and Browser APIs",
+    "difficulty": "intermediate",
+    "question_type": "patterns",
+    "prompt": "When is event delegation useful?",
+    "preferred_answer": "Delegation places one listener on a stable ancestor and uses the event target or composed path to identify matching descendants. It is useful for dynamic lists and large groups of similar controls, reducing listener setup and simplifying lifecycle management. It needs careful selector checks, keyboard-equivalent behaviour and awareness of non-bubbling events and shadow DOM boundaries.",
+    "evaluation_points": [
+      "Ancestor listener",
+      "Dynamic-list and scale benefit",
+      "Target matching",
+      "Non-bubbling and shadow-boundary limits"
+    ],
+    "resolution_title": "MDN - Introduction to Events",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-044",
+    "role_slug": "frontend-developer",
+    "domain": "DOM, Events and Browser APIs",
+    "difficulty": "intermediate",
+    "question_type": "observers",
+    "prompt": "When would you use IntersectionObserver instead of a scroll handler?",
+    "preferred_answer": "IntersectionObserver asynchronously reports visibility relationships between a target and a root without requiring repeated geometry reads on every scroll event. It is useful for lazy work, exposure measurement and infinite loading. It does not provide pixel-perfect continuous animation data, and thresholds, root margins, unobserving and loading guards must be designed to prevent duplicate or premature work.",
+    "evaluation_points": [
+      "Asynchronous intersection reporting",
+      "Lazy and exposure use",
+      "Not continuous animation telemetry",
+      "Threshold and cleanup design"
+    ],
+    "resolution_title": "MDN - Intersection Observer API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-045",
+    "role_slug": "frontend-developer",
+    "domain": "DOM, Events and Browser APIs",
+    "difficulty": "intermediate",
+    "question_type": "storage",
+    "prompt": "How do localStorage, sessionStorage and IndexedDB differ?",
+    "preferred_answer": "localStorage is synchronous string storage scoped to an origin and persists beyond a session. sessionStorage is also synchronous and string-based but scoped to a tab session. IndexedDB is asynchronous, transactional and suitable for larger structured data. None should be treated as a trusted secret store, and synchronous storage can block the main thread. Choose based on data size, lifetime, access pattern and sensitivity.",
+    "evaluation_points": [
+      "Lifetime distinction",
+      "Synchronous string storage",
+      "IndexedDB capabilities",
+      "Security and main-thread limits"
+    ],
+    "resolution_title": "MDN - Storage API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-046",
+    "role_slug": "frontend-developer",
+    "domain": "DOM, Events and Browser APIs",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "What risks arise when a component attaches global event listeners or observers?",
+    "preferred_answer": "Listeners can outlive the component, retain closures, fire multiple times after remounting and respond in the wrong route or state. Observers can keep targets reachable and perform unnecessary work. Register only when needed, use stable handlers, remove or abort subscriptions during cleanup, and test strict or repeated mount cycles. Centralised listeners should have explicit ownership rather than relying on page reload to clear them.",
+    "evaluation_points": [
+      "Lifetime and memory risk",
+      "Duplicate behaviour",
+      "Cleanup or abort",
+      "Explicit ownership and remount testing"
+    ],
+    "resolution_title": "MDN - Introduction to Events",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-047",
+    "role_slug": "frontend-developer",
+    "domain": "DOM, Events and Browser APIs",
+    "difficulty": "advanced",
+    "question_type": "web components",
+    "prompt": "How does event propagation interact with shadow DOM?",
+    "preferred_answer": "Events may be retargeted so outside code sees the custom element rather than internal nodes, protecting encapsulation. Only composed events cross a shadow boundary, and bubbling remains a separate property. Component authors should expose deliberate high-level events with stable detail, avoid leaking internal implementation and ensure accessible semantics are represented on the host or through supported relationships.",
+    "evaluation_points": [
+      "Retargeting",
+      "Composed versus bubbling",
+      "Stable public events",
+      "Encapsulation and accessibility"
+    ],
+    "resolution_title": "WHATWG DOM Standard",
+    "resolution_url": "https://dom.spec.whatwg.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-048",
+    "role_slug": "frontend-developer",
+    "domain": "DOM, Events and Browser APIs",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "After navigating between routes several times, each click triggers the same action four times. How would you diagnose it?",
+    "preferred_answer": "Confirm duplicate listener execution in the debugger, inspect component mount and cleanup paths, and identify whether anonymous handlers, subscriptions or delegated roots are re-registered. Add an abort signal or deterministic unsubscribe, use stable ownership and verify that route transitions remove previous listeners. Also check development strict-mode behaviour separately from a production leak so the fix addresses the real lifecycle issue.",
+    "evaluation_points": [
+      "Duplicate-listener confirmation",
+      "Mount/cleanup inspection",
+      "Deterministic unsubscribe",
+      "Development versus production distinction"
+    ],
+    "resolution_title": "MDN - Introduction to Events",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-049",
+    "role_slug": "frontend-developer",
+    "domain": "Accessibility and Inclusive UI",
+    "difficulty": "foundation",
+    "question_type": "principles",
+    "prompt": "What do the four WCAG principles mean for frontend implementation?",
+    "preferred_answer": "Content should be perceivable through alternatives and adaptable presentation, operable with keyboard and sufficient time, understandable in language and interaction, and robust across browsers and assistive technologies. The principles guide outcomes rather than prescribing one framework. A strong implementation combines semantic HTML, visual design, interaction design, content and testing instead of treating accessibility as an automated audit score.",
+    "evaluation_points": [
+      "Perceivable",
+      "Operable",
+      "Understandable",
+      "Robust and outcome-focused"
+    ],
+    "resolution_title": "W3C - Web Content Accessibility Guidelines 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-050",
+    "role_slug": "frontend-developer",
+    "domain": "Accessibility and Inclusive UI",
+    "difficulty": "foundation",
+    "question_type": "keyboard",
+    "prompt": "What makes a custom interactive widget keyboard accessible?",
+    "preferred_answer": "It must be reachable in a logical focus order, expose the correct role, name, state and value, support the expected keyboard pattern, show visible focus and preserve escape or exit behaviour. Prefer a native control first. For composite widgets, follow an established APG pattern and manage internal focus deliberately rather than placing every descendant in the tab order.",
+    "evaluation_points": [
+      "Logical focusability",
+      "Role/name/state",
+      "Expected keyboard interaction",
+      "Native-first and composite focus pattern"
+    ],
+    "resolution_title": "W3C - ARIA Authoring Practices Guide",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-051",
+    "role_slug": "frontend-developer",
+    "domain": "Accessibility and Inclusive UI",
+    "difficulty": "intermediate",
+    "question_type": "focus",
+    "prompt": "When should an application move focus after a UI update?",
+    "preferred_answer": "Move focus when the user's context changes and the next action would otherwise be unclear, such as opening a modal, navigating to a new view or submitting a form with errors. Do not move focus for routine background updates. Focus the most useful semantic target, preserve return focus when a temporary surface closes and announce dynamic status separately when focus movement would be disruptive.",
+    "evaluation_points": [
+      "Context-change trigger",
+      "No unnecessary movement",
+      "Useful semantic target",
+      "Return focus and status announcement"
+    ],
+    "resolution_title": "W3C - Understanding Focus Visible",
+    "resolution_url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-052",
+    "role_slug": "frontend-developer",
+    "domain": "Accessibility and Inclusive UI",
+    "difficulty": "intermediate",
+    "question_type": "aria",
+    "prompt": "What is the first rule of ARIA, and why does it matter?",
+    "preferred_answer": "Use native HTML semantics and behaviour when they meet the requirement rather than replacing them with ARIA. ARIA can expose roles, states and relationships but does not add keyboard interaction, focus management or visual behaviour. Incorrect ARIA can override useful native semantics and make a control less accessible, so every added attribute needs a clear purpose and tested interaction model.",
+    "evaluation_points": [
+      "Native HTML first",
+      "ARIA does not add behaviour",
+      "Incorrect ARIA risk",
+      "Purpose and testing"
+    ],
+    "resolution_title": "W3C - WAI-ARIA Overview",
+    "resolution_url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-053",
+    "role_slug": "frontend-developer",
+    "domain": "Accessibility and Inclusive UI",
+    "difficulty": "intermediate",
+    "question_type": "dynamic content",
+    "prompt": "How should asynchronous status messages be announced?",
+    "preferred_answer": "Use an appropriate live region or status role for concise, meaningful changes that users need without moving focus. Insert or update the message in a way assistive technology can detect, avoid repeatedly announcing every loading tick and do not hide the text visually unless the design has an equivalent visible status. Errors requiring action may need focus or an error summary in addition to a live announcement.",
+    "evaluation_points": [
+      "Appropriate live region",
+      "Concise meaningful update",
+      "Avoid announcement noise",
+      "Actionable errors may need focus"
+    ],
+    "resolution_title": "W3C - ARIA Authoring Practices Guide",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-054",
+    "role_slug": "frontend-developer",
+    "domain": "Accessibility and Inclusive UI",
+    "difficulty": "advanced",
+    "question_type": "names",
+    "prompt": "How are an accessible name and an accessible description different?",
+    "preferred_answer": "The accessible name identifies the control or region and is the primary label announced by assistive technology. The description supplies supplementary help, format or consequence. Names can come from native labels, text content, aria-label or aria-labelledby according to naming rules; descriptions may use aria-describedby or native relationships. Avoid replacing visible labels with hidden names that differ unexpectedly.",
+    "evaluation_points": [
+      "Primary identity versus supplementary help",
+      "Naming sources",
+      "Description relationships",
+      "Visible and accessible label consistency"
+    ],
+    "resolution_title": "W3C APG - Names and Descriptions",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-055",
+    "role_slug": "frontend-developer",
+    "domain": "Accessibility and Inclusive UI",
+    "difficulty": "advanced",
+    "question_type": "testing",
+    "prompt": "Why is passing an automated accessibility scan insufficient?",
+    "preferred_answer": "Automated tools can detect many syntax, contrast and relationship issues but cannot reliably judge meaningful alternative text, logical reading order, keyboard workflow, focus management, understandable errors or whether a task is usable. Combine automated checks with keyboard testing, accessibility-tree inspection, screen-reader checks and user research where possible. Treat failures as product defects and test complete flows, not isolated components only.",
+    "evaluation_points": [
+      "Automation coverage limit",
+      "Manual keyboard and AT testing",
+      "Complete-task testing",
+      "Product-defect framing"
+    ],
+    "resolution_title": "W3C - Web Content Accessibility Guidelines 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-056",
+    "role_slug": "frontend-developer",
+    "domain": "Accessibility and Inclusive UI",
+    "difficulty": "scenario",
+    "question_type": "review",
+    "prompt": "A modal looks correct but keyboard focus moves behind it and Escape does nothing. What needs to change?",
+    "preferred_answer": "Move focus into the modal when it opens, keep tab navigation within the active dialog, mark or make background content inert, provide an accessible name and close control, support Escape unless the action would be unsafe, and return focus to the invoking control. Preserve scroll and announce validation errors inside the dialog. Use a tested native or framework dialog implementation rather than hand-building partial focus trapping.",
+    "evaluation_points": [
+      "Initial and contained focus",
+      "Background inactivity",
+      "Name, close and Escape",
+      "Return focus and tested implementation"
+    ],
+    "resolution_title": "W3C - ARIA Authoring Practices Guide",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-057",
+    "role_slug": "frontend-developer",
+    "domain": "Performance and Core Web Vitals",
+    "difficulty": "foundation",
+    "question_type": "metrics",
+    "prompt": "What do LCP, INP and CLS measure?",
+    "preferred_answer": "Largest Contentful Paint measures loading of the largest relevant content element, Interaction to Next Paint measures responsiveness across user interactions, and Cumulative Layout Shift measures unexpected visual movement. They represent different user experiences and should be assessed in field data at an appropriate percentile, segmented by device and page type. A single Lighthouse run is diagnostic evidence, not the whole user population.",
+    "evaluation_points": [
+      "LCP loading",
+      "INP responsiveness",
+      "CLS stability",
+      "Field percentile and lab distinction"
+    ],
+    "resolution_title": "web.dev - Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-058",
+    "role_slug": "frontend-developer",
+    "domain": "Performance and Core Web Vitals",
+    "difficulty": "foundation",
+    "question_type": "measurement",
+    "prompt": "What is the difference between lab and field performance data?",
+    "preferred_answer": "Lab data is collected in a controlled environment and is useful for reproducible debugging and regression testing. Field data reflects real users, devices, networks, caches and interactions, making it essential for impact and distribution. Lab results can explain a trace; field results reveal who is affected. Use both, align page and release dimensions, and avoid comparing tools with different conditions as if they were identical.",
+    "evaluation_points": [
+      "Controlled lab",
+      "Real-user field",
+      "Diagnostic versus population value",
+      "Condition-aware comparison"
+    ],
+    "resolution_title": "Chrome for Developers - Lighthouse",
+    "resolution_url": "https://developer.chrome.com/docs/lighthouse/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-059",
+    "role_slug": "frontend-developer",
+    "domain": "Performance and Core Web Vitals",
+    "difficulty": "intermediate",
+    "question_type": "lcp",
+    "prompt": "What are the main parts of LCP time, and how can each be improved?",
+    "preferred_answer": "LCP can be decomposed into time to first byte, resource load delay, resource load duration and element render delay. Improve server response and caching, discover and prioritise the LCP resource early, reduce its transfer cost, and remove CSS, font, JavaScript or rendering work that delays presentation. First identify which part dominates; optimising image compression will not solve a late-discovered or client-rendered element.",
+    "evaluation_points": [
+      "LCP subparts",
+      "Early discovery and priority",
+      "Transfer efficiency",
+      "Render-delay diagnosis"
+    ],
+    "resolution_title": "web.dev - Optimize Largest Contentful Paint",
+    "resolution_url": "https://web.dev/articles/optimize-lcp",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-060",
+    "role_slug": "frontend-developer",
+    "domain": "Performance and Core Web Vitals",
+    "difficulty": "intermediate",
+    "question_type": "inp",
+    "prompt": "How do long tasks affect interaction responsiveness?",
+    "preferred_answer": "A long main-thread task prevents the browser from processing input, running handlers and presenting the next frame promptly. Break large work into smaller scheduled tasks, reduce script and rendering cost, avoid unnecessary synchronous work in handlers and provide immediate visual feedback where appropriate. Measure the full interaction, including input delay, handler time and presentation delay, rather than only timing the event callback.",
+    "evaluation_points": [
+      "Main-thread blocking",
+      "Task splitting and reduction",
+      "Handler and render cost",
+      "Full interaction phases"
+    ],
+    "resolution_title": "web.dev - Optimize Interaction to Next Paint",
+    "resolution_url": "https://web.dev/articles/optimize-inp",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-061",
+    "role_slug": "frontend-developer",
+    "domain": "Performance and Core Web Vitals",
+    "difficulty": "intermediate",
+    "question_type": "images",
+    "prompt": "How should image loading be prioritised on a content page?",
+    "preferred_answer": "Serve responsive dimensions and efficient formats, reserve width and height or aspect ratio, load the likely LCP image eagerly and make it discoverable in the initial markup, and lazy-load genuinely offscreen images. Do not lazy-load the above-the-fold hero by default. Use fetch priority only as a measured hint, and confirm that CDN, cache and transformation behaviour match the rendered size.",
+    "evaluation_points": [
+      "Responsive efficient delivery",
+      "Reserved space",
+      "Eager LCP and lazy offscreen",
+      "Measured priority hint"
+    ],
+    "resolution_title": "web.dev - Image Performance",
+    "resolution_url": "https://web.dev/learn/performance/image-performance",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-062",
+    "role_slug": "frontend-developer",
+    "domain": "Performance and Core Web Vitals",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "Why can code splitting improve load time but harm navigation?",
+    "preferred_answer": "Smaller initial bundles reduce unused download and execution, but too many tiny chunks create request overhead, duplicated dependencies and late loading when a route or interaction needs code. Split at meaningful route or feature boundaries, prefetch likely next work under suitable conditions and analyse actual chunk graphs. Optimise both initial and subsequent navigation, including cache behaviour and low-bandwidth devices.",
+    "evaluation_points": [
+      "Initial-payload benefit",
+      "Chunk overhead and late loading",
+      "Meaningful boundaries",
+      "Navigation and cache measurement"
+    ],
+    "resolution_title": "web.dev - Reduce JavaScript Payloads with Code Splitting",
+    "resolution_url": "https://web.dev/articles/reduce-javascript-payloads-with-code-splitting",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-063",
+    "role_slug": "frontend-developer",
+    "domain": "Performance and Core Web Vitals",
+    "difficulty": "advanced",
+    "question_type": "cls",
+    "prompt": "What causes layout shifts after initial paint, and how should they be prevented?",
+    "preferred_answer": "Common causes include media without reserved dimensions, ads or embeds inserted above content, late font metric changes and animations that affect layout. Reserve space, use stable placeholders, append dynamic content without moving the user's current context, choose font-loading strategies with compatible metrics and animate transforms rather than geometry. Distinguish expected shifts caused by recent input from unexpected instability.",
+    "evaluation_points": [
+      "Media and embed causes",
+      "Space reservation",
+      "Font and animation handling",
+      "Expected versus unexpected shifts"
+    ],
+    "resolution_title": "web.dev - Optimize Cumulative Layout Shift",
+    "resolution_url": "https://web.dev/articles/optimize-cls",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-064",
+    "role_slug": "frontend-developer",
+    "domain": "Performance and Core Web Vitals",
+    "difficulty": "scenario",
+    "question_type": "performance",
+    "prompt": "Field INP is poor on low-end Android devices, but desktop Lighthouse is good. What is your plan?",
+    "preferred_answer": "Segment field data by device, route and interaction, reproduce with CPU throttling and representative network conditions, then capture traces around the slow interactions. Identify third-party work, long handlers, framework rendering and layout cost. Reduce main-thread JavaScript, virtualise or simplify heavy UI, schedule non-critical work and ship a measurable experiment. Keep monitoring the field percentile after release because laboratory success may not reach affected users.",
+    "evaluation_points": [
+      "Field segmentation",
+      "Representative reproduction",
+      "Interaction trace attribution",
+      "Measured release and field follow-up"
+    ],
+    "resolution_title": "web.dev - Optimize Interaction to Next Paint",
+    "resolution_url": "https://web.dev/articles/optimize-inp",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-065",
+    "role_slug": "frontend-developer",
+    "domain": "HTTP, Networking, Caching and Data Transfer",
+    "difficulty": "foundation",
+    "question_type": "http",
+    "prompt": "What is the practical difference between GET, POST, PUT, PATCH and DELETE?",
+    "preferred_answer": "GET retrieves a representation and should be safe. POST submits a request whose semantics are defined by the resource and is often used to create or trigger processing. PUT replaces or creates the state at a known target and is normally idempotent. PATCH applies a partial modification. DELETE requests removal and is also defined as idempotent, although repeated responses may differ. Client behaviour should follow the API contract rather than method names alone.",
+    "evaluation_points": [
+      "Safe GET",
+      "POST processing",
+      "PUT/PATCH distinction",
+      "Idempotency and contract nuance"
+    ],
+    "resolution_title": "MDN - HTTP Overview",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-066",
+    "role_slug": "frontend-developer",
+    "domain": "HTTP, Networking, Caching and Data Transfer",
+    "difficulty": "foundation",
+    "question_type": "fetch",
+    "prompt": "Why does fetch not reject its promise for an HTTP 404 or 500 response?",
+    "preferred_answer": "Fetch rejects for network-level failures, aborted requests and some policy errors, but an HTTP error is still a successfully received Response. Application code must inspect response.ok or status and parse an expected error body safely. This separation lets clients handle redirects, validation errors and server failures explicitly. Parsing can also fail independently, so transport, HTTP status and body decoding should be represented as distinct failure states.",
+    "evaluation_points": [
+      "Network versus HTTP failure",
+      "Explicit status check",
+      "Error-body handling",
+      "Separate parsing failure"
+    ],
+    "resolution_title": "MDN - Using the Fetch API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-067",
+    "role_slug": "frontend-developer",
+    "domain": "HTTP, Networking, Caching and Data Transfer",
+    "difficulty": "intermediate",
+    "question_type": "caching",
+    "prompt": "Differentiate freshness caching and validation caching.",
+    "preferred_answer": "Freshness directives such as max-age allow a stored response to be reused without contacting the server until it becomes stale. Validation uses a validator such as ETag or Last-Modified so the client can ask whether the representation changed and receive a 304 response. Use immutable long-lived caching for content-addressed assets and controlled revalidation for changing resources; do not apply one cache policy to every response.",
+    "evaluation_points": [
+      "Fresh reuse",
+      "Conditional validation",
+      "ETag or Last-Modified",
+      "Resource-specific policy"
+    ],
+    "resolution_title": "MDN - HTTP Caching",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-068",
+    "role_slug": "frontend-developer",
+    "domain": "HTTP, Networking, Caching and Data Transfer",
+    "difficulty": "intermediate",
+    "question_type": "cors",
+    "prompt": "What does a CORS preflight check, and why is it not an authentication mechanism?",
+    "preferred_answer": "For a non-simple cross-origin request, the browser can send an OPTIONS request describing the intended method and headers. The server responds with the origins, methods, headers and credential policy it permits. This controls whether browser JavaScript may make and read the request. It does not authenticate the user, protect non-browser clients or replace server-side authorisation.",
+    "evaluation_points": [
+      "OPTIONS permission check",
+      "Origin/method/header response",
+      "Browser enforcement",
+      "Not authentication or authorisation"
+    ],
+    "resolution_title": "MDN - Cross-Origin Resource Sharing",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-069",
+    "role_slug": "frontend-developer",
+    "domain": "HTTP, Networking, Caching and Data Transfer",
+    "difficulty": "intermediate",
+    "question_type": "cookies",
+    "prompt": "Which cookie attributes matter for a frontend authentication session?",
+    "preferred_answer": "Secure restricts transmission to HTTPS, HttpOnly prevents JavaScript access, SameSite influences cross-site sending, Path and Domain define scope, and expiry controls lifetime. Session identifiers should usually be opaque, narrowly scoped and rotated. The frontend must still implement CSRF protections where cookies authenticate requests, avoid exposing tokens in URLs or logs and coordinate logout with server-side invalidation.",
+    "evaluation_points": [
+      "Secure and HttpOnly",
+      "SameSite and scope",
+      "Opaque rotated session",
+      "CSRF and invalidation"
+    ],
+    "resolution_title": "MDN - Using HTTP Cookies",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-070",
+    "role_slug": "frontend-developer",
+    "domain": "HTTP, Networking, Caching and Data Transfer",
+    "difficulty": "advanced",
+    "question_type": "performance",
+    "prompt": "When should preload or fetch priority be used?",
+    "preferred_answer": "Use preload when a critical resource is known from the initial document but would otherwise be discovered late, and ensure the as type, credentials mode and URL match the eventual request so the resource is reused. Fetch priority is a hint to adjust relative priority, not a command. Overuse competes with truly critical assets and can waste bandwidth, so verify the request waterfall and LCP effect.",
+    "evaluation_points": [
+      "Late-discovered critical resource",
+      "Matching request attributes",
+      "Priority as hint",
+      "Overuse and measurement"
+    ],
+    "resolution_title": "MDN - rel=preload",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preload",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-071",
+    "role_slug": "frontend-developer",
+    "domain": "HTTP, Networking, Caching and Data Transfer",
+    "difficulty": "advanced",
+    "question_type": "reliability",
+    "prompt": "How should a frontend retry failed requests?",
+    "preferred_answer": "Retry only failures that are plausibly transient and only when the operation is safe or idempotency is guaranteed. Use bounded exponential backoff with jitter, respect server guidance such as Retry-After, stop on abort or permanent client errors and avoid multiplying retries across several layers. Mutations may require idempotency keys or explicit user confirmation. Surface state clearly rather than leaving the interface indefinitely loading.",
+    "evaluation_points": [
+      "Transient failure classification",
+      "Bounded backoff and jitter",
+      "Idempotency for mutations",
+      "Layering and user-state clarity"
+    ],
+    "resolution_title": "MDN - HTTP Overview",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-072",
+    "role_slug": "frontend-developer",
+    "domain": "HTTP, Networking, Caching and Data Transfer",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "An API works in a command-line client but fails in the browser with a CORS message. What do you inspect?",
+    "preferred_answer": "Compare origins including scheme, host and port, inspect the preflight request and response, and verify allowed origin, method, headers and credential settings. Check redirects because a preflight or credentialed request may behave differently, and confirm that the server returns headers on error responses too. Do not use no-cors as a fix because it produces an opaque response and does not grant access to the data.",
+    "evaluation_points": [
+      "Exact origin comparison",
+      "Preflight inspection",
+      "Credentials and redirects",
+      "Reject no-cors workaround"
+    ],
+    "resolution_title": "MDN - Cross-Origin Resource Sharing",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-073",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend Security",
+    "difficulty": "foundation",
+    "question_type": "xss",
+    "prompt": "What is cross-site scripting, and what is the primary defence in frontend code?",
+    "preferred_answer": "XSS occurs when attacker-controlled data is interpreted as executable browser content in another user's origin. The primary defence is context-appropriate safe rendering: use framework text bindings, safe DOM APIs and output encoding for the destination context rather than concatenating HTML, JavaScript, CSS or URLs. Input validation and CSP add layers but do not replace correct output handling.",
+    "evaluation_points": [
+      "Untrusted data becomes executable",
+      "Context-aware output handling",
+      "Safe framework and DOM APIs",
+      "Validation/CSP as layers"
+    ],
+    "resolution_title": "OWASP - Cross Site Scripting Prevention Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-074",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend Security",
+    "difficulty": "foundation",
+    "question_type": "origins",
+    "prompt": "What does the same-origin policy protect?",
+    "preferred_answer": "It limits how documents and scripts from one origin can read or manipulate resources from another origin, where origin is defined by scheme, host and port. It helps isolate data and DOM state between sites. Explicit mechanisms such as CORS, postMessage and certain embedded-resource rules allow controlled interaction. It is a browser boundary, not a substitute for authentication, authorisation or server validation.",
+    "evaluation_points": [
+      "Scheme-host-port origin",
+      "Cross-origin read isolation",
+      "Explicit sharing mechanisms",
+      "Not a server-security substitute"
+    ],
+    "resolution_title": "MDN - Same-Origin Policy",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-075",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend Security",
+    "difficulty": "intermediate",
+    "question_type": "csp",
+    "prompt": "How does Content Security Policy reduce XSS risk?",
+    "preferred_answer": "CSP lets a site restrict permitted script, style, frame and other resource sources, and stronger policies can use nonces or hashes to avoid broad inline execution. It can block or report injected code that violates the policy. A weak allow-list, unsafe-inline or compromised allowed host can undermine it. Deploy in report-only mode, analyse violations and retain safe rendering as the primary defence.",
+    "evaluation_points": [
+      "Resource and script restrictions",
+      "Nonce/hash policy",
+      "Weak-policy limitations",
+      "Report-only rollout and defence in depth"
+    ],
+    "resolution_title": "MDN - Content Security Policy",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-076",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend Security",
+    "difficulty": "intermediate",
+    "question_type": "csrf",
+    "prompt": "When is CSRF a risk for a single-page application?",
+    "preferred_answer": "CSRF matters when the browser automatically attaches ambient credentials such as cookies to a state-changing request that an attacker can trigger cross-site. Defend with SameSite cookies, anti-CSRF tokens or origin verification, safe method semantics and re-authentication for sensitive operations. Storing a bearer token in JavaScript may change the CSRF model but can increase token theft impact under XSS.",
+    "evaluation_points": [
+      "Ambient credential condition",
+      "SameSite/token/origin controls",
+      "Safe method use",
+      "XSS trade-off of JS tokens"
+    ],
+    "resolution_title": "OWASP - Cross-Site Request Forgery Prevention Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-077",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend Security",
+    "difficulty": "intermediate",
+    "question_type": "storage",
+    "prompt": "Why should sensitive tokens generally not be stored in localStorage?",
+    "preferred_answer": "Any script executing in the origin can read localStorage, so an XSS vulnerability or compromised third-party script can extract a long-lived bearer token. The storage is also persistent and lacks cookie protections such as HttpOnly. Prefer secure session architecture using narrowly scoped HttpOnly cookies or short-lived in-memory tokens where suitable, and design for rotation, revocation and CSRF protection.",
+    "evaluation_points": [
+      "Origin-script readability",
+      "XSS and third-party exposure",
+      "Persistence and no HttpOnly",
+      "Safer session lifecycle"
+    ],
+    "resolution_title": "OWASP - HTML5 Security Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-078",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend Security",
+    "difficulty": "advanced",
+    "question_type": "supply chain",
+    "prompt": "How should third-party JavaScript risk be managed?",
+    "preferred_answer": "Inventory every script and the data and privileges it receives, remove unused vendors, load from controlled origins, pin versions, use Subresource Integrity for immutable cross-origin assets where workable, restrict execution with CSP and isolate high-risk content in sandboxed frames. Review change and incident processes because third-party code executes with the page's authority and can bypass application-level abstractions.",
+    "evaluation_points": [
+      "Inventory and privilege review",
+      "Pinning and integrity",
+      "CSP or sandbox isolation",
+      "Lifecycle and incident process"
+    ],
+    "resolution_title": "OWASP - Third Party JavaScript Management Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Third_Party_JavaScript_Management_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-079",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend Security",
+    "difficulty": "advanced",
+    "question_type": "dom security",
+    "prompt": "What problem do Trusted Types address?",
+    "preferred_answer": "Trusted Types can require dangerous DOM injection sinks to receive values created by approved policies rather than arbitrary strings. This helps centralise and audit HTML or script creation and can prevent many DOM XSS paths when combined with CSP enforcement. A permissive policy that simply returns input defeats the control, and it does not remove the need to minimise dangerous sinks and sanitise permitted markup.",
+    "evaluation_points": [
+      "Dangerous sink protection",
+      "Approved policy objects",
+      "CSP integration",
+      "Policy quality and sanitisation limits"
+    ],
+    "resolution_title": "MDN - Trusted Types API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-080",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend Security",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A marketing widget loaded from a third party begins injecting pop-ups and reading form fields. What is your response?",
+    "preferred_answer": "Disable or block the script at the delivery and CSP layers, preserve evidence and identify pages, users and data exposed. Revoke vendor credentials, inspect network requests and determine whether the supplier, CDN or integration was compromised. Notify incident and privacy owners, deploy a safe replacement only after validation, and redesign the integration with least data, isolated execution, version control and monitoring.",
+    "evaluation_points": [
+      "Immediate script containment",
+      "Evidence and scope",
+      "Credential/vendor investigation",
+      "Isolated least-privilege redesign"
+    ],
+    "resolution_title": "OWASP - Third Party JavaScript Management Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Third_Party_JavaScript_Management_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-081",
+    "role_slug": "frontend-developer",
+    "domain": "State Management and Server Data",
+    "difficulty": "foundation",
+    "question_type": "state",
+    "prompt": "What is the difference between local UI state and server state?",
+    "preferred_answer": "Local UI state is owned by the client interaction, such as whether a panel is open or the current draft input. Server state is remote, shared, asynchronous and can become stale independently of the component. It needs fetching, caching, invalidation, background updates and error handling. Treating all server data as ordinary global state often recreates cache logic poorly and makes freshness unclear.",
+    "evaluation_points": [
+      "Client-owned interaction state",
+      "Remote shared state",
+      "Freshness and cache concerns",
+      "Avoid undifferentiated global store"
+    ],
+    "resolution_title": "TanStack Query - Important Defaults",
+    "resolution_url": "https://tanstack.com/query/latest/docs/framework/react/guides/important-defaults",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-082",
+    "role_slug": "frontend-developer",
+    "domain": "State Management and Server Data",
+    "difficulty": "foundation",
+    "question_type": "modelling",
+    "prompt": "Why should derived values usually not be stored separately?",
+    "preferred_answer": "If a value can be calculated from current props or state, storing another copy creates multiple sources of truth and synchronisation bugs. Compute it during rendering or memoise only when measurement shows meaningful cost. Store the minimal state needed to represent user intent and external facts. An exception may exist when the derived result is an independently versioned snapshot or expensive process output with explicit ownership.",
+    "evaluation_points": [
+      "Single source of truth",
+      "Compute from current state",
+      "Memoise based on cost",
+      "Explicit exception criteria"
+    ],
+    "resolution_title": "React - Managing State",
+    "resolution_url": "https://react.dev/learn/managing-state",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-083",
+    "role_slug": "frontend-developer",
+    "domain": "State Management and Server Data",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "When is a global state store justified?",
+    "preferred_answer": "Use one when state is genuinely shared across distant features, has complex transitions, must be inspected or persisted consistently, or benefits from central middleware and tooling. Do not globalise transient form fields or component-only state simply to avoid passing props. Define ownership, serialisability, reset rules and selectors, and separate server cache from client state unless the chosen library deliberately integrates both.",
+    "evaluation_points": [
+      "Genuinely shared or complex state",
+      "Avoid globalising local state",
+      "Ownership and reset rules",
+      "Server-cache separation"
+    ],
+    "resolution_title": "Redux Toolkit - Getting Started",
+    "resolution_url": "https://redux-toolkit.js.org/introduction/getting-started",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-084",
+    "role_slug": "frontend-developer",
+    "domain": "State Management and Server Data",
+    "difficulty": "intermediate",
+    "question_type": "caching",
+    "prompt": "What do stale time and garbage-collection time represent in a server-state cache?",
+    "preferred_answer": "Stale time defines how long cached data is considered fresh before normal triggers may refetch it. Garbage-collection time controls how long inactive cached data is retained before removal. They solve different problems: freshness and memory/reuse. Values should reflect how quickly the resource changes, user expectations and navigation patterns, not a single application-wide default copied without analysis.",
+    "evaluation_points": [
+      "Freshness window",
+      "Inactive retention",
+      "Different concerns",
+      "Resource-specific configuration"
+    ],
+    "resolution_title": "TanStack Query - Important Defaults",
+    "resolution_url": "https://tanstack.com/query/latest/docs/framework/react/guides/important-defaults",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-085",
+    "role_slug": "frontend-developer",
+    "domain": "State Management and Server Data",
+    "difficulty": "intermediate",
+    "question_type": "mutations",
+    "prompt": "How should a successful mutation update visible data?",
+    "preferred_answer": "The client can replace or patch known cached data from the authoritative response, invalidate related queries for refetch, or use an optimistic update with rollback. Choose based on response completeness, consistency needs and latency. Optimistic updates need a deterministic rollback and conflict policy. Broad invalidation is simple but may cause unnecessary traffic; manual cache editing can drift if every dependent view is not considered.",
+    "evaluation_points": [
+      "Response update or invalidation",
+      "Optimistic rollback",
+      "Consistency and latency trade-off",
+      "Dependent-cache awareness"
+    ],
+    "resolution_title": "TanStack Query - Mutations",
+    "resolution_url": "https://tanstack.com/query/latest/docs/framework/react/guides/mutations",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-086",
+    "role_slug": "frontend-developer",
+    "domain": "State Management and Server Data",
+    "difficulty": "advanced",
+    "question_type": "concurrency",
+    "prompt": "How do optimistic updates fail under concurrent mutations?",
+    "preferred_answer": "Several pending mutations may update the same cached entity, responses can arrive out of order and a rollback can accidentally erase a later valid change. Track mutation identity and previous state carefully, reconcile with authoritative server versions and limit optimism for high-conflict operations. Some interfaces should display pending states or use server-provided version checks rather than pretending success immediately.",
+    "evaluation_points": [
+      "Concurrent cache conflict",
+      "Out-of-order responses",
+      "Versioned reconciliation",
+      "When not to use optimism"
+    ],
+    "resolution_title": "TanStack Query - Mutations",
+    "resolution_url": "https://tanstack.com/query/latest/docs/framework/react/guides/mutations",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-087",
+    "role_slug": "frontend-developer",
+    "domain": "State Management and Server Data",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "What makes a state machine useful for complex frontend flows?",
+    "preferred_answer": "A state machine defines allowed states, events, transitions and side effects explicitly, preventing impossible combinations and making recovery paths testable. It is valuable for authentication, checkout, uploads or multi-step workflows with cancellation and retries. It adds modelling overhead, so small independent toggles may not need one. The machine should separate pure transition logic from external effects.",
+    "evaluation_points": [
+      "Explicit states and transitions",
+      "Impossible-state prevention",
+      "Complex-flow use cases",
+      "Pure transitions versus effects"
+    ],
+    "resolution_title": "React - Extracting State Logic into a Reducer",
+    "resolution_url": "https://react.dev/learn/extracting-state-logic-into-a-reducer",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-088",
+    "role_slug": "frontend-developer",
+    "domain": "State Management and Server Data",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "After editing a record, one page shows the new value while another shows the old value until refresh. How do you fix it?",
+    "preferred_answer": "Map every cache key and local copy that represents the entity, confirm the mutation response and identify whether a stale query remains active. Establish a canonical key strategy, update or invalidate all affected views and remove duplicated server data from local stores. Test navigation, background refetch and concurrent edits. If the server is eventually consistent, communicate pending state and reconcile using versions or timestamps.",
+    "evaluation_points": [
+      "Cache-key and duplicate-state inventory",
+      "Canonical update/invalidation",
+      "Navigation and concurrency tests",
+      "Eventual-consistency handling"
+    ],
+    "resolution_title": "TanStack Query - Query Invalidation",
+    "resolution_url": "https://tanstack.com/query/latest/docs/framework/react/guides/query-invalidation",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-089",
+    "role_slug": "frontend-developer",
+    "domain": "React Engineering",
+    "difficulty": "foundation",
+    "question_type": "rendering",
+    "prompt": "What triggers a React component to render, and does every render change the DOM?",
+    "preferred_answer": "Initial mounting, state updates, parent rendering and consumed context changes can trigger rendering. React calls components to calculate the next UI, then commits only the required host changes. Rendering is not itself a DOM mutation, and a render may produce no visible change. Component render logic must remain pure because React may call it more than once or abandon work.",
+    "evaluation_points": [
+      "Common render triggers",
+      "Render versus commit",
+      "No guaranteed DOM change",
+      "Pure render requirement"
+    ],
+    "resolution_title": "React - Render and Commit",
+    "resolution_url": "https://react.dev/learn/render-and-commit",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-090",
+    "role_slug": "frontend-developer",
+    "domain": "React Engineering",
+    "difficulty": "foundation",
+    "question_type": "state",
+    "prompt": "Why should React state be treated as immutable?",
+    "preferred_answer": "React state represents a snapshot for a render. Creating a new object or array lets React and memoisation logic detect a changed reference and preserves previous snapshots for concurrent or queued updates. Mutating existing state can produce stale UI, skipped updates and difficult debugging. Use functional updates when the next value depends on the previous value.",
+    "evaluation_points": [
+      "State as snapshot",
+      "Reference change",
+      "Mutation failure modes",
+      "Functional update use"
+    ],
+    "resolution_title": "React - Managing State",
+    "resolution_url": "https://react.dev/learn/managing-state",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-091",
+    "role_slug": "frontend-developer",
+    "domain": "React Engineering",
+    "difficulty": "intermediate",
+    "question_type": "effects",
+    "prompt": "When is useEffect appropriate, and when is it a code smell?",
+    "preferred_answer": "Use an Effect to synchronise a rendered component with an external system such as a subscription, browser API or non-React widget. It is often unnecessary for deriving values, responding to a specific user event or resetting state that can be modelled through keys or ownership. Effects need complete dependencies and cleanup. Adding Effects to coordinate internal state frequently creates loops and timing bugs.",
+    "evaluation_points": [
+      "External-system synchronisation",
+      "Not for derivation or event logic",
+      "Dependencies and cleanup",
+      "Internal-state coordination smell"
+    ],
+    "resolution_title": "React - Synchronizing with Effects",
+    "resolution_url": "https://react.dev/learn/synchronizing-with-effects",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-092",
+    "role_slug": "frontend-developer",
+    "domain": "React Engineering",
+    "difficulty": "intermediate",
+    "question_type": "composition",
+    "prompt": "When should context be used instead of props?",
+    "preferred_answer": "Context is useful for values needed by many descendants, such as a theme, authenticated user or scoped service, where passing through unrelated layers adds noise. It should not become an unstructured global store. Split contexts by change frequency and responsibility, keep provider values stable and preserve component reuse through composition when only a small subtree needs the data.",
+    "evaluation_points": [
+      "Widely needed descendant value",
+      "Avoid unstructured global state",
+      "Split by responsibility",
+      "Stable provider and composition"
+    ],
+    "resolution_title": "React - Passing Data Deeply with Context",
+    "resolution_url": "https://react.dev/learn/passing-data-deeply-with-context",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-093",
+    "role_slug": "frontend-developer",
+    "domain": "React Engineering",
+    "difficulty": "intermediate",
+    "question_type": "performance",
+    "prompt": "When do memo, useMemo and useCallback help?",
+    "preferred_answer": "They help when a measured expensive calculation or component render can be skipped because inputs retain stable identity, or when stable function identity is required by a memoised child or external subscription. They also add comparison, memory and dependency complexity and can be defeated by always-new props. Fix state placement and render scope first, then profile before adding memoisation broadly.",
+    "evaluation_points": [
+      "Measured skip opportunity",
+      "Stable identity requirement",
+      "Overhead and invalidation",
+      "Profile and fix architecture first"
+    ],
+    "resolution_title": "React - memo",
+    "resolution_url": "https://react.dev/reference/react/memo",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-094",
+    "role_slug": "frontend-developer",
+    "domain": "React Engineering",
+    "difficulty": "advanced",
+    "question_type": "async ui",
+    "prompt": "What does Suspense coordinate, and what does it not automatically solve?",
+    "preferred_answer": "Suspense coordinates a fallback boundary while supported code or data dependencies are not ready and can integrate with streaming and selective hydration. It lets designers place loading boundaries around meaningful UI regions. It does not by itself fetch arbitrary data, define cache semantics, handle event-handler errors or guarantee a good skeleton. The framework or data layer must integrate with the suspension mechanism.",
+    "evaluation_points": [
+      "Fallback boundary",
+      "Code/data integration",
+      "Streaming potential",
+      "Not fetching/cache/error solution by itself"
+    ],
+    "resolution_title": "React - Suspense",
+    "resolution_url": "https://react.dev/reference/react/Suspense",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-095",
+    "role_slug": "frontend-developer",
+    "domain": "React Engineering",
+    "difficulty": "advanced",
+    "question_type": "reliability",
+    "prompt": "What can an error boundary catch, and where are additional error paths needed?",
+    "preferred_answer": "An error boundary catches rendering and lifecycle errors in its descendant component tree and can show fallback UI and report diagnostics. It does not catch event-handler exceptions, arbitrary asynchronous callbacks, server failures or errors inside the boundary itself. Those paths need explicit try/catch, request error states or global reporting. Boundaries should be placed at recovery units rather than only once around the entire application.",
+    "evaluation_points": [
+      "Descendant render/lifecycle coverage",
+      "Uncovered event and async paths",
+      "Explicit error handling",
+      "Recovery-unit placement"
+    ],
+    "resolution_title": "React - Error Boundaries",
+    "resolution_url": "https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-096",
+    "role_slug": "frontend-developer",
+    "domain": "React Engineering",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "A React page repeatedly fetches the same endpoint and sometimes enters an effect loop. How would you debug it?",
+    "preferred_answer": "Inspect the Effect dependencies and identify values recreated on every render, state updates performed by the Effect and whether fetching belongs in a framework data layer. Stabilise only necessary dependencies, move event-triggered work to handlers, abort superseded requests and remove derived state updates. Use React profiling and network traces to confirm the loop and test development strict-mode remount behaviour without masking a real production issue.",
+    "evaluation_points": [
+      "Dependency and recreated-value inspection",
+      "Effect-to-handler or data-layer redesign",
+      "Abort and derived-state removal",
+      "Profiler and strict-mode distinction"
+    ],
+    "resolution_title": "React - Synchronizing with Effects",
+    "resolution_url": "https://react.dev/learn/synchronizing-with-effects",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-097",
+    "role_slug": "frontend-developer",
+    "domain": "Angular Engineering",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "What role does dependency injection play in Angular?",
+    "preferred_answer": "Angular dependency injection supplies services and other dependencies from a hierarchy of injectors rather than requiring components to construct them directly. This supports substitution, configuration, testing and lifecycle scoping. Provider placement determines whether an instance is application-wide, route-scoped or component-scoped. Overusing injection for arbitrary state can hide ownership, so service boundaries should represent clear capabilities.",
+    "evaluation_points": [
+      "Hierarchical injector",
+      "Substitution and testing",
+      "Provider scope",
+      "Clear service ownership"
+    ],
+    "resolution_title": "Angular - Dependency Injection",
+    "resolution_url": "https://angular.dev/guide/di",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-098",
+    "role_slug": "frontend-developer",
+    "domain": "Angular Engineering",
+    "difficulty": "foundation",
+    "question_type": "reactivity",
+    "prompt": "What are Angular signals, computed signals and effects?",
+    "preferred_answer": "A writable signal holds reactive state, a computed signal derives a memoised value from dependencies and an effect runs side-effecting work when tracked dependencies change. Templates can read signals and Angular tracks those dependencies. Prefer computed for derived state and use effects for external synchronisation, not for copying values between signals. Equality and update patterns affect whether dependants are notified.",
+    "evaluation_points": [
+      "Writable signal",
+      "Computed derivation",
+      "Effect for side effects",
+      "Dependency tracking and equality"
+    ],
+    "resolution_title": "Angular - Signals",
+    "resolution_url": "https://angular.dev/guide/signals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-099",
+    "role_slug": "frontend-developer",
+    "domain": "Angular Engineering",
+    "difficulty": "intermediate",
+    "question_type": "change detection",
+    "prompt": "How does OnPush change detection improve performance, and what assumptions does it require?",
+    "preferred_answer": "OnPush lets Angular skip a component subtree unless relevant inputs, events, signals or explicit marks indicate work. It is effective when data flows through immutable references and component responsibilities are clear. Mutating an input object without changing its reference can leave a view stale. OnPush is not a magic switch; profile the application and avoid manual change-detection calls that hide unclear state flow.",
+    "evaluation_points": [
+      "Subtree skipping",
+      "Relevant triggers",
+      "Immutable input assumption",
+      "Profiling and no manual-patch dependence"
+    ],
+    "resolution_title": "Angular - Skipping Component Subtrees",
+    "resolution_url": "https://angular.dev/best-practices/skipping-subtrees",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-100",
+    "role_slug": "frontend-developer",
+    "domain": "Angular Engineering",
+    "difficulty": "intermediate",
+    "question_type": "routing",
+    "prompt": "What should route guards and resolvers be responsible for?",
+    "preferred_answer": "Guards decide whether navigation may proceed or redirect, but client guards are not a server security boundary. Resolvers can obtain data needed before route activation, improving consistency for some views and SSR. Avoid making every route wait on non-critical data; use loading states and streaming or incremental patterns where suitable. Cancellation and error navigation should be explicit.",
+    "evaluation_points": [
+      "Navigation control",
+      "No server-authorisation claim",
+      "Resolver purpose",
+      "Critical-data and error judgement"
+    ],
+    "resolution_title": "Angular - Routing",
+    "resolution_url": "https://angular.dev/guide/routing",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-101",
+    "role_slug": "frontend-developer",
+    "domain": "Angular Engineering",
+    "difficulty": "intermediate",
+    "question_type": "forms",
+    "prompt": "When should template-driven or reactive forms be chosen?",
+    "preferred_answer": "Template-driven forms suit smaller forms where declarative template binding is sufficient. Reactive forms expose the form model in code and are better for complex validation, dynamic controls, reusable logic and detailed tests. The choice is about complexity and ownership, not form size alone. Both still need accessible labels, server validation and deliberate error presentation.",
+    "evaluation_points": [
+      "Template-driven suitability",
+      "Reactive model strengths",
+      "Complexity-based choice",
+      "Accessibility and server validation"
+    ],
+    "resolution_title": "Angular - Forms",
+    "resolution_url": "https://angular.dev/guide/forms",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-102",
+    "role_slug": "frontend-developer",
+    "domain": "Angular Engineering",
+    "difficulty": "advanced",
+    "question_type": "http",
+    "prompt": "How should cross-cutting HTTP behaviour be implemented without hiding request semantics?",
+    "preferred_answer": "Interceptors can add authentication, correlation, telemetry, retry policy or common error mapping, but each should be narrowly scoped and ordered deliberately. Do not retry unsafe mutations blindly or convert all failures into one generic shape that removes status and context. Components or domain services should still control business-specific caching, cancellation and user recovery.",
+    "evaluation_points": [
+      "Narrow interceptor responsibilities",
+      "Ordering",
+      "Safe retry and preserved context",
+      "Business behaviour remains explicit"
+    ],
+    "resolution_title": "Angular - HTTP Client",
+    "resolution_url": "https://angular.dev/guide/http",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-103",
+    "role_slug": "frontend-developer",
+    "domain": "Angular Engineering",
+    "difficulty": "advanced",
+    "question_type": "ssr",
+    "prompt": "What can cause Angular hydration mismatches?",
+    "preferred_answer": "Hydration expects the client to reconcile with server-produced DOM. Direct DOM mutation, browser-only values during server rendering, non-deterministic output, invalid HTML or different data can make the structures disagree. Use platform-aware APIs, transfer or reproduce data consistently and avoid changing DOM before hydration. Diagnose with hydration tooling rather than disabling hydration across the application.",
+    "evaluation_points": [
+      "Server/client structural agreement",
+      "Browser-only and non-deterministic risks",
+      "Data consistency",
+      "Targeted diagnosis"
+    ],
+    "resolution_title": "Angular - Hydration",
+    "resolution_url": "https://angular.dev/guide/hydration",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-104",
+    "role_slug": "frontend-developer",
+    "domain": "Angular Engineering",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "An Angular list does not update after an item property is mutated under OnPush. What is the cause and repair?",
+    "preferred_answer": "The object and list references may be unchanged, so the OnPush component has no relevant signal that its input changed. Replace the item and collection immutably or update a signal through its API, and keep mutation ownership clear. Verify track expressions and avoid forcing global change detection as a workaround. Add a component test that reproduces the actual input transition.",
+    "evaluation_points": [
+      "Unchanged reference",
+      "Immutable or signal update",
+      "Track expression awareness",
+      "No global force-detection workaround"
+    ],
+    "resolution_title": "Angular - Skipping Component Subtrees",
+    "resolution_url": "https://angular.dev/best-practices/skipping-subtrees",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-105",
+    "role_slug": "frontend-developer",
+    "domain": "Vue Engineering",
+    "difficulty": "foundation",
+    "question_type": "reactivity",
+    "prompt": "How do ref and reactive differ in Vue?",
+    "preferred_answer": "ref wraps a value in an object whose value property is reactive and works with primitives or objects. reactive returns a proxy for an object and tracks property access. Templates unwrap refs in common cases, while JavaScript code must respect the APIs. Destructuring a reactive object can lose the property access that drives tracking unless helpers or refs preserve it.",
+    "evaluation_points": [
+      "Ref wrapper",
+      "Reactive proxy",
+      "Template unwrapping",
+      "Destructuring caveat"
+    ],
+    "resolution_title": "Vue - Reactivity Fundamentals",
+    "resolution_url": "https://vuejs.org/guide/essentials/reactivity-fundamentals.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-106",
+    "role_slug": "frontend-developer",
+    "domain": "Vue Engineering",
+    "difficulty": "foundation",
+    "question_type": "components",
+    "prompt": "How should props and emitted events define a Vue component boundary?",
+    "preferred_answer": "Props provide parent-owned input and should be treated as read-only. Emitted events communicate requested changes or domain events upward without the child mutating parent state. Define names and payloads clearly, validate or type them, and avoid implicit coupling through global objects. Two-way binding can be convenient but should still represent an explicit model contract.",
+    "evaluation_points": [
+      "Read-only props",
+      "Events communicate changes",
+      "Typed payload contract",
+      "Avoid implicit global coupling"
+    ],
+    "resolution_title": "Vue - Component Basics",
+    "resolution_url": "https://vuejs.org/guide/essentials/component-basics.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-107",
+    "role_slug": "frontend-developer",
+    "domain": "Vue Engineering",
+    "difficulty": "intermediate",
+    "question_type": "composition",
+    "prompt": "What problem does the Composition API solve compared with organising logic only by component options?",
+    "preferred_answer": "It lets related state, computed values, lifecycle hooks and effects be grouped by feature and extracted into reusable composables, which helps large components where one concern is scattered across several options. It also improves type inference. The benefit depends on disciplined naming and lifecycle cleanup; moving every line into a composable can create indirect code without a reusable concern.",
+    "evaluation_points": [
+      "Feature-oriented organisation",
+      "Reusable composables",
+      "Type inference",
+      "Avoid needless extraction"
+    ],
+    "resolution_title": "Vue - Composition API FAQ",
+    "resolution_url": "https://vuejs.org/guide/extras/composition-api-faq",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-108",
+    "role_slug": "frontend-developer",
+    "domain": "Vue Engineering",
+    "difficulty": "intermediate",
+    "question_type": "reactivity",
+    "prompt": "When should computed be used instead of watch?",
+    "preferred_answer": "Use computed for a value that is purely derived from reactive dependencies and can be cached. Use watch or watchEffect for side effects such as network synchronisation, persistence or integration with non-Vue systems. A watcher that copies one reactive value into another often creates redundant state and timing problems. Watchers require cleanup or invalidation when asynchronous work can outlive the current dependency value.",
+    "evaluation_points": [
+      "Computed for pure derivation",
+      "Watch for side effects",
+      "Avoid copied state",
+      "Async invalidation and cleanup"
+    ],
+    "resolution_title": "Vue - Reactivity Fundamentals",
+    "resolution_url": "https://vuejs.org/guide/essentials/reactivity-fundamentals.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-109",
+    "role_slug": "frontend-developer",
+    "domain": "Vue Engineering",
+    "difficulty": "intermediate",
+    "question_type": "state",
+    "prompt": "When should Pinia or another store be introduced?",
+    "preferred_answer": "Introduce a store when state and actions are shared across distant components, need devtools inspection, persistence or explicit domain ownership. Keep component-local interaction state local. In SSR, create state per request rather than sharing a singleton between users. Define actions and derived getters around domain behaviour instead of exposing one broad mutable object to every component.",
+    "evaluation_points": [
+      "Shared domain state use",
+      "Local state remains local",
+      "Per-request SSR state",
+      "Actions and getters as boundary"
+    ],
+    "resolution_title": "Vue - State Management",
+    "resolution_url": "https://vuejs.org/guide/scaling-up/state-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-110",
+    "role_slug": "frontend-developer",
+    "domain": "Vue Engineering",
+    "difficulty": "advanced",
+    "question_type": "performance",
+    "prompt": "How can deep reactivity become expensive in Vue?",
+    "preferred_answer": "Large nested structures create proxy access and dependency-tracking overhead when many properties are read. If a large value is treated as immutable or managed by another system, shallowRef or shallowReactive can keep only the root reactive. This shifts responsibility to replacing the root when data changes. Measure component updates and payload size before opting out, because shallow state can surprise code expecting deep tracking.",
+    "evaluation_points": [
+      "Proxy and tracking overhead",
+      "Shallow escape hatch",
+      "Root replacement responsibility",
+      "Measure and document semantics"
+    ],
+    "resolution_title": "Vue - Performance",
+    "resolution_url": "https://vuejs.org/guide/best-practices/performance",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-111",
+    "role_slug": "frontend-developer",
+    "domain": "Vue Engineering",
+    "difficulty": "advanced",
+    "question_type": "ssr",
+    "prompt": "What application state must be isolated per request in Vue SSR?",
+    "preferred_answer": "Stores, router state, request-specific data and mutable service instances must not be shared across requests because one user's state could leak to another. Create the application and stores through a factory for each request, serialise only safe initial state and escape it before embedding. Hydration also requires deterministic markup and compatible data between server and client.",
+    "evaluation_points": [
+      "Per-request stores and router",
+      "No cross-user singleton",
+      "Safe state serialisation",
+      "Deterministic hydration"
+    ],
+    "resolution_title": "Vue - Server-Side Rendering",
+    "resolution_url": "https://vuejs.org/guide/scaling-up/ssr",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-112",
+    "role_slug": "frontend-developer",
+    "domain": "Vue Engineering",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "A Vue component stops updating after properties are destructured from a reactive object. Why?",
+    "preferred_answer": "The destructured variables are ordinary values and no longer perform property access through the reactive proxy, so Vue cannot track subsequent updates. Read from the reactive object directly, use toRefs or create explicit refs or computed values for the required properties. Add a focused test and avoid fixing the symptom with a watcher that duplicates the state.",
+    "evaluation_points": [
+      "Proxy access lost",
+      "Direct access or refs",
+      "Computed alternative",
+      "No duplicating watcher"
+    ],
+    "resolution_title": "Vue - Reactivity Fundamentals",
+    "resolution_url": "https://vuejs.org/guide/essentials/reactivity-fundamentals.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-113",
+    "role_slug": "frontend-developer",
+    "domain": "SSR, Hydration and Next.js",
+    "difficulty": "foundation",
+    "question_type": "rendering",
+    "prompt": "Differentiate client-side rendering, server-side rendering and static generation.",
+    "preferred_answer": "Client-side rendering sends an application shell and renders most content after JavaScript runs in the browser. Server-side rendering produces HTML per request. Static generation produces HTML ahead of requests, commonly at build time or through regeneration. Each can still hydrate interactive client code. Choose per route based on freshness, personalisation, latency, operational cost and cacheability rather than one application-wide ideology.",
+    "evaluation_points": [
+      "CSR definition",
+      "SSR definition",
+      "Static generation definition",
+      "Route-specific trade-off"
+    ],
+    "resolution_title": "Next.js - Server and Client Components",
+    "resolution_url": "https://nextjs.org/docs/app/getting-started/server-and-client-components",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-114",
+    "role_slug": "frontend-developer",
+    "domain": "SSR, Hydration and Next.js",
+    "difficulty": "foundation",
+    "question_type": "boundaries",
+    "prompt": "When does a Next.js component need the use client directive?",
+    "preferred_answer": "It is needed at an entry boundary for components that require client state, event handlers, effects or browser-only APIs. Imports below that boundary become part of the client module graph, so placing it high can enlarge the client bundle. Server-rendered UI can still be passed as children into client components. Keep data access and non-interactive rendering on the server when practical.",
+    "evaluation_points": [
+      "Interactive/browser API need",
+      "Client module graph boundary",
+      "Composition with server children",
+      "Minimise client bundle"
+    ],
+    "resolution_title": "Next.js - Server and Client Components",
+    "resolution_url": "https://nextjs.org/docs/app/getting-started/server-and-client-components",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-115",
+    "role_slug": "frontend-developer",
+    "domain": "SSR, Hydration and Next.js",
+    "difficulty": "intermediate",
+    "question_type": "hydration",
+    "prompt": "What is a hydration mismatch?",
+    "preferred_answer": "It occurs when client rendering expects a different structure or content from the server HTML. Causes include timestamps, random values, browser-only conditions, invalid nesting, differing data or DOM mutation before hydration. It can produce warnings, discarded work or incorrect event attachment. Make initial output deterministic, pass consistent data and isolate browser-dependent content behind an intentional client boundary.",
+    "evaluation_points": [
+      "Server/client output difference",
+      "Common non-deterministic causes",
+      "Consequences",
+      "Deterministic and boundary-based repair"
+    ],
+    "resolution_title": "Next.js - Server and Client Components",
+    "resolution_url": "https://nextjs.org/docs/app/getting-started/server-and-client-components",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-116",
+    "role_slug": "frontend-developer",
+    "domain": "SSR, Hydration and Next.js",
+    "difficulty": "intermediate",
+    "question_type": "caching",
+    "prompt": "Why must Next.js caching behaviour be treated as part of application correctness?",
+    "preferred_answer": "Rendering and data caches affect when users see updates, whether requests are deduplicated and how invalidation propagates. A page can be technically correct but operationally stale if the cache lifetime or tags do not match the data. Define freshness per resource, use explicit revalidation after mutations, test dynamic and static paths, and document version-specific framework behaviour rather than assuming every fetch has browser-like semantics.",
+    "evaluation_points": [
+      "Caching affects correctness",
+      "Resource freshness",
+      "Explicit revalidation",
+      "Version-aware testing"
+    ],
+    "resolution_title": "Next.js - Caching and Revalidating",
+    "resolution_url": "https://nextjs.org/docs/app/getting-started/caching-and-revalidating",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-117",
+    "role_slug": "frontend-developer",
+    "domain": "SSR, Hydration and Next.js",
+    "difficulty": "intermediate",
+    "question_type": "streaming",
+    "prompt": "What benefit do Suspense boundaries provide in server rendering?",
+    "preferred_answer": "They let the server send a useful shell and completed regions while slower dependencies continue, reducing the need to wait for the slowest data before displaying anything. Boundaries should match meaningful visual and recovery units. Too many small fallbacks create flicker and complexity; one large boundary recreates all-or-nothing loading. The client bundle and hydration work still determine when interactive regions become usable.",
+    "evaluation_points": [
+      "Progressive streamed UI",
+      "Meaningful boundary placement",
+      "Granularity trade-off",
+      "Hydration still matters"
+    ],
+    "resolution_title": "React - Suspense",
+    "resolution_url": "https://react.dev/reference/react/Suspense",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-118",
+    "role_slug": "frontend-developer",
+    "domain": "SSR, Hydration and Next.js",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How should secrets and privileged data access be protected across Server and Client Components?",
+    "preferred_answer": "Keep credentials, database access and privileged decisions in server-only modules and avoid passing secrets or excessive records as serialised props. A Client Component boundary causes its imported code to enter the client graph, so review imports and build output. Server rendering does not automatically authorise actions; mutations and route handlers must validate identity, permission and input on the server.",
+    "evaluation_points": [
+      "Server-only secret logic",
+      "Minimal serialised data",
+      "Client import-graph awareness",
+      "Server authorisation for actions"
+    ],
+    "resolution_title": "React - Server Components",
+    "resolution_url": "https://react.dev/reference/rsc/server-components",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-119",
+    "role_slug": "frontend-developer",
+    "domain": "SSR, Hydration and Next.js",
+    "difficulty": "advanced",
+    "question_type": "navigation",
+    "prompt": "How can prefetching improve and harm a routed application?",
+    "preferred_answer": "Prefetching can load route code or data before navigation, reducing perceived wait. It can also consume bandwidth, server work and cache space for routes the user never opens, especially on constrained devices or large lists of links. Use framework defaults deliberately, limit speculative work by likelihood and network conditions, and measure navigation success rather than enabling aggressive prefetch everywhere.",
+    "evaluation_points": [
+      "Perceived navigation benefit",
+      "Bandwidth and server cost",
+      "Likelihood/network policy",
+      "Measured outcome"
+    ],
+    "resolution_title": "Next.js - Linking and Navigating",
+    "resolution_url": "https://nextjs.org/docs/app/getting-started/linking-and-navigating",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-120",
+    "role_slug": "frontend-developer",
+    "domain": "SSR, Hydration and Next.js",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "A Next.js product page shows old inventory after an admin updates it. How do you diagnose the stale path?",
+    "preferred_answer": "Trace the mutation, server data source, fetch or component cache, route output and CDN or browser cache. Identify which layer owns freshness and whether revalidation tags or paths are triggered after the update. Verify that the admin response reflects committed state and test multiple regions or sessions. Do not disable all caching until the stale layer is proven; use targeted invalidation with observability.",
+    "evaluation_points": [
+      "End-to-end cache-layer trace",
+      "Freshness ownership",
+      "Targeted revalidation",
+      "Cross-session verification"
+    ],
+    "resolution_title": "Next.js - Caching and Revalidating",
+    "resolution_url": "https://nextjs.org/docs/app/getting-started/caching-and-revalidating",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-121",
+    "role_slug": "frontend-developer",
+    "domain": "Testing Strategy and Automation",
+    "difficulty": "foundation",
+    "question_type": "strategy",
+    "prompt": "Differentiate unit, component, integration and end-to-end tests.",
+    "preferred_answer": "Unit tests isolate small logic units. Component tests render a UI component with realistic interaction around its public contract. Integration tests verify several modules or boundaries together, often including routing or data. End-to-end tests drive a deployed or production-like application through the browser and backend. The labels are less important than the boundary, confidence gained, speed, determinism and failure diagnosis.",
+    "evaluation_points": [
+      "Four test scopes",
+      "Public behaviour",
+      "Confidence and speed trade-off",
+      "Boundary clarity"
+    ],
+    "resolution_title": "Vue - Testing",
+    "resolution_url": "https://vuejs.org/guide/scaling-up/testing.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-122",
+    "role_slug": "frontend-developer",
+    "domain": "Testing Strategy and Automation",
+    "difficulty": "foundation",
+    "question_type": "principles",
+    "prompt": "What does it mean to test a UI the way a user uses it?",
+    "preferred_answer": "Select elements by accessible role, name and visible text, perform real interactions and assert observable outcomes rather than component internals, implementation classes or framework state. This makes tests more resilient and also rewards accessible markup. Some low-level logic still deserves direct unit tests, but interaction tests should avoid reaching into private methods simply because the test framework allows it.",
+    "evaluation_points": [
+      "Accessible user-facing queries",
+      "Real interactions",
+      "Observable outcomes",
+      "Avoid private implementation coupling"
+    ],
+    "resolution_title": "Testing Library - Guiding Principles",
+    "resolution_url": "https://testing-library.com/docs/guiding-principles/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-123",
+    "role_slug": "frontend-developer",
+    "domain": "Testing Strategy and Automation",
+    "difficulty": "intermediate",
+    "question_type": "mocking",
+    "prompt": "When should network requests be mocked at the service-worker or protocol layer?",
+    "preferred_answer": "Protocol-level mocks let application code use its real fetch client while tests control responses, latency and failures. This avoids mocking every internal function and can be reused across browser and test environments. Contract fixtures still need validation against the real API, and critical end-to-end paths should run against integrated services. Mock only external uncertainty, not the behaviour being tested.",
+    "evaluation_points": [
+      "Real client path",
+      "Controlled network scenarios",
+      "Contract drift risk",
+      "Do not mock subject under test"
+    ],
+    "resolution_title": "Mock Service Worker - Documentation",
+    "resolution_url": "https://mswjs.io/docs/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-124",
+    "role_slug": "frontend-developer",
+    "domain": "Testing Strategy and Automation",
+    "difficulty": "intermediate",
+    "question_type": "flakiness",
+    "prompt": "Why are fixed sleeps a poor end-to-end waiting strategy?",
+    "preferred_answer": "A fixed delay is either too short under load or wastes time when the condition is ready early. It also hides what the test expects. Use locators and assertions that retry until a user-visible condition is met, or wait for a specific request, URL or state transition. If the interface has no stable observable signal, improve the product or testability rather than increasing timeouts indefinitely.",
+    "evaluation_points": [
+      "Timing variability",
+      "Wasted or insufficient delay",
+      "Condition-based waiting",
+      "Improve observable state"
+    ],
+    "resolution_title": "Playwright - Auto-waiting",
+    "resolution_url": "https://playwright.dev/docs/actionability",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-125",
+    "role_slug": "frontend-developer",
+    "domain": "Testing Strategy and Automation",
+    "difficulty": "intermediate",
+    "question_type": "coverage",
+    "prompt": "Why is line coverage not a sufficient quality target?",
+    "preferred_answer": "Line coverage shows that code executed, not that assertions checked meaningful behaviour, edge cases or failure modes. A test can touch every line while accepting the wrong result. Use coverage to find untested areas, then prioritise risk-based scenarios, branch behaviour, state transitions, accessibility and production incidents. Mutation testing or defect escape trends can provide stronger evidence than a single percentage target.",
+    "evaluation_points": [
+      "Execution versus assertion",
+      "Risk-based scenarios",
+      "Branches and failures",
+      "Coverage as diagnostic, not goal"
+    ],
+    "resolution_title": "Vitest - Guide",
+    "resolution_url": "https://vitest.dev/guide/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-126",
+    "role_slug": "frontend-developer",
+    "domain": "Testing Strategy and Automation",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How should visual regression testing be used without producing constant noise?",
+    "preferred_answer": "Capture stable component or page states with deterministic data, fonts, viewport and animation settings. Review intentional changes through a controlled baseline process and keep thresholds narrow enough to catch real regressions. Visual tests complement, not replace, semantic and behavioural assertions. Focus on high-value design-system primitives and critical layouts rather than screenshotting every transient state.",
+    "evaluation_points": [
+      "Deterministic capture",
+      "Controlled baseline review",
+      "Complement to behaviour tests",
+      "High-value scope"
+    ],
+    "resolution_title": "Storybook - Testing",
+    "resolution_url": "https://storybook.js.org/docs/writing-tests",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-127",
+    "role_slug": "frontend-developer",
+    "domain": "Testing Strategy and Automation",
+    "difficulty": "advanced",
+    "question_type": "e2e",
+    "prompt": "What should an end-to-end suite avoid owning?",
+    "preferred_answer": "It should not duplicate every unit and component case, create all test data through slow UI flows or depend on unrelated third-party systems. Keep a thin set of critical journeys, use APIs or fixtures for setup, isolate accounts and make cleanup deterministic. Run cross-browser tests where browser behaviour is a risk, and collect traces, screenshots and logs so failures are diagnosable.",
+    "evaluation_points": [
+      "Thin critical journeys",
+      "Efficient setup",
+      "Isolation and cleanup",
+      "Cross-browser risk and diagnostics"
+    ],
+    "resolution_title": "Playwright - Assertions",
+    "resolution_url": "https://playwright.dev/docs/test-assertions",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-128",
+    "role_slug": "frontend-developer",
+    "domain": "Testing Strategy and Automation",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "A browser test fails only in CI with 'element not clickable'. How would you investigate?",
+    "preferred_answer": "Use the CI trace, screenshot and video to inspect whether the element was covered, moving, disabled, outside the viewport or replaced during rendering. Prefer a role-based locator and an auto-waiting action, remove fixed sleeps and wait for the actual readiness condition. Reproduce with CI viewport and resources. Do not force the click unless the test intentionally validates behaviour through an obstruction.",
+    "evaluation_points": [
+      "Trace and visual evidence",
+      "Actionability cause",
+      "Stable locator and readiness",
+      "No force workaround without intent"
+    ],
+    "resolution_title": "Playwright - Auto-waiting",
+    "resolution_url": "https://playwright.dev/docs/actionability",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-129",
+    "role_slug": "frontend-developer",
+    "domain": "Build Tooling, Modules and Package Management",
+    "difficulty": "foundation",
+    "question_type": "tooling",
+    "prompt": "Why does a modern frontend use a development server and a production build?",
+    "preferred_answer": "A development server prioritises fast startup, module updates, source maps and diagnostics, often serving native or transformed modules on demand. A production build optimises delivery through bundling, minification, asset hashing, code splitting and target transforms. Development behaviour is not proof of production correctness, so the exact production output must be built and tested before release.",
+    "evaluation_points": [
+      "Development feedback goals",
+      "Production optimisation goals",
+      "Different execution paths",
+      "Production build verification"
+    ],
+    "resolution_title": "Vite - Why Vite",
+    "resolution_url": "https://vite.dev/guide/why",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-130",
+    "role_slug": "frontend-developer",
+    "domain": "Build Tooling, Modules and Package Management",
+    "difficulty": "foundation",
+    "question_type": "modules",
+    "prompt": "What is the difference between a default export and a named export?",
+    "preferred_answer": "A module can expose one default binding and any number of named bindings. Importers can choose any local name for the default, while named imports identify the exported name unless explicitly aliased. Named exports often improve discoverability and refactoring, but neither style determines runtime performance by itself. Consistency and a clear public API matter more than a universal rule.",
+    "evaluation_points": [
+      "One default versus named bindings",
+      "Import naming",
+      "API and refactoring implications",
+      "No automatic performance claim"
+    ],
+    "resolution_title": "MDN - JavaScript Modules",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-131",
+    "role_slug": "frontend-developer",
+    "domain": "Build Tooling, Modules and Package Management",
+    "difficulty": "intermediate",
+    "question_type": "optimisation",
+    "prompt": "What is tree shaking, and why may unused code remain in a bundle?",
+    "preferred_answer": "Tree shaking is static analysis that removes exports proven unused from the final module graph. Unused code can remain because a package uses CommonJS, has top-level side effects, marks side effects incorrectly, creates dynamic access patterns or is imported through an entry that executes registration code. Inspect the bundle graph and package metadata rather than assuming an unused source-level import is always removed.",
+    "evaluation_points": [
+      "Static unused-export removal",
+      "ESM and side-effect requirements",
+      "Common retention causes",
+      "Bundle inspection"
+    ],
+    "resolution_title": "webpack - Tree Shaking",
+    "resolution_url": "https://webpack.js.org/guides/tree-shaking/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-132",
+    "role_slug": "frontend-developer",
+    "domain": "Build Tooling, Modules and Package Management",
+    "difficulty": "intermediate",
+    "question_type": "dependencies",
+    "prompt": "How should dependencies and devDependencies be classified?",
+    "preferred_answer": "Dependencies are needed by the published package or deployed runtime under its documented installation model. devDependencies support building, testing, linting or local tooling. Frontend applications may bundle runtime libraries during build, but package libraries must classify what consumers need carefully. Misclassification can break installs or inflate production environments. Verify with a clean production installation and published-package test.",
+    "evaluation_points": [
+      "Runtime/consumer dependencies",
+      "Development tooling",
+      "Application versus library nuance",
+      "Clean-install verification"
+    ],
+    "resolution_title": "npm - package.json",
+    "resolution_url": "https://docs.npmjs.com/cli/v11/configuring-npm/package-json",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-133",
+    "role_slug": "frontend-developer",
+    "domain": "Build Tooling, Modules and Package Management",
+    "difficulty": "intermediate",
+    "question_type": "compatibility",
+    "prompt": "How do browser targets affect a frontend build?",
+    "preferred_answer": "Targets guide syntax transforms, polyfill strategy and CSS or JavaScript compatibility assumptions. Supporting older browsers can increase bundle size and constrain modern APIs. Define targets from user evidence and organisational policy, publish them through shared configuration such as Browserslist, and test the actual browsers. A transpiler can transform syntax but cannot automatically emulate every missing web API correctly.",
+    "evaluation_points": [
+      "Transforms and compatibility",
+      "Bundle-size trade-off",
+      "Evidence-based target policy",
+      "Syntax versus API polyfills"
+    ],
+    "resolution_title": "Browserslist",
+    "resolution_url": "https://github.com/browserslist/browserslist",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-134",
+    "role_slug": "frontend-developer",
+    "domain": "Build Tooling, Modules and Package Management",
+    "difficulty": "advanced",
+    "question_type": "packages",
+    "prompt": "What problems do package exports solve?",
+    "preferred_answer": "An exports map defines the supported public entry points and can provide different conditions for import, require, browser or types. It prevents consumers from depending on private internal files and makes refactoring safer. Incorrect conditional mappings can create duplicate module instances or type/runtime disagreement. Test each supported consumer environment and avoid exposing every file as a public contract.",
+    "evaluation_points": [
+      "Controlled public entry points",
+      "Conditional resolution",
+      "Encapsulation benefit",
+      "Duplicate and type/runtime risks"
+    ],
+    "resolution_title": "Node.js - Packages",
+    "resolution_url": "https://nodejs.org/api/packages.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-135",
+    "role_slug": "frontend-developer",
+    "domain": "Build Tooling, Modules and Package Management",
+    "difficulty": "advanced",
+    "question_type": "build reliability",
+    "prompt": "What makes a frontend build reproducible?",
+    "preferred_answer": "Use a committed lockfile, controlled runtime and package-manager versions, deterministic generated inputs, pinned external assets, stable environment configuration and a clean build process. Record provenance and artifact hashes. Reproducibility can still be affected by native binaries, timestamps or remote downloads, so build in an isolated CI environment and compare outputs. Avoid depending on an uncommitted developer machine cache.",
+    "evaluation_points": [
+      "Lockfile and tool versions",
+      "Controlled inputs",
+      "Isolated clean CI",
+      "Artifact comparison and provenance"
+    ],
+    "resolution_title": "npm - Semantic Versioning",
+    "resolution_url": "https://docs.npmjs.com/about-semantic-versioning",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-136",
+    "role_slug": "frontend-developer",
+    "domain": "Build Tooling, Modules and Package Management",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "A library works in the Vite dev server but fails after production build with an undefined import. What do you inspect?",
+    "preferred_answer": "Reproduce using the production preview, inspect the emitted chunks and source maps, and check ESM/CommonJS interop, conditional exports, default-versus-named import assumptions and side-effect removal. Verify the package's supported entry point and browser target. Do not disable minification or tree shaking permanently until the failing transformation or incorrect package metadata is identified.",
+    "evaluation_points": [
+      "Production reproduction",
+      "Emitted chunk and map inspection",
+      "Interop/export analysis",
+      "Targeted fix rather than disabling optimisation"
+    ],
+    "resolution_title": "Vite - Building for Production",
+    "resolution_url": "https://vite.dev/guide/build",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-137",
+    "role_slug": "frontend-developer",
+    "domain": "Component Architecture, Design Systems and Web Components",
+    "difficulty": "foundation",
+    "question_type": "components",
+    "prompt": "What makes a UI component reusable rather than merely repeated?",
+    "preferred_answer": "A reusable component has a clear responsibility, stable input and event contract, sensible defaults, accessible behaviour and styling boundaries that work in more than one context. It avoids embedding page-specific data access or business decisions unless that is its declared domain purpose. Reuse should reduce duplication without producing an option-heavy component that attempts to represent every possible design.",
+    "evaluation_points": [
+      "Clear responsibility",
+      "Stable contract",
+      "Accessible contextual behaviour",
+      "Avoid over-generalisation"
+    ],
+    "resolution_title": "Storybook - Documentation",
+    "resolution_url": "https://storybook.js.org/docs",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-138",
+    "role_slug": "frontend-developer",
+    "domain": "Component Architecture, Design Systems and Web Components",
+    "difficulty": "foundation",
+    "question_type": "tokens",
+    "prompt": "What is a design token?",
+    "preferred_answer": "A design token is a named design decision such as a colour, spacing value, type scale, radius or motion duration represented in a format that tools and platforms can consume. Tokens separate semantic intent from raw values and support themes and cross-platform delivery. They should have ownership, naming rules, aliases and versioning; replacing every number with an arbitrary variable does not create a coherent token system.",
+    "evaluation_points": [
+      "Named design decision",
+      "Semantic abstraction",
+      "Cross-platform/theme use",
+      "Governance and naming"
+    ],
+    "resolution_title": "Design Tokens Community Group - Format Module",
+    "resolution_url": "https://www.designtokens.org/tr/drafts/format/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-139",
+    "role_slug": "frontend-developer",
+    "domain": "Component Architecture, Design Systems and Web Components",
+    "difficulty": "intermediate",
+    "question_type": "api design",
+    "prompt": "When should a component use composition instead of many configuration props?",
+    "preferred_answer": "Composition is preferable when consumers need to supply meaningful regions, content or subcomponents that cannot be represented cleanly by a small set of options. It keeps the primitive flexible without adding flags for every combination. The component should still constrain structure where accessibility or interaction requires it. Use explicit slots, children or templates with documented responsibilities and test common combinations.",
+    "evaluation_points": [
+      "Flexible content regions",
+      "Avoid flag explosion",
+      "Necessary structural constraints",
+      "Documented slot responsibilities"
+    ],
+    "resolution_title": "Storybook - Documentation",
+    "resolution_url": "https://storybook.js.org/docs",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-140",
+    "role_slug": "frontend-developer",
+    "domain": "Component Architecture, Design Systems and Web Components",
+    "difficulty": "intermediate",
+    "question_type": "theming",
+    "prompt": "How should a design system support themes without leaking implementation detail?",
+    "preferred_answer": "Expose semantic tokens such as surface, text and accent roles rather than component consumers choosing raw palette values. Apply theme values through a controlled scope, validate contrast and state combinations, and define fallback behaviour. Components should consume stable semantic contracts while the theme maps those contracts to actual values. Avoid coupling public component props to internal token file paths or one specific CSS implementation.",
+    "evaluation_points": [
+      "Semantic token roles",
+      "Scoped theme mapping",
+      "Contrast and state validation",
+      "Public contract independent of implementation"
+    ],
+    "resolution_title": "MDN - CSS Custom Properties",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-141",
+    "role_slug": "frontend-developer",
+    "domain": "Component Architecture, Design Systems and Web Components",
+    "difficulty": "intermediate",
+    "question_type": "web components",
+    "prompt": "What are custom elements and shadow DOM intended to provide?",
+    "preferred_answer": "Custom elements define reusable HTML element behaviour with lifecycle callbacks and a registered name. Shadow DOM provides a scoped tree and style boundary with slots for composition. Together they can support framework-independent components. They do not automatically provide accessibility, server rendering or form integration; authors must expose semantics, events, properties, attributes and styling hooks deliberately.",
+    "evaluation_points": [
+      "Registered custom element",
+      "Shadow encapsulation and slots",
+      "Cross-framework potential",
+      "Accessibility and integration not automatic"
+    ],
+    "resolution_title": "MDN - Web Components",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_components",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-142",
+    "role_slug": "frontend-developer",
+    "domain": "Component Architecture, Design Systems and Web Components",
+    "difficulty": "advanced",
+    "question_type": "styling",
+    "prompt": "How should a Web Component expose styling customisation?",
+    "preferred_answer": "Prefer stable semantic custom properties for values and named parts for selected internal elements that consumers genuinely need to style. Keep internal structure private and avoid exposing every node, which freezes implementation. Document inheritance, defaults and theme scope, and verify forced-colour and high-contrast behaviour. Styling APIs are public contracts and require versioning like JavaScript properties and events.",
+    "evaluation_points": [
+      "Custom properties and parts",
+      "Minimal deliberate exposure",
+      "Accessibility modes",
+      "Versioned styling contract"
+    ],
+    "resolution_title": "MDN - ::part()",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::part",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-143",
+    "role_slug": "frontend-developer",
+    "domain": "Component Architecture, Design Systems and Web Components",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "How should breaking changes be managed in a design system?",
+    "preferred_answer": "Define what is public across component props, DOM, events, tokens, CSS parts and visual behaviour. Use semantic versioning, migration guides, codemods where reliable, deprecation periods and usage telemetry. Visual changes can be breaking even when types compile. Test consuming applications and coordinate design and engineering decisions. Avoid permanent compatibility flags that make every component carry several historical behaviours.",
+    "evaluation_points": [
+      "Broad public-contract definition",
+      "Versioning and migration",
+      "Visual breakage awareness",
+      "Consumer testing and controlled deprecation"
+    ],
+    "resolution_title": "npm - Semantic Versioning",
+    "resolution_url": "https://docs.npmjs.com/about-semantic-versioning",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-144",
+    "role_slug": "frontend-developer",
+    "domain": "Component Architecture, Design Systems and Web Components",
+    "difficulty": "scenario",
+    "question_type": "architecture",
+    "prompt": "Teams have created six slightly different button components. How would you consolidate them?",
+    "preferred_answer": "Inventory use cases and differences, identify which variations express real semantic or interaction needs and which are styling drift, then define one accessible base contract with a small variant model. Preserve specialised controls when their behaviour differs, provide migration examples or codemods, and run visual and interaction tests across consumers. Do not merge everything into one component with dozens of boolean props.",
+    "evaluation_points": [
+      "Usage inventory",
+      "Semantic versus visual distinction",
+      "Small accessible contract",
+      "Migration without prop explosion"
+    ],
+    "resolution_title": "Storybook - Documentation",
+    "resolution_url": "https://storybook.js.org/docs",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-145",
+    "role_slug": "frontend-developer",
+    "domain": "Progressive Web Apps, Offline and Service Workers",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What makes a web application a progressive web app?",
+    "preferred_answer": "A PWA uses web-platform capabilities to provide reliable, installable and app-like experiences while remaining accessible through the web. Common pieces include a secure origin, manifest, service worker and responsive design, but the product outcome matters more than a badge. It should progressively enhance: core content or tasks should not become less usable when installation, push or offline capabilities are unavailable.",
+    "evaluation_points": [
+      "Reliable and installable experience",
+      "Manifest and service worker",
+      "Outcome over badge",
+      "Progressive enhancement"
+    ],
+    "resolution_title": "web.dev - Learn PWA",
+    "resolution_url": "https://web.dev/learn/pwa/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-146",
+    "role_slug": "frontend-developer",
+    "domain": "Progressive Web Apps, Offline and Service Workers",
+    "difficulty": "foundation",
+    "question_type": "service worker",
+    "prompt": "Where does a service worker run, and what can it control?",
+    "preferred_answer": "A service worker runs in a worker context separate from the page and can intercept requests within its registration scope, respond from caches or the network and handle background events. It has no direct DOM access and is event-driven. It can outlive a page, so code must be resilient to termination and restart and store durable state in appropriate browser storage.",
+    "evaluation_points": [
+      "Separate worker context",
+      "Scoped request interception",
+      "No DOM access",
+      "Event-driven restart-safe design"
+    ],
+    "resolution_title": "MDN - Service Worker API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-147",
+    "role_slug": "frontend-developer",
+    "domain": "Progressive Web Apps, Offline and Service Workers",
+    "difficulty": "intermediate",
+    "question_type": "caching",
+    "prompt": "Compare cache-first, network-first and stale-while-revalidate strategies.",
+    "preferred_answer": "Cache-first returns a cached response when available and is suitable for versioned static assets. Network-first prefers fresh data but falls back to cache, useful for changing content where offline access matters. Stale-while-revalidate returns cached content immediately and updates it in the background. Strategy must be selected per resource, with expiry, versioning and error behaviour; caching authenticated or personalised responses requires particular care.",
+    "evaluation_points": [
+      "Three strategy mechanisms",
+      "Resource-specific suitability",
+      "Expiry/versioning",
+      "Personalised-data caution"
+    ],
+    "resolution_title": "Chrome for Developers - Workbox",
+    "resolution_url": "https://developer.chrome.com/docs/workbox/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-148",
+    "role_slug": "frontend-developer",
+    "domain": "Progressive Web Apps, Offline and Service Workers",
+    "difficulty": "intermediate",
+    "question_type": "updates",
+    "prompt": "Why can a newly deployed service worker fail to control existing tabs immediately?",
+    "preferred_answer": "The new worker normally installs and waits while an older active worker controls open clients, preventing two versions from unexpectedly managing the same page. It becomes active when old clients close or through an explicit update flow. skipWaiting and clientsClaim can accelerate activation but may create version mismatch between cached assets and running pages. Design a user-safe update prompt or compatible rollout.",
+    "evaluation_points": [
+      "Install/wait/activate lifecycle",
+      "Existing client control",
+      "Forced activation risk",
+      "Compatible or user-prompted update"
+    ],
+    "resolution_title": "MDN - Service Worker API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-149",
+    "role_slug": "frontend-developer",
+    "domain": "Progressive Web Apps, Offline and Service Workers",
+    "difficulty": "intermediate",
+    "question_type": "offline data",
+    "prompt": "How should an application handle a mutation created while offline?",
+    "preferred_answer": "Persist the user's intent and enough metadata to replay it, show a clear pending state, preserve operation order where required and retry when connectivity returns. The server must support idempotency or conflict detection because the resource may have changed. Provide a visible failure or conflict resolution path rather than silently discarding the action or claiming success before synchronisation.",
+    "evaluation_points": [
+      "Durable queued intent",
+      "Pending user state",
+      "Idempotency/conflict handling",
+      "Visible failure and resolution"
+    ],
+    "resolution_title": "web.dev - Learn PWA",
+    "resolution_url": "https://web.dev/learn/pwa/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-150",
+    "role_slug": "frontend-developer",
+    "domain": "Progressive Web Apps, Offline and Service Workers",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "What risks come with caching application responses in a service worker?",
+    "preferred_answer": "Sensitive or personalised responses can persist beyond logout, be returned to the wrong application state or remain stale after permissions change. Cache keys may ignore headers or user context. Define explicit allow-lists, separate public assets from private data, clear relevant caches on identity changes, honour response policy and test shared-device scenarios. The Cache API does not enforce HTTP cache semantics automatically for application-created entries.",
+    "evaluation_points": [
+      "Sensitive persistence",
+      "Identity and key mismatch",
+      "Explicit allow-list and clearing",
+      "Cache API semantics awareness"
+    ],
+    "resolution_title": "MDN - Cache API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Cache",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-151",
+    "role_slug": "frontend-developer",
+    "domain": "Progressive Web Apps, Offline and Service Workers",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How do you version a service-worker cache safely?",
+    "preferred_answer": "Use content hashes or an explicit cache version, populate required assets during install only when the set is valid, delete superseded caches during activation and keep runtime caches under separate policies. Do not delete data needed by an active older client before compatibility is assured. Monitor quota and failed installs, and make the application able to recover from a partially populated or corrupted cache.",
+    "evaluation_points": [
+      "Versioned cache names",
+      "Validated install population",
+      "Safe activation cleanup",
+      "Compatibility and recovery"
+    ],
+    "resolution_title": "MDN - Service Worker API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-152",
+    "role_slug": "frontend-developer",
+    "domain": "Progressive Web Apps, Offline and Service Workers",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "Users continue seeing an old JavaScript bundle after a release, but hard refresh fixes it. What do you inspect?",
+    "preferred_answer": "Inspect the service-worker version and lifecycle, cache keys, fetch handler order, HTML cache policy and whether the old page references hashed assets. Determine whether a waiting worker or stale HTML is serving the outdated graph. Implement compatible activation and cache cleanup, avoid cache-first for unversioned HTML without revalidation, and test upgrade paths from several previous deployed versions.",
+    "evaluation_points": [
+      "Worker lifecycle inspection",
+      "HTML versus hashed asset policy",
+      "Compatible activation and cleanup",
+      "Multi-version upgrade testing"
+    ],
+    "resolution_title": "MDN - Service Worker API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-153",
+    "role_slug": "frontend-developer",
+    "domain": "Debugging, Observability and Frontend Reliability",
+    "difficulty": "foundation",
+    "question_type": "debugging",
+    "prompt": "What is a useful first sequence when a frontend bug cannot be reproduced immediately?",
+    "preferred_answer": "Clarify the exact user action, environment, account state and expected versus actual result; collect console, network and application telemetry; then narrow the smallest reproducible path. Check recent releases and feature flags before changing code. State assumptions and preserve evidence. Random edits based on a generic error message often remove the signal needed to identify a race, data condition or browser-specific cause.",
+    "evaluation_points": [
+      "Precise reproduction context",
+      "Console/network/telemetry evidence",
+      "Recent-change correlation",
+      "Hypothesis before edits"
+    ],
+    "resolution_title": "Chrome for Developers - DevTools",
+    "resolution_url": "https://developer.chrome.com/docs/devtools/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-154",
+    "role_slug": "frontend-developer",
+    "domain": "Debugging, Observability and Frontend Reliability",
+    "difficulty": "foundation",
+    "question_type": "source maps",
+    "prompt": "What problem do source maps solve in production debugging?",
+    "preferred_answer": "Production code is commonly bundled, minified and transformed, so stack traces reference generated files. A source map maps generated positions back to original source and symbols, enabling useful error reports and debugging. Maps may expose source content and must be uploaded or served under a deliberate access policy. The deployed bundle and map must match exactly, usually through a release identifier or hash.",
+    "evaluation_points": [
+      "Generated-to-original mapping",
+      "Useful stack traces",
+      "Source exposure policy",
+      "Exact release matching"
+    ],
+    "resolution_title": "MDN - Source Map",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Glossary/Source_map",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-155",
+    "role_slug": "frontend-developer",
+    "domain": "Debugging, Observability and Frontend Reliability",
+    "difficulty": "intermediate",
+    "question_type": "errors",
+    "prompt": "What context should a frontend error report include?",
+    "preferred_answer": "Include release, route, browser and device, error type and stack, relevant user action, correlation or trace identifier, feature flags and safe application state needed to reproduce. Avoid collecting passwords, tokens, full form values or excessive personal data. Grouping should preserve distinct root causes. User identity, if included, needs consent, access controls and retention appropriate to the application.",
+    "evaluation_points": [
+      "Release and environment",
+      "Action and trace context",
+      "Sensitive-data minimisation",
+      "Useful grouping and governance"
+    ],
+    "resolution_title": "Sentry - JavaScript Documentation",
+    "resolution_url": "https://docs.sentry.io/platforms/javascript/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-156",
+    "role_slug": "frontend-developer",
+    "domain": "Debugging, Observability and Frontend Reliability",
+    "difficulty": "intermediate",
+    "question_type": "memory",
+    "prompt": "How do you diagnose a browser memory leak?",
+    "preferred_answer": "Reproduce a repeated workflow such as route navigation, watch heap and node counts, take comparable heap snapshots and inspect retained objects and dominator paths. Common causes are global listeners, timers, detached DOM trees, caches and subscriptions. Confirm that memory remains reachable after expected cleanup, fix ownership and repeat the same cycle. A large heap alone is not proof of a leak if it is stable and collectible.",
+    "evaluation_points": [
+      "Repeated workflow",
+      "Heap snapshots and retained paths",
+      "Common ownership causes",
+      "Stability versus leak distinction"
+    ],
+    "resolution_title": "Chrome DevTools - Memory Problems",
+    "resolution_url": "https://developer.chrome.com/docs/devtools/memory-problems",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-157",
+    "role_slug": "frontend-developer",
+    "domain": "Debugging, Observability and Frontend Reliability",
+    "difficulty": "intermediate",
+    "question_type": "tracing",
+    "prompt": "How can frontend traces connect a user interaction to backend work?",
+    "preferred_answer": "Create or continue a trace context for a navigation or important request, record spans for fetch, rendering or application stages and propagate the trace headers to supporting services where policy permits. Attach route, release and outcome attributes without high-cardinality or sensitive values. Sampling must preserve enough failing and slow traces. Correlation helps explain latency but should not turn every UI operation into excessive telemetry.",
+    "evaluation_points": [
+      "Trace-context propagation",
+      "Frontend and backend spans",
+      "Attribute and sampling discipline",
+      "Telemetry-volume control"
+    ],
+    "resolution_title": "OpenTelemetry JavaScript - Browser",
+    "resolution_url": "https://opentelemetry.io/docs/languages/js/getting-started/browser/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-158",
+    "role_slug": "frontend-developer",
+    "domain": "Debugging, Observability and Frontend Reliability",
+    "difficulty": "advanced",
+    "question_type": "reliability",
+    "prompt": "How should a frontend recover when one dashboard widget fails?",
+    "preferred_answer": "Contain the failure at the widget or data-boundary level, preserve the rest of the dashboard, show a clear fallback with retry or alternative action, report diagnostics and avoid repeating a destructive request. Shared dependencies may require a broader boundary. Recovery UI should maintain layout and accessibility. A global blank error page is appropriate only when the application cannot safely continue.",
+    "evaluation_points": [
+      "Local failure containment",
+      "User recovery action",
+      "Diagnostic reporting",
+      "Boundary based on shared dependency"
+    ],
+    "resolution_title": "React - Error Boundaries",
+    "resolution_url": "https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-159",
+    "role_slug": "frontend-developer",
+    "domain": "Debugging, Observability and Frontend Reliability",
+    "difficulty": "advanced",
+    "question_type": "metrics",
+    "prompt": "How should client-side reliability be measured?",
+    "preferred_answer": "Track successful completion of important journeys, JavaScript error-free sessions, failed request rates, abandoned states, performance distributions and recovery success by release and environment. Raw error count can rise with traffic and duplicate reports. Connect technical signals to user impact, define service-level indicators where useful and use release health to stop or roll back a harmful deployment.",
+    "evaluation_points": [
+      "Journey success",
+      "Normalised error and request measures",
+      "User-impact linkage",
+      "Release health and rollback"
+    ],
+    "resolution_title": "Sentry - JavaScript Documentation",
+    "resolution_url": "https://docs.sentry.io/platforms/javascript/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-160",
+    "role_slug": "frontend-developer",
+    "domain": "Debugging, Observability and Frontend Reliability",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A new release causes a sharp increase in checkout failures only on Safari. What is your response sequence?",
+    "preferred_answer": "Confirm the release and browser segmentation, pause or roll back the affected change, preserve error, network and trace evidence, and reproduce on the supported Safari versions. Inspect compatibility transforms, browser APIs, storage and payment integration behaviour. Deploy a guarded fix, add a regression test in a real browser engine and monitor conversion and error rates before completing the rollout.",
+    "evaluation_points": [
+      "Segment and contain",
+      "Evidence preservation",
+      "Browser-specific reproduction",
+      "Guarded fix, real-engine test and monitoring"
+    ],
+    "resolution_title": "Chrome for Developers - DevTools",
+    "resolution_url": "https://developer.chrome.com/docs/devtools/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-161",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend System Design, Delivery and Product Judgement",
+    "difficulty": "foundation",
+    "question_type": "system design",
+    "prompt": "What questions should be answered before choosing a frontend framework?",
+    "preferred_answer": "Clarify product interaction complexity, rendering and SEO needs, team skills, accessibility requirements, browser support, deployment environment, ecosystem maturity, long-term maintenance and integration constraints. Compare a framework with simpler platform or server-rendered options. A popular tool is not automatically the lowest-risk choice. Prototype the highest-uncertainty requirement and record the decision and exit conditions.",
+    "evaluation_points": [
+      "Product and rendering needs",
+      "Team and lifecycle",
+      "Simpler alternatives",
+      "Risk prototype and decision record"
+    ],
+    "resolution_title": "WHATWG HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-162",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend System Design, Delivery and Product Judgement",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "What is a frontend boundary or vertical slice?",
+    "preferred_answer": "A boundary groups UI, state, data access and tests around a cohesive user or domain capability with a clear public contract. It reduces unrelated coupling and lets teams change a feature without understanding the whole application. Boundaries should not duplicate shared platform concerns or create a micro-frontend for every screen. Use dependency direction and ownership, not folder names alone, to enforce them.",
+    "evaluation_points": [
+      "Cohesive capability",
+      "Clear public contract",
+      "Reduced coupling",
+      "Avoid over-fragmentation"
+    ],
+    "resolution_title": "webpack - Concepts",
+    "resolution_url": "https://webpack.js.org/concepts/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-163",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend System Design, Delivery and Product Judgement",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "When are micro-frontends justified?",
+    "preferred_answer": "They can help independently owned domains release on different schedules, isolate technology migrations or scale large organisations where coordination is the bottleneck. They add runtime integration, duplicate dependencies, inconsistent UX, observability, routing, security and testing complexity. Use them only when organisational autonomy benefits exceed those costs, and define shell, identity, design-system and failure contracts before splitting.",
+    "evaluation_points": [
+      "Organisational autonomy use",
+      "Runtime and UX costs",
+      "Benefit-versus-complexity decision",
+      "Shared contracts"
+    ],
+    "resolution_title": "webpack - Concepts",
+    "resolution_url": "https://webpack.js.org/concepts/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-164",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend System Design, Delivery and Product Judgement",
+    "difficulty": "intermediate",
+    "question_type": "delivery",
+    "prompt": "What belongs in a frontend CI quality gate?",
+    "preferred_answer": "Run deterministic type checks, linting, unit and component tests, selected end-to-end journeys, production build validation, dependency or security checks and measured accessibility or performance budgets. Gates should be fast enough for normal delivery, risk-based and backed by diagnostic artefacts. Avoid blocking on flaky tests or a single universal Lighthouse score; maintain exception ownership and expiry.",
+    "evaluation_points": [
+      "Layered deterministic checks",
+      "Production build",
+      "Risk-based budgets",
+      "Flake and exception governance"
+    ],
+    "resolution_title": "GitHub Actions Documentation",
+    "resolution_url": "https://docs.github.com/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-165",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend System Design, Delivery and Product Judgement",
+    "difficulty": "intermediate",
+    "question_type": "migration",
+    "prompt": "How should a large legacy frontend be modernised without a rewrite freeze?",
+    "preferred_answer": "Establish tests and observability around critical journeys, create a stable integration seam and migrate vertical slices incrementally. Share design tokens and contracts, route traffic gradually and remove old paths as slices prove stable. A full rewrite delays value and may reproduce unknown behaviour. Track compatibility debt, duplicate runtime cost and a clear completion plan so the strangler pattern does not become permanent duplication.",
+    "evaluation_points": [
+      "Baseline tests and observability",
+      "Incremental vertical slices",
+      "Gradual traffic and removal",
+      "Control temporary duplication"
+    ],
+    "resolution_title": "webhint Documentation",
+    "resolution_url": "https://webhint.io/docs/user-guide/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-166",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend System Design, Delivery and Product Judgement",
+    "difficulty": "advanced",
+    "question_type": "performance governance",
+    "prompt": "How should performance budgets be set and enforced?",
+    "preferred_answer": "Set budgets from user outcomes and representative field baselines, covering JavaScript and CSS bytes, image weight, request count, LCP, INP or route-specific measures. Apply them by page type and device class, enforce meaningful regressions in CI and review exceptions with owners and expiry. A budget should guide trade-offs, not reward gaming one metric while user experience declines elsewhere.",
+    "evaluation_points": [
+      "User-outcome basis",
+      "Multiple resource and UX measures",
+      "Page/device segmentation",
+      "Owned exceptions and anti-gaming"
+    ],
+    "resolution_title": "Lighthouse CI",
+    "resolution_url": "https://github.com/GoogleChrome/lighthouse-ci",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-167",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend System Design, Delivery and Product Judgement",
+    "difficulty": "advanced",
+    "question_type": "product judgement",
+    "prompt": "How do you decide whether to build a complex client interaction or simplify the product flow?",
+    "preferred_answer": "Start with the user goal, frequency, failure cost and accessibility needs. Estimate client complexity, data consistency, offline and device constraints, support burden and measurable benefit. Prototype and test the smallest flow that solves the need. A technically impressive interaction may be the wrong choice if it increases confusion, JavaScript cost or operational risk without improving task success.",
+    "evaluation_points": [
+      "User goal and failure cost",
+      "Complexity and device constraints",
+      "Smallest useful prototype",
+      "Measured task success over novelty"
+    ],
+    "resolution_title": "W3C - Web Content Accessibility Guidelines 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "FED-168",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend System Design, Delivery and Product Judgement",
+    "difficulty": "scenario",
+    "question_type": "architecture",
+    "prompt": "You must design a high-traffic commerce frontend for slow mobile networks, frequent catalogue updates and multiple product teams. Outline the approach.",
+    "preferred_answer": "Define route-specific rendering: cacheable server or static product content with targeted revalidation, small interactive client islands, responsive media and progressive loading. Establish domain boundaries, shared accessible components and contracts, server-state caching with explicit freshness, observability and Core Web Vitals budgets. Use gradual delivery, feature flags and rollback. Validate on representative devices and keep checkout dependencies isolated from optional personalisation and third parties.",
+    "evaluation_points": [
+      "Route-specific rendering and freshness",
+      "Small client surface and media optimisation",
+      "Team/domain contracts",
+      "Observability, safe delivery and dependency isolation"
+    ],
+    "resolution_title": "web.dev - Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-01",
+    "role_slug": "frontend-developer",
+    "domain": "Web Platform and Browser Rendering",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Browser rendering trace: Instrument a deliberately slow page and identify its critical request chain, parser blocking, long tasks, layout and paint costs.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nPerformance trace, waterfall, annotated main-thread timeline, three ranked causes, code changes and before/after measurements.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Chrome DevTools - Performance",
+    "resolution_url": "https://developer.chrome.com/docs/devtools/performance",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-02",
+    "role_slug": "frontend-developer",
+    "domain": "Semantic HTML and Forms",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Accessible native form: Build a multi-step account form using semantic HTML, native controls and progressive enhancement, then introduce and repair validation failures.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nMarkup, keyboard transcript, accessibility-tree screenshots, server-validation contract, error-state tests and mobile layout evidence.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "W3C WAI - Forms Tutorial",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/forms/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-03",
+    "role_slug": "frontend-developer",
+    "domain": "CSS Cascade, Layout and Responsive Design",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Responsive component under constraint: Build a reusable dashboard card collection that works in full-page, sidebar and embedded-panel containers with LTR and RTL content.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nCSS architecture, container-query states, overflow tests, RTL screenshots, reduced-motion behaviour and browser support notes.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "MDN - CSS Container Queries",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-04",
+    "role_slug": "frontend-developer",
+    "domain": "JavaScript Language and Asynchronous Execution",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Asynchronous UI race laboratory: Implement a search interface with simulated latency, failure and out-of-order responses, then make its result ownership and cancellation deterministic.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nSequence diagram, implementation, aborted-request handling, automated race tests and before/after behaviour recording.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "MDN - AbortController",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-05",
+    "role_slug": "frontend-developer",
+    "domain": "TypeScript for Frontend Applications",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Typed API boundary migration: Migrate an untyped data-driven interface to strict TypeScript with runtime validation and explicit loading, success and error states.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nBefore/after types, schemas, invalid-payload tests, compiler settings, migration notes and production-observability plan.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "TypeScript Handbook - Narrowing",
+    "resolution_url": "https://www.typescriptlang.org/docs/handbook/2/narrowing.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-06",
+    "role_slug": "frontend-developer",
+    "domain": "DOM, Events and Browser APIs",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Browser API lifecycle integration: Build an infinite-loading list using event delegation, IntersectionObserver and abortable network requests, then prove cleanup across route changes.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nImplementation, lifecycle diagram, observer/listener counts, cancellation tests, memory snapshot and keyboard interaction record.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "MDN - Intersection Observer API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-07",
+    "role_slug": "frontend-developer",
+    "domain": "Accessibility and Inclusive UI",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Accessible interaction audit: Audit and repair a modal, menu, data table and multi-step form against keyboard and screen-reader interaction expectations.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nIssue log mapped to WCAG, repaired code, keyboard scripts, accessibility-tree captures, screen-reader notes and regression tests.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "W3C - Web Content Accessibility Guidelines 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-08",
+    "role_slug": "frontend-developer",
+    "domain": "Performance and Core Web Vitals",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Core Web Vitals optimisation: Profile a media-heavy application, establish LCP, INP and CLS baselines, implement targeted changes and verify lab and simulated field impact.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nLighthouse and performance traces, metric decomposition, bundle and image reports, before/after runs and regression budgets.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "web.dev - Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-09",
+    "role_slug": "frontend-developer",
+    "domain": "HTTP, Networking, Caching and Data Transfer",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Network and cache behaviour lab: Build a data client that handles HTTP errors, conditional requests, aborts, credentialed CORS and bounded retry behaviour against a controlled test API.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nWaterfalls, request/response headers, cache-hit proof, failure-state matrix, retry tests and security notes.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "MDN - HTTP Caching",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-10",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend Security",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Browser security hardening: Harden a deliberately vulnerable frontend against DOM XSS, CSRF and compromised third-party code using safe rendering, CSP and isolation controls.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nThreat model, exploit demonstrations in a sandbox, patched code, CSP reports, security tests and residual-risk notes.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OWASP - Cross Site Scripting Prevention Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-11",
+    "role_slug": "frontend-developer",
+    "domain": "State Management and Server Data",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Consistent server-state workflow: Implement list, detail and edit views with caching, invalidation, cancellation and an optimistic update that safely rolls back under failure.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nState ownership map, cache keys, mutation timeline, concurrency tests, network trace and user-facing error/recovery states.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "TanStack Query - Query Invalidation",
+    "resolution_url": "https://tanstack.com/query/latest/docs/framework/react/guides/query-invalidation",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-12",
+    "role_slug": "frontend-developer",
+    "domain": "React Engineering",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] React render and recovery audit: Refactor a React dashboard with unnecessary Effects, unstable context values and expensive re-renders, then add appropriate loading and error boundaries.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nProfiler captures, render-count comparison, dependency analysis, refactored components, failure tests and user-recovery flow.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "React - Render and Commit",
+    "resolution_url": "https://react.dev/learn/render-and-commit",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-13",
+    "role_slug": "frontend-developer",
+    "domain": "Angular Engineering",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Angular reactive application: Build an Angular feature with signals, routed data, reactive forms, typed HTTP handling, OnPush components and SSR-compatible rendering.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nArchitecture diagram, provider scopes, form and route tests, change-detection profile, SSR output and hydration verification.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Angular - Signals",
+    "resolution_url": "https://angular.dev/guide/signals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-14",
+    "role_slug": "frontend-developer",
+    "domain": "Vue Engineering",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Vue composition and SSR lab: Build a Vue feature using composables, typed component contracts, shared state and an SSR-safe application factory, then profile reactivity updates.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nComponent contracts, composable tests, store scope proof, SSR hydration run, update profile and performance notes.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Vue - Server-Side Rendering",
+    "resolution_url": "https://vuejs.org/guide/scaling-up/ssr",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-15",
+    "role_slug": "frontend-developer",
+    "domain": "SSR, Hydration and Next.js",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Hybrid rendering application: Build a small Next.js catalogue using server and client components, streaming, route-level rendering choices and mutation-driven cache revalidation.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nBoundary map, bundle report, cache rules, hydration tests, stale-data test, navigation trace and recovery states.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Next.js - Server and Client Components",
+    "resolution_url": "https://nextjs.org/docs/app/getting-started/server-and-client-components",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-16",
+    "role_slug": "frontend-developer",
+    "domain": "Testing Strategy and Automation",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Frontend test pyramid implementation: Create unit, component, network-integration and end-to-end tests for one user journey, including accessibility and failure paths.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nTest-boundary rationale, deterministic fixtures, coverage analysis, CI trace, flaky-test controls and defect-to-test mapping.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Testing Library - Guiding Principles",
+    "resolution_url": "https://testing-library.com/docs/guiding-principles/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-17",
+    "role_slug": "frontend-developer",
+    "domain": "Build Tooling, Modules and Package Management",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Production bundle and package audit: Configure a frontend build with code splitting, target policy, bundle analysis and a small published component package with correct exports and declarations.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nBuild configuration, bundle graph, browser target rationale, clean-install test, package export matrix and reproducible-build record.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Vite - Building for Production",
+    "resolution_url": "https://vite.dev/guide/build",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-18",
+    "role_slug": "frontend-developer",
+    "domain": "Component Architecture, Design Systems and Web Components",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Design system component package: Create a small accessible component library with semantic tokens, documented variants, visual tests and one cross-framework custom element.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nPublic API, token files, Storybook documentation, accessibility tests, visual baselines, package exports and migration policy.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Design Tokens Community Group - Format Module",
+    "resolution_url": "https://www.designtokens.org/tr/drafts/format/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-19",
+    "role_slug": "frontend-developer",
+    "domain": "Progressive Web Apps, Offline and Service Workers",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Offline-first PWA upgrade lab: Add installability, offline reading, queued mutations and a safe service-worker update flow to an existing application.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nManifest, cache strategy matrix, offline recordings, conflict tests, update-state screenshots, storage audit and rollback plan.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "web.dev - Learn PWA",
+    "resolution_url": "https://web.dev/learn/pwa/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-20",
+    "role_slug": "frontend-developer",
+    "domain": "Debugging, Observability and Frontend Reliability",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Frontend production diagnostics: Instrument a sample application with error reporting, traces, Web Vitals and release metadata, then diagnose an injected memory leak and browser-specific failure.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nTelemetry schema, privacy review, source-map setup, trace screenshots, heap analysis, incident timeline and verified repair.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OpenTelemetry JavaScript - Browser",
+    "resolution_url": "https://opentelemetry.io/docs/languages/js/getting-started/browser/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-21",
+    "role_slug": "frontend-developer",
+    "domain": "Frontend System Design, Delivery and Product Judgement",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Frontend architecture and delivery review: Design a production frontend for a high-traffic marketplace, including rendering, boundaries, state, accessibility, performance, security, testing and release controls.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nArchitecture diagrams, decision records, request and cache flows, component strategy, quality budgets, CI plan, failure scenarios and phased delivery roadmap.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "GitHub Actions Documentation",
+    "resolution_url": "https://docs.github.com/actions",
     "source_tier": "A",
     "last_verified_at": "2026-07-28",
     "status": "published"
