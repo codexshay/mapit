@@ -1,4 +1,4 @@
-import versionManifest from './generated/version.json';
+import versionManifest from './src/data/generated/version.json';
 
 export interface ApplicationVersionInfo {
   applicationVersion: string;
