@@ -80,12 +80,12 @@ const TAB_DETAILS: Record<string, { label: string; activeStyle: string; hoverSty
     hoverStyle: 'hover:text-slate-200 hover:bg-slate-800/40 border border-transparent'
   },
   interviewq: {
-    label: '⚡ InterviewQ [BETA]',
+    label: '⚡ InterviewQ',
     activeStyle: 'text-zinc-100 font-bold bg-[#121c38] border-zinc-500/40 shadow-[0_0_10px_rgba(255,255,255,0.15)]',
     hoverStyle: 'hover:text-zinc-100 hover:bg-zinc-800/40 border border-transparent'
   },
   jobs: {
-    label: '💼 Jobs & Referrals [BETA]',
+    label: '💼 Jobs & Referrals',
     activeStyle: 'text-zinc-100 font-bold bg-[#121c38] border-zinc-500/40 shadow-[0_0_10px_rgba(255,255,255,0.15)]',
     hoverStyle: 'hover:text-zinc-100 hover:bg-zinc-800/40 border border-transparent'
   }
@@ -123,13 +123,13 @@ const TAB_METADATA: Record<string, { label: string; icon: React.ComponentType<an
     activeStyle: 'text-cyan-400 border-cyan-400 bg-cyan-950/20 shadow-[0_0_12px_rgba(6,182,212,0.15)] font-bold'
   },
   interviewq: {
-    label: 'InterviewQ [BETA]',
+    label: 'InterviewQ',
     icon: HelpCircle,
     colorClass: 'text-zinc-200',
     activeStyle: 'text-zinc-100 border-zinc-100 bg-zinc-900/80 shadow-[0_0_12px_rgba(255,255,255,0.15)] font-bold'
   },
   jobs: {
-    label: 'Jobs & Referrals [BETA]',
+    label: 'Jobs & Referrals',
     icon: Briefcase,
     colorClass: 'text-zinc-200',
     activeStyle: 'text-zinc-100 border-zinc-100 bg-zinc-900/80 shadow-[0_0_12px_rgba(255,255,255,0.15)] font-bold'
@@ -2076,7 +2076,7 @@ export default function App() {
                         }`}
                       >
                         <span className="text-[11px] font-mono font-bold tracking-tight uppercase flex items-center gap-1.5 truncate">
-                          {tabId === 'hr-contacts' && (
+                          {(tabId === 'hr-contacts' || tabId === 'interviewq' || tabId === 'jobs') && (
                             <span className="bg-yellow-400 text-black px-1.5 py-0.5 text-[8.5px] font-extrabold uppercase rounded-xs tracking-wide shrink-0">
                               beta
                             </span>

@@ -182,8 +182,8 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                 <BookOpen className="w-8 h-8 text-white" />
                 MapIT InterviewQ
               </h1>
-              <span className="px-3 py-1 bg-white text-black text-xs font-black uppercase tracking-wider">
-                BETA / WORK IN PROGRESS
+              <span className="bg-yellow-400 text-black px-2 py-0.5 text-[10px] font-extrabold uppercase rounded-xs tracking-wide shrink-0 font-mono">
+                beta
               </span>
             </div>
             <p className="text-zinc-400 text-sm md:text-base max-w-3xl font-sans">
