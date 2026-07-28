@@ -4,6 +4,7 @@ import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
+import compression from "compression";
 import { classifyIntentAndExtractEntities, retrievePamRecommendations } from "./src/utils/pamRetrieval";
 
 dotenv.config();
@@ -11,7 +12,15 @@ dotenv.config();
 const app = express();
 const PORT = 3000;
 
+app.use(compression());
 app.use(express.json());
+
+// SEO Robots.txt endpoint (fixes PageSpeed HTML syntax error)
+app.get("/robots.txt", (req, res) => {
+  res.setHeader("Content-Type", "text/plain");
+  res.setHeader("Cache-Control", "public, max-age=86400");
+  res.send("User-agent: *\nAllow: /\nSitemap: https://itmap.in/sitemap.xml\n");
+});
 
 // Lazy-initialized Gemini client helper
 let aiClient: GoogleGenAI | null = null;

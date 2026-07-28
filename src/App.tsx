@@ -1,19 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react';
 import CareerMap from './components/CareerMap';
 import RoleDetailPanel from './components/RoleDetailPanel';
-import PathFinder from './components/PathFinder';
 import RoleComparison from './components/RoleComparison';
-import LibrariesDashboard from './components/LibrariesDashboard';
-import ITTaxonomyExplorer from './components/ITTaxonomyExplorer';
-import AntCrossingGame from './components/AntCrossingGame';
 import SidebarAnt from './components/SidebarAnt';
 import ErrorBoundary from './components/ErrorBoundary';
 import YoutubeTeachers, { TEACHERS_DIRECTORY } from './components/YoutubeTeachers';
 import { CHANNELS_POOL } from './data/youtubeDatabase';
 import Hackathons, { GLOBAL_HACKATHONS, GLOBAL_FESTS, Hackathon } from './components/Hackathons';
 import { AnalogClock } from './components/AnalogClock';
-import AICareerAssistant from './components/AICareerAssistant';
-import HRContacts from './components/HRContacts';
+
+const PathFinder = React.lazy(() => import('./components/PathFinder'));
+const LibrariesDashboard = React.lazy(() => import('./components/LibrariesDashboard'));
+const ITTaxonomyExplorer = React.lazy(() => import('./components/ITTaxonomyExplorer'));
+const AntCrossingGame = React.lazy(() => import('./components/AntCrossingGame'));
+const AICareerAssistant = React.lazy(() => import('./components/AICareerAssistant'));
+const HRContacts = React.lazy(() => import('./components/HRContacts'));
+const InterviewQ = React.lazy(() => import('./components/InterviewQ'));
 import { ALL_ROLES_DATA, IT_DOMAINS } from './data/rolesData';
 import { CORNER_TIPS, CERTIFICATIONS_LIBRARY } from './data/librariesData';
 import importedPortals from './data/generated/portals.json';
@@ -74,6 +76,11 @@ const TAB_DETAILS: Record<string, { label: string; activeStyle: string; hoverSty
     label: '👥 HR CONTACTS',
     activeStyle: 'text-slate-200 font-bold bg-[#121c38] border-slate-700/40 shadow-[0_0_10px_rgba(255,255,255,0.05)]',
     hoverStyle: 'hover:text-slate-200 hover:bg-slate-800/40 border border-transparent'
+  },
+  interviewq: {
+    label: '⚡ InterviewQ [BETA]',
+    activeStyle: 'text-emerald-400 font-bold bg-[#121c38] border-emerald-500/40 shadow-[0_0_10px_rgba(16,185,129,0.25)]',
+    hoverStyle: 'hover:text-emerald-400 hover:bg-emerald-950/20 border border-transparent'
   }
 };
 
@@ -107,6 +114,12 @@ const TAB_METADATA: Record<string, { label: string; icon: React.ComponentType<an
     icon: BookOpen,
     colorClass: 'text-cyan-400',
     activeStyle: 'text-cyan-400 border-cyan-400 bg-cyan-950/20 shadow-[0_0_12px_rgba(6,182,212,0.15)] font-bold'
+  },
+  interviewq: {
+    label: 'InterviewQ [BETA]',
+    icon: HelpCircle,
+    colorClass: 'text-emerald-400',
+    activeStyle: 'text-emerald-400 border-emerald-400 bg-emerald-950/20 shadow-[0_0_12px_rgba(16,185,129,0.15)] font-bold'
   },
   saved: {
     label: 'Bookmarks',
@@ -1666,7 +1679,7 @@ export default function App() {
   const [isChatOpen, setIsChatOpen] = useState<boolean>(false);
 
   // Dynamic order of tabs - Sorted alphabetically by their visible section labels
-  const [tabOrder, setTabOrder] = useState<string[]>(['about', 'saved', 'map', 'comparison', 'pathfinder', 'libraries', 'hr-contacts']);
+  const [tabOrder, setTabOrder] = useState<string[]>(['about', 'saved', 'map', 'comparison', 'pathfinder', 'libraries', 'interviewq', 'hr-contacts']);
 
   const [draggedTabId, setDraggedTabId] = useState<string | null>(null);
 
@@ -3270,7 +3283,9 @@ export default function App() {
 
             {/* ARCADE GAME SANDBOX (Visible below the actual footer) */}
             <div className="border-t border-[#121c38]/60 pt-6">
-              <AntCrossingGame theme={theme} />
+              <React.Suspense fallback={<div className="h-32 flex items-center justify-center text-xs font-mono text-slate-500">Loading Arcade Sandbox...</div>}>
+                <AntCrossingGame theme={theme} />
+              </React.Suspense>
             </div>
 
           </section>
@@ -3336,24 +3351,26 @@ export default function App() {
             
             {/* The main inputs panel (Full Width) */}
             <div className="w-full">
-              <PathFinder 
-                theme={theme}
-                onSelectRole={(id) => {
-                  setSelectedRoleId(id);
-                  setTimeout(() => handleScrollToSection('pathfinder-role-detail-anchor'), 100);
-                }} 
-                isHighlighted={blinkSectionId === 'pathfinder'}
-                onScrollToSection={(sectionId) => {
-                  // Direct tab switcher bridges! Redirects users seamlessly to respective tabs
-                  if (sectionId === 'libraries-section') setActiveTab('libraries');
-                  else if (sectionId === 'interactive-map-section') { setCareerMapViewMode('mindmap'); setActiveTab('map'); }
-                  else if (sectionId === 'it-taxonomy-explorer-section') { setCareerMapViewMode('mindmap'); setActiveTab('map'); }
-                  else if (sectionId === 'comparison-section') setActiveTab('comparison');
-                }}
-                savedPathways={savedPathways}
-                setSavedPathways={setSavedPathways}
-                restoredPathway={restoredPathway}
-              />
+              <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-emerald-400 border border-slate-800 bg-[#070b13]">Loading Path Planner...</div>}>
+                <PathFinder 
+                  theme={theme}
+                  onSelectRole={(id) => {
+                    setSelectedRoleId(id);
+                    setTimeout(() => handleScrollToSection('pathfinder-role-detail-anchor'), 100);
+                  }} 
+                  isHighlighted={blinkSectionId === 'pathfinder'}
+                  onScrollToSection={(sectionId) => {
+                    // Direct tab switcher bridges! Redirects users seamlessly to respective tabs
+                    if (sectionId === 'libraries-section') setActiveTab('libraries');
+                    else if (sectionId === 'interactive-map-section') { setCareerMapViewMode('mindmap'); setActiveTab('map'); }
+                    else if (sectionId === 'it-taxonomy-explorer-section') { setCareerMapViewMode('mindmap'); setActiveTab('map'); }
+                    else if (sectionId === 'comparison-section') setActiveTab('comparison');
+                  }}
+                  savedPathways={savedPathways}
+                  setSavedPathways={setSavedPathways}
+                  restoredPathway={restoredPathway}
+                />
+              </React.Suspense>
             </div>
 
             {/* Active targeted details (placed below the main Career Finder panel) */}
@@ -3435,29 +3452,47 @@ export default function App() {
                 setHackathonsSearchQuery('');
               }}
             >
-              <LibrariesDashboard 
-                theme={theme}
-                isHighlighted={blinkSectionId === 'libraries'} 
-                bookmarks={bookmarks}
-                toggleBookmark={toggleBookmark}
-                isBookmarked={isBookmarked}
-                activeTab={librariesActiveTab}
-                setActiveTab={setLibrariesActiveTab}
-                query={librariesQuery}
-                setQuery={handleSetAllLibrariesQuery}
-                selectedRoleFamily={librariesRoleFamily}
-                setSelectedRoleFamily={setLibrariesRoleFamily}
-                youtubeSearchQuery={youtubeSearchQuery}
-                setYoutubeSearchQuery={handleSetAllLibrariesQuery}
-                youtubeCategoryId={youtubeCategoryId}
-                setSelectedCategoryId={setYoutubeCategoryId}
-                hackathonsSelectedItemId={hackathonsSelectedItemId}
-                setHackathonsSelectedItemId={setHackathonsSelectedItemId}
-                hackathonsSearchQuery={hackathonsSearchQuery}
-                setHackathonsSearchQuery={handleSetAllLibrariesQuery}
-                tipIndex={tipIndex}
-                globalActiveTab={activeTab}
-              />
+              <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-cyan-400 border border-slate-800 bg-[#070b13]">Loading Resources Directory...</div>}>
+                <LibrariesDashboard 
+                  theme={theme}
+                  isHighlighted={blinkSectionId === 'libraries'} 
+                  bookmarks={bookmarks}
+                  toggleBookmark={toggleBookmark}
+                  isBookmarked={isBookmarked}
+                  activeTab={librariesActiveTab}
+                  setActiveTab={setLibrariesActiveTab}
+                  query={librariesQuery}
+                  setQuery={handleSetAllLibrariesQuery}
+                  selectedRoleFamily={librariesRoleFamily}
+                  setSelectedRoleFamily={setLibrariesRoleFamily}
+                  youtubeSearchQuery={youtubeSearchQuery}
+                  setYoutubeSearchQuery={handleSetAllLibrariesQuery}
+                  youtubeCategoryId={youtubeCategoryId}
+                  setSelectedCategoryId={setYoutubeCategoryId}
+                  hackathonsSelectedItemId={hackathonsSelectedItemId}
+                  setHackathonsSelectedItemId={setHackathonsSelectedItemId}
+                  hackathonsSearchQuery={hackathonsSearchQuery}
+                  setHackathonsSearchQuery={handleSetAllLibrariesQuery}
+                  tipIndex={tipIndex}
+                  globalActiveTab={activeTab}
+                />
+              </React.Suspense>
+            </ErrorBoundary>
+          </section>
+        </div>
+
+        {/* 7. INTERVIEWQ [BETA] VIEW */}
+        <div id="section-interviewq" className={activeTab === 'interviewq' ? 'block' : 'hidden'}>
+          <section className="fade-in space-y-6">
+            <ErrorBoundary fallbackTitle="InterviewQ View Error">
+              <React.Suspense fallback={
+                <div className="min-h-[400px] flex flex-col items-center justify-center bg-[#070b14] text-emerald-400 font-mono text-sm border border-slate-800 rounded-2xl p-8 space-y-3">
+                  <div className="w-8 h-8 border-2 border-emerald-400 border-t-transparent rounded-full animate-spin"></div>
+                  <div>Loading MapIT InterviewQ [BETA] Database...</div>
+                </div>
+              }>
+                <InterviewQ />
+              </React.Suspense>
             </ErrorBoundary>
           </section>
         </div>
@@ -3952,7 +3987,9 @@ export default function App() {
         {/* HR CONTACTS VIEW */}
         <div id="section-hr-contacts" className={activeTab === 'hr-contacts' ? 'block' : 'hidden'}>
           <section className="fade-in space-y-6">
-            <HRContacts theme={theme} />
+            <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-slate-400 border border-slate-800 bg-[#070b13]">Loading HR Contacts...</div>}>
+              <HRContacts theme={theme} />
+            </React.Suspense>
           </section>
         </div>
 
@@ -3971,14 +4008,16 @@ export default function App() {
       </div>
 
       {/* AI Career Coach Companion */}
-      <AICareerAssistant 
-        onNavigateToSection={handleNavigateToSection}
-        setActiveTab={setActiveTab}
-        isOpen={isChatOpen}
-        onOpenChange={setIsChatOpen}
-        isLight={theme === 'light'}
-        onCompareRoles={handleCompareRoles}
-      />
+      <React.Suspense fallback={null}>
+        <AICareerAssistant 
+          onNavigateToSection={handleNavigateToSection}
+          setActiveTab={setActiveTab}
+          isOpen={isChatOpen}
+          onOpenChange={setIsChatOpen}
+          isLight={theme === 'light'}
+          onCompareRoles={handleCompareRoles}
+        />
+      </React.Suspense>
 
       {/* Floating ladder climber ant - jump back to top */}
       {showScrollTop && (
@@ -4022,6 +4061,7 @@ export default function App() {
             { id: 'map', label: 'Career Domains', icon: TAB_METADATA.map.icon, activeColor: 'text-yellow-500 border-yellow-500' },
             { id: 'pathfinder', label: 'Path Planner', icon: TAB_METADATA.pathfinder.icon, activeColor: 'text-[#10b981] border-[#10b981]' },
             { id: 'libraries', label: 'Resources', icon: TAB_METADATA.libraries.icon, activeColor: 'text-cyan-400 border-cyan-400' },
+            { id: 'interviewq', label: 'InterviewQ', icon: TAB_METADATA.interviewq.icon, activeColor: 'text-emerald-400 border-emerald-400' },
             { id: 'hr-contacts', label: 'HR Contacts', icon: TAB_METADATA['hr-contacts'].icon, activeColor: 'text-slate-100 border-slate-100' }
           ].map((item) => {
             const isActive = activeTab === item.id;
