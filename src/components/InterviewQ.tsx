@@ -12,11 +12,9 @@ import {
   ChevronDown,
   Sparkles,
   HelpCircle,
-  FileCode,
   CheckCircle2,
-  Terminal,
-  Filter,
-  Grid
+  Grid,
+  RotateCcw
 } from 'lucide-react';
 import { interviewQDatabase, InterviewQItem } from '../data/interviewQDatabase';
 
@@ -65,7 +63,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRole, setSelectedRole] = useState<string>('all');
-  const [selectedDomain, setSelectedDomain] = useState<string>('all');
+  const [selectedDomains, setSelectedDomains] = useState<string[]>([]);
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('all');
   const [selectedType, setSelectedType] = useState<string>('all');
   const [expandedIds, setExpandedIds] = useState<Record<string, boolean>>({});
@@ -95,39 +93,48 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
   const availableTypes = useMemo(() => {
     const pool = interviewQDatabase.filter(item => {
       const matchRole = selectedRole === 'all' || item.role_slug === selectedRole;
-      const matchDomain = selectedDomain === 'all' || item.domain === selectedDomain;
+      const matchDomain = selectedDomains.length === 0 || selectedDomains.includes(item.domain);
       return matchRole && matchDomain;
     });
     const types = Array.from(new Set(pool.map(item => item.question_type)));
     return types.sort();
-  }, [selectedRole, selectedDomain]);
+  }, [selectedRole, selectedDomains]);
 
   // 4. Available Difficulties
   const availableDifficulties = useMemo(() => {
     const pool = interviewQDatabase.filter(item => {
       const matchRole = selectedRole === 'all' || item.role_slug === selectedRole;
-      const matchDomain = selectedDomain === 'all' || item.domain === selectedDomain;
+      const matchDomain = selectedDomains.length === 0 || selectedDomains.includes(item.domain);
       const matchType = selectedType === 'all' || item.question_type === selectedType;
       return matchRole && matchDomain && matchType;
     });
     return Array.from(new Set(pool.map(item => item.difficulty)));
-  }, [selectedRole, selectedDomain, selectedType]);
+  }, [selectedRole, selectedDomains, selectedType]);
 
-  // Role Category change handler
+  // Role Category change handler (resets sub-domains)
   const handleRoleSelect = (roleSlug: string) => {
     setSelectedRole(roleSlug);
-    setSelectedDomain('all');
+    setSelectedDomains([]);
     setSelectedType('all');
     setSelectedDifficulty('all');
     setCurrentPage(1);
     setMobileTab('questions');
   };
 
-  // Domain change handler
-  const handleDomainSelect = (domain: string) => {
-    setSelectedDomain(domain);
-    setSelectedType('all');
-    setSelectedDifficulty('all');
+  // Toggle multi-select sub-domains
+  const toggleDomainSelect = (domain: string) => {
+    if (domain === 'all') {
+      setSelectedDomains([]);
+    } else {
+      setSelectedDomains(prev => {
+        const exists = prev.includes(domain);
+        if (exists) {
+          return prev.filter(d => d !== domain);
+        } else {
+          return [...prev, domain];
+        }
+      });
+    }
     setCurrentPage(1);
   };
 
@@ -142,13 +149,13 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
         item.domain.toLowerCase().includes(q);
       
       const matchesRole = selectedRole === 'all' || item.role_slug === selectedRole;
-      const matchesDomain = selectedDomain === 'all' || item.domain === selectedDomain;
+      const matchesDomain = selectedDomains.length === 0 || selectedDomains.includes(item.domain);
       const matchesDifficulty = selectedDifficulty === 'all' || item.difficulty === selectedDifficulty;
       const matchesType = selectedType === 'all' || item.question_type === selectedType;
 
       return matchesSearch && matchesRole && matchesDomain && matchesDifficulty && matchesType;
     });
-  }, [searchQuery, selectedRole, selectedDomain, selectedDifficulty, selectedType]);
+  }, [searchQuery, selectedRole, selectedDomains, selectedDifficulty, selectedType]);
 
   // Paginated Questions
   const totalPages = Math.ceil(filteredQuestions.length / itemsPerPage) || 1;
@@ -188,6 +195,8 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
     setCopiedId(item.id);
     setTimeout(() => setCopiedId(null), 2000);
   };
+
+  const isAllDomainsActive = selectedDomains.length === 0;
 
   return (
     <div className="min-h-screen bg-black text-zinc-100 p-4 md:p-8 font-mono">
@@ -265,8 +274,10 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
       {/* Main Two-Column Layout (Master-Detail Domain & Category View) */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-6">
         
-        {/* LEFT COLUMN: Role Categories Cards (1/3 Width on Desktop) */}
+        {/* LEFT COLUMN: Role Categories & Customizable Sub-Domains Sidebar (1/3 Width on Desktop) */}
         <aside className={`${mobileTab === 'questions' ? 'hidden md:block' : 'block'} w-full md:w-1/3 shrink-0 space-y-4`}>
+          
+          {/* Role Categories Panel */}
           <div className="border-2 border-zinc-800 bg-zinc-950 p-4">
             <h2 className="text-sm font-black uppercase text-white tracking-wider flex items-center gap-2 mb-3 border-b border-zinc-800 pb-2">
               <Grid className="w-4 h-4 text-white" />
@@ -323,43 +334,81 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
             </div>
           </div>
 
-          {/* Sub-Domains Scoped List */}
-          {selectedRole !== 'all' && availableDomains.length > 0 && (
-            <div className="border-2 border-zinc-800 bg-zinc-950 p-4">
-              <h3 className="text-xs font-black uppercase text-white tracking-wider flex items-center gap-2 mb-3 border-b border-zinc-800 pb-2">
-                <Layers className="w-3.5 h-3.5 text-white" />
-                Sub-Domains for {ROLE_CATEGORY_METADATA[selectedRole]?.label || selectedRole}
-              </h3>
+          {/* Customizable Multi-Select Sub-Domains Panel */}
+          {availableDomains.length > 0 && (
+            <div className="border-2 border-zinc-800 bg-zinc-950 p-4 space-y-3">
+              <div className="flex items-center justify-between border-b border-zinc-800 pb-2">
+                <h3 className="text-xs font-black uppercase text-white tracking-wider flex items-center gap-2">
+                  <Layers className="w-3.5 h-3.5 text-white" />
+                  Customizable Sub-Domains
+                </h3>
+                <span className="text-[10px] text-zinc-400 font-mono">
+                  {isAllDomainsActive ? 'ALL SELECTED' : `${selectedDomains.length} SELECTED`}
+                </span>
+              </div>
 
-              <div className="space-y-1.5 max-h-64 overflow-y-auto pr-1">
+              <p className="text-[11px] text-zinc-400 font-sans">
+                Click any sub-domain to toggle selection on/off. Select multiple sub-domains simultaneously to sort filtered questions.
+              </p>
+
+              <div className="space-y-1.5 max-h-72 overflow-y-auto pr-1">
+                {/* All Sub-Domains Option */}
                 <button
-                  onClick={() => handleDomainSelect('all')}
-                  className={`w-full py-1.5 px-2.5 text-xs font-mono text-left border transition-all ${
-                    selectedDomain === 'all'
-                      ? 'bg-white text-black border-white font-bold'
-                      : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-white'
+                  type="button"
+                  onClick={() => toggleDomainSelect('all')}
+                  className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
+                    isAllDomainsActive
+                      ? 'bg-white text-black border-white font-bold shadow-[2px_2px_0px_0px_#ffffff]'
+                      : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
                   }`}
                 >
-                  All Sub-Domains ({availableDomains.length})
+                  <span className="flex items-center gap-2">
+                    {isAllDomainsActive && <Check className="w-3.5 h-3.5 text-black stroke-[3]" />}
+                    <span>All Sub-Domains</span>
+                  </span>
+                  <span className="text-[10px] opacity-80">({availableDomains.length})</span>
                 </button>
+
+                {/* Individual Customizable Sub-Domain Options */}
                 {availableDomains.map(d => {
+                  const isChecked = !isAllDomainsActive && selectedDomains.includes(d);
                   const dCount = interviewQDatabase.filter(i => (selectedRole === 'all' || i.role_slug === selectedRole) && i.domain === d).length;
+                  
                   return (
                     <button
                       key={d}
-                      onClick={() => handleDomainSelect(d)}
-                      className={`w-full py-1.5 px-2.5 text-xs font-mono text-left border flex items-center justify-between transition-all ${
-                        selectedDomain === d
-                          ? 'bg-white text-black border-white font-bold'
-                          : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-white'
+                      type="button"
+                      onClick={() => toggleDomainSelect(d)}
+                      className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
+                        isChecked
+                          ? 'bg-white text-black border-white font-bold shadow-[2px_2px_0px_0px_#ffffff]'
+                          : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
                       }`}
                     >
-                      <span className="truncate pr-2">{d}</span>
-                      <span className="text-[10px] opacity-70 shrink-0">({dCount})</span>
+                      <span className="flex items-center gap-2 truncate pr-2">
+                        {isChecked ? (
+                          <Check className="w-3.5 h-3.5 text-black stroke-[3] shrink-0" />
+                        ) : (
+                          <span className="w-3.5 h-3.5 border border-zinc-700 inline-block shrink-0" />
+                        )}
+                        <span className="truncate">{d}</span>
+                      </span>
+                      <span className="text-[10px] opacity-80 shrink-0">({dCount})</span>
                     </button>
                   );
                 })}
               </div>
+
+              {!isAllDomainsActive && (
+                <button
+                  type="button"
+                  onClick={() => toggleDomainSelect('all')}
+                  className="w-full py-1.5 px-3 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-zinc-300 text-[11px] font-bold uppercase flex items-center justify-center gap-1.5 transition cursor-pointer"
+                >
+                  <RotateCcw className="w-3 h-3" />
+                  <span>Reset to All Sub-Domains</span>
+                </button>
+              )}
             </div>
           )}
         </aside>
@@ -410,21 +459,20 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
 
             {/* Active Filters Display */}
             <div className="flex flex-wrap items-center justify-between text-xs text-zinc-400 gap-2">
-              <div className="flex items-center gap-2">
-                <span>Active Role Category:</span>
+              <div className="flex items-center gap-2 flex-wrap">
+                <span>Category:</span>
                 <span className="font-bold text-white uppercase">
                   {ROLE_CATEGORY_METADATA[selectedRole]?.label || selectedRole}
                 </span>
-                {selectedDomain !== 'all' && (
-                  <>
-                    <span>•</span>
-                    <span className="text-zinc-300">{selectedDomain}</span>
-                  </>
-                )}
+                <span>•</span>
+                <span>Sub-Domains:</span>
+                <span className="font-bold text-white uppercase">
+                  {isAllDomainsActive ? 'All Sub-Domains' : `${selectedDomains.length} Selected (${selectedDomains.join(', ')})`}
+                </span>
               </div>
 
               {totalPages > 1 && (
-                <span className="text-[11px]">
+                <span className="text-[11px] shrink-0">
                   Page <span className="text-white font-bold">{currentPage}</span> of {totalPages}
                 </span>
               )}
@@ -437,12 +485,12 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
               <HelpCircle className="w-12 h-12 text-zinc-600 mx-auto mb-4" />
               <h3 className="text-lg font-bold text-zinc-200 mb-2 uppercase">No matching questions found</h3>
               <p className="text-zinc-400 text-xs max-w-md mx-auto font-sans mb-4">
-                No items match your selected filters. Try clearing domain/difficulty filters or searching for a different keyword.
+                No items match your selected sub-domain or difficulty filters. Try clearing sub-domains or adjusting your search keyword.
               </p>
               <button
                 onClick={() => {
                   setSelectedRole('all');
-                  setSelectedDomain('all');
+                  setSelectedDomains([]);
                   setSelectedDifficulty('all');
                   setSelectedType('all');
                   setSearchQuery('');
