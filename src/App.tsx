@@ -284,6 +284,38 @@ export default function App() {
     return [];
   });
 
+  const [bookmarkToast, setBookmarkToast] = useState<{ message: string; id: number } | null>(null);
+  const toastTimeoutRef = useRef<any>(null);
+
+  const getInfoTypeLabel = (type: BookmarkItem['type']) => {
+    switch (type) {
+      case 'role':
+        return 'Job role';
+      case 'domain':
+        return 'Career domain';
+      case 'division':
+        return 'Department';
+      case 'youtubeTeacher':
+        return 'Teacher';
+      case 'hackathon':
+        return 'Hackathon & Event';
+      case 'certification':
+        return 'Certification';
+      case 'studyPortal':
+        return 'Study Portal';
+      case 'skill':
+        return 'Skill';
+      case 'tool':
+        return 'Tool';
+      case 'jobCategory':
+        return 'Job Category';
+      case 'interviewQ':
+        return 'Interview Question & Lab';
+      default:
+        return 'Item';
+    }
+  };
+
   const toggleBookmark = (item: BookmarkItem) => {
     setBookmarks((prev) => {
       let next;
@@ -292,6 +324,13 @@ export default function App() {
         next = prev.filter(b => !(b.id === item.id && b.type === item.type));
       } else {
         next = [...prev, item];
+        const infoType = getInfoTypeLabel(item.type);
+        const toastMsg = `${infoType} is saved`;
+        setBookmarkToast({ message: toastMsg, id: Date.now() });
+        if (toastTimeoutRef.current) clearTimeout(toastTimeoutRef.current);
+        toastTimeoutRef.current = setTimeout(() => {
+          setBookmarkToast(null);
+        }, 3000);
       }
       localStorage.setItem('mapit_bookmarks_v3', JSON.stringify(next));
       // Keep legacy item in sync for backward compatibility
@@ -3979,6 +4018,34 @@ export default function App() {
           </svg>
         </button>
       )}
+
+      {/* BOTTOM LEFT BOOKMARK TOAST INDICATION TAG (3 SECONDS DURATION) */}
+      <AnimatePresence>
+        {bookmarkToast && (
+          <motion.div
+            key={bookmarkToast.id}
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 15, scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+            className="fixed bottom-20 left-4 md:bottom-6 md:left-6 z-[99999] pointer-events-none select-none font-mono"
+          >
+            <div className="bg-[#070b13]/95 border-2 border-yellow-400/90 text-white px-4 py-3 shadow-[0_8px_24px_rgba(0,0,0,0.85)] backdrop-blur-md flex items-center gap-3">
+              <div className="w-7 h-7 rounded-none bg-yellow-400 text-black flex items-center justify-center font-bold text-xs shrink-0 shadow-[0_0_10px_rgba(250,204,21,0.6)]">
+                ★
+              </div>
+              <div>
+                <div className="text-xs font-extrabold text-yellow-400 uppercase tracking-wide">
+                  {bookmarkToast.message}
+                </div>
+                <div className="text-[9.5px] text-slate-400 font-sans">
+                  Saved to your Bookmarks tab
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* MOBILE BOTTOM NAVIGATION RIBBON (LinkedIn App Standards) */}
       {isMobile && (
