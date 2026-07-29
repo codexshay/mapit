@@ -59,6 +59,11 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
     label: 'Software Development & Engineering (SDE)',
     icon: '💻',
     description: 'SDE Foundations, OOD, Algorithms, Clean Code, Concurrency, System Design & Delivery'
+  },
+  'green-computing-engineer': {
+    label: 'Green Computing & Sustainable IT',
+    icon: '🌱',
+    description: 'Green Software, Energy Efficiency, Cloud Carbon Footprint, GreenOps & Sustainable AI'
   }
 };
 

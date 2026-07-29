@@ -21500,5 +21500,3785 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "B",
     "last_verified_at": "2026-07-29",
     "status": "published"
+  },
+  {
+    "id": "GCI-001",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Computing Foundations and Systems Thinking",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is green computing, and how does it differ from simply purchasing energy-efficient devices?",
+    "preferred_answer": "Green computing is the design, procurement, operation and retirement of digital systems to reduce environmental harm across their life cycle. Efficient devices matter, but the discipline also covers software demand, cloud utilisation, embodied emissions, water, networks, supply chains, repair and e-waste. A lower-watt device used more often or replaced prematurely may not deliver a lower total impact.",
+    "evaluation_points": [
+      "Life-cycle scope",
+      "Software and hardware interaction",
+      "Operational and embodied impact",
+      "Avoids device-only definition"
+    ],
+    "resolution_title": "Green Software Foundation - Learn Green Software",
+    "resolution_url": "https://learn.greensoftware.foundation/introduction/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-002",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Computing Foundations and Systems Thinking",
+    "difficulty": "foundation",
+    "question_type": "systems-thinking",
+    "prompt": "Differentiate energy efficiency, carbon efficiency and hardware efficiency.",
+    "preferred_answer": "Energy efficiency means performing useful work with less energy. Carbon efficiency means performing work with fewer emissions, which depends on energy quantity and the carbon intensity of electricity. Hardware efficiency means increasing useful work over a device life so embodied impacts are amortised without encouraging wasteful demand.",
+    "evaluation_points": [
+      "Three distinct mechanisms",
+      "Electricity carbon intensity",
+      "Embodied impact",
+      "Useful-work framing"
+    ],
+    "resolution_title": "Green Software Foundation - Learn Green Software",
+    "resolution_url": "https://learn.greensoftware.foundation/introduction/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-003",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Computing Foundations and Systems Thinking",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "Why can moving an application to the cloud reduce impact in one case and increase it in another?",
+    "preferred_answer": "Cloud migration can improve utilisation, access to efficient facilities and elastic scaling, but it can also increase replication, data transfer, always-on managed services and demand because capacity becomes easier to consume. Compare the same functional outcome using measured workload, region, service architecture, data movement and retirement of displaced equipment.",
+    "evaluation_points": [
+      "Utilisation benefit",
+      "Added-service and network demand",
+      "Comparable functional outcome",
+      "Measures displaced assets"
+    ],
+    "resolution_title": "AWS Well-Architected Sustainability Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-004",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Computing Foundations and Systems Thinking",
+    "difficulty": "intermediate",
+    "question_type": "decision-making",
+    "prompt": "What is a functional unit, and why is it essential when comparing sustainable IT options?",
+    "preferred_answer": "A functional unit describes the service delivered, such as one completed transaction, one active-user hour or one validated model inference. It prevents misleading comparisons based only on total electricity or device count when volumes and quality differ. The unit must reflect business value and cannot be chosen merely because it makes one option look better.",
+    "evaluation_points": [
+      "Defines delivered service",
+      "Normalises different volumes",
+      "Quality and value context",
+      "Guards against cherry-picking"
+    ],
+    "resolution_title": "Software Carbon Intensity Specification v1.1",
+    "resolution_url": "https://sci.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-005",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Computing Foundations and Systems Thinking",
+    "difficulty": "intermediate",
+    "question_type": "trade-offs",
+    "prompt": "How should a team handle a change that reduces energy use but degrades accessibility or reliability?",
+    "preferred_answer": "Treat sustainability as one quality attribute within a bounded decision, not permission to transfer harm. Quantify the environmental gain, identify affected users and reliability objectives, test alternatives and preserve non-negotiable safety and accessibility requirements. Accept a trade-off only through transparent ownership and evidence, preferably by finding a design that reduces waste without excluding users.",
+    "evaluation_points": [
+      "Multi-objective decision",
+      "Protects essential requirements",
+      "Quantifies gain and harm",
+      "Transparent ownership"
+    ],
+    "resolution_title": "Web Sustainability Guidelines",
+    "resolution_url": "https://w3c.github.io/sustyweb/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-006",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Computing Foundations and Systems Thinking",
+    "difficulty": "advanced",
+    "question_type": "analysis",
+    "prompt": "Explain the rebound effect in IT and give two examples.",
+    "preferred_answer": "The rebound effect occurs when efficiency lowers cost or friction and total consumption grows enough to offset some or all savings. Examples include cheaper inference causing far more AI requests, or efficient video compression encouraging higher resolution and longer viewing. Teams must measure absolute demand as well as per-unit efficiency and consider limits, pricing or product-design changes.",
+    "evaluation_points": [
+      "Correct mechanism",
+      "Two IT examples",
+      "Absolute and intensity metrics",
+      "Demand-management response"
+    ],
+    "resolution_title": "Key Questions on Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-007",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Computing Foundations and Systems Thinking",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "When is avoiding computation a better sustainability strategy than optimising it?",
+    "preferred_answer": "Avoid computation when the output has little user or social value, duplicates existing work, exists only to inflate engagement, or creates impacts disproportionate to its benefit. First challenge the need, frequency, precision, retention and audience; then optimise what remains. This is sufficiency: reducing unnecessary demand before improving efficiency.",
+    "evaluation_points": [
+      "Challenges need before implementation",
+      "Value and proportionality",
+      "Frequency/precision/retention levers",
+      "Defines sufficiency"
+    ],
+    "resolution_title": "UN Sustainable Development Goal 12",
+    "resolution_url": "https://sdgs.un.org/goals/goal12",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-008",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Computing Foundations and Systems Thinking",
+    "difficulty": "scenario",
+    "question_type": "critical-reflection",
+    "prompt": "A product team claims a 40% reduction in energy per request while total monthly energy rose 70%. Is the system greener?",
+    "preferred_answer": "The intensity improvement is real but insufficient to claim a lower total impact. Investigate request growth, changed functionality, user outcomes, infrastructure expansion, embodied impact and electricity mix. Report both absolute and per-unit measures, explain the rebound, and decide whether demand controls or product changes are required.",
+    "evaluation_points": [
+      "Separates intensity from absolute impact",
+      "Investigates demand drivers",
+      "Includes embodied and electricity context",
+      "Avoids unsupported green claim"
+    ],
+    "resolution_title": "Software Carbon Intensity Specification v1.1",
+    "resolution_url": "https://sci.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-009",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon Accounting and Environmental Metrics",
+    "difficulty": "foundation",
+    "question_type": "accounting",
+    "prompt": "Differentiate Scope 1, Scope 2 and Scope 3 emissions for an IT organisation.",
+    "preferred_answer": "Scope 1 covers direct emissions from owned or controlled sources such as generators or refrigerants. Scope 2 covers purchased electricity, steam, heat or cooling. Scope 3 covers value-chain emissions such as hardware manufacturing, cloud services, employee devices, business travel, logistics and end-of-life treatment.",
+    "evaluation_points": [
+      "Correct scope boundaries",
+      "IT examples",
+      "Cloud and hardware in value chain",
+      "No double-counting assumption"
+    ],
+    "resolution_title": "GHG Protocol Corporate Standard",
+    "resolution_url": "https://ghgprotocol.org/corporate-standard",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-010",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon Accounting and Environmental Metrics",
+    "difficulty": "foundation",
+    "question_type": "metrics",
+    "prompt": "What is the difference between an absolute emissions metric and an intensity metric?",
+    "preferred_answer": "An absolute metric reports total impact over a period or boundary, while an intensity metric divides impact by an activity or functional unit. Intensity supports comparison and efficiency tracking; absolute totals show whether the organisation is actually reducing its footprint. Both are needed because demand growth can hide behind an improving intensity value.",
+    "evaluation_points": [
+      "Total versus rate",
+      "Functional denominator",
+      "Use of both",
+      "Rebound awareness"
+    ],
+    "resolution_title": "Software Carbon Intensity Specification v1.1",
+    "resolution_url": "https://sci.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-011",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon Accounting and Environmental Metrics",
+    "difficulty": "intermediate",
+    "question_type": "electricity-accounting",
+    "prompt": "Why do location-based and market-based Scope 2 results differ?",
+    "preferred_answer": "Location-based reporting uses average emissions factors for the grid where electricity is consumed. Market-based reporting reflects qualifying contractual instruments such as supplier products or energy attribute certificates. The two answer different questions, so disclose both where required, document instrument quality and avoid presenting contractual claims as proof that physical grid emissions fell at the workload hour.",
+    "evaluation_points": [
+      "Two methods",
+      "Contractual instruments",
+      "Dual disclosure",
+      "Physical-versus-claim distinction"
+    ],
+    "resolution_title": "GHG Protocol Scope 2 Guidance",
+    "resolution_url": "https://ghgprotocol.org/scope-2-guidance",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-012",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon Accounting and Environmental Metrics",
+    "difficulty": "intermediate",
+    "question_type": "measurement",
+    "prompt": "How should uncertainty be represented in an IT carbon estimate?",
+    "preferred_answer": "Record source data, units, time and geography, allocation rules, emissions factors, missing values and model assumptions. Use ranges or sensitivity analysis for influential uncertainties rather than a single false-precision number. The decision should remain robust under plausible alternatives, and estimates should be revised when better primary data becomes available.",
+    "evaluation_points": [
+      "Data lineage",
+      "Ranges/sensitivity",
+      "Decision robustness",
+      "Update path"
+    ],
+    "resolution_title": "Impact Framework",
+    "resolution_url": "https://if.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-013",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon Accounting and Environmental Metrics",
+    "difficulty": "intermediate",
+    "question_type": "attribution",
+    "prompt": "How would you allocate shared cloud or data-centre emissions to applications?",
+    "preferred_answer": "Choose a defensible driver linked to resource use, such as CPU time, memory, storage, accelerator time, network traffic or reservation. Separate idle and shared overhead explicitly, test alternative allocation methods and document what the metric can and cannot prove. Avoid allocating solely by cost when pricing is poorly correlated with energy.",
+    "evaluation_points": [
+      "Resource-linked drivers",
+      "Idle and shared overhead",
+      "Sensitivity test",
+      "Cost limitation"
+    ],
+    "resolution_title": "Impact Framework",
+    "resolution_url": "https://if.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-014",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon Accounting and Environmental Metrics",
+    "difficulty": "advanced",
+    "question_type": "assurance",
+    "prompt": "What evidence makes a software carbon claim auditable?",
+    "preferred_answer": "Define the system boundary, functional unit, time period, energy model, emissions factors, embodied allocation, data sources, transformations and exclusions. Preserve raw observations, calculation configuration and versioned assumptions so another reviewer can reproduce the result. Independent assurance should test both arithmetic and whether the chosen boundary fairly represents the service.",
+    "evaluation_points": [
+      "Boundary and functional unit",
+      "Data and factor lineage",
+      "Reproducibility",
+      "Boundary fairness"
+    ],
+    "resolution_title": "Software Carbon Intensity Specification v1.1",
+    "resolution_url": "https://sci.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-015",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon Accounting and Environmental Metrics",
+    "difficulty": "advanced",
+    "question_type": "strategy",
+    "prompt": "Why can avoided-emissions claims be especially risky in digital products?",
+    "preferred_answer": "They depend on a counterfactual: what would have happened without the product. Digital services may substitute travel or paper but also create new devices, networks, behaviour and demand. Use conservative, evidence-based baselines, separate avoided emissions from the product footprint and never net speculative benefits against measured operational emissions without clear methodology.",
+    "evaluation_points": [
+      "Counterfactual uncertainty",
+      "Substitution and induced demand",
+      "Separate reporting",
+      "No speculative netting"
+    ],
+    "resolution_title": "GHG Protocol Product Life Cycle Standard",
+    "resolution_url": "https://ghgprotocol.org/product-standard",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-016",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon Accounting and Environmental Metrics",
+    "difficulty": "scenario",
+    "question_type": "reporting",
+    "prompt": "A dashboard shows cloud emissions fell after a provider changed its methodology. What should you do before celebrating?",
+    "preferred_answer": "Check whether workload, boundary, emissions factors, allocation or market-based instruments changed. Recalculate a comparable historical series where possible and disclose the methodology break. Validate with operational indicators such as compute hours, utilisation and data transfer before attributing the decline to engineering action.",
+    "evaluation_points": [
+      "Methodology-change check",
+      "Comparable baseline",
+      "Operational corroboration",
+      "Transparent disclosure"
+    ],
+    "resolution_title": "Google Cloud Carbon Footprint",
+    "resolution_url": "https://cloud.google.com/carbon-footprint",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-017",
+    "role_slug": "green-computing-engineer",
+    "domain": "Life Cycle Assessment and Embodied Impact",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What stages are normally considered in a life cycle assessment of an IT product?",
+    "preferred_answer": "A life cycle assessment can include raw-material extraction, component and device manufacturing, transport, installation, use, maintenance, reuse and end-of-life treatment. The exact boundary and functional unit must be stated. For digital systems, hardware, energy, networks and supporting facilities may all contribute.",
+    "evaluation_points": [
+      "Cradle-to-grave stages",
+      "Boundary declaration",
+      "Functional unit",
+      "Digital-system contributors"
+    ],
+    "resolution_title": "ISO 14040 Life Cycle Assessment Principles and Framework",
+    "resolution_url": "https://www.iso.org/standard/37456.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-018",
+    "role_slug": "green-computing-engineer",
+    "domain": "Life Cycle Assessment and Embodied Impact",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate operational emissions from embodied emissions.",
+    "preferred_answer": "Operational emissions arise from energy and resources consumed while the system runs. Embodied emissions arise from producing, transporting, maintaining and retiring hardware and infrastructure. The balance varies by device, utilisation, electricity mix and lifetime, so replacing equipment solely for better energy efficiency may increase total life-cycle impact.",
+    "evaluation_points": [
+      "Run-time versus life-cycle production",
+      "Context dependence",
+      "Lifetime effect",
+      "Replacement caution"
+    ],
+    "resolution_title": "Green Software Foundation - Learn Green Software",
+    "resolution_url": "https://learn.greensoftware.foundation/introduction/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-019",
+    "role_slug": "green-computing-engineer",
+    "domain": "Life Cycle Assessment and Embodied Impact",
+    "difficulty": "intermediate",
+    "question_type": "method",
+    "prompt": "Why do allocation choices matter in hardware life-cycle estimates?",
+    "preferred_answer": "Manufacturing and facility impacts are often shared across products, components or co-products. Allocation by mass, economic value, die area, use time or another driver can materially change results. Follow a consistent hierarchy, disclose the rule and test sensitivity instead of treating one allocation as objective truth.",
+    "evaluation_points": [
+      "Shared impacts",
+      "Possible drivers",
+      "Disclosure",
+      "Sensitivity analysis"
+    ],
+    "resolution_title": "ISO 14044 Life Cycle Assessment Requirements and Guidelines",
+    "resolution_url": "https://www.iso.org/standard/38498.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-020",
+    "role_slug": "green-computing-engineer",
+    "domain": "Life Cycle Assessment and Embodied Impact",
+    "difficulty": "intermediate",
+    "question_type": "procurement",
+    "prompt": "How would you compare extending laptop life by two years with replacing it using a more efficient model?",
+    "preferred_answer": "Compare remaining operational energy, maintenance and failure risk against the new device manufacturing, transport and end-of-life impacts over the same service period. Include user performance and repairability, not just rated wattage. Replacement is justified only when life-cycle benefits and functional requirements outweigh the embodied cost.",
+    "evaluation_points": [
+      "Same service period",
+      "Manufacturing and use trade-off",
+      "Repair/performance",
+      "Evidence-based replacement"
+    ],
+    "resolution_title": "ISO 14040 Life Cycle Assessment Principles and Framework",
+    "resolution_url": "https://www.iso.org/standard/37456.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-021",
+    "role_slug": "green-computing-engineer",
+    "domain": "Life Cycle Assessment and Embodied Impact",
+    "difficulty": "intermediate",
+    "question_type": "data-quality",
+    "prompt": "What makes supplier product-carbon data useful for IT procurement?",
+    "preferred_answer": "Useful data states product configuration, functional unit, geography, time, life-cycle boundary, methods, emissions factors, allocation, uncertainty and verification status. It should be comparable across bidders or normalised through a common request template. A single unverified carbon number without a method is weak procurement evidence.",
+    "evaluation_points": [
+      "Product specificity",
+      "Method and boundary",
+      "Comparability",
+      "Verification"
+    ],
+    "resolution_title": "ISO 20400 Sustainable Procurement Guidance",
+    "resolution_url": "https://www.iso.org/standard/63026.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-022",
+    "role_slug": "green-computing-engineer",
+    "domain": "Life Cycle Assessment and Embodied Impact",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How does virtualisation affect embodied impact?",
+    "preferred_answer": "Consolidating workloads can increase utilisation and reduce the number of servers needed, amortising manufacturing impact over more useful work. But overcommitment, replication, migration traffic and faster hardware refresh can erode benefits. Measure retired capacity, actual utilisation, service quality and total fleet growth rather than assuming virtualisation is automatically sustainable.",
+    "evaluation_points": [
+      "Consolidation mechanism",
+      "Countervailing effects",
+      "Retired capacity",
+      "Fleet-level outcome"
+    ],
+    "resolution_title": "ENERGY STAR Enterprise Servers",
+    "resolution_url": "https://www.energystar.gov/products/enterprise_servers",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-023",
+    "role_slug": "green-computing-engineer",
+    "domain": "Life Cycle Assessment and Embodied Impact",
+    "difficulty": "advanced",
+    "question_type": "critical-reflection",
+    "prompt": "Why is a product carbon footprint not the same as a complete environmental assessment?",
+    "preferred_answer": "Carbon is one impact category. Water scarcity, mineral extraction, toxicity, biodiversity, land use, labour conditions and e-waste may change in different directions. Use carbon as a decision signal within a wider life-cycle and social assessment, especially when shifting impact between regions or supply-chain stages.",
+    "evaluation_points": [
+      "Multiple impact categories",
+      "Impact shifting",
+      "Regional/social context",
+      "Carbon is not complete"
+    ],
+    "resolution_title": "ISO 14072:2024 Organisational Life Cycle Assessment",
+    "resolution_url": "https://www.iso.org/standard/81435.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-024",
+    "role_slug": "green-computing-engineer",
+    "domain": "Life Cycle Assessment and Embodied Impact",
+    "difficulty": "scenario",
+    "question_type": "design-decision",
+    "prompt": "A new accelerator cuts model energy by half but requires replacing a young server fleet. How would you decide?",
+    "preferred_answer": "Model the embodied impact of new accelerators and retired equipment, expected workload growth, utilisation, lifetime, performance quality and electricity mix. Test retrofit, shared access, scheduling and smaller-model alternatives. Approve replacement only if the cumulative life-cycle benefit is credible and there is a responsible reuse or end-of-life plan.",
+    "evaluation_points": [
+      "Embodied payback",
+      "Demand and utilisation",
+      "Alternatives",
+      "Reuse/end-of-life plan"
+    ],
+    "resolution_title": "GHG Protocol Product Life Cycle Standard",
+    "resolution_url": "https://ghgprotocol.org/product-standard",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-025",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Hardware and Compute Architecture",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "What does energy proportionality mean for computing hardware?",
+    "preferred_answer": "Energy-proportional hardware consumes energy roughly in proportion to useful work. Real servers often draw substantial power while idle, so low utilisation can waste energy even on efficient equipment. Consolidation, power states, right-sizing and shutting down unused capacity improve the relationship, provided resilience and latency remain acceptable.",
+    "evaluation_points": [
+      "Power follows useful work",
+      "Idle-power problem",
+      "Operational controls",
+      "Quality constraints"
+    ],
+    "resolution_title": "Green Software Foundation - Learn Green Software",
+    "resolution_url": "https://learn.greensoftware.foundation/introduction/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-026",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Hardware and Compute Architecture",
+    "difficulty": "foundation",
+    "question_type": "hardware",
+    "prompt": "Why can a newer processor be less sustainable for a particular workload?",
+    "preferred_answer": "A newer processor may have better benchmark efficiency but require a new motherboard, memory, cooling, software migration or an entire device replacement. If the workload is small or the old system remains adequate, embodied impact and low utilisation may outweigh operational savings. Compare useful work over the expected life, not generation labels.",
+    "evaluation_points": [
+      "Benchmark versus system impact",
+      "Upgrade dependencies",
+      "Embodied trade-off",
+      "Useful-work lifetime comparison"
+    ],
+    "resolution_title": "SPECpower_ssj2008 Benchmark",
+    "resolution_url": "https://www.spec.org/power_ssj2008/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-027",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Hardware and Compute Architecture",
+    "difficulty": "intermediate",
+    "question_type": "selection",
+    "prompt": "What should be considered when choosing CPU, GPU or specialised accelerators?",
+    "preferred_answer": "Compare workload suitability, utilisation, performance per watt, memory and data-movement needs, software support, precision requirements, availability, embodied impact and expected lifetime. Accelerators are beneficial when they remain well utilised and materially reduce total work; they can be wasteful when provisioned for rare peaks or used for tasks that do not exploit them.",
+    "evaluation_points": [
+      "Workload fit",
+      "Performance per watt",
+      "Data movement and software",
+      "Utilisation/lifetime"
+    ],
+    "resolution_title": "ML.ENERGY Benchmarking",
+    "resolution_url": "https://ml.energy/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-028",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Hardware and Compute Architecture",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "How do processor power states and dynamic frequency scaling affect sustainability?",
+    "preferred_answer": "They reduce energy during idle or low-demand periods and can improve efficiency when latency and throughput targets permit. Poor tuning may increase job duration, cause oscillation or violate service objectives. Measure energy per completed unit of work and tail latency rather than assuming the lowest clock speed is always best.",
+    "evaluation_points": [
+      "Power-management mechanism",
+      "Performance trade-off",
+      "Energy per work",
+      "Tail-latency awareness"
+    ],
+    "resolution_title": "ENERGY STAR Enterprise Servers",
+    "resolution_url": "https://www.energystar.gov/products/enterprise_servers",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-029",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Hardware and Compute Architecture",
+    "difficulty": "intermediate",
+    "question_type": "capacity",
+    "prompt": "How should spare capacity be treated in a sustainable architecture?",
+    "preferred_answer": "Some reserve is necessary for failures, demand uncertainty and maintenance, but permanent overprovisioning has operational and embodied costs. Define resilience scenarios, use shared or elastic capacity, forecast demand, test failover and make idle reserve visible. Capacity should be justified by risk, not inherited habit.",
+    "evaluation_points": [
+      "Resilience need",
+      "Cost of idle reserve",
+      "Elastic/shared options",
+      "Risk-based justification"
+    ],
+    "resolution_title": "AWS Well-Architected Sustainability Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-030",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Hardware and Compute Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What is the sustainability trade-off between modular hardware and highly integrated devices?",
+    "preferred_answer": "Modular systems can be repaired and upgraded by component, extending useful life, but may use more materials, connectors or space. Highly integrated designs can be compact and energy efficient but difficult to repair, causing whole-device replacement. Evaluate service life, failure modes, repair access, upgrade paths, material use and operational efficiency together.",
+    "evaluation_points": [
+      "Repair and upgrade benefits",
+      "Integration efficiency",
+      "Whole-device replacement risk",
+      "Life-cycle evaluation"
+    ],
+    "resolution_title": "EPEAT Sustainable Electronics Criteria",
+    "resolution_url": "https://www.epeat.net/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-031",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Hardware and Compute Architecture",
+    "difficulty": "advanced",
+    "question_type": "future-architecture",
+    "prompt": "Could compute scarcity become a deliberate sustainability control rather than a technical failure?",
+    "preferred_answer": "Yes, organisations may allocate accelerator time, energy or carbon budgets to the highest-value work instead of treating unlimited capacity as the default. This requires transparent prioritisation, fairness rules, service-level exceptions and evidence that scarcity does not merely exclude less powerful users. It reframes architecture around sufficiency and constrained resources.",
+    "evaluation_points": [
+      "Resource budgets",
+      "Value prioritisation",
+      "Fairness and exceptions",
+      "Sufficiency framing"
+    ],
+    "resolution_title": "Key Questions on Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-032",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Hardware and Compute Architecture",
+    "difficulty": "scenario",
+    "question_type": "critical-reflection",
+    "prompt": "A team requests a high-end GPU cluster that will average 15% utilisation. What questions should an interviewer expect?",
+    "preferred_answer": "Ask whether demand can be pooled, queued, shifted, served by smaller hardware or rented temporarily; how utilisation was forecast; what data movement and cooling are required; and what happens to the equipment after the project. Require a workload and life-cycle case, not a prestige or future-proofing argument.",
+    "evaluation_points": [
+      "Challenges demand forecast",
+      "Pooling/rental alternatives",
+      "Facility and embodied impact",
+      "End-of-life plan"
+    ],
+    "resolution_title": "Green Software Foundation - Learn Green Software",
+    "resolution_url": "https://learn.greensoftware.foundation/introduction/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-033",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data Centre Energy, Water and Facility Efficiency",
+    "difficulty": "foundation",
+    "question_type": "metrics",
+    "prompt": "What is PUE, and what does it fail to show?",
+    "preferred_answer": "Power Usage Effectiveness is facility energy divided by IT equipment energy. It shows facility overhead such as cooling and power conversion, but not whether IT work is useful, how carbon-intensive the electricity is, water use, embodied impact or the efficiency of applications. A low PUE can coexist with wasteful computing.",
+    "evaluation_points": [
+      "Correct ratio",
+      "Facility-overhead purpose",
+      "Missing workload/carbon/water",
+      "Low-PUE limitation"
+    ],
+    "resolution_title": "ITU-T L.1300 Best Practices for Green Data Centres",
+    "resolution_url": "https://www.itu.int/rec/T-REC-L.1300",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-034",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data Centre Energy, Water and Facility Efficiency",
+    "difficulty": "foundation",
+    "question_type": "metrics",
+    "prompt": "What is WUE and why does local context matter?",
+    "preferred_answer": "Water Usage Effectiveness relates data-centre water use to IT energy or another defined output. Direct cooling water and indirect water from electricity generation may need separate treatment. A litre used in a water-stressed basin has different consequences from one in a water-abundant region, so volumetric totals need scarcity and seasonal context.",
+    "evaluation_points": [
+      "Water metric purpose",
+      "Direct/indirect distinction",
+      "Water-stress context",
+      "Seasonality"
+    ],
+    "resolution_title": "ITU-T L.1332 Sustainability Rating for Data Centres",
+    "resolution_url": "https://www.itu.int/rec/T-REC-L.1332",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-035",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data Centre Energy, Water and Facility Efficiency",
+    "difficulty": "intermediate",
+    "question_type": "cooling",
+    "prompt": "Compare air cooling, evaporative cooling and liquid cooling from a sustainability perspective.",
+    "preferred_answer": "Air cooling is widely compatible but may require more fan and chiller energy at high densities. Evaporative approaches can reduce electricity while increasing water use. Liquid cooling can support dense compute and heat recovery but adds equipment, fluid and operational complexity. Choose using climate, water stress, workload density, heat-reuse opportunity and reliability.",
+    "evaluation_points": [
+      "Energy-water trade-off",
+      "Density suitability",
+      "Operational complexity",
+      "Local-context decision"
+    ],
+    "resolution_title": "ITU-T L.1300 Best Practices for Green Data Centres",
+    "resolution_url": "https://www.itu.int/rec/T-REC-L.1300",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-036",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data Centre Energy, Water and Facility Efficiency",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "Why should data-centre sustainability be measured at both facility and workload levels?",
+    "preferred_answer": "Facility metrics reveal cooling, power-chain and site performance, while workload metrics reveal whether useful digital services justify the IT energy. Without both, teams may optimise PUE while running idle servers or blame applications for inefficient facilities. Link service demand, hardware utilisation, facility energy, carbon and water over aligned time periods.",
+    "evaluation_points": [
+      "Facility versus workload",
+      "Avoids metric gaming",
+      "Aligned telemetry",
+      "Useful-service link"
+    ],
+    "resolution_title": "ITU-T L.1332 Sustainability Rating for Data Centres",
+    "resolution_url": "https://www.itu.int/rec/T-REC-L.1332",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-037",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data Centre Energy, Water and Facility Efficiency",
+    "difficulty": "intermediate",
+    "question_type": "resilience",
+    "prompt": "How can redundancy increase environmental impact, and how should it be justified?",
+    "preferred_answer": "Extra power paths, cooling, servers and replicated sites consume resources even when idle. Redundancy should be tied to quantified business, safety and recovery requirements, with shared capacity, tested failover and appropriate service tiers. Uniform maximum redundancy for every workload is usually wasteful.",
+    "evaluation_points": [
+      "Idle redundant resources",
+      "Risk-based tiers",
+      "Shared capacity",
+      "Tested failover"
+    ],
+    "resolution_title": "ISO 50001 Energy Management Systems",
+    "resolution_url": "https://www.iso.org/iso-50001-energy-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-038",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data Centre Energy, Water and Facility Efficiency",
+    "difficulty": "advanced",
+    "question_type": "heat-reuse",
+    "prompt": "What determines whether data-centre waste-heat reuse is genuinely beneficial?",
+    "preferred_answer": "Useful heat temperature, seasonal demand, distance to users, infrastructure losses, backup arrangements and displacement of another heat source determine benefit. A project can look attractive while using extra energy to upgrade low-grade heat or relying on demand that exists only part of the year. Use a full system boundary and credible counterfactual.",
+    "evaluation_points": [
+      "Temperature and demand",
+      "Distance/losses",
+      "Counterfactual heat source",
+      "Full-system boundary"
+    ],
+    "resolution_title": "EU Data Centre Energy Performance and Sustainability",
+    "resolution_url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-products/data-centres_en",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-039",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data Centre Energy, Water and Facility Efficiency",
+    "difficulty": "advanced",
+    "question_type": "community-impact",
+    "prompt": "Why can a low-carbon data centre still be environmentally controversial?",
+    "preferred_answer": "It may compete for scarce water, grid capacity, land or public infrastructure; create local noise and backup-generator pollution; and deliver limited local value. Renewable procurement does not erase these impacts. Planning should include community consultation, cumulative grid and watershed effects, transparency and benefit-sharing.",
+    "evaluation_points": [
+      "Beyond carbon",
+      "Local resource competition",
+      "Cumulative impacts",
+      "Stakeholder participation"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-040",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data Centre Energy, Water and Facility Efficiency",
+    "difficulty": "scenario",
+    "question_type": "future-planning",
+    "prompt": "A region offers cheap renewable electricity but has severe water stress and a constrained grid. Would you place an AI data centre there?",
+    "preferred_answer": "Assess hourly grid additionality, water source and scarcity, cooling alternatives, transmission constraints, local demand, backup generation, climate risk and community effects. Consider another location, smaller scale, dry or liquid cooling, flexible operation and grid-support commitments. Cheap renewable contracts alone are not a sufficient decision basis.",
+    "evaluation_points": [
+      "Hourly/grid context",
+      "Water and cooling",
+      "Community and climate risk",
+      "Alternatives and flexibility"
+    ],
+    "resolution_title": "Key Questions on Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-041",
+    "role_slug": "green-computing-engineer",
+    "domain": "Cloud Sustainability and Workload Placement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does shared responsibility mean for cloud sustainability?",
+    "preferred_answer": "Providers influence data-centre design, energy procurement and platform efficiency, while customers control architecture, service choice, data, utilisation, retention and demand. A provider sustainability claim does not make every customer workload efficient. Both sides need transparent metrics and action within their control.",
+    "evaluation_points": [
+      "Provider responsibilities",
+      "Customer responsibilities",
+      "No inherited green claim",
+      "Transparency"
+    ],
+    "resolution_title": "AWS Well-Architected Sustainability Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-042",
+    "role_slug": "green-computing-engineer",
+    "domain": "Cloud Sustainability and Workload Placement",
+    "difficulty": "foundation",
+    "question_type": "operations",
+    "prompt": "Name four common sources of avoidable cloud resource waste.",
+    "preferred_answer": "Examples include idle virtual machines, oversized instances, unattached storage, excessive snapshots, low-use databases, forgotten test environments, unnecessary multi-region replication and unbounded logs. Inventory, ownership, schedules, rightsizing and deletion policies should address waste without compromising recovery or compliance.",
+    "evaluation_points": [
+      "Four valid sources",
+      "Ownership and inventory",
+      "Rightsizing/deletion",
+      "Safety constraints"
+    ],
+    "resolution_title": "FinOps Framework - Sustainability",
+    "resolution_url": "https://www.finops.org/framework/capabilities/sustainability/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-043",
+    "role_slug": "green-computing-engineer",
+    "domain": "Cloud Sustainability and Workload Placement",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "How do managed services affect a cloud sustainability assessment?",
+    "preferred_answer": "Managed services may improve utilisation and reduce customer operations, but their underlying energy, replication and hardware may be opaque. Compare functional outcomes, scaling behaviour, data transfer, retention, regional availability and provider data. Do not assume serverless or managed automatically means lower impact.",
+    "evaluation_points": [
+      "Potential efficiency",
+      "Opacity and hidden replication",
+      "Functional comparison",
+      "Avoids label-based conclusion"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Sustainability",
+    "resolution_url": "https://cloud.google.com/architecture/framework/sustainability",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-044",
+    "role_slug": "green-computing-engineer",
+    "domain": "Cloud Sustainability and Workload Placement",
+    "difficulty": "intermediate",
+    "question_type": "placement",
+    "prompt": "What factors besides grid carbon intensity should influence cloud-region selection?",
+    "preferred_answer": "Consider latency, data residency, reliability, water stress, climate risk, service availability, network traffic, embodied infrastructure, electricity constraints and the ability to shift demand. A lower average carbon factor may not be better if it creates heavy data transfer, violates user needs or relies on scarce resources.",
+    "evaluation_points": [
+      "Multi-factor placement",
+      "Network and user needs",
+      "Water/climate/legal context",
+      "No single-metric optimisation"
+    ],
+    "resolution_title": "Azure Well-Architected Sustainability",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/sustainability/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-045",
+    "role_slug": "green-computing-engineer",
+    "domain": "Cloud Sustainability and Workload Placement",
+    "difficulty": "intermediate",
+    "question_type": "measurement",
+    "prompt": "How should a team use a cloud-provider carbon dashboard?",
+    "preferred_answer": "Use it for trend and hotspot analysis while documenting its boundary, allocation, factors, update lag and market-based assumptions. Correlate with usage and architecture data, and avoid comparing providers directly unless methodologies are compatible. Provider estimates are decision aids, not meter readings for individual services.",
+    "evaluation_points": [
+      "Methodology awareness",
+      "Usage correlation",
+      "Comparison limitation",
+      "Decision-aid framing"
+    ],
+    "resolution_title": "Google Cloud Carbon Footprint",
+    "resolution_url": "https://cloud.google.com/carbon-footprint",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-046",
+    "role_slug": "green-computing-engineer",
+    "domain": "Cloud Sustainability and Workload Placement",
+    "difficulty": "advanced",
+    "question_type": "trade-off",
+    "prompt": "When can autoscaling increase rather than decrease environmental impact?",
+    "preferred_answer": "Aggressive scaling can create churn, cold starts, duplicated caches, overreact to noisy metrics or make demand growth invisible. Scale on useful service demand with stabilisation windows, minimum efficient sizes and downstream limits. Measure total resource-hours and completed outcomes, not only instantaneous utilisation.",
+    "evaluation_points": [
+      "Churn and cold-start costs",
+      "Stable useful-demand signals",
+      "Minimum efficient size",
+      "Outcome metrics"
+    ],
+    "resolution_title": "Kubernetes Horizontal Pod Autoscaling",
+    "resolution_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-047",
+    "role_slug": "green-computing-engineer",
+    "domain": "Cloud Sustainability and Workload Placement",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "Should cloud teams receive carbon budgets in addition to cost budgets?",
+    "preferred_answer": "Carbon budgets can make environmental limits visible and encourage architecture choices that cost alone misses. They require credible measurement, business-adjusted functional units, exception governance and safeguards against shifting emissions outside the measured boundary. Budgets should guide prioritisation, not become simplistic team rankings.",
+    "evaluation_points": [
+      "Value of carbon constraint",
+      "Measurement and exceptions",
+      "Boundary-shifting risk",
+      "No team league table"
+    ],
+    "resolution_title": "FinOps Framework - Sustainability",
+    "resolution_url": "https://www.finops.org/framework/capabilities/sustainability/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-048",
+    "role_slug": "green-computing-engineer",
+    "domain": "Cloud Sustainability and Workload Placement",
+    "difficulty": "scenario",
+    "question_type": "critical-reflection",
+    "prompt": "A cloud migration cuts on-premise electricity to zero but triples monthly cloud spending and data transfer. What would you investigate?",
+    "preferred_answer": "Check whether local assets were actually retired or merely left idle, whether architecture added replication or managed services, and whether demand grew. Compare equivalent service output, cloud usage, network impact, provider emissions estimates and embodied consequences of both environments. Avoid counting exported electricity as eliminated impact.",
+    "evaluation_points": [
+      "Displaced asset status",
+      "Architecture and demand growth",
+      "Equivalent-service comparison",
+      "No burden shifting"
+    ],
+    "resolution_title": "GHG Protocol Scope 3 Standard",
+    "resolution_url": "https://ghgprotocol.org/corporate-value-chain-scope-3-standard",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-049",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Software Engineering and Software Carbon Intensity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are the main mechanisms for reducing software carbon emissions?",
+    "preferred_answer": "The core mechanisms are using less energy for the same useful outcome, running when or where electricity is less carbon intensive, and using hardware more efficiently so embodied emissions are amortised over useful work. The first design question is whether the computation is needed at all.",
+    "evaluation_points": [
+      "Energy efficiency",
+      "Carbon awareness",
+      "Hardware efficiency",
+      "Sufficiency first"
+    ],
+    "resolution_title": "Green Software Foundation - Learn Green Software",
+    "resolution_url": "https://learn.greensoftware.foundation/introduction/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-050",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Software Engineering and Software Carbon Intensity",
+    "difficulty": "foundation",
+    "question_type": "measurement",
+    "prompt": "What does the Software Carbon Intensity metric measure?",
+    "preferred_answer": "SCI expresses the carbon emissions of a software system as a rate per functional unit. It combines operational energy emissions and allocated embodied hardware emissions within a declared boundary. It is intended to drive real reductions through changes to software, infrastructure and demand rather than offsetting the score.",
+    "evaluation_points": [
+      "Rate per functional unit",
+      "Operational plus embodied",
+      "Declared boundary",
+      "Reduction rather than offsets"
+    ],
+    "resolution_title": "Software Carbon Intensity Specification v1.1",
+    "resolution_url": "https://sci.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-051",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Software Engineering and Software Carbon Intensity",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How would you select a useful functional unit for an online learning platform?",
+    "preferred_answer": "Choose an outcome that represents user value, such as a completed lesson at an agreed quality level, rather than a convenient infrastructure count. Define completion, quality, accessibility and time window, and test whether teams can game the denominator. Also retain absolute emissions so growth is visible.",
+    "evaluation_points": [
+      "Outcome-based unit",
+      "Quality/accessibility definition",
+      "Anti-gaming check",
+      "Absolute metric retained"
+    ],
+    "resolution_title": "Software Carbon Intensity Specification v1.1",
+    "resolution_url": "https://sci.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-052",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Software Engineering and Software Carbon Intensity",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "Why can reducing database queries be more valuable than micro-optimising application code?",
+    "preferred_answer": "Database requests may trigger network transfers, storage I/O, cache misses, replication and waiting across multiple systems. Eliminating redundant round trips or poor data access can reduce work across the whole architecture while improving latency. Profile end-to-end energy and performance so effort targets the dominant path rather than a fashionable code tweak.",
+    "evaluation_points": [
+      "System-wide work",
+      "Network/storage effects",
+      "Profiling evidence",
+      "Prioritises dominant path"
+    ],
+    "resolution_title": "Green Software Patterns",
+    "resolution_url": "https://patterns.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-053",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Software Engineering and Software Carbon Intensity",
+    "difficulty": "intermediate",
+    "question_type": "delivery",
+    "prompt": "How should sustainability requirements enter software acceptance criteria?",
+    "preferred_answer": "State measurable outcomes such as maximum data transfer, compute time, energy proxy or SCI per functional unit, along with quality and accessibility constraints. Define the test environment, baseline and allowed uncertainty. Make the requirement visible in design review and production monitoring rather than a one-time release checklist.",
+    "evaluation_points": [
+      "Measurable target",
+      "Test boundary and baseline",
+      "Quality constraints",
+      "Production monitoring"
+    ],
+    "resolution_title": "Software Carbon Intensity Specification v1.1",
+    "resolution_url": "https://sci.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-054",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Software Engineering and Software Carbon Intensity",
+    "difficulty": "advanced",
+    "question_type": "measurement",
+    "prompt": "Why can CPU utilisation be a poor proxy for software energy?",
+    "preferred_answer": "Different processors, frequencies, accelerators, memory, I/O and idle states can use different power at the same CPU percentage. Virtualised metrics also hide shared infrastructure. Calibrate proxies against measured or modelled power for the relevant hardware and workload, document uncertainty and avoid cross-platform comparisons without validation.",
+    "evaluation_points": [
+      "Hardware dependence",
+      "Non-CPU components",
+      "Calibration",
+      "Comparison limitation"
+    ],
+    "resolution_title": "Impact Framework",
+    "resolution_url": "https://if.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-055",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Software Engineering and Software Carbon Intensity",
+    "difficulty": "advanced",
+    "question_type": "product-strategy",
+    "prompt": "How can a team make a software feature environmentally accountable before it is built?",
+    "preferred_answer": "Estimate expected usage, computation, data, model calls, device effects and life-cycle infrastructure; compare a no-build and lower-impact alternative; define a carbon or resource budget; and identify who owns post-launch demand. Stop or redesign features whose social or customer value is weak relative to their expected footprint.",
+    "evaluation_points": [
+      "Pre-build impact estimate",
+      "No-build alternative",
+      "Resource budget and owner",
+      "Value-proportionality test"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-056",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Software Engineering and Software Carbon Intensity",
+    "difficulty": "scenario",
+    "question_type": "critical-reflection",
+    "prompt": "A recommendation feature raises engagement 25% and energy per session falls 10%. Should it be celebrated as green?",
+    "preferred_answer": "Not without examining total session time, requests, device energy, business value and user well-being. The feature may lower intensity while increasing absolute demand and manipulative engagement. Report both outcomes, test a sufficiency-oriented design and decide whether the extra consumption delivers legitimate value.",
+    "evaluation_points": [
+      "Absolute demand",
+      "User/device effects",
+      "Ethics of engagement",
+      "Alternative design"
+    ],
+    "resolution_title": "Web Sustainability Guidelines",
+    "resolution_url": "https://w3c.github.io/sustyweb/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-057",
+    "role_slug": "green-computing-engineer",
+    "domain": "Energy Profiling, Telemetry and Sustainability Observability",
+    "difficulty": "foundation",
+    "question_type": "measurement",
+    "prompt": "What should a sustainability observability plan contain?",
+    "preferred_answer": "It should define decisions, boundaries, functional units, energy or resource signals, carbon and water factors, collection intervals, ownership, retention, uncertainty and validation. Link environmental signals to service, infrastructure and business outcomes so teams can act rather than merely display a dashboard.",
+    "evaluation_points": [
+      "Decision-led plan",
+      "Boundary and units",
+      "Ownership/uncertainty",
+      "Service-to-impact linkage"
+    ],
+    "resolution_title": "Impact Framework",
+    "resolution_url": "https://if.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-058",
+    "role_slug": "green-computing-engineer",
+    "domain": "Energy Profiling, Telemetry and Sustainability Observability",
+    "difficulty": "foundation",
+    "question_type": "telemetry",
+    "prompt": "What is the difference between direct power measurement and an energy model?",
+    "preferred_answer": "Direct measurement uses meters or hardware counters to observe power or energy at a defined boundary. A model estimates impact from proxies such as utilisation, resource requests or cloud usage. Direct data can still require allocation; models require calibration and assumptions. Both need time alignment and reproducible units.",
+    "evaluation_points": [
+      "Measurement versus estimate",
+      "Allocation remains",
+      "Calibration/assumptions",
+      "Time and unit alignment"
+    ],
+    "resolution_title": "Scaphandre Energy Monitoring Agent",
+    "resolution_url": "https://hubblo-org.github.io/scaphandre-documentation/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-059",
+    "role_slug": "green-computing-engineer",
+    "domain": "Energy Profiling, Telemetry and Sustainability Observability",
+    "difficulty": "intermediate",
+    "question_type": "kubernetes",
+    "prompt": "How can Kubernetes energy telemetry be attributed to workloads?",
+    "preferred_answer": "Collect node or process energy estimates, container resource activity and workload metadata, then allocate shared and idle power using a declared rule. Join data to namespaces, services and functional outcomes, and validate against node power where possible. Requests and limits are not themselves energy measurements.",
+    "evaluation_points": [
+      "Telemetry join",
+      "Shared/idle allocation",
+      "Workload metadata",
+      "Validation and limitation"
+    ],
+    "resolution_title": "Kepler Kubernetes Energy Monitoring",
+    "resolution_url": "https://sustainable-computing.io/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-060",
+    "role_slug": "green-computing-engineer",
+    "domain": "Energy Profiling, Telemetry and Sustainability Observability",
+    "difficulty": "intermediate",
+    "question_type": "data-quality",
+    "prompt": "What checks should be applied to carbon-intensity time series before automated use?",
+    "preferred_answer": "Check geography, time zone, interval, units, whether values are average or marginal, forecast horizon, gaps, revisions and provider methodology. Define stale-data and missing-data behaviour. Decisions should fail safely rather than silently treating absent values as zero-carbon electricity.",
+    "evaluation_points": [
+      "Metadata validation",
+      "Average/marginal distinction",
+      "Gap/staleness handling",
+      "Safe fallback"
+    ],
+    "resolution_title": "Carbon Aware SDK",
+    "resolution_url": "https://carbon-aware-sdk.greensoftware.foundation/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-061",
+    "role_slug": "green-computing-engineer",
+    "domain": "Energy Profiling, Telemetry and Sustainability Observability",
+    "difficulty": "intermediate",
+    "question_type": "dashboards",
+    "prompt": "What makes an environmental dashboard operationally useful?",
+    "preferred_answer": "It shows absolute and intensity trends, uncertainty, data freshness, service owners, thresholds and links to controllable actions. It supports drill-down from organisation to workload without pretending attribution is exact. Alerts should represent meaningful deviations or budget risk, not every small fluctuation.",
+    "evaluation_points": [
+      "Absolute/intensity pair",
+      "Freshness and uncertainty",
+      "Ownership/actionability",
+      "Meaningful alerting"
+    ],
+    "resolution_title": "Impact Framework",
+    "resolution_url": "https://if.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-062",
+    "role_slug": "green-computing-engineer",
+    "domain": "Energy Profiling, Telemetry and Sustainability Observability",
+    "difficulty": "advanced",
+    "question_type": "sampling",
+    "prompt": "How can observability itself become an environmental burden?",
+    "preferred_answer": "High-cardinality logs, full traces, duplicated telemetry and long retention consume compute, storage and network resources. Design data collection from explicit diagnostic and compliance needs, use adaptive sampling, aggregation and lifecycle policies, and preserve enough forensic evidence. Optimise the telemetry system without creating blind spots.",
+    "evaluation_points": [
+      "Telemetry resource cost",
+      "Purpose-based collection",
+      "Sampling/retention",
+      "Security and reliability balance"
+    ],
+    "resolution_title": "OpenTelemetry Sampling",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/sampling/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-063",
+    "role_slug": "green-computing-engineer",
+    "domain": "Energy Profiling, Telemetry and Sustainability Observability",
+    "difficulty": "advanced",
+    "question_type": "assurance",
+    "prompt": "How would you validate a sustainability measurement model before using it for targets?",
+    "preferred_answer": "Compare estimates with physical or trusted benchmark data across idle, normal and peak conditions; test different hardware and workloads; quantify error; review allocation and emissions factors; and version the model. Set use limits so an approximate model is not used for claims or comparisons it cannot support.",
+    "evaluation_points": [
+      "Benchmark validation",
+      "Operating-range tests",
+      "Error quantification",
+      "Use limitations"
+    ],
+    "resolution_title": "Impact Framework",
+    "resolution_url": "https://if.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-064",
+    "role_slug": "green-computing-engineer",
+    "domain": "Energy Profiling, Telemetry and Sustainability Observability",
+    "difficulty": "scenario",
+    "question_type": "future-operations",
+    "prompt": "An automated platform starts moving workloads based on carbon forecasts, but emissions reports improve while latency and retries rise. What do you inspect?",
+    "preferred_answer": "Recalculate end-to-end impact including migration, cache warming, duplicate work, network traffic and additional capacity. Check forecast accuracy, control hysteresis, service objectives and regional constraints. Optimise net emissions per successful outcome, not the selected region\u2019s grid signal alone.",
+    "evaluation_points": [
+      "End-to-end overhead",
+      "Forecast/control quality",
+      "Quality constraints",
+      "Successful-outcome metric"
+    ],
+    "resolution_title": "Carbon Aware SDK",
+    "resolution_url": "https://carbon-aware-sdk.greensoftware.foundation/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-065",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon-Aware Computing and Scheduling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate temporal and spatial carbon shifting.",
+    "preferred_answer": "Temporal shifting moves flexible work to a cleaner time in the same region. Spatial shifting moves it to another region with lower expected carbon intensity. Both require accurate signals and must account for deadlines, data movement, legal constraints, capacity, reliability and user impact.",
+    "evaluation_points": [
+      "Time versus location",
+      "Flexible workload",
+      "Signal dependency",
+      "Operational constraints"
+    ],
+    "resolution_title": "Carbon Aware SDK",
+    "resolution_url": "https://carbon-aware-sdk.greensoftware.foundation/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-066",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon-Aware Computing and Scheduling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Which workloads are good candidates for carbon-aware scheduling?",
+    "preferred_answer": "Deferrable and interruptible work with clear deadlines, such as batch analytics, backups, software builds, some model training and media processing. Interactive, safety-critical or tightly local workloads are less flexible. Candidate selection should include the energy needed for waiting, migration and duplicate capacity.",
+    "evaluation_points": [
+      "Deferrable examples",
+      "Unsuitable workloads",
+      "Deadline and interruption",
+      "Overhead awareness"
+    ],
+    "resolution_title": "Carbon Aware SDK",
+    "resolution_url": "https://carbon-aware-sdk.greensoftware.foundation/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-067",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon-Aware Computing and Scheduling",
+    "difficulty": "intermediate",
+    "question_type": "signals",
+    "prompt": "Why does average versus marginal grid carbon intensity matter?",
+    "preferred_answer": "Average intensity describes the current generation mix, while marginal intensity estimates emissions associated with a change in demand. They can lead to different scheduling decisions. Use the signal appropriate to the claim and region, disclose methodology, and avoid implying precision beyond forecast and grid-model quality.",
+    "evaluation_points": [
+      "Correct distinction",
+      "Decision relevance",
+      "Method disclosure",
+      "Uncertainty"
+    ],
+    "resolution_title": "GHG Protocol Scope 2 Guidance",
+    "resolution_url": "https://ghgprotocol.org/scope-2-guidance",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-068",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon-Aware Computing and Scheduling",
+    "difficulty": "intermediate",
+    "question_type": "controls",
+    "prompt": "What safeguards should a carbon-aware scheduler include?",
+    "preferred_answer": "Use workload deadlines, geographic and legal policy, reliability constraints, bounded movement, forecast confidence, stale-data fallback, audit logs, user overrides and rollback. Add hysteresis so small signal changes do not cause thrashing. Environmental optimisation must not bypass access, security or service controls.",
+    "evaluation_points": [
+      "Hard constraints",
+      "Fallback and audit",
+      "Hysteresis",
+      "No security bypass"
+    ],
+    "resolution_title": "Carbon Aware SDK",
+    "resolution_url": "https://carbon-aware-sdk.greensoftware.foundation/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-069",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon-Aware Computing and Scheduling",
+    "difficulty": "intermediate",
+    "question_type": "fairness",
+    "prompt": "How can demand shaping disadvantage users?",
+    "preferred_answer": "Delaying or degrading services may fall disproportionately on regions, time zones, low-bandwidth users or people needing accessibility features. Classify flexible versus essential demand, communicate choices, provide opt-outs where justified and measure user outcomes. Carbon benefits should not be obtained by silently reducing service for less powerful groups.",
+    "evaluation_points": [
+      "Distributional impact",
+      "Essential/flexible classification",
+      "Transparency/choice",
+      "Outcome monitoring"
+    ],
+    "resolution_title": "AI for Environment and Ecosystems Toolkit",
+    "resolution_url": "https://www.unesco.org/en/artificial-intelligence/environment",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-070",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon-Aware Computing and Scheduling",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "When can spatial shifting increase total emissions?",
+    "preferred_answer": "Moving work can increase data transfer, replication, cache warming and idle reserve, or use a low-average-carbon region whose marginal supply is fossil based. It may also trigger new infrastructure. Model the full path and compare successful functional output under aligned boundaries.",
+    "evaluation_points": [
+      "Movement overhead",
+      "Signal mismatch",
+      "Infrastructure growth",
+      "Full-path comparison"
+    ],
+    "resolution_title": "Software Carbon Intensity Specification v1.1",
+    "resolution_url": "https://sci.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-071",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon-Aware Computing and Scheduling",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "Who should be accountable when autonomous carbon-aware optimisation violates a business or social constraint?",
+    "preferred_answer": "Accountability remains with the organisation that defines and deploys the system. Assign owners for policy, data sources, model validation and operations; make constraints explicit; log decisions; provide human intervention; and review harm. Automation can execute a policy but cannot absorb responsibility.",
+    "evaluation_points": [
+      "Named human/organisational accountability",
+      "Policy and data ownership",
+      "Audit/intervention",
+      "Harm review"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-072",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon-Aware Computing and Scheduling",
+    "difficulty": "scenario",
+    "question_type": "critical-reflection",
+    "prompt": "A batch job can wait 24 hours for cleaner electricity, but doing so delays a public-benefit service. How do you decide?",
+    "preferred_answer": "Compare the emissions reduction with the value and urgency of the service, affected users, alternative regions or efficiency measures, forecast uncertainty and missed-deadline risk. Apply a documented priority policy that protects essential outcomes. Carbon awareness is a scheduling option, not an automatic override of social purpose.",
+    "evaluation_points": [
+      "Benefit-versus-service impact",
+      "Alternatives",
+      "Uncertainty/deadline",
+      "Priority policy"
+    ],
+    "resolution_title": "Recommendation on the Ethics of Artificial Intelligence",
+    "resolution_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-073",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Web, Frontend and Digital Experience",
+    "difficulty": "foundation",
+    "question_type": "performance",
+    "prompt": "How can web performance improvements reduce environmental impact?",
+    "preferred_answer": "Faster pages often transfer fewer bytes, execute less JavaScript and keep radios and processors active for less time. Benefits depend on actual user devices, networks and repeat visits. Measure payload, requests, CPU work and user outcomes rather than equating one performance score with carbon.",
+    "evaluation_points": [
+      "Reduced transfer and compute",
+      "Device/network context",
+      "Multiple metrics",
+      "No single-score claim"
+    ],
+    "resolution_title": "Web Performance Fundamentals",
+    "resolution_url": "https://web.dev/learn/performance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-074",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Web, Frontend and Digital Experience",
+    "difficulty": "foundation",
+    "question_type": "design",
+    "prompt": "Why are images and video important in sustainable web design?",
+    "preferred_answer": "Media frequently dominates page weight and processing. Use appropriate formats, dimensions, compression, responsive delivery, lazy loading, captions and user-controlled playback. The goal is not visual austerity but delivering the required communication without unnecessary pixels, resolution or repeated transfer.",
+    "evaluation_points": [
+      "Media dominance",
+      "Format/sizing/compression",
+      "User control/accessibility",
+      "Purposeful delivery"
+    ],
+    "resolution_title": "Web Sustainability Guidelines",
+    "resolution_url": "https://w3c.github.io/sustyweb/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-075",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Web, Frontend and Digital Experience",
+    "difficulty": "intermediate",
+    "question_type": "caching",
+    "prompt": "How does effective HTTP caching improve sustainability, and what can go wrong?",
+    "preferred_answer": "Caching avoids repeated origin computation and transfer, reducing latency and network work. Incorrect cache keys, excessive invalidation, privacy mistakes or stale content can create failures and extra traffic. Choose cacheability, validators and lifetimes according to data sensitivity and change frequency.",
+    "evaluation_points": [
+      "Avoided recomputation/transfer",
+      "Validation and lifetime",
+      "Privacy/correctness risks",
+      "Content-aware policy"
+    ],
+    "resolution_title": "RFC 9111 HTTP Caching",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9111",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-076",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Web, Frontend and Digital Experience",
+    "difficulty": "intermediate",
+    "question_type": "javascript",
+    "prompt": "Why can a small network payload still create a high-impact page?",
+    "preferred_answer": "Compressed JavaScript may expand into substantial parse, compile, execution and memory work on the device, especially on older hardware. Third-party scripts can keep running after load. Measure main-thread time, long tasks, memory, battery and interaction quality, not only transferred kilobytes.",
+    "evaluation_points": [
+      "Runtime expansion",
+      "Device burden",
+      "Third-party activity",
+      "Client-side measurement"
+    ],
+    "resolution_title": "Web Performance Fundamentals",
+    "resolution_url": "https://web.dev/learn/performance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-077",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Web, Frontend and Digital Experience",
+    "difficulty": "intermediate",
+    "question_type": "accessibility",
+    "prompt": "How can accessibility and sustainability reinforce each other?",
+    "preferred_answer": "Clear structure, efficient navigation, captions, readable content, reduced motion and user control can lower wasted interactions and support more users on diverse devices and networks. But sustainability cannot justify removing alternatives or degrading assistive technology. Test both outcomes with real users.",
+    "evaluation_points": [
+      "Shared design benefits",
+      "Device/network inclusion",
+      "No accessibility sacrifice",
+      "User testing"
+    ],
+    "resolution_title": "Web Sustainability Guidelines",
+    "resolution_url": "https://w3c.github.io/sustyweb/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-078",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Web, Frontend and Digital Experience",
+    "difficulty": "advanced",
+    "question_type": "measurement",
+    "prompt": "What are the limitations of estimating website carbon from transferred data alone?",
+    "preferred_answer": "Transfer-based models omit device compute, caching, network type, data-centre behaviour, electricity timing, embodied hardware and user activity. They are useful for relative screening when assumptions are explicit, not precise product footprints. Use them with performance telemetry and scenario analysis.",
+    "evaluation_points": [
+      "Model boundary",
+      "Missing contributors",
+      "Relative-use value",
+      "Assumptions and validation"
+    ],
+    "resolution_title": "CO2.js",
+    "resolution_url": "https://developers.thegreenwebfoundation.org/co2js/overview/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-079",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Web, Frontend and Digital Experience",
+    "difficulty": "advanced",
+    "question_type": "ethics",
+    "prompt": "Why should infinite scroll and autoplay be sustainability questions as well as UX questions?",
+    "preferred_answer": "They deliberately remove stopping cues and can increase content generation, transfer, device use and attention capture beyond user intent. Evaluate whether engagement represents value or induced demand, provide control and natural endpoints, and measure absolute consumption. Efficient delivery does not make compulsive demand harmless.",
+    "evaluation_points": [
+      "Induced demand",
+      "Attention and resource use",
+      "User control",
+      "Absolute consumption"
+    ],
+    "resolution_title": "Web Sustainability Guidelines",
+    "resolution_url": "https://w3c.github.io/sustyweb/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-080",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Web, Frontend and Digital Experience",
+    "difficulty": "scenario",
+    "question_type": "future-design",
+    "prompt": "A new 3D product experience doubles conversions but increases median device energy and excludes older phones. How would you review it?",
+    "preferred_answer": "Compare business benefit with device energy, network transfer, accessibility, hardware exclusion and rebound from extra sales. Test progressive enhancement, opt-in 3D, lower-fidelity assets and server-side alternatives. The decision should include distributional and product-lifecycle effects, not only cloud energy per visit.",
+    "evaluation_points": [
+      "Business-versus-impact analysis",
+      "Device inclusion",
+      "Lower-impact alternatives",
+      "Broader product effects"
+    ],
+    "resolution_title": "Web Sustainability Guidelines",
+    "resolution_url": "https://w3c.github.io/sustyweb/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-081",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data, Storage and Information Lifecycle",
+    "difficulty": "foundation",
+    "question_type": "lifecycle",
+    "prompt": "What is a sustainable data-retention policy?",
+    "preferred_answer": "It keeps data only for a defined legal, operational or user purpose, with owners, classification, retention periods, deletion triggers and verification. It covers primary stores, replicas, logs, caches, backups and derived datasets. \u201cStorage is cheap\u201d is not a valid lifecycle justification.",
+    "evaluation_points": [
+      "Purpose and owner",
+      "Defined retention/deletion",
+      "All copies and derivatives",
+      "Rejects cost-only logic"
+    ],
+    "resolution_title": "UN Sustainable Development Goal 12",
+    "resolution_url": "https://sdgs.un.org/goals/goal12",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-082",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data, Storage and Information Lifecycle",
+    "difficulty": "foundation",
+    "question_type": "storage",
+    "prompt": "How do hot, warm and cold storage tiers affect environmental decisions?",
+    "preferred_answer": "Tiers trade access speed, availability and energy or infrastructure intensity. Frequently accessed data belongs on responsive systems; rarely used data may move to lower-energy archival storage. Lifecycle policies must consider retrieval energy, duplication, legal holds and whether the data should be deleted rather than merely moved.",
+    "evaluation_points": [
+      "Access-frequency trade-off",
+      "Lifecycle automation",
+      "Retrieval/duplication",
+      "Deletion first"
+    ],
+    "resolution_title": "AWS Well-Architected Sustainability Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-083",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data, Storage and Information Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "Why can data replication be both necessary and wasteful?",
+    "preferred_answer": "Replication improves availability, durability and locality, but every copy consumes storage, network and operational resources. Set replication to quantified failure and recovery needs, distinguish temporary from permanent copies and remove obsolete datasets. More copies are not automatically more resilient if they share failure modes.",
+    "evaluation_points": [
+      "Resilience benefit",
+      "Resource cost",
+      "Risk-based factor",
+      "Shared-failure caveat"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Sustainability",
+    "resolution_url": "https://cloud.google.com/architecture/framework/sustainability",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-084",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data, Storage and Information Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "data-engineering",
+    "prompt": "How do compression and data formats influence sustainability?",
+    "preferred_answer": "Compression reduces storage and transfer but requires compute to encode and decode. Columnar or compact formats can avoid reading unnecessary data. Select using the workload\u2019s read/write pattern, hardware, network and lifetime; measure end-to-end energy per completed task rather than maximising compression ratio.",
+    "evaluation_points": [
+      "Storage/network savings",
+      "Compute trade-off",
+      "Format/workload fit",
+      "End-to-end measurement"
+    ],
+    "resolution_title": "Green Software Patterns",
+    "resolution_url": "https://patterns.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-085",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data, Storage and Information Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "governance",
+    "prompt": "What questions should be asked before collecting a new dataset?",
+    "preferred_answer": "Ask which decision or feature needs it, minimum fields and precision, lawful and ethical basis, retention, quality, bias, security, users, expected compute and end-of-life. Consider sampling, aggregation or not collecting. Data minimisation reduces privacy risk and environmental demand together.",
+    "evaluation_points": [
+      "Purpose and minimisation",
+      "Legal/ethical basis",
+      "Lifecycle and compute",
+      "No-collection option"
+    ],
+    "resolution_title": "Recommendation on the Ethics of Artificial Intelligence",
+    "resolution_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-086",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data, Storage and Information Lifecycle",
+    "difficulty": "advanced",
+    "question_type": "backups",
+    "prompt": "How can backup design balance resilience and environmental impact?",
+    "preferred_answer": "Define RPO/RTO and threat scenarios, then use appropriate frequency, incremental methods, deduplication, tiering, geographic diversity and tested restore. Avoid indefinite unverified copies. Environmental optimisation must not weaken recovery, but recovery requirements should be evidence-based rather than universally maximal.",
+    "evaluation_points": [
+      "RPO/RTO basis",
+      "Efficient techniques",
+      "Restore testing",
+      "No blanket maximum"
+    ],
+    "resolution_title": "ISO 50001 Energy Management Systems",
+    "resolution_url": "https://www.iso.org/iso-50001-energy-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-087",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data, Storage and Information Lifecycle",
+    "difficulty": "advanced",
+    "question_type": "data-gravity",
+    "prompt": "Why is data gravity a sustainability concern?",
+    "preferred_answer": "Large datasets attract compute and services to their location because movement is expensive, creating architectural lock-in and repeated replication. Decisions made early can determine long-term network, storage and regional impacts. Reduce unnecessary data, process near authoritative copies and design portable metadata and lifecycle controls.",
+    "evaluation_points": [
+      "Compute-location effect",
+      "Lock-in and replication",
+      "Minimisation/local processing",
+      "Lifecycle portability"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Sustainability",
+    "resolution_url": "https://cloud.google.com/architecture/framework/sustainability",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-088",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data, Storage and Information Lifecycle",
+    "difficulty": "scenario",
+    "question_type": "critical-reflection",
+    "prompt": "An organisation keeps every customer event \u201cfor future AI.\u201d How would you challenge the decision?",
+    "preferred_answer": "Require defined use cases, consent and legal basis, value probability, security risk, storage and training impact, retention limits and deletion. Compare curated or sampled data and synthetic alternatives. Speculative future value does not automatically outweigh present environmental, privacy and governance costs.",
+    "evaluation_points": [
+      "Challenges speculative value",
+      "Privacy/security/environment",
+      "Alternatives",
+      "Time-bounded retention"
+    ],
+    "resolution_title": "Recommendation on the Ethics of Artificial Intelligence",
+    "resolution_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-089",
+    "role_slug": "green-computing-engineer",
+    "domain": "Networks, Edge Computing and Telecommunications",
+    "difficulty": "foundation",
+    "question_type": "networking",
+    "prompt": "How can reducing data transfer lower IT impact?",
+    "preferred_answer": "It can reduce work in access networks, core networks, content delivery, servers and user devices. Techniques include compression, caching, local processing, efficient protocols and avoiding unnecessary polling or media. The actual benefit depends on network type, traffic timing and whether efficiency induces more use.",
+    "evaluation_points": [
+      "Network-wide work",
+      "Valid techniques",
+      "Context dependence",
+      "Rebound awareness"
+    ],
+    "resolution_title": "Green Software Patterns",
+    "resolution_url": "https://patterns.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-090",
+    "role_slug": "green-computing-engineer",
+    "domain": "Networks, Edge Computing and Telecommunications",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "What is the sustainability case for a content delivery network?",
+    "preferred_answer": "A CDN can serve content closer to users, reduce repeated origin work and improve caching. It also adds distributed infrastructure and may duplicate rarely used assets. Benefit depends on demand geography, cache hit ratio, object lifecycle and whether origin capacity is genuinely reduced.",
+    "evaluation_points": [
+      "Locality/caching benefit",
+      "Distributed overhead",
+      "Cache hit and demand",
+      "Origin reduction"
+    ],
+    "resolution_title": "RFC 9111 HTTP Caching",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9111",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-091",
+    "role_slug": "green-computing-engineer",
+    "domain": "Networks, Edge Computing and Telecommunications",
+    "difficulty": "intermediate",
+    "question_type": "protocols",
+    "prompt": "Why can frequent polling be inefficient, and what alternatives exist?",
+    "preferred_answer": "Polling repeatedly sends requests even when nothing changed, consuming radio, network and server work. Event-driven notifications, webhooks, streaming or adaptive backoff may reduce traffic. Alternatives must handle connection cost, failure, security and batching; persistent connections are not always cheaper for rare events.",
+    "evaluation_points": [
+      "Unchanged-request waste",
+      "Alternatives",
+      "Failure/security trade-offs",
+      "Frequency-aware choice"
+    ],
+    "resolution_title": "Green Software Patterns",
+    "resolution_url": "https://patterns.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-092",
+    "role_slug": "green-computing-engineer",
+    "domain": "Networks, Edge Computing and Telecommunications",
+    "difficulty": "intermediate",
+    "question_type": "edge-computing",
+    "prompt": "When does moving computation to the edge reduce environmental impact?",
+    "preferred_answer": "It can reduce repeated data transfer, latency and central processing when local results are sufficient. It may increase impact when millions of underutilised edge devices are deployed, maintained and replaced. Compare fleet embodied impact, utilisation, network savings, local electricity and service quality.",
+    "evaluation_points": [
+      "Transfer benefit",
+      "Fleet embodied cost",
+      "Utilisation/electricity",
+      "Functional comparison"
+    ],
+    "resolution_title": "ITU-T L.1300 Best Practices for Green Data Centres",
+    "resolution_url": "https://www.itu.int/rec/T-REC-L.1300",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-093",
+    "role_slug": "green-computing-engineer",
+    "domain": "Networks, Edge Computing and Telecommunications",
+    "difficulty": "intermediate",
+    "question_type": "mobile",
+    "prompt": "How should mobile-network conditions influence application design?",
+    "preferred_answer": "Design for intermittent connectivity, limited bandwidth, radio wake-ups and constrained batteries through batching, caching, compact payloads, resumable transfer and user control. Test on representative devices and networks. A design optimised only on high-speed Wi-Fi can transfer energy and cost burdens to users.",
+    "evaluation_points": [
+      "Radio/network constraints",
+      "Efficient patterns",
+      "Representative testing",
+      "User burden"
+    ],
+    "resolution_title": "Web Sustainability Guidelines",
+    "resolution_url": "https://w3c.github.io/sustyweb/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-094",
+    "role_slug": "green-computing-engineer",
+    "domain": "Networks, Edge Computing and Telecommunications",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How should multicast, broadcast or peer distribution be assessed for sustainability?",
+    "preferred_answer": "They can avoid duplicate origin transfers for common content, but may send data to uninterested recipients, complicate security and keep devices active. Evaluate audience overlap, topology, protocol support, caching and end-device work. Choose the method with lower total system work for the required reliability.",
+    "evaluation_points": [
+      "Duplicate-transfer reduction",
+      "Unwanted traffic",
+      "Security/device cost",
+      "System-level comparison"
+    ],
+    "resolution_title": "ITU-T L.1300 Best Practices for Green Data Centres",
+    "resolution_url": "https://www.itu.int/rec/T-REC-L.1300",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-095",
+    "role_slug": "green-computing-engineer",
+    "domain": "Networks, Edge Computing and Telecommunications",
+    "difficulty": "advanced",
+    "question_type": "future-infrastructure",
+    "prompt": "Could pervasive edge AI make networks greener while making the hardware system worse?",
+    "preferred_answer": "Yes. Local inference may reduce cloud traffic and improve privacy, but it can drive accelerator deployment into billions of devices, shorten replacement cycles and create idle embodied capacity. Evaluate fleet scale, upgradeability, model efficiency and whether central shared compute would be used more effectively.",
+    "evaluation_points": [
+      "Cloud/network benefit",
+      "Mass hardware impact",
+      "Replacement/idle capacity",
+      "Shared-compute alternative"
+    ],
+    "resolution_title": "Key Questions on Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-096",
+    "role_slug": "green-computing-engineer",
+    "domain": "Networks, Edge Computing and Telecommunications",
+    "difficulty": "scenario",
+    "question_type": "critical-reflection",
+    "prompt": "A telecom operator advertises lower energy per gigabyte while total traffic and network electricity keep rising. How should this be interpreted?",
+    "preferred_answer": "Efficiency has improved, but absolute impact has not. Examine traffic growth, video resolution, device turnover, network expansion and business incentives. Report both metrics and consider demand-shaping, product defaults and infrastructure life extension rather than relying on intensity alone.",
+    "evaluation_points": [
+      "Intensity versus absolute",
+      "Demand drivers",
+      "Hardware/network expansion",
+      "Demand-side response"
+    ],
+    "resolution_title": "Data Centres and Data Transmission Networks",
+    "resolution_url": "https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-097",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable AI and Machine Learning",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Which parts of an AI system create environmental impact?",
+    "preferred_answer": "Impacts arise from data collection and storage, model development, training, tuning, evaluation, inference, networking, cooling, hardware manufacturing and end-of-life. In production, repeated inference can exceed one-time training. The boundary should also include failed experiments and supporting services when they are material.",
+    "evaluation_points": [
+      "Full AI lifecycle",
+      "Training and inference",
+      "Hardware/facility impacts",
+      "Failed experiments/supporting services"
+    ],
+    "resolution_title": "AI for Environment and Ecosystems Toolkit",
+    "resolution_url": "https://www.unesco.org/en/artificial-intelligence/environment",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-098",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable AI and Machine Learning",
+    "difficulty": "foundation",
+    "question_type": "model-choice",
+    "prompt": "Why is the largest available model not automatically the best production choice?",
+    "preferred_answer": "A larger model may improve some benchmarks but increase latency, energy, cost and hardware demand without meaningful user benefit. Compare task quality, error severity, throughput, context length and efficiency against smaller models, retrieval, rules or no-AI alternatives. Select the minimum capable system for the required outcome.",
+    "evaluation_points": [
+      "Quality-versus-resource trade-off",
+      "Smaller alternatives",
+      "Task-specific evaluation",
+      "Minimum capable system"
+    ],
+    "resolution_title": "ML.ENERGY Benchmarking",
+    "resolution_url": "https://ml.energy/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-099",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable AI and Machine Learning",
+    "difficulty": "intermediate",
+    "question_type": "measurement",
+    "prompt": "How should AI experiment emissions be measured and reported?",
+    "preferred_answer": "Record hardware, region, run time, energy or power estimate, electricity factors, model and dataset version, number of trials and achieved quality. Report uncertainty and both total and per-useful-result measures. Tools such as CodeCarbon support estimation but do not remove the need to state boundaries and assumptions.",
+    "evaluation_points": [
+      "Experiment metadata",
+      "Quality-linked functional unit",
+      "Total and intensity",
+      "Tool limitations"
+    ],
+    "resolution_title": "CodeCarbon",
+    "resolution_url": "https://codecarbon.io/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-100",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable AI and Machine Learning",
+    "difficulty": "intermediate",
+    "question_type": "training",
+    "prompt": "What techniques can reduce training impact without sacrificing required quality?",
+    "preferred_answer": "Start with transfer learning, smaller architectures, efficient data pipelines, early stopping, mixed precision where safe, hyperparameter search discipline, checkpoint reuse and carbon-aware scheduling. Remove redundant experiments and measure quality per energy. Some techniques shift work to specialised hardware, so include utilisation and embodied trade-offs.",
+    "evaluation_points": [
+      "Multiple valid techniques",
+      "Avoided experiments",
+      "Quality per energy",
+      "Hardware trade-off"
+    ],
+    "resolution_title": "Green Algorithms",
+    "resolution_url": "https://www.green-algorithms.org/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-101",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable AI and Machine Learning",
+    "difficulty": "intermediate",
+    "question_type": "inference",
+    "prompt": "Why can prompt and context design affect the environmental impact of generative AI?",
+    "preferred_answer": "Long prompts and retrieved contexts increase token processing, latency and memory; repeated agent loops and retries multiply inference. Use concise instructions, selective retrieval, caching, bounded tool calls, smaller models and early exits while preserving answer quality. Measure successful task completion rather than tokens alone.",
+    "evaluation_points": [
+      "Token/context work",
+      "Agent/retry multiplication",
+      "Reduction techniques",
+      "Outcome-based metric"
+    ],
+    "resolution_title": "Key Questions on Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-102",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable AI and Machine Learning",
+    "difficulty": "advanced",
+    "question_type": "evaluation",
+    "prompt": "How should environmental performance enter an AI evaluation suite?",
+    "preferred_answer": "Add energy, latency, hardware, carbon and possibly water measures alongside task quality, safety and fairness. Test representative workloads, model sizes, regions and traffic levels. Use Pareto analysis so teams can see when a small quality gain requires a disproportionate resource increase.",
+    "evaluation_points": [
+      "Multi-dimensional evaluation",
+      "Representative workload",
+      "Pareto trade-offs",
+      "No quality-only optimisation"
+    ],
+    "resolution_title": "Recommendation on the Ethics of Artificial Intelligence",
+    "resolution_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-103",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable AI and Machine Learning",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "When should an organisation decide not to use generative AI?",
+    "preferred_answer": "Do not use it when a deterministic or human process meets the need with lower risk and resource demand, when expected value is weak, when data rights are unclear, or when errors and impacts cannot be governed. Require a documented necessity test and a simpler baseline before approving large-scale use.",
+    "evaluation_points": [
+      "Necessity test",
+      "Simpler baseline",
+      "Rights/risk/resource criteria",
+      "Documented decision"
+    ],
+    "resolution_title": "Recommendation on the Ethics of Artificial Intelligence",
+    "resolution_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-104",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable AI and Machine Learning",
+    "difficulty": "scenario",
+    "question_type": "future-strategy",
+    "prompt": "A company plans to double AI-generated content every year while promising flat operational emissions. What assumptions must be challenged?",
+    "preferred_answer": "Challenge model-efficiency forecasts, workload rebound, hardware expansion, supplier accounting, electricity availability, water, embodied emissions and whether the content delivers value. Flat operational totals may be achieved by shifting impact or buying claims. Set absolute life-cycle budgets, quality thresholds and demand limits, not only efficiency targets.",
+    "evaluation_points": [
+      "Efficiency forecast risk",
+      "Rebound and embodied impact",
+      "Accounting/claim scrutiny",
+      "Absolute budgets and value limits"
+    ],
+    "resolution_title": "Key Questions on Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-105",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable DevOps, CI/CD and Platform Engineering",
+    "difficulty": "foundation",
+    "question_type": "ci/cd",
+    "prompt": "How can CI/CD pipelines create avoidable environmental impact?",
+    "preferred_answer": "Repeated builds, oversized runners, redundant test matrices, long-lived preview environments, unbounded artefact retention and failed retries consume compute, storage and network resources. Improve caching, change-aware testing, runner sizing, concurrency controls, cleanup and ownership while preserving release evidence.",
+    "evaluation_points": [
+      "Waste sources",
+      "Pipeline controls",
+      "Retention/cleanup",
+      "Quality preserved"
+    ],
+    "resolution_title": "Green Software Patterns",
+    "resolution_url": "https://patterns.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-106",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable DevOps, CI/CD and Platform Engineering",
+    "difficulty": "foundation",
+    "question_type": "platform",
+    "prompt": "What is a sustainability paved road in platform engineering?",
+    "preferred_answer": "It is a supported default that makes efficient behaviour easier, such as right-sized templates, autoscaling, short-lived environments, efficient observability and carbon-aware batch options. Teams may deviate with evidence. The platform should expose trade-offs and outcomes rather than hiding sustainability behind a badge.",
+    "evaluation_points": [
+      "Efficient defaults",
+      "Supported exception path",
+      "Transparent trade-offs",
+      "Outcome measurement"
+    ],
+    "resolution_title": "Kubernetes Resource Management",
+    "resolution_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-107",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable DevOps, CI/CD and Platform Engineering",
+    "difficulty": "intermediate",
+    "question_type": "testing",
+    "prompt": "How would you reduce a large test matrix without increasing release risk?",
+    "preferred_answer": "Use risk-based coverage, change-impact analysis, representative combinations, parallel efficiency and historical defect data. Keep security and critical-platform cases mandatory, run broader suites on schedules, and monitor escaped defects. The goal is to remove redundant work, not merely shorten pipelines.",
+    "evaluation_points": [
+      "Risk-based selection",
+      "Critical cases retained",
+      "Scheduled broad coverage",
+      "Escaped-defect monitoring"
+    ],
+    "resolution_title": "Green Software Patterns",
+    "resolution_url": "https://patterns.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-108",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable DevOps, CI/CD and Platform Engineering",
+    "difficulty": "intermediate",
+    "question_type": "kubernetes",
+    "prompt": "How do requests and limits influence sustainable cluster operation?",
+    "preferred_answer": "Accurate requests improve bin packing and reduce unnecessary nodes; limits constrain noisy neighbours but can cause throttling or OOM failures. Use measured workload profiles, autoscaling and continuous rightsizing. Low requests that hide real demand and high requests that reserve idle capacity are both problematic.",
+    "evaluation_points": [
+      "Scheduling/bin packing",
+      "Limit trade-offs",
+      "Measured rightsizing",
+      "Both under/overstatement risks"
+    ],
+    "resolution_title": "Kubernetes Resource Management",
+    "resolution_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-109",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable DevOps, CI/CD and Platform Engineering",
+    "difficulty": "intermediate",
+    "question_type": "environments",
+    "prompt": "What controls should govern ephemeral development and preview environments?",
+    "preferred_answer": "Create them on demand, assign owners and expiry, suspend or delete outside use, constrain size and data, and preserve only required evidence. Track orphaned resources and provide safe re-creation. An environment that is easy to create but politically difficult to delete is not truly ephemeral.",
+    "evaluation_points": [
+      "On-demand and expiry",
+      "Ownership",
+      "Data/resource controls",
+      "Orphan detection"
+    ],
+    "resolution_title": "Kube Green",
+    "resolution_url": "https://kube-green.dev/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-110",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable DevOps, CI/CD and Platform Engineering",
+    "difficulty": "advanced",
+    "question_type": "release-design",
+    "prompt": "Can frequent deployment be sustainable?",
+    "preferred_answer": "Yes, when changes are small, pipelines avoid redundant work, artefacts are reused and failure recovery is efficient. Frequency alone is not the impact driver; total build, test, infrastructure churn and customer value matter. Batch only where it reduces work without increasing change risk or delayed feedback.",
+    "evaluation_points": [
+      "Frequency not sole driver",
+      "Small/reusable artefacts",
+      "Total work and value",
+      "Risk-aware batching"
+    ],
+    "resolution_title": "Green Software Patterns",
+    "resolution_url": "https://patterns.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-111",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable DevOps, CI/CD and Platform Engineering",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "Should sustainability gates block deployments?",
+    "preferred_answer": "Block only on reliable, risk-relevant evidence, such as severe budget breaches or obviously wasteful infrastructure definitions. Start with visibility and warnings, define exceptions and avoid brittle estimates that create gate fatigue. The strongest controls are efficient platform defaults and architecture reviews, not a universal carbon number in every pipeline.",
+    "evaluation_points": [
+      "Evidence quality",
+      "Progressive enforcement",
+      "Exception path",
+      "Paved-road preference"
+    ],
+    "resolution_title": "Software Carbon Intensity Specification v1.1",
+    "resolution_url": "https://sci.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-112",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable DevOps, CI/CD and Platform Engineering",
+    "difficulty": "scenario",
+    "question_type": "critical-reflection",
+    "prompt": "A platform team halves build time but doubles the number of daily builds because they become cheaper. What is the sustainability result?",
+    "preferred_answer": "Per-build efficiency improved, but total compute may stay flat or rise. Analyse trigger design, duplicate builds, developer value, cache use and absolute runner energy. Add concurrency, deduplication or batching where feedback remains adequate. Treat convenience-driven demand as part of the system, not an external assumption.",
+    "evaluation_points": [
+      "Per-unit versus total",
+      "Trigger/dedup analysis",
+      "Developer-value context",
+      "Demand controls"
+    ],
+    "resolution_title": "Green Software Foundation - Learn Green Software",
+    "resolution_url": "https://learn.greensoftware.foundation/introduction/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-113",
+    "role_slug": "green-computing-engineer",
+    "domain": "IT Asset Lifecycle and Sustainable Procurement",
+    "difficulty": "foundation",
+    "question_type": "procurement",
+    "prompt": "What does sustainable IT procurement evaluate beyond purchase price?",
+    "preferred_answer": "It evaluates necessity, expected utilisation, energy and water performance, durability, repairability, upgradeability, materials, supplier practices, packaging, warranty, take-back, reuse, data security and end-of-life. Total cost and impact should be considered over the required service life.",
+    "evaluation_points": [
+      "Need and utilisation",
+      "Product lifecycle criteria",
+      "Supplier/take-back",
+      "Service-life view"
+    ],
+    "resolution_title": "ISO 20400 Sustainable Procurement Guidance",
+    "resolution_url": "https://www.iso.org/standard/63026.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-114",
+    "role_slug": "green-computing-engineer",
+    "domain": "IT Asset Lifecycle and Sustainable Procurement",
+    "difficulty": "foundation",
+    "question_type": "assets",
+    "prompt": "Why is an accurate IT asset inventory a sustainability control?",
+    "preferred_answer": "It reveals ownership, configuration, age, location, utilisation, warranty, repair history and end-of-life status. Without it, organisations buy duplicate equipment, leave assets powered or stored, miss reuse opportunities and lose control of data-bearing devices. Inventory links procurement to operations and disposition.",
+    "evaluation_points": [
+      "Lifecycle visibility",
+      "Avoided duplicate purchases",
+      "Reuse/power benefits",
+      "Data-bearing control"
+    ],
+    "resolution_title": "ISO 20400 Sustainable Procurement Guidance",
+    "resolution_url": "https://www.iso.org/standard/63026.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-115",
+    "role_slug": "green-computing-engineer",
+    "domain": "IT Asset Lifecycle and Sustainable Procurement",
+    "difficulty": "intermediate",
+    "question_type": "criteria",
+    "prompt": "How should EPEAT or TCO certification be used in procurement?",
+    "preferred_answer": "Use recognised certification as verified evidence for defined criteria, not as a substitute for requirements or product comparison. Check product registration, criterion version, configuration, geography and whether the attributes important to your use case are covered. Combine certification with utilisation, service, repair and supplier data.",
+    "evaluation_points": [
+      "Evidence not substitute",
+      "Registration/version check",
+      "Use-case criteria",
+      "Lifecycle context"
+    ],
+    "resolution_title": "EPEAT Sustainable Electronics Criteria",
+    "resolution_url": "https://www.epeat.net/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-116",
+    "role_slug": "green-computing-engineer",
+    "domain": "IT Asset Lifecycle and Sustainable Procurement",
+    "difficulty": "intermediate",
+    "question_type": "business-case",
+    "prompt": "How do you build a business case for device-life extension?",
+    "preferred_answer": "Estimate avoided purchase and manufacturing impact, repair and support costs, energy difference, failure risk, productivity, security compatibility and residual value. Pilot upgrades or refurbishment and track user outcomes. Life extension should be planned, supported and secure, not simply postponing replacement without maintenance.",
+    "evaluation_points": [
+      "Avoided embodied impact",
+      "Operational/security trade-offs",
+      "Pilot evidence",
+      "Supported extension"
+    ],
+    "resolution_title": "TCO Certified Criteria and Verification",
+    "resolution_url": "https://tcocertified.com/criteria-overview/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-117",
+    "role_slug": "green-computing-engineer",
+    "domain": "IT Asset Lifecycle and Sustainable Procurement",
+    "difficulty": "intermediate",
+    "question_type": "supplier-management",
+    "prompt": "What sustainability evidence should be requested from an IT supplier?",
+    "preferred_answer": "Request product-specific life-cycle data, energy performance, materials and hazardous substances, repair and spare-part terms, labour and environmental management, packaging, logistics, take-back, recycling outcomes and assurance. Define data quality and improvement clauses rather than accepting broad corporate pledges.",
+    "evaluation_points": [
+      "Product-specific evidence",
+      "Repair/take-back",
+      "Supply-chain management",
+      "Assurance and contract clauses"
+    ],
+    "resolution_title": "ISO 20400 Sustainable Procurement Guidance",
+    "resolution_url": "https://www.iso.org/standard/63026.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-118",
+    "role_slug": "green-computing-engineer",
+    "domain": "IT Asset Lifecycle and Sustainable Procurement",
+    "difficulty": "advanced",
+    "question_type": "need-assessment",
+    "prompt": "Why is \u201cdo we need to buy this?\u201d a technical procurement question?",
+    "preferred_answer": "Architecture, capacity planning, software support, pooling, repair and redeployment determine whether new hardware is necessary. Engineers should test whether existing assets can meet the functional need and whether demand can be changed. Avoided purchase can reduce cost and embodied impact more than selecting a marginally greener model.",
+    "evaluation_points": [
+      "Architecture and capacity",
+      "Reuse/pooling alternatives",
+      "Functional need",
+      "Avoided purchase priority"
+    ],
+    "resolution_title": "ITU-T L.1061 Circular Public Procurement of ICT",
+    "resolution_url": "https://www.itu.int/rec/T-REC-L.1061",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-119",
+    "role_slug": "green-computing-engineer",
+    "domain": "IT Asset Lifecycle and Sustainable Procurement",
+    "difficulty": "advanced",
+    "question_type": "future-policy",
+    "prompt": "How could digital product passports change IT asset management?",
+    "preferred_answer": "They could provide standardised product identity, material, repair, durability and lifecycle information across procurement, maintenance, resale and recycling. Value depends on interoperable data, verification, access rights and long-term availability. Poorly designed passports could become another data burden or marketing channel rather than enabling circular decisions.",
+    "evaluation_points": [
+      "Lifecycle-data potential",
+      "Interoperability/verification",
+      "Access and longevity",
+      "Implementation risk"
+    ],
+    "resolution_title": "Ecodesign for Sustainable Products Regulation",
+    "resolution_url": "https://environment.ec.europa.eu/topics/circular-economy/ecodesign-sustainable-products-regulation_en",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-120",
+    "role_slug": "green-computing-engineer",
+    "domain": "IT Asset Lifecycle and Sustainable Procurement",
+    "difficulty": "scenario",
+    "question_type": "critical-reflection",
+    "prompt": "A company replaces all laptops every three years to maintain a \u201cmodern workplace.\u201d How would you challenge the policy?",
+    "preferred_answer": "Ask for performance, security, failure and user evidence; quantify manufacturing impact, repairability and resale; and test tiered refresh based on need. Modernity is not a functional requirement. Create supported extension, upgrade, redeployment and secure disposition paths, with exceptions for genuinely unsuitable devices.",
+    "evaluation_points": [
+      "Challenges arbitrary cycle",
+      "Evidence and life-cycle impact",
+      "Tiered need-based refresh",
+      "Secure reuse/disposition"
+    ],
+    "resolution_title": "EPEAT Sustainable Electronics Criteria",
+    "resolution_url": "https://www.epeat.net/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-121",
+    "role_slug": "green-computing-engineer",
+    "domain": "Circular IT, Repair, Reuse and E-waste",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the preferred hierarchy for circular IT assets?",
+    "preferred_answer": "First avoid unnecessary acquisition, then maintain and extend life, repair, upgrade, redeploy, refurbish and reuse. Component harvesting and high-quality recycling follow when the product can no longer provide service. Disposal is the last option. Security and safety must be integrated at every stage.",
+    "evaluation_points": [
+      "Prevention first",
+      "Life extension and reuse",
+      "Recycling later",
+      "Security/safety integrated"
+    ],
+    "resolution_title": "UN Sustainable Development Goal 12",
+    "resolution_url": "https://sdgs.un.org/goals/goal12",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-122",
+    "role_slug": "green-computing-engineer",
+    "domain": "Circular IT, Repair, Reuse and E-waste",
+    "difficulty": "foundation",
+    "question_type": "compliance",
+    "prompt": "What is extended producer responsibility in e-waste management?",
+    "preferred_answer": "EPR makes producers responsible for defined post-consumer collection and environmentally sound management, often through targets, registration and reporting. It aims to internalise end-of-life responsibility and improve formal recycling. IT buyers still need traceable asset disposition and should not assume a producer scheme guarantees every device\u2019s outcome.",
+    "evaluation_points": [
+      "Producer responsibility",
+      "Collection/reporting mechanisms",
+      "Formal management goal",
+      "Buyer traceability remains"
+    ],
+    "resolution_title": "India CPCB E-Waste Management System",
+    "resolution_url": "https://eprewaste.cpcb.gov.in/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-123",
+    "role_slug": "green-computing-engineer",
+    "domain": "Circular IT, Repair, Reuse and E-waste",
+    "difficulty": "intermediate",
+    "question_type": "repair",
+    "prompt": "What information determines whether an IT asset should be repaired, reused or recycled?",
+    "preferred_answer": "Consider functional need, failure type, repair parts and skills, energy and performance, security support, data risk, remaining life, resale or social value, transport and recycling quality. Use a documented decision tree and avoid recycling functioning equipment merely because a newer model exists.",
+    "evaluation_points": [
+      "Functional and technical factors",
+      "Security/data",
+      "Remaining value",
+      "Decision hierarchy"
+    ],
+    "resolution_title": "TCO Certified Criteria and Verification",
+    "resolution_url": "https://tcocertified.com/criteria-overview/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-124",
+    "role_slug": "green-computing-engineer",
+    "domain": "Circular IT, Repair, Reuse and E-waste",
+    "difficulty": "intermediate",
+    "question_type": "data-security",
+    "prompt": "How should media sanitisation support reuse rather than destruction?",
+    "preferred_answer": "Select clear, purge or destroy based on media type, data sensitivity, threat and future use. Verify the outcome and maintain records. Cryptographic erase or approved purge can enable safe reuse where appropriate; automatic physical destruction wastes assets and materials when risk can be managed by validated sanitisation.",
+    "evaluation_points": [
+      "Risk-based sanitisation",
+      "Verification/records",
+      "Reuse-enabling methods",
+      "No automatic destruction"
+    ],
+    "resolution_title": "NIST SP 800-88 Rev. 2 Media Sanitization",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/88/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-125",
+    "role_slug": "green-computing-engineer",
+    "domain": "Circular IT, Repair, Reuse and E-waste",
+    "difficulty": "intermediate",
+    "question_type": "vendors",
+    "prompt": "What evidence should an IT asset disposition vendor provide?",
+    "preferred_answer": "Require asset-level chain of custody, secure transport, sanitisation certificates, reuse and resale destinations, recycling downstreams, permits, environmental and worker protections, mass-balance reporting and incident notification. Audit high-risk vendors and prohibit unverified export or landfill routes.",
+    "evaluation_points": [
+      "Chain of custody",
+      "Sanitisation",
+      "Downstream traceability",
+      "Worker/environment controls"
+    ],
+    "resolution_title": "Basel Convention E-waste Technical Guidelines",
+    "resolution_url": "https://www.basel.int/Implementation/PublicAwareness/NewsFeatures/Ewastetechnicalguidelines/tabid/5122/Default.aspx",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-126",
+    "role_slug": "green-computing-engineer",
+    "domain": "Circular IT, Repair, Reuse and E-waste",
+    "difficulty": "advanced",
+    "question_type": "justice",
+    "prompt": "Why is informal e-waste recycling an environmental-justice issue?",
+    "preferred_answer": "Workers and communities may bear toxic exposure from burning, acid leaching or unsafe dismantling while value and digital benefits accrue elsewhere. Simply banning informal activity can remove livelihoods without creating safe alternatives. Policy should support formalisation, worker protection, producer responsibility, repair economies and traceable material recovery.",
+    "evaluation_points": [
+      "Unequal burden",
+      "Hazard mechanisms",
+      "Livelihood complexity",
+      "Just transition response"
+    ],
+    "resolution_title": "Global E-waste Monitor 2024",
+    "resolution_url": "https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-127",
+    "role_slug": "green-computing-engineer",
+    "domain": "Circular IT, Repair, Reuse and E-waste",
+    "difficulty": "advanced",
+    "question_type": "metrics",
+    "prompt": "Which circular-IT metrics are better than \u201ctonnes recycled\u201d?",
+    "preferred_answer": "Track avoided purchases, average device life, repair and redeployment rate, percentage reused before recycling, component recovery quality, verified downstream destinations, data incidents and retained asset value. Weighting only mass can reward disposal of heavy equipment rather than prevention and high-value reuse.",
+    "evaluation_points": [
+      "Prevention/lifetime metrics",
+      "Reuse before recycling",
+      "Traceability and data",
+      "Mass-metric limitation"
+    ],
+    "resolution_title": "ITU-T L.1061 Circular Public Procurement of ICT",
+    "resolution_url": "https://www.itu.int/rec/T-REC-L.1061",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-128",
+    "role_slug": "green-computing-engineer",
+    "domain": "Circular IT, Repair, Reuse and E-waste",
+    "difficulty": "scenario",
+    "question_type": "future-and-ethics",
+    "prompt": "Your organisation can donate old devices overseas, but local support, parts and formal recycling are weak. What should you decide?",
+    "preferred_answer": "Confirm recipient need, suitability, software support, repair capacity, data sanitisation, logistics, warranty and a funded end-of-life route. Donation that shifts obsolete equipment and future waste is not circularity. Prefer durable, supportable devices and shared responsibility with local partners, or choose another reuse channel.",
+    "evaluation_points": [
+      "Recipient suitability",
+      "Support and repair",
+      "Funded end-of-life",
+      "No waste export disguised as donation"
+    ],
+    "resolution_title": "Basel Convention E-waste Technical Guidelines",
+    "resolution_url": "https://www.basel.int/Implementation/PublicAwareness/NewsFeatures/Ewastetechnicalguidelines/tabid/5122/Default.aspx",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-129",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Security, Privacy and Resilience",
+    "difficulty": "foundation",
+    "question_type": "trade-offs",
+    "prompt": "Why can cybersecurity controls have environmental costs?",
+    "preferred_answer": "Encryption, logging, scanning, redundancy, backups and continuous monitoring consume compute, storage, network and hardware. These controls protect essential outcomes and cannot be removed casually. Sustainable security means meeting the threat and assurance need with efficient algorithms, scoped data, shared services and evidence-based retention.",
+    "evaluation_points": [
+      "Control resource use",
+      "Security remains essential",
+      "Right-sized controls",
+      "Evidence-based retention"
+    ],
+    "resolution_title": "NIST SP 800-92 Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-130",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Security, Privacy and Resilience",
+    "difficulty": "foundation",
+    "question_type": "resilience",
+    "prompt": "How does resilience support sustainability?",
+    "preferred_answer": "Reliable systems avoid repeated work, emergency replacement, data loss and disruptive rebuilding. Resilience also extends useful infrastructure life when maintenance and recovery are planned. Excessive redundancy, however, can waste resources, so resilience requirements should be tied to service criticality and tested failure scenarios.",
+    "evaluation_points": [
+      "Avoided failure/rework",
+      "Life extension",
+      "Redundancy trade-off",
+      "Risk-based tiers"
+    ],
+    "resolution_title": "ISO 50001 Energy Management Systems",
+    "resolution_url": "https://www.iso.org/iso-50001-energy-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-131",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Security, Privacy and Resilience",
+    "difficulty": "intermediate",
+    "question_type": "logging",
+    "prompt": "How can security-log retention be made more sustainable without weakening investigations?",
+    "preferred_answer": "Classify sources by threat and legal value, filter known noise, normalise efficiently, tier storage, compress, use targeted high-detail retention and verify retrieval. Preserve critical identity, control-plane and incident evidence. Retention should be justified by detection and investigation requirements, not unlimited \u201cjust in case\u201d collection.",
+    "evaluation_points": [
+      "Risk-based source selection",
+      "Tier/compress/filter",
+      "Critical evidence retained",
+      "No indefinite default"
+    ],
+    "resolution_title": "NIST SP 800-92 Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-132",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Security, Privacy and Resilience",
+    "difficulty": "intermediate",
+    "question_type": "cryptography",
+    "prompt": "What sustainability factors belong in a cryptographic migration plan?",
+    "preferred_answer": "Include security lifetime, hardware acceleration, performance, key and certificate operations, data volume, protocol compatibility and device replacement. A migration that forces premature disposal can create embodied impact, but delaying necessary security creates unacceptable risk. Pilot efficient implementations and prioritise systems by threat and service life.",
+    "evaluation_points": [
+      "Security lifetime",
+      "Performance/hardware",
+      "Replacement impact",
+      "Risk-based phased migration"
+    ],
+    "resolution_title": "NIST Post-Quantum Cryptography Standards",
+    "resolution_url": "https://csrc.nist.gov/projects/post-quantum-cryptography",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-133",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Security, Privacy and Resilience",
+    "difficulty": "intermediate",
+    "question_type": "availability",
+    "prompt": "How can denial-of-service protection reduce total resource use?",
+    "preferred_answer": "Rate limits, quotas, caching, request validation and circuit breakers prevent attackers or faulty clients from triggering unbounded compute and downstream work. Controls should be identity- and cost-aware so a small number of expensive requests cannot exhaust resources. Avoid defensive overprovisioning as the only strategy.",
+    "evaluation_points": [
+      "Bounded work",
+      "Cost-aware controls",
+      "Downstream protection",
+      "Avoids scale-only defence"
+    ],
+    "resolution_title": "OWASP Denial of Service Guidance",
+    "resolution_url": "https://owasp.org/www-community/attacks/Denial_of_Service",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-134",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Security, Privacy and Resilience",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How should encrypted traffic inspection be assessed for sustainability and privacy?",
+    "preferred_answer": "Inspection can require decryption infrastructure, duplicate processing and sensitive data access. Use it only where threat and compliance needs justify it, minimise scope, protect keys, prefer endpoint or metadata-based detection when sufficient and measure effectiveness. A costly control with weak detection value creates both privacy and environmental harm.",
+    "evaluation_points": [
+      "Security purpose",
+      "Compute/privacy cost",
+      "Less-invasive alternatives",
+      "Effectiveness measurement"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-135",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Security, Privacy and Resilience",
+    "difficulty": "advanced",
+    "question_type": "critical-reflection",
+    "prompt": "Can environmental targets ever justify reducing security or backup coverage?",
+    "preferred_answer": "Not by themselves. Define minimum security, safety, legal and recovery requirements, then optimise implementation and remove unjustified duplication. Where environmental and security goals conflict, use documented risk ownership and seek architectural alternatives. Sustainability that creates foreseeable breach or safety harm is not credible.",
+    "evaluation_points": [
+      "Non-negotiable protection",
+      "Optimise implementation",
+      "Risk ownership",
+      "No green justification for unsafe design"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-136",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Security, Privacy and Resilience",
+    "difficulty": "scenario",
+    "question_type": "future-resilience",
+    "prompt": "A climate-constrained grid requires periodic data-centre load reduction. How should critical digital services participate?",
+    "preferred_answer": "Classify essential and flexible workloads, maintain protected capacity for safety and recovery, pre-plan graceful degradation, shift batch work, test islanding or failover and communicate priorities. Security monitoring and incident response need minimum service. The policy should be transparent so less powerful users are not disproportionately disconnected.",
+    "evaluation_points": [
+      "Criticality tiers",
+      "Graceful reduction",
+      "Security minimums",
+      "Fair and transparent policy"
+    ],
+    "resolution_title": "Key Questions on Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-137",
+    "role_slug": "green-computing-engineer",
+    "domain": "Governance, Standards, Policy and Sustainability Reporting",
+    "difficulty": "foundation",
+    "question_type": "governance",
+    "prompt": "What is the purpose of an environmental management system in IT?",
+    "preferred_answer": "An EMS establishes policy, significant impacts, legal and stakeholder requirements, objectives, controls, competence, monitoring, audit and continual improvement. For IT it should connect procurement, facilities, cloud, software, data and asset disposal. Certification or documentation alone does not prove strong environmental performance.",
+    "evaluation_points": [
+      "EMS components",
+      "IT-wide scope",
+      "Continual improvement",
+      "No certification-equals-performance claim"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-138",
+    "role_slug": "green-computing-engineer",
+    "domain": "Governance, Standards, Policy and Sustainability Reporting",
+    "difficulty": "foundation",
+    "question_type": "standards",
+    "prompt": "How do a standard, measurement method and certification differ?",
+    "preferred_answer": "A standard defines agreed requirements or guidance; a measurement method specifies how to calculate or test an outcome; certification is third-party attestation against defined criteria. An organisation may use SCI without certifying an EMS, and a certified management system does not automatically validate every software carbon claim.",
+    "evaluation_points": [
+      "Three distinctions",
+      "Valid example",
+      "Scope of assurance",
+      "No badge confusion"
+    ],
+    "resolution_title": "SCI - Software Carbon Intensity",
+    "resolution_url": "https://greensoftware.foundation/standards/sci/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-139",
+    "role_slug": "green-computing-engineer",
+    "domain": "Governance, Standards, Policy and Sustainability Reporting",
+    "difficulty": "intermediate",
+    "question_type": "policy",
+    "prompt": "What should a sustainable IT policy contain?",
+    "preferred_answer": "It should define scope, principles, decision rights, measurable objectives, procurement and architecture requirements, data and asset lifecycle, reporting, exceptions, responsibilities, competence and review. It must connect to budgets and delivery processes. Aspirational language without controls, owners or evidence is not an operational policy.",
+    "evaluation_points": [
+      "Scope and objectives",
+      "Controls/owners",
+      "Lifecycle coverage",
+      "Budget/process integration"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-140",
+    "role_slug": "green-computing-engineer",
+    "domain": "Governance, Standards, Policy and Sustainability Reporting",
+    "difficulty": "intermediate",
+    "question_type": "targets",
+    "prompt": "What makes a Green IT target credible?",
+    "preferred_answer": "Use a baseline, boundary, time horizon, absolute and intensity measures, responsible owner, action plan, interim milestones, data-quality statement and treatment of growth and acquisitions. Prioritise real reductions in operations and value chain, and report exclusions. Targets should be challenging enough to change decisions.",
+    "evaluation_points": [
+      "Baseline/boundary",
+      "Absolute and intensity",
+      "Owner/action/milestones",
+      "Growth and exclusions"
+    ],
+    "resolution_title": "SBTi Corporate Net-Zero Standard",
+    "resolution_url": "https://sciencebasedtargets.org/net-zero",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-141",
+    "role_slug": "green-computing-engineer",
+    "domain": "Governance, Standards, Policy and Sustainability Reporting",
+    "difficulty": "intermediate",
+    "question_type": "assurance",
+    "prompt": "How should an internal auditor test a sustainability control?",
+    "preferred_answer": "Test design against the stated risk, then sample whether it operated across the required scope and period. Verify source data, calculations, approvals, exceptions, evidence retention and corrective actions. Interview operators and trace a reported metric back to systems rather than relying on dashboard screenshots.",
+    "evaluation_points": [
+      "Design and operating effectiveness",
+      "Sampling and scope",
+      "Data lineage",
+      "Corrective action"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-142",
+    "role_slug": "green-computing-engineer",
+    "domain": "Governance, Standards, Policy and Sustainability Reporting",
+    "difficulty": "advanced",
+    "question_type": "green-claims",
+    "prompt": "What makes an IT sustainability claim misleading?",
+    "preferred_answer": "Problems include vague terms, hidden boundaries, intensity-only claims, offsets presented as reductions, incomparable baselines, selective time periods, unverified supplier data and ignored rebound or embodied impact. Use specific, bounded language and disclose methods, uncertainty and material exclusions. Marketing should not exceed evidence.",
+    "evaluation_points": [
+      "Common claim failures",
+      "Boundary and baseline",
+      "Uncertainty/exclusions",
+      "Evidence-proportional wording"
+    ],
+    "resolution_title": "GHG Protocol Corporate Standard",
+    "resolution_url": "https://ghgprotocol.org/corporate-standard",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-143",
+    "role_slug": "green-computing-engineer",
+    "domain": "Governance, Standards, Policy and Sustainability Reporting",
+    "difficulty": "advanced",
+    "question_type": "future-regulation",
+    "prompt": "How might mandatory data-centre reporting and rating change architecture decisions?",
+    "preferred_answer": "Comparable energy, water, utilisation and renewable-energy disclosures could make inefficient capacity visible to customers, regulators and financiers. Minimum standards may influence location, cooling, workload placement and retirement. Risks include metric gaming and burden shifting, so ratings need lifecycle context, verification and safeguards for local impacts.",
+    "evaluation_points": [
+      "Transparency effect",
+      "Architecture and location",
+      "Minimum-standard implications",
+      "Gaming/burden-shifting risk"
+    ],
+    "resolution_title": "EU Data Centre Energy Performance and Sustainability",
+    "resolution_url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-products/data-centres_en",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-144",
+    "role_slug": "green-computing-engineer",
+    "domain": "Governance, Standards, Policy and Sustainability Reporting",
+    "difficulty": "scenario",
+    "question_type": "governance",
+    "prompt": "Leadership asks for a \u201ccarbon-neutral digital platform\u201d label based mainly on offsets. How do you respond?",
+    "preferred_answer": "Request the full life-cycle inventory, reduction trajectory, boundary, market-based claims, residual emissions and offset quality. Recommend reporting measured footprint and reductions separately from neutralisation claims, with independent review and precise wording. A label should not hide continuing growth or supply-chain impact.",
+    "evaluation_points": [
+      "Inventory and reduction first",
+      "Separate offsets",
+      "Boundary/supply-chain scrutiny",
+      "Precise assured wording"
+    ],
+    "resolution_title": "GHG Protocol Corporate Standard",
+    "resolution_url": "https://ghgprotocol.org/corporate-standard",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-145",
+    "role_slug": "green-computing-engineer",
+    "domain": "GreenOps, FinOps and Business Value",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is GreenOps, and how does it relate to FinOps?",
+    "preferred_answer": "GreenOps applies operational ownership, measurement and optimisation to environmental impact. FinOps aligns cloud value, cost and accountability. They overlap through utilisation, rightsizing, forecasting and workload decisions, but carbon, water and embodied impact do not always follow price, so sustainability requires additional signals and limits.",
+    "evaluation_points": [
+      "GreenOps purpose",
+      "FinOps relationship",
+      "Shared practices",
+      "Cost-carbon divergence"
+    ],
+    "resolution_title": "FinOps Framework - Sustainability",
+    "resolution_url": "https://www.finops.org/framework/capabilities/sustainability/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-146",
+    "role_slug": "green-computing-engineer",
+    "domain": "GreenOps, FinOps and Business Value",
+    "difficulty": "foundation",
+    "question_type": "economics",
+    "prompt": "Why can cost savings be a useful but incomplete sustainability proxy?",
+    "preferred_answer": "Reduced resource use often lowers both cost and impact, making cost a practical starting signal. Pricing also reflects margins, discounts, scarcity and commercial strategy rather than physical energy or emissions. Validate material decisions with resource and environmental data, especially across regions and service types.",
+    "evaluation_points": [
+      "Correlation potential",
+      "Pricing distortions",
+      "Validation need",
+      "Region/service differences"
+    ],
+    "resolution_title": "FinOps Framework - Sustainability",
+    "resolution_url": "https://www.finops.org/framework/capabilities/sustainability/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-147",
+    "role_slug": "green-computing-engineer",
+    "domain": "GreenOps, FinOps and Business Value",
+    "difficulty": "intermediate",
+    "question_type": "ownership",
+    "prompt": "How should cloud sustainability responsibility be distributed?",
+    "preferred_answer": "Executives set goals and constraints; finance and sustainability define accounting; platform teams provide data and efficient defaults; service owners manage demand and architecture; procurement manages suppliers; and engineers act on workloads. A central team should enable and assure, not own every resource decision.",
+    "evaluation_points": [
+      "Clear role distribution",
+      "Service-owner accountability",
+      "Central enablement",
+      "Cross-functional model"
+    ],
+    "resolution_title": "FinOps Framework - Sustainability",
+    "resolution_url": "https://www.finops.org/framework/capabilities/sustainability/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-148",
+    "role_slug": "green-computing-engineer",
+    "domain": "GreenOps, FinOps and Business Value",
+    "difficulty": "intermediate",
+    "question_type": "prioritisation",
+    "prompt": "How would you prioritise a portfolio of GreenOps opportunities?",
+    "preferred_answer": "Rank by credible absolute reduction, implementation effort, service risk, cost, data confidence, repeatability and strategic value. Start with waste removal and high-impact defaults, then architecture changes. Avoid selecting only projects with attractive percentages but negligible total effect.",
+    "evaluation_points": [
+      "Absolute-impact focus",
+      "Effort/risk/data",
+      "Waste and defaults first",
+      "No percentage-only ranking"
+    ],
+    "resolution_title": "AWS Well-Architected Sustainability Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-149",
+    "role_slug": "green-computing-engineer",
+    "domain": "GreenOps, FinOps and Business Value",
+    "difficulty": "intermediate",
+    "question_type": "business-value",
+    "prompt": "How can sustainability be connected to product and customer value?",
+    "preferred_answer": "Link actions to reliability, speed, affordability, hardware reach, regulatory readiness, supply resilience and user trust, while reporting environmental outcomes directly. Do not force every action into immediate revenue. Some value is avoided risk, resource security or the ability to operate within future constraints.",
+    "evaluation_points": [
+      "Multiple value forms",
+      "Direct environmental reporting",
+      "Avoided risk",
+      "Future constraint readiness"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-150",
+    "role_slug": "green-computing-engineer",
+    "domain": "GreenOps, FinOps and Business Value",
+    "difficulty": "advanced",
+    "question_type": "incentives",
+    "prompt": "What problems arise when teams are charged only for cloud cost but not environmental impact?",
+    "preferred_answer": "They may choose cheaper high-carbon regions, ignore embodied or water effects, retain discounted waste or optimise commitments rather than resource use. Add environmental signals, shared guardrails and service-level budgets while avoiding false precision. Incentives should reward verified outcomes, not dashboard movement.",
+    "evaluation_points": [
+      "Cost misalignment",
+      "Regional/resource blind spots",
+      "Environmental guardrails",
+      "Verified-outcome incentives"
+    ],
+    "resolution_title": "FinOps Framework - Sustainability",
+    "resolution_url": "https://www.finops.org/framework/capabilities/sustainability/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-151",
+    "role_slug": "green-computing-engineer",
+    "domain": "GreenOps, FinOps and Business Value",
+    "difficulty": "advanced",
+    "question_type": "future-finance",
+    "prompt": "Could internal carbon pricing improve IT decisions?",
+    "preferred_answer": "A shadow or internal fee can make emissions visible in investment choices and fund reduction, but it depends on credible boundaries and a price high enough to affect behaviour. It must not become permission to emit or replace physical budgets. Pair it with absolute targets, technical standards and transparent exceptions.",
+    "evaluation_points": [
+      "Decision signal",
+      "Credible accounting/price",
+      "No pay-to-pollute logic",
+      "Paired absolute constraints"
+    ],
+    "resolution_title": "GHG Protocol Corporate Standard",
+    "resolution_url": "https://ghgprotocol.org/corporate-standard",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-152",
+    "role_slug": "green-computing-engineer",
+    "domain": "GreenOps, FinOps and Business Value",
+    "difficulty": "scenario",
+    "question_type": "critical-reflection",
+    "prompt": "An optimisation saves \u00a3500,000 annually but increases emissions because workloads move to a dirtier region. What should happen?",
+    "preferred_answer": "Quantify the emissions, service constraints and alternatives; make the trade-off visible to authorised owners; and test efficiency, contractual and scheduling options. Apply the organisation\u2019s carbon target or internal price, but do not hide the outcome in cost success. The final decision should state who benefits and who bears the environmental cost.",
+    "evaluation_points": [
+      "Quantified trade-off",
+      "Alternatives",
+      "Governed decision",
+      "Distributional transparency"
+    ],
+    "resolution_title": "FinOps Framework - Sustainability",
+    "resolution_url": "https://www.finops.org/framework/capabilities/sustainability/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-153",
+    "role_slug": "green-computing-engineer",
+    "domain": "Organisational Change, Ethics and Rebound Effects",
+    "difficulty": "foundation",
+    "question_type": "change",
+    "prompt": "Why do sustainability programmes fail when treated only as technical optimisation?",
+    "preferred_answer": "Technology choices are shaped by incentives, product goals, budgets, procurement, skills and power. Engineers may remove waste while the business creates more demand. Successful change aligns leadership objectives, team ownership, data, decision rights and product strategy, and makes trade-offs discussable.",
+    "evaluation_points": [
+      "Organisational drivers",
+      "Demand creation",
+      "Aligned incentives/ownership",
+      "Trade-off culture"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-154",
+    "role_slug": "green-computing-engineer",
+    "domain": "Organisational Change, Ethics and Rebound Effects",
+    "difficulty": "foundation",
+    "question_type": "ethics",
+    "prompt": "What does climate justice add to Green IT decision-making?",
+    "preferred_answer": "It asks who benefits from digital services and who bears extraction, energy, water, pollution, labour and e-waste burdens. Decisions should consider vulnerable communities, workers and future generations, include participation and avoid shifting impact across borders. Efficiency alone does not answer fairness.",
+    "evaluation_points": [
+      "Distribution of benefits/burdens",
+      "Supply-chain and local impacts",
+      "Participation",
+      "Efficiency not fairness"
+    ],
+    "resolution_title": "AI for Environment and Ecosystems Toolkit",
+    "resolution_url": "https://www.unesco.org/en/artificial-intelligence/environment",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-155",
+    "role_slug": "green-computing-engineer",
+    "domain": "Organisational Change, Ethics and Rebound Effects",
+    "difficulty": "intermediate",
+    "question_type": "culture",
+    "prompt": "How can sustainability become part of normal engineering work?",
+    "preferred_answer": "Add it to requirements, architecture reviews, platform defaults, incident and capacity processes, procurement, dashboards and retrospectives. Train teams using role-relevant examples and give them actionable data. Avoid a separate volunteer programme that disappears under delivery pressure.",
+    "evaluation_points": [
+      "Workflow integration",
+      "Efficient defaults",
+      "Role training/data",
+      "Not volunteer-only"
+    ],
+    "resolution_title": "Green Software Foundation - Learn Green Software",
+    "resolution_url": "https://learn.greensoftware.foundation/introduction/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-156",
+    "role_slug": "green-computing-engineer",
+    "domain": "Organisational Change, Ethics and Rebound Effects",
+    "difficulty": "intermediate",
+    "question_type": "behaviour",
+    "prompt": "Why can employee-awareness campaigns have limited impact?",
+    "preferred_answer": "Individual actions matter, but most IT impact is locked into architecture, procurement, product demand and supplier choices. Campaigns without structural options can shift responsibility to employees. Pair awareness with policies, budgets, approved alternatives and leadership decisions that change the system.",
+    "evaluation_points": [
+      "Structural versus individual",
+      "Responsibility shifting",
+      "Policy and alternatives",
+      "Leadership action"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-157",
+    "role_slug": "green-computing-engineer",
+    "domain": "Organisational Change, Ethics and Rebound Effects",
+    "difficulty": "intermediate",
+    "question_type": "stakeholders",
+    "prompt": "How should conflicts between sustainability, accessibility, privacy, cost and speed be resolved?",
+    "preferred_answer": "Identify non-negotiable legal, safety and rights requirements, quantify remaining trade-offs, include affected stakeholders, compare alternatives and assign an authorised owner. Document assumptions and review outcomes. Do not optimise one metric by exporting harm to people who lack decision power.",
+    "evaluation_points": [
+      "Rights and minimums",
+      "Quantified alternatives",
+      "Stakeholder inclusion",
+      "No harm export"
+    ],
+    "resolution_title": "Recommendation on the Ethics of Artificial Intelligence",
+    "resolution_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-158",
+    "role_slug": "green-computing-engineer",
+    "domain": "Organisational Change, Ethics and Rebound Effects",
+    "difficulty": "advanced",
+    "question_type": "rebound",
+    "prompt": "How can organisations detect rebound after an efficiency programme?",
+    "preferred_answer": "Track absolute demand, service volume, unit cost, feature growth, user behaviour and infrastructure expansion before and after the change. Separate planned growth from efficiency-induced growth where possible through experiments or counterfactual analysis. Respond with product, pricing, quota or policy changes, not only another efficiency round.",
+    "evaluation_points": [
+      "Absolute-demand tracking",
+      "Behaviour/cost signals",
+      "Counterfactual thinking",
+      "Demand-side response"
+    ],
+    "resolution_title": "Key Questions on Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-159",
+    "role_slug": "green-computing-engineer",
+    "domain": "Organisational Change, Ethics and Rebound Effects",
+    "difficulty": "advanced",
+    "question_type": "sufficiency",
+    "prompt": "What would a sufficiency review ask before approving an IT initiative?",
+    "preferred_answer": "It asks whether the need is legitimate, whether an existing service can meet it, the minimum quality and scale, who benefits, what demand it may induce and what environmental budget it consumes. It compares smaller, slower, shared, repaired and no-build options. Approval should depend on value within limits, not novelty.",
+    "evaluation_points": [
+      "Need and alternatives",
+      "Minimum service level",
+      "Beneficiaries/induced demand",
+      "Environmental budget"
+    ],
+    "resolution_title": "UN Sustainable Development Goal 12",
+    "resolution_url": "https://sdgs.un.org/goals/goal12",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-160",
+    "role_slug": "green-computing-engineer",
+    "domain": "Organisational Change, Ethics and Rebound Effects",
+    "difficulty": "scenario",
+    "question_type": "critical-reflection",
+    "prompt": "A sustainability team is praised for lowering emissions per employee while the company\u2019s total digital footprint doubles. How should success be evaluated?",
+    "preferred_answer": "Acknowledge operational efficiency but assess absolute life-cycle impact, business growth, acquisitions, cloud and supplier boundaries and whether targets align with climate limits. Intensity can be informative, but it cannot substitute for total reduction. Reframe incentives so the team can challenge demand and strategy, not just optimise ratios.",
+    "evaluation_points": [
+      "Intensity and absolute",
+      "Boundary/growth analysis",
+      "Climate-aligned target",
+      "Mandate to challenge demand"
+    ],
+    "resolution_title": "GHG Protocol Corporate Standard",
+    "resolution_url": "https://ghgprotocol.org/corporate-standard",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-161",
+    "role_slug": "green-computing-engineer",
+    "domain": "Future of Green Computing and Critical Reflection",
+    "difficulty": "foundation",
+    "question_type": "future-strategy",
+    "prompt": "What is an IT carbon budget, and how is it different from a reduction target?",
+    "preferred_answer": "A carbon budget sets a cumulative or periodic emissions limit within which digital services must operate. A reduction target specifies a change from a baseline by a date. Budgets force prioritisation among competing workloads and expose growth assumptions; they need clear boundaries, allocation, uncertainty and exception governance.",
+    "evaluation_points": [
+      "Limit versus trajectory",
+      "Prioritisation role",
+      "Boundary/allocation",
+      "Exceptions and uncertainty"
+    ],
+    "resolution_title": "SBTi Corporate Net-Zero Standard",
+    "resolution_url": "https://sciencebasedtargets.org/net-zero",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-162",
+    "role_slug": "green-computing-engineer",
+    "domain": "Future of Green Computing and Critical Reflection",
+    "difficulty": "foundation",
+    "question_type": "future-constraints",
+    "prompt": "How could electricity availability become an application architecture constraint?",
+    "preferred_answer": "Grid connection delays, local capacity and hourly supply may limit when and where compute can grow. Applications may need queueing, flexible service levels, efficient models, local energy awareness and resource budgets. Architecture would treat power as a constrained dependency like latency or memory, not an unlimited utility.",
+    "evaluation_points": [
+      "Grid constraint",
+      "Flexible architecture",
+      "Efficiency/resource budgets",
+      "Power as dependency"
+    ],
+    "resolution_title": "Key Questions on Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-163",
+    "role_slug": "green-computing-engineer",
+    "domain": "Future of Green Computing and Critical Reflection",
+    "difficulty": "intermediate",
+    "question_type": "critical-reflection",
+    "prompt": "When is \u201cdo not compute\u201d the technically superior answer?",
+    "preferred_answer": "When computation adds little value, duplicates existing results, is used mainly to manipulate attention, or consumes disproportionate resources and risk. A technically mature team can remove demand, simplify a feature or choose a deterministic process. Optimisation should follow a justified need, not protect every idea from scrutiny.",
+    "evaluation_points": [
+      "Value proportionality",
+      "Duplicate/manipulative demand",
+      "Simpler/no-build option",
+      "Maturity beyond optimisation"
+    ],
+    "resolution_title": "UN Sustainable Development Goal 12",
+    "resolution_url": "https://sdgs.un.org/goals/goal12",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-164",
+    "role_slug": "green-computing-engineer",
+    "domain": "Future of Green Computing and Critical Reflection",
+    "difficulty": "intermediate",
+    "question_type": "autonomous-systems",
+    "prompt": "What governance is required for autonomous carbon-aware infrastructure?",
+    "preferred_answer": "Define authorised objectives and hard constraints, validated data sources, uncertainty thresholds, safe fallback, audit logs, human override, fairness review and responsibility for failures. Test interactions with markets, grids and service-level controls. The system should optimise verified net outcomes, not chase a single fluctuating signal.",
+    "evaluation_points": [
+      "Explicit constraints",
+      "Data and uncertainty",
+      "Audit/override/accountability",
+      "Net-outcome testing"
+    ],
+    "resolution_title": "Carbon Aware SDK",
+    "resolution_url": "https://carbon-aware-sdk.greensoftware.foundation/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-165",
+    "role_slug": "green-computing-engineer",
+    "domain": "Future of Green Computing and Critical Reflection",
+    "difficulty": "intermediate",
+    "question_type": "policy-futures",
+    "prompt": "How might digital product passports and data-centre minimum standards reshape IT roles?",
+    "preferred_answer": "Professionals may need to manage machine-readable lifecycle data, verify repair and material claims, connect product records to asset systems, and design workloads for rated facilities. New work will span engineering, procurement, audit and policy. Skills in data assurance and lifecycle reasoning will matter alongside technical optimisation.",
+    "evaluation_points": [
+      "Lifecycle-data operations",
+      "Verification",
+      "Cross-functional roles",
+      "Future skill mix"
+    ],
+    "resolution_title": "Ecodesign for Sustainable Products Regulation",
+    "resolution_url": "https://environment.ec.europa.eu/topics/circular-economy/ecodesign-sustainable-products-regulation_en",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-166",
+    "role_slug": "green-computing-engineer",
+    "domain": "Future of Green Computing and Critical Reflection",
+    "difficulty": "advanced",
+    "question_type": "workforce",
+    "prompt": "Which skills will distinguish future Sustainable IT professionals?",
+    "preferred_answer": "Systems thinking, carbon and energy accounting, software and cloud architecture, data-centre fundamentals, LCA, procurement, circularity, measurement uncertainty, policy interpretation, stakeholder facilitation and ethical judgement. The role requires challenging demand and translating evidence into decisions, not merely operating a carbon dashboard.",
+    "evaluation_points": [
+      "Technical and environmental breadth",
+      "Uncertainty/policy",
+      "Stakeholder skills",
+      "Ability to challenge demand"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-167",
+    "role_slug": "green-computing-engineer",
+    "domain": "Future of Green Computing and Critical Reflection",
+    "difficulty": "advanced",
+    "question_type": "critical-reflection",
+    "prompt": "Can Green IT unintentionally legitimise unlimited digital expansion?",
+    "preferred_answer": "Yes. Efficiency labels and renewable claims can reduce scrutiny of total demand, hardware growth, water, extraction and attention economy effects. Green IT is credible only when it reports absolute life-cycle impact, addresses rebound and allows the conclusion that some growth or features should not proceed.",
+    "evaluation_points": [
+      "Legitimisation risk",
+      "Absolute lifecycle impact",
+      "Rebound",
+      "Ability to refuse growth"
+    ],
+    "resolution_title": "Key Questions on Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "GCI-168",
+    "role_slug": "green-computing-engineer",
+    "domain": "Future of Green Computing and Critical Reflection",
+    "difficulty": "scenario",
+    "question_type": "board-decision",
+    "prompt": "By 2030, the board wants twice the AI output with no increase in life-cycle emissions. How would you test whether this is feasible and responsible?",
+    "preferred_answer": "Define valuable output and the full boundary; establish current training, inference, hardware, data-centre, water and supply-chain impact; model efficiency, grid and hardware scenarios; and test rebound. Set quality and social-value thresholds, absolute budgets and stop conditions. If credible pathways do not fit the budget, reduce demand or reject the growth target rather than rely on speculative future efficiency.",
+    "evaluation_points": [
+      "Full lifecycle baseline",
+      "Scenario and rebound analysis",
+      "Value/quality thresholds",
+      "Budget and stop conditions"
+    ],
+    "resolution_title": "Key Questions on Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-01",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Computing Foundations and Systems Thinking",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Sustainable system boundary and rebound review: Map a digital service from user demand through software, cloud, network, device, hardware supply and end-of-life. Identify one efficiency improvement and model a plausible rebound.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nSystem map, functional unit, baseline, absolute and intensity metrics, rebound scenario, owners and decision recommendation.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Green Software Foundation - Learn Green Software",
+    "resolution_url": "https://learn.greensoftware.foundation/introduction/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-02",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon Accounting and Environmental Metrics",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] IT carbon inventory and metric reconciliation: Build a small Scope 1, 2 and 3 inventory for an IT organisation and reconcile it with a per-service SCI-style metric.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nInventory workbook, boundary, factors, allocation, uncertainty, dual Scope 2 view and explanation of what the two metrics answer.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "GHG Protocol Corporate Standard",
+    "resolution_url": "https://ghgprotocol.org/corporate-standard",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-03",
+    "role_slug": "green-computing-engineer",
+    "domain": "Life Cycle Assessment and Embodied Impact",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Laptop life-extension LCA: Compare repair and two-year life extension with replacement using a simplified life-cycle assessment.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nFunctional unit, manufacturing and use assumptions, repair scenario, sensitivity analysis, break-even point and procurement decision.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "ISO 14040 Life Cycle Assessment Principles and Framework",
+    "resolution_url": "https://www.iso.org/standard/37456.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-04",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Hardware and Compute Architecture",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Compute architecture efficiency benchmark: Benchmark the same useful workload on two CPU or accelerator configurations and include embodied-amortisation assumptions.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nWorkload definition, quality parity, energy/runtime evidence, utilisation, hardware-life assumptions and recommendation.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "SPECpower_ssj2008 Benchmark",
+    "resolution_url": "https://www.spec.org/power_ssj2008/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-05",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data Centre Energy, Water and Facility Efficiency",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Data-centre energy-water review: Assess a sample data centre using PUE, WUE, utilisation, resilience and local grid/water context.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nMetric calculations, limitations, cooling and redundancy analysis, community risks and prioritised improvement plan.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "ITU-T L.1300 Best Practices for Green Data Centres",
+    "resolution_url": "https://www.itu.int/rec/T-REC-L.1300",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-06",
+    "role_slug": "green-computing-engineer",
+    "domain": "Cloud Sustainability and Workload Placement",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Cloud GreenOps optimisation plan: Analyse a supplied cloud inventory for idle, oversized, replicated and storage waste, then propose safe remediation.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nResource inventory, owners, cost and carbon estimates, risks, deletion/rightsizing plan, verification and rollback.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "FinOps Framework - Sustainability",
+    "resolution_url": "https://www.finops.org/framework/capabilities/sustainability/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-07",
+    "role_slug": "green-computing-engineer",
+    "domain": "Green Software Engineering and Software Carbon Intensity",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] SCI measurement for an API: Define and calculate a simplified SCI score for an API before and after an architecture change.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nBoundary, functional unit, energy and carbon factors, embodied allocation, uncertainty, calculation and interpretation.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Software Carbon Intensity Specification v1.1",
+    "resolution_url": "https://sci.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-08",
+    "role_slug": "green-computing-engineer",
+    "domain": "Energy Profiling, Telemetry and Sustainability Observability",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Sustainability observability pipeline: Instrument a small workload with resource and energy proxies and publish an operational dashboard.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nTelemetry design, collection configuration, allocation, freshness and uncertainty fields, dashboard and validation notes.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Impact Framework",
+    "resolution_url": "https://if.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-09",
+    "role_slug": "green-computing-engineer",
+    "domain": "Carbon-Aware Computing and Scheduling",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Carbon-aware batch scheduler: Implement or simulate a scheduler that chooses a time window using forecast carbon intensity and service constraints.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nScheduler logic, data-source validation, deadline and fallback, before/after estimate, audit record and fairness review.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Carbon Aware SDK",
+    "resolution_url": "https://carbon-aware-sdk.greensoftware.foundation/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-10",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Web, Frontend and Digital Experience",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Sustainable web redesign: Audit and improve a web page for payload, JavaScript, media, caching, accessibility and user control.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nBefore/after performance evidence, transfer and CPU measures, accessibility checks, carbon-model caveats and design rationale.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Web Sustainability Guidelines",
+    "resolution_url": "https://w3c.github.io/sustyweb/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-11",
+    "role_slug": "green-computing-engineer",
+    "domain": "Data, Storage and Information Lifecycle",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Data lifecycle minimisation exercise: Create a lifecycle policy for application data, logs, replicas and backups, then remove a redundant dataset safely.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nData map, purpose and owner, retention schedule, deletion verification, recovery test and avoided storage estimate.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "UN Sustainable Development Goal 12",
+    "resolution_url": "https://sdgs.un.org/goals/goal12",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-12",
+    "role_slug": "green-computing-engineer",
+    "domain": "Networks, Edge Computing and Telecommunications",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Network and edge placement study: Compare central, CDN and edge delivery for a sample workload under three demand geographies.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nArchitecture diagrams, transfer and device assumptions, embodied edge fleet scenario, latency and sustainability decision.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "ITU-T L.1300 Best Practices for Green Data Centres",
+    "resolution_url": "https://www.itu.int/rec/T-REC-L.1300",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-13",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable AI and Machine Learning",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Sustainable AI model comparison: Compare two models and a non-generative baseline for the same task using quality, latency, energy and resource measures.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nEvaluation dataset, quality and safety results, CodeCarbon or equivalent evidence, inference projection and minimum-capable-system decision.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "CodeCarbon",
+    "resolution_url": "https://codecarbon.io/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-14",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable DevOps, CI/CD and Platform Engineering",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Low-impact CI/CD pipeline: Optimise a repository pipeline using change-aware tests, caching, right-sized runners and environment expiry.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nPipeline files, baseline and final runner time, test-risk analysis, artefact retention and escaped-defect safeguards.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Green Software Patterns",
+    "resolution_url": "https://patterns.greensoftware.foundation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-15",
+    "role_slug": "green-computing-engineer",
+    "domain": "IT Asset Lifecycle and Sustainable Procurement",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Sustainable procurement scorecard: Create and apply a scorecard for a laptop or server tender covering need, lifecycle, repair, energy, supplier and disposition.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nWeighted criteria, bidder evidence, certification validation, sensitivity test, total-life decision and contract clauses.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "ISO 20400 Sustainable Procurement Guidance",
+    "resolution_url": "https://www.iso.org/standard/63026.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-16",
+    "role_slug": "green-computing-engineer",
+    "domain": "Circular IT, Repair, Reuse and E-waste",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Circular IT disposition workflow: Design a repair, redeploy, donate, harvest and recycle decision workflow for 100 retired devices.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nAsset decisions, sanitisation method, chain of custody, vendor evidence, reuse rate, downstream route and justice considerations.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST SP 800-88 Rev. 2 Media Sanitization",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/88/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-17",
+    "role_slug": "green-computing-engineer",
+    "domain": "Sustainable Security, Privacy and Resilience",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Sustainable security telemetry plan: Reduce a security logging environment while preserving detection and forensic requirements.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nThreat-led source selection, sampling and retention, protected evidence, storage estimate, investigation tests and residual risk.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST SP 800-92 Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-18",
+    "role_slug": "green-computing-engineer",
+    "domain": "Governance, Standards, Policy and Sustainability Reporting",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Green IT governance and assurance pack: Draft a sustainable IT policy, target, control set and audit test for a mid-sized organisation.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nPolicy, roles, absolute and intensity target, exception process, control evidence, audit sample and claims guidance.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "ISO 14001:2026 Environmental Management Systems",
+    "resolution_url": "https://committee.iso.org/standard/14001",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-19",
+    "role_slug": "green-computing-engineer",
+    "domain": "GreenOps, FinOps and Business Value",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] GreenOps portfolio business case: Prioritise ten sustainability opportunities using absolute impact, cost, effort, risk and data confidence.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nScoring model, assumptions, top-three cases, carbon-cost conflicts, owners, milestones and outcome measures.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "FinOps Framework - Sustainability",
+    "resolution_url": "https://www.finops.org/framework/capabilities/sustainability/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-20",
+    "role_slug": "green-computing-engineer",
+    "domain": "Organisational Change, Ethics and Rebound Effects",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Rebound and sufficiency workshop: Review a proposed AI or digital-engagement feature for need, induced demand and environmental justice.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nNo-build baseline, stakeholder map, demand scenarios, affected groups, alternatives, limits and go/conditional-go/no-go decision.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Recommendation on the Ethics of Artificial Intelligence",
+    "resolution_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-21",
+    "role_slug": "green-computing-engineer",
+    "domain": "Future of Green Computing and Critical Reflection",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] 2030 constrained-compute strategy tabletop: Run a board tabletop in which AI demand doubles while grid, water and life-cycle carbon budgets remain fixed.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nScenario model, service priorities, carbon budget, architecture options, fairness rules, stop conditions, governance and workforce plan.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Key Questions on Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
   }
 ];
