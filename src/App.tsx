@@ -671,8 +671,9 @@ export default function App() {
     try {
       const saved = localStorage.getItem('mapit_theme');
       if (saved === 'light' || saved === 'dark') return saved;
+      if (typeof window !== 'undefined' && window.innerWidth < 768) return 'light';
     } catch (e) {}
-    return 'dark'; // Keep dark mode as default for the whole webpage
+    return 'dark';
   });
 
   const toggleTheme = () => {

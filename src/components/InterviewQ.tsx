@@ -745,7 +745,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
           
           {/* Role Categories Panel */}
           <div className="border-2 border-zinc-800 bg-zinc-950 p-4">
-            <h2 className="text-sm font-black uppercase text-white tracking-wider flex items-center gap-2 mb-3 border-b border-zinc-800 pb-2">
+            <h2 className="text-sm font-black uppercase text-white tracking-wider flex items-center gap-2 mb-3 border-b border-slate-200 md:border-zinc-800 pb-2">
               <Grid className="w-4 h-4 text-white" />
               Role Categories
             </h2>
@@ -820,7 +820,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                     {/* SUB-DOMAINS HOVER FLYOUT: Rendered ONLY when cursor hovers over the domain card AND count > 0 */}
                     {hoveredRole === slug && count > 0 && slugDomains.length > 0 && (
                       <div className={`absolute left-[calc(100%+0.75rem)] top-0 z-50 w-80 border-2 ${palette.activeBorder} bg-zinc-950 p-4 space-y-3 ${palette.activeShadow}`}>
-                        <div className="border-b border-zinc-800 pb-2 flex items-center justify-between">
+                        <div className="border-b border-slate-200 md:border-zinc-800 pb-2 flex items-center justify-between">
                           <div className="flex items-center gap-2">
                             <Layers className="w-4 h-4 text-white" />
                             <span className="text-xs font-bold text-white uppercase tracking-wider font-mono">Sub-Domain Filters</span>
@@ -901,7 +901,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
           
           {/* Sub-Filters Ribbon: Question Type & Difficulty */}
           <div className="border-2 border-zinc-800 bg-zinc-950 p-4 space-y-3">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-zinc-800 pb-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 md:border-zinc-800 pb-3">
               <div className="flex items-center gap-2 overflow-x-auto">
                 <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider shrink-0">Difficulty:</span>
                 {['all', 'foundation', 'intermediate', 'advanced', 'scenario'].map((diff) => {
@@ -1003,10 +1003,10 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                 return (
                   <article
                     key={item.id}
-                    className={`border-2 transition-all p-5 text-left relative overflow-hidden ${
+                    className={`border-2 transition-all p-4 sm:p-5 text-left relative overflow-hidden ${
                       isPractical
-                        ? `bg-zinc-950/90 ${itemPalette.activeBorder} ${itemPalette.activeShadow}`
-                        : `bg-zinc-950 ${itemPalette.hoverBorder} border-zinc-800`
+                        ? `bg-white md:bg-zinc-950/90 ${itemPalette.activeBorder} ${itemPalette.activeShadow}`
+                        : `bg-white md:bg-zinc-950 ${itemPalette.hoverBorder} border-slate-300 md:border-zinc-800`
                     }`}
                   >
                     {/* Left Colored Accent Side-Line on Question Card */}
@@ -1014,7 +1014,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
 
                     <div className="pl-2">
                       {/* Item Top Bar */}
-                      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-zinc-800/80 pb-3 mb-3">
+                      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 md:border-zinc-800/80 pb-3 mb-3">
                         <div className="flex flex-wrap items-center gap-2">
                           <span className={`font-mono text-xs font-black px-2 py-0.5 uppercase ${itemPalette.badgeActive}`}>
                             {item.id}
@@ -1062,7 +1062,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                         <span className={`text-[10px] uppercase tracking-widest block font-bold mb-1 ${itemPalette.accentText}`}>
                           {item.domain}
                         </span>
-                        <h3 className="text-base font-bold text-white leading-snug font-sans">
+                        <h3 className="text-base font-bold text-slate-900 md:text-white leading-snug font-sans">
                           {item.prompt}
                         </h3>
                       </div>
@@ -1177,16 +1177,16 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
               exit={{ y: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-zinc-950 border-t-2 border-white p-5 rounded-t-2xl max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl"
+              className="bg-white md:bg-zinc-950 border-t-2 border-slate-900 p-5 rounded-t-2xl max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl text-slate-900 md:text-zinc-200"
             >
               <div className="w-12 h-1.5 bg-zinc-700 rounded-full mx-auto mb-2 opacity-60" />
 
-              <div className="flex items-start justify-between border-b border-zinc-800 pb-3">
+              <div className="flex items-start justify-between border-b border-slate-200 md:border-zinc-800 pb-3">
                 <div>
                   <span className="text-[10px] font-mono font-bold text-white uppercase block mb-1">
                     {activeMobileDrawerItem.domain} • {activeMobileDrawerItem.id}
                   </span>
-                  <h3 className="text-sm font-bold text-white leading-snug">
+                  <h3 className="text-sm font-bold text-slate-900 md:text-white leading-snug">
                     {activeMobileDrawerItem.prompt}
                   </h3>
                 </div>
@@ -1203,7 +1203,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                   <span className="text-[10px] font-mono font-bold text-white uppercase block mb-1">
                     PREFERRED ANSWER GUIDE
                   </span>
-                  <p className="text-zinc-200 leading-relaxed font-sans">
+                  <p className="text-slate-800 md:text-zinc-200 leading-relaxed font-sans">
                     {activeMobileDrawerItem.preferred_answer}
                   </p>
                 </div>

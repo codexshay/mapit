@@ -11,7 +11,9 @@ import {
   Bookmark,
   Check,
   Compass,
-  XCircle
+  XCircle,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
 import { TOP_50_COMPANIES, CompanyInfo } from '../data/topCompaniesData';
 
@@ -52,7 +54,7 @@ const JOB_PORTALS = [
   },
   {
     name: 'Instahyre (India Premium Tech)',
-    getSearchUrl: (role: string) => `https://www.instahyre.com/search/jobs/?designation=${encodeURIComponent(role)}`,
+    getSearchUrl: (role: string) => `https://www.instahyre.com/search-jobs/?query=${encodeURIComponent(role)}`,
     icon: (
       <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
         <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.8l7 3.5v7.4l-7 3.5-7-3.5V8.3l7-3.5zM11 9v6h2V9h-2z"/>
@@ -158,6 +160,13 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
   const [selectedRoleTitle, setSelectedRoleTitle] = useState<string>('Site Reliability Engineer');
   const [customRoleInput, setCustomRoleInput] = useState<string>('');
   const [companySearchQuery, setCompanySearchQuery] = useState<string>('');
+  const [selectedLetter, setSelectedLetter] = useState<string>('ALL');
+  const [mobilePage, setMobilePage] = useState<number>(1);
+  const [expandedCompanies, setExpandedCompanies] = useState<Record<string, boolean>>({});
+
+  const toggleCompanyExpand = (compName: string) => {
+    setExpandedCompanies(prev => ({ ...prev, [compName]: !prev[compName] }));
+  };
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [localBookmarkedIds, setLocalBookmarkedIds] = useState<Record<string, boolean>>({});
 
@@ -176,7 +185,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
     return ['All', ...Array.from(set).sort()];
   }, []);
 
-  // Filtered companies based on search query & category
+  // Filtered companies based on search query, category & letter index
   const filteredCompanies = useMemo(() => {
     return TOP_50_COMPANIES.filter(comp => {
       const matchesSearch = companySearchQuery === '' || 
@@ -185,9 +194,19 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
       
       const matchesCategory = selectedCategory === 'All' || comp.category === selectedCategory;
 
-      return matchesSearch && matchesCategory;
+      const firstChar = comp.name.charAt(0).toUpperCase();
+      const matchesLetter = selectedLetter === 'ALL' || firstChar === selectedLetter;
+
+      return matchesSearch && matchesCategory && matchesLetter;
     });
-  }, [companySearchQuery, selectedCategory]);
+  }, [companySearchQuery, selectedCategory, selectedLetter]);
+
+  const itemsPerPageMobile = 10;
+  const totalMobilePages = Math.ceil(filteredCompanies.length / itemsPerPageMobile) || 1;
+  const paginatedMobileCompanies = useMemo(() => {
+    const start = (mobilePage - 1) * itemsPerPageMobile;
+    return filteredCompanies.slice(start, start + itemsPerPageMobile);
+  }, [filteredCompanies, mobilePage]);
 
   const handleBookmarkToggle = (comp: CompanyInfo) => {
     if (toggleBookmark) {
@@ -382,29 +401,199 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
             </span>
           </div>
         </div>
+
+        {/* Alphabetical Letter Index Bar for Instant Predictable Searching */}
+        <div className="mt-4 pt-3 border-t border-zinc-800">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-xs font-mono font-bold text-zinc-300 uppercase tracking-wider">
+              Alphabetical Company Index:
+            </span>
+            {selectedLetter !== 'ALL' && (
+              <button
+                type="button"
+                onClick={() => { setSelectedLetter('ALL'); setMobilePage(1); }}
+                className="text-[10px] text-yellow-400 hover:text-yellow-300 uppercase font-bold flex items-center gap-1 cursor-pointer font-mono"
+              >
+                Show All Companies
+              </button>
+            )}
+          </div>
+
+          <div className="flex overflow-x-auto space-x-1.5 scrollbar-none pb-1">
+            {['ALL', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')].map(letter => (
+              <button
+                key={letter}
+                type="button"
+                onClick={() => { setSelectedLetter(letter); setMobilePage(1); }}
+                className={`px-2.5 py-1 text-xs font-mono font-bold border transition-all cursor-pointer ${
+                  selectedLetter === letter
+                    ? 'bg-white text-black border-white shadow-xs'
+                    : 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:text-white hover:border-zinc-600'
+                }`}
+              >
+                {letter}
+              </button>
+            ))}
+          </div>
+        </div>
       </header>
 
-      {/* Main Companies Grid */}
+      {/* Main Companies Section */}
       <main className="max-w-7xl mx-auto">
         {filteredCompanies.length === 0 ? (
-          <div className="text-center py-16 bg-zinc-950 border-2 border-zinc-800 rounded-none p-8">
-            <Building2 className="w-12 h-12 text-zinc-500 mx-auto mb-4 animate-bounce" />
-            <h2 className="text-xl font-bold text-zinc-200 mb-2 uppercase">No matching companies found</h2>
-            <p className="text-zinc-400 text-sm max-w-md mx-auto mb-6 font-sans">
+          <div className="text-center py-16 bg-white md:bg-zinc-950 border-2 border-slate-300 md:border-zinc-800 rounded-none p-8">
+            <Building2 className="w-12 h-12 text-slate-400 md:text-zinc-500 mx-auto mb-4 animate-bounce" />
+            <h2 className="text-xl font-bold text-slate-900 md:text-zinc-200 mb-2 uppercase">No matching companies found</h2>
+            <p className="text-slate-600 md:text-zinc-400 text-sm max-w-md mx-auto mb-6 font-sans">
               Try adjusting your search query or clearing category filters to view all {TOP_50_COMPANIES.length} technology employers.
             </p>
             <button
               onClick={() => {
                 setCompanySearchQuery('');
                 setSelectedCategory('All');
+                setSelectedLetter('ALL');
+                setMobilePage(1);
               }}
-              className="px-4 py-2 bg-white text-black border border-white text-xs font-bold uppercase hover:bg-zinc-200 transition cursor-pointer"
+              className="px-4 py-2 bg-slate-900 text-white md:bg-white md:text-black border border-slate-900 md:border-white text-xs font-bold uppercase transition cursor-pointer"
             >
               Reset Filters
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div>
+            {/* MOBILE ACCORDION VIEW (Company Name ONLY on Label, Light Theme, Paginated) */}
+            <div className="block md:hidden space-y-3 mb-6">
+              {paginatedMobileCompanies.map((comp) => {
+                const bookmarked = checkIsBookmarked(comp.name);
+                const isExpanded = !!expandedCompanies[comp.name];
+
+                const careersUrlWithKeyword = activeRoleKeyword
+                  ? `${comp.careerUrl}${comp.careerUrl.includes('?') ? '&' : '?'}q=${encodeURIComponent(activeRoleKeyword)}`
+                  : comp.careerUrl;
+
+                const linkedinCompanyJobsUrl = comp.jobsSectionLink || comp.companyChannelLink || `https://www.linkedin.com/company/${comp.name.toLowerCase().replace(/[^a-z0-9]/g, '')}/jobs/`;
+
+                const linkedinSearchUrlWithRole = activeRoleKeyword
+                  ? `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(comp.name + " " + activeRoleKeyword)}`
+                  : comp.indiaJobsSearchLink || comp.companyChannelLink || `https://www.linkedin.com/company/${comp.name.toLowerCase().replace(/[^a-z0-9]/g, '')}/`;
+
+                return (
+                  <div
+                    key={comp.name}
+                    className="bg-white border-2 border-slate-300 text-slate-900 p-3.5 text-left relative shadow-xs"
+                  >
+                    {/* Collapsed Header: Company Name ONLY */}
+                    <div className="flex items-center justify-between gap-2">
+                      <button
+                        type="button"
+                        onClick={() => toggleCompanyExpand(comp.name)}
+                        className="flex-1 text-left flex items-center justify-between font-black text-base text-slate-900 tracking-tight cursor-pointer py-1"
+                      >
+                        <span className="flex items-center gap-2">
+                          <Building2 className="w-4 h-4 text-slate-700" />
+                          <span>{comp.name}</span>
+                        </span>
+                        {isExpanded ? <ChevronUp className="w-4 h-4 text-slate-600" /> : <ChevronDown className="w-4 h-4 text-slate-600" />}
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={() => handleBookmarkToggle(comp)}
+                        title={bookmarked ? "Remove Bookmark" : "Save Bookmark"}
+                        className={`p-1.5 border cursor-pointer ${
+                          bookmarked
+                            ? 'bg-slate-900 text-white border-slate-900'
+                            : 'bg-slate-100 text-slate-700 border-slate-300 hover:bg-slate-200'
+                        }`}
+                      >
+                        <Bookmark className={`w-3.5 h-3.5 ${bookmarked ? 'fill-current' : ''}`} />
+                      </button>
+                    </div>
+
+                    {/* Expanded Content Drawer */}
+                    {isExpanded && (
+                      <div className="mt-3 pt-3 border-t border-slate-200 space-y-3 font-sans text-xs">
+                        <div className="flex items-center justify-between text-[11px] text-slate-600 font-mono">
+                          <span>Category: <strong className="text-slate-900">{comp.category || 'Technology'}</strong></span>
+                          <span>Target Role: <strong className="text-amber-600">{activeRoleKeyword || 'All Roles'}</strong></span>
+                        </div>
+
+                        <div className="space-y-2 border-t border-slate-200 pt-3 font-mono text-xs">
+                          <a
+                            href={careersUrlWithKeyword}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full py-2 px-3 border border-slate-300 bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-900 font-bold flex items-center justify-between uppercase transition-all cursor-pointer"
+                          >
+                            <span className="flex items-center gap-2">
+                              <Building2 className="w-4 h-4 text-slate-700" />
+                              <span>Official Careers Portal</span>
+                            </span>
+                            <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                          </a>
+
+                          <a
+                            href={linkedinCompanyJobsUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full py-2 px-3 border border-slate-300 bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-900 font-bold flex items-center justify-between uppercase transition-all cursor-pointer"
+                          >
+                            <span className="flex items-center gap-2">
+                              <Briefcase className="w-4 h-4 text-slate-700" />
+                              <span>LinkedIn Company Jobs</span>
+                            </span>
+                            <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                          </a>
+
+                          <a
+                            href={linkedinSearchUrlWithRole}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full py-2 px-3 border border-slate-300 bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-900 font-bold flex items-center justify-between uppercase transition-all cursor-pointer"
+                          >
+                            <span className="flex items-center gap-2">
+                              <Users className="w-4 h-4 text-slate-700" />
+                              <span>Search Referrals / Jobs</span>
+                            </span>
+                            <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                          </a>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+
+              {/* Mobile Pagination Bar */}
+              {totalMobilePages > 1 && (
+                <div className="border-2 border-slate-300 bg-white p-3 flex items-center justify-between text-xs font-mono text-slate-900 shadow-xs">
+                  <button
+                    type="button"
+                    disabled={mobilePage === 1}
+                    onClick={() => { setMobilePage(p => Math.max(1, p - 1)); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                    className="px-3 py-1.5 border border-slate-300 bg-slate-100 text-slate-900 disabled:opacity-40 font-bold uppercase cursor-pointer"
+                  >
+                    ◀ Prev Page
+                  </button>
+
+                  <span className="font-bold">
+                    Page {mobilePage} of {totalMobilePages}
+                  </span>
+
+                  <button
+                    type="button"
+                    disabled={mobilePage >= totalMobilePages}
+                    onClick={() => { setMobilePage(p => p + 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                    className="px-3 py-1.5 border border-slate-300 bg-slate-100 text-slate-900 disabled:opacity-40 font-bold uppercase cursor-pointer"
+                  >
+                    Next Page ▶
+                  </button>
+                </div>
+              )}
+            </div>
+
+            {/* DESKTOP GRID VIEW (Original Dark Grid View 100% Untouched) */}
+            <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredCompanies.map((comp) => {
               const bookmarked = checkIsBookmarked(comp.name);
               
@@ -505,6 +694,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
                 </article>
               );
             })}
+          </div>
           </div>
         )}
       </main>
