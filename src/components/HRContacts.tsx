@@ -4157,7 +4157,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
             "category": "Recruiter",
             "wheelchairAccessible": true,
             "phone": "(877) 731-5788",
-            "website": "http://www.csrecruiting.com/",
+            "website": "https://www.csrecruiting.com/industries-served/information-technology-services-recruitment-made-easy/",
             "mapsLink": "https://www.google.com/maps/search/?api=1&query=Cornerstone%20Recruiting&query_place_id=ChIJpQczXcndx4kR5UftliXiab4"
         }
     ],
