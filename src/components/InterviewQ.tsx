@@ -69,6 +69,106 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
     label: 'Cloud Computing & Architecture',
     icon: '☁️',
     description: 'Cloud Architecture, AWS/Azure/GCP, FinOps, Serverless, Cloud Security & Multi-Cloud'
+  },
+  'it-support': {
+    label: 'IT Support, Service Desk & End-User Computing',
+    icon: '🖥️',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'systems-infra': {
+    label: 'System Administration & Infrastructure',
+    icon: '🖥️',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'networking': {
+    label: 'Networking & NOC Operations',
+    icon: '🌐',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'qa-testing': {
+    label: 'QA, Software Testing & Quality Engineering',
+    icon: '🧪',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'data-analytics': {
+    label: 'Data, Analytics & Business Intelligence',
+    icon: '📊',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'db-admin': {
+    label: 'Database Administration (DBA)',
+    icon: '🛢️',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'it-ops-itsm': {
+    label: 'IT Operations, ITSM & Process Management',
+    icon: '📋',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'erp-crm': {
+    label: 'ERP, CRM & Business Application Roles',
+    icon: '🏢',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'product-mgmt': {
+    label: 'Product, Project & Program Management',
+    icon: '🎯',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'business-analysis': {
+    label: 'Business Analysis & Tech Consulting',
+    icon: '📈',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'uiux-design': {
+    label: 'UI/UX, Product Design & Creative Technology',
+    icon: '🎨',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'web-cms': {
+    label: 'Web, CMS & Digital Technology',
+    icon: '🌐',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'automation-rpa': {
+    label: 'Automation, RPA & Low-Code / No-Code',
+    icon: '🤖',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'tech-writing': {
+    label: 'Technical Writing & Knowledge Management',
+    icon: '📝',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'sales-customer-success': {
+    label: 'Sales Engineering & Customer Success Technology',
+    icon: '💼',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'hardware-iot': {
+    label: 'Hardware, Embedded Systems & IoT Engineering',
+    icon: '🔌',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'telecom-voice': {
+    label: 'Telecom, Voice & Collaboration',
+    icon: '📞',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'governance-audit': {
+    label: 'Governance, Risk, Compliance (GRC) & IT Audit',
+    icon: '🛡️',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'architecture': {
+    label: 'Technology Architecture Track',
+    icon: '🏛️',
+    description: 'Building up interview question bank for this domain...'
+  },
+  'executive': {
+    label: 'Executive & C-Level Tech Leadership',
+    icon: '👑',
+    description: 'Building up interview question bank for this domain...'
   }
 };
 
@@ -325,9 +425,11 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                             <span>{meta.label}</span>
                           </span>
                           <span className={`text-[10px] font-mono font-bold px-2 py-0.5 border ${
-                            isSelected ? 'bg-white text-black border-white' : 'bg-zinc-900 text-zinc-300 border-zinc-700'
+                            isSelected
+                              ? count === 0 ? 'bg-amber-400 text-black border-amber-400 font-bold' : 'bg-white text-black border-white'
+                              : count === 0 ? 'bg-amber-500/10 text-amber-400 border-amber-500/40' : 'bg-zinc-900 text-zinc-300 border-zinc-700'
                           }`}>
-                            {count} {count === 1 ? 'item' : 'items'}
+                            {count === 0 ? 'Building up' : `${count} ${count === 1 ? 'item' : 'items'}`}
                           </span>
                         </div>
 
@@ -474,11 +576,16 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
 
           {/* Question Cards List */}
           {filteredQuestions.length === 0 ? (
-            <div className="text-center py-16 bg-zinc-950 border-2 border-zinc-800 p-8">
-              <HelpCircle className="w-12 h-12 text-zinc-600 mx-auto mb-4" />
-              <h3 className="text-lg font-bold text-zinc-200 mb-2 uppercase">No matching questions found</h3>
-              <p className="text-zinc-400 text-xs max-w-md mx-auto font-sans mb-4">
-                No items match your selected sub-domain or difficulty filters. Try clearing sub-domains or adjusting your search keyword.
+            <div className="text-center py-16 bg-zinc-950 border-2 border-amber-500/40 p-8 shadow-[4px_4px_0px_0px_rgba(245,158,11,0.2)]">
+              <Sparkles className="w-12 h-12 text-amber-400 mx-auto mb-4 animate-pulse" />
+              <span className="inline-block px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/30 text-xs font-mono font-bold uppercase mb-3">
+                ⚡ Building Up Question Bank
+              </span>
+              <h3 className="text-xl font-black text-white mb-2 uppercase tracking-wide">
+                {ROLE_CATEGORY_METADATA[selectedRole]?.label || selectedRole}
+              </h3>
+              <p className="text-zinc-400 text-xs max-w-md mx-auto font-sans mb-6 leading-relaxed">
+                Our engineering team is actively curating and verifying source-linked interview questions, preferred answers, and hands-on assessment labs for <strong className="text-white">{ROLE_CATEGORY_METADATA[selectedRole]?.label || 'this domain'}</strong>.
               </p>
               <button
                 onClick={() => {
@@ -491,7 +598,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                 }}
                 className="px-4 py-2 bg-white text-black border border-white text-xs font-bold uppercase hover:bg-zinc-200 transition cursor-pointer"
               >
-                Reset All Filters
+                Explore Active Question Banks
               </button>
             </div>
           ) : (
