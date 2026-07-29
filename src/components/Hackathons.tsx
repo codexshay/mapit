@@ -1419,7 +1419,37 @@ export default function Hackathons({
       </div>
 
       {/* PROMINENT UNSTOP INDIA & GLOBAL CATEGORY STREAM TABS */}
-      <div className="flex flex-wrap items-center gap-2 font-mono">
+      {/* MOBILE STREAMS SELECT DROPDOWN */}
+      <div className="block md:hidden w-full font-mono mb-2">
+        <label className="text-[10px] font-bold uppercase text-slate-500 block mb-1">
+          Select Stream Category:
+        </label>
+        <select
+          value={categoryFilter}
+          onChange={(e) => setCategoryFilter(e.target.value)}
+          className="w-full p-2.5 bg-white text-slate-900 border-2 border-slate-300 font-bold text-xs uppercase focus:outline-none cursor-pointer shadow-xs"
+        >
+          {[
+            { id: 'All', label: 'All Streams 🌐' },
+            { id: 'Hackathon', label: 'Hackathons 🏆' },
+            { id: 'Quiz', label: 'Competitions & Quizzes ⚔️' },
+            { id: 'College Fest', label: 'College Fests & Cultural 🚀' },
+            { id: 'Scholarship', label: 'Scholarships & Grants 🎓' },
+            { id: 'Workshop', label: 'Workshops & Masterclasses 🛠️' },
+            { id: 'Conference', label: 'Conferences & Summits 🎙️' },
+            { id: 'Hiring Challenge', label: 'Hiring Challenges 💼' },
+            { id: 'Bootcamp', label: 'Bootcamps ⚡' },
+            { id: 'CFP', label: 'CFP Trackers 📝' },
+          ].map(cat => (
+            <option key={cat.id} value={cat.id}>
+              {cat.label}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* DESKTOP STREAM BUTTON TABS */}
+      <div className="hidden md:flex flex-wrap items-center gap-2 font-mono">
         {[
           { id: 'All', label: 'All Streams', icon: '🌐' },
           { id: 'Hackathon', label: 'Hackathons', icon: '🏆' },
@@ -1779,36 +1809,6 @@ export default function Hackathons({
             )}
           </div>
         )}
-      </div>
-
-      {/* 5. CODESPOT ROADMAP BROADCAST FEED */}
-      <div className="mt-6 bg-[#070b13] border-2 border-[#121c38] p-4.5 font-mono text-xs shadow-[4px_4px_0px_0px_#1e2e54]">
-        <div className="flex items-center justify-between border-b border-[#121c38] pb-2.5 mb-3.5">
-          <span className="text-white font-bold uppercase tracking-wider flex items-center gap-2">
-            <Radio className="w-4 h-4 text-[#10b981] animate-pulse" /> INTEGRATED BUILD & METEORIC BROADCAST
-          </span>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-slate-300 leading-normal text-[11px]">
-          <div className="p-3 bg-[#0a0f1d] border border-[#121c38] rounded-none">
-            <span className="text-slate-500 text-[10px] block uppercase mb-1">Portfolio Creation</span>
-            <p className="font-sans font-light">
-              Build robust, end-to-end applications under pressure to instantly enrich your visual portfolio and GitHub statistics.
-            </p>
-          </div>
-          <div className="p-3 bg-[#0a0f1d] border border-[#121c38] rounded-none">
-            <span className="text-slate-500 text-[10px] block uppercase mb-1">Enterprise Bounties & Badges</span>
-            <p className="font-sans font-light">
-              Partnering sponsors seek developer squads using their cloud APIs & data schemas, giving out cloud credit keys and verified certifications.
-            </p>
-          </div>
-          <div className="p-3 bg-[#0a0f1d] border border-[#121c38] rounded-none">
-            <span className="text-slate-500 text-[10px] block uppercase mb-1">Ecosystem Placements & MOMs</span>
-            <p className="font-sans font-light">
-              National challenges and sustainable fests promote direct placement lines. Check concluded event resources for project minutes (MOMs).
-            </p>
-          </div>
-        </div>
       </div>
 
     </div>

@@ -1161,38 +1161,37 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
         </main>
       </div>
 
-      {/* Mobile Bottom-Sheet Modal Drawer */}
+      {/* Mobile Centered Screen Modal Drawer */}
       <AnimatePresence>
         {activeMobileDrawerItem && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-xs flex flex-col justify-end md:hidden"
+            className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-xs flex items-center justify-center p-4 md:hidden"
             onClick={() => setActiveMobileDrawerItem(null)}
           >
             <motion.div
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              exit={{ y: "100%" }}
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-white md:bg-zinc-950 border-t-2 border-slate-900 p-5 rounded-t-2xl max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl text-slate-900 md:text-zinc-200"
+              className="w-full max-w-lg max-h-[85vh] bg-white border-2 border-slate-900 text-slate-900 p-5 rounded-none shadow-2xl flex flex-col justify-between overflow-y-auto"
             >
-              <div className="w-12 h-1.5 bg-zinc-700 rounded-full mx-auto mb-2 opacity-60" />
-
-              <div className="flex items-start justify-between border-b border-slate-200 md:border-zinc-800 pb-3">
+              <div className="flex items-start justify-between border-b-2 border-slate-200 pb-3 mb-3">
                 <div>
-                  <span className="text-[10px] font-mono font-bold text-white uppercase block mb-1">
+                  <span className="text-[10px] font-mono font-bold text-cyan-600 uppercase block mb-1">
                     {activeMobileDrawerItem.domain} • {activeMobileDrawerItem.id}
                   </span>
-                  <h3 className="text-sm font-bold text-slate-900 md:text-white leading-snug">
+                  <h3 className="text-base font-bold text-slate-900 leading-snug font-sans">
                     {activeMobileDrawerItem.prompt}
                   </h3>
                 </div>
                 <button
+                  type="button"
                   onClick={() => setActiveMobileDrawerItem(null)}
-                  className="p-1.5 border border-zinc-700 bg-zinc-900 text-zinc-300 text-xs font-bold"
+                  className="p-1.5 border border-slate-300 bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-900 text-xs font-bold shrink-0 cursor-pointer"
                 >
                   ✕
                 </button>
@@ -1200,23 +1199,23 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
 
               <div className="space-y-4 text-xs font-sans">
                 <div>
-                  <span className="text-[10px] font-mono font-bold text-white uppercase block mb-1">
+                  <span className="text-[10px] font-mono font-bold text-slate-500 uppercase block mb-1">
                     PREFERRED ANSWER GUIDE
                   </span>
-                  <p className="text-slate-800 md:text-zinc-200 leading-relaxed font-sans">
+                  <p className="text-slate-800 leading-relaxed font-sans">
                     {activeMobileDrawerItem.preferred_answer}
                   </p>
                 </div>
 
                 {activeMobileDrawerItem.evaluation_points && activeMobileDrawerItem.evaluation_points.length > 0 && (
-                  <div className="pt-3 border-t border-zinc-800">
-                    <span className="text-[10px] font-mono font-bold text-white uppercase block mb-2">
+                  <div className="pt-3 border-t border-slate-200">
+                    <span className="text-[10px] font-mono font-bold text-slate-500 uppercase block mb-2">
                       EVALUATOR CHECKPOINTS &amp; RUBRIC
                     </span>
-                    <ul className="grid grid-cols-1 gap-2 text-zinc-300 font-mono text-[11px]">
+                    <ul className="grid grid-cols-1 gap-2 text-slate-800 font-mono text-[11px]">
                       {activeMobileDrawerItem.evaluation_points.map((pt, idx) => (
-                        <li key={idx} className="flex items-start gap-2 bg-black p-2 border border-zinc-800">
-                          <span className="text-white font-bold">•</span>
+                        <li key={idx} className="flex items-start gap-2 bg-slate-50 p-2 border border-slate-200">
+                          <span className="text-emerald-600 font-bold">•</span>
                           <span>{pt}</span>
                         </li>
                       ))}
@@ -1225,16 +1224,16 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                 )}
 
                 {activeMobileDrawerItem.resolution_title && (
-                  <div className="pt-3 border-t border-zinc-800 flex items-center justify-between text-[11px] font-mono">
-                    <span className="text-zinc-400">Verified Reference:</span>
+                  <div className="pt-3 border-t border-slate-200 flex items-center justify-between text-[11px] font-mono">
+                    <span className="text-slate-500">Verified Reference:</span>
                     <a
                       href={activeMobileDrawerItem.resolution_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white hover:underline font-bold flex items-center gap-1.5"
+                      className="text-slate-900 hover:underline font-bold flex items-center gap-1.5"
                     >
                       <span>{activeMobileDrawerItem.resolution_title}</span>
-                      <ExternalLink className="w-3 h-3 text-zinc-400" />
+                      <ExternalLink className="w-3 h-3 text-slate-500" />
                     </a>
                   </div>
                 )}
