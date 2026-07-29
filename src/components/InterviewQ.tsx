@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { 
   Search, 
   BookOpen, 
@@ -536,6 +537,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
   const [localBookmarkedIds, setLocalBookmarkedIds] = useState<Record<string, boolean>>({});
   const [currentPage, setCurrentPage] = useState(1);
   const [mobileTab, setMobileTab] = useState<'categories' | 'questions'>('categories');
+  const [activeMobileDrawerItem, setActiveMobileDrawerItem] = useState<InterviewQItem | null>(null);
   const [hoveredRole, setHoveredRole] = useState<string | null>(null);
   const itemsPerPage = 10;
 
@@ -1068,7 +1070,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                       {/* Expandable Preferred Answer & Evaluator Checkpoints */}
                       <div className="space-y-3">
                         <button
-                          onClick={() => toggleExpand(item.id)}
+                          onClick={() => { if (typeof window !== 'undefined' && window.innerWidth < 768) { setActiveMobileDrawerItem(item); } else { toggleExpand(item.id); } }}
                           className={`w-full py-2 px-3 border bg-black ${itemPalette.hoverBorder} text-xs text-white font-bold flex items-center justify-between uppercase transition cursor-pointer`}
                         >
                           <span className="flex items-center gap-2">
@@ -1158,6 +1160,89 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
           )}
         </main>
       </div>
+
+      {/* Mobile Bottom-Sheet Modal Drawer */}
+      <AnimatePresence>
+        {activeMobileDrawerItem && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-xs flex flex-col justify-end md:hidden"
+            onClick={() => setActiveMobileDrawerItem(null)}
+          >
+            <motion.div
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-zinc-950 border-t-2 border-white p-5 rounded-t-2xl max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl"
+            >
+              <div className="w-12 h-1.5 bg-zinc-700 rounded-full mx-auto mb-2 opacity-60" />
+
+              <div className="flex items-start justify-between border-b border-zinc-800 pb-3">
+                <div>
+                  <span className="text-[10px] font-mono font-bold text-white uppercase block mb-1">
+                    {activeMobileDrawerItem.domain} • {activeMobileDrawerItem.id}
+                  </span>
+                  <h3 className="text-sm font-bold text-white leading-snug">
+                    {activeMobileDrawerItem.prompt}
+                  </h3>
+                </div>
+                <button
+                  onClick={() => setActiveMobileDrawerItem(null)}
+                  className="p-1.5 border border-zinc-700 bg-zinc-900 text-zinc-300 text-xs font-bold"
+                >
+                  ✕
+                </button>
+              </div>
+
+              <div className="space-y-4 text-xs font-sans">
+                <div>
+                  <span className="text-[10px] font-mono font-bold text-white uppercase block mb-1">
+                    PREFERRED ANSWER GUIDE
+                  </span>
+                  <p className="text-zinc-200 leading-relaxed font-sans">
+                    {activeMobileDrawerItem.preferred_answer}
+                  </p>
+                </div>
+
+                {activeMobileDrawerItem.evaluation_points && activeMobileDrawerItem.evaluation_points.length > 0 && (
+                  <div className="pt-3 border-t border-zinc-800">
+                    <span className="text-[10px] font-mono font-bold text-white uppercase block mb-2">
+                      EVALUATOR CHECKPOINTS &amp; RUBRIC
+                    </span>
+                    <ul className="grid grid-cols-1 gap-2 text-zinc-300 font-mono text-[11px]">
+                      {activeMobileDrawerItem.evaluation_points.map((pt, idx) => (
+                        <li key={idx} className="flex items-start gap-2 bg-black p-2 border border-zinc-800">
+                          <span className="text-white font-bold">•</span>
+                          <span>{pt}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {activeMobileDrawerItem.resolution_title && (
+                  <div className="pt-3 border-t border-zinc-800 flex items-center justify-between text-[11px] font-mono">
+                    <span className="text-zinc-400">Verified Reference:</span>
+                    <a
+                      href={activeMobileDrawerItem.resolution_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:underline font-bold flex items-center gap-1.5"
+                    >
+                      <span>{activeMobileDrawerItem.resolution_title}</span>
+                      <ExternalLink className="w-3 h-3 text-zinc-400" />
+                    </a>
+                  </div>
+                )}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
