@@ -24,51 +24,331 @@ export interface InterviewQProps {
   isBookmarked?: (id: string, type: any) => boolean;
 }
 
+const ROLE_SLUG_ALIASES: Record<string, string[]> = {
+  'cloud': ['cloud', 'cloud-engineer'],
+  'cybersecurity': ['cybersecurity', 'cybersecurity-analyst'],
+  'software-dev': ['software-dev', 'software-development-engineer'],
+  'devops-sre': ['devops-sre', 'devops-engineer'],
+  'data-science-ai': ['data-science-ai', 'prompt-engineer'],
+  'green-computing': ['green-computing', 'green-computing-engineer'],
+  'frontend-developer': ['frontend-developer'],
+  'backend-developer': ['backend-developer']
+};
+
+const isRoleMatch = (itemRoleSlug: string, targetSlug: string) => {
+  if (targetSlug === 'all') return true;
+  if (itemRoleSlug === targetSlug) return true;
+  const allowed = ROLE_SLUG_ALIASES[targetSlug];
+  return allowed ? allowed.includes(itemRoleSlug) : false;
+};
+
+const DOMAIN_COLOR_PALETTE: Record<string, {
+  color: string;
+  accentBar: string;
+  activeBorder: string;
+  activeBg: string;
+  activeShadow: string;
+  hoverBorder: string;
+  badgeActive: string;
+  badgeInactive: string;
+}> = {
+  all: {
+    color: 'zinc',
+    accentBar: 'bg-white',
+    activeBorder: 'border-white',
+    activeBg: 'bg-zinc-900',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#ffffff]',
+    hoverBorder: 'hover:border-zinc-500',
+    badgeActive: 'bg-white text-black border-white',
+    badgeInactive: 'bg-zinc-900 text-zinc-300 border-zinc-700'
+  },
+  'it-support': {
+    color: 'blue',
+    accentBar: 'bg-blue-500',
+    activeBorder: 'border-blue-500',
+    activeBg: 'bg-blue-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#3b82f6]',
+    hoverBorder: 'hover:border-blue-500/60',
+    badgeActive: 'bg-blue-500 text-black border-blue-500 font-bold',
+    badgeInactive: 'bg-blue-500/10 text-blue-400 border-blue-500/40'
+  },
+  'systems-infra': {
+    color: 'purple',
+    accentBar: 'bg-purple-500',
+    activeBorder: 'border-purple-500',
+    activeBg: 'bg-purple-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#a855f7]',
+    hoverBorder: 'hover:border-purple-500/60',
+    badgeActive: 'bg-purple-500 text-black border-purple-500 font-bold',
+    badgeInactive: 'bg-purple-500/10 text-purple-400 border-purple-500/40'
+  },
+  'networking': {
+    color: 'emerald',
+    accentBar: 'bg-emerald-500',
+    activeBorder: 'border-emerald-500',
+    activeBg: 'bg-emerald-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
+    hoverBorder: 'hover:border-emerald-500/60',
+    badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
+    badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
+  },
+  'cloud': {
+    color: 'cyan',
+    accentBar: 'bg-cyan-500',
+    activeBorder: 'border-cyan-500',
+    activeBg: 'bg-cyan-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#06b6d4]',
+    hoverBorder: 'hover:border-cyan-500/60',
+    badgeActive: 'bg-cyan-500 text-black border-cyan-500 font-bold',
+    badgeInactive: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/40'
+  },
+  'cybersecurity': {
+    color: 'red',
+    accentBar: 'bg-red-500',
+    activeBorder: 'border-red-500',
+    activeBg: 'bg-red-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#ef4444]',
+    hoverBorder: 'hover:border-red-500/60',
+    badgeActive: 'bg-red-500 text-white border-red-500 font-bold',
+    badgeInactive: 'bg-red-500/10 text-red-400 border-red-500/40'
+  },
+  'software-dev': {
+    color: 'fuchsia',
+    accentBar: 'bg-fuchsia-500',
+    activeBorder: 'border-fuchsia-500',
+    activeBg: 'bg-fuchsia-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#d946ef]',
+    hoverBorder: 'hover:border-fuchsia-500/60',
+    badgeActive: 'bg-fuchsia-500 text-black border-fuchsia-500 font-bold',
+    badgeInactive: 'bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/40'
+  },
+  'qa-testing': {
+    color: 'pink',
+    accentBar: 'bg-pink-500',
+    activeBorder: 'border-pink-500',
+    activeBg: 'bg-pink-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#ec4899]',
+    hoverBorder: 'hover:border-pink-500/60',
+    badgeActive: 'bg-pink-500 text-black border-pink-500 font-bold',
+    badgeInactive: 'bg-pink-500/10 text-pink-400 border-pink-500/40'
+  },
+  'devops-sre': {
+    color: 'sky',
+    accentBar: 'bg-sky-500',
+    activeBorder: 'border-sky-500',
+    activeBg: 'bg-sky-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#0ea5e9]',
+    hoverBorder: 'hover:border-sky-500/60',
+    badgeActive: 'bg-sky-500 text-black border-sky-500 font-bold',
+    badgeInactive: 'bg-sky-500/10 text-sky-400 border-sky-500/40'
+  },
+  'data-analytics': {
+    color: 'amber',
+    accentBar: 'bg-amber-500',
+    activeBorder: 'border-amber-500',
+    activeBg: 'bg-amber-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#f59e0b]',
+    hoverBorder: 'hover:border-amber-500/60',
+    badgeActive: 'bg-amber-500 text-black border-amber-500 font-bold',
+    badgeInactive: 'bg-amber-500/10 text-amber-400 border-amber-500/40'
+  },
+  'data-science-ai': {
+    color: 'rose',
+    accentBar: 'bg-rose-500',
+    activeBorder: 'border-rose-500',
+    activeBg: 'bg-rose-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#f43f5e]',
+    hoverBorder: 'hover:border-rose-500/60',
+    badgeActive: 'bg-rose-500 text-white border-rose-500 font-bold',
+    badgeInactive: 'bg-rose-500/10 text-rose-400 border-rose-500/40'
+  },
+  'db-admin': {
+    color: 'teal',
+    accentBar: 'bg-teal-500',
+    activeBorder: 'border-teal-500',
+    activeBg: 'bg-teal-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#14b8a6]',
+    hoverBorder: 'hover:border-teal-500/60',
+    badgeActive: 'bg-teal-500 text-black border-teal-500 font-bold',
+    badgeInactive: 'bg-teal-500/10 text-teal-400 border-teal-500/40'
+  },
+  'it-ops-itsm': {
+    color: 'indigo',
+    accentBar: 'bg-indigo-500',
+    activeBorder: 'border-indigo-500',
+    activeBg: 'bg-indigo-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
+    hoverBorder: 'hover:border-indigo-500/60',
+    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
+    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
+  },
+  'erp-crm': {
+    color: 'blue',
+    accentBar: 'bg-blue-500',
+    activeBorder: 'border-blue-500',
+    activeBg: 'bg-blue-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#3b82f6]',
+    hoverBorder: 'hover:border-blue-500/60',
+    badgeActive: 'bg-blue-500 text-black border-blue-500 font-bold',
+    badgeInactive: 'bg-blue-500/10 text-blue-400 border-blue-500/40'
+  },
+  'product-mgmt': {
+    color: 'yellow',
+    accentBar: 'bg-yellow-500',
+    activeBorder: 'border-yellow-500',
+    activeBg: 'bg-yellow-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#eab308]',
+    hoverBorder: 'hover:border-yellow-500/60',
+    badgeActive: 'bg-yellow-500 text-black border-yellow-500 font-bold',
+    badgeInactive: 'bg-yellow-500/10 text-yellow-400 border-yellow-500/40'
+  },
+  'business-analysis': {
+    color: 'indigo',
+    accentBar: 'bg-indigo-500',
+    activeBorder: 'border-indigo-500',
+    activeBg: 'bg-indigo-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
+    hoverBorder: 'hover:border-indigo-500/60',
+    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
+    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
+  },
+  'uiux-design': {
+    color: 'purple',
+    accentBar: 'bg-purple-500',
+    activeBorder: 'border-purple-500',
+    activeBg: 'bg-purple-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#a855f7]',
+    hoverBorder: 'hover:border-purple-500/60',
+    badgeActive: 'bg-purple-500 text-black border-purple-500 font-bold',
+    badgeInactive: 'bg-purple-500/10 text-purple-400 border-purple-500/40'
+  },
+  'web-cms': {
+    color: 'cyan',
+    accentBar: 'bg-cyan-500',
+    activeBorder: 'border-cyan-500',
+    activeBg: 'bg-cyan-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#06b6d4]',
+    hoverBorder: 'hover:border-cyan-500/60',
+    badgeActive: 'bg-cyan-500 text-black border-cyan-500 font-bold',
+    badgeInactive: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/40'
+  },
+  'frontend-developer': {
+    color: 'pink',
+    accentBar: 'bg-pink-500',
+    activeBorder: 'border-pink-500',
+    activeBg: 'bg-pink-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#ec4899]',
+    hoverBorder: 'hover:border-pink-500/60',
+    badgeActive: 'bg-pink-500 text-black border-pink-500 font-bold',
+    badgeInactive: 'bg-pink-500/10 text-pink-400 border-pink-500/40'
+  },
+  'backend-developer': {
+    color: 'purple',
+    accentBar: 'bg-purple-500',
+    activeBorder: 'border-purple-500',
+    activeBg: 'bg-purple-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#a855f7]',
+    hoverBorder: 'hover:border-purple-500/60',
+    badgeActive: 'bg-purple-500 text-black border-purple-500 font-bold',
+    badgeInactive: 'bg-purple-500/10 text-purple-400 border-purple-500/40'
+  },
+  'automation-rpa': {
+    color: 'rose',
+    accentBar: 'bg-rose-500',
+    activeBorder: 'border-rose-500',
+    activeBg: 'bg-rose-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#f43f5e]',
+    hoverBorder: 'hover:border-rose-500/60',
+    badgeActive: 'bg-rose-500 text-white border-rose-500 font-bold',
+    badgeInactive: 'bg-rose-500/10 text-rose-400 border-rose-500/40'
+  },
+  'tech-writing': {
+    color: 'emerald',
+    accentBar: 'bg-emerald-500',
+    activeBorder: 'border-emerald-500',
+    activeBg: 'bg-emerald-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
+    hoverBorder: 'hover:border-emerald-500/60',
+    badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
+    badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
+  },
+  'sales-customer-success': {
+    color: 'blue',
+    accentBar: 'bg-blue-500',
+    activeBorder: 'border-blue-500',
+    activeBg: 'bg-blue-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#3b82f6]',
+    hoverBorder: 'hover:border-blue-500/60',
+    badgeActive: 'bg-blue-500 text-black border-blue-500 font-bold',
+    badgeInactive: 'bg-blue-500/10 text-blue-400 border-blue-500/40'
+  },
+  'hardware-iot': {
+    color: 'indigo',
+    accentBar: 'bg-indigo-500',
+    activeBorder: 'border-indigo-500',
+    activeBg: 'bg-indigo-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
+    hoverBorder: 'hover:border-indigo-500/60',
+    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
+    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
+  },
+  'telecom-voice': {
+    color: 'amber',
+    accentBar: 'bg-amber-500',
+    activeBorder: 'border-amber-500',
+    activeBg: 'bg-amber-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#f59e0b]',
+    hoverBorder: 'hover:border-amber-500/60',
+    badgeActive: 'bg-amber-500 text-black border-amber-500 font-bold',
+    badgeInactive: 'bg-amber-500/10 text-amber-400 border-amber-500/40'
+  },
+  'governance-audit': {
+    color: 'red',
+    accentBar: 'bg-red-500',
+    activeBorder: 'border-red-500',
+    activeBg: 'bg-red-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#ef4444]',
+    hoverBorder: 'hover:border-red-500/60',
+    badgeActive: 'bg-red-500 text-white border-red-500 font-bold',
+    badgeInactive: 'bg-red-500/10 text-red-400 border-red-500/40'
+  },
+  'architecture': {
+    color: 'emerald',
+    accentBar: 'bg-emerald-500',
+    activeBorder: 'border-emerald-500',
+    activeBg: 'bg-emerald-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
+    hoverBorder: 'hover:border-emerald-500/60',
+    badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
+    badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
+  },
+  'executive': {
+    color: 'fuchsia',
+    accentBar: 'bg-fuchsia-500',
+    activeBorder: 'border-fuchsia-500',
+    activeBg: 'bg-fuchsia-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#d946ef]',
+    hoverBorder: 'hover:border-fuchsia-500/60',
+    badgeActive: 'bg-fuchsia-500 text-black border-fuchsia-500 font-bold',
+    badgeInactive: 'bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/40'
+  },
+  'green-computing': {
+    color: 'emerald',
+    accentBar: 'bg-emerald-500',
+    activeBorder: 'border-emerald-500',
+    activeBg: 'bg-emerald-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
+    hoverBorder: 'hover:border-emerald-500/60',
+    badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
+    badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
+  }
+};
+
 const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; description: string }> = {
   all: {
     label: 'All Role Categories',
     icon: '🌐',
     description: 'Comprehensive question bank across all IT engineering disciplines'
-  },
-  'devops-engineer': {
-    label: 'DevOps & SRE',
-    icon: '⚡',
-    description: 'CI/CD, Kubernetes, Docker, Terraform, Ansible, Linux & Observability'
-  },
-  'backend-developer': {
-    label: 'Backend Developer',
-    icon: '⚙️',
-    description: 'APIs, Databases, Microservices, Node.js, Python, Java, Go & System Design'
-  },
-  'frontend-developer': {
-    label: 'Frontend Developer',
-    icon: '🎨',
-    description: 'React, State Management, DOM, Web Performance & Modern UI Architecture'
-  },
-  'cybersecurity-analyst': {
-    label: 'Cybersecurity & DevSecOps',
-    icon: '🛡️',
-    description: 'Network Security, Threat Modelling, Secret Management & OWASP'
-  },
-  'prompt-engineer': {
-    label: 'AI & Prompt Engineering',
-    icon: '🤖',
-    description: 'LLM Engineering, Model Deployment, MLOps & Data Pipelines'
-  },
-  'software-development-engineer': {
-    label: 'Software Development & Engineering (SDE)',
-    icon: '💻',
-    description: 'SDE Foundations, OOD, Algorithms, Clean Code, Concurrency, System Design & Delivery'
-  },
-  'green-computing-engineer': {
-    label: 'Green Computing & Sustainable IT',
-    icon: '🌱',
-    description: 'Green Software, Energy Efficiency, Cloud Carbon Footprint, GreenOps & Sustainable AI'
-  },
-  'cloud-engineer': {
-    label: 'Cloud Computing & Architecture',
-    icon: '☁️',
-    description: 'Cloud Architecture, AWS/Azure/GCP, FinOps, Serverless, Cloud Security & Multi-Cloud'
   },
   'it-support': {
     label: 'IT Support, Service Desk & End-User Computing',
@@ -85,15 +365,40 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
     icon: '🌐',
     description: 'Building up interview question bank for this domain...'
   },
+  'cloud': {
+    label: 'Cloud Computing & Architecture',
+    icon: '☁️',
+    description: 'Cloud Architecture, AWS/Azure/GCP, FinOps, Serverless, Cloud Security & Multi-Cloud'
+  },
+  'cybersecurity': {
+    label: 'Cybersecurity, GRC & Security Operations',
+    icon: '🛡️',
+    description: 'Network Security, Threat Modelling, Secret Management & OWASP'
+  },
+  'software-dev': {
+    label: 'Software Development & Engineering (SDE)',
+    icon: '💻',
+    description: 'SDE Foundations, OOD, Algorithms, Clean Code, Concurrency, System Design & Delivery'
+  },
   'qa-testing': {
     label: 'QA, Software Testing & Quality Engineering',
     icon: '🧪',
     description: 'Building up interview question bank for this domain...'
   },
+  'devops-sre': {
+    label: 'DevOps, SRE & Platform Engineering',
+    icon: '⚡',
+    description: 'CI/CD, Kubernetes, Docker, Terraform, Ansible, Linux & Observability'
+  },
   'data-analytics': {
     label: 'Data, Analytics & Business Intelligence',
     icon: '📊',
     description: 'Building up interview question bank for this domain...'
+  },
+  'data-science-ai': {
+    label: 'Data Science, AI & Machine Learning',
+    icon: '🤖',
+    description: 'LLM Engineering, Model Deployment, MLOps & Data Pipelines'
   },
   'db-admin': {
     label: 'Database Administration (DBA)',
@@ -129,6 +434,16 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
     label: 'Web, CMS & Digital Technology',
     icon: '🌐',
     description: 'Building up interview question bank for this domain...'
+  },
+  'frontend-developer': {
+    label: 'Frontend Developer',
+    icon: '🎨',
+    description: 'React, State Management, DOM, Web Performance & Modern UI Architecture'
+  },
+  'backend-developer': {
+    label: 'Backend Developer',
+    icon: '⚙️',
+    description: 'APIs, Databases, Microservices, Node.js, Python, Java, Go & System Design'
   },
   'automation-rpa': {
     label: 'Automation, RPA & Low-Code / No-Code',
@@ -169,6 +484,11 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
     label: 'Executive & C-Level Tech Leadership',
     icon: '👑',
     description: 'Building up interview question bank for this domain...'
+  },
+  'green-computing': {
+    label: 'Green Computing & Sustainable IT',
+    icon: '🌱',
+    description: 'Green Software, Energy Efficiency, Cloud Carbon Footprint, GreenOps & Sustainable AI'
   }
 };
 
@@ -186,28 +506,35 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
   const [localBookmarkedIds, setLocalBookmarkedIds] = useState<Record<string, boolean>>({});
   const [currentPage, setCurrentPage] = useState(1);
   const [mobileTab, setMobileTab] = useState<'categories' | 'questions'>('categories');
-
+  const [hoveredRole, setHoveredRole] = useState<string | null>(null);
   const itemsPerPage = 10;
 
   // 1. Available Role Categories
   const availableRoleSlugs = useMemo(() => {
-    const roles = Array.from(new Set(interviewQDatabase.map(item => item.role_slug)));
-    return ['all', ...roles.sort()];
+    const roles = Object.keys(ROLE_CATEGORY_METADATA);
+    return roles;
   }, []);
 
-  // 2. Cascading available Domains for active Role Category
+  // 2. Cascading available Domains map per Role Category
+  const domainsBySlug = useMemo(() => {
+    const map: Record<string, string[]> = {};
+    for (const slug of availableRoleSlugs) {
+      const pool = slug === 'all'
+        ? interviewQDatabase
+        : interviewQDatabase.filter(item => isRoleMatch(item.role_slug, slug));
+      map[slug] = Array.from(new Set(pool.map(item => item.domain))).sort();
+    }
+    return map;
+  }, [availableRoleSlugs]);
+
   const availableDomains = useMemo(() => {
-    const pool = selectedRole === 'all' 
-      ? interviewQDatabase 
-      : interviewQDatabase.filter(item => item.role_slug === selectedRole);
-    const domains = Array.from(new Set(pool.map(item => item.domain)));
-    return domains.sort();
-  }, [selectedRole]);
+    return domainsBySlug[selectedRole] || [];
+  }, [selectedRole, domainsBySlug]);
 
   // 3. Available Question Types
   const availableTypes = useMemo(() => {
     const pool = interviewQDatabase.filter(item => {
-      const matchRole = selectedRole === 'all' || item.role_slug === selectedRole;
+      const matchRole = isRoleMatch(item.role_slug, selectedRole);
       const matchDomain = selectedDomains.length === 0 || selectedDomains.includes(item.domain);
       return matchRole && matchDomain;
     });
@@ -218,7 +545,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
   // 4. Available Difficulties
   const availableDifficulties = useMemo(() => {
     const pool = interviewQDatabase.filter(item => {
-      const matchRole = selectedRole === 'all' || item.role_slug === selectedRole;
+      const matchRole = isRoleMatch(item.role_slug, selectedRole);
       const matchDomain = selectedDomains.length === 0 || selectedDomains.includes(item.domain);
       const matchType = selectedType === 'all' || item.question_type === selectedType;
       return matchRole && matchDomain && matchType;
@@ -263,7 +590,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
         item.id.toLowerCase().includes(q) ||
         item.domain.toLowerCase().includes(q);
       
-      const matchesRole = selectedRole === 'all' || item.role_slug === selectedRole;
+      const matchesRole = isRoleMatch(item.role_slug, selectedRole);
       const matchesDomain = selectedDomains.length === 0 || selectedDomains.includes(item.domain);
       const matchesDifficulty = selectedDifficulty === 'all' || item.difficulty === selectedDifficulty;
       const matchesType = selectedType === 'all' || item.question_type === selectedType;
@@ -401,22 +728,29 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
 
                 const count = slug === 'all'
                   ? interviewQDatabase.length
-                  : interviewQDatabase.filter(item => item.role_slug === slug).length;
+                  : interviewQDatabase.filter(item => isRoleMatch(item.role_slug, slug)).length;
 
                 const isSelected = selectedRole === slug;
+                const slugDomains = domainsBySlug[slug] || [];
+                const palette = DOMAIN_COLOR_PALETTE[slug] || DOMAIN_COLOR_PALETTE['all'];
 
                 return (
-                  <div key={slug} className="relative">
+                  <div 
+                    key={slug} 
+                    className="relative"
+                    onMouseEnter={() => setHoveredRole(slug)}
+                    onMouseLeave={() => setHoveredRole(null)}
+                  >
                     <div
                       onClick={() => handleRoleSelect(slug)}
                       className={`p-4 border-2 transition-all cursor-pointer relative group text-left ${
                         isSelected
-                          ? 'border-white bg-zinc-900 shadow-[4px_4px_0px_0px_#ffffff]'
-                          : 'border-zinc-800 bg-black hover:border-zinc-500 hover:bg-zinc-950'
+                          ? `${palette.activeBorder} ${palette.activeBg} ${palette.activeShadow}`
+                          : `border-zinc-800 bg-black ${palette.hoverBorder} hover:bg-zinc-950`
                       }`}
                     >
                       {/* Left Accent Bar */}
-                      <div className={`absolute left-0 top-0 bottom-0 w-1.5 ${isSelected ? 'bg-white' : 'bg-zinc-800 group-hover:bg-zinc-500'}`} />
+                      <div className={`absolute left-0 top-0 bottom-0 w-1.5 ${isSelected ? palette.accentBar : 'bg-zinc-800 group-hover:' + palette.accentBar}`} />
 
                       <div className="pl-2">
                         <div className="flex items-center justify-between gap-2 mb-1">
@@ -426,8 +760,8 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                           </span>
                           <span className={`text-[10px] font-mono font-bold px-2 py-0.5 border ${
                             isSelected
-                              ? count === 0 ? 'bg-amber-400 text-black border-amber-400 font-bold' : 'bg-white text-black border-white'
-                              : count === 0 ? 'bg-amber-500/10 text-amber-400 border-amber-500/40' : 'bg-zinc-900 text-zinc-300 border-zinc-700'
+                              ? count === 0 ? 'bg-amber-400 text-black border-amber-400 font-bold' : palette.badgeActive
+                              : count === 0 ? 'bg-amber-500/10 text-amber-400 border-amber-500/40' : palette.badgeInactive
                           }`}>
                             {count === 0 ? 'Building up' : `${count} ${count === 1 ? 'item' : 'items'}`}
                           </span>
@@ -439,131 +773,77 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                       </div>
                     </div>
 
-                    {/* SUB-DOMAINS FLYOUT: Positioned adjacent to the right of the active domain card for domains with populated questions */}
-                    {isSelected && count > 0 && availableDomains.length > 0 && (
-                      <>
-                        {/* Desktop Floating Adjacent Popover */}
-                        <div className="hidden md:block absolute left-[calc(100%+0.75rem)] top-0 z-30 w-80 border-2 border-white bg-zinc-950 p-4 space-y-3 shadow-[6px_6px_0px_0px_#ffffff]">
-                          <div className="border-b border-zinc-800 pb-2 flex items-center justify-between">
-                            <div className="flex items-center gap-2">
-                              <Layers className="w-4 h-4 text-white" />
-                              <span className="text-xs font-bold text-white uppercase tracking-wider font-mono">Sub-Domain Options</span>
-                            </div>
-                            <span className="text-[10px] text-zinc-400 font-mono">
-                              {isAllDomainsActive ? 'ALL SELECTED' : `${selectedDomains.length} SELECTED`}
-                            </span>
+                    {/* SUB-DOMAINS HOVER FLYOUT: Rendered ONLY when cursor hovers over the domain card AND count > 0 */}
+                    {hoveredRole === slug && count > 0 && slugDomains.length > 0 && (
+                      <div className={`absolute left-[calc(100%+0.75rem)] top-0 z-50 w-80 border-2 ${palette.activeBorder} bg-zinc-950 p-4 space-y-3 ${palette.activeShadow}`}>
+                        <div className="border-b border-zinc-800 pb-2 flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            <Layers className="w-4 h-4 text-white" />
+                            <span className="text-xs font-bold text-white uppercase tracking-wider font-mono">Sub-Domain Filters</span>
                           </div>
-
-                          <div className="space-y-1.5 max-h-80 overflow-y-auto pr-1">
-                            {/* All Sub-Domains Option */}
-                            <button
-                              type="button"
-                              onClick={(e) => { e.stopPropagation(); toggleDomainSelect('all'); }}
-                              className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
-                                isAllDomainsActive
-                                  ? 'bg-white text-black border-white font-bold shadow-[2px_2px_0px_0px_#ffffff]'
-                                  : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
-                              }`}
-                            >
-                              <span className="flex items-center gap-2">
-                                {isAllDomainsActive && <Check className="w-3.5 h-3.5 text-black stroke-[3]" />}
-                                <span>All Sub-Domains</span>
-                              </span>
-                              <span className="text-[10px] opacity-80">({availableDomains.length})</span>
-                            </button>
-
-                            {/* Individual Sub-Domain Options */}
-                            {availableDomains.map(d => {
-                              const isChecked = !isAllDomainsActive && selectedDomains.includes(d);
-                              const dCount = interviewQDatabase.filter(i => (selectedRole === 'all' || i.role_slug === selectedRole) && i.domain === d).length;
-                              
-                              return (
-                                <button
-                                  key={d}
-                                  type="button"
-                                  onClick={(e) => { e.stopPropagation(); toggleDomainSelect(d); }}
-                                  className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
-                                    isChecked
-                                      ? 'bg-white text-black border-white font-bold shadow-[2px_2px_0px_0px_#ffffff]'
-                                      : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
-                                  }`}
-                                >
-                                  <span className="flex items-center gap-2 truncate pr-2">
-                                    {isChecked ? (
-                                      <Check className="w-3.5 h-3.5 text-black stroke-[3] shrink-0" />
-                                    ) : (
-                                      <span className="w-3.5 h-3.5 border border-zinc-700 inline-block shrink-0" />
-                                    )}
-                                    <span className="truncate">{d}</span>
-                                  </span>
-                                  <span className="text-[10px] opacity-80 shrink-0">({dCount})</span>
-                                </button>
-                              );
-                            })}
-                          </div>
+                          <span className="text-[10px] text-zinc-400 font-mono">
+                            {isAllDomainsActive ? 'ALL SELECTED' : `${selectedDomains.length} SELECTED`}
+                          </span>
                         </div>
 
-                        {/* Mobile Inline Fallback Panel */}
-                        <div className="md:hidden border-2 border-white bg-zinc-950 p-4 space-y-3 my-2 shadow-[4px_4px_0px_0px_#ffffff]">
-                          <div className="border-b border-zinc-800 pb-2 flex items-center justify-between">
-                            <div className="flex items-center gap-2">
-                              <Layers className="w-4 h-4 text-white" />
-                              <span className="text-xs font-bold text-white uppercase tracking-wider font-mono">Sub-Domain Options</span>
-                            </div>
-                            <span className="text-[10px] text-zinc-400 font-mono">
-                              {isAllDomainsActive ? 'ALL SELECTED' : `${selectedDomains.length} SELECTED`}
+                        <div className="space-y-1.5 max-h-80 overflow-y-auto pr-1">
+                          {/* All Sub-Domains Option */}
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              if (selectedRole !== slug) handleRoleSelect(slug);
+                              toggleDomainSelect('all');
+                            }}
+                            className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
+                              isAllDomainsActive && selectedRole === slug
+                                ? `${palette.badgeActive} shadow-[2px_2px_0px_0px_#ffffff]`
+                                : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
+                            }`}
+                          >
+                            <span className="flex items-center gap-2">
+                              {isAllDomainsActive && selectedRole === slug && <Check className="w-3.5 h-3.5 stroke-[3]" />}
+                              <span>All Sub-Domains</span>
                             </span>
-                          </div>
+                            <span className="text-[10px] opacity-80">({slugDomains.length})</span>
+                          </button>
 
-                          <div className="space-y-1.5 max-h-72 overflow-y-auto pr-1">
-                            {/* All Sub-Domains Option */}
-                            <button
-                              type="button"
-                              onClick={(e) => { e.stopPropagation(); toggleDomainSelect('all'); }}
-                              className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
-                                isAllDomainsActive
-                                  ? 'bg-white text-black border-white font-bold shadow-[2px_2px_0px_0px_#ffffff]'
-                                  : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
-                              }`}
-                            >
-                              <span className="flex items-center gap-2">
-                                {isAllDomainsActive && <Check className="w-3.5 h-3.5 text-black stroke-[3]" />}
-                                <span>All Sub-Domains</span>
-                              </span>
-                              <span className="text-[10px] opacity-80">({availableDomains.length})</span>
-                            </button>
-
-                            {/* Individual Sub-Domain Options */}
-                            {availableDomains.map(d => {
-                              const isChecked = !isAllDomainsActive && selectedDomains.includes(d);
-                              const dCount = interviewQDatabase.filter(i => (selectedRole === 'all' || i.role_slug === selectedRole) && i.domain === d).length;
-                              
-                              return (
-                                <button
-                                  key={d}
-                                  type="button"
-                                  onClick={(e) => { e.stopPropagation(); toggleDomainSelect(d); }}
-                                  className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
-                                    isChecked
-                                      ? 'bg-white text-black border-white font-bold shadow-[2px_2px_0px_0px_#ffffff]'
-                                      : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
-                                  }`}
-                                >
-                                  <span className="flex items-center gap-2 truncate pr-2">
-                                    {isChecked ? (
-                                      <Check className="w-3.5 h-3.5 text-black stroke-[3] shrink-0" />
-                                    ) : (
-                                      <span className="w-3.5 h-3.5 border border-zinc-700 inline-block shrink-0" />
-                                    )}
-                                    <span className="truncate">{d}</span>
-                                  </span>
-                                  <span className="text-[10px] opacity-80 shrink-0">({dCount})</span>
-                                </button>
-                              );
-                            })}
-                          </div>
+                          {/* Individual Sub-Domain Options */}
+                          {slugDomains.map(d => {
+                            const isChecked = selectedRole === slug && !isAllDomainsActive && selectedDomains.includes(d);
+                            const dCount = interviewQDatabase.filter(i => isRoleMatch(i.role_slug, slug) && i.domain === d).length;
+                            
+                            return (
+                              <button
+                                key={d}
+                                type="button"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  if (selectedRole !== slug) {
+                                    handleRoleSelect(slug);
+                                  }
+                                  toggleDomainSelect(d);
+                                }}
+                                className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
+                                  isChecked
+                                    ? `${palette.badgeActive} shadow-[2px_2px_0px_0px_#ffffff]`
+                                    : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
+                                }`}
+                              >
+                                <span className="flex items-center gap-2 truncate pr-2">
+                                  {isChecked ? (
+                                    <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />
+                                  ) : (
+                                    <span className="w-3.5 h-3.5 border border-zinc-700 inline-block shrink-0" />
+                                  )}
+                                  <span className="truncate">{d}</span>
+                                </span>
+                                <span className="text-[10px] opacity-80 shrink-0">({dCount})</span>
+                              </button>
+                            );
+                          })}
                         </div>
-                      </>
+                      </div>
                     )}
                   </div>
                 );
