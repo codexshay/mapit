@@ -749,14 +749,13 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                           : `border-zinc-800 bg-black ${palette.hoverBorder} hover:bg-zinc-950`
                       }`}
                     >
-                      {/* Left Accent Bar */}
-                      <div className={`absolute left-0 top-0 bottom-0 w-1.5 ${isSelected ? palette.accentBar : 'bg-zinc-800 group-hover:' + palette.accentBar}`} />
+                      {/* Left Colored Side-Line - ALWAYS VISIBLE */}
+                      <div className={`absolute left-0 top-0 bottom-0 w-1.5 ${palette.accentBar}`} />
 
                       <div className="pl-2">
                         <div className="flex items-center justify-between gap-2 mb-1">
-                          <span className="font-bold text-sm text-white flex items-center gap-2">
-                            <span>{meta.icon}</span>
-                            <span>{meta.label}</span>
+                          <span className="font-bold text-sm text-white">
+                            {meta.label}
                           </span>
                           <span className={`text-[10px] font-mono font-bold px-2 py-0.5 border ${
                             isSelected
