@@ -732,7 +732,19 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
 
                 const isSelected = selectedRole === slug;
                 const slugDomains = domainsBySlug[slug] || [];
-                const palette = DOMAIN_COLOR_PALETTE[slug] || DOMAIN_COLOR_PALETTE['all'];
+                const rawPalette = DOMAIN_COLOR_PALETTE[slug] || DOMAIN_COLOR_PALETTE['all'];
+
+                // For unpopulated domains (count === 0), use understated muted styling; for populated domains (count > 0), use full vibrant color scheme
+                const palette = count === 0 ? {
+                  color: 'amber',
+                  accentBar: 'bg-amber-500/30',
+                  activeBorder: 'border-amber-500/50',
+                  activeBg: 'bg-amber-950/20',
+                  activeShadow: 'shadow-[4px_4px_0px_0px_rgba(245,158,11,0.2)]',
+                  hoverBorder: 'hover:border-amber-500/40',
+                  badgeActive: 'bg-amber-400 text-black border-amber-400 font-bold',
+                  badgeInactive: 'bg-amber-500/10 text-amber-400 border-amber-500/40'
+                } : rawPalette;
 
                 return (
                   <div 
