@@ -5086,11 +5086,11 @@ export default function HRContacts({ theme }: HRContactsProps) {
 
   const isLight = theme === 'light';
 
-  // Toggle Accordion Dropdown for a city
+  // Toggle Accordion Dropdown for a city (Default: Minimized / Collapsed)
   const toggleCityDropdown = (cityKey: string) => {
     setOpenCities(prev => ({
       ...prev,
-      [cityKey]: prev[cityKey] === undefined ? false : !prev[cityKey] // Default open, toggle on click
+      [cityKey]: !prev[cityKey]
     }));
   };
 
@@ -5280,7 +5280,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
           if (q !== '' && matchedContacts.length === 0) return null;
 
           const cityKey = `${cityConfig.countryCode}_${cityConfig.cityName}`;
-          const isDropdownOpen = openCities[cityKey] !== false; // Open by default unless explicitly toggled off
+          const isDropdownOpen = q !== '' ? true : Boolean(openCities[cityKey]); // Default: Minimized/Collapsed; Auto-expand on search or click
 
           return (
             <section key={cityKey} className="border-2 border-zinc-800 bg-zinc-950 overflow-hidden">
