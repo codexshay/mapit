@@ -54,6 +54,11 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
     label: 'AI & Prompt Engineering',
     icon: '🤖',
     description: 'LLM Engineering, Model Deployment, MLOps & Data Pipelines'
+  },
+  'software-development-engineer': {
+    label: 'Software Development & Engineering (SDE)',
+    icon: '💻',
+    description: 'SDE Foundations, OOD, Algorithms, Clean Code, Concurrency, System Design & Delivery'
   }
 };
 

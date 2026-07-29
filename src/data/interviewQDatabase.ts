@@ -17720,5 +17720,3785 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-07-28",
     "status": "published"
+  },
+  {
+    "id": "SDE-001",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Engineering Foundations and Delivery Lifecycle",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is software engineering different from simply writing code?",
+    "preferred_answer": "Writing code produces an implementation; software engineering applies disciplined requirements, design, construction, verification, delivery, operation and maintenance practices to create a dependable system within cost and risk constraints. A strong answer includes collaboration, evidence, lifecycle ownership and trade-offs, not only programming technique.",
+    "evaluation_points": [
+      "Distinguishes implementation from lifecycle engineering",
+      "Mentions quality, cost and risk",
+      "Includes collaboration and maintenance",
+      "Avoids diminishing programming skill"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-002",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Engineering Foundations and Delivery Lifecycle",
+    "difficulty": "foundation",
+    "question_type": "lifecycle",
+    "prompt": "What are the main activities in a software delivery lifecycle?",
+    "preferred_answer": "Typical activities include discovery and requirements, architecture and design, implementation, review, testing, packaging, deployment, operation, feedback and maintenance. They are not necessarily sequential: modern teams shorten feedback loops and revisit decisions as evidence changes.",
+    "evaluation_points": [
+      "Covers discovery through maintenance",
+      "Recognises iterative feedback",
+      "Includes operations",
+      "Avoids a rigid waterfall-only answer"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-003",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Engineering Foundations and Delivery Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "delivery",
+    "prompt": "What should a useful Definition of Done contain?",
+    "preferred_answer": "It should describe the evidence required before work is considered complete: reviewed code, automated tests, security and quality checks, documentation, deployability, observability and acceptance criteria. It must be shared, testable and realistic; a vague statement such as 'works on my machine' creates hidden work.",
+    "evaluation_points": [
+      "Evidence-based completion",
+      "Includes non-code work",
+      "Shared and testable",
+      "Connects to hidden work reduction"
+    ],
+    "resolution_title": "The Scrum Guide",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-004",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Engineering Foundations and Delivery Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "measurement",
+    "prompt": "How should deployment frequency, lead time, change failure rate and recovery time be used?",
+    "preferred_answer": "Use them as system-level signals of throughput, stability and recovery capability. Analyse trends and bottlenecks, segment by service where useful, and pair them with customer and reliability outcomes. They should guide experiments, not rank individual engineers or reward unsafe deployment volume.",
+    "evaluation_points": [
+      "Explains each metric family",
+      "System-level use",
+      "Connects to experiments",
+      "Warns against individual ranking"
+    ],
+    "resolution_title": "DORA software delivery performance metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-005",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Engineering Foundations and Delivery Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "trade-offs",
+    "prompt": "How do functional requirements and quality attributes influence architecture differently?",
+    "preferred_answer": "Functional requirements describe behaviours the system must provide; quality attributes such as performance, availability, security and modifiability constrain how those behaviours must operate. Architecture is often driven by the difficult quality-attribute scenarios and their trade-offs, not by a list of features alone.",
+    "evaluation_points": [
+      "Behaviour versus operating qualities",
+      "Quality attributes drive structure",
+      "Uses scenario thinking",
+      "Recognises trade-offs"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-006",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Engineering Foundations and Delivery Lifecycle",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "When should a team create an architecture decision record?",
+    "preferred_answer": "Create one when a decision has meaningful, long-lived consequences or non-obvious alternatives: technology choice, data ownership, consistency model, security boundary or deployment topology. Record context, decision, alternatives, consequences and status. Do not turn every minor implementation choice into permanent ceremony.",
+    "evaluation_points": [
+      "Long-lived consequential decisions",
+      "Context and alternatives",
+      "Consequences and status",
+      "Proportional documentation"
+    ],
+    "resolution_title": "Architecture Decision Records",
+    "resolution_url": "https://adr.github.io/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-007",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Engineering Foundations and Delivery Lifecycle",
+    "difficulty": "advanced",
+    "question_type": "strategy",
+    "prompt": "How would you choose between incremental delivery and a large coordinated release?",
+    "preferred_answer": "Prefer increments when value can be sliced safely and interfaces permit independent learning. A coordinated release may be justified by inseparable migrations, regulation or physical dependencies, but it increases batch risk and needs rehearsed cutover, rollback, observability and ownership. The decision should follow dependency and risk evidence.",
+    "evaluation_points": [
+      "Slicing and feedback",
+      "Dependency-based exception",
+      "Batch-risk awareness",
+      "Cutover and recovery planning"
+    ],
+    "resolution_title": "Manifesto for Agile Software Development",
+    "resolution_url": "https://agilemanifesto.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-008",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Engineering Foundations and Delivery Lifecycle",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A team ships features regularly, but escaped defects and support load keep rising. What would you examine first?",
+    "preferred_answer": "Map the defect flow from requirement to production: recurring defect classes, change size, review quality, test gaps, environment differences, ownership and incident feedback. Establish a baseline, fix the highest-leverage systemic cause, and add prevention or detection close to where the defect is introduced. Adding a final manual gate alone usually moves the queue.",
+    "evaluation_points": [
+      "Value-stream diagnosis",
+      "Defect-class analysis",
+      "Prevention near source",
+      "Avoids single-gate answer"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-009",
+    "role_slug": "software-development-engineer",
+    "domain": "Requirements Engineering and Product Discovery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate a business need, user requirement and software requirement.",
+    "preferred_answer": "A business need states the outcome or problem worth solving. A user requirement describes what a user must accomplish, while a software requirement specifies observable behaviour or constraint the system must satisfy. Keeping these levels distinct prevents a preferred implementation from being mistaken for the underlying need.",
+    "evaluation_points": [
+      "Three distinct levels",
+      "Outcome before solution",
+      "Observable software behaviour",
+      "Avoids solution bias"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-010",
+    "role_slug": "software-development-engineer",
+    "domain": "Requirements Engineering and Product Discovery",
+    "difficulty": "foundation",
+    "question_type": "quality",
+    "prompt": "What makes a requirement testable?",
+    "preferred_answer": "It uses clear actors, conditions, behaviour and observable outcomes with defined thresholds where relevant. Terms such as fast, intuitive or secure need measurable context. Testability does not require overspecifying implementation; it requires enough evidence to decide whether the need is met.",
+    "evaluation_points": [
+      "Actor and condition",
+      "Observable outcome",
+      "Measurable thresholds",
+      "No unnecessary implementation detail"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-011",
+    "role_slug": "software-development-engineer",
+    "domain": "Requirements Engineering and Product Discovery",
+    "difficulty": "intermediate",
+    "question_type": "discovery",
+    "prompt": "How would you turn a vague request such as 'make search better' into actionable work?",
+    "preferred_answer": "Clarify affected users and journeys, current failure evidence, desired outcome and constraints. Analyse queries, latency, relevance, zero-result rate and support feedback; form hypotheses; define acceptance measures; then run the smallest experiment that can disprove or support them. Do not begin by selecting a search product.",
+    "evaluation_points": [
+      "User and problem clarification",
+      "Uses current evidence",
+      "Defines outcome measures",
+      "Hypothesis before technology"
+    ],
+    "resolution_title": "Manifesto for Agile Software Development",
+    "resolution_url": "https://agilemanifesto.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-012",
+    "role_slug": "software-development-engineer",
+    "domain": "Requirements Engineering and Product Discovery",
+    "difficulty": "intermediate",
+    "question_type": "acceptance",
+    "prompt": "What is the purpose of acceptance criteria, and what are their limits?",
+    "preferred_answer": "Acceptance criteria make a specific item\u2019s expected behaviour and boundaries explicit enough for shared understanding and verification. They do not replace broader quality attributes, exploratory testing, architecture constraints or product judgement. Good criteria cover important examples and edge conditions without becoming an exhaustive specification of every implementation step.",
+    "evaluation_points": [
+      "Shared verification",
+      "Scope boundaries",
+      "Recognises broader quality needs",
+      "Avoids step-by-step implementation prescription"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-013",
+    "role_slug": "software-development-engineer",
+    "domain": "Requirements Engineering and Product Discovery",
+    "difficulty": "intermediate",
+    "question_type": "prioritisation",
+    "prompt": "How should engineering participate in product prioritisation?",
+    "preferred_answer": "Engineering should expose feasibility, dependencies, risk, operational cost, security and learning opportunities while product leadership explains customer value and timing. Options should be compared by expected value, effort, uncertainty and cost of delay. Estimates inform decisions; they should not silently become commitments detached from scope.",
+    "evaluation_points": [
+      "Cross-functional decision",
+      "Value, effort and uncertainty",
+      "Dependencies and operational cost",
+      "Estimate is not automatic commitment"
+    ],
+    "resolution_title": "Manifesto for Agile Software Development",
+    "resolution_url": "https://agilemanifesto.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-014",
+    "role_slug": "software-development-engineer",
+    "domain": "Requirements Engineering and Product Discovery",
+    "difficulty": "advanced",
+    "question_type": "traceability",
+    "prompt": "When is requirements traceability valuable, and when can it become wasteful?",
+    "preferred_answer": "It is valuable for safety, regulation, complex dependencies and change-impact analysis by linking needs to designs, code, tests and evidence. It becomes wasteful when links are manually maintained without decision value or quickly become stale. Automate links from work items, commits, tests and releases where possible and audit their usefulness.",
+    "evaluation_points": [
+      "Risk-based value",
+      "Links to evidence",
+      "Staleness and ceremony risk",
+      "Automation and review"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-015",
+    "role_slug": "software-development-engineer",
+    "domain": "Requirements Engineering and Product Discovery",
+    "difficulty": "advanced",
+    "question_type": "change",
+    "prompt": "How should a team manage changing requirements without losing architectural coherence?",
+    "preferred_answer": "Maintain explicit product and architecture goals, modular boundaries, decision records and quality-attribute tests. Reassess assumptions when new evidence arrives, sequence reversible changes first and contain experiments behind stable interfaces. Change is expected, but uncontrolled local exceptions can accumulate into systemic inconsistency.",
+    "evaluation_points": [
+      "Explicit goals and boundaries",
+      "Revisit assumptions",
+      "Reversible sequencing",
+      "Controls local exceptions"
+    ],
+    "resolution_title": "Architecture Decision Records",
+    "resolution_url": "https://adr.github.io/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-016",
+    "role_slug": "software-development-engineer",
+    "domain": "Requirements Engineering and Product Discovery",
+    "difficulty": "scenario",
+    "question_type": "analysis",
+    "prompt": "Two senior stakeholders give conflicting requirements for the same workflow. What do you do?",
+    "preferred_answer": "Surface the underlying outcomes, authority, affected users and constraints rather than averaging the requests. Model alternatives with impact, risk and measurable success criteria, identify a decision owner, and record the decision and unresolved assumptions. Prototype or test the uncertain part when evidence can resolve the disagreement.",
+    "evaluation_points": [
+      "Underlying needs",
+      "Decision authority",
+      "Options and evidence",
+      "Recorded decision and assumptions"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-017",
+    "role_slug": "software-development-engineer",
+    "domain": "Programming Fundamentals, Types and Error Handling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between value semantics and reference semantics?",
+    "preferred_answer": "With value semantics, assignment or passing generally works with an independent value; with reference semantics, multiple variables can identify the same mutable object. The exact rules depend on the language. The practical concern is aliasing: a change through one reference may be visible elsewhere and create hidden coupling.",
+    "evaluation_points": [
+      "Independent value versus shared identity",
+      "Language-specific caveat",
+      "Aliasing",
+      "Mutation consequence"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-018",
+    "role_slug": "software-development-engineer",
+    "domain": "Programming Fundamentals, Types and Error Handling",
+    "difficulty": "foundation",
+    "question_type": "types",
+    "prompt": "What benefits do static types provide, and what do they not guarantee?",
+    "preferred_answer": "Static types can catch incompatible operations before execution, improve tooling, document interfaces and support refactoring. They do not prove business correctness, security, termination or safe runtime data. Type precision, escape hatches and boundary validation determine how much protection the programme actually gets.",
+    "evaluation_points": [
+      "Compile-time feedback",
+      "Tooling and contracts",
+      "Limits of correctness proof",
+      "Boundary validation"
+    ],
+    "resolution_title": "typing - Support for type hints",
+    "resolution_url": "https://docs.python.org/3/library/typing.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-019",
+    "role_slug": "software-development-engineer",
+    "domain": "Programming Fundamentals, Types and Error Handling",
+    "difficulty": "intermediate",
+    "question_type": "state",
+    "prompt": "Why can immutability make software easier to reason about?",
+    "preferred_answer": "Immutable values cannot be changed after creation, reducing aliasing surprises and making concurrency, caching and rollback safer. It can increase allocation or require different data structures, so selective immutability is often better than dogma. Keep shared state small and make transitions explicit.",
+    "evaluation_points": [
+      "Reduces hidden state changes",
+      "Concurrency benefits",
+      "Trade-offs",
+      "Selective application"
+    ],
+    "resolution_title": "The Rust Programming Language - Ownership",
+    "resolution_url": "https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-020",
+    "role_slug": "software-development-engineer",
+    "domain": "Programming Fundamentals, Types and Error Handling",
+    "difficulty": "intermediate",
+    "question_type": "errors",
+    "prompt": "When should code use exceptions versus explicit result or error values?",
+    "preferred_answer": "Use the language\u2019s normal mechanism consistently. Exceptions fit failures that interrupt the current control flow and can be handled at an appropriate boundary; result values make expected failure states explicit in the type or return contract. Avoid swallowing failures, using exceptions for ordinary branching or returning ambiguous sentinel values.",
+    "evaluation_points": [
+      "Expected versus exceptional failure",
+      "Boundary handling",
+      "Consistency with language idiom",
+      "Avoids swallowing and sentinels"
+    ],
+    "resolution_title": "Effective Go - Errors",
+    "resolution_url": "https://go.dev/doc/effective_go#errors",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-021",
+    "role_slug": "software-development-engineer",
+    "domain": "Programming Fundamentals, Types and Error Handling",
+    "difficulty": "intermediate",
+    "question_type": "resources",
+    "prompt": "How should a programme manage files, sockets, locks and other resources safely?",
+    "preferred_answer": "Acquire them as late as practical, release deterministically through language constructs such as context managers, defer blocks or try-with-resources, and make ownership clear. Cleanup must also occur on errors and cancellation. Timeouts and bounded waits prevent a resource from being held forever.",
+    "evaluation_points": [
+      "Deterministic cleanup",
+      "Ownership",
+      "Error and cancellation paths",
+      "Timeouts or bounded waits"
+    ],
+    "resolution_title": "Java Tutorials - Exceptions",
+    "resolution_url": "https://docs.oracle.com/javase/tutorial/essential/exceptions/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-022",
+    "role_slug": "software-development-engineer",
+    "domain": "Programming Fundamentals, Types and Error Handling",
+    "difficulty": "advanced",
+    "question_type": "abstraction",
+    "prompt": "What is representation exposure, and why is it dangerous?",
+    "preferred_answer": "It occurs when an abstraction leaks mutable internal data or implementation details, allowing callers to violate invariants without going through controlled operations. Return immutable views or copies where appropriate, keep invariants inside the owning type and expose behaviour rather than raw state. Copying everything can be expensive, so ownership and trust boundaries matter.",
+    "evaluation_points": [
+      "Leaked mutable internals",
+      "Invariant risk",
+      "Controlled interfaces",
+      "Performance trade-off"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-023",
+    "role_slug": "software-development-engineer",
+    "domain": "Programming Fundamentals, Types and Error Handling",
+    "difficulty": "advanced",
+    "question_type": "failure-design",
+    "prompt": "How do you design an error model for a public library or service?",
+    "preferred_answer": "Define stable categories, machine-readable codes where needed, safe messages, causal context and retry semantics. Preserve underlying causes internally without leaking secrets or implementation details. Distinguish caller errors, transient dependency failures and permanent system faults, and document which errors are part of the compatibility contract.",
+    "evaluation_points": [
+      "Stable taxonomy",
+      "Safe context and causes",
+      "Retry semantics",
+      "Compatibility contract"
+    ],
+    "resolution_title": "RFC 9457 - Problem Details for HTTP APIs",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9457",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-024",
+    "role_slug": "software-development-engineer",
+    "domain": "Programming Fundamentals, Types and Error Handling",
+    "difficulty": "scenario",
+    "question_type": "debugging",
+    "prompt": "A function sometimes returns partial data and sometimes throws for the same dependency failure. How would you improve it?",
+    "preferred_answer": "Clarify the contract: decide whether partial data is a valid result, what completeness metadata is required and which failures terminate the operation. Use one explicit model, add tests for each state, log the dependency cause once at the owning boundary and update callers. Mixed implicit behaviour makes recovery and metrics unreliable.",
+    "evaluation_points": [
+      "Clarifies contract",
+      "Explicit partial-state model",
+      "Tests all outcomes",
+      "Consistent boundary logging"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-025",
+    "role_slug": "software-development-engineer",
+    "domain": "Object-Oriented Design and Design Principles",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does encapsulation mean beyond making fields private?",
+    "preferred_answer": "Encapsulation places related state and behaviour behind an interface that preserves invariants and hides changeable representation. Private fields alone are insufficient if callers must coordinate low-level steps or receive mutable internals. A good abstraction exposes meaningful operations and owns its consistency rules.",
+    "evaluation_points": [
+      "Invariants",
+      "Representation hiding",
+      "Behavioural interface",
+      "Private fields alone insufficient"
+    ],
+    "resolution_title": "Object-oriented programming - SOLID principles",
+    "resolution_url": "https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-026",
+    "role_slug": "software-development-engineer",
+    "domain": "Object-Oriented Design and Design Principles",
+    "difficulty": "foundation",
+    "question_type": "design",
+    "prompt": "When is composition preferable to inheritance?",
+    "preferred_answer": "Composition is preferable when behaviour should be assembled, replaced or tested independently and the relationship is not a true substitutable 'is-a'. Inheritance can be useful for stable polymorphic hierarchies, but it couples subclasses to base-class assumptions. Prefer the option that keeps contracts clear and change local.",
+    "evaluation_points": [
+      "Is-a versus has-a",
+      "Substitutability",
+      "Coupling trade-off",
+      "Local change"
+    ],
+    "resolution_title": "Design Patterns",
+    "resolution_url": "https://refactoring.guru/design-patterns",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-027",
+    "role_slug": "software-development-engineer",
+    "domain": "Object-Oriented Design and Design Principles",
+    "difficulty": "intermediate",
+    "question_type": "principles",
+    "prompt": "Explain the Liskov Substitution Principle with a failure example.",
+    "preferred_answer": "A subtype should be usable wherever its base type is expected without weakening preconditions, strengthening postconditions or violating stated behaviour. A 'read-only file' subtype that inherits a writable file contract but throws on every write is not substitutable. Redesign the abstraction around capabilities rather than forcing the hierarchy.",
+    "evaluation_points": [
+      "Behavioural substitutability",
+      "Contract conditions",
+      "Concrete failure example",
+      "Capability-based redesign"
+    ],
+    "resolution_title": "Object-oriented programming - SOLID principles",
+    "resolution_url": "https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-028",
+    "role_slug": "software-development-engineer",
+    "domain": "Object-Oriented Design and Design Principles",
+    "difficulty": "intermediate",
+    "question_type": "dependencies",
+    "prompt": "What problem does dependency inversion solve?",
+    "preferred_answer": "High-level policy should depend on stable abstractions rather than concrete infrastructure details. This allows databases, messaging or external clients to change without rewriting business rules and makes tests easier. It does not require an interface for every class; introduce boundaries where volatility, ownership or testing value justify them.",
+    "evaluation_points": [
+      "Policy versus detail",
+      "Stable boundary",
+      "Testing and change value",
+      "Avoids interface-everywhere dogma"
+    ],
+    "resolution_title": "Object-oriented programming - SOLID principles",
+    "resolution_url": "https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-029",
+    "role_slug": "software-development-engineer",
+    "domain": "Object-Oriented Design and Design Principles",
+    "difficulty": "intermediate",
+    "question_type": "patterns",
+    "prompt": "How should you decide whether to apply a design pattern?",
+    "preferred_answer": "Start from a recurring design force or change problem, compare the pattern\u2019s consequences and use the smallest form that solves it. Patterns provide shared language, not mandatory architecture. A pattern that adds indirection without present or credible future variation can make code harder to understand.",
+    "evaluation_points": [
+      "Problem before pattern",
+      "Consequences",
+      "Shared vocabulary",
+      "Overengineering warning"
+    ],
+    "resolution_title": "Design Patterns",
+    "resolution_url": "https://refactoring.guru/design-patterns",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-030",
+    "role_slug": "software-development-engineer",
+    "domain": "Object-Oriented Design and Design Principles",
+    "difficulty": "advanced",
+    "question_type": "interfaces",
+    "prompt": "How does interface segregation improve system design?",
+    "preferred_answer": "Clients should depend only on capabilities they use, which limits accidental coupling and permissions. Split broad interfaces around cohesive roles and usage patterns, but avoid dozens of one-method interfaces with no boundary value. Evaluate change frequency and consumer needs rather than a fixed method count.",
+    "evaluation_points": [
+      "Client-specific capability",
+      "Reduced coupling",
+      "Cohesive roles",
+      "Avoids mechanical fragmentation"
+    ],
+    "resolution_title": "Object-oriented programming - SOLID principles",
+    "resolution_url": "https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-031",
+    "role_slug": "software-development-engineer",
+    "domain": "Object-Oriented Design and Design Principles",
+    "difficulty": "advanced",
+    "question_type": "domain-model",
+    "prompt": "When is a rich domain model useful, and when is a simpler transaction script better?",
+    "preferred_answer": "A rich model is useful when rules, invariants and behaviours interact across a complex domain and benefit from explicit concepts. A transaction script is often clearer for straightforward workflows or data transformations. Choose based on business complexity and expected change, not prestige; both can be modular and well tested.",
+    "evaluation_points": [
+      "Complex invariants",
+      "Simple workflow alternative",
+      "Context-driven choice",
+      "No prestige argument"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-032",
+    "role_slug": "software-development-engineer",
+    "domain": "Object-Oriented Design and Design Principles",
+    "difficulty": "scenario",
+    "question_type": "refactoring",
+    "prompt": "A base class has 18 subclasses, conditionals for subtype checks and frequent cross-hierarchy changes. How would you respond?",
+    "preferred_answer": "Map the actual variation axes and contracts, identify behaviours that change together, and add characterization tests. Replace type checks with polymorphism only where behaviour is truly substitutable; otherwise extract composable strategies or separate capabilities. Migrate incrementally and measure whether the new design reduces change spread.",
+    "evaluation_points": [
+      "Variation analysis",
+      "Characterization tests",
+      "Composition or capabilities",
+      "Incremental measurable refactor"
+    ],
+    "resolution_title": "Refactoring",
+    "resolution_url": "https://refactoring.com/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-033",
+    "role_slug": "software-development-engineer",
+    "domain": "Data Structures, Algorithms and Complexity",
+    "difficulty": "foundation",
+    "question_type": "complexity",
+    "prompt": "What do Big O time and space complexity communicate?",
+    "preferred_answer": "They describe how resource use grows as input size grows, abstracting away constants and machine details. State the operation and assumptions: average versus worst case, input distribution and additional memory. Big O helps compare scalability, but measured latency and data shape still matter in production.",
+    "evaluation_points": [
+      "Growth rate",
+      "Time and space",
+      "Assumptions and case",
+      "Measurement still needed"
+    ],
+    "resolution_title": "Dictionary of Algorithms and Data Structures",
+    "resolution_url": "https://xlinux.nist.gov/dads/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-034",
+    "role_slug": "software-development-engineer",
+    "domain": "Data Structures, Algorithms and Complexity",
+    "difficulty": "foundation",
+    "question_type": "structures",
+    "prompt": "Compare arrays, linked lists and dynamic arrays.",
+    "preferred_answer": "Arrays provide contiguous indexed access and good locality but fixed sizing in their basic form. Linked lists support local insertion when a node is known but have poor random access and cache locality. Dynamic arrays provide amortised append and indexed access, with occasional resizing. Choose for real operations, not textbook labels.",
+    "evaluation_points": [
+      "Indexed access",
+      "Insertion characteristics",
+      "Amortised resizing",
+      "Cache locality"
+    ],
+    "resolution_title": "Dictionary of Algorithms and Data Structures",
+    "resolution_url": "https://xlinux.nist.gov/dads/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-035",
+    "role_slug": "software-development-engineer",
+    "domain": "Data Structures, Algorithms and Complexity",
+    "difficulty": "intermediate",
+    "question_type": "hashing",
+    "prompt": "How does a hash table work, and what can degrade its performance?",
+    "preferred_answer": "It maps keys through a hash function into buckets and resolves collisions by chaining or open addressing. Average lookup is often constant time under a good distribution and controlled load factor, but poor hashing, adversarial keys, resizing and memory overhead can degrade performance. Equality and hash consistency are essential.",
+    "evaluation_points": [
+      "Buckets and collisions",
+      "Average versus worst case",
+      "Load factor and adversarial input",
+      "Hash/equality contract"
+    ],
+    "resolution_title": "Dictionary of Algorithms and Data Structures",
+    "resolution_url": "https://xlinux.nist.gov/dads/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-036",
+    "role_slug": "software-development-engineer",
+    "domain": "Data Structures, Algorithms and Complexity",
+    "difficulty": "intermediate",
+    "question_type": "selection",
+    "prompt": "When would you choose a heap instead of a fully sorted collection?",
+    "preferred_answer": "A heap efficiently maintains access to the minimum or maximum and supports repeated priority insertion and removal without ordering every element. It is suitable for schedulers, top-k and graph algorithms. It is not ideal for arbitrary ordered iteration or fast lookup of an unrelated element.",
+    "evaluation_points": [
+      "Priority access",
+      "Insert/remove complexity",
+      "Use cases",
+      "Limitations"
+    ],
+    "resolution_title": "Introduction to Algorithms",
+    "resolution_url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-037",
+    "role_slug": "software-development-engineer",
+    "domain": "Data Structures, Algorithms and Complexity",
+    "difficulty": "intermediate",
+    "question_type": "search",
+    "prompt": "What factors matter when selecting a search or sorting algorithm?",
+    "preferred_answer": "Consider input size, existing order, stability, memory, key cost, worst-case requirements, external storage and whether all results or only top-k are needed. Library implementations are usually preferable. Explain the workload and constraints rather than reciting one universally best algorithm.",
+    "evaluation_points": [
+      "Workload dimensions",
+      "Stability and memory",
+      "Worst-case needs",
+      "Uses standard libraries"
+    ],
+    "resolution_title": "Introduction to Algorithms",
+    "resolution_url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-038",
+    "role_slug": "software-development-engineer",
+    "domain": "Data Structures, Algorithms and Complexity",
+    "difficulty": "advanced",
+    "question_type": "amortisation",
+    "prompt": "What is amortised analysis, and why is it useful?",
+    "preferred_answer": "It bounds the average cost per operation over a sequence even when occasional operations are expensive. Dynamic-array growth is a common example: most appends are constant time, while rare resizing copies elements, yielding amortised constant append. It is not the same as average-case probability and may not satisfy strict latency deadlines.",
+    "evaluation_points": [
+      "Sequence-based cost",
+      "Dynamic-array example",
+      "Not average-case probability",
+      "Latency caveat"
+    ],
+    "resolution_title": "Introduction to Algorithms",
+    "resolution_url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-039",
+    "role_slug": "software-development-engineer",
+    "domain": "Data Structures, Algorithms and Complexity",
+    "difficulty": "advanced",
+    "question_type": "trade-offs",
+    "prompt": "How can improving asymptotic complexity make a system slower?",
+    "preferred_answer": "The new algorithm may add larger constants, allocations, pointer chasing, synchronisation or poor cache locality, and the production input may be below the crossover point. It may also optimise CPU while increasing network or storage work. Confirm complexity, then benchmark representative data and include operational costs.",
+    "evaluation_points": [
+      "Constants and crossover",
+      "Memory/cache effects",
+      "Whole-system resources",
+      "Representative benchmark"
+    ],
+    "resolution_title": "Dictionary of Algorithms and Data Structures",
+    "resolution_url": "https://xlinux.nist.gov/dads/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-040",
+    "role_slug": "software-development-engineer",
+    "domain": "Data Structures, Algorithms and Complexity",
+    "difficulty": "scenario",
+    "question_type": "problem-solving",
+    "prompt": "You need the 100 most frequent items from a stream too large for memory. How would you approach it?",
+    "preferred_answer": "Clarify whether exact results are required, the key cardinality and acceptable error. Exact processing may partition or externally aggregate counts and use a size-100 heap; approximate processing can use streaming sketches and candidate tracking. Define memory, mergeability and accuracy tests before choosing.",
+    "evaluation_points": [
+      "Clarifies exact versus approximate",
+      "External aggregation or heap",
+      "Streaming alternative",
+      "Accuracy and memory validation"
+    ],
+    "resolution_title": "Introduction to Algorithms",
+    "resolution_url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-041",
+    "role_slug": "software-development-engineer",
+    "domain": "Clean Code, Refactoring and Technical Debt",
+    "difficulty": "foundation",
+    "question_type": "maintainability",
+    "prompt": "What makes code readable to another engineer?",
+    "preferred_answer": "Readable code communicates intent through cohesive names, small understandable units, consistent structure and explicit boundaries. It minimises surprising side effects and unnecessary cleverness. Comments should explain decisions, constraints or non-obvious consequences rather than repeat syntax.",
+    "evaluation_points": [
+      "Intent-revealing names",
+      "Cohesion",
+      "Predictable behaviour",
+      "Decision-focused comments"
+    ],
+    "resolution_title": "Google Engineering Practices - Code Review",
+    "resolution_url": "https://google.github.io/eng-practices/review/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-042",
+    "role_slug": "software-development-engineer",
+    "domain": "Clean Code, Refactoring and Technical Debt",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is refactoring?",
+    "preferred_answer": "Refactoring changes the internal structure of software without intentionally changing its externally observable behaviour. It is performed in small verified steps, normally protected by tests. Feature work and refactoring can occur in the same change, but reviewers should be able to distinguish behavioural changes from structural ones.",
+    "evaluation_points": [
+      "Behaviour preservation",
+      "Small steps",
+      "Test protection",
+      "Separates structural and functional change"
+    ],
+    "resolution_title": "Refactoring",
+    "resolution_url": "https://refactoring.com/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-043",
+    "role_slug": "software-development-engineer",
+    "domain": "Clean Code, Refactoring and Technical Debt",
+    "difficulty": "intermediate",
+    "question_type": "smells",
+    "prompt": "How should code smells be used?",
+    "preferred_answer": "A code smell is a signal that design deserves investigation, not proof that a particular refactoring is required. Examine change frequency, defects, comprehension cost and surrounding context. Fix the underlying design problem when the benefit exceeds migration and regression risk; avoid metric-driven cleanup with no user or engineering outcome.",
+    "evaluation_points": [
+      "Signal not verdict",
+      "Context and evidence",
+      "Benefit versus risk",
+      "Avoids cosmetic metric chasing"
+    ],
+    "resolution_title": "Refactoring",
+    "resolution_url": "https://refactoring.com/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-044",
+    "role_slug": "software-development-engineer",
+    "domain": "Clean Code, Refactoring and Technical Debt",
+    "difficulty": "intermediate",
+    "question_type": "debt",
+    "prompt": "Differentiate deliberate technical debt from accidental poor quality.",
+    "preferred_answer": "Deliberate debt is a conscious, bounded trade-off taken for a reason, with understood consequences and a repayment or review condition. Accidental debt emerges from insufficient knowledge, weak design or changing needs. Both require visibility and prioritisation; calling every shortcut 'debt' should not excuse unmanaged risk.",
+    "evaluation_points": [
+      "Conscious trade-off",
+      "Accidental emergence",
+      "Visibility and review",
+      "No excuse framing"
+    ],
+    "resolution_title": "Technical Debt Quadrant",
+    "resolution_url": "https://martinfowler.com/bliki/TechnicalDebtQuadrant.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-045",
+    "role_slug": "software-development-engineer",
+    "domain": "Clean Code, Refactoring and Technical Debt",
+    "difficulty": "intermediate",
+    "question_type": "review",
+    "prompt": "What should a code reviewer optimise for?",
+    "preferred_answer": "Review for correctness, maintainability, security, tests, architecture fit and understandable change scope. Ask whether the solution is simpler than alternatives and whether future maintainers can safely modify it. Reviewers should give timely, specific reasoning and distinguish blocking issues from optional suggestions.",
+    "evaluation_points": [
+      "Correctness and maintainability",
+      "Risk areas",
+      "Timely specific feedback",
+      "Severity distinction"
+    ],
+    "resolution_title": "Google Engineering Practices - Code Review",
+    "resolution_url": "https://google.github.io/eng-practices/review/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-046",
+    "role_slug": "software-development-engineer",
+    "domain": "Clean Code, Refactoring and Technical Debt",
+    "difficulty": "advanced",
+    "question_type": "legacy",
+    "prompt": "How do characterization tests support safe refactoring?",
+    "preferred_answer": "They capture the current observable behaviour of poorly understood code before structural change, including behaviour that may be surprising. They reduce accidental regressions while the team decides which behaviours are intended. They are a temporary safety net, not evidence that every captured defect should become permanent.",
+    "evaluation_points": [
+      "Captures current behaviour",
+      "Regression protection",
+      "Supports discovery",
+      "Does not legitimise every defect"
+    ],
+    "resolution_title": "Refactoring",
+    "resolution_url": "https://refactoring.com/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-047",
+    "role_slug": "software-development-engineer",
+    "domain": "Clean Code, Refactoring and Technical Debt",
+    "difficulty": "advanced",
+    "question_type": "economics",
+    "prompt": "How would you justify paying down technical debt to non-engineering stakeholders?",
+    "preferred_answer": "Connect debt to measurable outcomes: lead time, incident frequency, security exposure, support cost, change failure, onboarding or blocked product options. Propose a bounded intervention with expected benefit and evidence, not an unlimited cleanup programme. Some debt is cheaper to monitor than remove.",
+    "evaluation_points": [
+      "Outcome connection",
+      "Bounded proposal",
+      "Evidence and measurement",
+      "Recognises debt may be retained"
+    ],
+    "resolution_title": "Technical Debt Quadrant",
+    "resolution_url": "https://martinfowler.com/bliki/TechnicalDebtQuadrant.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-048",
+    "role_slug": "software-development-engineer",
+    "domain": "Clean Code, Refactoring and Technical Debt",
+    "difficulty": "scenario",
+    "question_type": "refactoring",
+    "prompt": "A critical 2,000-line function changes weekly and has almost no tests. What is your sequence?",
+    "preferred_answer": "Map inputs, outputs, side effects and callers; add characterization and critical-path tests; instrument failures; then extract seams around stable responsibilities in small commits. Keep behaviour changes separate, compare production signals and retain a rollback path. A full rewrite creates a second unverified system and delays feedback.",
+    "evaluation_points": [
+      "Map behaviour and dependencies",
+      "Add safety net first",
+      "Small seam extraction",
+      "Avoids immediate rewrite"
+    ],
+    "resolution_title": "Refactoring",
+    "resolution_url": "https://refactoring.com/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-049",
+    "role_slug": "software-development-engineer",
+    "domain": "Version Control and Collaborative Development",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What makes a useful Git commit?",
+    "preferred_answer": "It represents one coherent change, has a descriptive message explaining intent, and leaves the repository in a reviewable state. Avoid combining unrelated formatting, generated files and behavioural changes when separation is practical. Small commits help review, bisect and safe reversal, but microscopic noise is not a goal.",
+    "evaluation_points": [
+      "Coherent change",
+      "Intent in message",
+      "Reviewable state",
+      "Balanced size"
+    ],
+    "resolution_title": "Git - Branching and Merging",
+    "resolution_url": "https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-050",
+    "role_slug": "software-development-engineer",
+    "domain": "Version Control and Collaborative Development",
+    "difficulty": "foundation",
+    "question_type": "workflow",
+    "prompt": "What is the difference between merge and rebase?",
+    "preferred_answer": "Merge combines histories and can preserve their branch structure; rebase replays commits onto a new base and creates new commit identities. Rebase can clean private work, but rewriting commits others use disrupts collaboration. The team should choose a predictable policy based on history and release needs.",
+    "evaluation_points": [
+      "History combination versus replay",
+      "New commit identities",
+      "Shared-history caution",
+      "Policy consistency"
+    ],
+    "resolution_title": "git-rebase documentation",
+    "resolution_url": "https://git-scm.com/docs/git-rebase",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-051",
+    "role_slug": "software-development-engineer",
+    "domain": "Version Control and Collaborative Development",
+    "difficulty": "intermediate",
+    "question_type": "recovery",
+    "prompt": "When should git revert be preferred to reset?",
+    "preferred_answer": "Revert creates a new commit that undoes a prior change and is safe for shared history. Reset moves a reference and can change the index or working tree, so it is mainly for local or intentionally rewritten history. Choose based on whether other people or releases depend on the commits.",
+    "evaluation_points": [
+      "Shared-safe revert",
+      "Reference-moving reset",
+      "Index/working-tree awareness",
+      "Collaboration context"
+    ],
+    "resolution_title": "git-revert documentation",
+    "resolution_url": "https://git-scm.com/docs/git-revert",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-052",
+    "role_slug": "software-development-engineer",
+    "domain": "Version Control and Collaborative Development",
+    "difficulty": "intermediate",
+    "question_type": "collaboration",
+    "prompt": "What makes a pull request easy to review?",
+    "preferred_answer": "It has a focused purpose, context and testing evidence; minimises unrelated churn; highlights risky decisions and migrations; and links relevant requirements or incidents. Automated checks should complete before human review where possible. Large work should be sliced behind compatible interfaces rather than delivered as an opaque final dump.",
+    "evaluation_points": [
+      "Focused scope",
+      "Context and evidence",
+      "Risk highlighted",
+      "Automated checks and slicing"
+    ],
+    "resolution_title": "About pull requests",
+    "resolution_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-053",
+    "role_slug": "software-development-engineer",
+    "domain": "Version Control and Collaborative Development",
+    "difficulty": "intermediate",
+    "question_type": "branching",
+    "prompt": "How do trunk-based development and long-lived feature branches trade off?",
+    "preferred_answer": "Frequent integration reduces divergence and exposes conflicts early, supported by tests, flags and small changes. Long-lived branches can isolate incomplete work but accumulate merge risk, delayed feedback and environment drift. The right approach depends on release constraints, but integration delay should be treated as risk.",
+    "evaluation_points": [
+      "Frequent integration benefits",
+      "Long-lived branch risks",
+      "Enabling practices",
+      "Contextual choice"
+    ],
+    "resolution_title": "DORA software delivery performance metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-054",
+    "role_slug": "software-development-engineer",
+    "domain": "Version Control and Collaborative Development",
+    "difficulty": "advanced",
+    "question_type": "diagnosis",
+    "prompt": "How does git bisect locate a regression?",
+    "preferred_answer": "It performs binary search between a known good and known bad commit. Each midpoint is classified by a reliable test until the first bad commit is identified. Automating the test makes the process repeatable; flaky tests or non-buildable commits can mislead and need skip or additional diagnosis.",
+    "evaluation_points": [
+      "Good/bad boundaries",
+      "Binary search",
+      "Automated reliable test",
+      "Flaky/non-buildable handling"
+    ],
+    "resolution_title": "git-bisect documentation",
+    "resolution_url": "https://git-scm.com/docs/git-bisect",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-055",
+    "role_slug": "software-development-engineer",
+    "domain": "Version Control and Collaborative Development",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "How should CODEOWNERS and protected branches be used without creating bottlenecks?",
+    "preferred_answer": "Use ownership to route review for sensitive or specialised areas, with groups and backup coverage rather than one indispensable person. Protect critical branches with proportionate checks and auditable exceptions. Review ownership regularly so stale paths and overloaded teams do not become queues.",
+    "evaluation_points": [
+      "Risk-based ownership",
+      "Team redundancy",
+      "Proportionate protection",
+      "Review of stale/bottleneck ownership"
+    ],
+    "resolution_title": "About code owners",
+    "resolution_url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-056",
+    "role_slug": "software-development-engineer",
+    "domain": "Version Control and Collaborative Development",
+    "difficulty": "scenario",
+    "question_type": "security",
+    "prompt": "A credential was committed and pushed. What actions are required?",
+    "preferred_answer": "Revoke or rotate it immediately, because deleting the line does not invalidate copies. Assess logs and downstream use, remove it from current and historical data where justified, coordinate rewritten history, and add secret scanning and short-lived least-privilege credentials. History cleanup is not containment.",
+    "evaluation_points": [
+      "Rotate first",
+      "Exposure assessment",
+      "History coordination",
+      "Preventive controls"
+    ],
+    "resolution_title": "Security hardening for GitHub Actions",
+    "resolution_url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-057",
+    "role_slug": "software-development-engineer",
+    "domain": "Testing Strategy and Test Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between a unit, integration and end-to-end test?",
+    "preferred_answer": "A unit test verifies a small behaviour with controlled collaborators; an integration test verifies boundaries such as a database or service interaction; an end-to-end test exercises a user or business path through the deployed stack. Names vary, so define scope, dependencies and purpose rather than arguing only about labels.",
+    "evaluation_points": [
+      "Scope distinction",
+      "Dependency distinction",
+      "Purpose",
+      "Acknowledges terminology variation"
+    ],
+    "resolution_title": "Test Sizes",
+    "resolution_url": "https://testing.googleblog.com/2010/12/test-sizes.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-058",
+    "role_slug": "software-development-engineer",
+    "domain": "Testing Strategy and Test Automation",
+    "difficulty": "foundation",
+    "question_type": "quality",
+    "prompt": "What properties make an automated test valuable?",
+    "preferred_answer": "It is deterministic enough to trust, focused on meaningful behaviour, clear when it fails, reasonably fast for its feedback tier and maintainable as implementation changes. It should detect an important defect and help locate it. A test count alone does not measure confidence.",
+    "evaluation_points": [
+      "Trustworthy repeatability",
+      "Meaningful behaviour",
+      "Diagnostic failure",
+      "No count-as-quality claim"
+    ],
+    "resolution_title": "JUnit 5 User Guide",
+    "resolution_url": "https://junit.org/junit5/docs/current/user-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-059",
+    "role_slug": "software-development-engineer",
+    "domain": "Testing Strategy and Test Automation",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "Why should tests usually assert behaviour rather than implementation details?",
+    "preferred_answer": "Behavioural assertions survive internal refactoring and express the contract users or collaborating components depend on. Assertions on private call order, incidental data structures or exact logs make suites brittle. Implementation detail is appropriate when it is itself the required contract or risk.",
+    "evaluation_points": [
+      "Contract focus",
+      "Refactoring resilience",
+      "Brittleness examples",
+      "Recognises legitimate detail tests"
+    ],
+    "resolution_title": "pytest documentation",
+    "resolution_url": "https://docs.pytest.org/en/stable/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-060",
+    "role_slug": "software-development-engineer",
+    "domain": "Testing Strategy and Test Automation",
+    "difficulty": "intermediate",
+    "question_type": "doubles",
+    "prompt": "When should you use mocks, fakes and real dependencies?",
+    "preferred_answer": "Mocks verify selected interactions at a boundary, fakes provide lightweight working behaviour, and real dependencies give the strongest integration evidence. Over-mocking can prove only that the test matches its own assumptions. Use the least artificial setup that is fast, deterministic and capable of finding the target failure.",
+    "evaluation_points": [
+      "Distinct test-double roles",
+      "Over-mocking risk",
+      "Real integration value",
+      "Purpose-driven choice"
+    ],
+    "resolution_title": "Testcontainers documentation",
+    "resolution_url": "https://testcontainers.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-061",
+    "role_slug": "software-development-engineer",
+    "domain": "Testing Strategy and Test Automation",
+    "difficulty": "intermediate",
+    "question_type": "coverage",
+    "prompt": "How should code coverage be interpreted?",
+    "preferred_answer": "Coverage reveals which code was executed by tests, not whether assertions are correct or important behaviours are covered. Use it to find surprising gaps and assess risk, with branch or mutation evidence where useful. A target can establish a floor, but optimising the percentage can encourage trivial tests.",
+    "evaluation_points": [
+      "Execution not correctness",
+      "Gap discovery",
+      "Branch/mutation complement",
+      "Metric gaming warning"
+    ],
+    "resolution_title": "JUnit 5 User Guide",
+    "resolution_url": "https://junit.org/junit5/docs/current/user-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-062",
+    "role_slug": "software-development-engineer",
+    "domain": "Testing Strategy and Test Automation",
+    "difficulty": "advanced",
+    "question_type": "contracts",
+    "prompt": "What is consumer-driven contract testing, and when is it useful?",
+    "preferred_answer": "It verifies that a provider continues to satisfy the interactions its consumers actually rely on, giving earlier feedback than full end-to-end environments. It is useful across independently deployed services, but cannot prove complete provider correctness, shared infrastructure behaviour or user journeys. Govern contract ownership and versioning.",
+    "evaluation_points": [
+      "Consumer expectations",
+      "Independent service value",
+      "Coverage limits",
+      "Ownership and versioning"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-063",
+    "role_slug": "software-development-engineer",
+    "domain": "Testing Strategy and Test Automation",
+    "difficulty": "advanced",
+    "question_type": "flakiness",
+    "prompt": "How do you eliminate flaky tests rather than merely retry them?",
+    "preferred_answer": "Classify the cause: time, randomness, shared state, ordering, concurrency, network, resource limits or environment. Reproduce with evidence, control inputs and clocks, isolate resources and fix unsafe waits. Quarantine only with ownership and expiry; automatic retries can preserve signal temporarily but should not redefine failure as success.",
+    "evaluation_points": [
+      "Root-cause categories",
+      "Controlled determinism",
+      "Quarantine governance",
+      "Retries not a cure"
+    ],
+    "resolution_title": "pytest documentation",
+    "resolution_url": "https://docs.pytest.org/en/stable/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-064",
+    "role_slug": "software-development-engineer",
+    "domain": "Testing Strategy and Test Automation",
+    "difficulty": "scenario",
+    "question_type": "strategy",
+    "prompt": "A release takes six hours to validate and still misses production defects. How would you redesign the test strategy?",
+    "preferred_answer": "Map defects to the earliest layer that could catch them, remove redundant slow scenarios, increase fast component and contract coverage, keep a small critical end-to-end set and test production-like dependencies where risk warrants. Parallelise independent tests, stabilise data and use incident feedback to measure escaped defect classes.",
+    "evaluation_points": [
+      "Defect-to-layer mapping",
+      "Test pyramid or portfolio",
+      "Production-like boundaries",
+      "Feedback from escaped defects"
+    ],
+    "resolution_title": "Test Sizes",
+    "resolution_url": "https://testing.googleblog.com/2010/12/test-sizes.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-065",
+    "role_slug": "software-development-engineer",
+    "domain": "Debugging and Root-Cause Analysis",
+    "difficulty": "foundation",
+    "question_type": "process",
+    "prompt": "What is a disciplined debugging loop?",
+    "preferred_answer": "State the symptom and expected behaviour, gather evidence, form a falsifiable hypothesis, run the smallest discriminating experiment, update the model and repeat. Change one relevant variable at a time where possible. Record findings so the same dead end is not repeated by the team.",
+    "evaluation_points": [
+      "Symptom and expectation",
+      "Falsifiable hypothesis",
+      "Discriminating experiment",
+      "Recorded learning"
+    ],
+    "resolution_title": "Site Reliability Engineering - Effective Troubleshooting",
+    "resolution_url": "https://sre.google/sre-book/effective-troubleshooting/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-066",
+    "role_slug": "software-development-engineer",
+    "domain": "Debugging and Root-Cause Analysis",
+    "difficulty": "foundation",
+    "question_type": "evidence",
+    "prompt": "Why should you reproduce a bug before fixing it?",
+    "preferred_answer": "A reproduction confirms the symptom, establishes a baseline and creates a way to verify the fix. When exact reproduction is impossible, preserve production evidence and build a representative model. Do not delay urgent containment, but distinguish containment from a proven root-cause correction.",
+    "evaluation_points": [
+      "Baseline",
+      "Fix verification",
+      "Alternative evidence",
+      "Containment distinction"
+    ],
+    "resolution_title": "Site Reliability Engineering - Effective Troubleshooting",
+    "resolution_url": "https://sre.google/sre-book/effective-troubleshooting/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-067",
+    "role_slug": "software-development-engineer",
+    "domain": "Debugging and Root-Cause Analysis",
+    "difficulty": "intermediate",
+    "question_type": "diagnosis",
+    "prompt": "How do logs, metrics, traces, dumps and profiles support different debugging questions?",
+    "preferred_answer": "Logs provide discrete contextual events, metrics show trends and saturation, traces connect distributed operations, dumps capture state at a moment, and profiles show where resources are spent. Start from the symptom and choose evidence that can discriminate hypotheses; collecting everything without retention and privacy design creates cost and noise.",
+    "evaluation_points": [
+      "Evidence-type distinctions",
+      "Question-driven selection",
+      "Correlation",
+      "Cost/privacy awareness"
+    ],
+    "resolution_title": "OpenTelemetry documentation",
+    "resolution_url": "https://opentelemetry.io/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-068",
+    "role_slug": "software-development-engineer",
+    "domain": "Debugging and Root-Cause Analysis",
+    "difficulty": "intermediate",
+    "question_type": "isolation",
+    "prompt": "What techniques help isolate a regression?",
+    "preferred_answer": "Compare known-good and bad versions, reduce the failing input, disable optional paths, vary one dependency, inspect configuration and use binary search over commits or feature flags. Keep environment and data differences visible. The objective is to shrink the set of possible causes without changing the symptom.",
+    "evaluation_points": [
+      "Good/bad comparison",
+      "Input reduction",
+      "Dependency/config control",
+      "Preserves symptom"
+    ],
+    "resolution_title": "git-bisect documentation",
+    "resolution_url": "https://git-scm.com/docs/git-bisect",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-069",
+    "role_slug": "software-development-engineer",
+    "domain": "Debugging and Root-Cause Analysis",
+    "difficulty": "intermediate",
+    "question_type": "production",
+    "prompt": "How should engineers debug a production issue safely?",
+    "preferred_answer": "Stabilise customer impact first, preserve evidence and use read-only or low-risk diagnostics. Avoid ad hoc changes that cannot be audited or reverted. Use feature flags, traffic shifting, controlled sampling and approved break-glass access; document every action and separate observations from assumptions.",
+    "evaluation_points": [
+      "Impact stabilisation",
+      "Evidence preservation",
+      "Low-risk reversible actions",
+      "Decision log"
+    ],
+    "resolution_title": "Site Reliability Engineering - Managing Incidents",
+    "resolution_url": "https://sre.google/sre-book/managing-incidents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-070",
+    "role_slug": "software-development-engineer",
+    "domain": "Debugging and Root-Cause Analysis",
+    "difficulty": "advanced",
+    "question_type": "causality",
+    "prompt": "Why is temporal correlation not enough to establish root cause?",
+    "preferred_answer": "Two events can coincide because of a common dependency, monitoring delay or normal background change. A causal explanation should show a mechanism, affected scope, counterfactual or controlled evidence and why alternative hypotheses do not fit. Root cause is often a chain of technical and organisational conditions.",
+    "evaluation_points": [
+      "Correlation versus mechanism",
+      "Alternative hypotheses",
+      "Counterfactual evidence",
+      "Multi-factor causes"
+    ],
+    "resolution_title": "Site Reliability Engineering - Effective Troubleshooting",
+    "resolution_url": "https://sre.google/sre-book/effective-troubleshooting/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-071",
+    "role_slug": "software-development-engineer",
+    "domain": "Debugging and Root-Cause Analysis",
+    "difficulty": "advanced",
+    "question_type": "prevention",
+    "prompt": "What makes a root-cause analysis useful after the immediate fix?",
+    "preferred_answer": "It identifies contributing conditions, detection and response gaps, and actions that prevent or limit recurrence. Actions should be prioritised, owned and measurable, such as safer defaults, tests, isolation or observability. 'Engineer made a mistake' is not a sufficient system explanation.",
+    "evaluation_points": [
+      "Contributing conditions",
+      "Detection/response gaps",
+      "Owned measurable actions",
+      "Avoids individual-blame endpoint"
+    ],
+    "resolution_title": "Site Reliability Engineering - Managing Incidents",
+    "resolution_url": "https://sre.google/sre-book/managing-incidents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-072",
+    "role_slug": "software-development-engineer",
+    "domain": "Debugging and Root-Cause Analysis",
+    "difficulty": "scenario",
+    "question_type": "investigation",
+    "prompt": "Latency doubled after a release, but CPU and error rate look normal. What is your diagnostic order?",
+    "preferred_answer": "Confirm the user-visible metric and release correlation, segment by endpoint, region and dependency, compare traces and percentiles, inspect queueing, connection pools, cache hit rate, database plans and payload size. Roll back or reduce exposure if impact is material. Normal averages and CPU do not exclude waiting or tail latency.",
+    "evaluation_points": [
+      "Validate and segment",
+      "Trace dependency time",
+      "Checks queues/cache/database/payload",
+      "Safe rollback decision"
+    ],
+    "resolution_title": "Site Reliability Engineering - Effective Troubleshooting",
+    "resolution_url": "https://sre.google/sre-book/effective-troubleshooting/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-073",
+    "role_slug": "software-development-engineer",
+    "domain": "Database Design, SQL and Transactions",
+    "difficulty": "foundation",
+    "question_type": "modelling",
+    "prompt": "What problem does database normalisation solve?",
+    "preferred_answer": "Normalisation organises relational data to reduce duplicated facts and update anomalies by separating dependencies into appropriate relations. It improves consistency, but every decomposition adds joins and operational complexity. Denormalise deliberately for measured read needs while defining how duplicated data stays correct.",
+    "evaluation_points": [
+      "Reduces duplication/anomalies",
+      "Dependency-based design",
+      "Join trade-off",
+      "Controlled denormalisation"
+    ],
+    "resolution_title": "PostgreSQL documentation - Data Definition",
+    "resolution_url": "https://www.postgresql.org/docs/current/ddl.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-074",
+    "role_slug": "software-development-engineer",
+    "domain": "Database Design, SQL and Transactions",
+    "difficulty": "foundation",
+    "question_type": "keys",
+    "prompt": "What is the difference between a primary key, unique constraint and foreign key?",
+    "preferred_answer": "A primary key uniquely identifies each row and is not null; a unique constraint enforces uniqueness for another candidate key subject to database null semantics; a foreign key enforces that referenced values exist in another relation. These constraints make important invariants executable in the database.",
+    "evaluation_points": [
+      "Primary identity",
+      "Unique candidate key",
+      "Referential integrity",
+      "Database-enforced invariants"
+    ],
+    "resolution_title": "PostgreSQL documentation - Data Definition",
+    "resolution_url": "https://www.postgresql.org/docs/current/ddl.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-075",
+    "role_slug": "software-development-engineer",
+    "domain": "Database Design, SQL and Transactions",
+    "difficulty": "intermediate",
+    "question_type": "indexing",
+    "prompt": "How does an index improve a query, and what does it cost?",
+    "preferred_answer": "An index provides an access structure that can avoid scanning all rows and may support ordering or index-only reads. It consumes storage, slows writes and maintenance, and is useful only when predicates, ordering and selectivity match. Use execution plans and workload evidence rather than indexing every column.",
+    "evaluation_points": [
+      "Access-path benefit",
+      "Write/storage cost",
+      "Predicate/selectivity fit",
+      "Plan-based validation"
+    ],
+    "resolution_title": "PostgreSQL documentation - Indexes",
+    "resolution_url": "https://www.postgresql.org/docs/current/indexes.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-076",
+    "role_slug": "software-development-engineer",
+    "domain": "Database Design, SQL and Transactions",
+    "difficulty": "intermediate",
+    "question_type": "transactions",
+    "prompt": "Explain atomicity, consistency, isolation and durability.",
+    "preferred_answer": "Atomicity commits all transaction changes or none; consistency preserves defined invariants; isolation controls how concurrent transactions observe one another; durability keeps committed changes after failure. Database guarantees depend on configuration and application design, and 'consistency' does not automatically encode every business rule.",
+    "evaluation_points": [
+      "Four properties",
+      "Application invariant nuance",
+      "Configuration dependence",
+      "No magical business correctness"
+    ],
+    "resolution_title": "PostgreSQL documentation - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-077",
+    "role_slug": "software-development-engineer",
+    "domain": "Database Design, SQL and Transactions",
+    "difficulty": "intermediate",
+    "question_type": "queries",
+    "prompt": "How would you diagnose a slow SQL query?",
+    "preferred_answer": "Capture the real query and parameters, data volume and frequency; inspect an execution plan with actual timing where safe; compare estimated and actual rows; review indexes, joins, sorts, locks and I/O; and check recent statistics or schema changes. Optimise the workload, not a synthetic query detached from production.",
+    "evaluation_points": [
+      "Real workload context",
+      "Execution plan",
+      "Estimate versus actual",
+      "Locks/I/O/statistics"
+    ],
+    "resolution_title": "PostgreSQL documentation - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-078",
+    "role_slug": "software-development-engineer",
+    "domain": "Database Design, SQL and Transactions",
+    "difficulty": "advanced",
+    "question_type": "isolation",
+    "prompt": "What anomalies can transaction isolation levels permit?",
+    "preferred_answer": "Depending on the database, weaker levels can permit dirty reads, non-repeatable reads, phantoms or serialization anomalies. Stronger isolation reduces anomalies but can add blocking, retries or aborts. Choose from the business invariant and write pattern, then test concurrent behaviour; do not infer guarantees only from a level name.",
+    "evaluation_points": [
+      "Names anomaly classes",
+      "Trade-off",
+      "Invariant-driven choice",
+      "Database-specific testing"
+    ],
+    "resolution_title": "PostgreSQL documentation - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-079",
+    "role_slug": "software-development-engineer",
+    "domain": "Database Design, SQL and Transactions",
+    "difficulty": "advanced",
+    "question_type": "migrations",
+    "prompt": "How do you perform a zero- or low-downtime schema migration?",
+    "preferred_answer": "Use backward-compatible expand-and-contract steps: add nullable or compatible structures, deploy code that supports old and new forms, backfill in bounded batches, verify, switch reads and writes, then remove old structures later. Avoid long blocking changes, monitor replication and lock impact, and keep rollback or forward-repair options.",
+    "evaluation_points": [
+      "Expand-contract",
+      "Mixed-version compatibility",
+      "Bounded backfill and validation",
+      "Lock/rollback awareness"
+    ],
+    "resolution_title": "PostgreSQL documentation - Data Definition",
+    "resolution_url": "https://www.postgresql.org/docs/current/ddl.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-080",
+    "role_slug": "software-development-engineer",
+    "domain": "Database Design, SQL and Transactions",
+    "difficulty": "scenario",
+    "question_type": "consistency",
+    "prompt": "Two workers process the same payment event and create duplicate records. How would you fix it?",
+    "preferred_answer": "Define an idempotency key or unique business constraint and make the write atomic with the state transition. Handle constraint conflicts as an already-processed outcome, and ensure acknowledgements occur only after durable completion. Locks alone may not protect retries across crashes and multiple consumers.",
+    "evaluation_points": [
+      "Idempotency key",
+      "Database uniqueness/atomicity",
+      "Ack after durability",
+      "Crash/retry awareness"
+    ],
+    "resolution_title": "PostgreSQL documentation - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-081",
+    "role_slug": "software-development-engineer",
+    "domain": "API Design, HTTP and Compatibility",
+    "difficulty": "foundation",
+    "question_type": "http",
+    "prompt": "What do HTTP methods such as GET, POST, PUT, PATCH and DELETE communicate?",
+    "preferred_answer": "GET retrieves a representation and should be safe; POST submits processing or creates subordinate resources; PUT replaces the state of a target resource and is idempotent; PATCH applies a partial modification; DELETE requests removal and is idempotent in intent. Actual safety depends on server behaviour, not the method name alone.",
+    "evaluation_points": [
+      "Method semantics",
+      "Safe versus idempotent",
+      "PUT versus PATCH",
+      "Implementation must honour contract"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-082",
+    "role_slug": "software-development-engineer",
+    "domain": "API Design, HTTP and Compatibility",
+    "difficulty": "foundation",
+    "question_type": "status-codes",
+    "prompt": "How should an API choose HTTP status codes?",
+    "preferred_answer": "Choose the code that best represents the protocol-level outcome: successful processing, client error, authentication or authorisation failure, missing or conflicting resource, rate limit or server failure. Return a stable error body with actionable details. Avoid always returning 200 with an error field because intermediaries and clients lose semantics.",
+    "evaluation_points": [
+      "Outcome-based code",
+      "Client/server distinction",
+      "Stable error body",
+      "Avoids 200-for-errors"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-083",
+    "role_slug": "software-development-engineer",
+    "domain": "API Design, HTTP and Compatibility",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What makes a REST-style resource interface coherent?",
+    "preferred_answer": "Resources have stable identities, representations and state transitions expressed through standard HTTP semantics. Names should represent domain concepts, not controller verbs; filtering and pagination should be explicit; and links or identifiers should support navigation where useful. REST is not merely JSON over HTTP.",
+    "evaluation_points": [
+      "Stable resource identity",
+      "Standard method semantics",
+      "Domain naming",
+      "Beyond JSON-over-HTTP"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-084",
+    "role_slug": "software-development-engineer",
+    "domain": "API Design, HTTP and Compatibility",
+    "difficulty": "intermediate",
+    "question_type": "errors",
+    "prompt": "What should a machine-readable API error contain?",
+    "preferred_answer": "A stable type or code, human-readable title and detail, the relevant instance or correlation identifier, and structured fields for validation or retry context. Do not leak stack traces or secrets. RFC problem details offers a common envelope, but domain-specific fields and documentation remain necessary.",
+    "evaluation_points": [
+      "Stable type/code",
+      "Safe human detail",
+      "Correlation and structured fields",
+      "No sensitive internals"
+    ],
+    "resolution_title": "RFC 9457 - Problem Details for HTTP APIs",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9457",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-085",
+    "role_slug": "software-development-engineer",
+    "domain": "API Design, HTTP and Compatibility",
+    "difficulty": "intermediate",
+    "question_type": "compatibility",
+    "prompt": "Which API changes are usually breaking?",
+    "preferred_answer": "Removing or renaming fields, changing types or meanings, making optional input required, narrowing accepted values, changing status semantics or altering ordering and pagination assumptions can break consumers. Adding optional response fields is often compatible, but strict clients may still fail. Use contract tests and explicit compatibility policy.",
+    "evaluation_points": [
+      "Examples across request/response",
+      "Semantic changes",
+      "Strict-client caveat",
+      "Contract testing"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-086",
+    "role_slug": "software-development-engineer",
+    "domain": "API Design, HTTP and Compatibility",
+    "difficulty": "advanced",
+    "question_type": "versioning",
+    "prompt": "How should an API versioning strategy be chosen?",
+    "preferred_answer": "Prefer compatible evolution within a stable contract, and create a new version only for unavoidable breaking semantics. URI, header or media-type versioning can all work if discovery, documentation, deprecation and observability are clear. Versioning is a lifecycle commitment, not a substitute for careful design.",
+    "evaluation_points": [
+      "Compatible evolution first",
+      "Multiple valid mechanisms",
+      "Deprecation and observability",
+      "Lifecycle cost"
+    ],
+    "resolution_title": "Semantic Versioning 2.0.0",
+    "resolution_url": "https://semver.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-087",
+    "role_slug": "software-development-engineer",
+    "domain": "API Design, HTTP and Compatibility",
+    "difficulty": "advanced",
+    "question_type": "protocols",
+    "prompt": "When would gRPC be preferable to a public HTTP/JSON API?",
+    "preferred_answer": "gRPC provides schema-first contracts, generated clients, efficient binary transport and streaming, making it strong for controlled service-to-service systems. Browser and third-party interoperability, debuggability and caching may favour HTTP/JSON. Evaluate ecosystem, latency, evolution and operational tooling rather than raw serialization speed alone.",
+    "evaluation_points": [
+      "Schema/code generation",
+      "Streaming and efficiency",
+      "Interoperability trade-off",
+      "Contextual choice"
+    ],
+    "resolution_title": "gRPC documentation - Core concepts",
+    "resolution_url": "https://grpc.io/docs/what-is-grpc/core-concepts/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-088",
+    "role_slug": "software-development-engineer",
+    "domain": "API Design, HTTP and Compatibility",
+    "difficulty": "scenario",
+    "question_type": "evolution",
+    "prompt": "A widely used field must change from a single value to multiple values. How would you evolve the API?",
+    "preferred_answer": "Add a new plural field while retaining the old field, define precedence and consistency, update documentation and telemetry, migrate producers and consumers, and publish a deprecation timeline. Test mixed-version behaviour and only remove the old field after usage evidence and contractual notice permit it.",
+    "evaluation_points": [
+      "Additive transition",
+      "Precedence and consistency",
+      "Usage telemetry",
+      "Mixed-version and deprecation"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-089",
+    "role_slug": "software-development-engineer",
+    "domain": "Concurrency, Asynchrony and Parallelism",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate concurrency, parallelism and asynchronous programming.",
+    "preferred_answer": "Concurrency is managing multiple tasks whose execution overlaps; parallelism executes work simultaneously on multiple resources; asynchronous programming allows work to suspend while waiting and resume later. They can be combined but solve different problems. Async code does not automatically use multiple CPU cores.",
+    "evaluation_points": [
+      "Three distinct concepts",
+      "Overlap versus simultaneity",
+      "Waiting model",
+      "No automatic multicore claim"
+    ],
+    "resolution_title": "asyncio - Asynchronous I/O",
+    "resolution_url": "https://docs.python.org/3/library/asyncio.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-090",
+    "role_slug": "software-development-engineer",
+    "domain": "Concurrency, Asynchrony and Parallelism",
+    "difficulty": "foundation",
+    "question_type": "safety",
+    "prompt": "What is a race condition?",
+    "preferred_answer": "A race condition occurs when correctness depends on uncontrolled timing or interleaving of operations. A data race is a specific unsynchronised conflicting memory access in languages that define it. Prevent races through ownership, immutability, atomic operations, locks, message passing or redesign that removes shared mutable state.",
+    "evaluation_points": [
+      "Timing-dependent correctness",
+      "Data-race nuance",
+      "Prevention options",
+      "Shared-state redesign"
+    ],
+    "resolution_title": "The Go Memory Model",
+    "resolution_url": "https://go.dev/ref/mem",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-091",
+    "role_slug": "software-development-engineer",
+    "domain": "Concurrency, Asynchrony and Parallelism",
+    "difficulty": "intermediate",
+    "question_type": "synchronisation",
+    "prompt": "How do mutexes, semaphores and read-write locks differ?",
+    "preferred_answer": "A mutex provides exclusive ownership of a critical section; a semaphore manages a count of permits and can bound concurrency; a read-write lock allows multiple readers or one writer. The best primitive depends on the invariant and contention pattern. More complex locks can increase starvation, deadlock and reasoning cost.",
+    "evaluation_points": [
+      "Primitive distinctions",
+      "Invariant-driven choice",
+      "Contention",
+      "Complexity risks"
+    ],
+    "resolution_title": "Java Tutorials - Concurrency",
+    "resolution_url": "https://docs.oracle.com/javase/tutorial/essential/concurrency/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-092",
+    "role_slug": "software-development-engineer",
+    "domain": "Concurrency, Asynchrony and Parallelism",
+    "difficulty": "intermediate",
+    "question_type": "deadlocks",
+    "prompt": "What conditions allow a deadlock, and how can design reduce the risk?",
+    "preferred_answer": "Deadlock can arise with mutual exclusion, hold-and-wait, no preemption and circular wait. Reduce risk through consistent lock ordering, small critical sections, avoiding callbacks while locked, timeouts where safe and ownership models that need fewer locks. Detection and thread dumps help diagnose but do not replace design.",
+    "evaluation_points": [
+      "Four conditions",
+      "Lock ordering",
+      "Critical-section discipline",
+      "Diagnosis versus prevention"
+    ],
+    "resolution_title": "Java Tutorials - Concurrency",
+    "resolution_url": "https://docs.oracle.com/javase/tutorial/essential/concurrency/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-093",
+    "role_slug": "software-development-engineer",
+    "domain": "Concurrency, Asynchrony and Parallelism",
+    "difficulty": "intermediate",
+    "question_type": "async",
+    "prompt": "How should cancellation and timeouts propagate through asynchronous code?",
+    "preferred_answer": "A caller should be able to cancel work it no longer needs, and downstream operations should honour a shared deadline or cancellation signal. Cleanup must release resources and avoid leaving partial state. Distinguish cancellation from failure in metrics and APIs, and do not catch and discard cancellation exceptions.",
+    "evaluation_points": [
+      "Caller-controlled cancellation",
+      "Deadline propagation",
+      "Cleanup",
+      "Cancellation semantics"
+    ],
+    "resolution_title": "asyncio - Asynchronous I/O",
+    "resolution_url": "https://docs.python.org/3/library/asyncio.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-094",
+    "role_slug": "software-development-engineer",
+    "domain": "Concurrency, Asynchrony and Parallelism",
+    "difficulty": "advanced",
+    "question_type": "backpressure",
+    "prompt": "What is backpressure, and why is it necessary?",
+    "preferred_answer": "Backpressure lets a slower consumer limit or signal upstream production so queues and memory remain bounded. It can use bounded buffers, demand signals, admission control, sampling or load shedding. Without it, asynchronous systems convert temporary slowness into latency growth, resource exhaustion and eventual failure.",
+    "evaluation_points": [
+      "Consumer limits producer",
+      "Bounded mechanisms",
+      "Queue/latency consequence",
+      "Load shedding option"
+    ],
+    "resolution_title": "AWS Well-Architected - Distributed systems",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/design-your-workload-service-architecture-to-withstand-component-failures.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-095",
+    "role_slug": "software-development-engineer",
+    "domain": "Concurrency, Asynchrony and Parallelism",
+    "difficulty": "advanced",
+    "question_type": "memory-model",
+    "prompt": "Why is 'it works on my machine' especially unreliable for concurrent code?",
+    "preferred_answer": "Compilers and processors may reorder operations within the language memory model, and different core counts or timing expose missing synchronisation. Visibility and atomicity must be established by defined happens-before relationships, not observed test timing. Stress tests help, but a correct proof follows the model and invariants.",
+    "evaluation_points": [
+      "Reordering and visibility",
+      "Happens-before",
+      "Hardware/timing variation",
+      "Testing not proof"
+    ],
+    "resolution_title": "The Go Memory Model",
+    "resolution_url": "https://go.dev/ref/mem",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-096",
+    "role_slug": "software-development-engineer",
+    "domain": "Concurrency, Asynchrony and Parallelism",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A worker pool occasionally processes the same task twice and sometimes loses shutdown work. What would you inspect?",
+    "preferred_answer": "Inspect queue acknowledgement timing, visibility timeouts, idempotency, worker ownership, cancellation and graceful shutdown ordering. Stop intake, drain or persist accepted work, wait within a deadline and record incomplete items. Exactly-once execution is rarely a local thread-pool property; design duplicate-safe effects.",
+    "evaluation_points": [
+      "Ack/visibility timing",
+      "Idempotency",
+      "Graceful drain sequence",
+      "Exactly-once scepticism"
+    ],
+    "resolution_title": "Consumer Acknowledgements and Publisher Confirms",
+    "resolution_url": "https://www.rabbitmq.com/docs/confirms",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-097",
+    "role_slug": "software-development-engineer",
+    "domain": "Distributed Systems and Messaging",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why are distributed systems fundamentally different from in-process programmes?",
+    "preferred_answer": "Remote calls have latency, partial failure, independent clocks, changing topology and uncertain delivery. A timeout does not reveal whether the remote action happened. Design must make failure, retries, identity, consistency and observability explicit rather than treating the network as a reliable function call.",
+    "evaluation_points": [
+      "Latency and partial failure",
+      "Timeout ambiguity",
+      "Independent components",
+      "Explicit reliability design"
+    ],
+    "resolution_title": "AWS Well-Architected - Distributed systems",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/design-your-workload-service-architecture-to-withstand-component-failures.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-098",
+    "role_slug": "software-development-engineer",
+    "domain": "Distributed Systems and Messaging",
+    "difficulty": "foundation",
+    "question_type": "messaging",
+    "prompt": "What is the difference between a queue and a publish-subscribe topic?",
+    "preferred_answer": "A queue generally distributes messages among consumers so each work item is handled by one consumer group, while publish-subscribe delivers an event to multiple independent subscriptions or groups. Products combine these models differently. The key design questions are ownership, fan-out, retention, ordering and replay.",
+    "evaluation_points": [
+      "Work distribution",
+      "Fan-out",
+      "Product variation",
+      "Retention/order/replay"
+    ],
+    "resolution_title": "Kafka design documentation",
+    "resolution_url": "https://kafka.apache.org/documentation/#design",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-099",
+    "role_slug": "software-development-engineer",
+    "domain": "Distributed Systems and Messaging",
+    "difficulty": "intermediate",
+    "question_type": "delivery",
+    "prompt": "Explain at-most-once, at-least-once and exactly-once delivery.",
+    "preferred_answer": "At-most-once may lose messages but avoids redelivery; at-least-once retries and can deliver duplicates; exactly-once claims require a defined scope, usually transactional coordination of consumption and produced effects. External side effects still need idempotency or deduplication. Always ask exactly once for which boundary.",
+    "evaluation_points": [
+      "Three guarantees",
+      "Duplicate/loss trade-off",
+      "Scope of exactly-once",
+      "External effect caveat"
+    ],
+    "resolution_title": "Kafka design documentation",
+    "resolution_url": "https://kafka.apache.org/documentation/#design",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-100",
+    "role_slug": "software-development-engineer",
+    "domain": "Distributed Systems and Messaging",
+    "difficulty": "intermediate",
+    "question_type": "retries",
+    "prompt": "How should retries be designed?",
+    "preferred_answer": "Retry only transient and safe operations, use exponential backoff with jitter, bound attempts by a deadline and preserve idempotency. Separate retryable from permanent errors and expose exhaustion. Uncoordinated retries across layers can multiply load, so choose one owning layer and use circuit breaking or load shedding.",
+    "evaluation_points": [
+      "Transient classification",
+      "Backoff and jitter",
+      "Bounded deadline/idempotency",
+      "Retry amplification"
+    ],
+    "resolution_title": "Circuit Breaker pattern",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-101",
+    "role_slug": "software-development-engineer",
+    "domain": "Distributed Systems and Messaging",
+    "difficulty": "intermediate",
+    "question_type": "consistency",
+    "prompt": "When is eventual consistency acceptable?",
+    "preferred_answer": "It is acceptable when temporary divergence is understood, bounded and visible, and the business can tolerate delayed convergence. Define invariants that must remain strong, user experience during lag, reconciliation and conflict handling. 'Eventually consistent' without a convergence mechanism or time expectation is not a design.",
+    "evaluation_points": [
+      "Business tolerance",
+      "Strong invariants",
+      "Lag UX and reconciliation",
+      "Convergence requirement"
+    ],
+    "resolution_title": "AWS Well-Architected - Distributed systems",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/design-your-workload-service-architecture-to-withstand-component-failures.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-102",
+    "role_slug": "software-development-engineer",
+    "domain": "Distributed Systems and Messaging",
+    "difficulty": "advanced",
+    "question_type": "transactions",
+    "prompt": "What problem does the transactional outbox pattern solve?",
+    "preferred_answer": "It records a domain state change and an outgoing message in the same local database transaction. A relay later publishes the outbox record, avoiding the dual-write gap between database commit and broker publish. Consumers still need duplicate handling, and the relay needs monitoring, ordering and retention.",
+    "evaluation_points": [
+      "Dual-write problem",
+      "Same local transaction",
+      "Relay",
+      "Duplicate/operations caveats"
+    ],
+    "resolution_title": "Transactional outbox pattern",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/databases/guide/transactional-outbox-cosmos",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-103",
+    "role_slug": "software-development-engineer",
+    "domain": "Distributed Systems and Messaging",
+    "difficulty": "advanced",
+    "question_type": "workflows",
+    "prompt": "Compare orchestration and choreography for distributed workflows.",
+    "preferred_answer": "Orchestration uses a coordinator to direct steps and compensations, giving visible state and control but creating a central dependency. Choreography lets services react to events, reducing central coupling but making flow and failure harder to understand. Choose based on workflow complexity, ownership, auditability and change coupling.",
+    "evaluation_points": [
+      "Coordinator versus events",
+      "Visibility trade-off",
+      "Coupling trade-off",
+      "Context-based selection"
+    ],
+    "resolution_title": "Saga distributed transactions pattern",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/saga/saga",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-104",
+    "role_slug": "software-development-engineer",
+    "domain": "Distributed Systems and Messaging",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A consumer outage creates a huge backlog, and recovery overloads the database. What is your response?",
+    "preferred_answer": "Protect the database first by capping consumer concurrency and rate, prioritising or expiring work according to business rules, and measuring queue age rather than only depth. Scale after identifying the bottleneck, use backpressure and staged catch-up, and preserve ordering or idempotency requirements. Avoid releasing every consumer at once.",
+    "evaluation_points": [
+      "Dependency protection",
+      "Queue age and prioritisation",
+      "Staged catch-up",
+      "Ordering/idempotency"
+    ],
+    "resolution_title": "Consumer Acknowledgements and Publisher Confirms",
+    "resolution_url": "https://www.rabbitmq.com/docs/confirms",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-105",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Architecture, System Design and Scalability",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "What is software architecture?",
+    "preferred_answer": "Software architecture is the set of significant structures and decisions that shape components, responsibilities, interactions, deployment and quality attributes. It includes the rationale and constraints that make decisions costly to change. A framework or cloud diagram alone is not the architecture.",
+    "evaluation_points": [
+      "Significant structures",
+      "Quality attributes",
+      "Rationale and constraints",
+      "Not just technology diagram"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-106",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Architecture, System Design and Scalability",
+    "difficulty": "foundation",
+    "question_type": "modularity",
+    "prompt": "What makes a module cohesive and loosely coupled?",
+    "preferred_answer": "A cohesive module groups responsibilities that change for the same reason and owns clear invariants. Loose coupling means consumers depend on a small stable contract rather than internals, shared databases or timing assumptions. The goal is independent understanding and change, not zero interaction.",
+    "evaluation_points": [
+      "Changes for same reason",
+      "Stable contract",
+      "Avoids hidden coupling",
+      "Independent change"
+    ],
+    "resolution_title": "Object-oriented programming - SOLID principles",
+    "resolution_url": "https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-107",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Architecture, System Design and Scalability",
+    "difficulty": "intermediate",
+    "question_type": "monoliths",
+    "prompt": "When is a modular monolith a better choice than microservices?",
+    "preferred_answer": "It is often better when one team or tightly coordinated teams own the product, scaling needs are moderate and rapid local transactions simplify the domain. It reduces distributed operational cost while preserving internal boundaries. Microservices are justified by independent ownership, deployment, scaling or isolation needs, not fashion.",
+    "evaluation_points": [
+      "Team/scale context",
+      "Operational simplicity",
+      "Internal boundaries",
+      "Valid microservice drivers"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-108",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Architecture, System Design and Scalability",
+    "difficulty": "intermediate",
+    "question_type": "decomposition",
+    "prompt": "How would you choose service boundaries?",
+    "preferred_answer": "Use business capabilities, data ownership, change patterns, team ownership and quality attributes. Avoid splitting only by technical layers or tables. Validate boundaries against transactions, failure isolation and cross-service chat; boundaries can evolve as evidence appears.",
+    "evaluation_points": [
+      "Business capability",
+      "Data and team ownership",
+      "Transaction/failure analysis",
+      "Evolution"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-109",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Architecture, System Design and Scalability",
+    "difficulty": "intermediate",
+    "question_type": "documentation",
+    "prompt": "How does the C4 model help communicate architecture?",
+    "preferred_answer": "It offers related context, container, component and code views at different levels of detail, helping audiences see system boundaries and responsibilities without one unreadable diagram. Use only views that answer a question and keep them aligned with reality. C4 does not prescribe architecture or replace runtime evidence.",
+    "evaluation_points": [
+      "Multiple abstraction levels",
+      "Audience fit",
+      "Current and purposeful views",
+      "Not prescriptive"
+    ],
+    "resolution_title": "The C4 model for visualising software architecture",
+    "resolution_url": "https://c4model.com/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-110",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Architecture, System Design and Scalability",
+    "difficulty": "advanced",
+    "question_type": "scaling",
+    "prompt": "Differentiate horizontal scaling, vertical scaling and partitioning.",
+    "preferred_answer": "Vertical scaling gives one node more resources and is simple but limited and can increase concentration risk. Horizontal scaling adds instances and requires statelessness or coordination. Partitioning divides data or workload across groups, improving scale and isolation but adding routing, rebalancing and cross-partition complexity.",
+    "evaluation_points": [
+      "Three mechanisms",
+      "Limits and benefits",
+      "State/coordination",
+      "Partition complexity"
+    ],
+    "resolution_title": "AWS Well-Architected Performance Efficiency Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-111",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Architecture, System Design and Scalability",
+    "difficulty": "advanced",
+    "question_type": "data-architecture",
+    "prompt": "What are the risks of sharing one database across independently deployed services?",
+    "preferred_answer": "It creates schema and release coupling, weakens data ownership, enables bypass of service invariants and broadens failure and access scope. It can be acceptable during transition or within one ownership boundary, but changes need contracts, permissions and migration coordination. Separate ownership does not always require separate physical servers.",
+    "evaluation_points": [
+      "Schema/release coupling",
+      "Invariant bypass",
+      "Failure/security scope",
+      "Logical versus physical separation"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-112",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Architecture, System Design and Scalability",
+    "difficulty": "scenario",
+    "question_type": "system-design",
+    "prompt": "Design a service that must handle a 20x traffic spike for ten minutes without losing accepted requests.",
+    "preferred_answer": "Clarify request types, durability and latency targets; use admission control and a durable queue to separate acceptance from processing; autoscale stateless consumers; protect dependencies with limits and backpressure; and define idempotency, degradation and recovery. Capacity-test the queue, storage and catch-up time, not only web servers.",
+    "evaluation_points": [
+      "Clarifies SLO and durability",
+      "Queue decoupling",
+      "Dependency protection",
+      "Catch-up and capacity test"
+    ],
+    "resolution_title": "AWS Well-Architected Reliability Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-113",
+    "role_slug": "software-development-engineer",
+    "domain": "Performance Engineering and Capacity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate latency, throughput, utilisation and saturation.",
+    "preferred_answer": "Latency is time per operation, throughput is completed work per unit time, utilisation is the proportion of resource capacity in use, and saturation is queued or delayed work caused by constrained capacity. High utilisation may be healthy until queues grow; percentiles reveal tail latency hidden by averages.",
+    "evaluation_points": [
+      "Four definitions",
+      "Queue relationship",
+      "Utilisation nuance",
+      "Percentiles"
+    ],
+    "resolution_title": "AWS Well-Architected Performance Efficiency Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-114",
+    "role_slug": "software-development-engineer",
+    "domain": "Performance Engineering and Capacity",
+    "difficulty": "foundation",
+    "question_type": "method",
+    "prompt": "Why should optimisation start with measurement?",
+    "preferred_answer": "Without a representative baseline, engineers can optimise code that is not on the critical path or trade one bottleneck for another. Define the user or workload outcome, profile the system, change one meaningful factor and compare under controlled conditions. Preserve correctness and cost as constraints.",
+    "evaluation_points": [
+      "Representative baseline",
+      "Critical path",
+      "Controlled comparison",
+      "Correctness/cost constraints"
+    ],
+    "resolution_title": "Linux Performance",
+    "resolution_url": "https://www.brendangregg.com/linuxperf.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-115",
+    "role_slug": "software-development-engineer",
+    "domain": "Performance Engineering and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "profiling",
+    "prompt": "What is the difference between a CPU profile, allocation profile and distributed trace?",
+    "preferred_answer": "A CPU profile samples where execution time is spent, an allocation profile shows memory creation and retention pressure, and a trace follows request timing across components. They answer different questions and have sampling overhead and blind spots. Correlate them with workload and system metrics.",
+    "evaluation_points": [
+      "Evidence distinctions",
+      "Use cases",
+      "Overhead/blind spots",
+      "Correlation"
+    ],
+    "resolution_title": "OpenTelemetry documentation",
+    "resolution_url": "https://opentelemetry.io/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-116",
+    "role_slug": "software-development-engineer",
+    "domain": "Performance Engineering and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "caching",
+    "prompt": "When does caching improve performance, and what risks does it add?",
+    "preferred_answer": "Caching helps when repeated reads are expensive and acceptable freshness can be defined. It adds invalidation, stampede, memory, consistency and privacy risks. Choose keys, TTL, ownership and failure behaviour deliberately; a cache should not become an untracked source of truth.",
+    "evaluation_points": [
+      "Read-cost benefit",
+      "Freshness contract",
+      "Invalidation/stampede",
+      "Not source of truth"
+    ],
+    "resolution_title": "RFC 9111 - HTTP Caching",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9111",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-117",
+    "role_slug": "software-development-engineer",
+    "domain": "Performance Engineering and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "load-testing",
+    "prompt": "What makes a load test representative?",
+    "preferred_answer": "It models realistic arrival rate, concurrency, request mix, data distribution, think time and dependency behaviour, with a defined warm-up and success criteria. Monitor the whole system and compare against production. A test that only drives maximum requests from one machine may measure the generator or an unrealistic path.",
+    "evaluation_points": [
+      "Realistic workload model",
+      "Warm-up and criteria",
+      "Whole-system observation",
+      "Generator limitation"
+    ],
+    "resolution_title": "k6 documentation",
+    "resolution_url": "https://grafana.com/docs/k6/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-118",
+    "role_slug": "software-development-engineer",
+    "domain": "Performance Engineering and Capacity",
+    "difficulty": "advanced",
+    "question_type": "queueing",
+    "prompt": "Why can response time rise sharply before CPU reaches 100%?",
+    "preferred_answer": "Queueing delay grows non-linearly as arrival rate approaches effective service capacity, and another resource such as a connection pool, lock, disk or downstream service may saturate first. Averages can hide the tail. Inspect concurrency limits, service-time distribution and queue depth rather than CPU alone.",
+    "evaluation_points": [
+      "Non-linear queueing",
+      "Other bottlenecks",
+      "Tail latency",
+      "Concurrency/service-time evidence"
+    ],
+    "resolution_title": "AWS Well-Architected Performance Efficiency Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-119",
+    "role_slug": "software-development-engineer",
+    "domain": "Performance Engineering and Capacity",
+    "difficulty": "advanced",
+    "question_type": "capacity",
+    "prompt": "How should a team create a capacity plan?",
+    "preferred_answer": "Start from business demand scenarios and SLOs, translate them into requests, data growth and dependency load, measure per-unit resource cost, include peak and failure headroom, and test scaling and recovery. Revisit assumptions as software, traffic and prices change. A single maximum RPS number is insufficient.",
+    "evaluation_points": [
+      "Demand to resource model",
+      "SLO and headroom",
+      "Failure/scaling tests",
+      "Ongoing revision"
+    ],
+    "resolution_title": "AWS Well-Architected Performance Efficiency Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-120",
+    "role_slug": "software-development-engineer",
+    "domain": "Performance Engineering and Capacity",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "Memory grows steadily under load but drops after restart. How would you investigate?",
+    "preferred_answer": "Separate expected cache growth from a leak by graphing live objects, heap size and garbage collection; compare allocation profiles over time; inspect unbounded collections, listener registrations, request contexts and native resources; and reproduce with a stable workload. Set protective limits while confirming the retaining path.",
+    "evaluation_points": [
+      "Cache versus leak",
+      "Time-series and profiles",
+      "Common retaining causes",
+      "Containment plus root cause"
+    ],
+    "resolution_title": "Linux Performance",
+    "resolution_url": "https://www.brendangregg.com/linuxperf.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-121",
+    "role_slug": "software-development-engineer",
+    "domain": "Secure Software Development",
+    "difficulty": "foundation",
+    "question_type": "principles",
+    "prompt": "What is the difference between authentication and authorisation?",
+    "preferred_answer": "Authentication establishes confidence in an identity; authorisation decides which actions that identity may perform on a resource. Both must be enforced server-side, and successful authentication never implies broad access. Logging should record decisions without exposing credentials or sensitive data.",
+    "evaluation_points": [
+      "Identity versus permission",
+      "Server-side enforcement",
+      "No broad access implication",
+      "Safe auditability"
+    ],
+    "resolution_title": "Authorization Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-122",
+    "role_slug": "software-development-engineer",
+    "domain": "Secure Software Development",
+    "difficulty": "foundation",
+    "question_type": "input",
+    "prompt": "Why is input validation not the same as output encoding?",
+    "preferred_answer": "Validation checks that data conforms to expected structure and meaning. Output encoding represents data safely for a specific destination interpreter such as HTML, SQL or a shell. They address different risks; use parameterised APIs and context-specific encoding rather than treating sanitisation as a universal transformation.",
+    "evaluation_points": [
+      "Validation purpose",
+      "Contextual output handling",
+      "Different controls",
+      "Safe APIs"
+    ],
+    "resolution_title": "Input Validation Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-123",
+    "role_slug": "software-development-engineer",
+    "domain": "Secure Software Development",
+    "difficulty": "intermediate",
+    "question_type": "lifecycle",
+    "prompt": "What does shifting security left mean when implemented well?",
+    "preferred_answer": "It means making security requirements, threat modelling, safe libraries, automated checks and review available early enough to prevent defects. It should not shift all responsibility onto developers or create noisy gates. Security specialists, platform teams and operations remain accountable for usable controls and production evidence.",
+    "evaluation_points": [
+      "Early prevention",
+      "Usable tooling",
+      "Shared accountability",
+      "Avoids gate-only interpretation"
+    ],
+    "resolution_title": "SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-124",
+    "role_slug": "software-development-engineer",
+    "domain": "Secure Software Development",
+    "difficulty": "intermediate",
+    "question_type": "secrets",
+    "prompt": "How should application secrets be managed?",
+    "preferred_answer": "Keep secrets out of source, images and ordinary configuration; issue them through a controlled secret system or workload identity; scope access narrowly; rotate and revoke; and prevent exposure in logs and crash reports. Prefer short-lived credentials. Encryption at rest alone does not solve runtime access or leakage.",
+    "evaluation_points": [
+      "No source/image embedding",
+      "Controlled delivery",
+      "Least privilege and rotation",
+      "Runtime leakage awareness"
+    ],
+    "resolution_title": "SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-125",
+    "role_slug": "software-development-engineer",
+    "domain": "Secure Software Development",
+    "difficulty": "intermediate",
+    "question_type": "dependencies",
+    "prompt": "How should a team manage open-source dependency risk?",
+    "preferred_answer": "Maintain an inventory and lock or verify versions, monitor vulnerabilities and malicious releases, minimise unnecessary dependencies, review provenance and licences, and test updates. Prioritise by reachability, exploitation and business exposure. Automated alerts need ownership and a defined exception path.",
+    "evaluation_points": [
+      "Inventory and version control",
+      "Vulnerability/provenance monitoring",
+      "Risk-based prioritisation",
+      "Owned update process"
+    ],
+    "resolution_title": "About Dependabot security updates",
+    "resolution_url": "https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/about-dependabot-security-updates",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-126",
+    "role_slug": "software-development-engineer",
+    "domain": "Secure Software Development",
+    "difficulty": "advanced",
+    "question_type": "authorisation",
+    "prompt": "Why is deny-by-default important in authorisation design?",
+    "preferred_answer": "It ensures new resources, routes and actions are inaccessible until an explicit policy grants them. Positive checks should use trusted identity and resource context on every request, with central policy where appropriate and tests for horizontal and vertical privilege boundaries. Client-side hiding is not authorisation.",
+    "evaluation_points": [
+      "Explicit grant model",
+      "Every-request check",
+      "Horizontal/vertical tests",
+      "No client-side reliance"
+    ],
+    "resolution_title": "Authorization Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-127",
+    "role_slug": "software-development-engineer",
+    "domain": "Secure Software Development",
+    "difficulty": "advanced",
+    "question_type": "product-security",
+    "prompt": "How does Secure by Design change engineering priorities?",
+    "preferred_answer": "It makes customer security outcomes, safe defaults and elimination of recurring defect classes product responsibilities rather than optional hardening. Leadership should fund secure components, telemetry, vulnerability response and long-term support. The goal is to make the safest path the easiest path, not publish longer configuration guides.",
+    "evaluation_points": [
+      "Customer outcome ownership",
+      "Safe defaults",
+      "Defect-class elimination",
+      "Leadership responsibility"
+    ],
+    "resolution_title": "Secure by Design",
+    "resolution_url": "https://www.cisa.gov/securebydesign",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-128",
+    "role_slug": "software-development-engineer",
+    "domain": "Secure Software Development",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A new endpoint exposes records from another tenant when an ID is changed. What is the response sequence?",
+    "preferred_answer": "Restrict or disable the endpoint, preserve request and identity evidence, identify affected tenants and notify incident owners. Fix server-side object-level authorisation using authenticated tenant and ownership context, then test read, update, delete, list, caches and adjacent services. Search for prior exploitation and the same defect pattern elsewhere.",
+    "evaluation_points": [
+      "Containment and evidence",
+      "Object-level authorisation",
+      "Broad method/adjacent testing",
+      "Historical and defect-class review"
+    ],
+    "resolution_title": "Application Security Verification Standard",
+    "resolution_url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-129",
+    "role_slug": "software-development-engineer",
+    "domain": "Reliability, Observability and Incident Readiness",
+    "difficulty": "foundation",
+    "question_type": "observability",
+    "prompt": "How do logs, metrics and traces differ?",
+    "preferred_answer": "Logs record discrete events and context, metrics summarise numeric behaviour over time, and traces follow work across components. Together they should preserve identifiers, time and service context so engineers can move from an alert to affected requests. More telemetry is not automatically more observability if it lacks questions, quality or ownership.",
+    "evaluation_points": [
+      "Three signal types",
+      "Correlation context",
+      "Question-driven use",
+      "Quality and ownership"
+    ],
+    "resolution_title": "OpenTelemetry documentation",
+    "resolution_url": "https://opentelemetry.io/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-130",
+    "role_slug": "software-development-engineer",
+    "domain": "Reliability, Observability and Incident Readiness",
+    "difficulty": "foundation",
+    "question_type": "reliability",
+    "prompt": "What is the difference between an SLI, SLO and SLA?",
+    "preferred_answer": "An SLI is a measured indicator such as successful request proportion or latency; an SLO is the target for that indicator over a window; an SLA is an external agreement with consequences. Select indicators from user-visible outcomes and define valid events and exclusions precisely.",
+    "evaluation_points": [
+      "Measure, target, agreement",
+      "User-visible basis",
+      "Window and event definition",
+      "No terminology mixing"
+    ],
+    "resolution_title": "Site Reliability Engineering - Service Level Objectives",
+    "resolution_url": "https://sre.google/sre-book/service-level-objectives/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-131",
+    "role_slug": "software-development-engineer",
+    "domain": "Reliability, Observability and Incident Readiness",
+    "difficulty": "intermediate",
+    "question_type": "alerts",
+    "prompt": "What makes an alert actionable?",
+    "preferred_answer": "It indicates a condition requiring timely human action, has severity tied to user or business impact, includes relevant context and a runbook, and routes to an owner. Prefer symptom or SLO-based alerts over every internal anomaly. Alerts should be tested and reviewed for false positives and missed incidents.",
+    "evaluation_points": [
+      "Human action required",
+      "Impact-based severity",
+      "Context/runbook/owner",
+      "Testing and tuning"
+    ],
+    "resolution_title": "Site Reliability Engineering - Monitoring Distributed Systems",
+    "resolution_url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-132",
+    "role_slug": "software-development-engineer",
+    "domain": "Reliability, Observability and Incident Readiness",
+    "difficulty": "intermediate",
+    "question_type": "instrumentation",
+    "prompt": "Why are semantic conventions valuable in telemetry?",
+    "preferred_answer": "They standardise names and attributes for common operations so dashboards, queries and correlations work across libraries and services. Teams should follow stable conventions and control cardinality and sensitive fields. Custom attributes remain useful for domain context but need governance.",
+    "evaluation_points": [
+      "Common names and attributes",
+      "Cross-service tooling",
+      "Cardinality/privacy",
+      "Governed domain context"
+    ],
+    "resolution_title": "Semantic conventions",
+    "resolution_url": "https://opentelemetry.io/docs/specs/semconv/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-133",
+    "role_slug": "software-development-engineer",
+    "domain": "Reliability, Observability and Incident Readiness",
+    "difficulty": "intermediate",
+    "question_type": "resilience",
+    "prompt": "How should timeouts, retries and circuit breakers work together?",
+    "preferred_answer": "A timeout bounds waiting; a retry repeats a transient safe operation within a total deadline; a circuit breaker stops repeated calls to a failing dependency and probes recovery. Add jitter, idempotency and fallback or degradation where appropriate. Misconfigured layers can amplify traffic and extend incidents.",
+    "evaluation_points": [
+      "Three distinct controls",
+      "Total deadline",
+      "Jitter/idempotency",
+      "Retry amplification risk"
+    ],
+    "resolution_title": "Circuit Breaker pattern",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-134",
+    "role_slug": "software-development-engineer",
+    "domain": "Reliability, Observability and Incident Readiness",
+    "difficulty": "advanced",
+    "question_type": "error-budgets",
+    "prompt": "How does an error budget guide engineering decisions?",
+    "preferred_answer": "It converts an SLO into an allowed amount of unreliability. When the service is comfortably within budget, teams can accept more delivery risk; when it is exhausted, reliability work and stricter release controls take priority. It is a decision tool, not a target to consume or a reason to ignore individual severe incidents.",
+    "evaluation_points": [
+      "Derived from SLO",
+      "Balances delivery and reliability",
+      "Policy response",
+      "Not downtime target"
+    ],
+    "resolution_title": "Site Reliability Engineering - Service Level Objectives",
+    "resolution_url": "https://sre.google/sre-book/service-level-objectives/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-135",
+    "role_slug": "software-development-engineer",
+    "domain": "Reliability, Observability and Incident Readiness",
+    "difficulty": "advanced",
+    "question_type": "incidents",
+    "prompt": "What should an incident-management structure provide?",
+    "preferred_answer": "Clear command, operations, communications and subject-matter roles; a shared timeline and decision log; secure communication channels; severity and escalation rules; and handoffs for long incidents. Roles reduce coordination load, but the structure should be proportional and adapted as scope changes.",
+    "evaluation_points": [
+      "Defined roles",
+      "Timeline/decision log",
+      "Communication and escalation",
+      "Proportional adaptation"
+    ],
+    "resolution_title": "Site Reliability Engineering - Managing Incidents",
+    "resolution_url": "https://sre.google/sre-book/managing-incidents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-136",
+    "role_slug": "software-development-engineer",
+    "domain": "Reliability, Observability and Incident Readiness",
+    "difficulty": "scenario",
+    "question_type": "outage",
+    "prompt": "Error rate rises in one region after a configuration rollout. What is the first response sequence?",
+    "preferred_answer": "Confirm impact and rollout correlation, stop further propagation, compare healthy and unhealthy regions, and revert or disable the configuration if safe. Preserve configuration and telemetry evidence, inspect dependency and capacity differences, communicate status and validate recovery against user-visible indicators before closing.",
+    "evaluation_points": [
+      "Confirm and contain rollout",
+      "Healthy-region comparison",
+      "Safe revert",
+      "Recovery validation and communication"
+    ],
+    "resolution_title": "Site Reliability Engineering - Managing Incidents",
+    "resolution_url": "https://sre.google/sre-book/managing-incidents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-137",
+    "role_slug": "software-development-engineer",
+    "domain": "Build Systems, CI/CD and Release Engineering",
+    "difficulty": "foundation",
+    "question_type": "pipeline",
+    "prompt": "What stages belong in a production-ready delivery pipeline?",
+    "preferred_answer": "Typical stages include source validation, dependency resolution, build, unit and integration tests, static and security checks, packaging, artefact publication, deployment, acceptance checks and promotion. Fail fast on cheap checks, retain evidence and promote the same immutable artefact through environments.",
+    "evaluation_points": [
+      "Build through promotion",
+      "Fast feedback",
+      "Security/testing evidence",
+      "Immutable artefact"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-138",
+    "role_slug": "software-development-engineer",
+    "domain": "Build Systems, CI/CD and Release Engineering",
+    "difficulty": "foundation",
+    "question_type": "reproducibility",
+    "prompt": "What makes a build reproducible?",
+    "preferred_answer": "The same source, declared dependencies, toolchain and inputs produce equivalent outputs, independent of a developer machine. Pin and verify dependencies, control environment and time-sensitive inputs, isolate builds and record provenance. Reproducibility improves debugging and supply-chain assurance.",
+    "evaluation_points": [
+      "Declared inputs",
+      "Pinned toolchain/dependencies",
+      "Isolation",
+      "Provenance and debugging"
+    ],
+    "resolution_title": "Build best practices",
+    "resolution_url": "https://docs.docker.com/build/building/best-practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-139",
+    "role_slug": "software-development-engineer",
+    "domain": "Build Systems, CI/CD and Release Engineering",
+    "difficulty": "intermediate",
+    "question_type": "artefacts",
+    "prompt": "Why should teams build once and deploy the same artefact?",
+    "preferred_answer": "It prevents environment-specific rebuild drift, preserves the exact tested output and makes promotion and rollback traceable. Runtime configuration should be external and versioned separately. Rebuilding for production can introduce a different dependency or compiler result after tests have passed.",
+    "evaluation_points": [
+      "Same tested output",
+      "Traceability",
+      "Configuration separation",
+      "Avoids rebuild drift"
+    ],
+    "resolution_title": "DORA software delivery performance metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-140",
+    "role_slug": "software-development-engineer",
+    "domain": "Build Systems, CI/CD and Release Engineering",
+    "difficulty": "intermediate",
+    "question_type": "versioning",
+    "prompt": "How should semantic versioning be applied?",
+    "preferred_answer": "For a declared public API, increment major for incompatible changes, minor for backward-compatible functionality and patch for backward-compatible fixes. Pre-release and build metadata have defined meanings. SemVer is useful only when the compatibility surface and release discipline are clear.",
+    "evaluation_points": [
+      "Major/minor/patch",
+      "Public API basis",
+      "Pre-release awareness",
+      "Needs disciplined compatibility"
+    ],
+    "resolution_title": "Semantic Versioning 2.0.0",
+    "resolution_url": "https://semver.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-141",
+    "role_slug": "software-development-engineer",
+    "domain": "Build Systems, CI/CD and Release Engineering",
+    "difficulty": "intermediate",
+    "question_type": "deployment",
+    "prompt": "Compare rolling, blue-green and canary deployment.",
+    "preferred_answer": "Rolling replaces instances gradually and is resource-efficient but runs mixed versions. Blue-green keeps two environments and switches traffic, enabling fast rollback at higher cost. Canary exposes a small segment and expands based on health, requiring routing, observability and automated decision criteria.",
+    "evaluation_points": [
+      "Mechanisms",
+      "Mixed-version issue",
+      "Cost/rollback trade-offs",
+      "Canary observability"
+    ],
+    "resolution_title": "Deployments",
+    "resolution_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-142",
+    "role_slug": "software-development-engineer",
+    "domain": "Build Systems, CI/CD and Release Engineering",
+    "difficulty": "advanced",
+    "question_type": "gates",
+    "prompt": "What makes a quality gate effective rather than bureaucratic?",
+    "preferred_answer": "It evaluates automated, risk-relevant evidence with clear thresholds, ownership and an exception path. It should be fast and versioned and should fail for conditions that matter to users, security or operability. A broad manual approval with no new information is a queue, not a control.",
+    "evaluation_points": [
+      "Risk-relevant evidence",
+      "Automation and speed",
+      "Ownership/exception path",
+      "No information-free approval"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-143",
+    "role_slug": "software-development-engineer",
+    "domain": "Build Systems, CI/CD and Release Engineering",
+    "difficulty": "advanced",
+    "question_type": "rollback",
+    "prompt": "When should a team roll back versus fix forward?",
+    "preferred_answer": "Roll back when a known-good artefact can restore service safely and data or schema changes remain compatible. Fix forward when rollback would corrupt state, recreate the failure or take longer than a bounded correction. Both paths need rehearsal, observability and customer-impact-based decision rules.",
+    "evaluation_points": [
+      "Known-good restoration",
+      "Data/schema compatibility",
+      "Time-bounded choice",
+      "Tested paths"
+    ],
+    "resolution_title": "Deployments",
+    "resolution_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-144",
+    "role_slug": "software-development-engineer",
+    "domain": "Build Systems, CI/CD and Release Engineering",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "The pipeline is green, but production failures remain frequent. What would you examine?",
+    "preferred_answer": "Check whether tests represent production behaviour, whether the promoted artefact is identical, and whether configuration, data migrations, feature flags, dependencies and infrastructure are validated. Analyse ignored or flaky tests, release size and incident patterns. A green pipeline proves only the conditions it actually checks.",
+    "evaluation_points": [
+      "Test realism",
+      "Artefact identity",
+      "Config/schema/dependency validation",
+      "Incident feedback"
+    ],
+    "resolution_title": "DORA software delivery performance metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-145",
+    "role_slug": "software-development-engineer",
+    "domain": "Containers, Cloud-Native Delivery and Configuration",
+    "difficulty": "foundation",
+    "question_type": "containers",
+    "prompt": "What is the difference between a container image and a running container?",
+    "preferred_answer": "An image is an immutable layered package of filesystem content and metadata; a container is a runtime instance with a process, namespaces, resource controls and a writable layer. Containers should be replaceable, while persistent data and configuration are managed outside the writable layer.",
+    "evaluation_points": [
+      "Template versus instance",
+      "Runtime isolation",
+      "Writable layer",
+      "External persistence/config"
+    ],
+    "resolution_title": "Docker overview",
+    "resolution_url": "https://docs.docker.com/get-started/docker-overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-146",
+    "role_slug": "software-development-engineer",
+    "domain": "Containers, Cloud-Native Delivery and Configuration",
+    "difficulty": "foundation",
+    "question_type": "configuration",
+    "prompt": "Why should configuration be separated from application code?",
+    "preferred_answer": "Environment-specific values such as endpoints, credentials and feature settings change independently from the build. External configuration allows the same artefact to move between environments and keeps secrets out of source. Configuration still needs validation, versioning, access control and safe defaults.",
+    "evaluation_points": [
+      "Independent change",
+      "Same artefact",
+      "Secret separation",
+      "Validation/governance"
+    ],
+    "resolution_title": "The Twelve-Factor App",
+    "resolution_url": "https://12factor.net/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-147",
+    "role_slug": "software-development-engineer",
+    "domain": "Containers, Cloud-Native Delivery and Configuration",
+    "difficulty": "intermediate",
+    "question_type": "build",
+    "prompt": "How do multi-stage container builds improve delivery?",
+    "preferred_answer": "They separate compilation and tooling from the final runtime image, copying only required artefacts. This reduces image size, attack surface and unnecessary dependencies. Reproducibility still requires trusted bases, pinned inputs and recorded provenance.",
+    "evaluation_points": [
+      "Builder/runtime separation",
+      "Size and attack surface",
+      "Only required artefacts",
+      "Reproducibility controls"
+    ],
+    "resolution_title": "Build best practices",
+    "resolution_url": "https://docs.docker.com/build/building/best-practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-148",
+    "role_slug": "software-development-engineer",
+    "domain": "Containers, Cloud-Native Delivery and Configuration",
+    "difficulty": "intermediate",
+    "question_type": "orchestration",
+    "prompt": "What problem does a Kubernetes Deployment solve?",
+    "preferred_answer": "It manages a desired number of interchangeable Pods and performs declarative rollout and rollback through ReplicaSets. It suits stateless workloads whose instances can be replaced. Application readiness, data migrations and compatibility still need explicit design.",
+    "evaluation_points": [
+      "Desired replicas",
+      "Declarative rollout",
+      "Stateless replaceability",
+      "Readiness/migration caveat"
+    ],
+    "resolution_title": "Deployments",
+    "resolution_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-149",
+    "role_slug": "software-development-engineer",
+    "domain": "Containers, Cloud-Native Delivery and Configuration",
+    "difficulty": "intermediate",
+    "question_type": "health",
+    "prompt": "Differentiate liveness, readiness and startup probes.",
+    "preferred_answer": "Liveness determines when a stuck container should restart; readiness determines whether it should receive traffic; startup protects slow-starting applications by delaying the other probes. Poor probes can create restart loops or serve traffic before dependencies and state are ready.",
+    "evaluation_points": [
+      "Restart versus traffic",
+      "Startup protection",
+      "Failure modes",
+      "Application-specific checks"
+    ],
+    "resolution_title": "Liveness, readiness and startup probes",
+    "resolution_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-150",
+    "role_slug": "software-development-engineer",
+    "domain": "Containers, Cloud-Native Delivery and Configuration",
+    "difficulty": "advanced",
+    "question_type": "resources",
+    "prompt": "How should CPU and memory requests and limits be set?",
+    "preferred_answer": "Requests guide scheduling and reserve expected capacity; limits constrain use. CPU may be throttled while exceeding memory limits can terminate a container. Start from measured workload percentiles and SLOs, account for startup and spikes, and monitor throttling, OOM events and pending Pods.",
+    "evaluation_points": [
+      "Scheduling versus enforcement",
+      "CPU/memory behaviour",
+      "Measurement basis",
+      "Operational signals"
+    ],
+    "resolution_title": "Resource management for Pods and containers",
+    "resolution_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-151",
+    "role_slug": "software-development-engineer",
+    "domain": "Containers, Cloud-Native Delivery and Configuration",
+    "difficulty": "advanced",
+    "question_type": "cloud-native",
+    "prompt": "What does stateless mean, and why is it often misunderstood?",
+    "preferred_answer": "A stateless instance does not require durable local session or business state to handle the next request; it may still use caches, connections and external stores. The goal is replaceability and horizontal scaling. Calling a service stateless while relying on local files or sticky sessions hides failure and recovery constraints.",
+    "evaluation_points": [
+      "No durable local request state",
+      "External state allowed",
+      "Replaceability",
+      "Sticky/local dependency warning"
+    ],
+    "resolution_title": "The Twelve-Factor App",
+    "resolution_url": "https://12factor.net/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-152",
+    "role_slug": "software-development-engineer",
+    "domain": "Containers, Cloud-Native Delivery and Configuration",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A container works locally but repeatedly fails readiness in the cluster. How would you diagnose it?",
+    "preferred_answer": "Inspect events, current and previous logs, probe path, port and timing; confirm the process bind address, configuration, secret mounts, dependencies, resource pressure and network policies. Reproduce with the same image and configuration. Do not weaken the probe until the service contract and failure are understood.",
+    "evaluation_points": [
+      "Events/logs first",
+      "Probe and bind configuration",
+      "Dependencies/resources/network",
+      "Avoids masking failure"
+    ],
+    "resolution_title": "Liveness, readiness and startup probes",
+    "resolution_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-153",
+    "role_slug": "software-development-engineer",
+    "domain": "Agile Delivery, Estimation and Engineering Collaboration",
+    "difficulty": "foundation",
+    "question_type": "agile",
+    "prompt": "What do the Agile Manifesto values mean in practice?",
+    "preferred_answer": "They prioritise people and interaction, working software, customer collaboration and response to change while still recognising value in processes, documentation, contracts and plans. The values guide trade-offs; they do not reject discipline or architecture. Evidence and feedback should influence the next decision.",
+    "evaluation_points": [
+      "Four value directions",
+      "Right-side still valuable",
+      "Trade-off guidance",
+      "Evidence and feedback"
+    ],
+    "resolution_title": "Manifesto for Agile Software Development",
+    "resolution_url": "https://agilemanifesto.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-154",
+    "role_slug": "software-development-engineer",
+    "domain": "Agile Delivery, Estimation and Engineering Collaboration",
+    "difficulty": "foundation",
+    "question_type": "planning",
+    "prompt": "What is the purpose of an iteration or sprint goal?",
+    "preferred_answer": "It creates one coherent outcome that guides selection and adaptation of work, rather than treating the iteration as a bag of unrelated tickets. Teams can change scope while protecting the goal when new evidence appears. A goal should describe value or learning, not merely complete all assigned tasks.",
+    "evaluation_points": [
+      "Coherent outcome",
+      "Supports adaptation",
+      "Value or learning",
+      "Not ticket-count goal"
+    ],
+    "resolution_title": "The Scrum Guide",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-155",
+    "role_slug": "software-development-engineer",
+    "domain": "Agile Delivery, Estimation and Engineering Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "estimation",
+    "prompt": "What does an engineering estimate represent?",
+    "preferred_answer": "It is a forecast under stated scope, assumptions and uncertainty, often useful for comparison and planning rather than exact prediction. Include dependencies, risk and validation work, use ranges where appropriate and update as evidence changes. Do not hide contingency or equate effort points with calendar days across teams.",
+    "evaluation_points": [
+      "Forecast and assumptions",
+      "Uncertainty and ranges",
+      "Dependencies/validation",
+      "No cross-team point conversion"
+    ],
+    "resolution_title": "The Scrum Guide",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-156",
+    "role_slug": "software-development-engineer",
+    "domain": "Agile Delivery, Estimation and Engineering Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "slicing",
+    "prompt": "How do you split a large feature into valuable increments?",
+    "preferred_answer": "Slice vertically through a thin user or business outcome rather than by technical layers, and use interfaces, flags or staged data changes to keep increments deployable. Prioritise uncertain and risky assumptions early. Each slice should provide feedback even if full capability remains incomplete.",
+    "evaluation_points": [
+      "Vertical outcome slice",
+      "Deployability techniques",
+      "Risk-first learning",
+      "Feedback value"
+    ],
+    "resolution_title": "Manifesto for Agile Software Development",
+    "resolution_url": "https://agilemanifesto.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-157",
+    "role_slug": "software-development-engineer",
+    "domain": "Agile Delivery, Estimation and Engineering Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "collaboration",
+    "prompt": "How should product, design and engineering resolve delivery trade-offs?",
+    "preferred_answer": "Start from the customer outcome and constraints, make quality and operational consequences visible, compare options and define who owns the decision. Use prototypes or experiments for uncertainty. Healthy collaboration challenges scope and solution while preserving shared accountability, rather than engineering silently accepting impossible dates.",
+    "evaluation_points": [
+      "Shared outcome",
+      "Visible consequences",
+      "Decision ownership",
+      "Experiment under uncertainty"
+    ],
+    "resolution_title": "Manifesto for Agile Software Development",
+    "resolution_url": "https://agilemanifesto.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-158",
+    "role_slug": "software-development-engineer",
+    "domain": "Agile Delivery, Estimation and Engineering Collaboration",
+    "difficulty": "advanced",
+    "question_type": "flow",
+    "prompt": "What signals indicate that a team has too much work in progress?",
+    "preferred_answer": "Long cycle time, ageing items, frequent context switching, blocked work, large integration queues and many partially completed features indicate excess WIP. Limit concurrent work, finish and integrate before starting more, remove bottlenecks and measure flow. High individual utilisation can reduce system throughput.",
+    "evaluation_points": [
+      "Flow symptoms",
+      "WIP limiting",
+      "Finish before start",
+      "Utilisation versus throughput"
+    ],
+    "resolution_title": "DORA software delivery performance metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-159",
+    "role_slug": "software-development-engineer",
+    "domain": "Agile Delivery, Estimation and Engineering Collaboration",
+    "difficulty": "advanced",
+    "question_type": "team-design",
+    "prompt": "How does code ownership balance accountability and collective knowledge?",
+    "preferred_answer": "Named owners can maintain standards and respond to changes, while reviews, pairing, documentation and rotation prevent knowledge silos. Use team ownership and backup paths for critical areas. Ownership should clarify responsibility, not block every change or excuse other engineers from understanding the system.",
+    "evaluation_points": [
+      "Accountability",
+      "Knowledge-sharing mechanisms",
+      "Team/backup ownership",
+      "No gatekeeper monopoly"
+    ],
+    "resolution_title": "About code owners",
+    "resolution_url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-160",
+    "role_slug": "software-development-engineer",
+    "domain": "Agile Delivery, Estimation and Engineering Collaboration",
+    "difficulty": "scenario",
+    "question_type": "delivery",
+    "prompt": "A team repeatedly misses sprint commitments and responds by increasing estimates. What would you investigate?",
+    "preferred_answer": "Inspect scope change, work-item size, dependencies, interruptions, defects, review queues, WIP and whether estimates are being treated as promises. Improve slicing and flow, reserve capacity for known operational work and forecast from recent throughput with uncertainty. Inflating numbers can hide the system problem.",
+    "evaluation_points": [
+      "System causes",
+      "Slicing/WIP",
+      "Operational capacity",
+      "Forecast with uncertainty"
+    ],
+    "resolution_title": "The Scrum Guide",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-161",
+    "role_slug": "software-development-engineer",
+    "domain": "Maintenance, Legacy Modernisation and AI-Assisted Engineering",
+    "difficulty": "foundation",
+    "question_type": "maintenance",
+    "prompt": "What kinds of software maintenance occur after release?",
+    "preferred_answer": "Corrective maintenance fixes defects, adaptive maintenance responds to environment or dependency changes, perfective maintenance improves capability or performance, and preventive maintenance reduces future risk. Real work often spans categories. Maintenance should be planned as product lifecycle work, not treated as unexpected failure.",
+    "evaluation_points": [
+      "Four maintenance categories",
+      "Overlap acknowledged",
+      "Lifecycle framing",
+      "Not only bug fixing"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-162",
+    "role_slug": "software-development-engineer",
+    "domain": "Maintenance, Legacy Modernisation and AI-Assisted Engineering",
+    "difficulty": "foundation",
+    "question_type": "ai-assistance",
+    "prompt": "What are appropriate uses of an AI coding assistant?",
+    "preferred_answer": "It can explain unfamiliar code, propose implementations and tests, generate repetitive transformations, search a repository and help draft documentation. Engineers must provide context, review outputs, run tests and verify security, licences and behaviour. Generated code is a candidate contribution, not an authoritative answer.",
+    "evaluation_points": [
+      "Useful task examples",
+      "Human review",
+      "Testing/security/licence verification",
+      "Candidate not authority"
+    ],
+    "resolution_title": "Responsible use of GitHub Copilot Chat",
+    "resolution_url": "https://docs.github.com/en/copilot/responsible-use/copilot-chat-in-github",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-163",
+    "role_slug": "software-development-engineer",
+    "domain": "Maintenance, Legacy Modernisation and AI-Assisted Engineering",
+    "difficulty": "intermediate",
+    "question_type": "modernisation",
+    "prompt": "How does the Strangler Fig pattern reduce legacy migration risk?",
+    "preferred_answer": "It places new functionality around or in front of the legacy system and gradually redirects capabilities until old parts can be retired. This supports incremental feedback and rollback. It requires clear routing, data ownership, observability and a plan to remove transitional duplication rather than preserving two systems forever.",
+    "evaluation_points": [
+      "Incremental replacement",
+      "Routing/rollback",
+      "Data and observability",
+      "Retirement discipline"
+    ],
+    "resolution_title": "Strangler Fig Application",
+    "resolution_url": "https://martinfowler.com/bliki/StranglerFigApplication.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-164",
+    "role_slug": "software-development-engineer",
+    "domain": "Maintenance, Legacy Modernisation and AI-Assisted Engineering",
+    "difficulty": "intermediate",
+    "question_type": "compatibility",
+    "prompt": "How should a team upgrade a critical dependency with breaking changes?",
+    "preferred_answer": "Inventory affected APIs and transitive dependencies, read migration and security notes, add compatibility tests, upgrade in a controlled branch or environment and measure behaviour and performance. Use adapters or dual support when consumers cannot migrate together, and define rollback or fix-forward criteria.",
+    "evaluation_points": [
+      "Impact inventory",
+      "Migration/test evidence",
+      "Controlled rollout",
+      "Compatibility and recovery"
+    ],
+    "resolution_title": "Semantic Versioning 2.0.0",
+    "resolution_url": "https://semver.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-165",
+    "role_slug": "software-development-engineer",
+    "domain": "Maintenance, Legacy Modernisation and AI-Assisted Engineering",
+    "difficulty": "intermediate",
+    "question_type": "ai-workflow",
+    "prompt": "How should an engineer give an AI coding agent a repository task?",
+    "preferred_answer": "Provide the objective, relevant architecture and constraints, files or commands to inspect, acceptance tests and prohibited changes. Ask it to explain assumptions and produce a focused diff. Run in an isolated branch or environment with least privilege, then review code, tests and dependency changes like any external contribution.",
+    "evaluation_points": [
+      "Clear objective/context",
+      "Acceptance and boundaries",
+      "Isolation/least privilege",
+      "Normal review standards"
+    ],
+    "resolution_title": "Codex",
+    "resolution_url": "https://openai.com/codex/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-166",
+    "role_slug": "software-development-engineer",
+    "domain": "Maintenance, Legacy Modernisation and AI-Assisted Engineering",
+    "difficulty": "advanced",
+    "question_type": "ai-risk",
+    "prompt": "What failure modes should teams expect from AI-generated code?",
+    "preferred_answer": "It may invent APIs, reproduce insecure patterns, misunderstand hidden requirements, overfit examples, add unnecessary dependencies, mishandle concurrency or create plausible but weak tests. Outputs can also vary. Use repository-grounded context, static and dynamic checks, adversarial review and explicit ownership; confidence of wording is not evidence.",
+    "evaluation_points": [
+      "Concrete failure modes",
+      "Hidden-context problem",
+      "Layered verification",
+      "No confidence-as-proof"
+    ],
+    "resolution_title": "Responsible use of GitHub Copilot Chat",
+    "resolution_url": "https://docs.github.com/en/copilot/responsible-use/copilot-chat-in-github",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-167",
+    "role_slug": "software-development-engineer",
+    "domain": "Maintenance, Legacy Modernisation and AI-Assisted Engineering",
+    "difficulty": "advanced",
+    "question_type": "strategy",
+    "prompt": "How do you decide between refactoring, re-platforming and rewriting a legacy system?",
+    "preferred_answer": "Compare business change need, architecture constraints, defect and support cost, testability, data migration, team knowledge and transition risk. Refactor when structure can improve incrementally; re-platform when the operating foundation is the constraint; rewrite only when the current model cannot support required outcomes and staged replacement is feasible. Include coexistence and retirement cost.",
+    "evaluation_points": [
+      "Option distinctions",
+      "Evidence dimensions",
+      "Rewrite caution",
+      "Transition/retirement cost"
+    ],
+    "resolution_title": "Strangler Fig Application",
+    "resolution_url": "https://martinfowler.com/bliki/StranglerFigApplication.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "SDE-168",
+    "role_slug": "software-development-engineer",
+    "domain": "Maintenance, Legacy Modernisation and AI-Assisted Engineering",
+    "difficulty": "scenario",
+    "question_type": "governance",
+    "prompt": "An AI agent produced a large working pull request in minutes. What must happen before merge?",
+    "preferred_answer": "Confirm task scope and provenance, inspect every meaningful change and new dependency, run deterministic tests and security checks, validate architecture and compatibility, and ask a knowledgeable owner to review high-risk areas. Split the diff if it cannot be understood. Speed of generation must not reduce reviewability or accountability.",
+    "evaluation_points": [
+      "Scope/provenance",
+      "Full review and tests",
+      "Architecture/security/dependencies",
+      "Split unreadable change"
+    ],
+    "resolution_title": "How OpenAI uses Codex",
+    "resolution_url": "https://openai.com/index/how-openai-uses-codex/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-01",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Engineering Foundations and Delivery Lifecycle",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Delivery-system health assessment: Assess a supplied team's delivery data, defect history and workflow, then propose a 30-day improvement experiment.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nMetric definitions, value-stream map, two bottlenecks, chosen experiment, leading and lagging measures, risks and review date.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "DORA software delivery performance metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-02",
+    "role_slug": "software-development-engineer",
+    "domain": "Requirements Engineering and Product Discovery",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Requirements discovery workshop: Convert a deliberately ambiguous service request into a concise discovery pack and prioritised first increment.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nStakeholder map, problem statement, user journey, assumptions, five testable requirements, quality attributes, acceptance evidence and open decisions.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide V4.0)",
+    "resolution_url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-03",
+    "role_slug": "software-development-engineer",
+    "domain": "Programming Fundamentals, Types and Error Handling",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Failure-contract refactoring: Refactor a small programme with sentinel values, swallowed exceptions and leaked resources into a consistent failure model.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nAPI contract, revised implementation, error taxonomy, cleanup tests, cancellation or timeout test and migration note for callers.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Errors and Exceptions",
+    "resolution_url": "https://docs.python.org/3/tutorial/errors.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-04",
+    "role_slug": "software-development-engineer",
+    "domain": "Object-Oriented Design and Design Principles",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Design-principles refactoring: Refactor a tightly coupled notification module that mixes domain policy, formatting and three delivery providers.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nDesign sketch, identified responsibilities, revised interfaces, tests, dependency wiring and explanation of one principle deliberately not applied.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Object-oriented programming - SOLID principles",
+    "resolution_url": "https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-05",
+    "role_slug": "software-development-engineer",
+    "domain": "Data Structures, Algorithms and Complexity",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Algorithm and workload benchmark: Implement two approaches to a large top-k problem and compare complexity predictions with measured behaviour.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nCorrectness tests, complexity analysis, representative dataset, benchmark method, memory results, crossover explanation and final recommendation.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Introduction to Algorithms",
+    "resolution_url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-06",
+    "role_slug": "software-development-engineer",
+    "domain": "Clean Code, Refactoring and Technical Debt",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Legacy-module refactoring: Refactor a change-prone legacy module while preserving behaviour and documenting one intentionally retained debt item.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nCharacterization tests, dependency map, small refactoring commits, before/after complexity or change-spread evidence and debt decision.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Refactoring",
+    "resolution_url": "https://refactoring.com/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-07",
+    "role_slug": "software-development-engineer",
+    "domain": "Version Control and Collaborative Development",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Collaborative Git recovery exercise: Create a repository with a regression, conflicting changes and an exposed test credential, then execute safe collaborative recovery.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nCommit graph, pull request, bisect record, revert, conflict-resolution tests, credential-response note and branch-protection proposal.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "git-bisect documentation",
+    "resolution_url": "https://git-scm.com/docs/git-bisect",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-08",
+    "role_slug": "software-development-engineer",
+    "domain": "Testing Strategy and Test Automation",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Layered test-suite design: Create a test strategy for a small service with business rules, PostgreSQL, a message broker and an external API.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nRisk map, unit/integration/contract/end-to-end split, sample tests, dependency strategy, runtime budget, flake policy and release gate.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Testcontainers documentation",
+    "resolution_url": "https://testcontainers.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-09",
+    "role_slug": "software-development-engineer",
+    "domain": "Debugging and Root-Cause Analysis",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Evidence-led production diagnosis: Diagnose a prepared service regression using logs, metrics, traces, configuration history and a commit range.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nSymptom statement, hypothesis table, discriminating tests, identified cause, containment, verified fix and prevention action.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Site Reliability Engineering - Effective Troubleshooting",
+    "resolution_url": "https://sre.google/sre-book/effective-troubleshooting/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-10",
+    "role_slug": "software-development-engineer",
+    "domain": "Database Design, SQL and Transactions",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Transactional data service: Design and implement a small order-processing schema with constraints, indexes, concurrent updates and a backward-compatible migration.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nER model, DDL, representative queries and plans, isolation test, idempotency test, migration steps and rollback or fix-forward plan.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "PostgreSQL documentation - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-11",
+    "role_slug": "software-development-engineer",
+    "domain": "API Design, HTTP and Compatibility",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Compatible API evolution: Design an OpenAPI-described service, then evolve one response and one error model without breaking a supplied client.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nOpenAPI document, schemas, compatibility analysis, contract tests, deprecation notice, telemetry plan and client migration example.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-12",
+    "role_slug": "software-development-engineer",
+    "domain": "Concurrency, Asynchrony and Parallelism",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Bounded asynchronous worker: Implement a cancellable worker pool with bounded concurrency, retries and duplicate-safe processing.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nConcurrency model, bounded queue, deadline propagation, idempotency test, race or stress tests, graceful shutdown transcript and metrics.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "asyncio - Asynchronous I/O",
+    "resolution_url": "https://docs.python.org/3/library/asyncio.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-13",
+    "role_slug": "software-development-engineer",
+    "domain": "Distributed Systems and Messaging",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Reliable event-driven workflow: Build or specify an order workflow using an outbox, at-least-once delivery and compensating actions.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nSequence diagram, state model, schema, relay logic, duplicate tests, retry policy, failure injection, reconciliation and operational dashboard.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Transactional outbox pattern",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/databases/guide/transactional-outbox-cosmos",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-14",
+    "role_slug": "software-development-engineer",
+    "domain": "Software Architecture, System Design and Scalability",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Scalable service design: Design a high-traffic reservation service with explicit consistency, capacity, degradation and recovery decisions.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nC4 views, quality-attribute scenarios, data ownership, capacity model, failure modes, API outline, observability and two decision records.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "The C4 model for visualising software architecture",
+    "resolution_url": "https://c4model.com/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-15",
+    "role_slug": "software-development-engineer",
+    "domain": "Performance Engineering and Capacity",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Performance investigation: Benchmark and profile a deliberately inefficient service, then improve one measured bottleneck without changing its contract.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nWorkload model, baseline percentiles, CPU and allocation profile, bottleneck hypothesis, code or query change, comparison and capacity estimate.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "k6 documentation",
+    "resolution_url": "https://grafana.com/docs/k6/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-16",
+    "role_slug": "software-development-engineer",
+    "domain": "Secure Software Development",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Secure feature delivery: Threat-model and implement a multi-tenant file-sharing feature with authentication, object authorisation, validation and audit evidence.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nThreat model, security requirements, code or design, negative tests, dependency and secret checks, logging plan and residual-risk note.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-17",
+    "role_slug": "software-development-engineer",
+    "domain": "Reliability, Observability and Incident Readiness",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] SLO and incident-readiness exercise: Instrument a service, define one SLI/SLO, create an actionable alert and run a short configuration-failure incident simulation.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nTelemetry schema, SLI query, SLO window, alert rule, runbook, incident timeline, recovery proof and post-incident actions.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Site Reliability Engineering - Service Level Objectives",
+    "resolution_url": "https://sre.google/sre-book/service-level-objectives/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-18",
+    "role_slug": "software-development-engineer",
+    "domain": "Build Systems, CI/CD and Release Engineering",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Reproducible release pipeline: Create a pipeline that builds once, tests, publishes an artefact, deploys progressively and demonstrates rollback or fix-forward.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nWorkflow definition, dependency lock, artefact digest, test and security evidence, deployment strategy, health criteria and recovery transcript.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-19",
+    "role_slug": "software-development-engineer",
+    "domain": "Containers, Cloud-Native Delivery and Configuration",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Cloud-native service packaging: Package and deploy a small service with a multi-stage image, external configuration, resource settings and all three probe types.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nDockerfile, image review, manifests, configuration and secret design, rollout evidence, induced failure diagnosis and recovery verification.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Build best practices",
+    "resolution_url": "https://docs.docker.com/build/building/best-practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-20",
+    "role_slug": "software-development-engineer",
+    "domain": "Agile Delivery, Estimation and Engineering Collaboration",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Delivery planning simulation: Plan a six-week engineering initiative from an ambiguous goal, then adapt the plan after two supplied changes and one incident.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nOutcome and assumptions, vertical slices, dependency map, forecast range, WIP policy, revised plan, decision log and stakeholder update.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Manifesto for Agile Software Development",
+    "resolution_url": "https://agilemanifesto.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-21",
+    "role_slug": "software-development-engineer",
+    "domain": "Maintenance, Legacy Modernisation and AI-Assisted Engineering",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Legacy modernisation with AI assistance: Plan and execute one incremental extraction from a legacy application, using an AI coding assistant under explicit controls.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nCurrent-state map, migration decision, prompt/task brief, generated-diff review, tests, security checks, deployment route, rollback and retirement milestone.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Strangler Fig Application",
+    "resolution_url": "https://martinfowler.com/bliki/StranglerFigApplication.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
   }
 ];
