@@ -301,97 +301,104 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                 const isSelected = selectedRole === slug;
 
                 return (
-                  <div
-                    key={slug}
-                    onClick={() => handleRoleSelect(slug)}
-                    className={`p-4 border-2 transition-all cursor-pointer relative group text-left ${
-                      isSelected
-                        ? 'border-white bg-zinc-900 shadow-[4px_4px_0px_0px_#ffffff]'
-                        : 'border-zinc-800 bg-black hover:border-zinc-500 hover:bg-zinc-950'
-                    }`}
-                  >
-                    {/* Left Accent Bar */}
-                    <div className={`absolute left-0 top-0 bottom-0 w-1.5 ${isSelected ? 'bg-white' : 'bg-zinc-800 group-hover:bg-zinc-500'}`} />
+                  <React.Fragment key={slug}>
+                    <div
+                      onClick={() => handleRoleSelect(slug)}
+                      className={`p-4 border-2 transition-all cursor-pointer relative group text-left ${
+                        isSelected
+                          ? 'border-white bg-zinc-900 shadow-[4px_4px_0px_0px_#ffffff]'
+                          : 'border-zinc-800 bg-black hover:border-zinc-500 hover:bg-zinc-950'
+                      }`}
+                    >
+                      {/* Left Accent Bar */}
+                      <div className={`absolute left-0 top-0 bottom-0 w-1.5 ${isSelected ? 'bg-white' : 'bg-zinc-800 group-hover:bg-zinc-500'}`} />
 
-                    <div className="pl-2">
-                      <div className="flex items-center justify-between gap-2 mb-1">
-                        <span className="font-bold text-sm text-white flex items-center gap-2">
-                          <span>{meta.icon}</span>
-                          <span>{meta.label}</span>
-                        </span>
-                        <span className={`text-[10px] font-mono font-bold px-2 py-0.5 border ${
-                          isSelected ? 'bg-white text-black border-white' : 'bg-zinc-900 text-zinc-300 border-zinc-700'
-                        }`}>
-                          {count} {count === 1 ? 'item' : 'items'}
-                        </span>
+                      <div className="pl-2">
+                        <div className="flex items-center justify-between gap-2 mb-1">
+                          <span className="font-bold text-sm text-white flex items-center gap-2">
+                            <span>{meta.icon}</span>
+                            <span>{meta.label}</span>
+                          </span>
+                          <span className={`text-[10px] font-mono font-bold px-2 py-0.5 border ${
+                            isSelected ? 'bg-white text-black border-white' : 'bg-zinc-900 text-zinc-300 border-zinc-700'
+                          }`}>
+                            {count} {count === 1 ? 'item' : 'items'}
+                          </span>
+                        </div>
+
+                        <p className="text-[11px] text-zinc-400 font-sans line-clamp-2">
+                          {meta.description}
+                        </p>
                       </div>
-
-                      <p className="text-[11px] text-zinc-400 font-sans line-clamp-2">
-                        {meta.description}
-                      </p>
                     </div>
-                  </div>
+
+                    {/* SUB-DOMAINS FRAME: Rendered DIRECTLY below the selected domain/category card */}
+                    {isSelected && availableDomains.length > 0 && (
+                      <div className="border-2 border-white bg-zinc-950 p-4 space-y-3 my-2 shadow-[4px_4px_0px_0px_#ffffff]">
+                        <div className="border-b border-zinc-800 pb-2 flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            <Layers className="w-4 h-4 text-white" />
+                            <span className="text-xs font-bold text-white uppercase tracking-wider font-mono">Sub-Domain Options</span>
+                          </div>
+                          <span className="text-[10px] text-zinc-400 font-mono">
+                            {isAllDomainsActive ? 'ALL SELECTED' : `${selectedDomains.length} SELECTED`}
+                          </span>
+                        </div>
+
+                        <div className="space-y-1.5 max-h-72 overflow-y-auto pr-1">
+                          {/* All Sub-Domains Option */}
+                          <button
+                            type="button"
+                            onClick={() => toggleDomainSelect('all')}
+                            className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
+                              isAllDomainsActive
+                                ? 'bg-white text-black border-white font-bold shadow-[2px_2px_0px_0px_#ffffff]'
+                                : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
+                            }`}
+                          >
+                            <span className="flex items-center gap-2">
+                              {isAllDomainsActive && <Check className="w-3.5 h-3.5 text-black stroke-[3]" />}
+                              <span>All Sub-Domains</span>
+                            </span>
+                            <span className="text-[10px] opacity-80">({availableDomains.length})</span>
+                          </button>
+
+                          {/* Individual Sub-Domain Options */}
+                          {availableDomains.map(d => {
+                            const isChecked = !isAllDomainsActive && selectedDomains.includes(d);
+                            const dCount = interviewQDatabase.filter(i => (selectedRole === 'all' || i.role_slug === selectedRole) && i.domain === d).length;
+                            
+                            return (
+                              <button
+                                key={d}
+                                type="button"
+                                onClick={() => toggleDomainSelect(d)}
+                                className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
+                                  isChecked
+                                    ? 'bg-white text-black border-white font-bold shadow-[2px_2px_0px_0px_#ffffff]'
+                                    : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
+                                }`}
+                              >
+                                <span className="flex items-center gap-2 truncate pr-2">
+                                  {isChecked ? (
+                                    <Check className="w-3.5 h-3.5 text-black stroke-[3] shrink-0" />
+                                  ) : (
+                                    <span className="w-3.5 h-3.5 border border-zinc-700 inline-block shrink-0" />
+                                  )}
+                                  <span className="truncate">{d}</span>
+                                </span>
+                                <span className="text-[10px] opacity-80 shrink-0">({dCount})</span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
+                  </React.Fragment>
                 );
               })}
             </div>
           </div>
-
-          {/* Customizable Multi-Select Sub-Domains Panel */}
-          {availableDomains.length > 0 && (
-            <div className="border-2 border-zinc-800 bg-zinc-950 p-4 space-y-3">
-              <div className="border-b border-zinc-800 pb-2">
-                <Layers className="w-4 h-4 text-white" />
-              </div>
-
-              <div className="space-y-1.5 max-h-72 overflow-y-auto pr-1">
-                {/* All Sub-Domains Option */}
-                <button
-                  type="button"
-                  onClick={() => toggleDomainSelect('all')}
-                  className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
-                    isAllDomainsActive
-                      ? 'bg-white text-black border-white font-bold shadow-[2px_2px_0px_0px_#ffffff]'
-                      : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
-                  }`}
-                >
-                  <span className="flex items-center gap-2">
-                    {isAllDomainsActive && <Check className="w-3.5 h-3.5 text-black stroke-[3]" />}
-                    <span>All Sub-Domains</span>
-                  </span>
-                  <span className="text-[10px] opacity-80">({availableDomains.length})</span>
-                </button>
-
-                {/* Individual Customizable Sub-Domain Options */}
-                {availableDomains.map(d => {
-                  const isChecked = !isAllDomainsActive && selectedDomains.includes(d);
-                  const dCount = interviewQDatabase.filter(i => (selectedRole === 'all' || i.role_slug === selectedRole) && i.domain === d).length;
-                  
-                  return (
-                    <button
-                      key={d}
-                      type="button"
-                      onClick={() => toggleDomainSelect(d)}
-                      className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
-                        isChecked
-                          ? 'bg-white text-black border-white font-bold shadow-[2px_2px_0px_0px_#ffffff]'
-                          : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
-                      }`}
-                    >
-                      <span className="flex items-center gap-2 truncate pr-2">
-                        {isChecked ? (
-                          <Check className="w-3.5 h-3.5 text-black stroke-[3] shrink-0" />
-                        ) : (
-                          <span className="w-3.5 h-3.5 border border-zinc-700 inline-block shrink-0" />
-                        )}
-                        <span className="truncate">{d}</span>
-                      </span>
-                      <span className="text-[10px] opacity-80 shrink-0">({dCount})</span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          )}
         </aside>
 
         {/* RIGHT COLUMN: Questions & Practical Labs List (2/3 Width on Desktop) */}
