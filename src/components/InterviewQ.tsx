@@ -50,11 +50,13 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
   activeShadow: string;
   hoverBorder: string;
   badgeActive: string;
+  accentText: string;
   badgeInactive: string;
 }> = {
   all: {
     color: 'zinc',
     accentBar: 'bg-white',
+    accentText: 'text-zinc-200',
     activeBorder: 'border-white',
     activeBg: 'bg-zinc-900',
     activeShadow: 'shadow-[4px_4px_0px_0px_#ffffff]',
@@ -62,29 +64,10 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-white text-black border-white',
     badgeInactive: 'bg-zinc-900 text-zinc-300 border-zinc-700'
   },
-  'it-support': {
-    color: 'blue',
-    accentBar: 'bg-blue-500',
-    activeBorder: 'border-blue-500',
-    activeBg: 'bg-blue-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#3b82f6]',
-    hoverBorder: 'hover:border-blue-500/60',
-    badgeActive: 'bg-blue-500 text-black border-blue-500 font-bold',
-    badgeInactive: 'bg-blue-500/10 text-blue-400 border-blue-500/40'
-  },
-  'systems-infra': {
-    color: 'purple',
-    accentBar: 'bg-purple-500',
-    activeBorder: 'border-purple-500',
-    activeBg: 'bg-purple-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#a855f7]',
-    hoverBorder: 'hover:border-purple-500/60',
-    badgeActive: 'bg-purple-500 text-black border-purple-500 font-bold',
-    badgeInactive: 'bg-purple-500/10 text-purple-400 border-purple-500/40'
-  },
-  'networking': {
+'green-computing': {
     color: 'emerald',
     accentBar: 'bg-emerald-500',
+    accentText: 'text-emerald-400',
     activeBorder: 'border-emerald-500',
     activeBg: 'bg-emerald-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
@@ -92,9 +75,10 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
     badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
   },
-  'cloud': {
+'cloud': {
     color: 'cyan',
     accentBar: 'bg-cyan-500',
+    accentText: 'text-cyan-400',
     activeBorder: 'border-cyan-500',
     activeBg: 'bg-cyan-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#06b6d4]',
@@ -102,9 +86,10 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-cyan-500 text-black border-cyan-500 font-bold',
     badgeInactive: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/40'
   },
-  'cybersecurity': {
+'cybersecurity': {
     color: 'red',
     accentBar: 'bg-red-500',
+    accentText: 'text-red-400',
     activeBorder: 'border-red-500',
     activeBg: 'bg-red-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#ef4444]',
@@ -112,9 +97,10 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-red-500 text-white border-red-500 font-bold',
     badgeInactive: 'bg-red-500/10 text-red-400 border-red-500/40'
   },
-  'software-dev': {
+'software-dev': {
     color: 'fuchsia',
     accentBar: 'bg-fuchsia-500',
+    accentText: 'text-fuchsia-400',
     activeBorder: 'border-fuchsia-500',
     activeBg: 'bg-fuchsia-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#d946ef]',
@@ -122,19 +108,10 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-fuchsia-500 text-black border-fuchsia-500 font-bold',
     badgeInactive: 'bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/40'
   },
-  'qa-testing': {
-    color: 'pink',
-    accentBar: 'bg-pink-500',
-    activeBorder: 'border-pink-500',
-    activeBg: 'bg-pink-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#ec4899]',
-    hoverBorder: 'hover:border-pink-500/60',
-    badgeActive: 'bg-pink-500 text-black border-pink-500 font-bold',
-    badgeInactive: 'bg-pink-500/10 text-pink-400 border-pink-500/40'
-  },
-  'devops-sre': {
+'devops-sre': {
     color: 'sky',
     accentBar: 'bg-sky-500',
+    accentText: 'text-sky-400',
     activeBorder: 'border-sky-500',
     activeBg: 'bg-sky-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#0ea5e9]',
@@ -142,19 +119,10 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-sky-500 text-black border-sky-500 font-bold',
     badgeInactive: 'bg-sky-500/10 text-sky-400 border-sky-500/40'
   },
-  'data-analytics': {
-    color: 'amber',
-    accentBar: 'bg-amber-500',
-    activeBorder: 'border-amber-500',
-    activeBg: 'bg-amber-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#f59e0b]',
-    hoverBorder: 'hover:border-amber-500/60',
-    badgeActive: 'bg-amber-500 text-black border-amber-500 font-bold',
-    badgeInactive: 'bg-amber-500/10 text-amber-400 border-amber-500/40'
-  },
-  'data-science-ai': {
+'data-science-ai': {
     color: 'rose',
     accentBar: 'bg-rose-500',
+    accentText: 'text-rose-400',
     activeBorder: 'border-rose-500',
     activeBg: 'bg-rose-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#f43f5e]',
@@ -162,79 +130,10 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-rose-500 text-white border-rose-500 font-bold',
     badgeInactive: 'bg-rose-500/10 text-rose-400 border-rose-500/40'
   },
-  'db-admin': {
-    color: 'teal',
-    accentBar: 'bg-teal-500',
-    activeBorder: 'border-teal-500',
-    activeBg: 'bg-teal-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#14b8a6]',
-    hoverBorder: 'hover:border-teal-500/60',
-    badgeActive: 'bg-teal-500 text-black border-teal-500 font-bold',
-    badgeInactive: 'bg-teal-500/10 text-teal-400 border-teal-500/40'
-  },
-  'it-ops-itsm': {
-    color: 'indigo',
-    accentBar: 'bg-indigo-500',
-    activeBorder: 'border-indigo-500',
-    activeBg: 'bg-indigo-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
-    hoverBorder: 'hover:border-indigo-500/60',
-    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
-    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
-  },
-  'erp-crm': {
-    color: 'blue',
-    accentBar: 'bg-blue-500',
-    activeBorder: 'border-blue-500',
-    activeBg: 'bg-blue-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#3b82f6]',
-    hoverBorder: 'hover:border-blue-500/60',
-    badgeActive: 'bg-blue-500 text-black border-blue-500 font-bold',
-    badgeInactive: 'bg-blue-500/10 text-blue-400 border-blue-500/40'
-  },
-  'product-mgmt': {
-    color: 'yellow',
-    accentBar: 'bg-yellow-500',
-    activeBorder: 'border-yellow-500',
-    activeBg: 'bg-yellow-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#eab308]',
-    hoverBorder: 'hover:border-yellow-500/60',
-    badgeActive: 'bg-yellow-500 text-black border-yellow-500 font-bold',
-    badgeInactive: 'bg-yellow-500/10 text-yellow-400 border-yellow-500/40'
-  },
-  'business-analysis': {
-    color: 'indigo',
-    accentBar: 'bg-indigo-500',
-    activeBorder: 'border-indigo-500',
-    activeBg: 'bg-indigo-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
-    hoverBorder: 'hover:border-indigo-500/60',
-    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
-    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
-  },
-  'uiux-design': {
-    color: 'purple',
-    accentBar: 'bg-purple-500',
-    activeBorder: 'border-purple-500',
-    activeBg: 'bg-purple-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#a855f7]',
-    hoverBorder: 'hover:border-purple-500/60',
-    badgeActive: 'bg-purple-500 text-black border-purple-500 font-bold',
-    badgeInactive: 'bg-purple-500/10 text-purple-400 border-purple-500/40'
-  },
-  'web-cms': {
-    color: 'cyan',
-    accentBar: 'bg-cyan-500',
-    activeBorder: 'border-cyan-500',
-    activeBg: 'bg-cyan-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#06b6d4]',
-    hoverBorder: 'hover:border-cyan-500/60',
-    badgeActive: 'bg-cyan-500 text-black border-cyan-500 font-bold',
-    badgeInactive: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/40'
-  },
-  'frontend-developer': {
+'frontend-developer': {
     color: 'pink',
     accentBar: 'bg-pink-500',
+    accentText: 'text-pink-400',
     activeBorder: 'border-pink-500',
     activeBg: 'bg-pink-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#ec4899]',
@@ -242,9 +141,10 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-pink-500 text-black border-pink-500 font-bold',
     badgeInactive: 'bg-pink-500/10 text-pink-400 border-pink-500/40'
   },
-  'backend-developer': {
+'backend-developer': {
     color: 'purple',
     accentBar: 'bg-purple-500',
+    accentText: 'text-purple-400',
     activeBorder: 'border-purple-500',
     activeBg: 'bg-purple-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#a855f7]',
@@ -252,29 +152,10 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-purple-500 text-black border-purple-500 font-bold',
     badgeInactive: 'bg-purple-500/10 text-purple-400 border-purple-500/40'
   },
-  'automation-rpa': {
-    color: 'rose',
-    accentBar: 'bg-rose-500',
-    activeBorder: 'border-rose-500',
-    activeBg: 'bg-rose-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#f43f5e]',
-    hoverBorder: 'hover:border-rose-500/60',
-    badgeActive: 'bg-rose-500 text-white border-rose-500 font-bold',
-    badgeInactive: 'bg-rose-500/10 text-rose-400 border-rose-500/40'
-  },
-  'tech-writing': {
-    color: 'emerald',
-    accentBar: 'bg-emerald-500',
-    activeBorder: 'border-emerald-500',
-    activeBg: 'bg-emerald-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
-    hoverBorder: 'hover:border-emerald-500/60',
-    badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
-    badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
-  },
-  'sales-customer-success': {
+'it-support': {
     color: 'blue',
     accentBar: 'bg-blue-500',
+    accentText: 'text-blue-400',
     activeBorder: 'border-blue-500',
     activeBg: 'bg-blue-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#3b82f6]',
@@ -282,19 +163,43 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-blue-500 text-black border-blue-500 font-bold',
     badgeInactive: 'bg-blue-500/10 text-blue-400 border-blue-500/40'
   },
-  'hardware-iot': {
-    color: 'indigo',
-    accentBar: 'bg-indigo-500',
-    activeBorder: 'border-indigo-500',
-    activeBg: 'bg-indigo-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
-    hoverBorder: 'hover:border-indigo-500/60',
-    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
-    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
+'systems-infra': {
+    color: 'purple',
+    accentBar: 'bg-purple-500',
+    accentText: 'text-purple-400',
+    activeBorder: 'border-purple-500',
+    activeBg: 'bg-purple-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#a855f7]',
+    hoverBorder: 'hover:border-purple-500/60',
+    badgeActive: 'bg-purple-500 text-black border-purple-500 font-bold',
+    badgeInactive: 'bg-purple-500/10 text-purple-400 border-purple-500/40'
   },
-  'telecom-voice': {
+'networking': {
+    color: 'emerald',
+    accentBar: 'bg-emerald-500',
+    accentText: 'text-emerald-400',
+    activeBorder: 'border-emerald-500',
+    activeBg: 'bg-emerald-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
+    hoverBorder: 'hover:border-emerald-500/60',
+    badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
+    badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
+  },
+'qa-testing': {
+    color: 'pink',
+    accentBar: 'bg-pink-500',
+    accentText: 'text-pink-400',
+    activeBorder: 'border-pink-500',
+    activeBg: 'bg-pink-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#ec4899]',
+    hoverBorder: 'hover:border-pink-500/60',
+    badgeActive: 'bg-pink-500 text-black border-pink-500 font-bold',
+    badgeInactive: 'bg-pink-500/10 text-pink-400 border-pink-500/40'
+  },
+'data-analytics': {
     color: 'amber',
     accentBar: 'bg-amber-500',
+    accentText: 'text-amber-400',
     activeBorder: 'border-amber-500',
     activeBg: 'bg-amber-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#f59e0b]',
@@ -302,9 +207,142 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-amber-500 text-black border-amber-500 font-bold',
     badgeInactive: 'bg-amber-500/10 text-amber-400 border-amber-500/40'
   },
-  'governance-audit': {
+'db-admin': {
+    color: 'teal',
+    accentBar: 'bg-teal-500',
+    accentText: 'text-teal-400',
+    activeBorder: 'border-teal-500',
+    activeBg: 'bg-teal-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#14b8a6]',
+    hoverBorder: 'hover:border-teal-500/60',
+    badgeActive: 'bg-teal-500 text-black border-teal-500 font-bold',
+    badgeInactive: 'bg-teal-500/10 text-teal-400 border-teal-500/40'
+  },
+'it-ops-itsm': {
+    color: 'indigo',
+    accentBar: 'bg-indigo-500',
+    accentText: 'text-indigo-400',
+    activeBorder: 'border-indigo-500',
+    activeBg: 'bg-indigo-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
+    hoverBorder: 'hover:border-indigo-500/60',
+    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
+    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
+  },
+'erp-crm': {
+    color: 'blue',
+    accentBar: 'bg-blue-500',
+    accentText: 'text-blue-400',
+    activeBorder: 'border-blue-500',
+    activeBg: 'bg-blue-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#3b82f6]',
+    hoverBorder: 'hover:border-blue-500/60',
+    badgeActive: 'bg-blue-500 text-black border-blue-500 font-bold',
+    badgeInactive: 'bg-blue-500/10 text-blue-400 border-blue-500/40'
+  },
+'product-mgmt': {
+    color: 'yellow',
+    accentBar: 'bg-yellow-500',
+    accentText: 'text-yellow-400',
+    activeBorder: 'border-yellow-500',
+    activeBg: 'bg-yellow-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#eab308]',
+    hoverBorder: 'hover:border-yellow-500/60',
+    badgeActive: 'bg-yellow-500 text-black border-yellow-500 font-bold',
+    badgeInactive: 'bg-yellow-500/10 text-yellow-400 border-yellow-500/40'
+  },
+'business-analysis': {
+    color: 'indigo',
+    accentBar: 'bg-indigo-500',
+    accentText: 'text-indigo-400',
+    activeBorder: 'border-indigo-500',
+    activeBg: 'bg-indigo-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
+    hoverBorder: 'hover:border-indigo-500/60',
+    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
+    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
+  },
+'uiux-design': {
+    color: 'purple',
+    accentBar: 'bg-purple-500',
+    accentText: 'text-purple-400',
+    activeBorder: 'border-purple-500',
+    activeBg: 'bg-purple-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#a855f7]',
+    hoverBorder: 'hover:border-purple-500/60',
+    badgeActive: 'bg-purple-500 text-black border-purple-500 font-bold',
+    badgeInactive: 'bg-purple-500/10 text-purple-400 border-purple-500/40'
+  },
+'web-cms': {
+    color: 'cyan',
+    accentBar: 'bg-cyan-500',
+    accentText: 'text-cyan-400',
+    activeBorder: 'border-cyan-500',
+    activeBg: 'bg-cyan-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#06b6d4]',
+    hoverBorder: 'hover:border-cyan-500/60',
+    badgeActive: 'bg-cyan-500 text-black border-cyan-500 font-bold',
+    badgeInactive: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/40'
+  },
+'automation-rpa': {
+    color: 'rose',
+    accentBar: 'bg-rose-500',
+    accentText: 'text-rose-400',
+    activeBorder: 'border-rose-500',
+    activeBg: 'bg-rose-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#f43f5e]',
+    hoverBorder: 'hover:border-rose-500/60',
+    badgeActive: 'bg-rose-500 text-white border-rose-500 font-bold',
+    badgeInactive: 'bg-rose-500/10 text-rose-400 border-rose-500/40'
+  },
+'tech-writing': {
+    color: 'emerald',
+    accentBar: 'bg-emerald-500',
+    accentText: 'text-emerald-400',
+    activeBorder: 'border-emerald-500',
+    activeBg: 'bg-emerald-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
+    hoverBorder: 'hover:border-emerald-500/60',
+    badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
+    badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
+  },
+'sales-customer-success': {
+    color: 'blue',
+    accentBar: 'bg-blue-500',
+    accentText: 'text-blue-400',
+    activeBorder: 'border-blue-500',
+    activeBg: 'bg-blue-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#3b82f6]',
+    hoverBorder: 'hover:border-blue-500/60',
+    badgeActive: 'bg-blue-500 text-black border-blue-500 font-bold',
+    badgeInactive: 'bg-blue-500/10 text-blue-400 border-blue-500/40'
+  },
+'hardware-iot': {
+    color: 'indigo',
+    accentBar: 'bg-indigo-500',
+    accentText: 'text-indigo-400',
+    activeBorder: 'border-indigo-500',
+    activeBg: 'bg-indigo-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
+    hoverBorder: 'hover:border-indigo-500/60',
+    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
+    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
+  },
+'telecom-voice': {
+    color: 'amber',
+    accentBar: 'bg-amber-500',
+    accentText: 'text-amber-400',
+    activeBorder: 'border-amber-500',
+    activeBg: 'bg-amber-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#f59e0b]',
+    hoverBorder: 'hover:border-amber-500/60',
+    badgeActive: 'bg-amber-500 text-black border-amber-500 font-bold',
+    badgeInactive: 'bg-amber-500/10 text-amber-400 border-amber-500/40'
+  },
+'governance-audit': {
     color: 'red',
     accentBar: 'bg-red-500',
+    accentText: 'text-red-400',
     activeBorder: 'border-red-500',
     activeBg: 'bg-red-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#ef4444]',
@@ -312,9 +350,10 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-red-500 text-white border-red-500 font-bold',
     badgeInactive: 'bg-red-500/10 text-red-400 border-red-500/40'
   },
-  'architecture': {
+'architecture': {
     color: 'emerald',
     accentBar: 'bg-emerald-500',
+    accentText: 'text-emerald-400',
     activeBorder: 'border-emerald-500',
     activeBg: 'bg-emerald-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
@@ -322,25 +361,16 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
     badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
   },
-  'executive': {
+'executive': {
     color: 'fuchsia',
     accentBar: 'bg-fuchsia-500',
+    accentText: 'text-fuchsia-400',
     activeBorder: 'border-fuchsia-500',
     activeBg: 'bg-fuchsia-950/40',
     activeShadow: 'shadow-[4px_4px_0px_0px_#d946ef]',
     hoverBorder: 'hover:border-fuchsia-500/60',
     badgeActive: 'bg-fuchsia-500 text-black border-fuchsia-500 font-bold',
     badgeInactive: 'bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/40'
-  },
-  'green-computing': {
-    color: 'emerald',
-    accentBar: 'bg-emerald-500',
-    activeBorder: 'border-emerald-500',
-    activeBg: 'bg-emerald-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
-    hoverBorder: 'hover:border-emerald-500/60',
-    badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
-    badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
   }
 };
 
@@ -350,145 +380,145 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
     icon: '🌐',
     description: 'Comprehensive question bank across all IT engineering disciplines'
   },
-  'it-support': {
-    label: 'IT Support, Service Desk & End-User Computing',
-    icon: '🖥️',
-    description: 'Building up interview question bank for this domain...'
+'green-computing': {
+    label: 'Green Computing & Sustainable IT',
+    icon: '🌱',
+    description: 'Green Software, Energy Efficiency, Cloud Carbon Footprint, GreenOps & Sustainable AI'
   },
-  'systems-infra': {
-    label: 'System Administration & Infrastructure',
-    icon: '🖥️',
-    description: 'Building up interview question bank for this domain...'
-  },
-  'networking': {
-    label: 'Networking & NOC Operations',
-    icon: '🌐',
-    description: 'Building up interview question bank for this domain...'
-  },
-  'cloud': {
+'cloud': {
     label: 'Cloud Computing & Architecture',
     icon: '☁️',
     description: 'Cloud Architecture, AWS/Azure/GCP, FinOps, Serverless, Cloud Security & Multi-Cloud'
   },
-  'cybersecurity': {
+'cybersecurity': {
     label: 'Cybersecurity, GRC & Security Operations',
     icon: '🛡️',
     description: 'Network Security, Threat Modelling, Secret Management & OWASP'
   },
-  'software-dev': {
+'software-dev': {
     label: 'Software Development & Engineering (SDE)',
     icon: '💻',
     description: 'SDE Foundations, OOD, Algorithms, Clean Code, Concurrency, System Design & Delivery'
   },
-  'qa-testing': {
-    label: 'QA, Software Testing & Quality Engineering',
-    icon: '🧪',
-    description: 'Building up interview question bank for this domain...'
-  },
-  'devops-sre': {
+'devops-sre': {
     label: 'DevOps, SRE & Platform Engineering',
     icon: '⚡',
     description: 'CI/CD, Kubernetes, Docker, Terraform, Ansible, Linux & Observability'
   },
-  'data-analytics': {
-    label: 'Data, Analytics & Business Intelligence',
-    icon: '📊',
-    description: 'Building up interview question bank for this domain...'
-  },
-  'data-science-ai': {
+'data-science-ai': {
     label: 'Data Science, AI & Machine Learning',
     icon: '🤖',
     description: 'LLM Engineering, Model Deployment, MLOps & Data Pipelines'
   },
-  'db-admin': {
-    label: 'Database Administration (DBA)',
-    icon: '🛢️',
-    description: 'Building up interview question bank for this domain...'
-  },
-  'it-ops-itsm': {
-    label: 'IT Operations, ITSM & Process Management',
-    icon: '📋',
-    description: 'Building up interview question bank for this domain...'
-  },
-  'erp-crm': {
-    label: 'ERP, CRM & Business Application Roles',
-    icon: '🏢',
-    description: 'Building up interview question bank for this domain...'
-  },
-  'product-mgmt': {
-    label: 'Product, Project & Program Management',
-    icon: '🎯',
-    description: 'Building up interview question bank for this domain...'
-  },
-  'business-analysis': {
-    label: 'Business Analysis & Tech Consulting',
-    icon: '📈',
-    description: 'Building up interview question bank for this domain...'
-  },
-  'uiux-design': {
-    label: 'UI/UX, Product Design & Creative Technology',
-    icon: '🎨',
-    description: 'Building up interview question bank for this domain...'
-  },
-  'web-cms': {
-    label: 'Web, CMS & Digital Technology',
-    icon: '🌐',
-    description: 'Building up interview question bank for this domain...'
-  },
-  'frontend-developer': {
+'frontend-developer': {
     label: 'Frontend Developer',
     icon: '🎨',
     description: 'React, State Management, DOM, Web Performance & Modern UI Architecture'
   },
-  'backend-developer': {
+'backend-developer': {
     label: 'Backend Developer',
     icon: '⚙️',
     description: 'APIs, Databases, Microservices, Node.js, Python, Java, Go & System Design'
   },
-  'automation-rpa': {
+'it-support': {
+    label: 'IT Support, Service Desk & End-User Computing',
+    icon: '🖥️',
+    description: 'Building up interview question bank for this domain...'
+  },
+'systems-infra': {
+    label: 'System Administration & Infrastructure',
+    icon: '🖥️',
+    description: 'Building up interview question bank for this domain...'
+  },
+'networking': {
+    label: 'Networking & NOC Operations',
+    icon: '🌐',
+    description: 'Building up interview question bank for this domain...'
+  },
+'qa-testing': {
+    label: 'QA, Software Testing & Quality Engineering',
+    icon: '🧪',
+    description: 'Building up interview question bank for this domain...'
+  },
+'data-analytics': {
+    label: 'Data, Analytics & Business Intelligence',
+    icon: '📊',
+    description: 'Building up interview question bank for this domain...'
+  },
+'db-admin': {
+    label: 'Database Administration (DBA)',
+    icon: '🛢️',
+    description: 'Building up interview question bank for this domain...'
+  },
+'it-ops-itsm': {
+    label: 'IT Operations, ITSM & Process Management',
+    icon: '📋',
+    description: 'Building up interview question bank for this domain...'
+  },
+'erp-crm': {
+    label: 'ERP, CRM & Business Application Roles',
+    icon: '🏢',
+    description: 'Building up interview question bank for this domain...'
+  },
+'product-mgmt': {
+    label: 'Product, Project & Program Management',
+    icon: '🎯',
+    description: 'Building up interview question bank for this domain...'
+  },
+'business-analysis': {
+    label: 'Business Analysis & Tech Consulting',
+    icon: '📈',
+    description: 'Building up interview question bank for this domain...'
+  },
+'uiux-design': {
+    label: 'UI/UX, Product Design & Creative Technology',
+    icon: '🎨',
+    description: 'Building up interview question bank for this domain...'
+  },
+'web-cms': {
+    label: 'Web, CMS & Digital Technology',
+    icon: '🌐',
+    description: 'Building up interview question bank for this domain...'
+  },
+'automation-rpa': {
     label: 'Automation, RPA & Low-Code / No-Code',
     icon: '🤖',
     description: 'Building up interview question bank for this domain...'
   },
-  'tech-writing': {
+'tech-writing': {
     label: 'Technical Writing & Knowledge Management',
     icon: '📝',
     description: 'Building up interview question bank for this domain...'
   },
-  'sales-customer-success': {
+'sales-customer-success': {
     label: 'Sales Engineering & Customer Success Technology',
     icon: '💼',
     description: 'Building up interview question bank for this domain...'
   },
-  'hardware-iot': {
+'hardware-iot': {
     label: 'Hardware, Embedded Systems & IoT Engineering',
     icon: '🔌',
     description: 'Building up interview question bank for this domain...'
   },
-  'telecom-voice': {
+'telecom-voice': {
     label: 'Telecom, Voice & Collaboration',
     icon: '📞',
     description: 'Building up interview question bank for this domain...'
   },
-  'governance-audit': {
+'governance-audit': {
     label: 'Governance, Risk, Compliance (GRC) & IT Audit',
     icon: '🛡️',
     description: 'Building up interview question bank for this domain...'
   },
-  'architecture': {
+'architecture': {
     label: 'Technology Architecture Track',
     icon: '🏛️',
     description: 'Building up interview question bank for this domain...'
   },
-  'executive': {
+'executive': {
     label: 'Executive & C-Level Tech Leadership',
     icon: '👑',
     description: 'Building up interview question bank for this domain...'
-  },
-  'green-computing': {
-    label: 'Green Computing & Sustainable IT',
-    icon: '🌱',
-    description: 'Green Software, Energy Efficiency, Cloud Carbon Footprint, GreenOps & Sustainable AI'
   }
 };
 
@@ -738,6 +768,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                 const palette = count === 0 ? {
                   color: 'amber',
                   accentBar: 'bg-amber-500/30',
+    accentText: 'text-amber-400',
                   activeBorder: 'border-amber-500/50',
                   activeBg: 'bg-amber-950/20',
                   activeShadow: 'shadow-[4px_4px_0px_0px_rgba(245,158,11,0.2)]',
@@ -963,129 +994,137 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                 const bookmarked = checkIsBookmarked(item.id);
                 const isCopied = copiedId === item.id;
                 const isPractical = item.question_type === 'practical' || item.prompt.startsWith('[PRACTICAL LAB]');
+                
+                const itemRoleKey = Object.keys(ROLE_SLUG_ALIASES).find(k => ROLE_SLUG_ALIASES[k].includes(item.role_slug)) || item.role_slug;
+                const itemPalette = DOMAIN_COLOR_PALETTE[itemRoleKey] || DOMAIN_COLOR_PALETTE['all'];
 
                 return (
                   <article
                     key={item.id}
-                    className={`border-2 transition-all p-5 text-left relative ${
+                    className={`border-2 transition-all p-5 text-left relative overflow-hidden ${
                       isPractical
-                        ? 'bg-zinc-950 border-zinc-600 hover:border-white shadow-[4px_4px_0px_0px_#ffffff]'
-                        : 'bg-zinc-950 border-zinc-800 hover:border-zinc-500'
+                        ? `bg-zinc-950/90 ${itemPalette.activeBorder} ${itemPalette.activeShadow}`
+                        : `bg-zinc-950 ${itemPalette.hoverBorder} border-zinc-800`
                     }`}
                   >
-                    {/* Item Top Bar */}
-                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-zinc-800 pb-3 mb-3">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="font-mono text-xs font-black px-2 py-0.5 bg-white text-black uppercase">
-                          {item.id}
-                        </span>
-                        <span className="text-[10px] font-bold uppercase px-2 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700">
-                          {item.difficulty}
-                        </span>
-                        <span className="text-[10px] font-bold uppercase px-2 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700">
-                          {item.question_type}
-                        </span>
-                        {item.source_tier && (
-                          <span className="text-[10px] font-mono text-zinc-400">
-                            Tier-{item.source_tier}
+                    {/* Left Colored Accent Side-Line on Question Card */}
+                    <div className={`absolute left-0 top-0 bottom-0 w-1.5 ${itemPalette.accentBar}`} />
+
+                    <div className="pl-2">
+                      {/* Item Top Bar */}
+                      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-zinc-800/80 pb-3 mb-3">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className={`font-mono text-xs font-black px-2 py-0.5 uppercase ${itemPalette.badgeActive}`}>
+                            {item.id}
                           </span>
-                        )}
-                      </div>
-
-                      <div className="flex items-center gap-2">
-                        {/* Copy Action */}
-                        <button
-                          onClick={() => handleCopy(item)}
-                          title="Copy Question & Answer"
-                          className="p-1.5 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-zinc-300 transition cursor-pointer"
-                        >
-                          {isCopied ? <Check className="w-3.5 h-3.5 text-white" /> : <Copy className="w-3.5 h-3.5" />}
-                        </button>
-
-                        {/* Bookmark Action */}
-                        <button
-                          onClick={() => handleBookmarkToggle(item)}
-                          title={bookmarked ? "Remove Bookmark" : "Save Bookmark"}
-                          className={`p-1.5 border transition cursor-pointer ${
-                            bookmarked
-                              ? 'bg-white text-black border-white'
-                              : 'bg-zinc-900 text-zinc-300 border-zinc-700 hover:border-white hover:text-white'
-                          }`}
-                        >
-                          <Bookmark className={`w-3.5 h-3.5 ${bookmarked ? 'fill-current' : ''}`} />
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* Question Prompt */}
-                    <div className="mb-4">
-                      <span className="text-[9px] text-zinc-400 uppercase tracking-widest block font-bold mb-1">
-                        {item.domain}
-                      </span>
-                      <h3 className="text-base font-bold text-white leading-snug font-sans">
-                        {item.prompt}
-                      </h3>
-                    </div>
-
-                    {/* Expandable Preferred Answer & Evaluator Checkpoints */}
-                    <div className="space-y-3">
-                      <button
-                        onClick={() => toggleExpand(item.id)}
-                        className="w-full py-2 px-3 border border-zinc-800 bg-black hover:bg-zinc-900 text-xs text-white font-bold flex items-center justify-between uppercase transition cursor-pointer"
-                      >
-                        <span className="flex items-center gap-2">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-white" />
-                          <span>{isExpanded ? 'Hide Preferred Answer & Checkpoints' : 'View Preferred Answer & Checkpoints'}</span>
-                        </span>
-                        {isExpanded ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
-                      </button>
-
-                      {isExpanded && (
-                        <div className="p-4 border border-zinc-700 bg-zinc-900/90 space-y-4 text-xs font-sans">
-                          {/* Preferred Answer */}
-                          <div>
-                            <span className="text-[10px] font-mono font-bold text-white uppercase block mb-1">
-                              PREFERRED ANSWER GUIDE
+                          <span className="text-[10px] font-bold uppercase px-2 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700">
+                            {item.difficulty}
+                          </span>
+                          <span className="text-[10px] font-bold uppercase px-2 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700">
+                            {item.question_type}
+                          </span>
+                          {item.source_tier && (
+                            <span className="text-[10px] font-mono text-zinc-400">
+                              Tier-{item.source_tier}
                             </span>
-                            <p className="text-zinc-200 leading-relaxed">
-                              {item.preferred_answer}
-                            </p>
-                          </div>
-
-                          {/* Evaluator Checkpoints */}
-                          {item.evaluation_points && item.evaluation_points.length > 0 && (
-                            <div className="pt-3 border-t border-zinc-800">
-                              <span className="text-[10px] font-mono font-bold text-white uppercase block mb-2">
-                                EVALUATOR CHECKPOINTS &amp; RUBRIC
-                              </span>
-                              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-zinc-300 font-mono text-[11px]">
-                                {item.evaluation_points.map((pt, idx) => (
-                                  <li key={idx} className="flex items-start gap-2 bg-black p-2 border border-zinc-800">
-                                    <span className="text-white font-bold">•</span>
-                                    <span>{pt}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          )}
-
-                          {/* Source Link */}
-                          {item.resolution_title && (
-                            <div className="pt-3 border-t border-zinc-800 flex items-center justify-between text-[11px] font-mono">
-                              <span className="text-zinc-400">Verified Reference:</span>
-                              <a
-                                href={item.resolution_url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-white hover:underline font-bold flex items-center gap-1.5"
-                              >
-                                <span>{item.resolution_title}</span>
-                                <ExternalLink className="w-3 h-3 text-zinc-400" />
-                              </a>
-                            </div>
                           )}
                         </div>
-                      )}
+
+                        <div className="flex items-center gap-2">
+                          {/* Copy Action */}
+                          <button
+                            onClick={() => handleCopy(item)}
+                            title="Copy Question & Answer"
+                            className="p-1.5 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-zinc-300 transition cursor-pointer"
+                          >
+                            {isCopied ? <Check className="w-3.5 h-3.5 text-white" /> : <Copy className="w-3.5 h-3.5" />}
+                          </button>
+
+                          {/* Bookmark Action */}
+                          <button
+                            onClick={() => handleBookmarkToggle(item)}
+                            title={bookmarked ? "Remove Bookmark" : "Save Bookmark"}
+                            className={`p-1.5 border transition cursor-pointer ${
+                              bookmarked
+                                ? 'bg-white text-black border-white'
+                                : 'bg-zinc-900 text-zinc-300 border-zinc-700 hover:border-white hover:text-white'
+                            }`}
+                          >
+                            <Bookmark className={`w-3.5 h-3.5 ${bookmarked ? 'fill-current' : ''}`} />
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Question Prompt */}
+                      <div className="mb-4">
+                        <span className={`text-[10px] uppercase tracking-widest block font-bold mb-1 ${itemPalette.accentText}`}>
+                          {item.domain}
+                        </span>
+                        <h3 className="text-base font-bold text-white leading-snug font-sans">
+                          {item.prompt}
+                        </h3>
+                      </div>
+
+                      {/* Expandable Preferred Answer & Evaluator Checkpoints */}
+                      <div className="space-y-3">
+                        <button
+                          onClick={() => toggleExpand(item.id)}
+                          className={`w-full py-2 px-3 border bg-black ${itemPalette.hoverBorder} text-xs text-white font-bold flex items-center justify-between uppercase transition cursor-pointer`}
+                        >
+                          <span className="flex items-center gap-2">
+                            <CheckCircle2 className={`w-3.5 h-3.5 ${itemPalette.accentText}`} />
+                            <span>{isExpanded ? 'Hide Preferred Answer & Checkpoints' : 'View Preferred Answer & Checkpoints'}</span>
+                          </span>
+                          {isExpanded ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
+                        </button>
+
+                        {isExpanded && (
+                          <div className={`p-4 border ${itemPalette.activeBorder} ${itemPalette.activeBg} space-y-4 text-xs font-sans`}>
+                            {/* Preferred Answer */}
+                            <div>
+                              <span className={`text-[10px] font-mono font-bold uppercase block mb-1 ${itemPalette.accentText}`}>
+                                PREFERRED ANSWER GUIDE
+                              </span>
+                              <p className="text-zinc-100 leading-relaxed font-sans">
+                                {item.preferred_answer}
+                              </p>
+                            </div>
+
+                            {/* Evaluator Checkpoints */}
+                            {item.evaluation_points && item.evaluation_points.length > 0 && (
+                              <div className="pt-3 border-t border-zinc-800/80">
+                                <span className={`text-[10px] font-mono font-bold uppercase block mb-2 ${itemPalette.accentText}`}>
+                                  EVALUATOR CHECKPOINTS &amp; RUBRIC
+                                </span>
+                                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-zinc-300 font-mono text-[11px]">
+                                  {item.evaluation_points.map((pt, idx) => (
+                                    <li key={idx} className="flex items-start gap-2 bg-black/80 p-2 border border-zinc-800">
+                                      <span className={`font-bold ${itemPalette.accentText}`}>•</span>
+                                      <span>{pt}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+
+                            {/* Source Link */}
+                            {item.resolution_title && (
+                              <div className="pt-3 border-t border-zinc-800/80 flex items-center justify-between text-[11px] font-mono">
+                                <span className="text-zinc-400">Verified Reference:</span>
+                                <a
+                                  href={item.resolution_url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className={`hover:underline font-bold flex items-center gap-1.5 ${itemPalette.accentText}`}
+                                >
+                                  <span>{item.resolution_title}</span>
+                                  <ExternalLink className="w-3 h-3 opacity-70" />
+                                </a>
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </article>
                 );
