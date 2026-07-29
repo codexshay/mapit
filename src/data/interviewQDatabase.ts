@@ -10160,5 +10160,7565 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-07-28",
     "status": "published"
+  },
+  {
+    "id": "AIP-001",
+    "role_slug": "prompt-engineer",
+    "domain": "AI, Generative AI and LLM Foundations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate artificial intelligence, machine learning, deep learning, generative AI and a large language model.",
+    "preferred_answer": "Artificial intelligence is the broader field of systems performing tasks associated with intelligent behaviour. Machine learning learns patterns from data; deep learning uses multi-layer neural networks; generative AI produces new content from learned distributions; and an LLM is a generative model trained primarily on language tokens. The terms overlap but are not interchangeable, and a production AI application also includes data, prompts, retrieval, tools, controls and software around the model.",
+    "evaluation_points": [
+      "Correct hierarchy",
+      "Generative versus predictive distinction",
+      "LLM as one model class",
+      "Application includes more than the model"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework 1.0",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-002",
+    "role_slug": "prompt-engineer",
+    "domain": "AI, Generative AI and LLM Foundations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why is an LLM response better described as probabilistic generation than database retrieval?",
+    "preferred_answer": "An LLM predicts a sequence of tokens conditioned on the input and its learned parameters. It does not normally look up a single stored answer, even when the output resembles memorised text. Sampling settings, context and model version can change the completion. Retrieval can be added as a separate system component, but the model still generates a response from the supplied context, so factuality must be evaluated rather than assumed.",
+    "evaluation_points": [
+      "Token probability framing",
+      "No simple record lookup",
+      "Context and sampling affect output",
+      "Retrieval is a separate component"
+    ],
+    "resolution_title": "Hugging Face - Text Generation",
+    "resolution_url": "https://huggingface.co/docs/transformers/main_classes/text_generation",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-003",
+    "role_slug": "prompt-engineer",
+    "domain": "AI, Generative AI and LLM Foundations",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "What components make up a production generative-AI application beyond the foundation model?",
+    "preferred_answer": "A production system commonly includes input processing, prompt templates, identity and policy, retrieval or databases, tool adapters, model routing, output validation, safety controls, caching, telemetry, evaluation datasets, feedback and human escalation. Each component has its own failure modes. A strong design defines trust boundaries and contracts between them instead of treating the model call as the whole application.",
+    "evaluation_points": [
+      "Prompt and context layer",
+      "Retrieval/tools and validation",
+      "Safety and identity",
+      "Evaluation and observability"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-004",
+    "role_slug": "prompt-engineer",
+    "domain": "AI, Generative AI and LLM Foundations",
+    "difficulty": "intermediate",
+    "question_type": "capability",
+    "prompt": "Why can a model perform well on a benchmark yet fail in a company's workflow?",
+    "preferred_answer": "Benchmarks measure selected tasks under defined prompts, data and scoring. A company workflow may contain different terminology, long context, ambiguous instructions, tool failures, policy constraints and higher costs for specific errors. Distribution shift and integration defects can dominate model capability. Teams therefore need use-case-specific evaluations with representative inputs and business-weighted failure criteria before deployment.",
+    "evaluation_points": [
+      "Benchmark scope limitation",
+      "Distribution and workflow differences",
+      "Integration failure modes",
+      "Use-case evaluation requirement"
+    ],
+    "resolution_title": "Anthropic - Define Success Criteria and Build Evaluations",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-005",
+    "role_slug": "prompt-engineer",
+    "domain": "AI, Generative AI and LLM Foundations",
+    "difficulty": "intermediate",
+    "question_type": "engineering",
+    "prompt": "What is the difference between a model capability problem and an application design problem?",
+    "preferred_answer": "A capability problem remains after the model receives clear instructions, sufficient context and valid tools; it may require a stronger or specialised model, fine-tuning or a narrower task. An application design problem comes from missing data, poor prompts, incorrect retrieval, unsafe tool permissions, weak validation or unsuitable UX. Diagnose the pipeline stage with controlled tests before changing the model.",
+    "evaluation_points": [
+      "Controlled isolation of model",
+      "Examples of application defects",
+      "Model or adaptation alternatives",
+      "Pipeline-stage diagnosis"
+    ],
+    "resolution_title": "OpenAI - Model Selection",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/model-selection",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-006",
+    "role_slug": "prompt-engineer",
+    "domain": "AI, Generative AI and LLM Foundations",
+    "difficulty": "advanced",
+    "question_type": "reliability",
+    "prompt": "Why should nondeterminism be treated as an engineering property rather than a testing excuse?",
+    "preferred_answer": "Generative systems can vary across samples because of probabilistic decoding, model updates and context differences. Engineering should bound that variability using schemas, constrained choices, deterministic business logic, lower randomness where appropriate, repeated evaluation and acceptance distributions rather than one golden string. Critical actions should be validated outside the model. Nondeterminism changes the test design; it does not remove the need for measurable reliability.",
+    "evaluation_points": [
+      "Sources of variation",
+      "Distribution-based evaluation",
+      "Constrained interfaces",
+      "External validation for critical actions"
+    ],
+    "resolution_title": "OpenAI - Working with Evals",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/evals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-007",
+    "role_slug": "prompt-engineer",
+    "domain": "AI, Generative AI and LLM Foundations",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "How would you apply the NIST AI RMF functions to an LLM feature?",
+    "preferred_answer": "Govern defines ownership, policy and risk appetite; Map documents the use case, affected people, data, dependencies and harms; Measure tests quality, safety, bias, privacy and security; Manage prioritises controls, deployment decisions and monitoring. The functions are continuous and contextual rather than a one-time checklist. Evidence should connect model behaviour to the actual product and its users.",
+    "evaluation_points": [
+      "All four functions",
+      "Lifecycle use",
+      "Context and affected parties",
+      "Evidence-linked management"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework 1.0",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-008",
+    "role_slug": "prompt-engineer",
+    "domain": "AI, Generative AI and LLM Foundations",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A team says its chatbot is '95% accurate.' What questions would you ask before accepting the claim?",
+    "preferred_answer": "Ask what task and population were tested, how the dataset was sampled, what 'accurate' means, who labelled the reference, whether ambiguous cases were excluded, the confidence interval, error severity, model and prompt version, and performance on adversarial or out-of-distribution inputs. Separate factual correctness, relevance, groundedness and format compliance. A single percentage without a decision context is not sufficient evidence.",
+    "evaluation_points": [
+      "Metric definition",
+      "Dataset and label quality",
+      "Error severity and uncertainty",
+      "Version and robustness checks"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-009",
+    "role_slug": "prompt-engineer",
+    "domain": "Transformers, Tokens and Context Windows",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "What problem does the transformer attention mechanism solve in language modelling?",
+    "preferred_answer": "Attention lets each token representation weigh information from other tokens in the sequence, enabling the model to capture relationships without processing text only step by step as traditional recurrent networks did. Multi-head attention can learn different relationship patterns. It improves parallel training and long-range modelling, although compute and memory still grow with sequence length in standard attention.",
+    "evaluation_points": [
+      "Token-to-token weighting",
+      "Contrast with recurrence",
+      "Multi-head role",
+      "Sequence-length cost"
+    ],
+    "resolution_title": "Attention Is All You Need",
+    "resolution_url": "https://arxiv.org/abs/1706.03762",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-010",
+    "role_slug": "prompt-engineer",
+    "domain": "Transformers, Tokens and Context Windows",
+    "difficulty": "foundation",
+    "question_type": "tokenization",
+    "prompt": "What is a token, and why does a prompt engineer need to care about tokenization?",
+    "preferred_answer": "A token is a model-specific unit produced by a tokenizer; it may be a whole word, part of a word, punctuation or bytes. Token counts affect context capacity, latency and cost, and unusual languages, code or identifiers may split inefficiently. Character length therefore does not equal token length. Prompt and document pipelines should count with the target model's tokenizer and test multilingual and structured inputs.",
+    "evaluation_points": [
+      "Model-specific units",
+      "Not equal to words or characters",
+      "Cost and context impact",
+      "Test target-language inputs"
+    ],
+    "resolution_title": "Hugging Face Tokenizers Documentation",
+    "resolution_url": "https://huggingface.co/docs/tokenizers/index",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-011",
+    "role_slug": "prompt-engineer",
+    "domain": "Transformers, Tokens and Context Windows",
+    "difficulty": "intermediate",
+    "question_type": "context",
+    "prompt": "What happens when an input exceeds a model's context window?",
+    "preferred_answer": "The request may be rejected, truncated by an application, or require compaction, summarisation or retrieval depending on the platform. Silent truncation is dangerous because instructions, evidence or conversation state may disappear. A robust system budgets tokens by component, reserves output capacity, defines a policy for older content and records what context was actually sent.",
+    "evaluation_points": [
+      "Possible rejection or truncation",
+      "Instruction/evidence loss risk",
+      "Input-output budget",
+      "Explicit context policy and logging"
+    ],
+    "resolution_title": "OpenAI - Prompt Engineering",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-012",
+    "role_slug": "prompt-engineer",
+    "domain": "Transformers, Tokens and Context Windows",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "Why can information inside a long context still be missed even when it fits within the window?",
+    "preferred_answer": "Capacity only means the tokens can be supplied; it does not guarantee equal use of every part. Relevant evidence can be diluted by noise, conflicting passages or poor placement, and retrieval may return weak chunks. Structure documents with metadata, place the task clearly, remove irrelevant content and evaluate answer quality by evidence location and context length rather than assuming 'fits' means 'understood.'",
+    "evaluation_points": [
+      "Capacity versus effective use",
+      "Noise and conflicts",
+      "Prompt structure and retrieval",
+      "Position-aware evaluation"
+    ],
+    "resolution_title": "Anthropic - Prompting Best Practices",
+    "resolution_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-013",
+    "role_slug": "prompt-engineer",
+    "domain": "Transformers, Tokens and Context Windows",
+    "difficulty": "intermediate",
+    "question_type": "decoding",
+    "prompt": "How do temperature and top-p influence model output, and why should they not be treated as accuracy controls?",
+    "preferred_answer": "They shape sampling from the model's token distribution: lower settings generally reduce variation, while higher settings allow more diverse choices. They do not correct missing knowledge, bad context or faulty reasoning. For extraction and classification, use constrained output and low variation; for ideation, allow diversity. Validate behaviour empirically because providers and model families may implement defaults differently.",
+    "evaluation_points": [
+      "Sampling-distribution effect",
+      "Variation not truth",
+      "Task-based configuration",
+      "Empirical provider-specific testing"
+    ],
+    "resolution_title": "Hugging Face - Text Generation",
+    "resolution_url": "https://huggingface.co/docs/transformers/main_classes/text_generation",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-014",
+    "role_slug": "prompt-engineer",
+    "domain": "Transformers, Tokens and Context Windows",
+    "difficulty": "advanced",
+    "question_type": "performance",
+    "prompt": "What trade-offs arise when increasing context length for a production application?",
+    "preferred_answer": "Longer context can reduce preprocessing and include more evidence, but increases input cost, latency and the chance of irrelevant or conflicting content. It can weaken cache reuse and make evaluation harder. Compare selective retrieval, hierarchical summaries and full-context approaches using representative tasks. The right design minimises total error and operational cost, not merely the number of omitted tokens.",
+    "evaluation_points": [
+      "Cost and latency",
+      "Noise/conflict risk",
+      "Alternative context strategies",
+      "End-to-end evaluation"
+    ],
+    "resolution_title": "Google Gemini - Long Context",
+    "resolution_url": "https://ai.google.dev/gemini-api/docs/long-context",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-015",
+    "role_slug": "prompt-engineer",
+    "domain": "Transformers, Tokens and Context Windows",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "Why are positional representations necessary in transformer models?",
+    "preferred_answer": "Self-attention by itself does not inherently encode sequence order, so models need positional information to distinguish arrangements such as 'dog bites man' and 'man bites dog.' Architectures use learned or mathematical position mechanisms, and behaviour can degrade outside trained or supported ranges. Application teams need not implement them, but should understand that order and placement in prompts can affect results.",
+    "evaluation_points": [
+      "Attention lacks inherent order",
+      "Meaning changes with order",
+      "Position mechanism",
+      "Prompt placement consequence"
+    ],
+    "resolution_title": "Attention Is All You Need",
+    "resolution_url": "https://arxiv.org/abs/1706.03762",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-016",
+    "role_slug": "prompt-engineer",
+    "domain": "Transformers, Tokens and Context Windows",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "A document summariser works on short files but omits decisions from 150-page reports. How would you diagnose it?",
+    "preferred_answer": "Measure tokens and confirm the actual transmitted context, then check truncation, parser loss, chunk boundaries, retrieval coverage and where decisions appear. Build a labelled set of decision statements and compare full-context, map-reduce and retrieval-based summaries. Require citations or evidence IDs, inspect omission by document section, and avoid solving the issue only by increasing the context limit.",
+    "evaluation_points": [
+      "Actual-context verification",
+      "Parsing/chunking/retrieval checks",
+      "Labelled coverage evaluation",
+      "Compare architectures rather than only window size"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG End-to-End Evaluation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-llm-evaluation-phase",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-017",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Engineering Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is prompt engineering in a production context?",
+    "preferred_answer": "Prompt engineering is the iterative design and testing of instructions, context, examples and output contracts used to elicit useful model behaviour for a defined task. It includes versioning and evaluation, not only clever wording. Some failures are better solved with improved data, retrieval, model choice, tools or application logic, so the engineer must diagnose before editing the prompt.",
+    "evaluation_points": [
+      "Iterative design and testing",
+      "Instructions/context/examples/contracts",
+      "Versioning and evaluation",
+      "Not every failure is a prompt problem"
+    ],
+    "resolution_title": "Anthropic - Prompt Engineering Overview",
+    "resolution_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-018",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Engineering Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "design",
+    "prompt": "What information should a strong task prompt normally make explicit?",
+    "preferred_answer": "It should state the objective, relevant context, audience, allowed sources, constraints, required output and what to do when information is missing or ambiguous. Examples can clarify edge cases. Priority should be clear when requirements conflict. A prompt should provide enough operational detail for a capable new colleague to perform the task, without burying the key instruction in unnecessary prose.",
+    "evaluation_points": [
+      "Objective and context",
+      "Constraints and output",
+      "Uncertainty policy",
+      "Clear priorities without clutter"
+    ],
+    "resolution_title": "Anthropic - Prompting Best Practices",
+    "resolution_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-019",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Engineering Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "diagnosis",
+    "prompt": "How can you tell whether a prompt is underspecified?",
+    "preferred_answer": "Test it across realistic inputs and compare the different reasonable interpretations. Signs include inconsistent scope, format, assumptions or refusal behaviour, and evaluators disagreeing about what success means. Write explicit acceptance criteria, identify missing variables and add only the instructions needed to remove material ambiguity. If humans cannot agree on the expected answer, prompt wording alone cannot solve the label problem.",
+    "evaluation_points": [
+      "Variation in plausible interpretations",
+      "Evaluation disagreement",
+      "Acceptance criteria",
+      "Human ambiguity recognition"
+    ],
+    "resolution_title": "Anthropic - Define Success Criteria and Build Evaluations",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-020",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Engineering Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "examples",
+    "prompt": "When do few-shot examples help, and how can they harm performance?",
+    "preferred_answer": "Examples help when the desired mapping, style or edge-case behaviour is difficult to describe precisely. They can harm by encoding accidental patterns, narrowing diversity, consuming context or conflicting with instructions. Examples should be representative, varied and correctly labelled. Hold out test cases and compare zero-shot and few-shot performance rather than assuming more examples are better.",
+    "evaluation_points": [
+      "Appropriate use",
+      "Unintended pattern risk",
+      "Diversity and label quality",
+      "Controlled comparison"
+    ],
+    "resolution_title": "Google Gemini - Prompt Design Strategies",
+    "resolution_url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-021",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Engineering Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "maintainability",
+    "prompt": "Why should variable data be clearly separated from instructions in a prompt template?",
+    "preferred_answer": "Separation makes the template readable, reduces accidental instruction mixing and supports validation, escaping and security review. Use consistent delimiters or structured fields for policy, examples, retrieved documents and user input. Separation does not make untrusted text safe by itself, but it helps the application preserve instruction priority and identify which content must be treated only as data.",
+    "evaluation_points": [
+      "Readability and maintenance",
+      "Structured prompt sections",
+      "Validation/security benefit",
+      "No claim that delimiters prevent injection"
+    ],
+    "resolution_title": "Microsoft - System Message Design for Azure OpenAI",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/advanced-prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-022",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Engineering Fundamentals",
+    "difficulty": "advanced",
+    "question_type": "optimization",
+    "prompt": "How would you improve a prompt without overfitting it to the current evaluation set?",
+    "preferred_answer": "Start with representative training and held-out test sets, cluster failure modes and make changes tied to a general hypothesis. Test the revision on unseen examples, edge cases and adversarial inputs, and review regressions by segment. Avoid adding a special instruction for every failed item. Prefer simpler rules, better data interfaces or deterministic logic when they address a whole class of errors.",
+    "evaluation_points": [
+      "Held-out evaluation",
+      "Failure-mode hypothesis",
+      "Segment and adversarial testing",
+      "Avoid one-off patches"
+    ],
+    "resolution_title": "OpenAI - Working with Evals",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/evals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-023",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Engineering Fundamentals",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "When should a task be split into multiple model calls rather than one large prompt?",
+    "preferred_answer": "Split when stages have distinct inputs, evaluators or tools; when intermediate outputs can be validated; or when one prompt becomes difficult to test and maintain. A pipeline can classify, retrieve, draft and verify separately. Additional calls add latency, cost and error propagation, so keep the workflow as simple as evidence allows and define typed contracts between stages.",
+    "evaluation_points": [
+      "Distinct stages and validation",
+      "Maintainability benefit",
+      "Typed intermediate contracts",
+      "Latency/cost/error trade-off"
+    ],
+    "resolution_title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "resolution_url": "https://arxiv.org/abs/2210.03629",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-024",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Engineering Fundamentals",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "A customer-support prompt produces friendly answers but often violates refund policy. What would you change first?",
+    "preferred_answer": "Separate tone from policy compliance, provide the authoritative policy or a policy tool, require the model to identify the applicable rule and return a structured decision before drafting the response, and add examples for boundary cases. Test against labelled refund scenarios. Do not rely on a stronger phrase such as 'always follow policy' when the model lacks the correct facts or deterministic eligibility checks.",
+    "evaluation_points": [
+      "Policy grounding",
+      "Decision before prose",
+      "Boundary-case evaluation",
+      "Deterministic checks for hard rules"
+    ],
+    "resolution_title": "OpenAI - Prompt Engineering",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-025",
+    "role_slug": "prompt-engineer",
+    "domain": "Instruction Hierarchy and Prompt Structure",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the purpose of a system or developer instruction compared with a user message?",
+    "preferred_answer": "A system or developer instruction defines the application's persistent role, boundaries and operating policy, while the user message supplies the current request and data. Platforms differ in terminology and priority rules, but application-level instructions should not be duplicated casually into untrusted content. The design should make clear which requirements are fixed, which are user-selectable and what happens when they conflict.",
+    "evaluation_points": [
+      "Persistent policy versus current request",
+      "Platform terminology may differ",
+      "Trusted versus untrusted content",
+      "Conflict behaviour"
+    ],
+    "resolution_title": "Microsoft - System Message Design for Azure OpenAI",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/advanced-prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-026",
+    "role_slug": "prompt-engineer",
+    "domain": "Instruction Hierarchy and Prompt Structure",
+    "difficulty": "foundation",
+    "question_type": "design",
+    "prompt": "Why is a 'when unsure' instruction useful in an AI application?",
+    "preferred_answer": "It defines the expected behaviour when evidence is missing, ambiguous or outside scope, such as asking a clarifying question, stating uncertainty, retrieving more information or escalating. Without it, the model may invent assumptions or provide an overconfident answer. The policy should be task-specific and testable rather than a vague command to 'never hallucinate.'",
+    "evaluation_points": [
+      "Missing-information behaviour",
+      "Clarification/retrieval/escalation options",
+      "Reduces invented assumptions",
+      "Testable task-specific policy"
+    ],
+    "resolution_title": "Microsoft - System Message Design for Azure OpenAI",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/advanced-prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-027",
+    "role_slug": "prompt-engineer",
+    "domain": "Instruction Hierarchy and Prompt Structure",
+    "difficulty": "intermediate",
+    "question_type": "structure",
+    "prompt": "How should a complex prompt separate role, task, context, examples and output requirements?",
+    "preferred_answer": "Use stable labelled sections or structured fields, place high-priority instructions where the platform expects them, and keep variable inputs clearly delimited. State the task and success criteria plainly, then provide context and examples that support it. Avoid repeated or contradictory requirements. The exact syntax matters less than consistent structure that both humans and the model can parse.",
+    "evaluation_points": [
+      "Labelled sections",
+      "Priority-aware placement",
+      "Variable-data separation",
+      "Consistency over decorative syntax"
+    ],
+    "resolution_title": "Anthropic - Prompting Best Practices",
+    "resolution_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-028",
+    "role_slug": "prompt-engineer",
+    "domain": "Instruction Hierarchy and Prompt Structure",
+    "difficulty": "intermediate",
+    "question_type": "conflicts",
+    "prompt": "What should happen when two prompt requirements conflict?",
+    "preferred_answer": "The template should define precedence and avoid creating the conflict in the first place. Higher-priority policy and safety boundaries override lower-priority style or user preferences. If the remaining request is ambiguous, the assistant should explain the constraint or ask for clarification. Evaluation should include conflict cases because models may otherwise satisfy whichever instruction is more recent, specific or salient.",
+    "evaluation_points": [
+      "Explicit precedence",
+      "Safety/policy over style",
+      "Clarification or bounded response",
+      "Conflict test cases"
+    ],
+    "resolution_title": "OpenAI - Prompt Engineering",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-029",
+    "role_slug": "prompt-engineer",
+    "domain": "Instruction Hierarchy and Prompt Structure",
+    "difficulty": "intermediate",
+    "question_type": "maintainability",
+    "prompt": "Why is one giant system prompt difficult to operate at scale?",
+    "preferred_answer": "It consumes context, hides contradictory rules, makes ownership unclear and causes small changes to affect unrelated behaviours. Break stable policy, task templates, tool descriptions and retrieved context into governed components where the platform permits. Use version control, change reviews and regression tests. Modularisation must preserve a clear final instruction order rather than assembling fragments unpredictably.",
+    "evaluation_points": [
+      "Context and contradiction cost",
+      "Ownership and change risk",
+      "Modular governed components",
+      "Preserve deterministic assembly order"
+    ],
+    "resolution_title": "Microsoft - System Message Design for Azure OpenAI",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/advanced-prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-030",
+    "role_slug": "prompt-engineer",
+    "domain": "Instruction Hierarchy and Prompt Structure",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "Why should a system prompt not contain secrets even if users are told it is hidden?",
+    "preferred_answer": "Model instructions can be exposed through direct or indirect prompt attacks, debugging, logs or application errors. The system prompt is a behavioural control, not a secret store. Put credentials and sensitive business data in protected systems, expose only minimum required values through authorised tools, and assume prompt contents may be inferred or leaked. Access control must not depend on secrecy of wording.",
+    "evaluation_points": [
+      "Prompt leakage paths",
+      "Not a secret store",
+      "Use protected tool-mediated data",
+      "No security by obscurity"
+    ],
+    "resolution_title": "OWASP LLM07:2025 - System Prompt Leakage",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm072025-system-prompt-leakage/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-031",
+    "role_slug": "prompt-engineer",
+    "domain": "Instruction Hierarchy and Prompt Structure",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How can prompt templates support multiple audiences without becoming inconsistent?",
+    "preferred_answer": "Keep a shared task and policy core, then parameterise audience, reading level, tone and allowed detail through validated fields. Define which variations are permissible and test each audience segment. Avoid copying entire prompts that drift independently. Sensitive changes such as legal disclaimers or safety boundaries should remain centrally controlled rather than editable as ordinary style preferences.",
+    "evaluation_points": [
+      "Shared core",
+      "Validated audience parameters",
+      "Segmented evaluation",
+      "Central control of sensitive rules"
+    ],
+    "resolution_title": "OpenAI - Prompt Engineering",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-032",
+    "role_slug": "prompt-engineer",
+    "domain": "Instruction Hierarchy and Prompt Structure",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A summarisation assistant follows a document's embedded instruction to ignore the requested task. How would you redesign the prompt and application?",
+    "preferred_answer": "Treat document content as untrusted data, clearly delimit it, instruct the model not to follow instructions found inside it, and minimise the actions available during summarisation. Preprocess or classify suspicious content, test indirect-injection examples and validate the output. If tools or sensitive data are accessible, isolate summarisation from those capabilities rather than relying only on prompt wording.",
+    "evaluation_points": [
+      "Untrusted-data treatment",
+      "Instruction/data separation",
+      "Adversarial testing and validation",
+      "Capability isolation"
+    ],
+    "resolution_title": "OWASP LLM01:2025 - Prompt Injection",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm012025-prompt-injection/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-033",
+    "role_slug": "prompt-engineer",
+    "domain": "Examples, Decomposition and Reasoning Scaffolds",
+    "difficulty": "foundation",
+    "question_type": "examples",
+    "prompt": "What is the difference between zero-shot, one-shot and few-shot prompting?",
+    "preferred_answer": "Zero-shot prompting provides instructions without worked examples; one-shot supplies one example; and few-shot supplies several. Examples can demonstrate labels, structure, tone and edge handling. The choice should be evaluated against quality, token cost and overfitting risk. A well-defined task may need no examples, while an ambiguous classification scheme often benefits from diverse labelled cases.",
+    "evaluation_points": [
+      "Correct definitions",
+      "What examples teach",
+      "Cost and overfitting",
+      "Task-dependent choice"
+    ],
+    "resolution_title": "Google Gemini - Prompt Design Strategies",
+    "resolution_url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-034",
+    "role_slug": "prompt-engineer",
+    "domain": "Examples, Decomposition and Reasoning Scaffolds",
+    "difficulty": "foundation",
+    "question_type": "reasoning",
+    "prompt": "Why can task decomposition improve performance on complex requests?",
+    "preferred_answer": "Decomposition reduces the number of decisions the model must make at once and creates intermediate outputs that can be checked. A workflow might identify requirements, retrieve evidence, create a plan and then produce the final answer. It is most useful when stages have distinct success criteria. Unnecessary decomposition increases latency and can propagate earlier errors.",
+    "evaluation_points": [
+      "Reduced simultaneous complexity",
+      "Checkable intermediates",
+      "Distinct stage criteria",
+      "Over-decomposition trade-off"
+    ],
+    "resolution_title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "resolution_url": "https://arxiv.org/abs/2210.03629",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-035",
+    "role_slug": "prompt-engineer",
+    "domain": "Examples, Decomposition and Reasoning Scaffolds",
+    "difficulty": "intermediate",
+    "question_type": "reasoning",
+    "prompt": "When is asking for step-by-step reasoning an unsuitable production control?",
+    "preferred_answer": "Verbose reasoning can increase tokens, expose sensitive context, be inconsistent and create the appearance of justification without correctness. Some models reason internally and work better with concise goals and verification criteria. Production systems should assess final decisions, citations, calculations and tool evidence rather than treating a narrated rationale as proof. Request a short user-facing explanation only when it serves the product.",
+    "evaluation_points": [
+      "Reasoning text is not proof",
+      "Cost/privacy/consistency concerns",
+      "Outcome and evidence evaluation",
+      "User-facing explanation by need"
+    ],
+    "resolution_title": "OpenAI - Reasoning Best Practices",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/reasoning-best-practices",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-036",
+    "role_slug": "prompt-engineer",
+    "domain": "Examples, Decomposition and Reasoning Scaffolds",
+    "difficulty": "intermediate",
+    "question_type": "examples",
+    "prompt": "How would you design a high-quality few-shot set for a classification prompt?",
+    "preferred_answer": "Choose examples that reflect production frequency and important edge cases, include clear labels and rationales only if they improve the task, vary wording and avoid accidental shortcuts. Include confusing near-boundary cases and negative examples. Keep a separate test set so the prompt is not scored on its own demonstrations, and review whether the examples create unwanted bias across user groups or languages.",
+    "evaluation_points": [
+      "Representative and diverse set",
+      "Boundary and negative examples",
+      "Held-out testing",
+      "Bias and shortcut review"
+    ],
+    "resolution_title": "Anthropic - Prompting Best Practices",
+    "resolution_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-037",
+    "role_slug": "prompt-engineer",
+    "domain": "Examples, Decomposition and Reasoning Scaffolds",
+    "difficulty": "intermediate",
+    "question_type": "verification",
+    "prompt": "What is a generate-then-verify pattern?",
+    "preferred_answer": "One stage produces a candidate and a later stage checks it against explicit criteria, source evidence or deterministic tools. The verifier may reject, repair or request more information. It should not merely ask the same model whether its own answer is good; use independent evidence, different prompts or models, tests and schemas where possible. Verification adds value only when it can detect meaningful failure modes.",
+    "evaluation_points": [
+      "Candidate then check",
+      "Explicit criteria/evidence",
+      "Avoid empty self-approval",
+      "Detectable failure modes"
+    ],
+    "resolution_title": "OpenAI - Working with Evals",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/evals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-038",
+    "role_slug": "prompt-engineer",
+    "domain": "Examples, Decomposition and Reasoning Scaffolds",
+    "difficulty": "advanced",
+    "question_type": "reasoning",
+    "prompt": "What does self-consistency attempt to achieve, and what are its operational costs?",
+    "preferred_answer": "Self-consistency samples multiple reasoning paths and selects the most consistent answer, improving some reasoning tasks in research settings. It increases tokens, latency and cost and can still converge on a shared misconception. Production use needs a measurable gain, an aggregation rule and safeguards for high-stakes decisions. Deterministic calculation or retrieval may be a better solution when available.",
+    "evaluation_points": [
+      "Multiple sampled paths",
+      "Aggregation concept",
+      "Cost and correlated-error risk",
+      "Compare with deterministic alternatives"
+    ],
+    "resolution_title": "Self-Consistency Improves Chain of Thought Reasoning",
+    "resolution_url": "https://arxiv.org/abs/2203.11171",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-039",
+    "role_slug": "prompt-engineer",
+    "domain": "Examples, Decomposition and Reasoning Scaffolds",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How does ReAct differ from a simple chain-of-thought prompt?",
+    "preferred_answer": "ReAct interleaves reasoning-oriented planning with actions and observations from external tools, allowing the system to update its approach using evidence. A simple reasoning prompt stays within the model context. ReAct-style systems need tool contracts, limits, observation handling and loop termination. The application should log actions and outcomes without depending on disclosure of private internal reasoning.",
+    "evaluation_points": [
+      "Reasoning-action-observation loop",
+      "External evidence",
+      "Tool and termination controls",
+      "Action logging rather than hidden trace dependence"
+    ],
+    "resolution_title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "resolution_url": "https://arxiv.org/abs/2210.03629",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-040",
+    "role_slug": "prompt-engineer",
+    "domain": "Examples, Decomposition and Reasoning Scaffolds",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "A model solves arithmetic examples in the prompt but fails on new numbers. What would you investigate?",
+    "preferred_answer": "Check whether the examples taught a superficial pattern, whether the task requires exact calculation, and whether the model is copying formats rather than applying a rule. Add varied held-out cases, inspect failure by magnitude and representation, and route arithmetic to a calculator or code tool. Prompting should describe when to use the tool and validate its inputs and outputs.",
+    "evaluation_points": [
+      "Shortcut-learning diagnosis",
+      "Varied held-out tests",
+      "Deterministic calculation tool",
+      "Tool validation"
+    ],
+    "resolution_title": "OpenAI - Function Calling",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/function-calling",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-041",
+    "role_slug": "prompt-engineer",
+    "domain": "Structured Outputs and Data Extraction",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What problem do structured outputs solve in an LLM application?",
+    "preferred_answer": "They constrain the model's response to a machine-readable schema so downstream software can parse expected fields and types reliably. This is stronger than asking for 'valid JSON' in prose. It improves integration and validation but does not guarantee that extracted values are factually or semantically correct. Business rules and source evidence still need separate checks.",
+    "evaluation_points": [
+      "Schema-constrained format",
+      "Stronger than prose JSON request",
+      "Integration benefit",
+      "No semantic-correctness guarantee"
+    ],
+    "resolution_title": "OpenAI - Structured Model Outputs",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/structured-outputs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-042",
+    "role_slug": "prompt-engineer",
+    "domain": "Structured Outputs and Data Extraction",
+    "difficulty": "foundation",
+    "question_type": "design",
+    "prompt": "When should structured output be used instead of function calling?",
+    "preferred_answer": "Use structured output when the model's final answer must conform to a schema, such as extraction, classification or UI data. Use function calling when the model needs the application to perform an intermediate action using typed arguments. Both may use JSON Schema, but one formats a response and the other requests execution. The application remains responsible for validation and authorisation.",
+    "evaluation_points": [
+      "Final response versus action request",
+      "Shared schema concept",
+      "Application executes tools",
+      "Validation and authorisation"
+    ],
+    "resolution_title": "Google Gemini - Structured Outputs",
+    "resolution_url": "https://ai.google.dev/gemini-api/docs/structured-output",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-043",
+    "role_slug": "prompt-engineer",
+    "domain": "Structured Outputs and Data Extraction",
+    "difficulty": "intermediate",
+    "question_type": "schema",
+    "prompt": "What makes an effective schema for model-generated data?",
+    "preferred_answer": "Use clear property names and descriptions, strong types, enums for bounded choices, required fields only when truly required and limited nesting. Separate evidence from conclusions and represent unknown values explicitly. Very large schemas can reduce reliability or exceed provider limits. Validate against the provider's supported JSON Schema subset and version the contract with the consuming application.",
+    "evaluation_points": [
+      "Clear descriptions and types",
+      "Enums and unknown handling",
+      "Complexity limits",
+      "Supported subset and versioning"
+    ],
+    "resolution_title": "Google Gemini - Structured Outputs",
+    "resolution_url": "https://ai.google.dev/gemini-api/docs/structured-output",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-044",
+    "role_slug": "prompt-engineer",
+    "domain": "Structured Outputs and Data Extraction",
+    "difficulty": "intermediate",
+    "question_type": "validation",
+    "prompt": "Why must schema-valid model output still be validated by application code?",
+    "preferred_answer": "A schema can prove structure, not business truth. Dates may be impossible, identifiers may not exist, totals may not reconcile and a requested action may exceed the user's permission. Apply semantic checks, database lookups, range validation, authorisation and idempotency before use. Treat model output as untrusted input even when it is syntactically valid.",
+    "evaluation_points": [
+      "Syntax versus semantics",
+      "Business and referential checks",
+      "Authorisation/idempotency",
+      "Untrusted-output principle"
+    ],
+    "resolution_title": "OWASP LLM05:2025 - Improper Output Handling",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-045",
+    "role_slug": "prompt-engineer",
+    "domain": "Structured Outputs and Data Extraction",
+    "difficulty": "intermediate",
+    "question_type": "extraction",
+    "prompt": "How would you handle information that is absent from the source document?",
+    "preferred_answer": "Define an explicit representation such as null plus a reason or an evidence-status enum. Instruct the model not to infer missing values, require source spans or page references where practical, and distinguish 'not present' from 'unclear' and 'not applicable.' Evaluation should penalise fabricated completion more strongly than a correct abstention when the use case values precision.",
+    "evaluation_points": [
+      "Explicit missing-value representation",
+      "No unsupported inference",
+      "Evidence linkage",
+      "Precision-aware scoring"
+    ],
+    "resolution_title": "Anthropic - Reduce Hallucinations",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-046",
+    "role_slug": "prompt-engineer",
+    "domain": "Structured Outputs and Data Extraction",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How should a system recover when a structured response fails validation?",
+    "preferred_answer": "Record the validation error, retry only with bounded attempts and a focused repair instruction, or fall back to a safer path such as human review. Do not repeatedly submit the entire failed output without limits. Distinguish transient formatting failure from unsupported content or business-rule failure. Monitor failure rate by schema version, model and input segment.",
+    "evaluation_points": [
+      "Bounded repair",
+      "Safe fallback",
+      "Failure classification",
+      "Segmented monitoring"
+    ],
+    "resolution_title": "OpenAI - Structured Model Outputs",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/structured-outputs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-047",
+    "role_slug": "prompt-engineer",
+    "domain": "Structured Outputs and Data Extraction",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What are the trade-offs between a single deeply nested schema and several staged schemas?",
+    "preferred_answer": "One schema reduces calls and can enforce a complete contract, but may be difficult for the model, humans and downstream code to maintain. Staged schemas allow validation and recovery at each step but add latency and error propagation. Choose based on task coupling and evaluation evidence. Keep deterministic transformations outside the model rather than expanding the schema to represent ordinary application logic.",
+    "evaluation_points": [
+      "Single-schema simplicity and complexity",
+      "Staged validation benefit",
+      "Latency/error trade-off",
+      "Keep deterministic logic in code"
+    ],
+    "resolution_title": "JSON Schema Specification",
+    "resolution_url": "https://json-schema.org/specification",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-048",
+    "role_slug": "prompt-engineer",
+    "domain": "Structured Outputs and Data Extraction",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "An invoice extractor returns valid JSON but assigns tax to the subtotal field. How would you improve it?",
+    "preferred_answer": "Add field descriptions and evidence spans, supply representative invoices with difficult layouts, validate arithmetic relationships and compare extracted values to document coordinates or source text. Separate line-item extraction from total reconciliation if needed. Build a labelled evaluation set by invoice type and treat schema compliance and semantic accuracy as different metrics.",
+    "evaluation_points": [
+      "Schema descriptions and evidence",
+      "Representative layout examples",
+      "Arithmetic/semantic validation",
+      "Separate format and value metrics"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG End-to-End Evaluation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-llm-evaluation-phase",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-049",
+    "role_slug": "prompt-engineer",
+    "domain": "Tool Use and Function Calling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does function calling allow an LLM application to do?",
+    "preferred_answer": "It lets the model request a named application function with structured arguments, such as searching inventory or creating a ticket. The model proposes the call; the application validates authorisation and arguments, executes the code and returns the result. Function calling connects language understanding to deterministic systems but must not be confused with the model directly running trusted code.",
+    "evaluation_points": [
+      "Model proposes a call",
+      "Application executes",
+      "Structured arguments",
+      "Authorisation and validation"
+    ],
+    "resolution_title": "OpenAI - Function Calling",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/function-calling",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-050",
+    "role_slug": "prompt-engineer",
+    "domain": "Tool Use and Function Calling",
+    "difficulty": "foundation",
+    "question_type": "design",
+    "prompt": "What information belongs in a high-quality tool definition?",
+    "preferred_answer": "Provide a clear, distinct name, a description of when the tool should and should not be used, a typed parameter schema, required fields and constraints. Describe consequences for sensitive actions and avoid overlapping tools with indistinguishable purposes. The implementation should return concise, structured results and meaningful errors that the model can handle without exposing secrets.",
+    "evaluation_points": [
+      "Clear purpose and boundaries",
+      "Typed parameters",
+      "Distinct tools",
+      "Structured safe results"
+    ],
+    "resolution_title": "Anthropic - Tool Use with Claude",
+    "resolution_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-051",
+    "role_slug": "prompt-engineer",
+    "domain": "Tool Use and Function Calling",
+    "difficulty": "intermediate",
+    "question_type": "validation",
+    "prompt": "Why must tool arguments be treated as untrusted even when they match the schema?",
+    "preferred_answer": "The model can select the wrong entity, invent an identifier, request an unsafe range or act beyond the user's authority. Schema validation only checks form. The application must authenticate the user, authorise the specific operation and resource, apply business rules, rate limits and idempotency, and request confirmation for high-impact actions. Log both proposed and executed calls.",
+    "evaluation_points": [
+      "Semantic and identity risk",
+      "Resource-level authorisation",
+      "Business controls and idempotency",
+      "Audit proposed versus executed"
+    ],
+    "resolution_title": "OWASP LLM06:2025 - Excessive Agency",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm062025-excessive-agency/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-052",
+    "role_slug": "prompt-engineer",
+    "domain": "Tool Use and Function Calling",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "How should tool errors be represented to the model?",
+    "preferred_answer": "Return a structured error category, safe message and actionable recovery information, such as invalid parameter, permission denied, temporary unavailable or not found. Do not expose stack traces, credentials or internal topology. Distinguish retryable from permanent failures and cap retries. The prompt should tell the model whether to ask the user, choose another tool or stop.",
+    "evaluation_points": [
+      "Structured error taxonomy",
+      "No sensitive internals",
+      "Retryability",
+      "Defined recovery behaviour"
+    ],
+    "resolution_title": "OpenAI - Function Calling",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/function-calling",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-053",
+    "role_slug": "prompt-engineer",
+    "domain": "Tool Use and Function Calling",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "When is parallel tool calling useful, and what risks does it introduce?",
+    "preferred_answer": "Parallel calls reduce latency when actions are independent, such as retrieving weather and calendar availability. They are unsafe when operations share mutable state, require ordering or could duplicate side effects. The orchestrator should identify dependencies, set concurrency limits, correlate results and use idempotency keys. Parallelism should be an explicit workflow decision rather than a default for every tool set.",
+    "evaluation_points": [
+      "Independent-call use case",
+      "Ordering and shared-state risks",
+      "Concurrency and correlation",
+      "Idempotency"
+    ],
+    "resolution_title": "Google Gemini - Function Calling",
+    "resolution_url": "https://ai.google.dev/gemini-api/docs/function-calling",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-054",
+    "role_slug": "prompt-engineer",
+    "domain": "Tool Use and Function Calling",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "How would you design least-privilege tools for an AI agent?",
+    "preferred_answer": "Expose narrow operations with minimum data and permissions, separate read from write tools, scope credentials to the user and task, use short-lived identities and enforce policy in the tool service. Require confirmation or approval for irreversible actions. Avoid a generic shell, database or admin tool when a constrained domain function can perform the use case. Review tool composition because several safe tools can combine into a risky path.",
+    "evaluation_points": [
+      "Narrow operations",
+      "Scoped short-lived identity",
+      "Approval for impact",
+      "Composition risk"
+    ],
+    "resolution_title": "OWASP LLM06:2025 - Excessive Agency",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm062025-excessive-agency/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-055",
+    "role_slug": "prompt-engineer",
+    "domain": "Tool Use and Function Calling",
+    "difficulty": "advanced",
+    "question_type": "interoperability",
+    "prompt": "What problem does the Model Context Protocol attempt to solve?",
+    "preferred_answer": "MCP defines a standard way for AI applications to discover and interact with external tools, resources and prompts. It can reduce custom integration work and improve portability, but it does not make a server trustworthy. Clients still need authentication, consent, capability scoping, input/output validation and supply-chain review. Protocol interoperability and security assurance are separate concerns.",
+    "evaluation_points": [
+      "Standardised context/tool interface",
+      "Portability benefit",
+      "No automatic trust",
+      "Client-side security controls"
+    ],
+    "resolution_title": "Model Context Protocol Specification",
+    "resolution_url": "https://modelcontextprotocol.io/specification/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-056",
+    "role_slug": "prompt-engineer",
+    "domain": "Tool Use and Function Calling",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "An assistant sends an email to the wrong customer after a tool call. How would you investigate and redesign the workflow?",
+    "preferred_answer": "Preserve the conversation, tool arguments, resolved customer identity and email-service logs. Determine whether entity resolution, prompt ambiguity, stale context or missing authorisation caused the error. Add a preview with recipient evidence, resource-level permission checks, confirmation for external sends and idempotency. Evaluate confusing customer names and ensure the model cannot substitute a free-text address when a verified customer ID is required.",
+    "evaluation_points": [
+      "End-to-end evidence",
+      "Entity-resolution diagnosis",
+      "Preview/confirmation and authorisation",
+      "Verified identifiers and tests"
+    ],
+    "resolution_title": "OpenAI Agents SDK - Guardrails",
+    "resolution_url": "https://openai.github.io/openai-agents-python/guardrails/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-057",
+    "role_slug": "prompt-engineer",
+    "domain": "Agents, Planning and Workflow Orchestration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What distinguishes an AI agent from a single model call?",
+    "preferred_answer": "An agent operates in a loop: it receives a goal, selects actions or tools, observes results and continues until a stopping condition is met. It may maintain state and delegate to other agents. A single model call produces one response without autonomous iteration. Agency increases capability but also expands cost, security and reliability risks, so use it only when dynamic decision-making is necessary.",
+    "evaluation_points": [
+      "Iterative action-observation loop",
+      "State or delegation",
+      "Contrast with one call",
+      "Added risk and justified use"
+    ],
+    "resolution_title": "OpenAI Agents SDK",
+    "resolution_url": "https://openai.github.io/openai-agents-python/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-058",
+    "role_slug": "prompt-engineer",
+    "domain": "Agents, Planning and Workflow Orchestration",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "When is a deterministic workflow preferable to an autonomous agent?",
+    "preferred_answer": "Use a deterministic workflow when the steps, order and decision rules are known, especially for regulated or high-impact processes. Code provides predictable branching, retries and auditability, while the model can handle bounded language tasks inside the flow. An agent is more suitable when the path genuinely depends on open-ended observations. Do not add autonomy merely because the framework supports it.",
+    "evaluation_points": [
+      "Known-step workflow",
+      "High-impact predictability",
+      "Bounded model tasks",
+      "Autonomy only for dynamic paths"
+    ],
+    "resolution_title": "LangChain - Agents",
+    "resolution_url": "https://docs.langchain.com/oss/python/langchain/agents",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-059",
+    "role_slug": "prompt-engineer",
+    "domain": "Agents, Planning and Workflow Orchestration",
+    "difficulty": "intermediate",
+    "question_type": "control",
+    "prompt": "What stopping conditions should an agent have?",
+    "preferred_answer": "Set maximum turns, time, token or cost budgets; task-specific success criteria; repeated-action detection; tool-error thresholds; and escalation paths. Stop on unsafe or unauthorised requests and when required evidence is unavailable. The agent should return a clear partial result rather than looping indefinitely. Monitor which stop condition fires and whether it ends useful work prematurely.",
+    "evaluation_points": [
+      "Resource limits",
+      "Success and repetition detection",
+      "Safety/evidence stops",
+      "Observable partial-result behaviour"
+    ],
+    "resolution_title": "OWASP LLM10:2025 - Unbounded Consumption",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm102025-unbounded-consumption/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-060",
+    "role_slug": "prompt-engineer",
+    "domain": "Agents, Planning and Workflow Orchestration",
+    "difficulty": "intermediate",
+    "question_type": "state",
+    "prompt": "What information should an agent keep in working memory, and what should remain outside it?",
+    "preferred_answer": "Keep only task-relevant state such as goals, completed steps, tool results and unresolved questions. Durable customer data, credentials and authoritative records should remain in governed stores and be retrieved with access checks. Summarise or compact long histories while preserving critical decisions and provenance. Memory should have retention, deletion and tenant-isolation policies.",
+    "evaluation_points": [
+      "Task-relevant state",
+      "Authoritative data external",
+      "Compaction with provenance",
+      "Retention and isolation"
+    ],
+    "resolution_title": "OpenAI Agents SDK",
+    "resolution_url": "https://openai.github.io/openai-agents-python/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-061",
+    "role_slug": "prompt-engineer",
+    "domain": "Agents, Planning and Workflow Orchestration",
+    "difficulty": "intermediate",
+    "question_type": "orchestration",
+    "prompt": "What are the benefits and risks of multi-agent handoffs?",
+    "preferred_answer": "Specialised agents can reduce prompt complexity and apply distinct tools or policies, but handoffs add latency, duplicated context, unclear ownership and compounding errors. Define typed transfer data, the receiving agent's authority, termination and a single accountable orchestrator. Evaluate the whole workflow, not only each agent in isolation, including cases where agents disagree or bounce the task repeatedly.",
+    "evaluation_points": [
+      "Specialisation benefit",
+      "Context and error costs",
+      "Typed accountable handoff",
+      "End-to-end disagreement tests"
+    ],
+    "resolution_title": "OpenAI Agents SDK",
+    "resolution_url": "https://openai.github.io/openai-agents-python/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-062",
+    "role_slug": "prompt-engineer",
+    "domain": "Agents, Planning and Workflow Orchestration",
+    "difficulty": "advanced",
+    "question_type": "safety",
+    "prompt": "Where should human approval be inserted in an agentic workflow?",
+    "preferred_answer": "Place approval before actions that are irreversible, externally visible, financially material, legally sensitive or beyond a predefined risk threshold. Present the proposed action, target, evidence and consequences rather than a vague confirmation. Approval should be bound to the exact action and expire when inputs change. Routine low-risk actions can use automated policy to avoid approval fatigue.",
+    "evaluation_points": [
+      "Risk-based approval points",
+      "Evidence-rich preview",
+      "Approval bound to exact action",
+      "Avoid approval fatigue"
+    ],
+    "resolution_title": "Microsoft - Human Review for Automation with a Prompt",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/azure-openai-human-review",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-063",
+    "role_slug": "prompt-engineer",
+    "domain": "Agents, Planning and Workflow Orchestration",
+    "difficulty": "advanced",
+    "question_type": "reliability",
+    "prompt": "How do you evaluate an agent beyond the quality of its final answer?",
+    "preferred_answer": "Measure task completion, tool-selection accuracy, argument correctness, policy violations, unnecessary calls, recovery from tool failure, latency, cost and the trace of actions. Evaluate representative trajectories and adversarial environments. A correct final answer can hide unsafe or wasteful behaviour, while a failed task may still show good containment. Grade both outcome and process evidence.",
+    "evaluation_points": [
+      "Outcome and trajectory",
+      "Tool and policy metrics",
+      "Efficiency/recovery",
+      "Adversarial environment tests"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG End-to-End Evaluation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-llm-evaluation-phase",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-064",
+    "role_slug": "prompt-engineer",
+    "domain": "Agents, Planning and Workflow Orchestration",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "An agent repeatedly searches the same sources without completing the task. What would you change?",
+    "preferred_answer": "Inspect the trace to determine whether search results are irrelevant, the success criterion is unclear or the agent does not recognise repeated state. Improve tool descriptions and result structure, add a search budget and duplicate-query detector, define evidence sufficiency and require a decision after bounded attempts. If the path is known, replace open-ended search with a deterministic retrieval workflow.",
+    "evaluation_points": [
+      "Trace-based diagnosis",
+      "Tool/result improvements",
+      "Budget and repetition detection",
+      "Deterministic fallback"
+    ],
+    "resolution_title": "OpenAI Agents SDK",
+    "resolution_url": "https://openai.github.io/openai-agents-python/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-065",
+    "role_slug": "prompt-engineer",
+    "domain": "Embeddings and Semantic Search",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an embedding in an AI application?",
+    "preferred_answer": "An embedding is a numeric vector representing aspects of meaning or similarity for text, images or other data. Applications compare vectors to retrieve related items, cluster content or classify examples. The dimensions are not human-readable features, and proximity is model- and task-dependent. Embeddings do not by themselves provide an answer; they support downstream search or analysis.",
+    "evaluation_points": [
+      "Numeric semantic representation",
+      "Similarity use cases",
+      "Model/task dependence",
+      "Retrieval component rather than answer"
+    ],
+    "resolution_title": "OpenAI - Vector Embeddings",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/embeddings",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-066",
+    "role_slug": "prompt-engineer",
+    "domain": "Embeddings and Semantic Search",
+    "difficulty": "foundation",
+    "question_type": "retrieval",
+    "prompt": "What does cosine similarity measure in vector search?",
+    "preferred_answer": "Cosine similarity compares the angle between vectors, emphasising direction rather than magnitude. Higher values often indicate greater semantic similarity for embedding models trained for that use, but thresholds are not universal. The index may use other distance measures. Teams should evaluate the metric and threshold on labelled queries for their language, domain and embedding model.",
+    "evaluation_points": [
+      "Angle/direction comparison",
+      "Threshold not universal",
+      "Alternative metrics",
+      "Labelled domain evaluation"
+    ],
+    "resolution_title": "Sentence Transformers Documentation",
+    "resolution_url": "https://sbert.net/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-067",
+    "role_slug": "prompt-engineer",
+    "domain": "Embeddings and Semantic Search",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "Why should query and document embeddings come from compatible models and preprocessing?",
+    "preferred_answer": "Similarity is meaningful only when vectors occupy a compatible representation space. Different models, versions, prefixes, languages or normalisation can shift that space. Use the model's intended query/document format, track embedding version and re-index when compatibility changes. Mixing vectors silently can produce plausible but poor retrieval results that are difficult to diagnose.",
+    "evaluation_points": [
+      "Shared vector space",
+      "Preprocessing/version effects",
+      "Re-index requirement",
+      "Silent quality failure"
+    ],
+    "resolution_title": "Google Gemini - Embeddings",
+    "resolution_url": "https://ai.google.dev/gemini-api/docs/embeddings",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-068",
+    "role_slug": "prompt-engineer",
+    "domain": "Embeddings and Semantic Search",
+    "difficulty": "intermediate",
+    "question_type": "indexing",
+    "prompt": "What role does metadata filtering play in semantic search?",
+    "preferred_answer": "Vector similarity finds related content, while metadata filters enforce constraints such as tenant, access level, date, language, product or document type. Apply security filters before returning content and ensure metadata is trustworthy and current. Filtering can reduce recall, so evaluate combined vector and filter behaviour. Never depend on the model to ignore retrieved content the user was not authorised to see.",
+    "evaluation_points": [
+      "Semantic plus structured constraints",
+      "Pre-retrieval access control",
+      "Recall trade-off",
+      "No model-only data isolation"
+    ],
+    "resolution_title": "OWASP LLM08:2025 - Vector and Embedding Weaknesses",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-069",
+    "role_slug": "prompt-engineer",
+    "domain": "Embeddings and Semantic Search",
+    "difficulty": "intermediate",
+    "question_type": "quality",
+    "prompt": "How would you evaluate an embedding retrieval system?",
+    "preferred_answer": "Create representative queries with relevance judgements and measure recall, precision, ranking metrics such as nDCG or MRR, and coverage by segment. Inspect hard negatives and near-duplicates, not only average scores. Evaluate the full pipeline including chunking, filters and reranking. A good answer-generation score can hide weak retrieval if the model relies on prior knowledge.",
+    "evaluation_points": [
+      "Labelled relevance set",
+      "Ranking and recall metrics",
+      "Segment/hard-negative review",
+      "Separate retrieval from generation"
+    ],
+    "resolution_title": "Microsoft Foundry - RAG Evaluators",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/rag-evaluators",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-070",
+    "role_slug": "prompt-engineer",
+    "domain": "Embeddings and Semantic Search",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "What are vector and embedding weaknesses in RAG systems?",
+    "preferred_answer": "Attackers can poison indexed content, manipulate similarity, exploit weak tenant filters, infer sensitive membership or retrieve hidden data through crafted queries. Mitigations include trusted ingestion, provenance, access-controlled metadata, content scanning, index isolation, anomaly monitoring and evaluation against adversarial queries. Treat the vector store as a sensitive data system, not a harmless cache.",
+    "evaluation_points": [
+      "Poisoning and manipulation",
+      "Tenant and privacy risks",
+      "Trusted ingestion/provenance",
+      "Sensitive-store controls"
+    ],
+    "resolution_title": "OWASP LLM08:2025 - Vector and Embedding Weaknesses",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-071",
+    "role_slug": "prompt-engineer",
+    "domain": "Embeddings and Semantic Search",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "When would hybrid search outperform pure vector search?",
+    "preferred_answer": "Hybrid search combines lexical matching with semantic vectors, helping exact identifiers, rare terms, code, names and domain phrases while retaining conceptual recall. It requires score normalisation and tuning and may increase operational complexity. Evaluate hybrid, vector-only and lexical baselines on real queries; do not assume semantic search dominates exact matching for every corpus.",
+    "evaluation_points": [
+      "Exact-term advantage",
+      "Semantic recall retained",
+      "Score fusion complexity",
+      "Baseline comparison"
+    ],
+    "resolution_title": "OpenAI - Retrieval",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/retrieval",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-072",
+    "role_slug": "prompt-engineer",
+    "domain": "Embeddings and Semantic Search",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "Search retrieves semantically related documents from the wrong customer tenant. What is the root problem and response?",
+    "preferred_answer": "This is an authorisation and data-isolation failure, not merely a ranking issue. Stop exposure, preserve query and access logs, identify affected tenants and records, and notify incident owners. Enforce tenant filtering in the retrieval layer with server-side identity, isolate indexes where risk requires it and test cross-tenant adversarial queries. The model must never receive unauthorised chunks.",
+    "evaluation_points": [
+      "Security incident classification",
+      "Containment and scope",
+      "Server-side tenant enforcement",
+      "Cross-tenant regression tests"
+    ],
+    "resolution_title": "OWASP LLM08:2025 - Vector and Embedding Weaknesses",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-073",
+    "role_slug": "prompt-engineer",
+    "domain": "Retrieval-Augmented Generation Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is retrieval-augmented generation, and what problem does it address?",
+    "preferred_answer": "RAG retrieves relevant external content at request time and supplies it to a generative model as grounding context. It can improve access to private, current or domain-specific information without placing all knowledge in model parameters. It does not guarantee truth: ingestion, retrieval, prompt use and source quality can all fail. The pipeline should be evaluated stage by stage and end to end.",
+    "evaluation_points": [
+      "Retrieve then generate",
+      "Private/current/domain knowledge",
+      "No truth guarantee",
+      "Stage and end-to-end evaluation"
+    ],
+    "resolution_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "resolution_url": "https://arxiv.org/abs/2005.11401",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-074",
+    "role_slug": "prompt-engineer",
+    "domain": "Retrieval-Augmented Generation Architecture",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "What are the main stages of a basic RAG system?",
+    "preferred_answer": "The system ingests and parses documents, splits them into retrievable units, creates embeddings or search features, stores them with metadata, transforms the query, retrieves and possibly reranks candidates, constructs a grounded prompt, generates an answer and returns citations. Monitoring and evaluation surround the pipeline. Each stage needs versioning and observable inputs and outputs.",
+    "evaluation_points": [
+      "Ingestion and chunking",
+      "Index/retrieve/rerank",
+      "Prompt/generate/cite",
+      "Observability and versioning"
+    ],
+    "resolution_title": "LlamaIndex - Building a RAG Pipeline",
+    "resolution_url": "https://docs.llamaindex.ai/en/stable/understanding/rag/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-075",
+    "role_slug": "prompt-engineer",
+    "domain": "Retrieval-Augmented Generation Architecture",
+    "difficulty": "intermediate",
+    "question_type": "chunking",
+    "prompt": "How do chunk size and overlap affect RAG quality?",
+    "preferred_answer": "Small chunks can improve precision but lose surrounding meaning; large chunks preserve context but add noise and token cost. Overlap reduces boundary loss but duplicates evidence and index size. Choose by document structure and question type, preserve headings and metadata, and evaluate retrieval and answer quality. Fixed character splitting is a baseline, not a universal best practice.",
+    "evaluation_points": [
+      "Precision-context trade-off",
+      "Overlap benefits and duplication",
+      "Structure-aware chunking",
+      "Empirical evaluation"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG Prompt Engineering",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-076",
+    "role_slug": "prompt-engineer",
+    "domain": "Retrieval-Augmented Generation Architecture",
+    "difficulty": "intermediate",
+    "question_type": "retrieval",
+    "prompt": "What is reranking, and when does it help?",
+    "preferred_answer": "Initial retrieval efficiently gathers candidates, while a reranker applies a more expensive query-document relevance model or rule to improve ordering. It helps when the first-stage index has good recall but weak precision. Reranking cannot recover documents that were never retrieved. Measure the gain against added latency and cost and retain metadata and access filters throughout.",
+    "evaluation_points": [
+      "Two-stage retrieval",
+      "Recall versus precision",
+      "Cannot recover absent candidates",
+      "Latency/access-control considerations"
+    ],
+    "resolution_title": "OpenAI - Retrieval",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/retrieval",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-077",
+    "role_slug": "prompt-engineer",
+    "domain": "Retrieval-Augmented Generation Architecture",
+    "difficulty": "intermediate",
+    "question_type": "data",
+    "prompt": "Why is document ingestion quality often the hidden bottleneck in RAG?",
+    "preferred_answer": "Scanned pages, tables, headers, duplicate versions, broken encodings and missing metadata can corrupt the retrievable corpus before search begins. The model cannot ground on information that was lost or misread. Validate parsing, preserve layout where needed, deduplicate, track source versions and create ingestion tests for representative document types. Retrieval tuning cannot repair absent source text.",
+    "evaluation_points": [
+      "Parsing/layout failure",
+      "Metadata and duplication",
+      "Ingestion tests",
+      "Retrieval cannot recover lost content"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG End-to-End Evaluation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-llm-evaluation-phase",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-078",
+    "role_slug": "prompt-engineer",
+    "domain": "Retrieval-Augmented Generation Architecture",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "When should a RAG system use query rewriting or decomposition?",
+    "preferred_answer": "Use rewriting when user language differs from corpus terminology, and decomposition when a question contains independent subquestions requiring different evidence. Preserve the original intent, record transformed queries and evaluate whether reformulation improves retrieval without introducing assumptions. For high-risk use cases, surface or constrain transformations. Too many generated queries increase cost and may retrieve contradictory material.",
+    "evaluation_points": [
+      "Terminology and multi-part use cases",
+      "Preserve original intent",
+      "Trace and evaluate transformations",
+      "Cost/contradiction trade-off"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG Prompt Engineering",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-079",
+    "role_slug": "prompt-engineer",
+    "domain": "Retrieval-Augmented Generation Architecture",
+    "difficulty": "advanced",
+    "question_type": "reliability",
+    "prompt": "How should a RAG system handle contradictory sources?",
+    "preferred_answer": "Retrieve source metadata such as authority, version and date, instruct the model to identify rather than silently reconcile conflicts, and apply domain rules for preferred sources. Cite each position and state uncertainty when no rule resolves it. Deduplication and source freshness help but should not erase legitimate disagreement. Evaluate conflict cases explicitly because average groundedness metrics may miss them.",
+    "evaluation_points": [
+      "Authority/version metadata",
+      "Surface conflict",
+      "Domain source policy",
+      "Conflict-specific evaluation"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG Prompt Engineering",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-080",
+    "role_slug": "prompt-engineer",
+    "domain": "Retrieval-Augmented Generation Architecture",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A RAG assistant answers correctly for common questions but fails for newly issued policies. How would you locate the failure?",
+    "preferred_answer": "Confirm the new policy was ingested, parsed, indexed and permitted for the user; inspect chunk metadata and retrieval rankings for labelled queries; then check prompt use and citation. Compare index and document versions and cache behaviour. Fix the earliest failing stage and add freshness and ingestion-lag monitoring rather than masking the issue by telling the model to use newer information.",
+    "evaluation_points": [
+      "Stage-by-stage tracing",
+      "Version/freshness checks",
+      "Cache and access review",
+      "Fix earliest failing stage"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG End-to-End Evaluation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-llm-evaluation-phase",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-081",
+    "role_slug": "prompt-engineer",
+    "domain": "RAG Prompting, Grounding and Citations",
+    "difficulty": "foundation",
+    "question_type": "grounding",
+    "prompt": "What does it mean for an answer to be grounded in retrieved context?",
+    "preferred_answer": "A grounded answer makes claims that are supported by the supplied source material and does not substitute unsupported model knowledge when the application requires source-based answers. Grounding is different from general correctness: a statement can be true but unsupported by the provided context, or grounded in a source that is itself wrong. Evaluate both evidence use and source quality.",
+    "evaluation_points": [
+      "Claims supported by context",
+      "Parametric knowledge boundary",
+      "Grounding versus correctness",
+      "Source quality"
+    ],
+    "resolution_title": "Microsoft Foundry - RAG Evaluators",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/rag-evaluators",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-082",
+    "role_slug": "prompt-engineer",
+    "domain": "RAG Prompting, Grounding and Citations",
+    "difficulty": "foundation",
+    "question_type": "prompting",
+    "prompt": "What should a basic grounded-answer prompt tell the model?",
+    "preferred_answer": "Define the task, identify the supplied text as the authorised context, require answers to use that evidence, specify citation format and state what to do when evidence is insufficient or conflicting. Keep user questions separate from retrieved passages. The prompt should not promise perfect factuality; it should create observable behaviours such as abstention and evidence references that can be tested.",
+    "evaluation_points": [
+      "Authorised context",
+      "Citation requirement",
+      "Insufficient/conflict policy",
+      "Testable behaviour"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG Prompt Engineering",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-083",
+    "role_slug": "prompt-engineer",
+    "domain": "RAG Prompting, Grounding and Citations",
+    "difficulty": "intermediate",
+    "question_type": "citations",
+    "prompt": "Why can a response contain accurate-looking citations that do not support its claims?",
+    "preferred_answer": "The model may attach the nearest source label, cite a relevant document without the supporting passage, or produce a citation after combining unsupported inference. Build citations from stable retrieved identifiers, require claim-level evidence where needed and verify that cited spans entail the claim. Citation formatting is not proof of citation correctness.",
+    "evaluation_points": [
+      "Citation attachment failure",
+      "Stable source identifiers",
+      "Claim-span verification",
+      "Formatting versus support"
+    ],
+    "resolution_title": "Anthropic - Reduce Hallucinations",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-084",
+    "role_slug": "prompt-engineer",
+    "domain": "RAG Prompting, Grounding and Citations",
+    "difficulty": "intermediate",
+    "question_type": "context",
+    "prompt": "How should retrieved documents be ordered and labelled in a prompt?",
+    "preferred_answer": "Include clear source identifiers and useful metadata, group or rank by relevance and authority, and keep document boundaries visible. Put the question and instructions in a location suited to the model and long-context design, while preventing document text from blending into policy. Order can influence attention, so evaluate position effects and avoid presenting low-quality content as equally authoritative.",
+    "evaluation_points": [
+      "Source identifiers and metadata",
+      "Visible boundaries",
+      "Authority/relevance ordering",
+      "Position-effect evaluation"
+    ],
+    "resolution_title": "Anthropic - Prompting Best Practices",
+    "resolution_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-085",
+    "role_slug": "prompt-engineer",
+    "domain": "RAG Prompting, Grounding and Citations",
+    "difficulty": "intermediate",
+    "question_type": "abstention",
+    "prompt": "How do you design a useful 'insufficient evidence' response?",
+    "preferred_answer": "Define what evidence is required, ask the model to state what is missing and provide the most useful next step, such as a refined query or human contact. Avoid a generic refusal when partial supported information is available. Score correct abstention, unsupported answering and unnecessary abstention separately. The threshold should reflect the harm of false answers versus missed answers.",
+    "evaluation_points": [
+      "Evidence threshold",
+      "Missing-information explanation",
+      "Partial supported answer",
+      "Separate abstention error metrics"
+    ],
+    "resolution_title": "Anthropic - Reduce Hallucinations",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-086",
+    "role_slug": "prompt-engineer",
+    "domain": "RAG Prompting, Grounding and Citations",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "How can retrieved content perform indirect prompt injection?",
+    "preferred_answer": "A document, webpage or message can contain instructions that the model treats as commands rather than data, such as requests to ignore policy or call a tool. Mark retrieved content as untrusted, isolate it from privileges, filter or inspect risky inputs, constrain tools and validate outputs. Prompt delimiters help interpretation but are not a complete security boundary.",
+    "evaluation_points": [
+      "Instructions embedded in data",
+      "Untrusted-context treatment",
+      "Capability and output controls",
+      "Delimiters are not sufficient"
+    ],
+    "resolution_title": "OWASP LLM01:2025 - Prompt Injection",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm012025-prompt-injection/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-087",
+    "role_slug": "prompt-engineer",
+    "domain": "RAG Prompting, Grounding and Citations",
+    "difficulty": "advanced",
+    "question_type": "evaluation",
+    "prompt": "How would you measure whether a model used the retrieved context effectively?",
+    "preferred_answer": "Measure retrieval relevance, context utilisation, claim groundedness, completeness and correctness on labelled examples. Compare answers with and without key evidence, inspect citation entailment and segment by question type and source length. A strong end-to-end score should not hide retrieval failures or answers produced from model memory instead of the supplied documents.",
+    "evaluation_points": [
+      "Multiple RAG dimensions",
+      "Counterfactual evidence tests",
+      "Citation entailment",
+      "Stage separation"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG End-to-End Evaluation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-llm-evaluation-phase",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-088",
+    "role_slug": "prompt-engineer",
+    "domain": "RAG Prompting, Grounding and Citations",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "The correct source is retrieved, but the model answers from an older conflicting source. What would you change?",
+    "preferred_answer": "Inspect ordering, metadata, prompt language and whether the older source appears more directly relevant. Add explicit source-authority and version rules, label effective dates, remove superseded copies where appropriate and test conflict examples. The model should cite the selected source and mention material conflicts. Do not rely only on placing the preferred source first without evaluation.",
+    "evaluation_points": [
+      "Ordering and relevance diagnosis",
+      "Authority/version policy",
+      "Corpus lifecycle",
+      "Conflict test and citation"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG Prompt Engineering",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-089",
+    "role_slug": "prompt-engineer",
+    "domain": "Evaluation Design and LLM-as-Judge",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why should evaluation criteria be defined before prompt optimisation?",
+    "preferred_answer": "Without a success definition, prompt changes are judged by anecdotes or preference rather than the product outcome. Define the task, user population, quality dimensions, unacceptable failures and operational limits first, then create representative tests. Evaluation guides whether to change the prompt, model, data or architecture and reduces the risk of optimising for a few visible examples.",
+    "evaluation_points": [
+      "Success before tuning",
+      "User/task dimensions",
+      "Unacceptable failures and constraints",
+      "Guides the correct intervention"
+    ],
+    "resolution_title": "Anthropic - Define Success Criteria and Build Evaluations",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-090",
+    "role_slug": "prompt-engineer",
+    "domain": "Evaluation Design and LLM-as-Judge",
+    "difficulty": "foundation",
+    "question_type": "metrics",
+    "prompt": "What is the difference between exact-match, rule-based and model-based evaluation?",
+    "preferred_answer": "Exact match compares output to a specific expected string or label; rule-based checks use code for schemas, patterns, calculations or constraints; model-based evaluation asks another model to score semantic qualities. Use deterministic methods when the criterion can be encoded reliably. Model graders help with open-ended quality but require calibration, clear rubrics and monitoring for bias and inconsistency.",
+    "evaluation_points": [
+      "Three evaluator types",
+      "Deterministic-first principle",
+      "Open-ended grader use",
+      "Calibration requirement"
+    ],
+    "resolution_title": "OpenAI - Graders",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/graders",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-091",
+    "role_slug": "prompt-engineer",
+    "domain": "Evaluation Design and LLM-as-Judge",
+    "difficulty": "intermediate",
+    "question_type": "dataset",
+    "prompt": "What makes an evaluation dataset representative?",
+    "preferred_answer": "It reflects actual input frequency, important user segments, languages, document types, ambiguous cases and high-impact failures, while preserving a held-out portion. Include normal, edge and adversarial cases and track provenance and labels. A random sample alone may underrepresent rare but costly errors. Refresh the set as users, data and model behaviour change.",
+    "evaluation_points": [
+      "Production distribution",
+      "High-impact and edge cases",
+      "Held-out provenance",
+      "Ongoing refresh"
+    ],
+    "resolution_title": "Anthropic - Define Success Criteria and Build Evaluations",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-092",
+    "role_slug": "prompt-engineer",
+    "domain": "Evaluation Design and LLM-as-Judge",
+    "difficulty": "intermediate",
+    "question_type": "human review",
+    "prompt": "How should human evaluation be designed to reduce subjectivity?",
+    "preferred_answer": "Provide a precise rubric with examples, train evaluators, blind them to model identity where possible, use multiple reviewers for ambiguous tasks and measure agreement. Separate dimensions such as correctness, helpfulness and style. Resolve disagreements through adjudication and improve the rubric rather than averaging unclear labels. Protect sensitive data and document reviewer qualifications.",
+    "evaluation_points": [
+      "Rubric and examples",
+      "Blinding/multiple reviewers",
+      "Agreement and adjudication",
+      "Dimension and privacy controls"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-093",
+    "role_slug": "prompt-engineer",
+    "domain": "Evaluation Design and LLM-as-Judge",
+    "difficulty": "intermediate",
+    "question_type": "graders",
+    "prompt": "What are common failure modes of LLM-as-judge evaluation?",
+    "preferred_answer": "A judge can prefer verbosity, position, familiar style or its own model family; follow hidden patterns; miss domain errors; and be influenced by content inside the candidate answer. Calibrate against expert labels, randomise order, use reference evidence, test prompt injection and monitor disagreement. A judge score is measurement evidence, not objective truth.",
+    "evaluation_points": [
+      "Preference and position bias",
+      "Domain and injection risks",
+      "Expert calibration",
+      "Uncertainty in judge score"
+    ],
+    "resolution_title": "OpenAI - Graders",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/graders",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-094",
+    "role_slug": "prompt-engineer",
+    "domain": "Evaluation Design and LLM-as-Judge",
+    "difficulty": "advanced",
+    "question_type": "experimentation",
+    "prompt": "How would you compare two prompt or model variants statistically?",
+    "preferred_answer": "Run both on the same representative cases, define the primary metric and practical improvement threshold before analysis, and use paired results with confidence intervals or suitable significance methods. Review segment regressions and severe errors, not only the mean. Control prompt, retrieval and tool versions. A small average gain may be unacceptable if it worsens high-risk cases or doubles cost.",
+    "evaluation_points": [
+      "Paired controlled comparison",
+      "Predefined threshold",
+      "Confidence and segments",
+      "Risk/cost trade-off"
+    ],
+    "resolution_title": "OpenAI - Working with Evals",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/evals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-095",
+    "role_slug": "prompt-engineer",
+    "domain": "Evaluation Design and LLM-as-Judge",
+    "difficulty": "advanced",
+    "question_type": "operations",
+    "prompt": "What is evaluation drift, and how should a team respond?",
+    "preferred_answer": "Evaluation drift occurs when production inputs, policies, source data or user expectations change so the existing test set no longer represents the workload. Monitor input and outcome distributions, review new incidents and feedback, add labelled cases and retire obsolete ones while retaining historical benchmarks. Keep core regression tests stable enough to compare versions across time.",
+    "evaluation_points": [
+      "Changing workload definition",
+      "Production monitoring",
+      "Dataset update process",
+      "Stable historical core"
+    ],
+    "resolution_title": "MLflow - GenAI Evaluation",
+    "resolution_url": "https://mlflow.org/docs/latest/genai/eval-monitor/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-096",
+    "role_slug": "prompt-engineer",
+    "domain": "Evaluation Design and LLM-as-Judge",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A new prompt improves the overall score from 82% to 87% but causes more harmful-policy failures. Would you ship it?",
+    "preferred_answer": "Do not decide from the aggregate. Confirm the harmful-policy metric, sample size and severity, then apply predefined release gates. If the regression is real and high impact, block or limit deployment, revise the prompt or safety architecture and retest. Weighted averages must not allow common low-risk successes to hide unacceptable failures. Document the decision and residual risk.",
+    "evaluation_points": [
+      "Disaggregate metrics",
+      "Severity-based release gate",
+      "Mitigate and retest",
+      "Documented residual-risk decision"
+    ],
+    "resolution_title": "OpenAI - Safety Best Practices",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-097",
+    "role_slug": "prompt-engineer",
+    "domain": "Hallucination, Uncertainty and Factuality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is hallucination in a generative-AI system?",
+    "preferred_answer": "Hallucination is output presented as information but unsupported by reliable evidence or inconsistent with the task context. It can include invented facts, citations, entities or steps. The term covers different causes, including missing knowledge, ambiguous prompts, retrieval failure and pressure to answer. Mitigation therefore combines grounding, uncertainty policies, verification and UX rather than a single instruction.",
+    "evaluation_points": [
+      "Unsupported output",
+      "Examples of fabrication",
+      "Multiple causes",
+      "Layered mitigation"
+    ],
+    "resolution_title": "Anthropic - Reduce Hallucinations",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-098",
+    "role_slug": "prompt-engineer",
+    "domain": "Hallucination, Uncertainty and Factuality",
+    "difficulty": "foundation",
+    "question_type": "uncertainty",
+    "prompt": "Why is 'I don't know' an important model behaviour?",
+    "preferred_answer": "Abstention prevents a system from turning insufficient evidence into a confident answer. It is useful only when calibrated: excessive abstention makes the product unusable, while rare abstention increases misinformation. Define evidence thresholds and provide a next step such as retrieval, clarification or human review. Evaluate correct, unnecessary and missing abstentions separately.",
+    "evaluation_points": [
+      "Prevents unsupported answers",
+      "Calibration trade-off",
+      "Next-step behaviour",
+      "Separate abstention metrics"
+    ],
+    "resolution_title": "OWASP LLM09:2025 - Misinformation",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm092025-misinformation/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-099",
+    "role_slug": "prompt-engineer",
+    "domain": "Hallucination, Uncertainty and Factuality",
+    "difficulty": "intermediate",
+    "question_type": "diagnosis",
+    "prompt": "How can you distinguish a hallucination caused by retrieval from one caused by generation?",
+    "preferred_answer": "Trace whether the necessary evidence existed in the corpus, was parsed, retrieved and included in the prompt. If evidence is absent or irrelevant, the failure is upstream; if correct evidence was supplied but ignored or contradicted, generation or prompt use failed. Use saved contexts and citations. End-to-end scoring alone cannot identify the responsible stage.",
+    "evaluation_points": [
+      "Corpus-to-prompt trace",
+      "Upstream versus generation failure",
+      "Saved context evidence",
+      "Need stage metrics"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG End-to-End Evaluation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-llm-evaluation-phase",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-100",
+    "role_slug": "prompt-engineer",
+    "domain": "Hallucination, Uncertainty and Factuality",
+    "difficulty": "intermediate",
+    "question_type": "verification",
+    "prompt": "What checks can reduce fabricated citations?",
+    "preferred_answer": "Create citations from retrieved source IDs rather than free-form text, require a supporting span, verify that the source exists and that the passage entails the claim, and reject references outside the retrieval set. For high-risk use cases, use deterministic citation assembly or human review. A citation-looking string should never be accepted only because it matches a format.",
+    "evaluation_points": [
+      "Source-ID binding",
+      "Supporting span",
+      "Existence and entailment checks",
+      "Deterministic/high-risk control"
+    ],
+    "resolution_title": "Anthropic - Reduce Hallucinations",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-101",
+    "role_slug": "prompt-engineer",
+    "domain": "Hallucination, Uncertainty and Factuality",
+    "difficulty": "intermediate",
+    "question_type": "communication",
+    "prompt": "How should an AI response communicate uncertainty without becoming vague?",
+    "preferred_answer": "State the specific uncertain claim, the reason and the evidence available, distinguish fact from assumption and give a concrete way to resolve the gap. Use calibrated language tied to the decision, not decorative phrases such as 'maybe' everywhere. Where a numeric confidence is displayed, validate that it is meaningful; model-generated percentages are not automatically calibrated probabilities.",
+    "evaluation_points": [
+      "Specific uncertain element",
+      "Reason and evidence",
+      "Fact-assumption separation",
+      "No unvalidated confidence percentage"
+    ],
+    "resolution_title": "NIST - Four Principles of Explainable Artificial Intelligence",
+    "resolution_url": "https://www.nist.gov/publications/four-principles-explainable-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-102",
+    "role_slug": "prompt-engineer",
+    "domain": "Hallucination, Uncertainty and Factuality",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "Why can self-checking by the same model fail to detect hallucinations?",
+    "preferred_answer": "The model may repeat the same misconception, be persuaded by its own fluent answer or lack access to independent evidence. Self-review can catch some inconsistencies but is not independent verification. Improve it with source retrieval, deterministic tests, separate prompts or models, expert review and disagreement handling. Measure the verifier's false-negative rate rather than assuming a second pass is safer.",
+    "evaluation_points": [
+      "Correlated error",
+      "Fluency and missing evidence",
+      "Independent verification options",
+      "Verifier evaluation"
+    ],
+    "resolution_title": "OpenAI - Working with Evals",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/evals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-103",
+    "role_slug": "prompt-engineer",
+    "domain": "Hallucination, Uncertainty and Factuality",
+    "difficulty": "advanced",
+    "question_type": "product",
+    "prompt": "How does interface design influence hallucination risk?",
+    "preferred_answer": "A conversational interface can make tentative output feel authoritative. Show source links, freshness, scope and uncertainty; separate generated summaries from official records; provide correction and escalation paths; and prevent one-click execution of unverified advice. The appropriate friction depends on harm. UX is part of the control system, not only presentation after the model has answered.",
+    "evaluation_points": [
+      "Authority perception",
+      "Source/freshness display",
+      "Correction/escalation",
+      "Risk-based action friction"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-104",
+    "role_slug": "prompt-engineer",
+    "domain": "Hallucination, Uncertainty and Factuality",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "An AI assistant invents a legal deadline and a customer misses a filing. What should the team do?",
+    "preferred_answer": "Treat it as a product incident: preserve prompts, context, model and interface evidence; stop or restrict the affected feature; identify impacted users and notify legal and incident owners. Determine whether the source, retrieval, prompt, evaluation or UX failed. Add authoritative deadline retrieval, citations, abstention and human review, then validate the full defect class before restoring service.",
+    "evaluation_points": [
+      "Incident containment and evidence",
+      "Impact identification",
+      "Root-cause across pipeline",
+      "Authoritative control and defect-class testing"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-105",
+    "role_slug": "prompt-engineer",
+    "domain": "Fine-Tuning, Distillation and Model Adaptation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is fine-tuning, and how does it differ from prompt engineering?",
+    "preferred_answer": "Prompt engineering changes the model's input at inference time; fine-tuning updates model behaviour using a training dataset. Fine-tuning can improve consistent style, format or task performance and reduce prompt length, but requires high-quality data, evaluation and maintenance. It is not the preferred method for injecting frequently changing factual knowledge, which is usually better handled through retrieval.",
+    "evaluation_points": [
+      "Inference input versus training update",
+      "Appropriate behaviour use cases",
+      "Data/evaluation cost",
+      "Not for changing knowledge by default"
+    ],
+    "resolution_title": "OpenAI - Model Optimization",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/model-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-106",
+    "role_slug": "prompt-engineer",
+    "domain": "Fine-Tuning, Distillation and Model Adaptation",
+    "difficulty": "foundation",
+    "question_type": "data",
+    "prompt": "What makes a good supervised fine-tuning example?",
+    "preferred_answer": "It represents the real task, contains correct and internally consistent input-output pairs, follows the desired policy and format, and covers important diversity and edge cases. Quality usually matters more than adding noisy volume. Remove secrets and unauthorised data, separate train and test sets and document how examples were created and reviewed.",
+    "evaluation_points": [
+      "Representative correct pairs",
+      "Diversity and edges",
+      "Quality over noise",
+      "Privacy and held-out data"
+    ],
+    "resolution_title": "OpenAI - Model Optimization",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/model-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-107",
+    "role_slug": "prompt-engineer",
+    "domain": "Fine-Tuning, Distillation and Model Adaptation",
+    "difficulty": "intermediate",
+    "question_type": "decision",
+    "prompt": "When should a team try prompting or retrieval before fine-tuning?",
+    "preferred_answer": "Try them first when the task needs clearer instructions, examples, current facts or private documents. They are faster to iterate and easier to audit. Fine-tune when repeated evaluations show a stable behavioural gap that prompts cannot solve economically, or when consistency and latency justify training. Establish a baseline so the tuning gain can be attributed rather than assumed.",
+    "evaluation_points": [
+      "Prompt/retrieval first use cases",
+      "Stable behavioural gap",
+      "Economic justification",
+      "Baseline comparison"
+    ],
+    "resolution_title": "Anthropic - Prompt Engineering Overview",
+    "resolution_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-108",
+    "role_slug": "prompt-engineer",
+    "domain": "Fine-Tuning, Distillation and Model Adaptation",
+    "difficulty": "intermediate",
+    "question_type": "technique",
+    "prompt": "What is parameter-efficient fine-tuning, and why is LoRA widely used?",
+    "preferred_answer": "Parameter-efficient methods adapt a model by training a small set of additional parameters while keeping most base weights frozen. LoRA learns low-rank updates, reducing training memory and storage and allowing multiple adapters. It still needs representative data and evaluation, and adapter compatibility, base-model version and serving behaviour must be controlled.",
+    "evaluation_points": [
+      "Small trainable parameter set",
+      "Low-rank update",
+      "Resource and adapter benefits",
+      "Version/evaluation requirements"
+    ],
+    "resolution_title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "resolution_url": "https://arxiv.org/abs/2106.09685",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-109",
+    "role_slug": "prompt-engineer",
+    "domain": "Fine-Tuning, Distillation and Model Adaptation",
+    "difficulty": "intermediate",
+    "question_type": "evaluation",
+    "prompt": "How do you detect overfitting in a fine-tuned language model?",
+    "preferred_answer": "Compare training and held-out performance, evaluate paraphrases and unseen edge cases, inspect whether the model copies training phrases and monitor general capability regressions. Use separate safety and adversarial tests. Strong training metrics with weak test performance indicate memorisation or narrow adaptation. More epochs or examples are not automatically better.",
+    "evaluation_points": [
+      "Train versus held-out gap",
+      "Paraphrase/unseen cases",
+      "Copying and capability regression",
+      "Safety tests"
+    ],
+    "resolution_title": "Google Vertex AI - Supervised Tuning for Generative AI",
+    "resolution_url": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/tune-models",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-110",
+    "role_slug": "prompt-engineer",
+    "domain": "Fine-Tuning, Distillation and Model Adaptation",
+    "difficulty": "advanced",
+    "question_type": "alignment",
+    "prompt": "How does preference optimisation differ from supervised fine-tuning?",
+    "preferred_answer": "Supervised fine-tuning learns from desired example responses. Preference optimisation learns from comparisons or reward signals indicating which outputs are better, shaping behaviour where one reference answer is difficult to specify. It can encode evaluator bias and reward hacking, so preference data and graders need quality controls. The method should match a clearly measured objective.",
+    "evaluation_points": [
+      "Demonstrations versus preferences",
+      "Use for relative quality",
+      "Bias/reward hacking risk",
+      "Objective and grader validation"
+    ],
+    "resolution_title": "Training Language Models to Follow Instructions with Human Feedback",
+    "resolution_url": "https://arxiv.org/abs/2203.02155",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-111",
+    "role_slug": "prompt-engineer",
+    "domain": "Fine-Tuning, Distillation and Model Adaptation",
+    "difficulty": "advanced",
+    "question_type": "operations",
+    "prompt": "What must be versioned for a tuned model deployment?",
+    "preferred_answer": "Version the base model, training method and hyperparameters, dataset and preprocessing, prompt and tool contracts, evaluator set, safety policy and serving configuration. Record lineage from examples to artefact and test results. A model name alone is insufficient for rollback or incident analysis. Monitor drift and retain a known-good deployment path.",
+    "evaluation_points": [
+      "Model/data/training lineage",
+      "Prompt/tool/eval versions",
+      "Rollback evidence",
+      "Drift monitoring"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-112",
+    "role_slug": "prompt-engineer",
+    "domain": "Fine-Tuning, Distillation and Model Adaptation",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A fine-tuned support model uses the correct tone but gives outdated product information. What would you change?",
+    "preferred_answer": "Keep the tuning for stable behaviour if it adds value, but retrieve product facts from an authoritative, versioned source at inference time. Test whether the model follows retrieved evidence rather than memorised training text, remove outdated examples and add conflict cases. Fine-tuning and RAG can be combined, but responsibilities for style and factual knowledge should be explicit.",
+    "evaluation_points": [
+      "Separate behaviour from knowledge",
+      "Authoritative retrieval",
+      "Conflict and evidence tests",
+      "Remove stale training examples"
+    ],
+    "resolution_title": "OpenAI - Model Optimization",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/model-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-113",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Safety, Content Controls and Human Oversight",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does responsible AI mean for an application engineer?",
+    "preferred_answer": "It means designing, evaluating and operating the complete system to address fairness, reliability and safety, privacy and security, transparency, inclusiveness and accountability in context. It is not a separate ethics document added after development. Engineers translate risks into data choices, access controls, evaluations, UX, monitoring, human processes and documented decisions.",
+    "evaluation_points": [
+      "Multiple trustworthiness dimensions",
+      "Lifecycle integration",
+      "System not model only",
+      "Concrete engineering controls"
+    ],
+    "resolution_title": "Microsoft - Responsible AI",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-114",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Safety, Content Controls and Human Oversight",
+    "difficulty": "foundation",
+    "question_type": "safety",
+    "prompt": "What role does content moderation play in a generative-AI application?",
+    "preferred_answer": "Moderation classifies potentially harmful input or output so the application can block, transform, warn, restrict or escalate according to policy. It is one layer and can make errors across language and context. Combine it with model behaviour instructions, product design, access controls and human review. Evaluate false positives and negatives for the actual user population.",
+    "evaluation_points": [
+      "Classification and response actions",
+      "Layered control",
+      "Error and context limits",
+      "Population-specific evaluation"
+    ],
+    "resolution_title": "OpenAI - Moderation",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/moderation",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-115",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Safety, Content Controls and Human Oversight",
+    "difficulty": "intermediate",
+    "question_type": "governance",
+    "prompt": "How should safety requirements differ between a brainstorming tool and an autonomous financial agent?",
+    "preferred_answer": "Use risk tiering based on the action, affected people, reversibility, data sensitivity and regulatory context. A brainstorming tool may need content controls and clear limitations; a financial agent needs strict authorisation, deterministic rules, transaction limits, approvals, monitoring and incident response. Reusing one generic safety prompt across both ignores the different consequences of failure.",
+    "evaluation_points": [
+      "Risk-based differentiation",
+      "Action and reversibility",
+      "High-impact controls",
+      "No one-size prompt"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-116",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Safety, Content Controls and Human Oversight",
+    "difficulty": "intermediate",
+    "question_type": "human oversight",
+    "prompt": "What makes human-in-the-loop review meaningful rather than ceremonial?",
+    "preferred_answer": "The reviewer must receive the relevant evidence, understand the decision, have authority and time to intervene, and see uncertainty and model limitations. Approval should be required only where it changes risk, with clear escalation and audit records. If reviewers rubber-stamp high-volume outputs or cannot inspect the inputs, the control is ineffective.",
+    "evaluation_points": [
+      "Evidence and expertise",
+      "Authority to intervene",
+      "Risk-based review",
+      "Avoid rubber-stamping"
+    ],
+    "resolution_title": "Microsoft - Human Review for Automation with a Prompt",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/azure-openai-human-review",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-117",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Safety, Content Controls and Human Oversight",
+    "difficulty": "intermediate",
+    "question_type": "testing",
+    "prompt": "What should an AI red-team exercise test?",
+    "preferred_answer": "Test misuse, policy evasion, prompt injection, data disclosure, biased or unsafe outputs, tool abuse, resource exhaustion and failures under ambiguous or adversarial inputs. Scope both model and application controls, use authorised environments and convert findings into regression tests and mitigations. Red teaming supplements systematic evaluation; it does not prove the absence of unknown failures.",
+    "evaluation_points": [
+      "Broad misuse and system scope",
+      "Authorised controlled testing",
+      "Regression conversion",
+      "No absence-of-risk claim"
+    ],
+    "resolution_title": "OpenAI - Red Teaming",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/red-teaming",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-118",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Safety, Content Controls and Human Oversight",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "Why is a safety system message only one layer of protection?",
+    "preferred_answer": "Instructions can be misunderstood, overridden by adversarial context or fail on novel inputs. Safety also depends on model choice, classifiers, retrieval quality, tool permissions, output validation, UX, human escalation and monitoring. Put hard security and business constraints in deterministic systems. The prompt communicates expected behaviour but should not be the sole enforcement mechanism.",
+    "evaluation_points": [
+      "Instruction failure modes",
+      "Layered safety stack",
+      "Deterministic hard constraints",
+      "Prompt as behavioural layer"
+    ],
+    "resolution_title": "Microsoft - System Message Design for Azure OpenAI",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/advanced-prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-119",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Safety, Content Controls and Human Oversight",
+    "difficulty": "advanced",
+    "question_type": "fairness",
+    "prompt": "How would you evaluate fairness in an AI-assisted screening workflow?",
+    "preferred_answer": "Define the decision and affected groups, examine data and label quality, compare error and outcome measures by relevant segment, test intersectional and accessibility cases and involve domain and impacted stakeholders. Investigate causal process and alternative explanations rather than relying on one parity metric. Provide appeal and human review, and monitor after deployment because populations and policies change.",
+    "evaluation_points": [
+      "Context and affected groups",
+      "Segmented error/outcome analysis",
+      "Stakeholder and causal review",
+      "Appeal and ongoing monitoring"
+    ],
+    "resolution_title": "NIST SP 1270 - Identifying and Managing Bias in AI",
+    "resolution_url": "https://www.nist.gov/publications/towards-standard-identifying-and-managing-bias-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-120",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Safety, Content Controls and Human Oversight",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A wellbeing chatbot gives unsafe crisis advice to a user. What is the immediate and long-term response?",
+    "preferred_answer": "Activate the safety and incident process, present the user with appropriate urgent support and human escalation, preserve interaction evidence and restrict the unsafe path. Assess other affected sessions and notify responsible clinical, legal and product owners. Redesign scope, crisis detection, refusal and handoff; use expert-approved content and test adversarial and ambiguous cases before restoring the feature.",
+    "evaluation_points": [
+      "User safety and escalation",
+      "Evidence and scope",
+      "Expert ownership",
+      "Redesign and regression testing"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-121",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Injection, Data Leakage and LLM Security",
+    "difficulty": "foundation",
+    "question_type": "security",
+    "prompt": "What is prompt injection, and how does it differ from ordinary prompt wording errors?",
+    "preferred_answer": "Prompt injection occurs when untrusted input changes model behaviour or actions in an unintended way, often by presenting malicious instructions that compete with application policy. A wording error is a benign ambiguity created by the developer. Injection can be direct from a user or indirect through retrieved documents, webpages, emails or media. The root issue is a system treating data and instructions through the same model interface.",
+    "evaluation_points": [
+      "Untrusted behavioural manipulation",
+      "Benign ambiguity contrast",
+      "Direct and indirect forms",
+      "Instruction-data semantic gap"
+    ],
+    "resolution_title": "OWASP LLM01:2025 - Prompt Injection",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm012025-prompt-injection/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-122",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Injection, Data Leakage and LLM Security",
+    "difficulty": "foundation",
+    "question_type": "security",
+    "prompt": "Why can a prompt injection vulnerability not be solved by input sanitisation alone?",
+    "preferred_answer": "Natural language has too many equivalent ways to express instructions, and legitimate content may contain code, quotations or policies that resemble attacks. Filtering can reduce known patterns but will miss novel or encoded instructions and may block valid data. Effective defence limits privileges, separates untrusted content, validates actions and outputs, applies approvals and monitors behaviour in addition to filtering.",
+    "evaluation_points": [
+      "Open-ended language",
+      "False positives/negatives",
+      "Capability restriction",
+      "Layered action/output controls"
+    ],
+    "resolution_title": "Anthropic - Mitigate Jailbreaks and Prompt Injections",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-123",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Injection, Data Leakage and LLM Security",
+    "difficulty": "intermediate",
+    "question_type": "security",
+    "prompt": "What is system-prompt leakage, and what design assumption should it change?",
+    "preferred_answer": "System-prompt leakage is exposure or inference of hidden instructions through model output, attacks, logs or integration defects. It means developers must not place secrets, credentials or security-critical data in prompts or assume hidden wording creates access control. Reduce unnecessary sensitive instructions, keep data in protected services and enforce policy outside the model.",
+    "evaluation_points": [
+      "Exposure/inference definition",
+      "No secrets in prompts",
+      "No access control by hidden wording",
+      "External policy enforcement"
+    ],
+    "resolution_title": "OWASP LLM07:2025 - System Prompt Leakage",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm072025-system-prompt-leakage/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-124",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Injection, Data Leakage and LLM Security",
+    "difficulty": "intermediate",
+    "question_type": "security",
+    "prompt": "What is improper output handling in an LLM application?",
+    "preferred_answer": "It occurs when generated text or code is passed to browsers, shells, databases, templates, APIs or other interpreters without suitable validation and encoding. The model output is untrusted data and can carry injection payloads or unsafe actions. Use typed schemas, allow-lists, contextual encoding, sandboxing and least privilege, and never execute generated code merely because the model produced it.",
+    "evaluation_points": [
+      "Downstream interpreter risk",
+      "Output is untrusted",
+      "Validation/encoding/sandboxing",
+      "No blind code execution"
+    ],
+    "resolution_title": "OWASP LLM05:2025 - Improper Output Handling",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-125",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Injection, Data Leakage and LLM Security",
+    "difficulty": "intermediate",
+    "question_type": "threat modeling",
+    "prompt": "What assets and trust boundaries belong in an LLM threat model?",
+    "preferred_answer": "Include system and developer prompts, user input, retrieved content, vector stores, model provider, training or tuning data, tool credentials, tool outputs, conversation memory, logs, evaluation data and downstream systems. Map which actors can influence each component and where instructions, data or privileges cross boundaries. The model is one component in a larger attack surface.",
+    "evaluation_points": [
+      "Prompt/data/tool assets",
+      "Model provider and memory/logs",
+      "Actor influence",
+      "Full application boundary"
+    ],
+    "resolution_title": "MITRE ATLAS",
+    "resolution_url": "https://atlas.mitre.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-126",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Injection, Data Leakage and LLM Security",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "How can supply-chain risk affect a generative-AI application?",
+    "preferred_answer": "Compromised models, datasets, embeddings, packages, prompt templates, agents, tools or hosted services can introduce backdoors, malicious behaviour or data exposure. Track provenance and versions, review licences and security practices, verify artefacts where possible, pin dependencies and evaluate updates before release. A trusted model does not make an untrusted plugin or corpus safe.",
+    "evaluation_points": [
+      "Multiple supply-chain components",
+      "Provenance/version controls",
+      "Update evaluation",
+      "Trust is not transitive"
+    ],
+    "resolution_title": "OWASP LLM03:2025 - Supply Chain",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm032025-supply-chain/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-127",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Injection, Data Leakage and LLM Security",
+    "difficulty": "advanced",
+    "question_type": "testing",
+    "prompt": "How should a team test for indirect prompt injection in a RAG or agent system?",
+    "preferred_answer": "Place adversarial instructions in realistic documents, pages, tool results and metadata, including obfuscated and multilingual variants. Test whether the system changes policy, leaks data, calls tools or follows external instructions. Use harmless canary secrets and isolated environments. Evaluate containment and monitoring, then preserve successful attacks as regression cases rather than publishing real credentials or exploit paths.",
+    "evaluation_points": [
+      "Realistic indirect vectors",
+      "Policy/data/tool outcomes",
+      "Safe canaries and isolation",
+      "Regression conversion"
+    ],
+    "resolution_title": "OWASP LLM01:2025 - Prompt Injection",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm012025-prompt-injection/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-128",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Injection, Data Leakage and LLM Security",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A document-reading agent follows an injected instruction and uploads confidential content. What is the response sequence?",
+    "preferred_answer": "Revoke tool credentials and stop the affected agent, preserve prompts, retrieved documents, tool calls and destination logs, identify exposed data and users and notify incident owners. Remove malicious content and inspect similar sources, but also redesign permissions, egress, confirmation and data classification so one model decision cannot upload sensitive files. Add indirect-injection and exfiltration regression tests.",
+    "evaluation_points": [
+      "Credential/action containment",
+      "Evidence and impact scope",
+      "Source hunt",
+      "Least privilege and exfiltration redesign"
+    ],
+    "resolution_title": "OWASP LLM06:2025 - Excessive Agency",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm062025-excessive-agency/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-129",
+    "role_slug": "prompt-engineer",
+    "domain": "Privacy, Data Governance and Responsible AI Operations",
+    "difficulty": "foundation",
+    "question_type": "privacy",
+    "prompt": "What does data minimisation mean for a prompt-based application?",
+    "preferred_answer": "Collect and send only the data necessary for the stated task, at the minimum detail and retention required. Remove irrelevant personal data, avoid placing secrets in prompts, use references or tool lookups instead of copying full records and restrict logs. Minimisation reduces privacy, security and cost exposure and should be enforced by application design, not left to user judgement.",
+    "evaluation_points": [
+      "Purpose-limited data",
+      "Minimum detail/retention",
+      "References instead of copying",
+      "Application enforcement"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-130",
+    "role_slug": "prompt-engineer",
+    "domain": "Privacy, Data Governance and Responsible AI Operations",
+    "difficulty": "foundation",
+    "question_type": "governance",
+    "prompt": "Why should prompts and outputs have a data classification?",
+    "preferred_answer": "They may contain personal, confidential, regulated or proprietary information and can flow through providers, logs, caches, evaluation tools and human review. Classification determines which models and regions are allowed, retention, encryption, access, redaction and incident handling. Treating all prompts as harmless text creates uncontrolled data movement.",
+    "evaluation_points": [
+      "Sensitive content possibility",
+      "Multiple processing paths",
+      "Classification-driven controls",
+      "No harmless-text assumption"
+    ],
+    "resolution_title": "OpenAI - Your Data",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/your-data",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-131",
+    "role_slug": "prompt-engineer",
+    "domain": "Privacy, Data Governance and Responsible AI Operations",
+    "difficulty": "intermediate",
+    "question_type": "privacy",
+    "prompt": "How would you handle personally identifiable information in an evaluation dataset?",
+    "preferred_answer": "Use only data with a valid purpose and authority, minimise or pseudonymise fields, preserve necessary distribution characteristics, restrict access and define retention and deletion. Synthetic data may reduce exposure but can distort edge cases and must be validated. Separate evaluator access from production access and ensure examples are not copied into public prompts or reports.",
+    "evaluation_points": [
+      "Purpose and authority",
+      "Minimisation/pseudonymisation",
+      "Synthetic-data limits",
+      "Access and publication controls"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-132",
+    "role_slug": "prompt-engineer",
+    "domain": "Privacy, Data Governance and Responsible AI Operations",
+    "difficulty": "intermediate",
+    "question_type": "governance",
+    "prompt": "What should be recorded in an AI system inventory?",
+    "preferred_answer": "Record owner, purpose, users and affected parties, model and provider, data sources, retrieval and tools, risk tier, evaluation evidence, human oversight, deployment locations, retention, dependencies, incidents and change history. Include shadow and experimental systems. The inventory should support decisions and monitoring, not merely list model names.",
+    "evaluation_points": [
+      "Ownership and purpose",
+      "Model/data/tool dependencies",
+      "Risk/evaluation/oversight",
+      "Lifecycle and shadow systems"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework 1.0",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-133",
+    "role_slug": "prompt-engineer",
+    "domain": "Privacy, Data Governance and Responsible AI Operations",
+    "difficulty": "intermediate",
+    "question_type": "transparency",
+    "prompt": "What should users be told about an AI-assisted feature?",
+    "preferred_answer": "Disclose that AI is used when material to the interaction, its purpose and key limitations, what data it uses, whether outputs require verification and how users can correct, appeal or reach a human. Avoid claims of certainty or human equivalence. The detail should match the risk and audience without overwhelming users with generic legal text.",
+    "evaluation_points": [
+      "AI use and purpose",
+      "Data and limitations",
+      "Correction/appeal/human path",
+      "Risk-appropriate clarity"
+    ],
+    "resolution_title": "NIST - Four Principles of Explainable Artificial Intelligence",
+    "resolution_url": "https://www.nist.gov/publications/four-principles-explainable-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-134",
+    "role_slug": "prompt-engineer",
+    "domain": "Privacy, Data Governance and Responsible AI Operations",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "How should a company manage model-provider changes that may affect data and behaviour?",
+    "preferred_answer": "Track provider terms, data-handling settings, regions, model versions, deprecations and subprocessors; require change notice where possible; and retest quality, safety, privacy and latency before migration. Maintain an exit and data-deletion plan. Provider assurances do not replace the application's own minimisation, access controls and incident responsibilities.",
+    "evaluation_points": [
+      "Terms/settings/version tracking",
+      "Pre-migration evaluation",
+      "Exit/deletion plan",
+      "Shared responsibility"
+    ],
+    "resolution_title": "OpenAI - Your Data",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/your-data",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-135",
+    "role_slug": "prompt-engineer",
+    "domain": "Privacy, Data Governance and Responsible AI Operations",
+    "difficulty": "advanced",
+    "question_type": "provenance",
+    "prompt": "Why is data provenance important for training, RAG and evaluations?",
+    "preferred_answer": "Provenance records where data came from, authority and licence, transformations, date, ownership and quality. It supports removal requests, incident investigation, freshness, bias analysis and reproducibility. Without it, teams cannot explain why content is present or safely rebuild an index or training set. Provenance must follow derived chunks, embeddings and labels, not stop at the original file.",
+    "evaluation_points": [
+      "Origin/licence/transformation",
+      "Removal and investigation",
+      "Reproducibility/freshness",
+      "Propagation to derivatives"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-136",
+    "role_slug": "prompt-engineer",
+    "domain": "Privacy, Data Governance and Responsible AI Operations",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "Production prompts containing customer records were copied into an external testing account. What should happen?",
+    "preferred_answer": "Stop the transfer and restrict the test account, preserve access and upload records, classify the data and assess provider retention and exposure, then notify privacy, security and legal owners. Delete data through verified processes where possible and identify affected customers. Replace production copies with approved, minimised or synthetic test data and add environment controls and automated detection.",
+    "evaluation_points": [
+      "Containment and evidence",
+      "Provider retention/exposure assessment",
+      "Notification and deletion",
+      "Test-data and environment redesign"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-137",
+    "role_slug": "prompt-engineer",
+    "domain": "Multimodal Prompting and Document Intelligence",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What makes a multimodal prompt different from a text-only prompt?",
+    "preferred_answer": "It combines text instructions with inputs such as images, audio, video or documents. The engineer must specify which modality contains the task evidence, how items relate and the required output. Quality depends on media resolution, ordering, preprocessing and model capability. Text instructions cannot recover details that are unreadable or absent from the media.",
+    "evaluation_points": [
+      "Multiple input modalities",
+      "Cross-modal relationship",
+      "Media quality/order",
+      "No recovery of missing detail"
+    ],
+    "resolution_title": "OpenAI - Images and Vision",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/images-vision",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-138",
+    "role_slug": "prompt-engineer",
+    "domain": "Multimodal Prompting and Document Intelligence",
+    "difficulty": "foundation",
+    "question_type": "vision",
+    "prompt": "Why should image resolution and cropping be tested for a vision application?",
+    "preferred_answer": "Small text, distant objects, dense charts and edge details may be lost through resizing or tiling, while unnecessary resolution increases cost and latency. Cropping can focus attention but remove context. Test representative devices and layouts, preserve the original asset for audit and define a fallback when the visual evidence is insufficient.",
+    "evaluation_points": [
+      "Detail loss",
+      "Cost trade-off",
+      "Crop context risk",
+      "Representative testing and fallback"
+    ],
+    "resolution_title": "OpenAI - Images and Vision",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/images-vision",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-139",
+    "role_slug": "prompt-engineer",
+    "domain": "Multimodal Prompting and Document Intelligence",
+    "difficulty": "intermediate",
+    "question_type": "documents",
+    "prompt": "Why is plain OCR text sometimes insufficient for document understanding?",
+    "preferred_answer": "OCR may lose tables, columns, reading order, handwriting confidence, signatures and relationships between labels and values. Document tasks often need layout coordinates, page numbers and visual regions in addition to text. Use parsers or multimodal models appropriate to the document type and evaluate field-level and page-level failures rather than relying on a readable transcript alone.",
+    "evaluation_points": [
+      "Layout and relationship loss",
+      "Coordinates/page evidence",
+      "Task-appropriate parser/model",
+      "Field/page evaluation"
+    ],
+    "resolution_title": "OpenAI - Images and Vision",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/images-vision",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-140",
+    "role_slug": "prompt-engineer",
+    "domain": "Multimodal Prompting and Document Intelligence",
+    "difficulty": "intermediate",
+    "question_type": "prompting",
+    "prompt": "How should multiple images or pages be referenced in a prompt?",
+    "preferred_answer": "Give each item a stable identifier and useful metadata such as page, timestamp or camera, state whether comparison or independent analysis is required and request evidence by identifier. Keep instructions separate from captions that may be untrusted. Test ordering effects and ensure the application preserves the mapping between model references and displayed media.",
+    "evaluation_points": [
+      "Stable identifiers",
+      "Task relationship",
+      "Untrusted caption separation",
+      "Reference-display integrity"
+    ],
+    "resolution_title": "Google Gemini - Prompt Design Strategies",
+    "resolution_url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-141",
+    "role_slug": "prompt-engineer",
+    "domain": "Multimodal Prompting and Document Intelligence",
+    "difficulty": "intermediate",
+    "question_type": "audio",
+    "prompt": "What production issues matter for speech-to-text before an LLM summarises the transcript?",
+    "preferred_answer": "Consider language and accent coverage, noise, speaker separation, timestamps, domain vocabulary, redaction and consent. Transcript errors can become confident summary errors, so preserve audio references and confidence or uncertainty where available. Evaluate transcription and summarisation separately, especially for names, amounts and decisions.",
+    "evaluation_points": [
+      "Audio quality and language",
+      "Diarisation/timestamps",
+      "Privacy and redaction",
+      "Separate transcription and summary evaluation"
+    ],
+    "resolution_title": "OpenAI - Audio and Speech",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/audio",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-142",
+    "role_slug": "prompt-engineer",
+    "domain": "Multimodal Prompting and Document Intelligence",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "How can multimodal inputs carry prompt injection or hidden instructions?",
+    "preferred_answer": "Instructions can be embedded in visible or concealed image text, document layers, metadata, audio or video content that the model interprets. Treat all media-derived text as untrusted, inspect and normalise inputs, separate extraction from privileged actions and restrict tools. Include multimodal adversarial cases; text-only injection tests do not cover the complete attack surface.",
+    "evaluation_points": [
+      "Multiple hidden instruction channels",
+      "Untrusted derived text",
+      "Extraction-action separation",
+      "Multimodal adversarial tests"
+    ],
+    "resolution_title": "OWASP LLM01:2025 - Prompt Injection",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm012025-prompt-injection/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-143",
+    "role_slug": "prompt-engineer",
+    "domain": "Multimodal Prompting and Document Intelligence",
+    "difficulty": "advanced",
+    "question_type": "evaluation",
+    "prompt": "How would you evaluate a chart-question-answering system?",
+    "preferred_answer": "Build labelled questions across chart types, resolutions, colours, axes and misleading scales; score numeric accuracy, unit and legend use, evidence localisation and abstention when unreadable. Include visually similar charts with different values and accessibility cases. Compare OCR-plus-parser and end-to-end vision approaches and inspect whether the model answers from title cues instead of chart data.",
+    "evaluation_points": [
+      "Diverse visual dataset",
+      "Numeric/unit/evidence metrics",
+      "Counterfactual similar charts",
+      "Architecture comparison and shortcut detection"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-144",
+    "role_slug": "prompt-engineer",
+    "domain": "Multimodal Prompting and Document Intelligence",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "A receipt model extracts the total correctly from photos but fails on scanned PDFs. What would you investigate?",
+    "preferred_answer": "Compare PDF rendering, page selection, embedded text, rotation, colour and resolution with the photo path. Confirm that the model receives the intended page image and not only broken text extraction. Evaluate by scanner source and layout, add preprocessing and keep arithmetic reconciliation. The different input pipeline, not the model alone, is the likely boundary to isolate first.",
+    "evaluation_points": [
+      "Input-pipeline comparison",
+      "Actual page/media verification",
+      "Segmented evaluation",
+      "Preprocessing and semantic checks"
+    ],
+    "resolution_title": "OpenAI - Images and Vision",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/images-vision",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-145",
+    "role_slug": "prompt-engineer",
+    "domain": "Production Deployment, Observability and Reliability",
+    "difficulty": "foundation",
+    "question_type": "operations",
+    "prompt": "What should be logged for an LLM request in production?",
+    "preferred_answer": "Record a request or trace ID, time, application and prompt version, model, relevant configuration, token and latency usage, retrieval and tool events, validation and safety outcomes, and final status. Log content only according to privacy policy, with redaction and access controls. Preserve enough provenance to reproduce failures without turning telemetry into an uncontrolled copy of sensitive prompts.",
+    "evaluation_points": [
+      "Version and request identity",
+      "Retrieval/tool/validation events",
+      "Usage and outcome",
+      "Privacy-aware content logging"
+    ],
+    "resolution_title": "OpenTelemetry - Generative AI Semantic Conventions",
+    "resolution_url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-146",
+    "role_slug": "prompt-engineer",
+    "domain": "Production Deployment, Observability and Reliability",
+    "difficulty": "foundation",
+    "question_type": "reliability",
+    "prompt": "What is a fallback strategy for an AI application?",
+    "preferred_answer": "It defines safe behaviour when the preferred model, retrieval service, tool or validator fails. Options include retry with limits, a smaller or alternate model, cached content, a deterministic response, degraded read-only mode or human escalation. Fallbacks must preserve policy and data boundaries and be tested; silently switching can change quality, cost or jurisdiction.",
+    "evaluation_points": [
+      "Multiple component failures",
+      "Bounded alternatives",
+      "Preserve policy/data boundaries",
+      "Tested and observable switching"
+    ],
+    "resolution_title": "OpenAI - Model Selection",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/model-selection",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-147",
+    "role_slug": "prompt-engineer",
+    "domain": "Production Deployment, Observability and Reliability",
+    "difficulty": "intermediate",
+    "question_type": "observability",
+    "prompt": "Why are traces more useful than a final response log for agentic and RAG systems?",
+    "preferred_answer": "A trace connects model calls, retrieval queries, chunks, tool requests, results, retries and validations across the workflow. It reveals where latency, cost or correctness failed and supports incident reconstruction. Traces should hide secrets and respect tenant access. Final output alone cannot show whether a correct answer came through an unsafe action or whether a failure began upstream.",
+    "evaluation_points": [
+      "End-to-end component linkage",
+      "Latency/cost/correctness diagnosis",
+      "Privacy controls",
+      "Outcome alone is insufficient"
+    ],
+    "resolution_title": "LangSmith - Observability",
+    "resolution_url": "https://docs.langchain.com/langsmith/observability",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-148",
+    "role_slug": "prompt-engineer",
+    "domain": "Production Deployment, Observability and Reliability",
+    "difficulty": "intermediate",
+    "question_type": "release",
+    "prompt": "How should prompt changes be deployed to production?",
+    "preferred_answer": "Treat prompts as versioned software artefacts: review the diff, run offline regression and safety tests, stage or canary the change, monitor agreed metrics and retain rollback. Record which users and responses received each version. A text edit can alter tool use, safety and cost, so it should not bypass release controls merely because no application code changed.",
+    "evaluation_points": [
+      "Version and review",
+      "Offline tests",
+      "Canary/monitor/rollback",
+      "Prompt changes are production changes"
+    ],
+    "resolution_title": "OpenAI - Working with Evals",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/evals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-149",
+    "role_slug": "prompt-engineer",
+    "domain": "Production Deployment, Observability and Reliability",
+    "difficulty": "intermediate",
+    "question_type": "reliability",
+    "prompt": "What service-level indicators are useful for an AI assistant?",
+    "preferred_answer": "Use task-specific quality or groundedness, successful structured responses, tool completion, latency percentiles, availability, escalation and abstention rates, safety violations and cost per successful task. Define indicators from the user's outcome rather than only provider uptime. Some quality measures require sampled human or model evaluation instead of real-time calculation.",
+    "evaluation_points": [
+      "Task outcome metrics",
+      "Technical latency/availability",
+      "Safety/cost/escalation",
+      "Sampled quality evaluation"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG End-to-End Evaluation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-llm-evaluation-phase",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-150",
+    "role_slug": "prompt-engineer",
+    "domain": "Production Deployment, Observability and Reliability",
+    "difficulty": "advanced",
+    "question_type": "incident",
+    "prompt": "How should a team respond to a model behaviour regression after a provider update?",
+    "preferred_answer": "Confirm the version and affected traffic, preserve representative prompts and outputs, compare against the prior baseline and identify severe failure segments. Roll back or route to a known-good model where possible, tighten controls and contact the provider with reproducible evidence. Update regression tests and deployment assumptions; model aliases without pinned behaviour increase operational uncertainty.",
+    "evaluation_points": [
+      "Version and impact confirmation",
+      "Baseline comparison",
+      "Rollback/routing and containment",
+      "Reproducible provider escalation"
+    ],
+    "resolution_title": "OpenAI - Model Selection",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/model-selection",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-151",
+    "role_slug": "prompt-engineer",
+    "domain": "Production Deployment, Observability and Reliability",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How do retries create reliability and cost risks in LLM workflows?",
+    "preferred_answer": "Retries can recover transient rate or network failures, but repeated model or tool calls may duplicate side effects, multiply cost and worsen overload. Classify retryable errors, use exponential backoff and jitter, cap attempts and time, preserve idempotency and avoid retrying invalid prompts or policy failures. Report partial failure rather than hiding it behind an unbounded loop.",
+    "evaluation_points": [
+      "Transient recovery benefit",
+      "Duplicate/cost/overload risks",
+      "Backoff and bounded attempts",
+      "Idempotency and error classification"
+    ],
+    "resolution_title": "OpenAI - Latency Optimization",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/latency-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-152",
+    "role_slug": "prompt-engineer",
+    "domain": "Production Deployment, Observability and Reliability",
+    "difficulty": "scenario",
+    "question_type": "troubleshooting",
+    "prompt": "Users report that an AI assistant became slower and more expensive but quality is unchanged. What would you inspect?",
+    "preferred_answer": "Compare model, prompt and retrieval versions; input and output token distributions; cache hits; number of tool and agent turns; retries; context growth; and latency by component. Check whether a long instruction or duplicated documents were introduced. Optimise the largest measured contributor and rerun quality tests so cost reduction does not remove necessary context or controls.",
+    "evaluation_points": [
+      "Version and token comparison",
+      "Cache/tool/retry tracing",
+      "Context duplication",
+      "Measure-first optimisation with quality guard"
+    ],
+    "resolution_title": "OpenAI - Cost Optimization",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/cost-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-153",
+    "role_slug": "prompt-engineer",
+    "domain": "Cost, Latency, Caching and Model Selection",
+    "difficulty": "foundation",
+    "question_type": "economics",
+    "prompt": "What mainly drives the cost of an LLM application?",
+    "preferred_answer": "Major drivers include input and output tokens, selected model, number of calls and retries, tool and retrieval services, embeddings, storage, evaluation and human review. Agent loops and long contexts can multiply spend. Measure cost per successful user task, not only cost per request, because cheap requests that fail or require repetition may be more expensive overall.",
+    "evaluation_points": [
+      "Token and model costs",
+      "Calls/tools/storage/review",
+      "Agent and context multiplication",
+      "Cost per successful task"
+    ],
+    "resolution_title": "OpenAI - Cost Optimization",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/cost-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-154",
+    "role_slug": "prompt-engineer",
+    "domain": "Cost, Latency, Caching and Model Selection",
+    "difficulty": "foundation",
+    "question_type": "model selection",
+    "prompt": "Why is the largest or most capable model not always the best production choice?",
+    "preferred_answer": "A smaller model may meet the task's quality threshold with lower latency, cost and capacity risk. Complex planning may benefit from a reasoning-capable model while extraction or routing may not. Select using representative evaluations and operational constraints, and consider routing tasks by difficulty. Headline benchmark performance is not a deployment decision.",
+    "evaluation_points": [
+      "Quality threshold not maximum",
+      "Task-model fit",
+      "Evaluation and constraints",
+      "Routing by difficulty"
+    ],
+    "resolution_title": "OpenAI - Model Selection",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/model-selection",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-155",
+    "role_slug": "prompt-engineer",
+    "domain": "Cost, Latency, Caching and Model Selection",
+    "difficulty": "intermediate",
+    "question_type": "caching",
+    "prompt": "What is prompt or context caching, and when does it help?",
+    "preferred_answer": "Caching reuses processing for repeated prompt prefixes or large stable context, reducing latency and input cost according to provider behaviour. It helps with common system instructions, tool definitions or shared documents. Keep stable content in a consistent order and monitor hit rate. Caching does not remove data-access, freshness or invalidation requirements.",
+    "evaluation_points": [
+      "Reuse of stable context",
+      "Appropriate repeated content",
+      "Ordering and hit monitoring",
+      "Freshness/access still apply"
+    ],
+    "resolution_title": "OpenAI - Prompt Caching",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/prompt-caching",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-156",
+    "role_slug": "prompt-engineer",
+    "domain": "Cost, Latency, Caching and Model Selection",
+    "difficulty": "intermediate",
+    "question_type": "latency",
+    "prompt": "What techniques reduce perceived and actual response latency?",
+    "preferred_answer": "Use an appropriate model, reduce unnecessary context and output, parallelise independent retrieval or tools, cache stable prefixes, stream user-visible text and avoid serial agent steps. Precompute embeddings and use fast filters. Measure time to first useful token and total task time. Do not stream unvalidated high-impact content or expose partial tool arguments.",
+    "evaluation_points": [
+      "Model/context/output optimisation",
+      "Parallelism and caching",
+      "Perceived versus total latency",
+      "Streaming safety limits"
+    ],
+    "resolution_title": "OpenAI - Latency Optimization",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/latency-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-157",
+    "role_slug": "prompt-engineer",
+    "domain": "Cost, Latency, Caching and Model Selection",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "How can model routing improve cost and quality?",
+    "preferred_answer": "A router sends simple, well-defined tasks to a faster model and ambiguous or high-risk tasks to a more capable model or human. Routing can use deterministic rules or a validated classifier. Account for routing errors, duplicated calls and added latency. Evaluate the complete policy by task segment and include safe escalation when confidence is low.",
+    "evaluation_points": [
+      "Task-tier routing",
+      "Rule or classifier",
+      "Routing error/cost",
+      "Segment and escalation evaluation"
+    ],
+    "resolution_title": "OpenAI - Reasoning Best Practices",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/reasoning-best-practices",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-158",
+    "role_slug": "prompt-engineer",
+    "domain": "Cost, Latency, Caching and Model Selection",
+    "difficulty": "advanced",
+    "question_type": "caching",
+    "prompt": "What security and correctness risks arise from caching LLM responses?",
+    "preferred_answer": "A cache can return another user's data, preserve outdated policy, bypass new safety controls or serve an answer generated under a different prompt or model. Build keys from tenant, permissions, prompt/model version and relevant data version; set expiry and invalidation; and avoid caching sensitive outputs where isolation cannot be assured. Log cache provenance and hits.",
+    "evaluation_points": [
+      "Cross-user leakage",
+      "Stale policy/control risk",
+      "Versioned permission-aware keys",
+      "Expiry and provenance"
+    ],
+    "resolution_title": "OWASP LLM02:2025 - Sensitive Information Disclosure",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm022025-sensitive-information-disclosure/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-159",
+    "role_slug": "prompt-engineer",
+    "domain": "Cost, Latency, Caching and Model Selection",
+    "difficulty": "advanced",
+    "question_type": "optimization",
+    "prompt": "How would you decide whether to shorten a prompt, use caching or switch models?",
+    "preferred_answer": "Profile token composition, cacheability, latency by stage, quality by model and cost per successful task. Shorten duplicated or low-value context first, use caching for stable repeated prefixes and switch models only after task-specific comparison. Each change needs regression tests because concise prompts can remove constraints and smaller models may need clearer scaffolding.",
+    "evaluation_points": [
+      "Measure token and stage costs",
+      "Choose intervention by cause",
+      "Task-specific model comparison",
+      "Quality regression protection"
+    ],
+    "resolution_title": "OpenAI - Cost Optimization",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/cost-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-160",
+    "role_slug": "prompt-engineer",
+    "domain": "Cost, Latency, Caching and Model Selection",
+    "difficulty": "scenario",
+    "question_type": "economics",
+    "prompt": "An agent completes 90% of tasks but occasionally uses 50 model calls. How would you control the tail cost?",
+    "preferred_answer": "Inspect high-call traces and classify loops, weak tools and genuinely complex tasks. Set turn, token, time and cost budgets; detect repeated actions; improve stop criteria and tool results; and escalate when the budget is reached. Report cost percentiles, not only averages. Consider converting frequent successful paths into deterministic workflows.",
+    "evaluation_points": [
+      "Tail-trace analysis",
+      "Budgets and repetition detection",
+      "Percentile cost monitoring",
+      "Deterministic path conversion"
+    ],
+    "resolution_title": "OWASP LLM10:2025 - Unbounded Consumption",
+    "resolution_url": "https://genai.owasp.org/llmrisk/llm102025-unbounded-consumption/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-161",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Product Strategy, Prompt Operations and Interview Scenarios",
+    "difficulty": "foundation",
+    "question_type": "product",
+    "prompt": "What makes a use case suitable for generative AI?",
+    "preferred_answer": "It benefits from language, perception or flexible synthesis; has enough data and feedback to evaluate; tolerates or controls probabilistic error; and provides value beyond deterministic software. The task should have clear users, boundaries and a fallback. A use case is unsuitable when a small rules engine solves it more reliably or when errors are unacceptable without an effective human control.",
+    "evaluation_points": [
+      "Generative capability fit",
+      "Evaluability",
+      "Error tolerance/control",
+      "Compare deterministic alternative"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework 1.0",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-162",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Product Strategy, Prompt Operations and Interview Scenarios",
+    "difficulty": "foundation",
+    "question_type": "role",
+    "prompt": "What is the practical responsibility of a prompt engineer on a product team?",
+    "preferred_answer": "The role translates product requirements into testable model behaviour, designs prompts and context interfaces, builds evaluation sets, analyses failures and works with engineers, domain experts, safety and UX. It is not only writing phrases. In many organisations these responsibilities sit within AI engineering, product or applied research, so collaboration and software/data literacy matter.",
+    "evaluation_points": [
+      "Requirements to behaviour",
+      "Prompt/context/evaluation",
+      "Cross-functional work",
+      "Broader than wording"
+    ],
+    "resolution_title": "Anthropic - Prompt Engineering Overview",
+    "resolution_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-163",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Product Strategy, Prompt Operations and Interview Scenarios",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "What should a prompt registry contain?",
+    "preferred_answer": "Store a stable ID, owner, purpose, full template and variables, model and tool assumptions, source or policy dependencies, version, change history, evaluation results, risk tier, deployment status and rollback target. Link production traces to the exact version. A registry should support governance and experimentation without allowing uncontrolled prompt edits directly in production.",
+    "evaluation_points": [
+      "Identity/owner/purpose",
+      "Dependencies and versions",
+      "Evaluation/risk/deployment",
+      "Trace linkage and controlled changes"
+    ],
+    "resolution_title": "OpenAI - Working with Evals",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/evals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-164",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Product Strategy, Prompt Operations and Interview Scenarios",
+    "difficulty": "intermediate",
+    "question_type": "communication",
+    "prompt": "How would you explain an AI quality limitation to a non-technical stakeholder?",
+    "preferred_answer": "Describe the user task, the measured failure type and business consequence in plain language, show representative examples and uncertainty, and state the available controls and trade-offs. Avoid saying the model 'understands' or is '95% intelligent.' Recommend a decision such as limited rollout, human review or more data, with clear success criteria for the next test.",
+    "evaluation_points": [
+      "Task and consequence",
+      "Examples and uncertainty",
+      "No anthropomorphic metric claims",
+      "Decision and next criteria"
+    ],
+    "resolution_title": "NIST - Four Principles of Explainable Artificial Intelligence",
+    "resolution_url": "https://www.nist.gov/publications/four-principles-explainable-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-165",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Product Strategy, Prompt Operations and Interview Scenarios",
+    "difficulty": "intermediate",
+    "question_type": "experimentation",
+    "prompt": "What is a useful online experiment for an AI assistant, and what should not be measured alone?",
+    "preferred_answer": "A useful experiment compares controlled variants on task completion, correction, escalation, user effort, quality samples, safety and cost. Guardrail metrics and exposure limits should be predefined. Do not rely only on clicks, conversation length or satisfaction because a fluent wrong answer can appear engaging. Preserve the ability to stop and analyse severe incidents quickly.",
+    "evaluation_points": [
+      "Task and quality outcome",
+      "Guardrails and exposure",
+      "Avoid engagement-only metric",
+      "Stop and incident analysis"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-166",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Product Strategy, Prompt Operations and Interview Scenarios",
+    "difficulty": "advanced",
+    "question_type": "strategy",
+    "prompt": "How do you decide between buying an AI platform capability and building a custom system?",
+    "preferred_answer": "Compare use-case differentiation, data sensitivity, integration and control needs, evaluation transparency, provider lock-in, operating skills, time to value and total lifecycle cost. A managed capability may accelerate common tasks; custom architecture may be justified for specialised data, controls or workflow. Prototype the highest-risk assumptions and maintain an exit path rather than deciding from a demo.",
+    "evaluation_points": [
+      "Differentiation and control",
+      "Data/integration/skills",
+      "Lifecycle cost and lock-in",
+      "Prototype risks and exit plan"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework 1.0",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-167",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Product Strategy, Prompt Operations and Interview Scenarios",
+    "difficulty": "advanced",
+    "question_type": "leadership",
+    "prompt": "What evidence should be in a go-live review for a generative-AI feature?",
+    "preferred_answer": "Include purpose and scope, architecture and data flow, model and prompt versions, evaluation results by segment, safety and security tests, privacy review, human oversight, operational SLOs, cost, fallback, incident plan, known limitations and named residual-risk approval. The review should confirm that production monitoring and rollback exist, not only that a prototype looked convincing.",
+    "evaluation_points": [
+      "System and version evidence",
+      "Quality/safety/privacy results",
+      "Operations and incident readiness",
+      "Known limits and risk approval"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "AIP-168",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Product Strategy, Prompt Operations and Interview Scenarios",
+    "difficulty": "scenario",
+    "question_type": "product judgement",
+    "prompt": "A stakeholder asks you to launch an AI feature next week because the demo was impressive. How do you respond?",
+    "preferred_answer": "Acknowledge the value shown by the demo, then separate demonstration success from production evidence. Define the intended users and high-impact failures, run a focused evaluation, review data and tool permissions, set a limited rollout with monitoring and human fallback, and identify non-negotiable blockers. Offer a staged launch date tied to evidence rather than either promising full release or rejecting the idea without a path.",
+    "evaluation_points": [
+      "Demo versus production distinction",
+      "Focused risk/evaluation",
+      "Limited monitored rollout",
+      "Evidence-based staged plan"
+    ],
+    "resolution_title": "Anthropic - Define Success Criteria and Build Evaluations",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-01",
+    "role_slug": "prompt-engineer",
+    "domain": "AI, Generative AI and LLM Foundations",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] AI application boundary and risk map: Decompose a proposed employee-support assistant into model, data, retrieval, tools, controls and human processes, then identify the main failure modes.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nSystem diagram, trust boundaries, actor and data inventory, ten risks, owners, initial measures and deployment assumptions.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework 1.0",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-02",
+    "role_slug": "prompt-engineer",
+    "domain": "Transformers, Tokens and Context Windows",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Token and long-context diagnostic: Profile a set of multilingual reports for token usage, truncation risk and evidence position, then compare two context-management strategies.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nToken report, context budget, failure examples, experiment design, quality/latency/cost results and recommended policy.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Hugging Face Tokenizers Documentation",
+    "resolution_url": "https://huggingface.co/docs/tokenizers/index",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-03",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Engineering Fundamentals",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Prompt specification and regression suite: Turn a vague content-classification request into a versioned prompt specification and evaluate three prompt variants on a held-out dataset.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nTask contract, prompt versions, labelled examples, metrics, failure clusters, regression report and chosen revision.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Anthropic - Define Success Criteria and Build Evaluations",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-04",
+    "role_slug": "prompt-engineer",
+    "domain": "Instruction Hierarchy and Prompt Structure",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] System-prompt architecture review: Refactor a long, conflicting assistant prompt into governed instruction modules and test priority conflicts and indirect-injection cases.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nPrompt component map, precedence rules, revised template, adversarial tests, regression results and change-control plan.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Microsoft - System Message Design for Azure OpenAI",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/advanced-prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-05",
+    "role_slug": "prompt-engineer",
+    "domain": "Examples, Decomposition and Reasoning Scaffolds",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Decomposition and verification experiment: Compare a single-prompt solution with a decomposed generate-verify workflow on a multi-step policy analysis task.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nWorkflow diagrams, prompt versions, labelled test set, accuracy and latency results, error propagation analysis and deployment recommendation.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OpenAI - Working with Evals",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/evals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-06",
+    "role_slug": "prompt-engineer",
+    "domain": "Structured Outputs and Data Extraction",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Schema-constrained document extraction: Design and test a structured extraction contract for purchase orders, including missing fields, evidence references and semantic checks.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nJSON Schema, prompt, sample corpus, validation code, field-level metrics, repair policy and failure report.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OpenAI - Structured Model Outputs",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/structured-outputs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-07",
+    "role_slug": "prompt-engineer",
+    "domain": "Tool Use and Function Calling",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Secure tool-calling workflow: Build or specify an assistant that reads order status and requests a refund through separate tools with authentication, confirmation and failure handling.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nTool schemas, permission model, execution flow, validation code, audit events, adversarial tests and safe-error examples.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OpenAI - Function Calling",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/function-calling",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-08",
+    "role_slug": "prompt-engineer",
+    "domain": "Agents, Planning and Workflow Orchestration",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Bounded research agent: Design a source-research agent with web or document tools, citation requirements, a cost budget, repeat detection and human escalation.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nAgent state diagram, tool contracts, stop rules, approval policy, evaluation trajectories, cost report and failure analysis.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OpenAI Agents SDK",
+    "resolution_url": "https://openai.github.io/openai-agents-python/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-09",
+    "role_slug": "prompt-engineer",
+    "domain": "Embeddings and Semantic Search",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Semantic search benchmark: Build a small embedding index with metadata filters and compare vector, lexical and hybrid retrieval on a labelled query set.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nCorpus and schema, relevance labels, retrieval metrics, segment analysis, access-control tests and recommended configuration.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Microsoft Foundry - RAG Evaluators",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/rag-evaluators",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-10",
+    "role_slug": "prompt-engineer",
+    "domain": "Retrieval-Augmented Generation Architecture",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] End-to-end RAG pipeline: Build or design a RAG system for a policy corpus and evaluate parsing, chunking, retrieval, reranking, generation and citation separately.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nArchitecture, ingestion report, index schema, labelled queries, stage metrics, end-to-end results, latency/cost and error analysis.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "resolution_url": "https://arxiv.org/abs/2005.11401",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-11",
+    "role_slug": "prompt-engineer",
+    "domain": "RAG Prompting, Grounding and Citations",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Grounded answer and citation audit: Create a grounded Q&A prompt for a mixed-authority document set and audit claim-level citation support, abstention and conflict handling.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nPrompt, source hierarchy, labelled queries, citation-support matrix, abstention metrics, conflict cases and remediation plan.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center - RAG Prompt Engineering",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-prompt-engineering",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-12",
+    "role_slug": "prompt-engineer",
+    "domain": "Evaluation Design and LLM-as-Judge",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] LLM evaluation harness: Create an evaluation suite combining deterministic checks, expert labels and a calibrated model grader for an AI writing assistant.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nSuccess criteria, dataset, rubrics, evaluator code or configuration, agreement study, confidence intervals, segment report and release gate.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OpenAI - Working with Evals",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/evals",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-13",
+    "role_slug": "prompt-engineer",
+    "domain": "Hallucination, Uncertainty and Factuality",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Hallucination and abstention benchmark: Test an assistant on answerable, unanswerable, contradictory and citation-sensitive questions, then design verification and UX controls.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nLabelled dataset, groundedness and abstention metrics, citation audit, failure taxonomy, revised prompt/workflow and release recommendation.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Anthropic - Reduce Hallucinations",
+    "resolution_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-14",
+    "role_slug": "prompt-engineer",
+    "domain": "Fine-Tuning, Distillation and Model Adaptation",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Adaptation decision and tuning experiment: Compare prompt-only, RAG and parameter-efficient tuning approaches for a stable domain classification and response-style task.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nBaseline, dataset card, training configuration, held-out results, safety tests, cost/latency comparison, lineage and decision memo.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OpenAI - Model Optimization",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/model-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-15",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Safety, Content Controls and Human Oversight",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Risk-tiered AI safety case: Create a safety case for an AI assistant that drafts but does not send financial communications, including oversight and red-team requirements.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nRisk tier, harm scenarios, control map, moderation and approval flow, test suite, monitoring, incident triggers and residual-risk signoff.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-16",
+    "role_slug": "prompt-engineer",
+    "domain": "Prompt Injection, Data Leakage and LLM Security",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] LLM application threat model and injection test: Threat-model a RAG assistant with two tools and run controlled direct and indirect prompt-injection tests using canary data.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nTrust-boundary diagram, OWASP mapping, attack cases, tool traces, containment results, mitigations and regression suite.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OWASP Top 10 for LLM Applications - 2025",
+    "resolution_url": "https://genai.owasp.org/llm-top-10/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-17",
+    "role_slug": "prompt-engineer",
+    "domain": "Privacy, Data Governance and Responsible AI Operations",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] AI data-governance pack: Create a data-flow and governance pack for a customer-service copilot that uses a hosted model, RAG, logs and human review.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nData inventory, classification, purpose and retention, provider boundary, access model, user notice, deletion process and incident playbook.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-18",
+    "role_slug": "prompt-engineer",
+    "domain": "Multimodal Prompting and Document Intelligence",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Multimodal document benchmark: Evaluate a purchase-document extractor across photos, scans, native PDFs and multi-page files with evidence localisation.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nMedia corpus, preprocessing variants, schema, field and evidence metrics, modality-specific failures, privacy controls and recommended pipeline.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OpenAI - Images and Vision",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/images-vision",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-19",
+    "role_slug": "prompt-engineer",
+    "domain": "Production Deployment, Observability and Reliability",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] AI production observability and incident drill: Instrument a RAG or agent workflow with traces, quality samples, cost and safety signals, then run a simulated model-regression incident.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nTrace schema, dashboards, SLOs, alert rules, privacy controls, incident timeline, rollback evidence and post-incident actions.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OpenTelemetry - Generative AI Semantic Conventions",
+    "resolution_url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-20",
+    "role_slug": "prompt-engineer",
+    "domain": "Cost, Latency, Caching and Model Selection",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Model and cost-routing benchmark: Benchmark three model or workflow configurations for classification, extraction and complex analysis, including caching and routing.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nQuality thresholds, latency and cost distributions, cache metrics, routing errors, safety regressions and recommended production policy.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OpenAI - Cost Optimization",
+    "resolution_url": "https://developers.openai.com/api/docs/guides/cost-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-21",
+    "role_slug": "prompt-engineer",
+    "domain": "AI Product Strategy, Prompt Operations and Interview Scenarios",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] AI feature go-live review: Prepare a production-readiness review for a prompt-engineered internal knowledge assistant and defend a launch, limited launch or no-launch decision.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nUse-case brief, architecture, prompt registry entry, evaluation report, risk controls, SLO/cost plan, rollback, incident process and signed decision.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST AI RMF Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-001",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cybersecurity Principles and Risk Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Explain confidentiality, integrity and availability using one practical system example.",
+    "preferred_answer": "Confidentiality limits information to authorised subjects, integrity protects accuracy and authorised change, and availability keeps the service usable when required. For an online payroll system, access controls protect salary data, signed or validated transactions protect records from unauthorised change, and resilient infrastructure plus recovery procedures keep payroll available. The priorities and acceptable trade-offs depend on business impact.",
+    "evaluation_points": [
+      "Defines all three objectives",
+      "Uses one coherent example",
+      "Connects controls to business impact",
+      "Avoids treating the triad as equally weighted in every system."
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/cyberframework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-002",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cybersecurity Principles and Risk Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate an asset, threat, vulnerability, exposure, risk and control.",
+    "preferred_answer": "An asset is something of value; a threat is a potential cause of harm; a vulnerability is a weakness; exposure describes how reachable or susceptible the asset is; risk combines likelihood and impact under real conditions; and a control changes that risk by preventing, detecting, responding to or recovering from events. A CVE alone is not the full risk statement.",
+    "evaluation_points": [
+      "Clear definitions",
+      "Explains exposure and context",
+      "Risk includes likelihood and impact",
+      "Control is tied to risk reduction."
+    ],
+    "resolution_title": "NIST SP 800-30 Rev. 1 - Guide for Conducting Risk Assessments",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-003",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cybersecurity Principles and Risk Management",
+    "difficulty": "intermediate",
+    "question_type": "assessment",
+    "prompt": "When would qualitative risk analysis be more useful than a quantitative model, and what are its limitations?",
+    "preferred_answer": "Qualitative analysis is useful when reliable loss and frequency data are unavailable, decisions must be made quickly, or many risks need consistent triage. It can use defined likelihood and impact scales with evidence and assumptions. Its limits are subjectivity, poor comparability when scales are vague, and false precision from multiplying ordinal scores. Calibration and documented rationale are essential.",
+    "evaluation_points": [
+      "Appropriate use cases",
+      "Defined scales and evidence",
+      "Recognises subjectivity and ordinal-score limits",
+      "Mentions calibration or review."
+    ],
+    "resolution_title": "NIST SP 800-30 Rev. 1 - Guide for Conducting Risk Assessments",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-004",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cybersecurity Principles and Risk Management",
+    "difficulty": "intermediate",
+    "question_type": "governance",
+    "prompt": "How do risk appetite, risk tolerance and a risk acceptance differ?",
+    "preferred_answer": "Risk appetite is the broad amount and type of risk leadership is willing to pursue or retain. Tolerance translates that position into boundaries or thresholds for a service, objective or control. A risk acceptance is a documented decision by an authorised owner to retain a specific residual risk for a defined period, with assumptions, monitoring and review conditions.",
+    "evaluation_points": [
+      "Strategic appetite",
+      "Operational tolerance",
+      "Specific time-bounded acceptance",
+      "Named authority and review conditions."
+    ],
+    "resolution_title": "NIST SP 800-37 Rev. 2 - Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-005",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cybersecurity Principles and Risk Management",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "What makes a risk register useful rather than a static compliance spreadsheet?",
+    "preferred_answer": "A useful register links each risk to affected assets and business outcomes, a clear scenario, inherent and residual ratings, control evidence, owner, treatment plan, due date, dependencies and review triggers. It should support decisions and escalation, not merely list vulnerabilities. Entries should change when exposure, threat activity, controls or business importance change.",
+    "evaluation_points": [
+      "Scenario and business impact",
+      "Owner and treatment",
+      "Inherent versus residual risk",
+      "Evidence and review triggers."
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/cyberframework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-006",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cybersecurity Principles and Risk Management",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "Why can defence in depth still fail even when many controls are present?",
+    "preferred_answer": "Layers fail when they share the same dependency, identity plane, configuration error or blind spot. Multiple tools may also duplicate one detection while leaving another attack path unaddressed. Effective depth requires independent failure modes, clear trust boundaries, tested control operation, telemetry and recovery. Counting products is not the same as reducing attack paths or blast radius.",
+    "evaluation_points": [
+      "Shared failure modes",
+      "Control overlap versus coverage",
+      "Independent layers and testing",
+      "Recovery and blast-radius thinking."
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-007",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cybersecurity Principles and Risk Management",
+    "difficulty": "advanced",
+    "question_type": "measurement",
+    "prompt": "Which security metrics would you present to engineering leadership, and which would you avoid?",
+    "preferred_answer": "Use decision-linked measures such as critical exposure by business service, mean time to remediate exploited vulnerabilities, privileged access review completion, control coverage, detection latency, recovery test results and recurring defect classes. Show trends and uncertainty. Avoid vanity counts such as total alerts, blocked attacks or raw vulnerability totals without severity, exposure, ownership and outcome context.",
+    "evaluation_points": [
+      "Outcome or decision linkage",
+      "Exposure and service context",
+      "Trend and uncertainty",
+      "Rejects vanity counts."
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/cyberframework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-008",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cybersecurity Principles and Risk Management",
+    "difficulty": "scenario",
+    "question_type": "prioritisation",
+    "prompt": "A new internet-facing service must launch in five days, but its threat model and recovery test are incomplete. How would you decide whether to proceed?",
+    "preferred_answer": "Identify the business need, data sensitivity, attack surface and credible failure scenarios; verify minimum non-negotiable controls; assess residual risk and available compensating controls; and require an authorised, time-bounded decision. Limit exposure, enable strong logging, prepare rollback and incident ownership, and create dated closure actions. Do not convert schedule pressure into an undocumented security exception.",
+    "evaluation_points": [
+      "Business and threat context",
+      "Minimum controls and compensating measures",
+      "Authorised time-bounded decision",
+      "Monitoring, rollback and closure plan."
+    ],
+    "resolution_title": "NIST SP 800-37 Rev. 2 - Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-009",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Governance, Compliance and Security Policy",
+    "difficulty": "foundation",
+    "question_type": "governance",
+    "prompt": "Differentiate a policy, standard, procedure and guideline.",
+    "preferred_answer": "A policy states mandatory organisational intent and accountability. A standard defines mandatory, measurable requirements that implement policy. A procedure gives ordered steps for performing a task. A guideline provides recommended practices where judgement is allowed. Organisations should control ownership, approval, versioning and review so that these documents do not conflict or become stale.",
+    "evaluation_points": [
+      "Correct hierarchy",
+      "Mandatory versus recommended",
+      "Operational procedure",
+      "Ownership and lifecycle."
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-010",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Governance, Compliance and Security Policy",
+    "difficulty": "foundation",
+    "question_type": "frameworks",
+    "prompt": "What changed conceptually in NIST CSF 2.0 with the addition of Govern?",
+    "preferred_answer": "Govern makes cybersecurity risk strategy, roles, policy, oversight and supply-chain considerations explicit rather than assuming they sit outside operational security. It connects leadership decisions to Identify, Protect, Detect, Respond and Recover. The framework remains outcome-focused and voluntary; it is not a prescriptive control checklist or a certification by itself.",
+    "evaluation_points": [
+      "Govern function purpose",
+      "Connection to the other five functions",
+      "Outcome-focused nature",
+      "No certification claim."
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/cyberframework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-011",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Governance, Compliance and Security Policy",
+    "difficulty": "intermediate",
+    "question_type": "compliance",
+    "prompt": "Why does passing an audit not prove that a system is secure?",
+    "preferred_answer": "An audit tests defined criteria, scope, samples and evidence at a point in time. Threats, configurations and assets can change, and a compliant control may be poorly designed for the actual attack path. Security needs continuous risk assessment, control validation, monitoring and incident learning. Compliance can provide useful assurance, but it is a floor or evidence set, not a guarantee.",
+    "evaluation_points": [
+      "Scope and point-in-time limitation",
+      "Control effectiveness versus existence",
+      "Continuous validation",
+      "Balanced view of compliance value."
+    ],
+    "resolution_title": "NIST SP 800-37 Rev. 2 - Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-012",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Governance, Compliance and Security Policy",
+    "difficulty": "intermediate",
+    "question_type": "governance",
+    "prompt": "What should a security exception process contain?",
+    "preferred_answer": "It should identify the unmet requirement, affected assets, business reason, threat and impact, compensating controls, residual risk, approving authority, owner, start and expiry dates, monitoring and closure plan. Exceptions should be searchable and reviewed for recurring patterns. An exception is not an undocumented waiver or a permanent alternative to remediation.",
+    "evaluation_points": [
+      "Specific unmet requirement",
+      "Residual risk and compensating controls",
+      "Authority, owner and expiry",
+      "Monitoring and trend review."
+    ],
+    "resolution_title": "NIST SP 800-37 Rev. 2 - Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-013",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Governance, Compliance and Security Policy",
+    "difficulty": "intermediate",
+    "question_type": "third-party-risk",
+    "prompt": "How would you evaluate a software supplier beyond collecting a security questionnaire?",
+    "preferred_answer": "Use risk-tiered due diligence: understand data and access, architecture, sub-processors, secure development practices, vulnerability disclosure, incident history, dependency and SBOM capability, identity controls, resilience, independent evidence and contractual obligations. Validate claims with artefacts or technical testing where proportionate, and monitor material changes after onboarding.",
+    "evaluation_points": [
+      "Risk-tiering",
+      "Evidence beyond assertions",
+      "Secure development and incident capability",
+      "Ongoing monitoring and contract controls."
+    ],
+    "resolution_title": "CISA Software Bill of Materials Resources",
+    "resolution_url": "https://www.cisa.gov/sbom",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-014",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Governance, Compliance and Security Policy",
+    "difficulty": "advanced",
+    "question_type": "assurance",
+    "prompt": "What distinguishes control design effectiveness from operating effectiveness?",
+    "preferred_answer": "Design effectiveness asks whether the control, if implemented as intended, can address the stated risk. Operating effectiveness asks whether it actually ran consistently, with the right scope and evidence, during the assessed period. A quarterly access review may be well designed but ineffective if owners rubber-stamp results or key systems are excluded.",
+    "evaluation_points": [
+      "Design addresses risk",
+      "Operation over time",
+      "Scope and evidence",
+      "Practical example."
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-015",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Governance, Compliance and Security Policy",
+    "difficulty": "advanced",
+    "question_type": "leadership",
+    "prompt": "How should Secure by Design change the relationship between product teams and customers?",
+    "preferred_answer": "The manufacturer should own reasonable customer security outcomes by reducing dangerous defaults, eliminating common defect classes, enabling secure configuration and providing transparent support and vulnerability handling. Security should be a product requirement and leadership responsibility, not an optional add-on or a burden transferred to users through complex hardening steps.",
+    "evaluation_points": [
+      "Manufacturer ownership",
+      "Secure defaults and defect prevention",
+      "Leadership and product requirements",
+      "Avoids shifting burden to users."
+    ],
+    "resolution_title": "CISA Secure by Design",
+    "resolution_url": "https://www.cisa.gov/securebydesign",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-016",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Governance, Compliance and Security Policy",
+    "difficulty": "scenario",
+    "question_type": "governance",
+    "prompt": "An executive wants to publish a compliance badge based on a narrow internal review. How would you respond?",
+    "preferred_answer": "Clarify the exact framework, scope, period, assessor independence and evidence. Describe what was and was not tested, and avoid language that implies certification or whole-company security when only selected controls were reviewed. Recommend a precise assurance statement, remediation disclosure where appropriate and legal review. Trust is improved by bounded claims, not stronger marketing wording.",
+    "evaluation_points": [
+      "Scope and assessor clarity",
+      "No misleading certification claim",
+      "Precise assurance language",
+      "Evidence and remediation transparency."
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/cyberframework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-017",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Modeling and Secure Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are the four core questions of a practical threat-modeling exercise?",
+    "preferred_answer": "Ask what the team is building, what can go wrong, what will be done about it, and whether the work was done well. The model should capture scope, data flows, trust boundaries, assumptions, threats, decisions and validation. Its purpose is to improve design and testing, not to produce a diagram that is never revisited.",
+    "evaluation_points": [
+      "All four questions",
+      "Scope and trust boundaries",
+      "Mitigation and validation",
+      "Living decision tool."
+    ],
+    "resolution_title": "OWASP Threat Modeling Project",
+    "resolution_url": "https://owasp.org/www-project-threat-modeling/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-018",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Modeling and Secure Architecture",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "Why are data-flow diagrams and trust boundaries useful in security reviews?",
+    "preferred_answer": "They make components, data stores, external entities, flows and privilege transitions visible. Trust boundaries show where identity, validation, encryption or authorisation assumptions change. This helps reviewers locate attack surfaces and control responsibilities. The diagram must match the deployed system; a simplified or outdated drawing can create false confidence.",
+    "evaluation_points": [
+      "Components and flows",
+      "Trust transition",
+      "Attack-surface use",
+      "Accuracy and currency."
+    ],
+    "resolution_title": "OWASP Threat Modeling Project",
+    "resolution_url": "https://owasp.org/www-project-threat-modeling/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-019",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Modeling and Secure Architecture",
+    "difficulty": "intermediate",
+    "question_type": "method",
+    "prompt": "How would you use STRIDE without turning it into a checklist exercise?",
+    "preferred_answer": "Use STRIDE as prompts for spoofing, tampering, repudiation, information disclosure, denial of service and elevation of privilege against specific elements and flows. Tie each threat to an attacker, precondition, impact and testable mitigation. Add domain-specific abuse cases and business logic risks that STRIDE may not reveal, then prioritise by plausible exposure and consequence.",
+    "evaluation_points": [
+      "Threats tied to system elements",
+      "Attack scenario and preconditions",
+      "Testable mitigation",
+      "Acknowledges method limitations."
+    ],
+    "resolution_title": "OWASP Threat Modeling Project",
+    "resolution_url": "https://owasp.org/www-project-threat-modeling/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-020",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Modeling and Secure Architecture",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What is the difference between a misuse case and an abuse case?",
+    "preferred_answer": "Both describe harmful or unintended behaviour from an attacker or malicious user perspective, but terminology varies. A strong answer focuses on value: describe the actor, goal, entry point, sequence, affected asset and control expectation. Business abuse such as coupon farming or unauthorised workflow manipulation often requires this perspective because it may not look like a conventional technical vulnerability.",
+    "evaluation_points": [
+      "Attacker or malicious-user viewpoint",
+      "Structured scenario",
+      "Business-logic coverage",
+      "Avoids rigid terminology claims."
+    ],
+    "resolution_title": "MITRE CAPEC",
+    "resolution_url": "https://capec.mitre.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-021",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Modeling and Secure Architecture",
+    "difficulty": "intermediate",
+    "question_type": "lifecycle",
+    "prompt": "When should a threat model be updated?",
+    "preferred_answer": "Update it when trust boundaries, data sensitivity, authentication, external dependencies, deployment topology, privilege, major features or threat assumptions change; after important incidents; and at defined review intervals. Automate detection of architecture changes where possible, but retain human judgement. Version the model and track whether mitigations became requirements, tests or accepted risks.",
+    "evaluation_points": [
+      "Change triggers",
+      "Incident and periodic review",
+      "Versioning",
+      "Traceability to controls and tests."
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework 1.1",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-022",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Modeling and Secure Architecture",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How do you decide whether a compensating control is genuinely equivalent?",
+    "preferred_answer": "Start with the original control objective and threat scenario, not the implementation wording. Compare preventive, detective and recovery coverage, bypass conditions, dependencies, latency and evidence. The alternative should reduce residual risk to an accepted level and be testable. A compensating control that only adds monitoring may not replace a required preventive boundary for high-impact actions.",
+    "evaluation_points": [
+      "Control objective first",
+      "Coverage and bypass analysis",
+      "Residual risk",
+      "Testability and limitations."
+    ],
+    "resolution_title": "NIST SP 800-37 Rev. 2 - Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-023",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Modeling and Secure Architecture",
+    "difficulty": "advanced",
+    "question_type": "scale",
+    "prompt": "How can architecture security reviews scale without becoming a central bottleneck?",
+    "preferred_answer": "Publish paved-road patterns, reusable threat libraries, reference architectures and automated checks; train security champions; risk-tier reviews; and reserve specialist depth for novel or high-impact designs. Require lightweight threat models and decision records in normal delivery. Measure escaped design defects and review latency, then improve patterns rather than adding blanket approvals.",
+    "evaluation_points": [
+      "Reusable patterns and automation",
+      "Risk-tiering",
+      "Distributed capability",
+      "Feedback metrics rather than blanket gates."
+    ],
+    "resolution_title": "OWASP Software Assurance Maturity Model",
+    "resolution_url": "https://owaspsamm.org/model/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-024",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Modeling and Secure Architecture",
+    "difficulty": "scenario",
+    "question_type": "threat-modeling",
+    "prompt": "A payment API accepts callbacks from external providers and triggers account credits. Build the first threat-modeling sequence.",
+    "preferred_answer": "Map providers, callback endpoints, identities, signatures, replay windows, data stores and credit workflow. Define trust boundaries and assets, then examine forged callbacks, replay, tampering, provider compromise, duplicate processing, resource exhaustion and unsafe downstream data. Prioritise controls such as verified signatures, idempotency, allow-listed destinations, strict schemas, audit trails and reconciliation tests.",
+    "evaluation_points": [
+      "System and trust mapping",
+      "Relevant abuse scenarios",
+      "Idempotency and authenticity",
+      "Testable mitigations and reconciliation."
+    ],
+    "resolution_title": "OWASP Threat Modeling Project",
+    "resolution_url": "https://owasp.org/www-project-threat-modeling/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-025",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Network Security and Zero Trust",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate a network firewall, web application firewall and IDS/IPS.",
+    "preferred_answer": "A network firewall controls traffic mainly by network and transport attributes. A WAF applies application-aware rules to HTTP traffic and can block common web attacks, but cannot repair insecure business logic. An IDS detects suspicious activity and alerts; an IPS can actively block. Placement, encrypted visibility, tuning and bypass paths determine effectiveness.",
+    "evaluation_points": [
+      "Correct control purposes",
+      "WAF limitations",
+      "IDS versus IPS",
+      "Placement and encrypted-traffic considerations."
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-026",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Network Security and Zero Trust",
+    "difficulty": "foundation",
+    "question_type": "design",
+    "prompt": "What is network segmentation, and what security outcome should it achieve?",
+    "preferred_answer": "Segmentation creates controlled boundaries between assets or workloads so that compromise does not provide unrestricted reach. Rules should follow business flows and identity, limit east-west and north-south paths, and produce logs. The outcome is reduced attack surface and blast radius, not merely more VLANs. Segmentation must be tested for unintended routes and management-plane bypasses.",
+    "evaluation_points": [
+      "Controlled boundaries",
+      "Business-flow allow-listing",
+      "Blast-radius outcome",
+      "Validation of bypasses."
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://www.nist.gov/publications/zero-trust-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-027",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Network Security and Zero Trust",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "What does zero trust mean beyond 'never trust, always verify'?",
+    "preferred_answer": "Zero trust removes implicit trust based on network location. Access decisions use user, workload and device identity, resource sensitivity, policy and context; grant the minimum needed; and continuously evaluate signals. It protects resources rather than assuming an internal network is safe. It is an architecture and operating model, not a single product or mandatory elimination of all networks.",
+    "evaluation_points": [
+      "No location-based implicit trust",
+      "Identity, device and context",
+      "Least privilege and continuous evaluation",
+      "Not a product slogan."
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://www.nist.gov/publications/zero-trust-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-028",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Network Security and Zero Trust",
+    "difficulty": "intermediate",
+    "question_type": "tls",
+    "prompt": "What are the security trade-offs of terminating TLS at a load balancer?",
+    "preferred_answer": "Termination centralises certificate management and enables routing, inspection and WAF controls, but creates a plaintext or re-encrypted segment behind the balancer. Protect that path with network controls or end-to-end TLS, validate upstream identity, restrict administrative access and log configuration changes. The decision depends on threat model, performance and regulatory needs.",
+    "evaluation_points": [
+      "Operational benefits",
+      "Backend exposure",
+      "Re-encryption and identity validation",
+      "Threat-model based decision."
+    ],
+    "resolution_title": "NIST SP 800-52 Rev. 2 - TLS Guidelines",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/52/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-029",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Network Security and Zero Trust",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "Why is egress filtering important in modern environments?",
+    "preferred_answer": "Egress controls reduce command-and-control, data exfiltration, arbitrary package downloads and access to cloud metadata or unapproved services. Build allow rules from actual service dependencies, identity and destination categories, and provide observability for denied connections. Overly broad egress makes segmentation one-directional; overly rigid rules without ownership can break delivery and encourage bypasses.",
+    "evaluation_points": [
+      "Exfiltration and C2 reduction",
+      "Metadata and dependency risk",
+      "Allow-list with observability",
+      "Operational ownership."
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-030",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Network Security and Zero Trust",
+    "difficulty": "advanced",
+    "question_type": "dns",
+    "prompt": "How can DNS become both an attack path and a detection source?",
+    "preferred_answer": "Attackers can use DNS for spoofing, tunnelling, fast-flux infrastructure, malicious domains or control-plane compromise. Defenders should protect authoritative and recursive services, use secure administration, validate changes, limit recursion and monitor query patterns, newly seen domains, high entropy and unusual record types. DNS evidence is useful but must be correlated to hosts, identities and application behaviour.",
+    "evaluation_points": [
+      "Multiple attack uses",
+      "Authoritative and resolver controls",
+      "Behavioural detection",
+      "Correlation limitations."
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-031",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Network Security and Zero Trust",
+    "difficulty": "advanced",
+    "question_type": "cloud-native",
+    "prompt": "How should service-to-service trust be established in a multi-cloud application?",
+    "preferred_answer": "Use strong workload identities with short-lived credentials, mutual authentication where appropriate, policy based on service identity and requested resource, encrypted transport, least-privilege authorisation and auditable issuance. Avoid static shared secrets or IP-only trust. Account for identity federation, certificate rotation, replay, service mesh failure modes and a safe path when identity infrastructure is unavailable.",
+    "evaluation_points": [
+      "Workload identity",
+      "Short-lived credentials and mTLS",
+      "Identity-based authorisation",
+      "Rotation and dependency failure modes."
+    ],
+    "resolution_title": "NIST SP 800-207A - Zero Trust for Cloud-Native Multi-Cloud Applications",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-032",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Network Security and Zero Trust",
+    "difficulty": "scenario",
+    "question_type": "incident-diagnosis",
+    "prompt": "An attacker may have moved laterally from a developer workstation. What network evidence and containment order would you use?",
+    "preferred_answer": "Preserve endpoint and identity evidence, identify active sessions and privileged paths, then contain the compromised account and host without destroying volatile evidence. Review authentication, DNS, proxy, VPN, firewall, east-west flow and remote-management logs. Restrict suspicious routes and credentials, hunt for the same indicators elsewhere, and validate that containment does not isolate critical evidence or safety systems.",
+    "evaluation_points": [
+      "Evidence preservation",
+      "Identity and host containment",
+      "Relevant network telemetry",
+      "Enterprise-wide hunt and containment validation."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-033",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Identity, Access Management and Privileged Access",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate identification, authentication and authorisation.",
+    "preferred_answer": "Identification is the claimed identity, authentication establishes confidence that the claimant controls an approved authenticator, and authorisation decides what the authenticated subject may do. Logging and accountability follow those decisions. A username alone is identification, not authentication, and successful authentication should never imply unrestricted access.",
+    "evaluation_points": [
+      "Three distinct stages",
+      "Authenticator concept",
+      "Authorisation after authentication",
+      "No implied broad access."
+    ],
+    "resolution_title": "NIST SP 800-63B - Authentication and Lifecycle Management",
+    "resolution_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-034",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Identity, Access Management and Privileged Access",
+    "difficulty": "foundation",
+    "question_type": "access-control",
+    "prompt": "Compare RBAC and ABAC.",
+    "preferred_answer": "RBAC grants permissions through roles that represent job functions, which is understandable and auditable but can create role explosion. ABAC evaluates attributes of subject, resource, action and context, enabling finer and dynamic decisions but requiring reliable attributes and explainable policy. Many systems combine stable roles with contextual conditions rather than choosing only one model.",
+    "evaluation_points": [
+      "Role model",
+      "Attribute and context model",
+      "Trade-offs",
+      "Hybrid approach."
+    ],
+    "resolution_title": "OWASP Authorization Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-035",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Identity, Access Management and Privileged Access",
+    "difficulty": "intermediate",
+    "question_type": "authentication",
+    "prompt": "What makes an MFA method phishing-resistant?",
+    "preferred_answer": "A phishing-resistant method binds authentication to the legitimate verifier or origin and uses cryptographic proof that a proxy site cannot replay. FIDO2/WebAuthn security keys and platform authenticators can provide this property. SMS or one-time codes improve security over passwords but can still be phished, redirected or socially engineered.",
+    "evaluation_points": [
+      "Verifier or origin binding",
+      "Cryptographic proof",
+      "FIDO/WebAuthn example",
+      "OTP limitations."
+    ],
+    "resolution_title": "NIST SP 800-63B - Authentication and Lifecycle Management",
+    "resolution_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-036",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Identity, Access Management and Privileged Access",
+    "difficulty": "intermediate",
+    "question_type": "privileged-access",
+    "prompt": "How do just-in-time and just-enough administration reduce privileged risk?",
+    "preferred_answer": "Just-in-time access activates privilege only for an approved period, while just-enough access limits actions to the required scope. Combine them with strong authentication, approval or policy, session logging, separation of duties and rapid revocation. They reduce standing privilege but do not replace secure endpoints, credential protection or emergency-access procedures.",
+    "evaluation_points": [
+      "Time limit",
+      "Scope limit",
+      "Approval, logging and revocation",
+      "Recognises supporting controls."
+    ],
+    "resolution_title": "Microsoft Entra Privileged Identity Management",
+    "resolution_url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-037",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Identity, Access Management and Privileged Access",
+    "difficulty": "intermediate",
+    "question_type": "federation",
+    "prompt": "What security checks matter when validating an OIDC token?",
+    "preferred_answer": "Validate the signature against trusted keys; issuer, audience, expiry and not-before values; authorised client and scopes; nonce or state where applicable; and token type. Do not accept algorithms or keys chosen by untrusted input. Protect redirect URIs and key refresh logic, and distinguish ID tokens from access tokens.",
+    "evaluation_points": [
+      "Signature and trusted issuer",
+      "Audience and time claims",
+      "Nonce/state and redirect controls",
+      "ID versus access token."
+    ],
+    "resolution_title": "OWASP Authentication Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-038",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Identity, Access Management and Privileged Access",
+    "difficulty": "advanced",
+    "question_type": "workload-identity",
+    "prompt": "Why are static service-account keys especially risky in cloud and CI/CD environments?",
+    "preferred_answer": "They are long-lived, copyable and often over-privileged, with weak linkage to a particular workload or run. They can leak through repositories, logs, images or developer machines and remain usable after the context changes. Prefer workload federation or managed identity that issues short-lived credentials with claims tied to repository, branch, environment, service or runtime.",
+    "evaluation_points": [
+      "Long-lived and copyable risk",
+      "Common leakage paths",
+      "Weak workload binding",
+      "Short-lived federation alternative."
+    ],
+    "resolution_title": "GitHub Actions - OpenID Connect for Cloud Providers",
+    "resolution_url": "https://docs.github.com/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-cloud-providers",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-039",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Identity, Access Management and Privileged Access",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "What should a privileged-access review prove?",
+    "preferred_answer": "It should prove that accounts are uniquely attributable, privileges match current responsibilities, toxic combinations are identified, service and emergency accounts have owners, inactive access is removed, and exceptions are justified. Reviewers need understandable entitlement context and usage evidence. Completion percentage alone is weak if owners approve everything without investigation.",
+    "evaluation_points": [
+      "Attribution and current need",
+      "Segregation of duties",
+      "Service and break-glass ownership",
+      "Quality of review evidence."
+    ],
+    "resolution_title": "AWS IAM Security Best Practices",
+    "resolution_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-040",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Identity, Access Management and Privileged Access",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A former employee's administrator account authenticated successfully after termination. What do you do first?",
+    "preferred_answer": "Treat it as an incident: disable the account and related sessions or tokens, preserve identity-provider and target-system logs, confirm the termination workflow and time line, identify actions performed, and check for other linked identities or keys. Rotate affected credentials where necessary, contain modified systems and repair the offboarding and access-review controls that allowed persistence.",
+    "evaluation_points": [
+      "Immediate containment",
+      "Session/token revocation",
+      "Evidence and impact review",
+      "Root-cause control repair."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-041",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Endpoint and Operating System Security",
+    "difficulty": "foundation",
+    "question_type": "hardening",
+    "prompt": "What is a secure configuration baseline, and why should it be version-controlled?",
+    "preferred_answer": "A baseline is an approved set of security-relevant settings for a defined platform and use case. Version control records intent, review and change history; enables automated testing; and supports rollback and drift comparison. A generic benchmark is a starting point, not a substitute for system-specific compatibility, threat and operational decisions.",
+    "evaluation_points": [
+      "Approved settings",
+      "Version and review history",
+      "Automation and drift",
+      "Benchmark tailoring."
+    ],
+    "resolution_title": "NIST SP 800-128 - Security-Focused Configuration Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/128/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-042",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Endpoint and Operating System Security",
+    "difficulty": "foundation",
+    "question_type": "endpoint-detection",
+    "prompt": "How does EDR differ from traditional antivirus?",
+    "preferred_answer": "Traditional antivirus primarily identifies known or suspicious malicious files, while EDR collects richer endpoint activity and supports behavioural detection, investigation, hunting and response actions. Modern products overlap, so architecture matters more than labels. EDR still depends on sensor health, tuning, retention and analyst response; it does not make endpoint compromise impossible.",
+    "evaluation_points": [
+      "File detection versus behavioural telemetry",
+      "Investigation and response",
+      "Product overlap",
+      "Operational dependencies."
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-043",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Endpoint and Operating System Security",
+    "difficulty": "intermediate",
+    "question_type": "hardening",
+    "prompt": "Why is removing unused software and services a security control?",
+    "preferred_answer": "Every installed package, listening service, driver and management interface adds code, privilege, configuration and patch obligations. Removing unnecessary components reduces attack surface, vulnerability backlog and lateral-movement options. The process needs dependency testing and asset ownership so teams do not disable required monitoring, backup or recovery functions.",
+    "evaluation_points": [
+      "Attack-surface reduction",
+      "Patch and privilege reduction",
+      "Dependency testing",
+      "Ownership and safety."
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-044",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Endpoint and Operating System Security",
+    "difficulty": "intermediate",
+    "question_type": "privilege",
+    "prompt": "What controls reduce local privilege-escalation risk?",
+    "preferred_answer": "Keep users non-administrative by default; patch operating systems, drivers and privileged applications; harden service permissions and scheduled tasks; protect credential stores; control elevation through approved tools; enable exploit mitigations and application control; and monitor unusual token, sudo, service or kernel activity. Limit high-value credentials from logging into lower-trust endpoints.",
+    "evaluation_points": [
+      "No default admin",
+      "Patch and permission hygiene",
+      "Controlled elevation",
+      "Credential and telemetry controls."
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-045",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Endpoint and Operating System Security",
+    "difficulty": "intermediate",
+    "question_type": "application-control",
+    "prompt": "What is the difference between blocklisting and allowlisting applications?",
+    "preferred_answer": "Blocklisting denies known unwanted items but struggles with new names, signed malicious tools and living-off-the-land binaries. Allowlisting permits only approved executables, scripts, libraries or publishers and can sharply reduce attack surface, but requires inventory, testing and an exception process. Mature programmes often combine allowlisting with behavioural monitoring.",
+    "evaluation_points": [
+      "Known-bad limitation",
+      "Approved-only model",
+      "Operational requirements",
+      "Layered use."
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-046",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Endpoint and Operating System Security",
+    "difficulty": "advanced",
+    "question_type": "platform-security",
+    "prompt": "How do full-disk encryption and secure boot address different risks?",
+    "preferred_answer": "Full-disk encryption protects data at rest when storage is removed or the device is powered off, provided keys and recovery material are protected. Secure boot verifies trusted boot components and helps prevent unauthorised pre-OS code. Neither protects an already unlocked, compromised session; endpoint identity, patching and runtime monitoring remain necessary.",
+    "evaluation_points": [
+      "Data-at-rest protection",
+      "Boot-chain integrity",
+      "Key and recovery protection",
+      "Runtime limitations."
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-047",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Endpoint and Operating System Security",
+    "difficulty": "advanced",
+    "question_type": "telemetry",
+    "prompt": "Which endpoint logs are most useful for detecting persistence and credential theft?",
+    "preferred_answer": "Collect process creation with command line and parent, authentication and privilege changes, service and scheduled-task creation, registry or startup changes, script engine logs, security-control changes, remote access, module or driver loads and credential-store access where available. Centralise time-synchronised events and protect sensor health. Collection should be driven by detection hypotheses and privacy constraints.",
+    "evaluation_points": [
+      "Relevant event categories",
+      "Parent/command context",
+      "Centralisation and time sync",
+      "Hypothesis and privacy awareness."
+    ],
+    "resolution_title": "NIST SP 800-92 - Guide to Computer Security Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-048",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Endpoint and Operating System Security",
+    "difficulty": "scenario",
+    "question_type": "investigation",
+    "prompt": "A server shows repeated encoded PowerShell or shell commands from a service account. How would you investigate?",
+    "preferred_answer": "Preserve process, network, authentication and script logs; identify parent process, execution user, source host and decoded behaviour; verify whether the service account should run interactive commands; and inspect persistence, credentials and outbound connections. Contain the account or host proportionately, hunt for the pattern elsewhere, and avoid deleting evidence before scope and impact are understood.",
+    "evaluation_points": [
+      "Evidence preservation and decoding",
+      "Parent, identity and source",
+      "Containment proportionality",
+      "Enterprise hunt."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-049",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Vulnerability, Patch and Exposure Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate CVE, CWE, CVSS, EPSS and the CISA KEV Catalog.",
+    "preferred_answer": "CVE identifies a publicly disclosed vulnerability instance; CWE classifies the underlying weakness type; CVSS estimates technical severity; EPSS estimates the probability of exploitation in the near term; and KEV identifies vulnerabilities with evidence of exploitation in the wild. Prioritisation should combine these signals with asset exposure, business impact and compensating controls.",
+    "evaluation_points": [
+      "Correct five-way distinction",
+      "Severity versus exploitation likelihood",
+      "KEV evidence",
+      "Asset context."
+    ],
+    "resolution_title": "CISA Known Exploited Vulnerabilities Catalog",
+    "resolution_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-050",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Vulnerability, Patch and Exposure Management",
+    "difficulty": "foundation",
+    "question_type": "assessment",
+    "prompt": "How does a vulnerability scan differ from a penetration test?",
+    "preferred_answer": "A scan systematically checks many assets for known weaknesses or configurations, usually with automated signatures and broad coverage. A penetration test uses scoped human-led techniques to validate exploitability, attack chains and business impact. Neither proves absence of vulnerabilities, and both require authorisation, safe rules of engagement and remediation follow-up.",
+    "evaluation_points": [
+      "Automation and breadth",
+      "Human validation and chaining",
+      "Authorisation",
+      "No absence-of-risk claim."
+    ],
+    "resolution_title": "NIST SP 800-115 - Technical Guide to Security Testing and Assessment",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/115/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-051",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Vulnerability, Patch and Exposure Management",
+    "difficulty": "intermediate",
+    "question_type": "prioritisation",
+    "prompt": "How would you prioritise two critical CVSS findings when only one can be fixed today?",
+    "preferred_answer": "Compare known exploitation, internet exposure, privilege required, reachable attack path, affected data and service criticality, exploit maturity, existing controls, detection coverage and remediation risk. Prefer the finding that creates the highest credible business risk, not automatically the higher decimal score. Record the deferred decision, owner, compensating controls and deadline.",
+    "evaluation_points": [
+      "Exploitation and exposure",
+      "Business and attack-path context",
+      "Control and remediation risk",
+      "Documented deferment."
+    ],
+    "resolution_title": "CISA Known Exploited Vulnerabilities Catalog",
+    "resolution_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-052",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Vulnerability, Patch and Exposure Management",
+    "difficulty": "intermediate",
+    "question_type": "validation",
+    "prompt": "How should a team handle likely false-positive scanner findings?",
+    "preferred_answer": "Reproduce or inspect the evidence, confirm asset and software version, understand the scanner check and authentication quality, and consult vendor guidance. Marking a result false positive should require evidence, reviewer and expiry because conditions can change. Feed validated mistakes back into scanner configuration rather than suppressing an entire rule globally.",
+    "evaluation_points": [
+      "Evidence-based validation",
+      "Scanner context",
+      "Controlled suppression",
+      "Feedback into configuration."
+    ],
+    "resolution_title": "NIST SP 800-115 - Technical Guide to Security Testing and Assessment",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/115/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-053",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Vulnerability, Patch and Exposure Management",
+    "difficulty": "intermediate",
+    "question_type": "remediation",
+    "prompt": "What belongs in a risk-based patch management process?",
+    "preferred_answer": "Maintain authoritative asset and software inventories; receive trusted vulnerability information; assess exposure and criticality; test and deploy fixes; use emergency paths for active exploitation; verify completion; handle exceptions; and measure age and coverage by risk. Include firmware, appliances, images and dependencies, not only desktop operating systems.",
+    "evaluation_points": [
+      "Inventory and trusted input",
+      "Risk-based testing and deployment",
+      "Emergency and exception paths",
+      "Verification and broad asset scope."
+    ],
+    "resolution_title": "NIST SP 800-40 Rev. 4 - Enterprise Patch Management Planning",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-054",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Vulnerability, Patch and Exposure Management",
+    "difficulty": "advanced",
+    "question_type": "exposure",
+    "prompt": "Why does external attack-surface management need ownership and validation?",
+    "preferred_answer": "Internet discovery can reveal forgotten domains, cloud services, certificates and ports, but attribution may be wrong and duplicate assets common. Each exposure needs an accountable owner, business purpose, data classification and expected control state. Validate findings before escalation, then remove, restrict or monitor unintended assets and fix the provisioning process that created them.",
+    "evaluation_points": [
+      "Discovery limitations",
+      "Asset ownership and purpose",
+      "Validation",
+      "Systemic remediation."
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-055",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Vulnerability, Patch and Exposure Management",
+    "difficulty": "advanced",
+    "question_type": "measurement",
+    "prompt": "Which vulnerability-management metrics indicate risk reduction rather than activity?",
+    "preferred_answer": "Track exploitable exposure on critical services, KEV remediation within target, age of high-risk findings, recurrence by root-cause class, scan coverage of known assets, verified closure and exception age. Raw findings closed or scans run are activity metrics. Segment by business service and show whether exposure actually decreased without unacceptable outages.",
+    "evaluation_points": [
+      "Exposure-focused metrics",
+      "KEV and age",
+      "Coverage and verified closure",
+      "Avoids raw activity counts."
+    ],
+    "resolution_title": "NIST SP 800-40 Rev. 4 - Enterprise Patch Management Planning",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-056",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Vulnerability, Patch and Exposure Management",
+    "difficulty": "scenario",
+    "question_type": "remediation",
+    "prompt": "A critical internet-facing appliance is in KEV, but the vendor patch causes instability. What is your response?",
+    "preferred_answer": "Confirm affected versions and exploitation evidence, restrict or remove internet exposure, apply vendor mitigations, strengthen authentication and monitoring, preserve configuration, and test the patch or replacement in a representative environment. Establish an emergency owner and deadline. If risk remains unacceptable, isolate or retire the service rather than leaving a known exploited path exposed indefinitely.",
+    "evaluation_points": [
+      "Validate applicability",
+      "Immediate exposure reduction",
+      "Mitigation and monitoring",
+      "Time-bound patch, replacement or retirement."
+    ],
+    "resolution_title": "CISA Known Exploited Vulnerabilities Catalog",
+    "resolution_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-057",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Web Application Security",
+    "difficulty": "foundation",
+    "question_type": "injection",
+    "prompt": "What is the root cause of injection vulnerabilities, and what is the preferred defence?",
+    "preferred_answer": "Injection occurs when untrusted data is interpreted as instructions by a parser, query engine, shell or template. The preferred defence is to keep code and data structurally separate through parameterised APIs, safe framework functions and strict contextual handling. Validation and least privilege add protection, but escaping alone is easy to misuse across different interpreters.",
+    "evaluation_points": [
+      "Untrusted data becomes instructions",
+      "Parameterisation or safe APIs",
+      "Context matters",
+      "Validation and least privilege as layers."
+    ],
+    "resolution_title": "OWASP Top 10:2025",
+    "resolution_url": "https://owasp.org/www-project-top-ten/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-058",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Web Application Security",
+    "difficulty": "foundation",
+    "question_type": "browser-security",
+    "prompt": "Differentiate stored, reflected and DOM-based cross-site scripting.",
+    "preferred_answer": "Stored XSS persists attacker-controlled content and serves it to later users. Reflected XSS returns input in an immediate response. DOM-based XSS occurs when client-side code writes untrusted data into an unsafe browser sink. Defences include framework auto-escaping, context-specific output encoding, safe DOM APIs, validation and a restrictive Content Security Policy as defence in depth.",
+    "evaluation_points": [
+      "Three correct forms",
+      "Unsafe browser sink",
+      "Contextual encoding and safe APIs",
+      "CSP is layered, not primary."
+    ],
+    "resolution_title": "OWASP Cross Site Scripting Prevention Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-059",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Web Application Security",
+    "difficulty": "intermediate",
+    "question_type": "session-security",
+    "prompt": "When is CSRF possible, and how do SameSite cookies and anti-CSRF tokens help?",
+    "preferred_answer": "CSRF is possible when a browser automatically includes a victim's credentials on an attacker-triggered state-changing request. SameSite cookie settings reduce cross-site cookie sending, while unpredictable tokens bind the request to the legitimate session or page flow. Also use origin checks, safe HTTP method semantics and re-authentication for highly sensitive actions.",
+    "evaluation_points": [
+      "Automatic credential inclusion",
+      "SameSite role",
+      "Token binding",
+      "Origin and sensitive-action controls."
+    ],
+    "resolution_title": "OWASP Cross-Site Request Forgery Prevention Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-060",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Web Application Security",
+    "difficulty": "intermediate",
+    "question_type": "authentication",
+    "prompt": "What makes session management secure after login?",
+    "preferred_answer": "Generate high-entropy session identifiers, rotate them after authentication and privilege changes, store them in Secure, HttpOnly, appropriately scoped cookies, enforce idle and absolute timeouts, invalidate them on logout or risk events, and protect server-side session state. Avoid session IDs in URLs and detect suspicious reuse without exposing tokens in logs.",
+    "evaluation_points": [
+      "Entropy and rotation",
+      "Cookie attributes",
+      "Timeout and invalidation",
+      "No URL or log exposure."
+    ],
+    "resolution_title": "OWASP Session Management Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-061",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Web Application Security",
+    "difficulty": "intermediate",
+    "question_type": "server-side-requests",
+    "prompt": "Why is SSRF especially dangerous in cloud environments?",
+    "preferred_answer": "A vulnerable server can reach internal services, control planes or cloud metadata that are inaccessible to the attacker directly. Defend with destination allow-lists where feasible, strict URL parsing, DNS and redirect controls, egress restrictions, metadata protections and least-privilege workload identity. Blocking a few private IP ranges is not sufficient because of alternate encodings, redirects and DNS changes.",
+    "evaluation_points": [
+      "Server reachability and metadata risk",
+      "Allow-list and parsing",
+      "Egress and identity controls",
+      "Bypass awareness."
+    ],
+    "resolution_title": "OWASP SSRF Prevention Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-062",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Web Application Security",
+    "difficulty": "advanced",
+    "question_type": "input-handling",
+    "prompt": "How would you secure file upload functionality?",
+    "preferred_answer": "Require authentication and authorisation; allow expected types using content inspection rather than extension alone; generate server-side names; limit size, count and decompression; store outside executable web paths; scan or sandbox; and serve through a separate domain or safe content disposition. Treat image and document parsers as attack surface and log the upload lifecycle.",
+    "evaluation_points": [
+      "Authorisation and allow-listing",
+      "Content inspection and naming",
+      "Storage and execution isolation",
+      "Parser, archive and delivery risks."
+    ],
+    "resolution_title": "OWASP Web Security Testing Guide - Stable",
+    "resolution_url": "https://owasp.org/www-project-web-security-testing-guide/stable/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-063",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Web Application Security",
+    "difficulty": "advanced",
+    "question_type": "browser-controls",
+    "prompt": "What can Content Security Policy achieve, and what are its common deployment failures?",
+    "preferred_answer": "CSP constrains script, style, frame and connection sources and can reduce the impact of XSS. It fails when policies contain broad wildcards, unsafe-inline, unsafe-eval, untrusted JSONP or overly permissive domains. Deploy with nonces or hashes, test in report-only mode, monitor reports and keep output encoding and safe DOM practices as primary controls.",
+    "evaluation_points": [
+      "CSP purpose",
+      "Weak directive pitfalls",
+      "Nonce/hash and reporting",
+      "Defence-in-depth limitation."
+    ],
+    "resolution_title": "OWASP Cross Site Scripting Prevention Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-064",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Web Application Security",
+    "difficulty": "scenario",
+    "question_type": "investigation",
+    "prompt": "A web application account downloaded data belonging to hundreds of other customers. What would you examine?",
+    "preferred_answer": "Contain the account and vulnerable function while preserving logs. Reconstruct requests, object identifiers, authorisation decisions, session and token history, exports and downstream sharing. Determine whether the cause is broken object authorisation, excessive privileges or automation abuse; identify all affected tenants; notify incident owners; fix server-side checks; and test adjacent endpoints for the same defect class.",
+    "evaluation_points": [
+      "Containment and evidence",
+      "Object-level authorisation review",
+      "Scope across tenants and endpoints",
+      "Defect-class remediation."
+    ],
+    "resolution_title": "OWASP Application Security Verification Standard 5.0.0",
+    "resolution_url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-065",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "API and Microservices Security",
+    "difficulty": "foundation",
+    "question_type": "authorisation",
+    "prompt": "What is broken object-level authorisation, and why is it common in APIs?",
+    "preferred_answer": "BOLA occurs when an API accepts an object identifier but fails to verify that the authenticated caller is authorised for that specific object. APIs expose many predictable IDs and direct data operations, so changing an identifier can cross tenant or user boundaries. Enforce object-level checks on every request using server-side identity and ownership context.",
+    "evaluation_points": [
+      "Object-specific authorisation",
+      "Identifier manipulation",
+      "Server-side check on every request",
+      "Tenant boundary awareness."
+    ],
+    "resolution_title": "OWASP API Security Top 10 - 2023",
+    "resolution_url": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-066",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "API and Microservices Security",
+    "difficulty": "foundation",
+    "question_type": "authorisation",
+    "prompt": "Differentiate broken object-level and broken function-level authorisation.",
+    "preferred_answer": "Object-level failure exposes a specific record or resource the caller should not access. Function-level failure allows a role to invoke an operation or administrative endpoint it should not perform. Both require deny-by-default server-side policy, but testing must cover horizontal object access and vertical privilege boundaries across every method and route.",
+    "evaluation_points": [
+      "Horizontal object access",
+      "Vertical function access",
+      "Deny by default",
+      "Route and method coverage."
+    ],
+    "resolution_title": "OWASP API Security Top 10 - 2023",
+    "resolution_url": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-067",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "API and Microservices Security",
+    "difficulty": "intermediate",
+    "question_type": "token-security",
+    "prompt": "What should an API gateway validate, and what must remain inside the service?",
+    "preferred_answer": "A gateway can validate transport, token signature, issuer, audience, expiry, coarse scopes, rate limits and request shape. Services must still enforce resource and business authorisation, tenant isolation and context-specific validation because internal calls and alternate routes may bypass the gateway. Gateway policy should not become the single unreviewed source of trust.",
+    "evaluation_points": [
+      "Gateway-level checks",
+      "Service-level authorisation",
+      "Bypass and internal-call risk",
+      "Layered policy ownership."
+    ],
+    "resolution_title": "OWASP REST Security Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-068",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "API and Microservices Security",
+    "difficulty": "intermediate",
+    "question_type": "resilience",
+    "prompt": "How do rate limits differ from resource-consumption controls?",
+    "preferred_answer": "Rate limits cap requests over time, but resource controls also bound payload size, query complexity, pagination, concurrency, memory, CPU, downstream fan-out and costly business actions. Limits should be identity- and endpoint-aware, return clear errors and protect shared dependencies. An attacker can exhaust resources with a small number of expensive requests even below a simple request-per-second limit.",
+    "evaluation_points": [
+      "Request rate versus request cost",
+      "Multiple resource dimensions",
+      "Identity and endpoint context",
+      "Downstream protection."
+    ],
+    "resolution_title": "OWASP API Security Top 10 - 2023",
+    "resolution_url": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-069",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "API and Microservices Security",
+    "difficulty": "intermediate",
+    "question_type": "data-validation",
+    "prompt": "How do schema validation and explicit property allow-lists prevent mass assignment?",
+    "preferred_answer": "Schema validation checks expected types, formats and structure, while an allow-list controls which fields the caller may set in that operation. Binding an entire request body directly to an internal model can let attackers change privileged or server-managed properties. Use separate input models, reject unknown sensitive fields and perform business validation after structural checks.",
+    "evaluation_points": [
+      "Structure versus writable properties",
+      "Separate input model",
+      "Reject privileged fields",
+      "Business validation."
+    ],
+    "resolution_title": "OWASP API Security Top 10 - 2023",
+    "resolution_url": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-070",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "API and Microservices Security",
+    "difficulty": "advanced",
+    "question_type": "inventory",
+    "prompt": "Why is API inventory management a security control?",
+    "preferred_answer": "Unknown, deprecated, shadow and undocumented endpoints escape authentication updates, testing, monitoring and retirement. Maintain owners, versions, environments, data classification, exposure, dependencies and lifecycle state from design through runtime discovery. Block or decommission obsolete versions, and compare gateway, code, documentation and traffic evidence to find mismatches.",
+    "evaluation_points": [
+      "Shadow and deprecated risk",
+      "Owner and lifecycle metadata",
+      "Multiple evidence sources",
+      "Retirement enforcement."
+    ],
+    "resolution_title": "OWASP API Security Top 10 - 2023",
+    "resolution_url": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-071",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "API and Microservices Security",
+    "difficulty": "advanced",
+    "question_type": "dependency-trust",
+    "prompt": "How should a service safely consume data from a third-party API?",
+    "preferred_answer": "Authenticate the provider and validate TLS, define timeouts and response-size limits, validate returned schemas and business meaning, encode data before later use, isolate credentials, apply least privilege, and handle retries and failure safely. Treat third-party data as untrusted even when the connection is authenticated, and monitor provider changes or compromise indicators.",
+    "evaluation_points": [
+      "Provider and transport authentication",
+      "Schema and semantic validation",
+      "Resource and credential controls",
+      "Third-party data remains untrusted."
+    ],
+    "resolution_title": "OWASP API Security Top 10 - 2023",
+    "resolution_url": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-072",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "API and Microservices Security",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A user changes one numeric ID and receives another tenant's invoice. What is the remediation sequence?",
+    "preferred_answer": "Disable or restrict the affected endpoint if exploitation is ongoing, preserve requests and access logs, identify all objects and tenants exposed, and notify incident leadership. Fix server-side object authorisation using authenticated tenant and ownership context, not obscured IDs. Test list, read, update and delete paths, adjacent services and cached responses, then monitor for prior exploitation.",
+    "evaluation_points": [
+      "Contain and preserve evidence",
+      "Correct object authorisation",
+      "Full method and adjacent-endpoint testing",
+      "Historical scope and monitoring."
+    ],
+    "resolution_title": "OWASP API Security Top 10 - 2023",
+    "resolution_url": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-073",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secure Coding and Security-Focused Code Review",
+    "difficulty": "foundation",
+    "question_type": "input-handling",
+    "prompt": "Differentiate input validation, sanitisation and output encoding.",
+    "preferred_answer": "Validation checks whether input conforms to expected structure and meaning. Sanitisation transforms or removes unwanted content but can be lossy and context-dependent. Output encoding represents data safely for the destination interpreter such as HTML, JavaScript or a shell. These controls are not interchangeable; use safe parameterised APIs and context-specific handling.",
+    "evaluation_points": [
+      "Three clear definitions",
+      "Context dependence",
+      "No interchangeable-control claim",
+      "Safe APIs and encoding."
+    ],
+    "resolution_title": "OWASP Input Validation Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-074",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secure Coding and Security-Focused Code Review",
+    "difficulty": "foundation",
+    "question_type": "database-security",
+    "prompt": "Why are parameterised queries safer than escaping SQL strings?",
+    "preferred_answer": "Parameters send query structure separately from data, so attacker input is not parsed as SQL syntax. Escaping is database- and context-specific and is easy to apply incorrectly, especially with dynamic identifiers or multiple encodings. Use parameterised APIs, allow-list unavoidable dynamic identifiers and grant the database account only required privileges.",
+    "evaluation_points": [
+      "Code-data separation",
+      "Escaping limitations",
+      "Dynamic identifier handling",
+      "Least-privilege database account."
+    ],
+    "resolution_title": "OWASP Application Security Verification Standard 5.0.0",
+    "resolution_url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-075",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secure Coding and Security-Focused Code Review",
+    "difficulty": "intermediate",
+    "question_type": "memory-safety",
+    "prompt": "Why can memory-safe languages reduce risk without eliminating the need for secure design?",
+    "preferred_answer": "They prevent or constrain classes such as use-after-free, buffer overflow and invalid memory access, reducing exploitable implementation defects. They do not prevent broken authorisation, injection into external interpreters, business abuse, insecure cryptography or unsafe architecture. Native libraries, unsafe blocks and supply-chain dependencies can also reintroduce memory risk.",
+    "evaluation_points": [
+      "Defect classes reduced",
+      "Remaining logical and architectural risks",
+      "Unsafe/native boundaries",
+      "Balanced claim."
+    ],
+    "resolution_title": "MITRE 2025 CWE Top 25",
+    "resolution_url": "https://cwe.mitre.org/top25/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-076",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secure Coding and Security-Focused Code Review",
+    "difficulty": "intermediate",
+    "question_type": "error-handling",
+    "prompt": "What should an application return to users and record internally when an error occurs?",
+    "preferred_answer": "Return a generic, actionable response with an appropriate status and correlation identifier, but no stack traces, secrets, internal paths or sensitive object details. Internally record enough structured context to diagnose the event, including request identity, operation, result and exception category, while minimising sensitive data and preventing log injection.",
+    "evaluation_points": [
+      "Safe external response",
+      "Structured internal context",
+      "Correlation",
+      "No sensitive data or log injection."
+    ],
+    "resolution_title": "OWASP Logging Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-077",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secure Coding and Security-Focused Code Review",
+    "difficulty": "intermediate",
+    "question_type": "code-review",
+    "prompt": "What should a security-focused code review prioritise?",
+    "preferred_answer": "Start with trust boundaries, authentication and authorisation, sensitive data flows, dangerous interpreters, deserialisation, file and network access, cryptography, secrets, concurrency and security-control changes. Review the diff plus surrounding code and tests. Use automated findings to focus attention, but verify exploitability and search for the same defect pattern elsewhere.",
+    "evaluation_points": [
+      "Risk-based review areas",
+      "Diff plus context",
+      "Automation assists rather than replaces",
+      "Defect-class search."
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework 1.1",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-078",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secure Coding and Security-Focused Code Review",
+    "difficulty": "advanced",
+    "question_type": "analysis",
+    "prompt": "How does taint or data-flow analysis find vulnerabilities, and where can it fail?",
+    "preferred_answer": "It models data from untrusted sources through transformations to sensitive sinks and identifies paths missing a recognised sanitiser or guard. Results depend on framework models, interprocedural accuracy, aliasing, reflection and custom wrappers. Treat findings as evidence to validate, add models for organisation-specific APIs and combine with tests and review.",
+    "evaluation_points": [
+      "Sources, flows and sinks",
+      "Model dependence",
+      "False positive and false negative causes",
+      "Custom modelling and validation."
+    ],
+    "resolution_title": "GitHub CodeQL Documentation",
+    "resolution_url": "https://codeql.github.com/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-079",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secure Coding and Security-Focused Code Review",
+    "difficulty": "advanced",
+    "question_type": "product-security",
+    "prompt": "How can a team eliminate a recurring vulnerability class instead of fixing instances?",
+    "preferred_answer": "Perform root-cause analysis across incidents and findings, identify the unsafe pattern and organisational conditions, then change frameworks, APIs, defaults, templates, training, tests and automated rules so the insecure path becomes difficult or impossible. Measure recurrence and escaped defects. This is stronger than repeatedly adding local patches after each vulnerability report.",
+    "evaluation_points": [
+      "Root-cause and pattern analysis",
+      "Paved-road or framework change",
+      "Automated prevention and tests",
+      "Recurrence measurement."
+    ],
+    "resolution_title": "CISA Secure by Design",
+    "resolution_url": "https://www.cisa.gov/securebydesign",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-080",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secure Coding and Security-Focused Code Review",
+    "difficulty": "scenario",
+    "question_type": "code-review",
+    "prompt": "A pull request adds a command-execution feature using user-supplied arguments. What review questions do you ask?",
+    "preferred_answer": "Ask whether command execution is necessary, whether a library or structured API can replace it, who is authorised, how arguments are represented, and whether shell parsing occurs. Require strict allow-lists, no string concatenation, least-privilege execution, time and resource limits, logging and negative tests. Model injection, path manipulation and privilege boundaries before approval.",
+    "evaluation_points": [
+      "Challenge necessity",
+      "Avoid shell or concatenation",
+      "Authorisation and least privilege",
+      "Resource limits and adversarial tests."
+    ],
+    "resolution_title": "OWASP Application Security Verification Standard 5.0.0",
+    "resolution_url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-081",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cloud Security Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does the cloud shared-responsibility model mean in practice?",
+    "preferred_answer": "The provider secures defined layers of the cloud service, while the customer remains responsible for its identities, data, configuration, workloads and use of the service according to the service model. Responsibility changes across IaaS, PaaS and SaaS. A managed service reduces some operational work but does not remove customer accountability for access, data or secure configuration.",
+    "evaluation_points": [
+      "Provider and customer split",
+      "Service-model variation",
+      "Identity and data remain customer concerns",
+      "No blanket outsourcing claim."
+    ],
+    "resolution_title": "AWS Well-Architected - Security Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-082",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cloud Security Architecture",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "Why separate production, development and security functions into cloud accounts, subscriptions or projects?",
+    "preferred_answer": "Separate boundaries reduce blast radius, simplify policy and billing, limit accidental cross-environment access and allow independent logging and administration. Use an organisation hierarchy and central guardrails rather than isolated unmanaged accounts. Shared services and network connections still need explicit trust, ownership and least-privilege design.",
+    "evaluation_points": [
+      "Blast radius and policy",
+      "Environment separation",
+      "Central governance",
+      "Explicit shared-service trust."
+    ],
+    "resolution_title": "Google Cloud Security Foundations Guide",
+    "resolution_url": "https://cloud.google.com/architecture/security-foundations",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-083",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cloud Security Architecture",
+    "difficulty": "intermediate",
+    "question_type": "iam",
+    "prompt": "What are the main cloud IAM design principles?",
+    "preferred_answer": "Prefer federation and short-lived credentials, grant roles to groups or workload identities rather than individuals, minimise wildcard permissions, separate duties, use conditions, protect root or break-glass accounts, review effective access and log policy changes. Design for organisation-level guardrails and resource-level least privilege without creating unmanaged one-off roles.",
+    "evaluation_points": [
+      "Federation and short-lived credentials",
+      "Group/workload assignment",
+      "Least privilege and conditions",
+      "Review, logging and emergency access."
+    ],
+    "resolution_title": "AWS IAM Security Best Practices",
+    "resolution_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-084",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cloud Security Architecture",
+    "difficulty": "intermediate",
+    "question_type": "network-security",
+    "prompt": "When should private endpoints be used for managed cloud services?",
+    "preferred_answer": "Use them when workloads should reach managed services without traversing public endpoints, particularly for sensitive data or regulated environments. They reduce exposure but still require DNS, routing, identity, service policy and egress design. A private address does not authenticate the caller or guarantee correct authorisation, so combine network restriction with strong service identity.",
+    "evaluation_points": [
+      "Exposure reduction",
+      "DNS and routing considerations",
+      "Private is not authenticated",
+      "Layered identity policy."
+    ],
+    "resolution_title": "Microsoft Cloud Security Benchmark",
+    "resolution_url": "https://learn.microsoft.com/en-us/security/benchmark/azure/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-085",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cloud Security Architecture",
+    "difficulty": "intermediate",
+    "question_type": "data-security",
+    "prompt": "How would you prevent accidental public object-storage exposure?",
+    "preferred_answer": "Use organisation-level public-access blocks, deny policies, secure defaults in templates, least-privilege identities, automated configuration checks, event alerts and inventory of intended public content. Separate public assets from private data and test policy changes. Encryption does not solve unauthorised public read access because the service decrypts data for authorised requests.",
+    "evaluation_points": [
+      "Guardrails and secure defaults",
+      "Automation and alerts",
+      "Separation of public content",
+      "Encryption limitation."
+    ],
+    "resolution_title": "AWS Well-Architected - Security Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-086",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cloud Security Architecture",
+    "difficulty": "advanced",
+    "question_type": "observability",
+    "prompt": "Which cloud control-plane events are essential for security monitoring?",
+    "preferred_answer": "Capture authentication, role and policy changes, creation of access keys, logging changes, network and firewall changes, storage policy changes, key-management operations, resource creation and deletion, and use of high-risk APIs. Centralise logs in a protected account, ensure coverage across regions and services, detect gaps and correlate actions to human or workload identity.",
+    "evaluation_points": [
+      "Identity and policy changes",
+      "Network/data/key events",
+      "Central protected logging",
+      "Coverage and identity correlation."
+    ],
+    "resolution_title": "AWS CloudTrail User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-087",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cloud Security Architecture",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "What makes multi-cloud security harder than duplicating one provider's controls?",
+    "preferred_answer": "Providers use different identity, policy, logging, network and key-management models. Abstraction can hide provider-specific risk, while duplicated tools create gaps and inconsistent evidence. Establish common security outcomes and data classifications, map them to native controls, centralise selected telemetry, preserve provider-specific expertise and test failure and exit paths.",
+    "evaluation_points": [
+      "Different native models",
+      "Abstraction and duplication risks",
+      "Common outcomes with native implementation",
+      "Skills and resilience."
+    ],
+    "resolution_title": "NIST SP 800-207A - Zero Trust for Cloud-Native Multi-Cloud Applications",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-088",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cloud Security Architecture",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A public storage bucket contains customer exports and an access key is found in a repository. What is the response order?",
+    "preferred_answer": "Block public access and revoke or rotate the exposed key while preserving logs and repository history. Identify objects, access records, downloads, key permissions and other resources reachable by the identity. Notify incident and privacy owners, contain derived credentials, restore access through least-privilege roles, scan for similar secrets and public resources, and repair template and review controls.",
+    "evaluation_points": [
+      "Immediate exposure and credential containment",
+      "Cloud and repository evidence",
+      "Scope and notification",
+      "Systemic prevention."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-089",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Container and Image Security",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do container security risks differ from virtual-machine risks?",
+    "preferred_answer": "Containers share the host kernel and are usually created from reusable layered images, so a kernel, runtime, image or orchestration weakness can affect many workloads. They are ephemeral and automate quickly, which helps replacement but spreads bad configuration rapidly. Isolation is weaker than a full hypervisor boundary, so host, runtime and workload controls must be designed together.",
+    "evaluation_points": [
+      "Shared kernel",
+      "Image and orchestration reuse",
+      "Ephemeral automation",
+      "Isolation trade-off."
+    ],
+    "resolution_title": "NIST SP 800-190 - Application Container Security Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/190/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-090",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Container and Image Security",
+    "difficulty": "foundation",
+    "question_type": "build",
+    "prompt": "Why should production images use minimal bases and immutable digests?",
+    "preferred_answer": "Minimal images reduce packages, tools and vulnerability surface. A digest identifies exact image content, while a mutable tag can point to different content later. Pinning improves reproducibility but requires an update process so images do not remain stale. Validate base-image ownership, provenance and support lifecycle rather than choosing only by size.",
+    "evaluation_points": [
+      "Reduced surface",
+      "Digest versus tag",
+      "Update lifecycle",
+      "Provenance and support."
+    ],
+    "resolution_title": "Docker Build Best Practices",
+    "resolution_url": "https://docs.docker.com/build/building/best-practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-091",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Container and Image Security",
+    "difficulty": "intermediate",
+    "question_type": "runtime",
+    "prompt": "What controls support running a container with least privilege?",
+    "preferred_answer": "Run as a non-root user; prevent privilege escalation; drop unnecessary Linux capabilities; use read-only filesystems and controlled writable mounts; apply seccomp, AppArmor or SELinux; avoid privileged mode and host namespaces; limit resources and network access; and keep the runtime socket unavailable. Verify that the application still functions under those constraints.",
+    "evaluation_points": [
+      "Non-root and no escalation",
+      "Capabilities and kernel profiles",
+      "Filesystem, namespace and socket controls",
+      "Resource/network limits and testing."
+    ],
+    "resolution_title": "Docker Engine Security",
+    "resolution_url": "https://docs.docker.com/engine/security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-092",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Container and Image Security",
+    "difficulty": "intermediate",
+    "question_type": "scanning",
+    "prompt": "What can an image vulnerability scan prove, and what can it miss?",
+    "preferred_answer": "It can identify known vulnerable packages and sometimes secrets or misconfiguration in the analysed layers. It may miss zero-days, application logic flaws, dynamically downloaded components, unreachable-path context, runtime configuration and false package matches. Use accurate SBOMs, current feeds, risk context, runtime evidence and patch verification rather than treating a clean scan as assurance.",
+    "evaluation_points": [
+      "Known-component coverage",
+      "Zero-day and logic limitations",
+      "Dynamic/runtime gaps",
+      "SBOM and context."
+    ],
+    "resolution_title": "Docker Scout - Image Analysis",
+    "resolution_url": "https://docs.docker.com/scout/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-093",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Container and Image Security",
+    "difficulty": "intermediate",
+    "question_type": "registry-security",
+    "prompt": "How should a container registry be secured?",
+    "preferred_answer": "Use strong federated identity, least-privilege push and pull roles, protected repositories, immutable or controlled tags, malware and vulnerability scanning, signed provenance, retention and deletion policy, audit logs and network restrictions where appropriate. Separate build, promotion and production permissions, and prevent users from replacing a previously approved artefact silently.",
+    "evaluation_points": [
+      "Identity and permission separation",
+      "Immutability and promotion",
+      "Scanning and provenance",
+      "Audit and retention."
+    ],
+    "resolution_title": "Sigstore Cosign Verification",
+    "resolution_url": "https://docs.sigstore.dev/cosign/verifying/verify/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-094",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Container and Image Security",
+    "difficulty": "advanced",
+    "question_type": "runtime-detection",
+    "prompt": "Which runtime behaviours can indicate container compromise?",
+    "preferred_answer": "Unexpected shells, package installation, writes to normally immutable paths, privilege or namespace changes, access to service-account tokens or cloud metadata, unusual child processes, outbound connections, crypto-mining patterns and attempts to reach the runtime socket or host filesystem. Detection needs workload baselines and orchestrator context to avoid flagging normal ephemeral behaviour.",
+    "evaluation_points": [
+      "Relevant compromise behaviours",
+      "Credential and metadata access",
+      "Host/runtime escape indicators",
+      "Workload-aware baselining."
+    ],
+    "resolution_title": "MITRE ATT&CK Containers Matrix",
+    "resolution_url": "https://attack.mitre.org/matrices/enterprise/containers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-095",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Container and Image Security",
+    "difficulty": "advanced",
+    "question_type": "supply-chain",
+    "prompt": "How should an admission control verify a signed container image?",
+    "preferred_answer": "Verify the image digest, signature and certificate or key trust; enforce expected issuer and build identity; validate provenance claims such as repository and workflow; and fail closed for protected environments with an emergency process. A valid signature only proves who signed the artefact and that it was unchanged, not that the content is safe.",
+    "evaluation_points": [
+      "Digest and signature verification",
+      "Identity and provenance policy",
+      "Fail-closed with emergency path",
+      "Signature assurance limitation."
+    ],
+    "resolution_title": "Sigstore Cosign Verification",
+    "resolution_url": "https://docs.sigstore.dev/cosign/verifying/verify/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-096",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Container and Image Security",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A container is making connections to cryptocurrency mining pools. How would you contain and investigate it?",
+    "preferred_answer": "Isolate the workload or namespace, preserve pod, image, runtime, network and control-plane evidence, and identify the image digest, service account, node and deployment source. Revoke exposed credentials, inspect neighbouring workloads and node integrity, block malicious destinations, redeploy from trusted artefacts and determine whether the entry point was image, application, credential or cluster control.",
+    "evaluation_points": [
+      "Isolation and evidence",
+      "Image, identity and node scope",
+      "Credential and destination containment",
+      "Trusted rebuild and root cause."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-097",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Kubernetes Security",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "What security stages does a Kubernetes API request pass through?",
+    "preferred_answer": "The request is protected by transport security, then authenticated, authorised and evaluated by admission controls before the object is stored or acted on. Audit policy can record the decision and request. Strong authentication does not compensate for broad RBAC, and admission cannot protect changes that bypass the API server.",
+    "evaluation_points": [
+      "Transport, authentication, authorisation and admission",
+      "Audit role",
+      "RBAC independence",
+      "API-bypass awareness."
+    ],
+    "resolution_title": "Kubernetes - Controlling Access to the API",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/controlling-access/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-098",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Kubernetes Security",
+    "difficulty": "foundation",
+    "question_type": "rbac",
+    "prompt": "Why is permission to create Pods often more powerful than it appears?",
+    "preferred_answer": "A user who can create a Pod may mount service-account tokens, host paths or secrets, select privileged settings, access node resources or run code under identities with greater access. Kubernetes RBAC controls the object operation, not every security-sensitive field. Use restricted roles, Pod Security or admission policy, namespace boundaries and workload identity design.",
+    "evaluation_points": [
+      "Pod creation as code execution",
+      "Mount and identity abuse",
+      "RBAC field granularity limitation",
+      "Admission and namespace controls."
+    ],
+    "resolution_title": "Kubernetes RBAC Good Practices",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-099",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Kubernetes Security",
+    "difficulty": "intermediate",
+    "question_type": "workload-security",
+    "prompt": "Compare the privileged, baseline and restricted Pod Security Standards.",
+    "preferred_answer": "Privileged places no meaningful restrictions and is suitable only for trusted system workloads. Baseline blocks known privilege escalations while allowing common workloads. Restricted follows stronger hardening such as non-root operation, limited capabilities and seccomp. Apply policies by namespace in warn, audit and enforce modes, then handle justified exceptions explicitly.",
+    "evaluation_points": [
+      "Three levels",
+      "Restricted examples",
+      "Namespace and modes",
+      "Exception path."
+    ],
+    "resolution_title": "Kubernetes Pod Security Standards",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/pod-security-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-100",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Kubernetes Security",
+    "difficulty": "intermediate",
+    "question_type": "network-security",
+    "prompt": "What do Kubernetes NetworkPolicies control, and what must be verified first?",
+    "preferred_answer": "They define allowed ingress and egress for selected Pods at supported network layers, but only work when the CNI plugin enforces them. Start with default-deny policies and add required flows. Verify DNS, control-plane, monitoring and dependency traffic, and remember that policy does not replace application authentication or node-level network security.",
+    "evaluation_points": [
+      "Ingress/egress allow rules",
+      "CNI enforcement prerequisite",
+      "Default deny and required flows",
+      "Application identity limitation."
+    ],
+    "resolution_title": "Kubernetes Network Policies",
+    "resolution_url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-101",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Kubernetes Security",
+    "difficulty": "intermediate",
+    "question_type": "secrets",
+    "prompt": "Why are Kubernetes Secrets not automatically secure?",
+    "preferred_answer": "Secret values are encoded, not inherently encrypted, and may be visible through etcd, RBAC, pod specs, environment variables, logs or backups. Enable encryption at rest, minimise access, use short-lived external secret delivery where suitable, disable unnecessary token mounting, protect backups and rotate material. A Secret object is a handling mechanism, not a complete secrets system.",
+    "evaluation_points": [
+      "Base64 is not encryption",
+      "RBAC and storage paths",
+      "External delivery and rotation",
+      "Backup and token controls."
+    ],
+    "resolution_title": "Kubernetes Secrets Good Practices",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/secrets-good-practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-102",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Kubernetes Security",
+    "difficulty": "advanced",
+    "question_type": "audit",
+    "prompt": "What should a Kubernetes audit policy record for security without overwhelming storage?",
+    "preferred_answer": "Capture authentication and authorisation decisions, changes to RBAC, workloads, admission, secrets metadata, service accounts and cluster configuration, with higher detail for sensitive actions and lower detail for noisy reads. Exclude secret bodies, protect logs from cluster administrators where possible, centralise them, monitor gaps and tune detections using user, verb, resource and source context.",
+    "evaluation_points": [
+      "Sensitive event coverage",
+      "Tiered audit levels",
+      "No secret bodies",
+      "Protected centralisation and context."
+    ],
+    "resolution_title": "Kubernetes Auditing",
+    "resolution_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-103",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Kubernetes Security",
+    "difficulty": "advanced",
+    "question_type": "control-plane",
+    "prompt": "Which Kubernetes components require the strongest isolation and why?",
+    "preferred_answer": "The API server, etcd, controller manager, scheduler, certificate authorities and node kubelets control cluster state, identity and workload execution. Restrict network and administrative access, use mutual TLS, protect etcd and backups, rotate credentials, harden nodes and monitor configuration changes. Write access to etcd or control-plane credentials can effectively grant cluster-wide control.",
+    "evaluation_points": [
+      "Critical components identified",
+      "Etcd sensitivity",
+      "Network, identity and credential controls",
+      "Change monitoring."
+    ],
+    "resolution_title": "Kubernetes - Securing a Cluster",
+    "resolution_url": "https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-104",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Kubernetes Security",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A namespace service account has cluster-admin and its token may be exposed. What is your response?",
+    "preferred_answer": "Revoke or rotate the token and isolate affected workloads, preserve audit and pod evidence, identify all API actions by the identity, and determine how the binding was created. Remove cluster-admin, replace it with namespaced least privilege, inspect secrets, workloads, webhooks and nodes for tampering, and hunt for other over-privileged service accounts and long-lived tokens.",
+    "evaluation_points": [
+      "Credential containment",
+      "Audit-based scope",
+      "Binding and cluster tampering review",
+      "Least-privilege redesign and broader hunt."
+    ],
+    "resolution_title": "Kubernetes RBAC Good Practices",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-105",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Infrastructure as Code and Policy as Code",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What security advantages and risks does infrastructure as code introduce?",
+    "preferred_answer": "IaC makes infrastructure reviewable, versioned, reproducible and testable, reducing undocumented manual change. It also lets one mistake or compromised pipeline spread rapidly, can expose secrets or state, and may create false confidence when deployed resources drift. Protect repositories, modules, state, credentials, plans and apply permissions as part of the security boundary.",
+    "evaluation_points": [
+      "Review and repeatability benefits",
+      "Rapid propagation risk",
+      "State and credential sensitivity",
+      "Drift and pipeline boundary."
+    ],
+    "resolution_title": "NIST SP 800-128 - Security-Focused Configuration Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/128/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-106",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Infrastructure as Code and Policy as Code",
+    "difficulty": "foundation",
+    "question_type": "testing",
+    "prompt": "What should an IaC security scan check before deployment?",
+    "preferred_answer": "Check public exposure, overly broad identity permissions, unencrypted storage, missing logging, unsafe network rules, insecure defaults, weak backup or resilience settings, unpinned modules and policy violations. Parse the planned resource graph where possible rather than only text. A scan cannot prove runtime identity, external changes or business-appropriate configuration.",
+    "evaluation_points": [
+      "Key misconfiguration classes",
+      "Plan or graph awareness",
+      "Module and policy checks",
+      "Runtime and business limitations."
+    ],
+    "resolution_title": "NIST SP 800-128 - Security-Focused Configuration Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/128/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-107",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Infrastructure as Code and Policy as Code",
+    "difficulty": "intermediate",
+    "question_type": "policy",
+    "prompt": "What is policy as code, and where should it be enforced?",
+    "preferred_answer": "Policy as code expresses machine-evaluable rules under version control with tests, review and change history. Enforce early in developer tooling and CI for fast feedback, at plan or admission time for authoritative control, and continuously for drift. Policies need clear ownership, severity, exceptions and evidence; an unreadable rule set can become an unmaintainable gate.",
+    "evaluation_points": [
+      "Machine-evaluable versioned policy",
+      "Multiple enforcement points",
+      "Testing and ownership",
+      "Exception and maintainability."
+    ],
+    "resolution_title": "Open Policy Agent Documentation",
+    "resolution_url": "https://www.openpolicyagent.org/docs/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-108",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Infrastructure as Code and Policy as Code",
+    "difficulty": "intermediate",
+    "question_type": "state-security",
+    "prompt": "Why is Terraform state security-critical?",
+    "preferred_answer": "State maps configuration to real resources and may contain identifiers, attributes and sensitive values. Anyone who can read it may learn secrets or architecture; anyone who can modify or replace it can influence future changes. Use protected remote storage, encryption, least privilege, locking, backups, versioning and separate access from ordinary code review.",
+    "evaluation_points": [
+      "Mapping and sensitive content",
+      "Read and write impact",
+      "Remote protected storage",
+      "Locking, backup and access separation."
+    ],
+    "resolution_title": "HashiCorp Terraform - Sensitive Data in State",
+    "resolution_url": "https://developer.hashicorp.com/terraform/language/state/sensitive-data",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-109",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Infrastructure as Code and Policy as Code",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "How should infrastructure drift be detected and handled?",
+    "preferred_answer": "Compare deployed resources with approved definitions through scheduled plans, cloud configuration tools and event monitoring. Classify expected provider-managed differences, emergency changes and unauthorised changes. Either import and review a justified change or restore the approved state; do not blindly overwrite production. Investigate the identity and process that created unplanned drift.",
+    "evaluation_points": [
+      "Multiple detection methods",
+      "Expected versus unauthorised drift",
+      "Review before reconcile",
+      "Identity and process investigation."
+    ],
+    "resolution_title": "HashiCorp Terraform State",
+    "resolution_url": "https://developer.hashicorp.com/terraform/language/state",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-110",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Infrastructure as Code and Policy as Code",
+    "difficulty": "advanced",
+    "question_type": "supply-chain",
+    "prompt": "How would you secure reusable IaC modules?",
+    "preferred_answer": "Use trusted registries or repositories, immutable versions or commit digests, code review, automated tests, documented inputs and outputs, least-privilege defaults, provenance and ownership. Scan transitive modules and providers, control upgrade cadence and deprecate unsafe versions. A widely reused module should receive stronger assurance because its blast radius is larger.",
+    "evaluation_points": [
+      "Trusted source and immutable version",
+      "Tests and safe defaults",
+      "Transitive dependency review",
+      "Blast-radius based assurance."
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework 1.1",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-111",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Infrastructure as Code and Policy as Code",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "What makes a policy-as-code exception safe?",
+    "preferred_answer": "The exception should identify the exact rule and resource, business reason, threat, compensating controls, approving owner, expiry and monitoring. Encode the narrowest possible scope and prevent wildcard bypasses. Track recurring exceptions as signals that the policy, platform pattern or product requirement may need redesign.",
+    "evaluation_points": [
+      "Exact scoped rule",
+      "Risk and compensating controls",
+      "Owner and expiry",
+      "Pattern feedback."
+    ],
+    "resolution_title": "HashiCorp Sentinel Policy as Code",
+    "resolution_url": "https://developer.hashicorp.com/sentinel/docs/concepts/policy-as-code",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-112",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Infrastructure as Code and Policy as Code",
+    "difficulty": "scenario",
+    "question_type": "remediation",
+    "prompt": "A merged Terraform change opens an administrative port to the internet. What should the pipeline and incident response do?",
+    "preferred_answer": "Stop promotion, determine whether the plan was applied, and close the rule immediately if exposed while preserving cloud and pipeline logs. Identify who approved and applied it, assess connection attempts, rotate affected credentials if needed, and review adjacent resources. Add a tested policy that blocks broad administrative exposure and require a narrow emergency exception path.",
+    "evaluation_points": [
+      "Promotion stop and exposure containment",
+      "Cloud and pipeline evidence",
+      "Impact and credential review",
+      "Preventive policy and exception path."
+    ],
+    "resolution_title": "Open Policy Agent Documentation",
+    "resolution_url": "https://www.openpolicyagent.org/docs/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-113",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "CI/CD Pipeline Security",
+    "difficulty": "foundation",
+    "question_type": "threat-modeling",
+    "prompt": "Why should a CI/CD pipeline be treated as a production security boundary?",
+    "preferred_answer": "A pipeline can read source, access secrets, run attacker-influenced code, create trusted artefacts and deploy to sensitive environments. Compromise can bypass application controls and affect every release. Model repositories, runners, package sources, artefact stores, identities, approvals and deployment targets as one supply-chain system rather than viewing YAML as ordinary automation.",
+    "evaluation_points": [
+      "High privilege and artefact trust",
+      "Attacker-influenced execution",
+      "End-to-end system view",
+      "Production impact."
+    ],
+    "resolution_title": "OWASP Top 10 CI/CD Security Risks",
+    "resolution_url": "https://owasp.org/www-project-top-10-ci-cd-security-risks/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-114",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "CI/CD Pipeline Security",
+    "difficulty": "foundation",
+    "question_type": "identity",
+    "prompt": "Why is OIDC federation safer than storing a cloud access key in a pipeline?",
+    "preferred_answer": "OIDC lets the pipeline exchange a signed workload identity for short-lived cloud credentials under a configured trust policy. It removes a reusable long-lived key and can bind access to repository, branch, workflow and environment claims. The cloud role, token permissions and trust conditions still need least privilege and protection against untrusted workflow execution.",
+    "evaluation_points": [
+      "Short-lived federation",
+      "No stored reusable key",
+      "Claim-bound trust",
+      "Role and workflow controls."
+    ],
+    "resolution_title": "GitHub Actions - OpenID Connect for Cloud Providers",
+    "resolution_url": "https://docs.github.com/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-cloud-providers",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-115",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "CI/CD Pipeline Security",
+    "difficulty": "intermediate",
+    "question_type": "governance",
+    "prompt": "How do protected branches and deployment environments reduce release risk?",
+    "preferred_answer": "Protected branches can require review, status checks, signed or verified commits and restricted merges. Deployment environments can scope secrets, allowed branches and reviewers. Together they separate code contribution from privileged release, but they only work when administrators, bypass permissions, actions and artefacts are also controlled and audited.",
+    "evaluation_points": [
+      "Branch controls",
+      "Environment controls",
+      "Separation of contribution and deployment",
+      "Bypass/admin limitations."
+    ],
+    "resolution_title": "GitHub Actions Security Hardening",
+    "resolution_url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-116",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "CI/CD Pipeline Security",
+    "difficulty": "intermediate",
+    "question_type": "runner-security",
+    "prompt": "What are the main risks of self-hosted CI runners?",
+    "preferred_answer": "Jobs may persist files, credentials, network access or malicious processes across runs, and a runner often has access to internal systems. Isolate trust levels, prefer ephemeral clean runners, restrict network and identity, avoid mixing untrusted pull requests with privileged jobs, patch the host, protect the runner registration and collect evidence. Containerising a job alone may not isolate the host.",
+    "evaluation_points": [
+      "Cross-run persistence",
+      "Internal network and identity risk",
+      "Ephemeral isolation",
+      "Untrusted/privileged separation."
+    ],
+    "resolution_title": "GitHub Actions Security Hardening",
+    "resolution_url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-117",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "CI/CD Pipeline Security",
+    "difficulty": "intermediate",
+    "question_type": "dependencies",
+    "prompt": "How should third-party pipeline actions or plugins be selected and pinned?",
+    "preferred_answer": "Use reputable, maintained sources with reviewed code and minimal permissions; pin to an immutable commit or verified release rather than a mutable tag; record ownership and update cadence; and monitor advisories. Wrap common capabilities in controlled internal components where justified. Pinning prevents silent change but does not prove that the pinned code is safe.",
+    "evaluation_points": [
+      "Source and maintenance review",
+      "Immutable pinning",
+      "Permission minimisation",
+      "Pinning limitation."
+    ],
+    "resolution_title": "GitHub Actions Security Hardening",
+    "resolution_url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-118",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "CI/CD Pipeline Security",
+    "difficulty": "advanced",
+    "question_type": "secrets",
+    "prompt": "What are the limitations of secret masking in build logs?",
+    "preferred_answer": "Masking only hides recognised values in supported output patterns. Encoded, transformed, split, generated or attacker-controlled output may evade it, and secrets can leak through command arguments, artefacts, caches, crash dumps or child processes. Minimise secret availability, use short-lived credentials, avoid processing untrusted code in secret-bearing contexts and inspect retained build data.",
+    "evaluation_points": [
+      "Pattern-based masking limits",
+      "Transformation and output bypass",
+      "Other leakage channels",
+      "Minimise and shorten secret access."
+    ],
+    "resolution_title": "OWASP CI/CD Security Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/CI_CD_Security_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-119",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "CI/CD Pipeline Security",
+    "difficulty": "advanced",
+    "question_type": "assurance",
+    "prompt": "What evidence should a secure pipeline retain for a production release?",
+    "preferred_answer": "Retain source commit, review and policy results, build environment identity, dependency and SBOM data, test and security results, artefact digest, provenance or attestation, approvals, deployment identity, target and outcome. Protect the evidence from the same identities that create releases. Evidence should support rollback, investigation and reproducibility rather than merely satisfy a checklist.",
+    "evaluation_points": [
+      "Source-to-deployment traceability",
+      "Artefact digest and provenance",
+      "Protected evidence",
+      "Operational use."
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework 1.1",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-120",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "CI/CD Pipeline Security",
+    "difficulty": "scenario",
+    "question_type": "security",
+    "prompt": "A pull request from a fork needs tests, but the repository also deploys with production secrets. Design the safe workflow.",
+    "preferred_answer": "Run fork code in an unprivileged context with read-only or no repository token, no production secrets and isolated runners. Publish only non-sensitive test results. After trusted review and merge, a separate workflow should build the release from trusted code, verify the commit and artefact, use protected environments and obtain short-lived deployment credentials. Never execute attacker-controlled code in a secret-bearing approval job.",
+    "evaluation_points": [
+      "Untrusted job isolation",
+      "No secrets or write token",
+      "Separate trusted release workflow",
+      "Protected environment and short-lived identity."
+    ],
+    "resolution_title": "GitHub Actions Security Hardening",
+    "resolution_url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-121",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Software Supply Chain, SBOM and Provenance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an SBOM, and what does it not prove?",
+    "preferred_answer": "An SBOM is a structured inventory of components and relationships in a software artefact or product. It helps identify affected dependencies, licensing and supply-chain exposure. It does not prove the listed components are vulnerability-free, that the inventory is complete, that the build used those exact inputs or that the publisher is trustworthy; provenance and verification are separate needs.",
+    "evaluation_points": [
+      "Component inventory",
+      "Operational uses",
+      "Completeness and safety limitations",
+      "Provenance distinction."
+    ],
+    "resolution_title": "CISA Software Bill of Materials Resources",
+    "resolution_url": "https://www.cisa.gov/sbom",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-122",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Software Supply Chain, SBOM and Provenance",
+    "difficulty": "foundation",
+    "question_type": "standards",
+    "prompt": "Why do formats such as SPDX and CycloneDX matter?",
+    "preferred_answer": "They provide machine-readable, interoperable schemas for component identity, versions, relationships, licences, vulnerabilities and related metadata. Standard formats make tools and organisations exchange and automate analysis more reliably than custom spreadsheets. Quality still depends on accurate generation, identifiers, scope and lifecycle updates; choosing a format alone does not create trustworthy data.",
+    "evaluation_points": [
+      "Machine-readable interoperability",
+      "Component and relationship metadata",
+      "Automation benefit",
+      "Data-quality limitation."
+    ],
+    "resolution_title": "CycloneDX Specification",
+    "resolution_url": "https://cyclonedx.org/specification/overview/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-123",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Software Supply Chain, SBOM and Provenance",
+    "difficulty": "intermediate",
+    "question_type": "attack-techniques",
+    "prompt": "Differentiate typosquatting and dependency confusion.",
+    "preferred_answer": "Typosquatting publishes a package with a name similar to a legitimate dependency and relies on human or automated selection mistakes. Dependency confusion exploits resolution order or namespace collisions so a public package is selected instead of an intended private one. Defences include controlled registries, namespace reservation, lockfiles, integrity checks, allow-lists and review of new dependencies.",
+    "evaluation_points": [
+      "Two attack mechanisms",
+      "Package resolution context",
+      "Registry and namespace controls",
+      "Integrity and review."
+    ],
+    "resolution_title": "OWASP Vulnerable Dependency Management Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-124",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Software Supply Chain, SBOM and Provenance",
+    "difficulty": "intermediate",
+    "question_type": "provenance",
+    "prompt": "What question does build provenance answer that an SBOM does not?",
+    "preferred_answer": "Provenance describes how, where and by which identity an artefact was built, including source, inputs, build process and resulting digest. It helps verify that a trusted workflow produced the artefact from expected source. An SBOM describes composition. Both can be false or incomplete unless generated and signed in a tamper-resistant process and verified by policy.",
+    "evaluation_points": [
+      "Build process and identity",
+      "Source-to-artefact linkage",
+      "Composition distinction",
+      "Trusted generation and verification."
+    ],
+    "resolution_title": "SLSA Specification",
+    "resolution_url": "https://slsa.dev/spec/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-125",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Software Supply Chain, SBOM and Provenance",
+    "difficulty": "intermediate",
+    "question_type": "signatures",
+    "prompt": "What does a valid software signature prove, and what does it not prove?",
+    "preferred_answer": "It proves that the signed bytes have not changed and that a key or identity satisfying the verifier's trust policy signed them. It does not prove the signer was authorised, the build was uncompromised or the software is safe. Verification must check expected identity, issuer, repository, workflow, time and artefact digest, not merely the presence of any signature.",
+    "evaluation_points": [
+      "Integrity and signer identity",
+      "Authorisation and safety limitations",
+      "Policy-based identity checks",
+      "Digest binding."
+    ],
+    "resolution_title": "Sigstore Cosign Verification",
+    "resolution_url": "https://docs.sigstore.dev/cosign/verifying/verify/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-126",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Software Supply Chain, SBOM and Provenance",
+    "difficulty": "advanced",
+    "question_type": "open-source-risk",
+    "prompt": "How would you assess whether an open-source dependency is acceptable?",
+    "preferred_answer": "Evaluate business necessity, transitive graph, maintenance and release activity, security policy and disclosure, maintainer and publisher controls, signed releases, vulnerability history, licence, build provenance, test quality and replacement options. Automated scores support triage but need human context. Pin approved versions, monitor change and plan for abandonment or compromise.",
+    "evaluation_points": [
+      "Technical and governance factors",
+      "Transitive dependencies",
+      "Automation as input",
+      "Monitoring and exit plan."
+    ],
+    "resolution_title": "OpenSSF Scorecard",
+    "resolution_url": "https://openssf.org/scorecard/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-127",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Software Supply Chain, SBOM and Provenance",
+    "difficulty": "advanced",
+    "question_type": "build-security",
+    "prompt": "How do reproducible builds and attestations complement each other?",
+    "preferred_answer": "A reproducible build lets independent parties generate identical output from the same inputs, helping detect hidden build variation. An attestation records signed claims about a specific build and environment. Reproducibility can validate claims, while attestations provide identity and traceability; neither alone prevents a trusted source or build definition from being malicious.",
+    "evaluation_points": [
+      "Independent identical output",
+      "Signed build claims",
+      "Complementary validation",
+      "Trusted-source limitation."
+    ],
+    "resolution_title": "in-toto Framework",
+    "resolution_url": "https://in-toto.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-128",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Software Supply Chain, SBOM and Provenance",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A popular dependency used in production publishes a malicious release. What do you do?",
+    "preferred_answer": "Identify every direct and transitive use through SBOMs, lockfiles, registries and runtime inventory; block the version; preserve package, build and deployment evidence; determine whether it entered trusted artefacts; rotate exposed secrets and contain affected services. Rebuild from a known-good dependency, verify provenance, monitor indicators and improve dependency admission, publisher trust and update controls.",
+    "evaluation_points": [
+      "Complete usage discovery",
+      "Version blocking and evidence",
+      "Exposure and credential assessment",
+      "Trusted rebuild and control improvement."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-129",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secrets, Cryptography, PKI and Key Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate encryption, hashing, message authentication and digital signatures.",
+    "preferred_answer": "Encryption protects confidentiality and is reversible with a key. A cryptographic hash creates a fixed-length digest and is not intended to be reversible. A MAC proves integrity and authenticity to parties sharing a secret key. A digital signature uses asymmetric keys to provide integrity and signer authentication, and can support non-repudiation under the surrounding identity and process controls.",
+    "evaluation_points": [
+      "Four distinct purposes",
+      "Reversibility",
+      "Shared-secret MAC",
+      "Asymmetric signature and contextual non-repudiation."
+    ],
+    "resolution_title": "NIST SP 800-57 Part 1 Rev. 5 - Key Management Guidance",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-130",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secrets, Cryptography, PKI and Key Management",
+    "difficulty": "foundation",
+    "question_type": "key-types",
+    "prompt": "When would symmetric and asymmetric cryptography be used together?",
+    "preferred_answer": "Asymmetric cryptography can authenticate parties and establish or protect a session key, while symmetric encryption then protects bulk data efficiently. TLS commonly combines them in this way. Security depends on approved algorithms, parameter sizes, random generation, certificate validation, key protection and rotation; selecting a strong algorithm cannot compensate for exposed keys.",
+    "evaluation_points": [
+      "Key establishment and authentication",
+      "Efficient bulk encryption",
+      "TLS example",
+      "Key-management dependence."
+    ],
+    "resolution_title": "NIST SP 800-52 Rev. 2 - TLS Guidelines",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/52/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-131",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secrets, Cryptography, PKI and Key Management",
+    "difficulty": "intermediate",
+    "question_type": "pki",
+    "prompt": "What checks are required when validating a TLS server certificate?",
+    "preferred_answer": "Verify the chain to a trusted root, hostname or service identity, validity period, key usage and constraints, signature algorithms and revocation or status policy where applicable. Confirm the client is using the intended trust store and not bypassing errors. Certificate validity proves identity under the CA model, not that the application is secure or authorised for every action.",
+    "evaluation_points": [
+      "Chain and hostname",
+      "Validity and usage",
+      "Algorithm and revocation policy",
+      "Identity not application safety."
+    ],
+    "resolution_title": "NIST SP 800-52 Rev. 2 - TLS Guidelines",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/52/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-132",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secrets, Cryptography, PKI and Key Management",
+    "difficulty": "intermediate",
+    "question_type": "secrets-lifecycle",
+    "prompt": "What makes a secrets-management programme effective?",
+    "preferred_answer": "Discover and classify secrets, issue them through controlled systems, restrict access by workload identity, avoid embedding them in code or images, use short lifetimes, rotate and revoke, audit use, protect backups, and test recovery. Ownership and dependency mapping matter because rotating a secret without coordinating consumers can cause outages or leave old copies active.",
+    "evaluation_points": [
+      "Discovery and classification",
+      "Controlled issuance and access",
+      "Rotation/revocation and audit",
+      "Dependency-aware recovery."
+    ],
+    "resolution_title": "OWASP Secrets Management Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-133",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secrets, Cryptography, PKI and Key Management",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "Explain envelope encryption.",
+    "preferred_answer": "Data is encrypted with a data-encryption key, and that key is encrypted with a key-encryption key held by a KMS or HSM. This supports efficient encryption of large data, central control and rotation of the wrapping key without re-encrypting all data. Protect plaintext data keys in memory, bind context and authorisation, and store encrypted keys with the ciphertext.",
+    "evaluation_points": [
+      "Data and key-encryption keys",
+      "KMS/HSM wrapping",
+      "Rotation advantage",
+      "Plaintext key and context protection."
+    ],
+    "resolution_title": "AWS KMS Cryptographic Details",
+    "resolution_url": "https://docs.aws.amazon.com/kms/latest/cryptographic-details/intro.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-134",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secrets, Cryptography, PKI and Key Management",
+    "difficulty": "advanced",
+    "question_type": "key-lifecycle",
+    "prompt": "Which stages belong in a cryptographic key lifecycle?",
+    "preferred_answer": "Define purpose and algorithm, generate with approved entropy, distribute or provision securely, store and use under least privilege, rotate, back up or escrow only where justified, monitor, revoke, archive and destroy. Record ownership and cryptoperiod. Plan for algorithm deprecation, compromise and loss; a key that cannot be recovered or revoked can create availability or trust failures.",
+    "evaluation_points": [
+      "Full lifecycle",
+      "Purpose and cryptoperiod",
+      "Monitoring and revocation",
+      "Compromise, loss and deprecation planning."
+    ],
+    "resolution_title": "NIST SP 800-57 Part 1 Rev. 5 - Key Management Guidance",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-135",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secrets, Cryptography, PKI and Key Management",
+    "difficulty": "advanced",
+    "question_type": "password-storage",
+    "prompt": "How should passwords be stored, and why is encryption usually the wrong approach?",
+    "preferred_answer": "Store passwords with a dedicated adaptive, salted password-hashing function such as Argon2id, scrypt, bcrypt or PBKDF2 under current guidance. Unique salts prevent precomputed attacks, and work factors slow guessing. Encryption is reversible and creates a decryption-key target. A server-side pepper may add protection but requires separate key management and rotation planning.",
+    "evaluation_points": [
+      "Adaptive salted hashing",
+      "Work factor",
+      "Encryption reversibility risk",
+      "Pepper trade-off."
+    ],
+    "resolution_title": "OWASP Password Storage Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-136",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secrets, Cryptography, PKI and Key Management",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A code-signing private key may have been copied from a build server. What actions are required?",
+    "preferred_answer": "Stop signing, protect evidence, revoke or distrust the key and certificate, identify every artefact and time window signed by it, and notify consumers with verification guidance. Rebuild and re-sign trusted releases with a new protected identity, hunt for unauthorised signatures, rotate related credentials and redesign signing around isolated or keyless short-lived mechanisms with auditable policy.",
+    "evaluation_points": [
+      "Immediate signing stop and revocation",
+      "Artefact and time-window scope",
+      "Consumer communication and trusted rebuild",
+      "Signing architecture improvement."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-137",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Security Testing and Application Security Tooling",
+    "difficulty": "foundation",
+    "question_type": "tools",
+    "prompt": "Compare SAST, DAST, SCA and IAST.",
+    "preferred_answer": "SAST analyses source or intermediate code without running the application; DAST tests a running application from the outside; SCA identifies third-party components and known issues; IAST instruments a running application to observe data and execution. Each sees different evidence and failure classes. None replaces secure design, manual review or production monitoring.",
+    "evaluation_points": [
+      "Four correct definitions",
+      "Different evidence views",
+      "Coverage trade-offs",
+      "No single-tool claim."
+    ],
+    "resolution_title": "OWASP Web Security Testing Guide - Stable",
+    "resolution_url": "https://owasp.org/www-project-web-security-testing-guide/stable/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-138",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Security Testing and Application Security Tooling",
+    "difficulty": "foundation",
+    "question_type": "assessment",
+    "prompt": "When is a penetration test most valuable?",
+    "preferred_answer": "It is valuable when there is a clear scope, realistic attack objectives, a sufficiently stable system and a need to validate exploitability, chained weaknesses or control effectiveness. It should complement continuous testing, not serve as an annual substitute. Rules of engagement, safety, data handling, retesting and remediation ownership are required.",
+    "evaluation_points": [
+      "Clear objectives and stable target",
+      "Attack-chain validation",
+      "Continuous programme context",
+      "Rules and remediation."
+    ],
+    "resolution_title": "NIST SP 800-115 - Technical Guide to Security Testing and Assessment",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/115/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-139",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Security Testing and Application Security Tooling",
+    "difficulty": "intermediate",
+    "question_type": "fuzzing",
+    "prompt": "What kinds of defects can fuzzing find, and what makes a fuzz target effective?",
+    "preferred_answer": "Fuzzing feeds varied or malformed inputs to exercise parsers, protocols and APIs, often finding crashes, memory errors, hangs and unexpected state transitions. Effective targets are fast, deterministic, isolated, instrumented, seeded with representative inputs and paired with useful oracles and coverage. Crashes must be triaged for reproducibility and security impact.",
+    "evaluation_points": [
+      "Input mutation and defect types",
+      "Harness qualities",
+      "Coverage/oracles",
+      "Crash triage."
+    ],
+    "resolution_title": "OWASP Fuzzing",
+    "resolution_url": "https://owasp.org/www-community/Fuzzing",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-140",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Security Testing and Application Security Tooling",
+    "difficulty": "intermediate",
+    "question_type": "pipeline",
+    "prompt": "How should security tests be placed across the delivery lifecycle?",
+    "preferred_answer": "Use fast linters, secret and dependency checks during coding and pull requests; deeper SAST, tests and IaC analysis in CI; DAST, integration and policy checks in deployable environments; and runtime monitoring after release. Match control latency and confidence to risk. Do not make every low-confidence finding block production; use severity, exploitability and exception rules.",
+    "evaluation_points": [
+      "Shift-left and runtime coverage",
+      "Fast versus deep tests",
+      "Risk-based blocking",
+      "Exception and confidence handling."
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework 1.1",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-141",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Security Testing and Application Security Tooling",
+    "difficulty": "intermediate",
+    "question_type": "triage",
+    "prompt": "How do you reduce false-positive fatigue without hiding real risk?",
+    "preferred_answer": "Improve tool configuration and framework models, authenticate scans, deduplicate by root cause, validate exploitability, assign ownership and service context, and suppress only with evidence and expiry. Tune rules using feedback and measure escaped defects. Do not disable broad categories merely to improve dashboard numbers or meet a release deadline.",
+    "evaluation_points": [
+      "Tool and model improvement",
+      "Context and deduplication",
+      "Evidence-based expiring suppression",
+      "Outcome measurement."
+    ],
+    "resolution_title": "OWASP Static Application Security Testing",
+    "resolution_url": "https://owasp.org/www-community/Source_Code_Analysis_Tools",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-142",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Security Testing and Application Security Tooling",
+    "difficulty": "advanced",
+    "question_type": "strategy",
+    "prompt": "How would you choose between adding another AppSec tool and improving an existing process?",
+    "preferred_answer": "Start with missed risk, coverage gaps, developer workflow, evidence quality, integration cost, ownership and remediation capacity. A new tool adds little if findings are not trusted or fixed. Pilot against known defects, measure precision, recall, time to action and recurring-risk reduction, then decide whether tooling, training, secure frameworks or architecture changes provide the best outcome.",
+    "evaluation_points": [
+      "Problem-first selection",
+      "Remediation capacity",
+      "Pilot with known defects",
+      "Process and framework alternatives."
+    ],
+    "resolution_title": "OWASP Software Assurance Maturity Model",
+    "resolution_url": "https://owaspsamm.org/model/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-143",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Security Testing and Application Security Tooling",
+    "difficulty": "advanced",
+    "question_type": "manual-testing",
+    "prompt": "Which application-security risks usually require significant human reasoning?",
+    "preferred_answer": "Business-logic abuse, multi-step authorisation, race conditions, workflow bypass, privacy impact, insecure trust assumptions, chained vulnerabilities and context-specific cryptographic use often require human understanding. Automated tools can generate evidence or hypotheses, but testers must model attacker goals, system state and business consequences and communicate reproducible findings safely.",
+    "evaluation_points": [
+      "Business and workflow risks",
+      "Chaining and context",
+      "Automation support role",
+      "Reproducibility and impact."
+    ],
+    "resolution_title": "OWASP Web Security Testing Guide - Stable",
+    "resolution_url": "https://owasp.org/www-project-web-security-testing-guide/stable/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-144",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Security Testing and Application Security Tooling",
+    "difficulty": "scenario",
+    "question_type": "assurance",
+    "prompt": "SAST, SCA and DAST all pass, but production suffers an account-takeover incident. What do you examine?",
+    "preferred_answer": "Review whether the attack involved credential reuse, weak recovery, session theft, social engineering, missing rate limits, identity-provider configuration or business workflow abuse that the tools did not model. Check test scope, authentication paths, production configuration, telemetry and threat model. Update controls and tests for the actual failure class rather than buying another scanner automatically.",
+    "evaluation_points": [
+      "Identity and workflow hypotheses",
+      "Scope and production-config gap",
+      "Telemetry and threat-model review",
+      "Failure-class remediation."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-145",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Logging, SIEM and Detection Engineering",
+    "difficulty": "foundation",
+    "question_type": "telemetry",
+    "prompt": "How do logs, metrics and traces contribute differently to security detection?",
+    "preferred_answer": "Logs capture discrete events and context, metrics summarise numeric behaviour over time, and traces connect operations across distributed services. Security detections may use all three: an authentication event, a rate anomaly and a request path. Preserve identity, time and correlation fields, and understand sampling or aggregation that may remove forensic detail.",
+    "evaluation_points": [
+      "Three telemetry types",
+      "Security examples",
+      "Correlation",
+      "Sampling and detail limitations."
+    ],
+    "resolution_title": "NIST SP 800-92 - Guide to Computer Security Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-146",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Logging, SIEM and Detection Engineering",
+    "difficulty": "foundation",
+    "question_type": "data-quality",
+    "prompt": "Why are time synchronisation and a common event schema important?",
+    "preferred_answer": "Accurate time lets analysts order actions across systems and calculate dwell or response time. A common schema normalises identities, hosts, actions, results and network fields so detections work across sources. Preserve original events and source metadata because normalisation can lose detail or mis-map values. Monitor clock drift and ingestion delay.",
+    "evaluation_points": [
+      "Timeline accuracy",
+      "Cross-source normalisation",
+      "Raw-event preservation",
+      "Drift and delay monitoring."
+    ],
+    "resolution_title": "NIST SP 800-92 - Guide to Computer Security Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-147",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Logging, SIEM and Detection Engineering",
+    "difficulty": "intermediate",
+    "question_type": "detection-design",
+    "prompt": "What makes a detection rule actionable?",
+    "preferred_answer": "It has a clear threat hypothesis, reliable data source, defined logic and time window, severity based on likely impact, useful entity context, known false-positive conditions, ownership, investigation steps and expected response. Test it against representative benign and malicious data. A rule that only repeats a vendor severity without next steps creates alert volume, not defence.",
+    "evaluation_points": [
+      "Threat hypothesis",
+      "Data and logic",
+      "Context and runbook",
+      "Testing and ownership."
+    ],
+    "resolution_title": "Sigma Rule Specification",
+    "resolution_url": "https://sigmahq.io/docs/basics/rules.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-148",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Logging, SIEM and Detection Engineering",
+    "difficulty": "intermediate",
+    "question_type": "tuning",
+    "prompt": "How should a team balance detection sensitivity and specificity?",
+    "preferred_answer": "Use threat impact and response cost to choose thresholds, correlate multiple weak signals, create allow-lists based on verified behaviour, and segment by asset and identity risk. Measure precision, missed known events, investigation time and coverage. Tuning should change logic or context, not suppress noisy users or systems without understanding why they differ.",
+    "evaluation_points": [
+      "Impact and response cost",
+      "Correlation and context",
+      "Precision and miss measurement",
+      "Evidence-based tuning."
+    ],
+    "resolution_title": "MITRE ATT&CK Enterprise Matrix",
+    "resolution_url": "https://attack.mitre.org/matrices/enterprise/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-149",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Logging, SIEM and Detection Engineering",
+    "difficulty": "intermediate",
+    "question_type": "integrity",
+    "prompt": "How do you protect security logs from tampering and unauthorised access?",
+    "preferred_answer": "Send events promptly to a separate protected platform, use least-privilege write and read roles, encryption, integrity controls, immutable or append-only retention where justified, monitored configuration and deletion, and independent backups. Limit sensitive fields and audit analyst access. If a compromised administrator can erase all evidence, the logging design is not independent enough.",
+    "evaluation_points": [
+      "Separate central platform",
+      "Least privilege and encryption",
+      "Immutable or append-only controls",
+      "Access and deletion audit."
+    ],
+    "resolution_title": "OWASP Logging Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-150",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Logging, SIEM and Detection Engineering",
+    "difficulty": "advanced",
+    "question_type": "detection-as-code",
+    "prompt": "What benefits and risks come with managing detections as code?",
+    "preferred_answer": "Versioned detections gain peer review, testing, reusable content, deployment consistency, rollback and change history. Risks include copying rules without matching telemetry, unsafe global deployment, hidden parser differences and slow emergency changes. Use schemas, unit and replay tests, staged rollout, ownership, performance limits and post-deployment validation.",
+    "evaluation_points": [
+      "Versioning and tests",
+      "Telemetry compatibility risk",
+      "Staged deployment",
+      "Performance and validation."
+    ],
+    "resolution_title": "Sigma Rule Specification",
+    "resolution_url": "https://sigmahq.io/docs/basics/rules.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-151",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Logging, SIEM and Detection Engineering",
+    "difficulty": "advanced",
+    "question_type": "coverage",
+    "prompt": "How would you identify a detection-coverage gap?",
+    "preferred_answer": "Map priority threat scenarios and ATT&CK techniques to required data sources, current rules, control points and response playbooks. Validate coverage with adversary emulation or replay, not spreadsheet presence alone. Record visibility limitations, prevention-only dependencies and expected evidence. Prioritise gaps by threat relevance, asset impact and feasibility rather than chasing complete ATT&CK coverage.",
+    "evaluation_points": [
+      "Threat-to-data mapping",
+      "Rule and response coverage",
+      "Empirical validation",
+      "Risk-based prioritisation."
+    ],
+    "resolution_title": "MITRE ATT&CK Enterprise Matrix",
+    "resolution_url": "https://attack.mitre.org/matrices/enterprise/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-152",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Logging, SIEM and Detection Engineering",
+    "difficulty": "scenario",
+    "question_type": "investigation",
+    "prompt": "A SIEM alerts on impossible travel followed by a new mailbox rule and cloud file downloads. How do you respond?",
+    "preferred_answer": "Validate user, device, IP, VPN and token context, then contain the account by revoking sessions and risky credentials if compromise is plausible. Preserve identity, mailbox, SaaS, endpoint and file-access logs; inspect MFA and recovery changes; remove malicious rules; scope data accessed; and hunt for the same infrastructure or token behaviour across other accounts.",
+    "evaluation_points": [
+      "Context validation",
+      "Session and credential containment",
+      "Cross-platform evidence",
+      "Data scope and broader hunt."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-153",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Intelligence, MITRE ATT&CK and Threat Hunting",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate an indicator of compromise, an indicator of attack and a TTP.",
+    "preferred_answer": "An IOC is observable evidence associated with compromise, such as a hash or domain. An indicator of attack describes behaviour suggesting malicious activity, often before confirmed compromise. TTPs describe how adversaries operate at a more durable level. IOCs are easy to share but decay quickly; behaviour and TTPs can generalise better but require richer telemetry and analysis.",
+    "evaluation_points": [
+      "Three distinctions",
+      "Examples",
+      "Durability trade-off",
+      "Telemetry requirement."
+    ],
+    "resolution_title": "MITRE ATT&CK Enterprise Matrix",
+    "resolution_url": "https://attack.mitre.org/matrices/enterprise/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-154",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Intelligence, MITRE ATT&CK and Threat Hunting",
+    "difficulty": "foundation",
+    "question_type": "frameworks",
+    "prompt": "What is MITRE ATT&CK useful for, and what should it not be used to claim?",
+    "preferred_answer": "ATT&CK provides a common language for observed adversary tactics and techniques, supporting threat models, detections, hunts, emulation and coverage analysis. It is not a list of every attack, a control framework, a risk score or proof that a product prevents a technique. Mappings need evidence and platform context, and complete coverage is neither realistic nor automatically valuable.",
+    "evaluation_points": [
+      "Common-language uses",
+      "Not a control or risk framework",
+      "Evidence-based mapping",
+      "No complete-coverage claim."
+    ],
+    "resolution_title": "MITRE ATT&CK Enterprise Matrix",
+    "resolution_url": "https://attack.mitre.org/matrices/enterprise/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-155",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Intelligence, MITRE ATT&CK and Threat Hunting",
+    "difficulty": "intermediate",
+    "question_type": "intelligence",
+    "prompt": "What stages belong in a threat-intelligence lifecycle?",
+    "preferred_answer": "Define decision-focused requirements, collect relevant data, process and enrich it, analyse competing explanations, disseminate useful products, receive feedback and update requirements. Intelligence should state confidence, assumptions, sources, timeliness and recommended decisions. Collecting feeds without an audience or action creates storage and alert burden, not intelligence value.",
+    "evaluation_points": [
+      "Requirements through feedback",
+      "Analysis and confidence",
+      "Audience and action",
+      "Feed-collection limitation."
+    ],
+    "resolution_title": "OASIS STIX Version 2.1",
+    "resolution_url": "https://docs.oasis-open.org/cti/stix/v2.1/stix-v2.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-156",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Intelligence, MITRE ATT&CK and Threat Hunting",
+    "difficulty": "intermediate",
+    "question_type": "threat-hunting",
+    "prompt": "What makes a threat-hunting hypothesis testable?",
+    "preferred_answer": "It links a plausible adversary behaviour to affected assets, required telemetry and observable patterns, defines a time range and success or stop conditions, and anticipates benign explanations. The hunt should produce documented queries, findings and detection or control improvements. Searching random indicators without a hypothesis is investigation or exploration, not a repeatable hunt.",
+    "evaluation_points": [
+      "Behaviour and asset scope",
+      "Required telemetry",
+      "Benign alternatives and stop conditions",
+      "Documented improvement output."
+    ],
+    "resolution_title": "MITRE ATT&CK Enterprise Matrix",
+    "resolution_url": "https://attack.mitre.org/matrices/enterprise/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-157",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Intelligence, MITRE ATT&CK and Threat Hunting",
+    "difficulty": "intermediate",
+    "question_type": "mapping",
+    "prompt": "How should a detection be mapped to an ATT&CK technique?",
+    "preferred_answer": "Map the behaviour the rule actually detects, supported by data and test evidence, at the narrowest valid technique or sub-technique. Distinguish detecting execution from merely seeing a tool or indicator. Record platforms and blind spots. Avoid broad mappings added for dashboard coverage because inaccurate mappings mislead prioritisation and testing.",
+    "evaluation_points": [
+      "Behaviour-based mapping",
+      "Evidence and narrow scope",
+      "Platform/blind-spot context",
+      "Rejects dashboard inflation."
+    ],
+    "resolution_title": "MITRE ATT&CK Enterprise Matrix",
+    "resolution_url": "https://attack.mitre.org/matrices/enterprise/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-158",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Intelligence, MITRE ATT&CK and Threat Hunting",
+    "difficulty": "advanced",
+    "question_type": "interoperability",
+    "prompt": "What problem do STIX and TAXII solve?",
+    "preferred_answer": "STIX defines structured cyber-threat objects and relationships such as indicators, malware, attack patterns and campaigns. TAXII defines services for exchanging that content. Together they improve machine-readable sharing and automation, but do not make intelligence accurate, trusted or relevant. Organisations still need source validation, access control, markings, deduplication and lifecycle management.",
+    "evaluation_points": [
+      "Structured content versus transport",
+      "Automation and sharing",
+      "Quality and trust limitations",
+      "Handling and lifecycle."
+    ],
+    "resolution_title": "OASIS TAXII Version 2.1",
+    "resolution_url": "https://docs.oasis-open.org/cti/taxii/v2.1/taxii-v2.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-159",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Intelligence, MITRE ATT&CK and Threat Hunting",
+    "difficulty": "advanced",
+    "question_type": "defence",
+    "prompt": "How can MITRE D3FEND complement ATT&CK?",
+    "preferred_answer": "ATT&CK describes adversary behaviour, while D3FEND provides a knowledge graph of defensive techniques and the digital artefacts they affect. Teams can use it to reason about possible countermeasures and evidence. A mapping is a design aid, not proof that a control is deployed or effective; validate implementation against the specific environment and threat path.",
+    "evaluation_points": [
+      "Adversary versus defensive knowledge",
+      "Artefact and countermeasure reasoning",
+      "Mapping limitation",
+      "Environment validation."
+    ],
+    "resolution_title": "MITRE D3FEND",
+    "resolution_url": "https://d3fend.mitre.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-160",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Intelligence, MITRE ATT&CK and Threat Hunting",
+    "difficulty": "scenario",
+    "question_type": "intelligence",
+    "prompt": "A report says a ransomware group is targeting your sector. What do you do before issuing a high-severity alert?",
+    "preferred_answer": "Assess source reliability, report confidence, recency, targeted technologies and overlap with your assets. Extract durable behaviours and relevant indicators, verify telemetry coverage, hunt for evidence, review exposed vulnerabilities and backups, and brief owners on specific actions. Do not create panic from sector labels alone; state what is known, assumed and still being tested.",
+    "evaluation_points": [
+      "Source and relevance assessment",
+      "Asset overlap",
+      "Hunt and control review",
+      "Calibrated communication."
+    ],
+    "resolution_title": "MITRE ATT&CK Enterprise Matrix",
+    "resolution_url": "https://attack.mitre.org/matrices/enterprise/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-161",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Incident Response, Digital Forensics and Recovery",
+    "difficulty": "foundation",
+    "question_type": "lifecycle",
+    "prompt": "How does NIST SP 800-61 Rev. 3 position incident response within cybersecurity risk management?",
+    "preferred_answer": "It integrates incident response across the six CSF 2.0 functions rather than treating it as a stand-alone sequence that begins after detection. Governance and preparation reduce incidents, Protect and Detect create resilience and evidence, Respond manages the event, and Recover restores and improves. Roles, communications, dependencies and lessons should exist before an incident.",
+    "evaluation_points": [
+      "Integrated across CSF functions",
+      "Preparation before detection",
+      "Response and recovery",
+      "Roles and learning."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-162",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Incident Response, Digital Forensics and Recovery",
+    "difficulty": "foundation",
+    "question_type": "triage",
+    "prompt": "What factors should determine incident severity and declaration?",
+    "preferred_answer": "Use confirmed or potential impact to customers, safety, data, operations, legal obligations and critical services; scope and attacker privilege; persistence; containment difficulty; and confidence. Predefined criteria support consistent escalation, but leaders may declare early under uncertainty. Severity should be revisited as evidence changes and should drive resources and communication, not blame.",
+    "evaluation_points": [
+      "Impact and scope",
+      "Privilege/persistence and containment",
+      "Uncertainty and reassessment",
+      "Resource and communication use."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-163",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Incident Response, Digital Forensics and Recovery",
+    "difficulty": "intermediate",
+    "question_type": "containment",
+    "prompt": "How do short-term and long-term containment differ?",
+    "preferred_answer": "Short-term containment quickly limits damage through session revocation, isolation, blocking or disabling vulnerable functions, sometimes at operational cost. Long-term containment establishes a stable, monitored state while eradication and recovery are prepared, such as segmented operation or rebuilt credentials. Both should preserve evidence, avoid tipping off an attacker unnecessarily and include rollback criteria.",
+    "evaluation_points": [
+      "Immediate damage limitation",
+      "Stable monitored state",
+      "Evidence and attacker-awareness trade-offs",
+      "Rollback criteria."
+    ],
+    "resolution_title": "CISA Cybersecurity Incident and Vulnerability Response Playbooks",
+    "resolution_url": "https://www.cisa.gov/news-events/news/federal-government-cybersecurity-incident-and-vulnerability-response-playbooks",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-164",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Incident Response, Digital Forensics and Recovery",
+    "difficulty": "intermediate",
+    "question_type": "forensics",
+    "prompt": "What is chain of custody, and when does it matter?",
+    "preferred_answer": "Chain of custody records who collected, handled, transferred, stored and analysed evidence, when and under what conditions, including hashes and identifiers. It matters when evidence may support legal, regulatory, disciplinary or high-confidence internal conclusions. Even when formal litigation is unlikely, repeatable acquisition and integrity records prevent confusion and strengthen incident findings.",
+    "evaluation_points": [
+      "Handling history",
+      "Integrity and hashes",
+      "Legal/regulatory relevance",
+      "Operational value."
+    ],
+    "resolution_title": "NIST SP 800-86 - Integrating Forensic Techniques into Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/86/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-165",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Incident Response, Digital Forensics and Recovery",
+    "difficulty": "intermediate",
+    "question_type": "communication",
+    "prompt": "What should an incident communication plan define before an event?",
+    "preferred_answer": "Define internal roles and authority, severity-based audiences, secure communication channels, legal and privacy escalation, customer and regulator decision points, executive and technical update cadence, approved message ownership and alternatives if normal systems are compromised. Communications should separate facts, assumptions and actions and protect sensitive investigative details.",
+    "evaluation_points": [
+      "Roles and audiences",
+      "Secure alternate channels",
+      "Legal/customer/regulator triggers",
+      "Facts versus assumptions."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-166",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Incident Response, Digital Forensics and Recovery",
+    "difficulty": "advanced",
+    "question_type": "recovery",
+    "prompt": "How do you know a system is ready to return to production after compromise?",
+    "preferred_answer": "The entry path and persistence mechanisms are understood or bounded, affected identities and keys are replaced, the system is rebuilt or validated against a trusted baseline, vulnerabilities are remediated, monitoring is enhanced, data integrity is checked, dependencies and backups are trusted, and business owners accept residual risk. Restore gradually with success and rollback criteria.",
+    "evaluation_points": [
+      "Entry and persistence addressed",
+      "Trusted rebuild and credentials",
+      "Data/dependency validation",
+      "Staged restore and ownership."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-167",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Incident Response, Digital Forensics and Recovery",
+    "difficulty": "advanced",
+    "question_type": "learning",
+    "prompt": "What makes a post-incident review effective and blameless?",
+    "preferred_answer": "Build a factual timeline, impact and decision record; analyse technical and organisational contributing conditions; identify what helped and hindered response; and assign prioritised, owned, measurable actions. Blameless means examining system incentives and conditions without hiding negligence or accountability. Track completion and whether similar incidents or defect classes recur.",
+    "evaluation_points": [
+      "Timeline and impact",
+      "Technical and organisational causes",
+      "Owned measurable actions",
+      "Learning without accountability avoidance."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "CYB-168",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Incident Response, Digital Forensics and Recovery",
+    "difficulty": "scenario",
+    "question_type": "cloud-incident",
+    "prompt": "A cloud administrator token is actively creating new identities and disabling logs. Give the first response sequence.",
+    "preferred_answer": "Use an independent emergency identity to contain the compromised principal and sessions, protect or restore logging, preserve provider and identity evidence, and block new high-risk changes. Identify created identities, keys, policies, resources and persistence across regions and accounts. Rotate trust paths, validate control-plane integrity, rebuild affected resources if needed, communicate severity and maintain a detailed decision log.",
+    "evaluation_points": [
+      "Independent emergency access",
+      "Identity containment and logging protection",
+      "Cross-account persistence scope",
+      "Trust rebuild, communication and decision record."
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-01",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cybersecurity Principles and Risk Management",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Risk-based launch decision: Assess a proposed public API launch using a supplied architecture, asset list and incomplete control evidence. Produce a concise go, conditional-go or no-go recommendation.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nRisk scenario, assumptions, control gaps, residual-risk decision, named owner, expiry date, monitoring and rollback conditions.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST SP 800-37 Rev. 2 - Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-02",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Governance, Compliance and Security Policy",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Security exception and evidence pack: Create a time-bounded exception for an unsupported legacy component and assemble evidence for an independent reviewer.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nPolicy reference, business justification, attack scenario, compensating controls, owner, approval, expiry, monitoring and closure milestones.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-03",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Modeling and Secure Architecture",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Threat model for a multi-tenant API: Create a concise threat model for a multi-tenant API with external webhooks, an administrative portal and a background worker.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nContext and data-flow diagrams, trust boundaries, assets, 10 prioritised threats, mitigations, owners and verification tests.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OWASP Threat Modeling Project",
+    "resolution_url": "https://owasp.org/www-project-threat-modeling/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-04",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Network Security and Zero Trust",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Zero-trust service access design: Design access for three services across two cloud environments without IP-based trust or long-lived shared secrets.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nIdentity flow, authorisation policy, certificate or token lifecycle, egress controls, logs, failure handling and test cases.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST SP 800-207A - Zero Trust for Cloud-Native Multi-Cloud Applications",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-05",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Identity, Access Management and Privileged Access",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Privileged access redesign: Replace standing administrator access for a deployment team with a just-in-time, auditable model.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nRole design, activation conditions, approval policy, emergency access, session evidence, expiry and access-review procedure.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Microsoft Entra Privileged Identity Management",
+    "resolution_url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-06",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Endpoint and Operating System Security",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Endpoint hardening and detection: Harden a Linux or Windows host from a supplied insecure baseline and create two detections for persistence or credential access.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nBaseline diff, compatibility notes, commands or policy, event examples, detection logic and rollback procedure.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "CIS Benchmarks",
+    "resolution_url": "https://www.cisecurity.org/cis-benchmarks",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-07",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Vulnerability, Patch and Exposure Management",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Risk-based vulnerability triage: Prioritise 25 findings across internet-facing, internal and development assets using CVSS, KEV, exploit evidence and business context.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nRanked backlog, rationale, immediate mitigations, remediation owners, exception records and outcome-focused metrics.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "CISA Known Exploited Vulnerabilities Catalog",
+    "resolution_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-08",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Web Application Security",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Secure a vulnerable web feature: Review a deliberately insecure login, file upload and report-export flow, then implement or specify layered fixes.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nThreats, test cases, secure design changes, code or configuration diff, residual risks and OWASP references.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OWASP Application Security Verification Standard 5.0.0",
+    "resolution_url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-09",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "API and Microservices Security",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Multi-tenant API security assessment: Assess a small REST API for object, function and property-level authorisation, resource exhaustion and unsafe dependency handling.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nTest plan, reproducible findings, risk ranking, fixed policy or code, negative tests and API inventory updates.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OWASP API Security Top 10 - 2023",
+    "resolution_url": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-10",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secure Coding and Security-Focused Code Review",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Security-focused code review: Review a pull request containing authentication, file-processing and command-execution changes and produce a defensible approval decision.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nAnnotated findings, threat paths, CWE mapping, proposed fixes, tests and recurring-defect prevention rule.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework 1.1",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-11",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Cloud Security Architecture",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Secure cloud landing zone: Design a small cloud landing zone for production, development and security logging with organisation-level guardrails.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nAccount structure, IAM model, network boundaries, logging, key management, public-access prevention, break-glass process and validation tests.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Google Cloud Security Foundations Guide",
+    "resolution_url": "https://cloud.google.com/architecture/security-foundations",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-12",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Container and Image Security",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Harden and attest a container image: Build a multi-stage image, remove unnecessary privileges, scan it, generate an SBOM and verify a signature or attestation.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nDockerfile, image digest, scan and SBOM, signature verification, runtime restrictions and documented residual findings.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Sigstore Cosign Verification",
+    "resolution_url": "https://docs.sigstore.dev/cosign/verifying/verify/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-13",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Kubernetes Security",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Kubernetes security policy and incident drill: Secure a namespace with RBAC, Pod Security, NetworkPolicy, protected Secrets and audit coverage, then investigate a simulated token misuse.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nManifests, effective-permission tests, denied actions, audit events, containment steps and final least-privilege design.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Kubernetes Security Checklist",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/security-checklist/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-14",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Infrastructure as Code and Policy as Code",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] IaC policy gate: Create infrastructure definitions with intentional public exposure, wildcard IAM and missing encryption, then build a policy-as-code gate and exception workflow.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nFailing and passing plans, policy tests, scoped exception, state-security design and drift-detection output.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Open Policy Agent Documentation",
+    "resolution_url": "https://www.openpolicyagent.org/docs/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-15",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "CI/CD Pipeline Security",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Secure CI/CD pipeline design: Build or specify a pipeline that tests untrusted contributions, creates a trusted artefact and deploys through a protected environment using workload identity.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nWorkflow, permissions, runner isolation, pinned dependencies, artefact digest, attestation, approval and retained evidence.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OWASP Top 10 CI/CD Security Risks",
+    "resolution_url": "https://owasp.org/www-project-top-10-ci-cd-security-risks/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-16",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Software Supply Chain, SBOM and Provenance",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Supply-chain assurance package: Generate an SBOM, sign an artefact, create or inspect provenance and enforce a policy that accepts only an expected build identity.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nSBOM, digest, signature, attestation, verification command or policy, rejected test artefact and dependency-risk note.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "SLSA Specification",
+    "resolution_url": "https://slsa.dev/spec/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-17",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Secrets, Cryptography, PKI and Key Management",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Secrets and key lifecycle exercise: Design secret issuance and rotation for an application, then perform a simulated certificate or signing-key compromise response.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nIdentity flow, storage and access policy, rotation test, revocation plan, affected-artefact inventory and recovery validation.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST SP 800-57 Part 1 Rev. 5 - Key Management Guidance",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-18",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Security Testing and Application Security Tooling",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Layered AppSec testing plan: Create and run or simulate SAST, SCA, DAST and fuzzing against a small application, then reconcile conflicting results.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nTool placement, findings, validation notes, suppressed-result evidence, manual test, gate policy and remediation backlog.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OWASP Web Security Testing Guide - Stable",
+    "resolution_url": "https://owasp.org/www-project-web-security-testing-guide/stable/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-19",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Logging, SIEM and Detection Engineering",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Detection-as-code pipeline: Create two security detections mapped to ATT&CK, test them against benign and malicious events, and deploy them through a reviewable pipeline.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nRule files, data requirements, tests, false-positive notes, ATT&CK mapping, runbook, staged deployment and outcome metrics.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Sigma Rule Specification",
+    "resolution_url": "https://sigmahq.io/docs/basics/rules.html",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-20",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Threat Intelligence, MITRE ATT&CK and Threat Hunting",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Threat-intelligence to hunt workflow: Convert a supplied threat report into intelligence requirements, ATT&CK mappings, a hunt hypothesis and two defensive improvements.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nSource assessment, relevant TTPs, queries, findings, confidence, detection updates and executive summary.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "MITRE ATT&CK Enterprise Matrix",
+    "resolution_url": "https://attack.mitre.org/matrices/enterprise/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
+  },
+  {
+    "id": "LAB-21",
+    "role_slug": "cybersecurity-analyst",
+    "domain": "Incident Response, Digital Forensics and Recovery",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Cloud incident-response tabletop: Run a tabletop for a compromised cloud administrator that creates persistence, accesses sensitive data and attempts to disable evidence.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nRoles, timeline, containment decisions, forensic plan, communication matrix, recovery criteria and post-incident actions.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response Recommendations",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-28",
+    "status": "published"
   }
 ];
