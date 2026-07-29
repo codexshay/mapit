@@ -334,19 +334,9 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
           {/* Customizable Multi-Select Sub-Domains Panel */}
           {availableDomains.length > 0 && (
             <div className="border-2 border-zinc-800 bg-zinc-950 p-4 space-y-3">
-              <div className="flex items-center justify-between border-b border-zinc-800 pb-2">
-                <h3 className="text-xs font-black uppercase text-white tracking-wider flex items-center gap-2">
-                  <Layers className="w-3.5 h-3.5 text-white" />
-                  Customizable Sub-Domains
-                </h3>
-                <span className="text-[10px] text-zinc-400 font-mono">
-                  {isAllDomainsActive ? 'ALL SELECTED' : `${selectedDomains.length} SELECTED`}
-                </span>
+              <div className="border-b border-zinc-800 pb-2">
+                <Layers className="w-4 h-4 text-white" />
               </div>
-
-              <p className="text-[11px] text-zinc-400 font-sans">
-                Click any sub-domain to toggle selection on/off. Select multiple sub-domains simultaneously to sort filtered questions.
-              </p>
 
               <div className="space-y-1.5 max-h-72 overflow-y-auto pr-1">
                 {/* All Sub-Domains Option */}

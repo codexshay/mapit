@@ -88,16 +88,16 @@ export const GLOBAL_HACKATHONS: Hackathon[] = [
   {
     id: 'unstop-google-generation-scholarship',
     title: 'Generation Google Scholarship APAC (India Track)',
-    organizer: 'Google & Unstop',
+    organizer: 'Google Build Your Future',
     region: 'India',
     prizes: '$2,500 USD (~₹2,10,000) Educational Grant',
     themes: ['Diversity in Tech', 'Computer Science', 'Women in STEM'],
     difficulty: 'All Levels',
     daysLeft: 14,
-    url: 'https://unstop.com/scholarships/generation-google-scholarship-asia-pacific',
+    url: 'https://www.google.com/about/careers/applications/buildyourfuture/',
     type: 'Online',
-    location: 'Online Application & Essay Submission',
-    description: 'Scholarship program to inspire and help female students pursuing computer science degrees to excel in technology and become leaders in the field.',
+    location: 'Online Application via Google Build Your Future Portal',
+    description: 'Scholarship program by Google to inspire and help female students pursuing computer science degrees to excel in technology and become leaders in the field.',
     targetAudience: 'Female Computer Science Students in Indian Universities',
     careerBenefit: 'Direct financial assistance, Google community access, and mentorship opportunities.',
     category: 'Scholarship'
@@ -1420,7 +1420,6 @@ export default function Hackathons({
 
       {/* PROMINENT UNSTOP INDIA & GLOBAL CATEGORY STREAM TABS */}
       <div className="flex flex-wrap items-center gap-2 font-mono">
-        <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider mr-1">Unstop &amp; Live Stream Track:</span>
         {[
           { id: 'All', label: 'All Streams', icon: '🌐' },
           { id: 'Hackathon', label: 'Hackathons', icon: '🏆' },
