@@ -1010,13 +1010,313 @@ export const HIERARCHICAL_REGIONS: CountryConfig[] = [
     flag: '🇮🇳',
     region: 'APJ',
     cities: [
-      { cityName: 'West Delhi', stateName: 'Delhi NCR', hasData: true, totalListings: 20 },
-      { cityName: 'Bengaluru', stateName: 'Karnataka', hasData: false },
-      { cityName: 'Mumbai', stateName: 'Maharashtra', hasData: false },
-      { cityName: 'Hyderabad', stateName: 'Telangana', hasData: false },
-      { cityName: 'Pune', stateName: 'Maharashtra', hasData: false },
-      { cityName: 'Chennai', stateName: 'Tamil Nadu', hasData: false }
-    ]
+      {
+            "cityName": "Bhopal",
+            "stateName": "Madhya Pradesh",
+            "hasData": true,
+            "totalListings": 20
+      },
+      {
+            "cityName": "Indore",
+            "stateName": "Madhya Pradesh",
+            "hasData": true,
+            "totalListings": 20
+      },
+      {
+            "cityName": "Bengaluru",
+            "stateName": "Karnataka",
+            "hasData": true,
+            "totalListings": 12
+      },
+      {
+            "cityName": "Leh",
+            "stateName": "India",
+            "hasData": true,
+            "totalListings": 11
+      },
+      {
+            "cityName": "Jabalpur",
+            "stateName": "Madhya Pradesh",
+            "hasData": true,
+            "totalListings": 10
+      },
+      {
+            "cityName": "Mumbai",
+            "stateName": "Maharashtra",
+            "hasData": true,
+            "totalListings": 10
+      },
+      {
+            "cityName": "Hyderabad",
+            "stateName": "Telangana",
+            "hasData": true,
+            "totalListings": 8
+      },
+      {
+            "cityName": "Delhi / NCR",
+            "stateName": "Delhi",
+            "hasData": true,
+            "totalListings": 7
+      },
+      {
+            "cityName": "Noida / Greater Noida",
+            "stateName": "Uttar Pradesh",
+            "hasData": true,
+            "totalListings": 6
+      },
+      {
+            "cityName": "Pune",
+            "stateName": "Maharashtra",
+            "hasData": true,
+            "totalListings": 6
+      },
+      {
+            "cityName": "Ahmedabad",
+            "stateName": "Gujarat",
+            "hasData": true,
+            "totalListings": 4
+      },
+      {
+            "cityName": "Chandigarh / Mohali",
+            "stateName": "Chandigarh",
+            "hasData": true,
+            "totalListings": 4
+      },
+      {
+            "cityName": "Gurugram",
+            "stateName": "Haryana",
+            "hasData": true,
+            "totalListings": 4
+      },
+      {
+            "cityName": "Jaipur",
+            "stateName": "Rajasthan",
+            "hasData": true,
+            "totalListings": 3
+      },
+      {
+            "cityName": "Jhansi",
+            "stateName": "Uttar Pradesh",
+            "hasData": true,
+            "totalListings": 3
+      },
+      {
+            "cityName": "Kota",
+            "stateName": "Rajasthan",
+            "hasData": true,
+            "totalListings": 3
+      },
+      {
+            "cityName": "Goa",
+            "stateName": "Goa",
+            "hasData": true,
+            "totalListings": 2
+      },
+      {
+            "cityName": "Parel",
+            "stateName": "Himachal Pradesh",
+            "hasData": true,
+            "totalListings": 2
+      },
+      {
+            "cityName": "Raipur",
+            "stateName": "Chhattisgarh",
+            "hasData": true,
+            "totalListings": 2
+      },
+      {
+            "cityName": "Ambala Cantt",
+            "stateName": "Haryana",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Bhubaneswar",
+            "stateName": "Odisha",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Billawar",
+            "stateName": "Jammu and Kashmir",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Chamba",
+            "stateName": "Himachal Pradesh",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Chhindwara",
+            "stateName": "Madhya Pradesh",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Coimbatore",
+            "stateName": "Tamil Nadu",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Dewas",
+            "stateName": "Madhya Pradesh",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Doda",
+            "stateName": "Jammu and Kashmir",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Garra",
+            "stateName": "Madhya Pradesh",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Greater Chennai",
+            "stateName": "Tamil Nadu",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Haridwar",
+            "stateName": "Uttarakhand",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Kanpur",
+            "stateName": "Uttar Pradesh",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Kozhikode",
+            "stateName": "Kerala",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Lucknow",
+            "stateName": "Uttar Pradesh",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Makroniya",
+            "stateName": "Madhya Pradesh",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Meerut",
+            "stateName": "Uttar Pradesh",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Nagpur",
+            "stateName": "Maharashtra",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Nagve",
+            "stateName": "Goa",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Nashik",
+            "stateName": "Maharashtra",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Other India Hubs",
+            "stateName": "India",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Pahalgam",
+            "stateName": "Jammu and Kashmir",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Palika Bazar Magneto mall Road",
+            "stateName": "Chhattisgarh",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Perinthalmanna",
+            "stateName": "Kerala",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Pilern",
+            "stateName": "Goa",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Prayagraj",
+            "stateName": "Uttar Pradesh",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Rusalli Khamkheda",
+            "stateName": "Madhya Pradesh",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Surat",
+            "stateName": "Gujarat",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Tiruchirappalli",
+            "stateName": "Tamil Nadu",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Udaipur",
+            "stateName": "Rajasthan",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Ujjain",
+            "stateName": "Madhya Pradesh",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Vadodara",
+            "stateName": "Gujarat",
+            "hasData": true,
+            "totalListings": 1
+      },
+      {
+            "cityName": "Vijayawada",
+            "stateName": "Andhra Pradesh",
+            "hasData": true,
+            "totalListings": 1
+      }
+]
   },
   {
     countryCode: 'PH',
@@ -1113,99 +1413,509 @@ export const HIERARCHICAL_REGIONS: CountryConfig[] = [
   }
 ];
 
-// Existing IN and PH Database
-const INDIA_PH_DATABASE: Record<string, Record<string, HRContact[]>> = {
-  IN: {
-    "West Delhi": [
-      { rank: 1, companyName: "Career Innovators", rating: 4.6, reviews: 519, phone: "+91 95828 96540", category: "Employment center", wheelchairAccessible: false, website: "" },
-      { rank: 2, companyName: "Epic Consultancy", rating: 4.9, reviews: 473, phone: "+91 99712 59325", category: "BPO placement agency", wheelchairAccessible: false, website: "" },
-      { rank: 3, companyName: "Success Stories", rating: 4.9, reviews: 335, phone: "+91 98737 06391", category: "BPO placement agency", wheelchairAccessible: false, website: "" },
-      { rank: 4, companyName: "Imaginators Consultancy", rating: 4.1, reviews: 365, category: "Consultant", wheelchairAccessible: false, website: "" },
-      { rank: 5, companyName: "Smart Steps HR Services", rating: 4.0, reviews: 369, phone: "+91 88262 14244", category: "Consultant", wheelchairAccessible: false, website: "" },
-      { rank: 6, companyName: "Ishmeet Consultant Pvt Ltd", rating: 4.4, reviews: 285, phone: "+91 99991 89574", category: "Employment agency", wheelchairAccessible: false, website: "" },
-      { rank: 7, companyName: "Gourav Enterprises", rating: 4.6, reviews: 155, phone: "+91 99534 99992", category: "HR consulting", wheelchairAccessible: false, website: "" },
-      { rank: 8, companyName: "Unlock Talent Solutions", rating: 5.0, reviews: 125, category: "Corporate office", wheelchairAccessible: false, website: "" },
-      { rank: 9, companyName: "PlacementIndia.com", rating: 3.3, reviews: 350, phone: "+91 89291 75342", category: "Employment center", wheelchairAccessible: false, website: "" },
-      { rank: 10, companyName: "DKM Online", rating: 4.1, reviews: 175, phone: "+91 11 4259 7777", category: "HR consulting", wheelchairAccessible: false, website: "" },
-      { rank: 11, companyName: "HRVision Consultants", rating: 3.6, reviews: 130, phone: "+91 98999 13337", category: "Employment consultant", wheelchairAccessible: false, website: "" },
-      { rank: 12, companyName: "Career Stone Consultant", rating: 5.0, reviews: 48, phone: "+91 98180 38494", category: "HR consulting", wheelchairAccessible: false, website: "" },
-      { rank: 13, companyName: "Galaxy Consultants", rating: 4.8, reviews: 1616, phone: "+91 97177 91646", category: "Employment agency", wheelchairAccessible: false, website: "" },
-      { rank: 14, companyName: "Human Resource India", rating: 4.9, reviews: 445, phone: "+91 85952 92907", category: "Employment consultant", wheelchairAccessible: false, website: "" },
-      { rank: 15, companyName: "Origin Recruiters", rating: 4.8, reviews: 481, phone: "+91 98105 69750", category: "BPO placement agency", wheelchairAccessible: false, website: "" },
-      { rank: 16, companyName: "The Hunt Ends", rating: 4.5, reviews: 33, phone: "+91 98115 10181", category: "HR consulting", wheelchairAccessible: false, website: "" },
-      { rank: 17, companyName: "Joe HR Services", rating: 5.0, reviews: 20, phone: "+91 93546 80457", category: "Employment consultant", wheelchairAccessible: false, website: "" },
-      { rank: 18, companyName: "Alturas HR Consultants", rating: 4.9, reviews: 237, phone: "+91 72100 17603", category: "HR consulting", wheelchairAccessible: false, website: "" },
-      { rank: 19, companyName: "360 HR Services", rating: 4.7, reviews: 20, category: "Corporate office", wheelchairAccessible: false, website: "" },
-      { rank: 20, companyName: "STEADY CAREER", rating: 4.5, reviews: 454, phone: "+91 95601 46870", category: "BPO placement agency", wheelchairAccessible: false, website: "" }
-    ]
-  },
-  PH: {
-    "Cebu City": [
-      { rank: 1, companyName: "Logix BPO", rating: 4.9, reviews: 262, phone: "+44 115 654 7288", category: "Recruiter", wheelchairAccessible: false, website: "https://logixbpo.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_cebu" },
-      { rank: 2, companyName: "C&G Immigration & Business Services - Cebu", rating: 5.0, reviews: 58, phone: "+63 956 174 7552", category: "Visa consulting service", wheelchairAccessible: false, website: "https://cgconsulting.ph/" },
-      { rank: 3, companyName: "ContactPoint360 Philippines", rating: 4.8, reviews: 107, phone: "+63 917 717 1051", category: "BPO company", wheelchairAccessible: true, website: "https://cp360.talentmatch.h2r.ai/" },
-      { rank: 4, companyName: "HireBiz", rating: 4.9, reviews: 34, phone: "+63 906 370 8914", category: "Corporate office", wheelchairAccessible: false, website: "http://www.hirebiz.com/" },
-      { rank: 5, companyName: "Click It Virtual Services", rating: 4.9, reviews: 16, phone: "+63 929 880 8143", category: "Human resource consulting", wheelchairAccessible: false, website: "https://clickitvirtual.com/" },
-      { rank: 6, companyName: "Global Staff Connections", rating: 4.6, reviews: 15, category: "Employment agency", wheelchairAccessible: false, website: "http://globalstaffconnections.com/" }
-    ],
-    "Makati City": [
-      { rank: 1, companyName: "Stark Asia Solutions", rating: 5.0, reviews: 766, phone: "+63 917 180 8612", category: "Recruiter", wheelchairAccessible: true, website: "http://www.stark.com.ph/" },
-      { rank: 2, companyName: "Curran Daly + Associates", rating: 5.0, reviews: 326, phone: "+63 2 8863 6835", category: "Recruiter", wheelchairAccessible: true, website: "http://www.currandaly.com/" },
-      { rank: 3, companyName: "Manila Recruitment - Executive Search", rating: 4.8, reviews: 616, phone: "+63 917 166 2768", category: "Recruiter", wheelchairAccessible: true, website: "https://www.manilarecruitment.com/" },
-      { rank: 4, companyName: "Robert Walters Recruitment Philippines", rating: 4.8, reviews: 205, phone: "+63 2 8816 4972", category: "Employment center", wheelchairAccessible: false, website: "https://www.robertwalters.com.ph/" },
-      { rank: 5, companyName: "Remote Staff", rating: 4.9, reviews: 114, phone: "+63 2 8846 4249", category: "Corporate office", wheelchairAccessible: true, website: "https://www.remotestaff.ph/" },
-      { rank: 6, companyName: "Bossjob Philippines", rating: 4.8, reviews: 160, phone: "+63 2 8511 5709", category: "Recruiter", wheelchairAccessible: false, website: "https://bossjob.ph/" },
-      { rank: 7, companyName: "Permhunt", rating: 5.0, reviews: 50, phone: "+63 961 759 4405", category: "Recruiter", wheelchairAccessible: true, website: "https://permhunt.com/" },
-      { rank: 8, companyName: "MCVO Talent Outsourcing Services", rating: 4.9, reviews: 44, phone: "(312) 460-2470", category: "Executive search firm", wheelchairAccessible: true, website: "https://www.mcvotalent.com/" },
-      { rank: 9, companyName: "Transitions Executive Search", rating: 5.0, reviews: 27, phone: "+63 2 8887 5720", category: "Executive search firm", wheelchairAccessible: true, website: "https://www.transitionsinc.net/" },
-      { rank: 10, companyName: "Latte Search", rating: 4.9, reviews: 15, category: "Recruiter", wheelchairAccessible: true, website: "http://www.latte.ph/" },
-      { rank: 11, companyName: "Elite HeadHunting Incorporated", rating: 4.7, reviews: 12, phone: "+63 2 8845 1234", category: "Recruiter", wheelchairAccessible: true, website: "http://eliteheadhunting.net/" },
-      { rank: 12, companyName: "Techsearch International Corp", rating: 4.6, reviews: 8, phone: "+63 2 8893 2345", category: "Executive search firm", wheelchairAccessible: false, website: "https://www.techsearchinternational.com/" }
-    ],
-    "Quezon City": [
-      { rank: 1, companyName: "Ignite Careers", rating: 4.9, reviews: 2977, phone: "+63 2 8234 5712", category: "Recruiter", wheelchairAccessible: true, website: "https://ignitecareers.ph/" },
-      { rank: 2, companyName: "Global Headstart Specialist", rating: 4.9, reviews: 1353, phone: "+63 2 8298 4313", category: "Business to business service", wheelchairAccessible: true, website: "http://www.globalheadstart.com/" },
-      { rank: 3, companyName: "J-K Network Services", rating: 4.9, reviews: 1003, phone: "+63 2 8245 2829", category: "Human resource consulting", wheelchairAccessible: false, website: "http://www.jkmanpower.jp-network-e.com/" },
-      { rank: 4, companyName: "RecruitGo Philippines", rating: 5.0, reviews: 97, phone: "+63 921 976 2870", category: "Software company", wheelchairAccessible: true, website: "https://recruitgo.com/" },
-      { rank: 5, companyName: "VXI Panorama Recruitment Center", rating: 4.4, reviews: 371, phone: "+63 917 777 5555", category: "BPO company", wheelchairAccessible: true, website: "http://www.vxi-family.com/" },
-      { rank: 6, companyName: "Rensol Recruitment and Consulting", rating: 4.5, reviews: 216, phone: "+63 2 8931 0968", category: "Recruiter", wheelchairAccessible: true, website: "http://www.rensol.com/" },
-      { rank: 7, companyName: "1st Dynamic Personnel Resources", rating: 4.5, reviews: 187, phone: "+63 2 7798 4048", category: "Employment agency", wheelchairAccessible: true, website: "http://1stdynamicpersonnel.com/" },
-      { rank: 8, companyName: "Armasourcing", rating: 5.0, reviews: 16, phone: "+63 995 436 8153", category: "Talent agency", wheelchairAccessible: true, website: "https://armasourcing.com/" },
-      { rank: 9, companyName: "N&M Staffing Services", rating: 5.0, reviews: 14, phone: "+63 976 503 0714", category: "Consultant", wheelchairAccessible: false, website: "http://nmstaffing.com.ph/" },
-      { rank: 10, companyName: "Wealthlink Incorporated Agency", rating: 4.5, reviews: 12, phone: "+63 2 8922 4321", category: "Employment agency", wheelchairAccessible: false, website: "https://wealthlink.com.ph/" },
-      { rank: 11, companyName: "Workscale Resources Inc", rating: 4.8, reviews: 8, category: "Corporate office", wheelchairAccessible: true, website: "http://www.workscale.ph/" },
-      { rank: 12, companyName: "Clear Leadership Consulting", rating: 4.7, reviews: 6, category: "Consultant", wheelchairAccessible: false, website: "https://clearleadershipcoach.com/" }
-    ],
-    "Davao City": [
-      { rank: 1, companyName: "Full Potential Solutions Davao", rating: 4.4, reviews: 49, phone: "(833) 470-0377", category: "BPO company", wheelchairAccessible: true, website: "http://www.fpsinc.com/" },
-      { rank: 2, companyName: "Global Staff Network", rating: 5.0, reviews: 2, phone: "+61 7 3177 7774", category: "Employment agency", wheelchairAccessible: false, website: "https://globalstaffnetwork.com/" },
-      { rank: 3, companyName: "FJ80 HR Consultancy Co.", rating: 5.0, reviews: 1, phone: "+63 995 480 8062", category: "Human resource consulting", wheelchairAccessible: false, website: "https://fj80hrconsultancy.com/" },
-      { rank: 4, companyName: "Human Resource Management Office", rating: 5.0, reviews: 1, phone: "+63 82 227 7772", category: "Government office", wheelchairAccessible: true, website: "https://www.davaocity.gov.ph/" },
-      { rank: 5, companyName: "Online Hiring Corp.", rating: 4.8, reviews: 4, phone: "+63 82 295 1770", category: "Recruiter", wheelchairAccessible: true, website: "http://www.onlinehiringcorporation.com/" },
-      { rank: 6, companyName: "HMO International Recruitment", rating: 4.6, reviews: 22, phone: "+63 82 221 4321", category: "Employment agency", wheelchairAccessible: true, website: "https://hmoihr.com/" }
-    ],
-    "Manila": [
-      { rank: 1, companyName: "Monroe Consulting Group Philippines", rating: 4.9, reviews: 2258, phone: "+63 2 7002 1292", category: "Recruiter", wheelchairAccessible: true, website: "https://www.monroeconsulting.com/philippines" },
-      { rank: 2, companyName: "FMW Human Resources International", rating: 4.6, reviews: 162, phone: "+63 2 8280 9471", category: "Human resource consulting", wheelchairAccessible: true, website: "https://fmwhumanresources.com/" },
-      { rank: 3, companyName: "YWA Human Resource Corporation", rating: 4.4, reviews: 259, phone: "+63 2 8524 7777", category: "Employment agency", wheelchairAccessible: true, website: "http://www.ywacorp.com/" },
-      { rank: 4, companyName: "2018 Crowne Human Resources Inc", rating: 4.9, reviews: 19, phone: "+63 939 515 1646", category: "Human resource consulting", wheelchairAccessible: false, website: "https://www.2018crownehumanresourcesinc.com/" },
-      { rank: 5, companyName: "Lead Resources Management Corp.", rating: 4.6, reviews: 42, category: "Employment agency", wheelchairAccessible: false, website: "http://lead.com.ph/" },
-      { rank: 6, companyName: "Done Remotely", rating: 5.0, reviews: 4, category: "BPO company", wheelchairAccessible: false, website: "https://www.doneremotely.com/" },
-      { rank: 7, companyName: "Century High HR Incorporated", rating: 4.6, reviews: 8, phone: "+63 992 398 7952", category: "Recruiter", wheelchairAccessible: false, website: "http://www.facebook.com/HRCenturyHigh" },
-      { rank: 8, companyName: "PHR-Philippine Human Resource Worldwide", rating: 4.1, reviews: 51, phone: "+63 2 8518 8448", category: "Human resource consulting", wheelchairAccessible: true, website: "http://www.phrwe.com/" },
-      { rank: 9, companyName: "Happy World HR and Recruitment", rating: 4.3, reviews: 15, category: "Recruiter", wheelchairAccessible: false, website: "" },
-      { rank: 10, companyName: "AristoSourcing", rating: 4.8, reviews: 25, category: "BPO company", wheelchairAccessible: true, website: "https://aristosourcing.com/" },
-      { rank: 11, companyName: "KFL Manpower Agency", rating: 4.5, reviews: 14, category: "Employment agency", wheelchairAccessible: false, website: "http://www.kflmanpoweragency.com/" },
-      { rank: 12, companyName: "Skills Innovative People Services", rating: 4.6, reviews: 9, category: "Human resource consulting", wheelchairAccessible: false, website: "" },
-      { rank: 13, companyName: "HURIS Inc. (HR Innovations)", rating: 4.7, reviews: 20, phone: "+63 2 8871 1234", category: "Human resource consulting", wheelchairAccessible: true, website: "http://www.huris.com.ph/" },
-      { rank: 14, companyName: "Newfold Digital Philippines", rating: 4.4, reviews: 30, category: "Corporate office", wheelchairAccessible: true, website: "http://newfold.com/" }
-    ]
-  }
-};
-
 // Raw Directory Database merging US + IN + PH
 export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>> = {
-  ...INDIA_PH_DATABASE,
+  PH: {
+    "Cebu City": [
+        {
+            "rank": 1,
+            "companyName": "Logix BPO",
+            "rating": 4.9,
+            "reviews": 262,
+            "phone": "+44 115 654 7288",
+            "category": "Recruiter",
+            "wheelchairAccessible": false,
+            "website": "https://logixbpo.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_cebu"
+        },
+        {
+            "rank": 2,
+            "companyName": "C&G Immigration & Business Services - Cebu",
+            "rating": 5.0,
+            "reviews": 58,
+            "phone": "+63 956 174 7552",
+            "category": "Visa consulting service",
+            "wheelchairAccessible": false,
+            "website": "https://cgconsulting.ph/"
+        },
+        {
+            "rank": 3,
+            "companyName": "ContactPoint360 Philippines",
+            "rating": 4.8,
+            "reviews": 107,
+            "phone": "+63 917 717 1051",
+            "category": "BPO company",
+            "wheelchairAccessible": true,
+            "website": "https://cp360.talentmatch.h2r.ai/"
+        },
+        {
+            "rank": 4,
+            "companyName": "HireBiz",
+            "rating": 4.9,
+            "reviews": 34,
+            "phone": "+63 906 370 8914",
+            "category": "Corporate office",
+            "wheelchairAccessible": false,
+            "website": "http://www.hirebiz.com/"
+        },
+        {
+            "rank": 5,
+            "companyName": "Click It Virtual Services",
+            "rating": 4.9,
+            "reviews": 16,
+            "phone": "+63 929 880 8143",
+            "category": "Human resource consulting",
+            "wheelchairAccessible": false,
+            "website": "https://clickitvirtual.com/"
+        },
+        {
+            "rank": 6,
+            "companyName": "Global Staff Connections",
+            "rating": 4.6,
+            "reviews": 15,
+            "category": "Employment agency",
+            "wheelchairAccessible": false,
+            "website": "http://globalstaffconnections.com/"
+        }
+    ],
+    "Makati City": [
+        {
+            "rank": 1,
+            "companyName": "Stark Asia Solutions",
+            "rating": 5.0,
+            "reviews": 766,
+            "phone": "+63 917 180 8612",
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "http://www.stark.com.ph/"
+        },
+        {
+            "rank": 2,
+            "companyName": "Curran Daly + Associates",
+            "rating": 5.0,
+            "reviews": 326,
+            "phone": "+63 2 8863 6835",
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "http://www.currandaly.com/"
+        },
+        {
+            "rank": 3,
+            "companyName": "Manila Recruitment - Executive Search",
+            "rating": 4.8,
+            "reviews": 616,
+            "phone": "+63 917 166 2768",
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "https://www.manilarecruitment.com/"
+        },
+        {
+            "rank": 4,
+            "companyName": "Robert Walters Recruitment Philippines",
+            "rating": 4.8,
+            "reviews": 205,
+            "phone": "+63 2 8816 4972",
+            "category": "Employment center",
+            "wheelchairAccessible": false,
+            "website": "https://www.robertwalters.com.ph/"
+        },
+        {
+            "rank": 5,
+            "companyName": "Remote Staff",
+            "rating": 4.9,
+            "reviews": 114,
+            "phone": "+63 2 8846 4249",
+            "category": "Corporate office",
+            "wheelchairAccessible": true,
+            "website": "https://www.remotestaff.ph/"
+        },
+        {
+            "rank": 6,
+            "companyName": "Bossjob Philippines",
+            "rating": 4.8,
+            "reviews": 160,
+            "phone": "+63 2 8511 5709",
+            "category": "Recruiter",
+            "wheelchairAccessible": false,
+            "website": "https://bossjob.ph/"
+        },
+        {
+            "rank": 7,
+            "companyName": "Permhunt",
+            "rating": 5.0,
+            "reviews": 50,
+            "phone": "+63 961 759 4405",
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "https://permhunt.com/"
+        },
+        {
+            "rank": 8,
+            "companyName": "MCVO Talent Outsourcing Services",
+            "rating": 4.9,
+            "reviews": 44,
+            "phone": "(312) 460-2470",
+            "category": "Executive search firm",
+            "wheelchairAccessible": true,
+            "website": "https://www.mcvotalent.com/"
+        },
+        {
+            "rank": 9,
+            "companyName": "Transitions Executive Search",
+            "rating": 5.0,
+            "reviews": 27,
+            "phone": "+63 2 8887 5720",
+            "category": "Executive search firm",
+            "wheelchairAccessible": true,
+            "website": "https://www.transitionsinc.net/"
+        },
+        {
+            "rank": 10,
+            "companyName": "Latte Search",
+            "rating": 4.9,
+            "reviews": 15,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "http://www.latte.ph/"
+        },
+        {
+            "rank": 11,
+            "companyName": "Elite HeadHunting Incorporated",
+            "rating": 4.7,
+            "reviews": 12,
+            "phone": "+63 2 8845 1234",
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "http://eliteheadhunting.net/"
+        },
+        {
+            "rank": 12,
+            "companyName": "Techsearch International Corp",
+            "rating": 4.6,
+            "reviews": 8,
+            "phone": "+63 2 8893 2345",
+            "category": "Executive search firm",
+            "wheelchairAccessible": false,
+            "website": "https://www.techsearchinternational.com/"
+        }
+    ],
+    "Quezon City": [
+        {
+            "rank": 1,
+            "companyName": "Ignite Careers",
+            "rating": 4.9,
+            "reviews": 2977,
+            "phone": "+63 2 8234 5712",
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "https://ignitecareers.ph/"
+        },
+        {
+            "rank": 2,
+            "companyName": "Global Headstart Specialist",
+            "rating": 4.9,
+            "reviews": 1353,
+            "phone": "+63 2 8298 4313",
+            "category": "Business to business service",
+            "wheelchairAccessible": true,
+            "website": "http://www.globalheadstart.com/"
+        },
+        {
+            "rank": 3,
+            "companyName": "J-K Network Services",
+            "rating": 4.9,
+            "reviews": 1003,
+            "phone": "+63 2 8245 2829",
+            "category": "Human resource consulting",
+            "wheelchairAccessible": false,
+            "website": "http://www.jkmanpower.jp-network-e.com/"
+        },
+        {
+            "rank": 4,
+            "companyName": "RecruitGo Philippines",
+            "rating": 5.0,
+            "reviews": 97,
+            "phone": "+63 921 976 2870",
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "website": "https://recruitgo.com/"
+        },
+        {
+            "rank": 5,
+            "companyName": "VXI Panorama Recruitment Center",
+            "rating": 4.4,
+            "reviews": 371,
+            "phone": "+63 917 777 5555",
+            "category": "BPO company",
+            "wheelchairAccessible": true,
+            "website": "http://www.vxi-family.com/"
+        },
+        {
+            "rank": 6,
+            "companyName": "Rensol Recruitment and Consulting",
+            "rating": 4.5,
+            "reviews": 216,
+            "phone": "+63 2 8931 0968",
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "http://www.rensol.com/"
+        },
+        {
+            "rank": 7,
+            "companyName": "1st Dynamic Personnel Resources",
+            "rating": 4.5,
+            "reviews": 187,
+            "phone": "+63 2 7798 4048",
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "website": "http://1stdynamicpersonnel.com/"
+        },
+        {
+            "rank": 8,
+            "companyName": "Armasourcing",
+            "rating": 5.0,
+            "reviews": 16,
+            "phone": "+63 995 436 8153",
+            "category": "Talent agency",
+            "wheelchairAccessible": true,
+            "website": "https://armasourcing.com/"
+        },
+        {
+            "rank": 9,
+            "companyName": "N&M Staffing Services",
+            "rating": 5.0,
+            "reviews": 14,
+            "phone": "+63 976 503 0714",
+            "category": "Consultant",
+            "wheelchairAccessible": false,
+            "website": "http://nmstaffing.com.ph/"
+        },
+        {
+            "rank": 10,
+            "companyName": "Wealthlink Incorporated Agency",
+            "rating": 4.5,
+            "reviews": 12,
+            "phone": "+63 2 8922 4321",
+            "category": "Employment agency",
+            "wheelchairAccessible": false,
+            "website": "https://wealthlink.com.ph/"
+        },
+        {
+            "rank": 11,
+            "companyName": "Workscale Resources Inc",
+            "rating": 4.8,
+            "reviews": 8,
+            "category": "Corporate office",
+            "wheelchairAccessible": true,
+            "website": "http://www.workscale.ph/"
+        },
+        {
+            "rank": 12,
+            "companyName": "Clear Leadership Consulting",
+            "rating": 4.7,
+            "reviews": 6,
+            "category": "Consultant",
+            "wheelchairAccessible": false,
+            "website": "https://clearleadershipcoach.com/"
+        }
+    ],
+    "Davao City": [
+        {
+            "rank": 1,
+            "companyName": "Full Potential Solutions Davao",
+            "rating": 4.4,
+            "reviews": 49,
+            "phone": "(833) 470-0377",
+            "category": "BPO company",
+            "wheelchairAccessible": true,
+            "website": "http://www.fpsinc.com/"
+        },
+        {
+            "rank": 2,
+            "companyName": "Global Staff Network",
+            "rating": 5.0,
+            "reviews": 2,
+            "phone": "+61 7 3177 7774",
+            "category": "Employment agency",
+            "wheelchairAccessible": false,
+            "website": "https://globalstaffnetwork.com/"
+        },
+        {
+            "rank": 3,
+            "companyName": "FJ80 HR Consultancy Co.",
+            "rating": 5.0,
+            "reviews": 1,
+            "phone": "+63 995 480 8062",
+            "category": "Human resource consulting",
+            "wheelchairAccessible": false,
+            "website": "https://fj80hrconsultancy.com/"
+        },
+        {
+            "rank": 4,
+            "companyName": "Human Resource Management Office",
+            "rating": 5.0,
+            "reviews": 1,
+            "phone": "+63 82 227 7772",
+            "category": "Government office",
+            "wheelchairAccessible": true,
+            "website": "https://www.davaocity.gov.ph/"
+        },
+        {
+            "rank": 5,
+            "companyName": "Online Hiring Corp.",
+            "rating": 4.8,
+            "reviews": 4,
+            "phone": "+63 82 295 1770",
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "http://www.onlinehiringcorporation.com/"
+        },
+        {
+            "rank": 6,
+            "companyName": "HMO International Recruitment",
+            "rating": 4.6,
+            "reviews": 22,
+            "phone": "+63 82 221 4321",
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "website": "https://hmoihr.com/"
+        }
+    ],
+    "Manila": [
+        {
+            "rank": 1,
+            "companyName": "Monroe Consulting Group Philippines",
+            "rating": 4.9,
+            "reviews": 2258,
+            "phone": "+63 2 7002 1292",
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "https://www.monroeconsulting.com/philippines"
+        },
+        {
+            "rank": 2,
+            "companyName": "FMW Human Resources International",
+            "rating": 4.6,
+            "reviews": 162,
+            "phone": "+63 2 8280 9471",
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "website": "https://fmwhumanresources.com/"
+        },
+        {
+            "rank": 3,
+            "companyName": "YWA Human Resource Corporation",
+            "rating": 4.4,
+            "reviews": 259,
+            "phone": "+63 2 8524 7777",
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "website": "http://www.ywacorp.com/"
+        },
+        {
+            "rank": 4,
+            "companyName": "2018 Crowne Human Resources Inc",
+            "rating": 4.9,
+            "reviews": 19,
+            "phone": "+63 939 515 1646",
+            "category": "Human resource consulting",
+            "wheelchairAccessible": false,
+            "website": "https://www.2018crownehumanresourcesinc.com/"
+        },
+        {
+            "rank": 5,
+            "companyName": "Lead Resources Management Corp.",
+            "rating": 4.6,
+            "reviews": 42,
+            "category": "Employment agency",
+            "wheelchairAccessible": false,
+            "website": "http://lead.com.ph/"
+        },
+        {
+            "rank": 6,
+            "companyName": "Done Remotely",
+            "rating": 5.0,
+            "reviews": 4,
+            "category": "BPO company",
+            "wheelchairAccessible": false,
+            "website": "https://www.doneremotely.com/"
+        },
+        {
+            "rank": 7,
+            "companyName": "Century High HR Incorporated",
+            "rating": 4.6,
+            "reviews": 8,
+            "phone": "+63 992 398 7952",
+            "category": "Recruiter",
+            "wheelchairAccessible": false,
+            "website": "http://www.facebook.com/HRCenturyHigh"
+        },
+        {
+            "rank": 8,
+            "companyName": "PHR-Philippine Human Resource Worldwide",
+            "rating": 4.1,
+            "reviews": 51,
+            "phone": "+63 2 8518 8448",
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "website": "http://www.phrwe.com/"
+        },
+        {
+            "rank": 9,
+            "companyName": "Happy World HR and Recruitment",
+            "rating": 4.3,
+            "reviews": 15,
+            "category": "Recruiter",
+            "wheelchairAccessible": false,
+            "website": ""
+        },
+        {
+            "rank": 10,
+            "companyName": "AristoSourcing",
+            "rating": 4.8,
+            "reviews": 25,
+            "category": "BPO company",
+            "wheelchairAccessible": true,
+            "website": "https://aristosourcing.com/"
+        },
+        {
+            "rank": 11,
+            "companyName": "KFL Manpower Agency",
+            "rating": 4.5,
+            "reviews": 14,
+            "category": "Employment agency",
+            "wheelchairAccessible": false,
+            "website": "http://www.kflmanpoweragency.com/"
+        },
+        {
+            "rank": 12,
+            "companyName": "Skills Innovative People Services",
+            "rating": 4.6,
+            "reviews": 9,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": false,
+            "website": ""
+        },
+        {
+            "rank": 13,
+            "companyName": "HURIS Inc. (HR Innovations)",
+            "rating": 4.7,
+            "reviews": 20,
+            "phone": "+63 2 8871 1234",
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "website": "http://www.huris.com.ph/"
+        },
+        {
+            "rank": 14,
+            "companyName": "Newfold Digital Philippines",
+            "rating": 4.4,
+            "reviews": 30,
+            "category": "Corporate office",
+            "wheelchairAccessible": true,
+            "website": "http://newfold.com/"
+        }
+    ]
+},
   US: {
     "New York": [
         {
@@ -4157,7 +4867,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
             "category": "Recruiter",
             "wheelchairAccessible": true,
             "phone": "(877) 731-5788",
-            "website": "https://www.csrecruiting.com/industries-served/information-technology-services-recruitment-made-easy/",
+            "website": "http://www.csrecruiting.com/",
             "mapsLink": "https://www.google.com/maps/search/?api=1&query=Cornerstone%20Recruiting&query_place_id=ChIJpQczXcndx4kR5UftliXiab4"
         }
     ],
@@ -5068,6 +5778,1957 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
             "mapsLink": "https://www.google.com/maps/search/?api=1&query=Trueline%20Talent&query_place_id=ChIJ387G9BScskwRevaKt0aMkqA"
         }
     ]
+},
+  IN: {
+    "Bhopal": [
+        {
+            "rank": 1,
+            "companyName": "JBR CONSULTANT",
+            "rating": 4.9,
+            "reviews": 754,
+            "category": "Website designer",
+            "wheelchairAccessible": true,
+            "phone": "+91 72476 66888",
+            "website": "https://jbrconsultant.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=JBR%20CONSULTANT&query_place_id=ChIJI7nvUP5ofDkRz9bxYVVpObs"
+        },
+        {
+            "rank": 2,
+            "companyName": "MaMITs",
+            "rating": 4.9,
+            "reviews": 183,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 86027 41312",
+            "website": "https://www.mamits.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=MaMITs&query_place_id=ChIJV6-zTwFCfDkRgDTxfjz68zw"
+        },
+        {
+            "rank": 3,
+            "companyName": "ValueX Digital Private Limited - VXD",
+            "rating": 4.9,
+            "reviews": 179,
+            "category": "Marketing agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 83570 77888",
+            "website": "http://www.valuexdigital.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=ValueX%20Digital%20Private%20Limited%20-%20VXD&query_place_id=ChIJbanHsgBDfDkRx1x2U0hFPAw"
+        },
+        {
+            "rank": 4,
+            "companyName": "Job Update India | Training & Placement Services",
+            "rating": 4.9,
+            "reviews": 147,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 99935 22430",
+            "website": "https://jobupdateindia.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Job%20Update%20India%20%7C%20Training%20%26%20Placement%20Services&query_place_id=ChIJMXJJWn-0hGkRczGMVtl5hcE"
+        },
+        {
+            "rank": 5,
+            "companyName": "Catalyst for your Career(MMTIJOBS)",
+            "rating": 4.9,
+            "reviews": 132,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 99938 26661",
+            "website": "https://www.mmtijobs.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Catalyst%20for%20your%20Career(MMTIJOBS)&query_place_id=ChIJ_coVDYFDfDkRWtQbZi7_RP4"
+        },
+        {
+            "rank": 6,
+            "companyName": "webOdoctor Inc",
+            "rating": 4.9,
+            "reviews": 109,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 70009 26009",
+            "website": "http://webodoctor.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=webOdoctor%20Inc&query_place_id=ChIJ14T4B09CfDkRU9UrGGSwsUY"
+        },
+        {
+            "rank": 7,
+            "companyName": "ClimbX Global",
+            "rating": 4.9,
+            "reviews": 57,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 79870 77914",
+            "website": "https://www.climbxglobal.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=ClimbX%20Global&query_place_id=ChIJhXp6x71DfDkRuBjwZqQWc7M"
+        },
+        {
+            "rank": 8,
+            "companyName": "Talent Leads HR Solutions Pvt Ltd",
+            "rating": 4.8,
+            "reviews": 236,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 88273 92101",
+            "website": "http://www.talentleads.co.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Talent%20Leads%20HR%20Solutions%20Pvt%20Ltd&query_place_id=ChIJ_SpLnOJpfDkRXMADHBLKq5U"
+        },
+        {
+            "rank": 9,
+            "companyName": "CMSIL-INDIA",
+            "rating": 4.8,
+            "reviews": 120,
+            "category": "Certification agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 79098 21294",
+            "website": "http://www.cmsil.org/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=CMSIL-INDIA&query_place_id=ChIJOxOvciBpfDkRbQH_zQkL6mQ"
+        },
+        {
+            "rank": 10,
+            "companyName": "HL TECH INDIA PRIVATE LIMITED",
+            "rating": 4.8,
+            "reviews": 101,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 94305 52744",
+            "website": "http://www.hltechindia.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=HL%20TECH%20INDIA%20PRIVATE%20LIMITED&query_place_id=ChIJn4vnDgBDfDkRLzpcz_T7eRE"
+        },
+        {
+            "rank": 11,
+            "companyName": "GenNext India Private Limited - Executive Search| Recruitment| Temp Staffing| Training| Payroll| RPO| Campus Recruitment| C2H",
+            "rating": 4.7,
+            "reviews": 305,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 755 406 4647",
+            "website": "http://www.gennext.co.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=GenNext%20India%20Private%20Limited%20-%20Executive%20Search%7C%20Recruitment%7C%20Temp%20Staffing%7C%20Training%7C%20Payroll%7C%20RPO%7C%20Campus%20Recruitment%7C%20C2H&query_place_id=ChIJbXhgN7BDfDkRbzTEbnDcpA8"
+        },
+        {
+            "rank": 12,
+            "companyName": "\ud835\uddd8\ud835\uddf1\ud835\ude02 \ud835\uddea\ud835\uddf6\ud835\uddff\ud835\uddf2 \ud835\udde2\ud835\ude03\ud835\uddf2\ud835\uddff\ud835\ude00\ud835\uddf2\ud835\uddee\ud835\ude00 \ud835\uddd6\ud835\uddfc\ud835\uddfb\ud835\ude00\ud835\ude02\ud835\uddf9\ud835\ude01\ud835\uddee\ud835\uddfb\ud835\ude01 \ud835\udde3\ud835\ude03\ud835\ude01. \ud835\udddf\ud835\ude01\ud835\uddf1.",
+            "rating": 4.7,
+            "reviews": 215,
+            "category": "Educational consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 93008 12637",
+            "website": "http://www.edu-wire.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=%F0%9D%97%98%F0%9D%97%B1%F0%9D%98%82%20%F0%9D%97%AA%F0%9D%97%B6%F0%9D%97%BF%F0%9D%97%B2%20%F0%9D%97%A2%F0%9D%98%83%F0%9D%97%B2%F0%9D%97%BF%F0%9D%98%80%F0%9D%97%B2%F0%9D%97%AE%F0%9D%98%80%20%F0%9D%97%96%F0%9D%97%BC%F0%9D%97%BB%F0%9D%98%80%F0%9D%98%82%F0%9D%97%B9%F0%9D%98%81%F0%9D%97%AE%F0%9D%97%BB%F0%9D%98%81%20%F0%9D%97%A3%F0%9D%98%83%F0%9D%98%81.%20%F0%9D%97%9F%F0%9D%98%81%F0%9D%97%B1.&query_place_id=ChIJh5lj46FDfDkRnAiGjaNt4yg"
+        },
+        {
+            "rank": 13,
+            "companyName": "NewRise Technosys Pvt. Ltd.",
+            "rating": 4.7,
+            "reviews": 80,
+            "category": "Website designer",
+            "wheelchairAccessible": true,
+            "phone": "+91 99810 47124",
+            "website": "http://nrt.co.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=NewRise%20Technosys%20Pvt.%20Ltd.&query_place_id=ChIJvaBHBFRCfDkRkCJiK-G2dHc"
+        },
+        {
+            "rank": 14,
+            "companyName": "Act T Connect || IT Software Company in Bhopal",
+            "rating": 4.7,
+            "reviews": 67,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 93291 43659",
+            "website": "https://www.acttconnect.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Act%20T%20Connect%20%7C%7C%20IT%20Software%20Company%20in%20Bhopal&query_place_id=ChIJr1cs5RE3fDkRR9Hnq2Dnk_w"
+        },
+        {
+            "rank": 15,
+            "companyName": "Techhelper Technologies",
+            "rating": 4.7,
+            "reviews": 49,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 72230 61806",
+            "website": "https://techhelper.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Techhelper%20Technologies&query_place_id=ChIJM095rs5pfDkRlJ9NNCJ8OGA"
+        },
+        {
+            "rank": 16,
+            "companyName": "Corporate Steps - SAP ERP & HR Training | IT & Non-IT Recruitment | Placement | Campus | Job Agency | Domestic Hiring",
+            "rating": 4.6,
+            "reviews": 173,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 76948 05585",
+            "website": "http://corporatesteps.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Corporate%20Steps%20-%20SAP%20ERP%20%26%20HR%20Training%20%7C%20IT%20%26%20Non-IT%20Recruitment%20%7C%20Placement%20%7C%20Campus%20%7C%20Job%20Agency%20%7C%20Domestic%20Hiring&query_place_id=ChIJkRNJe11CfDkRgk87ug9uOo8"
+        },
+        {
+            "rank": 17,
+            "companyName": "Selection Point",
+            "rating": 4.6,
+            "reviews": 125,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 755 404 5354",
+            "website": "http://www.selectionpoint.org/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Selection%20Point&query_place_id=ChIJ_b1HvWdCfDkRhfRDPsLvWoY"
+        },
+        {
+            "rank": 18,
+            "companyName": "Skills And Placement Services",
+            "rating": 4.6,
+            "reviews": 58,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 95893 73987",
+            "website": "https://sapsindia.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Skills%20And%20Placement%20Services&query_place_id=ChIJp4rB5r9nfDkRN1LKSJCrdrI"
+        },
+        {
+            "rank": 19,
+            "companyName": "Madhya Pradesh Agency For Promotion Of Information Technology",
+            "rating": 4.6,
+            "reviews": 23,
+            "category": "Government office",
+            "wheelchairAccessible": true,
+            "phone": "+91 755 251 8300",
+            "website": "http://www.mapit.gov.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Madhya%20Pradesh%20Agency%20For%20Promotion%20Of%20Information%20Technology&query_place_id=ChIJuWT42GJCfDkREyY5rrcaNlY"
+        },
+        {
+            "rank": 20,
+            "companyName": "Ekluvya Consultancy Services",
+            "rating": 4.5,
+            "reviews": 768,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 755 492 9910",
+            "website": "http://ekluvyaconsultancy.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Ekluvya%20Consultancy%20Services&query_place_id=ChIJwywkwAhCfDkRd9FL7Yc8V7M"
+        }
+    ],
+    "Indore": [
+        {
+            "rank": 1,
+            "companyName": "Starway Consultancy Services Private Limited",
+            "rating": 5.0,
+            "reviews": 468,
+            "category": "Business management consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 91112 66621",
+            "website": "http://starwayconsultancy.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Starway%20Consultancy%20Services%20Private%20Limited&query_place_id=ChIJE3_PL1L9YjkRGpHop-CgTx8"
+        },
+        {
+            "rank": 2,
+            "companyName": "Recooty",
+            "rating": 5.0,
+            "reviews": 152,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "website": "https://recooty.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Recooty&query_place_id=ChIJibYSa2ezgTkRPWHlFwKEHmE"
+        },
+        {
+            "rank": 3,
+            "companyName": "Bright Computers & IT Networking services, penta scaning, OTDR Testing, fiber Splic, Rack dressing, Rack installation",
+            "rating": 5.0,
+            "reviews": 25,
+            "category": "Business networking company",
+            "wheelchairAccessible": true,
+            "phone": "+91 97136 61444",
+            "website": "http://www.brightcns.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Bright%20Computers%20%26%20IT%20Networking%20services%2C%20penta%20scaning%2C%20OTDR%20Testing%2C%20fiber%20Splic%2C%20Rack%20dressing%2C%20Rack%20installation&query_place_id=ChIJO3tI39HjYjkRZ4fLXsxJqiM"
+        },
+        {
+            "rank": 4,
+            "companyName": "Hiring Point",
+            "rating": 4.9,
+            "reviews": 126,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 95840 41111",
+            "website": "http://www.hiringpoint.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Hiring%20Point&query_place_id=ChIJSd6gIz_jYjkRQVeYjNqnOlw"
+        },
+        {
+            "rank": 5,
+            "companyName": "Professional Adda",
+            "rating": 4.9,
+            "reviews": 75,
+            "category": "Software training institute",
+            "wheelchairAccessible": true,
+            "phone": "+91 96447 04844",
+            "website": "http://professionaladda.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Professional%20Adda&query_place_id=ChIJBXy17-H9YjkR7HiZs-7shJ4"
+        },
+        {
+            "rank": 6,
+            "companyName": "Infidea Consultancy (Connecting Job Seekers With Opportunities)",
+            "rating": 4.8,
+            "reviews": 1157,
+            "category": "Consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 78288 58327",
+            "website": "https://www.infideaconsultancy.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Infidea%20Consultancy%20(Connecting%20Job%20Seekers%20With%20Opportunities)&query_place_id=ChIJ-Tb2CbT9YjkR5wo7Av7UmNw"
+        },
+        {
+            "rank": 7,
+            "companyName": "IMS India Manpower Solutions Private Limited",
+            "rating": 4.8,
+            "reviews": 704,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 75666 61690",
+            "website": "http://www.indiamanpowersolutions.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=IMS%20India%20Manpower%20Solutions%20Private%20Limited&query_place_id=ChIJlYP8zEwdYzkRYdtWZrjA5-A"
+        },
+        {
+            "rank": 8,
+            "companyName": "Vishal Consultants",
+            "rating": 4.8,
+            "reviews": 344,
+            "category": "Business management consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 94254 78421",
+            "website": "http://www.vishalconsultants.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Vishal%20Consultants&query_place_id=ChIJV4y4ukD9YjkRfyAuqmf1DGc"
+        },
+        {
+            "rank": 9,
+            "companyName": "Bwise Solutions Private Limited",
+            "rating": 4.8,
+            "reviews": 150,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "http://www.bwisesolutions.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Bwise%20Solutions%20Private%20Limited&query_place_id=ChIJKQLUsoT9YjkRUir9YYdqxes"
+        },
+        {
+            "rank": 10,
+            "companyName": "Talent Forge Academy \u2013 Practical & Placement-Based Digital Marketing Course in Indore",
+            "rating": 4.8,
+            "reviews": 100,
+            "category": "Training center",
+            "wheelchairAccessible": true,
+            "phone": "+91 92447 99062",
+            "website": "http://talentforgeacademy.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Talent%20Forge%20Academy%20%E2%80%93%20Practical%20%26%20Placement-Based%20Digital%20Marketing%20Course%20in%20Indore&query_place_id=ChIJ1dTmvsQDYzkRMK56jQElVw8"
+        },
+        {
+            "rank": 11,
+            "companyName": "SBJ Jobs & Training",
+            "rating": 4.8,
+            "reviews": 88,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 89894 60960",
+            "website": "http://www.sbjjobs.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=SBJ%20Jobs%20%26%20Training&query_place_id=ChIJPxrk1z79YjkRnjElUlx3Iss"
+        },
+        {
+            "rank": 12,
+            "companyName": "Human Power Services | Staffing & Job Placement Services in Indore",
+            "rating": 4.8,
+            "reviews": 68,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 731 499 1346",
+            "website": "https://humanpowerservices.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Human%20Power%20Services%20%7C%20Staffing%20%26%20Job%20Placement%20Services%20in%20Indore&query_place_id=ChIJpQ21eFEdYzkR3z4I55b8mb4"
+        },
+        {
+            "rank": 13,
+            "companyName": "Quality Webs",
+            "rating": 4.8,
+            "reviews": 55,
+            "category": "Digital printer",
+            "wheelchairAccessible": true,
+            "website": "https://qualitywebs.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Quality%20Webs&query_place_id=ChIJjfrNGdH7YjkR3Rl7X3YNDgE"
+        },
+        {
+            "rank": 14,
+            "companyName": "Sourcebae",
+            "rating": 4.8,
+            "reviews": 41,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 99811 92339",
+            "website": "https://sourcebae.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Sourcebae&query_place_id=ChIJq6qqfqkCYzkRGe5vaHX30kc"
+        },
+        {
+            "rank": 15,
+            "companyName": "Kaapro Management Solutions Pvt. Ltd.",
+            "rating": 4.7,
+            "reviews": 550,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 90980 66669",
+            "website": "http://www.kaapro.co.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Kaapro%20Management%20Solutions%20Pvt.%20Ltd.&query_place_id=ChIJSctUGRX9YjkRGEMErhzI8SQ"
+        },
+        {
+            "rank": 16,
+            "companyName": "Young Decade IT Software Solution",
+            "rating": 4.7,
+            "reviews": 510,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 79876 11372",
+            "website": "http://www.youngdecade.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Young%20Decade%20IT%20Software%20Solution&query_place_id=ChIJk9ubXxH9YjkRUHbnZo_pPnY"
+        },
+        {
+            "rank": 17,
+            "companyName": "ANG Placement & Staffing Solutions PVT LTD",
+            "rating": 4.7,
+            "reviews": 168,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 70004 76894",
+            "website": "http://www.angplacement.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=ANG%20Placement%20%26%20Staffing%20Solutions%20PVT%20LTD&query_place_id=ChIJ9wZ0ZGT9YjkRaMZWlJFHC1w"
+        },
+        {
+            "rank": 18,
+            "companyName": "Fast Manpower Solution",
+            "rating": 4.7,
+            "reviews": 130,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "website": "https://www.facebook.com/FastManpowerSolution/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Fast%20Manpower%20Solution&query_place_id=ChIJtT5J5pP9YjkRyOBI-zZ2WMA"
+        },
+        {
+            "rank": 19,
+            "companyName": "Blacksof",
+            "rating": 4.7,
+            "reviews": 108,
+            "category": "Design agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 93299 32527",
+            "website": "http://blacksof.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Blacksof&query_place_id=ChIJSzyg-OgDYzkRLzl7X-bs1PI"
+        },
+        {
+            "rank": 20,
+            "companyName": "SG Gurukul - Best Digital Marketing Courses institute In Indore",
+            "rating": 4.7,
+            "reviews": 99,
+            "category": "Training center",
+            "wheelchairAccessible": true,
+            "phone": "+91 95891 74959",
+            "website": "http://www.sggurukul.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=SG%20Gurukul%20-%20Best%20Digital%20Marketing%20Courses%20institute%20In%20Indore&query_place_id=ChIJb0-D54r9YjkR7njlXLQaDaI"
+        }
+    ],
+    "Bengaluru": [
+        {
+            "rank": 1,
+            "companyName": "CareerXperts Technologies Private Limited",
+            "rating": 4.8,
+            "reviews": 688,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "https://careerxperts.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=CareerXperts%20Technologies%20Private%20Limited&query_place_id=ChIJTe6VSBgXrjsRbL4tey8eOds"
+        },
+        {
+            "rank": 2,
+            "companyName": "JobShop | Best BPO/KPO Job Consultancy Bangalore",
+            "rating": 4.6,
+            "reviews": 3899,
+            "category": "Employment consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 99640 80000",
+            "website": "https://jobshop.ai/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=JobShop%20%7C%20Best%20BPO%2FKPO%20Job%20Consultancy%20Bangalore&query_place_id=ChIJj7wDAvEWrjsR4ObaNsAH0VM"
+        },
+        {
+            "rank": 3,
+            "companyName": "PagarBook",
+            "rating": 4.6,
+            "reviews": 2490,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 80953 32013",
+            "website": "http://pagarbook.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=PagarBook&query_place_id=ChIJfQlloFsUrjsRWM9sOsWmLQE"
+        },
+        {
+            "rank": 4,
+            "companyName": "Expora Database Consulting Services Private Limited",
+            "rating": 4.6,
+            "reviews": 88,
+            "category": "Corporate office",
+            "wheelchairAccessible": true,
+            "phone": "+91 80 2323 2761",
+            "website": "http://www.edcs.co.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Expora%20Database%20Consulting%20Services%20Private%20Limited&query_place_id=ChIJoRks4Zw9rjsRkzuq9N-6a4g"
+        },
+        {
+            "rank": 5,
+            "companyName": "PGC Digital - Banashankari",
+            "rating": 4.6,
+            "reviews": 29,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 99000 85366",
+            "website": "https://pgcdigital.ai/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=PGC%20Digital%20-%20Banashankari&query_place_id=ChIJtRWZ1E0_rjsR80_V_qMRlEg"
+        },
+        {
+            "rank": 6,
+            "companyName": "Epsilon",
+            "rating": 4.4,
+            "reviews": 1272,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 80675 14000",
+            "website": "https://www.epsilon.com/apac",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Epsilon&query_place_id=ChIJB5mV4XAXrjsRqLgZ2RHqjTY"
+        },
+        {
+            "rank": 7,
+            "companyName": "Coders Brain Technology Pvt Ltd",
+            "rating": 4.4,
+            "reviews": 105,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 99716 01676",
+            "website": "http://www.codersbrain.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Coders%20Brain%20Technology%20Pvt%20Ltd&query_place_id=ChIJvaqq6pcUrjsRq6J9xLKl2fE"
+        },
+        {
+            "rank": 8,
+            "companyName": "RJS",
+            "rating": 4.3,
+            "reviews": 143,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 74060 08555",
+            "website": "http://rjstechno.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=RJS&query_place_id=ChIJQULLKgIVrjsRVec8tQaeegU"
+        },
+        {
+            "rank": 9,
+            "companyName": "INCRUITER | INTERVIEW AS A SERVICE | AI INTERVIEWER",
+            "rating": 4.3,
+            "reviews": 137,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 80 4718 7100",
+            "website": "https://incruiter.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=INCRUITER%20%7C%20INTERVIEW%20AS%20A%20SERVICE%20%7C%20AI%20INTERVIEWER&query_place_id=ChIJG3LKRxcTrjsRHRGV9_VbwK4"
+        },
+        {
+            "rank": 10,
+            "companyName": "TeamPlus Staffing Solution Pvt Ltd",
+            "rating": 4.3,
+            "reviews": 73,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 95525 43904",
+            "website": "https://www.teamplusindia.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=TeamPlus%20Staffing%20Solution%20Pvt%20Ltd&query_place_id=ChIJnfOnrTAVrjsRaJIN0YM5NQc"
+        },
+        {
+            "rank": 11,
+            "companyName": "Bangalore Software Services Private Limited",
+            "rating": 4.1,
+            "reviews": 43,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 80 4006 8114",
+            "website": "http://www.bangalorestrategic.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Bangalore%20Software%20Services%20Private%20Limited&query_place_id=ChIJzyXEUDEWrjsRmLKPhqwHZv4"
+        },
+        {
+            "rank": 12,
+            "companyName": "Arissa International Private Limited",
+            "rating": 4.1,
+            "reviews": 31,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 99457 85367",
+            "website": "https://arissainternational.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Arissa%20International%20Private%20Limited&query_place_id=ChIJF1Rln1sVrjsRBgJjP0qcq4I"
+        }
+    ],
+    "Leh": [
+        {
+            "rank": 1,
+            "companyName": "Hena adventure",
+            "rating": 5.0,
+            "reviews": 221,
+            "category": "Taxi service",
+            "wheelchairAccessible": true,
+            "phone": "+91 80823 40177",
+            "website": "https://taxiinleh.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Hena%20adventure&query_place_id=ChIJbbjFJOXr_TgRBFMl0GnjkP0"
+        },
+        {
+            "rank": 2,
+            "companyName": "Moon land tour and travels",
+            "rating": 5.0,
+            "reviews": 153,
+            "category": "Travel agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 94191 77877",
+            "website": "http://www.facebook.com/yaqub.khan.ladakh",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Moon%20land%20tour%20and%20travels&query_place_id=ChIJA1ZMCO7r_TgRnjC9th2HnSU"
+        },
+        {
+            "rank": 3,
+            "companyName": "Travel Monk Adventures",
+            "rating": 4.9,
+            "reviews": 168,
+            "category": "Outdoor activity organiser",
+            "wheelchairAccessible": true,
+            "phone": "+91 81466 54329",
+            "website": "http://www.thetravelmonk.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Travel%20Monk%20Adventures&query_place_id=ChIJ9-mbOabr_TgRX0cUa7Zinb8"
+        },
+        {
+            "rank": 4,
+            "companyName": "Exotic Asia Travels",
+            "rating": 4.9,
+            "reviews": 158,
+            "category": "Travel agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 99069 83313",
+            "website": "https://www.exoticasiatravels.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Exotic%20Asia%20Travels&query_place_id=ChIJ9bsvD0fr_TgRlm2KF6pfoX4"
+        },
+        {
+            "rank": 5,
+            "companyName": "Greater Ladakh Tour and Travels",
+            "rating": 4.9,
+            "reviews": 109,
+            "category": "Travel agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 94690 45464",
+            "website": "http://www.greaterladakh-tours.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Greater%20Ladakh%20Tour%20and%20Travels&query_place_id=ChIJMcqAG9Xr_TgRJfR3-8iEIEY"
+        },
+        {
+            "rank": 6,
+            "companyName": "Travelling Ladakh",
+            "rating": 4.9,
+            "reviews": 89,
+            "category": "Tour operator",
+            "wheelchairAccessible": true,
+            "phone": "+91 99588 99809",
+            "website": "https://www.instagram.com/travelling_ladakh?igsh=MWtpd2Qyc2ZheTFqbQ%3D%3D&utm_source=qr",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Travelling%20Ladakh&query_place_id=ChIJ_72rEY3r_TgRbXFFPdwBbds"
+        },
+        {
+            "rank": 7,
+            "companyName": "Rural Tourism Ladakh",
+            "rating": 4.9,
+            "reviews": 66,
+            "category": "Tour operator",
+            "wheelchairAccessible": true,
+            "phone": "+91 94199 82143",
+            "website": "http://ruraltourismladakh.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Rural%20Tourism%20Ladakh&query_place_id=ChIJAdQbpT7r_TgRGzgX6gclDQY"
+        },
+        {
+            "rank": 8,
+            "companyName": "Mototour Ladakh / Himalayas Motorcycle Expedition in India",
+            "rating": 4.8,
+            "reviews": 1277,
+            "category": "Tour operator",
+            "wheelchairAccessible": true,
+            "phone": "+91 88998 25312",
+            "website": "https://www.mototourladakh.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Mototour%20Ladakh%20%2F%20Himalayas%20Motorcycle%20Expedition%20in%20India&query_place_id=ChIJO_-k1Ibr_TgRzQ4KWyZuI60"
+        },
+        {
+            "rank": 9,
+            "companyName": "Zanskar Kanishka Expeditions",
+            "rating": 4.8,
+            "reviews": 67,
+            "category": "Tour operator",
+            "wheelchairAccessible": true,
+            "phone": "+91 94690 39577",
+            "website": "http://www.zanskarkanishkaexpeditions.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Zanskar%20Kanishka%20Expeditions&query_place_id=ChIJQ8dlfj_r_TgRak1WGILa4P4"
+        },
+        {
+            "rank": 10,
+            "companyName": "Ladakh Ultimate Destination",
+            "rating": 4.8,
+            "reviews": 29,
+            "category": "Travel agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 60054 32429",
+            "website": "http://www.ladakhultimatedestination.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Ladakh%20Ultimate%20Destination&query_place_id=ChIJS6czXTTr_TgR3s88HgvZo5Q"
+        },
+        {
+            "rank": 11,
+            "companyName": "Leh Ladakh Journey",
+            "rating": 4.6,
+            "reviews": 301,
+            "category": "Tour agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 87001 02376",
+            "website": "http://www.lehladakhjourney.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Leh%20Ladakh%20Journey&query_place_id=ChIJZSoA90Pr_TgRY9lMjX83ws0"
+        }
+    ],
+    "Jabalpur": [
+        {
+            "rank": 1,
+            "companyName": "JP Techno Park - IT Services in Jabalpur.",
+            "rating": 5.0,
+            "reviews": 44,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 78284 50748",
+            "website": "https://jptechnopark.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=JP%20Techno%20Park%20-%20IT%20Services%20in%20Jabalpur.&query_place_id=ChIJOYOuHwCygTkRf7YIPoigsok"
+        },
+        {
+            "rank": 2,
+            "companyName": "Optus Edtech [CAT, CMAT,XAT, C++ ,JAVA ,PYTHON, DSA, FSD]",
+            "rating": 4.9,
+            "reviews": 181,
+            "category": "Coaching center",
+            "wheelchairAccessible": true,
+            "phone": "+91 99268 65740",
+            "website": "http://www.optusedu.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Optus%20Edtech%20%5BCAT%2C%20CMAT%2CXAT%2C%20C%2B%2B%20%2CJAVA%20%2CPYTHON%2C%20DSA%2C%20FSD%5D&query_place_id=ChIJabCIlNSxgTkRQU-jQldPMtA"
+        },
+        {
+            "rank": 3,
+            "companyName": "Yashsoft Solution \u2013 Website & Mobile App Development in Jabalpur, Madhya Pradesh",
+            "rating": 4.9,
+            "reviews": 138,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 88188 55762",
+            "website": "https://yashsoftsolution.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Yashsoft%20Solution%20%E2%80%93%20Website%20%26%20Mobile%20App%20Development%20in%20Jabalpur%2C%20Madhya%20Pradesh&query_place_id=ChIJlXHObwCtgTkRQejFqr7XpdA"
+        },
+        {
+            "rank": 4,
+            "companyName": "DOAGuru InfoSystems - Best Digital Marketing company In Jabalpur | Best Software Company In Jabalpur",
+            "rating": 4.9,
+            "reviews": 77,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 74409 92424",
+            "website": "https://doaguru.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=DOAGuru%20InfoSystems%20-%20Best%20Digital%20Marketing%20company%20In%20Jabalpur%20%7C%20Best%20Software%20Company%20In%20Jabalpur&query_place_id=ChIJT-5eGRaxgTkRxyMc7_psGWI"
+        },
+        {
+            "rank": 5,
+            "companyName": "AEGIS I-NET\u00a9 IT Trainings | NETWORK SECURITY | CCNA |SERVER | ETHICAL HACKING | HARDWARE NETWORKING | CLOUD-AWS| DEVOPS",
+            "rating": 4.8,
+            "reviews": 558,
+            "category": "Educational consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 99771 49888",
+            "website": "http://www.aegisinet.org/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=AEGIS%20I-NET%C2%A9%20IT%20Trainings%20%7C%20NETWORK%20SECURITY%20%7C%20CCNA%20%7CSERVER%20%7C%20ETHICAL%20HACKING%20%7C%20HARDWARE%20NETWORKING%20%7C%20CLOUD-AWS%7C%20DEVOPS&query_place_id=ChIJBxKuAOSvgTkRwQKBrNlgv3g"
+        },
+        {
+            "rank": 6,
+            "companyName": "Pageup Software Services Pvt. Ltd.",
+            "rating": 4.7,
+            "reviews": 93,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 79094 61009",
+            "website": "https://www.pageupsoft.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Pageup%20Software%20Services%20Pvt.%20Ltd.&query_place_id=ChIJpSSq9-SxgTkRBpQ6aeIwO1k"
+        },
+        {
+            "rank": 7,
+            "companyName": "Cognic Systems Pvt. Ltd.",
+            "rating": 4.6,
+            "reviews": 32,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 76126 21204",
+            "website": "https://www.cognicsys.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Cognic%20Systems%20Pvt.%20Ltd.&query_place_id=ChIJXSzltHOugTkRZeRA7aZOo7M"
+        },
+        {
+            "rank": 8,
+            "companyName": "Salvus App Solutions",
+            "rating": 4.6,
+            "reviews": 31,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 97130 99668",
+            "website": "http://salvusappsolutions.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Salvus%20App%20Solutions&query_place_id=ChIJXcFAAMyxgTkRZwCCGa2Al8c"
+        },
+        {
+            "rank": 9,
+            "companyName": "Rozgaarwala.com",
+            "rating": 4.5,
+            "reviews": 46,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 92018 34289",
+            "website": "http://www.rozgaarwala.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Rozgaarwala.com&query_place_id=ChIJRyYzdN6vgTkRaOPiSQCWBdQ"
+        },
+        {
+            "rank": 10,
+            "companyName": "M.P. Power Management Co. Ltd.",
+            "rating": 4.3,
+            "reviews": 159,
+            "category": "Electric utility company",
+            "wheelchairAccessible": true,
+            "phone": "+91 76126 61696",
+            "website": "http://www.mppmcl.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=M.P.%20Power%20Management%20Co.%20Ltd.&query_place_id=ChIJ_f__P2yugTkRD830v_nccX8"
+        }
+    ],
+    "Mumbai": [
+        {
+            "rank": 1,
+            "companyName": "Topgear consultants pvt ltd",
+            "rating": 4.9,
+            "reviews": 1966,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 80974 44270",
+            "website": "https://topgearconsultants.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Topgear%20consultants%20pvt%20ltd&query_place_id=ChIJxVCTLGS45zsR0EmXPskG_Go"
+        },
+        {
+            "rank": 2,
+            "companyName": "Brainhunter \u2013 Recruitment & Job Consultant",
+            "rating": 4.9,
+            "reviews": 38,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 81044 49302",
+            "website": "https://brainhunter.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Brainhunter%20%E2%80%93%20Recruitment%20%26%20Job%20Consultant&query_place_id=ChIJb2_uL1ex5zsRvBz5sUSAh7I"
+        },
+        {
+            "rank": 3,
+            "companyName": "Hire Glocal",
+            "rating": 4.8,
+            "reviews": 1117,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 99301 00033",
+            "website": "http://www.hireglocal.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Hire%20Glocal&query_place_id=ChIJPyRQ5Ty35zsRBO9SCg8XnwY"
+        },
+        {
+            "rank": 4,
+            "companyName": "SGM Placement And Personnel Services",
+            "rating": 4.8,
+            "reviews": 79,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 22 6791 2236",
+            "website": "https://www.sgmplacements.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=SGM%20Placement%20And%20Personnel%20Services&query_place_id=ChIJfa8h3UvB5zsRM-D2S-18DvQ"
+        },
+        {
+            "rank": 5,
+            "companyName": "Talent Corner H.R. Services Private Limited",
+            "rating": 4.7,
+            "reviews": 1820,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 22 4297 5100",
+            "website": "http://talentcorner.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Talent%20Corner%20H.R.%20Services%20Private%20Limited&query_place_id=ChIJO5A8NMzH5zsRdsC2whxYyls"
+        },
+        {
+            "rank": 6,
+            "companyName": "2Soft Solutions Pvt Ltd - HR Consulting. IT Recruitment. Staffing Solutions",
+            "rating": 4.7,
+            "reviews": 172,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 96195 67966",
+            "website": "http://www.2softsolutions.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=2Soft%20Solutions%20Pvt%20Ltd%20-%20HR%20Consulting.%20IT%20Recruitment.%20Staffing%20Solutions&query_place_id=ChIJUUlQ7MzJ5zsR-SpZ6bBBkwI"
+        },
+        {
+            "rank": 7,
+            "companyName": "Mayvent Management (Pvt.) Limited",
+            "rating": 4.7,
+            "reviews": 47,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 85912 49215",
+            "website": "http://www.mayvent.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Mayvent%20Management%20(Pvt.)%20Limited&query_place_id=ChIJX6RK6rOx5zsRwq_nrOSuV8s"
+        },
+        {
+            "rank": 8,
+            "companyName": "Roots Recruitment Services.",
+            "rating": 4.4,
+            "reviews": 470,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 22 2444 4345",
+            "website": "http://rootsrecruitment.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Roots%20Recruitment%20Services.&query_place_id=ChIJbXpYhTLJ5zsR2Q_tUgOsC2U"
+        },
+        {
+            "rank": 9,
+            "companyName": "Vira International Placements PVT LTD",
+            "rating": 4.3,
+            "reviews": 4271,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 22 4056 7777",
+            "website": "http://www.virainternational.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Vira%20International%20Placements%20PVT%20LTD&query_place_id=ChIJfdroey3J5zsRNor5rvxR95s"
+        },
+        {
+            "rank": 10,
+            "companyName": "Procreator: Global UI UX Design Agency",
+            "rating": 4.1,
+            "reviews": 48,
+            "category": "Design agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 89299 96900",
+            "website": "https://procreator.design/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Procreator%3A%20Global%20UI%20UX%20Design%20Agency&query_place_id=ChIJhywSxDzI5zsRtgHHRO3a3vw"
+        }
+    ],
+    "Hyderabad": [
+        {
+            "rank": 1,
+            "companyName": "Afto Technologies Private Limited",
+            "rating": 5.0,
+            "reviews": 37,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 98480 00244",
+            "website": "http://www.aftotech.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Afto%20Technologies%20Private%20Limited&query_place_id=ChIJB_9LeaOQyzsRz0TVWLSsCes"
+        },
+        {
+            "rank": 2,
+            "companyName": "AIVOLV - AI Powered Digital Marketing",
+            "rating": 5.0,
+            "reviews": 27,
+            "category": "Internet marketing service",
+            "wheelchairAccessible": true,
+            "phone": "+91 90324 29995",
+            "website": "https://www.aivolv.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=AIVOLV%20-%20AI%20Powered%20Digital%20Marketing&query_place_id=ChIJlwL9t0-PyzsRmiFBTY6hZzg"
+        },
+        {
+            "rank": 3,
+            "companyName": "Hungry Bird Consulting Services Pvt Ltd (Best Job Consultant & Manpower Organization in Hyderabad)",
+            "rating": 4.7,
+            "reviews": 364,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 40 4851 2456",
+            "website": "https://hungrybird.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Hungry%20Bird%20Consulting%20Services%20Pvt%20Ltd%20(Best%20Job%20Consultant%20%26%20Manpower%20Organization%20in%20Hyderabad)&query_place_id=ChIJCYC3ZN6YyzsRwRctLVys8Cw"
+        },
+        {
+            "rank": 4,
+            "companyName": "Jobskey Consultancy",
+            "rating": 4.7,
+            "reviews": 54,
+            "category": "Consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 99898 69330",
+            "website": "https://jobskey-consultancy.grexa.site/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Jobskey%20Consultancy&query_place_id=ChIJ1RO6sHiXyzsR8CySrqs6nB8"
+        },
+        {
+            "rank": 5,
+            "companyName": "3G HR Services ( Best Job Consultant in Hyderabad)",
+            "rating": 4.6,
+            "reviews": 595,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 40 4121 9999",
+            "website": "https://www.3ghrservices.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=3G%20HR%20Services%20(%20Best%20Job%20Consultant%20in%20Hyderabad)&query_place_id=ChIJaQBPKiSayzsRkos8W-6BOAM"
+        },
+        {
+            "rank": 6,
+            "companyName": "SCORELABS INC",
+            "rating": 4.6,
+            "reviews": 28,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 70136 17191",
+            "website": "https://www.scorelabsinc.com/index.html",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=SCORELABS%20INC&query_place_id=ChIJj0_5yeaRyzsRtCJ5SLCbWuE"
+        },
+        {
+            "rank": 7,
+            "companyName": "Stryde Consulting Services",
+            "rating": 4.3,
+            "reviews": 510,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 40 4032 5000",
+            "website": "http://www.strydeconsulting.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Stryde%20Consulting%20Services&query_place_id=ChIJB_sWdsyQyzsRjw0Gwz13ywU"
+        },
+        {
+            "rank": 8,
+            "companyName": "Staffing Aggregator Platform Find 10x more qualified candidates for jobs in just 1 day! | Hirextra",
+            "rating": 4.2,
+            "reviews": 36,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 40 3575 2983",
+            "website": "https://www.hirextra.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Staffing%20Aggregator%20Platform%20Find%2010x%20more%20qualified%20candidates%20for%20jobs%20in%20just%201%20day!%20%7C%20Hirextra&query_place_id=ChIJNRG7IJGNyzsRur8vi6f4NpE"
+        }
+    ],
+    "Delhi / NCR": [
+        {
+            "rank": 1,
+            "companyName": "FUTURE LINKS",
+            "rating": 4.9,
+            "reviews": 274,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 11 4750 3907",
+            "website": "http://future-links.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=FUTURE%20LINKS&query_place_id=ChIJrbkraVcBDTkRnKMbTxpmyIM"
+        },
+        {
+            "rank": 2,
+            "companyName": "The Hiring Company",
+            "rating": 4.9,
+            "reviews": 115,
+            "category": "Consultant",
+            "wheelchairAccessible": true,
+            "website": "https://thehiringcompany.co.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20Hiring%20Company&query_place_id=ChIJZWnTLPEFDTkRKSTmJFCqnEo"
+        },
+        {
+            "rank": 3,
+            "companyName": "ASAP Staffing Solutions",
+            "rating": 4.8,
+            "reviews": 257,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 96548 92449",
+            "website": "https://www.asapstaffingsolution.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=ASAP%20Staffing%20Solutions&query_place_id=ChIJL-QxFRviDDkRjIXio7nC2X8"
+        },
+        {
+            "rank": 4,
+            "companyName": "Digigen Technology Pvt. Ltd.",
+            "rating": 4.8,
+            "reviews": 118,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 70489 15951",
+            "website": "https://www.thedigigen.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Digigen%20Technology%20Pvt.%20Ltd.&query_place_id=ChIJVVVVBc8EDTkRx3ClPWHE8QM"
+        },
+        {
+            "rank": 5,
+            "companyName": "Infinity Exists | Recruitment agency in Delhi | Financial & Management recruiters | Job consultancy for Executive Search",
+            "rating": 4.8,
+            "reviews": 91,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 98735 54734",
+            "website": "https://www.infinityexists.co.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Infinity%20Exists%20%7C%20Recruitment%20agency%20in%20Delhi%20%7C%20Financial%20%26%20Management%20recruiters%20%7C%20Job%20consultancy%20for%20Executive%20Search&query_place_id=ChIJ__-_ayIDDTkRziw2yODCqpI"
+        },
+        {
+            "rank": 6,
+            "companyName": "Savanna HR Recruitment agency",
+            "rating": 4.7,
+            "reviews": 99,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 84473 90935",
+            "website": "http://savannahr.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Savanna%20HR%20Recruitment%20agency&query_place_id=ChIJAQAAAAcZDTkRVQcs9-AA4SI"
+        },
+        {
+            "rank": 7,
+            "companyName": "Expert Staffing Solutions",
+            "rating": 4.6,
+            "reviews": 726,
+            "category": "BPO placement agency",
+            "wheelchairAccessible": true,
+            "website": "https://expertstaffingsolutions.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Expert%20Staffing%20Solutions&query_place_id=ChIJMZmgGR7iDDkReWVHHXkxx2A"
+        }
+    ],
+    "Noida / Greater Noida": [
+        {
+            "rank": 1,
+            "companyName": "Careerthon Services",
+            "rating": 4.8,
+            "reviews": 89,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 99996 53010",
+            "website": "https://careerthon.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Careerthon%20Services&query_place_id=ChIJA-dUREnkDDkR5eG7u8F5Icc"
+        },
+        {
+            "rank": 2,
+            "companyName": "SAM Manpower & Career Services LLP",
+            "rating": 4.6,
+            "reviews": 42,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "website": "http://samcareer.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=SAM%20Manpower%20%26%20Career%20Services%20LLP&query_place_id=ChIJ0zF69fnvDDkRZc6P8b3KSo8"
+        },
+        {
+            "rank": 3,
+            "companyName": "Hirekey Consultancy",
+            "rating": 4.5,
+            "reviews": 260,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 99101 58052",
+            "website": "https://hirekey.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Hirekey%20Consultancy&query_place_id=ChIJy7R6ZHXvDDkRMapZFwXdfSk"
+        },
+        {
+            "rank": 4,
+            "companyName": "MNR Solutions Private Limited",
+            "rating": 4.5,
+            "reviews": 130,
+            "category": "Executive search firm",
+            "wheelchairAccessible": true,
+            "phone": "+91 85273 91758",
+            "website": "https://mnrsolutions.in/contact/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=MNR%20Solutions%20Private%20Limited&query_place_id=ChIJ_blqAlnkDDkRm9N8Sybbnlc"
+        },
+        {
+            "rank": 5,
+            "companyName": "Ascent IQ \u2013 Recruitment & Staffing Agency Noida | Delhi NCR",
+            "rating": 4.4,
+            "reviews": 21,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 85955 81268",
+            "website": "http://ascentiqglobal.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Ascent%20IQ%20%E2%80%93%20Recruitment%20%26%20Staffing%20Agency%20Noida%20%7C%20Delhi%20NCR&query_place_id=ChIJ_RM-45blDDkR569fNX5tCMo"
+        },
+        {
+            "rank": 6,
+            "companyName": "Core Minds Tech Solutions",
+            "rating": 4.2,
+            "reviews": 5884,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 98701 49204",
+            "website": "https://www.coremindstechsolutions.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Core%20Minds%20Tech%20Solutions&query_place_id=ChIJG2JzqQzrDDkR5go4K60mLs0"
+        }
+    ],
+    "Pune": [
+        {
+            "rank": 1,
+            "companyName": "SSquareIT",
+            "rating": 4.9,
+            "reviews": 220,
+            "category": "Software training institute",
+            "wheelchairAccessible": true,
+            "phone": "+91 70201 03785",
+            "website": "http://www.ssquareit.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=SSquareIT&query_place_id=ChIJN8kuNSuVwjsRBm5T2PuWJow"
+        },
+        {
+            "rank": 2,
+            "companyName": "Shavish HR & Digital Marketing Pvt Ltd- Hadapsar Pune",
+            "rating": 4.9,
+            "reviews": 170,
+            "category": "Employment consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 99229 29350",
+            "website": "http://shavishgroup.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Shavish%20HR%20%26%20Digital%20Marketing%20Pvt%20Ltd-%20Hadapsar%20Pune&query_place_id=ChIJuwC5TO_BwjsRCfVzbc0CVZA"
+        },
+        {
+            "rank": 3,
+            "companyName": "Abilitybase Solutions",
+            "rating": 4.9,
+            "reviews": 58,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 91588 85834",
+            "website": "http://abilitybase.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Abilitybase%20Solutions&query_place_id=ChIJFdcrZybBwjsRWRYtjG085ek"
+        },
+        {
+            "rank": 4,
+            "companyName": "YourCorporateLife",
+            "rating": 4.8,
+            "reviews": 124,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 72767 82449",
+            "website": "http://yourcorporatelife.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=YourCorporateLife&query_place_id=ChIJ__8P5rfpwjsRdGMc5ZCayRE"
+        },
+        {
+            "rank": 5,
+            "companyName": "Pragmatic Career Solutions",
+            "rating": 4.6,
+            "reviews": 1269,
+            "category": "Employment center",
+            "wheelchairAccessible": true,
+            "phone": "+91 85549 55784",
+            "website": "https://www.pragmaticcareersolutions.co.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Pragmatic%20Career%20Solutions&query_place_id=ChIJp9eKNfDBwjsRqGLVvXP8po4"
+        },
+        {
+            "rank": 6,
+            "companyName": "HR Services",
+            "rating": 4.5,
+            "reviews": 494,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "website": "https://www.sevenmentor.com/hr-services.php",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=HR%20Services&query_place_id=ChIJTQo1WH3AwjsRkJ2rbZ1i2Zs"
+        }
+    ],
+    "Ahmedabad": [
+        {
+            "rank": 1,
+            "companyName": "Smart Lion Private Limited",
+            "rating": 4.8,
+            "reviews": 293,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 77780 09177",
+            "website": "http://www.smartlionjobs.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Smart%20Lion%20Private%20Limited&query_place_id=ChIJ3dBtXPOEXjkR_-vFGYsI7f0"
+        },
+        {
+            "rank": 2,
+            "companyName": "Huptech HR Solutions",
+            "rating": 4.8,
+            "reviews": 117,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 99796 98407",
+            "website": "https://huptechhrsolutions.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Huptech%20HR%20Solutions&query_place_id=ChIJu1fConWbXjkR0LwqYY7OoZY"
+        },
+        {
+            "rank": 3,
+            "companyName": "Harry International Private Limited",
+            "rating": 4.7,
+            "reviews": 302,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 99044 83835",
+            "website": "http://www.harryinternational.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Harry%20International%20Private%20Limited&query_place_id=ChIJ-wM1yPOEXjkRsgD_HragRcE"
+        },
+        {
+            "rank": 4,
+            "companyName": "Mantrras2Success HR Solutions LLP",
+            "rating": 4.7,
+            "reviews": 254,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 93139 26687",
+            "website": "http://mantras2success.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Mantrras2Success%20HR%20Solutions%20LLP&query_place_id=ChIJ5Xetc4aFXjkR3yOVHpnpib4"
+        }
+    ],
+    "Chandigarh / Mohali": [
+        {
+            "rank": 1,
+            "companyName": "SR Recruiters- Best & Premium Placement , Job Consultant, Recruitment ,Employment Services in Chandigarh,India",
+            "rating": 4.9,
+            "reviews": 395,
+            "category": "Employment consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 91151 65576",
+            "website": "http://srrecruiters.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=SR%20Recruiters-%20Best%20%26%20Premium%20Placement%20%2C%20Job%20Consultant%2C%20Recruitment%20%2CEmployment%20Services%20in%20Chandigarh%2CIndia&query_place_id=ChIJZf3vz0_zDzkRzks14eyk2-o"
+        },
+        {
+            "rank": 2,
+            "companyName": "Simmy Placements - Placement Agency",
+            "rating": 4.8,
+            "reviews": 219,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 98556 90962",
+            "website": "https://plenoemprego.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Simmy%20Placements%20-%20Placement%20Agency&query_place_id=ChIJweuhXDjtDzkR1Xy7jam35WI"
+        },
+        {
+            "rank": 3,
+            "companyName": "Job Suraksha - A premium Job Portal",
+            "rating": 4.8,
+            "reviews": 141,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 172 480 3707",
+            "website": "http://www.jobsuraksha.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Job%20Suraksha%20-%20A%20premium%20Job%20Portal&query_place_id=ChIJgSH4P_buDzkR0xSZUmeLvSw"
+        },
+        {
+            "rank": 4,
+            "companyName": "Arch Recruiters",
+            "rating": 4.6,
+            "reviews": 71,
+            "category": "Employment consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 98889 23477",
+            "website": "http://archrecruiters.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Arch%20Recruiters&query_place_id=ChIJVVVVFfbuDzkRnEl7PfH21b0"
+        }
+    ],
+    "Gurugram": [
+        {
+            "rank": 1,
+            "companyName": "A.P. CORPORATE RECRUITMENT SERVICES PVT. LTD. | Best Recruitment Agency for Employers in Gurgaon | Serving Delhi & Noida",
+            "rating": 5.0,
+            "reviews": 29,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 96675 01792",
+            "website": "http://www.apcorporate.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=A.P.%20CORPORATE%20RECRUITMENT%20SERVICES%20PVT.%20LTD.%20%7C%20Best%20Recruitment%20Agency%20for%20Employers%20in%20Gurgaon%20%7C%20Serving%20Delhi%20%26%20Noida&query_place_id=ChIJlT_DWaMZDTkR-CsELG7Gwfs"
+        },
+        {
+            "rank": 2,
+            "companyName": "MSK Security And Facilities Management Pvt Ltd",
+            "rating": 4.9,
+            "reviews": 349,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 99990 15830",
+            "website": "https://msk-security.grexa.site/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=MSK%20Security%20And%20Facilities%20Management%20Pvt%20Ltd&query_place_id=ChIJResx7S09DTkRz0jcURgEwjI"
+        },
+        {
+            "rank": 3,
+            "companyName": "Changeleaders Consulting Private Limited",
+            "rating": 4.8,
+            "reviews": 89,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "website": "http://changeleaders.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Changeleaders%20Consulting%20Private%20Limited&query_place_id=ChIJHaV8axMZDTkRgs5djQABSNc"
+        },
+        {
+            "rank": 4,
+            "companyName": "TRS Staffing Solutions",
+            "rating": 4.7,
+            "reviews": 563,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 124 468 4040",
+            "website": "http://www.trsstaffing.com/locations/india",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=TRS%20Staffing%20Solutions&query_place_id=ChIJKdr7_ysZDTkRnxbOnLFV0rw"
+        }
+    ],
+    "Jaipur": [
+        {
+            "rank": 1,
+            "companyName": "Virtue Training And Placement Services",
+            "rating": 4.6,
+            "reviews": 933,
+            "category": "Employment consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 90010 00040",
+            "website": "http://www.virtueplacement.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Virtue%20Training%20And%20Placement%20Services&query_place_id=ChIJOfpdr3O0bTkRSBkXHs4laT4"
+        },
+        {
+            "rank": 2,
+            "companyName": "Tallento.ai",
+            "rating": 4.4,
+            "reviews": 526,
+            "category": "Employment center",
+            "wheelchairAccessible": true,
+            "phone": "+91 97289 87999",
+            "website": "https://tallento.ai/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Tallento.ai&query_place_id=ChIJO5N9u1_uDzkRLsVpfb4NRQ0"
+        },
+        {
+            "rank": 3,
+            "companyName": "Axcess Consultancy Services",
+            "rating": 4.2,
+            "reviews": 191,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 94140 68069",
+            "website": "http://axcesscareers.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Axcess%20Consultancy%20Services&query_place_id=ChIJt0CCxfCzbTkRVs0AWkABPtE"
+        }
+    ],
+    "Jhansi": [
+        {
+            "rank": 1,
+            "companyName": "OceanX Agency (website App and Mobile App development)",
+            "rating": 5.0,
+            "reviews": 40,
+            "category": "Website designer",
+            "wheelchairAccessible": true,
+            "phone": "+91 94559 27459",
+            "website": "https://www.oceanx.agency/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=OceanX%20Agency%20(website%20App%20and%20Mobile%20App%20development)&query_place_id=ChIJxzuQiCt3dzkRa4JcFny_zbc"
+        },
+        {
+            "rank": 2,
+            "companyName": "Incipit Consultancy Services",
+            "rating": 4.9,
+            "reviews": 28,
+            "category": "Corporate office",
+            "wheelchairAccessible": true,
+            "phone": "+91 92194 54349",
+            "website": "https://www.incipit.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Incipit%20Consultancy%20Services&query_place_id=ChIJg48tAtV3dzkRaTT8Gt5-Dxs"
+        },
+        {
+            "rank": 3,
+            "companyName": "Binplus Technologies Private Limited",
+            "rating": 4.8,
+            "reviews": 115,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 80097 65441",
+            "website": "https://www.binplus.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Binplus%20Technologies%20Private%20Limited&query_place_id=ChIJm8i0fx53dzkRD65R6kAv4j0"
+        }
+    ],
+    "Kota": [
+        {
+            "rank": 1,
+            "companyName": "Vivacious Techno Management Hub Pvt. Ltd. JOBS IN KOTA , KOTA JOB PLACEMENT",
+            "rating": 4.8,
+            "reviews": 297,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 98878 85185",
+            "website": "http://www.vivacioustech.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Vivacious%20Techno%20Management%20Hub%20Pvt.%20Ltd.%20JOBS%20IN%20KOTA%20%2C%20KOTA%20JOB%20PLACEMENT&query_place_id=ChIJAdXqqtiEbzkRsZP84Ntpmtw"
+        },
+        {
+            "rank": 2,
+            "companyName": "First Attempt Kota",
+            "rating": 4.6,
+            "reviews": 91,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 93520 67932",
+            "website": "https://firstattemptgroup.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=First%20Attempt%20Kota&query_place_id=ChIJGV9wvTSbbzkRRZkJK7jjgQs"
+        },
+        {
+            "rank": 3,
+            "companyName": "Samyak Computer Classes, Gumanpura Kota",
+            "rating": 4.5,
+            "reviews": 176,
+            "category": "Software training institute",
+            "wheelchairAccessible": true,
+            "phone": "+91 97722 71081",
+            "website": "https://www.samyakinfotech.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Samyak%20Computer%20Classes%2C%20Gumanpura%20Kota&query_place_id=ChIJT28YjsSbbzkRC5ZPeKc7BXQ"
+        }
+    ],
+    "Goa": [
+        {
+            "rank": 1,
+            "companyName": "91HR",
+            "rating": 4.8,
+            "reviews": 106,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 88061 21926",
+            "website": "https://91hr.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=91HR&query_place_id=ChIJr7Ot_I-zvzsRUMf5oCkL264"
+        },
+        {
+            "rank": 2,
+            "companyName": "CodeMax IT Solutions Pvt Ltd",
+            "rating": 4.4,
+            "reviews": 70,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 832 297 6020",
+            "website": "http://cdmx.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=CodeMax%20IT%20Solutions%20Pvt%20Ltd&query_place_id=ChIJ83gBNOazvzsRKsZNFgXa7B4"
+        }
+    ],
+    "Parel": [
+        {
+            "rank": 1,
+            "companyName": "Royal Enfield Showroom - Champavati Autos",
+            "rating": 4.6,
+            "reviews": 427,
+            "category": "Motorcycle shop",
+            "wheelchairAccessible": true,
+            "phone": "+91 82913 71701",
+            "website": "https://dealers.royalenfield.com/himachal-pradesh/chamba/parel-champavati-autos-9110065470?utm_source=GMBlisting&utm_medium=organic",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Royal%20Enfield%20Showroom%20-%20Champavati%20Autos&query_place_id=ChIJ8W5tHnO_HDkRF8d4FwIwNl0"
+        },
+        {
+            "rank": 2,
+            "companyName": "Sant Hyundai Chamba",
+            "rating": 4.6,
+            "reviews": 356,
+            "category": "Hyundai dealer",
+            "wheelchairAccessible": true,
+            "phone": "+91 98178 11255",
+            "website": "http://sant.hyundaimotor.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Sant%20Hyundai%20Chamba&query_place_id=ChIJn4YvpHC-HDkRVYlg3Kh72uA"
+        }
+    ],
+    "Raipur": [
+        {
+            "rank": 1,
+            "companyName": "Sapital Recruitments",
+            "rating": 4.8,
+            "reviews": 220,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 78800 51817",
+            "website": "https://sapitalrecruitments.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Sapital%20Recruitments&query_place_id=ChIJNyhBq2ruk48RMGZ04C1sFnk"
+        },
+        {
+            "rank": 2,
+            "companyName": "ASAP Job Placement Consultancy",
+            "rating": 4.7,
+            "reviews": 2009,
+            "category": "Consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 89625 28896",
+            "website": "http://asaprecruitment.co.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=ASAP%20Job%20Placement%20Consultancy&query_place_id=ChIJVUV6623eKDoR3-DpmC3Pt2A"
+        }
+    ],
+    "Ambala Cantt": [
+        {
+            "rank": 1,
+            "companyName": "Surya Jobs Placement Services",
+            "rating": 4.7,
+            "reviews": 525,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 85698 85905",
+            "website": "https://suryajobs.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Surya%20Jobs%20Placement%20Services&query_place_id=ChIJregNsBS3DzkRnjM-BA8RyKM"
+        }
+    ],
+    "Bhubaneswar": [
+        {
+            "rank": 1,
+            "companyName": "Rightfit Resources OPC Pvt. Ltd.",
+            "rating": 4.6,
+            "reviews": 355,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 96545 53467",
+            "website": "http://www.rightfitresources.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Rightfit%20Resources%20OPC%20Pvt.%20Ltd.&query_place_id=ChIJxyNqwR4LGToRlPVZpFP6M9Y"
+        }
+    ],
+    "Billawar": [
+        {
+            "rank": 1,
+            "companyName": "AM Hyundai Billawar",
+            "rating": 4.9,
+            "reviews": 192,
+            "category": "Car dealer",
+            "wheelchairAccessible": true,
+            "phone": "+91 88990 09122",
+            "website": "https://am.hyundaimotor.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=AM%20Hyundai%20Billawar&query_place_id=ChIJ0SOLfCFdHDkRrZroVn61Ou8"
+        }
+    ],
+    "Chamba": [
+        {
+            "rank": 1,
+            "companyName": "TopRanko",
+            "rating": 5.0,
+            "reviews": 60,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 90150 22758",
+            "website": "https://www.topranko.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=TopRanko&query_place_id=ChIJ0zgeulzrHDkR3JyreCvptDM"
+        }
+    ],
+    "Chhindwara": [
+        {
+            "rank": 1,
+            "companyName": "MP Rojgar Manpower and Job Placement Services",
+            "rating": 4.9,
+            "reviews": 64,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 72475 16834",
+            "website": "https://sites.google.com/view/mp-rojgar-placement-agency/home",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=MP%20Rojgar%20Manpower%20and%20Job%20Placement%20Services&query_place_id=ChIJ6Si4rhhn1TsRkMYP5o2iZEM"
+        }
+    ],
+    "Coimbatore": [
+        {
+            "rank": 1,
+            "companyName": "Infolexus Solutions",
+            "rating": 4.9,
+            "reviews": 132,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 90439 19570",
+            "website": "https://infolexus.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Infolexus%20Solutions&query_place_id=ChIJQ0pYA-tZqDsRWjhPLbT-vjI"
+        }
+    ],
+    "Dewas": [
+        {
+            "rank": 1,
+            "companyName": "Projection (Training & Placement Company)",
+            "rating": 4.7,
+            "reviews": 635,
+            "category": "Software training institute",
+            "wheelchairAccessible": true,
+            "phone": "+91 96175 69993",
+            "website": "https://www.projectiononline.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Projection%20(Training%20%26%20Placement%20Company)&query_place_id=ChIJIV2ER5sXYzkR_R0NMVJDSDw"
+        }
+    ],
+    "Doda": [
+        {
+            "rank": 1,
+            "companyName": "Yazu Digitals Pvt Ltd \u2014 Best Website Designing Company in Jammu and Kashmir",
+            "rating": 4.9,
+            "reviews": 43,
+            "category": "Website designer",
+            "wheelchairAccessible": true,
+            "phone": "+91 70064 61754",
+            "website": "https://yazudigitals.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Yazu%20Digitals%20Pvt%20Ltd%20%E2%80%94%20Best%20Website%20Designing%20Company%20in%20Jammu%20and%20Kashmir&query_place_id=ChIJKzOjZfWlHTkRk5n59ngx8cg"
+        }
+    ],
+    "Garra": [
+        {
+            "rank": 1,
+            "companyName": "JobSahi- Satpuda Group",
+            "rating": 4.8,
+            "reviews": 51,
+            "category": "Employment center",
+            "wheelchairAccessible": true,
+            "phone": "+91 62626 04111",
+            "website": "https://jobsahi.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=JobSahi-%20Satpuda%20Group&query_place_id=ChIJQW9vYN1ZKjoR7qCSKw2HM0k"
+        }
+    ],
+    "Greater Chennai": [
+        {
+            "rank": 1,
+            "companyName": "CLIQHR Recruitment Services",
+            "rating": 4.8,
+            "reviews": 38,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 80569 69674",
+            "website": "https://www.cliqhr.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=CLIQHR%20Recruitment%20Services&query_place_id=ChIJOa9GtS9nUjoRHB-n1HYeWzw"
+        }
+    ],
+    "Haridwar": [
+        {
+            "rank": 1,
+            "companyName": "S4S Group placement and Manpower services",
+            "rating": 4.5,
+            "reviews": 245,
+            "category": "Consultant",
+            "wheelchairAccessible": true,
+            "website": "http://www.s4sgroup.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=S4S%20Group%20placement%20and%20Manpower%20services&query_place_id=ChIJL1CKxANJCTkRN-pBIsB0cM8"
+        }
+    ],
+    "Kanpur": [
+        {
+            "rank": 1,
+            "companyName": "IT Resource Hunter Pvt Ltd",
+            "rating": 4.1,
+            "reviews": 27,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "website": "https://itresourcehunter.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=IT%20Resource%20Hunter%20Pvt%20Ltd&query_place_id=ChIJX13M3OBHnDkRkJXACbVF44k"
+        }
+    ],
+    "Kozhikode": [
+        {
+            "rank": 1,
+            "companyName": "HR Training and SAP HCM in Calicut - IIA HR Academy : Job-Oriented HR Courses for the UAE, other Gulf regions, and India",
+            "rating": 4.9,
+            "reviews": 42,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 81388 18138",
+            "website": "https://hrjobtraining.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=HR%20Training%20and%20SAP%20HCM%20in%20Calicut%20-%20IIA%20HR%20Academy%20%3A%20Job-Oriented%20HR%20Courses%20for%20the%20UAE%2C%20other%20Gulf%20regions%2C%20and%20India&query_place_id=ChIJpXmfvclepjsRzSJimDyrHDc"
+        }
+    ],
+    "Lucknow": [
+        {
+            "rank": 1,
+            "companyName": "Genius Consultant Ltd.",
+            "rating": 4.6,
+            "reviews": 48,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 522 232 3966",
+            "website": "http://www.geniusconsultant.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Genius%20Consultant%20Ltd.&query_place_id=ChIJ1RpYo2X9mzkRN6xxoMUbrXk"
+        }
+    ],
+    "Makroniya": [
+        {
+            "rank": 1,
+            "companyName": "IT Jobs Factory",
+            "rating": 4.9,
+            "reviews": 23,
+            "category": "Employment center",
+            "wheelchairAccessible": true,
+            "phone": "+91 75823 60093",
+            "website": "https://www.itjobsfactory.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=IT%20Jobs%20Factory&query_place_id=ChIJKUvuVvDReDkR0DWxzwC88Rk"
+        }
+    ],
+    "Meerut": [
+        {
+            "rank": 1,
+            "companyName": "Recruiter's job placement agency",
+            "rating": 4.9,
+            "reviews": 753,
+            "category": "Employment consultant",
+            "wheelchairAccessible": true,
+            "phone": "+91 95201 40625",
+            "website": "https://www.facebook.com/share/1C1yQAaPX2/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Recruiter's%20job%20placement%20agency&query_place_id=ChIJ0cgfmh9vDDkR5ifZmu9BbNg"
+        }
+    ],
+    "Nagpur": [
+        {
+            "rank": 1,
+            "companyName": "Sath Outsourcing Services Pvt. Ltd. (Jobsclass)",
+            "rating": 4.7,
+            "reviews": 652,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 95522 83569",
+            "website": "http://www.jobsclass.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Sath%20Outsourcing%20Services%20Pvt.%20Ltd.%20(Jobsclass)&query_place_id=ChIJdcxXzIe_1DsRFBRKv9qsPdo"
+        }
+    ],
+    "Nagve": [
+        {
+            "rank": 1,
+            "companyName": "Creative Capsule",
+            "rating": 4.3,
+            "reviews": 100,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 91371 77162",
+            "website": "http://www.creativecapsule.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Creative%20Capsule&query_place_id=ChIJ2Ybmm7KwvzsRU0OntPeibe4"
+        }
+    ],
+    "Nashik": [
+        {
+            "rank": 1,
+            "companyName": "ResolenT Management Services & Training Center",
+            "rating": 4.9,
+            "reviews": 182,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 77220 05639",
+            "website": "https://resolent.co.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=ResolenT%20Management%20Services%20%26%20Training%20Center&query_place_id=ChIJAz_JFRPr3TsRuJG1Hqcznw8"
+        }
+    ],
+    "Other India Hubs": [
+        {
+            "rank": 1,
+            "companyName": "FREQUENT AMBITION SERVICES",
+            "rating": 4.8,
+            "reviews": 50,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 88392 60224",
+            "website": "https://www.facebook.com/ambcareer",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=FREQUENT%20AMBITION%20SERVICES&query_place_id=ChIJizTOnHVDfDkR-U6tR3DjTEo"
+        }
+    ],
+    "Pahalgam": [
+        {
+            "rank": 1,
+            "companyName": "The Jawahar Institute of Mountaineering and Winter Sports (JIM & WS)",
+            "rating": 4.4,
+            "reviews": 545,
+            "category": "Adventure sports center",
+            "wheelchairAccessible": true,
+            "phone": "+91 1936 243 002",
+            "website": "http://www.jawaharinstitutepahalgam.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20Jawahar%20Institute%20of%20Mountaineering%20and%20Winter%20Sports%20(JIM%20%26%20WS)&query_place_id=ChIJW9ih95U_4jgR4EYBK_-oj0A"
+        }
+    ],
+    "Palika Bazar Magneto mall Road": [
+        {
+            "rank": 1,
+            "companyName": "The Laxmi Job Consultancy",
+            "rating": 4.6,
+            "reviews": 264,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 91795 16482",
+            "website": "http://laxmijobconsultancy.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20Laxmi%20Job%20Consultancy&query_place_id=ChIJHexykGsLKDoRIQL8dIY4M9g"
+        }
+    ],
+    "Perinthalmanna": [
+        {
+            "rank": 1,
+            "companyName": "Simpatico HR consultancy",
+            "rating": 4.7,
+            "reviews": 29,
+            "category": "Human resource consulting",
+            "wheelchairAccessible": true,
+            "phone": "+91 95448 42260",
+            "website": "https://simpaticohr.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Simpatico%20HR%20consultancy&query_place_id=ChIJASPJtq7NpzsRqho7_hJcCys"
+        }
+    ],
+    "Pilern": [
+        {
+            "rank": 1,
+            "companyName": "Kilowott",
+            "rating": 4.1,
+            "reviews": 54,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 91452 46464",
+            "website": "https://www.kilowott.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Kilowott&query_place_id=ChIJD2H50RnBvzsRq-v95kJi_v0"
+        }
+    ],
+    "Prayagraj": [
+        {
+            "rank": 1,
+            "companyName": "VP Recruitment Services",
+            "rating": 4.9,
+            "reviews": 453,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 63070 34678",
+            "website": "http://www.vprecruitmentservices.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=VP%20Recruitment%20Services&query_place_id=ChIJVZMTR7E1hTkRyy05dmfJnxw"
+        }
+    ],
+    "Rusalli Khamkheda": [
+        {
+            "rank": 1,
+            "companyName": "DITS Company India Private Limited",
+            "rating": 4.8,
+            "reviews": 33,
+            "category": "Computer support and services",
+            "wheelchairAccessible": true,
+            "phone": "+91 97544 06105",
+            "website": "http://www.ditscompany.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=DITS%20Company%20India%20Private%20Limited&query_place_id=ChIJ8QDfgT_3ezkROKgy6BEMLsE"
+        }
+    ],
+    "Surat": [
+        {
+            "rank": 1,
+            "companyName": "Cincos Placement Services | Top Recruitment Consultant in Surat | Placement Services In Surat | Job Consultancy In Surat",
+            "rating": 4.8,
+            "reviews": 316,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 72260 04473",
+            "website": "http://www.cincosplacement.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Cincos%20Placement%20Services%20%7C%20Top%20Recruitment%20Consultant%20in%20Surat%20%7C%20Placement%20Services%20In%20Surat%20%7C%20Job%20Consultancy%20In%20Surat&query_place_id=ChIJ36bPvbBP4DsRpj8EWa8FwEE"
+        }
+    ],
+    "Tiruchirappalli": [
+        {
+            "rank": 1,
+            "companyName": "Entrust |Job Guarantee | CCNA | IT Hardware | Ethical Hacking | AWS | Azure | MCSA",
+            "rating": 4.5,
+            "reviews": 474,
+            "category": "Recruiter",
+            "wheelchairAccessible": true,
+            "phone": "+91 94455 50437",
+            "website": "http://www.entrusttechnoservices.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Entrust%20%7CJob%20Guarantee%20%7C%20CCNA%20%7C%20IT%20Hardware%20%7C%20Ethical%20Hacking%20%7C%20AWS%20%7C%20Azure%20%7C%20MCSA&query_place_id=ChIJg16tp6P1qjsR4HrtjFJ27WI"
+        }
+    ],
+    "Udaipur": [
+        {
+            "rank": 1,
+            "companyName": "WebSenor Private Limited",
+            "rating": 4.8,
+            "reviews": 423,
+            "category": "Software company",
+            "wheelchairAccessible": true,
+            "phone": "+91 99508 34560",
+            "website": "https://www.websenor.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=WebSenor%20Private%20Limited&query_place_id=ChIJD3O09HblZzkRmHKRBUwzm84"
+        }
+    ],
+    "Ujjain": [
+        {
+            "rank": 1,
+            "companyName": "Samyak Computer Classes - Ujjain",
+            "rating": 4.9,
+            "reviews": 60,
+            "category": "Training center",
+            "wheelchairAccessible": true,
+            "phone": "+91 74138 84777",
+            "website": "https://www.samyakinfotech.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Samyak%20Computer%20Classes%20-%20Ujjain&query_place_id=ChIJ_Xqouoh1YzkRgatoNzp9IFE"
+        }
+    ],
+    "Vadodara": [
+        {
+            "rank": 1,
+            "companyName": "Ascendion Engineering Private Limited",
+            "rating": 4.3,
+            "reviews": 260,
+            "category": "Employment agency",
+            "wheelchairAccessible": true,
+            "phone": "+91 265 230 2618",
+            "website": "http://www.ascendion.com/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Ascendion%20Engineering%20Private%20Limited&query_place_id=ChIJUQ4uo2vGXzkRcHZLy8sRILo"
+        }
+    ],
+    "Vijayawada": [
+        {
+            "rank": 1,
+            "companyName": "Interview Training And Job Placements Office",
+            "rating": 4.7,
+            "reviews": 120,
+            "category": "Employment center",
+            "wheelchairAccessible": true,
+            "phone": "+91 73961 11747",
+            "website": "http://www.placementsinstitute.in/",
+            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Interview%20Training%20And%20Job%20Placements%20Office&query_place_id=ChIJb4ngS6z6NToRk9W1r_t468o"
+        }
+    ]
 }
 };
 
@@ -5076,12 +7737,12 @@ interface HRContactsProps {
 }
 
 export default function HRContacts({ theme }: HRContactsProps) {
-  const [selectedRegion, setSelectedRegion] = useState<string>('NA');
-  const [selectedCountryCode, setSelectedCountryCode] = useState<string>('US');
+  const [selectedRegion, setSelectedRegion] = useState<string>('APJ');
+  const [selectedCountryCode, setSelectedCountryCode] = useState<string>('IN');
   const [selectedCityName, setSelectedCityName] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState('');
 
-  // ACCORDION DROPDOWN STATE: Track open/closed status per city key
+  // ACCORDION DROPDOWN STATE: Track open/closed status per city key (Default: Minimized / Collapsed)
   const [openCities, setOpenCities] = useState<Record<string, boolean>>({});
 
   const isLight = theme === 'light';
@@ -5131,8 +7792,8 @@ export default function HRContacts({ theme }: HRContactsProps) {
 
   // Reset Filters
   const handleResetFilters = () => {
-    setSelectedRegion('NA');
-    setSelectedCountryCode('US');
+    setSelectedRegion('APJ');
+    setSelectedCountryCode('IN');
     setSelectedCityName('ALL');
     setSearchQuery('');
   };
@@ -5176,8 +7837,8 @@ export default function HRContacts({ theme }: HRContactsProps) {
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider mr-2">Region Track:</span>
             {[
-              { id: 'NA', label: 'NA (North America / US)', icon: '🌎' },
               { id: 'APJ', label: 'APJ (Asia Pacific & India)', icon: '🌏' },
+              { id: 'NA', label: 'NA (North America / US)', icon: '🌎' },
               { id: 'EMEA', label: 'EMEA (Europe, Mid-East, Africa)', icon: '🌍' },
               { id: 'LATAM', label: 'LATAM (Latin America)', icon: '🌐' },
               { id: 'ALL', label: 'All Regions', icon: '🌐' },
