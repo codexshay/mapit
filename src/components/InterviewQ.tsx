@@ -64,6 +64,11 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
     label: 'Green Computing & Sustainable IT',
     icon: '🌱',
     description: 'Green Software, Energy Efficiency, Cloud Carbon Footprint, GreenOps & Sustainable AI'
+  },
+  'cloud-engineer': {
+    label: 'Cloud Computing & Architecture',
+    icon: '☁️',
+    description: 'Cloud Architecture, AWS/Azure/GCP, FinOps, Serverless, Cloud Security & Multi-Cloud'
   }
 };
 

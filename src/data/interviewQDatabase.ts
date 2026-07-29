@@ -25280,5 +25280,3785 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-07-29",
     "status": "published"
+  },
+  {
+    "id": "CLD-001",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Foundations and Service Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What characteristics distinguish a genuine cloud service from ordinary hosted infrastructure?",
+    "preferred_answer": "A cloud service should provide on-demand self-service, broad network access, resource pooling, rapid elasticity and measured service. Merely placing servers in a provider data centre is hosting, not necessarily cloud. The candidate should connect the characteristics to operational consequences such as automated provisioning, shared capacity, elastic scale and usage-based accountability.",
+    "evaluation_points": [
+      "Names the five NIST characteristics",
+      "Distinguishes hosting from cloud",
+      "Connects characteristics to operations",
+      "Avoids equating cloud with a location"
+    ],
+    "resolution_title": "NIST SP 800-145 - Definition of Cloud Computing",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-002",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Foundations and Service Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Compare IaaS, PaaS and SaaS through the customer's remaining responsibilities.",
+    "preferred_answer": "In IaaS, the provider operates physical infrastructure and virtualisation while the customer still manages operating systems, middleware, applications, identities and data. PaaS removes more platform operations but leaves application, configuration, identity and data responsibilities. SaaS delivers the application itself, yet the customer still owns users, access decisions, data use, retention and secure configuration.",
+    "evaluation_points": [
+      "Correct responsibility progression",
+      "Customer duties remain in every model",
+      "Uses practical examples",
+      "Does not claim SaaS transfers all risk"
+    ],
+    "resolution_title": "NIST SP 800-145 - Definition of Cloud Computing",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-003",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Foundations and Service Models",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "When should a team prefer a managed cloud service over self-managing the same technology on virtual machines?",
+    "preferred_answer": "Prefer a managed service when its supported capabilities meet requirements and the reduced patching, replication, backup and operational burden outweigh portability, cost or feature constraints. Evaluate service limits, failure model, data access, observability, exit path and team capability. Managed does not mean unowned: configuration, capacity, data and application behaviour still require engineering.",
+    "evaluation_points": [
+      "Compares operational burden and control",
+      "Checks limits and failure model",
+      "Considers exit and portability",
+      "Retains customer accountability"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-004",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Foundations and Service Models",
+    "difficulty": "intermediate",
+    "question_type": "economics",
+    "prompt": "Why is elasticity different from simply buying more capacity?",
+    "preferred_answer": "Elasticity changes capacity in response to demand and can release it when no longer needed. Buying permanent headroom may improve simplicity but creates idle cost and embodied or operational waste. Effective elasticity needs measurable signals, safe scaling limits, startup time awareness and applications that can tolerate instance replacement and changing concurrency.",
+    "evaluation_points": [
+      "Scale out and scale in",
+      "Links elasticity to demand",
+      "Notes application readiness and delay",
+      "Recognises permanent headroom trade-off"
+    ],
+    "resolution_title": "NIST SP 800-145 - Definition of Cloud Computing",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-005",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Foundations and Service Models",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How would you decide whether a workload should remain on-premises, move to public cloud or use a hybrid model?",
+    "preferred_answer": "Start with business outcomes, latency, data residency, regulatory obligations, dependency placement, elasticity, operational skills and total lifecycle cost. Test assumptions with workload evidence rather than a cloud-first slogan. Hybrid is justified when a durable boundary exists, but it also adds network, identity, observability and operating-model complexity.",
+    "evaluation_points": [
+      "Business and technical criteria",
+      "Evidence rather than ideology",
+      "Hybrid complexity acknowledged",
+      "Includes lifecycle cost and skills"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-006",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Foundations and Service Models",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "What is the danger of treating cloud architecture as a catalogue of provider services?",
+    "preferred_answer": "Service-first design can produce unnecessary coupling, fragmented ownership and expensive complexity without improving an outcome. Begin with workload requirements, quality attributes, failure scenarios and organisational capabilities, then choose the simplest services that satisfy them. Provider-native features can be valuable, but every dependency should have a reason and an operating owner.",
+    "evaluation_points": [
+      "Requirements before products",
+      "Quality attributes and failure scenarios",
+      "Simplicity and ownership",
+      "Balanced view of provider-native services"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-007",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Foundations and Service Models",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "How does the shared-responsibility model change as services become more managed?",
+    "preferred_answer": "The provider assumes more responsibility for lower layers, but customer responsibility shifts rather than disappears. Customers still control identities, data classification, configuration, application logic, integration, monitoring and acceptable use. The exact boundary is service-specific, so teams should document it and assign every control to an owner instead of relying on generic diagrams.",
+    "evaluation_points": [
+      "Responsibility shifts rather than vanishes",
+      "Service-specific boundary",
+      "Names customer control areas",
+      "Requires explicit ownership"
+    ],
+    "resolution_title": "AWS Well-Architected Security Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-008",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Foundations and Service Models",
+    "difficulty": "scenario",
+    "question_type": "decision",
+    "prompt": "A start-up wants to adopt twelve managed services for its first product because they are all labelled cloud-native. How would you challenge the plan?",
+    "preferred_answer": "Map each service to a concrete requirement, failure mode, operator and expected scale. Remove services whose value does not exceed integration, skill, cost and lock-in overhead. Establish a minimal architecture, observability and recovery path, then add capability as evidence appears. Cloud-native should improve delivery and resilience, not become architecture theatre.",
+    "evaluation_points": [
+      "Requirement-to-service mapping",
+      "Complexity and lock-in challenge",
+      "Minimal viable architecture",
+      "Incremental evidence-led adoption"
+    ],
+    "resolution_title": "CNCF Cloud Native Definition",
+    "resolution_url": "https://github.com/cncf/toc/blob/main/DEFINITION.md",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-009",
+    "role_slug": "cloud-engineer",
+    "domain": "Regions, Availability Zones and Global Infrastructure",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "Differentiate a cloud Region, Availability Zone and edge location.",
+    "preferred_answer": "A Region is a geographic cloud market containing multiple infrastructure locations. An Availability Zone is an isolated failure domain within a Region, designed to reduce correlated facility failures. Edge locations place selected services closer to users. Names and implementation details vary by provider, so architecture should rely on documented failure boundaries rather than labels alone.",
+    "evaluation_points": [
+      "Three concepts distinguished",
+      "Failure-domain purpose",
+      "Provider differences acknowledged",
+      "Avoids assuming edge is a full Region"
+    ],
+    "resolution_title": "AWS Regions and Availability Zones",
+    "resolution_url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-010",
+    "role_slug": "cloud-engineer",
+    "domain": "Regions, Availability Zones and Global Infrastructure",
+    "difficulty": "foundation",
+    "question_type": "reliability",
+    "prompt": "Why does distributing instances across zones improve availability but not guarantee it?",
+    "preferred_answer": "Zonal distribution reduces exposure to a single facility or zone failure, but applications can still share a failing database, identity system, deployment, network dependency or software defect. Capacity may also be unavailable during failover. Availability requires dependency analysis, data redundancy, tested routing, sufficient capacity and operational recovery, not instance placement alone.",
+    "evaluation_points": [
+      "Reduces one failure class",
+      "Shared dependencies remain",
+      "Capacity and failover considered",
+      "Testing required"
+    ],
+    "resolution_title": "Azure Regions and Availability Zones",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/reliability/regions-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-011",
+    "role_slug": "cloud-engineer",
+    "domain": "Regions, Availability Zones and Global Infrastructure",
+    "difficulty": "intermediate",
+    "question_type": "data",
+    "prompt": "What trade-offs arise when synchronously replicating data across distant locations?",
+    "preferred_answer": "Synchronous replication can reduce acknowledged-data loss but adds network latency and exposes writes to inter-site connectivity. Greater distance improves geographic separation while increasing round-trip time and failure complexity. The design should be based on consistency needs, RPO, RTO, write latency and the behaviour during partition, not a generic multi-region goal.",
+    "evaluation_points": [
+      "Latency versus durability",
+      "Distance and partition trade-off",
+      "RPO/RTO connection",
+      "Workload-specific consistency"
+    ],
+    "resolution_title": "Google Cloud Reliability Pillar",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/reliability",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-012",
+    "role_slug": "cloud-engineer",
+    "domain": "Regions, Availability Zones and Global Infrastructure",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "How should data residency requirements influence Region selection?",
+    "preferred_answer": "Translate legal and contractual statements into specific rules for storage, processing, backup, logs, support access and cross-border transfer. Confirm what each service actually supports, including control-plane and managed-service behaviour. Region selection is only one control; encryption, key location, identity, retention and supplier terms may also determine compliance.",
+    "evaluation_points": [
+      "Breaks residency into concrete data paths",
+      "Checks service-specific behaviour",
+      "Includes backups and support",
+      "Region alone is insufficient"
+    ],
+    "resolution_title": "Google Cloud Locations",
+    "resolution_url": "https://cloud.google.com/about/locations",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-013",
+    "role_slug": "cloud-engineer",
+    "domain": "Regions, Availability Zones and Global Infrastructure",
+    "difficulty": "intermediate",
+    "question_type": "performance",
+    "prompt": "How would you choose between a single-region multi-zone design and a multi-region design?",
+    "preferred_answer": "A single-region multi-zone design is usually simpler, cheaper and lower latency, and can satisfy many availability targets. Multi-region may be justified by regional disaster tolerance, global latency or sovereignty, but introduces data consistency, routing, deployment and operational complexity. Choose from business impact, SLO, RPO/RTO and tested failure modes.",
+    "evaluation_points": [
+      "Compares simplicity and protection",
+      "Justification for multi-region",
+      "Includes data and operations complexity",
+      "Links to objectives"
+    ],
+    "resolution_title": "AWS Well-Architected Reliability Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-014",
+    "role_slug": "cloud-engineer",
+    "domain": "Regions, Availability Zones and Global Infrastructure",
+    "difficulty": "advanced",
+    "question_type": "reliability",
+    "prompt": "What is correlated failure, and why can provider diversity fail to eliminate it?",
+    "preferred_answer": "Correlated failure occurs when apparently separate components share a dependency or trigger, such as software, DNS, identity, certificate authorities, network carriers or operational automation. A second provider does not help if both workloads use the same code, control plane or human process. Independence must be demonstrated across the actual critical path.",
+    "evaluation_points": [
+      "Defines correlated failure",
+      "Names hidden shared dependencies",
+      "Multi-cloud is not automatic independence",
+      "Critical-path validation"
+    ],
+    "resolution_title": "Google Cloud Reliability Pillar",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/reliability",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-015",
+    "role_slug": "cloud-engineer",
+    "domain": "Regions, Availability Zones and Global Infrastructure",
+    "difficulty": "advanced",
+    "question_type": "operations",
+    "prompt": "What should a regional evacuation plan contain beyond a DNS failover record?",
+    "preferred_answer": "It should define detection and declaration criteria, traffic control, data state and promotion, capacity reservation, identity and secret availability, dependency readiness, deployment freeze, communication, return strategy and validation. DNS TTL is only one timing factor. The plan must be exercised under realistic degraded conditions and include partial-failure cases.",
+    "evaluation_points": [
+      "Declaration and routing",
+      "Data and capacity readiness",
+      "Dependencies and credentials",
+      "Exercises and return plan"
+    ],
+    "resolution_title": "AWS Well-Architected Reliability Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-016",
+    "role_slug": "cloud-engineer",
+    "domain": "Regions, Availability Zones and Global Infrastructure",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A service is deployed in three zones, yet a zonal incident causes a full outage. What would you investigate?",
+    "preferred_answer": "Trace every request dependency and control-plane action. Check whether databases, NAT, load balancers, caches, storage, secrets or build artefacts were zonal; whether health checks removed healthy capacity; whether remaining zones had quotas and headroom; and whether deployment automation amplified the failure. Convert findings into architecture and game-day changes.",
+    "evaluation_points": [
+      "Dependency tracing",
+      "Capacity and quota checks",
+      "Health/routing behaviour",
+      "Automation as possible amplifier"
+    ],
+    "resolution_title": "Azure Well-Architected Reliability Pillar",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/reliability/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-017",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Governance, Organisations and Landing Zones",
+    "difficulty": "foundation",
+    "question_type": "governance",
+    "prompt": "What is a cloud landing zone?",
+    "preferred_answer": "A landing zone is a governed foundation for hosting workloads, including organisation or account structure, identity, networking, logging, security controls, policy, resource naming and automation. It provides a repeatable starting point rather than a finished application architecture. It should evolve through versioned platform products and feedback from workload teams.",
+    "evaluation_points": [
+      "Foundation rather than workload",
+      "Core capabilities named",
+      "Repeatability and automation",
+      "Evolves with feedback"
+    ],
+    "resolution_title": "Azure Landing Zones",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-018",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Governance, Organisations and Landing Zones",
+    "difficulty": "foundation",
+    "question_type": "governance",
+    "prompt": "Why use multiple cloud accounts, subscriptions or projects instead of one large environment?",
+    "preferred_answer": "Separate boundaries reduce blast radius, support distinct billing and policy, isolate production from experimentation and make ownership clearer. They also create administrative overhead and cross-boundary integration work. The structure should reflect security, lifecycle and organisational needs, while central services provide identity, logging and guardrails.",
+    "evaluation_points": [
+      "Blast radius and policy",
+      "Billing and ownership",
+      "Operational overhead",
+      "Central shared services"
+    ],
+    "resolution_title": "AWS Organizations User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-019",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Governance, Organisations and Landing Zones",
+    "difficulty": "intermediate",
+    "question_type": "policy",
+    "prompt": "Differentiate preventive, detective and corrective cloud guardrails.",
+    "preferred_answer": "Preventive guardrails block disallowed actions before they occur, such as denying public storage. Detective guardrails identify non-compliance through configuration or telemetry. Corrective controls automatically or procedurally restore an approved state. Strong governance chooses the least disruptive effective control and includes exceptions, evidence and ownership.",
+    "evaluation_points": [
+      "Three control types",
+      "Relevant examples",
+      "Risk-based control choice",
+      "Exception and ownership"
+    ],
+    "resolution_title": "Google Cloud Enterprise Foundations Blueprint",
+    "resolution_url": "https://cloud.google.com/architecture/security-foundations",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-020",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Governance, Organisations and Landing Zones",
+    "difficulty": "intermediate",
+    "question_type": "governance",
+    "prompt": "What should a resource-tagging or labelling standard achieve?",
+    "preferred_answer": "It should support ownership, environment, application, cost allocation, data classification, lifecycle and automation. Required values need validation at provisioning, but not every metadata need belongs in a tag. The standard should account for provider limits, inheritance gaps and shared resources, and it must connect to reports and actions rather than exist only on paper.",
+    "evaluation_points": [
+      "Business uses named",
+      "Enforcement at creation",
+      "Provider limitations",
+      "Metadata drives action"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-021",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Governance, Organisations and Landing Zones",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "How can platform teams provide governance without becoming a ticket queue?",
+    "preferred_answer": "Offer self-service paved roads with approved modules, policy checks, documented exceptions and observable service levels. Automate common decisions while allowing bounded deviation for legitimate needs. Treat the platform as a product: measure adoption, lead time, failed requests and developer outcomes, then improve the path rather than adding manual approvals.",
+    "evaluation_points": [
+      "Self-service paved roads",
+      "Automated policy and exceptions",
+      "Platform product mindset",
+      "Measures flow and outcomes"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-022",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Governance, Organisations and Landing Zones",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "Why can a centralised cloud centre of excellence slow adoption even when its policies are correct?",
+    "preferred_answer": "If every decision requires a central team, context and delivery queues grow while workload teams avoid or bypass the process. A scalable model separates enterprise guardrails from local engineering decisions, publishes reusable patterns and distributes capability. Central expertise should enable accountability, not absorb it.",
+    "evaluation_points": [
+      "Queue and context problem",
+      "Guardrails versus local decisions",
+      "Reusable patterns and distributed skills",
+      "Enablement over control"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-023",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Governance, Organisations and Landing Zones",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How should a landing zone handle exceptions that cannot meet the standard pattern?",
+    "preferred_answer": "Require a documented requirement, threat and operational analysis, named risk owner, compensating controls, expiry or review date and observability. Isolate the exception where possible and feed recurring cases into the platform roadmap. An exception process should preserve delivery while preventing permanent, invisible divergence.",
+    "evaluation_points": [
+      "Documented rationale and risk",
+      "Compensating controls",
+      "Expiry and monitoring",
+      "Recurring exceptions improve platform"
+    ],
+    "resolution_title": "Google Cloud Enterprise Foundations Blueprint",
+    "resolution_url": "https://cloud.google.com/architecture/security-foundations",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-024",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Governance, Organisations and Landing Zones",
+    "difficulty": "scenario",
+    "question_type": "governance",
+    "prompt": "Teams have created hundreds of unowned cloud resources across several accounts. What is your recovery sequence?",
+    "preferred_answer": "First establish inventory and billing visibility without deleting blindly. Infer owners from identity, deployment and traffic evidence; quarantine high-risk exposure; define retention windows; and engage business owners. Then enforce ownership metadata, approved provisioning paths, lifecycle policies and periodic attestations so the problem does not recur.",
+    "evaluation_points": [
+      "Inventory before deletion",
+      "Evidence-based ownership",
+      "Risk containment and retention",
+      "Systemic prevention"
+    ],
+    "resolution_title": "AWS Organizations User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-025",
+    "role_slug": "cloud-engineer",
+    "domain": "Identity, Access and Workload Authentication",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate authentication, authorisation and accounting in cloud access.",
+    "preferred_answer": "Authentication establishes who or what is making a request. Authorisation evaluates whether that principal may perform the action on the resource under current conditions. Accounting records the decision and activity for investigation, governance and billing. Strong authentication cannot compensate for an over-broad authorisation policy.",
+    "evaluation_points": [
+      "Three functions separated",
+      "Human and workload principals",
+      "Audit/accounting purpose",
+      "No authentication-equals-access assumption"
+    ],
+    "resolution_title": "Google Cloud IAM Overview",
+    "resolution_url": "https://cloud.google.com/iam/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-026",
+    "role_slug": "cloud-engineer",
+    "domain": "Identity, Access and Workload Authentication",
+    "difficulty": "foundation",
+    "question_type": "security",
+    "prompt": "Why is federation preferred over creating long-lived cloud users for every employee?",
+    "preferred_answer": "Federation connects cloud access to an authoritative identity provider, centralising lifecycle, MFA and conditional access. It supports short-lived sessions and faster revocation while reducing unmanaged passwords and access keys. Cloud-local emergency identities may still be required, but they should be tightly protected, monitored and tested.",
+    "evaluation_points": [
+      "Central identity lifecycle",
+      "Short-lived sessions",
+      "Reduced static credentials",
+      "Controlled emergency access"
+    ],
+    "resolution_title": "AWS IAM Security Best Practices",
+    "resolution_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-027",
+    "role_slug": "cloud-engineer",
+    "domain": "Identity, Access and Workload Authentication",
+    "difficulty": "intermediate",
+    "question_type": "security",
+    "prompt": "What is the difference between a role, policy and principal?",
+    "preferred_answer": "A principal is the human, workload or service making a request. A policy expresses allowed or denied actions under conditions. A role groups permissions or represents an assumable identity, depending on the platform. Candidates should explain the provider's exact model while preserving the general separation between who, what permissions and how they are obtained.",
+    "evaluation_points": [
+      "Principal identified",
+      "Policy as decision rules",
+      "Role semantics qualified",
+      "Provider differences acknowledged"
+    ],
+    "resolution_title": "AWS IAM Security Best Practices",
+    "resolution_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-028",
+    "role_slug": "cloud-engineer",
+    "domain": "Identity, Access and Workload Authentication",
+    "difficulty": "intermediate",
+    "question_type": "workload identity",
+    "prompt": "Why are workload identity and short-lived credentials safer than static service-account keys?",
+    "preferred_answer": "Static keys are copyable, long-lived and often leak through repositories, images, logs or developer machines. Workload identity binds credential issuance to a runtime, repository, service or environment and produces limited-duration tokens. The trust policy, claims, audience and role permissions still require careful least-privilege design.",
+    "evaluation_points": [
+      "Static-key risks",
+      "Runtime or pipeline binding",
+      "Short lifetime",
+      "Trust policy and permission design"
+    ],
+    "resolution_title": "Google Cloud IAM Overview",
+    "resolution_url": "https://cloud.google.com/iam/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-029",
+    "role_slug": "cloud-engineer",
+    "domain": "Identity, Access and Workload Authentication",
+    "difficulty": "intermediate",
+    "question_type": "governance",
+    "prompt": "What should a periodic cloud access review prove?",
+    "preferred_answer": "It should show that identities remain attributable, access reflects current responsibilities, privileged paths have owners, inactive permissions are removed and exceptions remain justified. Reviewers need resource and usage context, not unreadable policy dumps. Effective-access analysis matters because inherited, group and cross-account permissions can differ from assigned roles.",
+    "evaluation_points": [
+      "Attribution and current need",
+      "Privileged and inactive access",
+      "Effective permissions",
+      "Useful reviewer context"
+    ],
+    "resolution_title": "Microsoft Entra Identity and Access Management",
+    "resolution_url": "https://learn.microsoft.com/en-us/entra/fundamentals/introduction-identity-access-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-030",
+    "role_slug": "cloud-engineer",
+    "domain": "Identity, Access and Workload Authentication",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How would you design just-in-time privileged access for cloud administration?",
+    "preferred_answer": "Use strong federation and phishing-resistant authentication, time-limited role activation, approval or policy conditions, narrowly scoped permissions, session and control-plane logging, rapid revocation and protected emergency access. Separate routine operations from high-impact administration. The workflow must remain usable during an identity outage without creating a permanent bypass.",
+    "evaluation_points": [
+      "Time and scope limits",
+      "Strong authentication",
+      "Audit and revocation",
+      "Emergency-path trade-off"
+    ],
+    "resolution_title": "Microsoft Entra Identity and Access Management",
+    "resolution_url": "https://learn.microsoft.com/en-us/entra/fundamentals/introduction-identity-access-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-031",
+    "role_slug": "cloud-engineer",
+    "domain": "Identity, Access and Workload Authentication",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "Why can deny policies or organisation guardrails produce unexpected access outcomes?",
+    "preferred_answer": "Cloud authorisation combines identity policies, resource policies, inherited controls, permission boundaries and explicit denies. A deny may override an allow, while an unexamined alternate path can bypass the intended boundary. Troubleshooting should evaluate the complete decision chain, conditions and principal context using policy simulation or audit evidence.",
+    "evaluation_points": [
+      "Multiple policy layers",
+      "Deny precedence or provider semantics",
+      "Alternate paths",
+      "Evidence-led effective-access analysis"
+    ],
+    "resolution_title": "AWS IAM Security Best Practices",
+    "resolution_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-032",
+    "role_slug": "cloud-engineer",
+    "domain": "Identity, Access and Workload Authentication",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A CI pipeline's cloud role is used from an unknown location. Give the first response sequence.",
+    "preferred_answer": "Disable or restrict the trust path and revoke active sessions where possible, while preserving identity-provider, CI and cloud audit logs. Determine which claims, repository, branch and runner obtained the role; inspect actions and persistence; rotate affected secrets; and rebuild trust with short-lived workload identity, restrictive conditions and isolated runners.",
+    "evaluation_points": [
+      "Contain trust path",
+      "Preserve multi-system evidence",
+      "Scope actions and persistence",
+      "Repair workload identity design"
+    ],
+    "resolution_title": "AWS Well-Architected Security Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-033",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Networking, DNS and Traffic Management",
+    "difficulty": "foundation",
+    "question_type": "networking",
+    "prompt": "What is a cloud virtual network, and what does it isolate?",
+    "preferred_answer": "A virtual network provides a logically isolated address and routing domain for cloud resources. Subnets divide address space and support policy or placement, but a subnet is not automatically a security boundary. Isolation depends on routing, firewall rules, identities, service endpoints and provider control-plane behaviour.",
+    "evaluation_points": [
+      "Logical network definition",
+      "Subnet role",
+      "Security not assumed",
+      "Routing and policy dependencies"
+    ],
+    "resolution_title": "Amazon VPC User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-034",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Networking, DNS and Traffic Management",
+    "difficulty": "foundation",
+    "question_type": "networking",
+    "prompt": "Differentiate a route table, security group or firewall rule, and network ACL.",
+    "preferred_answer": "Routes decide where traffic is sent. Instance- or interface-level firewall controls decide which traffic is permitted, often statefully. Subnet or network ACLs may provide broader stateless filtering, depending on provider. Candidates should describe the exact provider semantics and evaluate the whole path rather than treating any one layer as sufficient.",
+    "evaluation_points": [
+      "Routing versus filtering",
+      "Stateful/stateless distinction",
+      "Provider-specific qualification",
+      "End-to-end path"
+    ],
+    "resolution_title": "Azure Virtual Network Overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-035",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Networking, DNS and Traffic Management",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "When should a service use a private endpoint instead of a public endpoint protected by IP rules?",
+    "preferred_answer": "A private endpoint keeps service traffic on controlled private addressing and can simplify exposure reduction, but it adds DNS, routing, ownership and cost complexity. A public endpoint with strong identity and network restrictions may be acceptable for some cases. Decide from threat model, data sensitivity, client locations and operational capability.",
+    "evaluation_points": [
+      "Exposure and threat context",
+      "Private DNS/routing complexity",
+      "Identity still required",
+      "Balanced decision"
+    ],
+    "resolution_title": "Google Cloud VPC Overview",
+    "resolution_url": "https://cloud.google.com/vpc/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-036",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Networking, DNS and Traffic Management",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "What diagnostic order would you use when one cloud workload cannot reach another?",
+    "preferred_answer": "Confirm source and destination addresses, ports and application listeners. Then inspect DNS resolution, routes, security groups or firewall policy, network ACLs, peering or transit paths, NAT and service endpoints. Test from both sides and use flow logs or packet evidence after simpler checks. A successful DNS lookup does not prove transport reachability.",
+    "evaluation_points": [
+      "Layered sequence",
+      "Listener and DNS",
+      "Routing and policy",
+      "Flow evidence used appropriately"
+    ],
+    "resolution_title": "Amazon VPC User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-037",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Networking, DNS and Traffic Management",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "How do layer 4 and layer 7 load balancers differ?",
+    "preferred_answer": "A layer 4 balancer routes using transport information such as IP and port, preserving protocol flexibility and lower processing overhead. A layer 7 balancer understands application protocols such as HTTP, enabling path, host, header and cookie routing plus application-aware controls. Choose based on protocol, visibility, latency and feature needs.",
+    "evaluation_points": [
+      "Transport versus application awareness",
+      "Routing examples",
+      "Performance/features trade-off",
+      "Protocol-specific choice"
+    ],
+    "resolution_title": "Elastic Load Balancing User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-038",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Networking, DNS and Traffic Management",
+    "difficulty": "advanced",
+    "question_type": "dns",
+    "prompt": "Why can DNS become a hidden single point of failure in a multi-region architecture?",
+    "preferred_answer": "Traffic may depend on one hosted zone, registrar, delegation chain, health-check system, deployment process or cached record. Failover can also be delayed by TTLs and resolver behaviour. Resilience requires protected administration, tested delegation and routing, independent monitoring, safe change procedures and an understanding of negative and client-side caching.",
+    "evaluation_points": [
+      "Shared DNS dependencies",
+      "TTL/cache behaviour",
+      "Administrative protection",
+      "Tested failover"
+    ],
+    "resolution_title": "Google Cloud Load Balancing Overview",
+    "resolution_url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-039",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Networking, DNS and Traffic Management",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "What risks arise from unrestricted cloud egress?",
+    "preferred_answer": "Unrestricted egress enables command-and-control, exfiltration, unapproved package downloads and access to metadata or external services. Controls can use identity-aware proxies, destination policy, private service access, DNS filtering and monitored NAT. Rules must reflect real dependencies and have owners, otherwise teams create bypasses or outages.",
+    "evaluation_points": [
+      "Exfiltration and C2",
+      "Metadata and supply-chain risk",
+      "Control options",
+      "Operational ownership"
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-040",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Networking, DNS and Traffic Management",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "Users receive intermittent 502 and timeout errors through a global load balancer, while direct backend checks appear healthy. What would you examine?",
+    "preferred_answer": "Correlate requests by region, backend, protocol and time. Inspect health-check differences, connection reuse, TLS and certificate paths, backend capacity, DNS routing, firewall asymmetry and dependency latency. Reproduce through the same edge path, not only localhost. Determine whether the balancer, network or application is returning each failure.",
+    "evaluation_points": [
+      "End-to-end correlation",
+      "Health-check realism",
+      "TLS/capacity/routing checks",
+      "Error-source attribution"
+    ],
+    "resolution_title": "Google Cloud Load Balancing Overview",
+    "resolution_url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-041",
+    "role_slug": "cloud-engineer",
+    "domain": "Compute, Virtualisation and Capacity",
+    "difficulty": "foundation",
+    "question_type": "compute",
+    "prompt": "What is the practical difference between a virtual machine, container and serverless execution unit?",
+    "preferred_answer": "A virtual machine virtualises hardware and runs a guest operating system. A container shares a host kernel while isolating processes and packaging dependencies. Serverless abstracts most infrastructure and executes code or containers under a provider-managed scaling model. The correct choice depends on isolation, control, startup, workload shape and operational ownership.",
+    "evaluation_points": [
+      "Three execution models",
+      "Isolation and ownership",
+      "Startup and scaling",
+      "No universal winner"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-042",
+    "role_slug": "cloud-engineer",
+    "domain": "Compute, Virtualisation and Capacity",
+    "difficulty": "foundation",
+    "question_type": "capacity",
+    "prompt": "How should an engineer choose a cloud instance family and size?",
+    "preferred_answer": "Start with CPU, memory, storage, network, accelerator and latency characteristics, then benchmark the real workload. Rightsize from observed utilisation and saturation, not average CPU alone. Account for software licensing, burst behaviour, architecture compatibility, availability and scaling granularity. Revisit the choice as workload and provider options change.",
+    "evaluation_points": [
+      "Resource dimensions",
+      "Benchmarking",
+      "Utilisation plus saturation",
+      "Lifecycle review"
+    ],
+    "resolution_title": "Amazon EC2 Auto Scaling",
+    "resolution_url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-043",
+    "role_slug": "cloud-engineer",
+    "domain": "Compute, Virtualisation and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "What makes a machine image production-ready?",
+    "preferred_answer": "It should be built reproducibly from controlled sources, patched, hardened, scanned, minimally configured and versioned. Bootstrap should separate environment-specific secrets and configuration. The image needs provenance, rollback and deprecation rules, plus tests for boot, telemetry and application health. Hand-edited golden servers are not a reliable image pipeline.",
+    "evaluation_points": [
+      "Reproducible and patched",
+      "No embedded secrets",
+      "Version/provenance",
+      "Boot and health tests"
+    ],
+    "resolution_title": "AWS Well-Architected Security Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-044",
+    "role_slug": "cloud-engineer",
+    "domain": "Compute, Virtualisation and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "scaling",
+    "prompt": "Compare vertical scaling and horizontal scaling.",
+    "preferred_answer": "Vertical scaling increases resources on an individual instance and can be simple, but may require restart and has finite limits. Horizontal scaling changes the number of instances and can improve elasticity and fault tolerance, but requires distributable state, load balancing and coordination. Many systems use both at different layers.",
+    "evaluation_points": [
+      "Scale-up versus scale-out",
+      "Limits and restart",
+      "State/distribution needs",
+      "Hybrid use"
+    ],
+    "resolution_title": "Azure Virtual Machine Scale Sets",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-045",
+    "role_slug": "cloud-engineer",
+    "domain": "Compute, Virtualisation and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "reliability",
+    "prompt": "What should an autoscaling policy use besides average CPU?",
+    "preferred_answer": "Choose signals tied to demand or saturation, such as queue depth, request concurrency, latency, memory pressure or custom business units. Include startup time, cooldown or stabilisation, minimum safe capacity and maximum cost. Validate scale-in safety and downstream limits. CPU can be useful, but it may lag or misrepresent I/O-bound work.",
+    "evaluation_points": [
+      "Demand/saturation metrics",
+      "Startup and stabilisation",
+      "Scale-in and downstream safety",
+      "Cost/capacity bounds"
+    ],
+    "resolution_title": "Google Cloud Managed Instance Groups",
+    "resolution_url": "https://cloud.google.com/compute/docs/instance-groups",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-046",
+    "role_slug": "cloud-engineer",
+    "domain": "Compute, Virtualisation and Capacity",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "When are spot or pre-emptible instances appropriate?",
+    "preferred_answer": "They suit interruption-tolerant, checkpointed or replicated workloads such as batch processing, stateless workers and flexible CI. The design should diversify capacity, handle termination notices, limit correlated loss and fall back where necessary. They are not a reliability strategy by themselves, and low price must be evaluated against interruption engineering.",
+    "evaluation_points": [
+      "Interruption-tolerant workloads",
+      "Checkpoint and diversification",
+      "Fallback",
+      "Total engineering cost"
+    ],
+    "resolution_title": "AWS Well-Architected Cost Optimization Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-047",
+    "role_slug": "cloud-engineer",
+    "domain": "Compute, Virtualisation and Capacity",
+    "difficulty": "advanced",
+    "question_type": "operations",
+    "prompt": "Why can automated patching of a VM fleet still cause a large outage?",
+    "preferred_answer": "Automation can propagate a bad patch, restart dependency or incompatible kernel across the whole fleet faster than manual change. Use staged rings, health gates, immutable replacement, representative tests, rollback and capacity headroom. Separate orchestration failure domains and stop promotion when service-level signals degrade.",
+    "evaluation_points": [
+      "Automation amplifies failure",
+      "Staged rollout",
+      "Health gates and rollback",
+      "Failure-domain separation"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-048",
+    "role_slug": "cloud-engineer",
+    "domain": "Compute, Virtualisation and Capacity",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A VM-based application slows each evening although CPU remains below 30%. How would you investigate?",
+    "preferred_answer": "Check memory and swap, disk latency and queueing, network throughput, connection pools, runtime pauses, scheduled jobs, noisy-neighbour indicators and downstream saturation. Correlate with traffic and change history. Average CPU can hide single-thread, burst-credit or throttling constraints. Measure at process, host and dependency levels before resizing.",
+    "evaluation_points": [
+      "Broader resource analysis",
+      "Scheduled/traffic correlation",
+      "Average CPU limitation",
+      "Process and dependency evidence"
+    ],
+    "resolution_title": "Amazon CloudWatch User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-049",
+    "role_slug": "cloud-engineer",
+    "domain": "Containers and Managed Kubernetes",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What problem does Kubernetes solve beyond simply running containers?",
+    "preferred_answer": "Kubernetes provides a declarative control plane that schedules workloads, reconciles desired and actual state, exposes services, manages configuration and supports rollout and recovery. It does not remove the need to design applications, data systems, security or observability. Its value appears when orchestration complexity exceeds the cost of operating the platform.",
+    "evaluation_points": [
+      "Declarative reconciliation",
+      "Scheduling and service capabilities",
+      "Application duties remain",
+      "Complexity threshold"
+    ],
+    "resolution_title": "Kubernetes Cluster Components",
+    "resolution_url": "https://kubernetes.io/docs/concepts/overview/components/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-050",
+    "role_slug": "cloud-engineer",
+    "domain": "Containers and Managed Kubernetes",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "Name the core Kubernetes control-plane and node components.",
+    "preferred_answer": "The API server exposes and validates the cluster API; etcd stores state; the scheduler assigns Pods; controller managers reconcile resources. On nodes, kubelet manages Pod execution, the container runtime runs containers and the network data plane enables Service connectivity. Managed Kubernetes may operate parts of this, but customers still own workload and cluster configuration.",
+    "evaluation_points": [
+      "API server, etcd, scheduler, controllers",
+      "Kubelet/runtime/network",
+      "Reconciliation",
+      "Managed-service boundary"
+    ],
+    "resolution_title": "Kubernetes Cluster Components",
+    "resolution_url": "https://kubernetes.io/docs/concepts/overview/components/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-051",
+    "role_slug": "cloud-engineer",
+    "domain": "Containers and Managed Kubernetes",
+    "difficulty": "intermediate",
+    "question_type": "workloads",
+    "prompt": "When should a Deployment, StatefulSet, DaemonSet or Job be used?",
+    "preferred_answer": "A Deployment manages replaceable stateless replicas. A StatefulSet provides stable identities and storage associations for stateful replicas. A DaemonSet runs a Pod on selected nodes, often for platform agents. A Job runs finite work to completion. The controller should match lifecycle and identity needs rather than application branding.",
+    "evaluation_points": [
+      "Four controllers distinguished",
+      "Lifecycle and identity",
+      "Storage implications",
+      "No arbitrary controller choice"
+    ],
+    "resolution_title": "Kubernetes Workloads",
+    "resolution_url": "https://kubernetes.io/docs/concepts/workloads/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-052",
+    "role_slug": "cloud-engineer",
+    "domain": "Containers and Managed Kubernetes",
+    "difficulty": "intermediate",
+    "question_type": "networking",
+    "prompt": "Why can a Kubernetes Service be reachable while the application still fails?",
+    "preferred_answer": "A Service supplies stable discovery and traffic routing to selected Pods, but it cannot make an application ready. Selectors may target wrong Pods, endpoints may be empty, readiness may be incorrect, ports may mismatch, or dependencies may fail. Diagnose Service, EndpointSlice, Pod readiness, network policy and application logs together.",
+    "evaluation_points": [
+      "Service versus readiness",
+      "Selectors/endpoints/ports",
+      "Network policy",
+      "Application/dependency checks"
+    ],
+    "resolution_title": "Kubernetes Workloads",
+    "resolution_url": "https://kubernetes.io/docs/concepts/workloads/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-053",
+    "role_slug": "cloud-engineer",
+    "domain": "Containers and Managed Kubernetes",
+    "difficulty": "intermediate",
+    "question_type": "capacity",
+    "prompt": "How do requests and limits affect Kubernetes scheduling and runtime behaviour?",
+    "preferred_answer": "Requests influence scheduling and expected capacity. CPU limits can throttle execution, while memory limit breaches can terminate containers. Poor requests cause waste or Pending Pods; missing limits can increase noisy-neighbour risk. Values should come from measurement and SLOs, with autoscaling and node capacity considered together.",
+    "evaluation_points": [
+      "Scheduling versus enforcement",
+      "CPU throttling and memory termination",
+      "Packing trade-offs",
+      "Measurement and scaling"
+    ],
+    "resolution_title": "Kubernetes Horizontal Pod Autoscaling",
+    "resolution_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-054",
+    "role_slug": "cloud-engineer",
+    "domain": "Containers and Managed Kubernetes",
+    "difficulty": "advanced",
+    "question_type": "platform",
+    "prompt": "What responsibilities remain with the customer in managed Kubernetes?",
+    "preferred_answer": "Providers may operate control-plane availability and upgrades, but customers typically own node or mode choices, workload identity, RBAC, network policy, admission, images, secrets, autoscaling, observability, data protection and application recovery. The boundary varies by service. A managed cluster is not a managed application.",
+    "evaluation_points": [
+      "Provider versus customer boundary",
+      "Security and workload duties",
+      "Service-specific variation",
+      "No managed-application assumption"
+    ],
+    "resolution_title": "Kubernetes Security",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-055",
+    "role_slug": "cloud-engineer",
+    "domain": "Containers and Managed Kubernetes",
+    "difficulty": "advanced",
+    "question_type": "scaling",
+    "prompt": "Why can Horizontal Pod Autoscaling worsen an incident?",
+    "preferred_answer": "If the metric reflects retries or downstream latency, HPA may add Pods that increase pressure on an already saturated database or queue. Bad requests, delayed metrics and startup time can also cause oscillation. Scaling policy should include dependency capacity, stabilisation, load shedding and a clear saturation model.",
+    "evaluation_points": [
+      "Positive feedback risk",
+      "Metric and request quality",
+      "Stabilisation",
+      "Dependency and load-shedding awareness"
+    ],
+    "resolution_title": "Kubernetes Horizontal Pod Autoscaling",
+    "resolution_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-056",
+    "role_slug": "cloud-engineer",
+    "domain": "Containers and Managed Kubernetes",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "Pods are restarting after a deployment, but only in one node pool. What would you inspect?",
+    "preferred_answer": "Compare events, exit reasons, previous logs, resource pressure, architecture, kernel, runtime, storage, network and admission differences across pools. Check image compatibility, node taints, device plugins and disruption. Cordon affected nodes if needed while preserving evidence. Avoid treating CrashLoopBackOff as the root cause.",
+    "evaluation_points": [
+      "Cross-pool comparison",
+      "Events and previous logs",
+      "Node/runtime/resource factors",
+      "Safe containment"
+    ],
+    "resolution_title": "Kubernetes Security",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-057",
+    "role_slug": "cloud-engineer",
+    "domain": "Serverless and Event-Driven Compute",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does serverless mean, and what does it not mean?",
+    "preferred_answer": "Serverless means the provider manages most server provisioning, scaling and platform operations while the customer deploys functions or services and pays through a service-specific consumption model. Servers still exist, and customers remain responsible for code, identities, configuration, data and observability. It is an operating abstraction, not the absence of infrastructure.",
+    "evaluation_points": [
+      "Provider-managed operations",
+      "Servers still exist",
+      "Customer responsibilities",
+      "Consumption abstraction"
+    ],
+    "resolution_title": "AWS Serverless Developer Guide",
+    "resolution_url": "https://docs.aws.amazon.com/serverless/latest/devguide/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-058",
+    "role_slug": "cloud-engineer",
+    "domain": "Serverless and Event-Driven Compute",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "What makes a function suitable for event-driven execution?",
+    "preferred_answer": "It should have a clear trigger, bounded work, externalised durable state, repeatable handling and defined timeout and retry behaviour. Functions work well for asynchronous integration, automation and bursty tasks. Long-running, highly stateful or latency-critical work may fit managed containers or other compute better.",
+    "evaluation_points": [
+      "Clear event and bounded work",
+      "External state",
+      "Retry and timeout",
+      "Workload-fit judgement"
+    ],
+    "resolution_title": "Azure Functions Overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-059",
+    "role_slug": "cloud-engineer",
+    "domain": "Serverless and Event-Driven Compute",
+    "difficulty": "intermediate",
+    "question_type": "reliability",
+    "prompt": "Why must an event handler be idempotent?",
+    "preferred_answer": "Delivery systems commonly retry and may provide at-least-once semantics. Idempotency ensures repeated processing of the same logical event does not create duplicate side effects. Use stable event identifiers, conditional writes, deduplication or transactional outbox patterns, and define the retention period for duplicate detection.",
+    "evaluation_points": [
+      "Retries and duplicate delivery",
+      "Stable identifier",
+      "Control techniques",
+      "Retention and side effects"
+    ],
+    "resolution_title": "AWS Lambda Event-Driven Architectures",
+    "resolution_url": "https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-060",
+    "role_slug": "cloud-engineer",
+    "domain": "Serverless and Event-Driven Compute",
+    "difficulty": "intermediate",
+    "question_type": "performance",
+    "prompt": "What causes cold starts, and how should they influence design?",
+    "preferred_answer": "A cold start occurs when the platform creates or initialises a new execution environment. Runtime, package size, network setup and application initialisation affect delay. Measure user impact before optimising; use smaller artefacts, lazy initialisation, provisioned capacity or asynchronous patterns where justified. Avoid paying permanent capacity for an unmeasured problem.",
+    "evaluation_points": [
+      "Initialisation mechanism",
+      "Contributing factors",
+      "Measurement first",
+      "Mitigation trade-offs"
+    ],
+    "resolution_title": "Azure Functions Overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-061",
+    "role_slug": "cloud-engineer",
+    "domain": "Serverless and Event-Driven Compute",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "How should concurrency limits be used in serverless systems?",
+    "preferred_answer": "Limits protect downstream systems, bound cost and reserve capacity for critical functions. They must reflect database connections, API quotas, queue backlog and latency targets. Too low creates delay; too high can amplify retries and overload dependencies. Pair limits with backpressure, dead-letter handling and observable queue age.",
+    "evaluation_points": [
+      "Dependency protection",
+      "Cost and reservation",
+      "Too-low/too-high trade-off",
+      "Backpressure and queue metrics"
+    ],
+    "resolution_title": "AWS Lambda Event-Driven Architectures",
+    "resolution_url": "https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-062",
+    "role_slug": "cloud-engineer",
+    "domain": "Serverless and Event-Driven Compute",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "When is a managed container service preferable to functions?",
+    "preferred_answer": "Managed containers suit arbitrary runtimes, longer requests, custom processes, higher control over concurrency and portable container packaging while retaining serverless-style operations. Functions may offer simpler event integration and fine-grained scale. Decide from execution duration, protocol, startup, state, scaling, cost and operational requirements.",
+    "evaluation_points": [
+      "Runtime/control distinction",
+      "Event integration",
+      "Workload criteria",
+      "No ideology"
+    ],
+    "resolution_title": "Google Cloud Run Documentation",
+    "resolution_url": "https://docs.cloud.google.com/run/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-063",
+    "role_slug": "cloud-engineer",
+    "domain": "Serverless and Event-Driven Compute",
+    "difficulty": "advanced",
+    "question_type": "reliability",
+    "prompt": "How can retries turn a small serverless failure into a major outage?",
+    "preferred_answer": "Unbounded retries can multiply traffic, cost and duplicate work while a dependency remains unhealthy. Use exponential backoff with jitter, maximum attempts, dead-letter destinations, idempotency and circuit breaking. Separate transient from permanent errors and expose backlog age and failure reasons so operators can intervene safely.",
+    "evaluation_points": [
+      "Retry amplification",
+      "Backoff/jitter/limits",
+      "Permanent-error handling",
+      "Observability and intervention"
+    ],
+    "resolution_title": "AWS Lambda Event-Driven Architectures",
+    "resolution_url": "https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-064",
+    "role_slug": "cloud-engineer",
+    "domain": "Serverless and Event-Driven Compute",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "An event-driven order pipeline has increasing queue age but low function duration. What would you inspect?",
+    "preferred_answer": "Check trigger throughput, reserved concurrency, batch size, filtering, throttling, failed-message retries and downstream quotas. Low duration does not prove enough parallel capacity. Examine arrival versus completion rate, poison events and scaling delay, then change one constraint at a time while protecting order consistency.",
+    "evaluation_points": [
+      "Arrival/completion rate",
+      "Concurrency and trigger settings",
+      "Poison/retry analysis",
+      "Consistency-safe change"
+    ],
+    "resolution_title": "AWS Lambda Event-Driven Architectures",
+    "resolution_url": "https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-065",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Storage, Data Durability and Lifecycle",
+    "difficulty": "foundation",
+    "question_type": "storage",
+    "prompt": "Compare object, block and file storage.",
+    "preferred_answer": "Object storage manages data as objects in a flat namespace and suits durable, scalable unstructured data. Block storage presents volumes for filesystems or databases and supports low-latency random I/O. File storage provides shared hierarchical filesystem semantics. Choice depends on access pattern, consistency, protocol, performance and lifecycle.",
+    "evaluation_points": [
+      "Three storage models",
+      "Typical use cases",
+      "Access-pattern criteria",
+      "No one-size-fits-all"
+    ],
+    "resolution_title": "Amazon S3 User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-066",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Storage, Data Durability and Lifecycle",
+    "difficulty": "foundation",
+    "question_type": "reliability",
+    "prompt": "Differentiate durability and availability for cloud storage.",
+    "preferred_answer": "Durability is the probability that stored data is not lost over time; availability is the ability to access it when needed. Replication can provide high durability while an outage or permission failure makes data unavailable. Architecture should pair provider guarantees with backup, access, recovery and application behaviour.",
+    "evaluation_points": [
+      "Definitions separated",
+      "Replication example",
+      "Access and recovery factors",
+      "Provider guarantee not complete strategy"
+    ],
+    "resolution_title": "Google Cloud Storage Documentation",
+    "resolution_url": "https://cloud.google.com/storage/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-067",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Storage, Data Durability and Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "security",
+    "prompt": "What controls are needed before making an object-storage bucket public?",
+    "preferred_answer": "Confirm a genuine public use case, separate public and private data, disable listing where unnecessary, use least-privilege write paths, content validation, logging, versioning and lifecycle controls. Prefer a CDN or controlled publishing workflow. Public-read should never imply public-write, and account-level public-access protections need deliberate exceptions.",
+    "evaluation_points": [
+      "Business justification",
+      "Read/write separation",
+      "Publishing and logging controls",
+      "Account guardrail awareness"
+    ],
+    "resolution_title": "Azure Blob Storage Introduction",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-068",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Storage, Data Durability and Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "lifecycle",
+    "prompt": "How should storage lifecycle policies be designed?",
+    "preferred_answer": "Classify data by access frequency, retention, recovery need and legal hold, then transition or delete through tested rules. Consider retrieval delay and fees, minimum storage duration, replication and backup interaction. Lifecycle policy should be owned and observable; automatic deletion without data governance can create irreversible loss.",
+    "evaluation_points": [
+      "Classification and retention",
+      "Retrieval/cost constraints",
+      "Backup/replication interaction",
+      "Ownership and deletion safety"
+    ],
+    "resolution_title": "Amazon S3 User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-069",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Storage, Data Durability and Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "data",
+    "prompt": "Why is versioning not the same as backup?",
+    "preferred_answer": "Versioning can recover overwritten or deleted objects within the same administrative and failure domain, but malicious deletion, account compromise, lifecycle mistakes or provider issues may affect all versions. Backup adds independent policy, access, retention and restore testing. Recovery objectives determine how much independence is required.",
+    "evaluation_points": [
+      "Versioning benefit",
+      "Shared failure domain",
+      "Independent backup controls",
+      "RPO/RTO basis"
+    ],
+    "resolution_title": "Amazon S3 User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-070",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Storage, Data Durability and Lifecycle",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How should an application handle object-storage consistency and concurrency?",
+    "preferred_answer": "Understand the provider's documented consistency model, then use conditional requests, generation or ETag checks and immutable object names where appropriate. Avoid assuming directory or lock semantics. For multi-step state changes, place coordination in a database or transactional service rather than inventing fragile object-store locks.",
+    "evaluation_points": [
+      "Provider consistency model",
+      "Conditional writes/version identifiers",
+      "No filesystem assumptions",
+      "Correct coordination service"
+    ],
+    "resolution_title": "Google Cloud Storage Documentation",
+    "resolution_url": "https://cloud.google.com/storage/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-071",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Storage, Data Durability and Lifecycle",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "What should a cloud data-retention design prove?",
+    "preferred_answer": "It should map data classes to legal, business and recovery requirements; define authoritative copies, replicas, backups, archives and deletion; assign owners; and demonstrate that deletion propagates where required. Retention must include logs, snapshots and derived data. Keeping everything forever is not a neutral safety choice.",
+    "evaluation_points": [
+      "Data-class mapping",
+      "All copy types",
+      "Owner and deletion proof",
+      "Challenges indefinite retention"
+    ],
+    "resolution_title": "Azure Blob Storage Introduction",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-072",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Storage, Data Durability and Lifecycle",
+    "difficulty": "scenario",
+    "question_type": "recovery",
+    "prompt": "A storage account was encrypted by a compromised administrator. What is the recovery sequence?",
+    "preferred_answer": "Contain the identity and preserve audit logs, determine affected keys, policies, objects and replicas, and prevent further deletion. Restore from protected versions or independent backups into a clean boundary, validate integrity and application behaviour, then rebuild access and key controls. Do not reconnect recovered data to compromised automation prematurely.",
+    "evaluation_points": [
+      "Identity containment",
+      "Scope and evidence",
+      "Independent clean restore",
+      "Trust rebuild and validation"
+    ],
+    "resolution_title": "Google Cloud Security, Privacy and Compliance Pillar",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/security",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-073",
+    "role_slug": "cloud-engineer",
+    "domain": "Managed Databases, NoSQL and Caching",
+    "difficulty": "foundation",
+    "question_type": "data",
+    "prompt": "When should a managed relational database be preferred over self-hosting one on a VM?",
+    "preferred_answer": "A managed database reduces operational work for patching, backups, replication and failover, while providing supported monitoring and automation. It is preferable when its engine version, extensions, performance and control model meet requirements. Customers still own schema, queries, connections, data protection, access and recovery testing.",
+    "evaluation_points": [
+      "Operational benefit",
+      "Service limitations checked",
+      "Customer data duties",
+      "Recovery testing"
+    ],
+    "resolution_title": "Amazon RDS User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-074",
+    "role_slug": "cloud-engineer",
+    "domain": "Managed Databases, NoSQL and Caching",
+    "difficulty": "foundation",
+    "question_type": "data",
+    "prompt": "When is a key-value or document database a better fit than a relational database?",
+    "preferred_answer": "It fits access patterns centred on known keys, flexible documents, large horizontal scale or low-latency distribution where joins and multi-row transactions are limited. A relational database remains stronger for rich relationships, constraints and ad hoc queries. Choose from access patterns and consistency needs, not a generic scale claim.",
+    "evaluation_points": [
+      "Access-pattern fit",
+      "Relational strengths",
+      "Consistency/transaction criteria",
+      "Avoids fashion-driven selection"
+    ],
+    "resolution_title": "Amazon DynamoDB Developer Guide",
+    "resolution_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-075",
+    "role_slug": "cloud-engineer",
+    "domain": "Managed Databases, NoSQL and Caching",
+    "difficulty": "intermediate",
+    "question_type": "reliability",
+    "prompt": "Differentiate high availability, read replicas and backup in a managed database.",
+    "preferred_answer": "High availability keeps service running through supported failures, often using synchronous or managed standby replication. Read replicas scale reads or support analytics and may lag. Backups protect historical state and support restore after logical corruption or deletion. They address different failure modes and should be tested separately.",
+    "evaluation_points": [
+      "Three purposes separated",
+      "Replica lag",
+      "Logical corruption and restore",
+      "Separate testing"
+    ],
+    "resolution_title": "Cloud SQL Documentation",
+    "resolution_url": "https://cloud.google.com/sql/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-076",
+    "role_slug": "cloud-engineer",
+    "domain": "Managed Databases, NoSQL and Caching",
+    "difficulty": "intermediate",
+    "question_type": "performance",
+    "prompt": "Why can serverless or autoscaled compute overwhelm a database?",
+    "preferred_answer": "Compute can scale faster than database connections, locks, I/O or transaction capacity. Each instance may open pools, creating a connection storm. Use bounded concurrency, connection proxies or pooling, backpressure, caching and query optimisation. Scaling the caller is not useful when the database is the constrained shared resource.",
+    "evaluation_points": [
+      "Scale-rate mismatch",
+      "Connection storm",
+      "Bounded concurrency/pooling",
+      "Database bottleneck awareness"
+    ],
+    "resolution_title": "Azure SQL Documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-sql/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-077",
+    "role_slug": "cloud-engineer",
+    "domain": "Managed Databases, NoSQL and Caching",
+    "difficulty": "intermediate",
+    "question_type": "caching",
+    "prompt": "What are cache-aside and write-through caching, and what failure modes do they create?",
+    "preferred_answer": "Cache-aside loads data after a miss and requires invalidation when source data changes. Write-through updates cache and backing store in one application flow, but partial failure and ordering must be handled. Both introduce staleness, stampede and eviction risks. Define source of truth, TTL, invalidation and degraded behaviour.",
+    "evaluation_points": [
+      "Two patterns",
+      "Source of truth",
+      "Staleness/stampede",
+      "Partial-failure handling"
+    ],
+    "resolution_title": "Azure Cosmos DB Documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-078",
+    "role_slug": "cloud-engineer",
+    "domain": "Managed Databases, NoSQL and Caching",
+    "difficulty": "advanced",
+    "question_type": "data",
+    "prompt": "How should a globally distributed database consistency model be selected?",
+    "preferred_answer": "Start from business invariants: what must never be stale, what can converge and what users observe during partition. Stronger consistency can add latency or reduce availability across distance; weaker consistency needs conflict, session and reconciliation design. Use provider guarantees precisely and test failover, not marketing labels.",
+    "evaluation_points": [
+      "Business invariants first",
+      "Latency/availability trade-off",
+      "Conflict/session design",
+      "Provider guarantee testing"
+    ],
+    "resolution_title": "Cloud Firestore Documentation",
+    "resolution_url": "https://cloud.google.com/firestore/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-079",
+    "role_slug": "cloud-engineer",
+    "domain": "Managed Databases, NoSQL and Caching",
+    "difficulty": "advanced",
+    "question_type": "operations",
+    "prompt": "Why can automatic database failover still cause application downtime?",
+    "preferred_answer": "Clients may cache DNS, retain broken connections, retry simultaneously or assume transaction state. Promotion can expose replica lag or capacity differences. Applications need timeouts, backoff, connection refresh, idempotency and tested recovery. Database failover is one component of end-to-end service recovery.",
+    "evaluation_points": [
+      "Client behaviour",
+      "Replica/capacity issues",
+      "Retry and connection design",
+      "End-to-end testing"
+    ],
+    "resolution_title": "Amazon RDS User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-080",
+    "role_slug": "cloud-engineer",
+    "domain": "Managed Databases, NoSQL and Caching",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A managed database has low CPU but rising application latency and lock timeouts. What would you inspect?",
+    "preferred_answer": "Examine active sessions, waits, lock graph, long transactions, query plans, I/O, connection-pool saturation and deployment changes. Low CPU can coexist with serialisation, blocked transactions or storage delay. Identify the blocking pattern before increasing compute, and protect production while testing query or transaction changes.",
+    "evaluation_points": [
+      "Wait/lock analysis",
+      "Transactions and plans",
+      "Pool/I/O checks",
+      "No blind scaling"
+    ],
+    "resolution_title": "Azure SQL Documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-sql/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-081",
+    "role_slug": "cloud-engineer",
+    "domain": "Messaging, Streaming and Cloud Integration",
+    "difficulty": "foundation",
+    "question_type": "messaging",
+    "prompt": "Differentiate a queue, publish-subscribe topic and event stream.",
+    "preferred_answer": "A queue distributes messages to consumers, usually with one successful processing path per message. Publish-subscribe sends events to multiple independent subscriptions. A stream retains ordered records for replay and stateful processing. Provider products can combine features, so selection should follow fan-out, ordering, replay and throughput needs.",
+    "evaluation_points": [
+      "Three patterns",
+      "Fan-out distinction",
+      "Replay and ordering",
+      "Provider overlap acknowledged"
+    ],
+    "resolution_title": "AWS Messaging Decision Guide",
+    "resolution_url": "https://docs.aws.amazon.com/decision-guides/latest/messaging-on-aws-how-to-choose/messaging-on-aws-how-to-choose.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-082",
+    "role_slug": "cloud-engineer",
+    "domain": "Messaging, Streaming and Cloud Integration",
+    "difficulty": "foundation",
+    "question_type": "reliability",
+    "prompt": "What does at-least-once delivery mean for application design?",
+    "preferred_answer": "A message can be delivered more than once, especially after timeouts or consumer failure. Consumers must be idempotent or deduplicate side effects. Acknowledgement should occur only after durable processing. The system also needs visibility into retry count, message age and dead-letter handling.",
+    "evaluation_points": [
+      "Duplicate delivery",
+      "Idempotent consumer",
+      "Acknowledgement timing",
+      "Retry/dead-letter observability"
+    ],
+    "resolution_title": "Azure Service Bus Messaging Overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-083",
+    "role_slug": "cloud-engineer",
+    "domain": "Messaging, Streaming and Cloud Integration",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "When should asynchronous messaging replace a synchronous API call?",
+    "preferred_answer": "Use messaging when the caller need not wait for completion, work can be buffered, consumers need independent scaling or failure isolation, or multiple subscribers need the event. It adds eventual consistency, duplicate handling and operational complexity. Do not add a queue merely to hide an unreliable synchronous dependency.",
+    "evaluation_points": [
+      "Latency and decoupling benefits",
+      "Buffering/scaling",
+      "Consistency and operations cost",
+      "Avoids architecture theatre"
+    ],
+    "resolution_title": "Google Cloud Pub/Sub Overview",
+    "resolution_url": "https://cloud.google.com/pubsub/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-084",
+    "role_slug": "cloud-engineer",
+    "domain": "Messaging, Streaming and Cloud Integration",
+    "difficulty": "intermediate",
+    "question_type": "data",
+    "prompt": "How should message ordering requirements be analysed?",
+    "preferred_answer": "Identify the smallest entity or business key that needs order rather than demanding global order. Partition by that key and define behaviour when events arrive late, duplicate or missing. Strong ordering can constrain parallelism and availability. Consumers should use versions, sequence numbers or state checks where order affects correctness.",
+    "evaluation_points": [
+      "Scope of ordering",
+      "Partition key",
+      "Late/duplicate handling",
+      "Throughput trade-off"
+    ],
+    "resolution_title": "Google Cloud Pub/Sub Overview",
+    "resolution_url": "https://cloud.google.com/pubsub/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-085",
+    "role_slug": "cloud-engineer",
+    "domain": "Messaging, Streaming and Cloud Integration",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "What belongs in a dead-letter queue process?",
+    "preferred_answer": "Define which errors are retryable, maximum attempts, message metadata, alert thresholds, ownership, investigation and safe replay. Sensitive payloads need access and retention controls. A dead-letter queue is not successful handling; ageing messages and repeated replay failures are operational debt.",
+    "evaluation_points": [
+      "Retry classification",
+      "Ownership and alerts",
+      "Safe replay",
+      "Security and ageing"
+    ],
+    "resolution_title": "Azure Service Bus Messaging Overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-086",
+    "role_slug": "cloud-engineer",
+    "domain": "Messaging, Streaming and Cloud Integration",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How do event schemas evolve without breaking consumers?",
+    "preferred_answer": "Use versioned, backward-compatible changes where possible, explicit optional fields, schema validation and consumer-driven tests. Do not silently change meaning. Track producers and consumers, retain old versions for a defined period and provide migration evidence. A registry helps, but governance and semantic compatibility remain necessary.",
+    "evaluation_points": [
+      "Backward compatibility",
+      "Semantic stability",
+      "Consumer inventory/tests",
+      "Migration and retirement"
+    ],
+    "resolution_title": "AWS Messaging Decision Guide",
+    "resolution_url": "https://docs.aws.amazon.com/decision-guides/latest/messaging-on-aws-how-to-choose/messaging-on-aws-how-to-choose.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-087",
+    "role_slug": "cloud-engineer",
+    "domain": "Messaging, Streaming and Cloud Integration",
+    "difficulty": "advanced",
+    "question_type": "reliability",
+    "prompt": "What is the transactional outbox pattern, and what problem does it solve?",
+    "preferred_answer": "The application writes business state and an outgoing event to the same local transaction. A separate publisher reliably sends outbox records and marks progress. This avoids the dual-write gap where the database succeeds but event publication fails, though it adds ordering, cleanup and duplicate-publication considerations.",
+    "evaluation_points": [
+      "Single local transaction",
+      "Dual-write problem",
+      "Separate publisher",
+      "Duplicates/order/cleanup"
+    ],
+    "resolution_title": "AWS Lambda Event-Driven Architectures",
+    "resolution_url": "https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-088",
+    "role_slug": "cloud-engineer",
+    "domain": "Messaging, Streaming and Cloud Integration",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "Queue depth grows rapidly after a release, but consumer error rate is low. How would you investigate?",
+    "preferred_answer": "Compare arrival and completion rates, consumer concurrency, batch size, processing latency and downstream quotas. Check whether messages became larger or slower, partition distribution changed, locks increased or acknowledgements are delayed. Protect the backlog from expiry, scale only within dependency capacity and prepare controlled replay.",
+    "evaluation_points": [
+      "Rate comparison",
+      "Consumer and message changes",
+      "Dependency/partition checks",
+      "Backlog protection"
+    ],
+    "resolution_title": "AWS Messaging Decision Guide",
+    "resolution_url": "https://docs.aws.amazon.com/decision-guides/latest/messaging-on-aws-how-to-choose/messaging-on-aws-how-to-choose.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-089",
+    "role_slug": "cloud-engineer",
+    "domain": "Reliability Engineering and Disaster Recovery",
+    "difficulty": "foundation",
+    "question_type": "reliability",
+    "prompt": "Differentiate an SLI, SLO and SLA.",
+    "preferred_answer": "An SLI is a measured indicator of service behaviour, such as successful request ratio or latency. An SLO is the target range over a time window. An SLA is an external or contractual commitment with consequences. Good reliability work starts with user-relevant indicators and treats the SLA as a boundary, not the engineering target.",
+    "evaluation_points": [
+      "Three terms separated",
+      "User-relevant measurement",
+      "Time window",
+      "SLA not engineering target"
+    ],
+    "resolution_title": "Google SRE Book - Service Level Objectives",
+    "resolution_url": "https://sre.google/sre-book/service-level-objectives/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-090",
+    "role_slug": "cloud-engineer",
+    "domain": "Reliability Engineering and Disaster Recovery",
+    "difficulty": "foundation",
+    "question_type": "recovery",
+    "prompt": "Differentiate RPO and RTO.",
+    "preferred_answer": "Recovery Point Objective is the maximum acceptable data loss measured in time. Recovery Time Objective is the target time to restore an acceptable service. Both are business decisions that drive replication, backup, architecture and operating cost. They should be defined per capability and validated through exercises.",
+    "evaluation_points": [
+      "Data loss versus time to restore",
+      "Business ownership",
+      "Architecture/cost impact",
+      "Exercise validation"
+    ],
+    "resolution_title": "AWS Well-Architected Reliability Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-091",
+    "role_slug": "cloud-engineer",
+    "domain": "Reliability Engineering and Disaster Recovery",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "How do redundancy and resilience differ?",
+    "preferred_answer": "Redundancy duplicates components or paths. Resilience is the system's ability to continue or recover when disruption occurs. Redundant components can fail together through shared dependencies, bad deployment or capacity shortage. Resilience combines isolation, detection, graceful degradation, recovery procedures and learning.",
+    "evaluation_points": [
+      "Duplication versus outcome",
+      "Correlated failure",
+      "Graceful degradation and recovery",
+      "Operations included"
+    ],
+    "resolution_title": "Google Cloud Reliability Pillar",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/reliability",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-092",
+    "role_slug": "cloud-engineer",
+    "domain": "Reliability Engineering and Disaster Recovery",
+    "difficulty": "intermediate",
+    "question_type": "recovery",
+    "prompt": "What makes a backup strategy credible?",
+    "preferred_answer": "It maps data and configurations to RPO/RTO, uses protected and sufficiently independent copies, monitors completion and retention, documents dependencies and regularly performs restore tests. A green backup job does not prove that data is complete, keys are available or applications can start from the restored state.",
+    "evaluation_points": [
+      "Objectives and independence",
+      "Monitoring/retention",
+      "Restore tests",
+      "Keys and application validation"
+    ],
+    "resolution_title": "Azure Well-Architected Reliability Pillar",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/reliability/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-093",
+    "role_slug": "cloud-engineer",
+    "domain": "Reliability Engineering and Disaster Recovery",
+    "difficulty": "intermediate",
+    "question_type": "reliability",
+    "prompt": "What is an error budget and how should it influence cloud delivery?",
+    "preferred_answer": "An error budget is the allowed unreliability implied by an SLO. Healthy budget can support normal change velocity; exhausted budget should trigger risk reduction, reliability work or tighter release controls. It creates a shared decision mechanism, but it is not a target for downtime and should not punish individuals.",
+    "evaluation_points": [
+      "Derived from SLO",
+      "Delivery decision use",
+      "Not downtime target",
+      "System improvement"
+    ],
+    "resolution_title": "Google SRE Book - Service Level Objectives",
+    "resolution_url": "https://sre.google/sre-book/service-level-objectives/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-094",
+    "role_slug": "cloud-engineer",
+    "domain": "Reliability Engineering and Disaster Recovery",
+    "difficulty": "advanced",
+    "question_type": "testing",
+    "prompt": "What makes a chaos experiment safe and useful?",
+    "preferred_answer": "State a hypothesis, limit blast radius, obtain approvals, establish abort conditions, protect customers and evidence, and measure user-relevant outcomes. Begin with known recovery capabilities and controlled environments before production. The goal is to learn about system behaviour, not to create random failure or prove operator bravery.",
+    "evaluation_points": [
+      "Hypothesis and scope",
+      "Abort/customer safety",
+      "Measured outcomes",
+      "Progressive maturity"
+    ],
+    "resolution_title": "AWS Well-Architected Reliability Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-095",
+    "role_slug": "cloud-engineer",
+    "domain": "Reliability Engineering and Disaster Recovery",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "When should a service deliberately degrade instead of failing completely?",
+    "preferred_answer": "Degrade when non-critical features can be disabled, data can be served stale or work can be queued while preserving core outcomes and safety. Define priority, consistency and user communication in advance. Graceful degradation must not silently violate financial, privacy or security invariants.",
+    "evaluation_points": [
+      "Core versus optional function",
+      "Fallback patterns",
+      "Predefined behaviour",
+      "Invariants protected"
+    ],
+    "resolution_title": "Azure Well-Architected Reliability Pillar",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/reliability/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-096",
+    "role_slug": "cloud-engineer",
+    "domain": "Reliability Engineering and Disaster Recovery",
+    "difficulty": "scenario",
+    "question_type": "recovery",
+    "prompt": "A regional disaster is declared, but the standby environment cannot handle full traffic. What do you do?",
+    "preferred_answer": "Prioritise critical journeys, shed optional load, apply admission control and communicate service levels. Validate data state before promotion, add capacity through pre-approved paths and protect dependencies. Record decisions and residual risk. After recovery, address why capacity assumptions, quotas or exercises failed.",
+    "evaluation_points": [
+      "Prioritisation and load shedding",
+      "Data validation",
+      "Capacity/quota path",
+      "Post-event systemic learning"
+    ],
+    "resolution_title": "Google Cloud Reliability Pillar",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/reliability",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-097",
+    "role_slug": "cloud-engineer",
+    "domain": "Performance, Autoscaling and Edge Delivery",
+    "difficulty": "foundation",
+    "question_type": "performance",
+    "prompt": "Differentiate latency, throughput, concurrency and saturation.",
+    "preferred_answer": "Latency is the time for an operation, throughput is work completed per unit time, concurrency is simultaneous in-flight work and saturation is the point where a constrained resource cannot keep up. They interact but are not interchangeable. Performance diagnosis should use distributions and resource evidence rather than one average metric.",
+    "evaluation_points": [
+      "Four terms distinguished",
+      "Interaction recognised",
+      "Distribution over average",
+      "Resource evidence"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-098",
+    "role_slug": "cloud-engineer",
+    "domain": "Performance, Autoscaling and Edge Delivery",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "What problems does a content delivery network solve?",
+    "preferred_answer": "A CDN caches or processes content near users, reducing origin load, network distance and latency while improving resilience to traffic spikes. It also changes cache invalidation, security, logging and data-location considerations. Dynamic content may benefit through connection optimisation or edge logic even when it cannot be fully cached.",
+    "evaluation_points": [
+      "Latency and origin offload",
+      "Spike resilience",
+      "Invalidation/security trade-offs",
+      "Dynamic-content nuance"
+    ],
+    "resolution_title": "Google Cloud Load Balancing Overview",
+    "resolution_url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-099",
+    "role_slug": "cloud-engineer",
+    "domain": "Performance, Autoscaling and Edge Delivery",
+    "difficulty": "intermediate",
+    "question_type": "testing",
+    "prompt": "What makes a cloud load test representative?",
+    "preferred_answer": "Model realistic user journeys, arrival patterns, data, geography, cache state and dependency behaviour. Increase load gradually, observe latency percentiles, errors, saturation and cost, and define stop conditions. Testing only a single endpoint from one location can produce a confident but misleading capacity number.",
+    "evaluation_points": [
+      "Realistic workload",
+      "Geography/cache/dependencies",
+      "Percentiles and saturation",
+      "Safety and cost"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected Framework",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-100",
+    "role_slug": "cloud-engineer",
+    "domain": "Performance, Autoscaling and Edge Delivery",
+    "difficulty": "intermediate",
+    "question_type": "scaling",
+    "prompt": "Why should autoscaling use target utilisation rather than waiting for an outage threshold?",
+    "preferred_answer": "Target tracking maintains headroom for bursts and startup delay, while an outage threshold reacts after users are already affected. The target must reflect the workload's safe operating zone and downstream capacity. Use stabilisation and predictive or scheduled scaling where demand is known, while retaining hard cost and safety limits.",
+    "evaluation_points": [
+      "Headroom and startup delay",
+      "Safe operating zone",
+      "Stabilisation/scheduled options",
+      "Cost and dependency bounds"
+    ],
+    "resolution_title": "Amazon EC2 Auto Scaling",
+    "resolution_url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-101",
+    "role_slug": "cloud-engineer",
+    "domain": "Performance, Autoscaling and Edge Delivery",
+    "difficulty": "intermediate",
+    "question_type": "caching",
+    "prompt": "How do cache hit rate and cache correctness compete?",
+    "preferred_answer": "A high hit rate reduces latency and origin load, but long TTLs or broad cache keys can serve stale or cross-user data. Define cacheability, key dimensions, invalidation, privacy and acceptable staleness. Measure origin shielding and correctness incidents, not hit rate alone. Some sensitive responses should not be cached.",
+    "evaluation_points": [
+      "Hit rate benefit",
+      "Staleness and tenant risk",
+      "Key/invalidation design",
+      "Balanced metrics"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-102",
+    "role_slug": "cloud-engineer",
+    "domain": "Performance, Autoscaling and Edge Delivery",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "When should computation move to the edge?",
+    "preferred_answer": "Edge execution is useful when latency, bandwidth, offline operation, local privacy or rapid response materially improves an outcome. It adds distributed deployment, hardware diversity, limited capacity, observability and data-consistency challenges. Keep authority and state central unless the use case genuinely requires local autonomy.",
+    "evaluation_points": [
+      "Valid edge drivers",
+      "Operational constraints",
+      "State/authority decision",
+      "Evidence-based placement"
+    ],
+    "resolution_title": "Google Distributed Cloud Overview",
+    "resolution_url": "https://cloud.google.com/distributed-cloud/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-103",
+    "role_slug": "cloud-engineer",
+    "domain": "Performance, Autoscaling and Edge Delivery",
+    "difficulty": "advanced",
+    "question_type": "economics",
+    "prompt": "How can performance optimisation increase total cloud cost?",
+    "preferred_answer": "Faster responses may require more replicas, premium storage, global replication, accelerators or low-utilisation headroom. Optimisation should quantify business value, cost per transaction and resource efficiency, not chase the lowest latency. Sometimes batching, asynchronous UX or a relaxed objective produces a better overall system.",
+    "evaluation_points": [
+      "Performance resources cost",
+      "Business value and unit cost",
+      "Alternative product patterns",
+      "Avoids optimisation for its own sake"
+    ],
+    "resolution_title": "FinOps Unit Economics",
+    "resolution_url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-104",
+    "role_slug": "cloud-engineer",
+    "domain": "Performance, Autoscaling and Edge Delivery",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "P95 latency doubles during traffic peaks, but average latency changes little. How would you investigate?",
+    "preferred_answer": "Segment by endpoint, region, instance, dependency and request size. Inspect queueing, connection pools, garbage collection, throttling, cache misses and tail amplification across calls. Compare arrival rate with service capacity and use traces to locate the slow segment. Averages conceal the users experiencing the tail.",
+    "evaluation_points": [
+      "Percentile segmentation",
+      "Queueing/dependency analysis",
+      "Trace use",
+      "Average limitation"
+    ],
+    "resolution_title": "OpenTelemetry Signals",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/signals/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-105",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Observability and Operations",
+    "difficulty": "foundation",
+    "question_type": "observability",
+    "prompt": "How do metrics, logs and traces answer different operational questions?",
+    "preferred_answer": "Metrics summarise numeric behaviour over time, logs capture discrete events and context, and traces connect work across distributed components. Together they reveal symptoms, events and causal paths. They require consistent identity, timestamps and correlation. Collecting all telemetry without retention, quality and use cases can create cost without insight.",
+    "evaluation_points": [
+      "Three signal types",
+      "Correlation",
+      "Data quality",
+      "Cost/use-case awareness"
+    ],
+    "resolution_title": "OpenTelemetry Signals",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/signals/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-106",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Observability and Operations",
+    "difficulty": "foundation",
+    "question_type": "operations",
+    "prompt": "What is the difference between monitoring and observability?",
+    "preferred_answer": "Monitoring checks known conditions through predefined signals and alerts. Observability is the ability to infer internal state and investigate novel questions from system outputs. Good systems need both: explicit service objectives and alerts, plus sufficiently rich telemetry for diagnosis. More logs alone do not create observability.",
+    "evaluation_points": [
+      "Known checks versus novel inquiry",
+      "Both required",
+      "Telemetry quality",
+      "No volume-equals-observability claim"
+    ],
+    "resolution_title": "Google Cloud Observability",
+    "resolution_url": "https://cloud.google.com/stackdriver/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-107",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Observability and Operations",
+    "difficulty": "intermediate",
+    "question_type": "alerting",
+    "prompt": "What makes a cloud alert actionable?",
+    "preferred_answer": "It identifies a user or business impact, has a reliable signal and threshold, includes affected scope and context, routes to an owner, and links to diagnostic or mitigation steps. It should trigger quickly enough to matter but not on every transient fluctuation. Review precision, missed incidents and response value.",
+    "evaluation_points": [
+      "Impact and reliable signal",
+      "Ownership/context/runbook",
+      "Timeliness without noise",
+      "Outcome review"
+    ],
+    "resolution_title": "Azure Monitor Overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-108",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Observability and Operations",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "How should cloud audit logs differ from application logs?",
+    "preferred_answer": "Audit logs record control-plane and security-relevant actions such as identity, policy and resource changes and should be protected independently. Application logs explain business and runtime behaviour. Both need timestamps, identities and correlation, but access, retention and sensitive-data rules may differ. Audit logging must cover administrative bypass paths.",
+    "evaluation_points": [
+      "Control-plane versus application",
+      "Independent protection",
+      "Shared correlation",
+      "Access/retention differences"
+    ],
+    "resolution_title": "Amazon CloudWatch User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-109",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Observability and Operations",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What belongs on an executive cloud operations dashboard versus an engineer dashboard?",
+    "preferred_answer": "Executive views should show service outcomes, SLO status, major risk, cost and trend with clear ownership. Engineer views need granular saturation, dependencies, changes and diagnostic dimensions. Mixing every infrastructure metric into one board obscures decisions. Both should be traceable to the same trusted definitions.",
+    "evaluation_points": [
+      "Audience and decisions",
+      "Outcome versus diagnostic detail",
+      "Avoids dashboard clutter",
+      "Common definitions"
+    ],
+    "resolution_title": "Google Cloud Observability",
+    "resolution_url": "https://cloud.google.com/stackdriver/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-110",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Observability and Operations",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How do high-cardinality telemetry attributes create operational risk?",
+    "preferred_answer": "Attributes such as user ID, request ID or unbounded URL can explode metric series, storage and query cost and may leak sensitive data. Use traces or logs for high-cardinality investigation, aggregate metrics on bounded dimensions and define attribute governance. Sampling and retention should preserve incident value while controlling cost.",
+    "evaluation_points": [
+      "Cardinality/cost",
+      "Sensitive-data risk",
+      "Signal-appropriate use",
+      "Sampling/retention design"
+    ],
+    "resolution_title": "OpenTelemetry Signals",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/signals/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-111",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Observability and Operations",
+    "difficulty": "advanced",
+    "question_type": "operations",
+    "prompt": "What is an operational readiness review for a new cloud service?",
+    "preferred_answer": "It verifies ownership, SLOs, dependencies, capacity, telemetry, alerts, runbooks, deployment and rollback, backup and restore, security, cost controls and incident communication before production. Evidence should be proportional to risk and automated where possible. A checklist without tests or accountable owners provides little assurance.",
+    "evaluation_points": [
+      "Readiness dimensions",
+      "Risk-proportionate evidence",
+      "Automation and tests",
+      "Ownership"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-112",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Observability and Operations",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A dashboard shows normal infrastructure metrics while customers report failures. What would you do?",
+    "preferred_answer": "Validate the customer journey and telemetry pipeline first. Check application and dependency errors, regional or tenant segmentation, synthetic tests, sampling gaps, stale dashboards and recent changes. Add a user-centred SLI if none exists. Infrastructure health is not the same as service correctness.",
+    "evaluation_points": [
+      "Customer journey first",
+      "Telemetry validity",
+      "Segmentation/change correlation",
+      "Creates user-centred SLI"
+    ],
+    "resolution_title": "Google SRE Book - Service Level Objectives",
+    "resolution_url": "https://sre.google/sre-book/service-level-objectives/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-113",
+    "role_slug": "cloud-engineer",
+    "domain": "Infrastructure as Code and Configuration Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What security and operational benefits does infrastructure as code provide?",
+    "preferred_answer": "IaC makes intended infrastructure versioned, reviewable, repeatable and testable, reducing undocumented manual change. It also creates a powerful automation path that can propagate mistakes rapidly. Repositories, modules, state, credentials, plans and apply permissions all become part of the cloud control boundary.",
+    "evaluation_points": [
+      "Version/review/repeatability",
+      "Testing and drift benefit",
+      "Rapid propagation risk",
+      "Full control boundary"
+    ],
+    "resolution_title": "HashiCorp Terraform Introduction",
+    "resolution_url": "https://developer.hashicorp.com/terraform/intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-114",
+    "role_slug": "cloud-engineer",
+    "domain": "Infrastructure as Code and Configuration Automation",
+    "difficulty": "foundation",
+    "question_type": "workflow",
+    "prompt": "What is the difference between a Terraform plan and apply?",
+    "preferred_answer": "Plan evaluates configuration and state to propose actions without changing infrastructure. Apply executes an approved plan or creates and confirms a new one. In automation, preserve and apply the exact reviewed plan, because regenerating it later can produce different actions after state, configuration or provider data changes.",
+    "evaluation_points": [
+      "Preview versus execution",
+      "Exact saved plan",
+      "Sources of plan drift",
+      "Approval integrity"
+    ],
+    "resolution_title": "Terraform State",
+    "resolution_url": "https://developer.hashicorp.com/terraform/language/state",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-115",
+    "role_slug": "cloud-engineer",
+    "domain": "Infrastructure as Code and Configuration Automation",
+    "difficulty": "intermediate",
+    "question_type": "state",
+    "prompt": "Why is Terraform state sensitive?",
+    "preferred_answer": "State maps configuration addresses to real resources and stores metadata and values needed for future changes. It can contain identifiers or secrets and effectively controls destructive actions. Use protected remote storage, least privilege, encryption, backup, locking and controlled recovery. Do not edit it casually.",
+    "evaluation_points": [
+      "Mapping role",
+      "Secret/action sensitivity",
+      "Remote protection/locking",
+      "Recovery discipline"
+    ],
+    "resolution_title": "Terraform State",
+    "resolution_url": "https://developer.hashicorp.com/terraform/language/state",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-116",
+    "role_slug": "cloud-engineer",
+    "domain": "Infrastructure as Code and Configuration Automation",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What makes a reusable infrastructure module effective?",
+    "preferred_answer": "It represents a coherent capability behind a small, typed and documented interface, exposes useful outputs and preserves important decisions. It should be versioned, tested and upgraded deliberately. Over-abstracted modules hide provider behaviour and force unrelated workloads into one pattern, while copy-paste destroys consistency.",
+    "evaluation_points": [
+      "Cohesive scope",
+      "Stable interface",
+      "Version/test lifecycle",
+      "Avoids over-abstraction and copy-paste"
+    ],
+    "resolution_title": "Terraform Modules",
+    "resolution_url": "https://developer.hashicorp.com/terraform/language/modules",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-117",
+    "role_slug": "cloud-engineer",
+    "domain": "Infrastructure as Code and Configuration Automation",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "How should drift between code and deployed infrastructure be handled?",
+    "preferred_answer": "Detect drift through scheduled plans, configuration inventory or provider tools; determine whether it is authorised, emergency or accidental; then either codify the desired change or revert it through the normal path. Repeated drift indicates missing platform capability or access controls. Blind automatic correction can disrupt legitimate operations.",
+    "evaluation_points": [
+      "Detection",
+      "Authorised versus accidental",
+      "Codify or revert",
+      "Cautious automation and root cause"
+    ],
+    "resolution_title": "Terraform State",
+    "resolution_url": "https://developer.hashicorp.com/terraform/language/state",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-118",
+    "role_slug": "cloud-engineer",
+    "domain": "Infrastructure as Code and Configuration Automation",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "What should policy-as-code block, warn about or record?",
+    "preferred_answer": "Block high-confidence, high-impact violations such as public sensitive data or forbidden regions. Warn when context or exceptions may justify a choice. Record evidence and ownership for lower-risk standards. Policies need tests, versioning, clear messages, exception workflow and outcome review; a huge rule count can simply move failure earlier.",
+    "evaluation_points": [
+      "Risk-based enforcement levels",
+      "Testing/versioning",
+      "Exception and explanations",
+      "Measures outcomes, not rule count"
+    ],
+    "resolution_title": "HashiCorp Terraform Introduction",
+    "resolution_url": "https://developer.hashicorp.com/terraform/intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-119",
+    "role_slug": "cloud-engineer",
+    "domain": "Infrastructure as Code and Configuration Automation",
+    "difficulty": "advanced",
+    "question_type": "automation",
+    "prompt": "How can an IaC pipeline safely handle changes that replace stateful resources?",
+    "preferred_answer": "Surface replacement explicitly in the plan, assess data and dependency impact, require appropriate approval, create verified backup or migration paths, stage change where possible and define rollback or restore. Lifecycle flags can reduce accidental destruction but must not hide necessary replacement. Test with representative data.",
+    "evaluation_points": [
+      "Replacement visibility",
+      "Data/dependency impact",
+      "Backup/migration and approval",
+      "Testing and recovery"
+    ],
+    "resolution_title": "Terraform State",
+    "resolution_url": "https://developer.hashicorp.com/terraform/language/state",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-120",
+    "role_slug": "cloud-engineer",
+    "domain": "Infrastructure as Code and Configuration Automation",
+    "difficulty": "scenario",
+    "question_type": "recovery",
+    "prompt": "A Terraform apply is interrupted, and the next plan proposes unexpected deletion. What would you do?",
+    "preferred_answer": "Stop further automation, protect and back up state, inspect state locks, provider reality, logs and partial actions. Refresh or import only with evidence; do not accept the deletion blindly. Reconcile configuration, state and resources through controlled state commands, then produce a reviewed no-surprise plan before resuming.",
+    "evaluation_points": [
+      "Stops automation",
+      "Protects state",
+      "Three-way reconciliation",
+      "Reviewed clean plan"
+    ],
+    "resolution_title": "Terraform State",
+    "resolution_url": "https://developer.hashicorp.com/terraform/language/state",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-121",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud CI/CD and Release Engineering",
+    "difficulty": "foundation",
+    "question_type": "delivery",
+    "prompt": "What stages belong in a production-ready cloud delivery pipeline?",
+    "preferred_answer": "A typical pipeline validates source and dependencies, builds once, runs tests and security checks, publishes an immutable artefact, deploys to controlled environments, verifies behaviour and promotes to production. Evidence, identity and approvals should follow the artefact. The exact stages depend on risk, but failures should be fast and reproducible.",
+    "evaluation_points": [
+      "Build, test and security",
+      "Immutable artefact",
+      "Environment promotion",
+      "Retained evidence"
+    ],
+    "resolution_title": "AWS Prescriptive Guidance - CI/CD",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cicd-litmus/introduction.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-122",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud CI/CD and Release Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why is 'build once, deploy many' important?",
+    "preferred_answer": "Promoting the same versioned artefact through environments reduces rebuild drift, improves traceability and makes rollback more deterministic. Environment-specific configuration should be supplied separately and controlled. Rebuilding for production can silently change dependencies, compiler output or provenance after testing has completed.",
+    "evaluation_points": [
+      "Same artefact",
+      "Traceability and rollback",
+      "Configuration separation",
+      "Rebuild drift"
+    ],
+    "resolution_title": "Azure Architecture - CI/CD Choices",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/technology-choices-cicd",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-123",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud CI/CD and Release Engineering",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "Compare rolling, blue-green and canary deployments.",
+    "preferred_answer": "Rolling replaces instances gradually and uses resources efficiently but temporarily runs mixed versions. Blue-green maintains two complete environments and switches traffic, enabling fast reversal at higher cost. Canary exposes a small traffic segment first and expands based on signals, requiring reliable routing, observability and decision rules.",
+    "evaluation_points": [
+      "Mechanisms correct",
+      "Mixed-version concern",
+      "Cost and rollback",
+      "Canary observability"
+    ],
+    "resolution_title": "AWS Prescriptive Guidance - CI/CD",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cicd-litmus/introduction.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-124",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud CI/CD and Release Engineering",
+    "difficulty": "intermediate",
+    "question_type": "governance",
+    "prompt": "What makes a production approval useful instead of ceremonial?",
+    "preferred_answer": "It should protect a meaningful risk boundary, show the exact artefact, tests, vulnerabilities, change scope and rollback readiness, and use accountable least-privilege reviewers. Routine low-risk changes should be automated. An approval that lacks evidence or always waits for the same committee adds delay without assurance.",
+    "evaluation_points": [
+      "Risk-based boundary",
+      "Evidence and artefact identity",
+      "Accountable reviewer",
+      "Automation for routine change"
+    ],
+    "resolution_title": "Azure Architecture - CI/CD Choices",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/technology-choices-cicd",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-125",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud CI/CD and Release Engineering",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "What is GitOps, and what responsibilities does it add?",
+    "preferred_answer": "GitOps uses declarative desired state in version control with automated reconciliation. It improves auditability, repeatability and drift detection, but requires secure repositories, controlled merges, trustworthy controllers, secret handling and clear emergency procedures. Git history is evidence of intent, not proof that runtime state is healthy.",
+    "evaluation_points": [
+      "Declarative reconciliation",
+      "Audit/drift benefits",
+      "Controller/repository security",
+      "Runtime validation"
+    ],
+    "resolution_title": "OpenGitOps Principles",
+    "resolution_url": "https://opengitops.dev/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-126",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud CI/CD and Release Engineering",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "How should a pipeline deploy to cloud without long-lived credentials?",
+    "preferred_answer": "Use federated workload identity to exchange a trusted CI token for short-lived cloud credentials scoped to repository, branch, workflow and environment. Separate untrusted build from privileged deployment, minimise token permissions and retain audit evidence. The identity trust policy is part of the release design and must be tested against misuse.",
+    "evaluation_points": [
+      "Federated short-lived identity",
+      "Claim-based scoping",
+      "Build/deploy separation",
+      "Trust-policy testing"
+    ],
+    "resolution_title": "AWS IAM Security Best Practices",
+    "resolution_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-127",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud CI/CD and Release Engineering",
+    "difficulty": "advanced",
+    "question_type": "reliability",
+    "prompt": "When should a team roll back versus fix forward?",
+    "preferred_answer": "Rollback is appropriate when a known-good artefact can restore service and data or schema remain compatible. Fix forward may be safer after irreversible state change or when a small correction is faster. Both paths need tests, time limits and customer-impact criteria. Pride in the release should not drive the decision.",
+    "evaluation_points": [
+      "Data/schema compatibility",
+      "Known-good path",
+      "Tested/time-bound decision",
+      "Impact-based judgement"
+    ],
+    "resolution_title": "AWS Prescriptive Guidance - CI/CD",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cicd-litmus/introduction.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-128",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud CI/CD and Release Engineering",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "A deployment is green in the pipeline but fails after receiving real traffic. What would you examine?",
+    "preferred_answer": "Verify that production received the tested artefact, then compare configuration, identity, network, data, scale and dependency behaviour. Check whether pre-production tests represented traffic, cache state and schema. Use progressive exposure and traces to isolate the failure, and improve the pipeline based on the escaped condition rather than adding a generic approval.",
+    "evaluation_points": [
+      "Artefact identity",
+      "Environment and data differences",
+      "Traffic realism",
+      "Feedback into targeted controls"
+    ],
+    "resolution_title": "Google Cloud Build Documentation",
+    "resolution_url": "https://cloud.google.com/build/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-129",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Security and Data Protection",
+    "difficulty": "foundation",
+    "question_type": "security",
+    "prompt": "What does defence in depth mean in a cloud workload?",
+    "preferred_answer": "It means using independent preventive, detective and recovery controls across identity, network, application, data, platform and operations so one failure does not expose the whole service. Multiple tools that share the same policy, credential or blind spot are not meaningful depth. Controls should be tested against specific threat paths.",
+    "evaluation_points": [
+      "Independent layers",
+      "Multiple control planes",
+      "Shared failure warning",
+      "Threat-path testing"
+    ],
+    "resolution_title": "AWS Well-Architected Security Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-130",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Security and Data Protection",
+    "difficulty": "foundation",
+    "question_type": "data protection",
+    "prompt": "Differentiate encryption in transit, at rest and in use.",
+    "preferred_answer": "In-transit encryption protects data moving between endpoints. At-rest encryption protects stored media and managed persistence. Encryption in use aims to protect data during computation, often through confidential-computing technologies. Each addresses different threats; identities, authorisation, key control and application logic remain essential.",
+    "evaluation_points": [
+      "Three states",
+      "Different threat coverage",
+      "Confidential computing",
+      "Encryption not full access control"
+    ],
+    "resolution_title": "Confidential Computing Consortium",
+    "resolution_url": "https://confidentialcomputing.io/about/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-131",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Security and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "key management",
+    "prompt": "What is the difference between provider-managed and customer-managed encryption keys?",
+    "preferred_answer": "Provider-managed keys reduce operational burden and may satisfy many workloads. Customer-managed keys offer more control over policy, rotation, separation and revocation, but introduce availability, lifecycle and recovery responsibility. Choose from threat, compliance and operational needs rather than assuming customer control is always stronger.",
+    "evaluation_points": [
+      "Control versus operational burden",
+      "Revocation/rotation",
+      "Availability and recovery",
+      "Risk-based choice"
+    ],
+    "resolution_title": "AWS Key Management Service Developer Guide",
+    "resolution_url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-132",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Security and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "secrets",
+    "prompt": "How should cloud applications obtain secrets?",
+    "preferred_answer": "Prefer workload identity and dynamic credentials so fewer static secrets exist. Where secrets remain, use a managed secret store, least-privilege access, short lifetime, rotation, versioning and audit. Do not bake secrets into images, repositories or generic environment logs. Applications must handle rotation and temporary store unavailability safely.",
+    "evaluation_points": [
+      "Identity-first approach",
+      "Managed store and least privilege",
+      "No embedding/log leakage",
+      "Rotation and failure handling"
+    ],
+    "resolution_title": "Azure Key Vault Overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-133",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Security and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "posture",
+    "prompt": "What can a cloud-security-posture tool prove, and what can it not prove?",
+    "preferred_answer": "It can compare observable configuration against rules, detect drift and prioritise known risky states. It cannot prove secure business logic, correct threat assumptions, complete asset ownership or effective incident response. Findings require context and validation. Coverage gaps and false positives must be measured rather than hidden.",
+    "evaluation_points": [
+      "Configuration visibility",
+      "Limits beyond configuration",
+      "Validation and context",
+      "Coverage/quality metrics"
+    ],
+    "resolution_title": "Google Cloud Security, Privacy and Compliance Pillar",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/security",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-134",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Security and Data Protection",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How should a high-value cloud control plane be isolated?",
+    "preferred_answer": "Use separate administrative identities and devices, phishing-resistant authentication, just-in-time privilege, restricted management paths, organisation-level logging, protected emergency access and independent monitoring. Separate production administration from routine development. Assume compromised workload credentials must not reach the control plane.",
+    "evaluation_points": [
+      "Identity/device separation",
+      "JIT and strong auth",
+      "Independent logging/emergency path",
+      "Workload-to-control-plane boundary"
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-135",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Security and Data Protection",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "Why can encryption create false confidence in cloud data protection?",
+    "preferred_answer": "Encryption may be enabled while the same broad identity can decrypt, keys and data share administration, exports remain uncontrolled or applications expose data after decryption. Evaluate who can use keys, how access is logged, where plaintext appears and how deletion or compromise is handled. Cryptography protects a boundary only when governance supports it.",
+    "evaluation_points": [
+      "Key-use authorisation",
+      "Separation of duties",
+      "Plaintext paths",
+      "Lifecycle and monitoring"
+    ],
+    "resolution_title": "Google Cloud Key Management Service",
+    "resolution_url": "https://cloud.google.com/kms/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-136",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Security and Data Protection",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A cloud access key appears in a public repository. What actions are required?",
+    "preferred_answer": "Revoke or disable it immediately, preserve repository and cloud audit evidence, identify permissions and actions, inspect for persistence and affected data, and rotate related credentials. Removing the commit is cleanup, not containment. Replace the key with workload identity, scan history and dependent systems, and repair the process that allowed exposure.",
+    "evaluation_points": [
+      "Revoke first",
+      "Evidence and scope",
+      "Persistence/data review",
+      "Identity redesign and prevention"
+    ],
+    "resolution_title": "AWS Well-Architected Security Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-137",
+    "role_slug": "cloud-engineer",
+    "domain": "FinOps, Cost Allocation and Unit Economics",
+    "difficulty": "foundation",
+    "question_type": "economics",
+    "prompt": "What is FinOps?",
+    "preferred_answer": "FinOps is an operating practice that brings engineering, finance and business teams together to make timely, value-based decisions about cloud and technology spend. It combines visibility, allocation, optimisation and accountability. It is not simply a cost-cutting team or a monthly bill review.",
+    "evaluation_points": [
+      "Cross-functional practice",
+      "Value and accountability",
+      "Visibility/optimisation",
+      "Not just cost cutting"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-138",
+    "role_slug": "cloud-engineer",
+    "domain": "FinOps, Cost Allocation and Unit Economics",
+    "difficulty": "foundation",
+    "question_type": "cost",
+    "prompt": "Why can a cloud bill rise while unit cost improves?",
+    "preferred_answer": "Total spend may increase because the product serves more users or processes more transactions, while cost per customer, request or business outcome falls. Unit economics separates growth from inefficiency. The chosen unit must reflect value and have trustworthy usage and cost allocation.",
+    "evaluation_points": [
+      "Total versus unit cost",
+      "Growth explanation",
+      "Business-relevant unit",
+      "Data quality"
+    ],
+    "resolution_title": "FinOps Unit Economics",
+    "resolution_url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-139",
+    "role_slug": "cloud-engineer",
+    "domain": "FinOps, Cost Allocation and Unit Economics",
+    "difficulty": "intermediate",
+    "question_type": "allocation",
+    "prompt": "What makes cloud cost allocation reliable?",
+    "preferred_answer": "Use account or project boundaries, ownership metadata, provider billing dimensions and shared-cost rules tied to consumption or benefit. Track unallocated cost and reconcile allocation with finance totals. Allocation should support decisions without pretending every shared platform cost can be attributed perfectly.",
+    "evaluation_points": [
+      "Multiple allocation mechanisms",
+      "Shared-cost rule",
+      "Reconciliation",
+      "Acknowledges uncertainty"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-140",
+    "role_slug": "cloud-engineer",
+    "domain": "FinOps, Cost Allocation and Unit Economics",
+    "difficulty": "intermediate",
+    "question_type": "optimisation",
+    "prompt": "How should rightsizing recommendations be evaluated?",
+    "preferred_answer": "Review utilisation, saturation, seasonality, availability, startup time, licensing and scaling behaviour over a representative window. A low average can hide peaks or reserved failover capacity. Test changes gradually and measure service outcome and unit cost. Rightsizing is continuous, not a one-time downsizing exercise.",
+    "evaluation_points": [
+      "Representative evidence",
+      "Peak/failover context",
+      "Staged validation",
+      "Continuous process"
+    ],
+    "resolution_title": "AWS Well-Architected Cost Optimization Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-141",
+    "role_slug": "cloud-engineer",
+    "domain": "FinOps, Cost Allocation and Unit Economics",
+    "difficulty": "intermediate",
+    "question_type": "commitments",
+    "prompt": "When should reserved capacity or savings commitments be purchased?",
+    "preferred_answer": "After establishing a stable eligible usage baseline, understanding term, scope and flexibility, and assigning ownership for utilisation. Commit only the predictable floor, leaving variable demand elastic. Evaluate opportunity cost and architecture changes. A discount on unused capacity is still waste.",
+    "evaluation_points": [
+      "Stable baseline",
+      "Predictable floor",
+      "Flexibility and ownership",
+      "Unused discount is waste"
+    ],
+    "resolution_title": "Microsoft Cost Management and Billing",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-142",
+    "role_slug": "cloud-engineer",
+    "domain": "FinOps, Cost Allocation and Unit Economics",
+    "difficulty": "advanced",
+    "question_type": "economics",
+    "prompt": "How can cost optimisation damage reliability or delivery?",
+    "preferred_answer": "Removing capacity, logs, backups, test environments or regional redundancy can reduce spend while increasing outage, recovery and delivery risk. Optimisation should work within SLO, security and recovery constraints and quantify trade-offs. The cheapest architecture is not necessarily the lowest total business cost.",
+    "evaluation_points": [
+      "Examples of harmful cuts",
+      "Quality constraints",
+      "Trade-off quantification",
+      "Business cost over bill"
+    ],
+    "resolution_title": "Google Cloud Cost Optimization Pillar",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/cost-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-143",
+    "role_slug": "cloud-engineer",
+    "domain": "FinOps, Cost Allocation and Unit Economics",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "What should a cloud cost anomaly process do?",
+    "preferred_answer": "Detect deviations from expected patterns, enrich them with owner, service, deployment and usage context, classify business growth versus defect or abuse, and route to someone who can act. Set proportional thresholds and measure resolution value. Excessive alerts train teams to ignore real anomalies.",
+    "evaluation_points": [
+      "Expected-pattern detection",
+      "Context and classification",
+      "Actionable ownership",
+      "Alert-quality review"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-144",
+    "role_slug": "cloud-engineer",
+    "domain": "FinOps, Cost Allocation and Unit Economics",
+    "difficulty": "scenario",
+    "question_type": "decision",
+    "prompt": "A team proposes moving all workloads to one provider because it offers the lowest forecast price. How would you challenge the model?",
+    "preferred_answer": "Test whether the forecast includes migration, data transfer, support, commitments, operational skills, resilience, compliance and exit cost. Compare unit economics under realistic demand and failure scenarios. Lowest list price may be rational, but the decision should expose dependency and switching risk rather than hiding them.",
+    "evaluation_points": [
+      "Full lifecycle cost",
+      "Demand/failure scenarios",
+      "Dependency and exit risk",
+      "Balanced conclusion"
+    ],
+    "resolution_title": "FinOps Unit Economics",
+    "resolution_url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-145",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Migration and Application Modernisation",
+    "difficulty": "foundation",
+    "question_type": "migration",
+    "prompt": "What are common cloud migration strategies?",
+    "preferred_answer": "Strategies include retire, retain, rehost, relocate, replatform, repurchase and refactor or re-architect. Names vary, but the core decision is how much change to make now. Select per workload from business value, risk, dependency, timeline and future operating model rather than applying one strategy to the whole estate.",
+    "evaluation_points": [
+      "Strategy range",
+      "Per-workload choice",
+      "Value/risk criteria",
+      "No blanket migration method"
+    ],
+    "resolution_title": "AWS Migration Strategies",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-146",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Migration and Application Modernisation",
+    "difficulty": "foundation",
+    "question_type": "discovery",
+    "prompt": "What information is needed before planning migration waves?",
+    "preferred_answer": "Build an authoritative inventory of applications, owners, users, dependencies, data, network flows, identity, licences, performance, lifecycle and recovery requirements. Combine tool discovery with interviews and traffic evidence. Unknown dependencies are a major cutover risk, so confidence and gaps should be visible.",
+    "evaluation_points": [
+      "Inventory dimensions",
+      "Multiple evidence sources",
+      "Dependency focus",
+      "Confidence/gap tracking"
+    ],
+    "resolution_title": "Google Cloud Migration Center",
+    "resolution_url": "https://cloud.google.com/migration-center/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-147",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Migration and Application Modernisation",
+    "difficulty": "intermediate",
+    "question_type": "business case",
+    "prompt": "What belongs in a credible cloud migration business case?",
+    "preferred_answer": "It should define business outcomes, current total cost and pain, target operating model, migration and transformation cost, risk, timing, skills, dependency and measurable benefits. Include scenarios and uncertainty. A business case based only on infrastructure list-price comparison ignores the cost and value of organisational change.",
+    "evaluation_points": [
+      "Outcomes and baseline",
+      "Migration/operating cost",
+      "Risk and uncertainty",
+      "Beyond server price"
+    ],
+    "resolution_title": "Azure Cloud Adoption Framework - Migrate",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-148",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Migration and Application Modernisation",
+    "difficulty": "intermediate",
+    "question_type": "execution",
+    "prompt": "How should migration waves be sequenced?",
+    "preferred_answer": "Group workloads by dependency, business criticality, learning value, data gravity and cutover risk. Start with representative but manageable workloads, not only trivial systems. Ensure platform readiness and rollback for each wave. Use lessons to update later plans rather than freezing the programme around early assumptions.",
+    "evaluation_points": [
+      "Dependency grouping",
+      "Learning value",
+      "Platform/rollback readiness",
+      "Iterative planning"
+    ],
+    "resolution_title": "Azure Cloud Adoption Framework - Migrate",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-149",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Migration and Application Modernisation",
+    "difficulty": "intermediate",
+    "question_type": "modernisation",
+    "prompt": "When is replatforming a better choice than rehosting or refactoring?",
+    "preferred_answer": "Replatforming makes bounded changes, such as adopting a managed database or container platform, to gain operational benefit without rewriting the application. It fits when the architecture is viable but current operations are costly. Validate compatibility, performance and skills. Avoid half-modernisation that adds both legacy and platform complexity.",
+    "evaluation_points": [
+      "Bounded change",
+      "Operational benefit",
+      "Compatibility/skills",
+      "Double-complexity risk"
+    ],
+    "resolution_title": "AWS Migration Strategies",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-150",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Migration and Application Modernisation",
+    "difficulty": "advanced",
+    "question_type": "data",
+    "prompt": "What makes database migration harder than application deployment?",
+    "preferred_answer": "Data changes continuously, has integrity and ordering requirements, may be too large for the cutover window and often anchors many hidden dependencies. Plan schema compatibility, replication, validation, freeze or dual-write behaviour, rollback and reconciliation. Success means correct business data, not only completed byte transfer.",
+    "evaluation_points": [
+      "Continuous changing state",
+      "Integrity/dependency",
+      "Cutover and rollback",
+      "Business validation"
+    ],
+    "resolution_title": "Google Cloud Migration Center",
+    "resolution_url": "https://cloud.google.com/migration-center/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-151",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Migration and Application Modernisation",
+    "difficulty": "advanced",
+    "question_type": "operations",
+    "prompt": "Why do cloud migrations fail after technically successful cutover?",
+    "preferred_answer": "Teams may lack cloud operating ownership, cost controls, observability, incident procedures, security skills or application support boundaries. The system runs, but the organisation cannot operate it reliably. Migration definition of done should include adoption, training, runbooks, service objectives and retirement of old environments.",
+    "evaluation_points": [
+      "Operating-model gap",
+      "Reliability/security/cost duties",
+      "Definition of done",
+      "Legacy retirement"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-152",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Migration and Application Modernisation",
+    "difficulty": "scenario",
+    "question_type": "cutover",
+    "prompt": "A migrated application passes testing, but users report missing integrations after cutover. What would you do?",
+    "preferred_answer": "Stabilise critical journeys, compare dependency and traffic maps, DNS, firewall, credentials, schedules and partner allow-lists between environments. Use logs from both sides and decide rollback or fix-forward against impact and data state. Update discovery and cutover checklists based on the missed dependency class.",
+    "evaluation_points": [
+      "Stabilise impact",
+      "Dependency comparison",
+      "Evidence and rollback decision",
+      "Systemic learning"
+    ],
+    "resolution_title": "AWS Migration Strategies",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-153",
+    "role_slug": "cloud-engineer",
+    "domain": "Hybrid Cloud, Multi-Cloud and Edge Computing",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "Differentiate hybrid cloud and multi-cloud.",
+    "preferred_answer": "Hybrid cloud connects cloud services with on-premises or private environments as one operating design. Multi-cloud uses services from more than one cloud provider. A system can be both. The labels do not prove portability, resilience or integration quality; those outcomes depend on identity, data, network, platform and operations.",
+    "evaluation_points": [
+      "Definitions",
+      "Can overlap",
+      "No automatic benefit",
+      "Operating dimensions"
+    ],
+    "resolution_title": "Azure Arc Overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-arc/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-154",
+    "role_slug": "cloud-engineer",
+    "domain": "Hybrid Cloud, Multi-Cloud and Edge Computing",
+    "difficulty": "foundation",
+    "question_type": "architecture",
+    "prompt": "What business requirements can justify hybrid cloud?",
+    "preferred_answer": "Durable requirements may include latency to local equipment, data sovereignty, disconnected operation, existing specialised hardware, staged migration or regulated control. Hybrid also adds connectivity, identity, deployment, patching and observability complexity. It should solve a persistent requirement, not preserve every legacy assumption.",
+    "evaluation_points": [
+      "Valid requirements",
+      "Complexity cost",
+      "Persistent boundary",
+      "Challenges legacy inertia"
+    ],
+    "resolution_title": "AWS Outposts User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-155",
+    "role_slug": "cloud-engineer",
+    "domain": "Hybrid Cloud, Multi-Cloud and Edge Computing",
+    "difficulty": "intermediate",
+    "question_type": "networking",
+    "prompt": "What should a hybrid connectivity design include beyond a private circuit?",
+    "preferred_answer": "It needs redundant paths, routing ownership, DNS, encryption, bandwidth and latency capacity, failover behaviour, monitoring, change control and internet backup where appropriate. Private connectivity is not automatically encrypted or highly available. Test dependency behaviour when latency rises or the link partitions.",
+    "evaluation_points": [
+      "Redundancy/routing/DNS",
+      "Encryption and capacity",
+      "Private is not guaranteed secure/HA",
+      "Partition testing"
+    ],
+    "resolution_title": "AWS Outposts User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-156",
+    "role_slug": "cloud-engineer",
+    "domain": "Hybrid Cloud, Multi-Cloud and Edge Computing",
+    "difficulty": "intermediate",
+    "question_type": "platform",
+    "prompt": "What does a hybrid control plane provide, and what risk does it create?",
+    "preferred_answer": "It can standardise inventory, policy, deployment and observability across environments. It also becomes a high-value dependency with broad credentials and potential blast radius. Protect its identity, connectivity, update path and audit logs, and define what local workloads do when the control plane is unavailable.",
+    "evaluation_points": [
+      "Management consistency",
+      "High-value dependency",
+      "Security controls",
+      "Disconnected behaviour"
+    ],
+    "resolution_title": "Azure Arc Overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-arc/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-157",
+    "role_slug": "cloud-engineer",
+    "domain": "Hybrid Cloud, Multi-Cloud and Edge Computing",
+    "difficulty": "intermediate",
+    "question_type": "portability",
+    "prompt": "What does workload portability actually require?",
+    "preferred_answer": "Portable source code is not enough. The workload needs compatible runtime, identity, networking, data services, storage semantics, observability, deployment and operational skills. Abstract only where a credible mobility requirement exists. Excessive lowest-common-denominator design can sacrifice useful managed capabilities without enabling real movement.",
+    "evaluation_points": [
+      "Full stack of portability",
+      "Credible requirement",
+      "Abstraction trade-off",
+      "Managed-service value"
+    ],
+    "resolution_title": "CNCF Cloud Native Definition",
+    "resolution_url": "https://github.com/cncf/toc/blob/main/DEFINITION.md",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-158",
+    "role_slug": "cloud-engineer",
+    "domain": "Hybrid Cloud, Multi-Cloud and Edge Computing",
+    "difficulty": "advanced",
+    "question_type": "reliability",
+    "prompt": "Does active-active deployment across two cloud providers eliminate provider outage risk?",
+    "preferred_answer": "It reduces some provider-specific failures but creates cross-provider data, routing, identity, feature, testing and operational dependencies. Shared code, DNS, certificate, supply chain and operator processes may still fail together. The value must be compared with complexity and the probability and impact of the targeted failure.",
+    "evaluation_points": [
+      "Reduces limited risk",
+      "New dependencies",
+      "Shared failures",
+      "Cost-benefit analysis"
+    ],
+    "resolution_title": "Google Distributed Cloud Overview",
+    "resolution_url": "https://cloud.google.com/distributed-cloud/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-159",
+    "role_slug": "cloud-engineer",
+    "domain": "Hybrid Cloud, Multi-Cloud and Edge Computing",
+    "difficulty": "advanced",
+    "question_type": "edge",
+    "prompt": "How should an edge application behave during loss of cloud connectivity?",
+    "preferred_answer": "It needs a defined local authority, cached or replicated data, bounded offline actions, durable queues, conflict resolution, security and an explicit resynchronisation process. Safety-critical actions may require local fail-safe behaviour. Design from the maximum disconnected period and data correctness needs, not from an assumption of permanent connectivity.",
+    "evaluation_points": [
+      "Local authority",
+      "Offline queue/state",
+      "Conflict and resync",
+      "Safety and duration"
+    ],
+    "resolution_title": "Google Distributed Cloud Overview",
+    "resolution_url": "https://cloud.google.com/distributed-cloud/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-160",
+    "role_slug": "cloud-engineer",
+    "domain": "Hybrid Cloud, Multi-Cloud and Edge Computing",
+    "difficulty": "scenario",
+    "question_type": "architecture",
+    "prompt": "A board mandates multi-cloud to avoid lock-in, but the product team has six engineers. What would you recommend?",
+    "preferred_answer": "Identify which lock-in matters, its probability and switching impact. Preserve data export, architecture records, standard interfaces and tested recovery before duplicating every service. A small team may gain more resilience from one well-operated provider and an exit plan than two shallow platforms. Present explicit trade-offs and review triggers.",
+    "evaluation_points": [
+      "Specific lock-in analysis",
+      "Practical exit controls",
+      "Team capacity",
+      "Balanced recommendation"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-161",
+    "role_slug": "cloud-engineer",
+    "domain": "Future Cloud: Sovereignty, AI Infrastructure and Sustainable Scale",
+    "difficulty": "foundation",
+    "question_type": "future",
+    "prompt": "What is confidential computing, and why may it become more important for cloud adoption?",
+    "preferred_answer": "Confidential computing uses hardware-backed trusted execution environments to protect data while it is being processed. It can reduce exposure to host operators and strengthen multi-party or regulated workloads. It introduces attestation, key, debugging and platform-trust questions, so it complements rather than replaces encryption, identity and secure application design.",
+    "evaluation_points": [
+      "Data-in-use protection",
+      "Trusted execution/attestation",
+      "Relevant future use cases",
+      "Not a complete security solution"
+    ],
+    "resolution_title": "Confidential Computing Consortium",
+    "resolution_url": "https://confidentialcomputing.io/about/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-162",
+    "role_slug": "cloud-engineer",
+    "domain": "Future Cloud: Sovereignty, AI Infrastructure and Sustainable Scale",
+    "difficulty": "foundation",
+    "question_type": "governance",
+    "prompt": "What does cloud sovereignty require beyond choosing a local Region?",
+    "preferred_answer": "It may require control over legal jurisdiction, data and metadata location, encryption keys, administrators, support access, software supply chain, continuity and the ability to operate or exit under geopolitical disruption. Requirements should be explicit and tested. A local facility operated through foreign dependencies may not satisfy the intended sovereignty outcome.",
+    "evaluation_points": [
+      "Jurisdiction and control",
+      "Keys/admin/support",
+      "Continuity and exit",
+      "Challenges location-only claim"
+    ],
+    "resolution_title": "Google Cloud Security, Privacy and Compliance Pillar",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/security",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-163",
+    "role_slug": "cloud-engineer",
+    "domain": "Future Cloud: Sovereignty, AI Infrastructure and Sustainable Scale",
+    "difficulty": "intermediate",
+    "question_type": "architecture",
+    "prompt": "How could AI workload growth change cloud capacity planning?",
+    "preferred_answer": "AI creates concentrated demand for accelerators, high-bandwidth networks, storage, cooling and electricity, with longer capacity lead times than ordinary elastic compute. Teams may need reservations, job scheduling, model efficiency, regional alternatives and demand shaping. 'Cloud is unlimited' becomes a dangerous assumption when physical and energy constraints dominate.",
+    "evaluation_points": [
+      "Accelerator/network/power constraints",
+      "Lead time and reservations",
+      "Efficiency and scheduling",
+      "Questions unlimited elasticity"
+    ],
+    "resolution_title": "IEA - Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-164",
+    "role_slug": "cloud-engineer",
+    "domain": "Future Cloud: Sovereignty, AI Infrastructure and Sustainable Scale",
+    "difficulty": "intermediate",
+    "question_type": "sustainability",
+    "prompt": "Should cloud schedulers consider carbon intensity as well as cost and latency?",
+    "preferred_answer": "For flexible workloads, time or location shifting can reduce emissions when reliable carbon data, deadlines and data constraints allow it. The policy must preserve SLOs, sovereignty and fairness and avoid merely moving impact outside the reporting boundary. Carbon should be another explicit optimisation dimension, not a decorative dashboard.",
+    "evaluation_points": [
+      "Flexible workload criteria",
+      "Trade-offs with SLO/residency",
+      "Reliable measurement",
+      "Avoids accounting displacement"
+    ],
+    "resolution_title": "Green Software Foundation - Learn Green Software",
+    "resolution_url": "https://learn.greensoftware.foundation/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-165",
+    "role_slug": "cloud-engineer",
+    "domain": "Future Cloud: Sovereignty, AI Infrastructure and Sustainable Scale",
+    "difficulty": "intermediate",
+    "question_type": "governance",
+    "prompt": "How should organisations respond to increasing cloud-provider concentration risk?",
+    "preferred_answer": "Map critical dependencies, substitutability, financial and geopolitical exposure, control-plane failure and exit lead time. Use contractual, architectural and operational mitigations proportional to impact: data export, escrow, alternate communications, portable backups, tested restore and selected provider diversity. Duplicating everything may create more risk than it removes.",
+    "evaluation_points": [
+      "Concentration-risk dimensions",
+      "Proportionate mitigations",
+      "Exit and restore tests",
+      "Avoids blanket duplication"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-166",
+    "role_slug": "cloud-engineer",
+    "domain": "Future Cloud: Sovereignty, AI Infrastructure and Sustainable Scale",
+    "difficulty": "advanced",
+    "question_type": "ethics",
+    "prompt": "At what point should an organisation refuse to deploy a cloud workload even if it is technically feasible and profitable?",
+    "preferred_answer": "Refusal may be justified when the workload creates unacceptable safety, privacy, environmental, legal or social harm that cannot be reduced to an authorised residual level. Engineering should surface externalities, affected groups and resource constraints rather than treating feasibility as permission. The decision belongs in accountable governance with documented evidence.",
+    "evaluation_points": [
+      "Feasibility versus legitimacy",
+      "Multiple harm dimensions",
+      "Affected stakeholders/externalities",
+      "Accountable governance"
+    ],
+    "resolution_title": "IEA - Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-167",
+    "role_slug": "cloud-engineer",
+    "domain": "Future Cloud: Sovereignty, AI Infrastructure and Sustainable Scale",
+    "difficulty": "advanced",
+    "question_type": "future",
+    "prompt": "Could autonomous cloud optimisation create new systemic risks?",
+    "preferred_answer": "An autonomous controller can rapidly resize, migrate, rewrite policy or trade cost against reliability across many services. Shared objectives, bad telemetry or model errors could amplify failure at machine speed. Use bounded authority, simulation, staged rollout, explainable decisions, human override and independent safety constraints. Optimisation agents themselves become critical infrastructure.",
+    "evaluation_points": [
+      "Automation amplification",
+      "Objective/telemetry risk",
+      "Bounded authority and staging",
+      "Independent safety/override"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "CLD-168",
+    "role_slug": "cloud-engineer",
+    "domain": "Future Cloud: Sovereignty, AI Infrastructure and Sustainable Scale",
+    "difficulty": "scenario",
+    "question_type": "strategy",
+    "prompt": "By 2030, leadership wants ten times more AI inference with no increase in cloud cost, electricity use or emissions. How would you respond?",
+    "preferred_answer": "Clarify the business output and reject an unexamined volume target. Establish current unit cost, energy and life-cycle boundaries; reduce unnecessary inference; use smaller or specialised models, batching, caching, efficient hardware and carbon-aware scheduling; and redesign the product where needed. State which constraints conflict and require an explicit executive trade-off.",
+    "evaluation_points": [
+      "Questions demand and business unit",
+      "Measures current baseline",
+      "Technical and product levers",
+      "Makes conflicting constraints explicit"
+    ],
+    "resolution_title": "IEA - Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-01",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Foundations and Service Models",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Cloud service-model decision paper: Compare three implementations of the same business capability using IaaS, PaaS and SaaS. Recommend one option for a stated organisation and show the responsibility boundary.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nDecision matrix, architecture sketches, responsibility map, cost and lock-in assumptions, failure considerations and a justified recommendation.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "NIST SP 800-145 - Definition of Cloud Computing",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-02",
+    "role_slug": "cloud-engineer",
+    "domain": "Regions, Availability Zones and Global Infrastructure",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Regional resilience game day: Design and run a controlled exercise for loss of one zone and degraded access to a second. Demonstrate service behaviour, data safety and operator decisions.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nDependency map, hypotheses, test plan, metrics, event timeline, capacity evidence, recovery verification and prioritised improvements.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "AWS Well-Architected Reliability Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-03",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Governance, Organisations and Landing Zones",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Landing-zone blueprint: Create a provider-neutral landing-zone design for a mid-sized organisation with production, development, security and shared services.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nOrganisation hierarchy, identity model, network boundaries, central logging, policy catalogue, account vending workflow, exception process and operational ownership.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Azure Landing Zones",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-04",
+    "role_slug": "cloud-engineer",
+    "domain": "Identity, Access and Workload Authentication",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Workload identity implementation: Replace a stored cloud access key in a CI workflow with federated workload identity and a least-privilege deployment role.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nTrust-policy diagram, token claims, role policy, workflow configuration, negative tests, audit events and credential-revocation notes.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "AWS IAM Security Best Practices",
+    "resolution_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-05",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Networking, DNS and Traffic Management",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Private multi-tier network: Design and deploy a three-tier cloud network with controlled ingress, private application and data tiers, outbound policy and central flow logging.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nAddress plan, route tables, firewall policies, DNS design, connectivity tests, flow-log evidence, threat assumptions and failure diagnosis.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Google Cloud VPC Overview",
+    "resolution_url": "https://cloud.google.com/vpc/docs/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-06",
+    "role_slug": "cloud-engineer",
+    "domain": "Compute, Virtualisation and Capacity",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Elastic VM service: Deploy a load-balanced virtual-machine service with immutable images, autoscaling and a controlled rolling replacement.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nImage pipeline, instance template, scaling policy, health checks, load test, failure demonstration, rollout evidence and cost assumptions.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Amazon EC2 Auto Scaling",
+    "resolution_url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-07",
+    "role_slug": "cloud-engineer",
+    "domain": "Containers and Managed Kubernetes",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Managed Kubernetes workload: Deploy a secure application to managed Kubernetes with a Deployment, Service, requests and limits, probes, autoscaling, network policy and workload identity.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nManifests or chart, identity flow, capacity assumptions, failure injection, scaling evidence, logs and recovery verification.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Kubernetes Security",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-08",
+    "role_slug": "cloud-engineer",
+    "domain": "Serverless and Event-Driven Compute",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Reliable event pipeline: Build an event-driven workflow with a queue, serverless consumer, idempotency, bounded retries and a dead-letter path.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nArchitecture, event schema, idempotency record, retry policy, failure injection, queue-age metrics, dead-letter replay and cost estimate.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "AWS Lambda Event-Driven Architectures",
+    "resolution_url": "https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-09",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Storage, Data Durability and Lifecycle",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Storage resilience exercise: Create an object-storage design with encryption, versioning, lifecycle transitions, protected backup and a tested restore after accidental deletion.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nConfiguration, data classification, access policy, lifecycle rationale, deletion event, audit logs, restore timing and integrity verification.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Amazon S3 User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-10",
+    "role_slug": "cloud-engineer",
+    "domain": "Managed Databases, NoSQL and Caching",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Managed database readiness review: Deploy a managed database with private access, automated backup, high availability and a sample application that uses safe connection pooling and restore testing.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nArchitecture, schema, IAM, network policy, pool settings, failover or restart evidence, backup restore and latency observations.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Cloud SQL Documentation",
+    "resolution_url": "https://cloud.google.com/sql/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-11",
+    "role_slug": "cloud-engineer",
+    "domain": "Messaging, Streaming and Cloud Integration",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Resilient messaging workflow: Implement a producer and consumer using a managed queue or topic with idempotency, bounded retries, dead-letter handling and observable backlog.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nMessage contract, retry matrix, consumer logic, duplicate test, dead-letter replay, queue-age dashboard and failure runbook.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Azure Service Bus Messaging Overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-12",
+    "role_slug": "cloud-engineer",
+    "domain": "Reliability Engineering and Disaster Recovery",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Disaster-recovery exercise: Create and execute a recovery plan for a stateful cloud application after simulated regional unavailability.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nRPO/RTO, dependency map, backup and replication state, declaration criteria, traffic plan, recovery timeline, integrity checks and lessons.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "AWS Well-Architected Reliability Pillar",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-13",
+    "role_slug": "cloud-engineer",
+    "domain": "Performance, Autoscaling and Edge Delivery",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Performance and scaling study: Load-test a cloud service, establish a capacity model, configure autoscaling and evaluate one CDN or caching improvement.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nWorkload model, percentile charts, saturation evidence, scaling timeline, cache results, cost per request and recommended operating limits.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-14",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Observability and Operations",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Cloud observability pack: Instrument a small distributed cloud application with metrics, logs and traces, define an SLO and build one actionable alert and runbook.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nTelemetry schema, trace example, SLI calculation, dashboard, alert test, runbook, retention decisions and cost notes.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "OpenTelemetry Signals",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/signals/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-15",
+    "role_slug": "cloud-engineer",
+    "domain": "Infrastructure as Code and Configuration Automation",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Cloud infrastructure module: Build a reusable IaC module and root configuration with remote state, policy checks, a saved plan and a controlled import or drift-reconciliation exercise.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nModule interface, tests, backend design, plan evidence, policy result, drift or import transcript and final no-op plan.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Terraform Modules",
+    "resolution_url": "https://developer.hashicorp.com/terraform/language/modules",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-16",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud CI/CD and Release Engineering",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Protected cloud deployment pipeline: Create a cloud CI/CD pipeline that builds once, tests, publishes an immutable artefact and performs a progressive deployment using workload identity.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nPipeline definition, permission model, artefact digest, environment controls, deployment metrics, rollback or fix-forward test and audit evidence.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Google Cloud Build Documentation",
+    "resolution_url": "https://cloud.google.com/build/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-17",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Security and Data Protection",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Secure cloud workload review: Threat-model and harden a cloud application covering identity, network, data encryption, secrets, audit logging and incident containment.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nThreat paths, control matrix, IAM policy, key and secret lifecycle, network boundaries, log evidence, negative tests and residual risks.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Google Cloud Security, Privacy and Compliance Pillar",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/security",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-18",
+    "role_slug": "cloud-engineer",
+    "domain": "FinOps, Cost Allocation and Unit Economics",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Cloud unit-economics analysis: Analyse one month of cloud cost and usage, allocate spend, define a business unit metric and propose optimisations without violating reliability objectives.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nAllocation model, assumptions, unit-cost calculation, anomaly findings, rightsizing or commitment analysis, risk constraints and prioritised actions.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "FinOps Unit Economics",
+    "resolution_url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-19",
+    "role_slug": "cloud-engineer",
+    "domain": "Cloud Migration and Application Modernisation",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Migration wave plan: Assess a small application portfolio and create a migration wave plan with strategies, dependencies, landing-zone needs, cutover and validation.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nInventory, dependency map, strategy rationale, business case, wave schedule, risk register, rollback criteria and post-migration operating model.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Azure Cloud Adoption Framework - Migrate",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-20",
+    "role_slug": "cloud-engineer",
+    "domain": "Hybrid Cloud, Multi-Cloud and Edge Computing",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Hybrid or multi-cloud decision: Evaluate a workload proposed for hybrid or multi-cloud deployment and produce a decision backed by requirements, failure analysis and operating cost.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nRequirement map, architecture alternatives, dependency and portability analysis, security model, operational staffing, cost, exit plan and recommendation.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "Azure Arc Overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-arc/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
+  },
+  {
+    "id": "LAB-21",
+    "role_slug": "cloud-engineer",
+    "domain": "Future Cloud: Sovereignty, AI Infrastructure and Sustainable Scale",
+    "difficulty": "scenario",
+    "question_type": "practical_lab",
+    "prompt": "[PRACTICAL ASSESSMENT LAB] Future cloud architecture review: Design a 2030 cloud strategy for a regulated AI service under accelerator scarcity, sovereignty requirements, electricity constraints and provider concentration risk.",
+    "preferred_answer": "Expected Evidence & Deliverables:\nDemand and unit metrics, sovereignty controls, capacity plan, energy and carbon policy, confidential-computing option, provider-risk analysis, safety limits and executive trade-offs.",
+    "evaluation_points": [
+      "Working Outcome (40%)",
+      "Diagnostic & Assurance Evidence (25%)",
+      "Safety, Security & Reliability Judgement (20%)",
+      "Clarity & Reproducibility (15%)"
+    ],
+    "resolution_title": "IEA - Energy and AI",
+    "resolution_url": "https://www.iea.org/reports/energy-and-ai",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-29",
+    "status": "published"
   }
 ];
