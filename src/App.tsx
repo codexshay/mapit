@@ -3341,7 +3341,13 @@ export default function App() {
                   <div>Loading MapIT Jobs &amp; LinkedIn Referrals...</div>
                 </div>
               }>
-                <JobsReferrals />
+                <JobsReferrals 
+                  bookmarks={bookmarks}
+                  toggleBookmark={toggleBookmark}
+                  isBookmarked={isBookmarked}
+                  theme={theme}
+                  isLight={theme === "light"}
+                />
               </React.Suspense>
             </ErrorBoundary>
           </section>
@@ -3890,7 +3896,7 @@ export default function App() {
         <div id="section-hr-contacts" className={activeTab === 'hr-contacts' ? 'block' : 'hidden'}>
           <section className="fade-in space-y-6">
             <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-slate-400 border border-slate-800 bg-[#070b13]">Loading HR Contacts...</div>}>
-              <HRContacts theme={theme} />
+              <HRContacts theme={theme} isLight={theme === "light"} />
             </React.Suspense>
           </section>
         </div>

@@ -802,8 +802,8 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                       onClick={() => handleRoleSelect(slug)}
                       className={`p-4 border-2 transition-all cursor-pointer relative group text-left ${
                         isSelected
-                          ? `${palette.activeBorder} ${palette.activeBg} ${palette.activeShadow}`
-                          : `border-zinc-800 bg-black ${palette.hoverBorder} hover:bg-zinc-950`
+                          ? (isLight ? "border-slate-900 bg-slate-50 text-slate-900 shadow-md" : `${palette.activeBorder} ${palette.activeBg} ${palette.activeShadow}`)
+                          : `${isLight ? "border-slate-300 bg-white hover:border-slate-400 text-slate-900 shadow-xs" : "border-zinc-800 bg-black " + palette.hoverBorder + " hover:bg-zinc-950 text-white"}`
                       }`}
                     >
                       {/* Left Colored Side-Line - ALWAYS VISIBLE */}
@@ -811,7 +811,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
 
                       <div className="pl-2">
                         <div className="flex items-center justify-between gap-2 mb-1">
-                          <span className="font-bold text-sm text-white">
+                          <span className={`font-bold text-sm ${isLight ? "text-slate-900" : "text-white"}`}>
                             {meta.label}
                           </span>
                           <span className={`text-[10px] font-mono font-bold px-2 py-0.5 border ${
@@ -1016,9 +1016,11 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                   <article
                     key={item.id}
                     className={`border-2 transition-all p-4 sm:p-5 text-left relative overflow-hidden ${
-                      isPractical
-                        ? `bg-white md:bg-zinc-950/90 ${itemPalette.activeBorder} ${itemPalette.activeShadow}`
-                        : `bg-white md:bg-zinc-950 ${itemPalette.hoverBorder} border-slate-300 md:border-zinc-800`
+                      isLight
+                        ? 'bg-white border-slate-300 text-slate-900 shadow-xs hover:border-slate-500'
+                        : isPractical
+                          ? `bg-zinc-950/90 ${itemPalette.activeBorder} ${itemPalette.activeShadow} text-white`
+                          : `bg-zinc-950 ${itemPalette.hoverBorder} border-zinc-800 text-white`
                     }`}
                   >
                     {/* Left Colored Accent Side-Line on Question Card */}
@@ -1083,7 +1085,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                       <div className="space-y-3">
                         <button
                           onClick={() => { if (typeof window !== 'undefined' && window.innerWidth < 768) { setActiveMobileDrawerItem(item); } else { toggleExpand(item.id); } }}
-                          className={`w-full py-2 px-3 border bg-black ${itemPalette.hoverBorder} text-xs text-white font-bold flex items-center justify-between uppercase transition cursor-pointer`}
+                          className={`w-full py-2 px-3 border text-xs font-bold flex items-center justify-between uppercase transition cursor-pointer ${isLight ? "bg-slate-900 text-white border-slate-900 hover:bg-slate-800" : `bg-black ${itemPalette.hoverBorder} text-white`}`}
                         >
                           <span className="flex items-center gap-2">
                             <CheckCircle2 className={`w-3.5 h-3.5 ${itemPalette.accentText}`} />
@@ -1093,7 +1095,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                         </button>
 
                         {isExpanded && (
-                          <div className={`p-4 border ${itemPalette.activeBorder} ${itemPalette.activeBg} space-y-4 text-xs font-sans`}>
+                          <div className={`p-4 border space-y-4 text-xs font-sans ${isLight ? "bg-slate-50 border-slate-300 text-slate-900" : `${itemPalette.activeBorder} ${itemPalette.activeBg} text-white`}`}>
                             {/* Preferred Answer */}
                             <div>
                               <span className={`text-[10px] font-mono font-bold uppercase block mb-1 ${itemPalette.accentText}`}>

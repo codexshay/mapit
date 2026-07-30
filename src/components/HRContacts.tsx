@@ -7734,6 +7734,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
 
 interface HRContactsProps {
   theme: string;
+  isLight?: boolean;
 }
 
 export default function HRContacts({ theme }: HRContactsProps) {
@@ -7804,11 +7805,11 @@ export default function HRContacts({ theme }: HRContactsProps) {
     }`}>
       
       {/* Top Header Banner with Beta Tag */}
-      <header className="border-2 border-zinc-800 bg-zinc-950 p-6 md:p-8 shadow-2xl">
+      <header className={`border-2 p-6 md:p-8 shadow-2xl ${isLight ? "bg-white border-slate-300 text-slate-900" : "bg-zinc-950 border-zinc-800 text-white"}`}>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-zinc-800 pb-6 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <h1 className="text-3xl md:text-4xl font-black tracking-tight text-white flex items-center gap-2 uppercase">
+              <h1 className={`text-3xl md:text-4xl font-black tracking-tight flex items-center gap-2 uppercase ${isLight ? "text-slate-900" : "text-white"}`}>
                 <Database className="w-8 h-8 text-white" />
                 HR Directories
               </h1>
@@ -7816,7 +7817,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
                 beta
               </span>
             </div>
-            <p className="text-zinc-400 text-sm md:text-base max-w-3xl font-sans">
+            <p className={`text-sm md:text-base max-w-3xl font-sans ${isLight ? "text-slate-600" : "text-zinc-400"}`}>
               Verified IT &amp; Tech recruitment agency directory. Explore top-ranked agencies (ranked by ratings and review count &gt; 20), direct website portals, and interactive accordion dropdown city streams.
             </p>
           </div>

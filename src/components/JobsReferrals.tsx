@@ -21,6 +21,8 @@ export interface JobsReferralsProps {
   bookmarks?: Array<{ id: string; name: string; type: string; subtext?: string; url?: string }>;
   toggleBookmark?: (item: { id: string; name: string; type: any; subtext?: string; url?: string }) => void;
   isBookmarked?: (id: string, type: any) => boolean;
+  theme?: 'light' | 'dark';
+  isLight?: boolean;
 }
 
 // 14 Major Global & Indian Job Portals with Official SVGs
@@ -155,7 +157,9 @@ const JOB_PORTALS = [
 
 export const JobsReferrals: React.FC<JobsReferralsProps> = ({
   toggleBookmark,
-  isBookmarked
+  isBookmarked,
+  theme = 'dark',
+  isLight = false
 }) => {
   const [selectedRoleTitle, setSelectedRoleTitle] = useState<string>('Site Reliability Engineer');
   const [customRoleInput, setCustomRoleInput] = useState<string>('');
@@ -253,7 +257,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-zinc-800 pb-6 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <h1 className="text-3xl md:text-4xl font-black tracking-tight text-white flex items-center gap-2 uppercase">
+              <h1 className={`text-3xl md:text-4xl font-black tracking-tight flex items-center gap-2 uppercase ${isLight ? "text-slate-900" : "text-white"}`}>
                 <Briefcase className="w-8 h-8 text-white" />
                 Jobs &amp; Referrals
               </h1>
@@ -261,7 +265,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
                 beta
               </span>
             </div>
-            <p className="text-zinc-400 text-sm md:text-base max-w-3xl font-sans">
+            <p className={`text-sm md:text-base max-w-3xl font-sans ${isLight ? "text-slate-600" : "text-zinc-400"}`}>
               Discover {TOP_50_COMPANIES.length}+ technology employers, search global &amp; Indian job portals with role-embedded filters, and request LinkedIn employee referrals.
             </p>
           </div>
@@ -611,15 +615,19 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
               return (
                 <article
                   key={comp.name}
-                  className="bg-zinc-950 border-2 border-zinc-800 hover:border-zinc-500 transition-all p-5 rounded-none text-left flex flex-col justify-between relative group hover:shadow-[6px_6px_0px_0px_#ffffff]"
+                  className={`border-2 transition-all p-5 rounded-none text-left flex flex-col justify-between relative group ${
+                    isLight 
+                      ? 'bg-white border-slate-300 text-slate-900 shadow-xs hover:border-slate-500 hover:shadow-[4px_4px_0px_0px_#0f172a]' 
+                      : 'bg-zinc-950 border-zinc-800 text-white hover:border-zinc-500 hover:shadow-[6px_6px_0px_0px_#ffffff]'
+                  }`}
                 >
                   {/* Top Bar with Category & Bookmark */}
                   <div className="flex items-start justify-between gap-3 mb-4 border-b border-zinc-800 pb-3">
                     <div>
-                      <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700">
+                      <span className={`text-[10px] font-mono font-bold uppercase px-2 py-0.5 border ${isLight ? "bg-slate-100 text-slate-800 border-slate-300" : "bg-zinc-900 text-zinc-300 border-zinc-700"}`}>
                         {comp.category || 'Technology'}
                       </span>
-                      <h3 className="text-xl font-black text-white tracking-tight mt-2 flex items-center gap-2">
+                      <h3 className={`text-xl font-black tracking-tight mt-2 flex items-center gap-2 ${isLight ? "text-slate-900" : "text-white"}`}>
                         <span>{comp.name}</span>
                       </h3>
                     </div>
@@ -639,7 +647,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
 
                   {/* Company Info */}
                   <div className="space-y-3 mb-6 font-sans text-xs">
-                    <div className="text-zinc-400 flex items-center justify-between border-b border-zinc-900 pb-1.5">
+                    <div className={`flex items-center justify-between border-b pb-1.5 ${isLight ? "border-slate-200 text-slate-600" : "border-zinc-900 text-zinc-400"}`}>
                       <span className="font-mono text-[10px] uppercase text-zinc-500">Target Role</span>
                       <span className="text-yellow-400 font-mono font-bold">
                         {activeRoleKeyword ? `"${activeRoleKeyword}"` : 'All Roles'}
@@ -654,7 +662,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
                       href={careersUrlWithKeyword}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-2 px-3 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white font-bold flex items-center justify-between uppercase transition-all cursor-pointer"
+                      className={`w-full py-2 px-3 border font-bold flex items-center justify-between uppercase transition-all cursor-pointer ${isLight ? "border-slate-300 bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-900" : "border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white"}`}
                     >
                       <span className="flex items-center gap-2">
                         <Building2 className="w-4 h-4 text-zinc-400 group-hover:text-black" />
@@ -668,7 +676,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
                       href={linkedinCompanyJobsUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-2 px-3 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white font-bold flex items-center justify-between uppercase transition-all cursor-pointer"
+                      className={`w-full py-2 px-3 border font-bold flex items-center justify-between uppercase transition-all cursor-pointer ${isLight ? "border-slate-300 bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-900" : "border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white"}`}
                     >
                       <span className="flex items-center gap-2">
                         <Briefcase className="w-4 h-4 text-zinc-400 group-hover:text-black" />
@@ -682,7 +690,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
                       href={linkedinSearchUrlWithRole}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-2 px-3 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white font-bold flex items-center justify-between uppercase transition-all cursor-pointer"
+                      className={`w-full py-2 px-3 border font-bold flex items-center justify-between uppercase transition-all cursor-pointer ${isLight ? "border-slate-300 bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-900" : "border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white"}`}
                     >
                       <span className="flex items-center gap-2">
                         <Users className="w-4 h-4 text-zinc-400 group-hover:text-black" />
