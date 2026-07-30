@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, ChevronUp, HelpCircle, Code, MapPin, Award, CheckCircle, ChevronLeft, ChevronRight, Layers, FileText, ExternalLink } from 'lucide-react';
+import { ChevronDown, ChevronUp, HelpCircle, Code, MapPin, Award, CheckCircle, ChevronLeft, ChevronRight, Layers, FileText, ExternalLink, AlignJustify, Square } from 'lucide-react';
 import CustomBookmarkIcon from './CustomBookmarkIcon';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -26,9 +26,9 @@ export default function MobileRolesViewer({
   onResetFilters,
   isLight = false,
 }: MobileRolesViewerProps) {
-  // Local state for Mobile-specific controls
+  // Local state for Mobile-specific controls - default to accordion list
   const [levelFilter, setLevelFilter] = useState<'all' | 'entry' | 'mid' | 'advanced'>('all');
-  const [viewStyle, setViewStyle] = useState<'swiper' | 'list'>('swiper');
+  const [viewStyle, setViewStyle] = useState<'swiper' | 'list'>('list');
   const [swiperIndex, setSwiperIndex] = useState<number>(0);
   const [expandedRoleId, setExpandedRoleId] = useState<string | null>(null);
 
@@ -151,47 +151,51 @@ export default function MobileRolesViewer({
         </div>
       </div>
 
-      {/* 2. VIEW STYLE TOGGLE: Focused Swipe Card Deck vs list in-place expansion */}
-      <div className={`flex items-center justify-between p-1 border font-mono text-xs ${
+      {/* 2. VIEW STYLE TOGGLE: Accordion List (Default) vs Card Swiper */}
+      <div className={`flex items-center justify-between p-1.5 border font-mono text-xs ${
         isLight ? 'bg-slate-100/50 border-slate-300/60' : 'bg-[#050810]/40 border-[#121c38]/60'
       }`}>
         <span className={`text-[10px] font-bold tracking-tight pl-2 ${
           isLight ? 'text-slate-600' : 'text-gray-400'
         }`}>
-          View format:
+          View mode:
         </span>
-        <div className={`flex p-0.5 border ${
+        <div className={`flex items-center p-0.5 border gap-1 ${
           isLight ? 'bg-slate-50 border-slate-300' : 'bg-[#03060c] border-[#1e2e54]/50'
         }`}>
           <button
             type="button"
-            onClick={() => setViewStyle('swiper')}
-            className={`px-2.5 py-1 text-[10px] font-bold transition-all ${
-              viewStyle === 'swiper'
+            onClick={() => setViewStyle('list')}
+            aria-label="Accordion List View"
+            title="Accordion List View"
+            className={`p-1.5 transition-all flex items-center justify-center rounded-xs cursor-pointer ${
+              viewStyle === 'list'
                 ? isLight
-                  ? 'bg-emerald-100 text-emerald-800'
-                  : 'bg-[#10b981]/25 text-[#10b981]'
+                  ? 'bg-emerald-100 text-emerald-800 border border-emerald-300'
+                  : 'bg-[#10b981]/25 text-[#10b981] border border-[#10b981]/50'
                 : isLight
                   ? 'text-slate-500 hover:text-slate-700'
                   : 'text-gray-500 hover:text-gray-300'
             }`}
           >
-            🗂️ Card Swiper
+            <AlignJustify className="w-4 h-4" />
           </button>
           <button
             type="button"
-            onClick={() => setViewStyle('list')}
-            className={`px-2.5 py-1 text-[10px] font-bold transition-all ${
-              viewStyle === 'list'
+            onClick={() => setViewStyle('swiper')}
+            aria-label="Card Swiper View"
+            title="Card Swiper View"
+            className={`p-1.5 transition-all flex items-center justify-center rounded-xs cursor-pointer ${
+              viewStyle === 'swiper'
                 ? isLight
-                  ? 'bg-emerald-100 text-emerald-800'
-                  : 'bg-[#10b981]/25 text-[#10b981]'
+                  ? 'bg-emerald-100 text-emerald-800 border border-emerald-300'
+                  : 'bg-[#10b981]/25 text-[#10b981] border border-[#10b981]/50'
                 : isLight
                   ? 'text-slate-500 hover:text-slate-700'
                   : 'text-gray-500 hover:text-gray-300'
             }`}
           >
-            📋 Accordion List
+            <Square className="w-4 h-4" />
           </button>
         </div>
       </div>
