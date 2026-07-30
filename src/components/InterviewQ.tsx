@@ -831,13 +831,13 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
 
                     {/* SUB-DOMAINS HOVER FLYOUT: Rendered ONLY when cursor hovers over the domain card AND count > 0 */}
                     {hoveredRole === slug && count > 0 && slugDomains.length > 0 && (
-                      <div className={`absolute left-[calc(100%+0.75rem)] top-0 z-50 w-80 border-2 ${palette.activeBorder} bg-zinc-950 p-4 space-y-3 ${palette.activeShadow}`}>
-                        <div className="border-b border-slate-200 md:border-zinc-800 pb-2 flex items-center justify-between">
+                      <div className={`absolute left-[calc(100%+0.75rem)] top-0 z-50 w-80 border-2 p-4 space-y-3 transition-all ${isLight ? "bg-white border-slate-300 text-slate-900 shadow-xl" : `${palette.activeBorder} bg-zinc-950 text-white ${palette.activeShadow}`}`}>
+                        <div className={`border-b pb-2 flex items-center justify-between ${isLight ? "border-slate-200" : "border-zinc-800"}`}>
                           <div className="flex items-center gap-2">
-                            <Layers className="w-4 h-4 text-white" />
-                            <span className="text-xs font-bold text-white uppercase tracking-wider font-mono">Sub-Domain Filters</span>
+                            <Layers className={`w-4 h-4 ${isLight ? "text-slate-900" : "text-white"}`} />
+                            <span className={`text-xs font-bold uppercase tracking-wider font-mono ${isLight ? "text-slate-900" : "text-white"}`}>Sub-Domain Filters</span>
                           </div>
-                          <span className="text-[10px] text-zinc-400 font-mono">
+                          <span className={`text-[10px] font-mono ${isLight ? "text-slate-500" : "text-zinc-400"}`}>
                             {isAllDomainsActive ? 'ALL SELECTED' : `${selectedDomains.length} SELECTED`}
                           </span>
                         </div>
@@ -853,8 +853,8 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                             }}
                             className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
                               isAllDomainsActive && selectedRole === slug
-                                ? `${palette.badgeActive} shadow-[2px_2px_0px_0px_#ffffff]`
-                                : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
+                                ? (isLight ? 'bg-slate-900 text-white border-slate-900 font-bold shadow-xs' : `${palette.badgeActive} shadow-[2px_2px_0px_0px_#ffffff]`)
+                                : (isLight ? 'bg-slate-50 text-slate-700 border-slate-300 hover:bg-slate-100 hover:border-slate-400' : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white')
                             }`}
                           >
                             <span className="flex items-center gap-2">
@@ -882,15 +882,15 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                                 }}
                                 className={`w-full py-2 px-3 text-xs font-mono text-left border flex items-center justify-between transition-all cursor-pointer ${
                                   isChecked
-                                    ? `${palette.badgeActive} shadow-[2px_2px_0px_0px_#ffffff]`
-                                    : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white'
+                                    ? (isLight ? 'bg-slate-900 text-white border-slate-900 font-bold shadow-xs' : `${palette.badgeActive} shadow-[2px_2px_0px_0px_#ffffff]`)
+                                    : (isLight ? 'bg-slate-50 text-slate-700 border-slate-300 hover:bg-slate-100 hover:border-slate-400' : 'bg-black text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white')
                                 }`}
                               >
                                 <span className="flex items-center gap-2 truncate pr-2">
                                   {isChecked ? (
                                     <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />
                                   ) : (
-                                    <span className="w-3.5 h-3.5 border border-zinc-700 inline-block shrink-0" />
+                                    <span className={`w-3.5 h-3.5 border inline-block shrink-0 ${isLight ? "border-slate-400 bg-white" : "border-zinc-700"}`} />
                                   )}
                                   <span className="truncate">{d}</span>
                                 </span>
@@ -925,10 +925,10 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                       onClick={() => { setSelectedDifficulty(diff); setCurrentPage(1); }}
                       className={`px-2.5 py-1 text-[10px] font-bold uppercase border transition-all shrink-0 ${
                         selectedDifficulty === diff
-                          ? 'bg-white text-black border-white'
+                          ? (isLight ? 'bg-slate-900 text-white border-slate-900 shadow-xs' : 'bg-white text-black border-white')
                           : isAvailable
-                          ? 'bg-zinc-900 text-zinc-300 border-zinc-700 hover:border-white hover:text-white'
-                          : 'bg-black text-zinc-700 border-zinc-900 cursor-not-allowed opacity-40'
+                          ? (isLight ? 'bg-slate-100 text-slate-700 border-slate-300 hover:bg-slate-200' : 'bg-zinc-900 text-zinc-300 border-zinc-700 hover:border-white hover:text-white')
+                          : (isLight ? 'bg-slate-100/40 text-slate-400 border-slate-200 cursor-not-allowed' : 'bg-black text-zinc-700 border-zinc-900 cursor-not-allowed opacity-40')
                       }`}
                     >
                       {diff}
@@ -942,7 +942,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                 <select
                   value={selectedType}
                   onChange={(e) => { setSelectedType(e.target.value); setCurrentPage(1); }}
-                  className="bg-black border border-zinc-700 px-3 py-1.5 text-xs text-zinc-200 focus:outline-none focus:border-white font-mono uppercase"
+                  className={`border px-3 py-1.5 text-xs focus:outline-none font-mono uppercase ${isLight ? "bg-white border-slate-300 text-slate-900 focus:border-slate-800" : "bg-black border-zinc-700 text-zinc-200 focus:border-white"}`}
                 >
                   <option value="all">All Question Types</option>
                   {availableTypes.map(t => (
