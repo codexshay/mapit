@@ -144,19 +144,57 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
         osc.start();
         osc.stop(ctx.currentTime + 0.35);
       } else if (type === 'win') {
+        // Authenticated Network TCP 3-Way Handshake & Sync Port Link Sound (SYN -> SYN-ACK -> ESTABLISHED)
         const now = ctx.currentTime;
-        const freps = [350, 440, 523, 659, 880];
-        freps.forEach((freq, idx) => {
+
+        // 1. SYN Packet Transmission Ping (880 Hz - A5)
+        const synOsc = ctx.createOscillator();
+        const synGain = ctx.createGain();
+        synOsc.type = 'square';
+        synOsc.frequency.setValueAtTime(880, now);
+        synGain.gain.setValueAtTime(0.08, now);
+        synGain.gain.exponentialRampToValueAtTime(0.005, now + 0.05);
+        synOsc.connect(synGain);
+        synGain.connect(ctx.destination);
+        synOsc.start(now);
+        synOsc.stop(now + 0.05);
+
+        // 2. SYN-ACK Server Response Chirp (1320 Hz - E6)
+        const ackOsc = ctx.createOscillator();
+        const ackGain = ctx.createGain();
+        ackOsc.type = 'sine';
+        ackOsc.frequency.setValueAtTime(1320, now + 0.06);
+        ackGain.gain.setValueAtTime(0.1, now + 0.06);
+        ackGain.gain.exponentialRampToValueAtTime(0.005, now + 0.12);
+        ackOsc.connect(ackGain);
+        ackGain.connect(ctx.destination);
+        ackOsc.start(now + 0.06);
+        ackOsc.stop(now + 0.12);
+
+        // 3. ESTABLISHED / PACKET SYNC Harmonic Chime (A6 Major Triad: 1760 Hz, 2200 Hz, 2640 Hz)
+        const synchFrequencies = [1760, 2200, 2640];
+        synchFrequencies.forEach((freq) => {
           const osc = ctx.createOscillator();
           const gain = ctx.createGain();
+          const filter = ctx.createBiquadFilter();
+
           osc.type = 'sine';
-          osc.frequency.setValueAtTime(freq, now + idx * 0.07);
-          gain.gain.setValueAtTime(0.1, now + idx * 0.07);
-          gain.gain.linearRampToValueAtTime(0.01, now + idx * 0.07 + 0.1);
-          osc.connect(gain);
+          osc.frequency.setValueAtTime(freq, now + 0.12);
+          osc.frequency.exponentialRampToValueAtTime(freq * 1.05, now + 0.35);
+
+          filter.type = 'lowpass';
+          filter.frequency.setValueAtTime(4500, now + 0.12);
+          filter.frequency.exponentialRampToValueAtTime(1200, now + 0.35);
+
+          gain.gain.setValueAtTime(0.12, now + 0.12);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.38);
+
+          osc.connect(filter);
+          filter.connect(gain);
           gain.connect(ctx.destination);
-          osc.start(now + idx * 0.07);
-          osc.stop(now + idx * 0.07 + 0.13);
+
+          osc.start(now + 0.12);
+          osc.stop(now + 0.38);
         });
       } else if (type === 'start') {
         const osc = ctx.createOscillator();

@@ -251,9 +251,9 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
   ];
 
   return (
-    <div className={`min-h-screen p-4 md:p-8 font-mono ${isLight ? "bg-slate-100 text-slate-900" : "bg-black text-zinc-100"}`}>
+    <div className={`min-h-screen p-4 md:p-8 font-mono transition-colors ${isLight ? "bg-[#f8fafc] text-slate-900" : "bg-[#05070e] text-zinc-100"}`}>
       {/* Header Section - Monochrome B&W with Beta Tag */}
-      <header className={`max-w-7xl mx-auto mb-8 border-2 p-6 md:p-8 shadow-2xl ${isLight ? "bg-white border-slate-300 text-slate-900" : "bg-zinc-950 border-zinc-800 text-white"}`}>
+      <header className={`max-w-7xl mx-auto mb-8 border-2 p-5 md:p-8 transition-all ${isLight ? "bg-white border-slate-200 text-slate-900 shadow-sm" : "bg-zinc-950 border-zinc-800 text-white shadow-2xl"}`}>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-zinc-800 pb-6 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">

@@ -1151,3 +1151,176 @@ aside .preserve-logo-green,
 
 
 
+
+
+/* ==========================================================================
+   CSS LAYOUT, CONTAINERS, SPACING & LISTING STYLES DESIGN SYSTEM
+   ========================================================================== */
+
+/* 1. CONTAINERS SYSTEM */
+.app-container {
+  max-width: 80rem; /* 1280px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .app-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Card Surface Base */
+.card-surface {
+  transition: all 0.2s ease-in-out;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .card-surface {
+    padding: 1.25rem;
+  }
+}
+
+/* Light Theme Card Surface */
+.light-theme .card-surface {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #0f172a !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.light-theme .card-surface:hover {
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+}
+
+/* Dark Theme Card Surface */
+.card-surface {
+  background-color: #090f1e;
+  border: 1px solid #1e2e54;
+  color: #ffffff;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.card-surface:hover {
+  border-color: #334155;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+
+/* 2. SPACING & GRID SYSTEM */
+.space-stack-sm > * + * {
+  margin-top: 0.5rem;
+}
+
+.space-stack-md > * + * {
+  margin-top: 1rem;
+}
+
+.space-stack-lg > * + * {
+  margin-top: 1.5rem;
+}
+
+.grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid-responsive {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-responsive {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+
+/* 3. LISTING & BULLET STYLES SYSTEM */
+ul.styled-list,
+ol.styled-list {
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+ul.styled-list {
+  list-style-type: disc;
+}
+
+ol.styled-list {
+  list-style-type: decimal;
+}
+
+ul.styled-list li,
+ol.styled-list li {
+  margin-bottom: 0.375rem;
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+/* Custom Icon & Badge List Item Styling */
+.list-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  line-height: 1.5;
+}
+
+.list-bullet-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: #06b6d4; /* Cyan dot */
+  margin-top: 0.4rem;
+  flex-shrink: 0;
+}
+
+.light-theme .list-bullet-marker {
+  background-color: #0284c7; /* Sky blue dot in Light Theme */
+}
+
+/* Custom Bordered Accordion List Items */
+.accordion-list-row {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #1e2e54;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.light-theme .accordion-list-row {
+  border-color: #e2e8f0 !important;
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.light-theme .accordion-list-row:hover {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+}

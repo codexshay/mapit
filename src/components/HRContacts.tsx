@@ -7805,7 +7805,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
     }`}>
       
       {/* Top Header Banner with Beta Tag */}
-      <header className={`border-2 p-6 md:p-8 shadow-2xl ${isLight ? "bg-white border-slate-300 text-slate-900" : "bg-zinc-950 border-zinc-800 text-white"}`}>
+      <header className={`border-2 p-5 md:p-8 transition-all ${isLight ? "bg-white border-slate-200 text-slate-900 shadow-sm" : "bg-zinc-950 border-zinc-800 text-white shadow-2xl"}`}>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-zinc-800 pb-6 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
@@ -7953,8 +7953,8 @@ export default function HRContacts({ theme }: HRContactsProps) {
                 onClick={() => toggleCityDropdown(cityKey)}
                 className={`w-full p-4 flex items-center justify-between transition cursor-pointer select-none border-2 mb-2 ${
                   isLight 
-                    ? 'bg-white border-slate-300 hover:bg-slate-50 text-slate-900 shadow-xs' 
-                    : 'bg-zinc-950 border-zinc-800 hover:bg-zinc-900 text-white'
+                    ? 'bg-white border-slate-200 hover:bg-slate-50/80 text-slate-900 shadow-sm hover:border-slate-400' 
+                    : 'bg-zinc-950 border-zinc-800 hover:bg-zinc-900 text-white shadow-xl'
                 }`}
               >
                 <div className="flex items-center gap-3">
@@ -8000,10 +8000,10 @@ export default function HRContacts({ theme }: HRContactsProps) {
                 {isDropdownOpen && (
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
+                    animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.2 }}
-                    className="p-4 overflow-hidden"
+                    className={`p-4 md:p-5 overflow-hidden border-x-2 border-b-2 mb-4 ${isLight ? "bg-slate-50/90 border-slate-200" : "bg-zinc-950/90 border-zinc-800"}`}
                   >
                     {/* RENDER VERIFIED DATA CARDS */}
                     {cityConfig.hasData && matchedContacts.length > 0 && (
@@ -8013,7 +8013,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
                             key={`${contact.rank}-${contact.companyName}`}
                             className={`border-2 transition-all p-5 text-left flex flex-col justify-between relative group ${
                               isLight 
-                                ? 'bg-white border-slate-300 text-slate-900 shadow-xs hover:border-slate-500' 
+                                ? 'bg-white border-slate-200 text-slate-900 shadow-sm hover:border-slate-400 hover:shadow-md' 
                                 : 'bg-black border-zinc-800 text-white hover:border-zinc-500 hover:shadow-[4px_4px_0px_0px_#ffffff]'
                             }`}
                           >

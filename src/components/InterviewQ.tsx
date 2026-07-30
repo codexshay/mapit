@@ -756,9 +756,9 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
         <aside className={`${mobileTab === 'questions' ? 'hidden md:block' : 'block'} w-full md:w-1/3 shrink-0 space-y-4`}>
           
           {/* Role Categories Panel */}
-          <div className="border-2 border-zinc-800 bg-zinc-950 p-4">
-            <h2 className="text-sm font-black uppercase text-white tracking-wider flex items-center gap-2 mb-3 border-b border-slate-200 md:border-zinc-800 pb-2">
-              <Grid className="w-4 h-4 text-white" />
+          <div className={`border-2 p-4 transition-all ${isLight ? "bg-white border-slate-200 text-slate-900 shadow-sm" : "bg-zinc-950 border-zinc-800 text-white shadow-xl"}`}>
+            <h2 className={`text-sm font-black uppercase tracking-wider flex items-center gap-2 mb-3 border-b pb-2 ${isLight ? "border-slate-200 text-slate-900" : "border-zinc-800 text-white"}`}>
+              <Grid className={`w-4 h-4 ${isLight ? "text-slate-900" : "text-white"}`} />
               Role Categories
             </h2>
 
@@ -803,7 +803,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                       className={`p-4 border-2 transition-all cursor-pointer relative group text-left ${
                         isSelected
                           ? (isLight ? "border-slate-900 bg-slate-50 text-slate-900 shadow-md" : `${palette.activeBorder} ${palette.activeBg} ${palette.activeShadow}`)
-                          : `${isLight ? "border-slate-300 bg-white hover:border-slate-400 text-slate-900 shadow-xs" : "border-zinc-800 bg-black " + palette.hoverBorder + " hover:bg-zinc-950 text-white"}`
+                          : `${isLight ? "border-slate-200 bg-slate-50/60 hover:bg-white hover:border-slate-400 text-slate-900 shadow-xs" : "border-zinc-800/90 bg-black " + palette.hoverBorder + " hover:bg-zinc-950 text-white"}`
                       }`}
                     >
                       {/* Left Colored Side-Line - ALWAYS VISIBLE */}
@@ -1017,7 +1017,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                     key={item.id}
                     className={`border-2 transition-all p-4 sm:p-5 text-left relative overflow-hidden ${
                       isLight
-                        ? 'bg-white border-slate-300 text-slate-900 shadow-xs hover:border-slate-500'
+                        ? 'bg-white border-slate-200 text-slate-900 shadow-sm hover:border-slate-400 hover:shadow-md'
                         : isPractical
                           ? `bg-zinc-950/90 ${itemPalette.activeBorder} ${itemPalette.activeShadow} text-white`
                           : `bg-zinc-950 ${itemPalette.hoverBorder} border-zinc-800 text-white`
@@ -1033,14 +1033,14 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                           <span className={`font-mono text-xs font-black px-2 py-0.5 uppercase ${itemPalette.badgeActive}`}>
                             {item.id}
                           </span>
-                          <span className="text-[10px] font-bold uppercase px-2 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700">
+                          <span className={`text-[10px] font-bold uppercase px-2 py-0.5 border ${isLight ? "bg-slate-100 text-slate-800 border-slate-300" : "bg-zinc-900 text-zinc-300 border-zinc-700"}`}>
                             {item.difficulty}
                           </span>
-                          <span className="text-[10px] font-bold uppercase px-2 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700">
+                          <span className={`text-[10px] font-bold uppercase px-2 py-0.5 border ${isLight ? "bg-slate-100 text-slate-800 border-slate-300" : "bg-zinc-900 text-zinc-300 border-zinc-700"}`}>
                             {item.question_type}
                           </span>
                           {item.source_tier && (
-                            <span className="text-[10px] font-mono text-zinc-400">
+                            <span className={`text-[10px] font-mono ${isLight ? "text-slate-500" : "text-zinc-400"}`}>
                               Tier-{item.source_tier}
                             </span>
                           )}
@@ -1051,7 +1051,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                           <button
                             onClick={() => handleCopy(item)}
                             title="Copy Question & Answer"
-                            className="p-1.5 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-zinc-300 transition cursor-pointer"
+                            className={`p-1.5 border transition cursor-pointer ${isLight ? "border-slate-300 bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-900" : "border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-zinc-300"}`}
                           >
                             {isCopied ? <Check className="w-3.5 h-3.5 text-white" /> : <Copy className="w-3.5 h-3.5" />}
                           </button>
@@ -1095,7 +1095,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                         </button>
 
                         {isExpanded && (
-                          <div className={`p-4 border space-y-4 text-xs font-sans ${isLight ? "bg-slate-50 border-slate-300 text-slate-900" : `${itemPalette.activeBorder} ${itemPalette.activeBg} text-white`}`}>
+                          <div className={`p-4 border space-y-4 text-xs font-sans transition-all ${isLight ? "bg-slate-50/90 border-slate-200 text-slate-800" : `${itemPalette.activeBorder} ${itemPalette.activeBg} text-white`}`}>
                             {/* Preferred Answer */}
                             <div>
                               <span className={`text-[10px] font-mono font-bold uppercase block mb-1 ${itemPalette.accentText}`}>
