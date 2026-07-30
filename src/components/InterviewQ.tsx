@@ -23,6 +23,8 @@ export interface InterviewQProps {
   bookmarks?: Array<{ id: string; name: string; type: string; subtext?: string; url?: string }>;
   toggleBookmark?: (item: { id: string; name: string; type: any; subtext?: string; url?: string }) => void;
   isBookmarked?: (id: string, type: any) => boolean;
+  theme?: 'light' | 'dark';
+  isLight?: boolean;
 }
 
 const ROLE_SLUG_ALIASES: Record<string, string[]> = {
@@ -525,7 +527,9 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
 
 export const InterviewQ: React.FC<InterviewQProps> = ({
   toggleBookmark,
-  isBookmarked
+  isBookmarked,
+  theme = 'dark',
+  isLight = false
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRole, setSelectedRole] = useState<string>('all');
@@ -673,21 +677,21 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
   const isAllDomainsActive = selectedDomains.length === 0;
 
   return (
-    <div className="min-h-screen bg-black text-zinc-100 p-4 md:p-8 font-mono">
-      {/* Top Header Banner - Black & White Work in Progress Edition with Beta Tag */}
-      <header className="max-w-7xl mx-auto mb-8 border-2 border-zinc-800 bg-zinc-950 p-6 md:p-8 shadow-2xl">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-zinc-800 pb-6 mb-6">
+    <div className={`min-h-screen p-4 md:p-8 font-mono ${isLight ? 'bg-slate-100 text-slate-900' : 'bg-black text-zinc-100'}`}>
+      {/* Top Header Banner */}
+      <header className={`max-w-7xl mx-auto mb-6 md:mb-8 border-2 p-4 md:p-8 shadow-2xl ${isLight ? 'bg-white border-slate-300 text-slate-900' : 'bg-zinc-950 border-zinc-800 text-white'}`}>
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-zinc-800/20 pb-4 md:pb-6 mb-4 md:mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <h1 className="text-3xl md:text-4xl font-black tracking-tight text-white flex items-center gap-2 uppercase">
-                <BookOpen className="w-8 h-8 text-white" />
+              <h1 className={`text-2xl md:text-4xl font-black tracking-tight flex items-center gap-2 uppercase ${isLight ? 'text-slate-900' : 'text-white'}`}>
+                <BookOpen className={`w-7 h-7 md:w-8 md:h-8 ${isLight ? 'text-slate-900' : 'text-white'}`} />
                 MapIT InterviewQ
               </h1>
               <span className="bg-yellow-400 text-black px-2 py-0.5 text-[10px] font-extrabold uppercase rounded-xs tracking-wide shrink-0 font-mono">
                 beta
               </span>
             </div>
-            <p className="text-zinc-400 text-sm md:text-base max-w-3xl font-sans">
+            <p className={`hidden md:block text-sm md:text-base max-w-3xl font-sans ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
               Role-mapped technical interview questions &amp; practical assessment labs with preferred answers, evaluator checkpoints, and direct links to official documentation.
             </p>
           </div>
@@ -696,21 +700,25 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
         {/* Global Search and Counter */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="relative w-full md:w-96">
-            <Search className="absolute left-3.5 top-3 w-4 h-4 text-zinc-400" />
+            <Search className={`absolute left-3.5 top-3 w-4 h-4 ${isLight ? 'text-slate-400' : 'text-zinc-400'}`} />
             <input
               type="text"
-              placeholder=""
+              placeholder="Search questions, topics, keywords..."
               value={searchQuery}
               onChange={(e) => { setSearchQuery(e.target.value); setCurrentPage(1); }}
-              className="w-full bg-black border border-zinc-700 rounded-none pl-10 pr-4 py-2.5 text-xs text-zinc-200 placeholder-zinc-500 focus:outline-none focus:border-white transition-all font-mono"
+              className={`w-full border rounded-none pl-10 pr-4 py-2.5 text-xs font-mono focus:outline-none transition-all ${
+                isLight 
+                  ? 'bg-slate-50 border-slate-300 text-slate-900 placeholder-slate-400 focus:border-slate-800' 
+                  : 'bg-black border-zinc-700 text-zinc-200 placeholder-zinc-500 focus:border-white'
+              }`}
             />
           </div>
 
           <div className="flex items-center gap-3 text-xs font-mono">
-            <span className="px-3 py-1 bg-zinc-900 border border-zinc-700 text-white font-bold">
+            <span className={`px-3 py-1 border font-bold text-xs ${isLight ? 'bg-slate-100 border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-white'}`}>
               TOTAL QUESTION BANK: {interviewQDatabase.length} ITEMS
             </span>
-            <span className="px-3 py-1 bg-white text-black font-bold uppercase">
+            <span className={`px-3 py-1 font-bold text-xs uppercase ${isLight ? 'bg-slate-900 text-white' : 'bg-white text-black'}`}>
               MATCHES: {filteredQuestions.length}
             </span>
           </div>
@@ -718,11 +726,13 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
       </header>
 
       {/* Mobile Navigation Tab Switcher */}
-      <div className="flex md:hidden max-w-7xl mx-auto mb-4 border-2 border-zinc-800 bg-zinc-950 p-1">
+      <div className={`flex md:hidden max-w-7xl mx-auto mb-4 border-2 p-1 ${isLight ? 'bg-white border-slate-300' : 'bg-zinc-950 border-zinc-800'}`}>
         <button
           onClick={() => setMobileTab('categories')}
           className={`flex-1 py-2.5 text-xs font-bold uppercase tracking-wider transition-all ${
-            mobileTab === 'categories' ? 'bg-white text-black' : 'bg-black text-zinc-400'
+            mobileTab === 'categories' 
+              ? (isLight ? 'bg-slate-900 text-white' : 'bg-white text-black') 
+              : (isLight ? 'bg-slate-100 text-slate-600' : 'bg-black text-zinc-400')
           }`}
         >
           📂 Role Categories ({availableRoleSlugs.length - 1})
@@ -730,7 +740,9 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
         <button
           onClick={() => setMobileTab('questions')}
           className={`flex-1 py-2.5 text-xs font-bold uppercase tracking-wider transition-all ${
-            mobileTab === 'questions' ? 'bg-white text-black' : 'bg-black text-zinc-400'
+            mobileTab === 'questions' 
+              ? (isLight ? 'bg-slate-900 text-white' : 'bg-white text-black') 
+              : (isLight ? 'bg-slate-100 text-slate-600' : 'bg-black text-zinc-400')
           }`}
         >
           ⚡ Questions List ({filteredQuestions.length})

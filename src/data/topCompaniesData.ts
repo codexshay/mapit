@@ -14,9 +14,9 @@ export const TOP_50_COMPANIES: CompanyInfo[] = [
     "name": "Telus Digital",
     "careerUrl": "https://www.telusdigital.com/careers",
     "category": "Digital Transformation & Services",
-    "companySlug": "telusdigital",
-    "companyChannelLink": "https://www.linkedin.com/company/telusdigital/",
-    "jobsSectionLink": "https://www.linkedin.com/company/telusdigital/jobs/",
+    "companySlug": "telus-digital",
+    "companyChannelLink": "https://www.linkedin.com/company/telus-digital/",
+    "jobsSectionLink": "https://www.linkedin.com/company/telus-digital/jobs/",
     "indiaJobsSearchLink": "https://www.linkedin.com/jobs/search/?keywords=TELUS%20Digital&location=India"
   },
   {

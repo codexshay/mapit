@@ -553,7 +553,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
                           >
                             <span className="flex items-center gap-2">
                               <Users className="w-4 h-4 text-slate-700" />
-                              <span>Search Referrals / Jobs</span>
+                              <span>Search Employee Referrals</span>
                             </span>
                             <ExternalLink className="w-3.5 h-3.5 shrink-0" />
                           </a>
@@ -606,7 +606,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
 
               const linkedinSearchUrlWithRole = activeRoleKeyword
                 ? `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(comp.name + " " + activeRoleKeyword)}`
-                : comp.indiaJobsSearchLink || comp.companyChannelLink || `https://www.linkedin.com/company/${comp.name.toLowerCase().replace(/[^a-z0-9]/g, '')}/`;
+                : `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(comp.name)}`;
 
               return (
                 <article

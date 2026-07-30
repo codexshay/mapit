@@ -3323,6 +3323,8 @@ export default function App() {
                   bookmarks={bookmarks}
                   toggleBookmark={toggleBookmark}
                   isBookmarked={isBookmarked}
+                  theme={theme}
+                  isLight={theme === 'light'}
                 />
               </React.Suspense>
             </ErrorBoundary>
