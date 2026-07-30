@@ -11,15 +11,6 @@ export interface CompanyInfo {
 
 export const TOP_50_COMPANIES: CompanyInfo[] = [
   {
-    "name": "Telus Digital",
-    "careerUrl": "https://www.telusdigital.com/careers",
-    "category": "Digital Transformation & Services",
-    "companySlug": "telus-digital",
-    "companyChannelLink": "https://www.linkedin.com/company/telus-digital/",
-    "jobsSectionLink": "https://www.linkedin.com/company/telus-digital/jobs/",
-    "indiaJobsSearchLink": "https://www.linkedin.com/jobs/search/?keywords=TELUS%20Digital&location=India"
-  },
-  {
     "name": "Microsoft",
     "careerUrl": "https://careers.microsoft.com",
     "category": "Big Tech",
@@ -198,6 +189,15 @@ export const TOP_50_COMPANIES: CompanyInfo[] = [
     "companyChannelLink": "https://www.linkedin.com/company/tata-consultancy-services/",
     "jobsSectionLink": "https://www.linkedin.com/company/tata-consultancy-services/jobs/",
     "indiaJobsSearchLink": "https://www.linkedin.com/jobs/search/?keywords=Tata%20Consultancy%20Services&location=India"
+  },
+  {
+    "name": "Telus Digital",
+    "careerUrl": "https://www.telusdigital.com/careers",
+    "category": "Digital Transformation & Services",
+    "companySlug": "telus-digital",
+    "companyChannelLink": "https://www.linkedin.com/company/telus-digital/",
+    "jobsSectionLink": "https://www.linkedin.com/company/telus-digital/jobs/",
+    "indiaJobsSearchLink": "https://www.linkedin.com/jobs/search/?keywords=TELUS%20Digital&location=India"
   },
   {
     "name": "Wipro",
@@ -1471,7 +1471,7 @@ export const TOP_50_COMPANIES: CompanyInfo[] = [
     "indiaJobsSearchLink": "https://www.linkedin.com/jobs/search/?keywords=Cadence%20Design%20Systems&location=India"
   },
   {
-    "name": "Dassault Systèmes",
+    "name": "Dassault Syst\u00e8mes",
     "careerUrl": "https://www.linkedin.com/company/dassaultsystemes/jobs/",
     "category": "Engineering and design software",
     "companySlug": "dassaultsystemes",

@@ -1427,26 +1427,8 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
             "wheelchairAccessible": false,
             "website": "https://logixbpo.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_cebu"
         },
-        {
-            "rank": 2,
-            "companyName": "C&G Immigration & Business Services - Cebu",
-            "rating": 5.0,
-            "reviews": 58,
-            "phone": "+63 956 174 7552",
-            "category": "Visa consulting service",
-            "wheelchairAccessible": false,
-            "website": "https://cgconsulting.ph/"
-        },
-        {
-            "rank": 3,
-            "companyName": "ContactPoint360 Philippines",
-            "rating": 4.8,
-            "reviews": 107,
-            "phone": "+63 917 717 1051",
-            "category": "BPO company",
-            "wheelchairAccessible": true,
-            "website": "https://cp360.talentmatch.h2r.ai/"
-        },
+        
+        
         {
             "rank": 4,
             "companyName": "HireBiz",
@@ -1639,16 +1621,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
             "wheelchairAccessible": true,
             "website": "https://recruitgo.com/"
         },
-        {
-            "rank": 5,
-            "companyName": "VXI Panorama Recruitment Center",
-            "rating": 4.4,
-            "reviews": 371,
-            "phone": "+63 917 777 5555",
-            "category": "BPO company",
-            "wheelchairAccessible": true,
-            "website": "http://www.vxi-family.com/"
-        },
+        
         {
             "rank": 6,
             "companyName": "Rensol Recruitment and Consulting",
@@ -1719,16 +1692,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
         }
     ],
     "Davao City": [
-        {
-            "rank": 1,
-            "companyName": "Full Potential Solutions Davao",
-            "rating": 4.4,
-            "reviews": 49,
-            "phone": "(833) 470-0377",
-            "category": "BPO company",
-            "wheelchairAccessible": true,
-            "website": "http://www.fpsinc.com/"
-        },
+        
         {
             "rank": 2,
             "companyName": "Global Staff Network",
@@ -1860,15 +1824,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
             "wheelchairAccessible": false,
             "website": ""
         },
-        {
-            "rank": 10,
-            "companyName": "AristoSourcing",
-            "rating": 4.8,
-            "reviews": 25,
-            "category": "BPO company",
-            "wheelchairAccessible": true,
-            "website": "https://aristosourcing.com/"
-        },
+        
         {
             "rank": 11,
             "companyName": "KFL Manpower Agency",
@@ -2518,17 +2474,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
             "website": "https://www.vaco.com/about/locations/los-angeles/",
             "mapsLink": "https://www.google.com/maps/search/?api=1&query=Vaco&query_place_id=ChIJcYnvpbKwwoARFFs07CO4obo"
         },
-        {
-            "rank": 7,
-            "companyName": "Bedford Staffing",
-            "rating": 4.7,
-            "reviews": 36,
-            "category": "Employment agency",
-            "wheelchairAccessible": true,
-            "phone": "(323) 297-3022",
-            "website": "http://bedfordstaffing.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Bedford%20Staffing&query_place_id=ChIJ43rKIFK5woARpKixKY3Nw90"
-        },
+        
         {
             "rank": 8,
             "companyName": "Career Group",
@@ -4111,18 +4057,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
             "website": "https://gohirego.com/",
             "mapsLink": "https://www.google.com/maps/search/?api=1&query=HireGo&query_place_id=ChIJ3Y3fwmo8socRTfqhftpP8-o"
         },
-        {
-            "rank": 2,
-            "companyName": "US Army Recruiting Office Midwest City",
-            "rating": 4.8,
-            "reviews": 23,
-            "category": "Military recruiting office",
-            "wheelchairAccessible": true,
-            "phone": "(928) 998-8739",
-            "website": "https://www.goarmy.com/info.html?iom=BXMK",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=US%20Army%20Recruiting%20Office%20Midwest%20City&query_place_id=ChIJ6fwJsLA9socR8mi7T-9em-M"
-        }
-    ],
+        ],
     "Nashville": [
         {
             "rank": 1,
@@ -4292,17 +4227,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
         }
     ],
     "Rocky Hill": [
-        {
-            "rank": 1,
-            "companyName": "PrideStaff",
-            "rating": 4.9,
-            "reviews": 1022,
-            "category": "Employment agency",
-            "wheelchairAccessible": true,
-            "phone": "(860) 773-0059",
-            "website": "https://www.pridestaff.com/hartfordmetrosoutheast/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=PrideStaff&query_place_id=ChIJiW95ibhN5okRpUQ-y_Zueys"
-        },
+        
         {
             "rank": 2,
             "companyName": "BestLogic Staffing",
@@ -4388,17 +4313,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
         }
     ],
     "Woodland Hills": [
-        {
-            "rank": 1,
-            "companyName": "Hospitality Confidential",
-            "rating": 5.0,
-            "reviews": 176,
-            "category": "Recruiter",
-            "wheelchairAccessible": true,
-            "phone": "(323) 327-3523",
-            "website": "http://www.hospitalityconfidential.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Hospitality%20Confidential&query_place_id=ChIJCSl42_gelGgR9UKloP9ES7A"
-        },
+        
         {
             "rank": 2,
             "companyName": "HIRECLOUT",
@@ -6115,16 +6030,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
             "website": "https://humanpowerservices.com/",
             "mapsLink": "https://www.google.com/maps/search/?api=1&query=Human%20Power%20Services%20%7C%20Staffing%20%26%20Job%20Placement%20Services%20in%20Indore&query_place_id=ChIJpQ21eFEdYzkR3z4I55b8mb4"
         },
-        {
-            "rank": 13,
-            "companyName": "Quality Webs",
-            "rating": 4.8,
-            "reviews": 55,
-            "category": "Digital printer",
-            "wheelchairAccessible": true,
-            "website": "https://qualitywebs.in/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Quality%20Webs&query_place_id=ChIJjfrNGdH7YjkR3Rl7X3YNDgE"
-        },
+        
         {
             "rank": 14,
             "companyName": "Sourcebae",
@@ -6336,128 +6242,17 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
         }
     ],
     "Leh": [
-        {
-            "rank": 1,
-            "companyName": "Hena adventure",
-            "rating": 5.0,
-            "reviews": 221,
-            "category": "Taxi service",
-            "wheelchairAccessible": true,
-            "phone": "+91 80823 40177",
-            "website": "https://taxiinleh.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Hena%20adventure&query_place_id=ChIJbbjFJOXr_TgRBFMl0GnjkP0"
-        },
-        {
-            "rank": 2,
-            "companyName": "Moon land tour and travels",
-            "rating": 5.0,
-            "reviews": 153,
-            "category": "Travel agency",
-            "wheelchairAccessible": true,
-            "phone": "+91 94191 77877",
-            "website": "http://www.facebook.com/yaqub.khan.ladakh",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Moon%20land%20tour%20and%20travels&query_place_id=ChIJA1ZMCO7r_TgRnjC9th2HnSU"
-        },
-        {
-            "rank": 3,
-            "companyName": "Travel Monk Adventures",
-            "rating": 4.9,
-            "reviews": 168,
-            "category": "Outdoor activity organiser",
-            "wheelchairAccessible": true,
-            "phone": "+91 81466 54329",
-            "website": "http://www.thetravelmonk.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Travel%20Monk%20Adventures&query_place_id=ChIJ9-mbOabr_TgRX0cUa7Zinb8"
-        },
-        {
-            "rank": 4,
-            "companyName": "Exotic Asia Travels",
-            "rating": 4.9,
-            "reviews": 158,
-            "category": "Travel agency",
-            "wheelchairAccessible": true,
-            "phone": "+91 99069 83313",
-            "website": "https://www.exoticasiatravels.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Exotic%20Asia%20Travels&query_place_id=ChIJ9bsvD0fr_TgRlm2KF6pfoX4"
-        },
-        {
-            "rank": 5,
-            "companyName": "Greater Ladakh Tour and Travels",
-            "rating": 4.9,
-            "reviews": 109,
-            "category": "Travel agency",
-            "wheelchairAccessible": true,
-            "phone": "+91 94690 45464",
-            "website": "http://www.greaterladakh-tours.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Greater%20Ladakh%20Tour%20and%20Travels&query_place_id=ChIJMcqAG9Xr_TgRJfR3-8iEIEY"
-        },
-        {
-            "rank": 6,
-            "companyName": "Travelling Ladakh",
-            "rating": 4.9,
-            "reviews": 89,
-            "category": "Tour operator",
-            "wheelchairAccessible": true,
-            "phone": "+91 99588 99809",
-            "website": "https://www.instagram.com/travelling_ladakh?igsh=MWtpd2Qyc2ZheTFqbQ%3D%3D&utm_source=qr",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Travelling%20Ladakh&query_place_id=ChIJ_72rEY3r_TgRbXFFPdwBbds"
-        },
-        {
-            "rank": 7,
-            "companyName": "Rural Tourism Ladakh",
-            "rating": 4.9,
-            "reviews": 66,
-            "category": "Tour operator",
-            "wheelchairAccessible": true,
-            "phone": "+91 94199 82143",
-            "website": "http://ruraltourismladakh.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Rural%20Tourism%20Ladakh&query_place_id=ChIJAdQbpT7r_TgRGzgX6gclDQY"
-        },
-        {
-            "rank": 8,
-            "companyName": "Mototour Ladakh / Himalayas Motorcycle Expedition in India",
-            "rating": 4.8,
-            "reviews": 1277,
-            "category": "Tour operator",
-            "wheelchairAccessible": true,
-            "phone": "+91 88998 25312",
-            "website": "https://www.mototourladakh.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Mototour%20Ladakh%20%2F%20Himalayas%20Motorcycle%20Expedition%20in%20India&query_place_id=ChIJO_-k1Ibr_TgRzQ4KWyZuI60"
-        },
-        {
-            "rank": 9,
-            "companyName": "Zanskar Kanishka Expeditions",
-            "rating": 4.8,
-            "reviews": 67,
-            "category": "Tour operator",
-            "wheelchairAccessible": true,
-            "phone": "+91 94690 39577",
-            "website": "http://www.zanskarkanishkaexpeditions.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Zanskar%20Kanishka%20Expeditions&query_place_id=ChIJQ8dlfj_r_TgRak1WGILa4P4"
-        },
-        {
-            "rank": 10,
-            "companyName": "Ladakh Ultimate Destination",
-            "rating": 4.8,
-            "reviews": 29,
-            "category": "Travel agency",
-            "wheelchairAccessible": true,
-            "phone": "+91 60054 32429",
-            "website": "http://www.ladakhultimatedestination.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Ladakh%20Ultimate%20Destination&query_place_id=ChIJS6czXTTr_TgR3s88HgvZo5Q"
-        },
-        {
-            "rank": 11,
-            "companyName": "Leh Ladakh Journey",
-            "rating": 4.6,
-            "reviews": 301,
-            "category": "Tour agency",
-            "wheelchairAccessible": true,
-            "phone": "+91 87001 02376",
-            "website": "http://www.lehladakhjourney.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Leh%20Ladakh%20Journey&query_place_id=ChIJZSoA90Pr_TgRY9lMjX83ws0"
-        }
-    ],
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        ],
     "Jabalpur": [
         {
             "rank": 1,
@@ -6558,18 +6353,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
             "website": "http://www.rozgaarwala.com/",
             "mapsLink": "https://www.google.com/maps/search/?api=1&query=Rozgaarwala.com&query_place_id=ChIJRyYzdN6vgTkRaOPiSQCWBdQ"
         },
-        {
-            "rank": 10,
-            "companyName": "M.P. Power Management Co. Ltd.",
-            "rating": 4.3,
-            "reviews": 159,
-            "category": "Electric utility company",
-            "wheelchairAccessible": true,
-            "phone": "+91 76126 61696",
-            "website": "http://www.mppmcl.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=M.P.%20Power%20Management%20Co.%20Ltd.&query_place_id=ChIJ_f__P2yugTkRD830v_nccX8"
-        }
-    ],
+        ],
     "Mumbai": [
         {
             "rank": 1,
@@ -7250,29 +7034,8 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
         }
     ],
     "Parel": [
-        {
-            "rank": 1,
-            "companyName": "Royal Enfield Showroom - Champavati Autos",
-            "rating": 4.6,
-            "reviews": 427,
-            "category": "Motorcycle shop",
-            "wheelchairAccessible": true,
-            "phone": "+91 82913 71701",
-            "website": "https://dealers.royalenfield.com/himachal-pradesh/chamba/parel-champavati-autos-9110065470?utm_source=GMBlisting&utm_medium=organic",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Royal%20Enfield%20Showroom%20-%20Champavati%20Autos&query_place_id=ChIJ8W5tHnO_HDkRF8d4FwIwNl0"
-        },
-        {
-            "rank": 2,
-            "companyName": "Sant Hyundai Chamba",
-            "rating": 4.6,
-            "reviews": 356,
-            "category": "Hyundai dealer",
-            "wheelchairAccessible": true,
-            "phone": "+91 98178 11255",
-            "website": "http://sant.hyundaimotor.in/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=Sant%20Hyundai%20Chamba&query_place_id=ChIJn4YvpHC-HDkRVYlg3Kh72uA"
-        }
-    ],
+        
+        ],
     "Raipur": [
         {
             "rank": 1,
@@ -7324,18 +7087,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
         }
     ],
     "Billawar": [
-        {
-            "rank": 1,
-            "companyName": "AM Hyundai Billawar",
-            "rating": 4.9,
-            "reviews": 192,
-            "category": "Car dealer",
-            "wheelchairAccessible": true,
-            "phone": "+91 88990 09122",
-            "website": "https://am.hyundaimotor.in/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=AM%20Hyundai%20Billawar&query_place_id=ChIJ0SOLfCFdHDkRrZroVn61Ou8"
-        }
-    ],
+        ],
     "Chamba": [
         {
             "rank": 1,
@@ -7556,18 +7308,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
         }
     ],
     "Pahalgam": [
-        {
-            "rank": 1,
-            "companyName": "The Jawahar Institute of Mountaineering and Winter Sports (JIM & WS)",
-            "rating": 4.4,
-            "reviews": 545,
-            "category": "Adventure sports center",
-            "wheelchairAccessible": true,
-            "phone": "+91 1936 243 002",
-            "website": "http://www.jawaharinstitutepahalgam.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20Jawahar%20Institute%20of%20Mountaineering%20and%20Winter%20Sports%20(JIM%20%26%20WS)&query_place_id=ChIJW9ih95U_4jgR4EYBK_-oj0A"
-        }
-    ],
+        ],
     "Palika Bazar Magneto mall Road": [
         {
             "rank": 1,
