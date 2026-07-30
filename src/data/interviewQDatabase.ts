@@ -29060,5 +29060,3365 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-07-29",
     "status": "published"
+  },
+  {
+    "id": "SAI-001",
+    "role_slug": "system-administrator",
+    "domain": "Infrastructure Foundations and Operating Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between administering a server and operating an infrastructure service?",
+    "preferred_answer": "Administering a server focuses on the host: installation, configuration, accounts, patches, processes and storage. Operating a service includes the complete user-facing outcome, dependencies, availability target, monitoring, backup, recovery, security, ownership and change process. A healthy server can still support a failed service if DNS, identity, network, certificates or downstream systems are broken.",
+    "evaluation_points": [
+      "Separates host tasks from service outcomes",
+      "Names dependencies and ownership",
+      "Includes monitoring and recovery",
+      "Recognises that host health is not service health"
+    ],
+    "resolution_title": "NIST SP 800-123 - General Server Security",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/123/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-002",
+    "role_slug": "system-administrator",
+    "domain": "Infrastructure Foundations and Operating Models",
+    "difficulty": "foundation",
+    "question_type": "operations",
+    "prompt": "What information should a production server record have before it is accepted into operations?",
+    "preferred_answer": "The record should identify owner, business service, environment, location, operating system and version, hardware or virtual allocation, IP and DNS data, criticality, data classification, support group, maintenance window, monitoring, backup policy, dependencies and recovery expectations. Discovery tools can populate fields, but accountable owners must validate purpose and lifecycle state.",
+    "evaluation_points": [
+      "Asset identity and owner",
+      "Configuration and network data",
+      "Criticality, monitoring and backup",
+      "Lifecycle and validation"
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-003",
+    "role_slug": "system-administrator",
+    "domain": "Infrastructure Foundations and Operating Models",
+    "difficulty": "intermediate",
+    "question_type": "governance",
+    "prompt": "How do a configuration baseline, a build standard and a runbook differ?",
+    "preferred_answer": "A build standard defines the approved target configuration for a class of systems. A baseline is the measured, versioned state against which drift and exceptions are assessed. A runbook explains how operators perform a task or respond to a condition, including prerequisites, evidence, rollback and escalation. They should reference one another but serve different control and operating purposes.",
+    "evaluation_points": [
+      "Target standard",
+      "Measured baseline",
+      "Operational procedure",
+      "Versioning and cross-reference"
+    ],
+    "resolution_title": "NIST SP 800-123 - General Server Security",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/123/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-004",
+    "role_slug": "system-administrator",
+    "domain": "Infrastructure Foundations and Operating Models",
+    "difficulty": "intermediate",
+    "question_type": "capacity",
+    "prompt": "How would you determine whether a recurring performance problem requires tuning, scaling or demand reduction?",
+    "preferred_answer": "Establish the user-impacting symptom and time window, correlate demand with CPU, memory, storage latency, network, queue and dependency metrics, and identify the constrained resource. Test whether configuration or code inefficiency causes waste before adding capacity. Compare vertical, horizontal, scheduling and demand-shaping options, then validate against cost, resilience and growth assumptions.",
+    "evaluation_points": [
+      "Starts from user impact",
+      "Correlates multiple resources",
+      "Finds the actual bottleneck",
+      "Evaluates tuning, scale and demand"
+    ],
+    "resolution_title": "OpenTelemetry observability primer",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-005",
+    "role_slug": "system-administrator",
+    "domain": "Infrastructure Foundations and Operating Models",
+    "difficulty": "intermediate",
+    "question_type": "change-management",
+    "prompt": "What makes an infrastructure change safe enough to approve?",
+    "preferred_answer": "A safe change has a clear objective, scoped assets, dependency and security impact, tested implementation, measurable success criteria, monitoring, owner, communication, maintenance window and a realistic rollback or recovery path. Risk should reflect blast radius and reversibility, not only how familiar the command appears. Standard changes still require controlled, reviewed definitions.",
+    "evaluation_points": [
+      "Clear scope and objective",
+      "Testing and success criteria",
+      "Blast radius and reversibility",
+      "Rollback, ownership and communication"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-006",
+    "role_slug": "system-administrator",
+    "domain": "Infrastructure Foundations and Operating Models",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "Why can standardisation improve reliability while also creating systemic risk?",
+    "preferred_answer": "Standard images, automation and shared platforms reduce variation, training cost and configuration drift. They can also propagate one defective image, credential, policy or automation action across the estate. Strong standardisation therefore needs staged rollout, independent recovery paths, version pinning, canaries, exception governance and evidence that common dependencies do not create an unacceptable single failure domain.",
+    "evaluation_points": [
+      "Benefits of reduced variation",
+      "Common-mode failure risk",
+      "Staged rollout and version control",
+      "Independent recovery and exception handling"
+    ],
+    "resolution_title": "NIST SP 800-123 - General Server Security",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/123/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-007",
+    "role_slug": "system-administrator",
+    "domain": "Infrastructure Foundations and Operating Models",
+    "difficulty": "advanced",
+    "question_type": "measurement",
+    "prompt": "Which operational metrics would you show infrastructure leadership, and which raw counts would you avoid?",
+    "preferred_answer": "Use service availability, user-impacting incident rate, change failure and recovery time, patch and backup compliance by criticality, capacity risk, configuration drift, recovery-test success and ageing exceptions. Show trends and uncertainty. Avoid presenting ticket volume, server count, alerts or patches installed without service impact, coverage, severity and outcome context.",
+    "evaluation_points": [
+      "Outcome-linked measures",
+      "Risk and criticality context",
+      "Recovery and drift measures",
+      "Rejects vanity activity counts"
+    ],
+    "resolution_title": "NIST SP 800-92 - Computer Security Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-008",
+    "role_slug": "system-administrator",
+    "domain": "Infrastructure Foundations and Operating Models",
+    "difficulty": "scenario",
+    "question_type": "decision",
+    "prompt": "A business team requests an urgent production server outside the standard build and monitoring process. How do you respond?",
+    "preferred_answer": "Clarify the business deadline and service impact, then identify non-negotiable identity, network, logging, vulnerability, backup and ownership controls. Offer an approved rapid-build path or a tightly constrained temporary environment. If residual risk remains, obtain an authorised, time-bounded exception with monitoring, expiry and closure actions rather than allowing an undocumented permanent snowflake.",
+    "evaluation_points": [
+      "Business context first",
+      "Minimum control set",
+      "Safer rapid path",
+      "Time-bounded exception and closure"
+    ],
+    "resolution_title": "NIST SP 800-123 - General Server Security",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/123/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-009",
+    "role_slug": "system-administrator",
+    "domain": "Linux Fundamentals, Boot and Filesystems",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Describe the major stages from Linux firmware startup to a usable multi-user system.",
+    "preferred_answer": "Firmware initialises hardware and selects a boot device; the boot loader loads the kernel and initramfs; the kernel initialises memory, drivers and core subsystems; the initramfs locates and mounts the real root filesystem; PID 1, commonly systemd, starts targets, mounts, services and login facilities. Each transition creates a different failure and recovery boundary.",
+    "evaluation_points": [
+      "Firmware and boot loader",
+      "Kernel and initramfs",
+      "Root filesystem transition",
+      "PID 1 and targets"
+    ],
+    "resolution_title": "systemd Manual",
+    "resolution_url": "https://www.freedesktop.org/software/systemd/man/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-010",
+    "role_slug": "system-administrator",
+    "domain": "Linux Fundamentals, Boot and Filesystems",
+    "difficulty": "foundation",
+    "question_type": "filesystem",
+    "prompt": "What is the difference between a filesystem, a mount point and a block device?",
+    "preferred_answer": "A block device exposes addressable storage, such as a disk, partition or logical volume. A filesystem organises files, directories, metadata and allocation on that storage. A mount point attaches the filesystem into the single Linux directory tree. Administrators should verify device identity and filesystem state before mounting because device names can change.",
+    "evaluation_points": [
+      "Block device definition",
+      "Filesystem role",
+      "Mount-point role",
+      "Stable identity awareness"
+    ],
+    "resolution_title": "Ubuntu Server - Storage",
+    "resolution_url": "https://documentation.ubuntu.com/server/how-to/storage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-011",
+    "role_slug": "system-administrator",
+    "domain": "Linux Fundamentals, Boot and Filesystems",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "A filesystem reports free space but applications cannot create files. What would you check?",
+    "preferred_answer": "Check inode exhaustion with filesystem statistics, per-user or project quotas, read-only remounts, reserved blocks, permissions and MAC policy, file-descriptor limits and application-specific temporary paths. Inspect kernel and filesystem logs for errors. Capacity in bytes is only one allocation constraint, so the diagnosis must identify the exact failed system call and filesystem.",
+    "evaluation_points": [
+      "Inodes and quotas",
+      "Read-only and reserved space",
+      "Permissions and limits",
+      "Logs and failed-operation evidence"
+    ],
+    "resolution_title": "Linux man-pages - proc(5)",
+    "resolution_url": "https://man7.org/linux/man-pages/man5/proc.5.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-012",
+    "role_slug": "system-administrator",
+    "domain": "Linux Fundamentals, Boot and Filesystems",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "How should persistent mounts be configured and validated?",
+    "preferred_answer": "Use stable identifiers such as filesystem UUIDs or logical-volume paths in the mount configuration, choose options appropriate to security and recovery, and test with a non-disruptive mount validation before reboot. Understand boot dependencies and whether failure should block startup. Back up the original configuration and confirm ownership, permissions and application access after mounting.",
+    "evaluation_points": [
+      "Stable identifiers",
+      "Appropriate mount options",
+      "Pre-reboot validation",
+      "Boot failure behaviour and application checks"
+    ],
+    "resolution_title": "Ubuntu Server - Storage",
+    "resolution_url": "https://documentation.ubuntu.com/server/how-to/storage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-013",
+    "role_slug": "system-administrator",
+    "domain": "Linux Fundamentals, Boot and Filesystems",
+    "difficulty": "intermediate",
+    "question_type": "recovery",
+    "prompt": "When would you use rescue mode, emergency mode or an external recovery environment?",
+    "preferred_answer": "Rescue mode provides a minimal local system with more services and mounted filesystems; emergency mode offers the smallest environment for severe boot or mount problems. External media or another host is appropriate when the installed kernel, initramfs, root filesystem or boot loader cannot provide a trustworthy recovery environment. Preserve evidence and make reversible changes.",
+    "evaluation_points": [
+      "Distinguishes rescue and emergency",
+      "Recognises root/boot corruption cases",
+      "Uses external environment appropriately",
+      "Preserves evidence and reversibility"
+    ],
+    "resolution_title": "systemd Manual",
+    "resolution_url": "https://www.freedesktop.org/software/systemd/man/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-014",
+    "role_slug": "system-administrator",
+    "domain": "Linux Fundamentals, Boot and Filesystems",
+    "difficulty": "advanced",
+    "question_type": "filesystem",
+    "prompt": "Why can deleting a large log file fail to release disk space immediately?",
+    "preferred_answer": "If a running process still holds the file descriptor, the directory entry disappears but allocated blocks remain until the final handle closes. Identify open deleted files through process and descriptor inspection, then rotate or restart the owning process safely. Avoid truncating or killing blindly because the service may require ordered shutdown or retain other state.",
+    "evaluation_points": [
+      "Open file descriptor mechanism",
+      "Identification method",
+      "Safe process handling",
+      "Avoids destructive guessing"
+    ],
+    "resolution_title": "Linux man-pages - proc(5)",
+    "resolution_url": "https://man7.org/linux/man-pages/man5/proc.5.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-015",
+    "role_slug": "system-administrator",
+    "domain": "Linux Fundamentals, Boot and Filesystems",
+    "difficulty": "advanced",
+    "question_type": "integrity",
+    "prompt": "How would you approach suspected filesystem corruption on a production host?",
+    "preferred_answer": "First reduce writes and capture symptoms, kernel messages, device health and recent changes. Confirm backups and failover options. Filesystem repair tools normally require the filesystem to be unmounted or in an approved maintenance state; running them against a live writable filesystem can worsen damage. Repair on a clone where possible, document decisions, and validate application-level consistency afterward.",
+    "evaluation_points": [
+      "Stops or limits writes",
+      "Collects device and kernel evidence",
+      "Uses offline/clone repair",
+      "Validates application consistency"
+    ],
+    "resolution_title": "Ubuntu Server - Storage",
+    "resolution_url": "https://documentation.ubuntu.com/server/how-to/storage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-016",
+    "role_slug": "system-administrator",
+    "domain": "Linux Fundamentals, Boot and Filesystems",
+    "difficulty": "scenario",
+    "question_type": "boot-recovery",
+    "prompt": "After a storage change, a Linux server drops into emergency mode because one non-critical mount is unavailable. What is your sequence?",
+    "preferred_answer": "Use console access, identify the failed unit and exact device reference, inspect mount configuration and storage visibility, and decide whether the service can safely boot without the mount. Correct the identifier or dependency, or use an approved non-blocking option for genuinely optional storage. Test the mount, reload configuration, continue boot and verify applications and monitoring.",
+    "evaluation_points": [
+      "Console and failed-unit evidence",
+      "Device and configuration validation",
+      "Criticality-based decision",
+      "Test, resume and verify"
+    ],
+    "resolution_title": "systemd Manual",
+    "resolution_url": "https://www.freedesktop.org/software/systemd/man/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-017",
+    "role_slug": "system-administrator",
+    "domain": "Linux Services, systemd and Process Control",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a systemd unit, and how is enabling a service different from starting it?",
+    "preferred_answer": "A unit is a systemd-managed resource such as a service, socket, timer, mount or target. Starting activates it now. Enabling creates the relationships that cause it to start when the relevant target or trigger is reached in future boots. A unit can be active but disabled, or enabled but currently failed, so both state dimensions must be checked.",
+    "evaluation_points": [
+      "Defines unit",
+      "Start is immediate",
+      "Enable affects future activation",
+      "Recognises independent states"
+    ],
+    "resolution_title": "RHEL - Managing systemd",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_basic_system_settings/managing-systemd_configuring-basic-system-settings",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-018",
+    "role_slug": "system-administrator",
+    "domain": "Linux Services, systemd and Process Control",
+    "difficulty": "foundation",
+    "question_type": "processes",
+    "prompt": "Differentiate a process, a thread and a service.",
+    "preferred_answer": "A process is an executing program with its own process identity and resource context. Threads share much of a process address space and resources while executing independently. A service is an operational capability, often supervised by a manager such as systemd and possibly implemented by multiple processes. Restarting one process does not always restore the complete service.",
+    "evaluation_points": [
+      "Process definition",
+      "Thread sharing",
+      "Service as operational capability",
+      "Avoids one-process assumption"
+    ],
+    "resolution_title": "Linux man-pages - proc(5)",
+    "resolution_url": "https://man7.org/linux/man-pages/man5/proc.5.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-019",
+    "role_slug": "system-administrator",
+    "domain": "Linux Services, systemd and Process Control",
+    "difficulty": "intermediate",
+    "question_type": "unit-design",
+    "prompt": "What should a production-quality systemd service unit specify beyond ExecStart?",
+    "preferred_answer": "It should describe ordering and dependency needs, a dedicated identity, working directory and environment handling, restart policy with limits, shutdown behaviour and timeout, resource restrictions, security hardening, logging expectations and installation target. Secrets should not be embedded in a world-readable unit. Validate the unit and daemon reload before controlled activation.",
+    "evaluation_points": [
+      "Dependencies and ordering",
+      "Identity and environment",
+      "Restart/timeout behaviour",
+      "Security and secret handling"
+    ],
+    "resolution_title": "systemd Manual",
+    "resolution_url": "https://www.freedesktop.org/software/systemd/man/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-020",
+    "role_slug": "system-administrator",
+    "domain": "Linux Services, systemd and Process Control",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "A service repeatedly restarts and then enters a failed state. How do you diagnose it?",
+    "preferred_answer": "Inspect unit status, journal entries for the current and previous attempts, exit code, start-limit counters, dependencies, environment, permissions and resource limits. Run the application only in a controlled diagnostic context, not by permanently bypassing supervision. Fix the root cause, reset the failed state if needed, start once and verify both process and service-level health.",
+    "evaluation_points": [
+      "Status and journal evidence",
+      "Exit/start-limit analysis",
+      "Checks environment and dependencies",
+      "Controlled restart and health validation"
+    ],
+    "resolution_title": "RHEL - Managing systemd",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_basic_system_settings/managing-systemd_configuring-basic-system-settings",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-021",
+    "role_slug": "system-administrator",
+    "domain": "Linux Services, systemd and Process Control",
+    "difficulty": "intermediate",
+    "question_type": "process-control",
+    "prompt": "How should an administrator choose between SIGTERM, SIGHUP and SIGKILL?",
+    "preferred_answer": "SIGTERM requests orderly termination and allows cleanup. SIGHUP conventionally requests reload or indicates terminal loss, but behaviour is application-specific. SIGKILL cannot be handled and should be a last resort after time-bounded graceful attempts and evidence capture. The administrator must know supervisor behaviour, child processes and data-integrity consequences before signalling.",
+    "evaluation_points": [
+      "Graceful termination",
+      "Application-specific reload",
+      "SIGKILL as last resort",
+      "Supervisor and integrity awareness"
+    ],
+    "resolution_title": "Linux man-pages - proc(5)",
+    "resolution_url": "https://man7.org/linux/man-pages/man5/proc.5.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-022",
+    "role_slug": "system-administrator",
+    "domain": "Linux Services, systemd and Process Control",
+    "difficulty": "advanced",
+    "question_type": "resource-control",
+    "prompt": "How do cgroups improve infrastructure reliability compared with process-level nice values alone?",
+    "preferred_answer": "Nice influences CPU scheduling priority but does not provide complete resource governance. Cgroups can account for and limit CPU, memory, I/O, process count and other resources for a service hierarchy. With systemd they create consistent service-level boundaries, reduce noisy-neighbour impact and produce measurable usage. Limits must be tested because aggressive constraints can trigger throttling or OOM termination.",
+    "evaluation_points": [
+      "Nice limitation",
+      "Multiple resource controls",
+      "Service hierarchy and accounting",
+      "Tests throttling/OOM effects"
+    ],
+    "resolution_title": "systemd.resource-control manual",
+    "resolution_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.resource-control.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-023",
+    "role_slug": "system-administrator",
+    "domain": "Linux Services, systemd and Process Control",
+    "difficulty": "advanced",
+    "question_type": "dependency-design",
+    "prompt": "Why can adding many systemd ordering directives make boot less reliable?",
+    "preferred_answer": "Over-specified ordering serialises work, creates hidden cycles and expresses timing rather than real dependency. Use requirement, ordering and readiness semantics only where the service truly depends on another resource. Prefer socket activation or explicit application health where suitable. Analyse the dependency graph and critical chain instead of adding sleeps or blanket After relationships.",
+    "evaluation_points": [
+      "Over-serialization and cycles",
+      "Real dependency versus timing",
+      "Activation/readiness alternatives",
+      "Graph and critical-chain analysis"
+    ],
+    "resolution_title": "systemd Manual",
+    "resolution_url": "https://www.freedesktop.org/software/systemd/man/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-024",
+    "role_slug": "system-administrator",
+    "domain": "Linux Services, systemd and Process Control",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "A database service is active according to systemd, but clients receive connection failures. What do you check?",
+    "preferred_answer": "Confirm listening sockets and bound addresses, application readiness, local and remote connectivity, authentication, firewall and name resolution, then inspect service and database logs. An active main process only means supervision has not declared failure. Avoid restart-first troubleshooting; preserve evidence, identify whether the issue is process, configuration, dependency, capacity or network, then apply the smallest reversible fix.",
+    "evaluation_points": [
+      "Distinguishes active from ready",
+      "Checks sockets and connectivity",
+      "Uses logs and dependencies",
+      "Avoids restart-first behaviour"
+    ],
+    "resolution_title": "RHEL - Managing systemd",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_basic_system_settings/managing-systemd_configuring-basic-system-settings",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-025",
+    "role_slug": "system-administrator",
+    "domain": "Linux Identity, Permissions, sudo and Authentication",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do user identity, group membership and file mode bits combine to determine Linux access?",
+    "preferred_answer": "The kernel evaluates the effective user and groups of a process against file ownership and permission classes, then applies relevant ACL and mandatory-access rules. Owner, group and other mode bits provide read, write and execute semantics that differ for files and directories. Root privilege, capabilities and service confinement can alter the effective decision path.",
+    "evaluation_points": [
+      "Effective identity",
+      "Owner/group/other classes",
+      "File versus directory semantics",
+      "ACL/MAC/capability layers"
+    ],
+    "resolution_title": "RHEL - Managing users and groups",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_basic_system_settings/assembly_managing-users-and-groups_configuring-basic-system-settings",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-026",
+    "role_slug": "system-administrator",
+    "domain": "Linux Identity, Permissions, sudo and Authentication",
+    "difficulty": "foundation",
+    "question_type": "permissions",
+    "prompt": "What do the setuid, setgid and sticky bits do?",
+    "preferred_answer": "Setuid on an executable can run it with the file owner identity; setgid can run with the file group and, on directories, cause new entries to inherit the directory group. The sticky bit on a shared directory restricts deletion or rename to authorised owners. These features solve specific delegation problems but increase review and abuse risk.",
+    "evaluation_points": [
+      "Setuid behaviour",
+      "Setgid executable and directory behaviour",
+      "Sticky directory behaviour",
+      "Security review implication"
+    ],
+    "resolution_title": "RHEL - Managing users and groups",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_basic_system_settings/assembly_managing-users-and-groups_configuring-basic-system-settings",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-027",
+    "role_slug": "system-administrator",
+    "domain": "Linux Identity, Permissions, sudo and Authentication",
+    "difficulty": "intermediate",
+    "question_type": "delegation",
+    "prompt": "How should sudo access be designed for an operations team?",
+    "preferred_answer": "Grant named users or managed groups only the commands and target identities required, preferably through included policy fragments with validation. Avoid broad shell escapes, writable scripts and wildcard arguments that expand privilege. Require appropriate authentication and logging, protect policy files, test with the exact user context and provide controlled emergency access.",
+    "evaluation_points": [
+      "Group-based least privilege",
+      "Command and argument risk",
+      "Validation and logging",
+      "Emergency access control"
+    ],
+    "resolution_title": "RHEL - Managing users and groups",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_basic_system_settings/assembly_managing-users-and-groups_configuring-basic-system-settings",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-028",
+    "role_slug": "system-administrator",
+    "domain": "Linux Identity, Permissions, sudo and Authentication",
+    "difficulty": "intermediate",
+    "question_type": "authentication",
+    "prompt": "Why is SSH public-key authentication not automatically secure?",
+    "preferred_answer": "Key authentication removes reusable passwords from the protocol, but private keys can be copied, unencrypted, shared or left on compromised endpoints. Security depends on key generation, storage, passphrases or hardware backing, authorised-key restrictions, account lifecycle, host-key verification, logging and revocation. Short-lived certificates or centrally managed access can reduce static-key sprawl.",
+    "evaluation_points": [
+      "Private-key compromise risk",
+      "Authorised-key restrictions",
+      "Host verification and lifecycle",
+      "Short-lived or managed alternatives"
+    ],
+    "resolution_title": "OpenSSH Server documentation",
+    "resolution_url": "https://man.openbsd.org/sshd_config",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-029",
+    "role_slug": "system-administrator",
+    "domain": "Linux Identity, Permissions, sudo and Authentication",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "A user can read a directory listing but cannot create or delete files. How do you diagnose it?",
+    "preferred_answer": "Check execute and write permissions on the directory, ownership and effective groups, default and access ACLs, sticky-bit behaviour, filesystem mount options, quotas, read-only state and SELinux or AppArmor denials. Reproduce with the user identity and inspect the exact failing operation. Changing permissions recursively without understanding inheritance can create a larger exposure.",
+    "evaluation_points": [
+      "Directory permission semantics",
+      "ACL and sticky-bit checks",
+      "Filesystem/MAC checks",
+      "Reproduces exact operation safely"
+    ],
+    "resolution_title": "RHEL - Managing users and groups",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_basic_system_settings/assembly_managing-users-and-groups_configuring-basic-system-settings",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-030",
+    "role_slug": "system-administrator",
+    "domain": "Linux Identity, Permissions, sudo and Authentication",
+    "difficulty": "advanced",
+    "question_type": "privilege",
+    "prompt": "How do Linux capabilities reduce risk compared with running an entire service as root?",
+    "preferred_answer": "Capabilities divide selected root powers into narrower privileges that can be granted to a process or executable. A service can bind a low port or perform another specific operation without unrestricted root authority. The design must minimise the capability set, prevent privilege regain, use a dedicated identity and combine capabilities with filesystem, namespace, seccomp and MAC controls.",
+    "evaluation_points": [
+      "Granular privilege concept",
+      "Specific use example",
+      "Minimal capability set",
+      "Layered confinement"
+    ],
+    "resolution_title": "NIST SP 800-123 - General Server Security",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/123/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-031",
+    "role_slug": "system-administrator",
+    "domain": "Linux Identity, Permissions, sudo and Authentication",
+    "difficulty": "advanced",
+    "question_type": "identity-governance",
+    "prompt": "What should a privileged-account review prove on Linux servers?",
+    "preferred_answer": "It should prove that interactive and service accounts are attributable, current, purpose-limited and owned; sudo and group privileges match responsibilities; SSH keys and certificates remain valid; inactive access is removed; break-glass use is controlled; and automation identities are scoped and rotated. Review quality requires usage evidence, not only a list of accounts.",
+    "evaluation_points": [
+      "Attribution and current need",
+      "Sudo/group/key review",
+      "Service and break-glass ownership",
+      "Usage evidence and removal"
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-032",
+    "role_slug": "system-administrator",
+    "domain": "Linux Identity, Permissions, sudo and Authentication",
+    "difficulty": "scenario",
+    "question_type": "access-incident",
+    "prompt": "A contractor account is disabled centrally, but its SSH key still works on several Linux servers. What do you do?",
+    "preferred_answer": "Contain access by removing or revoking the key and active sessions through a controlled central response, preserve authentication and command evidence, identify every authorised_keys copy or alternate account, and assess actions performed. Repair the provisioning and offboarding path, move toward centrally managed or short-lived credentials, and verify the same defect does not affect other departures.",
+    "evaluation_points": [
+      "Immediate containment",
+      "Evidence and scope",
+      "Finds alternate access paths",
+      "Repairs lifecycle control"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-033",
+    "role_slug": "system-administrator",
+    "domain": "Linux Networking, Name Resolution and Firewalling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What information does a Linux host need to communicate beyond its local subnet?",
+    "preferred_answer": "It needs a configured interface with an address and prefix, a route to the destination or a default gateway, working link and neighbour resolution, and any required DNS configuration. The remote path and return route must also exist, and host or network policy must allow the traffic. DNS is not required when a correct IP is used, but applications may still depend on names or certificates.",
+    "evaluation_points": [
+      "Address and prefix",
+      "Route/default gateway",
+      "Neighbour/link and return path",
+      "Policy and DNS distinction"
+    ],
+    "resolution_title": "Ubuntu Server - Networking",
+    "resolution_url": "https://documentation.ubuntu.com/server/how-to/networking/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-034",
+    "role_slug": "system-administrator",
+    "domain": "Linux Networking, Name Resolution and Firewalling",
+    "difficulty": "foundation",
+    "question_type": "diagnostics",
+    "prompt": "What is the difference between a listening socket and an established connection?",
+    "preferred_answer": "A listening socket waits on a local address, protocol and port for inbound connection attempts. An established connection represents a specific local and remote endpoint pair with state. A process can be running without listening, can listen only on loopback or one address, or can accept connections while the application behind them is unhealthy.",
+    "evaluation_points": [
+      "Listening purpose",
+      "Established endpoint pair",
+      "Binding scope",
+      "Process health versus application health"
+    ],
+    "resolution_title": "Linux man-pages - proc(5)",
+    "resolution_url": "https://man7.org/linux/man-pages/man5/proc.5.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-035",
+    "role_slug": "system-administrator",
+    "domain": "Linux Networking, Name Resolution and Firewalling",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "How do you diagnose a hostname that resolves differently on two Linux servers?",
+    "preferred_answer": "Compare resolver configuration, search domains, name-service switch order, local hosts files, caching services, DNS server selection and split-horizon context. Query the authoritative or expected resolver directly and compare record type, TTL and DNSSEC or policy behaviour. Avoid clearing caches before preserving evidence because the difference may be time-sensitive.",
+    "evaluation_points": [
+      "Resolver and NSS comparison",
+      "Local overrides and cache",
+      "Direct authoritative query",
+      "Preserves time-sensitive evidence"
+    ],
+    "resolution_title": "Ubuntu Server - Networking",
+    "resolution_url": "https://documentation.ubuntu.com/server/how-to/networking/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-036",
+    "role_slug": "system-administrator",
+    "domain": "Linux Networking, Name Resolution and Firewalling",
+    "difficulty": "intermediate",
+    "question_type": "firewall",
+    "prompt": "How should firewalld zones and services be used rather than opening raw ports everywhere?",
+    "preferred_answer": "Assign interfaces or sources to trust zones that reflect exposure, then allow named services or narrowly scoped ports required by the workload. Keep runtime and permanent configuration aligned, document ownership and test from each relevant path. Rich rules may add source or logging conditions, but overly complex host policy should not replace clear network architecture.",
+    "evaluation_points": [
+      "Zones reflect trust/exposure",
+      "Named services and narrow scope",
+      "Runtime versus permanent",
+      "Path testing and architecture awareness"
+    ],
+    "resolution_title": "RHEL - Using and configuring firewalld",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld_firewall-packet-filters",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-037",
+    "role_slug": "system-administrator",
+    "domain": "Linux Networking, Name Resolution and Firewalling",
+    "difficulty": "intermediate",
+    "question_type": "packet-flow",
+    "prompt": "A remote client times out, but a local curl succeeds. What layers would you inspect?",
+    "preferred_answer": "Confirm the service binding is not loopback-only, the host route and firewall, upstream security devices, load balancer or NAT, and the remote return path. Capture packets at the host to determine whether requests arrive and whether responses leave. Correlate with application and firewall logs. This separates network absence, policy drop, reset and application delay.",
+    "evaluation_points": [
+      "Binding scope",
+      "Host and upstream policy",
+      "Packet capture at boundary",
+      "Return path and log correlation"
+    ],
+    "resolution_title": "Ubuntu Server - Networking",
+    "resolution_url": "https://documentation.ubuntu.com/server/how-to/networking/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-038",
+    "role_slug": "system-administrator",
+    "domain": "Linux Networking, Name Resolution and Firewalling",
+    "difficulty": "advanced",
+    "question_type": "routing",
+    "prompt": "Why can asymmetric routing break a stateful service even when both directions are technically reachable?",
+    "preferred_answer": "Stateful firewalls, NAT devices and load balancers track flows and may reject return traffic that crosses a different state table or interface. Reverse-path filtering and source selection can also drop or misroute packets. Diagnose with route lookups from both endpoints, captures on each interface and device session state, then correct topology or policy deliberately.",
+    "evaluation_points": [
+      "Stateful middlebox behaviour",
+      "NAT/session-state issue",
+      "Reverse path/source selection",
+      "Multi-point evidence"
+    ],
+    "resolution_title": "Ubuntu Server - Networking",
+    "resolution_url": "https://documentation.ubuntu.com/server/how-to/networking/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-039",
+    "role_slug": "system-administrator",
+    "domain": "Linux Networking, Name Resolution and Firewalling",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "What are the limitations of using an IP allow-list as the primary service identity control?",
+    "preferred_answer": "Addresses can be shared, reassigned, spoofed in some contexts or hidden behind NAT and proxies; they identify network location rather than user or workload. Use strong authentication, encrypted transport and application authorisation, with network policy as a blast-radius layer. Dynamic infrastructure also makes static lists operationally brittle and encourages broad exceptions.",
+    "evaluation_points": [
+      "IP is location, not identity",
+      "NAT/dynamic limitations",
+      "Authentication and authorisation layers",
+      "Network policy as defence in depth"
+    ],
+    "resolution_title": "NIST SP 800-123 - General Server Security",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/123/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-040",
+    "role_slug": "system-administrator",
+    "domain": "Linux Networking, Name Resolution and Firewalling",
+    "difficulty": "scenario",
+    "question_type": "diagnosis",
+    "prompt": "After a firewall change, an application can reach its database by IP but not by hostname. What do you do?",
+    "preferred_answer": "Treat it as a name-resolution path problem rather than a database-port problem. Check resolver reachability over the required transport, resolver configuration, cache and search behaviour, then query the expected DNS server directly. Verify the returned address and TTL, restore only the necessary DNS path, and validate both resolution and application connection before closing the change.",
+    "evaluation_points": [
+      "Correctly isolates DNS layer",
+      "Checks resolver path and configuration",
+      "Direct query and record validation",
+      "Minimal correction and end-to-end verification"
+    ],
+    "resolution_title": "Ubuntu Server - Networking",
+    "resolution_url": "https://documentation.ubuntu.com/server/how-to/networking/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-041",
+    "role_slug": "system-administrator",
+    "domain": "Linux Security Hardening, SELinux and AppArmor",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How does mandatory access control differ from normal Linux discretionary permissions?",
+    "preferred_answer": "Discretionary access control uses file ownership, mode bits and ACLs that owners or privileged users can modify. Mandatory access control applies centrally defined policy to process and object labels or profiles, limiting what even a compromised service identity can access. Both layers are evaluated; permissive DAC does not override an SELinux denial.",
+    "evaluation_points": [
+      "DAC ownership model",
+      "MAC policy model",
+      "Process/object confinement",
+      "Layered evaluation"
+    ],
+    "resolution_title": "RHEL 10 - Using SELinux",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-042",
+    "role_slug": "system-administrator",
+    "domain": "Linux Security Hardening, SELinux and AppArmor",
+    "difficulty": "foundation",
+    "question_type": "hardening",
+    "prompt": "What is the purpose of a secure server baseline?",
+    "preferred_answer": "A secure baseline defines approved settings for a platform and workload: minimal packages and services, identity rules, remote access, cryptography, logging, patching, firewall, storage and recovery controls. It must be versioned, tested for compatibility and measurable for drift. A benchmark is a starting point; risk and service requirements determine justified tailoring.",
+    "evaluation_points": [
+      "Approved configuration set",
+      "Minimal attack surface",
+      "Versioning and drift",
+      "Tailoring rather than blind benchmark use"
+    ],
+    "resolution_title": "NIST SP 800-123 - General Server Security",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/123/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-043",
+    "role_slug": "system-administrator",
+    "domain": "Linux Security Hardening, SELinux and AppArmor",
+    "difficulty": "intermediate",
+    "question_type": "selinux",
+    "prompt": "How do you investigate an SELinux denial without immediately using audit2allow?",
+    "preferred_answer": "Reproduce the operation, inspect AVC records and surrounding application logs, identify source context, target context, class and requested permission, then determine whether labeling, deployment path, boolean or application behaviour is wrong. Restore expected labels or use supported policy controls first. Generate custom policy only when the access is legitimate, narrow and tested.",
+    "evaluation_points": [
+      "AVC evidence fields",
+      "Checks labels and booleans",
+      "Validates intended behaviour",
+      "Custom policy as controlled last step"
+    ],
+    "resolution_title": "RHEL 10 - Using SELinux",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-044",
+    "role_slug": "system-administrator",
+    "domain": "Linux Security Hardening, SELinux and AppArmor",
+    "difficulty": "intermediate",
+    "question_type": "hardening",
+    "prompt": "Why is disabling an unused service stronger than merely blocking its network port?",
+    "preferred_answer": "A blocked port reduces one network path, but the code, privileges, local socket, scheduled activity, dependencies and patch obligation remain. Disabling and removing unnecessary components reduces attack surface and operational complexity. Before removal, verify no monitoring, backup, cluster or recovery dependency relies on the component and record the standard change.",
+    "evaluation_points": [
+      "Network control limitation",
+      "Code and privilege remain",
+      "Attack-surface reduction",
+      "Dependency and change validation"
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "B",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-045",
+    "role_slug": "system-administrator",
+    "domain": "Linux Security Hardening, SELinux and AppArmor",
+    "difficulty": "intermediate",
+    "question_type": "remote-access",
+    "prompt": "What controls should protect administrative SSH access to production Linux servers?",
+    "preferred_answer": "Use managed identities and keys or certificates, strong endpoint security, least-privilege sudo, restricted network paths, host-key verification, disabled direct root login where practical, session and authentication logging, rate protection and rapid revocation. Bastions can centralise control but become critical assets that require redundancy, monitoring and emergency access design.",
+    "evaluation_points": [
+      "Managed credentials",
+      "Least privilege and root restrictions",
+      "Network/logging/revocation",
+      "Bastion trade-offs"
+    ],
+    "resolution_title": "OpenSSH Server documentation",
+    "resolution_url": "https://man.openbsd.org/sshd_config",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-046",
+    "role_slug": "system-administrator",
+    "domain": "Linux Security Hardening, SELinux and AppArmor",
+    "difficulty": "advanced",
+    "question_type": "policy-design",
+    "prompt": "What can go wrong when a team writes a broad SELinux allow rule to stop repeated alerts?",
+    "preferred_answer": "The rule may legitimise an unintended data flow, allow many processes or objects through generic types, and hide a deployment or labeling defect. Policy should map to the exact service domain, object type and operation, with negative tests and review of future path changes. Alert reduction is not evidence that risk is reduced.",
+    "evaluation_points": [
+      "Broad type/permission risk",
+      "May hide root cause",
+      "Narrow policy and negative tests",
+      "Noise reduction versus security outcome"
+    ],
+    "resolution_title": "RHEL 10 - Using SELinux",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-047",
+    "role_slug": "system-administrator",
+    "domain": "Linux Security Hardening, SELinux and AppArmor",
+    "difficulty": "advanced",
+    "question_type": "hardening",
+    "prompt": "How do you harden a server without making recovery impossible?",
+    "preferred_answer": "Preserve an independently tested console or emergency path, documented break-glass credentials, signed and versioned baseline, recovery media, backups and rollback. Apply controls in staged groups with health and access tests. Protect recovery channels from normal compromise while avoiding one control that can lock out every administrator or disable all evidence.",
+    "evaluation_points": [
+      "Independent recovery path",
+      "Break-glass governance",
+      "Staged application and tests",
+      "Avoids common lockout/evidence failure"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-048",
+    "role_slug": "system-administrator",
+    "domain": "Linux Security Hardening, SELinux and AppArmor",
+    "difficulty": "scenario",
+    "question_type": "security-diagnosis",
+    "prompt": "A newly deployed web service works only after SELinux is set to permissive. What is the correct response?",
+    "preferred_answer": "Return to a controlled diagnostic window, capture AVC and application evidence, confirm expected file and port labels, service identity, deployment location and required network access. Apply supported labeling or boolean changes where appropriate; otherwise create the narrowest reviewed policy module. Restore enforcing mode and test normal, failure and restart paths before production acceptance.",
+    "evaluation_points": [
+      "Does not leave permissive mode",
+      "Evidence-led diagnosis",
+      "Supported labels/booleans first",
+      "Narrow policy and enforcing validation"
+    ],
+    "resolution_title": "RHEL 10 - Using SELinux",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-049",
+    "role_slug": "system-administrator",
+    "domain": "Windows Server Foundations and Remote Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between a Windows Server role, role service and feature?",
+    "preferred_answer": "A role provides a primary server capability such as AD DS, DNS or Hyper-V. Role services are selectable subcomponents of a role. Features support or extend the operating system and roles, such as management tools or clustering. Administrators should install only required components, record dependencies and use repeatable methods rather than adding features interactively without ownership.",
+    "evaluation_points": [
+      "Role definition",
+      "Role-service definition",
+      "Feature definition",
+      "Minimal repeatable installation"
+    ],
+    "resolution_title": "Windows Server documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-050",
+    "role_slug": "system-administrator",
+    "domain": "Windows Server Foundations and Remote Administration",
+    "difficulty": "foundation",
+    "question_type": "platform",
+    "prompt": "Why might an organisation choose Server Core instead of Desktop Experience?",
+    "preferred_answer": "Server Core has a smaller local interface and component footprint, which can reduce servicing, attack surface and resource use. It requires mature remote management, PowerShell and recovery procedures. Desktop Experience may be justified by application or operational requirements, but convenience alone should be weighed against standardisation and lifecycle cost.",
+    "evaluation_points": [
+      "Smaller footprint benefits",
+      "Remote-management requirement",
+      "Application compatibility consideration",
+      "Balanced operational trade-off"
+    ],
+    "resolution_title": "Windows Server documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-051",
+    "role_slug": "system-administrator",
+    "domain": "Windows Server Foundations and Remote Administration",
+    "difficulty": "intermediate",
+    "question_type": "remote-management",
+    "prompt": "How does PowerShell remoting differ from ordinary Remote Desktop administration?",
+    "preferred_answer": "PowerShell remoting executes structured commands and scripts through managed endpoints, supports fan-out, automation and constrained sessions, and returns objects rather than screen interactions. Remote Desktop provides an interactive graphical session and can encourage one-host-at-a-time changes. Both require identity, transport, logging, endpoint controls and a recovery path.",
+    "evaluation_points": [
+      "Structured remote execution",
+      "Scale and automation",
+      "RDP interactive distinction",
+      "Security and recovery controls"
+    ],
+    "resolution_title": "PowerShell remoting",
+    "resolution_url": "https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/powershell-remoting-faq",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-052",
+    "role_slug": "system-administrator",
+    "domain": "Windows Server Foundations and Remote Administration",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "What should be checked before installing a new Windows Server role in production?",
+    "preferred_answer": "Confirm business purpose, supported OS and application versions, role dependencies, ports, identity and certificate needs, storage and capacity, restart impact, high-availability design, backup and rollback, monitoring and licensing. Test the installation and removal path in a representative environment, then record the configuration through PowerShell, DSC or another controlled method.",
+    "evaluation_points": [
+      "Purpose and compatibility",
+      "Dependencies and security",
+      "Restart/HA/backup impact",
+      "Repeatable tested deployment"
+    ],
+    "resolution_title": "Windows Server documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-053",
+    "role_slug": "system-administrator",
+    "domain": "Windows Server Foundations and Remote Administration",
+    "difficulty": "intermediate",
+    "question_type": "management",
+    "prompt": "Where does Windows Admin Center help, and where should it not become the only operating method?",
+    "preferred_answer": "It provides browser-based management for servers, clusters, storage, updates and selected Azure integrations, which can improve visibility and reduce local logons. It should complement, not replace, scripted configuration, version control, auditing and documented CLI recovery. The gateway is a privileged management asset that needs hardening, availability and access governance.",
+    "evaluation_points": [
+      "Management benefits",
+      "Automation remains necessary",
+      "Gateway security",
+      "CLI/recovery path"
+    ],
+    "resolution_title": "Windows Admin Center overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-054",
+    "role_slug": "system-administrator",
+    "domain": "Windows Server Foundations and Remote Administration",
+    "difficulty": "advanced",
+    "question_type": "delegation",
+    "prompt": "How can Just Enough Administration reduce Windows administrative risk?",
+    "preferred_answer": "JEA exposes a constrained PowerShell endpoint that permits defined commands, parameters and virtual or managed identities without granting broad administrator membership. Effective design requires command and provider review, transcription or logging, endpoint protection, testing for escape paths and an ownership process. Poorly scoped functions can still provide indirect privilege escalation.",
+    "evaluation_points": [
+      "Constrained endpoint concept",
+      "No broad admin requirement",
+      "Logging and testing",
+      "Indirect escape-path risk"
+    ],
+    "resolution_title": "Just Enough Administration overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/jea/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-055",
+    "role_slug": "system-administrator",
+    "domain": "Windows Server Foundations and Remote Administration",
+    "difficulty": "advanced",
+    "question_type": "operations",
+    "prompt": "What are the dangers of relying on interactive administrator actions as the primary Windows Server operating model?",
+    "preferred_answer": "Interactive changes are harder to reproduce, review, test and compare for drift; they scale poorly and can create undocumented local differences. Use desired-state or scripted changes, central inventory, staged deployment and evidence capture. Interactive work remains valuable for diagnosis and exceptional recovery, but the final correction should be converted into a controlled repeatable process.",
+    "evaluation_points": [
+      "Reproducibility and drift problem",
+      "Scale and audit limitations",
+      "Automation and staged deployment",
+      "Interactive diagnosis versus permanent fix"
+    ],
+    "resolution_title": "PowerShell Desired State Configuration overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/powershell/dsc/overview?view=dsc-3.0",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-056",
+    "role_slug": "system-administrator",
+    "domain": "Windows Server Foundations and Remote Administration",
+    "difficulty": "scenario",
+    "question_type": "remote-access",
+    "prompt": "A remote Windows server stops accepting PowerShell remoting after a security baseline change, but the application is healthy. What do you do?",
+    "preferred_answer": "Use an approved alternate management path such as console, out-of-band access or a controlled RDP session. Preserve firewall, WinRM, certificate, policy and event evidence; compare the applied baseline and endpoint configuration; restore only the required management path; and test authentication, authorisation and logging. Do not weaken the complete baseline or expose WinRM broadly.",
+    "evaluation_points": [
+      "Alternate controlled access",
+      "WinRM/firewall/policy evidence",
+      "Minimal targeted correction",
+      "Validates security and logging"
+    ],
+    "resolution_title": "PowerShell remoting",
+    "resolution_url": "https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/powershell-remoting-faq",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-057",
+    "role_slug": "system-administrator",
+    "domain": "Active Directory Domain Services and Directory Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate an Active Directory forest, domain, organisational unit and site.",
+    "preferred_answer": "A forest is the top security and schema boundary containing one or more domains. A domain provides a directory partition, DNS namespace and administrative boundary for identities and policies. An OU organises objects for delegation and Group Policy, not network topology. A site represents well-connected network locations and guides authentication and replication behaviour.",
+    "evaluation_points": [
+      "Forest boundary",
+      "Domain function",
+      "OU for delegation/policy",
+      "Site for topology"
+    ],
+    "resolution_title": "Active Directory Domain Services overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-058",
+    "role_slug": "system-administrator",
+    "domain": "Active Directory Domain Services and Directory Operations",
+    "difficulty": "foundation",
+    "question_type": "operations",
+    "prompt": "Why should domain controllers be treated differently from ordinary member servers?",
+    "preferred_answer": "Domain controllers hold and replicate identity, authentication and policy data and can influence the entire domain or forest. They require limited roles, protected administration paths, strong time and DNS health, secured backups, monitored replication and carefully controlled virtualization and recovery. Local account assumptions also differ because AD DS owns the security database.",
+    "evaluation_points": [
+      "Identity control-plane role",
+      "Limited additional workloads",
+      "DNS/time/replication importance",
+      "Special backup and recovery handling"
+    ],
+    "resolution_title": "Active Directory Domain Services overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-059",
+    "role_slug": "system-administrator",
+    "domain": "Active Directory Domain Services and Directory Operations",
+    "difficulty": "intermediate",
+    "question_type": "replication",
+    "prompt": "How do AD sites and site links influence replication and logon behaviour?",
+    "preferred_answer": "Subnets map clients and domain controllers to sites. Intra-site replication is optimised for speed, while site links represent WAN connectivity, cost and schedules for inter-site replication. Incorrect subnet mapping can send clients to remote controllers and hide replication design problems. Validate topology against real network paths and monitor replication latency and failures.",
+    "evaluation_points": [
+      "Subnet-to-site mapping",
+      "Intra/inter-site distinction",
+      "Client DC location impact",
+      "Topology and monitoring validation"
+    ],
+    "resolution_title": "Active Directory Domain Services overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-060",
+    "role_slug": "system-administrator",
+    "domain": "Active Directory Domain Services and Directory Operations",
+    "difficulty": "intermediate",
+    "question_type": "operations",
+    "prompt": "What are the FSMO roles, and why should administrators understand their placement?",
+    "preferred_answer": "The schema master and domain naming master are forest-wide; RID master, PDC emulator and infrastructure master are per-domain. Most directory operations are multi-master, but these roles coordinate specific functions. Placement should consider availability, connectivity, time service and operational access. Transfer is preferred; seizure is an exceptional recovery action with follow-up validation.",
+    "evaluation_points": [
+      "Five roles and scopes",
+      "Specific coordination purpose",
+      "Placement factors",
+      "Transfer versus seizure"
+    ],
+    "resolution_title": "Active Directory Domain Services overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-061",
+    "role_slug": "system-administrator",
+    "domain": "Active Directory Domain Services and Directory Operations",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "A user can authenticate at one site but receives old group membership at another. What do you investigate?",
+    "preferred_answer": "Confirm which domain controllers handled each request, replication health and convergence, site/subnet mapping, global catalog needs, token refresh and whether the change affected a universal, global or domain-local group. Check time and DNS. Avoid repeatedly changing memberships; preserve replication metadata and fix the topology or failed partner.",
+    "evaluation_points": [
+      "Identifies authenticating DCs",
+      "Replication and site checks",
+      "Group-scope/token awareness",
+      "Avoids masking with repeated changes"
+    ],
+    "resolution_title": "ActiveDirectory PowerShell module",
+    "resolution_url": "https://learn.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2025-ps",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-062",
+    "role_slug": "system-administrator",
+    "domain": "Active Directory Domain Services and Directory Operations",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "When is a separate domain justified instead of another OU?",
+    "preferred_answer": "A separate domain may be justified by namespace, replication, legacy application or exceptional administrative requirements, but it adds controllers, DNS, policy, trust and recovery complexity. OUs already support delegation and policy segmentation. Security isolation often requires a separate forest or modern privileged-access design, so a domain should not be created merely for organisation charts.",
+    "evaluation_points": [
+      "OU capabilities first",
+      "Domain operational cost",
+      "Security-boundary nuance",
+      "Evidence-based justification"
+    ],
+    "resolution_title": "Active Directory Domain Services overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-063",
+    "role_slug": "system-administrator",
+    "domain": "Active Directory Domain Services and Directory Operations",
+    "difficulty": "advanced",
+    "question_type": "recovery",
+    "prompt": "Why is restoring a domain controller snapshot not equivalent to a supported directory recovery plan?",
+    "preferred_answer": "Directory recovery must account for replicated state, invocation identity, USNs, tombstones, authoritative versus non-authoritative restore and application-consistent system state. Hypervisor snapshots may be supported only under specific safeguards and do not replace tested AD-aware backup. Recovery objectives should include forest-level compromise and identity trust rebuilding.",
+    "evaluation_points": [
+      "Replicated-state complexity",
+      "AD-aware backup",
+      "Authoritative/non-authoritative distinction",
+      "Forest recovery and trust rebuilding"
+    ],
+    "resolution_title": "Active Directory Domain Services overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-064",
+    "role_slug": "system-administrator",
+    "domain": "Active Directory Domain Services and Directory Operations",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "Replication monitoring shows one domain controller has been isolated for weeks and now reconnects. What do you do?",
+    "preferred_answer": "Keep it isolated until you assess OS, directory and security health, time offline, replication metadata, lingering-object risk and whether credentials or data may be stale or compromised. Decide whether safe repair is supported or demotion/rebuild is lower risk. Preserve logs, validate remaining domain health, and reintroduce only through a controlled documented plan.",
+    "evaluation_points": [
+      "Maintains isolation",
+      "Assesses offline duration and metadata",
+      "Repair versus rebuild decision",
+      "Validates domain before reintroduction"
+    ],
+    "resolution_title": "Active Directory Domain Services overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-065",
+    "role_slug": "system-administrator",
+    "domain": "Group Policy, Certificates and Privileged Windows Identity",
+    "difficulty": "foundation",
+    "question_type": "group-policy",
+    "prompt": "How is Group Policy linked and processed for a domain-joined computer or user?",
+    "preferred_answer": "Group Policy objects are linked to sites, domains and OUs, while security filtering and WMI filters can refine applicability. Processing normally follows local, site, domain and OU order, with inheritance, enforcement and loopback affecting outcomes. The GPO is not stored inside the OU; links and permissions determine where it applies.",
+    "evaluation_points": [
+      "GPO versus link",
+      "LSDOU processing",
+      "Filtering and inheritance",
+      "Loopback/enforcement awareness"
+    ],
+    "resolution_title": "Group Policy overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-policy/group-policy-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-066",
+    "role_slug": "system-administrator",
+    "domain": "Group Policy, Certificates and Privileged Windows Identity",
+    "difficulty": "foundation",
+    "question_type": "certificates",
+    "prompt": "What problem does a public key certificate solve in infrastructure?",
+    "preferred_answer": "A certificate binds a public key to a named subject or service through a trusted issuer and defined usage. It supports authentication, encryption key establishment and signatures, but trust also depends on private-key protection, hostname or identity validation, chain, expiry and revocation. A certificate does not make an insecure application or protocol secure by itself.",
+    "evaluation_points": [
+      "Key-to-identity binding",
+      "Trust chain and usage",
+      "Private-key and expiry/revocation",
+      "Layered security limitation"
+    ],
+    "resolution_title": "Active Directory Certificate Services overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-cs/active-directory-certificate-services-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-067",
+    "role_slug": "system-administrator",
+    "domain": "Group Policy, Certificates and Privileged Windows Identity",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "A GPO setting appears in the editor but not on a target server. What do you check?",
+    "preferred_answer": "Confirm the object is in the expected site/domain/OU, link and inheritance state, security filtering, WMI filter, permissions, computer versus user scope, loopback mode and replication. Generate resultant-set and event evidence on the target, then compare policy versions. Forcing repeated updates without understanding applicability can conceal topology or filtering errors.",
+    "evaluation_points": [
+      "Scope and link checks",
+      "Filters and permissions",
+      "RSoP/event evidence",
+      "Replication and version check"
+    ],
+    "resolution_title": "Group Policy overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-policy/group-policy-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-068",
+    "role_slug": "system-administrator",
+    "domain": "Group Policy, Certificates and Privileged Windows Identity",
+    "difficulty": "intermediate",
+    "question_type": "privileged-access",
+    "prompt": "How does Windows LAPS reduce local administrator risk?",
+    "preferred_answer": "LAPS generates and rotates unique local administrator passwords and stores authorised recovery data in Active Directory or Entra ID. It limits password reuse and lateral movement, but requires access control, auditing, backup and directory security. Rotation policy, account selection, encrypted storage and emergency retrieval should be tested as a lifecycle, not only enabled.",
+    "evaluation_points": [
+      "Unique rotating passwords",
+      "Directory storage and access control",
+      "Reduces reuse/lateral movement",
+      "Lifecycle testing and auditing"
+    ],
+    "resolution_title": "Windows Local Administrator Password Solution",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-069",
+    "role_slug": "system-administrator",
+    "domain": "Group Policy, Certificates and Privileged Windows Identity",
+    "difficulty": "intermediate",
+    "question_type": "service-identity",
+    "prompt": "When should a group Managed Service Account be used?",
+    "preferred_answer": "A gMSA suits supported Windows services or scheduled tasks that need a domain identity across one or more approved hosts without manually managed passwords. Active Directory handles password rotation and authorised retrieval. It does not remove the need for least-privilege rights, SPN correctness, host restrictions, service ownership and monitoring of account use.",
+    "evaluation_points": [
+      "Managed password rotation",
+      "Supported service use",
+      "Host authorisation",
+      "Least privilege and monitoring"
+    ],
+    "resolution_title": "Group Managed Service Accounts overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/group-managed-service-accounts-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-070",
+    "role_slug": "system-administrator",
+    "domain": "Group Policy, Certificates and Privileged Windows Identity",
+    "difficulty": "advanced",
+    "question_type": "pki",
+    "prompt": "What are the highest-risk design mistakes in an enterprise AD CS deployment?",
+    "preferred_answer": "Risks include broadly enrolable templates with powerful EKUs, requester-supplied subjects, weak approval, excessive CA administrator access, online or poorly protected roots, insecure web enrolment, long-lived keys and weak revocation operations. Template, CA, directory and issuance permissions form one trust system; misconfiguration can enable domain privilege escalation.",
+    "evaluation_points": [
+      "Template and EKU risk",
+      "CA/root protection",
+      "Enrolment and permissions",
+      "Revocation and escalation awareness"
+    ],
+    "resolution_title": "Active Directory Certificate Services overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-cs/active-directory-certificate-services-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-071",
+    "role_slug": "system-administrator",
+    "domain": "Group Policy, Certificates and Privileged Windows Identity",
+    "difficulty": "advanced",
+    "question_type": "policy-governance",
+    "prompt": "Why can one large security GPO be harder to operate safely than several focused GPOs?",
+    "preferred_answer": "A monolithic GPO combines unrelated settings, owners, testing cycles and rollback decisions, increasing blast radius and making resultant policy hard to explain. Focused, named GPOs can improve delegation, staging and evidence, although too many overlapping objects create precedence complexity. Design around coherent control areas with ownership and test rings.",
+    "evaluation_points": [
+      "Monolithic blast radius",
+      "Focused ownership and rollback",
+      "Too-many-GPO trade-off",
+      "Coherent controls and test rings"
+    ],
+    "resolution_title": "Group Policy overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-policy/group-policy-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-072",
+    "role_slug": "system-administrator",
+    "domain": "Group Policy, Certificates and Privileged Windows Identity",
+    "difficulty": "scenario",
+    "question_type": "certificate-incident",
+    "prompt": "A production TLS certificate expires in hours and the original private-key owner has left. What is your response?",
+    "preferred_answer": "Confirm affected endpoints, certificate chain, current key location and deployment method; obtain an authorised replacement through the approved CA; protect and document key generation; deploy through a staged path; and validate hostname, chain, protocol and monitoring. Treat missing ownership as a control failure, then establish inventory, automated renewal, accountable service ownership and expiry alerting.",
+    "evaluation_points": [
+      "Scope and current key assessment",
+      "Authorised replacement",
+      "Staged validation",
+      "Repairs ownership and renewal process"
+    ],
+    "resolution_title": "Active Directory Certificate Services overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-cs/active-directory-certificate-services-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-073",
+    "role_slug": "system-administrator",
+    "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
+    "difficulty": "foundation",
+    "question_type": "dns",
+    "prompt": "Differentiate an authoritative DNS server, recursive resolver and local stub resolver.",
+    "preferred_answer": "An authoritative server publishes records for zones it owns. A recursive resolver follows referrals or uses forwarders and caches answers for clients. A stub resolver on a host submits queries to configured resolvers and may apply search rules. Mixing these roles without understanding recursion, exposure and cache behaviour can create security and reliability problems.",
+    "evaluation_points": [
+      "Authoritative role",
+      "Recursive/caching role",
+      "Host stub role",
+      "Exposure and cache implications"
+    ],
+    "resolution_title": "DNS overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-074",
+    "role_slug": "system-administrator",
+    "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
+    "difficulty": "foundation",
+    "question_type": "dhcp",
+    "prompt": "What information can DHCP provide besides an IP address?",
+    "preferred_answer": "DHCP can provide subnet mask or prefix, default gateway, DNS servers and domain, lease duration and many vendor or service options. A lease is time-bounded state tied to client identity and scope policy. Critical infrastructure should use planned reservations or static configuration where justified, with duplicate-address and failover considerations.",
+    "evaluation_points": [
+      "Core network options",
+      "Lease state",
+      "Client/scope policy",
+      "Reservation/static trade-off"
+    ],
+    "resolution_title": "DHCP overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-075",
+    "role_slug": "system-administrator",
+    "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
+    "difficulty": "intermediate",
+    "question_type": "dns-operations",
+    "prompt": "Why are TTL values an operational design choice rather than a simple lower-is-better setting?",
+    "preferred_answer": "Lower TTLs can speed planned record changes but increase query load, resolver dependency and exposure to transient authoritative failures. Higher TTLs improve cache resilience and reduce load but extend stale data during change or incident response. Choose values by record volatility, recovery strategy, resolver behaviour and capacity, and lower them before planned migrations when appropriate.",
+    "evaluation_points": [
+      "Change-speed benefit",
+      "Load/resilience trade-off",
+      "Stale-data consequence",
+      "Planned migration practice"
+    ],
+    "resolution_title": "DNS overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-076",
+    "role_slug": "system-administrator",
+    "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
+    "difficulty": "intermediate",
+    "question_type": "dhcp-operations",
+    "prompt": "How would you design DHCP availability for a large site?",
+    "preferred_answer": "Define non-overlapping scopes and exclusions, sufficient address capacity, failover or split service according to platform support, relay paths, authoritative ownership, monitoring and backup of configuration. Test lease renewal during partner failure and network isolation. DHCP availability also depends on switches, relays, VLAN configuration, time and DNS update integration.",
+    "evaluation_points": [
+      "Scope and capacity design",
+      "Failover/partner model",
+      "Relay and dependency awareness",
+      "Failure and renewal testing"
+    ],
+    "resolution_title": "DHCP overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-077",
+    "role_slug": "system-administrator",
+    "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "A client receives an address but cannot reach domain services. What do you check?",
+    "preferred_answer": "Validate address, prefix, gateway, DNS servers, suffix and lease source; compare with the intended VLAN and scope options. Test gateway and DNS reachability, then locate the client subnet in AD sites and inspect firewall and time. An address alone does not prove the correct network policy or identity-service path.",
+    "evaluation_points": [
+      "Validates full lease options",
+      "Correct VLAN/scope",
+      "DNS/gateway/time checks",
+      "AD site and policy awareness"
+    ],
+    "resolution_title": "DHCP overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-078",
+    "role_slug": "system-administrator",
+    "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
+    "difficulty": "advanced",
+    "question_type": "dns-security",
+    "prompt": "How can insecure dynamic DNS updates create infrastructure risk?",
+    "preferred_answer": "Unauthorised clients may register or overwrite names, redirect services, enable interception or leave stale records. Use secure updates integrated with managed identity where possible, control zone and record permissions, age and scavenge carefully, protect service accounts and monitor high-value record changes. Scavenging without correct timestamps can also delete legitimate static records.",
+    "evaluation_points": [
+      "Record hijacking risk",
+      "Secure identity-based updates",
+      "Permissions and monitoring",
+      "Scavenging safety"
+    ],
+    "resolution_title": "DNS overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-079",
+    "role_slug": "system-administrator",
+    "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "Why are DNS and time often hidden root causes of authentication failures?",
+    "preferred_answer": "Directory and certificate systems locate services through DNS and rely on correct names, service records and reverse or forward resolution. Kerberos and certificate validation also depend on bounded clock difference and valid time periods. Testing only IP connectivity misses these control-plane dependencies. Infrastructure monitoring should therefore include synthetic name, time and authentication checks.",
+    "evaluation_points": [
+      "Service discovery through DNS",
+      "Kerberos/time dependence",
+      "Certificate-time dependence",
+      "Synthetic control-plane monitoring"
+    ],
+    "resolution_title": "Active Directory Domain Services overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-080",
+    "role_slug": "system-administrator",
+    "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
+    "difficulty": "scenario",
+    "question_type": "incident",
+    "prompt": "After a DHCP scope migration, some clients intermittently use the old DNS server. How do you resolve it?",
+    "preferred_answer": "Identify affected leases, client types, renewal times and all DHCP servers or relay paths; compare scope options and reservations; check static configuration, VPN adapters and cached settings. Correct the authoritative option source, force renewal only in a controlled manner, and monitor queries at both DNS servers until the old dependency is retired. Document lease-duration effects.",
+    "evaluation_points": [
+      "Finds all option sources",
+      "Lease/cache awareness",
+      "Controlled renewal",
+      "Monitors retirement of old service"
+    ],
+    "resolution_title": "DHCP overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-081",
+    "role_slug": "system-administrator",
+    "domain": "Storage, RAID, LVM, File Services and Data Integrity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate block storage, file storage and object storage from an administrator perspective.",
+    "preferred_answer": "Block storage presents addressable volumes that hosts partition and format. File storage presents a shared namespace and file protocol with server-side permissions and locking. Object storage exposes objects and metadata through an API rather than a normal POSIX or SMB filesystem. Performance, consistency, backup and access-control assumptions differ, so the same workload cannot be moved blindly among them.",
+    "evaluation_points": [
+      "Block semantics",
+      "File-service semantics",
+      "Object/API semantics",
+      "Workload and consistency implications"
+    ],
+    "resolution_title": "Ubuntu Server - Storage",
+    "resolution_url": "https://documentation.ubuntu.com/server/how-to/storage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-082",
+    "role_slug": "system-administrator",
+    "domain": "Storage, RAID, LVM, File Services and Data Integrity",
+    "difficulty": "foundation",
+    "question_type": "raid",
+    "prompt": "What does RAID protect against, and what does it not replace?",
+    "preferred_answer": "RAID can maintain availability through selected disk failures and sometimes improve performance, depending on level. It does not protect against deletion, corruption, ransomware, controller or site failure, or every multi-disk failure. Rebuilds are stressful and expose additional risk. RAID therefore complements, but never replaces, tested backups and recovery planning.",
+    "evaluation_points": [
+      "Disk-failure availability",
+      "Level-dependent behaviour",
+      "Lists non-RAID failures",
+      "Backups remain required"
+    ],
+    "resolution_title": "RHEL - Configuring and managing logical volumes",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_and_managing_logical_volumes/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-083",
+    "role_slug": "system-administrator",
+    "domain": "Storage, RAID, LVM, File Services and Data Integrity",
+    "difficulty": "intermediate",
+    "question_type": "lvm",
+    "prompt": "What operational advantages does LVM provide?",
+    "preferred_answer": "LVM separates physical storage, volume groups and logical volumes so capacity can be pooled, resized and presented flexibly. It supports snapshots and migration features, but abstraction does not eliminate filesystem, backup or performance constraints. Administrators must understand allocation, metadata backup, underlying redundancy and the order for extending or reducing a filesystem and volume.",
+    "evaluation_points": [
+      "PV/VG/LV abstraction",
+      "Resize and snapshot benefits",
+      "Underlying storage still matters",
+      "Correct operation order"
+    ],
+    "resolution_title": "RHEL - Configuring and managing logical volumes",
+    "resolution_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_and_managing_logical_volumes/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-084",
+    "role_slug": "system-administrator",
+    "domain": "Storage, RAID, LVM, File Services and Data Integrity",
+    "difficulty": "intermediate",
+    "question_type": "file-services",
+    "prompt": "How do share permissions and filesystem permissions interact on SMB services?",
+    "preferred_answer": "Clients must pass both the share-level access decision and the underlying filesystem ACL; the effective permission is the most restrictive combination across applicable rules. Identity translation, inheritance and explicit deny entries can complicate results. Diagnose using the actual user token and path rather than granting broad access at both layers.",
+    "evaluation_points": [
+      "Two permission layers",
+      "Most restrictive effective result",
+      "Identity/inheritance complexity",
+      "Tests actual user context"
+    ],
+    "resolution_title": "SMB overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-085",
+    "role_slug": "system-administrator",
+    "domain": "Storage, RAID, LVM, File Services and Data Integrity",
+    "difficulty": "intermediate",
+    "question_type": "capacity",
+    "prompt": "A storage volume is 85% full. What information is needed before expanding it?",
+    "preferred_answer": "Assess growth rate, peak and retention pattern, data owner, filesystem limits, underlying pool and redundancy, snapshot or thin-provision exposure, backup window, performance and whether obsolete data can be removed safely. Expansion may only postpone an uncontrolled retention problem. Define thresholds and verify monitoring after the change.",
+    "evaluation_points": [
+      "Growth and retention analysis",
+      "Pool and filesystem limits",
+      "Thin/snapshot exposure",
+      "Expansion versus demand control"
+    ],
+    "resolution_title": "Ubuntu Server - Storage",
+    "resolution_url": "https://documentation.ubuntu.com/server/how-to/storage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-086",
+    "role_slug": "system-administrator",
+    "domain": "Storage, RAID, LVM, File Services and Data Integrity",
+    "difficulty": "advanced",
+    "question_type": "snapshots",
+    "prompt": "Why is a storage snapshot not automatically an application-consistent backup?",
+    "preferred_answer": "A snapshot captures storage state at a point in time, which may include in-flight writes, memory-resident data and inconsistent relationships across volumes or services. Application quiescing, crash-consistency guarantees and coordinated snapshots may be required. Snapshots also share failure domains and can be deleted with the source, so independent retained copies and restore tests are necessary.",
+    "evaluation_points": [
+      "Point-in-time storage state",
+      "In-flight/application consistency",
+      "Shared failure domain",
+      "Independent copy and restore testing"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-087",
+    "role_slug": "system-administrator",
+    "domain": "Storage, RAID, LVM, File Services and Data Integrity",
+    "difficulty": "advanced",
+    "question_type": "performance",
+    "prompt": "How do you distinguish storage latency caused by the device from latency caused higher in the stack?",
+    "preferred_answer": "Correlate application wait, filesystem and page-cache behaviour, queue depth, I/O size and pattern, multipath or network transport, hypervisor contention and device-level latency. Compare host and storage-array timestamps and test a representative workload carefully. High iowait alone is not a root cause; it shows runnable work waiting for I/O.",
+    "evaluation_points": [
+      "Multiple stack layers",
+      "Host and array evidence",
+      "Workload pattern",
+      "Avoids single-metric conclusion"
+    ],
+    "resolution_title": "Linux man-pages - proc(5)",
+    "resolution_url": "https://man7.org/linux/man-pages/man5/proc.5.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-088",
+    "role_slug": "system-administrator",
+    "domain": "Storage, RAID, LVM, File Services and Data Integrity",
+    "difficulty": "scenario",
+    "question_type": "data-integrity",
+    "prompt": "A shared file volume becomes read-only after storage errors. What is your response?",
+    "preferred_answer": "Protect data by limiting writes and fail over only if the alternate copy is known good. Capture kernel, filesystem, path and device evidence; verify hardware or network storage health; confirm backups; and plan offline checking or repair on a clone. Do not force a writable remount before understanding why the filesystem protected itself. Validate both filesystem and application data afterward.",
+    "evaluation_points": [
+      "Protects against further writes",
+      "Collects layered evidence",
+      "Backup and clone/offline repair",
+      "Application-level validation"
+    ],
+    "resolution_title": "Ubuntu Server - Storage",
+    "resolution_url": "https://documentation.ubuntu.com/server/how-to/storage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-089",
+    "role_slug": "system-administrator",
+    "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the role of a hypervisor?",
+    "preferred_answer": "A hypervisor allocates physical CPU, memory, storage and network resources to isolated virtual machines and mediates privileged hardware access. Type 1 hypervisors run directly on the host platform; hosted models depend on a general-purpose operating system. Virtual isolation reduces coupling but does not remove shared hardware, management-plane and capacity failure domains.",
+    "evaluation_points": [
+      "Resource mediation",
+      "VM isolation",
+      "Type 1 versus hosted",
+      "Shared failure domains"
+    ],
+    "resolution_title": "Hyper-V overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-090",
+    "role_slug": "system-administrator",
+    "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
+    "difficulty": "foundation",
+    "question_type": "resources",
+    "prompt": "What is the difference between allocated, reserved and consumed virtual resources?",
+    "preferred_answer": "Allocated resources describe the configured virtual capacity, reservations protect a minimum or guaranteed share where supported, and consumption is the workload actually using the resource. Overcommit relies on not every VM peaking together. Capacity decisions must use host contention, ballooning or paging, ready time, NUMA and storage/network evidence rather than only configured totals.",
+    "evaluation_points": [
+      "Configured allocation",
+      "Reservation/guarantee",
+      "Actual consumption",
+      "Overcommit and contention awareness"
+    ],
+    "resolution_title": "Hyper-V overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-091",
+    "role_slug": "system-administrator",
+    "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
+    "difficulty": "intermediate",
+    "question_type": "templates",
+    "prompt": "What makes a virtual-machine template safe for repeated production use?",
+    "preferred_answer": "It should be patched, minimally configured, free of duplicated machine identity and secrets, prepared through supported generalisation, scanned, versioned and reproducibly built. First-boot configuration should assign unique identity, network and credentials. A template needs ownership, expiry and rebuild cadence because cloning multiplies both good configuration and embedded defects.",
+    "evaluation_points": [
+      "No duplicate identity/secrets",
+      "Patched and minimal",
+      "Versioned reproducible build",
+      "Lifecycle and first-boot uniqueness"
+    ],
+    "resolution_title": "Packer documentation",
+    "resolution_url": "https://developer.hashicorp.com/packer/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-092",
+    "role_slug": "system-administrator",
+    "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
+    "difficulty": "intermediate",
+    "question_type": "migration",
+    "prompt": "What conditions must be considered before live-migrating a busy virtual machine?",
+    "preferred_answer": "Check source and destination compatibility, CPU and network requirements, storage access, memory change rate, available migration bandwidth, cluster health, application sensitivity and backup or rollback. Migration preserves service in many cases but is not risk-free. Monitor latency and application health, and avoid moving multiple critical workloads into the same failure domain.",
+    "evaluation_points": [
+      "Compatibility and shared storage/network",
+      "Memory/bandwidth effects",
+      "Application monitoring",
+      "Failure-domain placement"
+    ],
+    "resolution_title": "Hyper-V overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-093",
+    "role_slug": "system-administrator",
+    "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
+    "difficulty": "intermediate",
+    "question_type": "snapshot-operations",
+    "prompt": "When is a VM snapshot useful, and when does it become dangerous?",
+    "preferred_answer": "A short-lived snapshot can support a reversible maintenance step or diagnostic checkpoint when the platform and workload support it. Long snapshot chains consume capacity, reduce performance, complicate backup and may contain inconsistent application state. Snapshots require owner, expiry, monitoring and consolidation validation; they are not archival backups.",
+    "evaluation_points": [
+      "Short-term reversible use",
+      "Chain/capacity/performance risks",
+      "Application consistency",
+      "Expiry and no-backup distinction"
+    ],
+    "resolution_title": "Hyper-V overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-094",
+    "role_slug": "system-administrator",
+    "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
+    "difficulty": "advanced",
+    "question_type": "availability",
+    "prompt": "Why can a highly available VM still host a poorly available service?",
+    "preferred_answer": "Hypervisor clustering can restart or move the VM after host failure, but it may not detect application deadlock, data corruption, identity failure, network path loss or dependency outage. Service availability requires application health probes, data protection, dependency resilience, capacity and tested recovery. Infrastructure HA is one layer, not an end-to-end guarantee.",
+    "evaluation_points": [
+      "Host HA versus app health",
+      "Dependency and data failures",
+      "Service-level probes",
+      "Layered recovery"
+    ],
+    "resolution_title": "Failover Clustering overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-095",
+    "role_slug": "system-administrator",
+    "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "What are the most important management-plane controls for virtual infrastructure?",
+    "preferred_answer": "Separate privileged identities and networks, strong MFA and least privilege, protected APIs and consoles, secure host configuration, signed or controlled images, immutable or independent audit logs, backup of management state and rapid credential revocation. Management compromise can affect many workloads at once, so access workstations and emergency paths need stronger protection than ordinary administration.",
+    "evaluation_points": [
+      "Privileged identity and network separation",
+      "API/console protection",
+      "Independent logs and backup",
+      "High blast-radius recognition"
+    ],
+    "resolution_title": "NIST SP 800-123 - General Server Security",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/123/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-096",
+    "role_slug": "system-administrator",
+    "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
+    "difficulty": "scenario",
+    "question_type": "capacity-incident",
+    "prompt": "A virtualization cluster has enough average CPU but VMs experience intermittent latency during business peaks. How do you investigate?",
+    "preferred_answer": "Correlate VM latency with host CPU ready or scheduling delay, memory pressure, NUMA placement, storage queue and network contention. Identify noisy neighbours and placement patterns, then test reservation, right-sizing, workload redistribution or added capacity. Avoid solving average utilisation; the goal is predictable service during peaks with sufficient failover headroom.",
+    "evaluation_points": [
+      "Peak correlation",
+      "CPU/memory/storage/network contention",
+      "Noisy-neighbour and placement analysis",
+      "Failover headroom and validation"
+    ],
+    "resolution_title": "Hyper-V overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-097",
+    "role_slug": "system-administrator",
+    "domain": "Backup, Restore, Disaster Recovery and Data Protection",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate RPO and RTO.",
+    "preferred_answer": "Recovery point objective defines the maximum acceptable data loss measured in time; recovery time objective defines the maximum acceptable time to restore a service. They are business requirements, not promises produced automatically by a backup product. Architecture, backup frequency, replication, dependencies, staffing and test evidence must support the agreed values.",
+    "evaluation_points": [
+      "RPO is data-loss tolerance",
+      "RTO is restoration time",
+      "Business requirements",
+      "Architecture and test evidence"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-098",
+    "role_slug": "system-administrator",
+    "domain": "Backup, Restore, Disaster Recovery and Data Protection",
+    "difficulty": "foundation",
+    "question_type": "backup",
+    "prompt": "What is the difference between a backup, replica and archive?",
+    "preferred_answer": "A backup is a recoverable copy retained according to protection policy. A replica maintains another operational copy, often with low lag, but can reproduce corruption or deletion. An archive preserves information for long-term retention and retrieval, not necessarily rapid service recovery. One system may support multiple purposes, but policy, immutability and restore expectations differ.",
+    "evaluation_points": [
+      "Backup purpose",
+      "Replica and propagated failure",
+      "Archive/retention purpose",
+      "Policy distinctions"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-099",
+    "role_slug": "system-administrator",
+    "domain": "Backup, Restore, Disaster Recovery and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What should determine a backup policy for a server or service?",
+    "preferred_answer": "Use business RPO/RTO, data criticality, change rate, consistency requirements, retention and legal needs, dependency topology, threat model, platform support, restore sequence and available bandwidth or window. Include configuration, identity, certificates and infrastructure metadata where needed. The policy must define ownership, monitoring, failed-job response and restore testing.",
+    "evaluation_points": [
+      "Business objectives",
+      "Consistency and dependencies",
+      "Threat/retention constraints",
+      "Ownership and testing"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-100",
+    "role_slug": "system-administrator",
+    "domain": "Backup, Restore, Disaster Recovery and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "testing",
+    "prompt": "What does a credible restore test prove?",
+    "preferred_answer": "It proves that the correct backup can be located, decrypted and read; that required credentials, software and dependencies exist; that data and configuration restore in the right sequence; and that the application passes integrity and business checks within target time. A job marked successful or a mounted backup is not sufficient evidence.",
+    "evaluation_points": [
+      "Media and key readability",
+      "Dependencies and sequence",
+      "Application/data validation",
+      "Measured against target"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-101",
+    "role_slug": "system-administrator",
+    "domain": "Backup, Restore, Disaster Recovery and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "security",
+    "prompt": "How should backup systems be protected from ransomware?",
+    "preferred_answer": "Separate administration and credentials from normal production, use least privilege and MFA, maintain immutable or offline copies, protect deletion and retention changes, monitor unusual access, restrict network paths and test clean-room recovery. Backup consoles and repositories are high-value targets. Recovery credentials and documentation must remain available when normal identity systems are compromised.",
+    "evaluation_points": [
+      "Identity separation",
+      "Immutable/offline copies",
+      "Deletion monitoring and network controls",
+      "Clean-room and independent recovery access"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-102",
+    "role_slug": "system-administrator",
+    "domain": "Backup, Restore, Disaster Recovery and Data Protection",
+    "difficulty": "advanced",
+    "question_type": "consistency",
+    "prompt": "How would you back up a distributed application with multiple databases and message systems?",
+    "preferred_answer": "Define the recovery consistency boundary and whether coordinated application quiescing, transaction logs, checkpoints or replay can re-establish a valid state. Capture configuration and schema, map dependencies and ordering, and test failure at different points. Independent volume snapshots may produce logically inconsistent data even when each storage copy is crash-consistent.",
+    "evaluation_points": [
+      "Consistency boundary",
+      "Logs/checkpoints/replay",
+      "Dependency ordering",
+      "Independent snapshot limitation"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-103",
+    "role_slug": "system-administrator",
+    "domain": "Backup, Restore, Disaster Recovery and Data Protection",
+    "difficulty": "advanced",
+    "question_type": "disaster-recovery",
+    "prompt": "Why can a documented disaster-recovery plan still fail during a real event?",
+    "preferred_answer": "Plans become stale, depend on unavailable people, credentials, networks or vendors, assume untested capacity, and omit decision authority or communication. Effective DR uses exercises, technical recovery tests, dependency inventories, alternate communication, current contact and access data, and explicit failover/failback criteria. Lessons must change architecture and runbooks.",
+    "evaluation_points": [
+      "Staleness and dependency failure",
+      "People/access/communication",
+      "Exercises and measured tests",
+      "Failover/failback criteria"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-104",
+    "role_slug": "system-administrator",
+    "domain": "Backup, Restore, Disaster Recovery and Data Protection",
+    "difficulty": "scenario",
+    "question_type": "ransomware-recovery",
+    "prompt": "A ransomware incident affects production servers and the normal domain administrator accounts. How do you start recovery?",
+    "preferred_answer": "Activate incident leadership and preserve evidence, contain attacker access, use independent trusted identities, and determine the last known clean state and scope. Protect backups from further change, validate recovery infrastructure and rebuild trust anchors before restoring services in business-priority order. Do not reconnect recovered systems until entry paths, credentials, monitoring and segmentation are corrected.",
+    "evaluation_points": [
+      "Incident and evidence first",
+      "Independent identity",
+      "Clean-state and trust rebuild",
+      "Prioritised isolated restoration"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-105",
+    "role_slug": "system-administrator",
+    "domain": "High Availability, Clustering and Service Resilience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between high availability and disaster recovery?",
+    "preferred_answer": "High availability keeps or rapidly restores service through expected component failures within a designed environment, often using redundancy and automatic failover. Disaster recovery restores service after larger loss or compromise, potentially in another location and with more manual decision-making. HA can replicate bad data or shared dependencies, so it does not replace DR.",
+    "evaluation_points": [
+      "HA for component/site-local failures",
+      "DR for major loss",
+      "Automation/time distinction",
+      "HA does not replace DR"
+    ],
+    "resolution_title": "Failover Clustering overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-106",
+    "role_slug": "system-administrator",
+    "domain": "High Availability, Clustering and Service Resilience",
+    "difficulty": "foundation",
+    "question_type": "quorum",
+    "prompt": "Why do clusters need quorum?",
+    "preferred_answer": "Quorum provides a rule for which subset of nodes may continue operating, preventing two partitions from both accepting writes and creating split brain. Votes, witnesses and dynamic mechanisms depend on cluster design. More nodes alone do not guarantee safety; witness placement and failure-domain independence determine whether the cluster can make a valid decision.",
+    "evaluation_points": [
+      "Prevents split brain",
+      "Voting/witness concept",
+      "Partition decision",
+      "Failure-domain placement"
+    ],
+    "resolution_title": "Failover Clustering overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-107",
+    "role_slug": "system-administrator",
+    "domain": "High Availability, Clustering and Service Resilience",
+    "difficulty": "intermediate",
+    "question_type": "health-checks",
+    "prompt": "What makes a useful cluster or load-balancer health check?",
+    "preferred_answer": "It tests the minimum function that represents readiness to serve, including critical dependencies where appropriate, responds quickly and deterministically, and avoids expensive or destructive actions. Separate liveness from readiness and use thresholds to prevent flapping. A port-open test may miss application or data failure; an overly deep check may withdraw every instance during a shared dependency outage.",
+    "evaluation_points": [
+      "Readiness meaning",
+      "Fast and safe check",
+      "Thresholds/flapping",
+      "Depth trade-off"
+    ],
+    "resolution_title": "Failover Clustering overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-108",
+    "role_slug": "system-administrator",
+    "domain": "High Availability, Clustering and Service Resilience",
+    "difficulty": "intermediate",
+    "question_type": "maintenance",
+    "prompt": "How should planned maintenance be performed on a clustered host?",
+    "preferred_answer": "Validate cluster health and capacity, drain or move workloads, confirm remaining nodes can survive another failure, perform the change in a controlled ring, monitor services and reintroduce the node only after validation. Preserve quorum and witness availability. Repeat only after the prior node is stable, and maintain rollback or repair options.",
+    "evaluation_points": [
+      "Pre-maintenance health",
+      "Drain and capacity",
+      "Quorum/failure headroom",
+      "One-at-a-time validation"
+    ],
+    "resolution_title": "Failover Clustering overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-109",
+    "role_slug": "system-administrator",
+    "domain": "High Availability, Clustering and Service Resilience",
+    "difficulty": "intermediate",
+    "question_type": "storage",
+    "prompt": "What additional risks arise in a hyperconverged cluster using local disks?",
+    "preferred_answer": "Compute and storage failures are coupled; maintenance, rebuild traffic and capacity interact. Placement must protect data across nodes and fault domains, and the cluster needs enough free capacity to repair after failure. Network latency and consistency are critical. Administrators must monitor both service and storage health before taking nodes offline.",
+    "evaluation_points": [
+      "Compute/storage coupling",
+      "Repair capacity",
+      "Network consistency",
+      "Maintenance health requirements"
+    ],
+    "resolution_title": "Storage Spaces Direct overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/storage-spaces-direct-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-110",
+    "role_slug": "system-administrator",
+    "domain": "High Availability, Clustering and Service Resilience",
+    "difficulty": "advanced",
+    "question_type": "failure-modes",
+    "prompt": "How can automatic failover make an incident worse?",
+    "preferred_answer": "Bad health logic can move a healthy workload, create flapping, overload the surviving site, replay unsafe operations or spread corrupted state. Automation needs bounded retries, fencing, data-consistency checks, capacity validation and human escalation. Success means restored service integrity, not simply that a resource changed owners.",
+    "evaluation_points": [
+      "Bad detection/flapping",
+      "Capacity and corruption risk",
+      "Fencing and bounded retries",
+      "Integrity and human escalation"
+    ],
+    "resolution_title": "Failover Clustering overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-111",
+    "role_slug": "system-administrator",
+    "domain": "High Availability, Clustering and Service Resilience",
+    "difficulty": "advanced",
+    "question_type": "architecture",
+    "prompt": "How do you identify hidden shared dependencies in a supposedly redundant service?",
+    "preferred_answer": "Map power, network, DNS, identity, certificates, storage, management, backup, monitoring, software supply and operational personnel across both paths. Compare failure domains and test controlled loss. Two servers in one rack, one directory forest or one management plane may be redundant only at the component level. Resilience claims require evidence from realistic exercises.",
+    "evaluation_points": [
+      "Cross-layer dependency map",
+      "Physical and control-plane domains",
+      "Redundancy-level nuance",
+      "Failure testing evidence"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-112",
+    "role_slug": "system-administrator",
+    "domain": "High Availability, Clustering and Service Resilience",
+    "difficulty": "scenario",
+    "question_type": "cluster-incident",
+    "prompt": "A two-node cluster loses communication between nodes while both still see shared storage. What should happen?",
+    "preferred_answer": "Quorum and fencing must ensure only the authorised partition owns clustered resources and writes shared state. Do not manually force both sides online. Determine network, witness and cluster state through independent access, isolate the non-authoritative side if required, restore communication, validate storage consistency and service ownership, and document why the partition was not tolerated safely.",
+    "evaluation_points": [
+      "Quorum authority",
+      "No dual-force online",
+      "Fencing/isolation",
+      "Consistency and root-cause validation"
+    ],
+    "resolution_title": "Failover Clustering overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-113",
+    "role_slug": "system-administrator",
+    "domain": "Patching, Package Management and Platform Lifecycle",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why is patch management more than installing all available updates?",
+    "preferred_answer": "It is a risk-management process that inventories assets and software, receives trusted vulnerability and vendor information, prioritises by exposure and impact, tests, deploys, verifies and handles exceptions. It includes operating systems, applications, firmware, appliances and images. Installation activity is useful only when it reduces known exposure without causing unacceptable service failure.",
+    "evaluation_points": [
+      "Inventory and trusted inputs",
+      "Risk prioritisation",
+      "Testing/deployment/verification",
+      "Broad platform scope"
+    ],
+    "resolution_title": "NIST SP 800-40 Rev. 4 - Enterprise Patch Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-114",
+    "role_slug": "system-administrator",
+    "domain": "Patching, Package Management and Platform Lifecycle",
+    "difficulty": "foundation",
+    "question_type": "packages",
+    "prompt": "What is the value of managed package repositories?",
+    "preferred_answer": "Repositories provide signed metadata and packages, dependency resolution, version history and controlled sources. Enterprises can mirror or curate them to improve availability and approval. Security still depends on key trust, repository access, provenance, update policy and protection from dependency substitution. Downloading arbitrary installers bypasses much of this governance.",
+    "evaluation_points": [
+      "Signed metadata/packages",
+      "Dependency and version control",
+      "Enterprise mirror/curation",
+      "Trust and provenance risks"
+    ],
+    "resolution_title": "Ubuntu Server documentation",
+    "resolution_url": "https://documentation.ubuntu.com/server/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-115",
+    "role_slug": "system-administrator",
+    "domain": "Patching, Package Management and Platform Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "prioritisation",
+    "prompt": "How do you prioritise patches when many systems have critical ratings?",
+    "preferred_answer": "Combine known exploitation, internet or lateral exposure, service criticality, privilege and attack path, available mitigations, detection coverage, patch reliability and recovery options. Use emergency handling for actively exploited vulnerabilities. Record deferred items with owner, compensating controls and deadline; a severity score alone is not a complete risk decision.",
+    "evaluation_points": [
+      "Exploitation and exposure",
+      "Business/attack-path context",
+      "Patch and recovery risk",
+      "Documented exceptions"
+    ],
+    "resolution_title": "NIST SP 800-40 Rev. 4 - Enterprise Patch Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-116",
+    "role_slug": "system-administrator",
+    "domain": "Patching, Package Management and Platform Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "deployment",
+    "prompt": "What should a patch ring strategy look like?",
+    "preferred_answer": "Use representative early rings such as lab, IT or canary systems, then expand by service and failure domain after defined observation and health checks. Keep critical replicas on different schedules, control reboot coordination, and measure compliance and failure. Rings should accelerate learning, not permanently delay difficult systems or leave unsupported exceptions invisible.",
+    "evaluation_points": [
+      "Representative canaries",
+      "Observation and health gates",
+      "Failure-domain scheduling",
+      "No permanent slow-ring hiding"
+    ],
+    "resolution_title": "NIST SP 800-40 Rev. 4 - Enterprise Patch Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-117",
+    "role_slug": "system-administrator",
+    "domain": "Patching, Package Management and Platform Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "verification",
+    "prompt": "How do you prove a patch was successfully applied?",
+    "preferred_answer": "Confirm the intended version or remediation state on the asset, successful reboot or service restart where required, application and synthetic health, security scan or configuration evidence, and absence of rollback. Central dashboards can be stale or report deployment rather than effective state, so sample or automate endpoint verification and reconcile failures.",
+    "evaluation_points": [
+      "Version/remediation state",
+      "Service health",
+      "Security verification",
+      "Dashboard limitation and reconciliation"
+    ],
+    "resolution_title": "NIST SP 800-40 Rev. 4 - Enterprise Patch Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-118",
+    "role_slug": "system-administrator",
+    "domain": "Patching, Package Management and Platform Lifecycle",
+    "difficulty": "advanced",
+    "question_type": "lifecycle",
+    "prompt": "How should end-of-support infrastructure be handled?",
+    "preferred_answer": "Identify affected services and dependencies early, assess security and availability exposure, and choose upgrade, replacement, isolation or retirement with funded owner and date. Compensating controls can reduce risk temporarily but cannot create vendor fixes or compatibility indefinitely. Track exceptions at leadership level and prevent new workloads from extending the unsupported platform.",
+    "evaluation_points": [
+      "Early inventory and dependency map",
+      "Upgrade/replace/isolate/retire options",
+      "Limits of compensating controls",
+      "Owner, date and no new adoption"
+    ],
+    "resolution_title": "NIST SP 800-40 Rev. 4 - Enterprise Patch Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-119",
+    "role_slug": "system-administrator",
+    "domain": "Patching, Package Management and Platform Lifecycle",
+    "difficulty": "advanced",
+    "question_type": "automation",
+    "prompt": "What can go wrong with fully autonomous patching?",
+    "preferred_answer": "Automation may misclassify criticality, patch incompatible components, reboot at unsafe times, update all replicas together or accept a false healthy signal. Safe autonomy needs policy boundaries, rings, maintenance and dependency awareness, rollback, independent health evidence, stop conditions and human review for exceptional or high-impact systems.",
+    "evaluation_points": [
+      "Context and compatibility errors",
+      "Correlated change risk",
+      "Bounded policy and stop conditions",
+      "Independent validation and human review"
+    ],
+    "resolution_title": "NIST SP 800-40 Rev. 4 - Enterprise Patch Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-120",
+    "role_slug": "system-administrator",
+    "domain": "Patching, Package Management and Platform Lifecycle",
+    "difficulty": "scenario",
+    "question_type": "emergency-patch",
+    "prompt": "A known exploited vulnerability affects an internet-facing appliance, but the vendor patch has caused outages elsewhere. What do you do?",
+    "preferred_answer": "Confirm applicability and exploitation evidence, reduce or remove exposure, apply vendor mitigations, strengthen identity and monitoring, preserve configuration and test the update or replacement on representative hardware. Establish an emergency owner and deadline. If residual risk remains unacceptable, isolate or retire the service rather than leaving a known exploited path indefinitely.",
+    "evaluation_points": [
+      "Applicability and evidence",
+      "Immediate exposure reduction",
+      "Representative testing",
+      "Time-bound patch/replacement/isolation"
+    ],
+    "resolution_title": "NIST SP 800-40 Rev. 4 - Enterprise Patch Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-121",
+    "role_slug": "system-administrator",
+    "domain": "Monitoring, Logging, Performance and Capacity Engineering",
+    "difficulty": "foundation",
+    "question_type": "observability",
+    "prompt": "How do metrics, logs and traces answer different infrastructure questions?",
+    "preferred_answer": "Metrics summarise numeric behaviour over time and are efficient for trends and alerts. Logs record discrete events and context. Traces connect work across components and dependencies. System administrators commonly rely on metrics and logs, but distributed services increasingly need all three. Correlation requires consistent identity, timestamps and retained source context.",
+    "evaluation_points": [
+      "Metric purpose",
+      "Log purpose",
+      "Trace purpose",
+      "Correlation fields"
+    ],
+    "resolution_title": "OpenTelemetry observability primer",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-122",
+    "role_slug": "system-administrator",
+    "domain": "Monitoring, Logging, Performance and Capacity Engineering",
+    "difficulty": "foundation",
+    "question_type": "baseline",
+    "prompt": "What is a performance baseline?",
+    "preferred_answer": "A baseline is a measured description of normal workload and resource behaviour for defined periods, including user demand, CPU, memory, storage, network and dependency indicators. It should include variation and peaks, not one average. Baselines support anomaly detection, capacity planning and change comparison, but must be refreshed when architecture or demand changes.",
+    "evaluation_points": [
+      "Measured normal behaviour",
+      "Includes peaks and variation",
+      "Supports comparison/planning",
+      "Needs refresh after change"
+    ],
+    "resolution_title": "Windows Performance Monitor",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/perfmon",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-123",
+    "role_slug": "system-administrator",
+    "domain": "Monitoring, Logging, Performance and Capacity Engineering",
+    "difficulty": "intermediate",
+    "question_type": "alerting",
+    "prompt": "What makes an infrastructure alert actionable?",
+    "preferred_answer": "It identifies a meaningful service or risk condition, uses reliable data and a suitable time window, includes affected asset and owner context, avoids known maintenance, links to investigation steps and has a response expectation. Alerts should be tested against failure and normal variation. A threshold without an operator decision or next action is telemetry, not an actionable alert.",
+    "evaluation_points": [
+      "Meaningful condition",
+      "Context and ownership",
+      "Runbook and response expectation",
+      "Testing and maintenance handling"
+    ],
+    "resolution_title": "Prometheus overview",
+    "resolution_url": "https://prometheus.io/docs/introduction/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-124",
+    "role_slug": "system-administrator",
+    "domain": "Monitoring, Logging, Performance and Capacity Engineering",
+    "difficulty": "intermediate",
+    "question_type": "performance",
+    "prompt": "How do you investigate high CPU without assuming the CPU is the root cause?",
+    "preferred_answer": "Identify which process, thread or workload uses CPU and whether user impact aligns with the period. Check run queue, steal or ready time, interrupts, lock contention, memory pressure, I/O retries and dependency timeouts that may drive busy loops. Compare with a baseline and recent changes. Optimise the work or capacity constraint rather than simply adding cores.",
+    "evaluation_points": [
+      "Process/thread evidence",
+      "User-impact correlation",
+      "Related scheduler/memory/I/O factors",
+      "Baseline and change comparison"
+    ],
+    "resolution_title": "Linux man-pages - proc(5)",
+    "resolution_url": "https://man7.org/linux/man-pages/man5/proc.5.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-125",
+    "role_slug": "system-administrator",
+    "domain": "Monitoring, Logging, Performance and Capacity Engineering",
+    "difficulty": "intermediate",
+    "question_type": "logs",
+    "prompt": "What should determine log retention?",
+    "preferred_answer": "Use operational troubleshooting needs, security and forensic requirements, legal obligations, event volume, sensitivity, cost and the time in which incidents are commonly discovered. Protect integrity and access, tier older data and document deletion. Retaining everything forever increases cost, privacy and discovery risk; retaining too little removes recovery and accountability evidence.",
+    "evaluation_points": [
+      "Operational/security/legal needs",
+      "Volume and sensitivity",
+      "Integrity/access/tiering",
+      "Risk of too much or too little"
+    ],
+    "resolution_title": "NIST SP 800-92 - Computer Security Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-126",
+    "role_slug": "system-administrator",
+    "domain": "Monitoring, Logging, Performance and Capacity Engineering",
+    "difficulty": "advanced",
+    "question_type": "capacity",
+    "prompt": "How would you forecast capacity for a service with seasonal demand?",
+    "preferred_answer": "Separate baseline growth from known seasonal peaks, business events and one-off anomalies; model service demand against the actual constrained resources; include failover and maintenance headroom; and test scenarios with uncertainty. Validate forecasts after each peak. Procurement lead time and scaling limits matter as much as the mathematical trend.",
+    "evaluation_points": [
+      "Seasonality and growth separation",
+      "Resource-demand relationship",
+      "Failure/maintenance headroom",
+      "Uncertainty and lead time"
+    ],
+    "resolution_title": "Windows Performance Monitor",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/perfmon",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-127",
+    "role_slug": "system-administrator",
+    "domain": "Monitoring, Logging, Performance and Capacity Engineering",
+    "difficulty": "advanced",
+    "question_type": "telemetry-security",
+    "prompt": "How can monitoring become a security and reliability dependency itself?",
+    "preferred_answer": "Agents and collectors often hold broad access, consume resources and send sensitive inventory or logs to central systems. A compromised or failed monitoring plane can hide incidents or expose credentials. Use least privilege, protected transport, independent health checks, controlled updates, buffering and evidence from more than one path for critical services.",
+    "evaluation_points": [
+      "Agent privilege and data sensitivity",
+      "Monitoring blind-spot risk",
+      "Independent health and buffering",
+      "Multiple evidence paths"
+    ],
+    "resolution_title": "NIST SP 800-92 - Computer Security Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-128",
+    "role_slug": "system-administrator",
+    "domain": "Monitoring, Logging, Performance and Capacity Engineering",
+    "difficulty": "scenario",
+    "question_type": "performance-incident",
+    "prompt": "Users report a slow application, but server CPU and memory are normal. What is your sequence?",
+    "preferred_answer": "Define the affected transaction and time window, inspect request latency and errors, then follow dependencies: DNS, authentication, network, storage, database, queues and external APIs. Compare with baseline and change history, use logs or traces to locate waiting, and test from the user path. Avoid declaring the server healthy based only on two host metrics.",
+    "evaluation_points": [
+      "Defines transaction and window",
+      "Checks dependencies",
+      "Uses baseline/change history",
+      "End-to-end evidence"
+    ],
+    "resolution_title": "OpenTelemetry observability primer",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-129",
+    "role_slug": "system-administrator",
+    "domain": "Automation with PowerShell, Bash and Python",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What makes an administration script safer than a sequence of copied commands?",
+    "preferred_answer": "A safe script makes inputs, assumptions and target scope explicit; validates preconditions; handles errors; logs meaningful evidence; supports dry-run or confirmation where practical; and returns predictable exit status. Version control and review improve repeatability. Automation can also repeat mistakes faster, so safe defaults and bounded scope are essential.",
+    "evaluation_points": [
+      "Explicit inputs and scope",
+      "Validation/error handling",
+      "Evidence and exit status",
+      "Version control and safe defaults"
+    ],
+    "resolution_title": "PowerShell remoting",
+    "resolution_url": "https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/powershell-remoting-faq",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-130",
+    "role_slug": "system-administrator",
+    "domain": "Automation with PowerShell, Bash and Python",
+    "difficulty": "foundation",
+    "question_type": "shell",
+    "prompt": "Why should shell scripts quote variables and validate paths?",
+    "preferred_answer": "Unquoted values can be split or expanded by the shell, changing arguments and enabling wildcard or injection problems. Path validation prevents empty, relative, unexpected or sensitive targets from reaching destructive commands. Use arrays or structured APIs where available, reject ambiguous input and test edge cases such as spaces, newlines and missing values.",
+    "evaluation_points": [
+      "Word splitting/globbing risk",
+      "Path validation",
+      "Structured argument handling",
+      "Edge-case testing"
+    ],
+    "resolution_title": "OpenSSH Server documentation",
+    "resolution_url": "https://man.openbsd.org/sshd_config",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-131",
+    "role_slug": "system-administrator",
+    "domain": "Automation with PowerShell, Bash and Python",
+    "difficulty": "intermediate",
+    "question_type": "powershell",
+    "prompt": "Why is PowerShell object-pipeline automation often safer than parsing formatted text?",
+    "preferred_answer": "Cmdlets pass typed objects with named properties, reducing dependence on display spacing, localisation and column order. Administrators can filter and validate explicit fields and serialise structured results. External commands may still emit text, and object type changes must be handled. Scripts should not rely on what a console formatter happens to display.",
+    "evaluation_points": [
+      "Typed object pipeline",
+      "Avoids display parsing",
+      "Explicit property validation",
+      "External/text and type-change limits"
+    ],
+    "resolution_title": "PowerShell remoting",
+    "resolution_url": "https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/powershell-remoting-faq",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-132",
+    "role_slug": "system-administrator",
+    "domain": "Automation with PowerShell, Bash and Python",
+    "difficulty": "intermediate",
+    "question_type": "idempotence",
+    "prompt": "What does idempotence mean in infrastructure automation?",
+    "preferred_answer": "An idempotent action moves a system toward a declared state and produces no unintended change when repeated after the state is satisfied. It requires state detection, not merely ignoring errors. Idempotence improves retry and convergence, but operations such as data migration or certificate issuance may need explicit transaction, marker and rollback design.",
+    "evaluation_points": [
+      "Desired-state convergence",
+      "Safe repeat behaviour",
+      "State detection",
+      "Limits for non-idempotent operations"
+    ],
+    "resolution_title": "Introduction to Ansible",
+    "resolution_url": "https://docs.ansible.com/projects/ansible/latest/getting_started/introduction.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-133",
+    "role_slug": "system-administrator",
+    "domain": "Automation with PowerShell, Bash and Python",
+    "difficulty": "intermediate",
+    "question_type": "secrets",
+    "prompt": "How should scripts access credentials and secrets?",
+    "preferred_answer": "Use managed identity, short-lived tokens or an approved secret store, restrict retrieval to the executing workload, keep values out of source, arguments, output and logs, and rotate them. Environment variables may still leak through process or diagnostic paths. Scripts should request only required permissions and fail safely when secret retrieval or validation fails.",
+    "evaluation_points": [
+      "Managed/short-lived credentials",
+      "No source/log exposure",
+      "Least privilege and rotation",
+      "Safe retrieval failure"
+    ],
+    "resolution_title": "Ansible Vault",
+    "resolution_url": "https://docs.ansible.com/projects/ansible/latest/vault_guide/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-134",
+    "role_slug": "system-administrator",
+    "domain": "Automation with PowerShell, Bash and Python",
+    "difficulty": "advanced",
+    "question_type": "remote-execution",
+    "prompt": "What controls are needed before running automation across hundreds of servers?",
+    "preferred_answer": "Use authoritative inventory, explicit target patterns, change and maintenance context, concurrency limits, canary groups, prechecks, credential isolation, timeout and retry bounds, structured results, stop conditions and recovery. The operator should be able to prove exactly which hosts changed. A successful command return is not sufficient without post-change service validation.",
+    "evaluation_points": [
+      "Authoritative targets",
+      "Canary/concurrency boundaries",
+      "Stop and recovery controls",
+      "Per-host evidence and validation"
+    ],
+    "resolution_title": "Ansible inventory guide",
+    "resolution_url": "https://docs.ansible.com/projects/ansible/latest/inventory_guide/intro_inventory.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-135",
+    "role_slug": "system-administrator",
+    "domain": "Automation with PowerShell, Bash and Python",
+    "difficulty": "advanced",
+    "question_type": "testing",
+    "prompt": "How would you test an infrastructure script that can modify accounts, services and firewall rules?",
+    "preferred_answer": "Separate pure logic from system-changing functions, use linting and static checks, unit-test input and decision logic, run integration tests in disposable machines, include negative and partial-failure cases, and assert final state and rollback. Review privilege and command construction. Production deployment should use canaries and capture before/after evidence.",
+    "evaluation_points": [
+      "Layered tests",
+      "Disposable integration environment",
+      "Negative/partial failures",
+      "Canary and before/after evidence"
+    ],
+    "resolution_title": "Ansible playbooks",
+    "resolution_url": "https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-136",
+    "role_slug": "system-administrator",
+    "domain": "Automation with PowerShell, Bash and Python",
+    "difficulty": "scenario",
+    "question_type": "automation-incident",
+    "prompt": "An automation job disabled the wrong service on 15 servers before it was stopped. What do you do?",
+    "preferred_answer": "Stop further execution and preserve job, inventory and per-host logs. Identify exact targets and changes, restore service using a separately reviewed recovery action, validate application and dependencies, and communicate impact. Then find why targeting or preconditions failed, add canaries, assertions, stop thresholds and peer review, and test the corrected workflow before reuse.",
+    "evaluation_points": [
+      "Stops and preserves evidence",
+      "Exact scope and safe recovery",
+      "Service validation/communication",
+      "Systemic automation controls"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-137",
+    "role_slug": "system-administrator",
+    "domain": "Configuration Management, Images and Infrastructure as Code",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How does configuration management differ from a provisioning script?",
+    "preferred_answer": "Provisioning creates or allocates infrastructure, while configuration management continuously or repeatedly brings operating systems and services toward an approved state. The tools can overlap. A mature workflow records desired state, inventory, variables, secrets, tests and evidence rather than relying on a one-time build that drifts indefinitely.",
+    "evaluation_points": [
+      "Provisioning versus configuration",
+      "Desired-state convergence",
+      "Tool overlap",
+      "Drift and evidence"
+    ],
+    "resolution_title": "Introduction to Ansible",
+    "resolution_url": "https://docs.ansible.com/projects/ansible/latest/getting_started/introduction.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-138",
+    "role_slug": "system-administrator",
+    "domain": "Configuration Management, Images and Infrastructure as Code",
+    "difficulty": "foundation",
+    "question_type": "inventory",
+    "prompt": "Why is infrastructure inventory a control, not just a list of IP addresses?",
+    "preferred_answer": "Inventory defines managed identity, ownership, environment, function, platform, variables and group relationships used by automation and operations. Incorrect or stale inventory can target the wrong systems or exclude critical ones. It needs authoritative sources, lifecycle updates, validation and access control because it can reveal topology and privilege paths.",
+    "evaluation_points": [
+      "Rich host metadata",
+      "Automation targeting role",
+      "Freshness and authority",
+      "Sensitive topology/access data"
+    ],
+    "resolution_title": "Ansible inventory guide",
+    "resolution_url": "https://docs.ansible.com/projects/ansible/latest/inventory_guide/intro_inventory.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-139",
+    "role_slug": "system-administrator",
+    "domain": "Configuration Management, Images and Infrastructure as Code",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What belongs in a reusable Ansible role or similar configuration module?",
+    "preferred_answer": "It should have a narrow responsibility, defaults and documented inputs, tasks using appropriate idempotent modules, handlers, templates and files, supported platform checks, tests and meaningful outputs. Secrets should be external. Avoid hidden global variables and large roles that combine unrelated services because they are harder to test, reuse and roll back.",
+    "evaluation_points": [
+      "Narrow responsibility",
+      "Inputs/defaults/modules/handlers",
+      "Platform checks and tests",
+      "No hidden variables or embedded secrets"
+    ],
+    "resolution_title": "Ansible roles",
+    "resolution_url": "https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_reuse_roles.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-140",
+    "role_slug": "system-administrator",
+    "domain": "Configuration Management, Images and Infrastructure as Code",
+    "difficulty": "intermediate",
+    "question_type": "images",
+    "prompt": "What is the difference between a golden image and configuration applied after boot?",
+    "preferred_answer": "A golden image prepackages an approved operating-system and software state, reducing startup time and variation. Post-boot configuration handles environment-specific identity, secrets and rapidly changing settings. Images can become stale and propagate embedded defects, while extensive boot configuration increases time and failure points. Use a deliberate split with versioning and rebuild cadence.",
+    "evaluation_points": [
+      "Image benefits",
+      "Post-boot dynamic configuration",
+      "Staleness/propagation risk",
+      "Deliberate split and cadence"
+    ],
+    "resolution_title": "Packer documentation",
+    "resolution_url": "https://developer.hashicorp.com/packer/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-141",
+    "role_slug": "system-administrator",
+    "domain": "Configuration Management, Images and Infrastructure as Code",
+    "difficulty": "intermediate",
+    "question_type": "drift",
+    "prompt": "How should configuration drift be detected and handled?",
+    "preferred_answer": "Compare measured state with an approved versioned baseline, classify whether the difference is authorised, emergency, application-generated or suspicious, and choose reconcile, accept with exception or update the standard. Automatic correction is suitable only for well-understood settings with safe rollback. Preserve evidence before overwriting potentially important incident changes.",
+    "evaluation_points": [
+      "Measured versus desired state",
+      "Drift classification",
+      "Reconcile/exception/standard update",
+      "Caution with auto-remediation"
+    ],
+    "resolution_title": "Azure Policy Machine Configuration",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/governance/machine-configuration/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-142",
+    "role_slug": "system-administrator",
+    "domain": "Configuration Management, Images and Infrastructure as Code",
+    "difficulty": "advanced",
+    "question_type": "state-management",
+    "prompt": "Why can infrastructure state files become sensitive assets?",
+    "preferred_answer": "State may contain resource identifiers, topology, outputs and sometimes credentials or secret values. It is also used to calculate destructive changes, so tampering can redirect automation. Protect it with access control, encryption, locking, versioning and backup, and separate environments. Review plans rather than trusting the state or provider response blindly.",
+    "evaluation_points": [
+      "Sensitive metadata/secrets",
+      "Integrity affects changes",
+      "Locking/encryption/versioning",
+      "Environment separation and plan review"
+    ],
+    "resolution_title": "Terraform language documentation",
+    "resolution_url": "https://developer.hashicorp.com/terraform/language",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-143",
+    "role_slug": "system-administrator",
+    "domain": "Configuration Management, Images and Infrastructure as Code",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "How can policy as code help without creating a false sense of compliance?",
+    "preferred_answer": "Policy as code can make selected rules repeatable, reviewable and testable at build or deployment time. It only evaluates the data and conditions expressed, can contain defects and may not observe runtime or business context. Combine it with human design review, runtime validation, exceptions with expiry and outcome monitoring. Passing a policy test is evidence, not proof of safety.",
+    "evaluation_points": [
+      "Repeatable automated rules",
+      "Coverage/model limitations",
+      "Human/runtime controls",
+      "Evidence not guarantee"
+    ],
+    "resolution_title": "Azure Policy Machine Configuration",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/governance/machine-configuration/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-144",
+    "role_slug": "system-administrator",
+    "domain": "Configuration Management, Images and Infrastructure as Code",
+    "difficulty": "scenario",
+    "question_type": "drift-incident",
+    "prompt": "A critical server was manually changed during an incident and configuration automation now wants to revert it. What do you do?",
+    "preferred_answer": "Pause automatic reconciliation for the affected scope, preserve the emergency change and incident rationale, assess whether it remains necessary, and compare it with the declared baseline. Convert the approved final state into version-controlled configuration, review and test it, then re-enable convergence. Do not let either an undocumented manual change or blind automation win by default.",
+    "evaluation_points": [
+      "Pauses unsafe reconciliation",
+      "Preserves emergency evidence",
+      "Decides desired final state",
+      "Codifies and safely re-enables"
+    ],
+    "resolution_title": "Introduction to Ansible",
+    "resolution_url": "https://docs.ansible.com/projects/ansible/latest/getting_started/introduction.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-145",
+    "role_slug": "system-administrator",
+    "domain": "Containers and Hybrid Server Infrastructure",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How does a container differ from a virtual machine?",
+    "preferred_answer": "A container isolates processes using operating-system kernel features and packages an application and user-space dependencies, while a VM virtualises hardware and runs its own guest kernel. Containers are usually lighter and faster to start, but share the host kernel and depend heavily on image and runtime controls. Neither is automatically more secure for every workload.",
+    "evaluation_points": [
+      "Shared-kernel process isolation",
+      "VM guest-kernel model",
+      "Density/startup trade-off",
+      "Security depends on design"
+    ],
+    "resolution_title": "Docker overview",
+    "resolution_url": "https://docs.docker.com/get-started/docker-overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-146",
+    "role_slug": "system-administrator",
+    "domain": "Containers and Hybrid Server Infrastructure",
+    "difficulty": "foundation",
+    "question_type": "host-role",
+    "prompt": "What remains the system administrator responsibility on a container host?",
+    "preferred_answer": "The host operating system, kernel, runtime, storage, network, time, identity integration, patching, resource pressure, logging and node availability remain infrastructure concerns. Platform tooling may schedule workloads, but a failed disk, compromised runtime or exhausted inode table can affect many containers. Ownership boundaries with application and platform teams must be explicit.",
+    "evaluation_points": [
+      "Host/kernel/runtime ownership",
+      "Storage/network/resource concerns",
+      "Large blast radius",
+      "Clear team boundaries"
+    ],
+    "resolution_title": "Kubernetes Nodes",
+    "resolution_url": "https://kubernetes.io/docs/concepts/architecture/nodes/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-147",
+    "role_slug": "system-administrator",
+    "domain": "Containers and Hybrid Server Infrastructure",
+    "difficulty": "intermediate",
+    "question_type": "images",
+    "prompt": "What should an administrator verify before allowing a container image into production?",
+    "preferred_answer": "Verify trusted registry and digest, supported base image, vulnerability and package status, minimal contents, non-root execution where possible, declared ports and volumes, health behaviour, signature or provenance policy and lifecycle owner. Tags can move, so deployments should use immutable references. Scanning does not prove runtime safety or correct configuration.",
+    "evaluation_points": [
+      "Registry/digest trust",
+      "Minimal patched non-root image",
+      "Runtime declarations and ownership",
+      "Scanning limitation"
+    ],
+    "resolution_title": "Docker overview",
+    "resolution_url": "https://docs.docker.com/get-started/docker-overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-148",
+    "role_slug": "system-administrator",
+    "domain": "Containers and Hybrid Server Infrastructure",
+    "difficulty": "intermediate",
+    "question_type": "storage",
+    "prompt": "Why is persistent container data operationally different from the container writable layer?",
+    "preferred_answer": "The writable layer is tied to a container instance and is commonly discarded during replacement. Persistent volumes or external services provide independent lifecycle, access and backup. Administrators must define ownership, consistency, topology, capacity and recovery. Storing critical data inside an ephemeral layer creates fragile hidden state and complicates migration.",
+    "evaluation_points": [
+      "Ephemeral writable layer",
+      "Independent volume lifecycle",
+      "Backup/topology/capacity",
+      "Hidden-state risk"
+    ],
+    "resolution_title": "Docker overview",
+    "resolution_url": "https://docs.docker.com/get-started/docker-overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-149",
+    "role_slug": "system-administrator",
+    "domain": "Containers and Hybrid Server Infrastructure",
+    "difficulty": "intermediate",
+    "question_type": "hybrid-management",
+    "prompt": "What value does a hybrid management plane such as Azure Arc provide, and what new dependency does it introduce?",
+    "preferred_answer": "It can inventory, govern, monitor and apply policy to servers across locations through one control plane. The agent, cloud identity, network path and policy service become dependencies and privileged components. Organisations need outage behaviour, local recovery, data-governance, access and update plans so cloud control does not remove on-site operability.",
+    "evaluation_points": [
+      "Central inventory/governance value",
+      "Agent/identity/network dependency",
+      "Privileged control-plane risk",
+      "Local recovery and data governance"
+    ],
+    "resolution_title": "Azure Arc-enabled servers overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-arc/servers/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-150",
+    "role_slug": "system-administrator",
+    "domain": "Containers and Hybrid Server Infrastructure",
+    "difficulty": "advanced",
+    "question_type": "node-operations",
+    "prompt": "When should a Kubernetes node be repaired in place versus drained and rebuilt?",
+    "preferred_answer": "Repair in place may suit a known low-risk issue with preserved node identity and rapid validation. Rebuild is safer for unknown drift, compromise, immutable-image models or complex corruption. The decision depends on workload disruption, local state, capacity, forensic need and reproducibility. Drain and eviction behaviour must be understood before removing a node.",
+    "evaluation_points": [
+      "Known issue versus unknown drift",
+      "Immutable/compromise preference",
+      "Capacity/local state/forensics",
+      "Drain and eviction awareness"
+    ],
+    "resolution_title": "Kubernetes Nodes",
+    "resolution_url": "https://kubernetes.io/docs/concepts/architecture/nodes/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-151",
+    "role_slug": "system-administrator",
+    "domain": "Containers and Hybrid Server Infrastructure",
+    "difficulty": "advanced",
+    "question_type": "security",
+    "prompt": "Why is granting a container broad host mounts or privileged mode high risk?",
+    "preferred_answer": "It can bypass namespace isolation, access devices, kernel interfaces, credentials or host files and effectively turn application compromise into host compromise. Use the narrowest capabilities, read-only mounts, user namespaces, MAC/seccomp controls and separate nodes for exceptional workloads. Convenience should not silently redefine the host trust boundary.",
+    "evaluation_points": [
+      "Isolation bypass",
+      "Host compromise path",
+      "Narrow capability/mount controls",
+      "Exceptional workload segregation"
+    ],
+    "resolution_title": "Docker overview",
+    "resolution_url": "https://docs.docker.com/get-started/docker-overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-152",
+    "role_slug": "system-administrator",
+    "domain": "Containers and Hybrid Server Infrastructure",
+    "difficulty": "scenario",
+    "question_type": "node-incident",
+    "prompt": "Several container workloads fail on one node while the control plane reports the node as Ready. How do you investigate?",
+    "preferred_answer": "Check node resource pressure, filesystem and inode capacity, runtime and kubelet logs, network plugin, DNS path, volume mounts and recent host changes. Compare failing and healthy pods and test host-level dependencies. A Ready condition is broad and may not represent runtime or storage health. Cordon the node if risk is growing, preserve evidence and drain only with capacity and disruption checks.",
+    "evaluation_points": [
+      "Node resource/runtime evidence",
+      "Network/storage dependencies",
+      "Ready limitation",
+      "Cordon/drain safely"
+    ],
+    "resolution_title": "Kubernetes Nodes",
+    "resolution_url": "https://kubernetes.io/docs/concepts/architecture/nodes/",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-153",
+    "role_slug": "system-administrator",
+    "domain": "Troubleshooting, Incident Response and Change Control",
+    "difficulty": "foundation",
+    "question_type": "troubleshooting",
+    "prompt": "What is a useful infrastructure troubleshooting loop?",
+    "preferred_answer": "Define the symptom, scope, impact and time; gather evidence and recent changes; form the smallest testable hypothesis; test safely; evaluate results; and either refine or apply a reversible fix. Verify the user-facing service and monitor recurrence. Recording commands, timestamps and observations prevents random action from replacing diagnosis.",
+    "evaluation_points": [
+      "Symptom/scope/time",
+      "Evidence and hypothesis",
+      "Safe test/reversible fix",
+      "Service verification and record"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-154",
+    "role_slug": "system-administrator",
+    "domain": "Troubleshooting, Incident Response and Change Control",
+    "difficulty": "foundation",
+    "question_type": "incident",
+    "prompt": "When does a technical fault become an incident?",
+    "preferred_answer": "An incident exists when an event disrupts or threatens agreed service, security, data or business outcomes and requires coordinated response. Severity depends on impact, scope, criticality, persistence and containment difficulty, not only the technology involved. Declaring early under uncertainty can mobilise the right roles and communication while evidence develops.",
+    "evaluation_points": [
+      "Outcome impact",
+      "Severity factors",
+      "Coordinated response",
+      "Early declaration under uncertainty"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-155",
+    "role_slug": "system-administrator",
+    "domain": "Troubleshooting, Incident Response and Change Control",
+    "difficulty": "intermediate",
+    "question_type": "evidence",
+    "prompt": "Why should administrators avoid clearing logs, rebooting or deleting files at the beginning of an unknown incident?",
+    "preferred_answer": "Those actions can destroy volatile state, timelines and causal evidence, temporarily hide the symptom and make scope harder to establish. First capture time, processes, connections, errors, configuration and relevant logs, unless safety or continuing harm requires immediate containment. The response should balance evidence preservation with service and security risk.",
+    "evaluation_points": [
+      "Evidence destruction risk",
+      "Captures volatile/current state",
+      "Safety/containment exception",
+      "Balances operations and forensics"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-156",
+    "role_slug": "system-administrator",
+    "domain": "Troubleshooting, Incident Response and Change Control",
+    "difficulty": "intermediate",
+    "question_type": "change-correlation",
+    "prompt": "How do you use recent-change data without assuming every incident was caused by the latest change?",
+    "preferred_answer": "Build a timeline of deployments, patches, policies, infrastructure and dependency changes and compare affected versus unaffected systems. Treat changes as hypotheses and test mechanism and timing. A coincident change can distract from capacity, certificate, external or latent failures. Good change records accelerate diagnosis but do not replace technical evidence.",
+    "evaluation_points": [
+      "Timeline and comparison",
+      "Change as hypothesis",
+      "Alternative causes",
+      "Change records plus technical evidence"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-157",
+    "role_slug": "system-administrator",
+    "domain": "Troubleshooting, Incident Response and Change Control",
+    "difficulty": "intermediate",
+    "question_type": "root-cause",
+    "prompt": "What is the difference between restoring service and resolving root cause?",
+    "preferred_answer": "Restoration returns an acceptable service, often through rollback, restart, failover or workaround. Root-cause work identifies technical and organisational conditions that produced and prolonged the event and changes systems to reduce recurrence. Restoration is time-critical; root-cause claims need evidence and should not delay containment. Both need owned follow-up actions.",
+    "evaluation_points": [
+      "Restoration purpose",
+      "Root-cause purpose",
+      "Different timing",
+      "Owned prevention actions"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-158",
+    "role_slug": "system-administrator",
+    "domain": "Troubleshooting, Incident Response and Change Control",
+    "difficulty": "advanced",
+    "question_type": "complex-systems",
+    "prompt": "Why is a single root cause often an inadequate description of infrastructure failure?",
+    "preferred_answer": "Complex incidents emerge from interacting conditions such as weak monitoring, shared dependencies, unsafe change, capacity, confusing ownership and recovery gaps. Naming only the last failed component can miss why normal controls did not prevent or contain impact. Use causal timelines, contributing factors and control analysis while still assigning accountable corrective actions.",
+    "evaluation_points": [
+      "Multiple contributing conditions",
+      "Last-component limitation",
+      "Control and organisational analysis",
+      "Accountable corrective actions"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-159",
+    "role_slug": "system-administrator",
+    "domain": "Troubleshooting, Incident Response and Change Control",
+    "difficulty": "advanced",
+    "question_type": "communication",
+    "prompt": "What should an infrastructure incident update contain?",
+    "preferred_answer": "It should state confirmed impact and scope, current service status, actions completed, evidence-based hypotheses, risks, next decisions, owners and next update time. Separate facts from assumptions and avoid unnecessary sensitive detail. Executives need business consequences and choices; technical responders need precise state and coordination. Consistent cadence reduces parallel interference.",
+    "evaluation_points": [
+      "Impact and status",
+      "Facts versus hypotheses",
+      "Owners/next decisions/time",
+      "Audience-appropriate detail"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-160",
+    "role_slug": "system-administrator",
+    "domain": "Troubleshooting, Incident Response and Change Control",
+    "difficulty": "scenario",
+    "question_type": "multi-system-outage",
+    "prompt": "Users cannot log in to multiple applications after routine network maintenance. How do you lead the first 30 minutes?",
+    "preferred_answer": "Declare and assign roles, freeze unrelated changes, establish impact and timeline, and check common identity dependencies: DNS, time, directory reachability, certificates, routes and firewalls. Preserve logs and compare paths from affected and unaffected locations. If the maintenance is a plausible mechanism and rollback is safe, execute it with validation while continuing evidence collection and communication.",
+    "evaluation_points": [
+      "Incident roles and change freeze",
+      "Common dependency checks",
+      "Affected/unaffected comparison",
+      "Safe rollback with validation"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-161",
+    "role_slug": "system-administrator",
+    "domain": "Future Systems Administration, AIOps and Human Accountability",
+    "difficulty": "foundation",
+    "question_type": "future-of-work",
+    "prompt": "Which system-administration tasks are most suitable for AI assistance today?",
+    "preferred_answer": "AI can help summarise logs, correlate alerts, draft scripts and runbooks, classify tickets, explain configurations, search documentation and propose hypotheses. These are assistance tasks because output can be checked against systems and policy. Privileged changes, security decisions, destructive recovery and business trade-offs require stronger controls and accountable review.",
+    "evaluation_points": [
+      "Concrete assistance tasks",
+      "Verification against evidence",
+      "Privileged/destructive boundary",
+      "Human accountability"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-162",
+    "role_slug": "system-administrator",
+    "domain": "Future Systems Administration, AIOps and Human Accountability",
+    "difficulty": "foundation",
+    "question_type": "ai-risk",
+    "prompt": "Why should an AI-generated administration command never be trusted only because it looks plausible?",
+    "preferred_answer": "Commands can be syntactically valid but target the wrong scope, assume a different platform version, expose secrets, destroy data or violate policy. The operator must understand mechanism, inspect inputs and targets, use dry-run or disposable tests, plan rollback and verify results. Confidence and fluent explanation are not evidence of correctness.",
+    "evaluation_points": [
+      "Plausibility versus correctness",
+      "Version/scope/destructive risks",
+      "Testing and rollback",
+      "Operator understanding"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-163",
+    "role_slug": "system-administrator",
+    "domain": "Future Systems Administration, AIOps and Human Accountability",
+    "difficulty": "intermediate",
+    "question_type": "aiops",
+    "prompt": "What should an AIOps correlation system produce for an operator?",
+    "preferred_answer": "It should group related signals with transparent evidence, affected services, timeline, confidence, candidate causes and recommended next checks, while preserving raw events. Operators need to understand why items were grouped and what data is missing. A single opaque root-cause label can suppress alternative hypotheses and create automation bias.",
+    "evaluation_points": [
+      "Evidence and timeline",
+      "Service context and confidence",
+      "Explainable grouping",
+      "Preserves alternatives/raw data"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-164",
+    "role_slug": "system-administrator",
+    "domain": "Future Systems Administration, AIOps and Human Accountability",
+    "difficulty": "intermediate",
+    "question_type": "autonomous-remediation",
+    "prompt": "What safeguards are required before allowing automatic remediation?",
+    "preferred_answer": "Limit actions to well-understood reversible cases, define target scope and preconditions, use canaries, concurrency and retry limits, independent health checks, audit logs, stop conditions and escalation. Protect credentials and separate detection from change authority where possible. Measure false remediation and recurrence, not only how many actions were automated.",
+    "evaluation_points": [
+      "Reversible bounded cases",
+      "Canary/concurrency/stop limits",
+      "Independent validation and audit",
+      "Outcome metrics and separation of authority"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-165",
+    "role_slug": "system-administrator",
+    "domain": "Future Systems Administration, AIOps and Human Accountability",
+    "difficulty": "intermediate",
+    "question_type": "career",
+    "prompt": "How does infrastructure abstraction change rather than eliminate system-administration work?",
+    "preferred_answer": "Managed services, containers and internal platforms remove some manual server tasks but create work in identity, policy, automation, observability, cost, resilience, integration and provider boundaries. Administrators move from individual-host action toward fleet and service engineering. Deep operating-system and network knowledge remains important when abstractions leak or incidents cross layers.",
+    "evaluation_points": [
+      "Manual task reduction",
+      "New platform/fleet responsibilities",
+      "Service engineering shift",
+      "Fundamentals still needed"
+    ],
+    "resolution_title": "Azure Arc-enabled servers overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-arc/servers/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-166",
+    "role_slug": "system-administrator",
+    "domain": "Future Systems Administration, AIOps and Human Accountability",
+    "difficulty": "advanced",
+    "question_type": "governance",
+    "prompt": "Who is accountable when an autonomous system makes a harmful infrastructure change?",
+    "preferred_answer": "Accountability remains with the organisation and named owners who selected the system, defined policy, granted privileges and accepted risk. Governance should identify decision rights, human override, evidence retention, vendor responsibility, incident process and review. Saying the model made the change is not an acceptable control or post-incident conclusion.",
+    "evaluation_points": [
+      "Named organisational ownership",
+      "Policy/privilege responsibility",
+      "Override/evidence/vendor governance",
+      "No accountability transfer to model"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-167",
+    "role_slug": "system-administrator",
+    "domain": "Future Systems Administration, AIOps and Human Accountability",
+    "difficulty": "advanced",
+    "question_type": "sustainability",
+    "prompt": "How should future infrastructure teams balance reliability, cost and environmental impact?",
+    "preferred_answer": "Use service value and reliability objectives first, then measure utilisation, energy, hardware lifecycle and location or timing impacts across the full system. Remove idle demand, right-size and extend safe asset life before relying on offsets. Trade-offs must be explicit: a lower-carbon option is not acceptable if it creates unsafe recovery, and unlimited growth is not justified merely by efficiency gains.",
+    "evaluation_points": [
+      "Service-value and reliability baseline",
+      "Utilisation and lifecycle measures",
+      "Demand reduction before claims",
+      "Explicit trade-offs and rebound awareness"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
+  },
+  {
+    "id": "SAI-168",
+    "role_slug": "system-administrator",
+    "domain": "Future Systems Administration, AIOps and Human Accountability",
+    "difficulty": "scenario",
+    "question_type": "autonomy-incident",
+    "prompt": "An AI operations agent proposes restarting 400 servers because it correlates rising error rates with a stale service. What do you do?",
+    "preferred_answer": "Do not approve fleet-wide action from correlation alone. Validate the hypothesis on representative affected systems, inspect dependencies and recent changes, check whether restart is safe and whether state will be lost, then use a canary with independent service checks. Set a strict concurrency and stop threshold, retain evidence, and require human approval for expansion or choose a non-restart correction.",
+    "evaluation_points": [
+      "Rejects correlation-only action",
+      "Representative validation",
+      "Canary/concurrency/stop controls",
+      "Independent health and human approval"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-07-30",
+    "status": "published"
   }
 ];
