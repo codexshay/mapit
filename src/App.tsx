@@ -2331,7 +2331,7 @@ export default function App() {
                   <span className="flex items-center gap-1 font-bold text-emerald-400">
                     <Sparkles className="w-3 h-3 text-emerald-400" /> App v{APP_VERSION}
                   </span>
-                  <span className="text-slate-400 text-[9px] font-mono">Cat: {CATALOG_VERSION}</span>
+                  <span className="text-slate-400 text-[9px] font-mono">Ant: {CATALOG_VERSION}</span>
                 </>
               ) : (
                 <span className="text-[9px] font-mono text-emerald-400/80 mx-auto" title={`App version: ${APP_VERSION} | Catalog version: ${CATALOG_VERSION}`}>
