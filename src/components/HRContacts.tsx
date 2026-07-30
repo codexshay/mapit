@@ -8018,20 +8018,20 @@ export default function HRContacts({ theme }: HRContactsProps) {
                             }`}
                           >
                             <div>
-                              <div className="flex items-start justify-between gap-2 border-b border-zinc-800 pb-3 mb-3 font-mono">
-                                <span className="text-[10px] font-bold px-2 py-0.5 bg-white text-black uppercase">
+                              <div className={`flex items-start justify-between gap-2 border-b pb-3 mb-3 font-mono ${isLight ? "border-slate-200" : "border-zinc-800"}`}>
+                                <span className={`text-[10px] font-bold px-2 py-0.5 uppercase ${isLight ? "bg-slate-900 text-white" : "bg-white text-black"}`}>
                                   RANK #{contact.rank}
                                 </span>
-                                <span className="text-[10px] text-zinc-400 uppercase border border-zinc-800 px-2 py-0.5 bg-zinc-900 truncate max-w-[160px]">
+                                <span className={`text-[10px] uppercase border px-2 py-0.5 truncate max-w-[160px] ${isLight ? "border-slate-300 bg-slate-100 text-slate-700" : "border-zinc-800 bg-zinc-900 text-zinc-400"}`}>
                                   {contact.category}
                                 </span>
                               </div>
 
-                              <h4 className="text-lg font-bold text-white leading-snug font-sans mb-2">
+                              <h4 className={`text-lg font-bold leading-snug font-sans mb-2 ${isLight ? "text-slate-900" : "text-white"}`}>
                                 {contact.companyName}
                               </h4>
 
-                              <div className="flex items-center gap-3 text-xs font-mono text-zinc-400 mb-4">
+                              <div className={`flex items-center gap-3 text-xs font-mono mb-4 ${isLight ? "text-slate-600" : "text-zinc-400"}`}>
                                 <div className="flex items-center gap-1 text-yellow-400 font-bold">
                                   <Star className="w-3.5 h-3.5 fill-current" />
                                   <span>{contact.rating}</span>
@@ -8045,9 +8045,9 @@ export default function HRContacts({ theme }: HRContactsProps) {
                               
                               {/* PHONE NUMBER RULE: Omit completely if missing or empty */}
                               {contact.phone && (
-                                <div className="flex items-center justify-between text-zinc-300">
-                                  <span className="text-zinc-500 uppercase text-[10px]">Phone</span>
-                                  <a href={`tel:${contact.phone}`} className="hover:text-white font-bold flex items-center gap-1">
+                                <div className={`flex items-center justify-between ${isLight ? "text-slate-700" : "text-zinc-300"}`}>
+                                  <span className={`uppercase text-[10px] ${isLight ? "text-slate-500" : "text-zinc-500"}`}>Phone</span>
+                                  <a href={`tel:${contact.phone}`} className={`font-bold flex items-center gap-1 ${isLight ? "text-slate-900 hover:text-slate-700" : "text-zinc-200 hover:text-white"}`}>
                                     <Phone className="w-3 h-3 text-zinc-400" />
                                     <span>{contact.phone}</span>
                                   </a>
@@ -8060,7 +8060,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
                                   href={contact.website}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="w-full mt-2 py-2 px-3 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white font-bold flex items-center justify-between uppercase transition cursor-pointer text-xs"
+                                  className={`w-full mt-2 py-2 px-3 border font-bold flex items-center justify-between uppercase transition cursor-pointer text-xs ${isLight ? "border-slate-300 bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-900" : "border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white"}`}
                                 >
                                   <span>Visit Portal / Website</span>
                                   <ExternalLink className="w-3.5 h-3.5" />
@@ -8070,7 +8070,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
                                   href={contact.mapsLink}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="w-full mt-2 py-2 px-3 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white font-bold flex items-center justify-between uppercase transition cursor-pointer text-xs"
+                                  className={`w-full mt-2 py-2 px-3 border font-bold flex items-center justify-between uppercase transition cursor-pointer text-xs ${isLight ? "border-slate-300 bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-900" : "border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white"}`}
                                 >
                                   <span>View Google Maps Listing</span>
                                   <MapPin className="w-3.5 h-3.5" />
@@ -8083,7 +8083,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
                                   href={contact.mapsLink}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="w-full py-1.5 px-3 border border-zinc-800 bg-black hover:border-zinc-500 text-zinc-400 hover:text-white font-bold flex items-center justify-between uppercase transition cursor-pointer text-[10px]"
+                                  className={`w-full py-1.5 px-3 border font-bold flex items-center justify-between uppercase transition cursor-pointer text-[10px] ${isLight ? "border-slate-300 bg-slate-50 hover:bg-slate-900 hover:text-white text-slate-700" : "border-zinc-800 bg-black hover:border-zinc-500 text-zinc-400 hover:text-white"}`}
                                 >
                                   <span>Google Maps Location</span>
                                   <MapPin className="w-3 h-3 text-zinc-400" />
@@ -8097,7 +8097,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
 
                     {/* RENDER PLACEHOLDER FOR MISSING DATA / UPCOMING COUNTRY & STATE DATA */}
                     {!cityConfig.hasData && (
-                      <div className="border border-dashed border-zinc-800 bg-black p-6 text-left flex flex-col md:flex-row md:items-center justify-between gap-4 font-mono">
+                      <div className={`border border-dashed p-6 text-left flex flex-col md:flex-row md:items-center justify-between gap-4 font-mono ${isLight ? "border-slate-300 bg-white text-slate-900" : "border-zinc-800 bg-black text-white"}`}>
                         <div className="space-y-1">
                           <div className="flex items-center gap-2 text-zinc-300 font-bold uppercase text-xs">
                             <AlertCircle className="w-4 h-4 text-amber-400 shrink-0" />
