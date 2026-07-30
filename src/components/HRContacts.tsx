@@ -1830,15 +1830,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
             "wheelchairAccessible": false,
             "website": "http://lead.com.ph/"
         },
-        {
-            "rank": 6,
-            "companyName": "Done Remotely",
-            "rating": 5.0,
-            "reviews": 4,
-            "category": "BPO company",
-            "wheelchairAccessible": false,
-            "website": "https://www.doneremotely.com/"
-        },
+        
         {
             "rank": 7,
             "companyName": "Century High HR Incorporated",
@@ -2941,17 +2933,7 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
             "website": "https://www.actiongrp.net/?utm_source=gmblisting&utm_medium=organic&utm_campaign=okc",
             "mapsLink": "https://www.google.com/maps/search/?api=1&query=Action%20Group%20Staffing%20-%20OKC&query_place_id=ChIJzbCXdXQTsocRTeCPECzoIw4"
         },
-        {
-            "rank": 2,
-            "companyName": "U.S. Air Force & Space Force Recruiting",
-            "rating": 4.9,
-            "reviews": 83,
-            "category": "Military recruiting office",
-            "wheelchairAccessible": true,
-            "phone": "(405) 481-1412",
-            "website": "https://www.airforce.com/",
-            "mapsLink": "https://www.google.com/maps/search/?api=1&query=U.S.%20Air%20Force%20%26%20Space%20Force%20Recruiting&query_place_id=ChIJ75HWHmc8socR_WICv0paJdo"
-        },
+        
         {
             "rank": 3,
             "companyName": "Superior Staffing Inc.",
