@@ -35,7 +35,7 @@ import {
   Terminal, ArrowUpRight, Award, HelpCircle, UserCheck, Flame, ExternalLink,
   Layers, Video, Trophy, Menu, ChevronLeft, Trash2, Sun, Moon,
   ArrowLeft, ArrowRight, Search, ChevronDown, ChevronUp, Book, RefreshCw,
-  Pin, PinOff, Sparkles, Briefcase
+  PanelLeftClose, PanelLeftOpen, Sparkles, Briefcase
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -1623,9 +1623,9 @@ export default function App() {
     );
   };
 
-  const [isSidebarPinned, setIsSidebarPinned] = useState<boolean>(() => {
+  const [isSidebarMinimized, setIsSidebarMinimized] = useState<boolean>(() => {
     try {
-      const saved = localStorage.getItem('mapit_sidebar_pinned');
+      const saved = localStorage.getItem('mapit_sidebar_minimized');
       return saved !== null ? JSON.parse(saved) : false;
     } catch (e) {
       return false;
@@ -1634,71 +1634,18 @@ export default function App() {
 
   useEffect(() => {
     try {
-      localStorage.setItem('mapit_sidebar_pinned', JSON.stringify(isSidebarPinned));
-    } catch (e) {
-      // ignore
-    }
-  }, [isSidebarPinned]);
+      localStorage.setItem('mapit_sidebar_minimized', JSON.stringify(isSidebarMinimized));
+    } catch (e) {}
+  }, [isSidebarMinimized]);
 
-  const [isSidebarMinimized, setIsSidebarMinimized] = useState<boolean>(true);
-  const [isSidebarHovered, setIsSidebarHovered] = useState<boolean>(false);
-  const [isHoveringBottomArea, setIsHoveringBottomArea] = useState<boolean>(false);
-  const isSidebarExpanded = isSidebarPinned || !isSidebarMinimized || (isSidebarHovered && !isHoveringBottomArea);
+  const isSidebarExpanded = !isSidebarMinimized;
 
-  const sidebarHoverTimerRef = useRef<NodeJS.Timeout | null>(null);
-
-  const handleSidebarMouseEnter = () => {
-    if (sidebarHoverTimerRef.current) clearTimeout(sidebarHoverTimerRef.current);
-    sidebarHoverTimerRef.current = setTimeout(() => {
-      setIsSidebarHovered(true);
-    }, 250);
-  };
-
-  const handleSidebarMouseLeave = () => {
-    if (sidebarHoverTimerRef.current) {
-      clearTimeout(sidebarHoverTimerRef.current);
-      sidebarHoverTimerRef.current = null;
-    }
-    setIsSidebarHovered(false);
-    if (!isSidebarPinned) {
-      setIsSidebarMinimized(true);
-    }
+  const toggleAuxiliaryPane = () => {
+    setIsSidebarMinimized(prev => !prev);
   };
 
   const handleSidebarItemClick = (action?: () => void) => {
-    if (sidebarHoverTimerRef.current) {
-      clearTimeout(sidebarHoverTimerRef.current);
-      sidebarHoverTimerRef.current = null;
-    }
-    if (!isSidebarPinned) {
-      setIsSidebarHovered(false);
-    }
     if (action) action();
-  };
-
-  const pinSidebar = () => {
-    setIsSidebarPinned(true);
-    try {
-      localStorage.setItem('mapit_sidebar_pinned', JSON.stringify(true));
-    } catch (e) {
-      console.error('Failed to save pinned state:', e);
-    }
-  };
-
-  const handleSidebarDoubleClick = (e: React.MouseEvent<HTMLElement>) => {
-    const target = e.target as HTMLElement | null;
-    if (target) {
-      const interactiveTags = ['BUTTON', 'A', 'INPUT', 'SELECT', 'TEXTAREA', 'LABEL'];
-      if (
-        interactiveTags.includes(target.tagName) ||
-        target.closest('button, a, input, select, textarea, [role="button"]')
-      ) {
-        return;
-      }
-    }
-    e.preventDefault();
-    e.stopPropagation();
-    setIsSidebarPinned(prev => !prev);
   };
 
   useEffect(() => {
@@ -1993,14 +1940,11 @@ export default function App() {
 
       {/* LEFT SIDE PANEL - Locked & Frozen on scroll, hidden completely on mobile */}
       <aside 
-        onDoubleClick={handleSidebarDoubleClick}
         className={`hidden md:flex md:border-r-2 border-[#121c38]/80 flex-col justify-between transition-all duration-[300ms] ease-in-out z-[100] shrink-0 select-none pb-4 h-screen fixed left-0 top-0 ${
           isSidebarExpanded 
-            ? (isSidebarPinned ? 'w-[260px] bg-[#070b13] sidebar-expanded' : 'w-[260px] bg-[#070b13]/95 backdrop-blur-md sidebar-expanded')
+            ? 'w-[260px] bg-[#070b13] sidebar-expanded'
             : 'w-[72px] bg-[#070b13] sidebar-collapsed'
         } ${introStage === 'blank' || introStage === 'centered' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
-        onMouseEnter={handleSidebarMouseEnter}
-        onMouseLeave={handleSidebarMouseLeave}
       >
         {/* Friendly scrolling ant guest inside side panel */}
         {activeTab !== 'about' && <SidebarAnt theme={theme} />}
@@ -2011,10 +1955,21 @@ export default function App() {
             <div className={`w-full flex items-center ${introStage !== 'done' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
               {/* Logo icon slot - constant 72px width */}
               <div className="w-[72px] h-14 flex items-center justify-center shrink-0">
-                <span className="text-md font-black font-sans preserve-logo-bg border border-slate-800 w-8 h-8 flex items-center justify-center rounded-sm">
-                  <span className="preserve-logo">M</span>
-                  <span className="preserve-logo-green">I</span>
-                </span>
+                <button
+                  type="button"
+                  onClick={toggleAuxiliaryPane}
+                  className="text-md font-black font-sans preserve-logo-bg border border-slate-800 w-9 h-9 flex items-center justify-center rounded-sm transition-all cursor-pointer hover:border-emerald-500 hover:shadow-[0_0_10px_rgba(16,185,129,0.3)]"
+                  title={isSidebarMinimized ? "Expand Side Panel (Toggle Auxiliary Pane)" : "MapIT Home"}
+                >
+                  {isSidebarMinimized ? (
+                    <PanelLeftOpen className="w-5 h-5 text-emerald-400" />
+                  ) : (
+                    <>
+                      <span className="preserve-logo">M</span>
+                      <span className="preserve-logo-green">I</span>
+                    </>
+                  )}
+                </button>
               </div>
 
               {/* Revealable expanded logo details */}
@@ -2027,28 +1982,19 @@ export default function App() {
                 </h1>
 
                 <div className="flex items-center gap-1.5 shrink-0">
-                  {/* Desktop Pin / Unpin Button */}
+                  {/* Desktop Toggle Auxiliary Pane Button */}
                   <button 
                     type="button"
                     onClick={(e) => {
                       e.stopPropagation();
                       e.preventDefault();
-                      setIsSidebarPinned(!isSidebarPinned);
+                      toggleAuxiliaryPane();
                     }}
-                    aria-label={isSidebarPinned ? "Allow sidebar to collapse" : "Keep sidebar expanded"}
-                    aria-pressed={isSidebarPinned}
-                    className={`p-1.5 border transition-all duration-150 cursor-pointer flex items-center justify-center rounded-xs focus:outline-none focus:ring-2 focus:ring-emerald-400 ${
-                      isSidebarPinned
-                        ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400 hover:bg-emerald-500/30 shadow-[0_0_8px_rgba(16,185,129,0.3)]'
-                        : 'bg-[#04070e] hover:bg-slate-900 border-[#1e2e54] text-gray-400 hover:text-white'
-                    }`}
-                    title={isSidebarPinned ? "Allow sidebar to collapse" : "Keep sidebar expanded"}
+                    aria-label="Minimize Side Panel (Toggle Auxiliary Pane)"
+                    className="p-1.5 border bg-[#04070e] hover:bg-slate-900 border-[#1e2e54] text-gray-300 hover:text-white rounded-xs transition-all duration-150 cursor-pointer flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                    title="Minimize Side Panel (Toggle Auxiliary Pane)"
                   >
-                    {isSidebarPinned ? (
-                      <PinOff className="w-3.5 h-3.5 text-emerald-400" />
-                    ) : (
-                      <Pin className="w-3.5 h-3.5 text-gray-400" />
-                    )}
+                    <PanelLeftClose className="w-4 h-4 text-emerald-400" />
                   </button>
 
                   {/* Dedicated Close Arrow inside mobile drawer */}
@@ -2286,12 +2232,9 @@ export default function App() {
               );
             })}
 
-            {/* Empty space drop-zone for double-click pinning */}
+            {/* Empty space drop-zone */}
             <div
-              data-sidebar-pin-zone
-              onDoubleClick={handleSidebarDoubleClick}
-              className="flex-1 min-h-[48px] w-full cursor-pointer select-none shrink-0"
-              title="Double-click empty space to keep sidebar open"
+              className="flex-1 min-h-[48px] w-full select-none shrink-0"
               aria-hidden="true"
             />
 
@@ -2299,8 +2242,6 @@ export default function App() {
 
           {/* Sidebar Bottom Sync Diagnostics & Theme */}
           <div 
-            onMouseEnter={() => setIsHoveringBottomArea(true)}
-            onMouseLeave={() => setIsHoveringBottomArea(false)}
             className="p-2 border-t border-[#121c38]/50 space-y-1.5 mt-auto bg-[#04070e]/80"
           >
             {/* Visual Theme Selector */}
