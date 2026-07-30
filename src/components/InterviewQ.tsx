@@ -912,10 +912,10 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
         <main className={`${mobileTab === 'categories' ? 'hidden md:block' : 'block'} w-full md:w-2/3 space-y-4`}>
           
           {/* Sub-Filters Ribbon: Question Type & Difficulty */}
-          <div className="border-2 border-zinc-800 bg-zinc-950 p-4 space-y-3">
+          <div className={`border-2 p-4 space-y-3 ${isLight ? "bg-white border-slate-300 text-slate-900 shadow-xs" : "bg-zinc-950 border-zinc-800 text-white"}`}>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 md:border-zinc-800 pb-3">
               <div className="flex items-center gap-2 overflow-x-auto">
-                <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider shrink-0">Difficulty:</span>
+                <span className={`text-xs font-bold uppercase tracking-wider shrink-0 ${isLight ? "text-slate-600" : "text-zinc-400"}`}>Difficulty:</span>
                 {['all', 'foundation', 'intermediate', 'advanced', 'scenario'].map((diff) => {
                   const isAvailable = diff === 'all' || availableDifficulties.includes(diff as any);
                   return (

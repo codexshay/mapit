@@ -7801,7 +7801,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
 
   return (
     <div className={`p-2 sm:p-6 space-y-6 font-mono select-none ${
-      isLight ? 'bg-white text-black' : 'bg-black text-white'
+      isLight ? 'bg-slate-100 text-slate-900' : 'bg-black text-white'
     }`}>
       
       {/* Top Header Banner with Beta Tag */}
@@ -7825,7 +7825,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
           <div className="flex items-center gap-2">
             <button
               onClick={handleResetFilters}
-              className="px-3 py-1.5 border border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white text-xs font-bold uppercase transition cursor-pointer flex items-center gap-1.5"
+              className={`px-3 py-1.5 border text-xs font-bold uppercase transition cursor-pointer flex items-center gap-1.5 ${isLight ? "border-slate-300 bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-900" : "border-zinc-700 bg-zinc-900 hover:bg-white hover:text-black text-white"}`}
             >
               <RotateCcw className="w-3.5 h-3.5" />
               <span>Reset Filters</span>
@@ -7850,8 +7850,8 @@ export default function HRContacts({ theme }: HRContactsProps) {
                 onClick={() => handleRegionClick(reg.id)}
                 className={`px-3.5 py-2 text-xs font-bold uppercase border transition-all cursor-pointer flex items-center gap-1.5 ${
                   selectedRegion === reg.id
-                    ? 'bg-white text-black border-white shadow-[2px_2px_0px_0px_#ffffff]'
-                    : 'bg-zinc-900 text-zinc-300 border-zinc-800 hover:border-zinc-500 hover:text-white'
+                    ? (isLight ? 'bg-slate-900 text-white border-slate-900 shadow-xs' : 'bg-white text-black border-white shadow-[2px_2px_0px_0px_#ffffff]')
+                    : (isLight ? 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100' : 'bg-zinc-900 text-zinc-300 border-zinc-800 hover:border-zinc-500 hover:text-white')
                 }`}
               >
                 <span>{reg.icon}</span>
@@ -7868,8 +7868,8 @@ export default function HRContacts({ theme }: HRContactsProps) {
               onClick={() => handleCountryClick('ALL')}
               className={`px-3 py-1 text-xs font-bold uppercase border transition-all cursor-pointer ${
                 selectedCountryCode === 'ALL'
-                  ? 'bg-white text-black border-white'
-                  : 'bg-zinc-950 text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-white'
+                  ? (isLight ? 'bg-slate-900 text-white border-slate-900 shadow-xs' : 'bg-white text-black border-white')
+                  : (isLight ? 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100' : 'bg-zinc-950 text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-white')
               }`}
             >
               All Countries ({availableCountries.length})
@@ -7882,8 +7882,8 @@ export default function HRContacts({ theme }: HRContactsProps) {
                 onClick={() => handleCountryClick(c.countryCode)}
                 className={`px-3 py-1 text-xs font-bold uppercase border transition-all cursor-pointer flex items-center gap-1.5 ${
                   selectedCountryCode === c.countryCode
-                    ? 'bg-white text-black border-white shadow-[2px_2px_0px_0px_#ffffff]'
-                    : 'bg-zinc-950 text-zinc-300 border-zinc-800 hover:border-zinc-600 hover:text-white'
+                    ? (isLight ? 'bg-slate-900 text-white border-slate-900 shadow-xs' : 'bg-white text-black border-white shadow-[2px_2px_0px_0px_#ffffff]')
+                    : (isLight ? 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100' : 'bg-zinc-950 text-zinc-300 border-zinc-800 hover:border-zinc-600 hover:text-white')
                 }`}
               >
                 <span>{c.flag}</span>
@@ -7899,7 +7899,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
               <select
                 value={selectedCityName}
                 onChange={(e) => setSelectedCityName(e.target.value)}
-                className="w-full bg-black border border-zinc-700 px-3 py-1.5 text-xs text-white focus:outline-none focus:border-white font-mono uppercase"
+                className={`w-full border px-3 py-1.5 text-xs font-mono uppercase focus:outline-none ${isLight ? "bg-white border-slate-300 text-slate-900 focus:border-slate-800" : "bg-black border-zinc-700 text-white focus:border-white"}`}
               >
                 <option value="ALL">All Cities / Districts ({availableCities.length})</option>
                 {availableCities.map(ci => (
@@ -7916,7 +7916,7 @@ export default function HRContacts({ theme }: HRContactsProps) {
                 placeholder=""
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-black border border-zinc-700 pl-8 pr-3 py-1.5 text-xs text-white focus:outline-none focus:border-white font-mono"
+                className={`w-full border pl-8 pr-3 py-1.5 text-xs font-mono focus:outline-none ${isLight ? "bg-white border-slate-300 text-slate-900 focus:border-slate-800 placeholder-slate-400" : "bg-black border-zinc-700 text-white focus:border-white"}`}
               />
               <Search className="absolute left-2.5 top-2 w-3.5 h-3.5 text-zinc-400" />
             </div>
@@ -7951,14 +7951,20 @@ export default function HRContacts({ theme }: HRContactsProps) {
               <button
                 type="button"
                 onClick={() => toggleCityDropdown(cityKey)}
-                className="w-full p-4 flex items-center justify-between bg-zinc-900 hover:bg-zinc-800 transition cursor-pointer select-none border-b border-zinc-800"
+                className={`w-full p-4 flex items-center justify-between transition cursor-pointer select-none border-2 mb-2 ${
+                  isLight 
+                    ? 'bg-white border-slate-300 hover:bg-slate-50 text-slate-900 shadow-xs' 
+                    : 'bg-zinc-950 border-zinc-800 hover:bg-zinc-900 text-white'
+                }`}
               >
                 <div className="flex items-center gap-3">
                   <span className="text-xl">{cityConfig.flag}</span>
                   <div className="text-left font-mono">
-                    <h2 className="text-base font-black uppercase text-white tracking-wide flex items-center gap-2">
+                    <h2 className={`text-base font-black uppercase tracking-wide flex items-center gap-2 ${
+                      isLight ? 'text-slate-900' : 'text-white'
+                    }`}>
                       <span>{cityConfig.cityName}</span>
-                      <span className="text-xs text-zinc-400 font-normal">({cityConfig.stateName}, {cityConfig.countryName})</span>
+                      <span className={`text-xs font-normal ${isLight ? 'text-slate-500' : 'text-zinc-400'}`}>({cityConfig.stateName}, {cityConfig.countryName})</span>
                     </h2>
                   </div>
                 </div>
@@ -7977,11 +7983,13 @@ export default function HRContacts({ theme }: HRContactsProps) {
                   )}
 
                   {/* Dropdown Chevron Arrow Indicator */}
-                  <div className="p-1 border border-zinc-700 bg-black text-white rounded-none">
+                  <div className={`p-1 border rounded-none ${
+                    isLight ? 'border-slate-300 bg-slate-100 text-slate-900' : 'border-zinc-700 bg-black text-white'
+                  }`}>
                     {isDropdownOpen ? (
-                      <ChevronUp className="w-4 h-4 text-white" />
+                      <ChevronUp className="w-4 h-4" />
                     ) : (
-                      <ChevronDown className="w-4 h-4 text-white" />
+                      <ChevronDown className="w-4 h-4" />
                     )}
                   </div>
                 </div>
@@ -8003,7 +8011,11 @@ export default function HRContacts({ theme }: HRContactsProps) {
                         {matchedContacts.map((contact) => (
                           <article
                             key={`${contact.rank}-${contact.companyName}`}
-                            className="bg-black border-2 border-zinc-800 hover:border-zinc-500 transition-all p-5 text-left flex flex-col justify-between relative group hover:shadow-[4px_4px_0px_0px_#ffffff]"
+                            className={`border-2 transition-all p-5 text-left flex flex-col justify-between relative group ${
+                              isLight 
+                                ? 'bg-white border-slate-300 text-slate-900 shadow-xs hover:border-slate-500' 
+                                : 'bg-black border-zinc-800 text-white hover:border-zinc-500 hover:shadow-[4px_4px_0px_0px_#ffffff]'
+                            }`}
                           >
                             <div>
                               <div className="flex items-start justify-between gap-2 border-b border-zinc-800 pb-3 mb-3 font-mono">

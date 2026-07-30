@@ -44,7 +44,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
   // Scale-down: Ant size (width: 14, height: 16) fits narrow lanes
   const antRef = useRef({
     x: 400,
-    y: 190,
+    y: 286,
     width: 14,
     height: 16,
     speed: 5.5,
@@ -76,7 +76,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
   // Bottom starting footpath blocker segway ref (at level 8+ if ant stalls in safe bottom zone >8s)
   const bottomSegwayRef = useRef({
     x: -200,
-    y: 188,
+    y: 284,
     width: 25,
     height: 25,
     speed: -3,
@@ -92,13 +92,32 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
   const activeTouchDirRef = useRef<'UP' | 'DOWN' | 'LEFT' | 'RIGHT' | null>(null);
   const moveSoundTickRef = useRef<number>(0);
 
-  // Audio Synth Generator (No-crash/graceful Web Audio)
+  // Audio Synth Generator (Persistent AudioContext singleton to prevent 1-second GC pauses)
+  const audioCtxRef = useRef<AudioContext | null>(null);
+
+  const getAudioContext = () => {
+    if (isMuted) return null;
+    try {
+      if (!audioCtxRef.current) {
+        const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
+        if (AudioCtx) {
+          audioCtxRef.current = new AudioCtx();
+        }
+      }
+      if (audioCtxRef.current && audioCtxRef.current.state === 'suspended') {
+        audioCtxRef.current.resume();
+      }
+      return audioCtxRef.current;
+    } catch {
+      return null;
+    }
+  };
+
   const playSound = (type: 'move' | 'crash' | 'win' | 'gameover' | 'start') => {
     if (isMuted) return;
     try {
-      const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
-      if (!AudioCtx) return;
-      const ctx = new AudioCtx();
+      const ctx = getAudioContext();
+      if (!ctx) return;
       
       if (type === 'move') {
         const osc = ctx.createOscillator();
@@ -180,51 +199,63 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
     targetGateRef.current.successGlow = 0;
   };
 
-  // 4 Compact lanes to fit narrow look (height = 220)
+  // 8 Dynamic Traffic Lanes (Canvas height = 320)
   const lanesRef = useRef<Lane[]>([
-    { y: 40, height: 34, speed: -1.6, color: 'rgba(29, 78, 216, 0.15)', vehicles: [] }, // fast microchips
-    { y: 74, height: 34, speed: -2.8, color: 'rgba(12, 14, 21, 0.4)', vehicles: [] },  // hyper speed ster data
-    { y: 108, height: 34, speed: -1.9, color: 'rgba(29, 78, 216, 0.15)', vehicles: [] }, // cyber data packets
-    { y: 142, height: 34, speed: -1.3, color: 'rgba(12, 14, 21, 0.4)', vehicles: [] }   // legacy network nodes
+    { y: 36,  height: 30, speed: -1.6, color: 'rgba(29, 78, 216, 0.15)', vehicles: [] }, // Lane 1: Microchips (Left)
+    { y: 66,  height: 30, speed: 2.4,  color: 'rgba(12, 14, 21, 0.4)',   vehicles: [] }, // Lane 2: Hyper Speed Data (Right)
+    { y: 96,  height: 30, speed: -2.0, color: 'rgba(29, 78, 216, 0.15)', vehicles: [] }, // Lane 3: Cyber Data Packets (Left)
+    { y: 126, height: 30, speed: 1.8,  color: 'rgba(12, 14, 21, 0.4)',   vehicles: [] }, // Lane 4: Firewall Blocks (Right)
+    { y: 156, height: 30, speed: -2.5, color: 'rgba(29, 78, 216, 0.15)', vehicles: [] }, // Lane 5: High-Speed Packets (Left)
+    { y: 186, height: 30, speed: 2.1,  color: 'rgba(12, 14, 21, 0.4)',   vehicles: [] }, // Lane 6: Quantum Microchips (Right)
+    { y: 216, height: 30, speed: -1.8, color: 'rgba(29, 78, 216, 0.15)', vehicles: [] }, // Lane 7: Legacy Network Nodes (Left)
+    { y: 246, height: 30, speed: 2.7,  color: 'rgba(12, 14, 21, 0.4)',   vehicles: [] }  // Lane 8: SYN Port Transmissions (Right)
   ]);
 
-  // Handle vehicle spawning inside traffic lanes
+  // Handle vehicle spawning inside 8 traffic lanes (supports both left and right movement)
   const updateTraffic = (l: number) => {
-    // Fair difficulty scaling curves:
-    // Speed scales from x0.85 (lvl 1) to x3.0 (lvl 10)
     const speedMult = 0.85 + (l - 1) * 0.245;
-    
-    // Density scaling: level 1-3 has max 1 vehicle per lane, level 4-7 has 2 max, level 8+ has 3 max
     const densityLimit = l >= 8 ? 3 : (l >= 4 ? 2 : 1); 
 
     lanesRef.current.forEach((lane) => {
+      const isRightMoving = lane.speed > 0;
+
       lane.vehicles.forEach((v) => {
         v.x += lane.speed * speedMult;
       });
 
       // Filter out vehicles that flew past screen
-      lane.vehicles = lane.vehicles.filter((v) => v.x + v.width > -50);
+      if (isRightMoving) {
+        lane.vehicles = lane.vehicles.filter((v) => v.x < 850);
+      } else {
+        lane.vehicles = lane.vehicles.filter((v) => v.x + v.width > -50);
+      }
 
-      // Try to spawn new vehicle from the right helper bounds (around x=820)
+      // Try to spawn new vehicle
       if (lane.vehicles.length < densityLimit) {
         let canSpawn = true;
         if (lane.vehicles.length > 0) {
-          const lastV = lane.vehicles[lane.vehicles.length - 1];
-          // Ensure safer distance thresholds based on vehicle speeds & levels
-          const safeDistance = Math.max(160, 260 - (l * 12));
-          if (lastV.x > (800 - safeDistance)) {
-            canSpawn = false;
+          const safeDistance = Math.max(150, 240 - (l * 10));
+          if (isRightMoving) {
+            const firstV = lane.vehicles[lane.vehicles.length - 1];
+            if (firstV.x < safeDistance) {
+              canSpawn = false;
+            }
+          } else {
+            const lastV = lane.vehicles[lane.vehicles.length - 1];
+            if (lastV.x > (800 - safeDistance)) {
+              canSpawn = false;
+            }
           }
         }
 
-        if (canSpawn && Math.random() < 0.022) {
+        if (canSpawn && Math.random() < 0.025) {
           const types: ('speedster' | 'packet' | 'microchip' | 'firewall')[] = [
             'speedster', 'packet', 'microchip', 'firewall'
           ];
           const type = types[Math.floor(Math.random() * types.length)];
           
           let width = 35;
-          let color = '#fb7185'; // Soft red
+          let color = '#fb7185';
           let label = 'DATA';
 
           if (type === 'firewall') {
@@ -234,15 +265,17 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
           } else if (type === 'speedster') {
             width = 25;
             color = '#fbbf24';
-            label = 'FAST';
+            label = 'SYN';
           } else if (type === 'microchip') {
             width = 38;
-            color = '#a855f7';
-            label = 'CHIP';
+            color = '#38bdf8';
+            label = 'PORT';
           }
 
+          const spawnX = isRightMoving ? -50 - width : 820;
+
           lane.vehicles.push({
-            x: 820,
+            x: spawnX,
             width,
             color,
             speed: lane.speed * speedMult,
@@ -260,7 +293,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
   const resetAntPosition = () => {
     isProcessingEventRef.current = false;
     antRef.current.x = 400;
-    antRef.current.y = 190;
+    antRef.current.y = 286;
     antRef.current.isMoving = false;
     antRef.current.facing = 'UP';
     keysPressedRef.current = {};
@@ -311,7 +344,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
       ant.y = Math.max(5, ant.y - step);
       ant.facing = 'UP';
     } else if (dir === 'DOWN') {
-      ant.y = Math.min(194, ant.y + step);
+      ant.y = Math.min(290, ant.y + step);
       ant.facing = 'DOWN';
     } else if (dir === 'LEFT') {
       ant.x = Math.max(5, ant.x - step);
@@ -335,7 +368,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
     const ant = antRef.current;
     const step = ant.speed * 1.5;
     if (dir === 'UP') ant.y = Math.max(5, ant.y - step);
-    else if (dir === 'DOWN') ant.y = Math.min(194, ant.y + step);
+    else if (dir === 'DOWN') ant.y = Math.min(290, ant.y + step);
     else if (dir === 'LEFT') ant.x = Math.max(5, ant.x - step);
     else if (dir === 'RIGHT') ant.x = Math.min(780, ant.x + step);
     playSound('move');
@@ -360,7 +393,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
 
       // Clear viewport
       ctx.fillStyle = isLightTheme ? '#ffffff' : '#05070e';
-      ctx.fillRect(0, 0, 800, 220);
+      ctx.fillRect(0, 0, 800, 320);
 
       // Background circuits lines
       ctx.strokeStyle = isLightTheme ? '#e2e8f0' : '#111326';
@@ -368,32 +401,32 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
       for (let i = 0; i < 800; i += 80) {
         ctx.beginPath();
         ctx.moveTo(i, 0);
-        ctx.lineTo(i + 20, 220);
+        ctx.lineTo(i + 20, 320);
         ctx.stroke();
       }
 
       // Draw safe bottom zones (y = 176 to 220)
       ctx.fillStyle = isLightTheme ? 'rgba(16, 185, 129, 0.12)' : 'rgba(6, 78, 59, 0.2)';
-      ctx.fillRect(0, 176, 800, 44);
+      ctx.fillRect(0, 276, 800, 44);
       ctx.strokeStyle = '#059669';
       ctx.lineWidth = 2;
       ctx.beginPath();
-      ctx.moveTo(0, 176);
-      ctx.lineTo(800, 176);
+      ctx.moveTo(0, 276);
+      ctx.lineTo(800, 276);
       ctx.stroke();
 
       ctx.font = '12px monospace';
       ctx.fillStyle = isLightTheme ? '#047857' : '#10b981';
-      ctx.fillText('⚡', 12, 210);
+      ctx.fillText('⚡', 12, 305);
 
       // Draw safe top arrival zone (y = 0 to 40)
       ctx.fillStyle = isLightTheme ? 'rgba(168, 85, 247, 0.1)' : 'rgba(88, 28, 135, 0.15)';
-      ctx.fillRect(0, 0, 800, 40);
+      ctx.fillRect(0, 0, 800, 36);
       ctx.strokeStyle = isLightTheme ? '#7c3aed' : '#a855f7';
       ctx.lineWidth = 2;
       ctx.beginPath();
-      ctx.moveTo(0, 40);
-      ctx.lineTo(800, 40);
+      ctx.moveTo(0, 36);
+      ctx.lineTo(800, 36);
       ctx.stroke();
 
       // Pulsating Top Gateway
@@ -406,11 +439,11 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
       grad.addColorStop(0.5, '#3b82f6');
       grad.addColorStop(1, '#10b981');
       ctx.fillStyle = grad;
-      ctx.fillRect(gate.x, 0, gate.width, 38);
+      ctx.fillRect(gate.x, 0, gate.width, 34);
 
       ctx.strokeStyle = isLightTheme ? '#3b82f6' : '#22d3ee';
       ctx.lineWidth = 2 + pulseSize / 2;
-      ctx.strokeRect(gate.x - 1, 0, gate.width + 2, 38);
+      ctx.strokeRect(gate.x - 1, 0, gate.width + 2, 34);
 
       ctx.fillStyle = '#ffffff';
       ctx.font = 'bold 9px monospace';
@@ -477,7 +510,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
           }
 
           // Segway collision with ant
-          if (ant.y <= 40) {
+          if (ant.y <= 36) {
             const overlapX = (ant.x + ant.width >= segway.x) && (ant.x <= segway.x + segway.width);
             if (overlapX) {
               handleAntDeath();
@@ -503,7 +536,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
 
         // Level 8-10 starting zone idle tracker
         if (level >= 8) {
-          if (ant.y >= 170) {
+          if (ant.y >= 270) {
             idleTimerRef.current += 1;
             if (idleTimerRef.current >= 480) { // 8 seconds at 60 FPS
               if (!bottomSegway.active) {
@@ -562,7 +595,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
           }
 
           ant.x = Math.max(5, Math.min(780, ant.x + moveX * ant.speed));
-          ant.y = Math.max(5, Math.min(194, ant.y + moveY * ant.speed));
+          ant.y = Math.max(5, Math.min(290, ant.y + moveY * ant.speed));
           ant.isMoving = true;
 
           // Align facing direction in all directions smoothly
@@ -605,7 +638,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
       if (segway.active) {
         // Draw warning siren/flashing lights on the footpath
         ctx.fillStyle = 'rgba(244, 63, 94, 0.12)';
-        ctx.fillRect(0, 0, 800, 40);
+        ctx.fillRect(0, 0, 800, 36);
 
         // Draw Segway body
         // Segway Wheel
@@ -658,7 +691,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
       if (bottomSegway.active) {
         // Draw warning siren/flashing lights on the starting area road
         ctx.fillStyle = 'rgba(235, 94, 40, 0.12)';
-        ctx.fillRect(0, 176, 800, 44);
+        ctx.fillRect(0, 276, 800, 44);
 
         // Draw Segway body
         // Segway Wheel
@@ -791,7 +824,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
         });
 
         // Top Gateway collision
-        if (ant.y <= 40) {
+        if (ant.y <= 36) {
           const inGateX = (ant.x >= gate.x) && (ant.x + ant.width <= gate.x + gate.width);
           if (inGateX) {
             if (ant.facing === 'UP') {
@@ -1013,7 +1046,7 @@ function AntCrossingGame({ theme = 'dark' }: { theme?: 'light' | 'dark' }) {
         <canvas 
           ref={canvasRef}
           width={800}
-          height={220}
+          height={320}
           className="w-full h-auto bg-white dark:bg-[#04060c] block object-contain"
           style={{ imageRendering: 'pixelated' }}
         />
