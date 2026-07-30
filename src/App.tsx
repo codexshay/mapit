@@ -666,15 +666,24 @@ export default function App() {
   const [blinkSectionId, setBlinkSectionId] = useState<string | null>(null);
   const [isConfirmingClear, setIsConfirmingClear] = useState<boolean>(false);
 
-  // Persistent visual theme state (Dark / Light)
+  // Persistent visual theme state (Dark / Light) - Default to 'light' for all screen sizes if not saved
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
     try {
       const saved = localStorage.getItem('mapit_theme');
       if (saved === 'light' || saved === 'dark') return saved;
-      if (typeof window !== 'undefined' && window.innerWidth < 768) return 'light';
     } catch (e) {}
-    return 'dark';
+    return 'light';
   });
+
+  // Pulse theme button for 5 seconds on page launch
+  const [isThemeButtonPulsing, setIsThemeButtonPulsing] = useState<boolean>(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsThemeButtonPulsing(false);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const toggleTheme = () => {
     const nextTheme = theme === 'dark' ? 'light' : 'dark';
@@ -2250,7 +2259,7 @@ export default function App() {
                 <button
                   onClick={() => handleSidebarItemClick(toggleTheme)}
                   data-theme-switch="true"
-                  className="mt-1 w-full py-1 px-2 bg-slate-950 hover:bg-[#121c38]/40 border border-slate-800 text-[10px] font-mono font-bold flex items-center justify-between transition cursor-pointer text-slate-300"
+                  className={`mt-1 w-full py-1 px-2 border text-[10px] font-mono font-bold flex items-center justify-between transition cursor-pointer ${isThemeButtonPulsing ? "animate-pulse ring-2 ring-cyan-400 border-cyan-400 bg-cyan-950/40 text-cyan-300 shadow-[0_0_12px_rgba(6,182,212,0.6)]" : "bg-slate-950 hover:bg-[#121c38]/40 border-slate-800 text-slate-300"}`}
                   title="Toggle Visual theme of website"
                 >
                   <span className="flex items-center gap-1.5">
@@ -2273,7 +2282,7 @@ export default function App() {
               <button
                 onClick={() => handleSidebarItemClick(toggleTheme)}
                 data-theme-switch="true"
-                className="w-full flex items-center justify-center p-2 mb-1.5 hover:bg-slate-900 text-gray-400 hover:text-white transition rounded-sm border border-[#1e2e54]/50 cursor-pointer"
+                className={`w-full flex items-center justify-center p-2 mb-1.5 transition rounded-sm border cursor-pointer ${isThemeButtonPulsing ? "animate-pulse ring-2 ring-cyan-400 border-cyan-400 bg-cyan-950/40 text-cyan-300 shadow-[0_0_12px_rgba(6,182,212,0.6)]" : "hover:bg-slate-900 text-gray-400 hover:text-white border-[#1e2e54]/50"}`}
                 title={theme === 'dark' ? "Switch to Light Theme" : "Switch to Dark Theme"}
               >
                 {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-cyan-500" />}
@@ -2546,7 +2555,7 @@ export default function App() {
                   type="button"
                   data-theme-switch="true"
                   onClick={toggleTheme}
-                  className="p-2 cursor-pointer bg-[#0c1324] border border-[#1e2e54] hover:border-[#10b981] text-gray-300 hover:text-white rounded-md shrink-0 flex items-center justify-center transition"
+                  className={`p-2 cursor-pointer rounded-md shrink-0 flex items-center justify-center transition border ${isThemeButtonPulsing ? "animate-pulse ring-2 ring-cyan-400 border-cyan-400 bg-cyan-950/40 text-cyan-300 shadow-[0_0_12px_rgba(6,182,212,0.6)]" : "bg-[#0c1324] border-[#1e2e54] hover:border-[#10b981] text-gray-300 hover:text-white"}`}
                   title={theme === 'dark' ? "Switch to Light Theme" : "Switch to Dark Theme"}
                 >
                   {theme === 'dark' ? (
