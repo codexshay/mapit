@@ -87122,5 +87122,5125 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "TWKM-Q001",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is User, audience and task analysis, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Technical documentation starts by identifying who must use the content, what they are trying to accomplish, their context, prior knowledge, constraints and likely failure points.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q002",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply User, audience and task analysis in a real documentation or knowledge initiative?",
+    "preferred_answer": "Define audience segments and priority tasks, review support data and product workflows, interview representative users, document assumptions and use the findings to select scope, terminology, examples and depth.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q003",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish User, audience and task analysis from a related concept?",
+    "preferred_answer": "Audience analysis describes readers and context; task analysis decomposes the actions, decisions and information needed to achieve an outcome. Strong planning uses both.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q004",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with User, audience and task analysis, and how should it be corrected?",
+    "preferred_answer": "Writing from the subject-matter expert viewpoint produces accurate but unusable content. Validate real user goals and vocabulary before deciding the structure.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q005",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Purpose, scope and documentation outcomes, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A documentation brief defines the user problem, intended outcome, audience, in-scope and out-of-scope content, dependencies, owners and measures of success.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q006",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Purpose, scope and documentation outcomes in a real documentation or knowledge initiative?",
+    "preferred_answer": "Create a short content brief before drafting, link it to product or service goals, identify decisions that the content must support and agree review and release conditions.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q007",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Purpose, scope and documentation outcomes from a related concept?",
+    "preferred_answer": "A topic title labels content; a documentation outcome states what users should be able to understand, decide or complete after using it.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q008",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Purpose, scope and documentation outcomes, and how should it be corrected?",
+    "preferred_answer": "Starting with a page request instead of a user outcome often creates duplicated or low-value content. Challenge the requested format when another intervention would solve the need better.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q009",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Reader-centered technical explanation, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Reader-centered writing presents information in the order users need it, explains unfamiliar concepts at the point of need and uses concrete language, examples and signposting.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Microsoft Writing Style Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/welcome/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q010",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Reader-centered technical explanation in a real documentation or knowledge initiative?",
+    "preferred_answer": "Lead with the task or decision, establish prerequisites, define necessary terms, connect concepts to observable behavior and remove background that does not help the user act.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Microsoft Writing Style Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/welcome/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q011",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Reader-centered technical explanation from a related concept?",
+    "preferred_answer": "Subject-centered writing follows the system architecture or author knowledge; reader-centered writing follows the user journey and information need.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Microsoft Writing Style Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/welcome/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q012",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Reader-centered technical explanation, and how should it be corrected?",
+    "preferred_answer": "A technically complete explanation can still fail when it buries the answer, assumes context or uses internal jargon. Test comprehension with representative readers.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Microsoft Writing Style Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/welcome/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q013",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Documentation ethics and evidence boundaries, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Technical writers must represent product behavior, risk, limitations and uncertainty honestly while protecting confidential, personal and security-sensitive information.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q014",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Documentation ethics and evidence boundaries in a real documentation or knowledge initiative?",
+    "preferred_answer": "Verify claims against authoritative evidence, label assumptions and version scope, obtain permission for examples, redact sensitive details and escalate pressure to conceal material limitations.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q015",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Documentation ethics and evidence boundaries from a related concept?",
+    "preferred_answer": "Persuasive product content may emphasize benefits; technical documentation must prioritize accurate task performance and safe decision-making.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q016",
+    "role_slug": "tech-writing",
+    "domain": "Technical Writing Foundations and Audience Analysis",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Documentation ethics and evidence boundaries, and how should it be corrected?",
+    "preferred_answer": "Copying internal data, overstating guarantees or hiding known limitations damages trust and may create safety, legal or operational risk.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q017",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Content strategy for technical documentation, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A technical content strategy connects user needs, product priorities, content types, channels, ownership, workflow, governance, technology and measurement.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q018",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Content strategy for technical documentation in a real documentation or knowledge initiative?",
+    "preferred_answer": "Inventory the current estate, identify priority journeys and gaps, define a content model and channel strategy, assign owners, set lifecycle rules and build a measurable roadmap.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q019",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Content strategy for technical documentation from a related concept?",
+    "preferred_answer": "A publication plan schedules outputs; a content strategy explains why the content exists, how it is structured and governed, and how it creates value over time.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q020",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Content strategy for technical documentation, and how should it be corrected?",
+    "preferred_answer": "A strategy that lists pages without ownership, maintenance capacity or measures becomes a backlog rather than an operating model.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q021",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Information architecture and navigation, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Information architecture organizes, labels and connects content so users can browse, search and understand where information belongs.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q022",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Information architecture and navigation in a real documentation or knowledge initiative?",
+    "preferred_answer": "Research user mental models, group content by tasks and subjects, define navigation and cross-linking, use descriptive labels and validate findability through task-based testing.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q023",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Information architecture and navigation from a related concept?",
+    "preferred_answer": "Site structure is the physical hierarchy of pages; information architecture also includes taxonomy, metadata, search behavior, labels and relationships.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q024",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Information architecture and navigation, and how should it be corrected?",
+    "preferred_answer": "Mirroring the organization chart or repository folders forces users to understand internal ownership. Organize around user goals and test the design.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q025",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Content inventory, audit and gap analysis, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A content inventory records what exists; an audit evaluates quality, accuracy, usefulness, duplication, ownership, performance and lifecycle status to guide action.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Knowledge management using Confluence",
+    "resolution_url": "https://www.atlassian.com/software/confluence/resources/guides/best-practices/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q026",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Content inventory, audit and gap analysis in a real documentation or knowledge initiative?",
+    "preferred_answer": "Collect URLs and metadata, sample high-risk content, score against agreed criteria, identify keep-update-merge-archive decisions and prioritize gaps by user impact and risk.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Knowledge management using Confluence",
+    "resolution_url": "https://www.atlassian.com/software/confluence/resources/guides/best-practices/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q027",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Content inventory, audit and gap analysis from a related concept?",
+    "preferred_answer": "An inventory is descriptive data about assets; an audit adds judgement and recommendations based on evidence.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Knowledge management using Confluence",
+    "resolution_url": "https://www.atlassian.com/software/confluence/resources/guides/best-practices/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q028",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Content inventory, audit and gap analysis, and how should it be corrected?",
+    "preferred_answer": "Counting pages without checking user value or technical accuracy creates false confidence. Include usage, support impact, owner and last verification.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Knowledge management using Confluence",
+    "resolution_url": "https://www.atlassian.com/software/confluence/resources/guides/best-practices/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q029",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Content portfolios and journey mapping, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A content portfolio groups related assets across a user journey so teams can manage the complete experience instead of isolated pages.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q030",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Content portfolios and journey mapping in a real documentation or knowledge initiative?",
+    "preferred_answer": "Map discovery, setup, use, troubleshooting, upgrade and retirement needs; connect content types to each stage and identify handoffs, dead ends and repeated explanations.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q031",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Content portfolios and journey mapping from a related concept?",
+    "preferred_answer": "A sitemap shows page relationships; a journey map shows user goals, context, emotions, channels and information needs over time.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q032",
+    "role_slug": "tech-writing",
+    "domain": "Content Strategy and Information Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Content portfolios and journey mapping, and how should it be corrected?",
+    "preferred_answer": "Optimizing individual pages while leaving cross-channel gaps can increase abandonment and support demand. Measure completion across the journey.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q033",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Topic-based authoring, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Topic-based authoring creates self-contained units such as concepts, tasks and references that can be assembled and reused across deliverables.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Darwin Information Typing Architecture (DITA) v1.3",
+    "resolution_url": "https://www.oasis-open.org/standard/ditav1-3/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q034",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Topic-based authoring in a real documentation or knowledge initiative?",
+    "preferred_answer": "Define topic boundaries around one purpose, apply consistent information types, keep dependencies explicit and use maps or navigation to create coherent user flows.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Darwin Information Typing Architecture (DITA) v1.3",
+    "resolution_url": "https://www.oasis-open.org/standard/ditav1-3/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q035",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Topic-based authoring from a related concept?",
+    "preferred_answer": "A topic is designed for independent use and reuse; a traditional chapter may depend heavily on preceding narrative and document order.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Darwin Information Typing Architecture (DITA) v1.3",
+    "resolution_url": "https://www.oasis-open.org/standard/ditav1-3/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q036",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Topic-based authoring, and how should it be corrected?",
+    "preferred_answer": "Splitting content mechanically into small files can destroy context. Each topic still needs a clear user need, scope and meaningful links.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Darwin Information Typing Architecture (DITA) v1.3",
+    "resolution_url": "https://www.oasis-open.org/standard/ditav1-3/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q037",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Information typing: concept, task and reference, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Information typing separates explanatory knowledge, goal-directed procedures and lookup data so readers can predict structure and authors can apply suitable patterns.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "DITA Version 1.3 Part 1: Base Edition",
+    "resolution_url": "https://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part1-base.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q038",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Information typing: concept, task and reference in a real documentation or knowledge initiative?",
+    "preferred_answer": "Choose a primary type for each topic, use concepts to explain why, tasks to guide action and references to present stable facts, then link types where the user journey requires them.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "DITA Version 1.3 Part 1: Base Edition",
+    "resolution_url": "https://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part1-base.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q039",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Information typing: concept, task and reference from a related concept?",
+    "preferred_answer": "A tutorial teaches through a guided learning sequence; a task topic supports a user who already intends to complete a specific goal.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "DITA Version 1.3 Part 1: Base Edition",
+    "resolution_url": "https://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part1-base.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q040",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Information typing: concept, task and reference, and how should it be corrected?",
+    "preferred_answer": "Mixing long explanations, multiple procedures and reference tables in one page reduces scanning and complicates reuse.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "DITA Version 1.3 Part 1: Base Edition",
+    "resolution_url": "https://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part1-base.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q041",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Content models and templates, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A content model defines required and optional elements, relationships, metadata and validation rules for repeatable content types.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Contents of a GitHub Docs article",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/contents-of-a-github-docs-article",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q042",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Content models and templates in a real documentation or knowledge initiative?",
+    "preferred_answer": "Model the smallest stable set of fields that supports user needs, publishing and governance; prototype with real content and validate before enforcing it in a CMS.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Contents of a GitHub Docs article",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/contents-of-a-github-docs-article",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q043",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Content models and templates from a related concept?",
+    "preferred_answer": "A template is a presentation or authoring aid; a content model defines the semantic structure and constraints independent of a particular layout.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Contents of a GitHub Docs article",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/contents-of-a-github-docs-article",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q044",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Content models and templates, and how should it be corrected?",
+    "preferred_answer": "Over-modeling creates author friction and empty fields, while under-modeling produces inconsistent content. Base fields on real decisions and automation needs.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Contents of a GitHub Docs article",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/contents-of-a-github-docs-article",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q045",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Reuse, variables and conditional content, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Reuse manages approved content fragments or structured topics across outputs; variables and conditions adapt product names, versions, platforms or audiences without uncontrolled copying.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "DITA Version 1.3 Part 1: Base Edition",
+    "resolution_url": "https://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part1-base.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q046",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Reuse, variables and conditional content in a real documentation or knowledge initiative?",
+    "preferred_answer": "Identify genuinely stable shared content, assign ownership, test every output combination, expose context to authors and avoid conditions that create unreadable source files.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "DITA Version 1.3 Part 1: Base Edition",
+    "resolution_url": "https://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part1-base.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q047",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Reuse, variables and conditional content from a related concept?",
+    "preferred_answer": "Reuse prevents duplicate maintenance of identical meaning; simple copy-and-paste creates independent content that can drift.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "DITA Version 1.3 Part 1: Base Edition",
+    "resolution_url": "https://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part1-base.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q048",
+    "role_slug": "tech-writing",
+    "domain": "Structured Authoring and Content Models",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Reuse, variables and conditional content, and how should it be corrected?",
+    "preferred_answer": "Excessive reuse can produce generic, context-poor prose and hidden dependencies. Reuse only when semantic meaning and lifecycle are truly shared.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "DITA Version 1.3 Part 1: Base Edition",
+    "resolution_url": "https://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part1-base.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q049",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Step-by-step procedures, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A procedure guides a user through a defined goal using clear prerequisites, ordered actions, expected results and verification.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Writing step-by-step instructions",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/procedures-instructions/writing-step-by-step-instructions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q050",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Step-by-step procedures in a real documentation or knowledge initiative?",
+    "preferred_answer": "Use an action-oriented heading, state prerequisites and location, write one action per numbered step, name UI elements precisely and add expected results where failure may be ambiguous.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Writing step-by-step instructions",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/procedures-instructions/writing-step-by-step-instructions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q051",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Step-by-step procedures from a related concept?",
+    "preferred_answer": "A procedure supports task execution; a process description explains how a system or organization operates and may not tell the reader what to do.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Writing step-by-step instructions",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/procedures-instructions/writing-step-by-step-instructions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q052",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Step-by-step procedures, and how should it be corrected?",
+    "preferred_answer": "Steps that combine multiple actions, omit starting state or rely on screenshots alone are difficult to follow and maintain.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Writing step-by-step instructions",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/procedures-instructions/writing-step-by-step-instructions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q053",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Tutorials and guided learning, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A tutorial is a coherent learning experience that helps a learner build a working result while understanding selected concepts and progressively reducing support.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q054",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Tutorials and guided learning in a real documentation or knowledge initiative?",
+    "preferred_answer": "Define a realistic end state, provide a safe environment and starter assets, sequence small successes, explain key decisions and conclude with verification and next steps.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q055",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Tutorials and guided learning from a related concept?",
+    "preferred_answer": "A tutorial teaches by doing in a controlled path; a how-to guide solves a specific real-world problem without needing to teach the whole domain.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q056",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Tutorials and guided learning, and how should it be corrected?",
+    "preferred_answer": "A tutorial becomes a feature tour when it lacks a meaningful outcome or asks readers to copy commands without understanding or validation.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q057",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Troubleshooting content and decision paths, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Troubleshooting documentation helps users diagnose symptoms, isolate causes, apply safe fixes, verify recovery and know when to escalate.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q058",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Troubleshooting content and decision paths in a real documentation or knowledge initiative?",
+    "preferred_answer": "Start with recognizable symptoms and scope, order checks from low-risk and high-probability to deeper investigation, record expected observations, include rollback and escalation conditions.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q059",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Troubleshooting content and decision paths from a related concept?",
+    "preferred_answer": "A known-error article documents a confirmed cause and workaround; a troubleshooting guide supports diagnosis when the cause is not yet known.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q060",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Troubleshooting content and decision paths, and how should it be corrected?",
+    "preferred_answer": "Listing unrelated fixes encourages risky trial and error. Build a decision path with evidence, permissions and stop conditions.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q061",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Warnings, cautions and safety information, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Safety notices communicate the nature, consequence and avoidance of hazards at the point where users need to decide or act.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Prescriptive documentation",
+    "resolution_url": "https://developers.google.com/style/prescriptive-documentation",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q062",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Warnings, cautions and safety information in a real documentation or knowledge initiative?",
+    "preferred_answer": "Use the organization standard for severity, state the hazard and consequence, give the prevention action, place the notice before exposure and verify legal or domain requirements.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Prescriptive documentation",
+    "resolution_url": "https://developers.google.com/style/prescriptive-documentation",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q063",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Warnings, cautions and safety information from a related concept?",
+    "preferred_answer": "A note adds helpful context; a warning communicates potential serious harm. Severity should reflect consequence, not author emphasis.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Prescriptive documentation",
+    "resolution_url": "https://developers.google.com/style/prescriptive-documentation",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q064",
+    "role_slug": "tech-writing",
+    "domain": "Procedures, Tutorials and Troubleshooting",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Warnings, cautions and safety information, and how should it be corrected?",
+    "preferred_answer": "Overusing warnings causes alert fatigue, while vague notices such as be careful do not enable safe action.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Prescriptive documentation",
+    "resolution_url": "https://developers.google.com/style/prescriptive-documentation",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q065",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Reference documentation design, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Reference content provides accurate, complete and consistently structured lookup information for commands, configuration, objects, parameters, fields, errors or interfaces.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q066",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Reference documentation design in a real documentation or knowledge initiative?",
+    "preferred_answer": "Define a stable entry pattern, source values from authoritative schemas or code where possible, include constraints and examples, and distinguish normative facts from explanatory guidance.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q067",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Reference documentation design from a related concept?",
+    "preferred_answer": "Reference answers what exists and how it behaves; conceptual documentation explains mental models and relationships.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q068",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Reference documentation design, and how should it be corrected?",
+    "preferred_answer": "Incomplete constraints, inconsistent naming or manually copied values make reference material dangerous. Automate and test where feasible.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide and content model",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q069",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is API documentation and OpenAPI descriptions, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "API documentation combines machine-readable interface descriptions with authentication, lifecycle, conceptual, task, example, error and operational guidance.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "OpenAPI Specification v3.1.1",
+    "resolution_url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q070",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply API documentation and OpenAPI descriptions in a real documentation or knowledge initiative?",
+    "preferred_answer": "Maintain an OpenAPI document with operations, schemas, security, responses and examples; generate baseline reference, then add curated workflows, edge cases and version policy.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "OpenAPI Specification v3.1.1",
+    "resolution_url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q071",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish API documentation and OpenAPI descriptions from a related concept?",
+    "preferred_answer": "An API specification describes the contract in a structured form; a developer portal delivers the broader learning and operational experience.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "OpenAPI Specification v3.1.1",
+    "resolution_url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q072",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with API documentation and OpenAPI descriptions, and how should it be corrected?",
+    "preferred_answer": "Generated reference alone rarely explains sequence, business rules or recovery. Validate examples against the live contract and document breaking changes.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "OpenAPI Specification v3.1.1",
+    "resolution_url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q073",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Schema and data-model documentation, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Schema documentation explains data structure, types, required properties, constraints, relationships, examples and compatibility expectations.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "JSON Schema Documentation",
+    "resolution_url": "https://json-schema.org/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q074",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Schema and data-model documentation in a real documentation or knowledge initiative?",
+    "preferred_answer": "Use JSON Schema or an equivalent formal model, add human-readable descriptions and examples, document nullability and evolution rules, and validate samples automatically.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "JSON Schema Documentation",
+    "resolution_url": "https://json-schema.org/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q075",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Schema and data-model documentation from a related concept?",
+    "preferred_answer": "A data dictionary defines business meaning and governance; a technical schema defines machine-level structure and validation constraints.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "JSON Schema Documentation",
+    "resolution_url": "https://json-schema.org/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q076",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Schema and data-model documentation, and how should it be corrected?",
+    "preferred_answer": "A valid sample is not a complete contract. Omitting ranges, formats, cardinality or backward-compatibility behavior leads to integration failure.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "JSON Schema Documentation",
+    "resolution_url": "https://json-schema.org/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q077",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Command-line and code-sample documentation, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "CLI and code examples must be syntactically correct, safe, copyable, scoped to a known environment and accompanied by expected behavior.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Document command-line syntax",
+    "resolution_url": "https://developers.google.com/style/code-syntax",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q078",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Command-line and code-sample documentation in a real documentation or knowledge initiative?",
+    "preferred_answer": "Show prerequisites and shell context, format commands and placeholders consistently, separate input from output, use realistic non-secret values and test examples in CI or reproducible environments.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Document command-line syntax",
+    "resolution_url": "https://developers.google.com/style/code-syntax",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q079",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Command-line and code-sample documentation from a related concept?",
+    "preferred_answer": "Syntax notation explains optional and repeatable arguments; a copyable example uses concrete values to demonstrate one valid invocation.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Document command-line syntax",
+    "resolution_url": "https://developers.google.com/style/code-syntax",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q080",
+    "role_slug": "tech-writing",
+    "domain": "Reference, API and Developer Documentation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Command-line and code-sample documentation, and how should it be corrected?",
+    "preferred_answer": "Examples with production credentials, destructive defaults, stale output or unexplained ellipses create security and usability problems.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Document command-line syntax",
+    "resolution_url": "https://developers.google.com/style/code-syntax",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q081",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Docs-as-code operating model, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Docs-as-code applies version control, text-based source, peer review, automated checks and reproducible builds to documentation while retaining content-design and editorial practices.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "About pull requests",
+    "resolution_url": "https://docs.github.com/en/pull-requests/get-started/about-pull-requests",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q082",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Docs-as-code operating model in a real documentation or knowledge initiative?",
+    "preferred_answer": "Choose a source format and repository, define branching and review rules, automate linting, links and builds, provide preview environments and train contributors with lightweight guidance.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "About pull requests",
+    "resolution_url": "https://docs.github.com/en/pull-requests/get-started/about-pull-requests",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q083",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Docs-as-code operating model from a related concept?",
+    "preferred_answer": "Docs-as-code is a workflow and governance model; writing in Markdown alone does not provide review, automation or release alignment.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "About pull requests",
+    "resolution_url": "https://docs.github.com/en/pull-requests/get-started/about-pull-requests",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q084",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Docs-as-code operating model, and how should it be corrected?",
+    "preferred_answer": "Copying a software workflow without adapting it for writers and subject experts creates contribution barriers and long review queues.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "About pull requests",
+    "resolution_url": "https://docs.github.com/en/pull-requests/get-started/about-pull-requests",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q085",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Pull requests and editorial review, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A pull request creates a reviewable change set with context, discussion, checks and an auditable decision before publication.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "About pull requests",
+    "resolution_url": "https://docs.github.com/en/pull-requests/get-started/about-pull-requests",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q086",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Pull requests and editorial review in a real documentation or knowledge initiative?",
+    "preferred_answer": "Keep changes focused, explain user impact and validation, request domain and editorial reviewers, resolve comments transparently and preserve rationale for important decisions.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "About pull requests",
+    "resolution_url": "https://docs.github.com/en/pull-requests/get-started/about-pull-requests",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q087",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Pull requests and editorial review from a related concept?",
+    "preferred_answer": "Editing a shared page changes content directly; a pull request separates proposal, review and merge so teams can evaluate the exact diff.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "About pull requests",
+    "resolution_url": "https://docs.github.com/en/pull-requests/get-started/about-pull-requests",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q088",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Pull requests and editorial review, and how should it be corrected?",
+    "preferred_answer": "Large mixed-purpose pull requests hide defects and exhaust reviewers. Split work and define approval responsibilities.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "About pull requests",
+    "resolution_url": "https://docs.github.com/en/pull-requests/get-started/about-pull-requests",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q089",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Documentation CI and quality gates, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Documentation CI automatically validates source, style, links, structure, examples and builds so defects are detected before publication.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Setting guidelines for repository contributors",
+    "resolution_url": "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q090",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Documentation CI and quality gates in a real documentation or knowledge initiative?",
+    "preferred_answer": "Run fast checks on every change, classify blocking versus advisory rules, cache dependencies, publish previews and track recurring failures to improve the authoring system.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Setting guidelines for repository contributors",
+    "resolution_url": "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q091",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Documentation CI and quality gates from a related concept?",
+    "preferred_answer": "A linter applies deterministic rules; human review evaluates context, usefulness, accuracy and judgement that automation cannot fully assess.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Setting guidelines for repository contributors",
+    "resolution_url": "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q092",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Documentation CI and quality gates, and how should it be corrected?",
+    "preferred_answer": "Blocking on noisy checks encourages bypasses. Tune rules, document exceptions and never treat a successful build as proof of technical accuracy.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Setting guidelines for repository contributors",
+    "resolution_url": "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q093",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Versioning, releases and documentation synchronization, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Versioned documentation helps users find guidance matching the product or API they actually use and keeps release changes traceable.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q094",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Versioning, releases and documentation synchronization in a real documentation or knowledge initiative?",
+    "preferred_answer": "Define supported versions, align docs changes with release branches or feature flags, publish migration and deprecation guidance, and label historical content clearly.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q095",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Versioning, releases and documentation synchronization from a related concept?",
+    "preferred_answer": "Product release notes summarize change; versioned reference and task content explain how behavior differs and what users must do.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q096",
+    "role_slug": "tech-writing",
+    "domain": "Docs-as-Code, Git Workflows and Publishing Automation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Versioning, releases and documentation synchronization, and how should it be corrected?",
+    "preferred_answer": "Publishing future behavior early or leaving old pages unlabelled causes failed tasks. Coordinate release state and provide explicit applicability.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q097",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Voice, tone and plain technical language, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Technical style should be clear, direct, respectful and suited to the user situation while preserving precise meaning.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Microsoft Writing Style Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/welcome/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q098",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Voice, tone and plain technical language in a real documentation or knowledge initiative?",
+    "preferred_answer": "Prefer familiar words, active constructions and concise sentences, define necessary terms, use examples to resolve abstraction and adjust tone for errors or high-stress tasks.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Microsoft Writing Style Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/welcome/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q099",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Voice, tone and plain technical language from a related concept?",
+    "preferred_answer": "Voice is the consistent character of an organization; tone adapts that voice to context such as onboarding, success, warning or failure.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Microsoft Writing Style Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/welcome/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q100",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Voice, tone and plain technical language, and how should it be corrected?",
+    "preferred_answer": "Simplifying by removing necessary technical distinctions is not plain language. Preserve accuracy while reducing avoidable complexity.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Microsoft Writing Style Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/welcome/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q101",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Terminology management, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Terminology management defines approved terms, meanings, capitalization, variants and prohibited or deprecated usage across products and languages.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Google developer documentation style guide",
+    "resolution_url": "https://developers.google.com/style",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q102",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Terminology management in a real documentation or knowledge initiative?",
+    "preferred_answer": "Create a term record with definition, context, source and owner, integrate it into style and localization workflows, and resolve conflicts with product and domain experts.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Google developer documentation style guide",
+    "resolution_url": "https://developers.google.com/style",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q103",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Terminology management from a related concept?",
+    "preferred_answer": "A glossary helps readers understand terms; a terminology database also governs authoring and translation consistency.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Google developer documentation style guide",
+    "resolution_url": "https://developers.google.com/style",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q104",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Terminology management, and how should it be corrected?",
+    "preferred_answer": "Changing names without migration guidance or allowing multiple terms for one concept harms search, learning and localization.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Google developer documentation style guide",
+    "resolution_url": "https://developers.google.com/style",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q105",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Headings, links and scannable structure, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Descriptive headings, meaningful link text, short sections, lists and tables help users navigate and locate information quickly.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Headings and titles",
+    "resolution_url": "https://developers.google.com/style/headings",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q106",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Headings, links and scannable structure in a real documentation or knowledge initiative?",
+    "preferred_answer": "Use sentence-case headings that state the task or concept, preserve hierarchy, front-load differentiating words and write link text that identifies the destination.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Headings and titles",
+    "resolution_url": "https://developers.google.com/style/headings",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q107",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Headings, links and scannable structure from a related concept?",
+    "preferred_answer": "Visual emphasis highlights an item; semantic structure creates navigable relationships for users, search systems and assistive technology.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Headings and titles",
+    "resolution_url": "https://developers.google.com/style/headings",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q108",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Headings, links and scannable structure, and how should it be corrected?",
+    "preferred_answer": "Headings such as Overview or Click here links provide little context. Structure should remain understandable when scanned out of sequence.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Headings and titles",
+    "resolution_url": "https://developers.google.com/style/headings",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q109",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Editorial review and style governance, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Editorial governance establishes standards, exceptions, review depth, decision ownership and feedback loops that improve quality without creating unnecessary delay.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q110",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Editorial review and style governance in a real documentation or knowledge initiative?",
+    "preferred_answer": "Use risk-based review tiers, check technical and editorial dimensions separately, record durable style decisions, audit recurring defects and update templates or automation.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q111",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Editorial review and style governance from a related concept?",
+    "preferred_answer": "Copyediting corrects language and consistency; substantive editing evaluates organization, audience fit, completeness and logic.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q112",
+    "role_slug": "tech-writing",
+    "domain": "Style, Terminology and Editorial Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Editorial review and style governance, and how should it be corrected?",
+    "preferred_answer": "A rigid gatekeeper model makes standards unpopular and slows urgent fixes. Make rules explainable, proportionate and easy to apply.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q113",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Accessible documentation principles, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Accessible documentation is perceivable, operable, understandable and robust across devices, assistive technologies and diverse user capabilities.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q114",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Accessible documentation principles in a real documentation or knowledge initiative?",
+    "preferred_answer": "Use semantic structure, descriptive headings and links, keyboard-accessible interactions, sufficient alternatives, readable language and testing that combines automated and human evaluation.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q115",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Accessible documentation principles from a related concept?",
+    "preferred_answer": "Accessibility removes barriers for people with disabilities; general usability addresses broader effectiveness and satisfaction. The two overlap but are not identical.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q116",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Accessible documentation principles, and how should it be corrected?",
+    "preferred_answer": "Passing an automated checker does not prove accessibility. Include keyboard, screen reader and comprehension testing for critical journeys.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q117",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Alternative text and visual descriptions, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Alternative text communicates the purpose and equivalent information of meaningful images while decorative images should be ignored by assistive technology.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "An alt decision tree",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q118",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Alternative text and visual descriptions in a real documentation or knowledge initiative?",
+    "preferred_answer": "Determine the image purpose in context, write concise equivalent text, provide a longer description for complex diagrams and avoid repeating nearby captions.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "An alt decision tree",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q119",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Alternative text and visual descriptions from a related concept?",
+    "preferred_answer": "Alt text is not a visual inventory; it conveys the function or information needed by the user in that context.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "An alt decision tree",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q120",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Alternative text and visual descriptions, and how should it be corrected?",
+    "preferred_answer": "Using filenames, writing image of, or omitting data represented only in a chart makes content inaccessible.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "An alt decision tree",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q121",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Accessible tables, code and multimedia, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Technical tables, code samples, audio and video require semantic structure and alternatives that preserve relationships and instructional meaning.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Write accessible documentation",
+    "resolution_url": "https://developers.google.com/style/accessibility",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q122",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Accessible tables, code and multimedia in a real documentation or knowledge initiative?",
+    "preferred_answer": "Use headers and captions for tables, avoid layout tables, label code and output, provide transcripts and captions, and ensure controls work by keyboard.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Write accessible documentation",
+    "resolution_url": "https://developers.google.com/style/accessibility",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q123",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Accessible tables, code and multimedia from a related concept?",
+    "preferred_answer": "Captions represent speech and meaningful audio synchronized with video; transcripts provide a text equivalent that can be searched and read separately.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Write accessible documentation",
+    "resolution_url": "https://developers.google.com/style/accessibility",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q124",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Accessible tables, code and multimedia, and how should it be corrected?",
+    "preferred_answer": "Embedding important instructions only in a video or screenshot excludes users and makes maintenance harder.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Write accessible documentation",
+    "resolution_url": "https://developers.google.com/style/accessibility",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q125",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Inclusive language and cognitive accessibility, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Inclusive technical content avoids unnecessary stereotypes, figurative language and exclusionary assumptions while reducing cognitive burden through literal, consistent and predictable wording.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Google developer documentation style guide",
+    "resolution_url": "https://developers.google.com/style",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q126",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Inclusive language and cognitive accessibility in a real documentation or knowledge initiative?",
+    "preferred_answer": "Review personas and examples for representation, use precise neutral language, explain uncommon abbreviations, keep patterns consistent and offer recovery guidance without blaming the user.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Google developer documentation style guide",
+    "resolution_url": "https://developers.google.com/style",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q127",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Inclusive language and cognitive accessibility from a related concept?",
+    "preferred_answer": "Inclusive language concerns respectful representation; accessible language also considers comprehension, memory, attention and predictable interaction.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Google developer documentation style guide",
+    "resolution_url": "https://developers.google.com/style",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q128",
+    "role_slug": "tech-writing",
+    "domain": "Accessibility and Inclusive Technical Content",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Inclusive language and cognitive accessibility, and how should it be corrected?",
+    "preferred_answer": "Replacing terms mechanically without considering domain meaning can reduce accuracy. Evaluate context and user understanding.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Google developer documentation style guide",
+    "resolution_url": "https://developers.google.com/style",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q129",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Global-ready source content, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Global-ready writing minimizes ambiguity and localization cost by using clear grammar, consistent terms, explicit references and culturally neutral examples.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Writing tips for global content",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/global-communications/writing-tips",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q130",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Global-ready source content in a real documentation or knowledge initiative?",
+    "preferred_answer": "Use short complete sentences, avoid noun stacks and unexplained idioms, keep variables separate from text, provide context to translators and test layouts for expansion.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Writing tips for global content",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/global-communications/writing-tips",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q131",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Global-ready source content from a related concept?",
+    "preferred_answer": "Internationalization prepares content and systems for many languages; localization adapts a product and content to a specific locale.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Writing tips for global content",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/global-communications/writing-tips",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q132",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Global-ready source content, and how should it be corrected?",
+    "preferred_answer": "Writing compressed English for screen space can make translation inaccurate. Fix the source and interface design rather than expecting translators to infer meaning.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Writing tips for global content",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/global-communications/writing-tips",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q133",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Language metadata, encoding and bidirectional text, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Correct language tags, Unicode encoding and direction-aware markup help browsers, search, speech tools and localization systems process multilingual content.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Internationalization techniques: Authoring web pages",
+    "resolution_url": "https://www.w3.org/International/techniques/authoring-html/i18n-html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q134",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Language metadata, encoding and bidirectional text in a real documentation or knowledge initiative?",
+    "preferred_answer": "Use UTF-8, declare the document and in-line language, apply semantic direction markup for right-to-left content and test mixed-script examples in the target interface.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Internationalization techniques: Authoring web pages",
+    "resolution_url": "https://www.w3.org/International/techniques/authoring-html/i18n-html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q135",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Language metadata, encoding and bidirectional text from a related concept?",
+    "preferred_answer": "Content-Language can describe an intended audience at the protocol level; the HTML lang attribute identifies the language for text processing and accessibility.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Internationalization techniques: Authoring web pages",
+    "resolution_url": "https://www.w3.org/International/techniques/authoring-html/i18n-html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q136",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Language metadata, encoding and bidirectional text, and how should it be corrected?",
+    "preferred_answer": "Assuming visual appearance proves correct encoding or direction leads to broken search, speech and punctuation behavior.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Internationalization techniques: Authoring web pages",
+    "resolution_url": "https://www.w3.org/International/techniques/authoring-html/i18n-html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q137",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Localization workflow and translation memory, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A localization workflow controls source readiness, handoff, terminology, translation memory, in-context review, quality assurance and synchronized release.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Writing tips for global content",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/global-communications/writing-tips",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q138",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Localization workflow and translation memory in a real documentation or knowledge initiative?",
+    "preferred_answer": "Freeze or version source, package context and assets, use approved terminology, review in the product, validate placeholders and links, and feed corrections back into shared resources.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Writing tips for global content",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/global-communications/writing-tips",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q139",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Localization workflow and translation memory from a related concept?",
+    "preferred_answer": "Translation memory reuses previously translated segments; a termbase manages approved terminology and definitions.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Writing tips for global content",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/global-communications/writing-tips",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q140",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Localization workflow and translation memory, and how should it be corrected?",
+    "preferred_answer": "Sending screenshots or unversioned copy by email loses context and creates uncontrolled variants. Use traceable packages and ownership.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Writing tips for global content",
+    "resolution_url": "https://learn.microsoft.com/en-us/style-guide/global-communications/writing-tips",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q141",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Localized search and cultural adaptation, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Effective localized content considers local vocabulary, user expectations, examples, measurements, legal context and discovery behavior rather than translating words alone.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "SEO Starter Guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q142",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Localized search and cultural adaptation in a real documentation or knowledge initiative?",
+    "preferred_answer": "Research local search terms and support queries, adapt examples and units, validate legal or policy references and measure task success by locale.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "SEO Starter Guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q143",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Localized search and cultural adaptation from a related concept?",
+    "preferred_answer": "Translation aims for linguistic equivalence; transcreation or cultural adaptation may change presentation to preserve intent and usability.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "SEO Starter Guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q144",
+    "role_slug": "tech-writing",
+    "domain": "Localization, Translation and Global Readiness",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Localized search and cultural adaptation, and how should it be corrected?",
+    "preferred_answer": "Reusing source-language keywords or examples can make accurate translations undiscoverable or inappropriate.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "SEO Starter Guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q145",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Purpose-driven technical visuals, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A technical visual should clarify a relationship, sequence, state, comparison or spatial task that is harder to understand in prose alone.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Write accessible documentation",
+    "resolution_url": "https://developers.google.com/style/accessibility",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q146",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Purpose-driven technical visuals in a real documentation or knowledge initiative?",
+    "preferred_answer": "Define the reader question, select the simplest suitable visual form, label it clearly, align it with text and provide an accessible equivalent.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Write accessible documentation",
+    "resolution_url": "https://developers.google.com/style/accessibility",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q147",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Purpose-driven technical visuals from a related concept?",
+    "preferred_answer": "A decorative illustration supports mood or brand; an explanatory diagram carries information needed for understanding or action.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Write accessible documentation",
+    "resolution_url": "https://developers.google.com/style/accessibility",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q148",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Purpose-driven technical visuals, and how should it be corrected?",
+    "preferred_answer": "Adding diagrams because the subject is complex can increase load when the visual has no clear message or uses unexplained notation.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Write accessible documentation",
+    "resolution_url": "https://developers.google.com/style/accessibility",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q149",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Screenshots and UI documentation, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Screenshots can orient users or show states, but should supplement precise textual instructions and be maintainable across versions and locales.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q150",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Screenshots and UI documentation in a real documentation or knowledge initiative?",
+    "preferred_answer": "Crop to relevant context, remove sensitive data, add callouts sparingly, provide text alternatives and use screenshot automation only with review.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q151",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Screenshots and UI documentation from a related concept?",
+    "preferred_answer": "A screenshot records one visual state; annotated UI text can describe a stable interaction without binding the content to every pixel.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q152",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Screenshots and UI documentation, and how should it be corrected?",
+    "preferred_answer": "Using screenshots as the only instructions creates accessibility, localization and staleness problems.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "GitHub Docs style guide",
+    "resolution_url": "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q153",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Executable and tested code examples, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Code examples are documentation assets that should compile or run, demonstrate one clear idea, use safe defaults and match supported versions.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Code in text",
+    "resolution_url": "https://developers.google.com/style/code-in-text",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q154",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Executable and tested code examples in a real documentation or knowledge initiative?",
+    "preferred_answer": "Store samples in source control, automate tests and dependency updates, separate essential code from scaffolding, explain expected output and disclose required permissions.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Code in text",
+    "resolution_url": "https://developers.google.com/style/code-in-text",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q155",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Executable and tested code examples from a related concept?",
+    "preferred_answer": "A snippet illustrates syntax or a focused pattern; a sample application demonstrates integration and operational structure across multiple files.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Code in text",
+    "resolution_url": "https://developers.google.com/style/code-in-text",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q156",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Executable and tested code examples, and how should it be corrected?",
+    "preferred_answer": "Untested examples silently decay and damage trust. Treat sample failures as release defects and avoid embedding secrets.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Code in text",
+    "resolution_url": "https://developers.google.com/style/code-in-text",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q157",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Video, animation and interactive documentation, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Multimedia can demonstrate temporal or spatial behavior, but requires scripting, accessibility, version control and a text path for users who cannot or prefer not to use it.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q158",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Video, animation and interactive documentation in a real documentation or knowledge initiative?",
+    "preferred_answer": "State the learning objective, storyboard only necessary actions, include captions and transcript, link to current text instructions and define a refresh trigger.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q159",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Video, animation and interactive documentation from a related concept?",
+    "preferred_answer": "A video tutorial is linear and time-based; interactive documentation lets users control input, state and pace.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q160",
+    "role_slug": "tech-writing",
+    "domain": "Visuals, Diagrams, Code Samples and Multimedia",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Video, animation and interactive documentation, and how should it be corrected?",
+    "preferred_answer": "Long unscripted recordings are hard to search, update and localize. Use them only where motion or interaction adds real value.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q161",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Knowledge management system and organizational value, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Knowledge management is a managed capability for creating, acquiring, sharing, applying, protecting and improving knowledge so the organization achieves its objectives.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q162",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Knowledge management system and organizational value in a real documentation or knowledge initiative?",
+    "preferred_answer": "Define business outcomes and knowledge risks, identify critical knowledge flows, establish governance and enablers, integrate practices into work and review effectiveness.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q163",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Knowledge management system and organizational value from a related concept?",
+    "preferred_answer": "Information management controls recorded information; knowledge management also addresses experience, context, learning, communities and application.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q164",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Knowledge management system and organizational value, and how should it be corrected?",
+    "preferred_answer": "Launching a repository without behaviors, ownership and workflow usually creates another storage location rather than improved performance.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q165",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Tacit, explicit and embedded knowledge, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Tacit knowledge exists in experience and judgement, explicit knowledge is recorded, and embedded knowledge appears in processes, systems, products and routines.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q166",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Tacit, explicit and embedded knowledge in a real documentation or knowledge initiative?",
+    "preferred_answer": "Use observation, interviews, after-action reviews, mentoring and communities to surface critical know-how; document what can be standardized and preserve context and exceptions.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q167",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Tacit, explicit and embedded knowledge from a related concept?",
+    "preferred_answer": "Knowledge capture is not always conversion of all tacit knowledge into documents; some capability is better transferred through practice and coaching.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q168",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Tacit, explicit and embedded knowledge, and how should it be corrected?",
+    "preferred_answer": "Recording expert statements without validating examples and boundary conditions creates misleading procedures.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q169",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Knowledge governance, roles and decision rights, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Knowledge governance defines purpose, ownership, policy, quality standards, access, lifecycle, escalation and accountability across the knowledge ecosystem.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information management and governance in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/governance/information-management-and-governance-in-sharepoint",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q170",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Knowledge governance, roles and decision rights in a real documentation or knowledge initiative?",
+    "preferred_answer": "Assign domain owners and article roles, define approval and review criteria by risk, align access and retention with policy and monitor unresolved ownership gaps.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information management and governance in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/governance/information-management-and-governance-in-sharepoint",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q171",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Knowledge governance, roles and decision rights from a related concept?",
+    "preferred_answer": "Content ownership is accountability for a knowledge area; authorship identifies who created or changed a specific item.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information management and governance in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/governance/information-management-and-governance-in-sharepoint",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q172",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Knowledge governance, roles and decision rights, and how should it be corrected?",
+    "preferred_answer": "Requiring central approval for every page creates bottlenecks, while no ownership produces stale and conflicting knowledge.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information management and governance in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/governance/information-management-and-governance-in-sharepoint",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q173",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Knowledge culture and communities of practice, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A knowledge-sharing culture rewards useful contribution, learning, reuse and asking for help, while communities of practice connect people who improve a shared domain.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Knowledge management using Confluence",
+    "resolution_url": "https://www.atlassian.com/software/confluence/resources/guides/best-practices/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q174",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Knowledge culture and communities of practice in a real documentation or knowledge initiative?",
+    "preferred_answer": "Give communities a clear purpose, facilitation, time and channels; recognize reuse and improvement, connect discussions to durable knowledge and measure outcomes rather than post volume.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Knowledge management using Confluence",
+    "resolution_url": "https://www.atlassian.com/software/confluence/resources/guides/best-practices/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q175",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Knowledge culture and communities of practice from a related concept?",
+    "preferred_answer": "A collaboration channel supports conversation; a community of practice has sustained domain stewardship, learning and improvement.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Knowledge management using Confluence",
+    "resolution_url": "https://www.atlassian.com/software/confluence/resources/guides/best-practices/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q176",
+    "role_slug": "tech-writing",
+    "domain": "Knowledge Management Foundations and Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Knowledge culture and communities of practice, and how should it be corrected?",
+    "preferred_answer": "Mandating sharing without psychological safety or time encourages low-quality uploads and knowledge hoarding.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Knowledge management using Confluence",
+    "resolution_url": "https://www.atlassian.com/software/confluence/resources/guides/best-practices/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q177",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Knowledge-Centered Service principles, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "KCS integrates knowledge creation and improvement into the support workflow so knowledge is captured in the context of demand and reused to solve future issues.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q178",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Knowledge-Centered Service principles in a real documentation or knowledge initiative?",
+    "preferred_answer": "Search early, reuse and improve existing articles, create knowledge when needed, structure it for findability and use feedback and demand data to evolve the knowledge base.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q179",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Knowledge-Centered Service principles from a related concept?",
+    "preferred_answer": "Traditional publishing often separates authors from support work; KCS treats knowledge as a by-product of solving real cases.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q180",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Knowledge-Centered Service principles, and how should it be corrected?",
+    "preferred_answer": "A write every ticket approach creates duplicates. Search, link, improve and create only when the knowledge need is distinct.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q181",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is KCS article structure and context, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A useful support article reflects the user language and includes the issue or question, environment, cause when known, resolution and metadata needed for retrieval and reuse.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q182",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply KCS article structure and context in a real documentation or knowledge initiative?",
+    "preferred_answer": "Capture symptoms and context during the interaction, write resolution steps that can be followed safely, preserve customer words for search and flag confidence or lifecycle state.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q183",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish KCS article structure and context from a related concept?",
+    "preferred_answer": "A troubleshooting article may support diagnosis; a known-error article states a confirmed cause and workaround or fix.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q184",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with KCS article structure and context, and how should it be corrected?",
+    "preferred_answer": "Editing every article into formal product language can remove the phrases users actually search for. Preserve both user and technical terminology.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q185",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Solve loop and evolve loop, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "The KCS solve loop covers capture, structure, reuse and improvement during case work; the evolve loop analyzes patterns, health and capability to improve the system.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q186",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Solve loop and evolve loop in a real documentation or knowledge initiative?",
+    "preferred_answer": "Coach analysts on search and article quality, analyze demand and reuse, identify systemic problems, adjust standards and workflows, and recognize valuable behavior.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q187",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Solve loop and evolve loop from a related concept?",
+    "preferred_answer": "The solve loop handles individual interactions; the evolve loop improves the knowledge base, processes, products and organizational capability at scale.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q188",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Solve loop and evolve loop, and how should it be corrected?",
+    "preferred_answer": "Tracking article count alone rewards duplication. Measure reuse, contribution quality, findability, resolution impact and learning.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q189",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Self-service knowledge design, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Self-service content enables users to recognize their situation, complete safe actions, confirm success and escalate with useful context when needed.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q190",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Self-service knowledge design in a real documentation or knowledge initiative?",
+    "preferred_answer": "Prioritize high-demand resolvable issues, use user vocabulary, surface prerequisites and risk, provide decision paths, connect to assisted support and capture failed-search feedback.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q191",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Self-service knowledge design from a related concept?",
+    "preferred_answer": "A public FAQ answers common questions; a self-service knowledge system supports diagnosis, action, verification and escalation across a broader journey.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q192",
+    "role_slug": "tech-writing",
+    "domain": "KCS, Support Knowledge and Self-Service",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Self-service knowledge design, and how should it be corrected?",
+    "preferred_answer": "Deflecting users without measuring success can hide unresolved need. Track completion and escalation quality, not only reduced contacts.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q193",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Taxonomy and controlled vocabularies, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A taxonomy organizes concepts and preferred labels into meaningful relationships so content can be classified, browsed and retrieved consistently.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q194",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Taxonomy and controlled vocabularies in a real documentation or knowledge initiative?",
+    "preferred_answer": "Start with user tasks, domain language and search data, define scope and governance, create synonyms and relationships, test tagging and revise based on retrieval behavior.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q195",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Taxonomy and controlled vocabularies from a related concept?",
+    "preferred_answer": "A taxonomy is a controlled classification structure; a folksonomy emerges from user-generated tags and may be less governed.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q196",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Taxonomy and controlled vocabularies, and how should it be corrected?",
+    "preferred_answer": "Building a taxonomy only from internal departments creates labels users do not recognize. Include user vocabulary and test findability.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q197",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Metadata architecture, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Metadata describes content attributes such as topic, audience, product, version, owner, status and retention so systems can filter, govern and automate it.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q198",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Metadata architecture in a real documentation or knowledge initiative?",
+    "preferred_answer": "Define only fields tied to a user, governance or automation need, specify values and ownership, automate derivation where reliable and monitor completeness and misuse.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q199",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Metadata architecture from a related concept?",
+    "preferred_answer": "Navigation presents selected paths; metadata enables multiple views, filtering, personalization, search and lifecycle control without moving content.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q200",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Metadata architecture, and how should it be corrected?",
+    "preferred_answer": "Too many mandatory fields encourage inaccurate tagging. Prove each field supports a decision or behavior.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q201",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Enterprise search and relevance, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Search quality depends on indexable content, meaningful titles and text, metadata, permissions, query understanding, ranking signals and useful result presentation.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "SEO Starter Guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q202",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Enterprise search and relevance in a real documentation or knowledge initiative?",
+    "preferred_answer": "Analyze queries and zero-result sessions, improve synonyms and titles, remove duplicates, fix permissions, create authoritative result sources and test common tasks.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "SEO Starter Guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q203",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Enterprise search and relevance from a related concept?",
+    "preferred_answer": "Search recall is the proportion of relevant items retrieved; precision is the proportion of retrieved items that are relevant.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "SEO Starter Guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q204",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Enterprise search and relevance, and how should it be corrected?",
+    "preferred_answer": "Adding more content can reduce search quality when duplicates, stale pages and weak titles dominate results.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "SEO Starter Guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q205",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Findability testing and search analytics, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Findability testing observes whether representative users can locate the right content through navigation and search, while analytics reveals patterns at scale.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q206",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Findability testing and search analytics in a real documentation or knowledge initiative?",
+    "preferred_answer": "Create realistic tasks, measure success and time, capture search terms and paths, review zero-result and reformulation data, then improve labels, content and ranking iteratively.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q207",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Findability testing and search analytics from a related concept?",
+    "preferred_answer": "Page views indicate exposure; findability and task-success measures indicate whether users obtained the needed answer or completed the goal.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q208",
+    "role_slug": "tech-writing",
+    "domain": "Taxonomy, Metadata, Search and Findability",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Findability testing and search analytics, and how should it be corrected?",
+    "preferred_answer": "Optimizing only the most searched terms can ignore high-risk low-volume needs. Combine volume, failure and business impact.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information architecture principles in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/information-architecture-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q209",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Content lifecycle and maintenance ownership, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Every content asset needs a lifecycle from proposal and creation through review, publication, change, archival and deletion, with ownership and triggers appropriate to risk.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information management and governance in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/governance/information-management-and-governance-in-sharepoint",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q210",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Content lifecycle and maintenance ownership in a real documentation or knowledge initiative?",
+    "preferred_answer": "Assign owner and verifier, record product and version scope, set review triggers based on releases and incidents, monitor broken dependencies and archive with redirects or replacement guidance.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information management and governance in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/governance/information-management-and-governance-in-sharepoint",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q211",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Content lifecycle and maintenance ownership from a related concept?",
+    "preferred_answer": "A periodic review uses a calendar; an event-driven review is triggered by product, policy, support or ownership change. Mature systems use both.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information management and governance in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/governance/information-management-and-governance-in-sharepoint",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q212",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Content lifecycle and maintenance ownership, and how should it be corrected?",
+    "preferred_answer": "Last reviewed dates without actual verification create false assurance. Record evidence and scope of the review.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information management and governance in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/governance/information-management-and-governance-in-sharepoint",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q213",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Content quality criteria and scorecards, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A quality scorecard evaluates dimensions such as accuracy, relevance, findability, clarity, completeness, safety, accessibility and freshness using evidence and defined thresholds.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q214",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Content quality criteria and scorecards in a real documentation or knowledge initiative?",
+    "preferred_answer": "Choose criteria tied to risk and user outcomes, calibrate reviewers with examples, sample content, prioritize remediation and improve authoring controls based on recurring defects.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q215",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Content quality criteria and scorecards from a related concept?",
+    "preferred_answer": "A checklist verifies presence of expected elements; a scorecard supports graded evaluation and portfolio prioritization.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q216",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Content quality criteria and scorecards, and how should it be corrected?",
+    "preferred_answer": "A single weighted score can hide a critical safety or accuracy failure. Use mandatory gates for high-risk dimensions.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "KCS v6 Practices Guide",
+    "resolution_url": "https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q217",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Documentation metrics and outcome measurement, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Documentation measurement connects content usage and quality to user success, support demand, adoption, developer productivity, risk and maintenance efficiency.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Knowledge management using Confluence",
+    "resolution_url": "https://www.atlassian.com/software/confluence/resources/guides/best-practices/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q218",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Documentation metrics and outcome measurement in a real documentation or knowledge initiative?",
+    "preferred_answer": "Define a question and baseline, combine behavioral analytics with search, feedback and task tests, segment by audience and release, and avoid claiming causation without appropriate evidence.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Knowledge management using Confluence",
+    "resolution_url": "https://www.atlassian.com/software/confluence/resources/guides/best-practices/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q219",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Documentation metrics and outcome measurement from a related concept?",
+    "preferred_answer": "Output metrics count pages or releases; outcome metrics assess task success, time saved, errors avoided or support improvement.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Knowledge management using Confluence",
+    "resolution_url": "https://www.atlassian.com/software/confluence/resources/guides/best-practices/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q220",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Documentation metrics and outcome measurement, and how should it be corrected?",
+    "preferred_answer": "High page views can indicate usefulness or confusion. Interpret metrics with journey and qualitative evidence.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Knowledge management using Confluence",
+    "resolution_url": "https://www.atlassian.com/software/confluence/resources/guides/best-practices/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q221",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Content debt and remediation planning, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Content debt is the accumulated cost and risk of outdated, duplicated, inconsistent, missing or hard-to-maintain documentation and authoring systems.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q222",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Content debt and remediation planning in a real documentation or knowledge initiative?",
+    "preferred_answer": "Identify debt through incidents, search failure, audits and release gaps, estimate user and operational impact, fix root causes and reserve recurring capacity for maintenance.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q223",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Content debt and remediation planning from a related concept?",
+    "preferred_answer": "A documentation backlog contains planned work; content debt specifically represents accumulated deficiency that increases future cost or risk.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q224",
+    "role_slug": "tech-writing",
+    "domain": "Content Lifecycle, Maintenance and Measurement",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Content debt and remediation planning, and how should it be corrected?",
+    "preferred_answer": "Treating every old page as equal spreads effort too thin. Prioritize by risk, demand, dependency and replacement value.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Understand content design",
+    "resolution_url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/understand-content-design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q225",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Documentation platform and CMS selection, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Platform selection should follow author, reviewer, user, integration, security, localization, publishing and lifecycle requirements rather than feature marketing alone.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q226",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Documentation platform and CMS selection in a real documentation or knowledge initiative?",
+    "preferred_answer": "Define weighted scenarios, prototype representative content and workflows, evaluate portability and APIs, estimate operating cost and document trade-offs and exit strategy.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q227",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Documentation platform and CMS selection from a related concept?",
+    "preferred_answer": "A component content management system manages structured reusable components; a general CMS may focus on pages and web publishing.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q228",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Documentation platform and CMS selection, and how should it be corrected?",
+    "preferred_answer": "Choosing the tool before defining the operating model can lock in weak workflows and expensive migration.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q229",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Collaborative knowledge workspaces, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Collaborative platforms support co-creation, comments, history, permissions and discovery, but need conventions that distinguish drafts, decisions and authoritative knowledge.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Create, update, and manage written content",
+    "resolution_url": "https://support.atlassian.com/confluence-cloud/docs/create-edit-and-publish-a-page/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q230",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Collaborative knowledge workspaces in a real documentation or knowledge initiative?",
+    "preferred_answer": "Design spaces around domains and audiences, use templates and ownership, link discussions to durable outcomes, control sensitive content and review high-value pages.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Create, update, and manage written content",
+    "resolution_url": "https://support.atlassian.com/confluence-cloud/docs/create-edit-and-publish-a-page/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q231",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Collaborative knowledge workspaces from a related concept?",
+    "preferred_answer": "A working document supports active collaboration; a published knowledge article represents a trusted current answer.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Create, update, and manage written content",
+    "resolution_url": "https://support.atlassian.com/confluence-cloud/docs/create-edit-and-publish-a-page/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q232",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Collaborative knowledge workspaces, and how should it be corrected?",
+    "preferred_answer": "Treating every meeting note as authoritative knowledge overwhelms search and creates conflicting sources of truth.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Create, update, and manage written content",
+    "resolution_url": "https://support.atlassian.com/confluence-cloud/docs/create-edit-and-publish-a-page/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q233",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Content migration and transformation, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "A content migration is a controlled transformation of information, structure, metadata, links, permissions and lifecycle state, not only file transfer.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information management and governance in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/governance/information-management-and-governance-in-sharepoint",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q234",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Content migration and transformation in a real documentation or knowledge initiative?",
+    "preferred_answer": "Inventory and classify content, map models and URLs, clean before migration, automate transformations, validate samples and totals, test search and accessibility, and maintain rollback.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information management and governance in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/governance/information-management-and-governance-in-sharepoint",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q235",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Content migration and transformation from a related concept?",
+    "preferred_answer": "Lift-and-shift preserves existing structure; transformation redesigns content and metadata to fit the target user experience and operating model.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information management and governance in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/governance/information-management-and-governance-in-sharepoint",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q236",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Content migration and transformation, and how should it be corrected?",
+    "preferred_answer": "Migrating everything recreates duplication and debt. Make evidence-based disposition decisions before moving content.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "Information management and governance in SharePoint",
+    "resolution_url": "https://learn.microsoft.com/en-us/sharepoint/governance/information-management-and-governance-in-sharepoint",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q237",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Interoperability and content portability, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Portable content uses documented formats, stable identifiers, APIs and export paths so it can move between tools and support multiple outputs.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "CommonMark Specification 0.31.2",
+    "resolution_url": "https://spec.commonmark.org/0.31.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q238",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Interoperability and content portability in a real documentation or knowledge initiative?",
+    "preferred_answer": "Prefer open or well-specified source formats, separate content from presentation, preserve metadata, test exports and avoid proprietary features without an exit plan.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "CommonMark Specification 0.31.2",
+    "resolution_url": "https://spec.commonmark.org/0.31.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q239",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Interoperability and content portability from a related concept?",
+    "preferred_answer": "Interoperability enables systems to exchange and use content; portability focuses on moving content with acceptable fidelity and effort.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "CommonMark Specification 0.31.2",
+    "resolution_url": "https://spec.commonmark.org/0.31.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q240",
+    "role_slug": "tech-writing",
+    "domain": "Platforms, CMS, Collaboration and Content Migration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Interoperability and content portability, and how should it be corrected?",
+    "preferred_answer": "Assuming Markdown guarantees portability ignores extensions, embedded components, metadata and link behavior.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "CommonMark Specification 0.31.2",
+    "resolution_url": "https://spec.commonmark.org/0.31.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q241",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Security-sensitive documentation, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Security documentation must enable authorized users while avoiding unnecessary exposure of secrets, exploitable details or unsafe defaults.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q242",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Security-sensitive documentation in a real documentation or knowledge initiative?",
+    "preferred_answer": "Classify the audience and environment, use least-privilege examples, separate public and restricted guidance, scan source and samples for secrets, and coordinate disclosure with security teams.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q243",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Security-sensitive documentation from a related concept?",
+    "preferred_answer": "Security through obscurity is not a control, but unrestricted publication of operational details can still increase risk. Document enough for safe authorized use.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q244",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Security-sensitive documentation, and how should it be corrected?",
+    "preferred_answer": "Publishing real tokens, internal addresses or bypass steps is a preventable incident. Use synthetic data and security review.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q245",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Privacy-aware examples and knowledge access, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Privacy-aware documentation minimizes personal data, explains data use accurately and aligns content access, retention and examples with policy and legitimate need.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q246",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Privacy-aware examples and knowledge access in a real documentation or knowledge initiative?",
+    "preferred_answer": "Use fictional or anonymized datasets, avoid screenshots with identifiers, document privacy-relevant configuration and ensure knowledge permissions and retention are reviewed.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q247",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Privacy-aware examples and knowledge access from a related concept?",
+    "preferred_answer": "Redaction hides selected information in an artifact; anonymization aims to prevent identification and may require more than removing names.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q248",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Privacy-aware examples and knowledge access, and how should it be corrected?",
+    "preferred_answer": "Replacing names alone may leave identities inferable through IDs, dates or context. Review the full example.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q249",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is AI-assisted documentation and human accountability, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "AI can help draft, transform, summarize, classify or retrieve content, but humans remain responsible for source quality, accuracy, safety, bias, confidentiality and publication decisions.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q250",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply AI-assisted documentation and human accountability in a real documentation or knowledge initiative?",
+    "preferred_answer": "Define approved use cases and data boundaries, ground outputs in authorized sources, require review proportional to risk, test citations and examples, record provenance and monitor failures.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q251",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish AI-assisted documentation and human accountability from a related concept?",
+    "preferred_answer": "Generative assistance produces probable language; deterministic automation applies defined rules. Each requires different validation and controls.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q252",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with AI-assisted documentation and human accountability, and how should it be corrected?",
+    "preferred_answer": "Fluent output can fabricate behavior, links or commands. Never publish without domain verification and protect restricted source material.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q253",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Documentation leadership and operating-model improvement, and why does it matter in technical writing or knowledge management?",
+    "preferred_answer": "Documentation leadership aligns people, process, standards, technology and measurement so teams can deliver accurate content at product speed.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q254",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Documentation leadership and operating-model improvement in a real documentation or knowledge initiative?",
+    "preferred_answer": "Clarify service boundaries and responsibilities, build partnerships with product and support, remove workflow friction, develop capability, use portfolio evidence and communicate risk and value.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q255",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Documentation leadership and operating-model improvement from a related concept?",
+    "preferred_answer": "A lead writer may coordinate a deliverable; a documentation leader shapes the system that enables many contributors and products.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TWKM-Q256",
+    "role_slug": "tech-writing",
+    "domain": "Security, Privacy, AI-Assisted Documentation and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Documentation leadership and operating-model improvement, and how should it be corrected?",
+    "preferred_answer": "Centralizing all writing can limit scale, while decentralizing without enablement fragments quality. Build federated ownership with shared standards and tooling.",
+    "evaluation_points": [
+      "Uses precise documentation and knowledge-management terminology",
+      "Connects the answer to a reader task, organizational outcome, risk or measurable quality signal",
+      "Explains evidence, trade-offs, ownership and lifecycle rather than only naming a technique",
+      "Shows how technical accuracy and user-centered communication are validated in practice"
+    ],
+    "resolution_title": "ISO 30401:2018 Knowledge management systems - Requirements",
+    "resolution_url": "https://www.iso.org/standard/68683.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];

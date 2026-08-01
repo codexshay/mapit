@@ -339,7 +339,7 @@ export const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: strin
 'tech-writing': {
     label: 'Technical Writing & Knowledge Management',
     icon: '📝',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering API/DevDocs, Docs-as-Code, Markdown/Git Workflows, DITA, KCS (Knowledge-Centered Service) & AI-Assisted Docs'
   },
 'sales-customer-success': {
     label: 'Sales Engineering & Customer Success Technology',
