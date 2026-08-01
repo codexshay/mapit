@@ -354,7 +354,7 @@ export const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: strin
 'telecom-voice': {
     label: 'Telecom, Voice & Collaboration',
     icon: '📞',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering SIP Signaling, SDP/RTP, Codecs (G.711/Opus), Voice QoS, SBCs, MS Teams Phone Direct Routing, Cisco CUCM, WebRTC & E911 Emergency'
   },
 'governance-audit': {
     label: 'Governance, Risk, Compliance (GRC) & IT Audit',

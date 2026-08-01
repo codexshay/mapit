@@ -102482,5 +102482,5125 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "TVC-Q001",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is PSTN, PBX, gateway and trunk boundaries, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "The PSTN provides public calling and numbering; a PBX supplies enterprise call control and features; gateways translate media or signaling; trunks carry groups of calls between systems. Clear boundaries make ownership, routing and failure domains visible.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T E.164: The international public telecommunication numbering plan",
+    "resolution_url": "https://www.itu.int/rec/T-REC-E.164/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q002",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply PSTN, PBX, gateway and trunk boundaries in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Draw the complete call path from endpoint through call control, SBC or gateway and carrier. Record protocol, number format, media path, ownership and support boundary at every hop.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T E.164: The international public telecommunication numbering plan",
+    "resolution_url": "https://www.itu.int/rec/T-REC-E.164/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q003",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish PSTN, PBX, gateway and trunk boundaries from a single monolithic phone system?",
+    "preferred_answer": "A PBX controls enterprise call behavior, while a trunk is a logical or physical interconnection. A gateway performs protocol or media conversion; it is not automatically the call-control authority.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T E.164: The international public telecommunication numbering plan",
+    "resolution_url": "https://www.itu.int/rec/T-REC-E.164/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q004",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A carrier says its trunk is healthy while all outbound calls fail after reaching the enterprise edge. What should the engineer do next?",
+    "preferred_answer": "Verify the call at each boundary using SIP or circuit traces, confirm number format and route selection, compare carrier and enterprise call IDs, and assign the failure to the first hop that does not produce the expected response.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T E.164: The international public telecommunication numbering plan",
+    "resolution_url": "https://www.itu.int/rec/T-REC-E.164/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q005",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is E.164 normalization and canonical number storage, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "E.164 defines the international public numbering structure. Normalization converts local or user-entered digits into a canonical globally unambiguous form before routing and policy are applied.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T E.164: The international public telecommunication numbering plan",
+    "resolution_url": "https://www.itu.int/rec/T-REC-E.164/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q006",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply E.164 normalization and canonical number storage in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Define translation rules for national, international, extension and emergency patterns; store canonical numbers separately from display formatting and test every site and user class.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T E.164: The international public telecommunication numbering plan",
+    "resolution_url": "https://www.itu.int/rec/T-REC-E.164/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q007",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish E.164 normalization and canonical number storage from display formatting or a local dial string?",
+    "preferred_answer": "A display string may contain spaces, prefixes or local conventions. A canonical E.164 value is the stable identity used for routing, matching, policy and interoperability.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T E.164: The international public telecommunication numbering plan",
+    "resolution_url": "https://www.itu.int/rec/T-REC-E.164/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q008",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Two merged companies use different access codes and overlapping extensions, causing wrong-route calls. What should the engineer do next?",
+    "preferred_answer": "Create a normalized global dial plan, isolate legacy access codes at the edge, identify overlaps, introduce site-aware translations and test inbound, outbound, emergency and internal scenarios before cutover.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T E.164: The international public telecommunication numbering plan",
+    "resolution_url": "https://www.itu.int/rec/T-REC-E.164/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q009",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Analog, digital and IP voice access methods, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Voice access may use analog FXS or FXO, digital PRI or CAS, or IP-based SIP. Each has different signaling, clocking, capacity, supervision, emergency and troubleshooting characteristics.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Cisco Unified Border Element Configuration Guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/cube/configuration/cube-book.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q010",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Analog, digital and IP voice access methods in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Inventory interfaces, signaling type, channel count, clock source, impedance or framing where relevant, and the required gateway resources before a migration or fault investigation.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Cisco Unified Border Element Configuration Guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/cube/configuration/cube-book.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q011",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Analog, digital and IP voice access methods from assuming all voice services are SIP?",
+    "preferred_answer": "FXS serves an analog station, FXO connects to an analog line, PRI carries multiple digital channels, and SIP carries signaling over IP. They require different test tools and failure hypotheses.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Cisco Unified Border Element Configuration Guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/cube/configuration/cube-book.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q012",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An elevator phone works on the old PBX but not after a cloud calling migration. What should the engineer do next?",
+    "preferred_answer": "Treat it as a special analog and life-safety dependency, verify line power and dialing behavior, retain or deploy a supported analog gateway, test failover and emergency behavior, and document ownership.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Cisco Unified Border Element Configuration Guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/cube/configuration/cube-book.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q013",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Telephone number inventory, ownership and portability, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Number management controls assignment, service address, carrier ownership, routing, caller ID, porting status and retirement. The inventory must be authoritative and linked to users, sites and services.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Manage telephone numbers for your organization",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/manage-phone-numbers-landing-page",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q014",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Telephone number inventory, ownership and portability in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Reconcile carrier records, platform assignments, emergency addresses, billing and actual call tests. Use controlled workflows for reserve, assign, port, quarantine and release.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Manage telephone numbers for your organization",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/manage-phone-numbers-landing-page",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q015",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Telephone number inventory, ownership and portability from a list of numbers in a spreadsheet?",
+    "preferred_answer": "An inventory is operational only when it records lifecycle state, owner, service, location and evidence. A static list without reconciliation cannot prevent loss or misrouting.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Manage telephone numbers for your organization",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/manage-phone-numbers-landing-page",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q016",
+    "role_slug": "telecom-voice",
+    "domain": "Telephony Foundations, PSTN and Numbering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A business-critical number is missing from the port order one day before cutover. What should the engineer do next?",
+    "preferred_answer": "Freeze changes, confirm the number owner and current carrier, open an expedited correction path, define temporary forwarding or dual-running, communicate the risk, and do not release the old service until validated.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Manage telephone numbers for your organization",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/manage-phone-numbers-landing-page",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q017",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is SIP transactions, dialogs and core methods, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "SIP uses requests and responses organized into transactions, while dialogs represent peer relationships for an established session. INVITE, ACK, BYE, CANCEL, REGISTER and OPTIONS have distinct state and timing behavior.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3261: SIP - Session Initiation Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3261",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q018",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply SIP transactions, dialogs and core methods in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Trace a call by Call-ID, tags, branch and CSeq. Reconstruct the transaction sequence and identify whether failure occurs before dialog creation, during session modification or at termination.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3261: SIP - Session Initiation Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3261",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q019",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish SIP transactions, dialogs and core methods from treating every SIP packet as an independent message?",
+    "preferred_answer": "A transaction is a request-response exchange; a dialog is the longer-lived relationship identified by Call-ID and tags. Confusing them causes incorrect timer and retransmission analysis.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3261: SIP - Session Initiation Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3261",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q020",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An INVITE receives 200 OK, but the called party hears no answer and the call clears after about 30 seconds. What should the engineer do next?",
+    "preferred_answer": "Check whether ACK reaches the far endpoint, verify Record-Route and Contact handling, inspect NAT or firewall state, and correlate the dialog on both systems before changing timers.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3261: SIP - Session Initiation Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3261",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q021",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is SIP provisional and final response interpretation, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "SIP response classes indicate provisional, successful, redirection, client failure, server failure or global failure outcomes. The code, generating hop and surrounding call flow matter more than vendor-specific reason text.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3261: SIP - Session Initiation Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3261",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q022",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply SIP provisional and final response interpretation in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Locate the first non-expected response, identify which device generated it, inspect preceding headers and SDP, and compare the code with route, authentication, capacity and policy conditions.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3261: SIP - Session Initiation Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3261",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q023",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish SIP provisional and final response interpretation from reading only the reason phrase?",
+    "preferred_answer": "A 404 from an enterprise PBX may mean no route, while a 404 from a carrier may mean an invalid destination. The same code has different operational meaning at different hops.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3261: SIP - Session Initiation Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3261",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q024",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Outbound calls return 503 during peak traffic, but only through one carrier trunk. What should the engineer do next?",
+    "preferred_answer": "Check Retry-After, trunk capacity, OPTIONS health, carrier admission controls and alternate routes; fail traffic safely if designed, preserve traces and escalate with timestamps and call IDs.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3261: SIP - Session Initiation Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3261",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q025",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is SIP headers, identity and routing context, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "SIP routing and identity use Request-URI, To, From, Contact, Via, Route, Record-Route and trusted identity headers such as P-Asserted-Identity. Their meaning depends on trust boundaries and call direction.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3325: P-Asserted-Identity within Trusted Networks",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3325",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q026",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply SIP headers, identity and routing context in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Compare inbound and outbound headers at each hop, document which identity is authoritative, and apply minimal normalization rather than broad header rewriting.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3325: P-Asserted-Identity within Trusted Networks",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3325",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q027",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish SIP headers, identity and routing context from relying only on the From header?",
+    "preferred_answer": "From is presentation-oriented and may be user-controlled; P-Asserted-Identity is meaningful only within an agreed trusted network. Request-URI drives routing and Contact affects subsequent dialog requests.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3325: P-Asserted-Identity within Trusted Networks",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3325",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q028",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Caller ID is correct internally but becomes anonymous when calls leave the SBC. What should the engineer do next?",
+    "preferred_answer": "Compare identity headers before and after the SBC, verify privacy and screening policies, confirm carrier expectations, correct the trusted-header mapping, and retest multiple caller classes.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3325: P-Asserted-Identity within Trusted Networks",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3325",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q029",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Registration, DNS service discovery and OPTIONS health, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Registration binds an address-of-record to reachable contacts; DNS NAPTR and SRV can locate services; OPTIONS is commonly used for application-level reachability. Together they support discovery and health but do not prove end-to-end calling.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3263: Locating SIP Servers",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3263",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q030",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Registration, DNS service discovery and OPTIONS health in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Monitor registration expiry and failures, DNS responses, certificate names, OPTIONS status and actual synthetic calls. Use separate alarms for transport, signaling and call completion.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3263: Locating SIP Servers",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3263",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q031",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Registration, DNS service discovery and OPTIONS health from assuming ping proves SIP service health?",
+    "preferred_answer": "ICMP proves only IP reachability. OPTIONS proves a SIP entity can respond. A completed synthetic call additionally validates routing, policy, media and downstream dependencies.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3263: Locating SIP Servers",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3263",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q032",
+    "role_slug": "telecom-voice",
+    "domain": "SIP Signaling and Call-State Analysis",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An SBC is reachable by ping but marked inactive by the cloud calling platform. What should the engineer do next?",
+    "preferred_answer": "Inspect TLS state, certificate name and expiry, DNS resolution, source and destination ports, SIP OPTIONS exchange and platform-specific health indicators before restarting anything.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3263: Locating SIP Servers",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3263",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q033",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is SDP offer-answer negotiation, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "SDP describes proposed media streams, addresses, ports, protocols, formats and attributes. The offer-answer model determines a mutually acceptable session and must preserve rules about stream order and direction.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3264: Offer/Answer Model with SDP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3264",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q034",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply SDP offer-answer negotiation in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Compare the initial offer and answer, then inspect re-INVITEs or UPDATEs. Verify connection addresses, ports, media direction, payload mappings, encryption attributes and rejected streams.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3264: Offer/Answer Model with SDP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3264",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q035",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish SDP offer-answer negotiation from a simple list of codecs?",
+    "preferred_answer": "SDP carries session description; SIP carries signaling. A successful SIP response can still contain an unusable media agreement.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3264: Offer/Answer Model with SDP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3264",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q036",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A call connects but has no audio after an SBC change, while SIP shows 200 OK. What should the engineer do next?",
+    "preferred_answer": "Inspect the offer and answer for private media addresses, port zero, direction attributes, incompatible RTP profile or missing codec; compare pre-change traces and validate media pinholes.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3264: Offer/Answer Model with SDP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3264",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q037",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Early offer, delayed offer and early media, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Early offer includes SDP in the initial INVITE; delayed offer provides it later. Early media can flow before final answer, often after 183 Session Progress, and affects announcements, ringback and interworking.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3264: Offer/Answer Model with SDP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3264",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q038",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Early offer, delayed offer and early media in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Document carrier and platform expectations, ensure media resources are available when conversion is needed, and test 180, 183, PRACK and answer scenarios across trunks.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3264: Offer/Answer Model with SDP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3264",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q039",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Early offer, delayed offer and early media from ringback as a purely endpoint-generated tone?",
+    "preferred_answer": "Signaling progress and media progress are separate. A 180 may produce local ringback, while 183 with SDP may establish an early media path for network announcements.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3264: Offer/Answer Model with SDP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3264",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q040",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Users hear silence instead of a carrier announcement before a failed call. What should the engineer do next?",
+    "preferred_answer": "Check whether 183 and SDP traverse every hop, whether early media is allowed, whether the RTP path opens before answer, and whether an MTP or transcoder changed offer behavior.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3264: Offer/Answer Model with SDP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3264",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q041",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Codec payload mapping and media-line selection, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Static and dynamic RTP payload types identify formats within the negotiated session. Dynamic payload numbers have meaning only through the associated rtpmap and fmtp attributes in that SDP.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 4566: Session Description Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4566",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q042",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Codec payload mapping and media-line selection in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Validate audio and video media lines, payload mappings, packetization time, format parameters and codec order on both call legs. Do not infer codec from a dynamic number alone.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 4566: Session Description Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4566",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q043",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Codec payload mapping and media-line selection from assuming a payload number has a universal codec meaning?",
+    "preferred_answer": "Codec preference is an ordered proposal, not proof of final selection. The negotiated codec is the common format actually selected and used in RTP.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 4566: Session Description Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4566",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q044",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A trace shows payload type 111, and an engineer assumes it is always Opus. What should the engineer do next?",
+    "preferred_answer": "Read the rtpmap for that specific SDP, confirm the answer and packet stream, then verify transcoding or interworking rather than relying on a familiar payload number.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 4566: Session Description Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4566",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q045",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Hold, re-INVITE, UPDATE and session refresh, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Established sessions can be modified with re-INVITE or UPDATE, including hold, resume, codec or media changes. Session timers detect stale dialogs and require negotiated refresh behavior.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 4028: Session Timers in SIP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4028",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q046",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Hold, re-INVITE, UPDATE and session refresh in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Trace the mid-call signaling and confirm CSeq progression, direction attributes, refresh responsibility, authentication and route set. Test transfer, hold and long-duration calls.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 4028: Session Timers in SIP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4028",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q047",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Hold, re-INVITE, UPDATE and session refresh from ending and recreating every call when media changes?",
+    "preferred_answer": "Hold is a media-direction change within a dialog; session refresh preserves dialog liveness. Neither should be confused with registration expiry or TCP keepalive.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 4028: Session Timers in SIP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4028",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q048",
+    "role_slug": "telecom-voice",
+    "domain": "SDP, Offer-Answer and Session Modification",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Calls consistently drop after 30 minutes following a migration. What should the engineer do next?",
+    "preferred_answer": "Check Session-Expires and Min-SE negotiation, refresher role, whether re-INVITE or UPDATE crosses the SBC, and whether a firewall or platform rejects the refresh.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 4028: Session Timers in SIP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4028",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q049",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is RTP and RTCP roles, sequence and timestamps, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "RTP transports real-time media with sequence numbers, timestamps, payload type and synchronization identifiers. RTCP reports reception quality, participant information and timing to support monitoring and synchronization.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3550: RTP - A Transport Protocol for Real-Time Applications",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q050",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply RTP and RTCP roles, sequence and timestamps in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Capture both directions, map SSRCs and endpoints, check sequence gaps, timestamp progression, payload type and RTCP loss, jitter and round-trip reports.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3550: RTP - A Transport Protocol for Real-Time Applications",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q051",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish RTP and RTCP roles, sequence and timestamps from using SIP traces alone to judge media?",
+    "preferred_answer": "SIP establishes and changes sessions; RTP carries the media. A perfect SIP call flow does not prove that packets reached the right address or arrived with usable quality.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3550: RTP - A Transport Protocol for Real-Time Applications",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q052",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Signaling completes normally, but only one party can hear audio. What should the engineer do next?",
+    "preferred_answer": "Use SDP to predict media endpoints, capture RTP on both sides of the SBC, find the first missing direction, then correct routing, NAT, firewall or media anchoring at that boundary.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3550: RTP - A Transport Protocol for Real-Time Applications",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q053",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Codec selection, packetization and transcoding, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Codec choice affects bandwidth, quality, processing, resilience and interoperability. G.711 is high-bitrate PCM with low algorithmic complexity; compressed and wideband codecs trade bandwidth and processing differently.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.711: Pulse code modulation of voice frequencies",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.711",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q054",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Codec selection, packetization and transcoding in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Build a supported codec matrix by endpoint, trunk and region. Include packetization, RTP overhead, encryption, expected loss and transcoder capacity before setting preferences.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.711: Pulse code modulation of voice frequencies",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.711",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q055",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Codec selection, packetization and transcoding from choosing the lowest bitrate codec by default?",
+    "preferred_answer": "Lower codec bitrate does not automatically mean lower total cost or better quality. Transcoding adds delay, resource use and another failure point.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.711: Pulse code modulation of voice frequencies",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.711",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q056",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A new carrier supports only G.711, while remote sites were optimized for a compressed codec. What should the engineer do next?",
+    "preferred_answer": "Quantify WAN capacity, prefer direct common codecs where possible, size transcoders only for unavoidable interworking, and validate quality and failover under peak load.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.711: Pulse code modulation of voice frequencies",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.711",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q057",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Jitter buffers, packet loss and concealment, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Jitter buffers absorb variable packet arrival at the cost of added delay. Packet loss concealment can mask isolated losses, but burst loss, late packets and excessive jitter degrade speech differently.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.107: The E-model",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.107",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q058",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Jitter buffers, packet loss and concealment in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Correlate endpoint and network metrics, examine loss distribution and burstiness, compare adaptive jitter behavior, and identify whether impairment is local, WAN, internet or provider-side.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.107: The E-model",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.107",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q059",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Jitter buffers, packet loss and concealment from treating all packet loss percentages equally?",
+    "preferred_answer": "Average loss can hide short severe bursts. Jitter is variation in arrival time; latency is elapsed time. A larger buffer may reduce late loss while worsening conversational delay.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.107: The E-model",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.107",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q060",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Users report robotic audio for ten seconds whenever cloud backups start. What should the engineer do next?",
+    "preferred_answer": "Correlate call timestamps with link utilization and queue drops, verify QoS trust and scheduling, stop or shape the competing flow, and validate with packet and RTCP evidence.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.107: The E-model",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.107",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q061",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is SRTP, media encryption and key establishment, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "SRTP protects RTP confidentiality, integrity and replay resistance. Keying may be conveyed by mechanisms such as SDES within protected signaling or established through DTLS-SRTP, depending on the platform.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3711: Secure Real-time Transport Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3711",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q062",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply SRTP, media encryption and key establishment in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Verify the negotiated RTP profile, keying attributes, certificate or signaling protection, crypto-suite compatibility and whether every media hop preserves the required security.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3711: Secure Real-time Transport Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3711",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q063",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish SRTP, media encryption and key establishment from encrypting SIP signaling only?",
+    "preferred_answer": "TLS protects signaling hop by hop; SRTP protects media. One can be enabled without the other, and media may be decrypted and re-encrypted at trusted intermediaries.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3711: Secure Real-time Transport Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3711",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q064",
+    "role_slug": "telecom-voice",
+    "domain": "RTP, RTCP, Codecs and Media Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Calls fail only when media encryption is enforced between two platforms. What should the engineer do next?",
+    "preferred_answer": "Compare crypto suites and keying method, confirm certificate trust and signaling protection, identify whether an intermediary supports secure media, and avoid disabling encryption as the permanent fix.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3711: Secure Real-time Transport Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3711",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q065",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Latency, jitter, loss, MOS and R-factor interpretation, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Conversational quality depends on delay, loss, codec and equipment impairment. MOS is an estimated or measured quality score, while the E-model produces an R-factor for planning; neither replaces underlying metrics and context.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.114: One-way transmission time",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.114",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q066",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Latency, jitter, loss, MOS and R-factor interpretation in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Establish site and endpoint baselines, use percentiles and call-leg detail, correlate MOS or R-factor with delay, jitter, loss and user reports, and preserve measurement direction.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.114: One-way transmission time",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.114",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q067",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Latency, jitter, loss, MOS and R-factor interpretation from using a single score without supporting metrics?",
+    "preferred_answer": "MOS summarizes perceived quality; latency, jitter and loss are causal indicators. A good average MOS can hide a small population of severe failures.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.114: One-way transmission time",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.114",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q068",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A dashboard shows acceptable average MOS, but executives at one office report unusable calls. What should the engineer do next?",
+    "preferred_answer": "Segment by site, subnet, device, ISP, codec and time; inspect poor-call percentiles and individual call legs; compare network path and local endpoint conditions.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.114: One-way transmission time",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.114",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q069",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is DSCP marking, trust boundaries and queuing, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "QoS classifies, marks, queues and polices traffic so delay-sensitive media receives predictable treatment during congestion. Trust boundaries determine where markings are accepted or rewritten.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Enterprise QoS Solution Reference Network Design Guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/WAN_and_MAN/QoS_SRND/QoS-SRND-Book.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q070",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply DSCP marking, trust boundaries and queuing in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Define media classes and port ranges, mark at controlled endpoints or access edges, preserve markings through LAN and WAN, configure low-latency queuing and validate with captures and congestion tests.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Enterprise QoS Solution Reference Network Design Guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/WAN_and_MAN/QoS_SRND/QoS-SRND-Book.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q071",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish DSCP marking, trust boundaries and queuing from adding DSCP markings without enforcing them?",
+    "preferred_answer": "Marking identifies desired treatment; queuing provides treatment. DSCP alone has no effect if devices ignore, overwrite or map it incorrectly.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Enterprise QoS Solution Reference Network Design Guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/WAN_and_MAN/QoS_SRND/QoS-SRND-Book.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q072",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Packets leave endpoints marked for voice but arrive at the WAN edge as best effort. What should the engineer do next?",
+    "preferred_answer": "Trace markings hop by hop, inspect switch trust and rewrite policy, verify tunnels and provider classes, correct the first remarking point and retest under load.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Enterprise QoS Solution Reference Network Design Guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/WAN_and_MAN/QoS_SRND/QoS-SRND-Book.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q073",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Bandwidth and concurrent-call sizing, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Voice capacity must include RTP, UDP, IP and link-layer overhead, packetization interval, security, silence behavior, busy-hour concurrency, failover and growth. Video and screen sharing require separate models.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.711: Pulse code modulation of voice frequencies",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.711",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q074",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Bandwidth and concurrent-call sizing in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Calculate per-call wire rate for the chosen codec and transport, apply measured or forecast concurrency, add headroom and model failure cases where traffic shifts to surviving links or SBCs.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.711: Pulse code modulation of voice frequencies",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.711",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q075",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Bandwidth and concurrent-call sizing from multiplying codec bitrate by user count?",
+    "preferred_answer": "Licensed users are not concurrent calls. Codec payload bitrate is not the complete wire rate. Average daily usage is not a safe busy-hour capacity measure.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.711: Pulse code modulation of voice frequencies",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.711",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q076",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A trunk has enough channels normally but rejects calls whenever one SBC is in maintenance. What should the engineer do next?",
+    "preferred_answer": "Recalculate N+1 capacity, compare licensed and physical limits, include inbound and outbound peaks, adjust routing or add capacity, and validate failover before the next change.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T G.711: Pulse code modulation of voice frequencies",
+    "resolution_url": "https://www.itu.int/rec/T-REC-G.711",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q077",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Call admission control and saturation protection, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Call admission control protects quality by preventing new sessions from consuming unavailable network, media or platform capacity. It may use location bandwidth, SBC sessions, carrier channels or application policy.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Improve call quality in Microsoft Teams",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-call-quality-qos",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q078",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Call admission control and saturation protection in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Define admission limits for normal and failover states, monitor rejections and utilization, align CAC with real bottlenecks, and maintain emergency-call exceptions where required.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Improve call quality in Microsoft Teams",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-call-quality-qos",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q079",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Call admission control and saturation protection from relying only on carrier channel limits?",
+    "preferred_answer": "Capacity monitoring observes utilization; admission control actively rejects or reroutes new calls. It should protect established calls rather than allowing total collapse.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Improve call quality in Microsoft Teams",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-call-quality-qos",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q080",
+    "role_slug": "telecom-voice",
+    "domain": "Voice QoS, Capacity and Network Readiness",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A WAN outage reroutes all voice through a backup link and every active call degrades. What should the engineer do next?",
+    "preferred_answer": "Use location-aware CAC or policy to limit new media on the reduced path, preserve emergency and critical calling, communicate constraints, and restore normal routing after validation.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Improve call quality in Microsoft Teams",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-call-quality-qos",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q081",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Global dial-plan architecture and route-pattern specificity, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "A scalable dial plan normalizes numbers, separates user dialing from routing, uses predictable pattern specificity and supports sites, services, emergency numbers and future growth.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T E.164: The international public telecommunication numbering plan",
+    "resolution_url": "https://www.itu.int/rec/T-REC-E.164/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q082",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Global dial-plan architecture and route-pattern specificity in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Model digit collection, normalization, class of service, route selection and presentation as separate stages. Use test matrices and automated checks for overlap and shadowing.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T E.164: The international public telecommunication numbering plan",
+    "resolution_url": "https://www.itu.int/rec/T-REC-E.164/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q083",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Global dial-plan architecture and route-pattern specificity from adding route patterns case by case?",
+    "preferred_answer": "Normalization answers what number the user intended; routing answers where to send it. Combining them in ad hoc transformations makes troubleshooting and migration risky.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T E.164: The international public telecommunication numbering plan",
+    "resolution_url": "https://www.itu.int/rec/T-REC-E.164/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q084",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A new international route pattern unexpectedly captures local service numbers. What should the engineer do next?",
+    "preferred_answer": "Identify the most specific winning pattern, remove ambiguity, add explicit service and emergency exceptions, run regression tests across sites and document the route decision.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "ITU-T E.164: The international public telecommunication numbering plan",
+    "resolution_url": "https://www.itu.int/rec/T-REC-E.164/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q085",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Class of service, toll restriction and least privilege, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Voice authorization should grant only the destinations and features required by a user, device or service. Policies must account for shared devices, contact-center services, emergency calls and delegated administration.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NIST SP 800-207: Zero Trust Architecture",
+    "resolution_url": "https://www.nist.gov/publications/zero-trust-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q086",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Class of service, toll restriction and least privilege in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Create role- and site-based calling policies, protect authorization codes and forwarding, test bypass paths such as transfer and voicemail, and audit changes and high-cost destinations.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NIST SP 800-207: Zero Trust Architecture",
+    "resolution_url": "https://www.nist.gov/publications/zero-trust-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q087",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Class of service, toll restriction and least privilege from using one unrestricted calling policy for all users?",
+    "preferred_answer": "A route determines technical reachability; class of service determines authorization. A technically valid route should still be denied when policy does not permit it.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NIST SP 800-207: Zero Trust Architecture",
+    "resolution_url": "https://www.nist.gov/publications/zero-trust-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q088",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A lobby phone can place international premium-rate calls after a template change. What should the engineer do next?",
+    "preferred_answer": "Contain by restoring a restricted policy, review call records and affected templates, check other shared devices, preserve emergency access and add regression tests before reapplying changes.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NIST SP 800-207: Zero Trust Architecture",
+    "resolution_url": "https://www.nist.gov/publications/zero-trust-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q089",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Least-cost routing, carrier preference and failover, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Least-cost routing balances price with quality, coverage, capacity, regulatory requirements and operational resilience. Failover must be explicit, observable and tested.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q090",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Least-cost routing, carrier preference and failover in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Define route groups with ordered or distributed behavior, health criteria and destination exceptions. Measure completion, quality and cost by carrier rather than assuming the lowest tariff is best.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q091",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Least-cost routing, carrier preference and failover from always selecting the cheapest carrier?",
+    "preferred_answer": "Failover chooses an alternate path after failure; load distribution shares traffic during normal operation. Their signaling and capacity assumptions differ.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q092",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The primary carrier returns intermittent 503 responses and calls sometimes fail instead of using the backup. What should the engineer do next?",
+    "preferred_answer": "Verify route-list behavior, response-code handling, timers and retry policy; confirm backup capacity and caller ID; test controlled failure and monitor for loops or duplicate attempts.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q093",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Transfer, forwarding, voicemail and diversion interworking, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Supplementary services modify call history, identity, billing and media behavior. SIP History-Info and platform-specific diversion data help preserve why and where a call was redirected.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 7044: History-Info Header Field for SIP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7044",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q094",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Transfer, forwarding, voicemail and diversion interworking in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Test blind and consult transfer, forwarding, voicemail, call park and callback across internal and external boundaries. Validate identity, permissions, billing and recording behavior.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 7044: History-Info Header Field for SIP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7044",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q095",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Transfer, forwarding, voicemail and diversion interworking from treating every redirected call as a new unrelated call?",
+    "preferred_answer": "Forwarding creates a new target while preserving diversion context; transfer changes call participants and dialogs. The carrier may apply different identity or fraud rules to each.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 7044: History-Info Header Field for SIP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7044",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q096",
+    "role_slug": "telecom-voice",
+    "domain": "Dial Plans, Policies and Call Routing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Externally forwarded calls fail because the presented caller is not authorized on the trunk. What should the engineer do next?",
+    "preferred_answer": "Inspect P-Asserted-Identity, From and diversion history, apply a compliant outbound identity policy, preserve original caller information where supported, and retest fraud controls.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 7044: History-Info Header Field for SIP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7044",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q097",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Session Border Controller responsibilities, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "An SBC controls SIP interconnection, topology hiding, policy, normalization, media anchoring, security, admission and observability at trust boundaries. Its role must be explicit to avoid hidden transcoding or routing.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Cisco Unified Border Element Configuration Guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/cube/configuration/cube-book.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q098",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Session Border Controller responsibilities in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Document signaling and media legs, trust zones, certificate ownership, codec policy, emergency treatment, capacity and failover. Keep transformations minimal and version-controlled.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Cisco Unified Border Element Configuration Guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/cube/configuration/cube-book.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q099",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Session Border Controller responsibilities from using an SBC as a generic firewall replacement?",
+    "preferred_answer": "A firewall filters network flows; an SBC understands call sessions and can modify signaling and media. Security policy should use both rather than assuming one substitutes for the other.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Cisco Unified Border Element Configuration Guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/cube/configuration/cube-book.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q100",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "After an SBC upgrade, calls connect but DTMF and transfer fail with one carrier. What should the engineer do next?",
+    "preferred_answer": "Compare configuration and traces before and after, inspect SDP and SIP feature normalization, validate DTMF method and REFER handling, and roll back if customer impact exceeds the change window.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Cisco Unified Border Element Configuration Guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/cube/configuration/cube-book.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q101",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is NAT traversal with ICE, STUN and TURN, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "ICE gathers host, server-reflexive and relay candidates, tests connectivity and selects a working path. STUN discovers mapped addresses; TURN relays media when direct connectivity is unavailable.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8445: Interactive Connectivity Establishment",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8445",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q102",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply NAT traversal with ICE, STUN and TURN in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Collect candidate and connectivity logs, verify UDP reachability, TURN allocation and credentials, and distinguish signaling success from candidate-pair failure.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8445: Interactive Connectivity Establishment",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8445",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q103",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish NAT traversal with ICE, STUN and TURN from static port forwarding for every remote user?",
+    "preferred_answer": "STUN helps discover a path but does not relay media. TURN provides a relay at added bandwidth and latency cost. ICE coordinates candidate selection and checks.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8445: Interactive Connectivity Establishment",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8445",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q104",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "WebRTC calls work on the corporate LAN but fail for users behind restrictive home networks. What should the engineer do next?",
+    "preferred_answer": "Inspect ICE states and candidate pairs, confirm TURN over permitted transports, verify DNS and certificates, size relay capacity, and avoid requiring direct UDP when the environment blocks it.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8445: Interactive Connectivity Establishment",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8445",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q105",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is SIP interoperability and controlled normalization, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Interoperability issues arise from different interpretations or feature support. Normalization should address a proven mismatch while preserving standards behavior and observability.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Configure SIP Normalization and Transparency",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/12_5_1/systemConfig/cucm_b_system-configuration-guide-1251/cucm_b_system-configuration-guide-1251_chapter_01001.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q106",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply SIP interoperability and controlled normalization in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Capture both call legs, identify the exact header, SDP or method mismatch, write the smallest scoped rule, test positive and negative cases, and document vendor ownership.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Configure SIP Normalization and Transparency",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/12_5_1/systemConfig/cucm_b_system-configuration-guide-1251/cucm_b_system-configuration-guide-1251_chapter_01001.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q107",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish SIP interoperability and controlled normalization from rewriting all messages to match one trace?",
+    "preferred_answer": "Normalization is a compatibility control, not a substitute for understanding the call flow. Broad scripts can hide defects and break unrelated features.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Configure SIP Normalization and Transparency",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/12_5_1/systemConfig/cucm_b_system-configuration-guide-1251/cucm_b_system-configuration-guide-1251_chapter_01001.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q108",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A carrier requires a specific Request-URI format, but the new rule breaks internal SIP federation. What should the engineer do next?",
+    "preferred_answer": "Scope the transformation to the carrier trunk and direction, add regression tests for internal traffic, review with both vendors and retain a rollback version.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Configure SIP Normalization and Transparency",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/12_5_1/systemConfig/cucm_b_system-configuration-guide-1251/cucm_b_system-configuration-guide-1251_chapter_01001.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q109",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is TLS certificates, DNS and firewall state for SIP trunks, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Secure SIP trunks depend on certificate identity, trust chain, validity, private-key protection, TLS versions, DNS names, ports and stateful firewall behavior. Each side may validate different names and chains.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8446: TLS 1.3",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8446",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q110",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply TLS certificates, DNS and firewall state for SIP trunks in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Maintain a certificate inventory and renewal runbook, test from both peers, validate FQDN and chain, monitor expiry and OPTIONS, and schedule overlapping trust when rotating issuers.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8446: TLS 1.3",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8446",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q111",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish TLS certificates, DNS and firewall state for SIP trunks from treating certificate renewal as a routine web-server task?",
+    "preferred_answer": "A valid certificate can still fail if the peer expects another name, lacks the issuing chain or does not support the negotiated TLS parameters.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8446: TLS 1.3",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8446",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q112",
+    "role_slug": "telecom-voice",
+    "domain": "SBCs, NAT Traversal and SIP Interconnection",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "All Direct Routing trunks become inactive immediately after certificate replacement. What should the engineer do next?",
+    "preferred_answer": "Inspect TLS handshake errors, confirm the SBC FQDN is in the certificate, provide the full chain, verify supported ciphers and time, restore the previous certificate if needed, and monitor OPTIONS recovery.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8446: TLS 1.3",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8446",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q113",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is IMS architecture and CSCF roles, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "IMS provides session control for IP multimedia services. P-CSCF is the UE entry point, I-CSCF assists network entry and routing, S-CSCF performs serving control, while subscriber and policy functions support authentication and service decisions.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "3GPP TS 23.228: IP Multimedia Subsystem - Stage 2",
+    "resolution_url": "https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=821",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q114",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply IMS architecture and CSCF roles in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Trace registration and call setup across UE, access, P-CSCF, I-CSCF, S-CSCF, application servers and subscriber data. Identify the first missing response or policy decision.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "3GPP TS 23.228: IP Multimedia Subsystem - Stage 2",
+    "resolution_url": "https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=821",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q115",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish IMS architecture and CSCF roles from a traditional enterprise PBX architecture?",
+    "preferred_answer": "IMS separates access, session control and service logic across standardized functions; an enterprise PBX often centralizes more call control and user features in a smaller system.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "3GPP TS 23.228: IP Multimedia Subsystem - Stage 2",
+    "resolution_url": "https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=821",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q116",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A subscriber has LTE data but cannot register for IMS voice. What should the engineer do next?",
+    "preferred_answer": "Check IMS APN or data network access, P-CSCF discovery, IP reachability, authentication, subscriber provisioning, device profile and registration responses before blaming radio coverage alone.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "3GPP TS 23.228: IP Multimedia Subsystem - Stage 2",
+    "resolution_url": "https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=821",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q117",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is VoLTE registration, dedicated bearers and media QoS, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "VoLTE uses IMS signaling over LTE and coordinated QoS for voice media. Registration, subscriber provisioning, codec profile, policy and bearer establishment must align across device and network.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "IR.92 IMS Profile for Voice and SMS",
+    "resolution_url": "https://www.gsma.com/newsroom/all-documents/ir-92-ims-profile-for-voice-and-sms-v-13-0/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q118",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply VoLTE registration, dedicated bearers and media QoS in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Validate device capability and profile, IMS registration, SIP call flow, QoS flow or bearer creation, codec negotiation, handover and emergency scenarios using synchronized traces.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "IR.92 IMS Profile for Voice and SMS",
+    "resolution_url": "https://www.gsma.com/newsroom/all-documents/ir-92-ims-profile-for-voice-and-sms-v-13-0/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q119",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish VoLTE registration, dedicated bearers and media QoS from ordinary best-effort mobile data?",
+    "preferred_answer": "VoLTE is an operator-controlled telephony service over LTE, not simply an OTT voice app using internet data. It has standardized service, QoS, emergency and roaming behavior.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "IR.92 IMS Profile for Voice and SMS",
+    "resolution_url": "https://www.gsma.com/newsroom/all-documents/ir-92-ims-profile-for-voice-and-sms-v-13-0/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q120",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Calls set up but audio is choppy only when the device moves between cells. What should the engineer do next?",
+    "preferred_answer": "Correlate radio measurements, handover events, bearer continuity and RTP loss; verify mobility thresholds and coverage, then reproduce with controlled drive tests rather than changing codecs first.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "IR.92 IMS Profile for Voice and SMS",
+    "resolution_url": "https://www.gsma.com/newsroom/all-documents/ir-92-ims-profile-for-voice-and-sms-v-13-0/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q121",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is VoNR, 5GS voice and EPS fallback, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "VoNR provides IMS voice over the 5G system when device, radio, core, policy and interoperability support it. EPS fallback may move the device to LTE for voice when native 5G voice is unavailable.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NG.114 IMS Profile for Voice, Video and Messaging over 5GS",
+    "resolution_url": "https://www.gsma.com/newsroom/wp-content/uploads/NG.114-v10.0-2.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q122",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply VoNR, 5GS voice and EPS fallback in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Confirm service and device profile, IMS registration on 5GS, QoS flows, fallback triggers, call setup time and mobility between NR, LTE and Wi-Fi calling.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NG.114 IMS Profile for Voice, Video and Messaging over 5GS",
+    "resolution_url": "https://www.gsma.com/newsroom/wp-content/uploads/NG.114-v10.0-2.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q123",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish VoNR, 5GS voice and EPS fallback from assuming 5G data automatically means native 5G voice?",
+    "preferred_answer": "5G NSA commonly uses LTE anchoring; 5G SA data can exist without VoNR. EPS fallback is a designed transition to LTE, not necessarily a fault.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NG.114 IMS Profile for Voice, Video and Messaging over 5GS",
+    "resolution_url": "https://www.gsma.com/newsroom/wp-content/uploads/NG.114-v10.0-2.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q124",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Users on a new 5G SA area experience long call setup and occasional failure. What should the engineer do next?",
+    "preferred_answer": "Determine whether VoNR is supported end to end, inspect fallback signaling and LTE coverage, compare device profiles, and fix policy or mobility timing before forcing a permanent network-mode change.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NG.114 IMS Profile for Voice, Video and Messaging over 5GS",
+    "resolution_url": "https://www.gsma.com/newsroom/wp-content/uploads/NG.114-v10.0-2.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q125",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Mobile voice roaming, SRVCC and emergency behavior, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Mobile voice must preserve service across roaming, radio changes and emergency conditions. SRVCC can transfer an IMS call to circuit-switched access, while roaming models alter routing, policy and charging.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "IR.92 IMS Profile for Voice and SMS",
+    "resolution_url": "https://www.gsma.com/newsroom/all-documents/ir-92-ims-profile-for-voice-and-sms-v-13-0/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q126",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Mobile voice roaming, SRVCC and emergency behavior in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Test home and roaming registration, emergency calls, handovers, call continuity, supplementary services and device variations. Use jurisdiction-approved emergency test methods.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "IR.92 IMS Profile for Voice and SMS",
+    "resolution_url": "https://www.gsma.com/newsroom/all-documents/ir-92-ims-profile-for-voice-and-sms-v-13-0/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q127",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Mobile voice roaming, SRVCC and emergency behavior from testing only stationary home-network calls?",
+    "preferred_answer": "Handover changes radio or access while preserving a session; roaming changes serving-network context. SRVCC is a specific continuity method from IMS packet voice to circuit-switched voice.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "IR.92 IMS Profile for Voice and SMS",
+    "resolution_url": "https://www.gsma.com/newsroom/all-documents/ir-92-ims-profile-for-voice-and-sms-v-13-0/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q128",
+    "role_slug": "telecom-voice",
+    "domain": "IMS, VoLTE, VoNR and Mobile Voice",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Calls drop when a user leaves LTE coverage during an active VoLTE call. What should the engineer do next?",
+    "preferred_answer": "Verify whether SRVCC or alternate continuity is supported and provisioned, correlate mobility and IMS traces, inspect target-network resources, and distinguish coverage loss from handover rejection.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "IR.92 IMS Profile for Voice and SMS",
+    "resolution_url": "https://www.gsma.com/newsroom/all-documents/ir-92-ims-profile-for-voice-and-sms-v-13-0/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q129",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Teams Phone PSTN connectivity options, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Teams Phone can connect to the PSTN through Microsoft Calling Plans, Operator Connect, Teams Phone Mobile or Direct Routing. Each option changes carrier relationship, SBC ownership, coverage, feature and support boundaries.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "PSTN connectivity options for Teams Phone",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/pstn-connectivity",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q130",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Teams Phone PSTN connectivity options in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Create a decision matrix by country, number ownership, carrier contract, integration, emergency, compliance, resiliency and operations capability; select per region rather than forcing one global model.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "PSTN connectivity options for Teams Phone",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/pstn-connectivity",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q131",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Teams Phone PSTN connectivity options from treating Calling Plan, Operator Connect and Direct Routing as interchangeable?",
+    "preferred_answer": "Direct Routing uses a certified customer or partner SBC; Operator Connect integrates approved operators; Calling Plans are Microsoft-provided in supported markets. Operational responsibility differs materially.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "PSTN connectivity options for Teams Phone",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/pstn-connectivity",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q132",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A global rollout assumes Operator Connect is available in every country and discovers gaps late. What should the engineer do next?",
+    "preferred_answer": "Revalidate country and number coverage, create a mixed PSTN strategy, preserve numbering and emergency requirements, and phase unsupported regions through Direct Routing or local alternatives.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "PSTN connectivity options for Teams Phone",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/pstn-connectivity",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q133",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Direct Routing gateways, voice routes and number translation, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Direct Routing requires a healthy certified SBC connection plus user enablement, PSTN usage records, voice routes and normalization rules. A valid route must match the dialed number and an allowed usage.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Configure Direct Routing",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-configure",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q134",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Direct Routing gateways, voice routes and number translation in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Build a test plan from user policy through normalized number, voice route, PSTN usage and gateway. Validate inbound identity, outbound caller ID, failover and emergency handling.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Configure Direct Routing",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-configure",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q135",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Direct Routing gateways, voice routes and number translation from configuring only the SBC connection?",
+    "preferred_answer": "The SBC connection proves platform reachability; voice routing policies determine whether a user may send a normalized number to that gateway. Both must be correct.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Configure Direct Routing",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-configure",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q136",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The SBC is healthy and inbound calls work, but one user cannot place outbound calls. What should the engineer do next?",
+    "preferred_answer": "Check licensing and enterprise voice enablement, assigned voice routing policy, normalization result, route pattern, PSTN usage and SBC logs for that user before changing global routes.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Configure Direct Routing",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-configure",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q137",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Teams call-quality operations with CQD and per-user analytics, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Teams provides organization-level CQD trends and per-user call analytics. Effective troubleshooting combines call-leg telemetry, building and subnet context, devices, network path and Direct Routing health.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "What is Call Quality Dashboard?",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/cqd-what-is-call-quality-dashboard",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q138",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Teams call-quality operations with CQD and per-user analytics in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Start from a specific call and user, identify the affected leg and metrics, then aggregate by site, subnet, ISP, device and time to determine whether the issue is isolated or systemic.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "What is Call Quality Dashboard?",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/cqd-what-is-call-quality-dashboard",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q139",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Teams call-quality operations with CQD and per-user analytics from relying on user anecdotes or tenant-wide averages alone?",
+    "preferred_answer": "Per-user analytics explains an individual session; CQD reveals patterns. Direct Routing health focuses the Teams-to-SBC boundary. No single view proves the entire path.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "What is Call Quality Dashboard?",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/cqd-what-is-call-quality-dashboard",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q140",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Several users report poor calls, but the tenant-wide dashboard looks normal. What should the engineer do next?",
+    "preferred_answer": "Filter by their building, subnet, device and time, inspect individual calls and poor-stream percentages, correlate with WAN or Wi-Fi telemetry, and compare unaffected control groups.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "What is Call Quality Dashboard?",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/cqd-what-is-call-quality-dashboard",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q141",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Teams dynamic emergency calling and location information, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Dynamic emergency calling maps network information to validated emergency locations and applies routing and notification policy. Capability and legal requirements vary by country and PSTN option.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Plan and configure dynamic emergency calling",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q142",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Teams dynamic emergency calling and location information in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Maintain network topology and locations, validate service addresses, assign policies, configure SBC PIDF-LO handling where required, and use approved test numbers and provider procedures.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Plan and configure dynamic emergency calling",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q143",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Teams dynamic emergency calling and location information from assigning one static address to every remote worker?",
+    "preferred_answer": "A billing or office address is not necessarily the caller location. Emergency routing, location conveyance and internal notification are separate controls.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Plan and configure dynamic emergency calling",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q144",
+    "role_slug": "telecom-voice",
+    "domain": "Microsoft Teams Phone and Direct Routing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A user moves to a new floor, but emergency calls still report the old location. What should the engineer do next?",
+    "preferred_answer": "Check subnet, switch or access-point mapping, location validation and client discovery, update topology, retest with the approved test method, and audit other recent network changes.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Plan and configure dynamic emergency calling",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q145",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is CUCM clustering, device pools, regions and locations, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "CUCM clusters distribute call processing and database roles. Device pools group common settings; regions influence codec relationships; locations or enhanced location controls protect bandwidth.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q146",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply CUCM clustering, device pools, regions and locations in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Map sites to device pools, date-time and media settings, define region codec policy and location capacity, and document subscriber, TFTP and failover relationships.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q147",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish CUCM clustering, device pools, regions and locations from placing every endpoint in one default configuration?",
+    "preferred_answer": "Regions choose codec and media characteristics between device groups; locations limit or account for bandwidth. Device pools aggregate configuration and survivability settings.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q148",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A new remote site uses G.711 across a constrained WAN and saturates the link. What should the engineer do next?",
+    "preferred_answer": "Check device-pool and region assignment, correct the inter-region codec policy, validate transcoders only if needed, apply admission control and retest failover behavior.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q149",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is CUCM trunks, route groups, route lists and redundancy, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "CUCM route patterns select route lists, route lists order route groups, and route groups contain gateways or trunks. SIP trunks can use multiple destinations and OPTIONS health for resilience.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q150",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply CUCM trunks, route groups, route lists and redundancy in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Design source and destination redundancy, route-group distribution, local route groups and carrier failover. Test node, gateway and provider failures rather than only normal calls.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q151",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish CUCM trunks, route groups, route lists and redundancy from one static SIP trunk to one destination?",
+    "preferred_answer": "A SIP trunk is a signaling relationship; a route group is a routing container. Route lists define ordered or distributed use of groups and support policy beyond a single trunk.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q152",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Calls fail when one CUCM subscriber is down even though another subscriber is active. What should the engineer do next?",
+    "preferred_answer": "Check trunk device-pool and CM group, Run on All Active Nodes behavior, route-list registration and destination acceptance, then correct source-node redundancy and test again.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q153",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Media resources: MTP, transcoders and conference bridges, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Media resources provide specific functions such as offer manipulation, DTMF interworking, codec transcoding or conferencing. They consume capacity and can alter media flow, so assignment must follow a proven requirement.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q154",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Media resources: MTP, transcoders and conference bridges in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Inspect why the call requests a resource, verify media-resource group-list order and capacity, and confirm whether configuration or endpoint capability can remove the requirement.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q155",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Media resources: MTP, transcoders and conference bridges from adding an MTP whenever a call fails?",
+    "preferred_answer": "An MTP terminates and re-originates media control for selected interworking; a transcoder changes codec; a conference bridge mixes participants. They are not interchangeable.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q156",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Only calls through one trunk fail when the MTP pool reaches capacity. What should the engineer do next?",
+    "preferred_answer": "Identify the feature forcing MTP, confirm allocation and MRGL, remove unnecessary forced MTP, add correctly sized redundancy if needed, and monitor resource exhaustion.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q157",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is SIP security and intercluster interoperability in CUCM, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "CUCM can secure SIP signaling with TLS and media with SRTP, while trunk security profiles and normalization control trust and interoperability. Internal boundaries still require explicit identity and certificate management.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Trunk and Gateway SIP Security",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-15/cucm_m_trunk-and-gateway-sip-security_reog.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q158",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply SIP security and intercluster interoperability in CUCM in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Define secure trunk profiles, certificate trust, SRTP policy and allowed source addresses. Test encrypted and fallback behavior and document any decryption point.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Trunk and Gateway SIP Security",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-15/cucm_m_trunk-and-gateway-sip-security_reog.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q159",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish SIP security and intercluster interoperability in CUCM from trusting all internal SIP trunks by default?",
+    "preferred_answer": "Being on an internal network does not make a trunk authenticated or encrypted. A secure profile protects signaling, while SRTP protects media.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Trunk and Gateway SIP Security",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-15/cucm_m_trunk-and-gateway-sip-security_reog.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q160",
+    "role_slug": "telecom-voice",
+    "domain": "Cisco Collaboration and Enterprise Call Control",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A secure intercluster trunk fails after one cluster certificate renewal. What should the engineer do next?",
+    "preferred_answer": "Compare trust stores and certificate names, confirm both directions and full chain, verify time and TLS profile, restore service with approved rollback and improve renewal overlap.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Trunk and Gateway SIP Security",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-15/cucm_m_trunk-and-gateway-sip-security_reog.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q161",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is WebRTC peer connection and browser media lifecycle, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "WebRTC uses media capture, RTCPeerConnection, ICE, SDP and secure media to create real-time sessions. Signaling transport is application-defined, while media negotiation and connectivity follow standardized APIs and protocols.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "WebRTC: Real-Time Communication in Browsers",
+    "resolution_url": "https://www.w3.org/TR/webrtc/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q162",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply WebRTC peer connection and browser media lifecycle in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Instrument getUserMedia permissions, signaling state, ICE gathering and connection state, selected candidate pair, codec and inbound or outbound RTP statistics.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "WebRTC: Real-Time Communication in Browsers",
+    "resolution_url": "https://www.w3.org/TR/webrtc/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q163",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish WebRTC peer connection and browser media lifecycle from a normal HTTP request-response flow?",
+    "preferred_answer": "WebRTC standardizes browser media and peer connectivity but not the application signaling channel. WebSocket or HTTP may carry signaling without being the media path.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "WebRTC: Real-Time Communication in Browsers",
+    "resolution_url": "https://www.w3.org/TR/webrtc/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q164",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A browser shows the call as connected, but remote video remains black. What should the engineer do next?",
+    "preferred_answer": "Check track state and permissions, negotiated video direction and codec, selected candidate pair, packet counters and rendering, then isolate capture, transport or decode failure.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "WebRTC: Real-Time Communication in Browsers",
+    "resolution_url": "https://www.w3.org/TR/webrtc/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q165",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is WebRTC ICE candidate selection and relay capacity, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "WebRTC commonly uses ICE to select a direct or relayed path. TURN may carry all media for restrictive networks, making relay placement, bandwidth, cost and resilience operational requirements.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8825: Overview - Real-Time Protocols for WebRTC",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8825",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q166",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply WebRTC ICE candidate selection and relay capacity in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Measure relay percentage by network, monitor allocation failures and throughput, deploy regional redundancy, protect credentials and test TCP or TLS fallback where required.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8825: Overview - Real-Time Protocols for WebRTC",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8825",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q167",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish WebRTC ICE candidate selection and relay capacity from assuming peer-to-peer media always avoids infrastructure?",
+    "preferred_answer": "Peer-to-peer describes a possible media topology, not a guarantee. Enterprise policy, NAT and firewalls may force relay or media-server paths.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8825: Overview - Real-Time Protocols for WebRTC",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8825",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q168",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A new firewall policy causes TURN usage to jump from 10% to 90% and call quality declines. What should the engineer do next?",
+    "preferred_answer": "Identify blocked candidate types and ports, validate the security intent, restore approved direct UDP where possible, scale relay capacity, and monitor latency and cost.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8825: Overview - Real-Time Protocols for WebRTC",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8825",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q169",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is UCaaS tenant, site, device and policy design, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "UCaaS design must align users, sites, numbers, devices, emergency locations, calling policies, identity, network and support. Global consistency should coexist with local regulatory and carrier requirements.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "What is Microsoft Teams Phone?",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/what-is-phone-system-in-office-365",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q170",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply UCaaS tenant, site, device and policy design in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Create a tenant and site model, role-based administration, policy packages, device standards, number ownership and exception process. Pilot representative locations before global rollout.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "What is Microsoft Teams Phone?",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/what-is-phone-system-in-office-365",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q171",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish UCaaS tenant, site, device and policy design from copying one global policy to every country and device?",
+    "preferred_answer": "A tenant is an administrative boundary; a site reflects operational, network or regulatory context. Device configuration and user policy may need separate inheritance.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "What is Microsoft Teams Phone?",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/what-is-phone-system-in-office-365",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q172",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A global template disables a local emergency-notification requirement during rollout. What should the engineer do next?",
+    "preferred_answer": "Stop further deployment, restore the required local policy, assess affected users, update the country exception model and add compliance checks to the release gate.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "What is Microsoft Teams Phone?",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/what-is-phone-system-in-office-365",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q173",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Collaboration endpoints, rooms and user experience, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Calling and meeting experience depends on device hardware, drivers, peripherals, room acoustics, firmware, network and cloud service. Endpoint telemetry must be correlated with media and user context.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Troubleshoot Webex Calling media quality in Control Hub",
+    "resolution_url": "https://help.webex.com/en-us/article/nwz0c0b/Troubleshoot-Webex-Calling-Media-Quality-in-Control-Hub",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q174",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Collaboration endpoints, rooms and user experience in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Standardize supported devices, validate firmware and peripherals, collect endpoint and call analytics, and compare wired, wireless, headset and room-system behavior.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Troubleshoot Webex Calling media quality in Control Hub",
+    "resolution_url": "https://help.webex.com/en-us/article/nwz0c0b/Troubleshoot-Webex-Calling-Media-Quality-in-Control-Hub",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q175",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Collaboration endpoints, rooms and user experience from treating endpoint readiness as only a network test?",
+    "preferred_answer": "A strong network cannot correct a failing microphone, echo path or outdated client. Endpoint quality and network quality are separate but interacting domains.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Troubleshoot Webex Calling media quality in Control Hub",
+    "resolution_url": "https://help.webex.com/en-us/article/nwz0c0b/Troubleshoot-Webex-Calling-Media-Quality-in-Control-Hub",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q176",
+    "role_slug": "telecom-voice",
+    "domain": "WebRTC, UCaaS and Collaboration Platforms",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Only one conference room has echo, while all other calls from the site are healthy. What should the engineer do next?",
+    "preferred_answer": "Inspect room audio topology, microphone and speaker placement, acoustic echo cancellation, firmware and duplicate audio paths before changing site QoS.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Troubleshoot Webex Calling media quality in Control Hub",
+    "resolution_url": "https://help.webex.com/en-us/article/nwz0c0b/Troubleshoot-Webex-Calling-Media-Quality-in-Control-Hub",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q177",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is IVR and contact-flow design, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "An IVR should authenticate and understand intent with minimal effort, provide clear recovery and route with useful context. Flow design must include timeouts, errors, accessibility and operational ownership.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Create Amazon Connect flows",
+    "resolution_url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-contact-flows.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q178",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply IVR and contact-flow design in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Map customer intents and data needs, design short prompts and no-input or invalid-input paths, instrument every branch, and test language, DTMF and speech behavior.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Create Amazon Connect flows",
+    "resolution_url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-contact-flows.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q179",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish IVR and contact-flow design from a long menu that exposes the organization chart?",
+    "preferred_answer": "An IVR is a customer journey and control flow, not merely a greeting. Its success is measured by task completion, transfer quality and customer effort.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Create Amazon Connect flows",
+    "resolution_url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-contact-flows.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q180",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Customers loop between two menus after a CRM lookup failure. What should the engineer do next?",
+    "preferred_answer": "Detect the failed dependency, route to a staffed fallback with context, stop the loop, alert operations, and add bounded retries and a clear escape path.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Create Amazon Connect flows",
+    "resolution_url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-contact-flows.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q181",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Queues, skills, routing profiles and concurrency, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Contact routing connects queued work to eligible agents using skills, priority, delay, availability and channel concurrency. Design must balance service, fairness and agent capability.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Set up routing in Amazon Connect",
+    "resolution_url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-queues.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q182",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Queues, skills, routing profiles and concurrency in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Define queue purpose, skill requirements, overflow and hours, configure routing profiles, and simulate normal, peak and outage conditions with representative staffing.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Set up routing in Amazon Connect",
+    "resolution_url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-queues.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q183",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Queues, skills, routing profiles and concurrency from assigning every agent to every queue?",
+    "preferred_answer": "A queue holds contacts; a routing profile or skill policy defines which agents may receive them and in what priority. More eligibility can reduce specialization and quality.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Set up routing in Amazon Connect",
+    "resolution_url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-queues.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q184",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A priority support queue waits longer than general inquiries after a routing change. What should the engineer do next?",
+    "preferred_answer": "Check queue priority and delay, agent routing profiles, concurrency and staffing, restore priority behavior, then validate with synthetic contacts and metrics.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Set up routing in Amazon Connect",
+    "resolution_url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-queues.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q185",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Service level, abandon rate, AHT and occupancy, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Contact-center metrics describe different parts of demand, responsiveness and workload. Service level, abandonment, handling time and occupancy must be interpreted with interval, channel and customer context.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Real-time metrics in Amazon Connect",
+    "resolution_url": "https://docs.aws.amazon.com/connect/latest/adminguide/real-time-metrics-reports.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q186",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Service level, abandon rate, AHT and occupancy in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Use consistent definitions, segment by queue and interval, compare demand and staffing, inspect distributions and outliers, and balance customer experience with sustainable agent workload.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Real-time metrics in Amazon Connect",
+    "resolution_url": "https://docs.aws.amazon.com/connect/latest/adminguide/real-time-metrics-reports.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q187",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Service level, abandon rate, AHT and occupancy from optimizing one contact-center metric in isolation?",
+    "preferred_answer": "Lower AHT can mean efficiency or rushed service. High occupancy can improve utilization but create burnout and poor recovery. Service level does not capture resolution quality.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Real-time metrics in Amazon Connect",
+    "resolution_url": "https://docs.aws.amazon.com/connect/latest/adminguide/real-time-metrics-reports.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q188",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Leadership asks to cut AHT by 30% immediately because service level is falling. What should the engineer do next?",
+    "preferred_answer": "Explain the trade-off, analyze arrival rate, staffing, transfer and repeat-contact drivers, improve flow and knowledge first, and track resolution and quality alongside AHT.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Real-time metrics in Amazon Connect",
+    "resolution_url": "https://docs.aws.amazon.com/connect/latest/adminguide/real-time-metrics-reports.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q189",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Call recording, monitoring, whisper and consent controls, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Recording and supervision features support quality, compliance and dispute handling but create privacy, access, retention and jurisdiction risk. Policies must control consent, scope and privileged access.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Managing Call Queue analytics",
+    "resolution_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061144",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q190",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Call recording, monitoring, whisper and consent controls in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Define legal basis and notice, role-based access, encryption, retention, pause or redaction, export controls and audit. Test transfers, conferences and cross-border scenarios.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Managing Call Queue analytics",
+    "resolution_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061144",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q191",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Call recording, monitoring, whisper and consent controls from recording every interaction indefinitely?",
+    "preferred_answer": "Monitoring is real-time supervisory access; recording creates retained content. Consent and retention obligations may differ by jurisdiction and purpose.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Managing Call Queue analytics",
+    "resolution_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061144",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q192",
+    "role_slug": "telecom-voice",
+    "domain": "Contact Center, IVR and Customer Interaction Routing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A supervisor discovers that payment-card details are present in recordings despite a pause policy. What should the engineer do next?",
+    "preferred_answer": "Restrict access, preserve evidence, assess scope, invoke security and privacy response, correct pause or redaction integration, and validate with controlled transactions.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Managing Call Queue analytics",
+    "resolution_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061144",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q193",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Layered voice security with TLS, SRTP and access control, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Voice security combines authenticated signaling, encrypted media, least-privilege administration, network segmentation, fraud controls, monitoring and secure endpoint management.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Trunk and Gateway SIP Security",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-15/cucm_m_trunk-and-gateway-sip-security_reog.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q194",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Layered voice security with TLS, SRTP and access control in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Build a threat model across endpoints, call control, SBC, carrier, recording and APIs. Apply certificate lifecycle, role separation, source restrictions and continuous alerting.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Trunk and Gateway SIP Security",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-15/cucm_m_trunk-and-gateway-sip-security_reog.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q195",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Layered voice security with TLS, SRTP and access control from assuming encryption alone prevents voice abuse?",
+    "preferred_answer": "Encryption protects confidentiality and integrity in transit; it does not authorize destinations, prevent stolen credentials or detect fraudulent call patterns.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Trunk and Gateway SIP Security",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-15/cucm_m_trunk-and-gateway-sip-security_reog.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q196",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Attackers obtain a user credential and place high-cost international calls through a securely encrypted platform. What should the engineer do next?",
+    "preferred_answer": "Disable the account and routes, preserve logs, block destinations, rotate credentials and tokens, investigate access paths, add anomaly controls and review policy scope.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Trunk and Gateway SIP Security",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/security/15_0/cucm_b_security-guide-release-15/cucm_m_trunk-and-gateway-sip-security_reog.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q197",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Toll fraud, SPIT and denial-of-service controls, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Voice abuse includes unauthorized calling, premium-rate fraud, spam over internet telephony and resource exhaustion. Prevention requires restrictive policy, rate and destination controls, anomaly detection and incident readiness.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q198",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Toll fraud, SPIT and denial-of-service controls in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Baseline call patterns, enforce class of service and maximums, protect registration and APIs, alert on unusual time, destination or concurrency, and maintain carrier blocking procedures.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q199",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Toll fraud, SPIT and denial-of-service controls from blocking one suspicious destination after an incident?",
+    "preferred_answer": "Toll fraud creates billable unauthorized use; SPIT targets recipients with unwanted calls; denial of service consumes signaling or media capacity. Their controls overlap but evidence differs.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q200",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An SBC shows thousands of short international attempts from one extension overnight. What should the engineer do next?",
+    "preferred_answer": "Contain the extension and destination, preserve CDR and security logs, notify carrier and security teams, review credential compromise and call-forwarding abuse, and expand detection to similar accounts.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q201",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Caller identity authentication and STIR/SHAKEN, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "STIR provides cryptographic identity assertions for SIP, and SHAKEN defines a framework commonly used by service providers. Attestation and verification improve trust but do not guarantee the caller or call is benign.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8224: Authenticated Identity Management in SIP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8224",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q202",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Caller identity authentication and STIR/SHAKEN in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Preserve identity headers through trusted interconnects, monitor verification results, understand attestation sources and avoid rewriting that breaks signatures.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8224: Authenticated Identity Management in SIP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8224",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q203",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Caller identity authentication and STIR/SHAKEN from assuming displayed caller ID proves the caller?",
+    "preferred_answer": "Caller ID presentation is a number string; authenticated identity provides evidence about who asserted that number and under what authority. It is not content or intent validation.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8224: Authenticated Identity Management in SIP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8224",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q204",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A legitimate enterprise call is marked as spam after routing through multiple providers. What should the engineer do next?",
+    "preferred_answer": "Collect call examples and identity headers, verify origination and attestation, check number reputation and signing path, work with carriers, and avoid random caller-ID changes that fragment reputation.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 8224: Authenticated Identity Management in SIP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8224",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q205",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Voice API, webhook and administrative security, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Voice platforms expose APIs and event webhooks that can change routing, numbers and recordings. Security requires scoped identities, secret management, signature validation, idempotency and audit.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 9110: HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q206",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Voice API, webhook and administrative security in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Use service principals or scoped tokens, rotate secrets, validate webhook origin and replay, restrict network access, log changes and require approval for high-impact actions.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 9110: HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q207",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Voice API, webhook and administrative security from placing long-lived credentials in automation scripts?",
+    "preferred_answer": "An API call is not safe merely because it uses HTTPS. Authorization scope, secret custody, input validation and rollback determine operational risk.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 9110: HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q208",
+    "role_slug": "telecom-voice",
+    "domain": "Security, Identity and Fraud Protection",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A leaked automation token can modify call-forwarding rules for the whole tenant. What should the engineer do next?",
+    "preferred_answer": "Revoke and rotate the token, review audit logs and rule changes, restore approved configuration, narrow permissions, move secrets to managed storage and add approval and drift detection.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 9110: HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q209",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Emergency calling architecture, location and routing, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Emergency calling requires recognition of local emergency numbers, accurate dispatchable location, appropriate routing, callback identity and often internal notification. Requirements vary by jurisdiction and platform.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "911 and E911 Services",
+    "resolution_url": "https://www.fcc.gov/general/9-1-1-and-e9-1-1-services",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q210",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Emergency calling architecture, location and routing in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Maintain a country and site requirements matrix, validate addresses and network-location mappings, protect emergency routes from restrictions, and use approved test procedures.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "911 and E911 Services",
+    "resolution_url": "https://www.fcc.gov/general/9-1-1-and-e9-1-1-services",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q211",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Emergency calling architecture, location and routing from routing emergency digits like an ordinary external call?",
+    "preferred_answer": "Emergency number recognition, location conveyance, PSAP routing and security-desk notification are separate capabilities that must all be tested.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "911 and E911 Services",
+    "resolution_url": "https://www.fcc.gov/general/9-1-1-and-e9-1-1-services",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q212",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A new branch can call normal PSTN numbers but emergency tests fail. What should the engineer do next?",
+    "preferred_answer": "Treat it as a critical release blocker, verify dial pattern, policy, number and location assignment, carrier route and notification, and do not complete cutover until approved tests pass.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "911 and E911 Services",
+    "resolution_url": "https://www.fcc.gov/general/9-1-1-and-e9-1-1-services",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q213",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Dispatchable location and multi-line telephone systems, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Multi-line systems may need direct emergency dialing, on-site notification and a dispatchable location precise enough to find the caller. Local law and building design determine exact obligations.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Kari's Law and RAY BAUM's Act",
+    "resolution_url": "https://www.fcc.gov/mlts-911-requirements",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q214",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Dispatchable location and multi-line telephone systems in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Map buildings, floors, rooms or zones to network elements and devices, validate callback numbers, test mobility and remote work, and coordinate with facilities and legal teams.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Kari's Law and RAY BAUM's Act",
+    "resolution_url": "https://www.fcc.gov/mlts-911-requirements",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q215",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Dispatchable location and multi-line telephone systems from using the company headquarters as the address for all devices?",
+    "preferred_answer": "Registered address identifies an account or number; dispatchable location identifies where responders should go for the specific call.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Kari's Law and RAY BAUM's Act",
+    "resolution_url": "https://www.fcc.gov/mlts-911-requirements",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q216",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Phones are moved between floors without updating emergency-location records. What should the engineer do next?",
+    "preferred_answer": "Reconcile device and network inventory, correct mappings, test location discovery, restrict uncontrolled moves where necessary and add location validation to move-add-change processes.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Kari's Law and RAY BAUM's Act",
+    "resolution_url": "https://www.fcc.gov/mlts-911-requirements",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q217",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Number portability and regulatory change control, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Number portability transfers service while preserving the public number. It depends on correct ownership data, authorization, timing, routing updates and rollback or temporary continuity plans. Rules differ by country and number type.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Mobile Number Portability",
+    "resolution_url": "https://www.trai.gov.in/faqcategory/mobile-number-portability",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q218",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Number portability and regulatory change control in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Validate the authoritative number list, carrier records, service addresses and authorization; freeze changes; test routing from multiple networks; retain old service until acceptance criteria are met.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Mobile Number Portability",
+    "resolution_url": "https://www.trai.gov.in/faqcategory/mobile-number-portability",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q219",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Number portability and regulatory change control from treating a port as only a carrier ticket?",
+    "preferred_answer": "Port approval does not prove global routing convergence or feature configuration. Porting and platform assignment must be coordinated but verified independently.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Mobile Number Portability",
+    "resolution_url": "https://www.trai.gov.in/faqcategory/mobile-number-portability",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q220",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Half the numbers port successfully, while the rest still terminate on the old carrier. What should the engineer do next?",
+    "preferred_answer": "Protect customer access through forwarding or dual running, identify rejected or delayed records, compare losing and gaining carrier status, avoid releasing numbers and communicate per-number state.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Mobile Number Portability",
+    "resolution_url": "https://www.trai.gov.in/faqcategory/mobile-number-portability",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q221",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Accessible real-time communications and inclusive service design, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Accessible communications may require captioning, relay services, real-time text, compatible devices, visual alerts and alternative channels. Design must include disabled users and emergency use cases.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "WebRTC: Real-Time Communication in Browsers",
+    "resolution_url": "https://www.w3.org/TR/webrtc/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q222",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Accessible real-time communications and inclusive service design in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Gather accessibility requirements, test with assistive technology and representative users, preserve keyboard and screen-reader operation, and verify emergency alternatives.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "WebRTC: Real-Time Communication in Browsers",
+    "resolution_url": "https://www.w3.org/TR/webrtc/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q223",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Accessible real-time communications and inclusive service design from assuming voice-only interaction works for every user?",
+    "preferred_answer": "Transcription is not identical to real-time text or regulated relay service. Accessibility features have different latency, privacy and reliability requirements.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "WebRTC: Real-Time Communication in Browsers",
+    "resolution_url": "https://www.w3.org/TR/webrtc/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q224",
+    "role_slug": "telecom-voice",
+    "domain": "Emergency Calling, Regulation and Accessibility",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A deaf employee cannot use the new emergency and reception calling workflow. What should the engineer do next?",
+    "preferred_answer": "Escalate as an accessibility and safety gap, provide an immediate supported alternative, engage affected users and compliance owners, then design and test a permanent inclusive workflow.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "WebRTC: Real-Time Communication in Browsers",
+    "resolution_url": "https://www.w3.org/TR/webrtc/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q225",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Layered voice troubleshooting and evidence preservation, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Effective troubleshooting moves through scope, signaling, routing, media, network, endpoint and service dependencies while preserving timestamps, call identifiers, traces and recent changes.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3550: RTP - A Transport Protocol for Real-Time Applications",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q226",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Layered voice troubleshooting and evidence preservation in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Start with a known failed call, build the exact path, compare a successful control, collect evidence at boundaries and change one hypothesis at a time.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3550: RTP - A Transport Protocol for Real-Time Applications",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q227",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Layered voice troubleshooting and evidence preservation from restarting systems before collecting data?",
+    "preferred_answer": "A restart may restore service while destroying transient evidence. Incident containment and root-cause investigation are related but separate decisions.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3550: RTP - A Transport Protocol for Real-Time Applications",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q228",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Users report intermittent failures after a change, and the first suggestion is to reboot every SBC. What should the engineer do next?",
+    "preferred_answer": "Stabilize if necessary, but first capture health, logs and representative calls, identify blast radius and rollback criteria, compare pre-change behavior, and avoid simultaneous untracked actions.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3550: RTP - A Transport Protocol for Real-Time Applications",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q229",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is CDR, CMR, call IDs and cross-platform correlation, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Call detail and media records provide timestamps, participants, routes, result codes and quality metrics. Cross-platform correlation requires stable identifiers, clock alignment and awareness that each system records a different call leg.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Health dashboard for Direct Routing",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-health-dashboard",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q230",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply CDR, CMR, call IDs and cross-platform correlation in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Use SIP Call-ID or platform correlation fields, normalize time zones, map forked and transferred legs, and preserve carrier, SBC, PBX and cloud records for the same attempt.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Health dashboard for Direct Routing",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-health-dashboard",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q231",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish CDR, CMR, call IDs and cross-platform correlation from searching each platform by user name alone?",
+    "preferred_answer": "A business call may create multiple signaling dialogs and CDR legs. One record rarely represents the complete customer journey.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Health dashboard for Direct Routing",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-health-dashboard",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q232",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The carrier says a call never arrived, but the cloud platform shows it as sent. What should the engineer do next?",
+    "preferred_answer": "Use the trunk Call-ID and timestamp to find the SBC egress trace, verify the carrier destination and response, and establish the first system without matching evidence.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Health dashboard for Direct Routing",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-health-dashboard",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q233",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is One-way audio, no-audio and asymmetric media diagnosis, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "One-way audio normally indicates an asymmetric media path, wrong SDP address, NAT, firewall, routing, anchoring or endpoint issue. No audio can also result from mutually incompatible or rejected media.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3550: RTP - A Transport Protocol for Real-Time Applications",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q234",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply One-way audio, no-audio and asymmetric media diagnosis in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Map expected RTP source and destination from SDP, capture both directions at each boundary, inspect packet counters and firewall state, and identify the first missing or incorrect stream.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3550: RTP - A Transport Protocol for Real-Time Applications",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q235",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish One-way audio, no-audio and asymmetric media diagnosis from changing codecs before locating the missing direction?",
+    "preferred_answer": "One-way audio means one direction works and provides a control path. Codec mismatch often affects both directions or triggers transcoding, while NAT commonly creates directional failure.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3550: RTP - A Transport Protocol for Real-Time Applications",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q236",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "External callers hear employees, but employees hear silence. What should the engineer do next?",
+    "preferred_answer": "Trace inbound RTP from carrier to endpoint and outbound separately, verify advertised addresses and ports, inspect SBC anchoring and NAT, and correct the first broken inbound-media hop.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 3550: RTP - A Transport Protocol for Real-Time Applications",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q237",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Site-level quality analysis and baselining, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Quality analysis should compare affected and unaffected calls by site, network, device, codec, ISP and time. Baselines reveal meaningful deviation and avoid reacting to small samples.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Viewing the Zoom Phone quality of service dashboard",
+    "resolution_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0070057",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q238",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Site-level quality analysis and baselining in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Track call volume, poor-call percentage, MOS, latency, jitter and loss distributions; correlate with link, Wi-Fi and device telemetry; maintain synthetic tests.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Viewing the Zoom Phone quality of service dashboard",
+    "resolution_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0070057",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q239",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Site-level quality analysis and baselining from declaring a provider outage from a few bad calls?",
+    "preferred_answer": "An isolated user problem differs from a site-wide impairment. Aggregate metrics can hide direction, endpoint or low-volume uncertainty.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Viewing the Zoom Phone quality of service dashboard",
+    "resolution_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0070057",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q240",
+    "role_slug": "telecom-voice",
+    "domain": "Monitoring, Troubleshooting and Operational Analytics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A dashboard shows 40% poor calls at a branch, but only five calls were measured. What should the engineer do next?",
+    "preferred_answer": "Treat confidence as low, inspect each call, increase test volume, compare network telemetry and user reports, and avoid broad remediation until the impairment is reproduced.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "Viewing the Zoom Phone quality of service dashboard",
+    "resolution_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0070057",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q241",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is High availability, disaster recovery and survivability, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Voice resilience requires independent call-control, SBC, carrier, DNS, power, network and operational paths. Survivability also defines what local calling remains during cloud or WAN loss.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q242",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply High availability, disaster recovery and survivability in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Document failure domains and RTO or RPO, size N+1 capacity, test node, link, carrier and site failures, and verify emergency and critical call behavior in degraded mode.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q243",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish High availability, disaster recovery and survivability from counting two servers in one dependency zone as full redundancy?",
+    "preferred_answer": "High availability handles expected component failures with minimal interruption; disaster recovery restores service after larger loss. Local survivability may provide reduced feature sets.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q244",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Both SBCs fail when one data-center firewall cluster is upgraded. What should the engineer do next?",
+    "preferred_answer": "Declare the shared dependency, restore service through an alternate path, redesign geographic and network independence, and add a failure test that removes the common component.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "CUCM Release 15 - Configure Trunks",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/15/systemConfig/cucm_b_system-configuration-guide-15/cucm_b_system-configuration-guide-14_chapter_01000.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q245",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Voice change control, maintenance and rollback, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Voice changes can affect emergency access, customer contact, recording, compliance and revenue. Safe change requires dependency review, representative testing, monitoring, communications and a proven rollback.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q246",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Voice change control, maintenance and rollback in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Classify risk, capture baseline calls and configuration, validate in lab or pilot, schedule carrier coordination, define abort thresholds and monitor call completion and quality after release.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q247",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Voice change control, maintenance and rollback from treating telephony changes like low-impact office settings?",
+    "preferred_answer": "A successful configuration save is not a successful change. Acceptance requires end-to-end service, emergency and feature tests plus measurable stability.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q248",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A dial-plan change passes one test call but blocks international customers from reaching support. What should the engineer do next?",
+    "preferred_answer": "Stop rollout or roll back, restore customer access, test the complete route matrix, identify missing inbound patterns, communicate impact and strengthen pre-change regression coverage.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q249",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Coexistence, migration and number-port cutover, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Voice migration must coordinate identity, devices, dial plans, numbers, carrier routing, emergency services, contact center, recording and support. Coexistence reduces risk but introduces routing loops and feature asymmetry.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "What is Microsoft Teams Phone?",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/what-is-phone-system-in-office-365",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q250",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Coexistence, migration and number-port cutover in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Segment users and services, design temporary routing, freeze number changes, pilot representative cases, define per-number acceptance and maintain rollback until routing is globally verified.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "What is Microsoft Teams Phone?",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/what-is-phone-system-in-office-365",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q251",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Coexistence, migration and number-port cutover from a big-bang platform replacement without dual-path validation?",
+    "preferred_answer": "Coexistence is a temporary operating architecture with explicit boundaries; it is not simply leaving the old platform turned on.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "What is Microsoft Teams Phone?",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/what-is-phone-system-in-office-365",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q252",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "During a phased migration, calls between old and new users loop through the carrier. What should the engineer do next?",
+    "preferred_answer": "Trace both dial plans, remove ambiguous PSTN hairpin routes, establish authoritative internal routing and normalized numbers, and test transfers, forwarding and voicemail across the boundary.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "What is Microsoft Teams Phone?",
+    "resolution_url": "https://learn.microsoft.com/en-us/microsoftteams/what-is-phone-system-in-office-365",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q253",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Automation, APIs and configuration assurance, and why does it matter in telecom, voice or collaboration engineering?",
+    "preferred_answer": "Automation improves repeatability for users, numbers, routes and monitoring but can amplify errors. Safe automation uses idempotency, validation, dry runs, scoped credentials, audit and rollback.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 9110: HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q254",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Automation, APIs and configuration assurance in a production design, rollout or troubleshooting activity?",
+    "preferred_answer": "Represent intended state in version control, validate schema and dependencies, preview changes, apply in batches, verify results and detect drift. Protect emergency and privileged configuration with additional approval.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 9110: HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q255",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Automation, APIs and configuration assurance from running unreviewed bulk scripts directly in production?",
+    "preferred_answer": "A script that completes without exceptions may still create the wrong business state. Technical success and post-change service validation are separate gates.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 9110: HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "TVC-Q256",
+    "role_slug": "telecom-voice",
+    "domain": "Reliability, Change, Migration and Automation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A bulk script assigns the wrong calling policy to 5,000 users. What should the engineer do next?",
+    "preferred_answer": "Stop further runs, identify the exact affected set from audit data, restore prior assignments in controlled batches, verify emergency and calling behavior, and add preflight and peer approval.",
+    "evaluation_points": [
+      "Uses correct telecom, signaling and media terminology",
+      "Separates symptoms, evidence, assumptions and ownership boundaries",
+      "Explains operational trade-offs, security or regulatory impact",
+      "Proposes a safe verification, rollback or next action"
+    ],
+    "resolution_title": "RFC 9110: HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];
