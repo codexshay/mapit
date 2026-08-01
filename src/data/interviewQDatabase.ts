@@ -52486,5 +52486,4426 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "ITSM-Q001",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is IT service management (ITSM)?",
+    "preferred_answer": "ITSM is the coordinated set of organizational capabilities used to design, deliver, operate, support, and improve services so they enable agreed outcomes and value. It includes people, practices, information, technology, partners, and governance - not only a ticketing tool.",
+    "evaluation_points": [
+      "Focus on ITSM",
+      "Focus on service management"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT service management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q002",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is a service different from a product?",
+    "preferred_answer": "A product is a configuration of organizational resources designed to offer value. A service enables customer outcomes while the provider manages specific costs and risks. A product may support one or more services, but users experience the service outcome.",
+    "evaluation_points": [
+      "Focus on service",
+      "Focus on product"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q003",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does value mean in service management?",
+    "preferred_answer": "Value is co-created through outcomes that stakeholders consider useful, balanced against cost and risk. It is not defined solely by uptime or by the provider; customer experience, utility, warranty, compliance, and business impact all matter.",
+    "evaluation_points": [
+      "Focus on value",
+      "Focus on outcomes"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q004",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Explain utility and warranty.",
+    "preferred_answer": "Utility is what the service does and whether it is fit for purpose. Warranty is how reliably and securely it performs - including availability, capacity, continuity, and security - making it fit for use. Both are needed for dependable value.",
+    "evaluation_points": [
+      "Focus on utility",
+      "Focus on warranty"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q005",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an outcome, and how does it differ from an output?",
+    "preferred_answer": "An output is a deliverable or activity result, such as a resolved ticket. An outcome is the effect enabled for a stakeholder, such as restored employee productivity. Good operations measure outputs while connecting them to outcomes.",
+    "evaluation_points": [
+      "Focus on outcome",
+      "Focus on output"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q006",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why should IT operations understand business services?",
+    "preferred_answer": "Business-service context helps teams prioritize incidents, design monitoring, set recovery objectives, assess changes, and communicate impact. Without it, teams may optimize technical components while missing customer-critical dependencies.",
+    "evaluation_points": [
+      "Focus on business service",
+      "Focus on prioritization"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q007",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a service offering?",
+    "preferred_answer": "A service offering is a formal description of one or more services designed for a target consumer group. It can include goods, access to resources, and service actions, along with service levels, eligibility, support, and pricing or chargeback information.",
+    "evaluation_points": [
+      "Focus on service offering",
+      "Focus on catalog"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q008",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between a customer, user, and sponsor?",
+    "preferred_answer": "A customer defines requirements and is accountable for outcomes; a user consumes the service; a sponsor authorizes budget or resources. One person can hold multiple roles, but identifying them prevents confused priorities and acceptance criteria.",
+    "evaluation_points": [
+      "Focus on customer",
+      "Focus on user",
+      "Focus on sponsor"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q009",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a service relationship?",
+    "preferred_answer": "A service relationship includes service provision, service consumption, and relationship management between provider and consumer. Responsibilities are shared: users, customers, suppliers, and internal teams all influence outcomes and risks.",
+    "evaluation_points": [
+      "Focus on service relationship"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q010",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an operating model?",
+    "preferred_answer": "An operating model describes how an organization aligns capabilities, roles, workflows, governance, data, tools, and partners to deliver value. It turns strategy into repeatable execution and clarifies decision rights and interfaces.",
+    "evaluation_points": [
+      "Focus on operating model",
+      "Focus on governance"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q011",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is process ownership important?",
+    "preferred_answer": "A process owner is accountable for purpose, design, controls, measures, interfaces, and improvement across teams. Without ownership, local optimizations, duplicated workflows, unclear policies, and stale metrics persist.",
+    "evaluation_points": [
+      "Focus on process owner",
+      "Focus on accountability"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT service management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q012",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between a policy, process, procedure, and work instruction?",
+    "preferred_answer": "A policy states intent and mandatory direction. A process defines activities and controls that transform inputs into outcomes. A procedure gives an approved method, while a work instruction gives detailed task-level steps.",
+    "evaluation_points": [
+      "Focus on policy",
+      "Focus on process",
+      "Focus on procedure"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT service management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q013",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a RACI matrix used for?",
+    "preferred_answer": "RACI clarifies who is Responsible, Accountable, Consulted, and Informed for activities or decisions. It reduces gaps and duplication, but it should not replace clear role descriptions, escalation paths, or decision authority.",
+    "evaluation_points": [
+      "Focus on RACI",
+      "Focus on roles"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q014",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How would you assess ITSM maturity?",
+    "preferred_answer": "Assess whether practices are defined, adopted, measured, controlled, integrated, automated appropriately, and improved based on outcomes. Evidence should include behavior and results, not merely documented procedures or tool configuration.",
+    "evaluation_points": [
+      "Focus on maturity assessment"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT service management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q015",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a service management system (SMS)?",
+    "preferred_answer": "An SMS is the management system used to establish policies, objectives, processes, responsibilities, controls, resources, and continual improvement for managing services. ISO/IEC 20000 treats it as an integrated system, not an isolated operations process.",
+    "evaluation_points": [
+      "Focus on SMS",
+      "Focus on ISO 20000"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT service management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q016",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITSM Foundations and Service Value",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should an ITSM team avoid becoming ticket-focused rather than value-focused?",
+    "preferred_answer": "Connect queues and KPIs to business services and user outcomes, review recurring demand, automate low-value work, track experience and reliability, and include consumers in improvement decisions. Ticket closure is evidence of activity, not proof of value.",
+    "evaluation_points": [
+      "Focus on value focus",
+      "Focus on outcomes"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q017",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are ITIL guiding principles used for?",
+    "preferred_answer": "They provide broadly applicable decision guidance when circumstances are uncertain. Teams use them together - for example, focus on value, start where you are, progress iteratively, collaborate, think holistically, keep it simple, and optimize and automate.",
+    "evaluation_points": [
+      "Focus on guiding principles"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q018",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does \u201cfocus on value\u201d mean operationally?",
+    "preferred_answer": "Every activity should be traceable to stakeholder value. In operations, this means prioritizing by impact, designing useful alerts, reducing user effort, and rejecting controls or reports that consume effort without improving outcomes, risk, or learning.",
+    "evaluation_points": [
+      "Focus on focus on value"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q019",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you apply \u201cstart where you are\u201d?",
+    "preferred_answer": "Assess existing people, workflows, data, tools, and results before replacing them. Preserve useful capability, validate assumptions with evidence, and improve known constraints rather than launching a large redesign based only on a target-state diagram.",
+    "evaluation_points": [
+      "Focus on start where you are"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q020",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why should improvement progress iteratively with feedback?",
+    "preferred_answer": "Small, testable increments reduce risk and expose assumptions early. Feedback from users, operators, metrics, and controls guides the next change, preventing long programs from delivering an unsuitable process after conditions have shifted.",
+    "evaluation_points": [
+      "Focus on iterative improvement"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q021",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does \u201ccollaborate and promote visibility\u201d prevent?",
+    "preferred_answer": "It reduces siloed decisions, hidden work, conflicting priorities, and late surprises. Useful visibility includes shared status, decision logs, risks, ownership, service impact, and evidence - not broadcasting every detail to everyone.",
+    "evaluation_points": [
+      "Focus on collaboration",
+      "Focus on visibility"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q022",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does \u201cthink and work holistically\u201d mean?",
+    "preferred_answer": "Services behave as systems. A change to one team, component, supplier, control, or metric can create downstream effects. Holistic work considers end-to-end value streams, dependencies, feedback loops, and trade-offs.",
+    "evaluation_points": [
+      "Focus on systems thinking"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q023",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When should a process be simplified?",
+    "preferred_answer": "Simplify when steps, approvals, fields, handoffs, or reports do not materially reduce risk or improve outcomes. Remove waste carefully, preserving regulatory evidence, segregation of duties, and essential checks.",
+    "evaluation_points": [
+      "Focus on simplicity",
+      "Focus on process design"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q024",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What should be optimized before it is automated?",
+    "preferred_answer": "Clarify purpose, demand, decision rules, data quality, exception handling, ownership, controls, and success measures first. Automating a confused process increases speed and scale of errors.",
+    "evaluation_points": [
+      "Focus on optimize",
+      "Focus on automate"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q025",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the service value chain?",
+    "preferred_answer": "It is an operating model of interconnected activities - plan, improve, engage, design and transition, obtain/build, and deliver/support - that combine in value streams to create and manage services.",
+    "evaluation_points": [
+      "Focus on service value chain"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q026",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a value stream?",
+    "preferred_answer": "A value stream is a series of steps an organization uses to create and deliver products or services to a consumer. Mapping it reveals delays, rework, queues, controls, information gaps, and automation opportunities.",
+    "evaluation_points": [
+      "Focus on value stream"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q027",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do practices differ from processes?",
+    "preferred_answer": "A process is a structured set of activities that transforms inputs into outputs. A practice is a broader organizational capability that includes people, information, technology, partners, processes, and knowledge needed to achieve an objective.",
+    "evaluation_points": [
+      "Focus on practice",
+      "Focus on process"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q028",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is governance in service management?",
+    "preferred_answer": "Governance evaluates stakeholder needs and conditions, directs priorities and policies, and monitors performance and compliance. Management plans and executes within that direction; governance should not become operational micromanagement.",
+    "evaluation_points": [
+      "Focus on governance",
+      "Focus on management"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q029",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is continual improvement?",
+    "preferred_answer": "Continual improvement is recurring alignment of services and practices with changing needs through assessment, prioritization, experimentation, measurement, and learning. It operates at strategic, service, process, and daily-work levels.",
+    "evaluation_points": [
+      "Focus on continual improvement"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q030",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an improvement register be managed?",
+    "preferred_answer": "Capture problem or opportunity, value hypothesis, owner, affected service, effort, risk, dependencies, priority, status, and measurable outcome. Review it regularly so it does not become an unowned backlog of suggestions.",
+    "evaluation_points": [
+      "Focus on improvement register"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q031",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What makes a control effective rather than bureaucratic?",
+    "preferred_answer": "An effective control addresses a clear risk, has an owner, produces usable evidence, is proportionate, handles exceptions, and is periodically tested. A control that only creates approvals or fields without changing risk is administrative waste.",
+    "evaluation_points": [
+      "Focus on controls",
+      "Focus on governance"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q032",
+    "role_slug": "it-ops-itsm",
+    "domain": "ITIL Practices, Principles, and Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you resolve conflict between speed and control?",
+    "preferred_answer": "Classify risk, standardize low-risk work, automate evidence and checks, reserve deeper review for material changes, define emergency paths, and measure both flow and failure outcomes. The goal is fast and safe, not speed versus safety.",
+    "evaluation_points": [
+      "Focus on speed",
+      "Focus on control"
+    ],
+    "resolution_title": "Google Cloud - DORA research program",
+    "resolution_url": "https://cloud.google.com/devops",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q033",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an incident?",
+    "preferred_answer": "An incident is an unplanned interruption to a service, a reduction in service quality, or a failure of a component that has not yet affected the service. The primary objective is rapid restoration of normal service.",
+    "evaluation_points": [
+      "Focus on incident"
+    ],
+    "resolution_title": "Atlassian - Incident management",
+    "resolution_url": "https://www.atlassian.com/incident-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q034",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is an incident different from a service request?",
+    "preferred_answer": "An incident restores something that is broken or degraded. A service request is a predefined user request such as information, access, or a standard service action. Routing them differently improves expectations, automation, and measurement.",
+    "evaluation_points": [
+      "Focus on incident",
+      "Focus on service request"
+    ],
+    "resolution_title": "Atlassian - Service request management",
+    "resolution_url": "https://www.atlassian.com/itsm/service-request-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q035",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should incident priority be determined?",
+    "preferred_answer": "Use impact and urgency, informed by service criticality, users affected, functionality lost, safety, regulatory exposure, workaround, time sensitivity, and business calendar. Priority should be rules-based but allow documented judgment.",
+    "evaluation_points": [
+      "Focus on priority",
+      "Focus on impact",
+      "Focus on urgency"
+    ],
+    "resolution_title": "Atlassian - Incident management",
+    "resolution_url": "https://www.atlassian.com/incident-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q036",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between severity and priority?",
+    "preferred_answer": "Severity describes technical or business impact; priority determines handling order and response targets. Organizations may use the terms differently, so definitions and mapping must be explicit and consistently applied.",
+    "evaluation_points": [
+      "Focus on severity",
+      "Focus on priority"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q037",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What information should be captured at incident intake?",
+    "preferred_answer": "Capture reporter, affected service, symptoms, start time, scope, location, error evidence, recent changes, business impact, workaround, contact method, and troubleshooting already attempted. Avoid demanding irrelevant fields before urgent triage.",
+    "evaluation_points": [
+      "Focus on intake",
+      "Focus on ticket quality"
+    ],
+    "resolution_title": "Atlassian - Incident management",
+    "resolution_url": "https://www.atlassian.com/incident-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q038",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is functional escalation?",
+    "preferred_answer": "Functional escalation transfers or adds specialists because deeper expertise or permissions are required. Ownership and communication should remain clear so the user is not forced to coordinate multiple teams.",
+    "evaluation_points": [
+      "Focus on functional escalation"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q039",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is hierarchical escalation?",
+    "preferred_answer": "Hierarchical escalation involves management because impact, risk, delay, resources, or authority require leadership attention. It should remove obstacles and manage stakeholders, not replace technical command.",
+    "evaluation_points": [
+      "Focus on hierarchical escalation"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q040",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is a single incident owner important?",
+    "preferred_answer": "One accountable owner coordinates progress, updates, dependencies, and closure even when many teams work on the issue. Shared technical work is valuable; shared accountability without a named owner creates gaps.",
+    "evaluation_points": [
+      "Focus on incident owner"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q041",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a workaround?",
+    "preferred_answer": "A workaround reduces or removes incident impact without eliminating the underlying cause. It should be validated, documented, communicated, monitored, and linked to problem or improvement work where appropriate.",
+    "evaluation_points": [
+      "Focus on workaround"
+    ],
+    "resolution_title": "Atlassian - Problem management",
+    "resolution_url": "https://www.atlassian.com/itsm/problem-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q042",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should duplicate incidents be handled?",
+    "preferred_answer": "Link duplicates to a parent incident or major incident, preserve affected-user information, provide consistent updates, and avoid closing them without communication. Duplicate volume is useful evidence of scope and user impact.",
+    "evaluation_points": [
+      "Focus on duplicate incidents"
+    ],
+    "resolution_title": "Atlassian - Incident management",
+    "resolution_url": "https://www.atlassian.com/incident-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q043",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When should an incident be reassigned?",
+    "preferred_answer": "Reassign only when ownership criteria are clear and the receiving team has the capability to act. Include evidence, actions taken, current impact, and required next step. Repeated bouncing indicates poor routing or unclear support boundaries.",
+    "evaluation_points": [
+      "Focus on assignment",
+      "Focus on routing"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q044",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes an incident resolution note useful?",
+    "preferred_answer": "It states the verified cause or symptom addressed, actions taken, affected components, validation evidence, user confirmation when required, follow-up work, and any knowledge article or change reference. \u201cFixed\u201d is not sufficient.",
+    "evaluation_points": [
+      "Focus on resolution notes"
+    ],
+    "resolution_title": "Atlassian - Knowledge management",
+    "resolution_url": "https://www.atlassian.com/itsm/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q045",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between resolution and closure?",
+    "preferred_answer": "Resolution means service has been restored or an acceptable workaround applied. Closure confirms documentation, categorization, user communication, required validation, linked records, and follow-up actions are complete.",
+    "evaluation_points": [
+      "Focus on resolution",
+      "Focus on closure"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q046",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you prevent premature incident closure?",
+    "preferred_answer": "Define closure criteria, verify monitoring and user experience, allow observation for unstable fixes, confirm critical transactions, record evidence, and automate reopen paths. Closure targets must not reward hiding unresolved work.",
+    "evaluation_points": [
+      "Focus on closure quality"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q047",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What incident metrics are most useful?",
+    "preferred_answer": "Use time to acknowledge, time to restore, recurrence, reopen rate, backlog age, user impact, escalation, handoff count, communication quality, and service-specific reliability. Average resolution time alone can hide severe outliers.",
+    "evaluation_points": [
+      "Focus on incident metrics"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q048",
+    "role_slug": "it-ops-itsm",
+    "domain": "Incident Management and Service Restoration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A high-priority incident has no clear resolver team. What do you do?",
+    "preferred_answer": "Assign an accountable coordinator, stabilize impact, bring likely domain owners into a shared channel, use service maps and recent-change data, escalate resource gaps, document decisions, and keep stakeholders updated while ownership is resolved.",
+    "evaluation_points": [
+      "Focus on unknown ownership",
+      "Focus on coordination"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q049",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What qualifies as a major incident?",
+    "preferred_answer": "A major incident is an incident with exceptional business impact or urgency requiring a distinct coordinated response. Criteria should include critical services, scale, safety, revenue, compliance, public visibility, or strategic events.",
+    "evaluation_points": [
+      "Focus on major incident"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q050",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the role of an incident commander?",
+    "preferred_answer": "The incident commander owns coordination, priorities, decisions, roles, and operational tempo. They create clarity and remove blockers while technical leads investigate and execute. The role should not be overloaded with every task.",
+    "evaluation_points": [
+      "Focus on incident commander"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q051",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What roles are useful during a major incident?",
+    "preferred_answer": "Common roles include incident commander, technical lead, communications lead, scribe, operations liaison, business liaison, and subject-matter responders. Roles can be combined for smaller incidents but responsibilities must remain explicit.",
+    "evaluation_points": [
+      "Focus on major incident roles"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q052",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why should technical response and stakeholder communication be separated?",
+    "preferred_answer": "Responders need uninterrupted diagnostic focus, while stakeholders need regular, translated updates. A communications role prevents engineers from repeating explanations and reduces contradictory messages.",
+    "evaluation_points": [
+      "Focus on communications"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q053",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What should a major-incident update contain?",
+    "preferred_answer": "State current impact, affected services or users, start time, response status, workaround, actions underway, decisions or risks, and next update time. Separate confirmed facts from hypotheses and avoid unsupported recovery promises.",
+    "evaluation_points": [
+      "Focus on status update"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q054",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How often should updates be sent?",
+    "preferred_answer": "Set a cadence based on severity and stakeholder need, such as every 15 or 30 minutes, and send an update even if there is no material change. Change the cadence transparently as the incident stabilizes.",
+    "evaluation_points": [
+      "Focus on update cadence"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q055",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a \u201csingle source of truth\u201d during an incident?",
+    "preferred_answer": "It is the authoritative record for impact, timeline, owners, decisions, actions, and communications. Chat can support collaboration, but key facts and decisions must be captured in a durable incident record.",
+    "evaluation_points": [
+      "Focus on single source of truth"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q056",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why is a scribe valuable?",
+    "preferred_answer": "A scribe records timestamps, observations, decisions, actions, owners, and outcomes. This reduces memory errors, supports handovers, enables accurate communication, and provides evidence for review without distracting technical responders.",
+    "evaluation_points": [
+      "Focus on scribe",
+      "Focus on timeline"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q057",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should hypotheses be managed during an incident?",
+    "preferred_answer": "Record hypotheses with supporting and contradicting evidence, owner, test, and result. Avoid treating the first plausible explanation as fact. Time-box investigation and prioritize tests that can safely narrow the search space.",
+    "evaluation_points": [
+      "Focus on hypothesis",
+      "Focus on diagnosis"
+    ],
+    "resolution_title": "Google - The Site Reliability Workbook",
+    "resolution_url": "https://sre.google/workbook/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q058",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "When is rollback preferred over further debugging?",
+    "preferred_answer": "Rollback is preferred when a recent change is strongly correlated, rollback is safe and tested, continued impact is material, and the previous state is known to be healthier. Preserve evidence and consider data compatibility before acting.",
+    "evaluation_points": [
+      "Focus on rollback",
+      "Focus on mitigation"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q059",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should executive communication differ from technical communication?",
+    "preferred_answer": "Executives need business impact, risk, decisions, customer implications, recovery confidence, and resource needs. Technical responders need evidence, topology, logs, commands, and hypotheses. Both must remain factually aligned.",
+    "evaluation_points": [
+      "Focus on executive communication"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q060",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should be included in a post-incident review?",
+    "preferred_answer": "Include impact, timeline, detection, response, contributing conditions, what helped or hindered, customer communication, action items, owners, due dates, and systemic lessons. Avoid reducing the review to a single human error.",
+    "evaluation_points": [
+      "Focus on post-incident review"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q061",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What makes an incident review blameless?",
+    "preferred_answer": "It examines how system conditions, incentives, interfaces, information, workload, and safeguards shaped reasonable actions at the time. Blameless does not mean accountability-free; it means learning without scapegoating.",
+    "evaluation_points": [
+      "Focus on blameless review"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q062",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should action items from incident reviews be prioritized?",
+    "preferred_answer": "Prioritize by recurrence likelihood, potential impact, risk reduction, effort, dependency, and whether the action improves detection, containment, recovery, or prevention. Track owners and verify effectiveness after completion.",
+    "evaluation_points": [
+      "Focus on action items"
+    ],
+    "resolution_title": "Google - The Site Reliability Workbook",
+    "resolution_url": "https://sre.google/workbook/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q063",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "When should external parties be notified?",
+    "preferred_answer": "Follow contractual, regulatory, legal, security, privacy, and customer-communication requirements. Coordinate with authorized functions; do not delay mandatory reporting while waiting for perfect technical certainty.",
+    "evaluation_points": [
+      "Focus on external notification"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 2 - Computer Security Incident Handling Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q064",
+    "role_slug": "it-ops-itsm",
+    "domain": "Major Incident Management and Communications",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A major outage has competing technical leads proposing opposite actions. How do you proceed?",
+    "preferred_answer": "The incident commander clarifies decision authority, compares evidence, risk, reversibility, and expected recovery time, time-boxes debate, chooses or sequences the safest test, records the decision, and defines rollback criteria.",
+    "evaluation_points": [
+      "Focus on decision conflict"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q065",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a problem in ITSM?",
+    "preferred_answer": "A problem is a cause, or potential cause, of one or more incidents. Problem management reduces the likelihood and impact of incidents by identifying causes, managing workarounds, and initiating permanent improvement.",
+    "evaluation_points": [
+      "Focus on problem management"
+    ],
+    "resolution_title": "Atlassian - Problem management",
+    "resolution_url": "https://www.atlassian.com/itsm/problem-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q066",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is problem management different from incident management?",
+    "preferred_answer": "Incident management restores service quickly. Problem management investigates causes and systemic conditions to prevent recurrence or reduce impact. They are connected but have different objectives and time horizons.",
+    "evaluation_points": [
+      "Focus on incident vs problem"
+    ],
+    "resolution_title": "Atlassian - Problem management",
+    "resolution_url": "https://www.atlassian.com/itsm/problem-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q067",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a known error?",
+    "preferred_answer": "A known error is a problem that has been analyzed but not fully resolved, usually with a documented cause or contributing condition and a workaround. It should remain actively reviewed, not become a permanent excuse.",
+    "evaluation_points": [
+      "Focus on known error"
+    ],
+    "resolution_title": "Atlassian - Problem management",
+    "resolution_url": "https://www.atlassian.com/itsm/problem-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q068",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is reactive problem management?",
+    "preferred_answer": "Reactive problem management starts after incidents or trends reveal an issue. It uses incident data, technical evidence, and stakeholder impact to identify and address causes or reduce recurrence.",
+    "evaluation_points": [
+      "Focus on reactive problem"
+    ],
+    "resolution_title": "Atlassian - Problem management",
+    "resolution_url": "https://www.atlassian.com/itsm/problem-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q069",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is proactive problem management?",
+    "preferred_answer": "Proactive problem management identifies weaknesses before major incidents through trend analysis, monitoring, risk assessment, capacity reviews, vendor advisories, technical debt, and recurring near misses.",
+    "evaluation_points": [
+      "Focus on proactive problem"
+    ],
+    "resolution_title": "Atlassian - Problem management",
+    "resolution_url": "https://www.atlassian.com/itsm/problem-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q070",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When should an incident create a problem record?",
+    "preferred_answer": "Create one when recurrence, impact, unknown cause, risk, workaround dependency, cross-team pattern, or improvement value justifies structured investigation. Not every incident needs a separate problem record.",
+    "evaluation_points": [
+      "Focus on problem criteria"
+    ],
+    "resolution_title": "Atlassian - Problem management",
+    "resolution_url": "https://www.atlassian.com/itsm/problem-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q071",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the 5 Whys technique?",
+    "preferred_answer": "It repeatedly asks why an outcome occurred to move from symptoms toward underlying conditions. It is quick but can oversimplify complex systems, so validate each link with evidence and consider multiple causal paths.",
+    "evaluation_points": [
+      "Focus on 5 Whys"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q072",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a fishbone diagram useful for?",
+    "preferred_answer": "It structures possible contributing factors across categories such as people, process, technology, environment, suppliers, and measurement. It supports broad exploration but does not prove causality.",
+    "evaluation_points": [
+      "Focus on fishbone",
+      "Focus on cause analysis"
+    ],
+    "resolution_title": "Google - The Site Reliability Workbook",
+    "resolution_url": "https://sre.google/workbook/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q073",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is Pareto analysis in problem management?",
+    "preferred_answer": "Pareto analysis ranks categories by frequency or impact to focus effort on the few contributors responsible for much of the loss. Use reliable categorization and avoid ignoring rare but catastrophic risks.",
+    "evaluation_points": [
+      "Focus on Pareto analysis"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q074",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why is \u201chuman error\u201d an incomplete root cause?",
+    "preferred_answer": "It describes an action, not why the action was reasonable or possible. A useful analysis examines interface design, training, workload, procedures, access, safeguards, incentives, automation, and detection.",
+    "evaluation_points": [
+      "Focus on human error",
+      "Focus on systems thinking"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q075",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should recurring incidents be identified?",
+    "preferred_answer": "Use normalized categories, affected configuration items, symptom signatures, monitoring events, error codes, timing, recent changes, and text analytics. Validate clusters with technical review because poor ticket data can create false patterns.",
+    "evaluation_points": [
+      "Focus on trend analysis"
+    ],
+    "resolution_title": "Atlassian - Problem management",
+    "resolution_url": "https://www.atlassian.com/itsm/problem-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q076",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between root cause and contributing factor?",
+    "preferred_answer": "A root cause is a condition whose removal materially prevents recurrence within the defined scope. Contributing factors increase likelihood or impact. Complex incidents often have several interacting causes rather than one root.",
+    "evaluation_points": [
+      "Focus on root cause",
+      "Focus on contributing factor"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q077",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should a workaround be governed?",
+    "preferred_answer": "Record prerequisites, risks, steps, validation, ownership, expiry or review date, affected services, and rollback. Train support teams and monitor use so temporary work does not silently become permanent architecture.",
+    "evaluation_points": [
+      "Focus on workaround governance"
+    ],
+    "resolution_title": "Atlassian - Problem management",
+    "resolution_url": "https://www.atlassian.com/itsm/problem-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q078",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you measure problem-management effectiveness?",
+    "preferred_answer": "Track recurrence and impact reduction, known-error age, time to useful workaround, action completion, risk retired, incidents linked to problems, and verified improvement outcomes - not only the number of records closed.",
+    "evaluation_points": [
+      "Focus on problem metrics"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q079",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should happen when the exact root cause cannot be proven?",
+    "preferred_answer": "Document evidence, bounded hypotheses, eliminated causes, residual risk, monitoring improvements, mitigations, and follow-up experiments. Do not invent certainty; risk reduction and better detection can still be valuable outcomes.",
+    "evaluation_points": [
+      "Focus on uncertain cause"
+    ],
+    "resolution_title": "Google - The Site Reliability Workbook",
+    "resolution_url": "https://sre.google/workbook/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q080",
+    "role_slug": "it-ops-itsm",
+    "domain": "Problem Management and Root Cause Analysis",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A recurring issue is always fixed by restarting a service. What is your next step?",
+    "preferred_answer": "Treat restart as a workaround, collect pre-restart evidence, correlate resource and dependency behavior, examine leaks or deadlocks, define safe thresholds, create a problem record, and pursue a permanent corrective change.",
+    "evaluation_points": [
+      "Focus on recurring restart"
+    ],
+    "resolution_title": "Atlassian - Problem management",
+    "resolution_url": "https://www.atlassian.com/itsm/problem-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q081",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the objective of change enablement?",
+    "preferred_answer": "To maximize successful service and product changes by assessing risk, authorizing appropriate changes, and managing schedules while enabling useful change at the required speed.",
+    "evaluation_points": [
+      "Focus on change enablement"
+    ],
+    "resolution_title": "Atlassian - Change management",
+    "resolution_url": "https://www.atlassian.com/itsm/change-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q082",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a standard change?",
+    "preferred_answer": "A standard change is low risk, well understood, documented, repeatable, and pre-authorized. It still requires defined criteria, controls, evidence, and periodic review; it is not an untracked change.",
+    "evaluation_points": [
+      "Focus on standard change"
+    ],
+    "resolution_title": "Atlassian - Change management",
+    "resolution_url": "https://www.atlassian.com/itsm/change-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q083",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a normal change?",
+    "preferred_answer": "A normal change requires assessment and authorization appropriate to its risk, impact, complexity, and timing. The workflow should be proportionate rather than applying the same approval depth to every change.",
+    "evaluation_points": [
+      "Focus on normal change"
+    ],
+    "resolution_title": "Atlassian - Change management",
+    "resolution_url": "https://www.atlassian.com/itsm/change-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q084",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an emergency change?",
+    "preferred_answer": "An emergency change is expedited because delay would cause unacceptable harm, such as restoring a major service or addressing a critical vulnerability. It requires defined authority, minimum safe evidence, retrospective review, and documentation.",
+    "evaluation_points": [
+      "Focus on emergency change"
+    ],
+    "resolution_title": "Atlassian - Change management",
+    "resolution_url": "https://www.atlassian.com/itsm/change-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q085",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should change risk be assessed?",
+    "preferred_answer": "Consider service criticality, blast radius, novelty, reversibility, data impact, security, dependencies, timing, test evidence, operator experience, failure history, observability, and fallback readiness. Use data but preserve expert judgment.",
+    "evaluation_points": [
+      "Focus on change risk"
+    ],
+    "resolution_title": "Atlassian - Change management",
+    "resolution_url": "https://www.atlassian.com/itsm/change-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q086",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should a change record contain?",
+    "preferred_answer": "Purpose, affected services and configuration items, owner, implementation plan, test evidence, risk, impact, dependencies, schedule, communications, approvals, validation, rollback criteria, and post-implementation result.",
+    "evaluation_points": [
+      "Focus on change record"
+    ],
+    "resolution_title": "Atlassian - Change management",
+    "resolution_url": "https://www.atlassian.com/itsm/change-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q087",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a change advisory board (CAB) for?",
+    "preferred_answer": "A CAB supports assessment, coordination, and authorization of changes that need cross-functional judgment. It should focus on material risk and conflicts, not act as a weekly approval queue for every routine deployment.",
+    "evaluation_points": [
+      "Focus on CAB"
+    ],
+    "resolution_title": "Atlassian - Change management",
+    "resolution_url": "https://www.atlassian.com/itsm/change-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q088",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can organizations reduce CAB bottlenecks?",
+    "preferred_answer": "Pre-authorize safe patterns, automate policy checks and evidence, use risk-based routing, schedule asynchronous review, define clear decision rights, and reserve meetings for complex or conflicting changes.",
+    "evaluation_points": [
+      "Focus on CAB optimization"
+    ],
+    "resolution_title": "Google Cloud - DORA research program",
+    "resolution_url": "https://cloud.google.com/devops",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q089",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a change freeze?",
+    "preferred_answer": "A change freeze restricts specified changes during sensitive periods. It should define scope, dates, exceptions, authority, and emergency handling. Blanket freezes can defer risk and create a dangerous post-freeze backlog.",
+    "evaluation_points": [
+      "Focus on change freeze"
+    ],
+    "resolution_title": "Atlassian - Change management",
+    "resolution_url": "https://www.atlassian.com/itsm/change-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q090",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a rollback plan?",
+    "preferred_answer": "A rollback plan describes how to return to a known safe state, including triggers, data compatibility, timing, permissions, backups, communications, and validation. \u201cRestore backup\u201d is not a complete rollback plan.",
+    "evaluation_points": [
+      "Focus on rollback plan"
+    ],
+    "resolution_title": "AWS Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q091",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between release and deployment?",
+    "preferred_answer": "Deployment moves a component or version into an environment. Release makes functionality available for use. Feature flags and staged rollout can separate these events to reduce risk.",
+    "evaluation_points": [
+      "Focus on release",
+      "Focus on deployment"
+    ],
+    "resolution_title": "Google Cloud - DORA research program",
+    "resolution_url": "https://cloud.google.com/devops",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q092",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a canary deployment?",
+    "preferred_answer": "A canary exposes a change to a small controlled population, monitors agreed health and business metrics, and expands only if results are acceptable. It requires representative traffic, observability, and automated halt or rollback criteria.",
+    "evaluation_points": [
+      "Focus on canary deployment"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q093",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a blue-green deployment?",
+    "preferred_answer": "Blue-green maintains two production-capable environments and switches traffic from the current to the new version after validation. It speeds rollback but adds cost and requires careful data and session compatibility.",
+    "evaluation_points": [
+      "Focus on blue-green"
+    ],
+    "resolution_title": "AWS Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q094",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should failed changes be reviewed?",
+    "preferred_answer": "Assess planning, assumptions, testing, dependencies, observability, execution, decisions, and recovery without scapegoating. Update risk models, standard patterns, automation, and training based on evidence.",
+    "evaluation_points": [
+      "Focus on failed change review"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q095",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Which metrics indicate healthy change performance?",
+    "preferred_answer": "Use deployment frequency, lead time, change failure rate, failed-deployment recovery time, unauthorized changes, rollback effectiveness, and service impact. Balance speed, stability, and value rather than optimizing one metric.",
+    "evaluation_points": [
+      "Focus on change metrics",
+      "Focus on DORA"
+    ],
+    "resolution_title": "Google Cloud - DORA research program",
+    "resolution_url": "https://cloud.google.com/devops",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q096",
+    "role_slug": "it-ops-itsm",
+    "domain": "Change Enablement, Release, and Deployment",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A security patch is urgent but the rollback is uncertain. How do you decide?",
+    "preferred_answer": "Compare exploit and business risk with change risk, reduce scope, test representative paths, create backups or snapshots, define containment, involve security and service owners, document authority, and monitor closely after implementation.",
+    "evaluation_points": [
+      "Focus on urgent patch",
+      "Focus on risk decision"
+    ],
+    "resolution_title": "NIST Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/projects/risk-management/about-rmf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q097",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is service request management?",
+    "preferred_answer": "It handles predefined, user-initiated requests in an effective and user-friendly way, such as information, access, standard equipment, or routine service actions. It should be designed for predictable fulfillment and transparency.",
+    "evaluation_points": [
+      "Focus on service request"
+    ],
+    "resolution_title": "Atlassian - Service request management",
+    "resolution_url": "https://www.atlassian.com/itsm/service-request-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q098",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What belongs in a service catalog entry?",
+    "preferred_answer": "Include purpose, eligibility, request inputs, approvals, fulfillment steps, target times, support, cost or charge, dependencies, security classification, and expected outcome in language users understand.",
+    "evaluation_points": [
+      "Focus on service catalog"
+    ],
+    "resolution_title": "Atlassian - Service request management",
+    "resolution_url": "https://www.atlassian.com/itsm/service-request-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q099",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should request forms be designed?",
+    "preferred_answer": "Ask only for information required for decision or fulfillment, use conditional fields, plain language, defaults, validation, and visible expectations. Excessive mandatory fields drive poor data and shadow channels.",
+    "evaluation_points": [
+      "Focus on request form"
+    ],
+    "resolution_title": "Atlassian - Service request management",
+    "resolution_url": "https://www.atlassian.com/itsm/service-request-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q100",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is request fulfillment automation suitable for?",
+    "preferred_answer": "Automate stable, high-volume, rules-based requests with reliable data, controlled permissions, exception handling, audit trails, and rollback. Human review remains necessary for ambiguity, sensitive access, and material risk.",
+    "evaluation_points": [
+      "Focus on request automation"
+    ],
+    "resolution_title": "Atlassian - Service request management",
+    "resolution_url": "https://www.atlassian.com/itsm/service-request-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q101",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How is access management connected to identity governance?",
+    "preferred_answer": "Access management executes authorized access, while identity governance defines policies, ownership, lifecycle, certification, segregation of duties, and accountability. Requests should use authoritative identity and role data.",
+    "evaluation_points": [
+      "Focus on access management",
+      "Focus on identity governance"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q102",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is least privilege?",
+    "preferred_answer": "Grant only the access needed for a defined role and duration, with appropriate review and removal. Least privilege applies to users, service accounts, automation, APIs, and administrators.",
+    "evaluation_points": [
+      "Focus on least privilege"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q103",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is segregation of duties?",
+    "preferred_answer": "It separates conflicting responsibilities so one person cannot complete a high-risk transaction or bypass controls alone. Exceptions should be documented, time-bound, approved, monitored, and reviewed.",
+    "evaluation_points": [
+      "Focus on segregation of duties"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q104",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should joiner-mover-leaver access be managed?",
+    "preferred_answer": "Use authoritative HR or identity events, role-based access, timely provisioning and removal, approval evidence, exception handling, reconciliation, and periodic review. Movers are often the largest source of accumulated excess access.",
+    "evaluation_points": [
+      "Focus on JML",
+      "Focus on access lifecycle"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q105",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What makes a knowledge article effective?",
+    "preferred_answer": "It is findable, accurate, scoped, actionable, safe, written for its audience, versioned, owned, and validated through use. Include symptoms, prerequisites, steps, expected results, escalation, and review date.",
+    "evaluation_points": [
+      "Focus on knowledge article"
+    ],
+    "resolution_title": "Atlassian - Knowledge management",
+    "resolution_url": "https://www.atlassian.com/itsm/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q106",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is knowledge-centered service (KCS) trying to achieve?",
+    "preferred_answer": "It integrates knowledge creation and improvement into support work so solutions are captured in the workflow, reused, reviewed, and improved based on demand. The goal is collective learning, not merely article counts.",
+    "evaluation_points": [
+      "Focus on KCS"
+    ],
+    "resolution_title": "Atlassian - Knowledge management",
+    "resolution_url": "https://www.atlassian.com/itsm/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q107",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you measure self-service quality?",
+    "preferred_answer": "Measure successful completion, search success, deflection with verified outcome, time and effort, abandonment, escalation, article helpfulness, and repeat demand. Deflection alone can hide users who gave up.",
+    "evaluation_points": [
+      "Focus on self-service metrics"
+    ],
+    "resolution_title": "Atlassian - Knowledge management",
+    "resolution_url": "https://www.atlassian.com/itsm/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q108",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When should a knowledge article be retired?",
+    "preferred_answer": "Retire or archive when the service, interface, control, or workaround is obsolete; the content is duplicated; risk has changed; or usage and feedback show it no longer helps. Preserve required historical records separately.",
+    "evaluation_points": [
+      "Focus on knowledge lifecycle"
+    ],
+    "resolution_title": "Atlassian - Knowledge management",
+    "resolution_url": "https://www.atlassian.com/itsm/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q109",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can request categories become harmful?",
+    "preferred_answer": "Too many categories confuse users and agents, fragment reporting, and create routing errors. Design around user intent and fulfillment ownership, then maintain a normalized taxonomy behind the interface.",
+    "evaluation_points": [
+      "Focus on request taxonomy"
+    ],
+    "resolution_title": "Atlassian - Service request management",
+    "resolution_url": "https://www.atlassian.com/itsm/service-request-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q110",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should privileged access requests differ from ordinary requests?",
+    "preferred_answer": "Require stronger identity verification, explicit business justification, least privilege, defined duration, elevated approval, secure delivery, session or activity logging, emergency paths, and timely revocation.",
+    "evaluation_points": [
+      "Focus on privileged access"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q111",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a request model?",
+    "preferred_answer": "A request model defines the repeatable workflow, roles, approvals, automation, target times, controls, communications, and fulfillment evidence for a known request type.",
+    "evaluation_points": [
+      "Focus on request model"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q112",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Requests, Access, and Knowledge Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Users bypass the portal and message engineers directly. How do you respond?",
+    "preferred_answer": "Investigate friction, urgency, trust, and catalog gaps; simplify entry; integrate channels where appropriate; make status visible; protect urgent paths; and coach teams not to reward bypassing with invisible work.",
+    "evaluation_points": [
+      "Focus on channel bypass"
+    ],
+    "resolution_title": "Atlassian - Service request management",
+    "resolution_url": "https://www.atlassian.com/itsm/service-request-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q113",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the purpose of a service desk?",
+    "preferred_answer": "It is the entry point and communication interface between provider and users, capturing demand, resolving issues, coordinating support, sharing knowledge, and representing the user experience across services.",
+    "evaluation_points": [
+      "Focus on service desk"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q114",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What skills matter beyond technical knowledge at a service desk?",
+    "preferred_answer": "Active listening, structured questioning, empathy, concise writing, expectation setting, ownership, prioritization, security awareness, cultural sensitivity, and knowing when to escalate are essential.",
+    "evaluation_points": [
+      "Focus on service desk skills"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q115",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is first-contact resolution?",
+    "preferred_answer": "FCR is the proportion of contacts resolved during the initial interaction without transfer or follow-up. It is useful only when resolution quality, recurrence, user effort, and appropriate escalation are also monitored.",
+    "evaluation_points": [
+      "Focus on FCR"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q116",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an agent clarify a vague issue?",
+    "preferred_answer": "Confirm the desired outcome, exact symptom, start time, scope, affected device or service, recent change, error message, reproduction steps, impact, and what has already been tried. Summarize understanding before acting.",
+    "evaluation_points": [
+      "Focus on diagnostic questioning"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q117",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you communicate with a frustrated user?",
+    "preferred_answer": "Acknowledge impact, avoid defensiveness, clarify facts, state ownership and next actions, give realistic timing, provide updates, and explain constraints plainly. Empathy should accompany useful action rather than replace it.",
+    "evaluation_points": [
+      "Focus on empathy",
+      "Focus on communication"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q118",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is customer effort, and why measure it?",
+    "preferred_answer": "Customer effort reflects how difficult it is to obtain help or complete a service interaction. High effort predicts dissatisfaction even when the ticket closes, and often reveals poor forms, handoffs, authentication, or status visibility.",
+    "evaluation_points": [
+      "Focus on customer effort"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q119",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should remote troubleshooting be performed safely?",
+    "preferred_answer": "Confirm identity and consent, explain actions, protect sensitive information, use approved tools, preserve user work, avoid unnecessary privilege, document changes, verify the outcome, and disconnect securely.",
+    "evaluation_points": [
+      "Focus on remote support",
+      "Focus on safety"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q120",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What makes a warm transfer different from a cold transfer?",
+    "preferred_answer": "A warm transfer briefs the receiving team, confirms acceptance, and sets expectations for the user. A cold transfer sends the user or ticket onward without context, increasing effort and repeat explanation.",
+    "evaluation_points": [
+      "Focus on warm transfer"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q121",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should ticket categorization be balanced with speed?",
+    "preferred_answer": "Capture the minimum accurate category needed for routing and analysis, use defaults or automation, and allow correction later. Do not delay urgent restoration for perfect taxonomy.",
+    "evaluation_points": [
+      "Focus on ticket categorization"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q122",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is shift-left support?",
+    "preferred_answer": "Shift-left moves suitable knowledge, access, diagnostics, and resolution capability closer to users or front-line teams. It must include training, guardrails, tooling, feedback, and escalation - not simply transfer workload downward.",
+    "evaluation_points": [
+      "Focus on shift left"
+    ],
+    "resolution_title": "Atlassian - Knowledge management",
+    "resolution_url": "https://www.atlassian.com/itsm/knowledge-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q123",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is shift-right in operations?",
+    "preferred_answer": "Shift-right brings operational learning, observability, resilience testing, and user behavior from production back into design and delivery. It helps teams build services that are easier to operate and support.",
+    "evaluation_points": [
+      "Focus on shift right"
+    ],
+    "resolution_title": "Google Cloud - DORA research program",
+    "resolution_url": "https://cloud.google.com/devops",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q124",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should VIP support be handled without damaging fairness?",
+    "preferred_answer": "Define transparent service tiers or business-critical criteria, avoid informal favoritism, protect security controls, and ensure ordinary users still receive agreed service. Escalation should be based on impact and commitments.",
+    "evaluation_points": [
+      "Focus on VIP support"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q125",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is the risk of measuring agents mainly by handle time?",
+    "preferred_answer": "Agents may rush diagnosis, avoid complex work, create repeat contacts, or transfer prematurely. Balance efficiency with quality, first-contact resolution, recurrence, customer effort, compliance, and coaching.",
+    "evaluation_points": [
+      "Focus on handle time",
+      "Focus on incentives"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q126",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you improve escalation quality?",
+    "preferred_answer": "Define entry criteria, required evidence, ownership, severity, actions tried, logs, time sensitivity, and next decision needed. Review rejected or bounced escalations to improve knowledge and routing.",
+    "evaluation_points": [
+      "Focus on escalation quality"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q127",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a support swarming model?",
+    "preferred_answer": "Swarming brings relevant expertise to the issue without repeatedly transferring ownership through tiers. It can improve learning and resolution but needs clear coordination, availability, and documentation.",
+    "evaluation_points": [
+      "Focus on swarming"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q128",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Desk and Customer Experience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "An agent repeatedly meets SLA by closing tickets that reopen. How do you address it?",
+    "preferred_answer": "Review incentives and definitions, coach on validation and documentation, track reopen and recurrence, sample quality, correct the metric, and handle intentional manipulation through normal performance and governance processes.",
+    "evaluation_points": [
+      "Focus on metric gaming"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q129",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a service level agreement (SLA)?",
+    "preferred_answer": "An SLA documents agreed service targets, scope, responsibilities, measurement rules, exclusions, reporting, and review between provider and customer. It should reflect meaningful outcomes rather than only internal activity.",
+    "evaluation_points": [
+      "Focus on SLA"
+    ],
+    "resolution_title": "Atlassian - SLA guide",
+    "resolution_url": "https://www.atlassian.com/itsm/service-request-management/slas",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q130",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an operational level agreement (OLA)?",
+    "preferred_answer": "An OLA defines internal commitments between teams that support delivery of an external service level. It aligns handoffs, responsibilities, and targets without exposing every internal metric to the customer.",
+    "evaluation_points": [
+      "Focus on OLA"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q131",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does an underpinning contract relate to an SLA?",
+    "preferred_answer": "A supplier contract supports provider commitments through service, support, security, continuity, and performance obligations. Supplier targets should align with the end-to-end service promise and leave room for internal processing.",
+    "evaluation_points": [
+      "Focus on underpinning contract"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q132",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an SLO?",
+    "preferred_answer": "A service level objective is a measurable reliability target for a service indicator, such as successful request rate or latency. SLOs help teams balance reliability and delivery decisions.",
+    "evaluation_points": [
+      "Focus on SLO"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q133",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an SLI?",
+    "preferred_answer": "A service level indicator is a quantitative measure of service behavior experienced by users, such as availability, latency, throughput, correctness, or freshness. It should be defined from a clear measurement point.",
+    "evaluation_points": [
+      "Focus on SLI"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q134",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an error budget?",
+    "preferred_answer": "An error budget is the allowed unreliability implied by an SLO. Teams use its consumption to guide risk, release pace, reliability work, and escalation, rather than treating 100 percent reliability as a universal goal.",
+    "evaluation_points": [
+      "Focus on error budget"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q135",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why can percentage availability be misleading?",
+    "preferred_answer": "The same percentage can hide duration, frequency, affected users, partial degradation, business timing, and dependency failures. Define calculation, exclusions, measurement point, and customer impact clearly.",
+    "evaluation_points": [
+      "Focus on availability metric"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q136",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes a KPI useful?",
+    "preferred_answer": "A KPI connects to an objective, has a clear definition, owner, data source, target, review cadence, and decision use. It should be hard to game and balanced with counter-metrics.",
+    "evaluation_points": [
+      "Focus on KPI"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q137",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between leading and lagging indicators?",
+    "preferred_answer": "Leading indicators signal conditions that may influence future outcomes, such as alert noise or change-risk scores. Lagging indicators report results already experienced, such as outage minutes. Both are needed.",
+    "evaluation_points": [
+      "Focus on leading indicator",
+      "Focus on lagging indicator"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q138",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should SLA clocks handle waiting for users?",
+    "preferred_answer": "Define pause conditions transparently, record when and why the clock pauses, send reminders, and avoid using pauses to hide provider delay. Customer-facing elapsed time may still be reported separately from contractual time.",
+    "evaluation_points": [
+      "Focus on SLA clock"
+    ],
+    "resolution_title": "Atlassian - SLA guide",
+    "resolution_url": "https://www.atlassian.com/itsm/service-request-management/slas",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q139",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the danger of using averages alone?",
+    "preferred_answer": "Averages hide distribution, severe outliers, priority mix, and different user groups. Use percentiles, ranges, volumes, age bands, and service segmentation alongside averages.",
+    "evaluation_points": [
+      "Focus on averages",
+      "Focus on percentiles"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q140",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should an operations dashboard emphasize?",
+    "preferred_answer": "Show service health, customer impact, current risk, significant trends, actionable exceptions, ownership, and decision context. Avoid dense counts that do not indicate what action is needed.",
+    "evaluation_points": [
+      "Focus on operations dashboard"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q141",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should backlog health be measured?",
+    "preferred_answer": "Measure volume by age, priority, service, ownership, waiting reason, breaches, inflow versus outflow, and repeat demand. A stable total can hide an aging high-risk subset.",
+    "evaluation_points": [
+      "Focus on backlog health"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q142",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is experience-level measurement?",
+    "preferred_answer": "It evaluates how users perceive and accomplish outcomes, such as task success, effort, responsiveness, and confidence. It complements technical and process metrics rather than replacing them.",
+    "evaluation_points": [
+      "Focus on experience metrics"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q143",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you prevent metric gaming?",
+    "preferred_answer": "Use balanced measures, clear intent, quality sampling, outcome checks, transparent definitions, segmentation, audit trails, and regular review of unintended behavior. Do not tie one narrow metric directly to rewards.",
+    "evaluation_points": [
+      "Focus on metric gaming"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q144",
+    "role_slug": "it-ops-itsm",
+    "domain": "Service Levels, Metrics, Reporting, and Experience",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An SLA is consistently met, but users remain dissatisfied. What do you investigate?",
+    "preferred_answer": "Review whether targets reflect user priorities, measurement starts and stops, partial degradation, effort, communication, recurrence, resolution quality, and underserved segments. Revise the service-level model using customer evidence.",
+    "evaluation_points": [
+      "Focus on SLA",
+      "Focus on dissatisfaction"
+    ],
+    "resolution_title": "Atlassian - SLA guide",
+    "resolution_url": "https://www.atlassian.com/itsm/service-request-management/slas",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q145",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an event in IT operations?",
+    "preferred_answer": "An event is a change of state significant for managing a service or configuration item. Events can be informational, warning, or exception conditions and may or may not require human action.",
+    "evaluation_points": [
+      "Focus on event management"
+    ],
+    "resolution_title": "Microsoft Azure Monitor documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q146",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is an event different from an alert?",
+    "preferred_answer": "An event is observed state information. An alert is a notification that a condition likely requires attention based on rules, correlation, or analysis. Not every event should produce an alert.",
+    "evaluation_points": [
+      "Focus on event",
+      "Focus on alert"
+    ],
+    "resolution_title": "Prometheus documentation",
+    "resolution_url": "https://prometheus.io/docs/introduction/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q147",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is observability?",
+    "preferred_answer": "Observability is the ability to understand a system\u2019s internal state from its external outputs and telemetry. It supports investigation of novel failures, not only predefined threshold monitoring.",
+    "evaluation_points": [
+      "Focus on observability"
+    ],
+    "resolution_title": "OpenTelemetry documentation",
+    "resolution_url": "https://opentelemetry.io/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q148",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are the main telemetry signals?",
+    "preferred_answer": "Metrics summarize numerical behavior, logs record discrete events, traces follow requests across components, and profiles describe resource use. Context and correlation across signals are more valuable than collecting everything.",
+    "evaluation_points": [
+      "Focus on metrics",
+      "Focus on logs",
+      "Focus on traces"
+    ],
+    "resolution_title": "OpenTelemetry documentation",
+    "resolution_url": "https://opentelemetry.io/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q149",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes an alert actionable?",
+    "preferred_answer": "It identifies a meaningful symptom, affected service, severity, evidence, owner, urgency, likely next action, and runbook. It should fire early enough to act but not for conditions requiring no response.",
+    "evaluation_points": [
+      "Focus on actionable alert"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q150",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is alert fatigue?",
+    "preferred_answer": "Alert fatigue occurs when excessive, repetitive, low-value, or unactionable notifications reduce attention and response quality. Reduce it through ownership, deduplication, tuning, automation, and removal of unused alerts.",
+    "evaluation_points": [
+      "Focus on alert fatigue"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q151",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is the difference between symptom-based and cause-based alerts?",
+    "preferred_answer": "Symptom alerts reflect user-visible failure and are often best for paging. Cause alerts identify internal conditions and may support diagnosis. Paging on every possible cause creates noise and misses novel failure modes.",
+    "evaluation_points": [
+      "Focus on symptom alert",
+      "Focus on cause alert"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q152",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why use percentiles for latency?",
+    "preferred_answer": "Percentiles reveal tail behavior experienced by slower requests, which averages can hide. Choose percentiles and windows based on service expectations, volume, and user impact.",
+    "evaluation_points": [
+      "Focus on latency percentiles"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q153",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is event correlation?",
+    "preferred_answer": "Event correlation groups related signals using time, topology, dependency, signature, and causal context to reduce duplicates and identify likely incidents. Correlation logic must be tested to avoid suppressing important evidence.",
+    "evaluation_points": [
+      "Focus on event correlation"
+    ],
+    "resolution_title": "Microsoft Azure Monitor documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q154",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a heartbeat or synthetic check?",
+    "preferred_answer": "A heartbeat confirms a component can report; a synthetic check actively executes a user-like path. Both can detect failures, but neither alone proves full end-to-end service health.",
+    "evaluation_points": [
+      "Focus on synthetic monitoring"
+    ],
+    "resolution_title": "Microsoft Azure Monitor documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q155",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should monitoring ownership be assigned?",
+    "preferred_answer": "Every alert, dashboard, data pipeline, and runbook should have an owner responsible for quality, response, maintenance, and retirement. Unowned monitoring inevitably becomes stale.",
+    "evaluation_points": [
+      "Focus on monitoring ownership"
+    ],
+    "resolution_title": "Google - The Site Reliability Workbook",
+    "resolution_url": "https://sre.google/workbook/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q156",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What retention considerations apply to logs?",
+    "preferred_answer": "Balance investigation, legal, audit, privacy, cost, and operational needs. Define classification, access, integrity, retention, deletion, and secure transfer; do not retain sensitive logs indefinitely by default.",
+    "evaluation_points": [
+      "Focus on log retention"
+    ],
+    "resolution_title": "NIST SP 800-92 - Guide to Computer Security Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q157",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is cardinality, and why does it matter for metrics?",
+    "preferred_answer": "Cardinality is the number of unique label combinations. Unbounded values such as user IDs or request IDs can increase cost and degrade monitoring systems. Use logs or traces for high-cardinality detail where appropriate.",
+    "evaluation_points": [
+      "Focus on metric cardinality"
+    ],
+    "resolution_title": "Prometheus documentation",
+    "resolution_url": "https://prometheus.io/docs/introduction/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q158",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you validate a new alert?",
+    "preferred_answer": "Test normal and failure conditions, threshold and window behavior, routing, deduplication, runbook accuracy, permissions, recovery notification, and expected operator action. Review its value after real use.",
+    "evaluation_points": [
+      "Focus on alert validation"
+    ],
+    "resolution_title": "Google - The Site Reliability Workbook",
+    "resolution_url": "https://sre.google/workbook/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q159",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is telemetry sampling?",
+    "preferred_answer": "Sampling retains a subset of traces, events, or profiles to control volume and cost. Strategies should preserve errors, rare events, important transactions, and enough unbiased data for analysis.",
+    "evaluation_points": [
+      "Focus on sampling"
+    ],
+    "resolution_title": "OpenTelemetry documentation",
+    "resolution_url": "https://opentelemetry.io/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q160",
+    "role_slug": "it-ops-itsm",
+    "domain": "Monitoring, Event Management, and Observability",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A dashboard is green while customers report failure. What do you do?",
+    "preferred_answer": "Treat customer evidence as a signal, verify the critical user journey, check measurement points and stale data, compare dependencies and regions, inspect recent changes, and add missing service-level telemetry after restoration.",
+    "evaluation_points": [
+      "Focus on monitoring blind spot"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q161",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a configuration item (CI)?",
+    "preferred_answer": "A CI is a component that must be managed to deliver a service, such as an application, server, database, document, supplier service, or business capability. Its attributes and relationships depend on management needs.",
+    "evaluation_points": [
+      "Focus on CI"
+    ],
+    "resolution_title": "Atlassian - Configuration management database",
+    "resolution_url": "https://www.atlassian.com/itsm/it-asset-management/cmdb",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q162",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a CMDB?",
+    "preferred_answer": "A configuration management database stores information about CIs and their relationships to support impact analysis, incident response, change, compliance, and service management. It is not automatically trustworthy merely because data exists.",
+    "evaluation_points": [
+      "Focus on CMDB"
+    ],
+    "resolution_title": "Atlassian - Configuration management database",
+    "resolution_url": "https://www.atlassian.com/itsm/it-asset-management/cmdb",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q163",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is asset management different from configuration management?",
+    "preferred_answer": "Asset management focuses on financial, contractual, ownership, lifecycle, and compliance value. Configuration management focuses on attributes and relationships needed to manage services. The same item can be both an asset and a CI.",
+    "evaluation_points": [
+      "Focus on asset",
+      "Focus on configuration"
+    ],
+    "resolution_title": "Atlassian - IT asset management",
+    "resolution_url": "https://www.atlassian.com/itsm/it-asset-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q164",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes CMDB scope manageable?",
+    "preferred_answer": "Start with clear use cases and critical services, define required CI classes and attributes, owners, sources, reconciliation, and quality measures. Expanding without purpose creates expensive low-trust data.",
+    "evaluation_points": [
+      "Focus on CMDB scope"
+    ],
+    "resolution_title": "Atlassian - Configuration management database",
+    "resolution_url": "https://www.atlassian.com/itsm/it-asset-management/cmdb",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q165",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is service mapping?",
+    "preferred_answer": "Service mapping represents dependencies between business services and supporting applications, infrastructure, data, networks, teams, and suppliers. It supports impact analysis but requires ongoing validation.",
+    "evaluation_points": [
+      "Focus on service mapping"
+    ],
+    "resolution_title": "Atlassian - Configuration management database",
+    "resolution_url": "https://www.atlassian.com/itsm/it-asset-management/cmdb",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q166",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is discovery in configuration management?",
+    "preferred_answer": "Discovery uses agents, APIs, network scans, cloud inventories, or integrations to detect technical components and attributes. It cannot reliably infer every business relationship, ownership, or criticality without governance.",
+    "evaluation_points": [
+      "Focus on discovery"
+    ],
+    "resolution_title": "Atlassian - Configuration management database",
+    "resolution_url": "https://www.atlassian.com/itsm/it-asset-management/cmdb",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q167",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is reconciliation?",
+    "preferred_answer": "Reconciliation resolves conflicts when multiple sources update the same CI attributes. Rules define source authority, precedence, identity matching, timestamps, and exception handling.",
+    "evaluation_points": [
+      "Focus on reconciliation"
+    ],
+    "resolution_title": "Atlassian - Configuration management database",
+    "resolution_url": "https://www.atlassian.com/itsm/it-asset-management/cmdb",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q168",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How is CMDB data quality measured?",
+    "preferred_answer": "Measure completeness, correctness, currency, uniqueness, consistency, relationship integrity, ownership, and usefulness for target processes. Sample against authoritative evidence rather than relying only on database constraints.",
+    "evaluation_points": [
+      "Focus on CMDB quality"
+    ],
+    "resolution_title": "Atlassian - Configuration management database",
+    "resolution_url": "https://www.atlassian.com/itsm/it-asset-management/cmdb",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q169",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why are CI relationships important?",
+    "preferred_answer": "Relationships reveal blast radius, upstream and downstream dependencies, ownership, and recovery order. A flat inventory cannot support reliable service-impact analysis.",
+    "evaluation_points": [
+      "Focus on CI relationships"
+    ],
+    "resolution_title": "Atlassian - Configuration management database",
+    "resolution_url": "https://www.atlassian.com/itsm/it-asset-management/cmdb",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q170",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a system of record?",
+    "preferred_answer": "It is the authoritative source for a defined data element or domain. CMDB design should identify authoritative sources rather than allowing every tool to overwrite shared attributes.",
+    "evaluation_points": [
+      "Focus on system of record"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q171",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is software asset management?",
+    "preferred_answer": "It manages software entitlement, deployment, usage, cost, compliance, risk, and lifecycle. Effective SAM requires reliable inventory, contract interpretation, normalization, reclamation, and controlled procurement.",
+    "evaluation_points": [
+      "Focus on software asset management"
+    ],
+    "resolution_title": "Atlassian - IT asset management",
+    "resolution_url": "https://www.atlassian.com/itsm/it-asset-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q172",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should cloud resources be identified and owned?",
+    "preferred_answer": "Use mandatory metadata or tags, account and subscription structure, automated policy, cost allocation, owner and service mapping, expiration for temporary assets, and reconciliation with cloud inventory APIs.",
+    "evaluation_points": [
+      "Focus on cloud tagging",
+      "Focus on ownership"
+    ],
+    "resolution_title": "AWS - Tagging Best Practices",
+    "resolution_url": "https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q173",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should happen when an asset is retired?",
+    "preferred_answer": "Remove access, sanitize data, update inventory and relationships, terminate licenses and support, handle records and disposal securely, validate dependencies, and retain required evidence.",
+    "evaluation_points": [
+      "Focus on asset retirement"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q174",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why does a CMDB often lose trust?",
+    "preferred_answer": "Common causes are unclear use cases, too much scope, conflicting sources, poor ownership, manual updates, stale relationships, and dashboards that reward record count rather than correctness.",
+    "evaluation_points": [
+      "Focus on CMDB trust"
+    ],
+    "resolution_title": "Atlassian - Configuration management database",
+    "resolution_url": "https://www.atlassian.com/itsm/it-asset-management/cmdb",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q175",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should unauthorized configuration drift be handled?",
+    "preferred_answer": "Detect and classify drift, determine whether it is legitimate or risky, preserve evidence, restore or approve the state through controlled change, and improve automation or access controls to prevent recurrence.",
+    "evaluation_points": [
+      "Focus on configuration drift"
+    ],
+    "resolution_title": "AWS Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q176",
+    "role_slug": "it-ops-itsm",
+    "domain": "Configuration, Asset, and CMDB Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "During an outage the CMDB is clearly outdated. How do you use it?",
+    "preferred_answer": "Treat it as one hypothesis source, verify dependencies with telemetry, cloud inventories, architecture records, and responders, document discrepancies, and create owned corrections after the incident rather than trusting or discarding it wholesale.",
+    "evaluation_points": [
+      "Focus on outdated CMDB"
+    ],
+    "resolution_title": "Atlassian - Configuration management database",
+    "resolution_url": "https://www.atlassian.com/itsm/it-asset-management/cmdb",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q177",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is availability management?",
+    "preferred_answer": "It ensures services deliver agreed availability by understanding requirements, designing resilience, measuring user experience, analyzing failures, and improving components and operational practices.",
+    "evaluation_points": [
+      "Focus on availability management"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q178",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How is reliability different from availability?",
+    "preferred_answer": "Availability concerns whether a service is usable when needed. Reliability concerns consistent failure-free behavior over time. A service may be frequently available but unreliable if it repeatedly degrades or fails briefly.",
+    "evaluation_points": [
+      "Focus on reliability",
+      "Focus on availability"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q179",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is capacity management?",
+    "preferred_answer": "Capacity management ensures services and resources can meet current and future demand at appropriate performance and cost. It combines business demand, service behavior, component usage, and forecasting.",
+    "evaluation_points": [
+      "Focus on capacity management"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q180",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is demand management?",
+    "preferred_answer": "Demand management understands and influences patterns of business activity and service consumption. It supports capacity, scheduling, pricing, throttling, and user communication without simply suppressing legitimate demand.",
+    "evaluation_points": [
+      "Focus on demand management"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q181",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an RTO?",
+    "preferred_answer": "Recovery time objective is the target duration for restoring a service or capability after disruption. It informs architecture, staffing, procedures, suppliers, and testing.",
+    "evaluation_points": [
+      "Focus on RTO"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q182",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an RPO?",
+    "preferred_answer": "Recovery point objective is the maximum acceptable data loss measured in time. It drives backup, replication, journaling, and recovery design and should be set by business impact.",
+    "evaluation_points": [
+      "Focus on RPO"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q183",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a business impact analysis?",
+    "preferred_answer": "A BIA identifies critical processes, dependencies, impacts over time, maximum tolerable disruption, recovery priorities, resource needs, and legal or contractual requirements. It provides the basis for continuity strategies.",
+    "evaluation_points": [
+      "Focus on BIA"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q184",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a single point of failure?",
+    "preferred_answer": "It is a component, dependency, person, supplier, or process whose failure can interrupt the service without an effective alternative. Redundancy must be independent and tested to remove the actual failure mode.",
+    "evaluation_points": [
+      "Focus on single point of failure"
+    ],
+    "resolution_title": "AWS Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q185",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is graceful degradation?",
+    "preferred_answer": "Graceful degradation preserves the most important service capabilities when resources or dependencies fail, instead of complete outage. It requires prioritization, isolation, fallback behavior, and user communication.",
+    "evaluation_points": [
+      "Focus on graceful degradation"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q186",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is load shedding?",
+    "preferred_answer": "Load shedding deliberately rejects or defers lower-priority work to protect essential service under overload. It needs fair policy, visible errors, retry control, monitoring, and recovery criteria.",
+    "evaluation_points": [
+      "Focus on load shedding"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q187",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should capacity thresholds be selected?",
+    "preferred_answer": "Use performance tests, growth trends, lead time, saturation behavior, failover needs, seasonality, and business forecasts. Static percentages without context can alert too early or too late.",
+    "evaluation_points": [
+      "Focus on capacity threshold"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q188",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is resilience testing?",
+    "preferred_answer": "It deliberately validates recovery, failover, dependency behavior, and operational response under controlled faults or disruption. Start safely, define hypotheses and abort conditions, and learn from results.",
+    "evaluation_points": [
+      "Focus on resilience testing"
+    ],
+    "resolution_title": "AWS Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q189",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why must backups be restored in tests?",
+    "preferred_answer": "A successful backup job proves only that data was written. Restore testing validates readability, completeness, credentials, dependencies, timing, procedure, and whether recovery objectives can actually be met.",
+    "evaluation_points": [
+      "Focus on restore testing"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q190",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should a continuity plan include?",
+    "preferred_answer": "Scope, activation criteria, roles, contacts, dependencies, alternate arrangements, recovery steps, communications, security, data recovery, supplier actions, validation, return to normal, and exercise schedule.",
+    "evaluation_points": [
+      "Focus on continuity plan"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q191",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should capacity and cost be balanced in cloud services?",
+    "preferred_answer": "Use service objectives, autoscaling, reservations or commitments where justified, rightsizing, demand shaping, budgets, unit economics, and resilience requirements. Cost reduction must not silently remove recovery margin.",
+    "evaluation_points": [
+      "Focus on capacity",
+      "Focus on cloud cost"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q192",
+    "role_slug": "it-ops-itsm",
+    "domain": "Availability, Capacity, Continuity, and Resilience",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A failover test succeeds technically but exceeds the RTO. What next?",
+    "preferred_answer": "Measure where time was spent, automate or parallelize safe steps, improve detection and decision authority, pre-stage access, reduce dependency recovery time, revise architecture or the business target, and retest end to end.",
+    "evaluation_points": [
+      "Focus on failover",
+      "Focus on RTO"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q193",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a runbook?",
+    "preferred_answer": "A runbook is an operational procedure for a recurring task or response, including purpose, prerequisites, steps, decision points, validation, rollback, escalation, owner, and review information.",
+    "evaluation_points": [
+      "Focus on runbook"
+    ],
+    "resolution_title": "AWS Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q194",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is a playbook different from a runbook?",
+    "preferred_answer": "Usage varies, but a runbook usually gives task-level operational steps, while a playbook coordinates broader response patterns, roles, and choices for a scenario. Organizations should define their terminology.",
+    "evaluation_points": [
+      "Focus on playbook",
+      "Focus on runbook"
+    ],
+    "resolution_title": "PagerDuty - Incident response documentation",
+    "resolution_url": "https://response.pagerduty.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q195",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What makes a procedure safe to automate?",
+    "preferred_answer": "It has clear inputs, stable rules, reliable data, bounded scope, permissions, idempotency or safe retry, validation, logging, exception handling, rollback, ownership, and testing.",
+    "evaluation_points": [
+      "Focus on automation safety"
+    ],
+    "resolution_title": "AWS Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q196",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is idempotent automation?",
+    "preferred_answer": "Running it more than once produces the intended state without duplicate harmful effects. Idempotency supports retries and recovery but still requires concurrency control and audit evidence.",
+    "evaluation_points": [
+      "Focus on idempotency"
+    ],
+    "resolution_title": "AWS Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q197",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why should automation use least privilege?",
+    "preferred_answer": "Automation can act quickly and at scale. Restricting permissions, scope, duration, and secrets limits blast radius if logic, credentials, or inputs fail.",
+    "evaluation_points": [
+      "Focus on automation",
+      "Focus on least privilege"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q198",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What should an operational handover contain?",
+    "preferred_answer": "Current service health, active incidents, risky changes, pending work, capacity or certificate concerns, external dependencies, decisions, stakeholder commitments, and explicit ownership. Handover should be acknowledged.",
+    "evaluation_points": [
+      "Focus on shift handover"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q199",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should scheduled jobs be monitored?",
+    "preferred_answer": "Monitor start, completion, duration, outcome, data freshness, dependencies, retries, and business impact. Distinguish \u201cjob ran\u201d from \u201cexpected result was produced.\u201d",
+    "evaluation_points": [
+      "Focus on batch jobs"
+    ],
+    "resolution_title": "Microsoft Azure Monitor documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q200",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is operational readiness review?",
+    "preferred_answer": "It evaluates whether a new or changed service can be operated safely: monitoring, support model, runbooks, access, capacity, security, continuity, ownership, documentation, training, and known risks.",
+    "evaluation_points": [
+      "Focus on operational readiness"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q201",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is toil in SRE?",
+    "preferred_answer": "Toil is manual, repetitive, automatable, tactical work that scales with service growth and has limited enduring value. Some operational work is necessary; toil should be measured and reduced deliberately.",
+    "evaluation_points": [
+      "Focus on toil"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q202",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should automation opportunities be prioritized?",
+    "preferred_answer": "Prioritize by volume, time, error rate, risk reduction, scalability, user delay, standardization, and maintenance cost. Do not automate rare ambiguous work solely because it is disliked.",
+    "evaluation_points": [
+      "Focus on automation prioritization"
+    ],
+    "resolution_title": "Google - The Site Reliability Workbook",
+    "resolution_url": "https://sre.google/workbook/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q203",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a control room or NOC operating rhythm?",
+    "preferred_answer": "It is the recurring cadence for health review, alerts, incidents, changes, capacity, handovers, escalation, and reporting. The rhythm should support decisions, not become repetitive meetings without action.",
+    "evaluation_points": [
+      "Focus on operations cadence"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q204",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why should manual emergency actions be rehearsed?",
+    "preferred_answer": "During severe failure, normal tools or automation may be unavailable. Rehearsal validates access, knowledge, communications, timing, and safeguards under stress.",
+    "evaluation_points": [
+      "Focus on emergency procedure"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q205",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a maintenance window?",
+    "preferred_answer": "A maintenance window is an agreed period for planned operational work, with scope, communication, risk, service expectations, validation, and contingency. It does not remove the need for change control.",
+    "evaluation_points": [
+      "Focus on maintenance window"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q206",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should secrets be handled in scripts and runbooks?",
+    "preferred_answer": "Use managed secret stores, short-lived credentials, least privilege, rotation, access logging, and redaction. Never embed reusable passwords or tokens in code, tickets, or documentation.",
+    "evaluation_points": [
+      "Focus on secrets management"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q207",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you validate an automated remediation?",
+    "preferred_answer": "Test trigger accuracy, scope, concurrency, failure modes, audit logs, rollback, rate limits, user impact, and whether it masks a deeper problem. Start in limited mode and review outcomes.",
+    "evaluation_points": [
+      "Focus on auto-remediation"
+    ],
+    "resolution_title": "Google - The Site Reliability Workbook",
+    "resolution_url": "https://sre.google/workbook/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q208",
+    "role_slug": "it-ops-itsm",
+    "domain": "Operational Procedures, Runbooks, Automation, and Shift Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An automation repeatedly fixes an alert but the alert returns daily. What do you do?",
+    "preferred_answer": "Keep the safe mitigation if needed, create problem work, collect pre-action evidence, analyze recurrence, review whether automation hides impact, set ownership and expiry, and pursue a permanent correction.",
+    "evaluation_points": [
+      "Focus on auto-remediation",
+      "Focus on recurrence"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q209",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is IT governance?",
+    "preferred_answer": "IT governance evaluates stakeholder needs, sets direction and policy, and monitors performance, risk, and compliance so technology supports enterprise objectives. It clarifies decision rights and accountability.",
+    "evaluation_points": [
+      "Focus on IT governance"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q210",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is risk in an operational context?",
+    "preferred_answer": "Risk is the effect of uncertainty on objectives, often assessed through likelihood, impact, exposure, controls, and residual risk. Operational decisions should consider business, security, safety, compliance, and service risk.",
+    "evaluation_points": [
+      "Focus on risk"
+    ],
+    "resolution_title": "NIST Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/projects/risk-management/about-rmf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q211",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a risk register?",
+    "preferred_answer": "A risk register records risk statements, causes, consequences, owners, likelihood, impact, controls, treatment, residual risk, due dates, and review status. It supports decisions; it should not become a static compliance list.",
+    "evaluation_points": [
+      "Focus on risk register"
+    ],
+    "resolution_title": "NIST Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/projects/risk-management/about-rmf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q212",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a control owner?",
+    "preferred_answer": "A control owner is accountable for the control design, operation, evidence, testing, exceptions, and improvement. Execution may be delegated, but accountability should remain clear.",
+    "evaluation_points": [
+      "Focus on control owner"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q213",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is residual risk?",
+    "preferred_answer": "Residual risk remains after controls and treatments are applied. It must be evaluated against risk appetite and explicitly accepted, further treated, transferred, or avoided by authorized owners.",
+    "evaluation_points": [
+      "Focus on residual risk"
+    ],
+    "resolution_title": "NIST Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/projects/risk-management/about-rmf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q214",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should operational teams support audits?",
+    "preferred_answer": "Maintain accurate evidence through normal workflows, understand control purpose, provide scoped records, explain exceptions, protect sensitive data, and remediate findings based on risk rather than creating last-minute documents.",
+    "evaluation_points": [
+      "Focus on audit evidence"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT service management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q215",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is evidence integrity?",
+    "preferred_answer": "Evidence must be complete, accurate, attributable, time-stamped, protected from unauthorized alteration, retained appropriately, and reproducible enough to support review. Screenshots alone may be weak evidence.",
+    "evaluation_points": [
+      "Focus on evidence integrity"
+    ],
+    "resolution_title": "NIST SP 800-92 - Guide to Computer Security Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q216",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How is a security incident different from an ordinary IT incident?",
+    "preferred_answer": "A security incident involves actual or suspected compromise of confidentiality, integrity, availability, policy, or control and may require evidence preservation, containment, legal, privacy, and regulatory actions beyond normal restoration.",
+    "evaluation_points": [
+      "Focus on security incident"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 2 - Computer Security Incident Handling Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q217",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are the main phases of incident response?",
+    "preferred_answer": "Common phases include preparation; detection and analysis; containment, eradication, and recovery; and post-incident activity. Organizations adapt them to risk, legal duties, and operating model.",
+    "evaluation_points": [
+      "Focus on incident response lifecycle"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 2 - Computer Security Incident Handling Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q218",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why is chain of custody important?",
+    "preferred_answer": "It documents who collected, handled, transferred, stored, and analyzed evidence so integrity and admissibility can be assessed. Operational teams should follow authorized forensic procedures rather than improvising.",
+    "evaluation_points": [
+      "Focus on chain of custody"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 2 - Computer Security Incident Handling Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q219",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is data minimization in operations?",
+    "preferred_answer": "Collect, display, retain, and share only data necessary for the operational purpose. Logs, tickets, screenshots, and monitoring can expose personal or sensitive information and need classification and access control.",
+    "evaluation_points": [
+      "Focus on data minimization"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q220",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should policy exceptions be managed?",
+    "preferred_answer": "Document business justification, scope, owner, risk assessment, compensating controls, approval, expiry, monitoring, and review. Permanent exceptions should trigger policy or architecture reassessment.",
+    "evaluation_points": [
+      "Focus on policy exception"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q221",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is segregation between development and production access meant to achieve?",
+    "preferred_answer": "It reduces unauthorized or unreviewed production change and protects data and evidence. Practical models may use just-in-time access, approvals, logging, peer review, and emergency break-glass paths.",
+    "evaluation_points": [
+      "Focus on production access"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q222",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a break-glass process?",
+    "preferred_answer": "It provides emergency privileged access when normal paths are too slow or unavailable, with strong authentication, limited scope and time, logging, notification, and mandatory retrospective review.",
+    "evaluation_points": [
+      "Focus on break glass"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q223",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do compliance and reliability reinforce each other?",
+    "preferred_answer": "Clear ownership, controlled change, backups, access management, logging, testing, and incident learning support both reliable services and auditable controls. Compliance should codify useful risk management rather than replace engineering judgment.",
+    "evaluation_points": [
+      "Focus on compliance",
+      "Focus on reliability"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT service management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q224",
+    "role_slug": "it-ops-itsm",
+    "domain": "Governance, Risk, Security, Compliance, and Audit",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An auditor requests broad production logs containing personal data. What do you do?",
+    "preferred_answer": "Clarify control objective and scope, involve data and security owners, provide least-necessary evidence through approved secure channels, redact or filter where possible, record access, and preserve audit independence.",
+    "evaluation_points": [
+      "Focus on audit",
+      "Focus on personal data"
+    ],
+    "resolution_title": "ISO/IEC 27001 - Information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q225",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does ITSM complement DevOps?",
+    "preferred_answer": "ITSM provides service context, governance, support, risk, and continual improvement; DevOps improves flow, collaboration, automation, and feedback. Effective organizations integrate them rather than treating one as slow control and the other as uncontrolled speed.",
+    "evaluation_points": [
+      "Focus on ITSM",
+      "Focus on DevOps"
+    ],
+    "resolution_title": "Google Cloud - DORA research program",
+    "resolution_url": "https://cloud.google.com/devops",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q226",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is shared ownership in operations?",
+    "preferred_answer": "Teams that build, run, support, secure, and use a service share responsibility for outcomes. Shared ownership still needs explicit roles, escalation, and decision authority.",
+    "evaluation_points": [
+      "Focus on shared ownership"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q227",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What do DORA metrics measure?",
+    "preferred_answer": "Deployment frequency, lead time for changes, change failure rate, and failed-deployment recovery time describe software delivery performance. They should be used for learning and system improvement, not ranking individuals.",
+    "evaluation_points": [
+      "Focus on DORA metrics"
+    ],
+    "resolution_title": "Google Cloud - DORA research program",
+    "resolution_url": "https://cloud.google.com/devops",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q228",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is \u201cyou build it, you run it\u201d?",
+    "preferred_answer": "It means delivery teams retain meaningful operational responsibility, improving feedback and operability. It requires sustainable on-call, platform support, standards, and product ownership - not simply shifting all support burden to developers.",
+    "evaluation_points": [
+      "Focus on you build it",
+      "Focus on you run it"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q229",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is an error budget policy?",
+    "preferred_answer": "It defines how reliability performance affects release and engineering decisions, such as slowing risky changes when the budget is exhausted and prioritizing reliability work. It should be agreed before conflict occurs.",
+    "evaluation_points": [
+      "Focus on error budget policy"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q230",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does Agile influence service management?",
+    "preferred_answer": "Agile encourages iterative delivery, customer collaboration, feedback, and adaptation. Service-management controls can be embedded into small increments and automated workflows rather than added as a final gate.",
+    "evaluation_points": [
+      "Focus on Agile",
+      "Focus on ITSM"
+    ],
+    "resolution_title": "Manifesto for Agile Software Development",
+    "resolution_url": "https://agilemanifesto.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q231",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the role of operations in a Scrum team?",
+    "preferred_answer": "Scrum does not prescribe an operations role. Operational capabilities, reliability work, support, and nonfunctional requirements should be represented in the product goal, backlog, definition of done, team skills, and stakeholder collaboration.",
+    "evaluation_points": [
+      "Focus on Scrum",
+      "Focus on operations"
+    ],
+    "resolution_title": "The Scrum Guide",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q232",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is platform engineering?",
+    "preferred_answer": "Platform engineering builds reusable internal capabilities and paved paths that help teams deliver and operate services safely with lower cognitive load. A platform is treated as a product with users and measured outcomes.",
+    "evaluation_points": [
+      "Focus on platform engineering"
+    ],
+    "resolution_title": "CNCF - Cloud Native Operational Excellence",
+    "resolution_url": "https://www.cncf.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q233",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a paved road or golden path?",
+    "preferred_answer": "It is a supported, secure, observable, and automated way to perform common delivery and operational tasks. Teams can deviate when justified, but the default path makes the safe approach easier.",
+    "evaluation_points": [
+      "Focus on golden path"
+    ],
+    "resolution_title": "CNCF - Cloud Native Operational Excellence",
+    "resolution_url": "https://www.cncf.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q234",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do feature flags support operations?",
+    "preferred_answer": "They separate deployment from release, enable staged exposure, rapid disablement, and experimentation. Flags need ownership, security, observability, expiry, and testing to avoid permanent complexity.",
+    "evaluation_points": [
+      "Focus on feature flags"
+    ],
+    "resolution_title": "Google Cloud - DORA research program",
+    "resolution_url": "https://cloud.google.com/devops",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q235",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is observability-driven development?",
+    "preferred_answer": "Teams design telemetry, service indicators, trace context, logs, and diagnostics as part of the service rather than adding them after failure. Operational acceptance includes whether behavior can be understood.",
+    "evaluation_points": [
+      "Focus on observability-driven development"
+    ],
+    "resolution_title": "OpenTelemetry documentation",
+    "resolution_url": "https://opentelemetry.io/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q236",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should nonfunctional requirements be handled?",
+    "preferred_answer": "Translate availability, latency, capacity, security, maintainability, supportability, and recovery needs into measurable acceptance criteria, architecture, tests, and operational readiness - not a generic checklist.",
+    "evaluation_points": [
+      "Focus on nonfunctional requirements"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected Framework - Operational Excellence",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q237",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is technical debt from an operations perspective?",
+    "preferred_answer": "It is the future operational cost and risk created by expedient design, manual work, weak observability, unsupported components, or deferred maintenance. Make it visible through incidents, toil, lead time, and risk.",
+    "evaluation_points": [
+      "Focus on technical debt"
+    ],
+    "resolution_title": "Google - The Site Reliability Workbook",
+    "resolution_url": "https://sre.google/workbook/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q238",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can change controls be implemented in CI/CD?",
+    "preferred_answer": "Encode tests, policy checks, approvals by risk, artifact integrity, segregation, deployment evidence, progressive delivery, monitoring, and rollback in the pipeline. Manual approval should be reserved for decisions requiring judgment.",
+    "evaluation_points": [
+      "Focus on CI/CD controls"
+    ],
+    "resolution_title": "Google Cloud - DORA research program",
+    "resolution_url": "https://cloud.google.com/devops",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q239",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a production readiness checklist useful for?",
+    "preferred_answer": "It ensures ownership, SLOs, monitoring, runbooks, capacity, security, backups, dependencies, support, and failure modes are considered before launch. It should guide discussion and evidence, not become a checkbox ritual.",
+    "evaluation_points": [
+      "Focus on production readiness"
+    ],
+    "resolution_title": "Google - The Site Reliability Workbook",
+    "resolution_url": "https://sre.google/workbook/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q240",
+    "role_slug": "it-ops-itsm",
+    "domain": "Agile, DevOps, SRE, and Product Integration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A product team deploys frequently but operations sees rising incidents. How do you respond?",
+    "preferred_answer": "Analyze change-failure patterns and service impact jointly, improve automated tests and progressive delivery, define SLOs and error-budget policy, strengthen operability, and avoid solving the issue with blanket release freezes.",
+    "evaluation_points": [
+      "Focus on deployment",
+      "Focus on incidents"
+    ],
+    "resolution_title": "Google Cloud - DORA research program",
+    "resolution_url": "https://cloud.google.com/devops",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q241",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the continual improvement model used for?",
+    "preferred_answer": "It guides improvement by clarifying vision, current state, target state, actions, execution, measurement, and sustained momentum. Teams should revisit assumptions as evidence changes.",
+    "evaluation_points": [
+      "Focus on continual improvement model"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q242",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should improvement opportunities be prioritized?",
+    "preferred_answer": "Use expected value, risk reduction, customer impact, urgency, effort, dependencies, strategic alignment, evidence quality, and ability to learn. Maintain a balanced portfolio of quick wins and structural work.",
+    "evaluation_points": [
+      "Focus on improvement prioritization"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q243",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is process mapping useful for?",
+    "preferred_answer": "It makes steps, decisions, roles, handoffs, data, controls, queues, and exceptions visible. Validate the map with people doing the work and real cases rather than documenting an idealized flow.",
+    "evaluation_points": [
+      "Focus on process mapping"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT service management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q244",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is value-stream mapping?",
+    "preferred_answer": "It analyzes end-to-end flow from demand to outcome, including wait time, work time, rework, information, and constraints. It helps target system-level improvements instead of local speedups.",
+    "evaluation_points": [
+      "Focus on value stream mapping"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q245",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you identify a process bottleneck?",
+    "preferred_answer": "Use flow data, queue age, work-in-progress, handoffs, rework, capacity, and observation. The visible slow step may be constrained by policy, information, or upstream variability rather than staffing alone.",
+    "evaluation_points": [
+      "Focus on bottleneck"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q246",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between efficiency and effectiveness?",
+    "preferred_answer": "Efficiency uses fewer resources for an activity; effectiveness achieves the intended outcome. A faster process that resolves the wrong demand or increases recurrence is efficient but ineffective.",
+    "evaluation_points": [
+      "Focus on efficiency",
+      "Focus on effectiveness"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q247",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should standard operating procedures be governed?",
+    "preferred_answer": "Assign owner, scope, version, approval, effective date, review cycle, change history, training, access, and retirement. Validate that actual work matches the procedure and update either when justified.",
+    "evaluation_points": [
+      "Focus on SOP governance"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT service management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q248",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is supplier management?",
+    "preferred_answer": "It ensures suppliers and their performance support service quality, continuity, security, cost, and strategic needs through selection, contracts, relationships, monitoring, risk, and improvement.",
+    "evaluation_points": [
+      "Focus on supplier management"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q249",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should be reviewed in a supplier service review?",
+    "preferred_answer": "Service levels, incidents, recurring problems, changes, security, continuity, capacity, costs, risks, obligations, improvement actions, roadmap, and relationship issues. Validate supplier metrics against end-to-end experience.",
+    "evaluation_points": [
+      "Focus on supplier review"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q250",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should multi-supplier incidents be managed?",
+    "preferred_answer": "Maintain one service-level coordinator, shared impact and timeline, clear responsibilities, evidence exchange, contractual escalation, and customer communication. Do not make the customer arbitrate supplier boundaries.",
+    "evaluation_points": [
+      "Focus on multi-supplier incident"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q251",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is FinOps?",
+    "preferred_answer": "FinOps is an operational framework and culture that brings engineering, finance, and business together to maximize business value from cloud spending through visibility, accountability, optimization, and iterative decisions.",
+    "evaluation_points": [
+      "Focus on FinOps"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q252",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is unit cost in IT services?",
+    "preferred_answer": "Unit cost relates service cost to a meaningful output or outcome, such as cost per transaction, user, device, or workload. It helps explain demand, efficiency, and trade-offs better than total spend alone.",
+    "evaluation_points": [
+      "Focus on unit cost"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q253",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should a process change be introduced?",
+    "preferred_answer": "Define the problem and outcome, involve affected people, test with a limited group, update roles and tools, train, communicate, measure behavior and results, handle exceptions, and iterate.",
+    "evaluation_points": [
+      "Focus on organizational change"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q254",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is psychological safety in incident and improvement work?",
+    "preferred_answer": "It is the ability to raise risks, admit uncertainty, report mistakes, and challenge decisions without fear of humiliation or retaliation. It improves detection and learning but still includes respectful accountability.",
+    "evaluation_points": [
+      "Focus on psychological safety"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q255",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should leaders respond to repeated process noncompliance?",
+    "preferred_answer": "Determine whether the process is understood, practical, supported by tools, aligned with incentives, and proportionate to risk. Fix system barriers, coach behavior, handle deliberate violations fairly, and monitor outcomes.",
+    "evaluation_points": [
+      "Focus on process compliance"
+    ],
+    "resolution_title": "ISACA - COBIT",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ITSM-Q256",
+    "role_slug": "it-ops-itsm",
+    "domain": "Continual Improvement, Leadership, Suppliers, and Financial Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A vendor meets contractual SLA but causes recurring business disruption. What do you do?",
+    "preferred_answer": "Present end-to-end impact evidence, review whether contractual measures are fit, open problem and improvement actions, strengthen monitoring and escalation, renegotiate obligations if needed, and maintain contingency or exit options.",
+    "evaluation_points": [
+      "Focus on supplier SLA",
+      "Focus on business impact"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];
