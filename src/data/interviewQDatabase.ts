@@ -38745,5 +38745,4499 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "QA-Q001",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is software testing, and what is its primary purpose?",
+    "preferred_answer": "Software testing is a set of activities used to evaluate work products and identify differences between actual and expected results. Its purpose is not only to find defects; it also provides information about quality, reduces risk, supports decisions, and builds confidence that the product is fit for its intended use.",
+    "evaluation_points": [
+      "Focus on fundamentals",
+      "Focus on purpose"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q002",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between quality assurance, quality control, and testing?",
+    "preferred_answer": "Quality assurance is process-oriented and aims to prevent quality problems by improving how work is performed. Quality control is product-oriented and evaluates deliverables against expectations. Testing is one quality-control activity that executes or reviews software and related work products to reveal defects and provide quality information.",
+    "evaluation_points": [
+      "Focus on QA",
+      "Focus on QC",
+      "Focus on testing"
+    ],
+    "resolution_title": "ISTQB Glossary",
+    "resolution_url": "https://glossary.istqb.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q003",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why can testing show the presence of defects but not prove their absence?",
+    "preferred_answer": "A finite set of tests samples an enormous or effectively infinite input and state space. Passing tests show that the observed cases met expectations under the tested conditions, but untested combinations, environments, timing conditions, and hidden assumptions may still contain defects. Confidence increases with evidence, but certainty is rarely possible.",
+    "evaluation_points": [
+      "Focus on testing principles"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q004",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is exhaustive testing, and why is it usually impossible?",
+    "preferred_answer": "Exhaustive testing attempts to test every combination of inputs, preconditions, states, paths, and environments. For non-trivial systems, the number of combinations grows too quickly to execute within realistic time and cost constraints. Teams therefore use risk, test-design techniques, automation, and representative coverage to select effective tests.",
+    "evaluation_points": [
+      "Focus on exhaustive testing",
+      "Focus on selection"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q005",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does the defect-clustering principle mean?",
+    "preferred_answer": "Defects are often concentrated in a relatively small number of components because of complexity, change frequency, weak design, or ownership history. Testers should use defect data to focus additional investigation on risky areas while avoiding the assumption that low-defect components require no testing.",
+    "evaluation_points": [
+      "Focus on defect clustering",
+      "Focus on risk"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q006",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the pesticide paradox in testing?",
+    "preferred_answer": "Repeatedly running the same tests may stop finding new defects because the product and known failure patterns become adapted to that test set. Test cases should be reviewed, varied, and supplemented with new data, exploratory testing, and tests for changed risks. Stable regression tests remain useful, but they should not be the entire strategy.",
+    "evaluation_points": [
+      "Focus on pesticide paradox",
+      "Focus on regression"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q007",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does the statement \u201ctesting is context dependent\u201d imply?",
+    "preferred_answer": "The appropriate objectives, techniques, depth, automation, documentation, and evidence depend on factors such as product risk, domain, users, architecture, regulatory obligations, delivery model, and failure impact. A medical device, an internal dashboard, and a marketing website should not use identical test strategies.",
+    "evaluation_points": [
+      "Focus on context",
+      "Focus on strategy"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q008",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is a defect different from a failure and an error?",
+    "preferred_answer": "An error is a human action that produces an incorrect result. A defect is a flaw in a work product, such as code, a requirement, or configuration. A failure is the externally observable deviation that occurs when a defect is executed under conditions that expose it. One defect can cause multiple failures, and some defects may never be triggered.",
+    "evaluation_points": [
+      "Focus on error",
+      "Focus on defect",
+      "Focus on failure"
+    ],
+    "resolution_title": "ISTQB Glossary",
+    "resolution_url": "https://glossary.istqb.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q009",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between verification and validation?",
+    "preferred_answer": "Verification asks whether specified requirements and design outputs were implemented correctly, often through reviews, static analysis, and checks against specifications. Validation asks whether the resulting product meets user needs and intended use in its operational context. Strong quality engineering uses both.",
+    "evaluation_points": [
+      "Focus on verification",
+      "Focus on validation"
+    ],
+    "resolution_title": "ISTQB Glossary",
+    "resolution_url": "https://glossary.istqb.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q010",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is static testing, and what kinds of defects can it find?",
+    "preferred_answer": "Static testing evaluates work products without executing the software. Reviews, walkthroughs, inspections, and static analysis can identify ambiguous requirements, inconsistent interfaces, coding-rule violations, unreachable code, security patterns, and maintainability problems earlier and often more cheaply than dynamic execution.",
+    "evaluation_points": [
+      "Focus on static testing",
+      "Focus on reviews"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q011",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is dynamic testing?",
+    "preferred_answer": "Dynamic testing executes software and compares observed behavior with expected results. It can reveal runtime failures, incorrect calculations, integration problems, performance issues, and environment-dependent behavior. Dynamic testing should be supported by clear oracles, controlled data, and reproducible evidence.",
+    "evaluation_points": [
+      "Focus on dynamic testing"
+    ],
+    "resolution_title": "ISTQB Glossary",
+    "resolution_url": "https://glossary.istqb.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q012",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a test oracle?",
+    "preferred_answer": "A test oracle is a source used to determine the expected result of a test. It may be a requirement, business rule, independent implementation, mathematical model, existing trusted system, user expectation, or expert judgement. Weak or ambiguous oracles are a major cause of disputed results and missed defects.",
+    "evaluation_points": [
+      "Focus on test oracle",
+      "Focus on expected result"
+    ],
+    "resolution_title": "ISTQB Glossary",
+    "resolution_url": "https://glossary.istqb.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q013",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is confirmation testing, and how does it differ from regression testing?",
+    "preferred_answer": "Confirmation testing checks that a specific reported defect has been fixed. Regression testing checks that the change has not damaged previously working behavior elsewhere. A strong fix workflow includes both: reproduce the original failure, verify the fix, and run risk-selected regression around affected and dependent areas.",
+    "evaluation_points": [
+      "Focus on retest",
+      "Focus on regression"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q014",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between functional and non-functional testing?",
+    "preferred_answer": "Functional testing evaluates what the system does against features and business rules. Non-functional testing evaluates how well it operates, including performance, usability, accessibility, security, reliability, compatibility, and maintainability-related characteristics. Both can be tested at multiple levels.",
+    "evaluation_points": [
+      "Focus on functional",
+      "Focus on non-functional"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q015",
+    "role_slug": "qa-testing",
+    "domain": "Testing Fundamentals and Quality Principles",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What makes a test effective rather than merely numerous?",
+    "preferred_answer": "An effective test targets a meaningful risk, has a clear purpose and oracle, uses representative or adversarial data, can reveal a plausible failure, and produces actionable evidence. Large counts of duplicated, low-value, or weakly asserted tests can increase maintenance cost without increasing confidence.",
+    "evaluation_points": [
+      "Focus on effectiveness",
+      "Focus on value"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q016",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What phases are commonly included in a Software Testing Life Cycle?",
+    "preferred_answer": "A practical STLC commonly includes requirement analysis, risk assessment, test planning, test design and implementation, environment and data preparation, execution, defect management, reporting, and test closure. The phases may overlap or iterate in Agile delivery; the value lies in ensuring the necessary activities and evidence are covered.",
+    "evaluation_points": [
+      "Focus on STLC"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q017",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should a test plan contain?",
+    "preferred_answer": "A useful test plan defines scope and exclusions, objectives, risks, test levels and types, approach, environments, data, roles, estimates, schedule, tools, entry and exit criteria, deliverables, reporting, defect workflow, dependencies, and contingency actions. It should be concise enough to guide decisions and updated when assumptions change.",
+    "evaluation_points": [
+      "Focus on test plan"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q018",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you decide what not to test?",
+    "preferred_answer": "Use product risk, change impact, usage frequency, failure severity, architecture, historical defects, regulatory obligations, and available time. Document exclusions and residual risk explicitly. Not testing is a decision that needs ownership and transparency, not an accidental consequence of schedule pressure.",
+    "evaluation_points": [
+      "Focus on scope",
+      "Focus on exclusions"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q019",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is product risk, and how is it different from project risk?",
+    "preferred_answer": "Product risk concerns the possibility that the product will fail to meet quality expectations, such as incorrect payments or data leakage. Project risk threatens the successful completion of testing or delivery, such as unavailable environments, skills gaps, or late requirements. Product risk drives test depth; project risk drives mitigation and planning.",
+    "evaluation_points": [
+      "Focus on product risk",
+      "Focus on project risk"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q020",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How is risk commonly prioritised for testing?",
+    "preferred_answer": "Risk is often assessed through likelihood and impact, sometimes with additional factors such as detectability, exposure, compliance, or reversibility. The resulting ranking guides test effort, technique selection, sequencing, and reporting. The scoring model is a decision aid; teams should also review uncertainty and catastrophic low-probability events.",
+    "evaluation_points": [
+      "Focus on risk-based testing"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q021",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a requirements traceability matrix?",
+    "preferred_answer": "A traceability matrix links requirements or risks to test conditions, test cases, execution results, and defects. It helps identify missing coverage, supports impact analysis, and provides evidence for stakeholders. Traceability should focus on useful relationships rather than becoming a manually maintained spreadsheet with no decision value.",
+    "evaluation_points": [
+      "Focus on RTM",
+      "Focus on traceability"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q022",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are entry and exit criteria?",
+    "preferred_answer": "Entry criteria define conditions expected before an activity begins, such as an approved build, available environment, stable interfaces, and prepared data. Exit criteria define evidence needed to complete or transition, such as executed critical tests, acceptable residual risk, defect thresholds, and approved reporting. They support transparent decisions but should not be used mechanically.",
+    "evaluation_points": [
+      "Focus on entry criteria",
+      "Focus on exit criteria"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q023",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you estimate testing effort for a new feature?",
+    "preferred_answer": "Break the feature into testable risks and activities, identify test levels and environments, estimate design, data, automation, execution, defect retest, regression, and reporting, then account for dependencies and uncertainty. Use historical data or analogous work where available and express assumptions and ranges rather than false precision.",
+    "evaluation_points": [
+      "Focus on estimation"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q024",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is test monitoring and control?",
+    "preferred_answer": "Monitoring collects and compares progress, quality, and risk information against the plan. Control uses that information to adjust priorities, resources, scope, schedule, environments, or techniques. Useful monitoring explains whether evidence is increasing confidence, not only how many test cases were executed.",
+    "evaluation_points": [
+      "Focus on monitoring",
+      "Focus on control"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q025",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Which test metrics are useful during execution?",
+    "preferred_answer": "Useful metrics may include risk coverage, requirement coverage, execution status, pass/fail/block rates, defect discovery and aging, escaped defects, automation stability, environment downtime, and trend by severity or component. Each metric needs a defined purpose and interpretation; counts without context can encourage gaming.",
+    "evaluation_points": [
+      "Focus on metrics"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q026",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why is pass percentage alone a weak release indicator?",
+    "preferred_answer": "Pass percentage treats all tests as equal and can be distorted by duplicated, low-risk, blocked, or unexecuted tests. It does not show severity, coverage gaps, environment limitations, or residual risk. Release decisions should combine risk-weighted results, defect status, changed areas, non-functional evidence, and stakeholder tolerance.",
+    "evaluation_points": [
+      "Focus on release decision",
+      "Focus on metrics"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q027",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is test closure, and what should be captured?",
+    "preferred_answer": "Test closure confirms that planned activities are complete or formally stopped, archives testware and evidence, records unresolved risks and defects, compares outcomes with objectives, and identifies lessons for future work. In continuous delivery, closure may happen per release, increment, campaign, or major milestone rather than once at project end.",
+    "evaluation_points": [
+      "Focus on test closure"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q028",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should test data be planned?",
+    "preferred_answer": "Identify data states, relationships, privacy constraints, boundary and negative values, reusable baselines, refresh strategy, ownership, and cleanup. Prefer synthetic or masked data where possible. Data should be versioned or reproducible so failures can be investigated without relying on undocumented manual setup.",
+    "evaluation_points": [
+      "Focus on test data"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q029",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is configuration management in testing?",
+    "preferred_answer": "Configuration management identifies and controls versions of software, testware, environments, data, scripts, and evidence so results are reproducible and changes are traceable. A test result is weak if the exact build, configuration, dependencies, and data state cannot be reconstructed.",
+    "evaluation_points": [
+      "Focus on configuration management"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q030",
+    "role_slug": "qa-testing",
+    "domain": "STLC, Test Planning, Risk, and Traceability",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How do you handle a compressed test schedule without hiding risk?",
+    "preferred_answer": "Reassess product risks with stakeholders, protect critical-path and high-impact testing, reduce low-value duplication, use parallelism and automation where safe, and state exclusions and residual risk explicitly. Avoid presenting reduced coverage as full confidence. Record who accepts the remaining risk and what monitoring or rollback safeguards exist.",
+    "evaluation_points": [
+      "Focus on schedule pressure",
+      "Focus on risk acceptance"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q031",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is equivalence partitioning?",
+    "preferred_answer": "Equivalence partitioning divides an input or output domain into groups expected to behave similarly. Testers select representative values from each valid and invalid partition instead of testing every value. Partitions should be based on business rules and implementation risks, not only data type.",
+    "evaluation_points": [
+      "Focus on equivalence partitioning"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q032",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is boundary value analysis?",
+    "preferred_answer": "Boundary value analysis focuses on values at and around the edges of ordered partitions because defects often occur at limits and comparisons. For a valid range 1 to 100, useful values include 0, 1, 2, 99, 100, and 101, adjusted for the chosen coverage approach.",
+    "evaluation_points": [
+      "Focus on boundary values"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q033",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do equivalence partitioning and boundary value analysis complement each other?",
+    "preferred_answer": "Equivalence partitioning identifies behavioral groups, while boundary value analysis selects high-value representatives near transitions between those groups. A strong design uses partitions to avoid redundant tests and boundaries to expose off-by-one and comparison defects.",
+    "evaluation_points": [
+      "Focus on EP",
+      "Focus on BVA"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q034",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is decision table testing?",
+    "preferred_answer": "Decision table testing models combinations of conditions and the resulting actions. It is useful when business rules depend on multiple Boolean or discrete factors. The tester identifies conditions, actions, valid rules, impossible combinations, and coverage, then derives at least one test per selected rule.",
+    "evaluation_points": [
+      "Focus on decision table",
+      "Focus on business rules"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q035",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When is state transition testing appropriate?",
+    "preferred_answer": "Use state transition testing when behavior depends on the current state and events, such as login lockout, workflow approval, subscription status, or device modes. Tests cover valid transitions, invalid transitions, state sequences, and sometimes transition pairs or longer paths.",
+    "evaluation_points": [
+      "Focus on state transition"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q036",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is use case testing?",
+    "preferred_answer": "Use case testing derives end-to-end tests from actor goals, main success flows, alternate flows, exceptions, and preconditions. It is valuable for validating business journeys and integration points, but should be supplemented with boundary, negative, and non-functional tests that may not appear in the narrative.",
+    "evaluation_points": [
+      "Focus on use cases",
+      "Focus on end-to-end"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q037",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is statement coverage?",
+    "preferred_answer": "Statement coverage measures the proportion of executable statements exercised by tests. One hundred percent statement coverage proves only that each statement ran at least once; it does not prove all decisions, paths, data combinations, or outcomes were tested.",
+    "evaluation_points": [
+      "Focus on white-box",
+      "Focus on statement coverage"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q038",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is branch or decision coverage?",
+    "preferred_answer": "Branch coverage measures whether each outcome of a decision has been executed, such as true and false branches. It is stronger than statement coverage for control-flow decisions, but still does not guarantee path, condition-combination, or data-flow correctness.",
+    "evaluation_points": [
+      "Focus on branch coverage"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q039",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why is 100% code coverage not equivalent to high quality?",
+    "preferred_answer": "Coverage shows which code structures were exercised, not whether assertions were meaningful, requirements were correct, important data was used, or failures were detected. High coverage can coexist with weak oracles and missing risks. Treat it as one diagnostic indicator, not a release guarantee.",
+    "evaluation_points": [
+      "Focus on coverage",
+      "Focus on metrics"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q040",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is error guessing?",
+    "preferred_answer": "Error guessing is an experience-based technique in which testers anticipate likely defects using domain knowledge, defect history, common programming mistakes, and system weaknesses. It is valuable for finding realistic failures but should be made visible through charters, checklists, or notes so learning can be shared.",
+    "evaluation_points": [
+      "Focus on error guessing"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q041",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is checklist-based testing?",
+    "preferred_answer": "Checklist-based testing uses a curated list of conditions, risks, standards, or recurring failure patterns to guide coverage. Checklists improve consistency and onboarding, but must be reviewed to remove obsolete items and should not replace thinking about the current product context.",
+    "evaluation_points": [
+      "Focus on checklists"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q042",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is exploratory testing?",
+    "preferred_answer": "Exploratory testing integrates learning, test design, and execution. The tester uses a mission or charter, observes system behavior, adapts tests based on findings, and records evidence and coverage. It is structured investigation, not random clicking.",
+    "evaluation_points": [
+      "Focus on exploratory testing"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q043",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should an exploratory testing charter contain?",
+    "preferred_answer": "A charter typically defines the target area, mission, risks or questions, data or personas, constraints, and timebox. It should leave room for adaptation while making the session purpose and coverage reviewable. Notes should capture observations, test ideas, defects, and remaining questions.",
+    "evaluation_points": [
+      "Focus on exploratory charter"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q044",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is pairwise or combinatorial testing?",
+    "preferred_answer": "Combinatorial testing selects a reduced set of configurations that covers interactions among parameter values, commonly all pairs. It is useful when exhaustive combinations are too large and interaction defects are plausible. Constraints and high-risk combinations should be modeled explicitly rather than trusting generated coverage blindly.",
+    "evaluation_points": [
+      "Focus on pairwise",
+      "Focus on combinatorial"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q045",
+    "role_slug": "qa-testing",
+    "domain": "Test Design Techniques",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you design tests for a password rule requiring 8\u201364 characters, upper and lower case, a number, and a symbol?",
+    "preferred_answer": "Model length partitions and boundaries, character-class conditions in a decision table, Unicode and whitespace behavior, invalid combinations, copy/paste and visibility, and security-related handling such as logging. Include values at 7, 8, 9, 63, 64, and 65 characters, plus combinations missing each required class and valid representative passwords.",
+    "evaluation_points": [
+      "Focus on BVA",
+      "Focus on decision table",
+      "Focus on password"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q046",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How does testing change in an Agile team?",
+    "preferred_answer": "Testing becomes a continuous team activity rather than a phase after development. Testers collaborate on examples and risks before implementation, support fast feedback during development, automate appropriate checks, explore working increments, and contribute quality information throughout the iteration.",
+    "evaluation_points": [
+      "Focus on Agile testing"
+    ],
+    "resolution_title": "ISTQB Agile Tester",
+    "resolution_url": "https://www.istqb.org/certifications/agile-tester",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q047",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does \u201cworking software over comprehensive documentation\u201d mean for testing?",
+    "preferred_answer": "It does not mean no documentation. It means documentation should support delivery and collaboration rather than become the objective. Testers keep the artifacts needed for clarity, repeatability, risk evidence, compliance, and maintenance, while avoiding documents that are not used.",
+    "evaluation_points": [
+      "Focus on Agile values",
+      "Focus on documentation"
+    ],
+    "resolution_title": "Manifesto for Agile Software Development",
+    "resolution_url": "https://agilemanifesto.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q048",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the role of a tester during backlog refinement?",
+    "preferred_answer": "The tester identifies ambiguities, examples, dependencies, non-functional needs, testability concerns, data and environment requirements, and product risks before work is committed. This supports smaller stories, clearer acceptance criteria, and earlier defect prevention.",
+    "evaluation_points": [
+      "Focus on refinement",
+      "Focus on shift left"
+    ],
+    "resolution_title": "ISTQB Agile Tester",
+    "resolution_url": "https://www.istqb.org/certifications/agile-tester",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q049",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are acceptance criteria, and what makes them testable?",
+    "preferred_answer": "Acceptance criteria describe conditions a product increment must satisfy. They are testable when they are specific, observable, unambiguous, and connected to business value and constraints. Examples and edge cases help, but criteria should not over-prescribe implementation unnecessarily.",
+    "evaluation_points": [
+      "Focus on acceptance criteria"
+    ],
+    "resolution_title": "The Scrum Guide",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q050",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the Definition of Done?",
+    "preferred_answer": "The Definition of Done is a formal description of the state of an Increment when it meets the quality measures required for the product. It creates transparency and may include review, testing, security, documentation, integration, and deployment conditions. Work that does not meet it is not part of the completed Increment.",
+    "evaluation_points": [
+      "Focus on Definition of Done"
+    ],
+    "resolution_title": "The Scrum Guide",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q051",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How is the Definition of Done different from acceptance criteria?",
+    "preferred_answer": "Acceptance criteria are specific to a product backlog item or feature. The Definition of Done is a shared quality standard applied to the Increment or completed work. A story may meet its business criteria but still not be done if required regression, security, documentation, or integration conditions are incomplete.",
+    "evaluation_points": [
+      "Focus on DoD",
+      "Focus on acceptance criteria"
+    ],
+    "resolution_title": "The Scrum Guide",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q052",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is shift-left testing?",
+    "preferred_answer": "Shift left moves quality activities earlier, such as requirement examples, static analysis, unit tests, API contracts, threat modeling, and testability design. The goal is faster prevention and feedback, not merely transferring more work to developers or eliminating later system and user-focused testing.",
+    "evaluation_points": [
+      "Focus on shift left"
+    ],
+    "resolution_title": "ISTQB Agile Tester",
+    "resolution_url": "https://www.istqb.org/certifications/agile-tester",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q053",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is shift-right testing?",
+    "preferred_answer": "Shift right uses production-like or production feedback to evaluate resilience, observability, real usage, and operational quality. Techniques can include canary releases, feature flags, synthetic checks, monitoring, and controlled experiments. It complements pre-release testing and requires safeguards, privacy, and rollback.",
+    "evaluation_points": [
+      "Focus on shift right",
+      "Focus on observability"
+    ],
+    "resolution_title": "Google SRE - Monitoring Distributed Systems",
+    "resolution_url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q054",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should a tester contribute to sprint planning?",
+    "preferred_answer": "Clarify risks and acceptance examples, identify test tasks and dependencies, ensure environment and data work is visible, estimate testing and automation effort, and challenge stories that are too large or not testable. The goal is a realistic shared plan rather than a separate QA estimate added later.",
+    "evaluation_points": [
+      "Focus on sprint planning"
+    ],
+    "resolution_title": "ISTQB Agile Tester",
+    "resolution_url": "https://www.istqb.org/certifications/agile-tester",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q055",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is whole-team responsibility for quality?",
+    "preferred_answer": "Quality is produced by the combined decisions of product, design, development, testing, operations, security, and support. Testers bring specialized quality and risk skills, but developers still test, product owners clarify value, and the team jointly owns the Definition of Done and release evidence.",
+    "evaluation_points": [
+      "Focus on whole team"
+    ],
+    "resolution_title": "ISTQB Agile Tester",
+    "resolution_url": "https://www.istqb.org/certifications/agile-tester",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q056",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How can three-amigos sessions improve quality?",
+    "preferred_answer": "A product, development, and testing perspective review examples before implementation. The discussion reveals assumptions, alternative flows, business rules, and testability concerns. The value is shared understanding; the meeting name and exact participants can vary.",
+    "evaluation_points": [
+      "Focus on three amigos",
+      "Focus on BDD"
+    ],
+    "resolution_title": "Cucumber documentation",
+    "resolution_url": "https://cucumber.io/docs/cucumber/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q057",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is behavior-driven development?",
+    "preferred_answer": "BDD is a collaborative approach that uses concrete examples and shared language to clarify behavior. Scenarios can become executable specifications, but the primary value is discovery and communication. Poorly written Gherkin that mirrors UI clicks creates brittle documentation rather than business-readable behavior.",
+    "evaluation_points": [
+      "Focus on BDD",
+      "Focus on Gherkin"
+    ],
+    "resolution_title": "Cucumber documentation",
+    "resolution_url": "https://cucumber.io/docs/cucumber/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q058",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are common causes of testing becoming a bottleneck in Agile delivery?",
+    "preferred_answer": "Large stories, late handoffs, unstable environments, excessive manual regression, poor testability, slow data setup, unclear ownership, and separate QA queues all create delay. Improvement usually requires smaller batches, earlier collaboration, layered automation, reliable environments, and risk-based scope rather than simply asking testers to work faster.",
+    "evaluation_points": [
+      "Focus on flow",
+      "Focus on bottleneck"
+    ],
+    "resolution_title": "ISTQB Agile Tester",
+    "resolution_url": "https://www.istqb.org/certifications/agile-tester",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q059",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How should unfinished testing be handled at the end of a sprint?",
+    "preferred_answer": "Do not label work done if it fails the agreed Definition of Done. Make the remaining work and risk transparent, decide whether to return or split the item, and avoid hiding testing debt in a separate queue. The Product Owner and team should use evidence to update the backlog and release decision.",
+    "evaluation_points": [
+      "Focus on unfinished work",
+      "Focus on transparency"
+    ],
+    "resolution_title": "The Scrum Guide",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q060",
+    "role_slug": "qa-testing",
+    "domain": "Agile, Scrum, and Continuous Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is continuous testing in CI/CD?",
+    "preferred_answer": "Continuous testing embeds appropriately fast and reliable quality checks throughout the delivery pipeline and provides feedback at each stage. It includes more than UI automation: static analysis, unit, component, contract, API, integration, security, performance, deployment, and production checks are selected according to risk and feedback speed.",
+    "evaluation_points": [
+      "Focus on continuous testing",
+      "Focus on CI/CD"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q061",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What information should a high-quality defect report contain?",
+    "preferred_answer": "Include a concise title, environment and build, preconditions, reproducible steps, actual and expected results, impact, frequency, severity rationale, evidence such as logs or screenshots, and relevant data or identifiers. Remove sensitive information and distinguish observed facts from hypotheses.",
+    "evaluation_points": [
+      "Focus on bug report",
+      "Focus on evidence"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q062",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between defect severity and priority?",
+    "preferred_answer": "Severity describes the technical or business impact of the defect. Priority describes how urgently it should be addressed relative to other work. A cosmetic issue on a high-visibility launch page may be high priority but low severity; a rare data-corruption defect may be high severity even if scheduling requires additional analysis.",
+    "evaluation_points": [
+      "Focus on severity",
+      "Focus on priority"
+    ],
+    "resolution_title": "ISTQB Glossary",
+    "resolution_url": "https://glossary.istqb.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q063",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Who should assign severity and priority?",
+    "preferred_answer": "Severity is best assessed collaboratively using agreed impact definitions and evidence from testing, product, support, security, or operations. Priority is a business and delivery decision made with product ownership and engineering input. Avoid treating either field as the sole authority of one role when context is shared.",
+    "evaluation_points": [
+      "Focus on triage",
+      "Focus on ownership"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q064",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is defect triage?",
+    "preferred_answer": "Defect triage reviews new and existing defects to confirm validity, impact, ownership, priority, duplicates, release relevance, and next action. Effective triage is evidence-based and time-boxed. It should not become a meeting where defects are closed only to improve metrics.",
+    "evaluation_points": [
+      "Focus on defect triage"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q065",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "How would you handle a defect that a developer cannot reproduce?",
+    "preferred_answer": "Reconfirm the build, environment, data, account, timing, and exact steps; collect logs, network traces, video, identifiers, and frequency; compare with a working case; and attempt isolation. Pair with the developer if needed. Mark uncertainty honestly rather than arguing from incomplete evidence.",
+    "evaluation_points": [
+      "Focus on cannot reproduce"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q066",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When should a defect be closed as \u201cworks as designed\u201d?",
+    "preferred_answer": "Use that resolution only when behavior matches an agreed requirement or intentional product decision, and record the supporting reference. If the design itself causes user harm or contradicts expectations, create or link a product change request rather than dismissing the observation.",
+    "evaluation_points": [
+      "Focus on defect resolution"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q067",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is defect leakage or an escaped defect?",
+    "preferred_answer": "An escaped defect is discovered after the test level or release stage that was expected to detect it, often in production or by customers. The useful question is not who missed it, but which prevention, detection, environment, data, or decision controls were insufficient and how the system can be improved.",
+    "evaluation_points": [
+      "Focus on escaped defects"
+    ],
+    "resolution_title": "ISTQB Glossary",
+    "resolution_url": "https://glossary.istqb.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q068",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is root cause analysis for a software defect?",
+    "preferred_answer": "Root cause analysis examines the contributing conditions that allowed a defect to be introduced, remain undetected, and reach users. It may cover requirements, design, code, reviews, test coverage, data, environments, deployment, and organizational factors. The outcome should be corrective actions, not a single person to blame.",
+    "evaluation_points": [
+      "Focus on RCA",
+      "Focus on learning"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q069",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do the Five Whys and fishbone diagram help RCA?",
+    "preferred_answer": "Five Whys iteratively challenges causal explanations, while a fishbone diagram groups possible causes across categories such as people, process, tools, environment, requirements, and technology. Both are facilitation tools; evidence is still required, and complex incidents may have multiple interacting causes.",
+    "evaluation_points": [
+      "Focus on Five Whys",
+      "Focus on fishbone"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q070",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is defect aging, and why does it matter?",
+    "preferred_answer": "Defect aging measures how long defects remain unresolved or in a particular state. Long age can indicate unclear ownership, low capacity, blocked environments, or priority mismatch. Interpret it by severity, release relevance, and workflow state rather than using one average as a team-performance score.",
+    "evaluation_points": [
+      "Focus on defect metrics",
+      "Focus on aging"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q071",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is defect density, and what are its limitations?",
+    "preferred_answer": "Defect density relates identified defects to a size measure such as code, function points, stories, or components. It can help compare trends within a stable context, but differences in complexity, testing effort, reporting behavior, and size measures make cross-team comparisons risky.",
+    "evaluation_points": [
+      "Focus on defect density",
+      "Focus on metrics"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q072",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should duplicate defects be managed?",
+    "preferred_answer": "Link duplicates to a primary record, preserve any unique evidence, impacted environments, and customer reports, and avoid losing occurrence information. Duplicate volume can reveal usability, monitoring, or communication problems even when the technical root cause is the same.",
+    "evaluation_points": [
+      "Focus on duplicates"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q073",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between a blocker, a blocked test, and a blocking defect?",
+    "preferred_answer": "A blocker is an issue preventing important work or release activity. A blocked test cannot be executed because a precondition, environment, dependency, or defect prevents it. A blocking defect may cause many tests to be blocked. Reporting should separate product failures from test-execution constraints.",
+    "evaluation_points": [
+      "Focus on blocked tests"
+    ],
+    "resolution_title": "ISTQB Glossary",
+    "resolution_url": "https://glossary.istqb.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q074",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you communicate a critical defect to stakeholders?",
+    "preferred_answer": "State the affected capability, user or business impact, scope, evidence, reproducibility, current containment, release implication, owner, next action, and next update time. Avoid speculation and jargon. Escalate quickly while preserving enough detail for engineering to investigate.",
+    "evaluation_points": [
+      "Focus on critical defect",
+      "Focus on escalation"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q075",
+    "role_slug": "qa-testing",
+    "domain": "Defect Management, Root Cause Analysis, and Reporting",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What makes a defect metric harmful?",
+    "preferred_answer": "A metric becomes harmful when it is used without context, treated as a target, or tied to blame. Counts can encourage splitting, suppressing, or reclassifying defects. Prefer measures connected to decisions, such as risk exposure, time to detection, time to restore, recurrence, and customer impact.",
+    "evaluation_points": [
+      "Focus on metrics",
+      "Focus on gaming"
+    ],
+    "resolution_title": "DORA metrics guidance",
+    "resolution_url": "https://dora.dev/guides/dora-metrics-four-keys/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q076",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What areas should be covered when manually testing a web page?",
+    "preferred_answer": "Cover functional behavior, navigation, forms, validation, state changes, content, layout, responsive behavior, keyboard use, accessibility, browser compatibility, network failures, security-sensitive behavior, performance perception, and analytics or logging where relevant. Prioritise by user journeys and risk rather than using a generic checklist alone.",
+    "evaluation_points": [
+      "Focus on web testing",
+      "Focus on checklist"
+    ],
+    "resolution_title": "MDN - Cross-browser testing",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q077",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is cross-browser testing?",
+    "preferred_answer": "Cross-browser testing checks that important behavior and presentation work acceptably across the supported browser, version, operating-system, and device combinations. It should be based on product support policy and user analytics, with a smaller smoke matrix on every change and broader coverage at appropriate intervals.",
+    "evaluation_points": [
+      "Focus on compatibility",
+      "Focus on browsers"
+    ],
+    "resolution_title": "MDN - Cross-browser testing",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q078",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why can a web application behave differently across browsers?",
+    "preferred_answer": "Browsers may differ in rendering engines, supported APIs, default styles, security policies, input behavior, accessibility implementations, and release timing. Extensions, device settings, fonts, and hardware acceleration also affect behavior. Standards reduce differences but do not eliminate implementation variation.",
+    "evaluation_points": [
+      "Focus on browser engines"
+    ],
+    "resolution_title": "MDN - Cross-browser testing",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q079",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you test a responsive layout?",
+    "preferred_answer": "Test representative viewport sizes, orientation changes, zoom, reflow, touch targets, content priority, long text, keyboard overlays, and real devices where possible. Check behavior at breakpoints and between them rather than only preset device names. Validate both visual layout and functional usability.",
+    "evaluation_points": [
+      "Focus on responsive design"
+    ],
+    "resolution_title": "MDN - Cross-browser testing",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q080",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between client-side and server-side validation?",
+    "preferred_answer": "Client-side validation gives fast feedback in the browser but can be bypassed. Server-side validation protects data and business rules at the trusted boundary. Tests should verify both user experience and server enforcement by sending malformed or missing values directly to the backend.",
+    "evaluation_points": [
+      "Focus on validation",
+      "Focus on security"
+    ],
+    "resolution_title": "OWASP Web Security Testing Guide",
+    "resolution_url": "https://owasp.org/www-project-web-security-testing-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q081",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should form validation be tested?",
+    "preferred_answer": "Cover required and optional fields, valid and invalid partitions, boundaries, format rules, whitespace, Unicode, copy/paste, dependent fields, error placement, focus, accessibility, preservation of user input, server-side rejection, and duplicate submission. Verify messages explain recovery without exposing sensitive details.",
+    "evaluation_points": [
+      "Focus on forms",
+      "Focus on validation"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q082",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a session in a web application?",
+    "preferred_answer": "A session links multiple requests to a user or interaction context, commonly through cookies or tokens. Tests should cover creation, expiration, logout, renewal, concurrent use, invalidation, browser restart, privilege changes, and protection of session identifiers.",
+    "evaluation_points": [
+      "Focus on session",
+      "Focus on cookies"
+    ],
+    "resolution_title": "MDN - Using HTTP cookies",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q083",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What cookie attributes are important to test?",
+    "preferred_answer": "Check Domain, Path, Expires or Max-Age, Secure, HttpOnly, and SameSite behavior according to the application design. Verify cookies are not sent to unintended origins or paths, sensitive cookies require secure transport, and logout or expiry removes or invalidates session state as intended.",
+    "evaluation_points": [
+      "Focus on cookies",
+      "Focus on security"
+    ],
+    "resolution_title": "MDN - Using HTTP cookies",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q084",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is CORS, and how does it affect testing?",
+    "preferred_answer": "Cross-Origin Resource Sharing is an HTTP mechanism through which servers indicate which origins may access resources from browsers. Test allowed and disallowed origins, methods, headers, credentials, and preflight behavior. A successful API call in a non-browser tool does not prove the browser CORS policy will allow it.",
+    "evaluation_points": [
+      "Focus on CORS",
+      "Focus on browser security"
+    ],
+    "resolution_title": "MDN - Cross-Origin Resource Sharing",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q085",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you test file upload functionality?",
+    "preferred_answer": "Cover allowed and disallowed types, size boundaries, empty and corrupted files, duplicate names, long and Unicode filenames, interrupted uploads, malware controls, storage permissions, preview and download behavior, and server-side content validation. Never rely only on the file extension or browser MIME type.",
+    "evaluation_points": [
+      "Focus on file upload"
+    ],
+    "resolution_title": "OWASP Web Security Testing Guide",
+    "resolution_url": "https://owasp.org/www-project-web-security-testing-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q086",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you test a search feature?",
+    "preferred_answer": "Test exact, partial, case, punctuation, whitespace, Unicode, empty and very long queries, filters, sorting, pagination, no-result behavior, stale index timing, permissions, relevance, and performance. Validate output encoding and ensure search does not reveal records the user cannot access.",
+    "evaluation_points": [
+      "Focus on search",
+      "Focus on manual testing"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q087",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is visual regression testing?",
+    "preferred_answer": "Visual regression compares rendered output with an approved baseline to detect layout or style changes. It is useful for stable components but sensitive to dynamic content, fonts, animation, and platform rendering. Differences require review; a pixel change is evidence, not automatically a defect.",
+    "evaluation_points": [
+      "Focus on visual testing"
+    ],
+    "resolution_title": "Playwright documentation",
+    "resolution_url": "https://playwright.dev/docs/intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q088",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should browser developer tools be used during manual testing?",
+    "preferred_answer": "Use the Network panel for requests, timing, status, payloads, and caching; Console for runtime errors; Elements for DOM and styles; Storage for cookies and local state; and performance tools for rendering or resource issues. Preserve relevant evidence and avoid modifying production data without authorization.",
+    "evaluation_points": [
+      "Focus on DevTools",
+      "Focus on debugging"
+    ],
+    "resolution_title": "Lighthouse documentation",
+    "resolution_url": "https://developer.chrome.com/docs/lighthouse/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q089",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you test browser back, forward, refresh, and deep links?",
+    "preferred_answer": "Verify state restoration, duplicate submission protection, routing, authentication, unsaved data warnings, cache behavior, and direct navigation to nested URLs. Single-page applications require particular attention to history integration and server fallback for deep links.",
+    "evaluation_points": [
+      "Focus on navigation",
+      "Focus on SPA"
+    ],
+    "resolution_title": "MDN - Cross-browser testing",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q090",
+    "role_slug": "qa-testing",
+    "domain": "Web, Browser, and Manual UI Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What makes a manual exploratory session auditable?",
+    "preferred_answer": "Use a charter and timebox, record build and environment, note data and paths explored, preserve observations and evidence, log defects, and identify untested questions. The notes should allow another person to understand what was learned without pretending the session followed a fixed script.",
+    "evaluation_points": [
+      "Focus on exploratory evidence"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q091",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What components of an HTTP request should an API tester examine?",
+    "preferred_answer": "Examine method, scheme and authority, path, query parameters, headers, cookies, authentication, content type, body, encoding, and timing. Also verify what intermediaries may modify or cache. A complete test states which part of the request drives the expected behavior.",
+    "evaluation_points": [
+      "Focus on HTTP request"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q092",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What components of an HTTP response should be validated?",
+    "preferred_answer": "Validate status code, headers, content type, body schema and values, error structure, cache directives, cookies, security headers where in scope, response time, and side effects. The response should also be consistent with the method semantics and authorization context.",
+    "evaluation_points": [
+      "Focus on HTTP response"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q093",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between safe and idempotent HTTP methods?",
+    "preferred_answer": "A safe method is intended not to request a state change, such as GET or HEAD. An idempotent method has the same intended effect when repeated as when sent once, such as PUT or DELETE under normal semantics. Idempotence does not mean every response is identical or that no logging or billing side effect occurs.",
+    "evaluation_points": [
+      "Focus on HTTP methods",
+      "Focus on idempotency"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q094",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should GET, POST, PUT, PATCH, and DELETE usually differ?",
+    "preferred_answer": "GET retrieves a representation, POST submits data for processing or creates subordinate resources, PUT replaces or creates the state at a target URI, PATCH applies partial changes, and DELETE requests removal of a target resource. Actual APIs must document their contract; tests should validate both semantics and implementation-specific rules.",
+    "evaluation_points": [
+      "Focus on REST methods"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q095",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the purpose of HTTP status code classes?",
+    "preferred_answer": "1xx indicates informational responses, 2xx successful processing, 3xx redirection, 4xx client-side request problems, and 5xx server-side failures. Testers should validate the specific code and error contract rather than accepting any code in the broad class.",
+    "evaluation_points": [
+      "Focus on status codes"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q096",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is the difference between 400, 401, 403, 404, 409, and 422 responses?",
+    "preferred_answer": "400 indicates a malformed or invalid request at a general level; 401 indicates missing or invalid authentication and normally includes an authentication challenge; 403 means the server understood but refuses authorization; 404 means the resource is not found or may be concealed; 409 indicates a conflict with current state; 422 is commonly used for semantically invalid content when supported by the API contract.",
+    "evaluation_points": [
+      "Focus on HTTP errors"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q097",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you test API authentication and authorization?",
+    "preferred_answer": "Test valid, missing, expired, malformed, revoked, and wrong-audience credentials; different roles and resource ownership; privilege changes; token reuse; logout or revocation; and direct calls to protected endpoints. Distinguish identity verification from permission enforcement and avoid exposing secrets in logs.",
+    "evaluation_points": [
+      "Focus on API auth",
+      "Focus on authorization"
+    ],
+    "resolution_title": "OWASP API Security Project",
+    "resolution_url": "https://owasp.org/www-project-api-security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q098",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an API contract?",
+    "preferred_answer": "An API contract defines expected operations, inputs, outputs, schemas, status codes, and behavioral rules between consumers and providers. OpenAPI, GraphQL schemas, examples, and consumer-driven contracts can represent parts of it. Tests should detect breaking changes and verify behavior, not only schema shape.",
+    "evaluation_points": [
+      "Focus on contract",
+      "Focus on OpenAPI"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q099",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is schema validation, and what can it miss?",
+    "preferred_answer": "Schema validation checks structural rules such as required fields, types, formats, ranges, and additional properties. It can miss business semantics, cross-field rules, authorization, side effects, ordering, performance, and whether values are correct for the user context. Schema checks are necessary but not sufficient.",
+    "evaluation_points": [
+      "Focus on schema validation"
+    ],
+    "resolution_title": "JSON Schema documentation",
+    "resolution_url": "https://json-schema.org/understanding-json-schema/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q100",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you test pagination?",
+    "preferred_answer": "Validate defaults, minimum and maximum page size, first and last pages, empty pages, stable ordering, duplicate or missing records across page transitions, invalid cursors, concurrent data changes, total-count behavior, permissions, and performance. Cursor-based and offset-based pagination have different consistency risks.",
+    "evaluation_points": [
+      "Focus on pagination"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q101",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you test sorting and filtering parameters?",
+    "preferred_answer": "Cover supported fields and directions, multiple criteria, invalid fields, case and locale behavior, null values, repeated parameters, combinations with pagination, authorization, and injection-resistant handling. Verify deterministic tie-breaking so results do not reorder unpredictably between requests.",
+    "evaluation_points": [
+      "Focus on sorting",
+      "Focus on filtering"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q102",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is content negotiation?",
+    "preferred_answer": "Content negotiation uses request headers such as Accept and Content-Type to select or describe representations. Test supported and unsupported media types, charset behavior, default responses, versioning headers if used, and correct 406 or 415 handling according to the API contract.",
+    "evaluation_points": [
+      "Focus on content negotiation"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q103",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do ETag and conditional requests support testing?",
+    "preferred_answer": "ETag validators can support cache validation and optimistic concurrency. Tests can send If-None-Match to expect a not-modified response or If-Match to prevent overwriting a changed resource. Verify validators change when representations change and that concurrency conflicts are handled consistently.",
+    "evaluation_points": [
+      "Focus on ETag",
+      "Focus on concurrency"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q104",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you test rate limiting?",
+    "preferred_answer": "Verify the threshold, time window, scope by user or client, response code, retry guidance, headers, burst behavior, reset, distributed consistency, and exemptions. Confirm limits cannot be bypassed through trivial identifier changes and that legitimate clients receive clear recovery information.",
+    "evaluation_points": [
+      "Focus on rate limiting"
+    ],
+    "resolution_title": "OWASP API Security Project",
+    "resolution_url": "https://owasp.org/www-project-api-security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q105",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is API versioning, and what should be tested?",
+    "preferred_answer": "Versioning separates incompatible contracts through paths, headers, media types, or other mechanisms. Test backward compatibility, deprecation behavior, default version selection, documentation, consumer migration, shared data effects, and whether unsupported versions fail clearly.",
+    "evaluation_points": [
+      "Focus on versioning"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q106",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a mock server, and when is it useful?",
+    "preferred_answer": "A mock server returns predefined responses based on an API contract or examples. It enables early consumer development, negative cases, and dependency isolation. It does not prove the real provider, network, security, or data behavior, so integration and contract verification are still required.",
+    "evaluation_points": [
+      "Focus on mocking"
+    ],
+    "resolution_title": "Postman mock servers",
+    "resolution_url": "https://learning.postman.com/docs/designing-and-developing-your-api/mocking-data/setting-up-mock/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q107",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is consumer-driven contract testing?",
+    "preferred_answer": "Consumers specify the interactions they rely on, and providers verify they can satisfy those expectations. This detects integration-breaking changes earlier than full end-to-end tests. Contracts should focus on observable interfaces and avoid coupling consumers to irrelevant provider details.",
+    "evaluation_points": [
+      "Focus on contract testing",
+      "Focus on microservices"
+    ],
+    "resolution_title": "Pact documentation",
+    "resolution_url": "https://docs.pact.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q108",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you test asynchronous APIs or webhooks?",
+    "preferred_answer": "Validate subscription setup, authentication, event schema, ordering expectations, duplicates, retries, signatures, delayed delivery, dead-letter handling, idempotent consumer behavior, and observability. Use correlation identifiers and controlled endpoints to prove both delivery and downstream side effects.",
+    "evaluation_points": [
+      "Focus on webhooks",
+      "Focus on async"
+    ],
+    "resolution_title": "OWASP API Security Project",
+    "resolution_url": "https://owasp.org/www-project-api-security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q109",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should GraphQL testing differ from REST testing?",
+    "preferred_answer": "GraphQL tests should cover schema types, queries, mutations, variables, fragments, validation errors, field-level authorization, nullability, depth and complexity controls, batching, resolver behavior, and partial errors. A single endpoint does not remove the need to test operation-specific contracts and access rules.",
+    "evaluation_points": [
+      "Focus on GraphQL"
+    ],
+    "resolution_title": "GraphQL Specification",
+    "resolution_url": "https://spec.graphql.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q110",
+    "role_slug": "qa-testing",
+    "domain": "API, HTTP, REST, and Contract Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How can Postman collections be structured for maintainable API tests?",
+    "preferred_answer": "Group requests by resource or workflow, use collection and environment variables carefully, centralize authentication setup, write focused assertions, separate reusable scripts, and make data dependencies explicit. Collections should run deterministically in CLI or monitors and avoid hidden local state.",
+    "evaluation_points": [
+      "Focus on Postman",
+      "Focus on maintainability"
+    ],
+    "resolution_title": "Postman collections overview",
+    "resolution_url": "https://learning.postman.com/docs/collections/collections-overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q111",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What should be validated when testing a database-backed feature?",
+    "preferred_answer": "Validate schema constraints, stored values, relationships, transformations, transaction behavior, permissions, concurrency, audit fields, error handling, and consistency between the UI or API and the database. Prefer validation through supported interfaces unless direct database access is authorized and necessary.",
+    "evaluation_points": [
+      "Focus on database testing"
+    ],
+    "resolution_title": "PostgreSQL documentation - Queries",
+    "resolution_url": "https://www.postgresql.org/docs/current/queries.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q112",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between a primary key, unique constraint, and foreign key?",
+    "preferred_answer": "A primary key uniquely identifies a row and implies uniqueness and non-null values. A unique constraint prevents duplicate values according to database null semantics. A foreign key enforces that referenced values exist in another table or permitted parent key, protecting referential integrity.",
+    "evaluation_points": [
+      "Focus on constraints",
+      "Focus on keys"
+    ],
+    "resolution_title": "PostgreSQL documentation - Constraints",
+    "resolution_url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q113",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do INNER JOIN and LEFT JOIN differ?",
+    "preferred_answer": "INNER JOIN returns rows with matching join conditions on both sides. LEFT JOIN returns every row from the left side and matching rows from the right, using nulls when no match exists. Tests should include matched, unmatched, duplicate-key, and null cases to detect incorrect cardinality.",
+    "evaluation_points": [
+      "Focus on SQL joins"
+    ],
+    "resolution_title": "PostgreSQL tutorial - Joins",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-join.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q114",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What can cause duplicate rows after a join?",
+    "preferred_answer": "Duplicates often result from one-to-many or many-to-many relationships, incomplete join predicates, non-unique reference data, or joining before aggregation. Diagnose by checking key uniqueness and cardinality. Using DISTINCT may hide the underlying logic defect rather than fix it.",
+    "evaluation_points": [
+      "Focus on joins",
+      "Focus on duplicates"
+    ],
+    "resolution_title": "PostgreSQL tutorial - Joins",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-join.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q115",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between WHERE and HAVING?",
+    "preferred_answer": "WHERE filters rows before grouping and aggregation. HAVING filters groups after aggregate values are calculated. Tests should verify that filters are applied at the intended stage, especially when nulls, totals, and grouping dimensions affect the result.",
+    "evaluation_points": [
+      "Focus on WHERE",
+      "Focus on HAVING"
+    ],
+    "resolution_title": "PostgreSQL documentation - Queries",
+    "resolution_url": "https://www.postgresql.org/docs/current/queries.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q116",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does NULL behave in SQL comparisons?",
+    "preferred_answer": "NULL represents an unknown or absent value and uses three-valued logic. Comparisons such as column = NULL do not return true; use IS NULL or IS NOT NULL. Aggregates, joins, uniqueness, and sorting can treat nulls differently, so explicit tests are required.",
+    "evaluation_points": [
+      "Focus on NULL",
+      "Focus on SQL logic"
+    ],
+    "resolution_title": "PostgreSQL documentation - Queries",
+    "resolution_url": "https://www.postgresql.org/docs/current/queries.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q117",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a transaction?",
+    "preferred_answer": "A transaction groups statements into a unit that either commits its changes or rolls them back. It protects consistency across related operations and provides isolation from concurrent work according to the database level. Tests should verify success, partial failure, rollback, retry, and duplicate-submission behavior.",
+    "evaluation_points": [
+      "Focus on transactions",
+      "Focus on ACID"
+    ],
+    "resolution_title": "PostgreSQL tutorial - Transactions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q118",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What do atomicity, consistency, isolation, and durability mean?",
+    "preferred_answer": "Atomicity means a transaction completes fully or not at all. Consistency means defined invariants remain valid. Isolation controls how concurrent transactions observe one another. Durability means committed changes survive expected failures according to the system guarantees.",
+    "evaluation_points": [
+      "Focus on ACID"
+    ],
+    "resolution_title": "PostgreSQL tutorial - Transactions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q119",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are dirty reads, non-repeatable reads, and phantom reads?",
+    "preferred_answer": "A dirty read observes uncommitted data. A non-repeatable read returns a changed value when the same row is read again in one transaction. A phantom read changes the set of rows matching a query because another transaction inserts or removes rows. Isolation levels control which anomalies may occur.",
+    "evaluation_points": [
+      "Focus on isolation anomalies"
+    ],
+    "resolution_title": "PostgreSQL documentation - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q120",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How would you test concurrent updates to the same record?",
+    "preferred_answer": "Create controlled sessions that read and update the same record, then observe locking, version checks, lost updates, timeout, retry, and final state. Validate the application\u2019s concurrency strategy, such as optimistic version columns or serialized processing, rather than only the database default.",
+    "evaluation_points": [
+      "Focus on concurrency"
+    ],
+    "resolution_title": "PostgreSQL documentation - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q121",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is referential integrity, and how should it be tested?",
+    "preferred_answer": "Referential integrity ensures child records reference valid parent records according to foreign-key rules. Test valid insertion, missing parents, parent update or deletion behavior, cascade rules, nullability, and migration or bulk-load paths that might bypass application validation.",
+    "evaluation_points": [
+      "Focus on referential integrity"
+    ],
+    "resolution_title": "PostgreSQL documentation - Constraints",
+    "resolution_url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q122",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is database normalization, and why does it matter to testers?",
+    "preferred_answer": "Normalization organizes data to reduce duplication and update anomalies by separating facts into related structures. Testers do not need to redesign every schema, but should recognize risks such as inconsistent copies, incorrect joins, and missing constraints. Reporting models may intentionally denormalize for performance.",
+    "evaluation_points": [
+      "Focus on normalization"
+    ],
+    "resolution_title": "PostgreSQL documentation - Constraints",
+    "resolution_url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q123",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you validate a data migration?",
+    "preferred_answer": "Define source-to-target mapping and reconciliation rules, compare counts and aggregates, sample high-risk records, validate keys and relationships, check transformed and rejected data, test restart and rollback, preserve audit evidence, and run business workflows against migrated data. A successful script exit is not enough.",
+    "evaluation_points": [
+      "Focus on data migration"
+    ],
+    "resolution_title": "PostgreSQL documentation - Queries",
+    "resolution_url": "https://www.postgresql.org/docs/current/queries.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q124",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is an execution plan, and how can it help testing?",
+    "preferred_answer": "An execution plan shows how the database intends to access and combine data, including scans, joins, estimates, and costs. Testers can use EXPLAIN and representative data to investigate slow queries or plan changes, while recognizing that estimates and production load may differ.",
+    "evaluation_points": [
+      "Focus on EXPLAIN",
+      "Focus on performance"
+    ],
+    "resolution_title": "PostgreSQL documentation - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q125",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you test a stored procedure or database function?",
+    "preferred_answer": "Test valid, boundary, invalid, and null inputs; returned values and result sets; side effects; transaction behavior; permissions; errors; concurrency; performance; and idempotence where required. Isolate setup and cleanup so tests are repeatable and do not depend on execution order.",
+    "evaluation_points": [
+      "Focus on stored procedures"
+    ],
+    "resolution_title": "PostgreSQL documentation - Queries",
+    "resolution_url": "https://www.postgresql.org/docs/current/queries.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q126",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should database test data be cleaned up?",
+    "preferred_answer": "Prefer isolated schemas, transactions that roll back, deterministic fixture teardown, or disposable databases. Cleanup must respect relationships and should run even after failures. Avoid deleting broad production-like datasets with unsafe scripts; use environment guards and least privilege.",
+    "evaluation_points": [
+      "Focus on test data",
+      "Focus on cleanup"
+    ],
+    "resolution_title": "PostgreSQL tutorial - Transactions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q127",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is data reconciliation?",
+    "preferred_answer": "Data reconciliation compares independent representations of the same business facts, such as source and target counts, sums, hashes, keys, and exception lists. It should account for timing windows, duplicates, late-arriving data, rounding, and documented transformation rules.",
+    "evaluation_points": [
+      "Focus on reconciliation"
+    ],
+    "resolution_title": "PostgreSQL documentation - Queries",
+    "resolution_url": "https://www.postgresql.org/docs/current/queries.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q128",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you test database permissions?",
+    "preferred_answer": "Use accounts representing required roles, verify allowed and denied operations, test direct table and view access, stored procedure execution, row-level rules if used, privilege changes, and audit logging. The application account should have only the permissions needed for its responsibilities.",
+    "evaluation_points": [
+      "Focus on database security",
+      "Focus on permissions"
+    ],
+    "resolution_title": "OWASP Application Security Verification Standard",
+    "resolution_url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q129",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why can tests that directly query the database become brittle?",
+    "preferred_answer": "They may couple tests to internal schemas and implementation details, bypass business interfaces, require broad credentials, and fail during legitimate refactoring. Direct queries are appropriate for targeted validation and setup, but should be balanced with API or UI-level behavior and stable data-access abstractions.",
+    "evaluation_points": [
+      "Focus on brittle tests",
+      "Focus on coupling"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q130",
+    "role_slug": "qa-testing",
+    "domain": "SQL and Database Testing",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How would you diagnose a mismatch between an API response and a database record?",
+    "preferred_answer": "Confirm identifiers, transaction timing, replicas or caches, transformation logic, timezone and rounding, soft deletes, permissions, and the exact build. Trace one request with correlation data from API through persistence before changing values. The database may not be the final source used by the response.",
+    "evaluation_points": [
+      "Focus on API database mismatch"
+    ],
+    "resolution_title": "OpenTelemetry documentation",
+    "resolution_url": "https://opentelemetry.io/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q131",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Selenium WebDriver?",
+    "preferred_answer": "Selenium WebDriver is a browser automation interface that controls browsers through standardized or browser-specific drivers. Tests send commands to navigate, locate elements, interact, and inspect state. It is best suited to browser behavior and should be combined with lower-level tests for faster feedback.",
+    "evaluation_points": [
+      "Focus on Selenium",
+      "Focus on WebDriver"
+    ],
+    "resolution_title": "Selenium WebDriver documentation",
+    "resolution_url": "https://www.selenium.dev/documentation/webdriver/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q132",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does WebDriver communicate with a browser?",
+    "preferred_answer": "A client library sends WebDriver commands to a local or remote endpoint, which translates them into browser automation actions defined by the WebDriver protocol. The exact implementation varies by browser, but the standardized command model supports cross-browser automation.",
+    "evaluation_points": [
+      "Focus on WebDriver protocol"
+    ],
+    "resolution_title": "W3C WebDriver specification",
+    "resolution_url": "https://www.w3.org/TR/webdriver2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q133",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes a good Selenium locator?",
+    "preferred_answer": "A good locator is unique, stable, readable, and tied to user-facing semantics or a deliberate test attribute rather than fragile layout. Prefer IDs, accessible names, or dedicated data attributes when available. Avoid long absolute XPath expressions and selectors that depend on transient CSS structure.",
+    "evaluation_points": [
+      "Focus on locators"
+    ],
+    "resolution_title": "Selenium test practices",
+    "resolution_url": "https://www.selenium.dev/documentation/test_practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q134",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between findElement and findElements?",
+    "preferred_answer": "A single-element lookup returns one matching element and raises an error when none is found. A multiple-element lookup returns a collection that may be empty. Choose based on the assertion: required unique element, optional element, or list behavior.",
+    "evaluation_points": [
+      "Focus on element lookup"
+    ],
+    "resolution_title": "Selenium WebDriver documentation",
+    "resolution_url": "https://www.selenium.dev/documentation/webdriver/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q135",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an implicit wait?",
+    "preferred_answer": "An implicit wait configures element lookup to poll for a period before failing. It applies broadly and can make timing behavior harder to reason about, especially when mixed with explicit waits. Keep timing strategy intentional and measure its impact on suite duration.",
+    "evaluation_points": [
+      "Focus on implicit wait"
+    ],
+    "resolution_title": "Selenium waits documentation",
+    "resolution_url": "https://www.selenium.dev/documentation/webdriver/waits/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q136",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an explicit wait?",
+    "preferred_answer": "An explicit wait polls until a defined condition becomes true or a timeout expires, such as visibility, clickability, text, or application-specific state. It is generally more targeted and diagnosable than fixed sleeps. Conditions should represent readiness, not merely element presence.",
+    "evaluation_points": [
+      "Focus on explicit wait"
+    ],
+    "resolution_title": "Selenium waits documentation",
+    "resolution_url": "https://www.selenium.dev/documentation/webdriver/waits/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q137",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why are fixed sleeps usually a poor synchronization strategy?",
+    "preferred_answer": "A fixed sleep waits the same time regardless of actual readiness. Short sleeps are flaky under slower conditions; long sleeps waste time. Prefer waits on observable application conditions, network completion where available, or state transitions. A small sleep may still be appropriate for deliberately time-based behavior, but should be justified.",
+    "evaluation_points": [
+      "Focus on synchronization",
+      "Focus on flakiness"
+    ],
+    "resolution_title": "Selenium waits documentation",
+    "resolution_url": "https://www.selenium.dev/documentation/webdriver/waits/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q138",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a stale element reference?",
+    "preferred_answer": "It occurs when a previously located element is no longer attached to the current DOM, often after navigation, re-rendering, or framework updates. Re-locate the element after the state change and wait for the new UI condition. Blindly retrying every stale error can hide real timing or application problems.",
+    "evaluation_points": [
+      "Focus on stale element"
+    ],
+    "resolution_title": "W3C WebDriver specification",
+    "resolution_url": "https://www.w3.org/TR/webdriver2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q139",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should frames and iframes be handled?",
+    "preferred_answer": "WebDriver commands operate in the current browsing context. Switch explicitly into the required frame before locating its elements and return to the parent or default content afterward. Tests should verify frame availability, origin restrictions, loading, and nested context handling.",
+    "evaluation_points": [
+      "Focus on frames",
+      "Focus on browsing context"
+    ],
+    "resolution_title": "Selenium WebDriver documentation",
+    "resolution_url": "https://www.selenium.dev/documentation/webdriver/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q140",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you handle multiple windows or tabs in Selenium?",
+    "preferred_answer": "Capture existing window handles, trigger the action, wait for the expected new handle, switch to it, validate the correct page, then close or return deliberately. Do not rely on unordered index positions because handle order is not a business guarantee.",
+    "evaluation_points": [
+      "Focus on windows",
+      "Focus on tabs"
+    ],
+    "resolution_title": "Selenium WebDriver documentation",
+    "resolution_url": "https://www.selenium.dev/documentation/webdriver/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q141",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the Page Object Model?",
+    "preferred_answer": "Page objects encapsulate page-specific locators and interactions behind a stable interface, reducing duplication and separating test intent from UI mechanics. Assertions about business outcomes usually remain in tests, while reusable component objects can represent repeated widgets.",
+    "evaluation_points": [
+      "Focus on POM",
+      "Focus on design"
+    ],
+    "resolution_title": "Selenium Page Object Model guidance",
+    "resolution_url": "https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q142",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are common Page Object Model mistakes?",
+    "preferred_answer": "Common mistakes include creating one huge object for the entire application, exposing raw elements everywhere, placing all assertions inside page classes, duplicating navigation logic, and modeling pages rather than user capabilities. Objects should remain cohesive and avoid hiding essential test intent.",
+    "evaluation_points": [
+      "Focus on POM",
+      "Focus on maintainability"
+    ],
+    "resolution_title": "Selenium Page Object Model guidance",
+    "resolution_url": "https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q143",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is Selenium Grid?",
+    "preferred_answer": "Selenium Grid routes WebDriver sessions to available browser nodes, enabling remote and parallel execution across browser and platform combinations. Tests must remain isolated, environments need capacity and observability, and parallelism should not exceed the stability of data and dependent systems.",
+    "evaluation_points": [
+      "Focus on Grid",
+      "Focus on parallel execution"
+    ],
+    "resolution_title": "Selenium Grid documentation",
+    "resolution_url": "https://www.selenium.dev/documentation/grid/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q144",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you make Selenium tests safe for parallel execution?",
+    "preferred_answer": "Use independent driver instances, unique test data, isolated accounts or tenants, thread-safe fixtures, no shared mutable globals, deterministic cleanup, and environment capacity controls. Parallel tests should not depend on execution order or modify the same record without an intentional concurrency scenario.",
+    "evaluation_points": [
+      "Focus on parallel",
+      "Focus on isolation"
+    ],
+    "resolution_title": "Selenium Grid documentation",
+    "resolution_url": "https://www.selenium.dev/documentation/grid/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q145",
+    "role_slug": "qa-testing",
+    "domain": "Selenium WebDriver",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How would you diagnose a Selenium test that fails only in CI?",
+    "preferred_answer": "Compare browser and driver versions, headless settings, viewport, fonts, locale, timezone, resources, network, environment variables, and test data. Preserve screenshots, page source, console and network evidence, and driver logs. Reproduce in the same container or runner image before weakening assertions.",
+    "evaluation_points": [
+      "Focus on CI",
+      "Focus on flaky tests"
+    ],
+    "resolution_title": "Selenium test practices",
+    "resolution_url": "https://www.selenium.dev/documentation/test_practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q146",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Playwright Test?",
+    "preferred_answer": "Playwright Test is a browser-testing framework with a runner, browser automation, assertions, fixtures, retries, parallelism, projects, tracing, and reporting. It supports Chromium, Firefox, and WebKit. It is still important to design maintainable tests and choose the correct test level.",
+    "evaluation_points": [
+      "Focus on Playwright"
+    ],
+    "resolution_title": "Playwright documentation",
+    "resolution_url": "https://playwright.dev/docs/intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q147",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is Playwright auto-waiting?",
+    "preferred_answer": "Before performing actions, Playwright checks relevant actionability conditions such as visibility, stability, event reception, and enabled state. Assertions can also retry until their condition is met. Auto-waiting reduces manual synchronization but does not understand every application-specific readiness condition.",
+    "evaluation_points": [
+      "Focus on auto-waiting"
+    ],
+    "resolution_title": "Playwright documentation",
+    "resolution_url": "https://playwright.dev/docs/intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q148",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why are Playwright locators preferred over storing element handles?",
+    "preferred_answer": "Locators represent a way to find an element and resolve it when an action or assertion occurs. This supports re-rendered interfaces and built-in waiting. Long-lived element handles can become detached and encourage manual timing logic.",
+    "evaluation_points": [
+      "Focus on locators",
+      "Focus on element handles"
+    ],
+    "resolution_title": "Playwright locators",
+    "resolution_url": "https://playwright.dev/docs/locators",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q149",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What locator strategies does Playwright encourage?",
+    "preferred_answer": "Prefer locators based on user-facing roles, names, labels, text, placeholders, and explicit test IDs. These improve readability and often align tests with accessibility semantics. CSS and XPath remain available but should not be the first choice when a stable semantic locator exists.",
+    "evaluation_points": [
+      "Focus on role locator",
+      "Focus on test id"
+    ],
+    "resolution_title": "Playwright locators",
+    "resolution_url": "https://playwright.dev/docs/locators",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q150",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are web-first assertions?",
+    "preferred_answer": "Web-first assertions automatically retry until the expected condition is met or the assertion timeout expires. Examples validate visibility, text, attributes, counts, and URL state. They are more reliable than reading a value once and then asserting on a potentially transient snapshot.",
+    "evaluation_points": [
+      "Focus on assertions",
+      "Focus on retries"
+    ],
+    "resolution_title": "Playwright assertions",
+    "resolution_url": "https://playwright.dev/docs/test-assertions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q151",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a Playwright fixture?",
+    "preferred_answer": "A fixture provides setup, dependencies, and cleanup to tests in a controlled scope. Built-in fixtures include browser, context, and page, while custom fixtures can supply authenticated states, API clients, or domain helpers. Fixtures should be composable and avoid hidden cross-test state.",
+    "evaluation_points": [
+      "Focus on fixtures"
+    ],
+    "resolution_title": "Playwright fixtures",
+    "resolution_url": "https://playwright.dev/docs/test-fixtures",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q152",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is the difference between test-scoped and worker-scoped fixtures?",
+    "preferred_answer": "Test-scoped fixtures are created for each test, maximizing isolation. Worker-scoped fixtures are reused by tests in one worker, reducing expensive setup but requiring careful state control. Choose the narrowest scope that meets performance and isolation needs.",
+    "evaluation_points": [
+      "Focus on fixture scope"
+    ],
+    "resolution_title": "Playwright fixtures",
+    "resolution_url": "https://playwright.dev/docs/test-fixtures",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q153",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are Playwright projects?",
+    "preferred_answer": "Projects are logical test configurations that can represent browsers, devices, locales, authenticated roles, or environments. They support matrix execution and project dependencies. Keep the matrix aligned with product support and risk so it does not multiply cost without value.",
+    "evaluation_points": [
+      "Focus on projects",
+      "Focus on matrix"
+    ],
+    "resolution_title": "Playwright projects",
+    "resolution_url": "https://playwright.dev/docs/test-projects",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q154",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do retries work in Playwright Test?",
+    "preferred_answer": "Retries rerun failed tests up to a configured limit, often in a fresh worker. Results can be classified as passed, flaky, or failed. Retries are a diagnostic and containment tool, not a substitute for fixing nondeterminism; track retry dependence and investigate root causes.",
+    "evaluation_points": [
+      "Focus on retries",
+      "Focus on flakiness"
+    ],
+    "resolution_title": "Playwright retries",
+    "resolution_url": "https://playwright.dev/docs/test-retries",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q155",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What information does Playwright tracing provide?",
+    "preferred_answer": "Trace Viewer can show actions, DOM snapshots, screenshots, network activity, console messages, source locations, and timing around a failed run. Traces are especially useful in CI because they preserve evidence for step-by-step investigation without rerunning immediately.",
+    "evaluation_points": [
+      "Focus on trace",
+      "Focus on debugging"
+    ],
+    "resolution_title": "Playwright Trace Viewer",
+    "resolution_url": "https://playwright.dev/docs/trace-viewer",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q156",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can Playwright intercept or mock network requests?",
+    "preferred_answer": "Routes can observe, modify, fulfill, or abort matching requests. This enables deterministic error cases, dependency isolation, and response shaping. Mocks should not replace real integration coverage, and tests must clearly distinguish simulated behavior from provider verification.",
+    "evaluation_points": [
+      "Focus on network mocking"
+    ],
+    "resolution_title": "Playwright network testing",
+    "resolution_url": "https://playwright.dev/docs/network",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q157",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can Playwright combine UI and API testing?",
+    "preferred_answer": "The request context can create data, authenticate, call services, or validate backend state while browser tests focus on user behavior. This can reduce slow UI setup and improve diagnostics. Avoid bypassing the exact behavior the test is intended to verify.",
+    "evaluation_points": [
+      "Focus on APIRequestContext",
+      "Focus on hybrid testing"
+    ],
+    "resolution_title": "Playwright documentation",
+    "resolution_url": "https://playwright.dev/docs/intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q158",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should authentication state be reused in Playwright?",
+    "preferred_answer": "Create authenticated storage state through a controlled setup, store it securely, and load it for tests that do not need to validate login itself. Use separate identities for parallel tests and roles. Refresh or regenerate state when tokens expire, and never commit real credentials or session files.",
+    "evaluation_points": [
+      "Focus on authentication",
+      "Focus on storage state"
+    ],
+    "resolution_title": "Playwright documentation",
+    "resolution_url": "https://playwright.dev/docs/intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q159",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When should a Playwright page object be used?",
+    "preferred_answer": "Use page or component objects when repeated interactions and locators form a cohesive capability. Keep tests readable, avoid wrapping every one-line action, and let objects expose meaningful operations. The model should reduce coupling rather than create another layer of indirection.",
+    "evaluation_points": [
+      "Focus on POM",
+      "Focus on components"
+    ],
+    "resolution_title": "Playwright page object models",
+    "resolution_url": "https://playwright.dev/docs/pom",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q160",
+    "role_slug": "qa-testing",
+    "domain": "Playwright",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How would you diagnose a Playwright test that passes locally but fails under parallel load?",
+    "preferred_answer": "Check shared accounts, data collisions, environment rate limits, server capacity, worker-scoped fixtures, file paths, ports, and order assumptions. Compare traces from isolated and parallel runs. Reduce workers to confirm resource interaction, then fix isolation or capacity rather than permanently serializing everything.",
+    "evaluation_points": [
+      "Focus on parallel",
+      "Focus on flakiness"
+    ],
+    "resolution_title": "Playwright Trace Viewer",
+    "resolution_url": "https://playwright.dev/docs/trace-viewer",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q161",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a test automation framework?",
+    "preferred_answer": "A test automation framework is a set of conventions, libraries, architecture, utilities, and execution practices that support automated tests. It may manage fixtures, data, assertions, reporting, environments, and CI integration. A framework should reduce friction and inconsistency rather than become a large product with little test value.",
+    "evaluation_points": [
+      "Focus on framework"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q162",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you decide what to automate?",
+    "preferred_answer": "Prioritise tests that are valuable, repeatable, deterministic, frequently executed, costly or slow manually, and supported by stable interfaces. Consider risk, feedback speed, maintenance cost, data and environment control, and expected lifetime. Do not automate solely because a test can be automated.",
+    "evaluation_points": [
+      "Focus on automation selection",
+      "Focus on ROI"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q163",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Which tests are poor candidates for automation?",
+    "preferred_answer": "One-time checks, rapidly changing low-risk UI, highly subjective usability evaluation, poorly specified behavior, unstable dependencies, and tests requiring human interpretation may be poor initial candidates. Some can become automatable after improving testability, interfaces, or oracles.",
+    "evaluation_points": [
+      "Focus on automation limits"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q164",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the test pyramid?",
+    "preferred_answer": "The test pyramid is a heuristic favoring many fast, isolated lower-level tests, fewer service or integration tests, and a smaller number of broad end-to-end tests. The exact shape depends on architecture and risk. Its purpose is fast, reliable feedback, not enforcing fixed percentages.",
+    "evaluation_points": [
+      "Focus on test pyramid",
+      "Focus on layers"
+    ],
+    "resolution_title": "Selenium test practices",
+    "resolution_url": "https://www.selenium.dev/documentation/test_practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q165",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between a unit test, integration test, and end-to-end test?",
+    "preferred_answer": "A unit test checks a small component in isolation. An integration test checks interactions among components or external boundaries. An end-to-end test validates a complete user or business flow across the deployed stack. Boundaries should be stated explicitly because terminology varies by team.",
+    "evaluation_points": [
+      "Focus on test levels"
+    ],
+    "resolution_title": "ISTQB Glossary",
+    "resolution_url": "https://glossary.istqb.org/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q166",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why should UI automation not contain every business-rule test?",
+    "preferred_answer": "UI tests are slower, more fragile, and harder to diagnose than lower-level tests. Business rules that can be verified at unit, component, or API level should usually be covered there, while UI tests focus on integration, rendering, accessibility, and critical user journeys. Important risks may still justify UI coverage.",
+    "evaluation_points": [
+      "Focus on UI automation",
+      "Focus on layering"
+    ],
+    "resolution_title": "Selenium test practices",
+    "resolution_url": "https://www.selenium.dev/documentation/test_practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q167",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes an automated test deterministic?",
+    "preferred_answer": "Given controlled inputs and environment, it produces the same meaningful result. Determinism requires isolated data, known time and randomness, controlled dependencies, stable synchronization, and explicit cleanup. A deterministic test can still expose nondeterministic product behavior if that is the intended target.",
+    "evaluation_points": [
+      "Focus on determinism",
+      "Focus on isolation"
+    ],
+    "resolution_title": "pytest documentation",
+    "resolution_url": "https://docs.pytest.org/en/stable/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q168",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are fixtures in automated testing?",
+    "preferred_answer": "Fixtures establish the state and resources a test requires and clean them afterward. They may provide data, clients, browsers, servers, or temporary files. Good fixtures are explicit, composable, scoped appropriately, and safe when setup or the test fails.",
+    "evaluation_points": [
+      "Focus on fixtures"
+    ],
+    "resolution_title": "pytest documentation",
+    "resolution_url": "https://docs.pytest.org/en/stable/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q169",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is parameterized or data-driven testing?",
+    "preferred_answer": "Parameterized testing runs one test logic with multiple data sets. It is effective for partitions, boundaries, locales, roles, and protocol cases. Each case should have an identifiable name and expected result; very large tables can hide intent and may be better expressed through generated or property-based tests.",
+    "evaluation_points": [
+      "Focus on parameterization",
+      "Focus on data-driven"
+    ],
+    "resolution_title": "JUnit 5 User Guide",
+    "resolution_url": "https://junit.org/junit5/docs/current/user-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q170",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the Arrange-Act-Assert pattern?",
+    "preferred_answer": "Arrange prepares state and dependencies, Act performs the behavior under test, and Assert verifies outcomes. Clear separation improves readability and diagnosis. Cleanup may be handled by fixtures or teardown, and complex tests can use domain-specific variants without losing the causal flow.",
+    "evaluation_points": [
+      "Focus on AAA",
+      "Focus on test structure"
+    ],
+    "resolution_title": "JUnit 5 User Guide",
+    "resolution_url": "https://junit.org/junit5/docs/current/user-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q171",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes an assertion strong?",
+    "preferred_answer": "A strong assertion checks an outcome that matters to the test purpose, uses a precise oracle, and produces a useful failure message. Avoid assertions that only confirm an element exists when the risk concerns a value, side effect, or authorization rule. Also avoid over-asserting unrelated details in one test.",
+    "evaluation_points": [
+      "Focus on assertions",
+      "Focus on oracle"
+    ],
+    "resolution_title": "pytest documentation",
+    "resolution_url": "https://docs.pytest.org/en/stable/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q172",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is mocking, and what are its risks?",
+    "preferred_answer": "Mocking replaces a dependency with controlled behavior so a component can be tested in isolation. Risks include unrealistic behavior, coupling tests to implementation calls, and contracts drifting from real providers. Use mocks at clear boundaries and retain integration or contract tests against real behavior.",
+    "evaluation_points": [
+      "Focus on mocks",
+      "Focus on test doubles"
+    ],
+    "resolution_title": "WireMock documentation",
+    "resolution_url": "https://wiremock.org/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q173",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is the difference between a stub, mock, fake, and spy?",
+    "preferred_answer": "A stub returns predefined data; a mock is configured with interaction expectations; a fake provides a lightweight working implementation; and a spy records calls while often retaining real behavior. Terminology differs by library, so the interview answer should emphasize purpose and trade-offs rather than labels alone.",
+    "evaluation_points": [
+      "Focus on test doubles"
+    ],
+    "resolution_title": "WireMock documentation",
+    "resolution_url": "https://wiremock.org/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q174",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should reusable test utilities be designed?",
+    "preferred_answer": "Utilities should solve stable cross-cutting needs, have clear APIs, fail loudly, avoid hidden global state, and remain small enough to understand. Domain behavior belongs in domain helpers or objects, while generic waits or data generation belong in focused libraries. Excess abstraction can make failures harder to trace.",
+    "evaluation_points": [
+      "Focus on utilities",
+      "Focus on abstraction"
+    ],
+    "resolution_title": "Selenium test practices",
+    "resolution_url": "https://www.selenium.dev/documentation/test_practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q175",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you manage test configuration across environments?",
+    "preferred_answer": "Separate code from configuration, use validated environment variables or config files, keep secrets in secure stores, provide safe defaults only for local use, and record effective configuration in results without exposing secrets. Tests should fail clearly when required configuration is missing.",
+    "evaluation_points": [
+      "Focus on configuration",
+      "Focus on environments"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q176",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should a test report provide?",
+    "preferred_answer": "A report should identify build and environment, tests and risks covered, results, duration, failures with evidence, retries, skipped or blocked tests, and links to logs or defects. It should support action by engineers and summary decisions by stakeholders rather than merely displaying colorful charts.",
+    "evaluation_points": [
+      "Focus on reporting"
+    ],
+    "resolution_title": "Allure Report documentation",
+    "resolution_url": "https://allurereport.org/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q177",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do code reviews improve test automation?",
+    "preferred_answer": "Reviews can detect weak assertions, duplication, unsafe data handling, brittle locators, hidden dependencies, poor naming, and missing cleanup. Reviewers should evaluate both software design and test value. Passing CI is evidence but not a substitute for human assessment of intent and maintainability.",
+    "evaluation_points": [
+      "Focus on code review",
+      "Focus on maintainability"
+    ],
+    "resolution_title": "SonarQube documentation",
+    "resolution_url": "https://docs.sonarsource.com/sonarqube-server/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q178",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is technical debt in test automation?",
+    "preferred_answer": "Automation debt includes brittle tests, duplicated helpers, slow suites, weak diagnostics, obsolete coverage, and framework complexity that make change expensive. Track impact and prioritize debt that reduces feedback reliability or blocks delivery. Simply rewriting the framework without a value hypothesis can create more debt.",
+    "evaluation_points": [
+      "Focus on automation debt"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q179",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you calculate automation return on investment?",
+    "preferred_answer": "Compare expected manual effort avoided, feedback speed, risk reduction, and repeat frequency with development, infrastructure, maintenance, triage, and opportunity cost. ROI is not just hours saved; earlier detection and reliable release evidence may be more valuable. Reassess when the product or test changes.",
+    "evaluation_points": [
+      "Focus on ROI",
+      "Focus on automation strategy"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q180",
+    "role_slug": "qa-testing",
+    "domain": "Automation Frameworks, Architecture, and Code Quality",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a contract test versus an end-to-end test?",
+    "preferred_answer": "A contract test verifies that an interface provider and consumer agree on messages and behavior at a boundary. An end-to-end test validates a broader deployed workflow. Contract tests are faster and localize compatibility failures, while end-to-end tests provide limited evidence that the assembled system works.",
+    "evaluation_points": [
+      "Focus on contract",
+      "Focus on E2E"
+    ],
+    "resolution_title": "Pact documentation",
+    "resolution_url": "https://docs.pact.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q181",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is continuous integration?",
+    "preferred_answer": "Continuous integration is the practice of frequently integrating changes into a shared codebase and using automated build and verification to provide rapid feedback. It depends on small changes, reliable checks, and fixing broken mainline quickly. A tool alone does not create continuous integration.",
+    "evaluation_points": [
+      "Focus on CI"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q182",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is continuous delivery versus continuous deployment?",
+    "preferred_answer": "Continuous delivery keeps software in a releasable state and enables deployment on demand, often with a decision step. Continuous deployment automatically releases changes that pass the pipeline. Both require trustworthy automation, observability, rollback, and controlled risk.",
+    "evaluation_points": [
+      "Focus on CD",
+      "Focus on deployment"
+    ],
+    "resolution_title": "DORA metrics guidance",
+    "resolution_url": "https://dora.dev/guides/dora-metrics-four-keys/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q183",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Where should different tests run in a CI/CD pipeline?",
+    "preferred_answer": "Run fast static, unit, and component checks early; API, contract, and integration checks after relevant packaging or deployment; targeted UI and security checks on suitable environments; and performance or broad compatibility campaigns according to cost and risk. Feedback speed and failure localization should guide placement.",
+    "evaluation_points": [
+      "Focus on pipeline stages"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q184",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a quality gate?",
+    "preferred_answer": "A quality gate is an automated or human decision condition based on agreed evidence, such as critical tests, security findings, coverage trends, or defect risk. Gates should reflect product risk and provide actionable failures. Excessive or unreliable gates encourage bypasses and slow flow without improving quality.",
+    "evaluation_points": [
+      "Focus on quality gate"
+    ],
+    "resolution_title": "SonarQube documentation",
+    "resolution_url": "https://docs.sonarsource.com/sonarqube-server/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q185",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should flaky tests be handled in CI?",
+    "preferred_answer": "Quarantine only when necessary to protect signal, keep the issue visible, assign ownership, preserve failure evidence, and set a repair deadline. Track flake rate and root causes. Do not silently retry until green or permanently ignore tests, because that converts known uncertainty into false confidence.",
+    "evaluation_points": [
+      "Focus on flaky tests",
+      "Focus on quarantine"
+    ],
+    "resolution_title": "Playwright retries",
+    "resolution_url": "https://playwright.dev/docs/test-retries",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q186",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a build artifact, and why should tests reference it?",
+    "preferred_answer": "A build artifact is the versioned output produced by the build, such as a package, container image, or binary. Promoting the same immutable artifact through environments avoids rebuilding different code for test and production. Test reports should record the artifact identifier or digest.",
+    "evaluation_points": [
+      "Focus on artifacts",
+      "Focus on traceability"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q187",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a matrix build?",
+    "preferred_answer": "A matrix build runs jobs across combinations such as runtime versions, browsers, operating systems, or configurations. Use it to cover supported risk efficiently, but control combinatorial growth through tiered schedules and representative combinations. Failures must identify the exact matrix coordinates.",
+    "evaluation_points": [
+      "Focus on matrix",
+      "Focus on compatibility"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q188",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can tests be parallelized safely in a pipeline?",
+    "preferred_answer": "Partition tests by files, tags, or historical timing; allocate independent data and resources; avoid shared mutable state; and consolidate results. Capacity limits and downstream rate limits must be considered. Faster execution is not valuable if parallel collisions increase nondeterminism.",
+    "evaluation_points": [
+      "Focus on parallel execution"
+    ],
+    "resolution_title": "Jenkins Pipeline documentation",
+    "resolution_url": "https://www.jenkins.io/doc/book/pipeline/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q189",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is pipeline as code?",
+    "preferred_answer": "Pipeline as code stores build, test, and deployment workflow definitions in version control. It enables review, traceability, reproducibility, and change history. Sensitive values should be referenced from secure stores, and reusable pipeline code should be versioned and tested like other software.",
+    "evaluation_points": [
+      "Focus on pipeline as code"
+    ],
+    "resolution_title": "Jenkins Pipeline documentation",
+    "resolution_url": "https://www.jenkins.io/doc/book/pipeline/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q190",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should secrets be handled in CI?",
+    "preferred_answer": "Store secrets in the platform or an external secret manager, grant least privilege, rotate them, mask output, avoid command-line or artifact leakage, and restrict untrusted pull requests. Test fixtures should never require production credentials when a scoped test identity can be used.",
+    "evaluation_points": [
+      "Focus on secrets",
+      "Focus on CI security"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q191",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why use containers for test environments?",
+    "preferred_answer": "Containers package applications and dependencies into reproducible images, support disposable environments, and reduce \u201cworks on my machine\u201d differences. They do not automatically reproduce external services, kernel behavior, data scale, or production networking, so environment parity still needs explicit design.",
+    "evaluation_points": [
+      "Focus on containers",
+      "Focus on reproducibility"
+    ],
+    "resolution_title": "Docker Compose documentation",
+    "resolution_url": "https://docs.docker.com/compose/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q192",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How can Docker Compose support integration testing?",
+    "preferred_answer": "Compose can define an application and dependent services, networks, volumes, health checks, and configuration for local or CI execution. Tests should wait for service readiness, use disposable data, collect logs, and tear down reliably. Images should be pinned or versioned for reproducibility.",
+    "evaluation_points": [
+      "Focus on Docker Compose",
+      "Focus on integration"
+    ],
+    "resolution_title": "Docker Compose documentation",
+    "resolution_url": "https://docs.docker.com/compose/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q193",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is environment drift?",
+    "preferred_answer": "Environment drift occurs when configuration, dependencies, data, permissions, or infrastructure differ unexpectedly between environments or over time. It causes misleading failures and escaped defects. Infrastructure as code, immutable images, configuration inventory, and automated health checks reduce drift.",
+    "evaluation_points": [
+      "Focus on environment drift"
+    ],
+    "resolution_title": "Docker Compose documentation",
+    "resolution_url": "https://docs.docker.com/compose/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q194",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should test artifacts and logs be retained?",
+    "preferred_answer": "Retain enough evidence to diagnose failures and audit important decisions: reports, screenshots, traces, logs, coverage, environment metadata, and artifact IDs. Set retention by risk, privacy, storage cost, and compliance. Redact secrets and personal data before upload.",
+    "evaluation_points": [
+      "Focus on artifacts",
+      "Focus on retention"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q195",
+    "role_slug": "qa-testing",
+    "domain": "CI/CD, Containers, and Test Environments",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What should happen when a deployment smoke test fails?",
+    "preferred_answer": "Stop or pause progression according to the release policy, preserve evidence, determine whether the failure is product, deployment, environment, or test-related, and execute rollback or containment when user risk is unacceptable. Communicate impact, ownership, and next update rather than simply rerunning until green.",
+    "evaluation_points": [
+      "Focus on smoke test",
+      "Focus on rollback"
+    ],
+    "resolution_title": "Jenkins Pipeline documentation",
+    "resolution_url": "https://www.jenkins.io/doc/book/pipeline/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q196",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is performance testing?",
+    "preferred_answer": "Performance testing evaluates behavior under workload, including response time, throughput, resource use, scalability, stability, and capacity. It requires a representative workload model, realistic data, controlled environments, and clear objectives. A single fast response proves little about sustained or concurrent behavior.",
+    "evaluation_points": [
+      "Focus on performance testing"
+    ],
+    "resolution_title": "Apache JMeter User Manual",
+    "resolution_url": "https://jmeter.apache.org/usermanual/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q197",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between load, stress, spike, endurance, and volume testing?",
+    "preferred_answer": "Load testing evaluates expected workload; stress testing pushes beyond normal capacity; spike testing evaluates sudden changes; endurance or soak testing checks sustained behavior and leaks; volume testing focuses on large data quantities. A campaign may combine them, but each needs a distinct objective and success criteria.",
+    "evaluation_points": [
+      "Focus on load",
+      "Focus on stress",
+      "Focus on spike",
+      "Focus on soak"
+    ],
+    "resolution_title": "Apache JMeter User Manual",
+    "resolution_url": "https://jmeter.apache.org/usermanual/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q198",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a workload model?",
+    "preferred_answer": "A workload model describes user or transaction mix, arrival rates or concurrency, data distribution, pacing, session behavior, and time patterns. It should come from business expectations or production evidence and state assumptions. Simply setting a virtual-user count does not define realistic load.",
+    "evaluation_points": [
+      "Focus on workload model"
+    ],
+    "resolution_title": "Grafana k6 documentation",
+    "resolution_url": "https://grafana.com/docs/k6/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q199",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between concurrent users and requests per second?",
+    "preferred_answer": "Concurrent users represent overlapping active sessions or virtual users, while requests per second measures traffic rate. The relationship depends on think time, response time, and transaction mix. Tests should use the measure that matches the system and business model rather than treating them as interchangeable.",
+    "evaluation_points": [
+      "Focus on concurrency",
+      "Focus on throughput"
+    ],
+    "resolution_title": "Grafana k6 documentation",
+    "resolution_url": "https://grafana.com/docs/k6/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q200",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are percentiles, and why are they preferred over averages for latency?",
+    "preferred_answer": "A percentile indicates the value below which a percentage of observations fall, such as p95. Averages can hide a slow tail that affects many users. Report multiple percentiles, sample count, errors, and workload context; a p99 based on very few requests can also mislead.",
+    "evaluation_points": [
+      "Focus on latency",
+      "Focus on percentiles"
+    ],
+    "resolution_title": "Grafana k6 documentation",
+    "resolution_url": "https://grafana.com/docs/k6/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q201",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is throughput?",
+    "preferred_answer": "Throughput is the amount of work completed per unit time, such as requests, transactions, messages, or bytes per second. It should be reported with response time, errors, concurrency, and resource utilization because high throughput achieved by failing requests is not useful capacity.",
+    "evaluation_points": [
+      "Focus on throughput"
+    ],
+    "resolution_title": "Apache JMeter User Manual",
+    "resolution_url": "https://jmeter.apache.org/usermanual/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q202",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a performance test threshold?",
+    "preferred_answer": "A threshold is an explicit pass or fail condition for metrics such as error rate, latency percentile, throughput, or checks. Thresholds should reflect user and business objectives and account for environment limitations. They are more useful than comparing charts without an agreed decision rule.",
+    "evaluation_points": [
+      "Focus on thresholds",
+      "Focus on SLO"
+    ],
+    "resolution_title": "Grafana k6 documentation",
+    "resolution_url": "https://grafana.com/docs/k6/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q203",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why is a production-like environment important for performance testing?",
+    "preferred_answer": "Hardware, topology, configuration, data size, caches, integrations, and observability can materially change behavior. A smaller environment can still support comparative or component tests, but absolute capacity results must be scaled carefully and limitations documented.",
+    "evaluation_points": [
+      "Focus on environment parity"
+    ],
+    "resolution_title": "Apache JMeter User Manual",
+    "resolution_url": "https://jmeter.apache.org/usermanual/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q204",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How do you identify a bottleneck during a load test?",
+    "preferred_answer": "Correlate workload and latency with CPU, memory, garbage collection, thread or connection pools, database waits, I/O, network, queue depth, and service traces. Change one factor at a time where possible. The slowest observed component is not automatically the root cause; saturation can propagate upstream.",
+    "evaluation_points": [
+      "Focus on bottleneck",
+      "Focus on observability"
+    ],
+    "resolution_title": "OpenTelemetry documentation",
+    "resolution_url": "https://opentelemetry.io/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q205",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is coordinated omission in load testing?",
+    "preferred_answer": "Coordinated omission occurs when a load generator waits for slow responses and therefore sends fewer requests during the slowdown, under-reporting the user impact. Arrival-rate models or corrected measurements may be needed when real users would continue arriving independently of server latency.",
+    "evaluation_points": [
+      "Focus on coordinated omission"
+    ],
+    "resolution_title": "Grafana k6 documentation",
+    "resolution_url": "https://grafana.com/docs/k6/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q206",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a memory leak, and how can endurance testing reveal it?",
+    "preferred_answer": "A memory leak is retained memory that is no longer needed and accumulates over time. During a soak test, monitor memory, garbage collection, object or process counts, response time, and restarts under stable workload. Confirm whether growth reaches a plateau before declaring a leak.",
+    "evaluation_points": [
+      "Focus on memory leak",
+      "Focus on soak"
+    ],
+    "resolution_title": "Apache JMeter User Manual",
+    "resolution_url": "https://jmeter.apache.org/usermanual/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q207",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are the four golden signals?",
+    "preferred_answer": "A common monitoring model uses latency, traffic, errors, and saturation. Together they describe user-visible performance, demand, failed work, and resource pressure. They are a starting point; business-specific correctness and dependency signals may also be essential.",
+    "evaluation_points": [
+      "Focus on golden signals",
+      "Focus on monitoring"
+    ],
+    "resolution_title": "Google SRE - Monitoring Distributed Systems",
+    "resolution_url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q208",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is distributed tracing, and how does it help testing?",
+    "preferred_answer": "Distributed tracing follows a request across services using correlated spans and attributes. It helps locate latency, errors, retries, and dependency behavior during integration and performance tests. Tests should preserve trace identifiers and verify instrumentation does not expose sensitive data.",
+    "evaluation_points": [
+      "Focus on tracing",
+      "Focus on microservices"
+    ],
+    "resolution_title": "OpenTelemetry documentation",
+    "resolution_url": "https://opentelemetry.io/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q209",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should client-side web performance be evaluated?",
+    "preferred_answer": "Measure user-centric loading and interaction behavior, network resources, rendering, layout stability, JavaScript cost, and device constraints. Lighthouse can provide repeatable laboratory audits, but field data and real-device testing are needed for actual users and networks.",
+    "evaluation_points": [
+      "Focus on web performance",
+      "Focus on Lighthouse"
+    ],
+    "resolution_title": "Lighthouse documentation",
+    "resolution_url": "https://developer.chrome.com/docs/lighthouse/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q210",
+    "role_slug": "qa-testing",
+    "domain": "Performance, Reliability, and Observability Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you communicate a performance regression?",
+    "preferred_answer": "State the baseline and changed build, workload, environment, metric deltas, confidence and variability, user impact, suspected area, and supporting traces or resource evidence. Separate a statistically noisy change from a clear regression and avoid attributing cause before correlation is established.",
+    "evaluation_points": [
+      "Focus on regression",
+      "Focus on reporting"
+    ],
+    "resolution_title": "Grafana k6 documentation",
+    "resolution_url": "https://grafana.com/docs/k6/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q211",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the role of a QA engineer in security testing?",
+    "preferred_answer": "QA should incorporate security-relevant requirements, negative tests, authorization checks, secure defaults, dependency and configuration evidence, and collaboration with security specialists. General testers should not claim penetration-testing expertise, but they can prevent many defects and escalate high-risk findings responsibly.",
+    "evaluation_points": [
+      "Focus on security testing",
+      "Focus on QA role"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q212",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the OWASP Top 10?",
+    "preferred_answer": "The OWASP Top 10 is an awareness document describing widely important web application security risk categories. It helps teams discuss and prioritize controls, but it is not a complete testing standard or a guarantee that checking ten items makes an application secure.",
+    "evaluation_points": [
+      "Focus on OWASP Top 10"
+    ],
+    "resolution_title": "OWASP Top 10",
+    "resolution_url": "https://owasp.org/www-project-top-ten/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q213",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is broken access control?",
+    "preferred_answer": "Broken access control occurs when users can act outside intended permissions, such as reading another user\u2019s record, invoking admin operations, or bypassing workflow restrictions. Tests should vary identity, role, resource ownership, endpoint, method, and object identifier, including direct API requests.",
+    "evaluation_points": [
+      "Focus on access control",
+      "Focus on authorization"
+    ],
+    "resolution_title": "OWASP Top 10",
+    "resolution_url": "https://owasp.org/www-project-top-ten/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q214",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is injection, and how should QA test for it safely?",
+    "preferred_answer": "Injection occurs when untrusted data is interpreted as commands or query syntax by an interpreter. QA can test input handling, parameterization, error behavior, and known safe payloads in authorized environments. Avoid destructive testing on production and involve security specialists for deeper exploitation.",
+    "evaluation_points": [
+      "Focus on injection",
+      "Focus on safe testing"
+    ],
+    "resolution_title": "OWASP Web Security Testing Guide",
+    "resolution_url": "https://owasp.org/www-project-web-security-testing-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q215",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is cross-site scripting?",
+    "preferred_answer": "Cross-site scripting occurs when untrusted content is executed as script in another user\u2019s browser. Testing includes reflected, stored, and DOM-based contexts, output encoding, sanitization, template behavior, and content security controls. Payloads must be used only in authorized environments.",
+    "evaluation_points": [
+      "Focus on XSS"
+    ],
+    "resolution_title": "OWASP Web Security Testing Guide",
+    "resolution_url": "https://owasp.org/www-project-web-security-testing-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q216",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is cross-site request forgery?",
+    "preferred_answer": "CSRF causes a user\u2019s browser to send an unwanted authenticated request using ambient credentials such as cookies. Test state-changing requests for anti-CSRF tokens, SameSite strategy, origin checks where designed, and rejection of missing or invalid protection. APIs using explicit authorization headers have different exposure.",
+    "evaluation_points": [
+      "Focus on CSRF"
+    ],
+    "resolution_title": "OWASP Web Security Testing Guide",
+    "resolution_url": "https://owasp.org/www-project-web-security-testing-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q217",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do authentication and authorization differ?",
+    "preferred_answer": "Authentication establishes who or what the requester is. Authorization determines what that identity may do. Tests need both: valid and invalid identity proof, plus role, ownership, scope, and action checks after authentication.",
+    "evaluation_points": [
+      "Focus on authentication",
+      "Focus on authorization"
+    ],
+    "resolution_title": "OWASP Application Security Verification Standard",
+    "resolution_url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q218",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What password and account tests should QA perform?",
+    "preferred_answer": "Test creation and change rules, secure reset, lockout or throttling, breached or weak-password policy where specified, error messages, session invalidation, multi-factor flows, and recovery abuse. Avoid storing real passwords in test artifacts and use dedicated test identities.",
+    "evaluation_points": [
+      "Focus on passwords",
+      "Focus on account security"
+    ],
+    "resolution_title": "OWASP Application Security Verification Standard",
+    "resolution_url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q219",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is sensitive data exposure in test environments?",
+    "preferred_answer": "Sensitive production data may leak through copied databases, logs, screenshots, exports, analytics, or test reports. Use synthetic or masked data, least privilege, encryption, retention controls, and environment cleanup. Treat test systems as attack surfaces rather than assuming they are harmless.",
+    "evaluation_points": [
+      "Focus on test data",
+      "Focus on privacy"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q220",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should file upload security be tested?",
+    "preferred_answer": "Verify server-side type and content validation, size limits, name normalization, storage outside executable paths, access control, malware scanning where required, and safe retrieval headers. Include malformed and polyglot files in a controlled environment, and confirm rejected files are not retained or processed.",
+    "evaluation_points": [
+      "Focus on file upload security"
+    ],
+    "resolution_title": "OWASP Web Security Testing Guide",
+    "resolution_url": "https://owasp.org/www-project-web-security-testing-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q221",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is security misconfiguration?",
+    "preferred_answer": "Security misconfiguration includes unsafe defaults, unnecessary services, verbose errors, missing headers, broad permissions, exposed consoles, or inconsistent environment settings. QA can include configuration checks in deployment validation and compare expected secure baselines across environments.",
+    "evaluation_points": [
+      "Focus on misconfiguration"
+    ],
+    "resolution_title": "OWASP Top 10",
+    "resolution_url": "https://owasp.org/www-project-top-ten/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q222",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should API object-level authorization be tested?",
+    "preferred_answer": "Use multiple users and roles, create resources owned by each, then attempt read, update, delete, and nested operations by changing object identifiers or paths. Verify the server checks authorization for every action and does not rely on hidden UI controls or unpredictable IDs.",
+    "evaluation_points": [
+      "Focus on BOLA",
+      "Focus on API security"
+    ],
+    "resolution_title": "OWASP API Security Project",
+    "resolution_url": "https://owasp.org/www-project-api-security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q223",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a security test oracle?",
+    "preferred_answer": "A security oracle is the expected protection behavior, such as denial, sanitization, audit logging, rate limiting, or invariant preservation. \u201cNo visible error\u201d is weak evidence; tests should verify status, side effects, data access, logs where authorized, and that failure does not disclose sensitive information.",
+    "evaluation_points": [
+      "Focus on security oracle"
+    ],
+    "resolution_title": "OWASP Application Security Verification Standard",
+    "resolution_url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q224",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How can OWASP ZAP be used responsibly in QA?",
+    "preferred_answer": "ZAP can proxy traffic, passively analyze responses, and perform authorized automated scans. Start with passive or baseline checks in isolated environments, define scope, protect credentials and data, tune rules, and have humans review findings. Never scan systems without explicit permission.",
+    "evaluation_points": [
+      "Focus on ZAP",
+      "Focus on DAST"
+    ],
+    "resolution_title": "OWASP ZAP documentation",
+    "resolution_url": "https://www.zaproxy.org/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q225",
+    "role_slug": "qa-testing",
+    "domain": "Security Testing Basics for QA and Quality Engineers",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What should happen when a tester finds a potential security vulnerability?",
+    "preferred_answer": "Preserve minimal evidence, avoid expanding impact unnecessarily, stop destructive experimentation, follow the organization\u2019s secure reporting and escalation process, restrict disclosure, and support reproduction in an authorized environment. Severity should consider exploitability, data, users, and business impact with security expertise.",
+    "evaluation_points": [
+      "Focus on vulnerability handling"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q226",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How does mobile testing differ from desktop web testing?",
+    "preferred_answer": "Mobile testing must consider device hardware, OS versions, screen sizes, touch and gestures, orientation, permissions, interruptions, background and foreground states, network changes, battery, storage, app lifecycle, and store packaging. Real devices complement emulators because sensors and vendor behavior vary.",
+    "evaluation_points": [
+      "Focus on mobile testing"
+    ],
+    "resolution_title": "Android Developers - Test your app",
+    "resolution_url": "https://developer.android.com/training/testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q227",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should be included in a mobile device coverage strategy?",
+    "preferred_answer": "Use user analytics, supported OS versions, device families, screen and hardware diversity, geography, and business risk. Maintain a small high-frequency core set and a broader periodic matrix. Avoid trying to test every device; document residual compatibility risk.",
+    "evaluation_points": [
+      "Focus on device matrix"
+    ],
+    "resolution_title": "Android Developers - Test your app",
+    "resolution_url": "https://developer.android.com/training/testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q228",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are the strengths and limitations of emulators and simulators?",
+    "preferred_answer": "They are fast, reproducible, and useful for automation, OS versions, and many layout or functional tests. They may not accurately represent performance, sensors, cameras, biometrics, vendor modifications, network radios, thermal behavior, or real input. Critical journeys should include real-device evidence.",
+    "evaluation_points": [
+      "Focus on emulator",
+      "Focus on real device"
+    ],
+    "resolution_title": "Android Developers - Test your app",
+    "resolution_url": "https://developer.android.com/training/testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q229",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should app permissions be tested?",
+    "preferred_answer": "Test first request, allow, deny, deny permanently, later settings changes, partial permissions, OS upgrade, feature fallback, and privacy messaging. Request permissions at an understandable moment and verify the app remains stable when access is unavailable.",
+    "evaluation_points": [
+      "Focus on permissions",
+      "Focus on privacy"
+    ],
+    "resolution_title": "Android Developers - Test your app",
+    "resolution_url": "https://developer.android.com/training/testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q230",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you test app lifecycle transitions?",
+    "preferred_answer": "Exercise launch, background, foreground, screen lock, process termination, device rotation, low memory, update, and restore. Verify data persistence, security, network recovery, media behavior, and whether unfinished work is preserved or safely discarded according to product rules.",
+    "evaluation_points": [
+      "Focus on app lifecycle"
+    ],
+    "resolution_title": "Android Developers - Test your app",
+    "resolution_url": "https://developer.android.com/training/testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q231",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should network variability be tested on mobile?",
+    "preferred_answer": "Test offline, slow, high-latency, packet-loss, Wi-Fi to cellular transitions, captive portals, and interrupted uploads or payments. Verify retry, idempotence, caching, queueing, user feedback, and recovery without duplicate side effects.",
+    "evaluation_points": [
+      "Focus on mobile network",
+      "Focus on offline"
+    ],
+    "resolution_title": "Appium documentation",
+    "resolution_url": "https://appium.io/docs/en/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q232",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Espresso?",
+    "preferred_answer": "Espresso is an Android UI testing framework designed for synchronized interaction with app UI components. It is suitable for reliable in-app tests and integrates with Android testing tooling. External apps, complex device flows, or cross-platform needs may require other approaches.",
+    "evaluation_points": [
+      "Focus on Espresso",
+      "Focus on Android"
+    ],
+    "resolution_title": "Android Developers - Espresso",
+    "resolution_url": "https://developer.android.com/training/testing/espresso",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q233",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is XCTest?",
+    "preferred_answer": "XCTest is Apple\u2019s framework for unit, performance, and UI testing across Apple platforms. UI tests interact with application elements through accessibility information and can capture failures. Tests must manage simulator or device state, permissions, and asynchronous behavior.",
+    "evaluation_points": [
+      "Focus on XCTest",
+      "Focus on iOS"
+    ],
+    "resolution_title": "Apple Developer - XCTest",
+    "resolution_url": "https://developer.apple.com/documentation/xctest",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q234",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is Appium?",
+    "preferred_answer": "Appium is an automation ecosystem that uses the WebDriver model to automate native, hybrid, and mobile web applications through platform drivers. It supports cross-platform patterns, but platform capabilities and locators still differ. Maintainability depends on stable accessibility identifiers and device control.",
+    "evaluation_points": [
+      "Focus on Appium",
+      "Focus on mobile automation"
+    ],
+    "resolution_title": "Appium documentation",
+    "resolution_url": "https://appium.io/docs/en/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q235",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should mobile gestures be tested?",
+    "preferred_answer": "Test tap, long press, swipe, scroll, pinch, drag, edge gestures, and conflicts with OS navigation where relevant. Verify target size, timing tolerance, orientation, accessibility alternatives, and behavior on different densities. Automation coordinates should be avoided when semantic elements are available.",
+    "evaluation_points": [
+      "Focus on gestures"
+    ],
+    "resolution_title": "Appium documentation",
+    "resolution_url": "https://appium.io/docs/en/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q236",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is accessibility testing?",
+    "preferred_answer": "Accessibility testing evaluates whether people with disabilities can perceive, operate, understand, and robustly use the product with assistive technologies and alternative input. It combines automated checks, keyboard and screen-reader evaluation, visual review, and testing with users or specialists where possible.",
+    "evaluation_points": [
+      "Focus on accessibility"
+    ],
+    "resolution_title": "W3C WAI - Evaluating Web Accessibility",
+    "resolution_url": "https://www.w3.org/WAI/test-evaluate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q237",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are the four WCAG principles?",
+    "preferred_answer": "WCAG organizes guidance under Perceivable, Operable, Understandable, and Robust. These principles help testers reason about alternatives for content, keyboard and timing, clarity and error recovery, and compatibility with assistive technologies.",
+    "evaluation_points": [
+      "Focus on WCAG",
+      "Focus on POUR"
+    ],
+    "resolution_title": "W3C Web Content Accessibility Guidelines 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q238",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why are automated accessibility tools insufficient on their own?",
+    "preferred_answer": "Automation can detect some missing names, contrast issues, markup problems, and rule violations, but it cannot reliably judge meaningful alternative text, logical focus order, understandable instructions, or complete screen-reader experience. Manual and human evaluation remain necessary.",
+    "evaluation_points": [
+      "Focus on a11y automation limitations"
+    ],
+    "resolution_title": "W3C WAI - Evaluating Web Accessibility",
+    "resolution_url": "https://www.w3.org/WAI/test-evaluate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q239",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you test keyboard accessibility?",
+    "preferred_answer": "Navigate all interactive functions without a mouse, verify visible focus, logical order, no keyboard traps, standard controls, activation behavior, dialogs, menus, and skip mechanisms. Test at zoom and with dynamic content because focus can be lost after updates.",
+    "evaluation_points": [
+      "Focus on keyboard",
+      "Focus on focus"
+    ],
+    "resolution_title": "W3C Web Content Accessibility Guidelines 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q240",
+    "role_slug": "qa-testing",
+    "domain": "Mobile, Accessibility, and Compatibility Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should be tested for screen-reader compatibility?",
+    "preferred_answer": "Check page or screen structure, headings, control names and roles, states, instructions, error announcements, live updates, reading order, images, tables, dialogs, and custom widgets. Use the supported screen-reader and browser combinations and verify task completion, not only element labels.",
+    "evaluation_points": [
+      "Focus on screen reader",
+      "Focus on semantics"
+    ],
+    "resolution_title": "W3C WAI - Evaluating Web Accessibility",
+    "resolution_url": "https://www.w3.org/WAI/test-evaluate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q241",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is quality engineering?",
+    "preferred_answer": "Quality engineering applies prevention, testability, automation, observability, process improvement, and cross-functional practices across the product lifecycle. It treats quality as a system property created through design and delivery decisions, not only a gate operated by a testing team.",
+    "evaluation_points": [
+      "Focus on quality engineering"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q242",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How is a quality strategy different from a test plan?",
+    "preferred_answer": "A quality strategy defines long-term principles, risk approach, quality objectives, test levels, engineering practices, environments, ownership, and measurement across products or programs. A test plan applies an approach to a specific scope and timeframe. Strategy should guide plans without becoming generic policy text.",
+    "evaluation_points": [
+      "Focus on strategy",
+      "Focus on test plan"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q243",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should a release-quality decision include?",
+    "preferred_answer": "Combine critical user and business risks, changed areas, test evidence, defect impact, non-functional results, environment limits, observability, rollback, support readiness, and explicit residual risk. The decision belongs to accountable stakeholders; QA supplies evidence and challenge rather than an unsupported \u201capprove\u201d stamp.",
+    "evaluation_points": [
+      "Focus on release decision",
+      "Focus on risk"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q244",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is testability, and how can it be improved?",
+    "preferred_answer": "Testability is the degree to which conditions can be established, behavior observed, and results controlled or isolated. Improve it through stable interfaces, deterministic controls, dependency injection, logs and traces, test IDs, data APIs, feature flags, health endpoints, and clear error behavior.",
+    "evaluation_points": [
+      "Focus on testability",
+      "Focus on observability"
+    ],
+    "resolution_title": "OpenTelemetry documentation",
+    "resolution_url": "https://opentelemetry.io/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q245",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do feature flags affect testing?",
+    "preferred_answer": "Feature flags create multiple runtime configurations and can decouple deployment from release. Tests should cover flag on and off, role or cohort targeting, transitions, defaults, stale flags, interactions, and cleanup. Production changes need monitoring and rollback because configuration becomes part of behavior.",
+    "evaluation_points": [
+      "Focus on feature flags",
+      "Focus on release"
+    ],
+    "resolution_title": "DORA metrics guidance",
+    "resolution_url": "https://dora.dev/guides/dora-metrics-four-keys/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q246",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a quality dashboard?",
+    "preferred_answer": "A quality dashboard presents a small set of decision-relevant signals such as risk coverage, pipeline health, defect impact, customer failures, performance objectives, and operational trends. It should show definitions, time windows, and drill-down evidence and avoid ranking people by easily gamed counts.",
+    "evaluation_points": [
+      "Focus on dashboard",
+      "Focus on metrics"
+    ],
+    "resolution_title": "DORA metrics guidance",
+    "resolution_url": "https://dora.dev/guides/dora-metrics-four-keys/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q247",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do leading and lagging quality indicators differ?",
+    "preferred_answer": "Leading indicators signal conditions likely to influence future outcomes, such as review participation, test reliability, change size, or unresolved risk. Lagging indicators describe outcomes already observed, such as escaped defects, incidents, or customer complaints. Use both and validate whether leading indicators actually predict value.",
+    "evaluation_points": [
+      "Focus on leading indicators",
+      "Focus on lagging indicators"
+    ],
+    "resolution_title": "DORA metrics guidance",
+    "resolution_url": "https://dora.dev/guides/dora-metrics-four-keys/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q248",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is change failure rate?",
+    "preferred_answer": "Change failure rate is the proportion of production changes that cause degraded service and require remediation such as rollback, hotfix, or incident response. It is an operational outcome metric, not a direct measure of tester performance. Definitions and deployment units must be consistent.",
+    "evaluation_points": [
+      "Focus on DORA",
+      "Focus on change failure rate"
+    ],
+    "resolution_title": "DORA metrics guidance",
+    "resolution_url": "https://dora.dev/guides/dora-metrics-four-keys/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q249",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How can observability support quality engineering?",
+    "preferred_answer": "Logs, metrics, and traces make internal behavior visible, support test assertions and diagnostics, and provide post-release feedback. Quality engineers can help define correlation IDs, meaningful events, error taxonomy, and dashboards. Observability must be tested for correctness, privacy, and operational usefulness.",
+    "evaluation_points": [
+      "Focus on observability",
+      "Focus on QE"
+    ],
+    "resolution_title": "OpenTelemetry documentation",
+    "resolution_url": "https://opentelemetry.io/docs/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q250",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a blameless post-incident review?",
+    "preferred_answer": "It examines system conditions, decisions, safeguards, and organizational contributors without reducing the event to individual fault. The review reconstructs evidence, identifies learning, and creates prioritized corrective actions with owners. Accountability and blameless learning can coexist.",
+    "evaluation_points": [
+      "Focus on postmortem",
+      "Focus on learning culture"
+    ],
+    "resolution_title": "Google SRE - Monitoring Distributed Systems",
+    "resolution_url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q251",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How should a quality engineer challenge an unrealistic deadline?",
+    "preferred_answer": "Translate the deadline into explicit coverage changes and residual risks, propose a minimum safe scope, identify parallel or automated options, and ask the accountable stakeholder to accept or reduce risk. Avoid vague statements such as \u201cQA needs more time\u201d; connect evidence to user and business impact.",
+    "evaluation_points": [
+      "Focus on deadline",
+      "Focus on stakeholder management"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q252",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you prioritize automation maintenance work?",
+    "preferred_answer": "Prioritize by impact on feedback reliability, delivery blockage, high-risk coverage, execution cost, and recurrence. Repair or remove tests that frequently mislead, improve shared utilities with broad benefit, and avoid polishing low-value suites. Track outcomes such as reduced flake and faster diagnosis.",
+    "evaluation_points": [
+      "Focus on maintenance",
+      "Focus on prioritization"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q253",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is the role of quality engineering in architecture reviews?",
+    "preferred_answer": "Quality engineers raise testability, failure modes, data integrity, security, performance, observability, compatibility, deployment, and rollback questions. They help define quality attributes and verification evidence before architecture becomes expensive to change.",
+    "evaluation_points": [
+      "Focus on architecture",
+      "Focus on quality attributes"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q254",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should teams balance speed and quality?",
+    "preferred_answer": "Speed and quality are not always opposites: small changes, fast automated feedback, testable architecture, and reliable deployment can improve both. When trade-offs remain, make them explicit through risk, reversibility, user impact, and monitoring rather than using \u201cmove fast\u201d or \u201czero defects\u201d as slogans.",
+    "evaluation_points": [
+      "Focus on speed",
+      "Focus on quality trade-off"
+    ],
+    "resolution_title": "DORA metrics guidance",
+    "resolution_url": "https://dora.dev/guides/dora-metrics-four-keys/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "QA-Q255",
+    "role_slug": "qa-testing",
+    "domain": "Quality Engineering Strategy, Governance, and Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What would you include in a 90-day quality improvement plan?",
+    "preferred_answer": "Start with baseline evidence and stakeholder goals, identify the highest-impact failure and flow problems, select a few measurable interventions, assign ownership, and review outcomes frequently. Typical work may include risk-based coverage, flaky-test repair, environment reliability, defect learning, and pipeline feedback, but the plan must fit the product context.",
+    "evaluation_points": [
+      "Focus on quality improvement",
+      "Focus on roadmap"
+    ],
+    "resolution_title": "ISTQB Certified Tester Foundation Level",
+    "resolution_url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];

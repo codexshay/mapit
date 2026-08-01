@@ -442,7 +442,7 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
 'qa-testing': {
     label: 'QA, Software Testing & Quality Engineering',
     icon: '🧪',
-    description: 'Building up interview question bank for this domain...'
+    description: '255 Intensive Questions covering STLC, Test Design, Selenium, Playwright, API/SQL Testing, Automation Frameworks, Performance & Security'
   },
 'data-analytics': {
     label: 'Data, Analytics & Business Intelligence',
