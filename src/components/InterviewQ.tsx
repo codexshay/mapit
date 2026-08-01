@@ -427,7 +427,7 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
 'it-support': {
     label: 'IT Support, Service Desk & End-User Computing',
     icon: '🖥️',
-    description: 'Building up interview question bank for this domain...'
+    description: '168 Intensive Questions covering Service Desk, Windows 11/macOS/Mobile Support, M365, Intune, Autopilot, EUC & ITSM'
   },
 'systems-infra': {
     label: 'System Administration & Infrastructure',
