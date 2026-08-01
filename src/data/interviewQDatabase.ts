@@ -92242,5 +92242,5125 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "SECS-Q001",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Sales engineering role boundaries and accountability, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Sales engineering connects customer problems to technically credible solutions while remaining accountable for discovery quality, solution fit, evidence, risk visibility and a clean handoff. It supports the commercial process without owning every sales or delivery decision.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q002",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Sales engineering role boundaries and accountability during a live customer engagement?",
+    "preferred_answer": "Agree the engagement roles early, document who owns business qualification, technical validation, pricing, security, implementation and post-sale outcomes, and surface gaps before commitments are made.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q003",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Sales engineering role boundaries and accountability from account executive ownership or implementation delivery?",
+    "preferred_answer": "An account executive usually owns the commercial relationship and forecast, while the sales engineer owns technical discovery and validation. Implementation teams own production delivery; the SE must not silently commit their capacity or dates.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q004",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The seller asks the SE to promise a delivery date that the implementation team has not reviewed. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "State that the date is unvalidated, capture the dependency and assumptions, involve the delivery owner, and offer a range or decision gate instead of an unsupported commitment.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q005",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Technical credibility and evidence-based claims, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Technical credibility comes from accurate explanations, transparent limitations, reproducible evidence and the willingness to say what is not yet known. It creates trust that survives beyond the sale.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q006",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Technical credibility and evidence-based claims during a live customer engagement?",
+    "preferred_answer": "Support claims with documentation, test results, architecture constraints and named assumptions; separate generally available capability from roadmap, custom work and partner responsibility.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q007",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Technical credibility and evidence-based claims from product advocacy or feature enthusiasm?",
+    "preferred_answer": "Advocacy explains why a solution may be valuable; evidence-based selling proves whether it meets the customer condition. Enthusiasm without validation increases contractual and adoption risk.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q008",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A prospect asks whether the platform can meet a latency target that has never been benchmarked in the proposed environment. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Do not answer with a blanket yes. Define the workload and percentile target, propose a benchmark or POC, record environmental variables and make the claim conditional on measured results.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q009",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Presales lifecycle and customer handoffs, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "The presales lifecycle links discovery, solution mapping, demonstration, technical validation, commercial alignment and transition to delivery and customer success. Each stage should produce reusable evidence and explicit decisions.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q010",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Presales lifecycle and customer handoffs during a live customer engagement?",
+    "preferred_answer": "Maintain a living engagement record containing outcomes, stakeholders, architecture, risks, decisions, success criteria, open questions and handoff owners rather than leaving knowledge in meetings or chat.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q011",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Presales lifecycle and customer handoffs from a one-time technical presentation?",
+    "preferred_answer": "A presentation is an event; the lifecycle is a controlled sequence of decisions and evidence. Strong presales work reduces re-discovery and prevents post-sale surprise.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q012",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The contract is signed, but the implementation team receives only the proposal deck and no assumptions or open risks. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Run a structured handoff, disclose unresolved items, map commitments to owners and acceptance criteria, and confirm that customer success understands the expected business outcomes and adoption measures.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q013",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Deal integrity, ethics and conflict management, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Deal integrity means protecting the customer and the employer from misleading claims, hidden conflicts, unsuitable solutions and commitments that cannot be delivered. Ethical judgment is part of technical quality.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q014",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Deal integrity, ethics and conflict management during a live customer engagement?",
+    "preferred_answer": "Document material limitations, distinguish fact from estimate, escalate pressure to misrepresent capability and recommend no-bid or disqualification when the solution cannot responsibly meet mandatory needs.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q015",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Deal integrity, ethics and conflict management from winning the opportunity at any cost?",
+    "preferred_answer": "Commercial urgency can justify prioritization, but it cannot justify deception. A trusted advisor may slow or stop a deal to prevent foreseeable harm.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q016",
+    "role_slug": "sales-customer-success",
+    "domain": "Sales Engineering Foundations and Trusted Advisory",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A required compliance capability is absent, but the team proposes describing a future roadmap item as available. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Correct the record, identify the current control gap, involve legal or compliance as needed, offer a legitimate mitigation only if acceptable, and refuse language that presents a future capability as current.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q017",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Business outcome discovery, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Business outcome discovery identifies the measurable change the customer needs, why it matters now, who benefits and what baseline or constraint defines success. It prevents technology from becoming the goal by itself.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Develop a Cloud Adoption Strategy",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q018",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Business outcome discovery during a live customer engagement?",
+    "preferred_answer": "Ask about the current process, cost, risk, experience and strategic objective; convert the conversation into a problem statement, baseline, target metric, timeframe and accountable sponsor.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Develop a Cloud Adoption Strategy",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q019",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Business outcome discovery from a feature checklist?",
+    "preferred_answer": "A feature checklist asks whether functions exist; outcome discovery asks whether those functions create a valuable and measurable change. The same feature may be irrelevant to one customer and critical to another.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Develop a Cloud Adoption Strategy",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q020",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The customer asks for an AI assistant but cannot name a user, workflow, decision or business metric it should improve. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Pause solutioning, map the intended users and tasks, quantify the current pain, define a safe target outcome and decide whether AI is necessary before demonstrating product features.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Develop a Cloud Adoption Strategy",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q021",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Technical current-state discovery, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Technical current-state discovery captures systems of record, integrations, identity, data flows, volumes, environments, operational ownership, constraints and known failure modes. It establishes what the proposed solution must coexist with or replace.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Explore Discovery and Customer Success",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/b2c-study-cert-get-started/b2c-p2-discovery-and-customer-success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q022",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Technical current-state discovery during a live customer engagement?",
+    "preferred_answer": "Use a structured questionnaire and collaborative diagram, validate it with system owners, mark unknowns explicitly and collect representative data such as traffic, object counts, retention and integration frequency.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Explore Discovery and Customer Success",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/b2c-study-cert-get-started/b2c-p2-discovery-and-customer-success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q023",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Technical current-state discovery from future-state architecture design?",
+    "preferred_answer": "Current-state discovery describes what exists and why; future-state design describes the intended solution. Designing first often hides migration, security and operational dependencies.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Explore Discovery and Customer Success",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/b2c-study-cert-get-started/b2c-p2-discovery-and-customer-success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q024",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A proposed integration assumes real-time access, but the customer system only supports nightly file export. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Record the interface constraint, test alternatives such as batch ingestion or middleware, quantify freshness impact and update the solution and value case before proceeding.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Explore Discovery and Customer Success",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/b2c-study-cert-get-started/b2c-p2-discovery-and-customer-success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q025",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Stakeholder and decision-process mapping, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Stakeholder mapping identifies users, technical evaluators, economic buyers, security and legal reviewers, implementation owners, detractors and executive sponsors, together with their influence, concerns and decision rights.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q026",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Stakeholder and decision-process mapping during a live customer engagement?",
+    "preferred_answer": "Build a relationship and decision map, confirm who approves each gate, tailor evidence to stakeholder priorities and identify missing voices such as operations or privacy before late-stage review.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q027",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Stakeholder and decision-process mapping from a contact list?",
+    "preferred_answer": "A contact list records people; a decision map explains influence, accountability, approval sequence and conflicting success measures. It predicts where progress can stall.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q028",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The technical team supports the solution, but procurement introduces a security reviewer two days before the planned signature. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Rebaseline the timeline, run focused security discovery, provide evidence through the approved channel and update the decision map so future gates include the reviewer earlier.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q029",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Qualification, risk and responsible disqualification, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Technical qualification tests whether the problem is real, the solution fits, stakeholders can act, risks are manageable and there is a credible path to value. Responsible disqualification prevents wasted effort and harmful commitments.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q030",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Qualification, risk and responsible disqualification during a live customer engagement?",
+    "preferred_answer": "Define technical and business exit criteria for each stage, score evidence rather than optimism, review deal risks with the account team and explicitly close or recycle opportunities that lack a viable path.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q031",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Qualification, risk and responsible disqualification from simple lead scoring?",
+    "preferred_answer": "Lead scoring estimates interest or fit from limited signals; qualification is an evidence-based decision about whether the opportunity should advance, change scope or stop.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q032",
+    "role_slug": "sales-customer-success",
+    "domain": "Discovery, Qualification and Problem Framing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The prospect repeatedly requests custom work, has no executive sponsor and will not provide data needed for validation. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "State the missing conditions, propose a time-bound recovery plan, and disqualify or defer the opportunity if the sponsor, data and scope cannot be secured.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q033",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Functional and nonfunctional requirements, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Functional requirements describe behavior or capabilities; nonfunctional requirements define qualities and constraints such as availability, latency, security, accessibility, retention and supportability. Both are necessary to establish fit.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q034",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Functional and nonfunctional requirements during a live customer engagement?",
+    "preferred_answer": "Rewrite discovery findings as testable requirements with source, priority, rationale and acceptance measure, and confirm that architecture and POC plans address the highest-risk nonfunctional requirements.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q035",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Functional and nonfunctional requirements from product features?",
+    "preferred_answer": "A feature describes what a product offers; a requirement describes what the customer needs under stated conditions. Matching names without conditions can create false fit.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q036",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The solution supports file upload, but the customer requires encrypted ten-gigabyte files to process within five minutes. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Split the need into functional and measurable quality requirements, validate limits and throughput with the product team, and test the end-to-end path before claiming compliance.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q037",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Fit-gap analysis and assumption control, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Fit-gap analysis maps each material requirement to native fit, configuration, integration, customization, process change, roadmap dependency or unsupported gap. Assumption control prevents inferred conditions from becoming hidden commitments.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q038",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Fit-gap analysis and assumption control during a live customer engagement?",
+    "preferred_answer": "Maintain a matrix with evidence, owner, effort, residual risk and decision; review assumptions with customer and delivery stakeholders and convert critical assumptions into validation tasks.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q039",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Fit-gap analysis and assumption control from a generic product comparison?",
+    "preferred_answer": "A product comparison describes relative capabilities; fit-gap analysis evaluates one customer context and includes the work and risk needed to close gaps.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q040",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A demo workaround is treated as proof that the same behavior is production-ready at enterprise scale. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Classify the workaround honestly, document operational and scale implications, validate it with engineering and require a production-readiness decision before including it in the committed design.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q041",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Requirement prioritization and traceability, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Prioritization determines which needs are mandatory, valuable, deferrable or out of scope; traceability connects each need to source, design decision, validation evidence, contract statement and post-sale outcome.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q042",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Requirement prioritization and traceability during a live customer engagement?",
+    "preferred_answer": "Use a shared backlog or matrix, agree prioritization criteria, preserve the reason behind each requirement and update links when scope or architecture changes.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q043",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Requirement prioritization and traceability from unstructured meeting notes?",
+    "preferred_answer": "Meeting notes capture discussion but do not prove that a mandatory requirement was designed, tested and accepted. Traceability supports change control and handoff.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q044",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A late executive request conflicts with an earlier security requirement and threatens the POC schedule. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Assess value, risk and dependency impact, show the traceability conflict, obtain an explicit priority decision and rebaseline scope or time rather than silently adding work.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q045",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Trade-offs, constraints and architecture decisions, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Architecture decisions balance business goals and quality attributes under constraints. A strong recommendation exposes alternatives, assumptions, risks and the reason one option is preferred.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "What Is the Azure Well-Architected Framework?",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q046",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Trade-offs, constraints and architecture decisions during a live customer engagement?",
+    "preferred_answer": "Use a lightweight decision record that names the context, options, criteria, decision, consequences, owner and evidence; revisit it when requirements or platform capabilities change.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "What Is the Azure Well-Architected Framework?",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q047",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Trade-offs, constraints and architecture decisions from presenting a single preferred option?",
+    "preferred_answer": "A single option hides trade-offs; a decision record demonstrates that alternatives were considered and makes future change safer.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "What Is the Azure Well-Architected Framework?",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q048",
+    "role_slug": "sales-customer-success",
+    "domain": "Requirements, Fit-Gap and Solution Mapping",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The lowest-cost design cannot meet the required recovery time, while the resilient design exceeds the initial budget. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Quantify the cost and recovery trade-off, confirm business criticality, explore phased or tiered options and obtain an accountable risk or funding decision.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "What Is the Azure Well-Architected Framework?",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q049",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Workload decomposition and solution context, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Workload decomposition identifies users, critical flows, data, components, dependencies and operational boundaries that together deliver a business outcome. A context view shows how the product fits the customer ecosystem.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "What Is the Azure Well-Architected Framework?",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q050",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Workload decomposition and solution context during a live customer engagement?",
+    "preferred_answer": "Create a system-context and critical-flow diagram, identify trust boundaries and failure dependencies, and use the model to guide discovery, demo scope, security review and POC tests.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "What Is the Azure Well-Architected Framework?",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q051",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Workload decomposition and solution context from a product component list?",
+    "preferred_answer": "A component list names technologies; a workload model explains interactions, responsibility and business-critical paths.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "What Is the Azure Well-Architected Framework?",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q052",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The proposed solution diagram omits an identity provider that is required for every user session. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Add the dependency and trust boundary, clarify ownership and failure behavior, and validate authentication, availability and support escalation as part of the end-to-end design.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "What Is the Azure Well-Architected Framework?",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q053",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Reliability, scalability and performance reasoning, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Reliability is consistent correct service, scalability is the ability to handle changing demand, and performance is how efficiently the system meets response and throughput targets. Claims require workload-specific measures and failure assumptions.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q054",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Reliability, scalability and performance reasoning during a live customer engagement?",
+    "preferred_answer": "Capture traffic profile, concurrency, latency percentiles, data size, recovery objectives and dependency limits; choose tests and architecture controls that address the critical path.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q055",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Reliability, scalability and performance reasoning from a peak-throughput claim?",
+    "preferred_answer": "A peak-throughput number from a vendor benchmark does not prove the customer workload will meet latency, availability or recovery needs.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q056",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A prospect wants a five-nines availability commitment for a workflow that depends on an external service with a lower SLA. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Model end-to-end availability, identify the dependency limit, propose buffering or degraded-mode patterns, and avoid promising a composite service level the architecture cannot support.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q057",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Multi-tenancy, data residency and isolation, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Multi-tenancy describes how customers share infrastructure while preserving logical or physical isolation. Data residency concerns where data is stored or processed, while sovereignty and transfer obligations may add legal and operational constraints.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q058",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Multi-tenancy, data residency and isolation during a live customer engagement?",
+    "preferred_answer": "Discover tenant-isolation expectations, data classes, permitted regions, backup and support access, subprocessors and cross-border flows; map them to actual platform controls and contract language.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q059",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Multi-tenancy, data residency and isolation from simple geographic hosting choice?",
+    "preferred_answer": "Choosing a region addresses only part of residency. Replication, logs, support access, analytics and disaster recovery can create additional data locations.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q060",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A regulated customer requires all customer data to remain in one country, but the product sends telemetry to a global service. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Trace every data flow, classify telemetry, confirm configurable controls and subprocessors, engage privacy and legal owners, and present a compliant design or an explicit gap.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q061",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Shared responsibility and operating model, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Shared responsibility divides security, configuration, identity, data, integration, monitoring, support and recovery duties among provider, customer and partners. The exact boundary changes by service model and deployment.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Shared Responsibility Model",
+    "resolution_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q062",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Shared responsibility and operating model during a live customer engagement?",
+    "preferred_answer": "Create a responsibility matrix for design, implementation and steady state, identify required customer capabilities and use it to prevent assumptions during security review, onboarding and support.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Shared Responsibility Model",
+    "resolution_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q063",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Shared responsibility and operating model from outsourcing all accountability to the vendor?",
+    "preferred_answer": "Using a managed service reduces some operational tasks but does not remove customer responsibility for data, access, configuration and governance.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Shared Responsibility Model",
+    "resolution_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q064",
+    "role_slug": "sales-customer-success",
+    "domain": "Solution Architecture and Cloud or SaaS Fundamentals",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The customer assumes the vendor will configure their identity provider and monitor every integration after go-live. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Correct the assumption, map each responsibility to an owner and service tier, include required customer actions in the implementation plan and confirm support boundaries before signature.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Shared Responsibility Model",
+    "resolution_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q065",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is HTTP, REST and OpenAPI contracts, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "An API contract describes operations, inputs, outputs, errors, authentication and schemas in a machine-readable and reviewable form. HTTP semantics define how methods, status codes, caching and representation should behave.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "OpenAPI Specification 3.1.1",
+    "resolution_url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q066",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply HTTP, REST and OpenAPI contracts during a live customer engagement?",
+    "preferred_answer": "Use the OpenAPI definition to inspect required fields, limits and security schemes, generate test cases and confirm how errors, versioning and compatibility are handled.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "OpenAPI Specification 3.1.1",
+    "resolution_url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q067",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish HTTP, REST and OpenAPI contracts from informal endpoint documentation?",
+    "preferred_answer": "Informal documentation explains intent; a contract can drive validation and tooling. Neither alone proves runtime reliability or security.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "OpenAPI Specification 3.1.1",
+    "resolution_url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q068",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A demo succeeds with one endpoint, but production integration requires pagination, retries and partial-failure handling that are absent from the proposal. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Review the complete contract and limits, prototype the full workflow, document missing behavior and update the integration design and effort estimate.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "OpenAPI Specification 3.1.1",
+    "resolution_url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q069",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is OAuth 2.0, OpenID Connect and single sign-on, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "OAuth 2.0 provides delegated authorization, while OpenID Connect adds an identity layer for authentication. Secure SSO design depends on flows, scopes, tokens, redirect handling, client type and identity-provider policy.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "OpenID Connect Core 1.0",
+    "resolution_url": "https://openid.net/specs/openid-connect-core-1_0.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q070",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply OAuth 2.0, OpenID Connect and single sign-on during a live customer engagement?",
+    "preferred_answer": "Map actors and trust boundaries, select a supported flow, define scopes and claims, confirm token lifetimes and logout behavior, and test with the customer identity provider.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "OpenID Connect Core 1.0",
+    "resolution_url": "https://openid.net/specs/openid-connect-core-1_0.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q071",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish OAuth 2.0, OpenID Connect and single sign-on from API keys or password sharing?",
+    "preferred_answer": "An API key identifies or authorizes an application but usually lacks user identity and delegated consent. Password sharing is not a substitute for federation.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "OpenID Connect Core 1.0",
+    "resolution_url": "https://openid.net/specs/openid-connect-core-1_0.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q072",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The customer asks to use a shared administrator credential because SSO configuration is delayed. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Reject shared credentials for production, propose a time-bound secure test account only where policy permits, complete federation as a go-live condition and document break-glass controls.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "OpenID Connect Core 1.0",
+    "resolution_url": "https://openid.net/specs/openid-connect-core-1_0.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q073",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is SCIM provisioning and identity lifecycle, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "SCIM standardizes user and group provisioning operations such as create, update, disable and membership synchronization. It complements authentication by managing identity lifecycle and access state.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "RFC 7644: SCIM Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7644",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q074",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply SCIM provisioning and identity lifecycle during a live customer engagement?",
+    "preferred_answer": "Discover authoritative directories, attribute mappings, group rules, deprovisioning timing, error handling and reconciliation; test joiner, mover and leaver cases.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "RFC 7644: SCIM Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7644",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q075",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish SCIM provisioning and identity lifecycle from authentication at sign-in?",
+    "preferred_answer": "SSO proves identity when a user signs in; SCIM creates and maintains the account before and after sign-in. Successful SSO does not guarantee timely deprovisioning.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "RFC 7644: SCIM Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7644",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q076",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A terminated user can no longer authenticate through the identity provider but remains active through an API token. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Treat the issue as lifecycle and token-revocation risk, verify all access paths, define deprovisioning and session controls, and test the complete offboarding process.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "RFC 7644: SCIM Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7644",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q077",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Webhooks, events, retries and idempotency, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Event-driven integrations deliver notifications asynchronously and must handle duplicate, delayed, out-of-order and failed delivery. Idempotency allows safe replay without repeating the business effect.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "RFC 9110: HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q078",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Webhooks, events, retries and idempotency during a live customer engagement?",
+    "preferred_answer": "Define event schema and version, signature validation, acknowledgement, retry policy, dead-letter handling, deduplication key, observability and replay procedure.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "RFC 9110: HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q079",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Webhooks, events, retries and idempotency from a synchronous request-response integration?",
+    "preferred_answer": "A synchronous request gives an immediate response within one call; webhooks decouple timing and require durable failure handling on both sides.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "RFC 9110: HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q080",
+    "role_slug": "sales-customer-success",
+    "domain": "APIs, Integration, Data and Identity",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A webhook retry creates duplicate customer orders after the receiver times out following a successful write. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Use an idempotency key and atomic record of processed events, return acknowledgement only after safe handling, and add replay and reconciliation controls.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "RFC 9110: HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q081",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Security questionnaires and evidence management, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Security questionnaires translate customer control expectations into evidence requests and risk decisions. Reliable responses use approved documentation, scope, dates and accountable control owners.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q082",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Security questionnaires and evidence management during a live customer engagement?",
+    "preferred_answer": "Route questions through the approved trust or security process, reuse current evidence, identify shared responsibilities and mark exceptions instead of inventing answers.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q083",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Security questionnaires and evidence management from verbal assurance from a salesperson?",
+    "preferred_answer": "Verbal assurance may explain context but is not control evidence. Audits, policies, architecture, test results and contractual terms provide different levels of assurance.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q084",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A deadline is hours away and the requested penetration-test report is restricted to an NDA portal. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Do not email restricted evidence or summarize it from memory. Confirm access requirements, provide approved public evidence, negotiate timing and escalate through security and legal channels.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q085",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Encryption, key management and secrets, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Encryption must be described by data state, algorithm or service control, key ownership, rotation, access and recovery. Secrets require controlled storage, distribution, rotation and audit rather than inclusion in code or documents.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Security Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-security-perspective/aws-caf-security-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q086",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Encryption, key management and secrets during a live customer engagement?",
+    "preferred_answer": "Map data at rest and in transit, identify provider-managed or customer-managed keys, confirm supported rotation and access logging, and avoid exposing sensitive configuration in demos or proposals.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Security Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-security-perspective/aws-caf-security-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q087",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Encryption, key management and secrets from a generic statement that data is encrypted?",
+    "preferred_answer": "Saying encrypted is incomplete because transport, storage, backups, logs and keys can have different protections and owners.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Security Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-security-perspective/aws-caf-security-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q088",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A customer requires customer-managed keys, but the selected service tier supports only provider-managed encryption. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "State the product limitation, validate whether another tier or architecture supports the requirement, quantify impact and record an explicit gap or risk acceptance.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Security Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-security-perspective/aws-caf-security-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q089",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Privacy, data minimization and retention, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Privacy engineering manages risks arising from data processing, including collection, purpose, access, retention, sharing and deletion. Security protects data but does not by itself justify or limit processing.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q090",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Privacy, data minimization and retention during a live customer engagement?",
+    "preferred_answer": "Create a data inventory and flow, collect only necessary fields, define purpose and retention, identify data-subject operations and engage privacy owners for high-risk processing.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q091",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Privacy, data minimization and retention from security alone?",
+    "preferred_answer": "Security asks whether data is protected; privacy also asks whether the organization should process it, for what purpose and for how long.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q092",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A demo dataset contains real customer records because synthetic data was not prepared in time. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Stop the use of production personal data, follow incident or privacy procedures if exposure occurred, replace it with approved synthetic or masked data and strengthen demo-data controls.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q093",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Zero trust, least privilege and risk acceptance, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Zero trust removes implicit trust based only on network location and evaluates access to resources using identity, device, policy and context. Least privilege limits permissions to the minimum required.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST SP 800-207: Zero Trust Architecture",
+    "resolution_url": "https://www.nist.gov/publications/zero-trust-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q094",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Zero trust, least privilege and risk acceptance during a live customer engagement?",
+    "preferred_answer": "Map users, services and resources, define authentication and authorization decisions, constrain privileged paths, log access and identify any exception with owner, duration and compensating controls.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST SP 800-207: Zero Trust Architecture",
+    "resolution_url": "https://www.nist.gov/publications/zero-trust-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q095",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Zero trust, least privilege and risk acceptance from network location as proof of trust?",
+    "preferred_answer": "A private network can reduce exposure but does not establish identity or authorization. Zero trust focuses on protecting resources and continuously enforcing policy.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST SP 800-207: Zero Trust Architecture",
+    "resolution_url": "https://www.nist.gov/publications/zero-trust-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q096",
+    "role_slug": "sales-customer-success",
+    "domain": "Security, Privacy and Compliance in Customer Engagements",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The POC uses a broad administrator role because granular permissions are harder to configure. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Limit the exception to an isolated environment, document the risk, test least-privilege roles before production and make removal of broad access an exit criterion.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST SP 800-207: Zero Trust Architecture",
+    "resolution_url": "https://www.nist.gov/publications/zero-trust-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q097",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Demo narrative and use-case alignment, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A customer demo is a controlled story that connects the customer situation, user action, product behavior and measurable outcome. It should prove fit for priority use cases rather than display every feature.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q098",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Demo narrative and use-case alignment during a live customer engagement?",
+    "preferred_answer": "Build the script from discovery, state the scenario and success signal, show only relevant workflows, pause for validation and end with decisions or next steps.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q099",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Demo narrative and use-case alignment from a feature tour?",
+    "preferred_answer": "A feature tour is product-centered; a use-case demo is customer-centered and explains why each interaction matters.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q100",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The audience keeps asking unrelated feature questions that threaten the core demo objective. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Acknowledge and park lower-priority questions, preserve the agreed storyline, answer critical blockers and schedule a focused follow-up for additional use cases.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q101",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Demo environment, data and repeatability, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Demo reliability depends on a controlled environment, realistic but safe data, rehearsed dependencies, reset procedures and a fallback path. Repeatability is part of professional preparation.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q102",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Demo environment, data and repeatability during a live customer engagement?",
+    "preferred_answer": "Create a preflight checklist, seed synthetic data, validate roles and integrations, record expected results, prepare screenshots or a backup environment and define who handles failures.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q103",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Demo environment, data and repeatability from an improvised live production test?",
+    "preferred_answer": "A demo simulates a representative workflow; a production test changes or validates a live system and requires separate approvals and controls.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q104",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A shared demo tenant was modified by another team minutes before an executive session. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Switch to the validated fallback, explain only what is necessary, protect the customer narrative and conduct a post-session environment-control review.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q105",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Objection handling and technical uncertainty, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Good objection handling identifies the underlying risk or missing evidence, confirms its importance and responds with facts, options or a validation plan. It does not treat every concern as resistance.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q106",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Objection handling and technical uncertainty during a live customer engagement?",
+    "preferred_answer": "Clarify the objection, restate the requirement, separate known from unknown, use approved evidence and assign a follow-up owner and date where validation is needed.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q107",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Objection handling and technical uncertainty from defensive rebuttal?",
+    "preferred_answer": "A rebuttal tries to win the argument; consultative handling tries to resolve the decision risk while preserving accuracy and trust.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q108",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A customer challenges a security claim and the SE does not know the current answer. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Say that the answer requires verification, capture the exact question and scope, use the approved security channel and return with dated evidence rather than guessing.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q109",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Executive, practitioner and evaluator demonstrations, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Different audiences need different evidence: executives focus on outcomes, risk and investment; practitioners focus on workflow and operability; evaluators focus on architecture, controls and testability.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q110",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Executive, practitioner and evaluator demonstrations during a live customer engagement?",
+    "preferred_answer": "Keep one consistent solution truth but change the sequence, depth, examples and call to action based on audience role and decision stage.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q111",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Executive, practitioner and evaluator demonstrations from using one level of detail for every audience?",
+    "preferred_answer": "Audience adaptation changes emphasis, not facts. Hiding limitations from an executive or overwhelming them with configuration details are both failures.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q112",
+    "role_slug": "sales-customer-success",
+    "domain": "Demonstrations and Technical Storytelling",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A mixed meeting includes a CIO, security architect and daily operator with only thirty minutes available. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Open with business outcome and risk, demonstrate one critical workflow, show the architecture and control evidence at the right points, and provide deeper technical sessions as follow-up.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q113",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is POC hypothesis and measurable success criteria, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A POC tests a specific technical or business hypothesis using measurable criteria. It should reduce a decision risk, not become an unbounded preview of the product.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Spanner Proof of Concept Playbook",
+    "resolution_url": "https://docs.cloud.google.com/spanner/docs/proof-of-concept-playbook",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q114",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply POC hypothesis and measurable success criteria during a live customer engagement?",
+    "preferred_answer": "Define the decision to be made, baseline, target metrics, workload, data, owner, evidence collection and pass, conditional-pass or fail rules before implementation begins.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Spanner Proof of Concept Playbook",
+    "resolution_url": "https://docs.cloud.google.com/spanner/docs/proof-of-concept-playbook",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q115",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish POC hypothesis and measurable success criteria from an open-ended product trial?",
+    "preferred_answer": "A trial gives access for exploration; a POC is designed to answer a defined question with controlled evidence.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Spanner Proof of Concept Playbook",
+    "resolution_url": "https://docs.cloud.google.com/spanner/docs/proof-of-concept-playbook",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q116",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The customer says the POC will be successful if users like it, but no users, survey or decision threshold are defined. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Turn the statement into named user groups, tasks, measurable feedback and adoption criteria, and obtain sponsor agreement before starting.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Spanner Proof of Concept Playbook",
+    "resolution_url": "https://docs.cloud.google.com/spanner/docs/proof-of-concept-playbook",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q117",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Scope, timebox and entry or exit criteria, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "POC scope limits workloads, integrations, users and environments so the team can reach a decision quickly. Entry and exit criteria prevent work from starting without prerequisites or continuing indefinitely.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Stage 2 - Proof of Concept",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-service-migration/stage-2-poc.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q118",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Scope, timebox and entry or exit criteria during a live customer engagement?",
+    "preferred_answer": "Document in-scope and out-of-scope items, required access and data, start and end dates, responsibilities, change process and the decision triggered by each outcome.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Stage 2 - Proof of Concept",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-service-migration/stage-2-poc.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q119",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Scope, timebox and entry or exit criteria from full production implementation?",
+    "preferred_answer": "A production implementation must meet complete operational requirements; a POC can use controlled shortcuts only when they do not invalidate the hypothesis and are explicitly documented.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Stage 2 - Proof of Concept",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-service-migration/stage-2-poc.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q120",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Each week the customer adds another integration and moves the evaluation date. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Use formal scope control, show effect on evidence and timeline, trade additions for removals or create a second phase, and escalate if the decision cannot be reached within the agreed timebox.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Stage 2 - Proof of Concept",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-service-migration/stage-2-poc.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q121",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is POC test design, measurement and evidence, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "POC evidence should be collected under representative conditions using a repeatable test plan, instrumentation, expected results and documented limitations. A single success case is not enough for high-risk requirements.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Spanner Proof of Concept Playbook",
+    "resolution_url": "https://docs.cloud.google.com/spanner/docs/proof-of-concept-playbook",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q122",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply POC test design, measurement and evidence during a live customer engagement?",
+    "preferred_answer": "Design normal, boundary and failure tests, record configuration and data, capture latency percentiles and error behavior, and preserve results in a customer-readable scorecard.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Spanner Proof of Concept Playbook",
+    "resolution_url": "https://docs.cloud.google.com/spanner/docs/proof-of-concept-playbook",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q123",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish POC test design, measurement and evidence from a successful scripted demonstration?",
+    "preferred_answer": "A scripted demo shows intended behavior; a POC test challenges the solution against agreed criteria and can legitimately fail.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Spanner Proof of Concept Playbook",
+    "resolution_url": "https://docs.cloud.google.com/spanner/docs/proof-of-concept-playbook",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q124",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The benchmark meets average latency but violates the agreed p95 target during peak load. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Report the failure transparently, analyze the bottleneck, test approved remediation and classify the result against the predefined rubric rather than averaging away the risk.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Spanner Proof of Concept Playbook",
+    "resolution_url": "https://docs.cloud.google.com/spanner/docs/proof-of-concept-playbook",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q125",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Pilot-to-production readiness and handoff, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A pilot adds real users, process and operational conditions to validate adoption and delivery readiness. Production readiness also requires security, support, monitoring, capacity, governance and ownership.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Running a Pilot",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/pilot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q126",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Pilot-to-production readiness and handoff during a live customer engagement?",
+    "preferred_answer": "Run a readiness review covering design changes, unresolved findings, training, support, rollback, data migration, service levels and owners, then obtain explicit go-live approval.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Running a Pilot",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/pilot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q127",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Pilot-to-production readiness and handoff from POC completion alone?",
+    "preferred_answer": "POC completion proves a limited hypothesis; it does not prove operational readiness or sustained value.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Running a Pilot",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/pilot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q128",
+    "role_slug": "sales-customer-success",
+    "domain": "Proof of Concept, Trial and Pilot Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A pilot succeeded with ten users, and the commercial team wants to enable ten thousand users the next day. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Require scale and operational readiness evidence, stage the rollout, define monitoring and rollback thresholds, and preserve lessons and open risks in the implementation handoff.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Running a Pilot",
+    "resolution_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/pilot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q129",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is RFI or RFP compliance matrix, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A compliance matrix maps each requirement to response, evidence, exception, owner and contractual impact. It prevents omissions and makes mandatory gaps visible.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q130",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply RFI or RFP compliance matrix during a live customer engagement?",
+    "preferred_answer": "Normalize requirement IDs, distinguish comply, partially comply and not comply, link proof, route legal or security items to owners and preserve customer wording.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q131",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish RFI or RFP compliance matrix from a persuasive marketing response?",
+    "preferred_answer": "Marketing language can explain value; a compliance response must answer the stated requirement precisely and must not imply capability that evidence does not support.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q132",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The proposal team marks every requirement compliant to avoid elimination, despite two known gaps. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Correct the classification, explain the current gap and any valid mitigation, assess no-bid or exception strategy and escalate any pressure to misrepresent capability.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q133",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Evidence-backed response governance, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Response governance ensures that security, product, legal, pricing and service claims come from current approved sources and accountable owners. It reduces contradictory or stale commitments.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Trust Center",
+    "resolution_url": "https://trust.salesforce.com/en/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q134",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Evidence-backed response governance during a live customer engagement?",
+    "preferred_answer": "Maintain reusable approved content with version and scope, assign reviewers, track exceptions and archive the final response and evidence package.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Trust Center",
+    "resolution_url": "https://trust.salesforce.com/en/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q135",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Evidence-backed response governance from copying an old questionnaire?",
+    "preferred_answer": "Reuse improves speed, but copying without freshness and context checks can reproduce expired certifications, unsupported features or wrong service boundaries.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Trust Center",
+    "resolution_url": "https://trust.salesforce.com/en/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q136",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A previous response states a certification that no longer applies to the proposed product edition. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Remove or correct the statement, identify why stale content was reused, obtain current evidence and add version and applicability controls to the response library.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Trust Center",
+    "resolution_url": "https://trust.salesforce.com/en/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q137",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Statement of work assumptions, dependencies and acceptance, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A statement of work converts the solution into deliverables, responsibilities, assumptions, dependencies, milestones, acceptance criteria and change control. It should make delivery boundaries testable.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Turn Opportunities into Deals",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.sales_core_turn_opptys_into_deals.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q138",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Statement of work assumptions, dependencies and acceptance during a live customer engagement?",
+    "preferred_answer": "Trace promised outcomes to deliverables and acceptance tests, identify customer obligations and exclusions, validate estimates with delivery teams and align technical language with contract owners.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Turn Opportunities into Deals",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.sales_core_turn_opptys_into_deals.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q139",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Statement of work assumptions, dependencies and acceptance from a high-level proposal?",
+    "preferred_answer": "A proposal describes the recommended solution and value; an SOW defines what work will be performed and how completion is accepted.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Turn Opportunities into Deals",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.sales_core_turn_opptys_into_deals.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q140",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The SOW includes data migration but does not define source quality, volume or customer cleansing responsibility. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Add measurable data scope and quality assumptions, discovery and remediation steps, owner responsibilities and a change mechanism before final approval.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Turn Opportunities into Deals",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.sales_core_turn_opptys_into_deals.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q141",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Licensing, packaging and entitlement constraints, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A design is commercially usable only when the required features, capacity, environments, support and APIs are included in the proposed entitlements and contract terms.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Turn Opportunities into Deals",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.sales_core_turn_opptys_into_deals.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q142",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Licensing, packaging and entitlement constraints during a live customer engagement?",
+    "preferred_answer": "Map architecture components and user types to editions, limits and consumption, validate pricing assumptions with the commercial owner and disclose variable or third-party costs.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Turn Opportunities into Deals",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.sales_core_turn_opptys_into_deals.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q143",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Licensing, packaging and entitlement constraints from technical capability alone?",
+    "preferred_answer": "Technical capability means the platform can perform an action; entitlement determines whether this customer can legally and operationally use it under the purchased package.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Turn Opportunities into Deals",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.sales_core_turn_opptys_into_deals.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q144",
+    "role_slug": "sales-customer-success",
+    "domain": "RFI, RFP, Proposals and Commercial-Technical Alignment",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The demo uses an enterprise feature that is absent from the quoted edition. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Disclose the mismatch immediately, determine whether the design can use included capability or the quote must change, and correct all affected value and cost calculations.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Turn Opportunities into Deals",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.sales_core_turn_opptys_into_deals.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q145",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Baseline, target outcomes and KPI design, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A value case starts with a credible baseline and target linked to business outcomes. KPIs need definitions, owners, data sources, time horizons and guardrails so improvement can be verified.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Develop a Cloud Adoption Strategy",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q146",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Baseline, target outcomes and KPI design during a live customer engagement?",
+    "preferred_answer": "Quantify the current state, select leading and lagging indicators, document calculation and assumptions, and agree how data will be collected before and after adoption.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Develop a Cloud Adoption Strategy",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q147",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Baseline, target outcomes and KPI design from a vanity metric?",
+    "preferred_answer": "A vanity metric may rise without proving value; an outcome KPI is connected to cost, revenue, experience, risk or strategic capacity and can guide action.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Develop a Cloud Adoption Strategy",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q148",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The customer wants to claim productivity improvement using logins as the only measure. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Use logins as an adoption signal only, add task completion, time, quality or business throughput measures, and define how confounding changes will be considered.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Develop a Cloud Adoption Strategy",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q149",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is TCO, ROI and payback analysis, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Total cost of ownership includes acquisition, implementation, integration, migration, operation, support, training, change and exit costs. ROI compares net benefit to investment; payback estimates when cumulative benefit covers cost.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "FinOps Framework Overview",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q150",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply TCO, ROI and payback analysis during a live customer engagement?",
+    "preferred_answer": "Model a transparent range, include one-time and recurring costs, state benefit timing and probability, run sensitivity analysis and separate vendor-verified inputs from customer assumptions.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "FinOps Framework Overview",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q151",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish TCO, ROI and payback analysis from list-price comparison?",
+    "preferred_answer": "List price compares only a commercial line item; TCO and ROI evaluate the whole operating change and benefit profile.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "FinOps Framework Overview",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q152",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The business case excludes customer staffing and assumes full benefit from day one. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Add internal effort and ramp-up, create conservative and expected scenarios, show sensitivity to adoption and avoid presenting uncertain benefit as guaranteed savings.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "FinOps Framework Overview",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q153",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Unit economics and cost-to-serve, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Unit economics connects technology cost and usage to a meaningful unit of value such as cost per active user, transaction, case resolved or customer served. It supports pricing, architecture and efficiency decisions.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "FinOps Capability: Unit Economics",
+    "resolution_url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q154",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Unit economics and cost-to-serve during a live customer engagement?",
+    "preferred_answer": "Choose a unit aligned to the business outcome, define included costs and data sources, track trend and segment, and explain whether changes result from scale, waste or improved value.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "FinOps Capability: Unit Economics",
+    "resolution_url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q155",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Unit economics and cost-to-serve from aggregate monthly spend?",
+    "preferred_answer": "Aggregate spend shows total cost; unit economics shows cost relative to demand or value. A higher total can be healthy when value units grow faster.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "FinOps Capability: Unit Economics",
+    "resolution_url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q156",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Cloud cost increases after customer adoption doubles, and leadership assumes the solution is becoming less efficient. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Calculate cost per value unit and service level, separate growth from inefficiency, identify controllable drivers and present both total and unit trends.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "FinOps Capability: Unit Economics",
+    "resolution_url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q157",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Benefits realization and value tracking, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Benefits realization continues after purchase by assigning outcome owners, measuring adoption and performance, addressing gaps and updating the value case as conditions change.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-perspective/aws-caf-business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q158",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Benefits realization and value tracking during a live customer engagement?",
+    "preferred_answer": "Carry the value hypothesis into the success plan, define review cadence and data, assign customer and vendor actions, and record realized, forecast and at-risk benefit.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-perspective/aws-caf-business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q159",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Benefits realization and value tracking from closing the sale?",
+    "preferred_answer": "Closing secures a commercial commitment; value realization proves the intended business change and supports renewal or expansion.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-perspective/aws-caf-business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q160",
+    "role_slug": "sales-customer-success",
+    "domain": "Value Engineering, ROI and Business Cases",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Six months after go-live, usage is high but the promised cycle-time reduction has not occurred. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Revalidate the workflow and baseline, identify process or configuration bottlenecks, agree corrective experiments and update the value narrative rather than equating usage with outcome.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-perspective/aws-caf-business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q161",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Opportunity stages and evidence-based exit criteria, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Opportunity stages represent business milestones and should advance only when defined evidence exists, such as validated need, technical fit, sponsor, decision process and next commitment.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Track Your Open Deals with Opportunities",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.essentials_opportunities.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q162",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Opportunity stages and evidence-based exit criteria during a live customer engagement?",
+    "preferred_answer": "Use clear exit criteria, record the evidence and date, identify regression conditions and keep technical validation status visible to the account team.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Track Your Open Deals with Opportunities",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.essentials_opportunities.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q163",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Opportunity stages and evidence-based exit criteria from calendar progression?",
+    "preferred_answer": "Time passing does not make an opportunity more qualified. Calendar progression without evidence creates false pipeline and poor resource allocation.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Track Your Open Deals with Opportunities",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.essentials_opportunities.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q164",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A deal is moved to proposal because the quarter is ending, although security discovery has not started. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Correct or flag the stage, record the missing gate and recovery plan, and prevent the forecast from treating unvalidated technical risk as complete.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Track Your Open Deals with Opportunities",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.essentials_opportunities.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q165",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is CRM hygiene and technical activity capture, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "CRM hygiene means timely, accurate and decision-relevant records of stakeholders, needs, risks, technical actions, next steps and ownership. It enables coordination, forecasting and learning.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Track Your Open Deals with Opportunities",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.essentials_opportunities.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q166",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply CRM hygiene and technical activity capture during a live customer engagement?",
+    "preferred_answer": "Update material discoveries and commitments after customer interactions, use standardized fields where possible, link evidence and avoid storing restricted data in inappropriate locations.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Track Your Open Deals with Opportunities",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.essentials_opportunities.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q167",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish CRM hygiene and technical activity capture from private notes or personal memory?",
+    "preferred_answer": "Private notes can help an individual but do not provide governed team visibility or continuity when ownership changes.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Track Your Open Deals with Opportunities",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.essentials_opportunities.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q168",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The SE leaves the company and no one can find the architecture decisions or POC results. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Reconstruct the record with the customer and internal teams, store artifacts in the approved system, and strengthen mandatory handoff and evidence-capture practices.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Track Your Open Deals with Opportunities",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.essentials_opportunities.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q169",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Forecast risk, stage velocity and next-step quality, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Forecast risk combines stage evidence, age, movement, unresolved blockers, stakeholder engagement and next-step quality. Velocity signals help identify stalled or artificially advanced opportunities.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Sales Stage Analysis Progression",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.stage_analysis_use.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q170",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Forecast risk, stage velocity and next-step quality during a live customer engagement?",
+    "preferred_answer": "Review days in stage and movement history, distinguish customer-owned and internal blockers, define a dated mutual action and document the evidence needed for the next gate.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Sales Stage Analysis Progression",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.stage_analysis_use.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q171",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Forecast risk, stage velocity and next-step quality from a subjective confidence percentage?",
+    "preferred_answer": "A confidence percentage is an opinion unless grounded in observable conditions. Stage velocity and exit criteria provide stronger diagnostic signals.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Sales Stage Analysis Progression",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.stage_analysis_use.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q172",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An opportunity has been in technical validation for three times the historical average with no customer meeting scheduled. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Classify the stall, contact the sponsor, set a decision-oriented next step and downgrade or recycle the forecast if the customer will not re-engage.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Sales Stage Analysis Progression",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.stage_analysis_use.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q173",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Account planning, partner and team alignment, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Account planning aligns customer priorities, relationships, installed technology, open opportunities, risks and joint actions across sales, SE, success, services and partners.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q174",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Account planning, partner and team alignment during a live customer engagement?",
+    "preferred_answer": "Maintain a shared account hypothesis and relationship map, assign roles for each initiative, resolve ownership conflicts and connect expansion ideas to verified customer outcomes.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q175",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Account planning, partner and team alignment from individual seller activity?",
+    "preferred_answer": "Individual activity may create meetings; account planning coordinates the entire customer system and prevents contradictory engagement.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q176",
+    "role_slug": "sales-customer-success",
+    "domain": "CRM, Pipeline and Revenue Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A partner and direct team both promise different architectures to the same customer. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Pause conflicting communication, establish one accountable solution lead, reconcile requirements and evidence, and present a single corrected recommendation with clear partner roles.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q177",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Presales-to-implementation handoff, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A handoff transfers the customer outcomes, requirements, design, commitments, assumptions, risks, validation evidence and relationship context needed to deliver safely. It is a joint review, not a document drop.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Document Your Cloud Adoption Plan",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/document-cloud-adoption-plan",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q178",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Presales-to-implementation handoff during a live customer engagement?",
+    "preferred_answer": "Use a standard packet and meeting, trace contract statements to delivery owners, confirm unresolved items and capture implementation questions without rewriting history.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Document Your Cloud Adoption Plan",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/document-cloud-adoption-plan",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q179",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Presales-to-implementation handoff from a sales summary email?",
+    "preferred_answer": "A summary email may provide context but rarely contains enough traceability or acceptance detail for delivery.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Document Your Cloud Adoption Plan",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/document-cloud-adoption-plan",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q180",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Implementation discovers that a mandatory integration was described as standard but actually requires custom development. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Escalate the discrepancy, preserve customer trust with a factual impact assessment, evaluate remediation and commercial options, and update the source process that allowed the mismatch.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Document Your Cloud Adoption Plan",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/document-cloud-adoption-plan",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q181",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Onboarding plan and time-to-value, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Onboarding coordinates technical setup, data, users, process, training, governance and early outcomes so the customer reaches a meaningful first value milestone quickly and safely.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q182",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Onboarding plan and time-to-value during a live customer engagement?",
+    "preferred_answer": "Define milestones, dependencies, owners, risks and first-value criteria, sequence foundational controls before broad rollout and track blocked time as well as elapsed time.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q183",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Onboarding plan and time-to-value from product activation alone?",
+    "preferred_answer": "Activation means the service is available; time-to-value means the customer completes a useful outcome under real operating conditions.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q184",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Accounts are provisioned, but users cannot complete the priority workflow because data and approval roles are missing. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Reframe status from activated to blocked, resolve data and role dependencies, test the end-to-end workflow and update the onboarding plan and risk log.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Close Deals and Ensure Customer Success Effectively",
+    "resolution_url": "https://trailhead.salesforce.com/content/learn/modules/isv_app_selling/isv_app_selling_success",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q185",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Change management, enablement and customer champions, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Adoption requires changes in behavior, process, incentives and support. Champions connect the solution to local workflows, gather feedback and sustain peer learning.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-perspective/aws-caf-business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q186",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Change management, enablement and customer champions during a live customer engagement?",
+    "preferred_answer": "Segment users, assess impact, build role-based training and communications, equip champions, create support channels and measure competence and behavior rather than attendance alone.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-perspective/aws-caf-business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q187",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Change management, enablement and customer champions from one-time product training?",
+    "preferred_answer": "Training transfers knowledge; change management addresses motivation, process, leadership and reinforcement needed for sustained use.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-perspective/aws-caf-business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q188",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Training attendance is high, but teams continue using the old process because managers still reward the previous behavior. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Engage sponsors to align process and incentives, use champions to identify friction, change the operating model and measure actual workflow adoption.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-perspective/aws-caf-business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q189",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Adoption telemetry and intervention design, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Adoption telemetry combines meaningful product behaviors, breadth, depth, frequency, workflow completion and value signals. Interventions should address the reason for low adoption, not simply increase messages.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q190",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Adoption telemetry and intervention design during a live customer engagement?",
+    "preferred_answer": "Define healthy behavior by persona and lifecycle stage, instrument key events, segment gaps, combine telemetry with qualitative feedback and test targeted interventions.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q191",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Adoption telemetry and intervention design from raw login counts?",
+    "preferred_answer": "Logins show access but not whether users complete valuable tasks or whether use is broad, sustainable and correct.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q192",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Onboarding, Implementation and Adoption",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An administrator logs in daily, causing the account to appear active while business users have stopped using the solution. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Separate admin and end-user behavior, revise the health model, investigate workflow barriers and launch a role-specific recovery plan.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q193",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Outcome-based customer success plans, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A success plan records the customer outcomes, baseline, target measures, stakeholders, milestones, risks and mutual actions needed to realize value. It is co-owned and updated as conditions change.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q194",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Outcome-based customer success plans during a live customer engagement?",
+    "preferred_answer": "Build the plan with the customer, assign outcome and action owners, connect product use to business measures and review progress and risk on a regular cadence.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q195",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Outcome-based customer success plans from a vendor task list?",
+    "preferred_answer": "A task list tracks activity; a success plan explains why the activity matters and whether value is being achieved.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q196",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The plan contains many vendor actions but no customer owner for process change or data quality. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Identify the missing customer responsibilities, secure accountable owners and rebaseline milestones rather than accepting a one-sided plan that cannot deliver the outcome.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q197",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Customer health score design, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A health score combines defined positive and negative signals such as adoption, outcomes, support, sentiment, engagement and commercial risk. It should be explainable, segmented and tested against real outcomes.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q198",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Customer health score design during a live customer engagement?",
+    "preferred_answer": "Choose signals linked to action, normalize and weight them, define thresholds by lifecycle stage, show score changes and validate false positives and negatives with CSM judgment.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q199",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Customer health score design from a single satisfaction score?",
+    "preferred_answer": "Satisfaction is one perspective; health estimates future risk and value using several behavioral and relationship signals.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q200",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A large customer is marked healthy because of high usage, but unresolved executive escalations threaten renewal. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Add escalation and sentiment signals, allow governed overrides with reason, review the account immediately and recalibrate the model using renewal outcomes.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q201",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Quarterly or executive business reviews, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A QBR or EBR is a decision-focused review of outcomes, value, risk, strategic priorities and joint next actions. It should connect operational evidence to the customer executive agenda.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q202",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Quarterly or executive business reviews during a live customer engagement?",
+    "preferred_answer": "Lead with agreed objectives and realized value, explain deviations and risks, use concise evidence, confirm upcoming priorities and finish with owners and decisions.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q203",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Quarterly or executive business reviews from a product activity report?",
+    "preferred_answer": "An activity report lists meetings, tickets or features; an executive review explains business meaning, choices and commitments.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q204",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The account has missed value targets, and the team wants to fill the QBR with roadmap slides. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Address the gap directly, show evidence and root causes, propose a recovery plan with accountable actions and use roadmap only where it supports the customer priority.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q205",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Leading indicators and customer-success analytics, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Leading indicators provide early signals such as declining workflow breadth, unresolved blockers or sponsor disengagement; lagging indicators confirm outcomes such as renewal, churn or realized savings.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q206",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Leading indicators and customer-success analytics during a live customer engagement?",
+    "preferred_answer": "Create a lifecycle-specific indicator set, monitor trend and change rather than static values, define action thresholds and measure whether interventions improve later outcomes.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q207",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Leading indicators and customer-success analytics from lagging renewal outcomes?",
+    "preferred_answer": "Renewal result is important but arrives too late to prevent risk. Leading indicators are useful only when they trigger an owned action.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q208",
+    "role_slug": "sales-customer-success",
+    "domain": "Customer Success Plans, Health and Executive Reviews",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Product usage falls gradually for eight weeks, but the renewal is still six months away and the account has no open support cases. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Treat the trend as an early risk, investigate business and technical causes, engage the champion and sponsor, and track a recovery hypothesis before commercial pressure begins.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q209",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Support boundaries, severity and service expectations, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Support severity should reflect business impact, scope, workaround and time sensitivity under the contracted service model. Clear boundaries explain channels, response objectives and customer responsibilities.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Operations Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/aws-caf-operations-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q210",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Support boundaries, severity and service expectations during a live customer engagement?",
+    "preferred_answer": "Confirm impact and affected users, classify severity using policy, capture diagnostics, set communication expectations and avoid promising resolution times that are not part of the service.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Operations Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/aws-caf-operations-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q211",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Support boundaries, severity and service expectations from general customer urgency?",
+    "preferred_answer": "A customer can feel urgent without meeting the highest severity definition; respectful triage preserves attention for truly critical incidents.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Operations Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/aws-caf-operations-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q212",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A customer labels a cosmetic issue as critical to obtain faster engineering attention. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Acknowledge importance, apply the published severity criteria consistently, provide the correct path and timeline, and escalate only when impact evidence supports it.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework: Operations Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/aws-caf-operations-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q213",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Technical escalation and ownership, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Effective escalation transfers a clear problem statement, impact, timeline, evidence, attempted actions, current owner and requested decision. Ownership remains visible until the receiving team accepts it.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google SRE Workbook: Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q214",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Technical escalation and ownership during a live customer engagement?",
+    "preferred_answer": "Package reproducible evidence, remove irrelevant noise, state urgency and customer commitment, use the correct escalation path and keep one coordinator for updates.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google SRE Workbook: Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q215",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Technical escalation and ownership from forwarding a ticket without context?",
+    "preferred_answer": "Forwarding creates motion; escalation creates accountable expert engagement with enough evidence to act.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google SRE Workbook: Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q216",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The support team has bounced a case between three teams and the customer is repeating the same information. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Assign an incident or escalation owner, consolidate the record, clarify the next diagnostic decision, bring the right specialists together and give the customer one communication channel.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google SRE Workbook: Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q217",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Incident communication and status updates, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Incident communication separates confirmed impact, current mitigation, next update and requested customer action from unverified cause. Cadence and consistency matter during uncertainty.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google SRE Workbook: Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q218",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Incident communication and status updates during a live customer engagement?",
+    "preferred_answer": "Use predefined roles and channels, declare incidents early when warranted, maintain a timeline and send updates at agreed intervals even when there is no material change.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google SRE Workbook: Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q219",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Incident communication and status updates from root-cause speculation?",
+    "preferred_answer": "Root-cause analysis seeks explanation after evidence is available; live status communication prioritizes impact, mitigation and coordination.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google SRE Workbook: Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q220",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An executive demands the cause while engineering is still restoring service. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "State what is confirmed and unknown, explain that mitigation is the current priority, give the next update time and commit to a post-incident analysis without speculating.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google SRE Workbook: Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q221",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Post-incident review and corrective action, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A post-incident review reconstructs impact and contributing conditions, evaluates response and creates owned actions that reduce recurrence or impact. It should support learning rather than simplistic blame.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google SRE Workbook: Postmortem Culture",
+    "resolution_url": "https://sre.google/workbook/postmortem-culture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q222",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Post-incident review and corrective action during a live customer engagement?",
+    "preferred_answer": "Use a factual timeline, identify system and process contributors, prioritize corrective actions by risk, assign owners and dates and verify completion and effectiveness.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google SRE Workbook: Postmortem Culture",
+    "resolution_url": "https://sre.google/workbook/postmortem-culture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q223",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Post-incident review and corrective action from assigning individual blame?",
+    "preferred_answer": "Accountability requires ownership of improvements; blame focuses on a person and can hide the conditions that made the error possible.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google SRE Workbook: Postmortem Culture",
+    "resolution_url": "https://sre.google/workbook/postmortem-culture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q224",
+    "role_slug": "sales-customer-success",
+    "domain": "Support, Escalation and Incident Communication",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The customer asks for a postmortem, but the internal draft contains unsupported statements blaming an operator. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Remove speculation, validate facts with responders, describe contributing controls and decisions, create actionable remediation and route the customer version through the approved review process.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Google SRE Workbook: Postmortem Culture",
+    "resolution_url": "https://sre.google/workbook/postmortem-culture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q225",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Renewal readiness and risk review, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Renewal readiness is a continuous view of realized value, adoption, support, stakeholder alignment, commercial terms and unresolved risks. Early review creates time to recover outcomes.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q226",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Renewal readiness and risk review during a live customer engagement?",
+    "preferred_answer": "Set a renewal timeline, validate sponsor and procurement process, review health and value evidence, resolve entitlement or security issues and agree a mutual action plan.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q227",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Renewal readiness and risk review from starting negotiation near the contract end date?",
+    "preferred_answer": "Negotiation is one phase; readiness begins much earlier with value and risk management.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q228",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The renewal is sixty days away, the executive sponsor left and the value case has not been updated since onboarding. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Rebuild the stakeholder map, identify an interim sponsor, quantify current outcomes and risks and create a realistic recovery and decision plan instead of relying on discounting alone.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q229",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Usage gaps and adoption recovery, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Adoption recovery diagnoses whether low use results from fit, configuration, data, skills, process, sponsorship or changed priorities. The intervention should target the verified cause.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q230",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Usage gaps and adoption recovery during a live customer engagement?",
+    "preferred_answer": "Segment the affected users and workflows, combine telemetry with interviews, form a recovery hypothesis, assign actions and measure completion and outcome change.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q231",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Usage gaps and adoption recovery from generic reminder campaigns?",
+    "preferred_answer": "Reminders assume users forgot; recovery analysis tests why the desired behavior is not occurring.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q232",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A key feature has low use even though training completion is high. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Observe the workflow, inspect permissions and data, compare the feature to the real job and decide whether to remove friction, redesign the process or stop promoting a poor fit.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Create a Health Score in the Customer Success Workspace",
+    "resolution_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q233",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Expansion discovery and value fit, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Expansion should address a newly validated customer outcome, user group or workload and should not hide unresolved value or service problems in the existing scope.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q234",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Expansion discovery and value fit during a live customer engagement?",
+    "preferred_answer": "Use account and product evidence to identify adjacent needs, run discovery with new stakeholders, validate architecture and value and update the success plan and operating model.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q235",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Expansion discovery and value fit from upselling unused capacity?",
+    "preferred_answer": "Upselling starts from available products; value-fit expansion starts from a customer priority and requires evidence that the additional scope can succeed.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q236",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Sales proposes an add-on while the customer is actively escalating adoption failures in the core product. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Prioritize recovery and trust, determine whether the add-on directly resolves the root issue, and pursue expansion only with transparent evidence and customer agreement.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Focus Your Strategic Efforts with Sales Account Plans",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sales.account_plans_overview.htm&language=en_US",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q237",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Save plans, churn learning and responsible win-back, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "A save plan identifies the real reasons for churn risk, distinguishes recoverable and nonrecoverable issues and coordinates value, product, support and commercial actions. Churn learning should improve future qualification and delivery.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q238",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Save plans, churn learning and responsible win-back during a live customer engagement?",
+    "preferred_answer": "Interview stakeholders, separate price from value or fit, propose only credible corrective actions, record loss reasons and feed patterns into product, sales and success processes.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q239",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Save plans, churn learning and responsible win-back from last-minute discounting?",
+    "preferred_answer": "Discounting changes price but cannot repair missing fit, trust or outcomes. It is appropriate only when economics are the verified barrier and value remains strong.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q240",
+    "role_slug": "sales-customer-success",
+    "domain": "Renewals, Expansion and Churn Prevention",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The customer has decided to leave because a mandatory workflow never worked, and leadership requests a large discount offer. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Acknowledge the failure, assess whether a verified remediation can meet the deadline, avoid using discount to obscure the gap and capture the lesson for qualification, design and handoff.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q241",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is AI copilots and customer-data handling, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "AI sales and success assistants can summarize, draft, classify and recommend, but they introduce risks involving confidential data, access, retention, hallucination, bias and unauthorized action.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q242",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply AI copilots and customer-data handling during a live customer engagement?",
+    "preferred_answer": "Use approved tools and data classes, minimize input, respect tenant boundaries, review generated content, log material actions and prevent the model from autonomously making commitments.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q243",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish AI copilots and customer-data handling from ordinary productivity automation?",
+    "preferred_answer": "Traditional automation follows explicit rules; generative AI produces probabilistic output and requires additional evaluation, disclosure and human review.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q244",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An employee pastes a confidential customer architecture and contract terms into an unapproved public AI tool. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Stop further use, follow security and privacy reporting procedures, assess exposure, remove retained data where possible and reinforce approved-tool and data-handling controls.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q245",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Responsible AI claims, evaluation and transparency, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Responsible AI selling explains intended use, limitations, evaluation, human oversight, safety, privacy and accountability. Demonstration quality does not establish reliability across users and conditions.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Artificial Intelligence Overview and Responsible AI Standard",
+    "resolution_url": "https://learn.microsoft.com/en-us/compliance/assurance/assurance-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q246",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Responsible AI claims, evaluation and transparency during a live customer engagement?",
+    "preferred_answer": "Define the task and harm scenarios, use representative evaluation data, measure quality and failure, document limitations and make users aware when AI is involved.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Artificial Intelligence Overview and Responsible AI Standard",
+    "resolution_url": "https://learn.microsoft.com/en-us/compliance/assurance/assurance-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q247",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Responsible AI claims, evaluation and transparency from showing an impressive model response?",
+    "preferred_answer": "A compelling example is anecdotal; evaluation tests whether the system is valid, reliable, safe and appropriate for the intended context.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Artificial Intelligence Overview and Responsible AI Standard",
+    "resolution_url": "https://learn.microsoft.com/en-us/compliance/assurance/assurance-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q248",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A prospect asks whether an AI feature is unbiased and always accurate. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Reject absolute claims, explain the evaluation scope and known limitations, discuss monitoring and human controls and offer evidence relevant to the customer use case.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Artificial Intelligence Overview and Responsible AI Standard",
+    "resolution_url": "https://learn.microsoft.com/en-us/compliance/assurance/assurance-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q249",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Workflow automation, controls and human approval, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Customer-facing automation should reduce repeatable work while preserving authorization, exception handling, auditability and human judgment for high-impact decisions.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "FinOps Framework Overview",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q250",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Workflow automation, controls and human approval during a live customer engagement?",
+    "preferred_answer": "Map triggers, data and actions, classify decision risk, add approvals and rollback, instrument failures and start with bounded workflows whose value and control can be measured.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "FinOps Framework Overview",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q251",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Workflow automation, controls and human approval from automating every available step?",
+    "preferred_answer": "Automation feasibility does not equal suitability. High-volume or irreversible actions may need stronger review even when technically easy to automate.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "FinOps Framework Overview",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q252",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A workflow can automatically send pricing and contractual answers generated from CRM notes. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Keep generated content in draft, retrieve only approved sources, require commercial and legal review for commitments and log the final approved output.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "FinOps Framework Overview",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q253",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Coaching, capability metrics and team leadership, and why does it matter in sales engineering or customer success technology?",
+    "preferred_answer": "Sales engineering and customer-success leadership develops discovery, architecture, demo, value, risk and communication capability while allocating specialists fairly and protecting ethical standards.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q254",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Coaching, capability metrics and team leadership during a live customer engagement?",
+    "preferred_answer": "Use balanced evidence such as technical win quality, cycle time, POC conversion, handoff defects, adoption outcomes, customer feedback and coaching observations; review metrics for gaming and context.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q255",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Coaching, capability metrics and team leadership from measuring only revenue influenced?",
+    "preferred_answer": "Revenue influence is important but can reward overcommitment or account assignment. Capability and quality measures explain how sustainable results are produced.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "SECS-Q256",
+    "role_slug": "sales-customer-success",
+    "domain": "AI-Assisted Selling, Automation and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A top performer wins large deals but repeatedly creates implementation escalations through undocumented commitments. What should the sales engineering or customer success professional do next?",
+    "preferred_answer": "Address the behavior directly, review evidence and customer impact, set nonnegotiable commitment controls, coach or apply performance action and avoid rewarding revenue that transfers hidden cost downstream.",
+    "evaluation_points": [
+      "Frames the answer around customer outcomes, users and decision context",
+      "Uses technically accurate, evidence-backed language and avoids unsupported claims",
+      "Explains assumptions, trade-offs, ownership, risk and verification",
+      "Proposes a practical next step with a measurable success or exit signal"
+    ],
+    "resolution_title": "Salesforce Certified Sales Foundations Exam Guide",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=005298982&language=en_US&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];

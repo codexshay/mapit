@@ -344,7 +344,7 @@ export const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: strin
 'sales-customer-success': {
     label: 'Sales Engineering & Customer Success Technology',
     icon: '💼',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering Discovery & MEDDPICC, Solution Demos, POC/POV Management, RFP Responses, Value Engineering (ROI), Customer Health & Churn Prevention'
   },
 'hardware-iot': {
     label: 'Hardware, Embedded Systems & IoT Engineering',
