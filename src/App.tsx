@@ -3133,10 +3133,10 @@ export default function App() {
                       <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-purple-500/10 text-purple-400 border border-purple-500/30">
                         InterviewQ Database
                       </span>
-                      <span className={`text-[10px] font-mono font-bold ${theme === 'light' ? 'text-slate-700' : 'text-purple-300'}`}>1,788+ Total Qs</span>
+                      <span className={`text-[10px] font-mono font-bold ${theme === 'light' ? 'text-slate-700' : 'text-purple-300'}`}>1,954+ Total Qs</span>
                     </div>
                     <h4 className={`text-xs font-black font-sans uppercase tracking-tight ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
-                      1,788+ Technical Interview Questions across 23 Role Categories
+                      1,954+ Technical Interview Questions across 23 Role Categories
                     </h4>
                     <p className={`text-[11px] font-sans line-clamp-3 ${theme === 'light' ? 'text-slate-600' : 'text-zinc-400'}`}>
                       Newly expanded with +168 System Admin & Infrastructure and +168 IT Support / EUC questions across 42 sub-domains with NIST & ITIL 4 evaluation rubrics.

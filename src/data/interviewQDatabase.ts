@@ -35885,5 +35885,2865 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "NET-Q001",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the purpose of the OSI model, and how should it be used during troubleshooting?",
+    "preferred_answer": "The OSI model is a conceptual framework that separates communication functions into layers. In troubleshooting, use it as an isolation method: verify physical link and errors first, then Layer 2 adjacency and VLANs, Layer 3 addressing and routes, transport reachability, and finally application behavior. It is a reasoning tool, not a statement that every implementation maps perfectly to seven independent components.",
+    "evaluation_points": [
+      "Focus on OSI",
+      "Focus on troubleshooting"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q002",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How does the TCP/IP model differ from the seven-layer OSI model?",
+    "preferred_answer": "The TCP/IP model is tied more directly to the Internet protocol suite. A common four-layer view is link, internet, transport, and application. OSI presentation and session functions are usually handled inside TCP/IP applications, while OSI physical and data-link functions are grouped into the link layer.",
+    "evaluation_points": [
+      "Focus on TCP/IP",
+      "Focus on OSI"
+    ],
+    "resolution_title": "RFC 1122 - Requirements for Internet Hosts",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q003",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Explain encapsulation and de-encapsulation.",
+    "preferred_answer": "As application data moves down the stack, each layer adds control information: transport adds ports and sequencing, the internet layer adds IP addressing, and the link layer adds frame headers and trailers. The receiver removes and interprets those fields in reverse order. A packet capture helps show where the expected header or value is missing or incorrect.",
+    "evaluation_points": [
+      "Focus on encapsulation",
+      "Focus on packet"
+    ],
+    "resolution_title": "Wireshark User Guide",
+    "resolution_url": "https://www.wireshark.org/docs/wsug_html/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q004",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between a collision domain and a broadcast domain?",
+    "preferred_answer": "A collision domain is the set of devices that could contend for the same Ethernet medium; modern full-duplex switched ports make each port its own collision domain. A broadcast domain is the scope in which a Layer 2 broadcast is forwarded. Routers and Layer 3 interfaces separate broadcast domains, while VLANs create separate Layer 2 broadcast domains on switches.",
+    "evaluation_points": [
+      "Focus on Ethernet",
+      "Focus on broadcast"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q005",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate the primary roles of a hub, switch, router, wireless access point, and firewall.",
+    "preferred_answer": "A hub repeats bits to every port. A switch forwards frames using MAC addresses. A router forwards packets between IP networks using a routing table. An access point bridges wireless clients to a network and manages radio access. A firewall applies security policy, often with state tracking, between zones or interfaces.",
+    "evaluation_points": [
+      "Focus on devices"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q006",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are unicast, broadcast, multicast, and anycast?",
+    "preferred_answer": "Unicast is one source to one destination. Broadcast is one sender to all hosts in a local IPv4 broadcast domain. Multicast is one sender to an interested receiver group. Anycast assigns the same address to multiple nodes and routing delivers traffic to one reachable instance, commonly the closest according to routing policy.",
+    "evaluation_points": [
+      "Focus on traffic types"
+    ],
+    "resolution_title": "RFC 4291 - IPv6 Addressing Architecture",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q007",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Define latency, jitter, packet loss, and throughput.",
+    "preferred_answer": "Latency is delay, usually measured one-way or round-trip. Jitter is variation in delay between packets. Packet loss is the percentage of packets not delivered. Throughput is the useful data rate achieved over time. Voice and interactive traffic are especially sensitive to latency, jitter, and loss, even when raw bandwidth is available.",
+    "evaluation_points": [
+      "Focus on performance"
+    ],
+    "resolution_title": "Google SRE - Monitoring Distributed Systems",
+    "resolution_url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q008",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between bandwidth and throughput?",
+    "preferred_answer": "Bandwidth is the nominal capacity of a link or path. Throughput is the actual delivered data rate after protocol overhead, congestion, loss, host limits, and application behavior. Good troubleshooting compares utilization and interface capacity with end-to-end throughput rather than assuming they are equal.",
+    "evaluation_points": [
+      "Focus on capacity"
+    ],
+    "resolution_title": "Google SRE - Monitoring Distributed Systems",
+    "resolution_url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q009",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What symptoms can a duplex mismatch cause?",
+    "preferred_answer": "A duplex mismatch can produce low throughput, intermittent performance, late collisions on a half-duplex side, and CRC or alignment errors. Verify both ends, prefer auto-negotiation on modern Ethernet unless a documented design requires fixed settings, and ensure speed and duplex are consistent.",
+    "evaluation_points": [
+      "Focus on Ethernet",
+      "Focus on errors"
+    ],
+    "resolution_title": "Cisco - Troubleshoot LAN Switching Environments",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q010",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are MTU and TCP MSS, and why do they matter?",
+    "preferred_answer": "MTU is the largest Layer 3 packet an interface can carry without fragmentation at that link. TCP MSS is the largest TCP payload a peer advertises, normally derived from MTU minus IP and TCP headers. MTU mismatches or blocked Path MTU Discovery can cause applications to hang on larger transfers even when ping with small packets succeeds.",
+    "evaluation_points": [
+      "Focus on MTU",
+      "Focus on MSS"
+    ],
+    "resolution_title": "RFC 1122 - Requirements for Internet Hosts",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q011",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Compare TCP and UDP.",
+    "preferred_answer": "TCP is connection-oriented and provides ordered delivery, retransmission, flow control, and congestion control. UDP is datagram-oriented and does not provide those reliability functions itself. UDP reduces protocol overhead and is useful when applications provide their own recovery or prioritize timeliness, but it is not automatically faster in every workload.",
+    "evaluation_points": [
+      "Focus on TCP",
+      "Focus on UDP"
+    ],
+    "resolution_title": "RFC 9293 - Transmission Control Protocol (TCP)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q012",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Describe the TCP three-way handshake.",
+    "preferred_answer": "The client sends SYN with an initial sequence number, the server replies SYN-ACK acknowledging it and supplying its own sequence number, and the client sends ACK. A timeout before SYN-ACK can indicate path, firewall, service, or listener issues; an immediate RST commonly indicates that the destination host is reachable but the port is closed or rejected.",
+    "evaluation_points": [
+      "Focus on TCP handshake"
+    ],
+    "resolution_title": "RFC 9293 - Transmission Control Protocol (TCP)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q013",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does TCP provide reliable delivery?",
+    "preferred_answer": "TCP numbers bytes, acknowledges received data, retransmits when acknowledgements are missing, uses checksums, preserves order, and manages sender/receiver windows. Reliability does not mean zero application errors; resets, timeouts, congestion, and resource exhaustion can still terminate a connection.",
+    "evaluation_points": [
+      "Focus on TCP reliability"
+    ],
+    "resolution_title": "RFC 9293 - Transmission Control Protocol (TCP)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q014",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is ICMP used for, and why is blocking all ICMP harmful?",
+    "preferred_answer": "ICMP reports IP-layer conditions and supports diagnostics such as echo and time exceeded. Some ICMP messages are required for functions such as Path MTU Discovery. Security policy may rate-limit or selectively filter ICMP, but indiscriminate blocking can hide faults and break normal network behavior.",
+    "evaluation_points": [
+      "Focus on ICMP"
+    ],
+    "resolution_title": "RFC 792 - Internet Control Message Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc792.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q015",
+    "role_slug": "networking",
+    "domain": "Networking Fundamentals and Protocol Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How should a candidate approach common port-number questions?",
+    "preferred_answer": "Know frequently used services, but explain that IANA is the authoritative registry and that applications can be configured on non-default ports. Identify both protocol and port where relevant, then validate the actual listener and firewall path rather than assuming a service is present only because a port number is familiar.",
+    "evaluation_points": [
+      "Focus on ports",
+      "Focus on services"
+    ],
+    "resolution_title": "IANA Service Name and Transport Protocol Port Number Registry",
+    "resolution_url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q016",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a MAC address and where is it used?",
+    "preferred_answer": "A MAC address identifies a Layer 2 interface within an Ethernet broadcast domain. Switches learn source MAC addresses and map them to ports in a MAC address table. A MAC address is not normally routed end-to-end; each routed hop builds a new Layer 2 frame for the next link.",
+    "evaluation_points": [
+      "Focus on MAC",
+      "Focus on Ethernet"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q017",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What problem does ARP solve in IPv4?",
+    "preferred_answer": "ARP resolves an IPv4 address to a link-layer address on the local network. A host checks its neighbor cache, broadcasts an ARP request when needed, and stores the response for a period. Duplicate IPs, stale entries, VLAN issues, or security controls can cause incorrect or missing ARP resolution.",
+    "evaluation_points": [
+      "Focus on ARP"
+    ],
+    "resolution_title": "RFC 826 - Address Resolution Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc826.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q018",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Name the important fields in an Ethernet frame.",
+    "preferred_answer": "Operationally important fields include destination and source MAC addresses, an EtherType or length field, optional 802.1Q tagging, payload, and frame check sequence. Preamble and start-of-frame delimiter support synchronization on the wire. The FCS is used to detect transmission corruption.",
+    "evaluation_points": [
+      "Focus on Ethernet frame"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q019",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why do switches flood some frames?",
+    "preferred_answer": "A switch floods broadcasts, many multicasts, and unknown unicasts within the relevant VLAN because it does not yet know a single destination port. It learns from source MAC addresses. Excessive unknown-unicast flooding can indicate table instability, topology problems, or asymmetric traffic capture.",
+    "evaluation_points": [
+      "Focus on switching"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q020",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does Ethernet auto-negotiation work operationally?",
+    "preferred_answer": "Auto-negotiation allows peers to select compatible speed, duplex, and certain capabilities. Both ends should normally use auto-negotiation. When one side is forced and the other is automatic, the result can be a speed or duplex mismatch, so check both endpoints and interface counters.",
+    "evaluation_points": [
+      "Focus on auto-negotiation"
+    ],
+    "resolution_title": "Cisco - Troubleshoot LAN Switching Environments",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q021",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do copper cable category, distance, and termination affect a link?",
+    "preferred_answer": "Cable category and transceiver capabilities determine supported speed over a specified distance. Poor termination, excessive length, damaged pairs, electromagnetic interference, or split pairs can cause flaps and physical errors. Validate with known-good cabling or a cable tester before replacing network equipment.",
+    "evaluation_points": [
+      "Focus on cabling"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q022",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Compare single-mode and multimode fiber.",
+    "preferred_answer": "Single-mode fiber uses a smaller core and is generally used for longer distances; multimode fiber supports shorter links and uses different optics. The fiber type, connector, wavelength, optic, and receive-power budget must match. Dirty connectors and excessive attenuation are common operational faults.",
+    "evaluation_points": [
+      "Focus on fiber"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q023",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should be checked when installing an SFP or other pluggable optic?",
+    "preferred_answer": "Verify device support, optic type, wavelength, fiber or copper medium, connector, distance, and the matching optic at the far end. Check transmit and receive power where digital optical monitoring is available. Inspect and clean fiber ends, and confirm the interface is enabled.",
+    "evaluation_points": [
+      "Focus on SFP",
+      "Focus on optics"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q024",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is Power over Ethernet and what can cause a PoE endpoint to fail?",
+    "preferred_answer": "PoE supplies power over Ethernet cabling to devices such as access points, phones, and cameras. Failures can result from insufficient switch power budget, unsupported standards, cabling faults, classification issues, disabled PoE, or an endpoint drawing more power than negotiated.",
+    "evaluation_points": [
+      "Focus on PoE"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q025",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What do CRC errors usually indicate?",
+    "preferred_answer": "CRC errors indicate frames failed the integrity check. Common causes include bad cabling, dirty or failing optics, interference, faulty interfaces, or duplex-related problems. Correlate CRCs with link flaps, input errors, optical levels, and changes over time before deciding which component to replace.",
+    "evaluation_points": [
+      "Focus on CRC",
+      "Focus on interface errors"
+    ],
+    "resolution_title": "Cisco - Troubleshoot LAN Switching Environments",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q026",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should interface counters be used during an incident?",
+    "preferred_answer": "Record a baseline, clear counters only when authorized, then measure the rate of increase. Examine errors, drops, discards, overruns, queue drops, utilization, and link-state changes. A large historical count without current growth may not explain the present incident.",
+    "evaluation_points": [
+      "Focus on counters"
+    ],
+    "resolution_title": "Cisco - Troubleshoot LAN Switching Environments",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q027",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are CDP and LLDP used for?",
+    "preferred_answer": "They are neighbor-discovery protocols that advertise device and port information on a local link. They help confirm physical topology, management addresses, and connected ports. Because they expose information, enable them according to security policy and do not treat advertisements as proof of trust.",
+    "evaluation_points": [
+      "Focus on CDP",
+      "Focus on LLDP"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q028",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the practical difference between 2.4 GHz, 5 GHz, and 6 GHz Wi-Fi bands?",
+    "preferred_answer": "Lower-frequency 2.4 GHz generally reaches farther but has fewer non-overlapping channels and more interference. 5 GHz offers more channel capacity with shorter practical range. 6 GHz provides additional spectrum for supported devices but has propagation and compatibility considerations. Exact behavior depends on local regulation, channel width, power, and environment.",
+    "evaluation_points": [
+      "Focus on wireless"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q029",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are RSSI and SNR, and which is more useful?",
+    "preferred_answer": "RSSI estimates received signal strength. SNR compares signal level with the noise floor. A strong signal can still perform poorly when noise is high, so SNR and retry rates often explain user experience better than RSSI alone. Vendor scales differ, so interpret values using the platform documentation.",
+    "evaluation_points": [
+      "Focus on wireless",
+      "Focus on RF"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q030",
+    "role_slug": "networking",
+    "domain": "Ethernet, Media, Interfaces, and Wireless Basics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How would you troubleshoot intermittent wireless connectivity?",
+    "preferred_answer": "Confirm scope, client type, location, time pattern, and roaming behavior. Check signal, SNR, channel utilization, interference, retries, authentication, DHCP, and upstream wired health. Compare affected and healthy clients, review controller/AP logs, and avoid changing channel or power settings without a coordinated plan.",
+    "evaluation_points": [
+      "Focus on wireless troubleshooting"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q031",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What information does an IPv4 address and prefix length provide?",
+    "preferred_answer": "The address identifies an interface, while the prefix length defines which leading bits represent the network. Hosts use the prefix to decide whether a destination is on-link or must be sent to a router. The address alone is not enough to determine the local subnet.",
+    "evaluation_points": [
+      "Focus on IPv4"
+    ],
+    "resolution_title": "RFC 4632 - Classless Inter-domain Routing (CIDR)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q032",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are the RFC 1918 private IPv4 ranges?",
+    "preferred_answer": "They are 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16. They are not globally routed on the public Internet and are commonly used with NAT or private interconnection. Overlapping private address space can complicate mergers, VPNs, and cloud connectivity.",
+    "evaluation_points": [
+      "Focus on private IP"
+    ],
+    "resolution_title": "RFC 1918 - Address Allocation for Private Internets",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc1918.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q033",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does an address in 169.254.0.0/16 usually indicate?",
+    "preferred_answer": "It is an IPv4 link-local address. On many client systems it appears when no configured address or DHCP lease is available. Treat it as a symptom: verify link, VLAN, DHCP reachability, relay configuration, scope capacity, and client behavior.",
+    "evaluation_points": [
+      "Focus on APIPA",
+      "Focus on DHCP"
+    ],
+    "resolution_title": "RFC 3927 - IPv4 Link-Local Addresses",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3927.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q034",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are IPv4 loopback addresses used for?",
+    "preferred_answer": "The 127.0.0.0/8 block is reserved for loopback. Testing 127.0.0.1 verifies the local IP stack, not the NIC, switch, gateway, DNS, or remote network. Network devices also use logical loopback interfaces for stable routing IDs and management endpoints, but those use normal assigned prefixes.",
+    "evaluation_points": [
+      "Focus on loopback"
+    ],
+    "resolution_title": "RFC 1122 - Requirements for Internet Hosts",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q035",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a default gateway?",
+    "preferred_answer": "It is the router next hop a host uses for destinations that are not on its local subnet and for which no more-specific route exists. The gateway address must normally be reachable on-link. A wrong mask can make a host incorrectly ARP for a remote address instead of using the gateway.",
+    "evaluation_points": [
+      "Focus on gateway"
+    ],
+    "resolution_title": "RFC 1122 - Requirements for Internet Hosts",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q036",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does a subnet mask or prefix length control?",
+    "preferred_answer": "It determines the network and host portions of an address, the range of on-link addresses, and the broadcast address in conventional IPv4 subnets. Routing uses prefixes, and the most specific matching route wins. Prefix planning affects capacity, summarization, and failure domains.",
+    "evaluation_points": [
+      "Focus on subnetting"
+    ],
+    "resolution_title": "RFC 4632 - Classless Inter-domain Routing (CIDR)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q037",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How many usable host addresses are in a conventional IPv4 /24 subnet?",
+    "preferred_answer": "A /24 leaves 8 host bits, giving 256 total addresses. In a conventional subnet, the all-zero host value is the network address and the all-one value is the broadcast address, leaving 254 usable host addresses. Point-to-point /31 links are a specific exception.",
+    "evaluation_points": [
+      "Focus on subnetting"
+    ],
+    "resolution_title": "RFC 4632 - Classless Inter-domain Routing (CIDR)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q038",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "For 192.0.2.64/27, what are the network, broadcast, and usable range?",
+    "preferred_answer": "A /27 has a block size of 32. The network is 192.0.2.64, the broadcast is 192.0.2.95, and the conventional usable range is 192.0.2.65 through 192.0.2.94. Use documentation ranges such as 192.0.2.0/24 in examples rather than real customer addresses.",
+    "evaluation_points": [
+      "Focus on subnetting"
+    ],
+    "resolution_title": "RFC 5737 - IPv4 Address Blocks for Documentation",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc5737.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q039",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When are /30 and /31 prefixes used on point-to-point links?",
+    "preferred_answer": "A /30 provides four addresses with two conventional usable endpoints. RFC 3021 permits /31 on point-to-point links so both addresses can be used as endpoints without network and broadcast semantics on that link. Device and operational support must be confirmed.",
+    "evaluation_points": [
+      "Focus on point-to-point"
+    ],
+    "resolution_title": "RFC 3021 - Using 31-Bit Prefixes on IPv4 Point-to-Point Links",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q040",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is longest-prefix match?",
+    "preferred_answer": "When multiple routing entries match a destination, the router chooses the route with the greatest prefix length, meaning the most specific network. Administrative distance and metrics are compared among routes to the same prefix, not before a more-specific prefix is selected.",
+    "evaluation_points": [
+      "Focus on routing lookup"
+    ],
+    "resolution_title": "RFC 4632 - Classless Inter-domain Routing (CIDR)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q041",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Explain CIDR and VLSM.",
+    "preferred_answer": "CIDR replaces class-based routing with arbitrary prefix lengths and supports aggregation. VLSM applies different subnet sizes within an address plan so each segment receives an appropriate number of addresses. Good design leaves growth space and avoids unnecessary fragmentation.",
+    "evaluation_points": [
+      "Focus on CIDR",
+      "Focus on VLSM"
+    ],
+    "resolution_title": "RFC 4632 - Classless Inter-domain Routing (CIDR)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q042",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is an IPv6 address written and shortened?",
+    "preferred_answer": "IPv6 uses eight 16-bit hexadecimal groups. Leading zeros in a group can be omitted, and one contiguous sequence of all-zero groups can be replaced by double colon once in an address. Prefix length remains essential; shortening does not change the value.",
+    "evaluation_points": [
+      "Focus on IPv6"
+    ],
+    "resolution_title": "RFC 4291 - IPv6 Addressing Architecture",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q043",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an IPv6 link-local address and why is it important?",
+    "preferred_answer": "IPv6 link-local unicast addresses use FE80::/10 and are valid only on the local link. They support Neighbor Discovery and are commonly used as next-hop addresses for routing protocols. Because the same link-local value can exist on multiple interfaces, an interface or zone identifier may be required.",
+    "evaluation_points": [
+      "Focus on IPv6 link-local"
+    ],
+    "resolution_title": "RFC 4291 - IPv6 Addressing Architecture",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q044",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare SLAAC and DHCPv6.",
+    "preferred_answer": "SLAAC lets a host form addresses from router advertisements and the advertised prefix. DHCPv6 can provide addresses and/or other configuration depending on the deployment. Router advertisements remain important for default-router information; DHCPv6 does not simply replace every Neighbor Discovery function.",
+    "evaluation_points": [
+      "Focus on SLAAC",
+      "Focus on DHCPv6"
+    ],
+    "resolution_title": "RFC 4862 - IPv6 Stateless Address Autoconfiguration",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4862.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q045",
+    "role_slug": "networking",
+    "domain": "IPv4 Addressing, Subnetting, and IPv6",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How does IPv6 Neighbor Discovery differ from ARP?",
+    "preferred_answer": "Neighbor Discovery uses ICMPv6 messages for address resolution, router discovery, prefix discovery, reachability, and duplicate-address detection. It replaces ARP and several IPv4 support mechanisms. Troubleshooting must allow required ICMPv6 and inspect neighbor cache and router advertisements.",
+    "evaluation_points": [
+      "Focus on NDP",
+      "Focus on IPv6"
+    ],
+    "resolution_title": "RFC 4861 - Neighbor Discovery for IPv6",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q046",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between an access port and a trunk port?",
+    "preferred_answer": "An access port carries traffic for one access VLAN and normally sends/receives untagged frames to an endpoint. A trunk carries multiple VLANs using tags, except for any native or untagged VLAN behavior. Verify mode, VLAN membership, allowed list, and native VLAN on both ends.",
+    "evaluation_points": [
+      "Focus on VLAN",
+      "Focus on trunk"
+    ],
+    "resolution_title": "Cisco VLAN trunk configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/vlan/vlan-configuration-guide/configure-vlan-trunks.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q047",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does IEEE 802.1Q tagging add to an Ethernet frame?",
+    "preferred_answer": "It inserts a VLAN tag containing priority information and a VLAN identifier so multiple Layer 2 segments can share a physical link. Devices on the trunk must agree on VLAN handling. A mismatch can place traffic in the wrong broadcast domain or cause it to be dropped.",
+    "evaluation_points": [
+      "Focus on 802.1Q"
+    ],
+    "resolution_title": "Cisco VLAN trunk configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/vlan/vlan-configuration-guide/configure-vlan-trunks.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q048",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the native VLAN on an 802.1Q trunk?",
+    "preferred_answer": "It is the VLAN associated with untagged frames on that trunk according to the device configuration. Native VLAN mismatch can cause control-plane warnings and traffic leakage or misclassification. Many designs avoid user traffic on the native VLAN and explicitly restrict allowed VLANs.",
+    "evaluation_points": [
+      "Focus on native VLAN"
+    ],
+    "resolution_title": "Cisco VLAN trunk configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/vlan/vlan-configuration-guide/configure-vlan-trunks.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q049",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why should the allowed VLAN list on a trunk be controlled?",
+    "preferred_answer": "Allowing only required VLANs reduces unnecessary broadcast propagation, limits accidental extension of segments, and makes topology intent clearer. However, a missing VLAN in the list causes an outage that can look like routing or endpoint failure, so compare both sides and the intended design.",
+    "evaluation_points": [
+      "Focus on allowed VLAN"
+    ],
+    "resolution_title": "Cisco VLAN trunk configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/vlan/vlan-configuration-guide/configure-vlan-trunks.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q050",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How can hosts in different VLANs communicate?",
+    "preferred_answer": "They require Layer 3 routing through a router subinterface, switched virtual interfaces on a Layer 3 switch, or another routed gateway. Each VLAN has a distinct IP subnet, and security policy may filter traffic between them. The endpoint default gateway must point to the correct VLAN interface.",
+    "evaluation_points": [
+      "Focus on inter-VLAN routing"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q051",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What problem does Spanning Tree Protocol solve?",
+    "preferred_answer": "STP creates a loop-free logical topology in a physically redundant Layer 2 network. Without it, loops can cause broadcast storms, MAC-table instability, and duplicate frames. STP blocks selected paths and reconverges when topology changes.",
+    "evaluation_points": [
+      "Focus on STP"
+    ],
+    "resolution_title": "Cisco Spanning Tree Protocol configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/lanswitch/configuration/xe-16/lanswitch-xe-16-book/lsw-span-tree-prot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q052",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How is the STP root bridge elected?",
+    "preferred_answer": "The switch with the lowest bridge ID wins. The bridge ID includes priority and a MAC-derived value, with VLAN-related extensions in common implementations. Production networks should set root placement intentionally rather than accepting an accidental election.",
+    "evaluation_points": [
+      "Focus on STP root"
+    ],
+    "resolution_title": "Cisco Spanning Tree Protocol configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/lanswitch/configuration/xe-16/lanswitch-xe-16-book/lsw-span-tree-prot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q053",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are the major STP port roles?",
+    "preferred_answer": "The root port is a non-root switch's best path toward the root. A designated port is the forwarding port for a segment. Alternate or backup roles provide redundant paths that are not currently forwarding. Exact role names and states depend on the STP version.",
+    "evaluation_points": [
+      "Focus on STP roles"
+    ],
+    "resolution_title": "Cisco Spanning Tree Protocol configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/lanswitch/configuration/xe-16/lanswitch-xe-16-book/lsw-span-tree-prot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q054",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does Rapid STP improve convergence?",
+    "preferred_answer": "Rapid STP uses a faster proposal/agreement process and simplified port states, allowing many topology changes to converge faster than classic 802.1D timers. It still requires correct edge-port and point-to-point assumptions. Compatibility and per-VLAN implementation depend on the platform.",
+    "evaluation_points": [
+      "Focus on RSTP"
+    ],
+    "resolution_title": "Cisco Spanning Tree Protocol configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/lanswitch/configuration/xe-16/lanswitch-xe-16-book/lsw-span-tree-prot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q055",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does BPDU Guard protect against?",
+    "preferred_answer": "BPDU Guard disables or protects an edge port when unexpected bridge protocol data units are received. It helps prevent an endpoint or unauthorized switch from participating in STP. Apply it to true edge ports and follow the platform recovery procedure after investigating the cause.",
+    "evaluation_points": [
+      "Focus on BPDU Guard"
+    ],
+    "resolution_title": "Cisco Spanning Tree Protocol configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/lanswitch/configuration/xe-16/lanswitch-xe-16-book/lsw-span-tree-prot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q056",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does Root Guard do?",
+    "preferred_answer": "Root Guard prevents a port from accepting a superior BPDU that would cause the downstream device to become root. It is useful where the network design must keep the STP root in a controlled location. It is not a substitute for documenting and configuring the intended root priorities.",
+    "evaluation_points": [
+      "Focus on Root Guard"
+    ],
+    "resolution_title": "Cisco Spanning Tree Protocol configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/lanswitch/configuration/xe-16/lanswitch-xe-16-book/lsw-span-tree-prot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q057",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "When should PortFast or an edge-port setting be used?",
+    "preferred_answer": "Use it on ports connected to end hosts so they can transition to forwarding without normal STP delay. Do not use it casually on switch-to-switch links. Pair it with protections such as BPDU Guard according to design and platform guidance.",
+    "evaluation_points": [
+      "Focus on PortFast"
+    ],
+    "resolution_title": "Cisco Spanning Tree Protocol configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/lanswitch/configuration/xe-16/lanswitch-xe-16-book/lsw-span-tree-prot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q058",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is EtherChannel and what benefit does it provide?",
+    "preferred_answer": "EtherChannel bundles compatible physical links into one logical port channel. It increases aggregate capacity, provides link redundancy, and lets STP treat the bundle as one logical link. A single flow is generally placed on one member based on a hashing algorithm, so one flow may not use the total bundle bandwidth.",
+    "evaluation_points": [
+      "Focus on EtherChannel"
+    ],
+    "resolution_title": "Cisco EtherChannel configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q059",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare LACP and PAgP.",
+    "preferred_answer": "LACP is the standards-based negotiation protocol for link aggregation. PAgP is Cisco-specific. Static on mode can build a channel without negotiation but increases the risk of misconfiguration. Members must have compatible speed, duplex, VLAN, trunk, and channel settings.",
+    "evaluation_points": [
+      "Focus on LACP",
+      "Focus on PAgP"
+    ],
+    "resolution_title": "Cisco EtherChannel configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q060",
+    "role_slug": "networking",
+    "domain": "Switching, VLANs, STP, and EtherChannel",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A VLAN works on one switch but not across a trunk. What should you verify?",
+    "preferred_answer": "Confirm VLAN existence and active state, access-port membership, trunk operational mode, allowed VLAN lists, native VLAN agreement, spanning-tree state, port-channel consistency, and MAC learning. Then test the Layer 3 gateway and policy. Compare the intended topology with neighbor discovery and interface counters.",
+    "evaluation_points": [
+      "Focus on VLAN troubleshooting"
+    ],
+    "resolution_title": "Cisco - Troubleshoot LAN Switching Environments",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q061",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What information is typically shown in a routing table?",
+    "preferred_answer": "A routing table shows destination prefixes, next hops or outgoing interfaces, route sources, metrics, and status or age information. The forwarding table may be a separately optimized structure. Troubleshooting compares the control-plane route with the actual forwarding entry and return path.",
+    "evaluation_points": [
+      "Focus on routing table"
+    ],
+    "resolution_title": "Cisco - Understand Administrative Distance",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q062",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Compare connected, static, and dynamic routes.",
+    "preferred_answer": "Connected routes come from active configured interfaces. Static routes are manually defined and predictable but require operational maintenance. Dynamic routing protocols exchange reachability and adapt to topology changes, at the cost of protocol complexity and convergence behavior.",
+    "evaluation_points": [
+      "Focus on routes"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q063",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is administrative distance?",
+    "preferred_answer": "Administrative distance is a local device preference for route sources when the same prefix is learned by different routing mechanisms. Lower is preferred on Cisco devices. It is not exchanged as a universal end-to-end metric and may differ by vendor.",
+    "evaluation_points": [
+      "Focus on administrative distance"
+    ],
+    "resolution_title": "Cisco - Understand Administrative Distance",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q064",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a routing metric?",
+    "preferred_answer": "A metric ranks alternative paths learned by the same routing protocol for the same prefix. Examples include cost, hop count, or composite values. Metrics are protocol-specific, so values from different protocols are not directly compared before route-source preference is considered.",
+    "evaluation_points": [
+      "Focus on metric"
+    ],
+    "resolution_title": "Cisco - Understand Administrative Distance",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q065",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a default route and when is it used?",
+    "preferred_answer": "A default route represents destinations not matched by a more-specific route, commonly 0.0.0.0/0 or ::/0. Edge devices may point it toward an upstream provider, while internal routers may receive or originate one. A default route can hide missing specific routes, so confirm the return path and policy.",
+    "evaluation_points": [
+      "Focus on default route"
+    ],
+    "resolution_title": "RFC 4632 - Classless Inter-domain Routing (CIDR)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q066",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a floating static route?",
+    "preferred_answer": "It is a static route configured with a worse preference than the primary route so it becomes active only when the preferred route is removed. It provides simple backup behavior, but detection depends on what causes the primary route to disappear; tracking or BFD may be needed for remote failures.",
+    "evaluation_points": [
+      "Focus on floating static"
+    ],
+    "resolution_title": "Cisco - Understand Administrative Distance",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q067",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is recursive next-hop resolution?",
+    "preferred_answer": "A route may specify a next-hop IP that is not directly connected. The router performs another lookup to determine how to reach that next hop, potentially through several levels. A route can appear configured but remain unusable if recursive resolution fails.",
+    "evaluation_points": [
+      "Focus on recursive lookup"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q068",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is equal-cost multipath routing?",
+    "preferred_answer": "ECMP installs multiple paths with equal routing preference and metric. Traffic is usually distributed by a flow hash to preserve packet order. It provides capacity and resilience, but asymmetric return paths and per-flow hashing must be considered during testing.",
+    "evaluation_points": [
+      "Focus on ECMP"
+    ],
+    "resolution_title": "Cisco - Understand Administrative Distance",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q069",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is route summarization useful?",
+    "preferred_answer": "Summarization reduces routing-table size, limits topology-detail propagation, and can improve stability. The summary must represent reachable component prefixes and include a plan for discarded or missing subnets; otherwise it can create black holes.",
+    "evaluation_points": [
+      "Focus on summarization"
+    ],
+    "resolution_title": "RFC 4632 - Classless Inter-domain Routing (CIDR)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q070",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is asymmetric routing and why can it be a problem?",
+    "preferred_answer": "Asymmetric routing occurs when forward and return traffic use different paths. IP routing can support it, but stateful firewalls, NAT, packet captures, and performance policies may require both directions to traverse the same device. Verify both paths before concluding that a destination is unreachable.",
+    "evaluation_points": [
+      "Focus on asymmetry"
+    ],
+    "resolution_title": "RFC 1122 - Requirements for Internet Hosts",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc1122.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q071",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is policy-based routing?",
+    "preferred_answer": "Policy-based routing selects a next hop using criteria beyond the normal destination-prefix lookup, such as source, application, or marks. It can solve special path requirements but adds operational complexity, may bypass expected failover, and must be documented and monitored.",
+    "evaluation_points": [
+      "Focus on PBR"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q072",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a first-hop redundancy protocol?",
+    "preferred_answer": "It lets multiple routers present a shared virtual default gateway to hosts. One or more routers forward while peers are ready to take over according to protocol rules. It protects the gateway function, but does not by itself prove that upstream connectivity is healthy.",
+    "evaluation_points": [
+      "Focus on FHRP"
+    ],
+    "resolution_title": "Cisco HSRP configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/routers/ios-xe/network-services/network-services/m_fhp-hsrp-0.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q073",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does HSRP provide default-gateway redundancy?",
+    "preferred_answer": "HSRP elects active and standby routers for a group and uses a virtual IP and MAC address. Hosts keep the virtual gateway while routers exchange control messages and roles change after failure. Tracking can reduce priority when an important upstream object fails.",
+    "evaluation_points": [
+      "Focus on HSRP"
+    ],
+    "resolution_title": "Cisco HSRP configuration guide",
+    "resolution_url": "https://www.cisco.com/c/en/us/td/docs/routers/ios-xe/network-services/network-services/m_fhp-hsrp-0.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q074",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is VRRP and how is it different from HSRP?",
+    "preferred_answer": "VRRP is an IETF-standard first-hop redundancy protocol using a virtual router and priority election. HSRP is a Cisco-originated protocol with similar operational goals. Configuration syntax, timers, and role terminology differ, so verify the platform implementation.",
+    "evaluation_points": [
+      "Focus on VRRP"
+    ],
+    "resolution_title": "RFC 5798 - Virtual Router Redundancy Protocol Version 3",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc5798.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q075",
+    "role_slug": "networking",
+    "domain": "Routing, Route Selection, and First-Hop Resiliency",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What problem does BFD solve?",
+    "preferred_answer": "Bidirectional Forwarding Detection provides rapid, protocol-independent detection of forwarding-path failure between systems. Routing protocols can react to BFD state instead of waiting for slower native timers. Aggressive timers increase control-plane load and should be tested.",
+    "evaluation_points": [
+      "Focus on BFD"
+    ],
+    "resolution_title": "RFC 5880 - Bidirectional Forwarding Detection",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc5880.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q076",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is OSPF called a link-state routing protocol?",
+    "preferred_answer": "OSPF routers describe links and topology in link-state advertisements, build a shared link-state database within an area, and run a shortest-path calculation. This differs from simply advertising a hop count. Database consistency and adjacency state are central to troubleshooting.",
+    "evaluation_points": [
+      "Focus on OSPF"
+    ],
+    "resolution_title": "RFC 2328 - OSPF Version 2",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc2328.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q077",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How is an OSPF router ID selected and why does it matter?",
+    "preferred_answer": "The router ID is a 32-bit identifier used in OSPF control information. Platform selection rules often prefer an explicitly configured value, then loopback or interface addresses. Duplicate router IDs can disrupt adjacencies and database behavior, so configure stable unique IDs.",
+    "evaluation_points": [
+      "Focus on OSPF router ID"
+    ],
+    "resolution_title": "Cisco - OSPF Frequently Asked Questions",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/9237-9.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q078",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Which parameters commonly need to match for OSPF neighbors to form?",
+    "preferred_answer": "They must be on a compatible link and agree on key parameters such as area, network type, hello/dead timing, authentication, and relevant options. IP addressing and masks must suit the network type, and ACLs or control-plane policy must permit OSPF. Compare both sides rather than changing timers blindly.",
+    "evaluation_points": [
+      "Focus on OSPF adjacency"
+    ],
+    "resolution_title": "Cisco - Troubleshoot Common Problems with OSPF",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/12151-trouble-main.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q079",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are the DR and BDR in OSPF?",
+    "preferred_answer": "On multi-access networks, the designated router and backup designated router reduce the number of full adjacencies and centralize LSA exchange for the segment. Election depends on interface priority and router ID. Point-to-point links do not need a DR/BDR election.",
+    "evaluation_points": [
+      "Focus on DR",
+      "Focus on BDR"
+    ],
+    "resolution_title": "RFC 2328 - OSPF Version 2",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc2328.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q080",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why must OSPF area 0 be treated specially?",
+    "preferred_answer": "Area 0 is the backbone through which inter-area routing is normally exchanged. Other areas should connect to the backbone according to OSPF design rules. Poor area design or broken backbone connectivity can cause reachability and summarization problems.",
+    "evaluation_points": [
+      "Focus on OSPF areas"
+    ],
+    "resolution_title": "RFC 2328 - OSPF Version 2",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc2328.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q081",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is an LSA?",
+    "preferred_answer": "A link-state advertisement carries topology or reachability information used to build the OSPF database. Different LSA types serve router, network, summary, external, and other functions. In troubleshooting, compare database presence, age, originator, and installation into the routing table.",
+    "evaluation_points": [
+      "Focus on LSA"
+    ],
+    "resolution_title": "RFC 2328 - OSPF Version 2",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc2328.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q082",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How is OSPF path cost used?",
+    "preferred_answer": "OSPF selects the path with the lowest accumulated cost. Implementations commonly derive interface cost from a reference bandwidth, but defaults and configuration vary. High-speed networks should use a consistent reference bandwidth or explicit costs across routers.",
+    "evaluation_points": [
+      "Focus on OSPF cost"
+    ],
+    "resolution_title": "Cisco - OSPF Frequently Asked Questions",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/9237-9.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q083",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does a passive OSPF interface do?",
+    "preferred_answer": "It suppresses OSPF neighbor formation and hello transmission on that interface while the connected prefix can still be advertised, depending on configuration. It is useful on user-facing or management networks where no neighbor should exist.",
+    "evaluation_points": [
+      "Focus on passive interface"
+    ],
+    "resolution_title": "Cisco - OSPF Frequently Asked Questions",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/9237-9.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q084",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can a default route be introduced into OSPF?",
+    "preferred_answer": "A router can originate a default route into OSPF under configured conditions, often only if a default exists unless an always option is used. Confirm the source default, area behavior, metric type, filtering, and that downstream routers actually install it.",
+    "evaluation_points": [
+      "Focus on OSPF default"
+    ],
+    "resolution_title": "Cisco - OSPF Frequently Asked Questions",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/9237-9.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q085",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "What does an OSPF adjacency stuck in EXSTART or EXCHANGE suggest?",
+    "preferred_answer": "It often points to database-description negotiation or transfer problems such as MTU mismatch, duplicate router ID, unstable links, or filtering. Check neighbor detail, interface MTU, logs, packet captures, and both sides before resetting the process.",
+    "evaluation_points": [
+      "Focus on OSPF states"
+    ],
+    "resolution_title": "Cisco - Troubleshoot Common Problems with OSPF",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/12151-trouble-main.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q086",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is BGP called a path-vector protocol?",
+    "preferred_answer": "BGP advertises network reachability with path attributes, including the sequence of autonomous systems in AS_PATH. Policy controls which routes are accepted, preferred, and advertised. It is designed for inter-domain policy rather than shortest-path calculation alone.",
+    "evaluation_points": [
+      "Focus on BGP"
+    ],
+    "resolution_title": "RFC 4271 - Border Gateway Protocol 4",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4271.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q087",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare eBGP and iBGP.",
+    "preferred_answer": "eBGP exchanges routes between different autonomous systems; iBGP distributes BGP routes within one AS. Their default behaviors, next-hop handling, loop prevention, and topology requirements differ. Large iBGP designs often use route reflectors instead of a full mesh.",
+    "evaluation_points": [
+      "Focus on eBGP",
+      "Focus on iBGP"
+    ],
+    "resolution_title": "RFC 4271 - Border Gateway Protocol 4",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4271.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q088",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What factors influence BGP best-path selection?",
+    "preferred_answer": "BGP compares path attributes and local implementation rules, commonly including weight or local preference, locally originated status, AS path, origin, MED, eBGP versus iBGP, IGP reachability, and tie-breakers. State the vendor context because the exact order and proprietary attributes can differ.",
+    "evaluation_points": [
+      "Focus on BGP best path"
+    ],
+    "resolution_title": "Cisco - Select BGP Best-path Algorithm",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/13753-25.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q089",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Compare local preference and MED.",
+    "preferred_answer": "Local preference is distributed within an AS and is commonly used to choose the preferred outbound exit; higher is generally preferred. MED is advertised to a neighboring AS to suggest a preferred inbound entry; lower is generally preferred under comparison rules. Neither is a global guarantee because receiving policy controls the result.",
+    "evaluation_points": [
+      "Focus on local preference",
+      "Focus on MED"
+    ],
+    "resolution_title": "Cisco - Select BGP Best-path Algorithm",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/13753-25.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q090",
+    "role_slug": "networking",
+    "domain": "OSPF and BGP",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do prefix filters and BGP communities reduce routing risk?",
+    "preferred_answer": "Prefix filters restrict accepted or advertised networks and should enforce ownership, length, and policy. Communities attach policy labels that can influence routing actions without matching every prefix individually. Changes require peer-aware validation because an incorrect filter can withdraw legitimate reachability or leak routes.",
+    "evaluation_points": [
+      "Focus on BGP policy"
+    ],
+    "resolution_title": "RFC 4271 - Border Gateway Protocol 4",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4271.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q091",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between recursive and iterative DNS resolution?",
+    "preferred_answer": "A recursive resolver accepts responsibility for returning a final answer or error to the client, using cached data or querying other servers. Iterative responses refer the requester toward another authoritative source. Client devices normally query a recursive resolver rather than walking the DNS hierarchy themselves.",
+    "evaluation_points": [
+      "Focus on DNS"
+    ],
+    "resolution_title": "RFC 1034 - Domain Names: Concepts and Facilities",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc1034.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q092",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are common DNS record types and their purposes?",
+    "preferred_answer": "A and AAAA map names to IPv4 and IPv6 addresses. CNAME creates an alias. MX identifies mail exchangers. NS identifies authoritative servers. PTR supports reverse mapping. TXT carries text-based data used by many applications. SRV locates services using priority, weight, port, and target.",
+    "evaluation_points": [
+      "Focus on DNS records"
+    ],
+    "resolution_title": "RFC 1035 - Domain Names: Implementation and Specification",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q093",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does DNS TTL affect operations?",
+    "preferred_answer": "TTL controls how long resolvers may cache a record. Lower TTL can speed planned changes but increases query load; high TTL reduces load but extends propagation of old data. Negative answers may also be cached. Confirm the actual resolver path and cached response when validating a change.",
+    "evaluation_points": [
+      "Focus on DNS TTL"
+    ],
+    "resolution_title": "RFC 1035 - Domain Names: Implementation and Specification",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q094",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is split-horizon or split-view DNS?",
+    "preferred_answer": "It returns different answers based on the requesting network, resolver, or policy, often separating internal and external records. Troubleshooting must identify which resolver and view the client used. Testing from a public resolver may not reproduce an internal result.",
+    "evaluation_points": [
+      "Focus on split DNS"
+    ],
+    "resolution_title": "RFC 1034 - Domain Names: Concepts and Facilities",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc1034.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q095",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "A hostname fails but the IP address works. What is your diagnostic sequence?",
+    "preferred_answer": "Confirm the exact name and suffix, query the configured resolver with nslookup or dig, test the FQDN, inspect returned record and TTL, compare with a known-good client, verify resolver reachability, and check client cache. Do not change routing when IP connectivity already works unless DNS reaches a remote path that is failing.",
+    "evaluation_points": [
+      "Focus on DNS troubleshooting"
+    ],
+    "resolution_title": "Microsoft Learn - Troubleshooting DNS clients",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/networking/dns/troubleshoot/troubleshoot-dns-client",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q096",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Describe the DHCP DORA exchange.",
+    "preferred_answer": "A client broadcasts DHCPDISCOVER, a server offers configuration with DHCPOFFER, the client requests an offer using DHCPREQUEST, and the server confirms with DHCPACK. Variations and renewals exist, but DORA is the standard interview shorthand for initial IPv4 lease acquisition.",
+    "evaluation_points": [
+      "Focus on DHCP"
+    ],
+    "resolution_title": "RFC 2131 - Dynamic Host Configuration Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q097",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is DHCP relay and why is it needed?",
+    "preferred_answer": "Routers do not normally forward local broadcasts. A DHCP relay receives a client broadcast and forwards it as a unicast or relayed request to a server, including information about the client subnet. Verify relay address, routing, server scope, firewall policy, and return path.",
+    "evaluation_points": [
+      "Focus on DHCP relay"
+    ],
+    "resolution_title": "RFC 2131 - Dynamic Host Configuration Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q098",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What symptoms indicate DHCP scope exhaustion?",
+    "preferred_answer": "New clients fail to obtain leases while existing clients may continue working until renewal. The server shows few or no free addresses, and clients may self-assign link-local addresses. Check stale leases, lease duration, unauthorized devices, scope size, exclusions, and whether the relay is selecting the expected scope.",
+    "evaluation_points": [
+      "Focus on DHCP scope"
+    ],
+    "resolution_title": "RFC 2131 - Dynamic Host Configuration Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q099",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate DHCP reservations and exclusions.",
+    "preferred_answer": "A reservation maps a client identifier or MAC to a specific address managed by DHCP. An exclusion prevents the server from leasing an address range, often because it is used statically. Inventory and conflict detection are important so static addresses do not overlap the dynamic pool.",
+    "evaluation_points": [
+      "Focus on DHCP reservation"
+    ],
+    "resolution_title": "RFC 2131 - Dynamic Host Configuration Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q100",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between NAT and PAT?",
+    "preferred_answer": "NAT translates address information between realms. PAT, often called NAT overload, multiplexes many internal sessions through one or a small number of external addresses by translating transport ports as well. Verify inside/outside roles, match rules, translation state, routing, and policy.",
+    "evaluation_points": [
+      "Focus on NAT",
+      "Focus on PAT"
+    ],
+    "resolution_title": "Cisco - Configure Network Address Translation",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/network-address-translation-nat/13772-12.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q101",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare static NAT and dynamic NAT.",
+    "preferred_answer": "Static NAT creates a fixed mapping, often for a consistently reachable service. Dynamic NAT selects addresses from a pool when traffic matches. PAT additionally translates ports. Translation does not automatically permit traffic through a firewall or create correct DNS and routing.",
+    "evaluation_points": [
+      "Focus on NAT"
+    ],
+    "resolution_title": "Cisco - Configure Network Address Translation",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/ip/network-address-translation-nat/13772-12.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q102",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why is accurate time important in a NOC?",
+    "preferred_answer": "Consistent time is needed to correlate logs, packet captures, authentication, certificates, routing events, and incident timelines. NTP synchronizes clocks through a hierarchy of sources. Monitor offset, reachability, and source quality rather than merely confirming that an NTP server address is configured.",
+    "evaluation_points": [
+      "Focus on NTP"
+    ],
+    "resolution_title": "RFC 5905 - Network Time Protocol Version 4",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc5905.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q103",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are the manager, agent, MIB, and OID in SNMP?",
+    "preferred_answer": "A manager queries or receives notifications from an agent on a device. The MIB defines manageable objects, and an OID uniquely identifies an object. Secure versions and access control should be used; community strings in older SNMP versions are not equivalent to strong authentication and encryption.",
+    "evaluation_points": [
+      "Focus on SNMP"
+    ],
+    "resolution_title": "RFC 3411 - SNMP Management Frameworks",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3411.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q104",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How are syslog severities used?",
+    "preferred_answer": "Syslog messages include a severity level from emergency through debug. Severity helps routing and prioritization but vendor choices vary, so do not assume every critical incident uses the same numeric level. Centralize logs, normalize timestamps, and preserve device identity and facility context.",
+    "evaluation_points": [
+      "Focus on syslog"
+    ],
+    "resolution_title": "RFC 5424 - The Syslog Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc5424.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q105",
+    "role_slug": "networking",
+    "domain": "DNS, DHCP, NAT, Time, and Network Management Services",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is NetFlow/IPFIX and how does it help a NOC?",
+    "preferred_answer": "Flow telemetry summarizes conversations using fields such as source, destination, ports, protocol, counters, and time. It helps identify top talkers, traffic shifts, scanning, and path usage without storing every packet. Sampling, templates, exporter placement, and retention affect what conclusions are valid.",
+    "evaluation_points": [
+      "Focus on NetFlow",
+      "Focus on IPFIX"
+    ],
+    "resolution_title": "RFC 7011 - IP Flow Information Export (IPFIX)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7011.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q106",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Compare standard and extended IP ACLs in Cisco terminology.",
+    "preferred_answer": "Standard ACLs primarily match source addresses. Extended ACLs can match source, destination, protocol, and ports. Named ACLs improve readability. Always account for direction, interface, sequence order, established sessions, and the implicit deny.",
+    "evaluation_points": [
+      "Focus on ACL"
+    ],
+    "resolution_title": "Cisco - Configure IP Access Lists",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q107",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the implicit deny in an ACL?",
+    "preferred_answer": "Traffic not matched by an earlier permit is denied at the end of the ACL. This is why adding a narrow permit without reviewing existing policy can unexpectedly block other traffic. Use hit counts, staged deployment, and rollback planning.",
+    "evaluation_points": [
+      "Focus on ACL implicit deny"
+    ],
+    "resolution_title": "Cisco - Configure IP Access Lists",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q108",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Where should an ACL be placed?",
+    "preferred_answer": "A common rule is to place extended ACLs near the source and standard ACLs near the destination, but the correct placement depends on topology, hardware resources, return traffic, and policy. The best answer explains the traffic direction and minimizes unintended impact.",
+    "evaluation_points": [
+      "Focus on ACL placement"
+    ],
+    "resolution_title": "Cisco - Configure IP Access Lists",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q109",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare stateful and stateless packet filtering.",
+    "preferred_answer": "Stateless filtering evaluates each packet independently against rules. A stateful firewall tracks connection state and can permit return traffic based on an established session. Asymmetric routing can break stateful inspection when directions traverse different firewalls.",
+    "evaluation_points": [
+      "Focus on firewall"
+    ],
+    "resolution_title": "RFC 4301 - Security Architecture for IP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4301.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q110",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is the difference between IPsec transport mode and tunnel mode?",
+    "preferred_answer": "Transport mode protects the payload of the original IP packet and is generally used host-to-host. Tunnel mode encapsulates the entire original packet inside a new IP packet and is common for gateway VPNs. Deployment design determines which endpoints perform encryption and routing.",
+    "evaluation_points": [
+      "Focus on IPsec"
+    ],
+    "resolution_title": "RFC 4301 - Security Architecture for IP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4301.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q111",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What roles do IKE and ESP play in an IPsec VPN?",
+    "preferred_answer": "IKE negotiates peers, authentication, algorithms, keys, and security associations. ESP provides confidentiality and/or integrity for protected traffic. Troubleshooting separates phase or child-SA negotiation from data-plane selectors, routing, NAT traversal, and firewall handling.",
+    "evaluation_points": [
+      "Focus on IKE",
+      "Focus on ESP"
+    ],
+    "resolution_title": "RFC 4301 - Security Architecture for IP",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4301.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q112",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why is GRE sometimes combined with IPsec?",
+    "preferred_answer": "GRE can encapsulate multicast and various routed traffic but does not provide encryption by itself. IPsec provides protection. The combination supports routing protocols or flexible overlays, but adds overhead and MTU considerations.",
+    "evaluation_points": [
+      "Focus on GRE",
+      "Focus on IPsec"
+    ],
+    "resolution_title": "RFC 2784 - Generic Routing Encapsulation",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc2784.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q113",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does AAA stand for?",
+    "preferred_answer": "Authentication verifies identity, authorization determines permitted actions, and accounting records activity. Network-device access should use centralized AAA where appropriate, with secure local break-glass access, role-based privileges, logging, and tested failure behavior.",
+    "evaluation_points": [
+      "Focus on AAA"
+    ],
+    "resolution_title": "RFC 2865 - Remote Authentication Dial In User Service (RADIUS)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc2865.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q114",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare RADIUS and TACACS+ for network-device administration.",
+    "preferred_answer": "RADIUS is an IETF protocol widely used for network access and combines authentication and authorization in common workflows. TACACS+ is often used for device administration and can separate AAA functions and protect more of the exchange. Product support and policy determine the choice.",
+    "evaluation_points": [
+      "Focus on RADIUS",
+      "Focus on TACACS+"
+    ],
+    "resolution_title": "RFC 8907 - The TACACS+ Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc8907.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q115",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should the management plane of network devices be protected?",
+    "preferred_answer": "Use dedicated management networks or controlled paths, strong AAA, SSH instead of insecure protocols, least privilege, logging, source restrictions, secure SNMP, configuration backups, and time synchronization. Permit management only from authorized NOC prefixes and test out-of-band recovery.",
+    "evaluation_points": [
+      "Focus on management plane"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q116",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is network segmentation and why is it useful?",
+    "preferred_answer": "Segmentation separates systems into security and failure domains using VLANs, VRFs, subnets, firewalls, or overlays. It limits unnecessary reachability and broadcast scope. Segmentation is effective only when routing and policy between segments are intentionally controlled and monitored.",
+    "evaluation_points": [
+      "Focus on segmentation"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q117",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do AWS security groups differ from network ACLs?",
+    "preferred_answer": "Security groups are stateful controls associated with network interfaces. Network ACLs are stateless subnet-level controls with ordered rules. During troubleshooting, inspect both directions, route tables, the target listener, and flow logs; a permit in one layer does not override a deny elsewhere.",
+    "evaluation_points": [
+      "Focus on AWS",
+      "Focus on cloud security"
+    ],
+    "resolution_title": "AWS VPC network ACLs",
+    "resolution_url": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q118",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the function of a cloud route table?",
+    "preferred_answer": "It maps destination prefixes to targets such as local networks, gateways, VPNs, transit services, or appliances. Cloud platforms add implicit and propagated routes according to service design. Confirm subnet association, effective routes, longest-prefix match, and return routing.",
+    "evaluation_points": [
+      "Focus on cloud routes"
+    ],
+    "resolution_title": "AWS VPC route tables",
+    "resolution_url": "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q119",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do VPC or VNet flow logs assist troubleshooting?",
+    "preferred_answer": "They record metadata about permitted or rejected IP flows at supported scopes. They help identify source/destination, protocol, ports, direction, and accept/reject decisions, but they are not full packet captures and may use aggregation intervals or omit payload details.",
+    "evaluation_points": [
+      "Focus on flow logs"
+    ],
+    "resolution_title": "AWS VPC Flow Logs",
+    "resolution_url": "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q120",
+    "role_slug": "networking",
+    "domain": "Network Security, VPNs, AAA, and Cloud Networking",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Which cloud-native tools can help diagnose virtual-network connectivity?",
+    "preferred_answer": "Use effective route and security-rule views, flow logs, connection-test tools, packet capture where supported, and service health. Azure Network Watcher provides connection troubleshooting and packet-capture functions; AWS provides route, security, reachability, and flow-log data. Correlate cloud controls with guest OS and on-premises paths.",
+    "evaluation_points": [
+      "Focus on cloud troubleshooting"
+    ],
+    "resolution_title": "Microsoft Learn - Azure Network Watcher overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q121",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a reliable general troubleshooting method for network incidents?",
+    "preferred_answer": "Define scope and impact, confirm the symptom, collect current evidence, isolate by layer and path, compare healthy and failed cases, form a testable hypothesis, make the least risky change, verify end-to-end, document, and roll back if results are not as expected. Avoid multiple simultaneous changes.",
+    "evaluation_points": [
+      "Focus on methodology"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q122",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does a successful ping prove, and what does it not prove?",
+    "preferred_answer": "It proves that an ICMP echo exchange succeeded for the tested address, size, path, and time. It does not prove DNS, TCP/UDP service availability, application correctness, absence of loss, or identical routing for other traffic. A failed ping may also reflect ICMP policy rather than total unreachability.",
+    "evaluation_points": [
+      "Focus on ping"
+    ],
+    "resolution_title": "RFC 792 - Internet Control Message Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc792.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q123",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does traceroute or tracert discover a path?",
+    "preferred_answer": "It sends probes with increasing TTL or hop limit values and uses time-exceeded responses from intermediate routers, followed by a destination response. Missing hops can reflect filtering or rate limiting. A path shown in one direction may differ from the return path.",
+    "evaluation_points": [
+      "Focus on traceroute"
+    ],
+    "resolution_title": "Microsoft Learn - tracert",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/tracert",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q124",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When is pathping or MTR more useful than a single traceroute?",
+    "preferred_answer": "They combine path discovery with repeated measurements to estimate latency and loss over time. Interpret carefully: an intermediate router may deprioritize replies while forwarding traffic normally. Loss that continues at the same or higher level through later hops is more meaningful than isolated loss at one responding hop.",
+    "evaluation_points": [
+      "Focus on pathping",
+      "Focus on MTR"
+    ],
+    "resolution_title": "Microsoft Learn - pathping",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/pathping",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q125",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do nslookup and dig help isolate DNS issues?",
+    "preferred_answer": "They query a specified resolver and show the returned records, status, and sometimes authority details. Test the FQDN, alternate record types, and an alternate authorized resolver. Compare with client cache and application behavior because command-line tools may not use every OS resolution path.",
+    "evaluation_points": [
+      "Focus on nslookup",
+      "Focus on dig"
+    ],
+    "resolution_title": "Microsoft Learn - nslookup",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q126",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Which local interface details should be collected first?",
+    "preferred_answer": "Collect interface state, MAC address, IPv4/IPv6 addresses, prefix, gateway, DNS servers, DHCP status, routes, and counters. On Windows use tools such as ipconfig and PowerShell; on Linux use ip address, ip link, and related commands. Preserve the output in the ticket.",
+    "evaluation_points": [
+      "Focus on interface commands"
+    ],
+    "resolution_title": "Microsoft Learn - Test-NetConnection",
+    "resolution_url": "https://learn.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=windowsserver2025-ps",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q127",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What can an ARP or neighbor table reveal?",
+    "preferred_answer": "It shows local mappings between IP and link-layer addresses and their state. Missing entries can indicate no successful resolution; unexpected changes can indicate duplicate IPs, gateway failover, or spoofing. A valid entry does not prove end-to-end service reachability.",
+    "evaluation_points": [
+      "Focus on ARP table"
+    ],
+    "resolution_title": "RFC 826 - Address Resolution Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc826.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q128",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do route print or ip route help?",
+    "preferred_answer": "They reveal local destination prefixes, next hops, interfaces, and metrics. Check the exact destination using longest-prefix match, source-interface selection, default route, VPN routes, and stale entries. A route may exist while the next hop is unreachable.",
+    "evaluation_points": [
+      "Focus on route command"
+    ],
+    "resolution_title": "RFC 4632 - Classless Inter-domain Routing (CIDR)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc4632.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q129",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does netstat or ss show?",
+    "preferred_answer": "They can show listening sockets, active connections, transport states, local/remote addresses, and sometimes process identifiers or statistics. Use them to distinguish a path problem from a service that is not listening, and to identify repeated SYN-SENT, TIME-WAIT, or reset patterns.",
+    "evaluation_points": [
+      "Focus on netstat",
+      "Focus on ss"
+    ],
+    "resolution_title": "Microsoft Learn - netstat",
+    "resolution_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/netstat",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q130",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is Test-NetConnection useful on Windows?",
+    "preferred_answer": "It can test name resolution, ICMP reachability, a specific TCP port, route selection, and trace information in one command. A successful TCP test is stronger evidence for the target service port than ping alone, though the application can still fail after connection establishment.",
+    "evaluation_points": [
+      "Focus on PowerShell"
+    ],
+    "resolution_title": "Microsoft Learn - Test-NetConnection",
+    "resolution_url": "https://learn.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=windowsserver2025-ps",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q131",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between a Wireshark capture filter and display filter?",
+    "preferred_answer": "A capture filter limits which packets are collected and uses capture-filter syntax. A display filter selects which already-captured packets are shown and uses Wireshark display-filter syntax. Start broad enough to avoid losing evidence, then use display filters for analysis.",
+    "evaluation_points": [
+      "Focus on Wireshark filters"
+    ],
+    "resolution_title": "Wireshark User Guide",
+    "resolution_url": "https://www.wireshark.org/docs/wsug_html/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q132",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What do TCP retransmissions, duplicate ACKs, and resets suggest?",
+    "preferred_answer": "Retransmissions suggest missing acknowledgements or loss, but capture location can create false impressions. Duplicate ACKs often accompany gaps or reordering. A reset terminates a connection and may come from the endpoint or an intermediary. Correlate sequence numbers, timing, direction, and both endpoints.",
+    "evaluation_points": [
+      "Focus on TCP analysis"
+    ],
+    "resolution_title": "Wireshark User Guide",
+    "resolution_url": "https://www.wireshark.org/docs/wsug_html/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q133",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a SPAN or mirror port?",
+    "preferred_answer": "It copies selected switch traffic to an analysis port or destination. Configure source direction and VLAN carefully and ensure the destination can handle the volume. Oversubscription, switch behavior, and capture placement can cause packet loss or one-sided visibility.",
+    "evaluation_points": [
+      "Focus on SPAN"
+    ],
+    "resolution_title": "Cisco - Troubleshoot LAN Switching Environments",
+    "resolution_url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q134",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you isolate a fault from Layer 1 through Layer 7?",
+    "preferred_answer": "Verify link and physical errors, then VLAN/MAC/ARP or NDP, IP addressing and routes, transport port connectivity, TLS or session establishment, and application response. At each layer, use a specific test and record what is proven. Stop changing lower layers once evidence shows they work.",
+    "evaluation_points": [
+      "Focus on layered troubleshooting"
+    ],
+    "resolution_title": "Cisco Networking Academy",
+    "resolution_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q135",
+    "role_slug": "networking",
+    "domain": "Troubleshooting Commands and Packet Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should be done after a troubleshooting change?",
+    "preferred_answer": "Run defined post-checks, compare metrics and user impact with the baseline, verify redundancy and monitoring, document exact commands and time, and roll back if acceptance criteria are not met. Keep temporary debug or capture settings from becoming permanent risk.",
+    "evaluation_points": [
+      "Focus on validation",
+      "Focus on rollback"
+    ],
+    "resolution_title": "Google SRE Workbook - Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q136",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between SNMP polling and traps or informs?",
+    "preferred_answer": "Polling lets the manager request current counters and state on a schedule. Traps are unsolicited notifications and may be lost; informs request acknowledgement. Reliable operations combine event notifications with polling and other telemetry so a single missed notification does not hide a fault.",
+    "evaluation_points": [
+      "Focus on SNMP"
+    ],
+    "resolution_title": "RFC 3411 - SNMP Management Frameworks",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3411.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q137",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are MIBs and OIDs used for in monitoring?",
+    "preferred_answer": "A MIB describes managed objects and their structure; an OID identifies a specific object or table entry. Monitoring systems use them to retrieve counters and states. Correct vendor MIB versions and index interpretation are necessary to map values to the right interface or component.",
+    "evaluation_points": [
+      "Focus on MIB",
+      "Focus on OID"
+    ],
+    "resolution_title": "RFC 3411 - SNMP Management Frameworks",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc3411.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q138",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why centralize syslog?",
+    "preferred_answer": "Centralization preserves events when a device fails, supports search and correlation, enables retention policy, and reduces dependence on small local buffers. Normalize time, source identity, severity, and parsing, and secure transport and access according to risk.",
+    "evaluation_points": [
+      "Focus on logging"
+    ],
+    "resolution_title": "RFC 5424 - The Syslog Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc5424.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q139",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What can flow telemetry reveal that interface utilization cannot?",
+    "preferred_answer": "Interface utilization shows aggregate load. Flow telemetry can identify which sources, destinations, ports, protocols, and conversations account for that load. It helps distinguish legitimate growth from scanning, backup traffic, or a single large transfer.",
+    "evaluation_points": [
+      "Focus on flow telemetry"
+    ],
+    "resolution_title": "RFC 7011 - IP Flow Information Export (IPFIX)",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7011.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q140",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How does streaming telemetry differ from periodic polling?",
+    "preferred_answer": "Streaming telemetry pushes structured measurements at configured intervals or on change, often with higher resolution and less request overhead. Polling is simpler and broadly supported. The best design considers scale, timestamps, loss handling, schema, authentication, and collector resilience.",
+    "evaluation_points": [
+      "Focus on telemetry"
+    ],
+    "resolution_title": "Google SRE - Monitoring Distributed Systems",
+    "resolution_url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q141",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is availability calculated?",
+    "preferred_answer": "A basic availability percentage is successful service time divided by total measured time, multiplied by 100. Define the service, measurement point, maintenance treatment, partial failure, and time window. Device uptime alone is not the same as user-visible service availability.",
+    "evaluation_points": [
+      "Focus on availability"
+    ],
+    "resolution_title": "Google SRE - Monitoring Distributed Systems",
+    "resolution_url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q142",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should latency and packet-loss thresholds be chosen?",
+    "preferred_answer": "Use historical baselines, service requirements, path type, time of day, and user impact. Static universal thresholds create noise or miss meaningful deviation. Combine absolute limits with anomaly or deviation detection and require persistence where appropriate.",
+    "evaluation_points": [
+      "Focus on thresholds"
+    ],
+    "resolution_title": "Grafana Alerting best practices",
+    "resolution_url": "https://grafana.com/docs/grafana-cloud/alerting-and-irm/alerting/guides/best-practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q143",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is alerting on symptoms often better than alerting on every cause?",
+    "preferred_answer": "User-visible symptoms such as unavailability, high latency, or error rate directly represent impact and remain useful when the underlying cause changes. Infrastructure alerts are still valuable for diagnosis and early warning, but every page should lead to an actionable response.",
+    "evaluation_points": [
+      "Focus on alerting"
+    ],
+    "resolution_title": "Prometheus alerting practices",
+    "resolution_url": "https://prometheus.io/docs/practices/alerting/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q144",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is alert flapping and how can it be reduced?",
+    "preferred_answer": "Flapping is repeated firing and resolving around a threshold or unstable condition. Use pending duration, hysteresis, suitable query windows, dependency suppression, and root-cause repair. Do not simply silence a chronic alert without tracking the underlying risk.",
+    "evaluation_points": [
+      "Focus on flapping"
+    ],
+    "resolution_title": "Prometheus alerting rules",
+    "resolution_url": "https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q145",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should alert severity be determined?",
+    "preferred_answer": "Severity should reflect impact, urgency, scope, and required response, not just a raw metric value. Define which severities page immediately, create tickets, or remain informational. Consistent ownership and escalation rules are more important than labels alone.",
+    "evaluation_points": [
+      "Focus on severity"
+    ],
+    "resolution_title": "Grafana Alerting best practices",
+    "resolution_url": "https://grafana.com/docs/grafana-cloud/alerting-and-irm/alerting/guides/best-practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q146",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes a useful NOC dashboard?",
+    "preferred_answer": "It shows service health, current impact, dependencies, trends, recent changes, and drill-down paths. It avoids excessive decorative metrics and makes abnormal states obvious. Dashboard data should have known freshness, units, owners, and links to runbooks.",
+    "evaluation_points": [
+      "Focus on dashboard"
+    ],
+    "resolution_title": "Grafana Alerting documentation",
+    "resolution_url": "https://grafana.com/docs/grafana/latest/alerting/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q147",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does monitoring support capacity planning?",
+    "preferred_answer": "Track sustained and peak utilization, growth rate, errors, queueing, headroom, seasonality, and business events. Forecast when thresholds will be reached and include procurement or change lead time. Averages alone can hide peak saturation.",
+    "evaluation_points": [
+      "Focus on capacity"
+    ],
+    "resolution_title": "Google SRE - Monitoring Distributed Systems",
+    "resolution_url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q148",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are SLI, SLO, and error budget?",
+    "preferred_answer": "An SLI is a measured indicator of service behavior, an SLO is a target for that indicator, and an error budget is the tolerated amount of unreliability implied by the SLO. NOC metrics should connect infrastructure events to service indicators where possible.",
+    "evaluation_points": [
+      "Focus on SLI",
+      "Focus on SLO"
+    ],
+    "resolution_title": "Google SRE - Monitoring Distributed Systems",
+    "resolution_url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q149",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can you detect a monitoring blind spot?",
+    "preferred_answer": "Compare incidents with alerts: failures found by users, vendors, or manual checks indicate missing or ineffective detection. Test collectors, synthetic probes, notification paths, device coverage, time synchronization, and data freshness. Monitor the monitoring system itself.",
+    "evaluation_points": [
+      "Focus on monitoring gaps"
+    ],
+    "resolution_title": "Grafana Alerting best practices",
+    "resolution_url": "https://grafana.com/docs/grafana-cloud/alerting-and-irm/alerting/guides/best-practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q150",
+    "role_slug": "networking",
+    "domain": "Monitoring, Telemetry, Alerting, and Capacity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should an alert runbook contain?",
+    "preferred_answer": "It should state meaning, likely impact, immediate safety checks, diagnostic commands, dashboards, dependencies, escalation owner, communication expectations, and rollback or containment steps. Keep it concise, tested, versioned, and linked directly from the alert.",
+    "evaluation_points": [
+      "Focus on runbook"
+    ],
+    "resolution_title": "Grafana Alerting best practices",
+    "resolution_url": "https://grafana.com/docs/grafana-cloud/alerting-and-irm/alerting/guides/best-practices/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q151",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How should a NOC analyst determine incident priority?",
+    "preferred_answer": "Assess business impact, number and type of users or sites affected, service criticality, urgency, redundancy, security or safety risk, and time sensitivity. Use the organization's matrix consistently. A technically dramatic alert is not automatically the highest business priority.",
+    "evaluation_points": [
+      "Focus on priority"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q152",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are the first actions after receiving a credible critical alert?",
+    "preferred_answer": "Acknowledge it, confirm the signal and scope, check for related alerts or changes, open or update the incident record, assign ownership, begin safe diagnostics, and escalate according to the response target. Avoid uncoordinated remediation during a possible major incident.",
+    "evaluation_points": [
+      "Focus on triage"
+    ],
+    "resolution_title": "Google SRE Workbook - Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q153",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate incident, problem, and change management.",
+    "preferred_answer": "An incident is an unplanned interruption or degradation requiring service restoration. Problem work investigates underlying causes and recurrence. A change is an authorized modification to the environment. An emergency fix can be both incident response and a controlled change, with documentation afterward.",
+    "evaluation_points": [
+      "Focus on incident",
+      "Focus on problem",
+      "Focus on change"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q154",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Which roles are useful during a major incident?",
+    "preferred_answer": "Common roles include incident commander, technical leads or responders, communications lead, and scribe. Clear command and role separation reduce duplication and keep technical responders focused. Roles can be combined for small incidents but ownership must remain explicit.",
+    "evaluation_points": [
+      "Focus on major incident"
+    ],
+    "resolution_title": "Google SRE Workbook - Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q155",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What makes a good shift handover?",
+    "preferred_answer": "State active incidents and severity, current impact, timeline, completed and pending actions, hypotheses, risks, owners, next checkpoints, vendor cases, maintenance, and monitoring exceptions. The incoming analyst should be able to continue without reconstructing the entire event.",
+    "evaluation_points": [
+      "Focus on handover"
+    ],
+    "resolution_title": "Google SRE Workbook - Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q156",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What should be included in a network incident ticket?",
+    "preferred_answer": "Include symptom, scope, affected services and locations, timestamps and timezone, topology or path, evidence, commands and outputs, recent changes, actions taken, results, owner, escalation details, user communication, resolution, and validation. Record facts separately from hypotheses.",
+    "evaluation_points": [
+      "Focus on ticket documentation"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q157",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should technical updates be written for non-technical stakeholders?",
+    "preferred_answer": "Lead with impact, current status, what is being done, workaround if any, and next update time. Avoid unsupported root-cause statements and excessive device detail. Use consistent timestamps and correct earlier information transparently.",
+    "evaluation_points": [
+      "Focus on communication"
+    ],
+    "resolution_title": "Google SRE Workbook - Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q158",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What information should be provided when escalating to an ISP or vendor?",
+    "preferred_answer": "Provide circuit or device identifiers, contact and access details, impact and start time, topology, test results from both ends, interface counters, alarms, traces, recent changes, power and local-loop checks, and requested action. Keep the case number and escalation timer in the incident record.",
+    "evaluation_points": [
+      "Focus on vendor escalation"
+    ],
+    "resolution_title": "Google SRE Workbook - Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q159",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why are maintenance windows important?",
+    "preferred_answer": "They align risk, staffing, approvals, stakeholder expectations, backup availability, and rollback time. A maintenance window does not remove the need for impact analysis, pre-checks, change freeze rules, and monitoring. End the window only after validation or rollback.",
+    "evaluation_points": [
+      "Focus on maintenance"
+    ],
+    "resolution_title": "Google SRE Workbook - Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q160",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are appropriate pre-change checks for a network device?",
+    "preferred_answer": "Confirm approved scope and commands, current health and redundancy, configuration backup, management access, monitoring, resource levels, route and neighbor states, dependency owners, console or out-of-band access, and rollback criteria. Capture a baseline for comparison.",
+    "evaluation_points": [
+      "Focus on pre-check"
+    ],
+    "resolution_title": "Google SRE Workbook - Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q161",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are appropriate post-change checks?",
+    "preferred_answer": "Verify the intended configuration, interfaces and adjacencies, routing and forwarding, redundancy, application or synthetic tests, error counters, logs, alerts, and user impact. Compare with the baseline and monitor long enough to catch delayed problems.",
+    "evaluation_points": [
+      "Focus on post-check"
+    ],
+    "resolution_title": "Google SRE Workbook - Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q162",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes a rollback plan usable?",
+    "preferred_answer": "It defines the exact trigger, responsible person, commands or restore method, dependencies, expected duration, access path, and validation after rollback. It must be feasible within the window and tested where possible. Backups without a restore method are not a complete rollback plan.",
+    "evaluation_points": [
+      "Focus on rollback"
+    ],
+    "resolution_title": "Google SRE Workbook - Incident Response",
+    "resolution_url": "https://sre.google/workbook/incident-response/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q163",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does root-cause analysis differ from restoring service?",
+    "preferred_answer": "Restoration reduces immediate impact, sometimes through workaround or failover. Root-cause analysis explains the technical and organizational conditions that produced the incident and identifies corrective actions. Do not delay safe restoration while trying to prove a final root cause.",
+    "evaluation_points": [
+      "Focus on RCA"
+    ],
+    "resolution_title": "Google SRE Workbook - Postmortem Culture",
+    "resolution_url": "https://sre.google/workbook/postmortem-culture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q164",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should a blameless postmortem produce?",
+    "preferred_answer": "It should produce an accurate timeline, impact, trigger and contributing factors, what helped or hindered response, and owned corrective actions with due dates. Blameless does not mean consequence-free; it means focusing on system and process learning rather than individual blame.",
+    "evaluation_points": [
+      "Focus on postmortem"
+    ],
+    "resolution_title": "Google SRE Workbook - Postmortem Culture",
+    "resolution_url": "https://sre.google/workbook/postmortem-culture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q165",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Define MTTA, MTTD, MTTR, SLA, and OLA in operational terms.",
+    "preferred_answer": "MTTD is mean time to detect, MTTA is mean time to acknowledge, and MTTR must be explicitly defined as repair, restore, or resolve in the organization. An SLA is a service commitment to a customer, while an OLA supports delivery between internal groups. Metrics need clear start/stop rules and should not reward premature closure.",
+    "evaluation_points": [
+      "Focus on metrics",
+      "Focus on SLA"
+    ],
+    "resolution_title": "Google SRE - Monitoring Distributed Systems",
+    "resolution_url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "NET-Q166",
+    "role_slug": "networking",
+    "domain": "NOC Operations, Incident Handling, Change, and Communication",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What ethical and safety boundaries should guide a NOC analyst?",
+    "preferred_answer": "Work only within authorization, use least privilege, protect customer data and credentials, preserve evidence, follow change control, avoid destructive tests on production, and escalate security or safety concerns. A fast fix that bypasses policy can create a larger incident.",
+    "evaluation_points": [
+      "Focus on ethics",
+      "Focus on safety"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];

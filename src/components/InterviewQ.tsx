@@ -437,7 +437,7 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
 'networking': {
     label: 'Networking & NOC Operations',
     icon: '🌐',
-    description: 'Building up interview question bank for this domain...'
+    description: '166 Intensive Questions covering NOC Ops, OSI/TCP, IPv4/IPv6, Switching/VLANs, Routing/OSPF/BGP, Security/VPNs, Packet Analysis & Telemetry'
   },
 'qa-testing': {
     label: 'QA, Software Testing & Quality Engineering',
