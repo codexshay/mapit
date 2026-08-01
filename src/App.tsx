@@ -2348,24 +2348,7 @@ export default function App() {
         introStage === 'blank' || introStage === 'centered' ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}>
 
-        {/* Application Release / Update Banner */}
-        {hasAppUpdate && (
-          <div className="bg-emerald-600 text-white font-mono text-xs px-4 py-2.5 flex flex-wrap items-center justify-between z-50 sticky top-0 shadow-2xl border-b-2 border-emerald-300">
-            <div className="flex items-center gap-2">
-              <RefreshCw className="w-4 h-4 animate-spin text-white shrink-0" />
-              <span className="font-bold tracking-tight">New MapIT Release Published (Updated Catalog & UI Assets Available)</span>
-            </div>
-            <button
-              onClick={() => {
-                sessionStorage.removeItem('mapit:chunk_reload_attempted');
-                window.location.reload();
-              }}
-              className="px-3 py-1 bg-white text-emerald-950 font-extrabold uppercase hover:bg-emerald-100 transition-all text-[10px] tracking-wider cursor-pointer border border-emerald-200 shadow-sm"
-            >
-              Update Application Now &rarr;
-            </button>
-          </div>
-        )}
+
         
         {/* NEW FLOATING HEADER DOCK - DESKTOP ONLY */}
         <header className={`hidden md:flex relative transition-all duration-[300ms] ease-in-out px-4 py-2.5 items-center justify-between sticky top-0 z-30 backdrop-blur-md ${
@@ -3108,6 +3091,146 @@ export default function App() {
                 </div>
               </div>
 
+            </div>
+
+            {/* WHAT'S NEW & SIGNIFICANT UPDATES CONTAINER */}
+            <div className={`p-5 md:p-6 border-2 transition-all my-6 relative overflow-hidden ${
+              theme === 'light' 
+                ? 'bg-white border-slate-300 text-slate-900 shadow-md' 
+                : 'bg-[#070b13] border-[#121c38] text-white shadow-[4px_4px_0px_0px_#1e2e54]'
+            }`}>
+              {/* Header Bar */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b pb-3 mb-4 border-slate-200 dark:border-zinc-800">
+                <div className="flex items-center gap-2.5">
+                  <div className="p-1.5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+                    <Sparkles className="w-4 h-4 animate-pulse" />
+                  </div>
+                  <div>
+                    <h3 className={`text-sm font-black uppercase tracking-wider font-mono ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
+                      What's New & Significant Additions
+                    </h3>
+                    <p className={`text-[11px] font-sans ${theme === 'light' ? 'text-slate-600' : 'text-zinc-400'}`}>
+                      Latest platform features, new databases & section upgrades
+                    </p>
+                  </div>
+                </div>
+                <span className="px-2.5 py-1 text-[10px] font-mono font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 shrink-0 self-start sm:self-auto">
+                  v1.4.3 RELEASE
+                </span>
+              </div>
+
+              {/* 3 Grid Columns for InterviewQ, Jobs & Referrals, HR Contacts */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+                {/* 1. InterviewQ Upgrades */}
+                <div className={`p-4 border transition-all flex flex-col justify-between ${
+                  theme === 'light' 
+                    ? 'bg-slate-50 border-slate-200 hover:border-slate-400 hover:bg-white' 
+                    : 'bg-black/60 border-zinc-800/90 hover:border-zinc-700 hover:bg-zinc-950'
+                }`}>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-purple-500/10 text-purple-400 border border-purple-500/30">
+                        InterviewQ Database
+                      </span>
+                      <span className={`text-[10px] font-mono ${theme === 'light' ? 'text-slate-500' : 'text-zinc-500'}`}>1,788+ Qs</span>
+                    </div>
+                    <h4 className={`text-xs font-bold font-sans ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
+                      +336 New Intensive Question Banks
+                    </h4>
+                    <p className={`text-[11px] font-sans line-clamp-3 ${theme === 'light' ? 'text-slate-600' : 'text-zinc-400'}`}>
+                      Added +168 System Admin & Infrastructure and +168 IT Support / EUC questions across 42 sub-domains with NIST & ITIL 4 evaluation rubrics.
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => {
+                      setActiveTab('interviewq');
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                    className={`mt-3 py-1.5 px-3 text-[11px] font-mono font-bold uppercase tracking-wider border text-center transition-all cursor-pointer flex items-center justify-between ${
+                      theme === 'light'
+                        ? 'bg-slate-900 text-white border-slate-900 hover:bg-slate-800'
+                        : 'bg-zinc-900 text-purple-300 border-purple-500/40 hover:border-purple-400 hover:text-white'
+                    }`}
+                  >
+                    <span>Visit InterviewQ</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+
+                {/* 2. Jobs & Referrals */}
+                <div className={`p-4 border transition-all flex flex-col justify-between ${
+                  theme === 'light' 
+                    ? 'bg-slate-50 border-slate-200 hover:border-slate-400 hover:bg-white' 
+                    : 'bg-black/60 border-zinc-800/90 hover:border-zinc-700 hover:bg-zinc-950'
+                }`}>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
+                        Jobs & Referrals
+                      </span>
+                      <span className={`text-[10px] font-mono ${theme === 'light' ? 'text-slate-500' : 'text-zinc-500'}`}>50+ Tech Giants</span>
+                    </div>
+                    <h4 className={`text-xs font-bold font-sans ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
+                      100% Accordion Dropdown Layout
+                    </h4>
+                    <p className={`text-[11px] font-sans line-clamp-3 ${theme === 'light' ? 'text-slate-600' : 'text-zinc-400'}`}>
+                      Redesigned company listings into interactive accordion headers with instant access to Official Careers, LinkedIn Jobs, and Referral links.
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => {
+                      setActiveTab('jobs-referrals');
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                    className={`mt-3 py-1.5 px-3 text-[11px] font-mono font-bold uppercase tracking-wider border text-center transition-all cursor-pointer flex items-center justify-between ${
+                      theme === 'light'
+                        ? 'bg-slate-900 text-white border-slate-900 hover:bg-slate-800'
+                        : 'bg-zinc-900 text-cyan-300 border-cyan-500/40 hover:border-cyan-400 hover:text-white'
+                    }`}
+                  >
+                    <span>Explore Jobs & Referrals</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+
+                {/* 3. HR Contacts Directory */}
+                <div className={`p-4 border transition-all flex flex-col justify-between ${
+                  theme === 'light' 
+                    ? 'bg-slate-50 border-slate-200 hover:border-slate-400 hover:bg-white' 
+                    : 'bg-black/60 border-zinc-800/90 hover:border-zinc-700 hover:bg-zinc-950'
+                }`}>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                        HR Directory
+                      </span>
+                      <span className={`text-[10px] font-mono ${theme === 'light' ? 'text-slate-500' : 'text-zinc-500'}`}>514+ Agencies</span>
+                    </div>
+                    <h4 className={`text-xs font-bold font-sans ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
+                      Verified IT Recruitment Audit
+                    </h4>
+                    <p className={`text-[11px] font-sans line-clamp-3 ${theme === 'light' ? 'text-slate-600' : 'text-zinc-400'}`}>
+                      Purified recruiter dataset removing non-IT listings. Features Light Theme city accordions across US, India, APAC, and EMEA hubs.
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => {
+                      setActiveTab('hr-contacts');
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                    className={`mt-3 py-1.5 px-3 text-[11px] font-mono font-bold uppercase tracking-wider border text-center transition-all cursor-pointer flex items-center justify-between ${
+                      theme === 'light'
+                        ? 'bg-slate-900 text-white border-slate-900 hover:bg-slate-800'
+                        : 'bg-zinc-900 text-emerald-300 border-emerald-500/40 hover:border-emerald-400 hover:text-white'
+                    }`}
+                  >
+                    <span>View HR Contacts</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+
+              </div>
             </div>
 
             {/* FOOTER CREDIT INFO CARD (Swapped from page bottom) */}
