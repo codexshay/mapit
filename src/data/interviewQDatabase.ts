@@ -47860,5 +47860,4631 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "DBA-Q001",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are the primary responsibilities of a production DBA?",
+    "preferred_answer": "A production DBA protects availability, recoverability, performance, security, and integrity. Typical work includes provisioning, configuration, access control, backup and restore, monitoring, capacity planning, patching, change review, incident response, documentation, and coordination with developers, infrastructure, security, and business owners.",
+    "evaluation_points": [
+      "Focus on responsibilities",
+      "Focus on operations"
+    ],
+    "resolution_title": "PostgreSQL - Server Administration",
+    "resolution_url": "https://www.postgresql.org/docs/current/admin.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q002",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate an instance, a database, and a schema.",
+    "preferred_answer": "An instance is the running database engine and its memory or processes. A database is a managed collection of data and metadata. A schema is a logical namespace or ownership boundary inside a database. Exact boundaries vary by product, so a strong answer names the target platform before applying the terms.",
+    "evaluation_points": [
+      "Focus on instance",
+      "Focus on database",
+      "Focus on schema"
+    ],
+    "resolution_title": "Microsoft Learn - SQL Server Database Engine",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/database-engine/sql-database-engine?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q003",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between logical and physical database architecture?",
+    "preferred_answer": "Logical architecture describes tables, schemas, relationships, constraints, views, and transactions. Physical architecture describes files, pages, blocks, logs, memory, processes, and storage placement. DBAs connect the two because logical design choices affect physical I/O, recovery, concurrency, and capacity.",
+    "evaluation_points": [
+      "Focus on logical architecture",
+      "Focus on physical architecture"
+    ],
+    "resolution_title": "Oracle Database Concepts",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/cncpt/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q004",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Explain ACID properties from an operational perspective.",
+    "preferred_answer": "Atomicity prevents partial transactions, consistency preserves declared rules, isolation controls visibility among concurrent transactions, and durability preserves committed work after failure. A DBA supports these through transaction settings, logging, recovery, constraints, storage reliability, and correct application usage.",
+    "evaluation_points": [
+      "Focus on ACID",
+      "Focus on transactions"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q005",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do OLTP and analytical workloads differ for a DBA?",
+    "preferred_answer": "OLTP favors many short, selective, concurrent transactions with predictable latency. Analytical workloads favor scans, joins, aggregation, parallelism, and throughput. Administration differs in indexing, memory, storage layout, concurrency controls, maintenance windows, workload isolation, and capacity planning.",
+    "evaluation_points": [
+      "Focus on OLTP",
+      "Focus on analytics",
+      "Focus on workload"
+    ],
+    "resolution_title": "Microsoft Learn - Index Architecture and Design Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q006",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is normalization still relevant to database administration?",
+    "preferred_answer": "Normalization reduces update anomalies and duplicated facts, improving integrity and maintainability. It can increase joins and operational complexity, so DBAs evaluate normalization together with workload, indexing, partitioning, caching, and reporting needs rather than treating the highest normal form as an automatic goal.",
+    "evaluation_points": [
+      "Focus on normalization",
+      "Focus on integrity"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q007",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What role do keys and constraints play in database reliability?",
+    "preferred_answer": "Primary, unique, foreign-key, check, and not-null constraints move critical rules into the database where all clients share them. They improve integrity and optimizer knowledge, but require correct design, deployment sequencing, validation, and monitoring for rejected or orphaned data.",
+    "evaluation_points": [
+      "Focus on constraints",
+      "Focus on keys"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q008",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate DDL, DML, DCL, and transaction-control statements.",
+    "preferred_answer": "DDL defines structures, DML reads or changes rows, DCL manages privileges, and transaction-control statements define commit, rollback, and savepoint behavior. Product semantics differ, especially whether DDL is transactional, so operational changes must be tested on the target engine.",
+    "evaluation_points": [
+      "Focus on DDL",
+      "Focus on DML",
+      "Focus on DCL",
+      "Focus on TCL"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q009",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a system catalog or data dictionary?",
+    "preferred_answer": "It is the database-maintained metadata describing objects, columns, dependencies, privileges, statistics, storage, and operational state. DBAs query it for inventory and diagnosis but should use documented views and interfaces instead of modifying internal catalog tables directly.",
+    "evaluation_points": [
+      "Focus on catalog",
+      "Focus on metadata"
+    ],
+    "resolution_title": "Oracle Database - Administration",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/administration.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q010",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between a connection and a session?",
+    "preferred_answer": "A connection is the client-server communication channel; a session is the database context associated with authenticated work, settings, transactions, and temporary state. Some architectures map them one-to-one, while pools and proxies can reuse or multiplex connections, affecting troubleshooting and resource limits.",
+    "evaluation_points": [
+      "Focus on connections",
+      "Focus on sessions"
+    ],
+    "resolution_title": "PostgreSQL - Server Administration",
+    "resolution_url": "https://www.postgresql.org/docs/current/admin.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q011",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why do connection pools matter to a DBA?",
+    "preferred_answer": "Pools reduce connection setup cost and limit concurrency, but bad sizing can overload the database, hide leaked sessions, retain stale state, and create retry storms. DBAs coordinate limits, timeouts, health checks, transaction cleanup, and observability with application teams.",
+    "evaluation_points": [
+      "Focus on connection pooling",
+      "Focus on capacity"
+    ],
+    "resolution_title": "PostgreSQL - Monitoring Database Activity",
+    "resolution_url": "https://www.postgresql.org/docs/current/monitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q012",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does the shared-responsibility model change DBA work in a managed service?",
+    "preferred_answer": "The provider usually handles selected infrastructure, patching, backups, or failover mechanics, while the customer still owns data design, access, query behavior, configuration choices, retention, validation, monitoring response, and business recovery objectives. The exact boundary must be read for each service and engine.",
+    "evaluation_points": [
+      "Focus on managed database",
+      "Focus on shared responsibility"
+    ],
+    "resolution_title": "AWS - Amazon RDS User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q013",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Define recovery point objective and recovery time objective.",
+    "preferred_answer": "RPO is the maximum acceptable data loss measured in time; RTO is the maximum acceptable time to restore service. They must be agreed with business owners and then translated into backup frequency, replication mode, automation, staffing, dependency recovery, and tested procedures.",
+    "evaluation_points": [
+      "Focus on RPO",
+      "Focus on RTO"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q014",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How is an SLA different from an SLO for a database service?",
+    "preferred_answer": "An SLO is an internal reliability target such as availability or latency; an SLA is a formal commitment that may include remedies. DBAs use measurable indicators and error budgets to manage risk, but must also document exclusions, maintenance, dependencies, and the difference between database uptime and application usability.",
+    "evaluation_points": [
+      "Focus on SLA",
+      "Focus on SLO",
+      "Focus on availability"
+    ],
+    "resolution_title": "AWS - Resilience in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/disaster-recovery-resiliency.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q015",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What should a database change-management process include?",
+    "preferred_answer": "It should include purpose, owner, affected systems, prerequisites, risk and blast radius, tested commands, backup or recovery point, maintenance impact, approvals, observability, rollback conditions, validation, communication, and an audit trail. Emergency changes need an accelerated but still documented path.",
+    "evaluation_points": [
+      "Focus on change management",
+      "Focus on rollback"
+    ],
+    "resolution_title": "PostgreSQL - Server Administration",
+    "resolution_url": "https://www.postgresql.org/docs/current/admin.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q016",
+    "role_slug": "db-admin",
+    "domain": "DBA Foundations, Architecture, and Service Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What makes a DBA runbook useful during an incident?",
+    "preferred_answer": "A useful runbook states triggers, symptoms, safe diagnostic steps, permissions, decision points, commands with expected output, stop conditions, escalation contacts, communication templates, rollback or recovery paths, and post-action validation. It must be rehearsed and updated after changes and incidents.",
+    "evaluation_points": [
+      "Focus on runbook",
+      "Focus on incident response"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q017",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate conceptual, logical, and physical data models.",
+    "preferred_answer": "A conceptual model captures business entities and relationships, a logical model adds attributes, keys, and normalized structures independent of a product, and a physical model maps the design to engine-specific tables, indexes, partitions, files, and data types. DBAs review the physical model for operability and recovery.",
+    "evaluation_points": [
+      "Focus on data modeling",
+      "Focus on physical design"
+    ],
+    "resolution_title": "Oracle Database Concepts",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/cncpt/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q018",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What problems do the first three normal forms address?",
+    "preferred_answer": "First normal form removes repeating groups, second normal form removes partial dependency on a composite key, and third normal form removes transitive dependency on non-key attributes. The purpose is to reduce anomalies, not to maximize table count.",
+    "evaluation_points": [
+      "Focus on normal forms",
+      "Focus on anomalies"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q019",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "When can denormalization be justified?",
+    "preferred_answer": "Denormalization can be justified when measured workload evidence shows unacceptable join or aggregation cost and the team can control duplication, refresh, consistency, and recovery. The preferred answer includes ownership, validation, and monitoring rather than using denormalization as the first tuning step.",
+    "evaluation_points": [
+      "Focus on denormalization",
+      "Focus on performance"
+    ],
+    "resolution_title": "Microsoft Learn - Index Architecture and Design Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q020",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare natural and surrogate primary keys.",
+    "preferred_answer": "Natural keys carry business meaning but can be wide, mutable, or sensitive. Surrogate keys are compact and stable but require separate uniqueness rules for business identity. The choice should consider change, distribution, integration, indexing, privacy, and operational troubleshooting.",
+    "evaluation_points": [
+      "Focus on primary key",
+      "Focus on surrogate key"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q021",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is a primary key different from a unique constraint?",
+    "preferred_answer": "Both enforce uniqueness, but a table has one primary key used as its principal row identity, while it can have multiple unique constraints. Null handling and physical implementation vary by engine. A DBA should preserve semantic intent rather than treating both only as index-creation shortcuts.",
+    "evaluation_points": [
+      "Focus on primary key",
+      "Focus on unique constraint"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q022",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What should be considered before adding a foreign key to a large production table?",
+    "preferred_answer": "Assess existing orphaned data, lock duration, validation cost, supporting indexes, write overhead, deployment order, cascade behavior, replication, and rollback. Prefer staged validation or online capabilities where supported and monitor blocking and resource usage during the change.",
+    "evaluation_points": [
+      "Focus on foreign key",
+      "Focus on production change"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q023",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why use check constraints instead of only application validation?",
+    "preferred_answer": "Check constraints protect data regardless of which application, script, import, or administrator writes it. They provide a central rule and may aid optimization. Application validation still improves user experience, but it should not be the only protection for critical invariants.",
+    "evaluation_points": [
+      "Focus on check constraint",
+      "Focus on validation"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q024",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why does NULL require special care in SQL?",
+    "preferred_answer": "NULL represents unknown or missing information and participates in three-valued logic, so comparisons and aggregates may behave differently from ordinary values. DBAs review nullability, defaults, uniqueness semantics, indexing, and migration logic to prevent silent data-quality errors.",
+    "evaluation_points": [
+      "Focus on NULL",
+      "Focus on three-valued logic"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q025",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you choose an appropriate data type?",
+    "preferred_answer": "Choose the type that accurately represents the domain with adequate range and precision while minimizing ambiguity and storage. Consider collation, time zones, decimal versus floating point, length limits, indexing, driver compatibility, migration, and future growth.",
+    "evaluation_points": [
+      "Focus on data types",
+      "Focus on precision"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q026",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the operational impact of character sets and collations?",
+    "preferred_answer": "Character sets define encoding, while collations define comparison and sort behavior. Changes can affect storage, index size, uniqueness, query results, application compatibility, and migration duration. They must be selected deliberately and tested with multilingual and edge-case data.",
+    "evaluation_points": [
+      "Focus on character set",
+      "Focus on collation"
+    ],
+    "resolution_title": "MySQL 8.4 - MySQL Server Administration",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/server-administration.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q027",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "When is table partitioning useful?",
+    "preferred_answer": "Partitioning is useful when it improves manageability, pruning, retention, loading, or maintenance for large tables. It is not a universal speed feature: poor partition keys, excessive partitions, cross-partition operations, skew, and missing indexes can make performance and operations worse.",
+    "evaluation_points": [
+      "Focus on partitioning",
+      "Focus on pruning"
+    ],
+    "resolution_title": "PostgreSQL - Server Administration",
+    "resolution_url": "https://www.postgresql.org/docs/current/admin.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q028",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate a view and a materialized view.",
+    "preferred_answer": "A view stores a query definition and reads current base data when executed. A materialized view stores results and requires refresh. Materialization can accelerate expensive reads but introduces freshness, storage, refresh locking, dependency, and recovery considerations.",
+    "evaluation_points": [
+      "Focus on view",
+      "Focus on materialized view"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q029",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are sequences and identity columns used for?",
+    "preferred_answer": "They generate surrogate values without requiring a client to find the current maximum. They improve concurrency but can produce gaps after rollback, caching, crash, or failover. Applications should not assume gapless business numbering unless a separate controlled process provides it.",
+    "evaluation_points": [
+      "Focus on sequence",
+      "Focus on identity"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q030",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you make a backward-compatible schema change?",
+    "preferred_answer": "Use expand-and-contract: add compatible structures first, deploy code that can handle old and new forms, backfill in controlled batches, verify, switch reads and writes, and remove obsolete structures later. Avoid combining irreversible schema and application changes in one step.",
+    "evaluation_points": [
+      "Focus on schema migration",
+      "Focus on expand contract"
+    ],
+    "resolution_title": "PostgreSQL - Server Administration",
+    "resolution_url": "https://www.postgresql.org/docs/current/admin.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q031",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What does online DDL mean, and why must the term be qualified?",
+    "preferred_answer": "Online DDL reduces or avoids blocking, but it may still take metadata locks, consume CPU, I/O, log space, temporary space, or briefly block at start or finish. The exact algorithm and limitations vary by engine, object, edition, and version, so test the real operation.",
+    "evaluation_points": [
+      "Focus on online DDL",
+      "Focus on locking"
+    ],
+    "resolution_title": "MySQL 8.4 - MySQL Server Administration",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/server-administration.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q032",
+    "role_slug": "db-admin",
+    "domain": "Data Modeling, Constraints, and Schema Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you assess object dependencies before changing or dropping a database object?",
+    "preferred_answer": "Inspect documented dependency catalogs, application references, stored code, jobs, reports, replication, permissions, synonyms, and external consumers. Capture a baseline, test in a representative environment, communicate deprecation, and preserve a rollback or restore path.",
+    "evaluation_points": [
+      "Focus on dependencies",
+      "Focus on change impact"
+    ],
+    "resolution_title": "Oracle Database - Administration",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/administration.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q033",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a database transaction?",
+    "preferred_answer": "A transaction is a logical unit of work whose changes are committed together or rolled back. It defines a consistency boundary and interacts with isolation, locks or versions, logging, error handling, retries, and application side effects.",
+    "evaluation_points": [
+      "Focus on transaction",
+      "Focus on commit",
+      "Focus on rollback"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q034",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What do transaction isolation levels control?",
+    "preferred_answer": "Isolation levels control which concurrent changes a transaction can observe and which anomalies are prevented. Stronger isolation can improve correctness but increase blocking, aborts, or version retention. The correct level depends on the business invariant and engine behavior, not only the level name.",
+    "evaluation_points": [
+      "Focus on isolation levels",
+      "Focus on anomalies"
+    ],
+    "resolution_title": "PostgreSQL - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q035",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate dirty reads, nonrepeatable reads, and phantom reads.",
+    "preferred_answer": "A dirty read observes uncommitted data, a nonrepeatable read sees a previously read row change, and a phantom occurs when a repeated predicate returns a different set of rows. Engines may prevent or implement these anomalies differently through locks or MVCC.",
+    "evaluation_points": [
+      "Focus on dirty read",
+      "Focus on phantom read"
+    ],
+    "resolution_title": "PostgreSQL - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q036",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is multi-version concurrency control?",
+    "preferred_answer": "MVCC keeps multiple row versions so readers can use a consistent snapshot without blocking many writers. It improves concurrency but requires cleanup and can retain old versions when transactions or snapshots remain open too long.",
+    "evaluation_points": [
+      "Focus on MVCC",
+      "Focus on snapshots"
+    ],
+    "resolution_title": "PostgreSQL - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q037",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare pessimistic and optimistic concurrency control.",
+    "preferred_answer": "Pessimistic control locks resources before conflicting work proceeds. Optimistic control allows work and detects conflicts at validation or commit, often using versions. The choice depends on contention, conflict cost, latency, retry safety, and the business rule being protected.",
+    "evaluation_points": [
+      "Focus on pessimistic",
+      "Focus on optimistic concurrency"
+    ],
+    "resolution_title": "PostgreSQL - Explicit Locking",
+    "resolution_url": "https://www.postgresql.org/docs/current/explicit-locking.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q038",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How does lock granularity affect concurrency?",
+    "preferred_answer": "Fine-grained locks allow more concurrency but create more lock-management overhead; coarse locks reduce overhead but block more work. Some engines escalate locks. DBAs examine access patterns, transaction size, indexes, and memory before attempting configuration changes.",
+    "evaluation_points": [
+      "Focus on lock granularity",
+      "Focus on escalation"
+    ],
+    "resolution_title": "Microsoft Learn - Performance Monitoring and Tuning Tools",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q039",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between blocking and a deadlock?",
+    "preferred_answer": "Blocking is waiting for a resource held by another session and can be normal. A deadlock is a cycle of dependencies in which no participant can progress, so the engine chooses a victim. Diagnosis requires the blocking graph, statements, transactions, and object access order.",
+    "evaluation_points": [
+      "Focus on blocking",
+      "Focus on deadlock"
+    ],
+    "resolution_title": "PostgreSQL - Explicit Locking",
+    "resolution_url": "https://www.postgresql.org/docs/current/explicit-locking.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q040",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should an application handle a deadlock victim?",
+    "preferred_answer": "Roll back the failed transaction, log enough context, apply bounded retry with jitter only when the operation is safe, and correct the root cause through consistent access order, shorter transactions, better indexes, or reduced scope. Unlimited immediate retries can amplify the incident.",
+    "evaluation_points": [
+      "Focus on deadlock retry",
+      "Focus on resilience"
+    ],
+    "resolution_title": "Microsoft Learn - Performance Monitoring and Tuning Tools",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q041",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why are long-running transactions operationally risky?",
+    "preferred_answer": "They retain locks or row versions, delay cleanup, increase log retention, enlarge rollback work, block DDL, and can increase replication or recovery lag. DBAs identify the owner and purpose before terminating them because rollback can itself be expensive.",
+    "evaluation_points": [
+      "Focus on long transaction",
+      "Focus on bloat"
+    ],
+    "resolution_title": "PostgreSQL - Routine Vacuuming",
+    "resolution_url": "https://www.postgresql.org/docs/current/routine-vacuuming.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q042",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is autocommit, and when can it cause surprises?",
+    "preferred_answer": "Autocommit commits each statement unless an explicit transaction is opened. It can prevent grouping related changes or unexpectedly keep transactions open when drivers change behavior. DBAs and developers must understand driver defaults and always close or roll back failed work.",
+    "evaluation_points": [
+      "Focus on autocommit",
+      "Focus on drivers"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q043",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a savepoint?",
+    "preferred_answer": "A savepoint marks a point inside a transaction to which part of the work can be rolled back without ending the whole transaction. It helps complex workflows but does not replace clear error handling and can extend transaction duration and resource retention.",
+    "evaluation_points": [
+      "Focus on savepoint",
+      "Focus on partial rollback"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q044",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is two-phase commit, and what operational risk does it introduce?",
+    "preferred_answer": "Two-phase commit prepares participating transactions before a final commit decision, supporting atomic work across resources. If the coordinator or communication fails, prepared transactions can remain in doubt and hold resources, requiring durable coordination records and recovery procedures.",
+    "evaluation_points": [
+      "Focus on two-phase commit",
+      "Focus on distributed transaction"
+    ],
+    "resolution_title": "PostgreSQL - Server Administration",
+    "resolution_url": "https://www.postgresql.org/docs/current/admin.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q045",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why is idempotency important when retrying database work?",
+    "preferred_answer": "An idempotent operation can be repeated without creating unintended additional effects. Retries after timeouts may occur even when the original commit succeeded, so use stable request identifiers, uniqueness constraints, conditional updates, or transactional outbox patterns.",
+    "evaluation_points": [
+      "Focus on idempotency",
+      "Focus on retries"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q046",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is write skew under snapshot isolation?",
+    "preferred_answer": "Write skew occurs when concurrent transactions read a consistent snapshot, update different rows, and together violate a cross-row invariant. Prevent it with serializable isolation, explicit locking, materialized constraints, or redesign that makes the conflict visible to the database.",
+    "evaluation_points": [
+      "Focus on write skew",
+      "Focus on snapshot isolation"
+    ],
+    "resolution_title": "PostgreSQL - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q047",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the transaction log used for?",
+    "preferred_answer": "The log records changes in an order that supports durability, crash recovery, rollback, replication, and point-in-time recovery. It must be protected, sized, backed up or archived as required, and monitored because a full or unavailable log can stop writes.",
+    "evaluation_points": [
+      "Focus on transaction log",
+      "Focus on durability"
+    ],
+    "resolution_title": "PostgreSQL - Write-Ahead Logging",
+    "resolution_url": "https://www.postgresql.org/docs/current/wal.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q048",
+    "role_slug": "db-admin",
+    "domain": "Transactions, Isolation, Locking, and Concurrency",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How would you diagnose a blocking incident safely?",
+    "preferred_answer": "Capture the head blocker, waiting chain, statements, transaction age, lock types, application identity, and resource pressure before acting. Contact the owner where possible, avoid killing arbitrary sessions, estimate rollback, preserve evidence, and verify recovery after any intervention.",
+    "evaluation_points": [
+      "Focus on blocking chain",
+      "Focus on safe intervention"
+    ],
+    "resolution_title": "PostgreSQL - Monitoring Database Activity",
+    "resolution_url": "https://www.postgresql.org/docs/current/monitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q049",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are database pages or blocks?",
+    "preferred_answer": "Pages or blocks are fixed-size units in which the engine reads, writes, caches, and manages table or index data. Their structure is engine-specific, but understanding them helps explain I/O, fragmentation, row size, checksums, and corruption messages.",
+    "evaluation_points": [
+      "Focus on pages",
+      "Focus on blocks"
+    ],
+    "resolution_title": "Microsoft Learn - Pages and Extents Architecture Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/pages-and-extents-architecture-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q050",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are tablespaces, filegroups, and datafiles?",
+    "preferred_answer": "They are physical or logical storage containers used to place database objects across files and storage. Names and capabilities differ by engine. DBAs use them for capacity, backup, recovery, I/O placement, lifecycle, and administrative boundaries, not as substitutes for proper workload design.",
+    "evaluation_points": [
+      "Focus on tablespace",
+      "Focus on filegroup",
+      "Focus on datafile"
+    ],
+    "resolution_title": "Oracle Database - Administration",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/administration.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q051",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare a heap and a clustered storage structure.",
+    "preferred_answer": "A heap stores rows without ordering by a clustered key, while a clustered structure organizes data rows by an index key or equivalent. Heaps can suit staging or append patterns, but forwarded rows, scans, and lookup behavior must be measured on the target engine.",
+    "evaluation_points": [
+      "Focus on heap",
+      "Focus on clustered index"
+    ],
+    "resolution_title": "Microsoft Learn - Index Architecture and Design Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q052",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do row-oriented and column-oriented storage differ?",
+    "preferred_answer": "Row storage keeps values from one row together and suits selective transactional access. Column storage keeps values by column and improves compression and analytical scans. Hybrid systems require DBAs to match storage format, indexing, load pattern, memory, and maintenance to the workload.",
+    "evaluation_points": [
+      "Focus on rowstore",
+      "Focus on columnstore"
+    ],
+    "resolution_title": "Microsoft Learn - Index Architecture and Design Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q053",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate redo, undo, and write-ahead logging.",
+    "preferred_answer": "Redo records changes needed to reapply committed work during recovery. Undo supports rollback or older versions. Write-ahead logging requires the relevant log record to be durable before the changed data page. Product terminology differs, but the durability principle is consistent.",
+    "evaluation_points": [
+      "Focus on redo",
+      "Focus on undo",
+      "Focus on WAL"
+    ],
+    "resolution_title": "PostgreSQL - Write-Ahead Logging",
+    "resolution_url": "https://www.postgresql.org/docs/current/wal.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q054",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a checkpoint?",
+    "preferred_answer": "A checkpoint coordinates flushing or recording dirty-state progress so crash recovery has a bounded starting point. Frequent checkpoints can increase write pressure; infrequent checkpoints can increase recovery work and log retention. Tuning must consider workload and durability.",
+    "evaluation_points": [
+      "Focus on checkpoint",
+      "Focus on recovery"
+    ],
+    "resolution_title": "PostgreSQL - Write-Ahead Logging",
+    "resolution_url": "https://www.postgresql.org/docs/current/wal.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q055",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the database buffer cache?",
+    "preferred_answer": "It is memory used to cache database pages and reduce physical I/O. A high hit ratio alone does not prove health; DBAs also examine working-set fit, read latency, write pressure, scan patterns, OS caching, and whether memory is being stolen by other components.",
+    "evaluation_points": [
+      "Focus on buffer cache",
+      "Focus on memory"
+    ],
+    "resolution_title": "Oracle Database Concepts",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/cncpt/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q056",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is temporary database space used for?",
+    "preferred_answer": "Temporary space supports sorts, hashes, intermediate results, version stores, temporary tables, and maintenance. Unexpected growth can indicate spills, poor plans, long transactions, or large operations. It needs capacity, monitoring, and workload-specific controls.",
+    "evaluation_points": [
+      "Focus on temporary space",
+      "Focus on spills"
+    ],
+    "resolution_title": "Microsoft Learn - SQL Server Database Engine",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/database-engine/sql-database-engine?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q057",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why can transaction-log growth become an outage?",
+    "preferred_answer": "The log may grow when backups, archiving, replication, long transactions, or checkpoints cannot advance reuse. Unlimited growth can fill storage; too-small growth increments can create repeated stalls. DBAs diagnose the reuse blocker before shrinking or deleting anything.",
+    "evaluation_points": [
+      "Focus on log growth",
+      "Focus on outage"
+    ],
+    "resolution_title": "Microsoft Learn - Back up and Restore SQL Server Databases",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q058",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should database file autogrowth be configured?",
+    "preferred_answer": "Use deliberate fixed increments or suitable policies, sufficient preallocation, monitored free space, and storage with predictable latency. Very small increments cause frequent pauses and fragmentation; unlimited growth without alerts can exhaust the volume.",
+    "evaluation_points": [
+      "Focus on autogrowth",
+      "Focus on capacity"
+    ],
+    "resolution_title": "Microsoft Learn - Pages and Extents Architecture Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/pages-and-extents-architecture-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q059",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Differentiate index fragmentation and table bloat.",
+    "preferred_answer": "Fragmentation describes inefficient physical page organization or free space; bloat often describes retained or unused space from versioned updates and deletes. The terms and remedies differ by engine. Measure impact before rebuilding, reorganizing, vacuuming, or rewriting.",
+    "evaluation_points": [
+      "Focus on fragmentation",
+      "Focus on bloat"
+    ],
+    "resolution_title": "PostgreSQL - Routine Vacuuming",
+    "resolution_url": "https://www.postgresql.org/docs/current/routine-vacuuming.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q060",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are the trade-offs of database compression?",
+    "preferred_answer": "Compression reduces storage and I/O but consumes CPU and can change maintenance, backup, and licensing requirements. Evaluate row shape, workload, cache benefit, write amplification, recovery speed, and platform support using representative tests.",
+    "evaluation_points": [
+      "Focus on compression",
+      "Focus on CPU tradeoff"
+    ],
+    "resolution_title": "Microsoft Learn - Index Architecture and Design Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q061",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should large objects be handled?",
+    "preferred_answer": "Choose in-row, out-of-row, or external object storage based on size, transactionality, access pattern, backup, replication, security, and retention. Avoid placing large objects in the database by habit or excluding them by habit; test the complete operational lifecycle.",
+    "evaluation_points": [
+      "Focus on LOB",
+      "Focus on object storage"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q062",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate IOPS, throughput, and latency.",
+    "preferred_answer": "IOPS is operations per second, throughput is data transferred per second, and latency is time per operation. Database workloads can be limited by any combination, and averages can hide queueing or tail latency. Match metrics to read/write size and concurrency.",
+    "evaluation_points": [
+      "Focus on IOPS",
+      "Focus on throughput",
+      "Focus on latency"
+    ],
+    "resolution_title": "AWS - Logging and Monitoring in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.LoggingAndMonitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q063",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How much free storage headroom should a database have?",
+    "preferred_answer": "There is no universal percentage. Headroom must cover normal growth, temporary operations, log expansion, maintenance, failover, restores, and alert-response time. Use growth trends, peak events, storage limits, and business lead time to set warning and critical thresholds.",
+    "evaluation_points": [
+      "Focus on headroom",
+      "Focus on capacity planning"
+    ],
+    "resolution_title": "AWS - Logging and Monitoring in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.LoggingAndMonitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q064",
+    "role_slug": "db-admin",
+    "domain": "Physical Storage, Memory, Logging, and I/O",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Differentiate physical corruption from logical inconsistency.",
+    "preferred_answer": "Physical corruption means pages, blocks, checksums, or files cannot be trusted. Logical inconsistency means validly stored data violates intended relationships or business rules. Response differs: preserve evidence, stop harmful writes, assess scope, use integrity tools, restore or repair carefully, and validate at the application level.",
+    "evaluation_points": [
+      "Focus on corruption",
+      "Focus on integrity"
+    ],
+    "resolution_title": "Microsoft Learn - DBCC CHECKDB",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q065",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What problem does an index solve?",
+    "preferred_answer": "An index provides an alternate access path so the engine can find, join, order, or enforce uniqueness without scanning all rows. The benefit depends on predicates, selectivity, ordering, table size, and workload; every index also consumes storage and adds write and maintenance cost.",
+    "evaluation_points": [
+      "Focus on index",
+      "Focus on access path"
+    ],
+    "resolution_title": "PostgreSQL - Indexes",
+    "resolution_url": "https://www.postgresql.org/docs/current/indexes.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q066",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does a B-tree index work conceptually?",
+    "preferred_answer": "A B-tree keeps sorted keys in a balanced hierarchy so equality, range, prefix, and ordered access can be efficient. Leaf entries identify rows or contain data depending on the engine and index type. Correct key order and statistics remain essential.",
+    "evaluation_points": [
+      "Focus on B-tree",
+      "Focus on range scan"
+    ],
+    "resolution_title": "PostgreSQL - Indexes",
+    "resolution_url": "https://www.postgresql.org/docs/current/indexes.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q067",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When is a hash index useful?",
+    "preferred_answer": "Hash indexes target equality lookup and do not naturally support ranges or ordering. Availability, durability, concurrency, and optimizer support vary by engine, so use them only after confirming the product implementation and workload benefit.",
+    "evaluation_points": [
+      "Focus on hash index",
+      "Focus on equality"
+    ],
+    "resolution_title": "PostgreSQL - Indexes",
+    "resolution_url": "https://www.postgresql.org/docs/current/indexes.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q068",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate clustered and nonclustered indexes in SQL Server.",
+    "preferred_answer": "A clustered index defines how table rows are organized by its key, so there can be one. A nonclustered index is a separate structure containing keys and row locators, so many can exist. Wide or unstable clustered keys increase downstream index cost.",
+    "evaluation_points": [
+      "Focus on clustered index",
+      "Focus on nonclustered index"
+    ],
+    "resolution_title": "Microsoft Learn - Index Architecture and Design Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q069",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why does column order matter in a composite index?",
+    "preferred_answer": "The leading columns determine which predicates and ordering can efficiently navigate the index. Equality columns, range columns, sort needs, selectivity, and workload frequency all matter. One composite index rarely serves every permutation of filters.",
+    "evaluation_points": [
+      "Focus on composite index",
+      "Focus on column order"
+    ],
+    "resolution_title": "PostgreSQL - Indexes",
+    "resolution_url": "https://www.postgresql.org/docs/current/indexes.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q070",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are cardinality and selectivity?",
+    "preferred_answer": "Cardinality is the number of distinct or estimated rows; selectivity describes how narrowly a predicate filters. Optimizers use these estimates to choose access paths and join methods. Skew and correlation can make simple estimates inaccurate.",
+    "evaluation_points": [
+      "Focus on cardinality",
+      "Focus on selectivity"
+    ],
+    "resolution_title": "PostgreSQL - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q071",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a covering index or index-only scan?",
+    "preferred_answer": "A covering index contains all data needed by a query, allowing the engine to avoid additional table lookups when visibility and storage conditions permit. It can reduce I/O but increases index width, storage, cache pressure, and write cost.",
+    "evaluation_points": [
+      "Focus on covering index",
+      "Focus on index-only scan"
+    ],
+    "resolution_title": "PostgreSQL - Indexes",
+    "resolution_url": "https://www.postgresql.org/docs/current/indexes.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q072",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a partial or filtered index?",
+    "preferred_answer": "It indexes only rows matching a predicate, reducing size and focusing on a hot subset such as active records. The query predicate must be compatible with the index condition, and changing data distribution can alter its value.",
+    "evaluation_points": [
+      "Focus on partial index",
+      "Focus on filtered index"
+    ],
+    "resolution_title": "PostgreSQL - Indexes",
+    "resolution_url": "https://www.postgresql.org/docs/current/indexes.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q073",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why use a unique index or unique constraint?",
+    "preferred_answer": "It enforces a candidate key while supporting efficient lookup. Prefer a constraint when expressing a data rule; understand product-specific null behavior and concurrency. Do not rely only on application checks because concurrent inserts can race.",
+    "evaluation_points": [
+      "Focus on unique index",
+      "Focus on constraint"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q074",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is an expression or function-based index?",
+    "preferred_answer": "It stores the result of an expression so queries using the same expression can search efficiently. The expression must be deterministic under product rules, and function, collation, casting, and parameter differences can prevent use.",
+    "evaluation_points": [
+      "Focus on expression index",
+      "Focus on function-based index"
+    ],
+    "resolution_title": "PostgreSQL - Indexes",
+    "resolution_url": "https://www.postgresql.org/docs/current/indexes.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q075",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "When are bitmap indexes appropriate?",
+    "preferred_answer": "Bitmap indexes can be effective for low-cardinality analytical dimensions with read-heavy batch workloads. They are generally poor for high-concurrency OLTP updates because changing a bitmap can affect many row references. Product behavior and licensing must be checked.",
+    "evaluation_points": [
+      "Focus on bitmap index",
+      "Focus on data warehouse"
+    ],
+    "resolution_title": "Oracle Database Performance Tuning Guide",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/tgdba/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q076",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are common symptoms of over-indexing?",
+    "preferred_answer": "Slow inserts and updates, long maintenance, excessive storage, cache pressure, logging, replication lag, and optimizer complexity can indicate over-indexing. Review actual usage and constraint purpose before dropping indexes because rare but critical queries may depend on them.",
+    "evaluation_points": [
+      "Focus on over-indexing",
+      "Focus on write cost"
+    ],
+    "resolution_title": "Microsoft Learn - Index Architecture and Design Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q077",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is index write amplification?",
+    "preferred_answer": "Each row change may update multiple index pages, generate log records, split pages, and replicate extra data. Wide keys and many secondary indexes multiply the cost. Measure write latency and business query value before adding another index.",
+    "evaluation_points": [
+      "Focus on write amplification",
+      "Focus on DML"
+    ],
+    "resolution_title": "Microsoft Learn - Index Architecture and Design Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q078",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "When should an index be rebuilt, reorganized, or left alone?",
+    "preferred_answer": "Base the decision on measurable fragmentation or bloat, page density, workload, storage, maintenance time, logging, and platform guidance. Automatic fixed thresholds can waste resources. Rebuilding also updates structures and may affect plans, locks, and replication.",
+    "evaluation_points": [
+      "Focus on index maintenance",
+      "Focus on fragmentation"
+    ],
+    "resolution_title": "Microsoft Learn - Index Architecture and Design Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q079",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why should missing-index recommendations be treated cautiously?",
+    "preferred_answer": "They usually analyze individual queries and may ignore overlapping indexes, write cost, storage, filtered alternatives, concurrency, and full workload benefit. Consolidate recommendations, test representative load, and verify plan and operational impact before deployment.",
+    "evaluation_points": [
+      "Focus on missing index",
+      "Focus on recommendation"
+    ],
+    "resolution_title": "Microsoft Learn - Index Architecture and Design Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q080",
+    "role_slug": "db-admin",
+    "domain": "Indexing and Access Paths",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you validate whether a new index helped?",
+    "preferred_answer": "Compare representative execution plans, reads, CPU, duration, waits, concurrency, write overhead, storage, and plan stability before and after. Use a controlled rollout and retain rollback criteria; a faster single query is insufficient if the overall workload regresses.",
+    "evaluation_points": [
+      "Focus on index validation",
+      "Focus on workload"
+    ],
+    "resolution_title": "PostgreSQL - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q081",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the query optimizer?",
+    "preferred_answer": "The optimizer transforms a declarative SQL statement into an executable plan by considering legal alternatives and estimated costs. It relies on metadata, statistics, configuration, available indexes, parameter values, and engine rules, so its choice is an informed estimate rather than certainty.",
+    "evaluation_points": [
+      "Focus on optimizer",
+      "Focus on execution plan"
+    ],
+    "resolution_title": "PostgreSQL - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q082",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does cost-based optimization mean?",
+    "preferred_answer": "The engine estimates the resource cost of candidate plans using row counts, I/O, CPU, memory, and operator models, then chooses a low-cost plan. Cost units are internal estimates, not direct milliseconds, and inaccurate cardinality can lead to a poor choice.",
+    "evaluation_points": [
+      "Focus on cost model",
+      "Focus on plan choice"
+    ],
+    "resolution_title": "PostgreSQL - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q083",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What information should you read first in an execution plan?",
+    "preferred_answer": "Start with the slow or resource-heavy operators, estimated versus actual rows, access paths, join order and type, sorts or spills, parallelism, filters, and warnings. Read the plan with runtime metrics and wait information rather than focusing only on the visually largest cost.",
+    "evaluation_points": [
+      "Focus on execution plan",
+      "Focus on diagnosis"
+    ],
+    "resolution_title": "Microsoft Learn - Tune Performance with Query Store",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/tune-performance-with-the-query-store?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q084",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How is an estimated plan different from an actual plan?",
+    "preferred_answer": "An estimated plan is compiled without executing the query, while an actual plan includes runtime row counts and operator data. Actual plans provide stronger evidence but can be costly or unsafe for production statements, so use controlled capture and existing telemetry where possible.",
+    "evaluation_points": [
+      "Focus on estimated plan",
+      "Focus on actual plan"
+    ],
+    "resolution_title": "Microsoft Learn - Performance Monitoring and Tuning Tools",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q085",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why do cardinality-estimation errors matter?",
+    "preferred_answer": "Incorrect row estimates can cause the wrong join algorithm, memory grant, degree of parallelism, or access path. Causes include stale statistics, skew, correlated columns, implicit conversions, expressions, parameter sensitivity, and data changes.",
+    "evaluation_points": [
+      "Focus on cardinality estimate",
+      "Focus on skew"
+    ],
+    "resolution_title": "Microsoft Learn - Tune Performance with Query Store",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/tune-performance-with-the-query-store?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q086",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are database statistics?",
+    "preferred_answer": "Statistics summarize data distribution so the optimizer can estimate selectivity and row counts. They need appropriate collection and refresh, but excessive or poorly timed updates can consume resources and cause plan changes. Sampling may miss skew.",
+    "evaluation_points": [
+      "Focus on statistics",
+      "Focus on optimizer"
+    ],
+    "resolution_title": "PostgreSQL - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q087",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes a predicate SARGable?",
+    "preferred_answer": "A search argument can be matched to an index access condition without applying a blocking transformation to every indexed value. Functions on columns, implicit conversions, arithmetic, and leading wildcards often reduce SARGability, although engine features can sometimes compensate.",
+    "evaluation_points": [
+      "Focus on SARGable",
+      "Focus on predicate"
+    ],
+    "resolution_title": "Microsoft Learn - Index Architecture and Design Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q088",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare nested-loop, hash, and merge joins.",
+    "preferred_answer": "Nested loops suit a small outer input with efficient inner lookup, hash joins suit large unsorted equality joins with enough memory, and merge joins suit sorted compatible inputs. The best method depends on row counts, ordering, memory, indexes, and concurrency.",
+    "evaluation_points": [
+      "Focus on join algorithms",
+      "Focus on plan operators"
+    ],
+    "resolution_title": "PostgreSQL - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q089",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "When is a table scan acceptable?",
+    "preferred_answer": "A scan is appropriate when a large fraction of rows is needed, the table is small, no useful index exists, or sequential access is cheaper. The goal is not to eliminate scans but to ensure the chosen access path fits the workload and resource budget.",
+    "evaluation_points": [
+      "Focus on scan",
+      "Focus on index seek"
+    ],
+    "resolution_title": "PostgreSQL - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q090",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is parameter sniffing or parameter-sensitive planning?",
+    "preferred_answer": "A cached plan may be compiled for one parameter distribution and reused for very different values, producing unstable performance. Diagnose with plan history and runtime distribution, then consider query rewrites, statistics, recompilation, plan variants, or product-specific controls instead of clearing all caches blindly.",
+    "evaluation_points": [
+      "Focus on parameter sniffing",
+      "Focus on plan cache"
+    ],
+    "resolution_title": "Microsoft Learn - Tune Performance with Query Store",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/tune-performance-with-the-query-store?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q091",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How do you investigate a query-plan regression?",
+    "preferred_answer": "Confirm the time window, query identity, old and new plans, parameter patterns, statistics, schema and configuration changes, data growth, and resource waits. Use plan history where available, mitigate safely, and correct the underlying cause before forcing a plan permanently.",
+    "evaluation_points": [
+      "Focus on plan regression",
+      "Focus on Query Store"
+    ],
+    "resolution_title": "Microsoft Learn - Tune Performance with Query Store",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/tune-performance-with-the-query-store?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q092",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why are optimizer hints risky?",
+    "preferred_answer": "Hints constrain optimizer choices and can become harmful as data, versions, indexes, and workload change. Use them only after evidence, with documented intent, scope, monitoring, expiry or review, and a rollback path. Prefer fixing statistics, SQL, design, or configuration first.",
+    "evaluation_points": [
+      "Focus on query hint",
+      "Focus on technical debt"
+    ],
+    "resolution_title": "Microsoft Learn - Tune Performance with Query Store",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/tune-performance-with-the-query-store?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q093",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What causes sort or hash spills?",
+    "preferred_answer": "The operation receives insufficient memory for its actual input, often because of bad cardinality estimates, concurrency pressure, wide rows, or configuration. Spills use temporary storage and can create large latency. Fix the estimate or workload cause before merely raising memory.",
+    "evaluation_points": [
+      "Focus on spill",
+      "Focus on memory grant"
+    ],
+    "resolution_title": "Microsoft Learn - Performance Monitoring and Tuning Tools",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q094",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do common table expressions and temporary tables affect optimization?",
+    "preferred_answer": "A CTE is usually a query expression, not guaranteed materialization. A temporary table creates a separate object and phase that can provide statistics and reuse but adds writes and lifecycle cost. Choose based on cardinality, reuse, indexing, and plan quality, not readability alone.",
+    "evaluation_points": [
+      "Focus on CTE",
+      "Focus on temporary table"
+    ],
+    "resolution_title": "Microsoft Learn - SQL Server Database Engine",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/database-engine/sql-database-engine?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q095",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are efficient patterns for pagination?",
+    "preferred_answer": "Offset pagination can become expensive and unstable for deep pages. Keyset or seek pagination uses a deterministic ordered key and last-seen value, reducing skipped work. Include a unique tie-breaker and consider concurrent inserts, deletes, and user navigation needs.",
+    "evaluation_points": [
+      "Focus on pagination",
+      "Focus on keyset"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q096",
+    "role_slug": "db-admin",
+    "domain": "Query Optimization, Statistics, and Execution Plans",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Describe a disciplined query-tuning workflow.",
+    "preferred_answer": "Define the user impact and baseline, capture query and plan evidence, identify the dominant resource or wait, validate row estimates and access paths, form one hypothesis, test safely, compare full-workload effects, deploy gradually, monitor, and document. Avoid changing several variables at once.",
+    "evaluation_points": [
+      "Focus on tuning workflow",
+      "Focus on evidence"
+    ],
+    "resolution_title": "Microsoft Learn - Performance Monitoring and Tuning Tools",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q097",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why does high availability not replace backups?",
+    "preferred_answer": "HA keeps service running through selected failures, but replication can copy deletion, corruption, or malicious changes. Backups provide historical recovery and separate failure boundaries. A resilient design uses both, with tested restoration and retention aligned to RPO and legal needs.",
+    "evaluation_points": [
+      "Focus on backup",
+      "Focus on high availability"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q098",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate full, differential, and incremental backups.",
+    "preferred_answer": "A full backup captures the selected data set. A differential captures changes since a defined full baseline. An incremental captures changes since the last relevant backup. Product terminology and restore chains differ, so the strategy must be documented for the actual engine and tool.",
+    "evaluation_points": [
+      "Focus on full backup",
+      "Focus on differential",
+      "Focus on incremental"
+    ],
+    "resolution_title": "MySQL 8.4 - Backup and Recovery",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/backup-and-recovery.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q099",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare logical and physical database backups.",
+    "preferred_answer": "Logical backups export objects and rows in a portable form but can be slower and lose some physical details. Physical backups copy database files or blocks and are usually faster for large recovery but more version- and platform-dependent. Many strategies use both for different recovery needs.",
+    "evaluation_points": [
+      "Focus on logical backup",
+      "Focus on physical backup"
+    ],
+    "resolution_title": "PostgreSQL - Backup and Restore",
+    "resolution_url": "https://www.postgresql.org/docs/current/backup.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q100",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between a hot and a cold backup?",
+    "preferred_answer": "A cold backup is taken while the database is stopped or quiesced. A hot backup is taken while it remains available and must coordinate logs or snapshots to produce a consistent recovery point. Hot does not mean zero impact; test I/O, locks, and recovery.",
+    "evaluation_points": [
+      "Focus on hot backup",
+      "Focus on cold backup"
+    ],
+    "resolution_title": "Oracle Database - Backup and Recovery User Guide",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/bradv/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q101",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why must transaction logs, WAL, or binary logs be protected?",
+    "preferred_answer": "They bridge the gap between base backups and the target recovery point, support crash recovery and replication, and may contain sensitive data. Missing, corrupted, or prematurely deleted log segments can break the recovery chain and increase data loss.",
+    "evaluation_points": [
+      "Focus on WAL archive",
+      "Focus on log backup"
+    ],
+    "resolution_title": "PostgreSQL - Backup and Restore",
+    "resolution_url": "https://www.postgresql.org/docs/current/backup.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q102",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is point-in-time recovery?",
+    "preferred_answer": "PITR restores a base backup and replays archived transaction records to a chosen time or recovery target. It requires an unbroken log chain, synchronized time understanding, documented targets, sufficient retention, and validation that the recovered application state is coherent.",
+    "evaluation_points": [
+      "Focus on PITR",
+      "Focus on recovery target"
+    ],
+    "resolution_title": "PostgreSQL - Backup and Restore",
+    "resolution_url": "https://www.postgresql.org/docs/current/backup.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q103",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are SQL Server recovery models used for?",
+    "preferred_answer": "Recovery models control transaction-log management and supported restore options. Simple generally does not support log backups, while full supports point-in-time recovery when the log chain is maintained. Bulk-logged changes some logging behavior and has recovery limitations.",
+    "evaluation_points": [
+      "Focus on recovery model",
+      "Focus on log backup"
+    ],
+    "resolution_title": "Microsoft Learn - Back up and Restore SQL Server Databases",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q104",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a backup chain?",
+    "preferred_answer": "It is the ordered set of base, differential or incremental, and transaction-log backups required for a restore target. The chain must be inventoried, protected, and tested. Deleting or overwriting one required element can make later backups unusable for that recovery.",
+    "evaluation_points": [
+      "Focus on backup chain",
+      "Focus on restore sequence"
+    ],
+    "resolution_title": "Microsoft Learn - Back up and Restore SQL Server Databases",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q105",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How is backup consistency achieved while writes continue?",
+    "preferred_answer": "The backup tool captures a coordinated starting point and enough log or snapshot information to reconcile concurrent changes during restore. File copying without engine coordination can produce an inconsistent backup even if every file was copied successfully.",
+    "evaluation_points": [
+      "Focus on consistent backup",
+      "Focus on online backup"
+    ],
+    "resolution_title": "PostgreSQL - Backup and Restore",
+    "resolution_url": "https://www.postgresql.org/docs/current/backup.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q106",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is backup verification not the same as a restore test?",
+    "preferred_answer": "Verification can detect some format, checksum, or media problems, but only a restore test proves that required files, keys, permissions, procedures, time, and application validation work together. Restore drills should measure RTO and include representative dependencies.",
+    "evaluation_points": [
+      "Focus on backup verification",
+      "Focus on restore test"
+    ],
+    "resolution_title": "Microsoft Learn - DBCC CHECKDB",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q107",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should backups be secured?",
+    "preferred_answer": "Encrypt backups, restrict service and operator access, separate credentials, protect keys, use immutable or isolated copies where appropriate, log access, monitor failures, and securely dispose of expired media. Restore locations must be protected because they expose full data.",
+    "evaluation_points": [
+      "Focus on backup encryption",
+      "Focus on least privilege"
+    ],
+    "resolution_title": "AWS - Security Best Practices for Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.Security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q108",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do retention and immutability differ?",
+    "preferred_answer": "Retention defines how long a recovery copy is kept; immutability prevents alteration or deletion during a protected period. Both require governance because excessive retention increases cost and privacy exposure, while insufficient retention reduces recovery options.",
+    "evaluation_points": [
+      "Focus on retention",
+      "Focus on immutability"
+    ],
+    "resolution_title": "AWS - Backing up and Restoring Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q109",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the general restore order for a log-based recovery chain?",
+    "preferred_answer": "Restore the correct base backup, apply the required differential or incremental layer if used, then replay transaction-log backups or archived logs in order to the target. Keep the database in the appropriate restoring state until the final recovery step.",
+    "evaluation_points": [
+      "Focus on restore order",
+      "Focus on log chain"
+    ],
+    "resolution_title": "Microsoft Learn - Back up and Restore SQL Server Databases",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q110",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a tail-log backup in SQL Server?",
+    "preferred_answer": "A tail-log backup captures log records not yet backed up before restore or failover when the database is damaged but the log remains accessible. It can reduce data loss, but it is not always possible and must be planned within the recovery sequence.",
+    "evaluation_points": [
+      "Focus on tail-log backup",
+      "Focus on SQL Server"
+    ],
+    "resolution_title": "Microsoft Learn - Back up and Restore SQL Server Databases",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q111",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is the value of an RMAN recovery catalog?",
+    "preferred_answer": "A recovery catalog stores RMAN metadata outside the target control file and can support longer history, reporting, stored scripts, and multiple databases. It adds another component to protect and recover; RMAN can also operate without it using the control file repository.",
+    "evaluation_points": [
+      "Focus on RMAN",
+      "Focus on recovery catalog"
+    ],
+    "resolution_title": "Oracle Database - Backup and Recovery User Guide",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/bradv/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q112",
+    "role_slug": "db-admin",
+    "domain": "Backup, Restore, Point-in-Time Recovery, and Data Protection",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What should a database recovery drill prove?",
+    "preferred_answer": "It should prove that backups and keys are accessible, procedures are correct, staff can execute them, restore time meets objectives, the target is isolated and secure, integrity checks pass, and application owners can validate business state. Capture actual RPO, RTO, gaps, and remediation owners.",
+    "evaluation_points": [
+      "Focus on recovery drill",
+      "Focus on RTO validation"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q113",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate high availability and disaster recovery.",
+    "preferred_answer": "High availability reduces interruption from expected component failures, usually within a local service boundary. Disaster recovery restores service after larger site, region, corruption, or organizational events. DR includes people, procedures, dependencies, data recovery, and business validation, not only a replica.",
+    "evaluation_points": [
+      "Focus on HA",
+      "Focus on DR"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q114",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare synchronous and asynchronous replication.",
+    "preferred_answer": "Synchronous replication waits for a defined acknowledgment before commit, reducing potential data loss but increasing latency and sensitivity to network problems. Asynchronous replication reduces commit latency but can lose unreplicated transactions during failover.",
+    "evaluation_points": [
+      "Focus on synchronous replication",
+      "Focus on asynchronous replication"
+    ],
+    "resolution_title": "PostgreSQL - High Availability, Load Balancing, and Replication",
+    "resolution_url": "https://www.postgresql.org/docs/current/high-availability.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q115",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate physical and logical replication.",
+    "preferred_answer": "Physical replication replays low-level storage or log changes and usually maintains a close copy of the source. Logical replication sends row or statement-level changes for selected objects, enabling flexibility but adding conflict, schema, datatype, and sequencing considerations.",
+    "evaluation_points": [
+      "Focus on physical replication",
+      "Focus on logical replication"
+    ],
+    "resolution_title": "PostgreSQL - Logical Replication",
+    "resolution_url": "https://www.postgresql.org/docs/current/logical-replication.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q116",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a primary-replica topology?",
+    "preferred_answer": "The primary accepts authoritative writes and sends changes to one or more replicas. Replicas may support failover, read scaling, backup, or reporting. DBAs must define promotion, lag tolerance, read consistency, routing, and protection against dual primaries.",
+    "evaluation_points": [
+      "Focus on primary",
+      "Focus on replica"
+    ],
+    "resolution_title": "MySQL 8.4 - Replication",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/replication.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q117",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are read replicas good for, and what can they not guarantee?",
+    "preferred_answer": "Read replicas can offload read traffic, reporting, or backups. They may be stale, unavailable during maintenance, or unsuitable for read-after-write requirements. Application routing must handle lag, errors, consistency, and failover deliberately.",
+    "evaluation_points": [
+      "Focus on read replica",
+      "Focus on consistency"
+    ],
+    "resolution_title": "AWS - Resilience in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/disaster-recovery-resiliency.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q118",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should replication lag be measured?",
+    "preferred_answer": "Measure both transport and apply progress, time and log-position difference, queue growth, and application-visible freshness. A single seconds-behind value can be misleading during idle periods or clock differences. Correlate lag with workload, I/O, locks, and network.",
+    "evaluation_points": [
+      "Focus on replication lag",
+      "Focus on monitoring"
+    ],
+    "resolution_title": "MySQL 8.4 - Replication",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/replication.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q119",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate failover and switchover.",
+    "preferred_answer": "A switchover is a planned role reversal with controlled synchronization and validation. A failover is triggered by an unplanned failure and may involve data loss or uncertainty. Both require routing, fencing, application reconnection, and post-event validation.",
+    "evaluation_points": [
+      "Focus on failover",
+      "Focus on switchover"
+    ],
+    "resolution_title": "Oracle Database - Data Guard",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/haovw/oracle-data-guard.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q120",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why are quorum and witness mechanisms used?",
+    "preferred_answer": "They help a cluster decide which partition may remain active, reducing split-brain risk. Quorum design must account for node, zone, network, and witness failures. More nodes do not automatically improve safety if failure domains are correlated.",
+    "evaluation_points": [
+      "Focus on quorum",
+      "Focus on witness"
+    ],
+    "resolution_title": "Microsoft Learn - Always On Availability Groups",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q121",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is split brain?",
+    "preferred_answer": "Split brain occurs when multiple nodes believe they are authoritative and accept conflicting work. Prevent it with quorum, leases, consensus, fencing, and controlled promotion. Recovery requires determining the valid history and reconciling or discarding conflicting changes.",
+    "evaluation_points": [
+      "Focus on split brain",
+      "Focus on fencing"
+    ],
+    "resolution_title": "Microsoft Learn - Always On Availability Groups",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q122",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is fencing in a database cluster?",
+    "preferred_answer": "Fencing ensures the old primary cannot continue writing after another node is promoted, for example by revoking storage, network, or process access. Without reliable fencing, automatic failover can convert an availability event into data divergence.",
+    "evaluation_points": [
+      "Focus on fencing",
+      "Focus on cluster safety"
+    ],
+    "resolution_title": "Oracle Database - Data Guard",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/haovw/oracle-data-guard.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q123",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should availability topology map to failure domains?",
+    "preferred_answer": "Place copies across independent power, rack, zone, or region boundaries according to the threat model, while considering network latency, correlated services, control planes, and data residency. A replica in another name but the same failure domain adds limited resilience.",
+    "evaluation_points": [
+      "Focus on failure domain",
+      "Focus on topology"
+    ],
+    "resolution_title": "AWS - Resilience in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/disaster-recovery-resiliency.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q124",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should a database failover health check validate?",
+    "preferred_answer": "Validate engine role and recovery state, replication position, write ability, read correctness, listener or endpoint routing, credentials, jobs, backups, monitoring, dependent services, and business transactions. A process being online is not enough.",
+    "evaluation_points": [
+      "Focus on failover validation",
+      "Focus on health check"
+    ],
+    "resolution_title": "Microsoft Learn - Always On Availability Groups",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q125",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What makes failback difficult?",
+    "preferred_answer": "After running on the secondary, the original site may be stale, damaged, or differently configured. Failback requires resynchronization, capacity checks, routing plans, downtime or controlled switchover, rollback criteria, and validation. It should be designed before the first failover.",
+    "evaluation_points": [
+      "Focus on failback",
+      "Focus on resynchronization"
+    ],
+    "resolution_title": "Microsoft Learn - Azure SQL HA and DR Checklist",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/high-availability-disaster-recovery-checklist?view=azuresql",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q126",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why is replication not a historical recovery mechanism?",
+    "preferred_answer": "Replication usually propagates valid and invalid changes quickly, including deletion, corruption, or compromised writes. Delayed replicas can help selected cases but are not a substitute for independently retained, tested backups.",
+    "evaluation_points": [
+      "Focus on replication",
+      "Focus on backup"
+    ],
+    "resolution_title": "PostgreSQL - High Availability, Load Balancing, and Replication",
+    "resolution_url": "https://www.postgresql.org/docs/current/high-availability.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q127",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How do you validate consistency after an unplanned failover?",
+    "preferred_answer": "Confirm the promoted log position and acknowledged commits, identify transactions near the event, run engine integrity checks, compare critical counts or checksums where safe, validate application invariants, and communicate any uncertainty or potential data loss.",
+    "evaluation_points": [
+      "Focus on post-failover validation",
+      "Focus on data loss"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q128",
+    "role_slug": "db-admin",
+    "domain": "High Availability, Replication, Clustering, and Disaster Recovery",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How do RPO and RTO shape an HA/DR architecture?",
+    "preferred_answer": "RPO drives replication mode, backup frequency, log retention, and data reconciliation. RTO drives automation, warm capacity, DNS or endpoint design, dependency recovery, staffing, and testing. The selected architecture must meet both under realistic failure and budget constraints.",
+    "evaluation_points": [
+      "Focus on RPO",
+      "Focus on RTO",
+      "Focus on architecture"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q129",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does least privilege mean for database access?",
+    "preferred_answer": "Grant only the permissions needed for a defined task, for the shortest practical duration, through managed roles rather than broad direct grants. Review effective access, remove stale accounts, separate duties, and log privileged actions. Least privilege must include service accounts, jobs, replicas, and backup locations.",
+    "evaluation_points": [
+      "Focus on least privilege",
+      "Focus on permissions"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q130",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate authentication and authorization.",
+    "preferred_answer": "Authentication establishes who or what is connecting; authorization determines what that principal may do. Strong authentication does not compensate for excessive privileges, and correct privileges do not compensate for weak identity or credential handling.",
+    "evaluation_points": [
+      "Focus on authentication",
+      "Focus on authorization"
+    ],
+    "resolution_title": "Microsoft Learn - Securing SQL Server",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q131",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why prefer role-based access control?",
+    "preferred_answer": "Roles group permissions by job function, making grants, reviews, and removal more consistent. Use narrowly scoped roles, avoid nested complexity without documentation, separate administrative duties, and periodically reconcile role membership with the identity source and business owner.",
+    "evaluation_points": [
+      "Focus on RBAC",
+      "Focus on roles"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q132",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should database service accounts be managed?",
+    "preferred_answer": "Use non-human identities with a documented owner, minimum privileges, restricted login paths, managed secrets or certificates, rotation, monitoring, and no interactive use unless explicitly required. Avoid shared personal credentials and hard-coded passwords.",
+    "evaluation_points": [
+      "Focus on service account",
+      "Focus on machine identity"
+    ],
+    "resolution_title": "AWS - Security Best Practices for Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.Security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q133",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should a credential-rotation plan include?",
+    "preferred_answer": "Inventory consumers, choose overlapping or dual-secret rollout where possible, update secret stores and applications, validate connections, revoke the old credential, monitor failures, and document emergency rollback. Rotation must include replicas, jobs, backup tools, monitoring, and dormant integrations.",
+    "evaluation_points": [
+      "Focus on credential rotation",
+      "Focus on secrets"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q134",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is TLS important for database connections?",
+    "preferred_answer": "TLS protects credentials and data in transit and authenticates the server when certificates are validated. DBAs must enforce supported protocols, trusted certificate chains, hostname verification, rotation, and client compatibility rather than merely enabling optional encryption.",
+    "evaluation_points": [
+      "Focus on TLS",
+      "Focus on encryption in transit"
+    ],
+    "resolution_title": "Microsoft Learn - Securing SQL Server",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q135",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does transparent data encryption protect?",
+    "preferred_answer": "TDE encrypts database files and often backups at rest without changing application queries. It does not prevent an authorized database session from reading data and does not replace access control, TLS, key protection, auditing, or application-level encryption for selected fields.",
+    "evaluation_points": [
+      "Focus on TDE",
+      "Focus on encryption at rest"
+    ],
+    "resolution_title": "Microsoft Learn - Securing SQL Server",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q136",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "When is column-level or application-level encryption useful?",
+    "preferred_answer": "It is useful when selected sensitive values need protection from storage administrators or broader database access. It introduces key, search, indexing, collation, rotation, and application complexity. Define the threat model before choosing deterministic or randomized approaches.",
+    "evaluation_points": [
+      "Focus on column encryption",
+      "Focus on key management"
+    ],
+    "resolution_title": "Microsoft Learn - Securing SQL Server",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q137",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate data masking and encryption.",
+    "preferred_answer": "Masking changes what a user or environment can see, while encryption transforms data using keys. Dynamic masking is an access presentation control, not cryptographic protection. Static masking creates altered copies for nonproduction and must preserve test usefulness without exposing real identities.",
+    "evaluation_points": [
+      "Focus on data masking",
+      "Focus on encryption"
+    ],
+    "resolution_title": "Microsoft Learn - Azure SQL Security Best Practices",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-best-practice?view=azuresql",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q138",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should a database audit trail capture?",
+    "preferred_answer": "Capture authentication events, privilege and role changes, sensitive object access where required, administrative commands, schema changes, backup and restore actions, audit configuration changes, and failures. Protect logs from tampering, synchronize time, retain appropriately, and make alerts actionable.",
+    "evaluation_points": [
+      "Focus on auditing",
+      "Focus on log management"
+    ],
+    "resolution_title": "NIST SP 800-92 - Guide to Computer Security Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q139",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should privileged database access be controlled?",
+    "preferred_answer": "Use named accounts, just-in-time elevation where possible, approval and ticket linkage, MFA or federated identity, session logging, separation of duties, restricted networks, and frequent review. Emergency access should be monitored and reviewed after use.",
+    "evaluation_points": [
+      "Focus on privileged access",
+      "Focus on separation of duties"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q140",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the DBA role in preventing SQL injection?",
+    "preferred_answer": "DBAs enforce least privilege, disable unsafe capabilities, review anomalous statements, secure stored code, and support parameterized access patterns. The primary prevention is prepared or parameterized queries and safe application design; escaping or stored procedures alone do not automatically make input safe.",
+    "evaluation_points": [
+      "Focus on SQL injection",
+      "Focus on parameterization"
+    ],
+    "resolution_title": "OWASP - SQL Injection Prevention Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q141",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is row-level security?",
+    "preferred_answer": "Row-level security applies policies that filter or block rows according to the executing principal or session context. It centralizes access rules but requires careful predicate design, ownership, testing for bypass paths, performance review, and administrative visibility.",
+    "evaluation_points": [
+      "Focus on row-level security",
+      "Focus on policy"
+    ],
+    "resolution_title": "Microsoft Learn - Securing SQL Server",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q142",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why must backup access be separated from ordinary database access?",
+    "preferred_answer": "Backups contain broad historical data and may bypass row-level application controls. Restrict backup creation, listing, copying, restoration, and key access; monitor exports; isolate restore environments; and securely dispose of expired copies.",
+    "evaluation_points": [
+      "Focus on backup security",
+      "Focus on exfiltration"
+    ],
+    "resolution_title": "AWS - Security Best Practices for Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.Security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q143",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should database security patches be handled?",
+    "preferred_answer": "Track supported versions and advisories, assess exposure and compatibility, test in representative environments, define backup and rollback, schedule deployment based on risk, use rolling methods where supported, validate security and workload health, and document exceptions with owners and expiry.",
+    "evaluation_points": [
+      "Focus on patching",
+      "Focus on vulnerability management"
+    ],
+    "resolution_title": "Microsoft Learn - Securing SQL Server",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q144",
+    "role_slug": "db-admin",
+    "domain": "Database Security, Authentication, Encryption, and Auditing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What database evidence should be preserved during a suspected security incident?",
+    "preferred_answer": "Preserve audit and error logs, connection history, active sessions, query and change evidence, role membership, configuration, replication state, backup access, and relevant host or cloud control-plane logs. Use approved forensic procedures, protect integrity, and avoid destructive cleanup before evidence capture.",
+    "evaluation_points": [
+      "Focus on forensics",
+      "Focus on incident evidence"
+    ],
+    "resolution_title": "NIST SP 800-92 - Guide to Computer Security Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q145",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are useful golden signals for a database service?",
+    "preferred_answer": "Track user-visible latency, throughput, errors, and saturation, then add database-specific signals such as connections, waits, locks, replication lag, transaction-log health, backup success, storage growth, and query regressions. Signals must map to service impact and an owner action.",
+    "evaluation_points": [
+      "Focus on golden signals",
+      "Focus on monitoring"
+    ],
+    "resolution_title": "AWS - Logging and Monitoring in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.LoggingAndMonitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q146",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is a performance baseline necessary?",
+    "preferred_answer": "A baseline captures normal ranges by workload period so a DBA can distinguish expected peaks from anomalies. Include resource, wait, query, connection, storage, and business-throughput measures, and update the baseline after material architecture or workload changes.",
+    "evaluation_points": [
+      "Focus on baseline",
+      "Focus on normal behavior"
+    ],
+    "resolution_title": "Microsoft Learn - Performance Monitoring and Tuning Tools",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q147",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What connection metrics should be monitored?",
+    "preferred_answer": "Monitor active, idle, waiting, failed, and long-lived sessions; connection creation rate; pool saturation; maximum limits; authentication failures; and per-application distribution. High connection count may be a symptom, while rapid churn can be equally harmful.",
+    "evaluation_points": [
+      "Focus on connections",
+      "Focus on sessions",
+      "Focus on pooling"
+    ],
+    "resolution_title": "PostgreSQL - Monitoring Database Activity",
+    "resolution_url": "https://www.postgresql.org/docs/current/monitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q148",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you investigate high database CPU?",
+    "preferred_answer": "Confirm whether CPU is the bottleneck, identify top statements and plans, compile or parse pressure, parallelism, background tasks, recent changes, and workload growth. Correlate with throughput and waits; do not add CPU or kill sessions before understanding the dominant consumer.",
+    "evaluation_points": [
+      "Focus on CPU",
+      "Focus on top queries"
+    ],
+    "resolution_title": "Microsoft Learn - Performance Monitoring and Tuning Tools",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q149",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What indicates database memory pressure?",
+    "preferred_answer": "Indicators include cache churn, low free or target memory, paging or swapping, reduced plan cache, spills, slow reads, memory-grant waits, or OOM events. Separate database configuration from OS, container, and cloud limits and inspect which component is consuming memory.",
+    "evaluation_points": [
+      "Focus on memory pressure",
+      "Focus on cache"
+    ],
+    "resolution_title": "Microsoft Learn - Performance Monitoring and Tuning Tools",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q150",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you distinguish storage latency from database inefficiency?",
+    "preferred_answer": "Compare device latency and queueing with database wait types, read/write sizes, cache behavior, scan volume, checkpoints, backups, and concurrency. Slow storage can expose bad plans, while excessive I/O can make healthy storage appear slow. Use both layers of telemetry.",
+    "evaluation_points": [
+      "Focus on disk latency",
+      "Focus on I/O"
+    ],
+    "resolution_title": "AWS - Logging and Monitoring in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.LoggingAndMonitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q151",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should a lock and deadlock dashboard show?",
+    "preferred_answer": "Show blocked duration, head blockers, waiting chains, object and lock type, statements, transaction age, application identity, deadlock count and graphs, and business impact. Avoid alerting on every brief lock; prioritize sustained or user-visible contention.",
+    "evaluation_points": [
+      "Focus on locks",
+      "Focus on deadlocks",
+      "Focus on dashboard"
+    ],
+    "resolution_title": "PostgreSQL - Monitoring Database Activity",
+    "resolution_url": "https://www.postgresql.org/docs/current/monitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q152",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should replication lag alerts be designed?",
+    "preferred_answer": "Alert on sustained lag, queue growth, apply stoppage, missing heartbeats, and RPO breach rather than a single noisy value. Include topology, role, last received and replayed position, workload, network, storage, and a safe escalation path.",
+    "evaluation_points": [
+      "Focus on replication lag",
+      "Focus on alerting"
+    ],
+    "resolution_title": "MySQL 8.4 - Replication",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/replication.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q153",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What backup signals require alerting?",
+    "preferred_answer": "Alert on failed or missed backups, duration or size anomalies, broken log chains, retention gaps, encryption or key errors, storage exhaustion, verification failures, and overdue restore tests. The alert should identify the affected recovery objective and latest valid recovery point.",
+    "evaluation_points": [
+      "Focus on backup monitoring",
+      "Focus on recovery point"
+    ],
+    "resolution_title": "AWS - Backing up and Restoring Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q154",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should database growth be monitored?",
+    "preferred_answer": "Track used and allocated space by database, file, table, index, log, and temporary area; daily or weekly growth; largest objects; retention; and upcoming platform limits. Forecast with business events and maintenance needs, not only linear averages.",
+    "evaluation_points": [
+      "Focus on growth",
+      "Focus on capacity"
+    ],
+    "resolution_title": "PostgreSQL - Monitoring Database Activity",
+    "resolution_url": "https://www.postgresql.org/docs/current/monitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q155",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the value of slow-query logging?",
+    "preferred_answer": "It captures statements crossing a threshold or meeting selected criteria so the team can identify recurring expensive work. Configure thresholds, sampling, parameter privacy, rotation, and analysis carefully because logging every statement can add overhead and expose sensitive data.",
+    "evaluation_points": [
+      "Focus on slow query log",
+      "Focus on privacy"
+    ],
+    "resolution_title": "MySQL 8.4 - MySQL Server Administration",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/server-administration.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q156",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you choose an alert threshold?",
+    "preferred_answer": "Use service objectives, baselines, trend, duration, rate of change, error budget, and operator response. A threshold should indicate an actionable condition with documented severity and suppression. Static vendor defaults rarely fit every workload.",
+    "evaluation_points": [
+      "Focus on alert threshold",
+      "Focus on SLO"
+    ],
+    "resolution_title": "AWS - Logging and Monitoring in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.LoggingAndMonitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q157",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why are database error logs important even when monitoring is green?",
+    "preferred_answer": "Error logs contain recovery, corruption, authentication, storage, replication, job, and configuration events that aggregate metrics can miss. Centralize and parse them, protect access, correlate time, and avoid relying on human manual review alone.",
+    "evaluation_points": [
+      "Focus on error log",
+      "Focus on log analysis"
+    ],
+    "resolution_title": "NIST SP 800-92 - Guide to Computer Security Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q158",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between database health and availability?",
+    "preferred_answer": "Availability means clients can connect or the service responds; health includes latency, correctness, replication, backup, capacity, and recovery readiness. A database can be reachable but unhealthy, or healthy internally while an application dependency makes the service unavailable.",
+    "evaluation_points": [
+      "Focus on health",
+      "Focus on availability"
+    ],
+    "resolution_title": "AWS - Resilience in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/disaster-recovery-resiliency.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q159",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How long should database telemetry be retained?",
+    "preferred_answer": "Retention should support incident investigation, capacity trends, audit obligations, seasonality, and cost. Keep high-resolution data for recent diagnosis and aggregated history for trends, while protecting sensitive query text and complying with data-retention policy.",
+    "evaluation_points": [
+      "Focus on telemetry retention",
+      "Focus on privacy"
+    ],
+    "resolution_title": "NIST SP 800-92 - Guide to Computer Security Log Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q160",
+    "role_slug": "db-admin",
+    "domain": "Monitoring, Observability, Alerting, and Capacity Planning",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What should an executive database reliability dashboard contain?",
+    "preferred_answer": "Show service SLOs, incidents, capacity risks, backup and restore readiness, replication or DR state, top recurring performance risks, security and patch posture, and owned actions. It should summarize outcomes without hiding uncertainty behind a single health score.",
+    "evaluation_points": [
+      "Focus on reliability dashboard",
+      "Focus on governance"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q161",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why do optimizer statistics require maintenance?",
+    "preferred_answer": "Data distribution changes can make estimates stale and plans inefficient. Statistics maintenance should be workload-aware and product-specific, balancing freshness, sampling accuracy, resource cost, and plan churn rather than updating every object on a fixed schedule.",
+    "evaluation_points": [
+      "Focus on statistics maintenance",
+      "Focus on plans"
+    ],
+    "resolution_title": "PostgreSQL - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q162",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do vacuum, reorganization, and rebuild operations differ?",
+    "preferred_answer": "They address engine-specific cleanup or physical organization. PostgreSQL vacuum reclaims reusable space and maintains visibility; SQL Server reorganize or rebuild changes index structures; Oracle uses different segment tools. Choose the operation only after measuring the actual condition.",
+    "evaluation_points": [
+      "Focus on vacuum",
+      "Focus on reorganize",
+      "Focus on rebuild"
+    ],
+    "resolution_title": "PostgreSQL - Routine Vacuuming",
+    "resolution_url": "https://www.postgresql.org/docs/current/routine-vacuuming.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q163",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the purpose of database integrity checks?",
+    "preferred_answer": "Integrity checks detect structural or allocation inconsistencies before they become unrecoverable surprises. Schedule them according to size and risk, monitor completion, test on restored copies where appropriate, and treat repair as a last resort after preserving evidence and evaluating restore.",
+    "evaluation_points": [
+      "Focus on integrity check",
+      "Focus on corruption"
+    ],
+    "resolution_title": "Microsoft Learn - DBCC CHECKDB",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q164",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should a database patch plan contain?",
+    "preferred_answer": "Include version and advisory, scope, compatibility and driver testing, backup and recovery validation, HA sequence, downtime, automation, monitoring, rollback, application sign-off, security validation, and post-change observation. Confirm support and upgrade paths.",
+    "evaluation_points": [
+      "Focus on patch plan",
+      "Focus on rollback"
+    ],
+    "resolution_title": "Microsoft Learn - Securing SQL Server",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q165",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a rolling upgrade?",
+    "preferred_answer": "A rolling upgrade updates nodes or replicas sequentially to reduce downtime while service continues. It requires version interoperability, controlled role changes, data-format compatibility, capacity on remaining nodes, and a rollback boundary. Not every engine or version path supports it.",
+    "evaluation_points": [
+      "Focus on rolling upgrade",
+      "Focus on HA"
+    ],
+    "resolution_title": "Oracle Database - Data Guard",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/haovw/oracle-data-guard.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q166",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why test compatibility before a database upgrade?",
+    "preferred_answer": "Upgrades can change optimizer behavior, defaults, reserved words, drivers, extensions, storage formats, security, and deprecated features. Test representative workloads, plans, backups and restores, replication, jobs, monitoring, and rollback on realistic data volume.",
+    "evaluation_points": [
+      "Focus on upgrade testing",
+      "Focus on compatibility"
+    ],
+    "resolution_title": "PostgreSQL - Server Administration",
+    "resolution_url": "https://www.postgresql.org/docs/current/admin.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q167",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should a safe schema-migration pipeline do?",
+    "preferred_answer": "Version changes, lint and review DDL, test on representative scale, estimate locks and log volume, back up or define rollback, deploy in controlled phases, monitor, validate data and application behavior, and record the exact applied version.",
+    "evaluation_points": [
+      "Focus on schema migration",
+      "Focus on deployment pipeline"
+    ],
+    "resolution_title": "PostgreSQL - Server Administration",
+    "resolution_url": "https://www.postgresql.org/docs/current/admin.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q168",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why use configuration management for databases?",
+    "preferred_answer": "Configuration management makes settings reviewable, reproducible, and drift-detectable across environments. Protect secrets, separate dynamic and restart-required settings, validate platform constraints, and avoid blindly forcing one configuration onto different workloads.",
+    "evaluation_points": [
+      "Focus on configuration management",
+      "Focus on drift"
+    ],
+    "resolution_title": "AWS - Amazon RDS User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q169",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What makes a database automation task idempotent?",
+    "preferred_answer": "It checks current state and can run repeatedly without unintended duplicate changes. Idempotent automation uses explicit preconditions, transactions where appropriate, durable checkpoints, clear output, bounded retries, and safe handling of partially completed work.",
+    "evaluation_points": [
+      "Focus on idempotent automation",
+      "Focus on scripts"
+    ],
+    "resolution_title": "PostgreSQL - Server Administration",
+    "resolution_url": "https://www.postgresql.org/docs/current/admin.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q170",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should be included in a scheduled database job?",
+    "preferred_answer": "Define owner, purpose, schedule, credentials, dependencies, timeout, concurrency behavior, logging, alerting, retry and failure policy, resource limits, output retention, and a manual recovery procedure. Jobs should not fail silently or overlap unpredictably.",
+    "evaluation_points": [
+      "Focus on scheduled job",
+      "Focus on operations"
+    ],
+    "resolution_title": "Microsoft Learn - Implement SQL Server Agent Jobs",
+    "resolution_url": "https://learn.microsoft.com/en-us/ssms/agent/implement-jobs",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q171",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should credentials be handled in DBA scripts?",
+    "preferred_answer": "Use a secret manager, managed identity, wallet, protected service account, or short-lived token rather than source code or command-line plaintext. Restrict file and process visibility, rotate credentials, and prevent logs from recording secrets.",
+    "evaluation_points": [
+      "Focus on script security",
+      "Focus on secrets"
+    ],
+    "resolution_title": "AWS - Security Best Practices for Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.Security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q172",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you plan a maintenance window?",
+    "preferred_answer": "Estimate duration and variability, affected services, workload seasonality, dependencies, staffing, backup and rollback, communications, monitoring, freeze conditions, validation, and contingency time. A window is a risk-control mechanism, not permission to skip online alternatives.",
+    "evaluation_points": [
+      "Focus on maintenance window",
+      "Focus on communication"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q173",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you forecast database capacity?",
+    "preferred_answer": "Track data, index, log, temporary, backup, connection, CPU, memory, and I/O trends; separate organic growth from events; model retention and new features; include maintenance and failure headroom; and connect forecast dates to procurement or scaling lead time.",
+    "evaluation_points": [
+      "Focus on capacity forecast",
+      "Focus on growth"
+    ],
+    "resolution_title": "AWS - Logging and Monitoring in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.LoggingAndMonitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q174",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What steps are required to decommission a database safely?",
+    "preferred_answer": "Confirm owners and consumers, stop writes, archive or retain data according to policy, export required metadata, revoke access, disable jobs and replication, update monitoring and dependencies, preserve recovery evidence, securely delete resources, and obtain documented sign-off.",
+    "evaluation_points": [
+      "Focus on decommission",
+      "Focus on retention"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q175",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What operational documentation should a DBA maintain?",
+    "preferred_answer": "Maintain inventory, owners, topology, versions, configuration, access model, backup and recovery, RPO and RTO, monitoring, jobs, maintenance, dependencies, runbooks, known risks, licenses, and change history. Documentation should be tested against reality and easy to find during incidents.",
+    "evaluation_points": [
+      "Focus on documentation",
+      "Focus on inventory"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q176",
+    "role_slug": "db-admin",
+    "domain": "Maintenance, Integrity, Patching, Upgrades, and Automation",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What should be validated after a database change?",
+    "preferred_answer": "Validate service connectivity, roles, jobs, backups, replication, errors, performance baseline, schema and data integrity, application transactions, monitoring, and rollback status. Continue observation long enough to catch delayed effects and close the change only with recorded evidence.",
+    "evaluation_points": [
+      "Focus on post-change validation",
+      "Focus on monitoring"
+    ],
+    "resolution_title": "PostgreSQL - Monitoring Database Activity",
+    "resolution_url": "https://www.postgresql.org/docs/current/monitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q177",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does a PostgreSQL database cluster mean?",
+    "preferred_answer": "A PostgreSQL cluster is one server instance and its data directory containing multiple databases, global roles, configuration, and WAL. It does not necessarily mean a multi-node HA cluster, so the term must be clarified in operations discussions.",
+    "evaluation_points": [
+      "Focus on PostgreSQL cluster",
+      "Focus on instance"
+    ],
+    "resolution_title": "PostgreSQL - Server Administration",
+    "resolution_url": "https://www.postgresql.org/docs/current/admin.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q178",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do PostgreSQL databases and schemas differ?",
+    "preferred_answer": "A server cluster can contain multiple databases that are isolated at the connection level. Each database contains schemas that act as namespaces. Cross-database queries are not native in the same way as cross-schema queries, influencing tenancy and administration design.",
+    "evaluation_points": [
+      "Focus on database",
+      "Focus on schema",
+      "Focus on PostgreSQL"
+    ],
+    "resolution_title": "PostgreSQL - The SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q179",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are shared_buffers and work_mem used for?",
+    "preferred_answer": "shared_buffers is PostgreSQL-managed shared page cache, while work_mem is a per-operation limit for sorts and hashes before spilling. Raising work_mem globally can multiply across sessions and plan nodes, so tune from workload evidence and concurrency.",
+    "evaluation_points": [
+      "Focus on shared_buffers",
+      "Focus on work_mem"
+    ],
+    "resolution_title": "PostgreSQL - Server Administration",
+    "resolution_url": "https://www.postgresql.org/docs/current/admin.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q180",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does autovacuum do?",
+    "preferred_answer": "Autovacuum runs VACUUM and ANALYZE based on change thresholds to reclaim reusable tuple space, maintain visibility information, prevent transaction ID wraparound, and refresh statistics. It is essential production infrastructure and should be monitored and tuned per table when needed.",
+    "evaluation_points": [
+      "Focus on autovacuum",
+      "Focus on analyze"
+    ],
+    "resolution_title": "PostgreSQL - Routine Vacuuming",
+    "resolution_url": "https://www.postgresql.org/docs/current/routine-vacuuming.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q181",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate VACUUM and VACUUM FULL.",
+    "preferred_answer": "VACUUM marks dead tuple space reusable and normally allows concurrent activity. VACUUM FULL rewrites the table to return space to the operating system but takes stronger locks and needs extra space. Use it only when the benefit justifies the disruption.",
+    "evaluation_points": [
+      "Focus on VACUUM",
+      "Focus on VACUUM FULL"
+    ],
+    "resolution_title": "PostgreSQL - Routine Vacuuming",
+    "resolution_url": "https://www.postgresql.org/docs/current/routine-vacuuming.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q182",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does ANALYZE do in PostgreSQL?",
+    "preferred_answer": "ANALYZE samples table data and updates optimizer statistics. It can be run independently or by autovacuum. For skewed or correlated columns, adjust statistics targets or extended statistics based on plan evidence rather than collecting maximum detail everywhere.",
+    "evaluation_points": [
+      "Focus on ANALYZE",
+      "Focus on statistics"
+    ],
+    "resolution_title": "PostgreSQL - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q183",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How is pg_stat_activity used?",
+    "preferred_answer": "pg_stat_activity shows sessions, state, current or recent query, transaction timing, waits, client, and application identity subject to privileges. DBAs use it to find long transactions, blockers, idle-in-transaction sessions, and workload distribution.",
+    "evaluation_points": [
+      "Focus on pg_stat_activity",
+      "Focus on sessions"
+    ],
+    "resolution_title": "PostgreSQL - Monitoring Database Activity",
+    "resolution_url": "https://www.postgresql.org/docs/current/monitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q184",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why can EXPLAIN ANALYZE be dangerous in production?",
+    "preferred_answer": "It actually executes the statement, including writes unless protected, and can consume full query resources. Use read-only safeguards, transactions with rollback where valid, lower-risk environments, statement limits, or existing plan telemetry for expensive or modifying statements.",
+    "evaluation_points": [
+      "Focus on EXPLAIN ANALYZE",
+      "Focus on production safety"
+    ],
+    "resolution_title": "PostgreSQL - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q185",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is pg_hba.conf?",
+    "preferred_answer": "It defines host-based client authentication rules evaluated in order by connection type, address, database, user, and authentication method. DBAs should use narrow rules, secure methods, tested reloads, and TLS requirements; a broad earlier rule can shadow later restrictions.",
+    "evaluation_points": [
+      "Focus on pg_hba.conf",
+      "Focus on authentication"
+    ],
+    "resolution_title": "PostgreSQL - Client Authentication",
+    "resolution_url": "https://www.postgresql.org/docs/current/client-authentication.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q186",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do PostgreSQL roles work?",
+    "preferred_answer": "Roles can own objects, receive privileges, inherit membership, and optionally log in. Use group roles for permissions and separate login roles for identities. Control superuser, create role, create database, replication, bypass RLS, and default privileges carefully.",
+    "evaluation_points": [
+      "Focus on PostgreSQL roles",
+      "Focus on privileges"
+    ],
+    "resolution_title": "PostgreSQL - Client Authentication",
+    "resolution_url": "https://www.postgresql.org/docs/current/client-authentication.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q187",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare pg_dump and pg_basebackup.",
+    "preferred_answer": "pg_dump creates a logical backup of selected databases or objects and supports flexible restore. pg_basebackup creates a physical base backup of the whole cluster for recovery or standby setup. They serve different portability, scale, and recovery objectives.",
+    "evaluation_points": [
+      "Focus on pg_dump",
+      "Focus on pg_basebackup"
+    ],
+    "resolution_title": "PostgreSQL - Backup and Restore",
+    "resolution_url": "https://www.postgresql.org/docs/current/backup.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q188",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is required for PostgreSQL point-in-time recovery?",
+    "preferred_answer": "A valid physical base backup, continuous archived WAL covering the target, correct restore settings, and a recovery target are required. Test archive continuity, permissions, timelines, time zones, and application validation; a missing segment can end the recovery path.",
+    "evaluation_points": [
+      "Focus on PostgreSQL PITR",
+      "Focus on WAL archive"
+    ],
+    "resolution_title": "PostgreSQL - Backup and Restore",
+    "resolution_url": "https://www.postgresql.org/docs/current/backup.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q189",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How does PostgreSQL streaming replication work?",
+    "preferred_answer": "A standby receives WAL records from the primary and replays them, typically using a replication connection and base backup. Monitor send, receive, flush, and replay positions; configure slots or archiving deliberately; and plan promotion, fencing, and rewind or rebuild.",
+    "evaluation_points": [
+      "Focus on streaming replication",
+      "Focus on standby"
+    ],
+    "resolution_title": "PostgreSQL - High Availability, Load Balancing, and Replication",
+    "resolution_url": "https://www.postgresql.org/docs/current/high-availability.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q190",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is PostgreSQL logical replication used for?",
+    "preferred_answer": "It publishes changes from selected tables and applies them through subscriptions, supporting selective replication and some upgrade or integration patterns. It requires compatible schemas, replica identity, sequence handling, DDL coordination, and conflict planning.",
+    "evaluation_points": [
+      "Focus on logical replication",
+      "Focus on publication subscription"
+    ],
+    "resolution_title": "PostgreSQL - Logical Replication",
+    "resolution_url": "https://www.postgresql.org/docs/current/logical-replication.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q191",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are replication slots, and what risk do they create?",
+    "preferred_answer": "Replication slots retain required WAL or logical changes for a consumer so data is not removed prematurely. If a consumer stops, retained WAL can fill storage. Monitor slot activity, lag, ownership, and cleanup before dropping or advancing a slot.",
+    "evaluation_points": [
+      "Focus on replication slot",
+      "Focus on WAL retention"
+    ],
+    "resolution_title": "PostgreSQL - High Availability, Load Balancing, and Replication",
+    "resolution_url": "https://www.postgresql.org/docs/current/high-availability.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q192",
+    "role_slug": "db-admin",
+    "domain": "PostgreSQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can long transactions cause PostgreSQL bloat or wraparound risk?",
+    "preferred_answer": "Old snapshots prevent dead tuples from becoming removable and hold back transaction ID horizons. Monitor transaction age and idle-in-transaction sessions, correct application behavior, tune vacuum, and intervene carefully before storage growth or wraparound protection forces disruption.",
+    "evaluation_points": [
+      "Focus on bloat",
+      "Focus on transaction ID wraparound"
+    ],
+    "resolution_title": "PostgreSQL - Routine Vacuuming",
+    "resolution_url": "https://www.postgresql.org/docs/current/routine-vacuuming.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q193",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does MySQL server administration include?",
+    "preferred_answer": "It includes installation and startup, configuration, user and privilege management, logs, storage engines, backups, replication, performance, resource limits, upgrades, and troubleshooting. Production changes should be version-specific because defaults and feature support evolve.",
+    "evaluation_points": [
+      "Focus on MySQL administration",
+      "Focus on configuration"
+    ],
+    "resolution_title": "MySQL 8.4 - MySQL Server Administration",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/server-administration.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q194",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why is InnoDB the default choice for most MySQL transactional workloads?",
+    "preferred_answer": "InnoDB provides transactions, crash recovery, row-level locking, MVCC, foreign keys, and integrated buffer and redo mechanisms. Other engines have different guarantees, so DBAs should not assume all MySQL tables share InnoDB behavior.",
+    "evaluation_points": [
+      "Focus on InnoDB",
+      "Focus on storage engine"
+    ],
+    "resolution_title": "MySQL 8.4 - The InnoDB Storage Engine",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/innodb-storage-engine.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q195",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the InnoDB buffer pool?",
+    "preferred_answer": "It caches table and index pages and is a major determinant of InnoDB performance. Size it with OS and workload needs in mind, monitor reads, dirty pages, flushing, and pressure, and avoid treating a high hit ratio as the only success measure.",
+    "evaluation_points": [
+      "Focus on buffer pool",
+      "Focus on memory"
+    ],
+    "resolution_title": "MySQL 8.4 - The InnoDB Storage Engine",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/innodb-storage-engine.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q196",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What roles do InnoDB redo and undo logs play?",
+    "preferred_answer": "Redo supports durability and crash recovery by recording changes before data pages. Undo supports rollback and consistent reads through older row versions. Long transactions can retain undo history and increase purge and storage pressure.",
+    "evaluation_points": [
+      "Focus on redo log",
+      "Focus on undo log"
+    ],
+    "resolution_title": "MySQL 8.4 - The InnoDB Storage Engine",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/innodb-storage-engine.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q197",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the MySQL binary log used for?",
+    "preferred_answer": "The binary log records data-changing events for replication and point-in-time recovery. Format, retention, encryption, durability settings, and identifiers must align with recovery and replication goals. Losing required binary logs breaks the recovery chain.",
+    "evaluation_points": [
+      "Focus on binary log",
+      "Focus on PITR"
+    ],
+    "resolution_title": "MySQL 8.4 - Backup and Recovery",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/backup-and-recovery.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q198",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are GTIDs in MySQL replication?",
+    "preferred_answer": "Global transaction identifiers uniquely identify committed transactions across the topology, simplifying failover, replica positioning, and consistency checks. GTID configuration must be compatible across nodes, and errant transactions require careful diagnosis.",
+    "evaluation_points": [
+      "Focus on GTID",
+      "Focus on replication"
+    ],
+    "resolution_title": "MySQL 8.4 - Replication with Global Transaction Identifiers",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/replication-gtids.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q199",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why use mysqldump with --single-transaction for InnoDB?",
+    "preferred_answer": "It obtains a consistent snapshot without locking InnoDB tables for the full export, provided the workload and commands remain compatible. It does not make nontransactional tables consistent and long dumps can retain undo history, so monitor duration and impact.",
+    "evaluation_points": [
+      "Focus on mysqldump",
+      "Focus on single transaction"
+    ],
+    "resolution_title": "MySQL 8.4 - Backup and Recovery",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/backup-and-recovery.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q200",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How is MySQL point-in-time recovery performed conceptually?",
+    "preferred_answer": "Restore a suitable backup, then replay binary-log events up to a target time or position. The backup must include or record the correct log coordinates, logs must be complete, and recovered data and application state must be validated.",
+    "evaluation_points": [
+      "Focus on MySQL PITR",
+      "Focus on binlog"
+    ],
+    "resolution_title": "MySQL 8.4 - Backup and Recovery",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/backup-and-recovery.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q201",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What can cause MySQL replica lag?",
+    "preferred_answer": "Heavy or single-threaded apply work, long transactions, missing indexes, lock waits, slow storage, network delay, insufficient parallelism, DDL, or different hardware can cause lag. Diagnose receive and apply progress separately and avoid relying only on one seconds-behind value.",
+    "evaluation_points": [
+      "Focus on replica lag",
+      "Focus on troubleshooting"
+    ],
+    "resolution_title": "MySQL 8.4 - Replication",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/replication.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q202",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should be checked before promoting a MySQL replica?",
+    "preferred_answer": "Confirm applied position or GTID set, lag and errors, read-only controls, data consistency, capacity, users and configuration, scheduled jobs, backups, routing, and fencing of the old source. Document possible data loss and validate writes after promotion.",
+    "evaluation_points": [
+      "Focus on replica promotion",
+      "Focus on failover"
+    ],
+    "resolution_title": "MySQL 8.4 - Replication",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/replication.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q203",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is MySQL Group Replication or InnoDB Cluster used for?",
+    "preferred_answer": "Group Replication provides coordinated replication and membership used by InnoDB Cluster for HA patterns. It requires quorum, compatible configuration, network reliability, conflict rules, and routing. It does not remove the need for backups or operational testing.",
+    "evaluation_points": [
+      "Focus on Group Replication",
+      "Focus on InnoDB Cluster"
+    ],
+    "resolution_title": "MySQL 8.4 - Replication",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/replication.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q204",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the Performance Schema?",
+    "preferred_answer": "It instruments server execution, waits, statements, stages, transactions, memory, locks, and other events through tables. Enable and consume only the instrumentation needed, understand collection overhead, and use summaries to find workload patterns.",
+    "evaluation_points": [
+      "Focus on Performance Schema",
+      "Focus on instrumentation"
+    ],
+    "resolution_title": "MySQL 8.4 - Performance Schema",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/performance-schema.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q205",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you use EXPLAIN in MySQL?",
+    "preferred_answer": "Use EXPLAIN to inspect table order, access type, possible and chosen keys, estimated rows, filtering, and extra operations. Where appropriate, EXPLAIN ANALYZE adds runtime evidence. Compare estimates with reality and consider the whole query and workload.",
+    "evaluation_points": [
+      "Focus on MySQL EXPLAIN",
+      "Focus on optimizer"
+    ],
+    "resolution_title": "MySQL 8.4 - Optimization",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/optimization.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q206",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is the default InnoDB isolation behavior important for?",
+    "preferred_answer": "MySQL InnoDB commonly uses repeatable read by default, with consistent reads and locking behavior that differs from other engines. DBAs and developers must understand gap or next-key locking, autocommit, and whether business invariants require a different pattern.",
+    "evaluation_points": [
+      "Focus on InnoDB isolation",
+      "Focus on gap locks"
+    ],
+    "resolution_title": "MySQL 8.4 - The InnoDB Storage Engine",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/innodb-storage-engine.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q207",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should be considered for online DDL in MySQL?",
+    "preferred_answer": "Check the supported algorithm and lock level for the exact statement, engine, table, and version. Even online operations can need metadata locks, temporary space, rebuild time, replication capacity, and brief blocking. Test at representative scale.",
+    "evaluation_points": [
+      "Focus on MySQL online DDL",
+      "Focus on metadata lock"
+    ],
+    "resolution_title": "MySQL 8.4 - MySQL Server Administration",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/server-administration.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q208",
+    "role_slug": "db-admin",
+    "domain": "MySQL Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should the MySQL slow query log be used?",
+    "preferred_answer": "Set a meaningful threshold and optional criteria, rotate and protect the log, analyze frequency and total impact, and account for parameter or sensitive-data exposure. Use it with Performance Schema and plan analysis, not as a standalone tuning answer.",
+    "evaluation_points": [
+      "Focus on slow query log",
+      "Focus on tuning"
+    ],
+    "resolution_title": "MySQL 8.4 - MySQL Server Administration",
+    "resolution_url": "https://dev.mysql.com/doc/refman/8.4/en/server-administration.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q209",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate a SQL Server instance and database.",
+    "preferred_answer": "An instance is the Database Engine service with server-level configuration, logins, memory, endpoints, and system databases. A user database contains its own objects, files, users, recovery model, and settings. Multiple databases share instance resources and failure boundaries.",
+    "evaluation_points": [
+      "Focus on SQL Server instance",
+      "Focus on database"
+    ],
+    "resolution_title": "Microsoft Learn - SQL Server Database Engine",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/database-engine/sql-database-engine?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q210",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are SQL Server filegroups used for?",
+    "preferred_answer": "Filegroups organize data files and object placement for administration, backup, restore, partitioning, and storage design. They do not automatically balance I/O, and transaction log files are separate. Design must consider recovery and actual storage paths.",
+    "evaluation_points": [
+      "Focus on filegroup",
+      "Focus on data files"
+    ],
+    "resolution_title": "Microsoft Learn - Pages and Extents Architecture Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/pages-and-extents-architecture-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q211",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are the SQL Server recovery models?",
+    "preferred_answer": "Simple, full, and bulk-logged recovery models control log truncation and supported recovery. Full requires regular log backups for point-in-time recovery. Changing models can affect the log chain, so changes must be documented and followed by required backups.",
+    "evaluation_points": [
+      "Focus on simple",
+      "Focus on full",
+      "Focus on bulk-logged"
+    ],
+    "resolution_title": "Microsoft Learn - Back up and Restore SQL Server Databases",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q212",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do full, differential, and log backups work together in SQL Server?",
+    "preferred_answer": "A full provides the base, a differential contains extents changed since its differential base, and log backups preserve the transaction sequence. A restore can use the full, latest suitable differential, and required logs in order. Copy-only backups help avoid changing selected backup relationships.",
+    "evaluation_points": [
+      "Focus on SQL Server backups",
+      "Focus on differential base"
+    ],
+    "resolution_title": "Microsoft Learn - Back up and Restore SQL Server Databases",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q213",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does WITH NORECOVERY do during restore?",
+    "preferred_answer": "It leaves the database in restoring state so additional differential or log backups can be applied. WITH RECOVERY completes recovery and brings the database online, after which more backups cannot be applied to that restore sequence without starting over.",
+    "evaluation_points": [
+      "Focus on NORECOVERY",
+      "Focus on restore sequence"
+    ],
+    "resolution_title": "Microsoft Learn - Back up and Restore SQL Server Databases",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q214",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is Query Store?",
+    "preferred_answer": "Query Store captures query text, plans, and runtime statistics over time, enabling regression analysis and controlled plan forcing or hints. Configure size, cleanup, capture policy, and monitoring so it remains available and does not become a neglected data store.",
+    "evaluation_points": [
+      "Focus on Query Store",
+      "Focus on plan history"
+    ],
+    "resolution_title": "Microsoft Learn - Tune Performance with Query Store",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/tune-performance-with-the-query-store?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q215",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are dynamic management views?",
+    "preferred_answer": "DMVs and DMFs expose server and database operational state such as requests, sessions, waits, plans, I/O, memory, and indexes. Many values reset on restart or failover and require permissions, so capture time and context before drawing conclusions.",
+    "evaluation_points": [
+      "Focus on DMV",
+      "Focus on diagnostics"
+    ],
+    "resolution_title": "Microsoft Learn - Performance Monitoring and Tuning Tools",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q216",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should SQL Server wait statistics be used?",
+    "preferred_answer": "Wait statistics show where tasks spend time waiting and help narrow the bottleneck. Establish a baseline, exclude benign or idle waits appropriately, correlate with workload and resource metrics, and avoid applying generic fixes to a wait name without evidence.",
+    "evaluation_points": [
+      "Focus on wait statistics",
+      "Focus on performance"
+    ],
+    "resolution_title": "Microsoft Learn - Performance Monitoring and Tuning Tools",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/performance-monitoring-and-tuning-tools?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q217",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why does the clustered-index key affect nonclustered indexes?",
+    "preferred_answer": "Nonclustered indexes use the clustered key as the row locator when a clustered index exists, so a wide, mutable, or nonunique key increases secondary index size and maintenance. Choose a stable, narrow key while preserving query and business needs.",
+    "evaluation_points": [
+      "Focus on clustered key",
+      "Focus on row locator"
+    ],
+    "resolution_title": "Microsoft Learn - Index Architecture and Design Guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q218",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why is tempdb important?",
+    "preferred_answer": "tempdb supports temporary objects, sorts, hashes, row versioning, internal work tables, and many maintenance operations. Monitor allocation contention, file sizing, storage latency, growth, version store, and workload spills. Restart recreates tempdb but does not remove the underlying workload cause.",
+    "evaluation_points": [
+      "Focus on tempdb",
+      "Focus on version store"
+    ],
+    "resolution_title": "Microsoft Learn - SQL Server Database Engine",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/database-engine/sql-database-engine?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q219",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is SQL Server Agent used for?",
+    "preferred_answer": "SQL Server Agent schedules and runs jobs for backup, maintenance, ETL, monitoring, and administrative tasks. Secure service accounts and proxies, log output, configure operators and alerts, prevent overlap, and monitor job history and duration.",
+    "evaluation_points": [
+      "Focus on SQL Server Agent",
+      "Focus on jobs"
+    ],
+    "resolution_title": "Microsoft Learn - Implement SQL Server Agent Jobs",
+    "resolution_url": "https://learn.microsoft.com/en-us/ssms/agent/implement-jobs",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q220",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does DBCC CHECKDB do?",
+    "preferred_answer": "DBCC CHECKDB checks logical and physical integrity across database structures. Run it on a risk-based schedule, monitor completion, and investigate errors. Prefer restore from a clean backup over repair with data loss, and preserve evidence before intervention.",
+    "evaluation_points": [
+      "Focus on DBCC CHECKDB",
+      "Focus on integrity"
+    ],
+    "resolution_title": "Microsoft Learn - DBCC CHECKDB",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q221",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is an Always On availability group?",
+    "preferred_answer": "It groups one or more user databases into a failover unit replicated from a primary to secondary replicas. It supports synchronous or asynchronous modes, listeners, readable secondaries, and backup preferences, but depends on clustering, endpoints, quorum, and tested operations.",
+    "evaluation_points": [
+      "Focus on Always On",
+      "Focus on availability group"
+    ],
+    "resolution_title": "Microsoft Learn - Always On Availability Groups",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q222",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Compare log shipping and availability groups.",
+    "preferred_answer": "Log shipping periodically backs up, copies, and restores logs, offering simpler delayed or DR copies with manual failover. Availability groups stream log records and provide richer failover and read options but add cluster and configuration complexity. Both still require backups.",
+    "evaluation_points": [
+      "Focus on log shipping",
+      "Focus on availability group"
+    ],
+    "resolution_title": "Microsoft Learn - Always On Availability Groups",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q223",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Differentiate TDE and Always Encrypted.",
+    "preferred_answer": "TDE protects database and backup files at rest while the engine decrypts data for authorized sessions. Always Encrypted protects selected values from the server using client-held keys, with query limitations and application changes. They address different threat models.",
+    "evaluation_points": [
+      "Focus on TDE",
+      "Focus on Always Encrypted"
+    ],
+    "resolution_title": "Microsoft Learn - Securing SQL Server",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q224",
+    "role_slug": "db-admin",
+    "domain": "Microsoft SQL Server Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you handle parameter-sensitive plan instability in SQL Server?",
+    "preferred_answer": "Use Query Store and runtime evidence to confirm different parameter populations, then improve statistics, query shape, indexing, or parameter handling. Consider recompilation, plan variants, Query Store hints, or controlled forcing only with monitoring and a review date.",
+    "evaluation_points": [
+      "Focus on parameter sniffing",
+      "Focus on plan stability"
+    ],
+    "resolution_title": "Microsoft Learn - Tune Performance with Query Store",
+    "resolution_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/tune-performance-with-the-query-store?view=sql-server-ver17",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q225",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate an Oracle instance and an Oracle database.",
+    "preferred_answer": "The instance is the memory structures and background processes that manage the database. The database is the physical set of datafiles, control files, and online redo logs. One database can be mounted and opened by an instance, with clustered variants adding multiple instances.",
+    "evaluation_points": [
+      "Focus on Oracle instance",
+      "Focus on database"
+    ],
+    "resolution_title": "Oracle Database Concepts",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/cncpt/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q226",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are the SGA and PGA?",
+    "preferred_answer": "The System Global Area is shared instance memory containing caches and control structures. The Program Global Area is process- or session-private memory used for operations such as sorting and session state. Sizing must account for workload, concurrency, and OS capacity.",
+    "evaluation_points": [
+      "Focus on SGA",
+      "Focus on PGA"
+    ],
+    "resolution_title": "Oracle Database Concepts",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/cncpt/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q227",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are Oracle datafiles, control files, and online redo logs?",
+    "preferred_answer": "Datafiles store database segments, control files record database structure and checkpoint metadata, and online redo logs record changes for recovery. Multiplex critical files where recommended, protect them in backups, and monitor status and capacity.",
+    "evaluation_points": [
+      "Focus on datafile",
+      "Focus on control file",
+      "Focus on redo log"
+    ],
+    "resolution_title": "Oracle Database Concepts",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/cncpt/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q228",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an Oracle tablespace?",
+    "preferred_answer": "A tablespace is a logical storage container backed by one or more datafiles or tempfiles. It supports object placement, capacity, backup, read-only status, and lifecycle administration. Objects still have segment and extent behavior inside it.",
+    "evaluation_points": [
+      "Focus on tablespace",
+      "Focus on datafile"
+    ],
+    "resolution_title": "Oracle Database - Administration",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/administration.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q229",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the Oracle undo tablespace used for?",
+    "preferred_answer": "Undo records previous data values for rollback, read consistency, and selected recovery features. Long queries and transactions can increase undo demand, and insufficient retention can cause snapshot-too-old errors. Size and monitor it from workload evidence.",
+    "evaluation_points": [
+      "Focus on undo tablespace",
+      "Focus on read consistency"
+    ],
+    "resolution_title": "Oracle Database Concepts",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/cncpt/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q230",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a system change number?",
+    "preferred_answer": "An SCN is Oracle logical time used to order changes and identify consistent database states for recovery and read consistency. It helps coordinate redo, checkpoints, backups, and Data Guard; it is not the same as wall-clock time.",
+    "evaluation_points": [
+      "Focus on SCN",
+      "Focus on consistency"
+    ],
+    "resolution_title": "Oracle Database Concepts",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/cncpt/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q231",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is RMAN?",
+    "preferred_answer": "Recovery Manager is Oracle tooling for physical backup, restore, recovery, validation, duplication, and backup metadata management. It understands Oracle block and recovery structures and should be used with tested configurations, retention, encryption, and monitoring.",
+    "evaluation_points": [
+      "Focus on RMAN",
+      "Focus on backup recovery"
+    ],
+    "resolution_title": "Oracle Database - Backup and Recovery User Guide",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/bradv/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q232",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why enable control file autobackup in an RMAN strategy?",
+    "preferred_answer": "It automatically protects the control file and server parameter file after selected backup or structural operations, improving recovery when the repository is lost. The DBA must know the format, location, DBID, and recovery procedure and test it.",
+    "evaluation_points": [
+      "Focus on control file autobackup",
+      "Focus on SPFILE"
+    ],
+    "resolution_title": "Oracle Database - Backup and Recovery User Guide",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/bradv/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q233",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why run Oracle in ARCHIVELOG mode for many production systems?",
+    "preferred_answer": "ARCHIVELOG preserves filled redo logs so online backups, media recovery, and point-in-time recovery are possible. It adds archive storage, backup, deletion, and monitoring requirements; a full archive destination can stop or disrupt database work.",
+    "evaluation_points": [
+      "Focus on ARCHIVELOG",
+      "Focus on archived redo"
+    ],
+    "resolution_title": "Oracle Database - Backup and Recovery User Guide",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/bradv/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q234",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What does Oracle Flashback provide?",
+    "preferred_answer": "Flashback features can query or recover selected data or database state using undo or flashback logs, depending on the feature. They can accelerate recovery from logical errors but require configuration, retention, space, privileges, and testing and do not replace backups.",
+    "evaluation_points": [
+      "Focus on Flashback",
+      "Focus on logical recovery"
+    ],
+    "resolution_title": "Oracle Database - Backup and Recovery User Guide",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/bradv/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q235",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is Oracle Data Guard?",
+    "preferred_answer": "Data Guard maintains standby databases by transporting and applying redo from a primary for data protection, HA, and DR. It supports physical and logical standby patterns and planned or unplanned role transitions, with broker automation available.",
+    "evaluation_points": [
+      "Focus on Data Guard",
+      "Focus on standby"
+    ],
+    "resolution_title": "Oracle Database - Data Guard",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/haovw/oracle-data-guard.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q236",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are Data Guard protection modes?",
+    "preferred_answer": "Maximum performance prioritizes primary performance with asynchronous transport, maximum availability aims for zero data loss while allowing continued operation under selected failures, and maximum protection stops the primary rather than risk data loss when required synchronization cannot be maintained.",
+    "evaluation_points": [
+      "Focus on protection mode",
+      "Focus on zero data loss"
+    ],
+    "resolution_title": "Oracle Database - Data Guard",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/haovw/oracle-data-guard.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q237",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is Oracle Data Pump used for?",
+    "preferred_answer": "Data Pump exports and imports logical database metadata and data using server-side jobs, supporting filters, parallelism, remapping, and network operations. It is useful for migration and object recovery but differs from RMAN physical recovery.",
+    "evaluation_points": [
+      "Focus on Data Pump",
+      "Focus on export import"
+    ],
+    "resolution_title": "Oracle Database Utilities - Data Pump",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/sutil/oracle-data-pump.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q238",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are AWR and ASH used for, and what caution applies?",
+    "preferred_answer": "AWR stores performance snapshots and ASH samples active sessions for diagnosis. They help analyze workload and waits, but usage may require specific Oracle licensing. Confirm entitlements before enabling, querying, or automating reports and use free dynamic views where appropriate.",
+    "evaluation_points": [
+      "Focus on AWR",
+      "Focus on ASH",
+      "Focus on licensing"
+    ],
+    "resolution_title": "Oracle Database Performance Tuning Guide",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/tgdba/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q239",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate Oracle system and object privileges.",
+    "preferred_answer": "System privileges permit database-wide actions such as creating objects or managing sessions; object privileges permit actions on specific objects such as select or execute. Grant through roles where appropriate, minimize ANY and administrative privileges, and audit sensitive access.",
+    "evaluation_points": [
+      "Focus on system privilege",
+      "Focus on object privilege"
+    ],
+    "resolution_title": "Oracle Database Security Guide",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/dbseg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q240",
+    "role_slug": "db-admin",
+    "domain": "Oracle Database Administration",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "How is the Oracle listener different from the database?",
+    "preferred_answer": "The listener accepts network connection requests and directs them to registered database services. The database can be healthy while listener or service registration is not, and vice versa. Troubleshooting should separate network, listener, service, authentication, and database state.",
+    "evaluation_points": [
+      "Focus on listener",
+      "Focus on service registration"
+    ],
+    "resolution_title": "Oracle Database - Administration",
+    "resolution_url": "https://docs.oracle.com/en/database/oracle/oracle-database/21/administration.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q241",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What DBA responsibilities remain in a managed cloud database?",
+    "preferred_answer": "The customer still owns schema, data quality, queries, users and privileges, parameter choices, backups and retention settings, recovery validation, monitoring response, application connectivity, cost, and business continuity. The provider owns only the capabilities stated in the service boundary.",
+    "evaluation_points": [
+      "Focus on managed database",
+      "Focus on shared responsibility"
+    ],
+    "resolution_title": "AWS - Amazon RDS User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q242",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How is Multi-AZ different from a read replica in Amazon RDS?",
+    "preferred_answer": "Multi-AZ is primarily an availability configuration with a standby and managed failover, while read replicas are primarily asynchronous copies for read scaling or selected DR patterns. Engine and deployment options vary, so design to the documented service behavior.",
+    "evaluation_points": [
+      "Focus on Multi-AZ",
+      "Focus on read replica"
+    ],
+    "resolution_title": "AWS - Resilience in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/disaster-recovery-resiliency.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q243",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate a cloud database snapshot and point-in-time recovery.",
+    "preferred_answer": "A snapshot restores to the captured state, while PITR uses automated backups and transaction records to restore to a selectable time within retention. Both create a new recovery target in many services and require application, security, and dependency validation.",
+    "evaluation_points": [
+      "Focus on snapshot",
+      "Focus on PITR"
+    ],
+    "resolution_title": "AWS - Backing up and Restoring Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q244",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are parameter groups or managed database configuration profiles?",
+    "preferred_answer": "They define engine settings outside direct file access. Some parameters apply immediately and others require reboot; some are constrained by the service. Version and document changes, detect drift, test impact, and preserve the previous configuration.",
+    "evaluation_points": [
+      "Focus on parameter group",
+      "Focus on configuration"
+    ],
+    "resolution_title": "AWS - Amazon RDS User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q245",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should cloud database maintenance windows be selected?",
+    "preferred_answer": "Choose periods with lower business risk, account for provider patch behavior, HA topology, backup timing, dependent services, and region time zones. Test application reconnection, communicate expected impact, and monitor before, during, and after maintenance.",
+    "evaluation_points": [
+      "Focus on maintenance window",
+      "Focus on patching"
+    ],
+    "resolution_title": "AWS - Amazon RDS User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q246",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What cloud monitoring sources should a DBA correlate?",
+    "preferred_answer": "Correlate engine metrics and logs with service events, control-plane audit logs, host or platform metrics exposed by the provider, network telemetry, application traces, and cost or quota signals. One dashboard rarely contains the whole failure path.",
+    "evaluation_points": [
+      "Focus on cloud monitoring",
+      "Focus on control plane"
+    ],
+    "resolution_title": "AWS - Logging and Monitoring in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.LoggingAndMonitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q247",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are advantages of IAM or federated database authentication?",
+    "preferred_answer": "It centralizes identity lifecycle, can support short-lived tokens and MFA, and reduces static passwords. It still requires database authorization, token refresh, driver support, emergency access, audit, and protection of the identities that can request tokens.",
+    "evaluation_points": [
+      "Focus on IAM authentication",
+      "Focus on federation"
+    ],
+    "resolution_title": "AWS - Security Best Practices for Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.Security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q248",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why use private connectivity for a cloud database?",
+    "preferred_answer": "Private addressing and controlled network paths reduce direct internet exposure and simplify policy enforcement. They do not replace TLS, authentication, authorization, monitoring, or egress controls. DNS, routing, firewall, and failover behavior must be tested.",
+    "evaluation_points": [
+      "Focus on private endpoint",
+      "Focus on network security"
+    ],
+    "resolution_title": "Microsoft Learn - Azure SQL Security Best Practices",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-best-practice?view=azuresql",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q249",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare offline, online, and phased database migration approaches.",
+    "preferred_answer": "Offline migration stops writes and moves data in one window. Online migration uses replication or change capture to reduce downtime. Phased migration moves tenants, tables, or services incrementally. Choose based on RTO, data volume, compatibility, validation, and rollback.",
+    "evaluation_points": [
+      "Focus on database migration",
+      "Focus on downtime"
+    ],
+    "resolution_title": "Google Cloud - Cloud SQL Documentation",
+    "resolution_url": "https://cloud.google.com/sql/docs",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q250",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How is change data capture used during migration?",
+    "preferred_answer": "CDC captures source changes after an initial load and applies them to the target until cutover. It requires ordering, schema coordination, lag monitoring, delete handling, key consistency, and a defined reconciliation method. CDC does not prove semantic equivalence by itself.",
+    "evaluation_points": [
+      "Focus on CDC",
+      "Focus on migration"
+    ],
+    "resolution_title": "AWS - Amazon RDS User Guide",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q251",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should a database cutover plan contain?",
+    "preferred_answer": "Include freeze or dual-write rules, final synchronization, lag threshold, validation queries, connection and DNS changes, credential readiness, owner decisions, communication, observation period, rollback deadline, and commands with expected results. Rehearse the plan at representative scale.",
+    "evaluation_points": [
+      "Focus on cutover plan",
+      "Focus on migration"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q252",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What makes a migration rollback plan credible?",
+    "preferred_answer": "It states the decision deadline, authoritative system, data written after cutover, reverse synchronization or compensation, connection reversal, backup state, user communication, and validation. A rollback that ignores new writes is not a complete plan.",
+    "evaluation_points": [
+      "Focus on rollback plan",
+      "Focus on data reconciliation"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q253",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can a DBA control managed database cost?",
+    "preferred_answer": "Right-size compute and storage from telemetry, manage backup and log retention, remove unused replicas and snapshots, tune expensive queries, schedule nonproduction resources where supported, choose suitable tiers and licensing, and forecast growth. Cost cuts must preserve recovery and reliability objectives.",
+    "evaluation_points": [
+      "Focus on cloud cost",
+      "Focus on right-sizing"
+    ],
+    "resolution_title": "AWS - Logging and Monitoring in Amazon RDS",
+    "resolution_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.LoggingAndMonitoring.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q254",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you evaluate database portability and vendor lock-in?",
+    "preferred_answer": "Assess SQL and datatype compatibility, extensions, procedural code, identity, backup formats, monitoring APIs, HA features, operational skills, egress, and migration tooling. Portability has a cost, so compare it with the value of managed or proprietary capabilities.",
+    "evaluation_points": [
+      "Focus on portability",
+      "Focus on vendor lock-in"
+    ],
+    "resolution_title": "Microsoft Learn - What is Azure SQL",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q255",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should a DBA communicate during a major incident?",
+    "preferred_answer": "Communicate confirmed impact, affected services and data risk, start time, current mitigation, recovery options, next update time, required decisions, and uncertainty. Avoid unsupported root-cause claims. Keep a decision and action log and coordinate one technical lead and one communication path.",
+    "evaluation_points": [
+      "Focus on incident communication",
+      "Focus on stakeholder update"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DBA-Q256",
+    "role_slug": "db-admin",
+    "domain": "Cloud Databases, Migration, Automation, and Incident Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should a post-incident database review produce?",
+    "preferred_answer": "Produce a blameless timeline, impact and data assessment, detection and response analysis, contributing technical and organizational factors, what worked, recovery evidence, prioritized corrective actions with owners and dates, runbook and monitoring updates, and verification that fixes reduce recurrence.",
+    "evaluation_points": [
+      "Focus on postmortem",
+      "Focus on corrective action"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];
