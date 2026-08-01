@@ -66642,5 +66642,5125 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "BATC-Q001",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Business analysis and value delivery, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Business analysis enables change by defining needs, understanding context, recommending solutions and helping stakeholders realize measurable value.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q002",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Business analysis and value delivery in a real client or technology initiative?",
+    "preferred_answer": "Clarify the change objective, identify affected stakeholders, establish evidence about the need, compare solution options, define outcomes and keep analysis connected to value throughout delivery.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q003",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Business analysis and value delivery from a closely related concept?",
+    "preferred_answer": "Business analysis focuses on needs, value and solution choices; project management focuses on coordinating delivery constraints, although one person may perform parts of both.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q004",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Business analysis and value delivery, and how should it be corrected?",
+    "preferred_answer": "Treating the analyst as a note-taker creates detailed documentation without decision value. Re-anchor work to the decision, outcome, risk and stakeholder need each artifact supports.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q005",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Business Analysis Core Concept Model (BACCM), and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "The BACCM links six concepts - change, need, solution, stakeholder, value and context - so analysis considers the whole system rather than an isolated requirement.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "A Model for Effective Analysis - BACCM",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/2-understanding-business-analysis/2-2-a-model-for-effective-analysis-baccm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q006",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Business Analysis Core Concept Model (BACCM) in a real client or technology initiative?",
+    "preferred_answer": "Use the six concepts as a review lens: describe what is changing, the underlying need, possible solutions, affected stakeholders, expected value and the context that constrains the decision.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "A Model for Effective Analysis - BACCM",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/2-understanding-business-analysis/2-2-a-model-for-effective-analysis-baccm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q007",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Business Analysis Core Concept Model (BACCM) from a closely related concept?",
+    "preferred_answer": "A checklist records separate items; the BACCM emphasizes relationships, such as how a context change alters stakeholder value or makes a solution unsuitable.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "A Model for Effective Analysis - BACCM",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/2-understanding-business-analysis/2-2-a-model-for-effective-analysis-baccm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q008",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Business Analysis Core Concept Model (BACCM), and how should it be corrected?",
+    "preferred_answer": "Ignoring one concept produces blind spots, such as defining a technically valid solution without identifying who receives value. Revisit all six concepts at major decisions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "A Model for Effective Analysis - BACCM",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/2-understanding-business-analysis/2-2-a-model-for-effective-analysis-baccm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q009",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Requirements and designs, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Requirements express a need or capability to be satisfied, while designs describe a possible way to realize that need; both can evolve iteratively.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q010",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Requirements and designs in a real client or technology initiative?",
+    "preferred_answer": "Separate the outcome and constraints from the proposed implementation, document assumptions, compare designs against requirements and preserve traceability from need to delivered capability.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q011",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Requirements and designs from a closely related concept?",
+    "preferred_answer": "A requirement states what must be achieved or constrained; a design selects how the solution may achieve it, even when the design is expressed as a prototype or architecture.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q012",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Requirements and designs, and how should it be corrected?",
+    "preferred_answer": "Writing a preferred screen or product as a mandatory requirement can block better options. Restate the underlying need and evaluate multiple designs where the choice remains open.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q013",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Business analysis planning and monitoring, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Business analysis planning defines the approach, activities, stakeholders, governance, information management and performance measures needed for the initiative.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis Tasks and Knowledge Areas",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q014",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Business analysis planning and monitoring in a real client or technology initiative?",
+    "preferred_answer": "Tailor the analysis approach to risk, delivery method, regulation and stakeholder availability; agree decision rights, repositories, review points and measures of analysis effectiveness.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis Tasks and Knowledge Areas",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q015",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Business analysis planning and monitoring from a closely related concept?",
+    "preferred_answer": "A project plan covers the initiative as a whole; a business analysis plan explains how needs, requirements, decisions and collaboration will be managed.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis Tasks and Knowledge Areas",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q016",
+    "role_slug": "business-analysis",
+    "domain": "Business Analysis Foundations and Operating Context",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Business analysis planning and monitoring, and how should it be corrected?",
+    "preferred_answer": "Using the same heavy template for every change delays learning. Scale rigor to consequence, uncertainty and compliance while retaining clear ownership and traceability.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis Tasks and Knowledge Areas",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q017",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Current-state analysis, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Current-state analysis establishes how the organization, process, technology, information and stakeholder environment operates today, including pain points and constraints.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis Tasks and Knowledge Areas",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q018",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Current-state analysis in a real client or technology initiative?",
+    "preferred_answer": "Combine interviews, observation, process and data analysis, architecture inventory and performance measures; distinguish verified facts from assumptions and local opinions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis Tasks and Knowledge Areas",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q019",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Current-state analysis from a closely related concept?",
+    "preferred_answer": "A current-state description records what exists; root-cause analysis explains why the observed problem occurs and which causes are worth addressing.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis Tasks and Knowledge Areas",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q020",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Current-state analysis, and how should it be corrected?",
+    "preferred_answer": "Documenting the stated process without observing real work creates a fictional baseline. Reconcile policy, system logs, data and frontline practice.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis Tasks and Knowledge Areas",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q021",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Future state and change strategy, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A future state describes the capabilities, outcomes, operating model and measures required after change, while the change strategy outlines how the organization will move from current to future state.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis Tasks and Knowledge Areas",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q022",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Future state and change strategy in a real client or technology initiative?",
+    "preferred_answer": "Define measurable outcomes, capability gaps, transition states, dependencies, risks, adoption needs and a roadmap that can be adjusted as evidence emerges.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis Tasks and Knowledge Areas",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q023",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Future state and change strategy from a closely related concept?",
+    "preferred_answer": "A future state is the destination; a change strategy is the route, sequencing and governance used to reach it.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis Tasks and Knowledge Areas",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q024",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Future state and change strategy, and how should it be corrected?",
+    "preferred_answer": "Jumping directly from vision to a final system ignores transitional operations, data migration and adoption. Define intermediate states and exit criteria.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis Tasks and Knowledge Areas",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q025",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Business capability and value-stream analysis, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A business capability is an organizational ability to achieve an outcome, while a value stream shows the stages through which value is created for a stakeholder.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "TOGAF Business Architecture Foundation Overview",
+    "resolution_url": "https://help.opengroup.org/hc/en-us/articles/32127305940882-TOGAF-Business-Architecture-Foundation-Certification-Overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q026",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Business capability and value-stream analysis in a real client or technology initiative?",
+    "preferred_answer": "Map strategic outcomes to capabilities, assess maturity and pain, identify enabling people, process, information and technology, then prioritize improvements along the value stream.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "TOGAF Business Architecture Foundation Overview",
+    "resolution_url": "https://help.opengroup.org/hc/en-us/articles/32127305940882-TOGAF-Business-Architecture-Foundation-Certification-Overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q027",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Business capability and value-stream analysis from a closely related concept?",
+    "preferred_answer": "A capability describes what the enterprise can do; a process describes how work is performed, and an organization chart describes who currently performs it.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "TOGAF Business Architecture Foundation Overview",
+    "resolution_url": "https://help.opengroup.org/hc/en-us/articles/32127305940882-TOGAF-Business-Architecture-Foundation-Certification-Overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q028",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Business capability and value-stream analysis, and how should it be corrected?",
+    "preferred_answer": "Equating capabilities with departments makes the model unstable during reorganizations. Keep capability definitions outcome-oriented and implementation-neutral.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "TOGAF Business Architecture Foundation Overview",
+    "resolution_url": "https://help.opengroup.org/hc/en-us/articles/32127305940882-TOGAF-Business-Architecture-Foundation-Certification-Overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q029",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Business case and feasibility analysis, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A business case compares the strategic fit, benefits, costs, risks, constraints and feasibility of options so decision-makers can choose whether and how to invest.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q030",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Business case and feasibility analysis in a real client or technology initiative?",
+    "preferred_answer": "State the problem and baseline, evaluate do-nothing and alternative options, quantify financial and non-financial impacts, expose assumptions, run sensitivity analysis and define benefit owners.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q031",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Business case and feasibility analysis from a closely related concept?",
+    "preferred_answer": "Feasibility asks whether an option can work technically, operationally, legally, economically and within time; the business case asks whether it is worth doing compared with alternatives.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q032",
+    "role_slug": "business-analysis",
+    "domain": "Strategy Analysis, Capabilities and Business Cases",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Business case and feasibility analysis, and how should it be corrected?",
+    "preferred_answer": "Using a single optimistic forecast hides uncertainty. Present ranges, downside cases, dependencies and the conditions under which the recommendation changes.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q033",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Stakeholder identification and analysis, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Stakeholder analysis identifies people and groups affected by, influencing or providing information about a change, then assesses their interests, authority, impact and engagement needs.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q034",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Stakeholder identification and analysis in a real client or technology initiative?",
+    "preferred_answer": "Use process roles, customer journeys, organization structures, suppliers, regulators and support channels to discover stakeholders; validate the map and update it as the change evolves.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q035",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Stakeholder identification and analysis from a closely related concept?",
+    "preferred_answer": "A stakeholder list names participants; stakeholder analysis explains why each matters, what evidence they hold and how their support or resistance affects outcomes.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q036",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Stakeholder identification and analysis, and how should it be corrected?",
+    "preferred_answer": "Consulting only senior sponsors misses operational, customer and control perspectives. Include users, support teams, data owners and impacted exceptions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q037",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Decision rights and responsibility mapping, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Decision-rights mapping clarifies who recommends, decides, executes, approves, provides input and must be informed for important analysis and delivery decisions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q038",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Decision rights and responsibility mapping in a real client or technology initiative?",
+    "preferred_answer": "Create a lightweight responsibility matrix for scope, requirement approval, architecture, risk acceptance, data ownership and release decisions; resolve overlaps before escalation is needed.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q039",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Decision rights and responsibility mapping from a closely related concept?",
+    "preferred_answer": "Responsibility for doing work is not the same as accountability for the decision or outcome; a matrix should make that distinction explicit.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q040",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Decision rights and responsibility mapping, and how should it be corrected?",
+    "preferred_answer": "A RACI chart with multiple accountable people or no named decision owner creates delay. Assign one clear decision owner and an escalation path.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q041",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Stakeholder communication planning, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A communication plan matches information, message, format, timing and feedback mechanism to each stakeholder group and the decisions they need to make.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q042",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Stakeholder communication planning in a real client or technology initiative?",
+    "preferred_answer": "Segment audiences, define the purpose of each interaction, use accessible language and visuals, record decisions, and confirm understanding rather than measuring communication by messages sent.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q043",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Stakeholder communication planning from a closely related concept?",
+    "preferred_answer": "Communication distributes information; collaboration creates shared understanding and enables stakeholders to shape decisions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q044",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Stakeholder communication planning, and how should it be corrected?",
+    "preferred_answer": "Sending the same detailed requirements pack to every audience causes disengagement. Tailor depth while maintaining one authoritative source of truth.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q045",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Conflict resolution and influence without authority, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Influence without authority relies on credibility, evidence, empathy, shared outcomes and transparent trade-offs rather than positional control.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q046",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Conflict resolution and influence without authority in a real client or technology initiative?",
+    "preferred_answer": "Surface interests behind positions, establish decision criteria, use data and examples, identify reversible options, facilitate agreement and escalate only when ownership or risk requires it.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q047",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Conflict resolution and influence without authority from a closely related concept?",
+    "preferred_answer": "Compromise splits positions; collaborative problem solving seeks an option that better satisfies underlying needs and constraints.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q048",
+    "role_slug": "business-analysis",
+    "domain": "Stakeholder Analysis, Communication and Influence",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Conflict resolution and influence without authority, and how should it be corrected?",
+    "preferred_answer": "Avoiding disagreement creates false consensus and late resistance. Make conflicts visible early and document the decision rationale.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q049",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Interviews, observation and document analysis, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Interviews reveal perspectives and reasoning, observation exposes actual work and exceptions, and document analysis provides existing rules, history and formal constraints.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q050",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Interviews, observation and document analysis in a real client or technology initiative?",
+    "preferred_answer": "Select techniques based on the question, prepare neutral prompts, sample representative and edge users, compare stated and observed practice, and record source confidence.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q051",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Interviews, observation and document analysis from a closely related concept?",
+    "preferred_answer": "An interview captures what participants say; observation shows what they do in context, and documents show what the organization says should happen.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q052",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Interviews, observation and document analysis, and how should it be corrected?",
+    "preferred_answer": "Relying on one senior subject-matter expert can turn local practice into a universal requirement. Triangulate evidence across methods and stakeholders.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q053",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Requirements and discovery workshops, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A workshop is a facilitated, time-boxed session designed to create shared understanding, decisions or artifacts with the right stakeholders in the room.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q054",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Requirements and discovery workshops in a real client or technology initiative?",
+    "preferred_answer": "Define the decision and outputs, invite decision-makers and practitioners, circulate pre-work, use structured activities, manage dominant voices, capture parking-lot items and confirm decisions before closing.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q055",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Requirements and discovery workshops from a closely related concept?",
+    "preferred_answer": "A meeting exchanges updates; a workshop actively produces or validates an outcome through facilitated participation.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q056",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Requirements and discovery workshops, and how should it be corrected?",
+    "preferred_answer": "An unstructured workshop becomes a long conversation owned by the loudest participant. Use an agenda, decision rules and visible working artifacts.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q057",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Prototypes, surveys and experiments, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Prototypes make ideas testable, surveys collect structured input at scale, and experiments test causal or behavioral hypotheses under controlled conditions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "User Research in Discovery",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/user-research-in-discovery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q058",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Prototypes, surveys and experiments in a real client or technology initiative?",
+    "preferred_answer": "Choose the lowest-cost artifact that can answer the decision question, define participants and success criteria, avoid leading prompts, and separate preference from observed behavior.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "User Research in Discovery",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/user-research-in-discovery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q059",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Prototypes, surveys and experiments from a closely related concept?",
+    "preferred_answer": "A prototype explores a design or workflow; a survey measures reported responses, and an experiment compares outcomes after a controlled change.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "User Research in Discovery",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/user-research-in-discovery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q060",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Prototypes, surveys and experiments, and how should it be corrected?",
+    "preferred_answer": "Treating positive reactions to a polished prototype as proof of adoption creates false confidence. Test realistic tasks and constraints with target users.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "User Research in Discovery",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/user-research-in-discovery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q061",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Confirming elicitation results, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Confirming elicitation results checks that captured information accurately represents stakeholder intent, context, assumptions, conflicts and unresolved questions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q062",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Confirming elicitation results in a real client or technology initiative?",
+    "preferred_answer": "Summarize findings promptly, replay scenarios and examples, identify contradictions, ask stakeholders to verify meaning rather than merely sign documents, and track unresolved items.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q063",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Confirming elicitation results from a closely related concept?",
+    "preferred_answer": "Confirmation validates what was heard; formal approval authorizes use of an agreed requirement or decision.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q064",
+    "role_slug": "business-analysis",
+    "domain": "Elicitation, Discovery and Facilitation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Confirming elicitation results, and how should it be corrected?",
+    "preferred_answer": "Requesting a blanket sign-off on a large document encourages superficial approval. Confirm incrementally using examples, models and decision-focused reviews.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Elicitation and Collaboration",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/elicitation-and-collaboration/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q065",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Requirement types and levels, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Business requirements express enterprise goals, stakeholder requirements describe stakeholder needs, solution requirements define functional and quality capabilities, and transition requirements support movement to the new state.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "BABOK Guide Glossary",
+    "resolution_url": "https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/glossary/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q066",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Requirement types and levels in a real client or technology initiative?",
+    "preferred_answer": "Classify each requirement, maintain relationships between levels, identify owners and acceptance evidence, and prevent low-level implementation details from replacing business outcomes.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "BABOK Guide Glossary",
+    "resolution_url": "https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/glossary/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q067",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Requirement types and levels from a closely related concept?",
+    "preferred_answer": "A business requirement explains why change is needed; a functional requirement describes behavior, a non-functional requirement describes quality or constraints, and a transition requirement is temporary.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "BABOK Guide Glossary",
+    "resolution_url": "https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/glossary/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q068",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Requirement types and levels, and how should it be corrected?",
+    "preferred_answer": "Mixing goals, features and tasks in one list makes prioritization incoherent. Preserve hierarchy and traceability between purpose and implementation.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "BABOK Guide Glossary",
+    "resolution_url": "https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/glossary/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q069",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Requirements traceability, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Traceability connects needs and requirements to sources, designs, delivery items, tests, risks and outcomes so impact and coverage can be assessed.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Traceability Matrix Template",
+    "resolution_url": "https://www.atlassian.com/software/jira/templates/requirements-traceability-matrix",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q070",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Requirements traceability in a real client or technology initiative?",
+    "preferred_answer": "Define which relationships matter, use stable identifiers, link changes to affected artifacts, report orphaned or untested requirements and retire obsolete links deliberately.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Traceability Matrix Template",
+    "resolution_url": "https://www.atlassian.com/software/jira/templates/requirements-traceability-matrix",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q071",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Requirements traceability from a closely related concept?",
+    "preferred_answer": "Traceability is the network of relationships; a traceability matrix is one possible representation of that network.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Traceability Matrix Template",
+    "resolution_url": "https://www.atlassian.com/software/jira/templates/requirements-traceability-matrix",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q072",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Requirements traceability, and how should it be corrected?",
+    "preferred_answer": "Creating thousands of links without a decision use produces maintenance overhead. Trace at a level proportionate to risk, regulation and change frequency.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Traceability Matrix Template",
+    "resolution_url": "https://www.atlassian.com/software/jira/templates/requirements-traceability-matrix",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q073",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Requirements prioritization, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Prioritization orders requirements using value, risk, urgency, dependency, cost, confidence and strategic alignment rather than stakeholder volume alone.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q074",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Requirements prioritization in a real client or technology initiative?",
+    "preferred_answer": "Agree criteria and decision authority, compare alternatives, identify must-have constraints separately, expose opportunity cost and revisit priority when evidence or capacity changes.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q075",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Requirements prioritization from a closely related concept?",
+    "preferred_answer": "Priority states relative importance; sequence also considers dependency and the order that enables learning or safe delivery.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q076",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Requirements prioritization, and how should it be corrected?",
+    "preferred_answer": "Labelling most items mandatory avoids trade-offs and makes the plan meaningless. Challenge the consequence of deferral and distinguish compliance from preference.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q077",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Requirements change control and versioning, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Requirements change control evaluates the reason, impact, authority and decision for a proposed change while preserving the history of approved baselines.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q078",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Requirements change control and versioning in a real client or technology initiative?",
+    "preferred_answer": "Log the request, analyze value and impacts across scope, process, data, architecture, test and adoption, obtain the correct decision, update linked artifacts and communicate the outcome.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q079",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Requirements change control and versioning from a closely related concept?",
+    "preferred_answer": "Change control governs an approved baseline; backlog refinement continuously clarifies and reprioritizes work that may not yet be baselined.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q080",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Classification and Life Cycle Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Requirements change control and versioning, and how should it be corrected?",
+    "preferred_answer": "Treating every clarification as a formal change creates bureaucracy, while allowing material scope changes without analysis destroys accountability. Define thresholds.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q081",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is High-quality requirements, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A high-quality requirement is necessary, clear, feasible, testable, consistent, appropriately atomic and traceable to a source and value objective.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Analysis and Design Definition",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/requirements-analysis-and-design-definition/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q082",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply High-quality requirements in a real client or technology initiative?",
+    "preferred_answer": "Write in domain language, state actors and conditions, quantify thresholds, include exceptions, review with examples and confirm that acceptance can be objectively demonstrated.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Analysis and Design Definition",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/requirements-analysis-and-design-definition/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q083",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish High-quality requirements from a closely related concept?",
+    "preferred_answer": "Verification checks requirement quality and internal consistency; validation checks that the requirement represents a real stakeholder need and supports value.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Analysis and Design Definition",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/requirements-analysis-and-design-definition/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q084",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with High-quality requirements, and how should it be corrected?",
+    "preferred_answer": "Words such as fast, intuitive or user-friendly are not measurable. Replace them with scenarios, thresholds and observable acceptance evidence.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Analysis and Design Definition",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/requirements-analysis-and-design-definition/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q085",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Use cases and scenarios, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A use case describes how an actor interacts with a solution to achieve a goal, including preconditions, normal flow, alternatives, exceptions and postconditions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Analysis and Design Definition",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/requirements-analysis-and-design-definition/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q086",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Use cases and scenarios in a real client or technology initiative?",
+    "preferred_answer": "Identify the actor goal, define scope and trigger, write the main success path, explore alternate and failure paths, then link rules, data and quality requirements.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Analysis and Design Definition",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/requirements-analysis-and-design-definition/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q087",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Use cases and scenarios from a closely related concept?",
+    "preferred_answer": "A user story is a short planning placeholder for a conversation; a use case provides a structured interaction model with detailed flows.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Analysis and Design Definition",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/requirements-analysis-and-design-definition/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q088",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Use cases and scenarios, and how should it be corrected?",
+    "preferred_answer": "Writing only the happy path leaves defects and operational exceptions undiscovered. Ask what happens when data is missing, authorization fails or an external service is unavailable.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Analysis and Design Definition",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/requirements-analysis-and-design-definition/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q089",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is User stories and acceptance criteria, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A user story expresses a small need from a user perspective, while acceptance criteria define specific, testable conditions that the story must satisfy.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "User Stories with Examples and a Template",
+    "resolution_url": "https://www.atlassian.com/agile/project-management/user-stories",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q090",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply User stories and acceptance criteria in a real client or technology initiative?",
+    "preferred_answer": "Write the user, need and value, discuss context with the team, add examples and negative cases, make criteria measurable, and split stories that cannot be understood or completed safely.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "User Stories with Examples and a Template",
+    "resolution_url": "https://www.atlassian.com/agile/project-management/user-stories",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q091",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish User stories and acceptance criteria from a closely related concept?",
+    "preferred_answer": "Acceptance criteria are specific to a backlog item; the Definition of Done is a broader quality standard applied consistently to increments or completed work.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "User Stories with Examples and a Template",
+    "resolution_url": "https://www.atlassian.com/agile/project-management/user-stories",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q092",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with User stories and acceptance criteria, and how should it be corrected?",
+    "preferred_answer": "Using the story sentence as the complete requirement omits rules, data, exceptions and quality constraints. Treat the story as an invitation to analysis and conversation.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "User Stories with Examples and a Template",
+    "resolution_url": "https://www.atlassian.com/agile/project-management/user-stories",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q093",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Business rules, data definitions and decision tables, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Business rules define policies or calculations, data definitions establish shared meaning, and decision tables organize combinations of conditions and resulting actions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "BABOK Guide Glossary",
+    "resolution_url": "https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/glossary/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q094",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Business rules, data definitions and decision tables in a real client or technology initiative?",
+    "preferred_answer": "Separate volatile rules from process steps, name rule owners, define data terms and valid values, model complex conditions in decision tables and test every meaningful combination.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "BABOK Guide Glossary",
+    "resolution_url": "https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/glossary/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q095",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Business rules, data definitions and decision tables from a closely related concept?",
+    "preferred_answer": "A process rule controls what may or must happen; a data definition explains the meaning and structure of information used by that rule.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "BABOK Guide Glossary",
+    "resolution_url": "https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/glossary/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q096",
+    "role_slug": "business-analysis",
+    "domain": "Requirements Modelling and Specification",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Business rules, data definitions and decision tables, and how should it be corrected?",
+    "preferred_answer": "Embedding policy logic only in narrative requirements or code makes it hard to review and change. Externalize important rules with ownership and effective dates.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "BABOK Guide Glossary",
+    "resolution_url": "https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/glossary/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q097",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Process discovery and mapping, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Process discovery identifies triggers, actors, activities, decisions, information, systems, handoffs, controls and outcomes in the way work is actually performed.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Analysis and Design Definition",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/requirements-analysis-and-design-definition/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q098",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Process discovery and mapping in a real client or technology initiative?",
+    "preferred_answer": "Observe work, analyze cases and system data, interview multiple roles, capture variants and exceptions, validate the map with performers and mark uncertainty explicitly.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Analysis and Design Definition",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/requirements-analysis-and-design-definition/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q099",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Process discovery and mapping from a closely related concept?",
+    "preferred_answer": "A procedure prescribes intended steps; a process map should represent the actual flow and the conditions that change it.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Analysis and Design Definition",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/requirements-analysis-and-design-definition/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q100",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Process discovery and mapping, and how should it be corrected?",
+    "preferred_answer": "Mapping only the ideal path hides rework, queues and manual workarounds. Include exception paths and the volume flowing through each variant.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Requirements Analysis and Design Definition",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/requirements-analysis-and-design-definition/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q101",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is BPMN notation and model scope, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "BPMN is a standardized notation for modelling business processes using events, activities, gateways, flows, pools and lanes at an appropriate level of detail.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) Version 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q102",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply BPMN notation and model scope in a real client or technology initiative?",
+    "preferred_answer": "Define the process boundary and audience, use correct event and gateway semantics, separate participants with pools, show message exchanges and keep supporting detail in linked models.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) Version 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q103",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish BPMN notation and model scope from a closely related concept?",
+    "preferred_answer": "A sequence flow connects activities inside a process; a message flow represents communication between separate participants or pools.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) Version 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q104",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with BPMN notation and model scope, and how should it be corrected?",
+    "preferred_answer": "Using BPMN symbols decoratively can create logically invalid models. Model only the detail needed for the decision and validate token flow through scenarios.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) Version 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q105",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is As-is and to-be process design, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "An as-is model establishes the current operating baseline, while a to-be model describes a redesigned process intended to improve outcomes within constraints.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Designing Government Services",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q106",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply As-is and to-be process design in a real client or technology initiative?",
+    "preferred_answer": "Quantify current performance, identify causes and non-value work, redesign roles and controls, evaluate automation, test future scenarios and define transition impacts.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Designing Government Services",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q107",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish As-is and to-be process design from a closely related concept?",
+    "preferred_answer": "A to-be process is not merely the current process with a new system; it may remove steps, change decision rights or redesign the service end to end.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Designing Government Services",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q108",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with As-is and to-be process design, and how should it be corrected?",
+    "preferred_answer": "Automating a broken process can make waste occur faster. Simplify rules, eliminate unnecessary approvals and redesign handoffs before selecting automation.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Designing Government Services",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q109",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Process performance, bottlenecks and controls, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Process performance is assessed through outcome, quality, time, cost, volume and risk measures; bottlenecks constrain flow, while controls reduce defined risks.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q110",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Process performance, bottlenecks and controls in a real client or technology initiative?",
+    "preferred_answer": "Establish baselines, calculate queue and processing time, inspect rework and failure demand, identify the system constraint, redesign controls proportionately and monitor unintended effects.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q111",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Process performance, bottlenecks and controls from a closely related concept?",
+    "preferred_answer": "A bottleneck limits throughput; a pain point may be frustrating but not materially constrain the end-to-end outcome.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q112",
+    "role_slug": "business-analysis",
+    "domain": "Process Analysis, BPMN and Operational Improvement",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Process performance, bottlenecks and controls, and how should it be corrected?",
+    "preferred_answer": "Optimizing one team metric can increase total lead time or risk. Evaluate the whole process and use balanced measures.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q113",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Agile business analysis mindset, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Agile business analysis uses collaboration, short feedback cycles, just-enough detail and continuous learning to deliver value under uncertainty.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Agile Extension to the BABOK Guide",
+    "resolution_url": "https://www.iiba.org/knowledgehub/agile-extension/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q114",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Agile business analysis mindset in a real client or technology initiative?",
+    "preferred_answer": "Analyze at multiple horizons, keep upcoming decisions sufficiently clear, work directly with delivery and users, validate increments and adapt requirements as evidence changes.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Agile Extension to the BABOK Guide",
+    "resolution_url": "https://www.iiba.org/knowledgehub/agile-extension/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q115",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Agile business analysis mindset from a closely related concept?",
+    "preferred_answer": "Agility is responsiveness with discipline; it is not the absence of analysis, documentation or governance.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Agile Extension to the BABOK Guide",
+    "resolution_url": "https://www.iiba.org/knowledgehub/agile-extension/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q116",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Agile business analysis mindset, and how should it be corrected?",
+    "preferred_answer": "Writing a complete specification before any feedback delays learning, while starting work with no shared understanding causes rework. Match detail to decision horizon and risk.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Agile Extension to the BABOK Guide",
+    "resolution_url": "https://www.iiba.org/knowledgehub/agile-extension/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q117",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Backlog refinement and story splitting, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Backlog refinement improves shared understanding, ordering and readiness of future work, while story splitting creates smaller valuable slices that can be delivered and learned from independently.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Agile Extension to the BABOK Guide",
+    "resolution_url": "https://www.iiba.org/knowledgehub/agile-extension/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q118",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Backlog refinement and story splitting in a real client or technology initiative?",
+    "preferred_answer": "Clarify outcomes, rules and examples, identify dependencies, split vertically by workflow, rule, data or scenario, estimate collaboratively and preserve acceptance evidence.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Agile Extension to the BABOK Guide",
+    "resolution_url": "https://www.iiba.org/knowledgehub/agile-extension/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q119",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Backlog refinement and story splitting from a closely related concept?",
+    "preferred_answer": "A task split divides technical work; a vertical story split delivers a testable slice of user or business value across required layers.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Agile Extension to the BABOK Guide",
+    "resolution_url": "https://www.iiba.org/knowledgehub/agile-extension/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q120",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Backlog refinement and story splitting, and how should it be corrected?",
+    "preferred_answer": "Splitting by database, API and interface components creates items that cannot be accepted independently. Prefer end-to-end slices.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Agile Extension to the BABOK Guide",
+    "resolution_url": "https://www.iiba.org/knowledgehub/agile-extension/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q121",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Product Goal, Sprint Goal and increment, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "The Product Goal describes a longer-term objective, the Sprint Goal provides one coherent objective for the Sprint, and the Increment is usable work that meets the Definition of Done.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Scrum Guide - Official Current Version",
+    "resolution_url": "https://scrumguides.org/download.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q122",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Product Goal, Sprint Goal and increment in a real client or technology initiative?",
+    "preferred_answer": "Connect stories to the Product Goal, help the team create a meaningful Sprint Goal, clarify acceptance during the Sprint and inspect the working increment with stakeholders.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Scrum Guide - Official Current Version",
+    "resolution_url": "https://scrumguides.org/download.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q123",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Product Goal, Sprint Goal and increment from a closely related concept?",
+    "preferred_answer": "A Sprint backlog is a plan of work; the Sprint Goal explains why that work matters and allows scope flexibility while protecting the objective.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Scrum Guide - Official Current Version",
+    "resolution_url": "https://scrumguides.org/download.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q124",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Product Goal, Sprint Goal and increment, and how should it be corrected?",
+    "preferred_answer": "A Sprint containing unrelated urgent tickets has no coherent learning or outcome. Group work around an objective and make trade-offs visible.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The Scrum Guide - Official Current Version",
+    "resolution_url": "https://scrumguides.org/download.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q125",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Minimum viable product and hypothesis testing, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "An MVP is the smallest coherent product or experiment that can test a critical value or usability hypothesis with real evidence, not simply the first incomplete release.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Principles Behind the Agile Manifesto",
+    "resolution_url": "https://agilemanifesto.org/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q126",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Minimum viable product and hypothesis testing in a real client or technology initiative?",
+    "preferred_answer": "State the hypothesis and riskiest assumption, choose a safe test and target users, define success and stop criteria, instrument behavior, and decide whether to persevere, adapt or stop.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Principles Behind the Agile Manifesto",
+    "resolution_url": "https://agilemanifesto.org/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q127",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Minimum viable product and hypothesis testing from a closely related concept?",
+    "preferred_answer": "A prototype may test interaction without production operation; an MVP is used to learn about actual value or behavior with sufficient operational credibility.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Principles Behind the Agile Manifesto",
+    "resolution_url": "https://agilemanifesto.org/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q128",
+    "role_slug": "business-analysis",
+    "domain": "Agile Business Analysis and Product Collaboration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Minimum viable product and hypothesis testing, and how should it be corrected?",
+    "preferred_answer": "Calling a low-quality feature set an MVP damages trust and may not test the key hypothesis. Preserve the minimum quality and safety required for valid learning.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Principles Behind the Agile Manifesto",
+    "resolution_url": "https://agilemanifesto.org/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q129",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Business questions and analytical framing, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Analytical framing converts a decision need into specific research questions, measures, population, time period, assumptions and criteria for action.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q130",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Business questions and analytical framing in a real client or technology initiative?",
+    "preferred_answer": "Start with the business decision, define the outcome and baseline, identify available evidence, separate descriptive from causal questions and agree how findings will change action.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q131",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Business questions and analytical framing from a closely related concept?",
+    "preferred_answer": "A data request asks for a report; an analytical question explains the decision the data must support and the uncertainty to reduce.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q132",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Business questions and analytical framing, and how should it be corrected?",
+    "preferred_answer": "Beginning with available fields can produce accurate analysis of the wrong problem. Write the decision and question before selecting data.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q133",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is KPIs, measures and metric definitions, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A KPI is a strategically important performance measure with a defined formula, scope, owner, source, frequency, target and interpretation.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q134",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply KPIs, measures and metric definitions in a real client or technology initiative?",
+    "preferred_answer": "Create a metric dictionary, identify leading and lagging measures, establish a baseline and target, segment results, validate data lineage and define the response to movement.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q135",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish KPIs, measures and metric definitions from a closely related concept?",
+    "preferred_answer": "A metric measures something; a KPI is selected because it indicates progress toward an important objective and triggers management attention.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q136",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with KPIs, measures and metric definitions, and how should it be corrected?",
+    "preferred_answer": "A dashboard with conflicting definitions creates political debates instead of decisions. Agree business logic and ownership before visualization.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q137",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Data quality and lineage, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Data quality describes fitness for use across dimensions such as accuracy, completeness, consistency, timeliness and validity, while lineage records origin and transformation.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q138",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Data quality and lineage in a real client or technology initiative?",
+    "preferred_answer": "Profile source data, define critical data elements and rules, quantify defects, trace transformations, identify owners, document limitations and prioritize remediation by decision impact.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q139",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Data quality and lineage from a closely related concept?",
+    "preferred_answer": "Data cleansing corrects known defects; data governance creates ownership and controls that prevent or manage recurring quality issues.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q140",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Data quality and lineage, and how should it be corrected?",
+    "preferred_answer": "Silently excluding invalid records can bias the result. Report quality issues, treatment rules and the sensitivity of conclusions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q141",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Dashboards, insights and experimentation, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A useful dashboard supports defined decisions with relevant measures, context and exceptions; an experiment tests whether an intervention caused a measurable outcome change.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q142",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Dashboards, insights and experimentation in a real client or technology initiative?",
+    "preferred_answer": "Design around user decisions, show trends and targets, minimize decorative visuals, enable segmentation, document metric logic and use controlled tests when causality matters.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q143",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Dashboards, insights and experimentation from a closely related concept?",
+    "preferred_answer": "A dashboard describes monitored performance; an experiment estimates causal effect by comparing appropriately assigned groups or conditions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q144",
+    "role_slug": "business-analysis",
+    "domain": "Data, Metrics and Business Analytics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Dashboards, insights and experimentation, and how should it be corrected?",
+    "preferred_answer": "Presenting correlation as proof of cause can lead to harmful recommendations. State alternative explanations and the evidence strength.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Guide to Business Data Analytics",
+    "resolution_url": "https://www.iiba.org/knowledgehub/guide-to-business-data-analytics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q145",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Functional and non-functional requirements, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Functional requirements describe behavior and capabilities, while non-functional requirements define quality attributes and constraints such as performance, availability, security, accessibility and maintainability.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q146",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Functional and non-functional requirements in a real client or technology initiative?",
+    "preferred_answer": "Derive quality scenarios from business impact, specify measurable conditions and thresholds, assign owners and test methods, and resolve trade-offs with architecture and operations.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q147",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Functional and non-functional requirements from a closely related concept?",
+    "preferred_answer": "A function states what the solution does; a quality attribute states how well or under what constraints it must do it.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q148",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Functional and non-functional requirements, and how should it be corrected?",
+    "preferred_answer": "Leaving quality requirements as generic statements shifts critical decisions to developers and testers. Quantify workload, failure and recovery conditions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q149",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Architecture context, constraints and trade-offs, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Architecture analysis defines system boundaries, actors, dependencies, information flows, constraints and quality priorities so solution options can be compared transparently.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q150",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Architecture context, constraints and trade-offs in a real client or technology initiative?",
+    "preferred_answer": "Create a context diagram, inventory dependencies and data classifications, document assumptions, evaluate options against quality scenarios and record significant decisions and consequences.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q151",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Architecture context, constraints and trade-offs from a closely related concept?",
+    "preferred_answer": "A requirement constrains or demands an outcome; an architecture decision selects a structural approach and records the trade-off used to satisfy those requirements.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q152",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Architecture context, constraints and trade-offs, and how should it be corrected?",
+    "preferred_answer": "Choosing technology before agreeing quality priorities creates solution bias. Establish workload, risk and operational needs before comparing products.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q153",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Cloud adoption strategy and operating model, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Cloud adoption is an organizational transformation involving strategy, planning, readiness, adoption, governance, security and management, not only infrastructure migration.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q154",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Cloud adoption strategy and operating model in a real client or technology initiative?",
+    "preferred_answer": "Link cloud drivers to measurable outcomes, assess portfolio and skills, define landing-zone and governance needs, choose migration or modernization paths and plan operating-model change.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q155",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Cloud adoption strategy and operating model from a closely related concept?",
+    "preferred_answer": "Migration moves a workload; modernization changes architecture or operating practices to improve business or technical outcomes.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q156",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Cloud adoption strategy and operating model, and how should it be corrected?",
+    "preferred_answer": "Assuming cloud automatically reduces cost ignores consumption, skills, licensing and operating controls. Build a financial and governance model before scaling.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q157",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Build, buy and platform selection, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Build-versus-buy analysis compares strategic differentiation, functional fit, total cost, time, integration, security, vendor risk, extensibility and operating capability.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q158",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Build, buy and platform selection in a real client or technology initiative?",
+    "preferred_answer": "Define weighted decision criteria, separate mandatory from desirable needs, run proof-of-concept tests for critical gaps, model lifecycle costs and document exit and data-portability requirements.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q159",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Build, buy and platform selection from a closely related concept?",
+    "preferred_answer": "A feature comparison measures current fit; a platform decision must also consider roadmap, architecture, implementation, operations and switching risk.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q160",
+    "role_slug": "business-analysis",
+    "domain": "Solution Architecture and Technical Foundations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Build, buy and platform selection, and how should it be corrected?",
+    "preferred_answer": "Selecting the product with the longest feature list can overfit low-value requirements. Weight criteria by business outcomes and risk.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q161",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is API requirements and OpenAPI contracts, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "An API contract defines available operations, resources, parameters, schemas, responses, errors, security and behavioral expectations in a machine- and human-readable form.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "OpenAPI Specification v3.1.1",
+    "resolution_url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q162",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply API requirements and OpenAPI contracts in a real client or technology initiative?",
+    "preferred_answer": "Identify consumers and use cases, define resources and operations, document schemas and validation, specify errors and idempotency, model authentication and versioning, and review the OpenAPI description with teams.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "OpenAPI Specification v3.1.1",
+    "resolution_url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q163",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish API requirements and OpenAPI contracts from a closely related concept?",
+    "preferred_answer": "An API requirement expresses consumer and business needs; an OpenAPI description specifies the interface contract used to implement and test those needs.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "OpenAPI Specification v3.1.1",
+    "resolution_url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q164",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with API requirements and OpenAPI contracts, and how should it be corrected?",
+    "preferred_answer": "Documenting only happy-path endpoints omits failure handling and compatibility. Define error semantics, limits, retries and deprecation expectations.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "OpenAPI Specification v3.1.1",
+    "resolution_url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q165",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Integration patterns and coupling, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Integration patterns describe how systems exchange data and coordinate work through synchronous calls, messaging, events, files or shared data, each with different coupling and failure behavior.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q166",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Integration patterns and coupling in a real client or technology initiative?",
+    "preferred_answer": "Clarify latency, consistency, volume, ownership and recovery needs, compare synchronous and asynchronous options, define source of truth and design for duplicate, delayed and failed messages.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q167",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Integration patterns and coupling from a closely related concept?",
+    "preferred_answer": "Synchronous integration waits for an immediate response and creates runtime dependency; asynchronous integration decouples time but adds eventual consistency and operational complexity.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q168",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Integration patterns and coupling, and how should it be corrected?",
+    "preferred_answer": "Choosing events because they are modern can hide ownership and sequencing problems. Select the simplest pattern that satisfies business and reliability needs.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q169",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Data mapping and migration, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Data migration moves and transforms data from source to target while preserving required meaning, quality, history, security and reconciliation evidence.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q170",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Data mapping and migration in a real client or technology initiative?",
+    "preferred_answer": "Inventory data, define source-to-target mapping and transformation rules, profile quality, decide cleansing ownership, test conversions, reconcile totals and samples, plan cutover and retain rollback evidence.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q171",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Data mapping and migration from a closely related concept?",
+    "preferred_answer": "Data mapping defines field and transformation relationships; migration execution extracts, transforms, loads and validates records using those rules.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q172",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Data mapping and migration, and how should it be corrected?",
+    "preferred_answer": "A technically successful load can still be a business failure if statuses, dates or reference values changed meaning. Validate semantic and operational use with domain owners.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q173",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Interface errors, observability and support requirements, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Operational interface requirements define how failures are detected, communicated, retried, reconciled, supported and audited across integrated systems.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q174",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Interface errors, observability and support requirements in a real client or technology initiative?",
+    "preferred_answer": "Specify correlation identifiers, error categories, retry and dead-letter behavior, monitoring thresholds, ownership, support runbooks, customer impact handling and reconciliation reports.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q175",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Interface errors, observability and support requirements from a closely related concept?",
+    "preferred_answer": "Logging records events; observability provides enough signals and context to understand system behavior and diagnose unknown failures.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q176",
+    "role_slug": "business-analysis",
+    "domain": "APIs, Integration and Data Migration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Interface errors, observability and support requirements, and how should it be corrected?",
+    "preferred_answer": "Treating integration as complete when the happy path works leaves support teams unable to detect silent data loss. Include failure and recovery acceptance criteria.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q177",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Security requirements and threat-informed analysis, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Security requirements translate business risk and threat scenarios into outcomes for identity, protection, detection, response, recovery and governance.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q178",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Security requirements and threat-informed analysis in a real client or technology initiative?",
+    "preferred_answer": "Classify assets and data, identify actors and misuse cases, assess likelihood and impact, define controls and assurance evidence, and involve security specialists early in design.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q179",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Security requirements and threat-informed analysis from a closely related concept?",
+    "preferred_answer": "A control is a safeguard or practice; a security requirement states the outcome or constraint the solution must meet to manage an identified risk.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q180",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Security requirements and threat-informed analysis, and how should it be corrected?",
+    "preferred_answer": "Copying generic controls without linking them to assets and threats creates expensive gaps and duplication. Maintain traceability from risk to control and test evidence.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q181",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Privacy-by-design and data minimization, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Privacy-by-design manages risks to individuals throughout the lifecycle by limiting collection and use, providing transparency, controlling access and enabling appropriate data handling.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q182",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Privacy-by-design and data minimization in a real client or technology initiative?",
+    "preferred_answer": "Map personal data and purposes, identify legal and organizational constraints, minimize fields and retention, define consent or notice needs, analyze sharing and deletion, and assess residual privacy risk.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q183",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Privacy-by-design and data minimization from a closely related concept?",
+    "preferred_answer": "Security protects confidentiality, integrity and availability; privacy also considers how data processing can affect individuals even when systems are secure.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q184",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Privacy-by-design and data minimization, and how should it be corrected?",
+    "preferred_answer": "Collecting data because it may be useful later increases risk and cost. Require a defined purpose, owner, retention period and access rationale for each sensitive element.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q185",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Risk assessment and treatment, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Risk assessment identifies uncertain events or conditions, their causes, probability, impact and affected objectives, while treatment chooses avoidance, reduction, transfer or acceptance actions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q186",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Risk assessment and treatment in a real client or technology initiative?",
+    "preferred_answer": "Use consistent scales, separate inherent and residual risk, assign owners, link mitigations to requirements and controls, define trigger conditions and review risk as the solution changes.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q187",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Risk assessment and treatment from a closely related concept?",
+    "preferred_answer": "An issue has already occurred; a risk is uncertain, although an issue may create new risks that require analysis.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q188",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Risk assessment and treatment, and how should it be corrected?",
+    "preferred_answer": "A large risk register without owners or decisions creates false assurance. Focus on material risks and explicit treatment actions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q189",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Compliance requirements and audit evidence, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Compliance analysis identifies applicable obligations, translates them into testable requirements and ensures sufficient evidence exists to demonstrate operation and accountability.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q190",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Compliance requirements and audit evidence in a real client or technology initiative?",
+    "preferred_answer": "Engage legal, risk and control owners, identify scope and interpretation, map obligations to process and system controls, define records and retention, test design and operation, and track exceptions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q191",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Compliance requirements and audit evidence from a closely related concept?",
+    "preferred_answer": "Compliance is adherence to applicable obligations; governance defines the broader decision rights, policies and oversight through which the organization is directed and controlled.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q192",
+    "role_slug": "business-analysis",
+    "domain": "Security, Privacy, Risk and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Compliance requirements and audit evidence, and how should it be corrected?",
+    "preferred_answer": "Stating that a product is compliant without scope, evidence or owner is not defensible. Record the obligation, control, test and evidence location.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q193",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Solution performance measurement, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Solution evaluation measures whether a delivered solution performs as intended, creates expected value and introduces limitations or adverse effects.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Solution Evaluation",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/solution-evaluation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q194",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Solution performance measurement in a real client or technology initiative?",
+    "preferred_answer": "Define baseline and target measures before implementation, instrument the solution, segment adoption and outcomes, compare results, investigate gaps and recommend corrective actions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Solution Evaluation",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/solution-evaluation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q195",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Solution performance measurement from a closely related concept?",
+    "preferred_answer": "Testing checks conformance before or during release; solution evaluation assesses real-world performance and value after use.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Solution Evaluation",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/solution-evaluation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q196",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Solution performance measurement, and how should it be corrected?",
+    "preferred_answer": "Declaring success at go-live confuses output with outcome. Continue measurement until benefit and operational assumptions are validated.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Solution Evaluation",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/solution-evaluation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q197",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is User acceptance testing, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "UAT provides business evidence that the solution supports agreed user workflows, rules and acceptance conditions in a realistic environment.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "User Acceptance Testing Template",
+    "resolution_url": "https://www.atlassian.com/software/jira/templates/user-acceptance-testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q198",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply User acceptance testing in a real client or technology initiative?",
+    "preferred_answer": "Define scope and entry criteria, select representative users and data, trace scenarios to requirements, capture expected and actual results, triage defects, obtain risk-based acceptance and retain evidence.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "User Acceptance Testing Template",
+    "resolution_url": "https://www.atlassian.com/software/jira/templates/user-acceptance-testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q199",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish User acceptance testing from a closely related concept?",
+    "preferred_answer": "System testing verifies technical behavior; UAT validates business fitness and readiness from the user or operational perspective.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "User Acceptance Testing Template",
+    "resolution_url": "https://www.atlassian.com/software/jira/templates/user-acceptance-testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q200",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with User acceptance testing, and how should it be corrected?",
+    "preferred_answer": "Using UAT as the first time users see the solution turns acceptance into late discovery. Involve users throughout analysis and incremental validation.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "User Acceptance Testing Template",
+    "resolution_url": "https://www.atlassian.com/software/jira/templates/user-acceptance-testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q201",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Benefits realization and ownership, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Benefits realization defines, measures and governs the outcomes expected from change, with named owners responsible for actions and sustained value after delivery.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q202",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Benefits realization and ownership in a real client or technology initiative?",
+    "preferred_answer": "Create a benefit profile with baseline, target, timing, assumptions, dependencies, disbenefits, measurement source and owner; review benefits after adoption and adjust operations.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q203",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Benefits realization and ownership from a closely related concept?",
+    "preferred_answer": "A deliverable is produced by the initiative; a benefit is a measurable improvement enabled by the deliverable and business change.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q204",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Benefits realization and ownership, and how should it be corrected?",
+    "preferred_answer": "Assigning benefit ownership only to the project manager leaves no accountable operational owner after closure. Name business owners with authority to change behavior and process.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q205",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Post-implementation review and continual improvement, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A post-implementation review assesses outcomes, incidents, adoption, costs, controls and lessons, then converts findings into owned improvements.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Solution Evaluation",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/solution-evaluation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q206",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Post-implementation review and continual improvement in a real client or technology initiative?",
+    "preferred_answer": "Review data and stakeholder evidence against the business case, distinguish design from adoption gaps, identify unintended consequences, prioritize corrective actions and share reusable learning.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Solution Evaluation",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/solution-evaluation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q207",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Post-implementation review and continual improvement from a closely related concept?",
+    "preferred_answer": "A lessons-learned session captures experience; a post-implementation review also tests whether the solution delivered expected operational and business value.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Solution Evaluation",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/solution-evaluation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q208",
+    "role_slug": "business-analysis",
+    "domain": "Solution Evaluation, UAT and Benefits Realization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Post-implementation review and continual improvement, and how should it be corrected?",
+    "preferred_answer": "A review that produces only a report has little value. Assign actions, due dates and measures, and integrate them into product or operational backlogs.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Solution Evaluation",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/5-applying-business-analysis-tasks/5-3-business-analysis-knowledge-areas/solution-evaluation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q209",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Change impact assessment, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Change impact assessment identifies how a proposed solution affects roles, skills, processes, policies, data, systems, controls, customers and suppliers.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - People Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q210",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Change impact assessment in a real client or technology initiative?",
+    "preferred_answer": "Compare current and future states by stakeholder group, quantify volume and severity, identify readiness gaps, link impacts to communication, training, process and support actions, and assign owners.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - People Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q211",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Change impact assessment from a closely related concept?",
+    "preferred_answer": "A solution impact describes what changes; an adoption risk describes the possibility that people or operations will not use or sustain the change as intended.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - People Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q212",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Change impact assessment, and how should it be corrected?",
+    "preferred_answer": "Focusing only on new screens misses workload, incentive and control changes. Assess the end-to-end operating model.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - People Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q213",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Adoption and readiness planning, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Readiness planning determines whether leadership, people, process, technology and support conditions are sufficient for successful adoption and sustained operation.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - People Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q214",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Adoption and readiness planning in a real client or technology initiative?",
+    "preferred_answer": "Define readiness criteria, assess gaps, identify champions and resistant groups, sequence deployment, prepare support and feedback loops, and use adoption measures after release.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - People Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q215",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Adoption and readiness planning from a closely related concept?",
+    "preferred_answer": "Deployment makes the solution available; adoption means targeted users consistently use it in ways that create the intended value.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - People Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q216",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Adoption and readiness planning, and how should it be corrected?",
+    "preferred_answer": "Measuring training attendance as adoption hides whether behavior changed. Track usage, process performance, error rates and user confidence.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - People Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q217",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Training, communication and knowledge transfer, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Effective enablement gives each audience the knowledge, practice, context and support needed to perform changed work safely and confidently.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "ITIL 4 Practitioner: Change Enablement",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-practitioner-change-enablement-3794",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q218",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Training, communication and knowledge transfer in a real client or technology initiative?",
+    "preferred_answer": "Segment roles, design task-based learning, provide realistic practice and job aids, train support teams, assess competence, update knowledge assets and maintain reinforcement after launch.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "ITIL 4 Practitioner: Change Enablement",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-practitioner-change-enablement-3794",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q219",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Training, communication and knowledge transfer from a closely related concept?",
+    "preferred_answer": "Communication explains why and what is changing; training develops the ability to perform the changed work.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "ITIL 4 Practitioner: Change Enablement",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-practitioner-change-enablement-3794",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q220",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Training, communication and knowledge transfer, and how should it be corrected?",
+    "preferred_answer": "A one-time generic presentation does not create competence. Use role-specific scenarios, practice and follow-up support.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "ITIL 4 Practitioner: Change Enablement",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-practitioner-change-enablement-3794",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q221",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Resistance, feedback and change leadership, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Resistance is information about perceived loss, risk, trust or feasibility and should be understood rather than dismissed as a personality problem.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - People Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q222",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Resistance, feedback and change leadership in a real client or technology initiative?",
+    "preferred_answer": "Listen to concerns, distinguish factual gaps from incentive or identity issues, involve affected people in design, address legitimate impacts, make decisions transparent and create safe feedback channels.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - People Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q223",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Resistance, feedback and change leadership from a closely related concept?",
+    "preferred_answer": "Stakeholder opposition may be a rational response to risk; resistance becomes harmful when concerns cannot be surfaced, assessed or resolved.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - People Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q224",
+    "role_slug": "business-analysis",
+    "domain": "Change Management, Adoption and Organizational Readiness",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Resistance, feedback and change leadership, and how should it be corrected?",
+    "preferred_answer": "Labelling critics as blockers can suppress early warnings. Test their concerns against evidence and adapt the change where justified.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - People Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q225",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Consulting discovery and problem definition, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Consulting discovery establishes the client objective, context, stakeholders, baseline, constraints, evidence and decisions before recommending a solution.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "How the Discovery Phase Works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q226",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Consulting discovery and problem definition in a real client or technology initiative?",
+    "preferred_answer": "Clarify the sponsor question, interview multiple levels, inspect data and operations, map hypotheses and unknowns, define the engagement boundary and agree what evidence will support a recommendation.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "How the Discovery Phase Works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q227",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Consulting discovery and problem definition from a closely related concept?",
+    "preferred_answer": "A client request describes what the client asks for; the consulting problem statement defines the underlying decision or outcome to be addressed.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "How the Discovery Phase Works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q228",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Consulting discovery and problem definition, and how should it be corrected?",
+    "preferred_answer": "Accepting a technology request without testing the problem can lead to a well-delivered solution that does not improve the business outcome.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "How the Discovery Phase Works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q229",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Hypothesis-driven analysis and executive storylining, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Hypothesis-driven consulting forms provisional explanations, tests the most decision-relevant evidence and communicates a structured argument from context to recommendation.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q230",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Hypothesis-driven analysis and executive storylining in a real client or technology initiative?",
+    "preferred_answer": "Create an issue tree, prioritize hypotheses by impact and uncertainty, assign analyses, synthesize evidence, lead with the answer and show implications, options and risks.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q231",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Hypothesis-driven analysis and executive storylining from a closely related concept?",
+    "preferred_answer": "A hypothesis guides efficient inquiry and can be disproved; a conclusion is supported after evidence has been evaluated.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q232",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Hypothesis-driven analysis and executive storylining, and how should it be corrected?",
+    "preferred_answer": "Forcing evidence to fit an early hypothesis creates confirmation bias. Define disconfirming evidence and update the storyline when facts change.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q233",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Proposal, statement of work and acceptance, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A proposal and statement of work define objectives, scope, deliverables, approach, assumptions, responsibilities, timeline, commercial terms and acceptance conditions for an engagement.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q234",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Proposal, statement of work and acceptance in a real client or technology initiative?",
+    "preferred_answer": "Make exclusions and client dependencies explicit, connect deliverables to decisions, define review and acceptance windows, manage change requests and align payment milestones with verifiable outputs.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q235",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Proposal, statement of work and acceptance from a closely related concept?",
+    "preferred_answer": "A proposal persuades and outlines value; a statement of work creates a more precise delivery and commercial agreement.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q236",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Proposal, statement of work and acceptance, and how should it be corrected?",
+    "preferred_answer": "Ambiguous phrases such as support implementation can create unlimited expectations. Define activities, boundaries, environments, artifacts and acceptance evidence.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q237",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Estimation, dependencies and consulting risk, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Consulting estimates combine scope, complexity, assumptions, skills, dependencies, uncertainty and delivery model to create a transparent range and plan.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q238",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Estimation, dependencies and consulting risk in a real client or technology initiative?",
+    "preferred_answer": "Decompose work, estimate using comparable evidence and expert judgment, identify client and vendor dependencies, apply contingency by uncertainty, state confidence and update the forecast as discovery reduces risk.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q239",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Estimation, dependencies and consulting risk from a closely related concept?",
+    "preferred_answer": "An estimate is an informed forecast; a commitment is an agreed target that also requires scope, authority and risk decisions.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q240",
+    "role_slug": "business-analysis",
+    "domain": "Technology Consulting Delivery and Commercial Practice",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Estimation, dependencies and consulting risk, and how should it be corrected?",
+    "preferred_answer": "Presenting an early point estimate as certainty encourages hidden contingency or later conflict. Use ranges, assumptions and change mechanisms.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "The PMI Guide to Business Analysis",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q241",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Enterprise architecture and strategic alignment, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Enterprise architecture connects strategy, capabilities, value streams, information, applications and technology to guide coherent change across initiatives.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "TOGAF Business Architecture Foundation Overview",
+    "resolution_url": "https://help.opengroup.org/hc/en-us/articles/32127305940882-TOGAF-Business-Architecture-Foundation-Certification-Overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q242",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Enterprise architecture and strategic alignment in a real client or technology initiative?",
+    "preferred_answer": "Trace strategic outcomes to capability gaps, identify current and target architecture, define principles and transition states, coordinate roadmaps and govern exceptions based on business impact.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "TOGAF Business Architecture Foundation Overview",
+    "resolution_url": "https://help.opengroup.org/hc/en-us/articles/32127305940882-TOGAF-Business-Architecture-Foundation-Certification-Overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q243",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Enterprise architecture and strategic alignment from a closely related concept?",
+    "preferred_answer": "Solution architecture optimizes one solution; enterprise architecture manages coherence and trade-offs across the broader organization and portfolio.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "TOGAF Business Architecture Foundation Overview",
+    "resolution_url": "https://help.opengroup.org/hc/en-us/articles/32127305940882-TOGAF-Business-Architecture-Foundation-Certification-Overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q244",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Enterprise architecture and strategic alignment, and how should it be corrected?",
+    "preferred_answer": "Using architecture only as a technical approval gate misses its role in investment and business design. Include capability and value perspectives.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "TOGAF Business Architecture Foundation Overview",
+    "resolution_url": "https://help.opengroup.org/hc/en-us/articles/32127305940882-TOGAF-Business-Architecture-Foundation-Certification-Overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q245",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Digital and cloud transformation roadmap, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "A transformation roadmap sequences business, people, governance, process, data and technology capabilities needed to achieve measurable outcomes.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q246",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Digital and cloud transformation roadmap in a real client or technology initiative?",
+    "preferred_answer": "Assess maturity and portfolio, prioritize value waves, identify foundational capabilities, plan operating-model and skill changes, define governance and measure outcomes iteratively.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q247",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Digital and cloud transformation roadmap from a closely related concept?",
+    "preferred_answer": "A technology migration plan lists workloads; a transformation roadmap links technology change to process, organization, product and business outcomes.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q248",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Digital and cloud transformation roadmap, and how should it be corrected?",
+    "preferred_answer": "Moving every legacy process unchanged to a new platform can preserve cost and complexity. Redesign and retire where value supports it.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework - Business Perspective",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/business-perspective.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q249",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is AI use-case analysis and value hypothesis, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "AI use-case analysis defines the user or business decision, expected value, data and model feasibility, alternatives, human role and risks before selecting an AI solution.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q250",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply AI use-case analysis and value hypothesis in a real client or technology initiative?",
+    "preferred_answer": "Frame the outcome, compare deterministic and process alternatives, assess data rights and quality, define evaluation metrics, identify affected people, prototype safely and set conditions for scaling.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q251",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish AI use-case analysis and value hypothesis from a closely related concept?",
+    "preferred_answer": "Automation follows defined rules; AI produces probabilistic outputs that require evaluation, monitoring and human judgment appropriate to consequence.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q252",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with AI use-case analysis and value hypothesis, and how should it be corrected?",
+    "preferred_answer": "Adding generative AI to an unclear process can amplify error and cost. Fix the decision, data and workflow before selecting the model.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q253",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Professional ethics and evidence integrity, and why is it important in business analysis or technology consulting?",
+    "preferred_answer": "Ethical analysis requires honesty about evidence, uncertainty, conflicts of interest, stakeholder impact and the limits of the analyst or consultant recommendation.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q254",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Professional ethics and evidence integrity in a real client or technology initiative?",
+    "preferred_answer": "Separate fact, assumption and opinion, disclose limitations and incentives, protect confidential information, challenge misleading claims, document decisions and escalate material harm or misconduct.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q255",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Professional ethics and evidence integrity from a closely related concept?",
+    "preferred_answer": "Client advocacy supports the client interest within professional and legal boundaries; it does not justify manipulating evidence or concealing foreseeable harm.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "BATC-Q256",
+    "role_slug": "business-analysis",
+    "domain": "Enterprise Transformation, Responsible Technology and Advisory",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Professional ethics and evidence integrity, and how should it be corrected?",
+    "preferred_answer": "Softening a red risk to protect a relationship delays action and transfers harm. Communicate facts, uncertainty, options and consequences clearly.",
+    "evaluation_points": [
+      "Uses precise business-analysis and consulting terminology",
+      "Explains the decision, evidence or trade-off rather than only defining the term",
+      "Connects the answer to stakeholder value, risk, traceability or measurable outcomes",
+      "Tailors the technique to context instead of treating a framework as a rigid rule"
+    ],
+    "resolution_title": "Business Analysis for Practitioners: A Practice Guide - Second Edition",
+    "resolution_url": "https://www.pmi.org/standards/business-analysis-second-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];
