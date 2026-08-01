@@ -35,7 +35,8 @@ const ROLE_SLUG_ALIASES: Record<string, string[]> = {
   'data-science-ai': ['data-science-ai', 'prompt-engineer'],
   'green-computing': ['green-computing', 'green-computing-engineer'],
   'frontend-developer': ['frontend-developer'],
-  'backend-developer': ['backend-developer']
+  'backend-developer': ['backend-developer'],
+  'systems-infra': ['systems-infra', 'system-administrator', 'infrastructure-engineer', 'server-administrator', 'infrastructure-architect']
 };
 
 const isRoleMatch = (itemRoleSlug: string, targetSlug: string) => {

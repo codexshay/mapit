@@ -29063,7 +29063,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-001",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Infrastructure Foundations and Operating Models",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -29083,7 +29083,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-002",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Infrastructure Foundations and Operating Models",
     "difficulty": "foundation",
     "question_type": "operations",
@@ -29103,7 +29103,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-003",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Infrastructure Foundations and Operating Models",
     "difficulty": "intermediate",
     "question_type": "governance",
@@ -29123,7 +29123,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-004",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Infrastructure Foundations and Operating Models",
     "difficulty": "intermediate",
     "question_type": "capacity",
@@ -29143,7 +29143,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-005",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Infrastructure Foundations and Operating Models",
     "difficulty": "intermediate",
     "question_type": "change-management",
@@ -29163,7 +29163,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-006",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Infrastructure Foundations and Operating Models",
     "difficulty": "advanced",
     "question_type": "architecture",
@@ -29183,7 +29183,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-007",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Infrastructure Foundations and Operating Models",
     "difficulty": "advanced",
     "question_type": "measurement",
@@ -29203,7 +29203,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-008",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Infrastructure Foundations and Operating Models",
     "difficulty": "scenario",
     "question_type": "decision",
@@ -29223,7 +29223,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-009",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Fundamentals, Boot and Filesystems",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -29243,7 +29243,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-010",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Fundamentals, Boot and Filesystems",
     "difficulty": "foundation",
     "question_type": "filesystem",
@@ -29263,7 +29263,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-011",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Fundamentals, Boot and Filesystems",
     "difficulty": "intermediate",
     "question_type": "troubleshooting",
@@ -29283,7 +29283,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-012",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Fundamentals, Boot and Filesystems",
     "difficulty": "intermediate",
     "question_type": "operations",
@@ -29303,7 +29303,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-013",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Fundamentals, Boot and Filesystems",
     "difficulty": "intermediate",
     "question_type": "recovery",
@@ -29323,7 +29323,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-014",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Fundamentals, Boot and Filesystems",
     "difficulty": "advanced",
     "question_type": "filesystem",
@@ -29343,7 +29343,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-015",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Fundamentals, Boot and Filesystems",
     "difficulty": "advanced",
     "question_type": "integrity",
@@ -29363,7 +29363,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-016",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Fundamentals, Boot and Filesystems",
     "difficulty": "scenario",
     "question_type": "boot-recovery",
@@ -29383,7 +29383,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-017",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Services, systemd and Process Control",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -29403,7 +29403,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-018",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Services, systemd and Process Control",
     "difficulty": "foundation",
     "question_type": "processes",
@@ -29423,7 +29423,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-019",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Services, systemd and Process Control",
     "difficulty": "intermediate",
     "question_type": "unit-design",
@@ -29443,7 +29443,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-020",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Services, systemd and Process Control",
     "difficulty": "intermediate",
     "question_type": "troubleshooting",
@@ -29463,7 +29463,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-021",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Services, systemd and Process Control",
     "difficulty": "intermediate",
     "question_type": "process-control",
@@ -29483,7 +29483,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-022",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Services, systemd and Process Control",
     "difficulty": "advanced",
     "question_type": "resource-control",
@@ -29503,7 +29503,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-023",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Services, systemd and Process Control",
     "difficulty": "advanced",
     "question_type": "dependency-design",
@@ -29523,7 +29523,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-024",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Services, systemd and Process Control",
     "difficulty": "scenario",
     "question_type": "incident",
@@ -29543,7 +29543,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-025",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Identity, Permissions, sudo and Authentication",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -29563,7 +29563,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-026",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Identity, Permissions, sudo and Authentication",
     "difficulty": "foundation",
     "question_type": "permissions",
@@ -29583,7 +29583,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-027",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Identity, Permissions, sudo and Authentication",
     "difficulty": "intermediate",
     "question_type": "delegation",
@@ -29603,7 +29603,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-028",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Identity, Permissions, sudo and Authentication",
     "difficulty": "intermediate",
     "question_type": "authentication",
@@ -29623,7 +29623,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-029",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Identity, Permissions, sudo and Authentication",
     "difficulty": "intermediate",
     "question_type": "troubleshooting",
@@ -29643,7 +29643,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-030",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Identity, Permissions, sudo and Authentication",
     "difficulty": "advanced",
     "question_type": "privilege",
@@ -29663,7 +29663,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-031",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Identity, Permissions, sudo and Authentication",
     "difficulty": "advanced",
     "question_type": "identity-governance",
@@ -29683,7 +29683,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-032",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Identity, Permissions, sudo and Authentication",
     "difficulty": "scenario",
     "question_type": "access-incident",
@@ -29703,7 +29703,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-033",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Networking, Name Resolution and Firewalling",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -29723,7 +29723,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-034",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Networking, Name Resolution and Firewalling",
     "difficulty": "foundation",
     "question_type": "diagnostics",
@@ -29743,7 +29743,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-035",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Networking, Name Resolution and Firewalling",
     "difficulty": "intermediate",
     "question_type": "troubleshooting",
@@ -29763,7 +29763,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-036",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Networking, Name Resolution and Firewalling",
     "difficulty": "intermediate",
     "question_type": "firewall",
@@ -29783,7 +29783,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-037",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Networking, Name Resolution and Firewalling",
     "difficulty": "intermediate",
     "question_type": "packet-flow",
@@ -29803,7 +29803,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-038",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Networking, Name Resolution and Firewalling",
     "difficulty": "advanced",
     "question_type": "routing",
@@ -29823,7 +29823,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-039",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Networking, Name Resolution and Firewalling",
     "difficulty": "advanced",
     "question_type": "security",
@@ -29843,7 +29843,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-040",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Networking, Name Resolution and Firewalling",
     "difficulty": "scenario",
     "question_type": "diagnosis",
@@ -29863,7 +29863,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-041",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Security Hardening, SELinux and AppArmor",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -29883,7 +29883,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-042",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Security Hardening, SELinux and AppArmor",
     "difficulty": "foundation",
     "question_type": "hardening",
@@ -29903,7 +29903,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-043",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Security Hardening, SELinux and AppArmor",
     "difficulty": "intermediate",
     "question_type": "selinux",
@@ -29923,7 +29923,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-044",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Security Hardening, SELinux and AppArmor",
     "difficulty": "intermediate",
     "question_type": "hardening",
@@ -29943,7 +29943,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-045",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Security Hardening, SELinux and AppArmor",
     "difficulty": "intermediate",
     "question_type": "remote-access",
@@ -29963,7 +29963,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-046",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Security Hardening, SELinux and AppArmor",
     "difficulty": "advanced",
     "question_type": "policy-design",
@@ -29983,7 +29983,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-047",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Security Hardening, SELinux and AppArmor",
     "difficulty": "advanced",
     "question_type": "hardening",
@@ -30003,7 +30003,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-048",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Linux Security Hardening, SELinux and AppArmor",
     "difficulty": "scenario",
     "question_type": "security-diagnosis",
@@ -30023,7 +30023,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-049",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Windows Server Foundations and Remote Administration",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -30043,7 +30043,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-050",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Windows Server Foundations and Remote Administration",
     "difficulty": "foundation",
     "question_type": "platform",
@@ -30063,7 +30063,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-051",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Windows Server Foundations and Remote Administration",
     "difficulty": "intermediate",
     "question_type": "remote-management",
@@ -30083,7 +30083,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-052",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Windows Server Foundations and Remote Administration",
     "difficulty": "intermediate",
     "question_type": "operations",
@@ -30103,7 +30103,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-053",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Windows Server Foundations and Remote Administration",
     "difficulty": "intermediate",
     "question_type": "management",
@@ -30123,7 +30123,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-054",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Windows Server Foundations and Remote Administration",
     "difficulty": "advanced",
     "question_type": "delegation",
@@ -30143,7 +30143,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-055",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Windows Server Foundations and Remote Administration",
     "difficulty": "advanced",
     "question_type": "operations",
@@ -30163,7 +30163,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-056",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Windows Server Foundations and Remote Administration",
     "difficulty": "scenario",
     "question_type": "remote-access",
@@ -30183,7 +30183,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-057",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Active Directory Domain Services and Directory Operations",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -30203,7 +30203,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-058",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Active Directory Domain Services and Directory Operations",
     "difficulty": "foundation",
     "question_type": "operations",
@@ -30223,7 +30223,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-059",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Active Directory Domain Services and Directory Operations",
     "difficulty": "intermediate",
     "question_type": "replication",
@@ -30243,7 +30243,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-060",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Active Directory Domain Services and Directory Operations",
     "difficulty": "intermediate",
     "question_type": "operations",
@@ -30263,7 +30263,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-061",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Active Directory Domain Services and Directory Operations",
     "difficulty": "intermediate",
     "question_type": "troubleshooting",
@@ -30283,7 +30283,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-062",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Active Directory Domain Services and Directory Operations",
     "difficulty": "advanced",
     "question_type": "architecture",
@@ -30303,7 +30303,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-063",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Active Directory Domain Services and Directory Operations",
     "difficulty": "advanced",
     "question_type": "recovery",
@@ -30323,7 +30323,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-064",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Active Directory Domain Services and Directory Operations",
     "difficulty": "scenario",
     "question_type": "incident",
@@ -30343,7 +30343,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-065",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Group Policy, Certificates and Privileged Windows Identity",
     "difficulty": "foundation",
     "question_type": "group-policy",
@@ -30363,7 +30363,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-066",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Group Policy, Certificates and Privileged Windows Identity",
     "difficulty": "foundation",
     "question_type": "certificates",
@@ -30383,7 +30383,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-067",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Group Policy, Certificates and Privileged Windows Identity",
     "difficulty": "intermediate",
     "question_type": "troubleshooting",
@@ -30403,7 +30403,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-068",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Group Policy, Certificates and Privileged Windows Identity",
     "difficulty": "intermediate",
     "question_type": "privileged-access",
@@ -30423,7 +30423,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-069",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Group Policy, Certificates and Privileged Windows Identity",
     "difficulty": "intermediate",
     "question_type": "service-identity",
@@ -30443,7 +30443,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-070",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Group Policy, Certificates and Privileged Windows Identity",
     "difficulty": "advanced",
     "question_type": "pki",
@@ -30463,7 +30463,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-071",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Group Policy, Certificates and Privileged Windows Identity",
     "difficulty": "advanced",
     "question_type": "policy-governance",
@@ -30483,7 +30483,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-072",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Group Policy, Certificates and Privileged Windows Identity",
     "difficulty": "scenario",
     "question_type": "certificate-incident",
@@ -30503,7 +30503,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-073",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
     "difficulty": "foundation",
     "question_type": "dns",
@@ -30523,7 +30523,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-074",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
     "difficulty": "foundation",
     "question_type": "dhcp",
@@ -30543,7 +30543,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-075",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
     "difficulty": "intermediate",
     "question_type": "dns-operations",
@@ -30563,7 +30563,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-076",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
     "difficulty": "intermediate",
     "question_type": "dhcp-operations",
@@ -30583,7 +30583,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-077",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
     "difficulty": "intermediate",
     "question_type": "troubleshooting",
@@ -30603,7 +30603,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-078",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
     "difficulty": "advanced",
     "question_type": "dns-security",
@@ -30623,7 +30623,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-079",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
     "difficulty": "advanced",
     "question_type": "architecture",
@@ -30643,7 +30643,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-080",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "DNS, DHCP, IP Addressing and Core Infrastructure Services",
     "difficulty": "scenario",
     "question_type": "incident",
@@ -30663,7 +30663,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-081",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Storage, RAID, LVM, File Services and Data Integrity",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -30683,7 +30683,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-082",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Storage, RAID, LVM, File Services and Data Integrity",
     "difficulty": "foundation",
     "question_type": "raid",
@@ -30703,7 +30703,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-083",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Storage, RAID, LVM, File Services and Data Integrity",
     "difficulty": "intermediate",
     "question_type": "lvm",
@@ -30723,7 +30723,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-084",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Storage, RAID, LVM, File Services and Data Integrity",
     "difficulty": "intermediate",
     "question_type": "file-services",
@@ -30743,7 +30743,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-085",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Storage, RAID, LVM, File Services and Data Integrity",
     "difficulty": "intermediate",
     "question_type": "capacity",
@@ -30763,7 +30763,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-086",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Storage, RAID, LVM, File Services and Data Integrity",
     "difficulty": "advanced",
     "question_type": "snapshots",
@@ -30783,7 +30783,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-087",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Storage, RAID, LVM, File Services and Data Integrity",
     "difficulty": "advanced",
     "question_type": "performance",
@@ -30803,7 +30803,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-088",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Storage, RAID, LVM, File Services and Data Integrity",
     "difficulty": "scenario",
     "question_type": "data-integrity",
@@ -30823,7 +30823,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-089",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -30843,7 +30843,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-090",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
     "difficulty": "foundation",
     "question_type": "resources",
@@ -30863,7 +30863,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-091",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
     "difficulty": "intermediate",
     "question_type": "templates",
@@ -30883,7 +30883,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-092",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
     "difficulty": "intermediate",
     "question_type": "migration",
@@ -30903,7 +30903,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-093",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
     "difficulty": "intermediate",
     "question_type": "snapshot-operations",
@@ -30923,7 +30923,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-094",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
     "difficulty": "advanced",
     "question_type": "availability",
@@ -30943,7 +30943,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-095",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
     "difficulty": "advanced",
     "question_type": "security",
@@ -30963,7 +30963,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-096",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Virtualization, Hypervisors and Virtual Infrastructure",
     "difficulty": "scenario",
     "question_type": "capacity-incident",
@@ -30983,7 +30983,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-097",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Backup, Restore, Disaster Recovery and Data Protection",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -31003,7 +31003,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-098",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Backup, Restore, Disaster Recovery and Data Protection",
     "difficulty": "foundation",
     "question_type": "backup",
@@ -31023,7 +31023,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-099",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Backup, Restore, Disaster Recovery and Data Protection",
     "difficulty": "intermediate",
     "question_type": "design",
@@ -31043,7 +31043,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-100",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Backup, Restore, Disaster Recovery and Data Protection",
     "difficulty": "intermediate",
     "question_type": "testing",
@@ -31063,7 +31063,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-101",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Backup, Restore, Disaster Recovery and Data Protection",
     "difficulty": "intermediate",
     "question_type": "security",
@@ -31083,7 +31083,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-102",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Backup, Restore, Disaster Recovery and Data Protection",
     "difficulty": "advanced",
     "question_type": "consistency",
@@ -31103,7 +31103,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-103",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Backup, Restore, Disaster Recovery and Data Protection",
     "difficulty": "advanced",
     "question_type": "disaster-recovery",
@@ -31123,7 +31123,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-104",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Backup, Restore, Disaster Recovery and Data Protection",
     "difficulty": "scenario",
     "question_type": "ransomware-recovery",
@@ -31143,7 +31143,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-105",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "High Availability, Clustering and Service Resilience",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -31163,7 +31163,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-106",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "High Availability, Clustering and Service Resilience",
     "difficulty": "foundation",
     "question_type": "quorum",
@@ -31183,7 +31183,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-107",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "High Availability, Clustering and Service Resilience",
     "difficulty": "intermediate",
     "question_type": "health-checks",
@@ -31203,7 +31203,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-108",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "High Availability, Clustering and Service Resilience",
     "difficulty": "intermediate",
     "question_type": "maintenance",
@@ -31223,7 +31223,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-109",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "High Availability, Clustering and Service Resilience",
     "difficulty": "intermediate",
     "question_type": "storage",
@@ -31243,7 +31243,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-110",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "High Availability, Clustering and Service Resilience",
     "difficulty": "advanced",
     "question_type": "failure-modes",
@@ -31263,7 +31263,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-111",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "High Availability, Clustering and Service Resilience",
     "difficulty": "advanced",
     "question_type": "architecture",
@@ -31283,7 +31283,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-112",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "High Availability, Clustering and Service Resilience",
     "difficulty": "scenario",
     "question_type": "cluster-incident",
@@ -31303,7 +31303,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-113",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Patching, Package Management and Platform Lifecycle",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -31323,7 +31323,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-114",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Patching, Package Management and Platform Lifecycle",
     "difficulty": "foundation",
     "question_type": "packages",
@@ -31343,7 +31343,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-115",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Patching, Package Management and Platform Lifecycle",
     "difficulty": "intermediate",
     "question_type": "prioritisation",
@@ -31363,7 +31363,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-116",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Patching, Package Management and Platform Lifecycle",
     "difficulty": "intermediate",
     "question_type": "deployment",
@@ -31383,7 +31383,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-117",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Patching, Package Management and Platform Lifecycle",
     "difficulty": "intermediate",
     "question_type": "verification",
@@ -31403,7 +31403,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-118",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Patching, Package Management and Platform Lifecycle",
     "difficulty": "advanced",
     "question_type": "lifecycle",
@@ -31423,7 +31423,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-119",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Patching, Package Management and Platform Lifecycle",
     "difficulty": "advanced",
     "question_type": "automation",
@@ -31443,7 +31443,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-120",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Patching, Package Management and Platform Lifecycle",
     "difficulty": "scenario",
     "question_type": "emergency-patch",
@@ -31463,7 +31463,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-121",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Monitoring, Logging, Performance and Capacity Engineering",
     "difficulty": "foundation",
     "question_type": "observability",
@@ -31483,7 +31483,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-122",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Monitoring, Logging, Performance and Capacity Engineering",
     "difficulty": "foundation",
     "question_type": "baseline",
@@ -31503,7 +31503,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-123",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Monitoring, Logging, Performance and Capacity Engineering",
     "difficulty": "intermediate",
     "question_type": "alerting",
@@ -31523,7 +31523,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-124",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Monitoring, Logging, Performance and Capacity Engineering",
     "difficulty": "intermediate",
     "question_type": "performance",
@@ -31543,7 +31543,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-125",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Monitoring, Logging, Performance and Capacity Engineering",
     "difficulty": "intermediate",
     "question_type": "logs",
@@ -31563,7 +31563,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-126",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Monitoring, Logging, Performance and Capacity Engineering",
     "difficulty": "advanced",
     "question_type": "capacity",
@@ -31583,7 +31583,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-127",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Monitoring, Logging, Performance and Capacity Engineering",
     "difficulty": "advanced",
     "question_type": "telemetry-security",
@@ -31603,7 +31603,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-128",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Monitoring, Logging, Performance and Capacity Engineering",
     "difficulty": "scenario",
     "question_type": "performance-incident",
@@ -31623,7 +31623,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-129",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Automation with PowerShell, Bash and Python",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -31643,7 +31643,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-130",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Automation with PowerShell, Bash and Python",
     "difficulty": "foundation",
     "question_type": "shell",
@@ -31663,7 +31663,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-131",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Automation with PowerShell, Bash and Python",
     "difficulty": "intermediate",
     "question_type": "powershell",
@@ -31683,7 +31683,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-132",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Automation with PowerShell, Bash and Python",
     "difficulty": "intermediate",
     "question_type": "idempotence",
@@ -31703,7 +31703,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-133",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Automation with PowerShell, Bash and Python",
     "difficulty": "intermediate",
     "question_type": "secrets",
@@ -31723,7 +31723,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-134",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Automation with PowerShell, Bash and Python",
     "difficulty": "advanced",
     "question_type": "remote-execution",
@@ -31743,7 +31743,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-135",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Automation with PowerShell, Bash and Python",
     "difficulty": "advanced",
     "question_type": "testing",
@@ -31763,7 +31763,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-136",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Automation with PowerShell, Bash and Python",
     "difficulty": "scenario",
     "question_type": "automation-incident",
@@ -31783,7 +31783,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-137",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Configuration Management, Images and Infrastructure as Code",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -31803,7 +31803,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-138",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Configuration Management, Images and Infrastructure as Code",
     "difficulty": "foundation",
     "question_type": "inventory",
@@ -31823,7 +31823,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-139",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Configuration Management, Images and Infrastructure as Code",
     "difficulty": "intermediate",
     "question_type": "design",
@@ -31843,7 +31843,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-140",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Configuration Management, Images and Infrastructure as Code",
     "difficulty": "intermediate",
     "question_type": "images",
@@ -31863,7 +31863,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-141",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Configuration Management, Images and Infrastructure as Code",
     "difficulty": "intermediate",
     "question_type": "drift",
@@ -31883,7 +31883,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-142",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Configuration Management, Images and Infrastructure as Code",
     "difficulty": "advanced",
     "question_type": "state-management",
@@ -31903,7 +31903,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-143",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Configuration Management, Images and Infrastructure as Code",
     "difficulty": "advanced",
     "question_type": "governance",
@@ -31923,7 +31923,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-144",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Configuration Management, Images and Infrastructure as Code",
     "difficulty": "scenario",
     "question_type": "drift-incident",
@@ -31943,7 +31943,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-145",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Containers and Hybrid Server Infrastructure",
     "difficulty": "foundation",
     "question_type": "concept",
@@ -31963,7 +31963,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-146",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Containers and Hybrid Server Infrastructure",
     "difficulty": "foundation",
     "question_type": "host-role",
@@ -31983,7 +31983,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-147",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Containers and Hybrid Server Infrastructure",
     "difficulty": "intermediate",
     "question_type": "images",
@@ -32003,7 +32003,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-148",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Containers and Hybrid Server Infrastructure",
     "difficulty": "intermediate",
     "question_type": "storage",
@@ -32023,7 +32023,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-149",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Containers and Hybrid Server Infrastructure",
     "difficulty": "intermediate",
     "question_type": "hybrid-management",
@@ -32043,7 +32043,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-150",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Containers and Hybrid Server Infrastructure",
     "difficulty": "advanced",
     "question_type": "node-operations",
@@ -32063,7 +32063,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-151",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Containers and Hybrid Server Infrastructure",
     "difficulty": "advanced",
     "question_type": "security",
@@ -32083,7 +32083,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-152",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Containers and Hybrid Server Infrastructure",
     "difficulty": "scenario",
     "question_type": "node-incident",
@@ -32103,7 +32103,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-153",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Troubleshooting, Incident Response and Change Control",
     "difficulty": "foundation",
     "question_type": "troubleshooting",
@@ -32123,7 +32123,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-154",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Troubleshooting, Incident Response and Change Control",
     "difficulty": "foundation",
     "question_type": "incident",
@@ -32143,7 +32143,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-155",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Troubleshooting, Incident Response and Change Control",
     "difficulty": "intermediate",
     "question_type": "evidence",
@@ -32163,7 +32163,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-156",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Troubleshooting, Incident Response and Change Control",
     "difficulty": "intermediate",
     "question_type": "change-correlation",
@@ -32183,7 +32183,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-157",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Troubleshooting, Incident Response and Change Control",
     "difficulty": "intermediate",
     "question_type": "root-cause",
@@ -32203,7 +32203,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-158",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Troubleshooting, Incident Response and Change Control",
     "difficulty": "advanced",
     "question_type": "complex-systems",
@@ -32223,7 +32223,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-159",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Troubleshooting, Incident Response and Change Control",
     "difficulty": "advanced",
     "question_type": "communication",
@@ -32243,7 +32243,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-160",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Troubleshooting, Incident Response and Change Control",
     "difficulty": "scenario",
     "question_type": "multi-system-outage",
@@ -32263,7 +32263,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-161",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Future Systems Administration, AIOps and Human Accountability",
     "difficulty": "foundation",
     "question_type": "future-of-work",
@@ -32283,7 +32283,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-162",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Future Systems Administration, AIOps and Human Accountability",
     "difficulty": "foundation",
     "question_type": "ai-risk",
@@ -32303,7 +32303,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-163",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Future Systems Administration, AIOps and Human Accountability",
     "difficulty": "intermediate",
     "question_type": "aiops",
@@ -32323,7 +32323,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-164",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Future Systems Administration, AIOps and Human Accountability",
     "difficulty": "intermediate",
     "question_type": "autonomous-remediation",
@@ -32343,7 +32343,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-165",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Future Systems Administration, AIOps and Human Accountability",
     "difficulty": "intermediate",
     "question_type": "career",
@@ -32363,7 +32363,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-166",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Future Systems Administration, AIOps and Human Accountability",
     "difficulty": "advanced",
     "question_type": "governance",
@@ -32383,7 +32383,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-167",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Future Systems Administration, AIOps and Human Accountability",
     "difficulty": "advanced",
     "question_type": "sustainability",
@@ -32403,7 +32403,7 @@ export const interviewQDatabase: InterviewQItem[] = [
   },
   {
     "id": "SAI-168",
-    "role_slug": "system-administrator",
+    "role_slug": "systems-infra",
     "domain": "Future Systems Administration, AIOps and Human Accountability",
     "difficulty": "scenario",
     "question_type": "autonomy-incident",
