@@ -61522,5 +61522,5125 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "PPPM-Q001",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Product management, and why does it matter in product, project or program management?",
+    "preferred_answer": "Product management is the discipline of understanding customer problems, defining product direction, prioritizing investments, and coordinating cross-functional work to create sustainable customer and business value.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q002",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Product management in a real initiative?",
+    "preferred_answer": "Start from the customer problem and desired outcome, test assumptions with evidence, define success measures, align design, engineering, data, marketing and operations, and continuously adapt the product based on results.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q003",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Product management from a closely related concept?",
+    "preferred_answer": "Product management owns the product's what and why across its lifecycle, while project management primarily coordinates how and when a bounded initiative will be delivered.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q004",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Product management, and how should it be corrected?",
+    "preferred_answer": "A weak product manager becomes a feature-request coordinator. The correction is to make priorities traceable to customer evidence, strategic goals, expected outcomes and measurable trade-offs.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q005",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Product manager, product owner and project manager roles, and why does it matter in product, project or program management?",
+    "preferred_answer": "The product manager usually owns product strategy and outcomes, the Product Owner is accountable in Scrum for maximizing product value and managing the Product Backlog, and the project manager coordinates delivery constraints, dependencies and governance for an initiative.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q006",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Product manager, product owner and project manager roles in a real initiative?",
+    "preferred_answer": "Clarify decision rights using a responsibility map: who sets vision, who orders backlog items, who commits resources, who manages the schedule and who accepts delivery risks. Adapt titles to the organization but make accountabilities explicit.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q007",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Product manager, product owner and project manager roles from a closely related concept?",
+    "preferred_answer": "The roles overlap in communication and prioritization, but they are not interchangeable: product focuses on value and lifecycle, Product Owner on Scrum product accountability, and project management on coordinated execution.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q008",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Product manager, product owner and project manager roles, and how should it be corrected?",
+    "preferred_answer": "Role ambiguity creates duplicate decisions, backlog churn and stakeholder escalation. Resolve it by documenting accountabilities, escalation paths and the operating cadence rather than debating job titles.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q009",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Product lifecycle, and why does it matter in product, project or program management?",
+    "preferred_answer": "A product lifecycle covers discovery, introduction, growth, maturity, decline or retirement, with different investment, risk and success measures at each stage.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Planning: Benefits and Best Practices",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-planning",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q010",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Product lifecycle in a real initiative?",
+    "preferred_answer": "Use lifecycle evidence to change priorities: validate demand before major build, improve activation and reliability during growth, optimize economics at maturity, and plan migration, support and retirement when value declines.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Planning: Benefits and Best Practices",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-planning",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q011",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Product lifecycle from a closely related concept?",
+    "preferred_answer": "A product lifecycle is continuous and outcome-oriented; a project lifecycle is temporary and ends when agreed deliverables and closure conditions are met.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Planning: Benefits and Best Practices",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-planning",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q012",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Product lifecycle, and how should it be corrected?",
+    "preferred_answer": "Treating every product as a permanent growth product causes feature accumulation and technical debt. Review lifecycle economics, strategic fit and customer migration options explicitly.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Planning: Benefits and Best Practices",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-planning",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q013",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Product operating model, and why does it matter in product, project or program management?",
+    "preferred_answer": "A product operating model defines how persistent, multidisciplinary teams discover, deliver, measure and improve products, including funding, governance, decision rights and feedback loops.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q014",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Product operating model in a real initiative?",
+    "preferred_answer": "Organize teams around durable customer or business outcomes, give them access to users and data, fund capacity rather than isolated feature projects where appropriate, and review outcomes at a regular cadence.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q015",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Product operating model from a closely related concept?",
+    "preferred_answer": "A project-centric model forms temporary teams around outputs; a product model keeps accountable teams with the product long enough to learn from adoption, operations and customer outcomes.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q016",
+    "role_slug": "project-product",
+    "domain": "Product Management Foundations and Lifecycle",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Product operating model, and how should it be corrected?",
+    "preferred_answer": "Renaming project teams as product teams without changing funding, metrics or authority adds terminology but not agility. Change incentives, governance and ownership together.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q017",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Problem framing, and why does it matter in product, project or program management?",
+    "preferred_answer": "Problem framing converts a vague request into a clear statement of the user, need, current barrier, context, evidence and desired outcome without prematurely prescribing a solution.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "How the Discovery Phase Works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q018",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Problem framing in a real initiative?",
+    "preferred_answer": "Interview stakeholders and users, inspect operational and analytics data, map the current journey, identify constraints, and write a testable problem statement with measurable impact.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "How the Discovery Phase Works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q019",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Problem framing from a closely related concept?",
+    "preferred_answer": "A problem statement describes the situation to improve; a solution statement proposes what to build. Discovery should validate the problem before committing to the solution.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "How the Discovery Phase Works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q020",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Problem framing, and how should it be corrected?",
+    "preferred_answer": "Starting with \u201cbuild an app\u201d or \u201cadd AI\u201d anchors the team to a solution. Reframe it around the unmet need and the decision that evidence must support.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "How the Discovery Phase Works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q021",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is User research, and why does it matter in product, project or program management?",
+    "preferred_answer": "User research systematically studies users, their goals, behaviors, environments, constraints and current workarounds through interviews, observation, usability testing and evidence review.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "User Research in Discovery",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/user-research-in-discovery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q022",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply User research in a real initiative?",
+    "preferred_answer": "Recruit a representative and inclusive sample, use open questions, observe real behavior, separate facts from interpretation, synthesize recurring patterns and link findings to product decisions.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "User Research in Discovery",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/user-research-in-discovery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q023",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish User research from a closely related concept?",
+    "preferred_answer": "User research explains needs and behavior; market research estimates markets, segments and competition. Strong discovery combines both without treating survey preference as proof of behavior.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "User Research in Discovery",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/user-research-in-discovery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q024",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with User research, and how should it be corrected?",
+    "preferred_answer": "Research with only convenient or enthusiastic users creates biased confidence. Include edge cases, disabled users, low-frequency users, support staff and people who abandoned the journey.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "User Research in Discovery",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/user-research-in-discovery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q025",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is User needs and jobs-to-be-done, and why does it matter in product, project or program management?",
+    "preferred_answer": "A user need states what a person must achieve in context, while a job-to-be-done describes the progress they seek and the circumstances that drive them to adopt or reject a solution.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "User Research in Discovery",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/user-research-in-discovery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q026",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply User needs and jobs-to-be-done in a real initiative?",
+    "preferred_answer": "Write needs in outcome language, connect them to observed evidence, identify functional and emotional dimensions, and avoid wording that embeds a specific interface or feature.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "User Research in Discovery",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/user-research-in-discovery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q027",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish User needs and jobs-to-be-done from a closely related concept?",
+    "preferred_answer": "A persona summarizes a user type; a job describes the progress sought. Personas can support empathy, but jobs and needs are more directly useful for product decisions.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "User Research in Discovery",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/user-research-in-discovery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q028",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with User needs and jobs-to-be-done, and how should it be corrected?",
+    "preferred_answer": "Teams often create generic personas with demographic detail but no decision value. Ground needs in behavior, context, barriers and measurable outcomes.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "User Research in Discovery",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/user-research-in-discovery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q029",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Prototypes and validation, and why does it matter in product, project or program management?",
+    "preferred_answer": "A prototype is a deliberately incomplete representation used to test assumptions about desirability, usability, feasibility or viability before investing in full delivery.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "How the Discovery Phase Works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q030",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Prototypes and validation in a real initiative?",
+    "preferred_answer": "Choose the cheapest prototype that can answer the riskiest question, define pass and fail evidence in advance, test with relevant users and record what changed because of the learning.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "How the Discovery Phase Works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q031",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Prototypes and validation from a closely related concept?",
+    "preferred_answer": "A prototype is built to learn; an MVP is a usable product increment intended to deliver or test value in the real environment. Neither should be confused with low-quality production work.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "How the Discovery Phase Works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q032",
+    "role_slug": "project-product",
+    "domain": "Product Discovery and User Research",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Prototypes and validation, and how should it be corrected?",
+    "preferred_answer": "Polished prototypes can create false certainty and stakeholder attachment. State what is simulated, what remains untested and what decision the test informs.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "How the Discovery Phase Works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q033",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Product vision, and why does it matter in product, project or program management?",
+    "preferred_answer": "A product vision describes the meaningful future state the product aims to create for customers and the organization, providing a stable direction without prescribing every feature.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q034",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Product vision in a real initiative?",
+    "preferred_answer": "Connect the vision to a specific audience, problem and change in outcomes, then translate it into strategic goals and measurable intermediate objectives.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q035",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Product vision from a closely related concept?",
+    "preferred_answer": "Vision is the destination; strategy is the set of choices for reaching it; a roadmap communicates prioritized initiatives and learning steps.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q036",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Product vision, and how should it be corrected?",
+    "preferred_answer": "A vision that is generic, feature-heavy or unmeasurable cannot guide trade-offs. Make it distinctive enough to exclude attractive but misaligned work.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q037",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Product strategy, and why does it matter in product, project or program management?",
+    "preferred_answer": "Product strategy is a coherent set of choices about target users, problems, differentiation, capabilities, business model and sequencing that explains how the product will create value.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q038",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Product strategy in a real initiative?",
+    "preferred_answer": "Assess customer evidence, market structure, company advantages and constraints; define where to play and how to win; state assumptions and leading indicators; and review strategy as evidence changes.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q039",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Product strategy from a closely related concept?",
+    "preferred_answer": "Strategy is not a list of features or annual targets. Features are possible actions, while strategy explains the logic connecting choices to outcomes.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q040",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Product strategy, and how should it be corrected?",
+    "preferred_answer": "Trying to serve every segment usually weakens differentiation. Explicitly identify the primary segment, non-goals and trade-offs.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q041",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Business Model Canvas and value proposition, and why does it matter in product, project or program management?",
+    "preferred_answer": "The Business Model Canvas describes how an organization creates, delivers and captures value; the Value Proposition Canvas focuses on customer jobs, pains, gains and the fit of products and services.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Business Model Canvas",
+    "resolution_url": "https://www.strategyzer.com/library/the-business-model-canvas",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q042",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Business Model Canvas and value proposition in a real initiative?",
+    "preferred_answer": "Map the current assumptions, identify the most uncertain or consequential blocks, test them with customer and financial evidence, and update the model when learning invalidates a belief.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Business Model Canvas",
+    "resolution_url": "https://www.strategyzer.com/library/the-business-model-canvas",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q043",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Business Model Canvas and value proposition from a closely related concept?",
+    "preferred_answer": "A value proposition explains why a customer should choose the offering; a business model also covers channels, relationships, resources, partners, activities, revenue and costs.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Business Model Canvas",
+    "resolution_url": "https://www.strategyzer.com/library/the-business-model-canvas",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q044",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Business Model Canvas and value proposition, and how should it be corrected?",
+    "preferred_answer": "A canvas can become a workshop poster with no validation. Label assumptions, evidence strength, owners and the next experiment for each risky element.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Business Model Canvas",
+    "resolution_url": "https://www.strategyzer.com/library/the-business-model-canvas",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q045",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Goals, OKRs and outcome alignment, and why does it matter in product, project or program management?",
+    "preferred_answer": "Goals describe desired outcomes; OKRs pair a qualitative objective with measurable key results that indicate progress without prescribing all work in advance.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q046",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Goals, OKRs and outcome alignment in a real initiative?",
+    "preferred_answer": "Set a small number of outcome-oriented goals, define measurable baselines and targets, assign accountable owners, connect initiatives to hypotheses, and review actual outcomes rather than activity completion.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q047",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Goals, OKRs and outcome alignment from a closely related concept?",
+    "preferred_answer": "A key result measures the change to achieve; a task or feature is an output that may contribute to it. Completing output is not proof of outcome.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q048",
+    "role_slug": "project-product",
+    "domain": "Product Strategy, Vision and Business Models",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Goals, OKRs and outcome alignment, and how should it be corrected?",
+    "preferred_answer": "Using vanity metrics or turning every task into an OKR creates reporting overhead. Use measures that influence decisions and reflect customer or business value.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q049",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Product roadmap, and why does it matter in product, project or program management?",
+    "preferred_answer": "A product roadmap is a shared, evolving view of product direction, priorities and progress that links initiatives to strategy and outcomes for a defined audience.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Roadmap Guide",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-roadmaps",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q050",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Product roadmap in a real initiative?",
+    "preferred_answer": "Build the roadmap from goals and evidence, show outcomes and major initiatives, make confidence and dependencies visible, tailor detail by audience and review it regularly.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Roadmap Guide",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-roadmaps",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q051",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Product roadmap from a closely related concept?",
+    "preferred_answer": "A roadmap communicates direction and sequencing; a delivery plan contains more detailed commitments, dates, resources and dependencies.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Roadmap Guide",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-roadmaps",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q052",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Product roadmap, and how should it be corrected?",
+    "preferred_answer": "A roadmap treated as an immutable promise discourages learning. Use time horizons, confidence levels and clear distinction between committed and exploratory work.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Roadmap Guide",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-roadmaps",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q053",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Prioritization frameworks, and why does it matter in product, project or program management?",
+    "preferred_answer": "Prioritization frameworks structure trade-offs using criteria such as customer impact, strategic fit, reach, confidence, effort, risk, urgency and opportunity cost.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q054",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Prioritization frameworks in a real initiative?",
+    "preferred_answer": "Agree the decision criteria before scoring, normalize evidence, expose uncertainty, compare alternatives, test sensitivity and use the score as decision support rather than an automatic answer.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q055",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Prioritization frameworks from a closely related concept?",
+    "preferred_answer": "RICE emphasizes reach, impact, confidence and effort; WSJF emphasizes cost of delay divided by job size; a simple value-effort matrix is faster but less precise.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q056",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Prioritization frameworks, and how should it be corrected?",
+    "preferred_answer": "False precision hides political assumptions. Document scoring evidence, ranges and constraints, and let leaders explicitly own any override.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q057",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Product backlog management, and why does it matter in product, project or program management?",
+    "preferred_answer": "Product backlog management keeps an ordered, transparent and evolving set of work aligned to the Product Goal, with enough clarity for near-term delivery and less detail for uncertain future items.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Scrum Guide - Official Current Version",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q058",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Product backlog management in a real initiative?",
+    "preferred_answer": "Continuously refine items, remove obsolete work, split oversized items, add acceptance evidence, order by value and risk, and preserve traceability to goals and customer insight.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Scrum Guide - Official Current Version",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q059",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Product backlog management from a closely related concept?",
+    "preferred_answer": "Backlog ordering is a value decision; sprint selection is a forecast based on the Sprint Goal, team capacity and Definition of Done.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Scrum Guide - Official Current Version",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q060",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Product backlog management, and how should it be corrected?",
+    "preferred_answer": "A backlog that only grows becomes an inventory of unmade decisions. Set review and expiry rules and delete items that no longer justify attention.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Scrum Guide - Official Current Version",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q061",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Release planning and forecasting, and why does it matter in product, project or program management?",
+    "preferred_answer": "Release planning forecasts how a coherent set of capabilities may reach users, accounting for scope options, dependencies, quality, readiness, risk and uncertainty.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Use Team Delivery Plans in Azure Boards",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/devops/boards/plans/review-team-plans",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q062",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Release planning and forecasting in a real initiative?",
+    "preferred_answer": "Define the release outcome, identify minimum coherent scope, map dependencies, use throughput or estimates to forecast ranges, plan operational readiness and revisit the forecast with actual data.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Use Team Delivery Plans in Azure Boards",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/devops/boards/plans/review-team-plans",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q063",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Release planning and forecasting from a closely related concept?",
+    "preferred_answer": "A forecast expresses a range and confidence based on current information; a commitment is an organizational promise that should be made only with appropriate control and contingency.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Use Team Delivery Plans in Azure Boards",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/devops/boards/plans/review-team-plans",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q064",
+    "role_slug": "project-product",
+    "domain": "Roadmapping, Prioritization and Backlog Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Release planning and forecasting, and how should it be corrected?",
+    "preferred_answer": "Converting uncertain forecasts into fixed dates without scope or risk options creates late surprises. Make assumptions, decision dates and contingency explicit.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Use Team Delivery Plans in Azure Boards",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/devops/boards/plans/review-team-plans",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q065",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is North-star metric and metric tree, and why does it matter in product, project or program management?",
+    "preferred_answer": "A north-star metric represents the recurring customer value delivered by a product, while a metric tree decomposes it into controllable drivers and guardrail measures.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Management KPIs",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-management-kpis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q066",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply North-star metric and metric tree in a real initiative?",
+    "preferred_answer": "Define the user value represented, validate its relationship with business results, break it into acquisition, activation, engagement, retention and monetization drivers, and add quality or harm guardrails.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Management KPIs",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-management-kpis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q067",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish North-star metric and metric tree from a closely related concept?",
+    "preferred_answer": "A north-star metric guides product direction; a KPI is any key performance indicator; a guardrail prevents improvement in one metric from damaging another.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Management KPIs",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-management-kpis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q068",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with North-star metric and metric tree, and how should it be corrected?",
+    "preferred_answer": "Selecting revenue or raw activity alone can reward extraction or noise. Choose a measure tied to genuine customer value and review segment-level effects.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Management KPIs",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-management-kpis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q069",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Product analytics and cohort analysis, and why does it matter in product, project or program management?",
+    "preferred_answer": "Product analytics uses behavioral and business data to understand how users move through journeys, adopt features and retain value; cohort analysis compares groups with a shared start or attribute over time.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Management KPIs",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-management-kpis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q070",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Product analytics and cohort analysis in a real initiative?",
+    "preferred_answer": "Define events and properties consistently, validate instrumentation, segment meaningful cohorts, compare funnels and retention, and combine quantitative patterns with qualitative research.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Management KPIs",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-management-kpis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q071",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Product analytics and cohort analysis from a closely related concept?",
+    "preferred_answer": "A funnel shows conversion between steps; retention shows continued value over time; cohorts reveal whether patterns differ by acquisition date, persona, plan or behavior.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Management KPIs",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-management-kpis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q072",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Product analytics and cohort analysis, and how should it be corrected?",
+    "preferred_answer": "Dashboard abundance without decision ownership creates passive reporting. Tie each metric to a question, threshold, owner and action.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Management KPIs",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-management-kpis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q073",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is A/B testing and experiments, and why does it matter in product, project or program management?",
+    "preferred_answer": "An experiment tests a causal hypothesis by deliberately changing a variable, defining success and guardrail measures, and comparing outcomes under controlled conditions.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q074",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply A/B testing and experiments in a real initiative?",
+    "preferred_answer": "Write the hypothesis and decision rule before launch, choose the correct unit and sample, avoid overlapping interference, monitor guardrails, analyze uncertainty and decide whether to ship, iterate or stop.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q075",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish A/B testing and experiments from a closely related concept?",
+    "preferred_answer": "An A/B test estimates causal impact under controlled assignment; an observational comparison identifies correlation and requires stronger caution about confounding factors.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q076",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with A/B testing and experiments, and how should it be corrected?",
+    "preferred_answer": "Stopping when a favorable result first appears inflates false positives. Use a planned duration or valid sequential method and report practical as well as statistical significance.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Evidence-Based Management Guide (2024)",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q077",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Outcome and delivery metrics, and why does it matter in product, project or program management?",
+    "preferred_answer": "Outcome metrics measure customer and business change; delivery metrics measure the capability and reliability of the system that produces change, such as lead time, deployment frequency and change failure measures.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "DORA Software Delivery Performance Metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q078",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Outcome and delivery metrics in a real initiative?",
+    "preferred_answer": "Pair outcome metrics with flow, quality and reliability indicators, compare trends within the same product context, investigate causes and avoid using metrics as individual performance targets.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "DORA Software Delivery Performance Metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q079",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Outcome and delivery metrics from a closely related concept?",
+    "preferred_answer": "Velocity is a team planning aid, not a value metric; DORA measures delivery performance, while product KPIs measure adoption, value and business results.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "DORA Software Delivery Performance Metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q080",
+    "role_slug": "project-product",
+    "domain": "Product Metrics, Analytics and Experimentation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Outcome and delivery metrics, and how should it be corrected?",
+    "preferred_answer": "Metric targets can be gamed when detached from purpose. Use a balanced set, inspect behavior created by the measure and preserve psychological safety.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "DORA Software Delivery Performance Metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q081",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Cross-functional product delivery, and why does it matter in product, project or program management?",
+    "preferred_answer": "Cross-functional product delivery brings product, design, engineering, quality, data, marketing, sales, support, security and operations together around a shared outcome.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q082",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Cross-functional product delivery in a real initiative?",
+    "preferred_answer": "Align the team on the problem, success measures and decision rights; expose dependencies early; use frequent integrated reviews; and include operational and commercial readiness in the definition of completion.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q083",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Cross-functional product delivery from a closely related concept?",
+    "preferred_answer": "Handoffs optimize functional stages, while cross-functional collaboration optimizes end-to-end value flow and learning.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q084",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Cross-functional product delivery, and how should it be corrected?",
+    "preferred_answer": "A product manager who writes requirements and disappears leaves delivery teams without context. Maintain continuous access to decisions, users and evidence.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Product Management?",
+    "resolution_url": "https://www.atlassian.com/agile/product-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q085",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Minimum viable product, and why does it matter in product, project or program management?",
+    "preferred_answer": "An MVP is the smallest coherent product or experiment that can deliver or test meaningful value with real users while producing evidence for the next investment decision.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Planning: Benefits and Best Practices",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-planning",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q086",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Minimum viable product in a real initiative?",
+    "preferred_answer": "Identify the highest-risk assumption, define the minimum experience required to test it safely, set learning and quality criteria, release to an appropriate segment and measure behavior.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Planning: Benefits and Best Practices",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-planning",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q087",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Minimum viable product from a closely related concept?",
+    "preferred_answer": "Minimum means least scope needed for the learning objective; viable means usable, safe and credible enough to generate valid evidence. It does not mean a poorly built full product.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Planning: Benefits and Best Practices",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-planning",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q088",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Minimum viable product, and how should it be corrected?",
+    "preferred_answer": "Shipping a fragmented experience may invalidate the test because users reject quality rather than the proposition. Protect the core user journey and non-negotiable safeguards.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Planning: Benefits and Best Practices",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-planning",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q089",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Go-to-market and launch readiness, and why does it matter in product, project or program management?",
+    "preferred_answer": "Go-to-market planning coordinates target segment, positioning, packaging, pricing, channels, enablement, support and operational readiness so the product can be adopted successfully.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Planning: Benefits and Best Practices",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-planning",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q090",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Go-to-market and launch readiness in a real initiative?",
+    "preferred_answer": "Define launch objectives and audience, validate the value proposition, prepare sales and support, confirm analytics and incident readiness, sequence rollout and set post-launch review thresholds.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Planning: Benefits and Best Practices",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-planning",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q091",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Go-to-market and launch readiness from a closely related concept?",
+    "preferred_answer": "Product release makes capability available; a launch creates awareness, adoption and organizational readiness. A quiet technical release may precede a market launch.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Planning: Benefits and Best Practices",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-planning",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q092",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Go-to-market and launch readiness, and how should it be corrected?",
+    "preferred_answer": "A launch measured only by announcement reach can hide poor activation or retention. Track the complete adoption journey and customer outcomes.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Product Planning: Benefits and Best Practices",
+    "resolution_url": "https://www.atlassian.com/agile/product-management/product-planning",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q093",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Product operations, maintenance and retirement, and why does it matter in product, project or program management?",
+    "preferred_answer": "Product operations sustain decision quality through research repositories, analytics, tooling and cadences, while maintenance and retirement manage reliability, support, migration and end-of-life obligations.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Agile Delivery Guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q094",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Product operations, maintenance and retirement in a real initiative?",
+    "preferred_answer": "Monitor service health and customer outcomes, manage feedback and technical debt, publish lifecycle policies, notify affected users early, provide migration paths and verify retirement completion.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Agile Delivery Guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q095",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Product operations, maintenance and retirement from a closely related concept?",
+    "preferred_answer": "Delivery completion is not product success; value must be operated, supported and eventually retired responsibly.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Agile Delivery Guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q096",
+    "role_slug": "project-product",
+    "domain": "Product Delivery, Launch and Lifecycle Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Product operations, maintenance and retirement, and how should it be corrected?",
+    "preferred_answer": "Ignoring long-tail operational cost turns old features into permanent liabilities. Include ownership, support cost, data retention and decommissioning in investment decisions.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Agile Delivery Guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q097",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Project and project success, and why does it matter in product, project or program management?",
+    "preferred_answer": "A project is a temporary endeavor undertaken to create a unique product, service or result. Project success includes value, outcomes, stakeholder acceptance and sustainable capability, not only scope, time and cost.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q098",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Project and project success in a real initiative?",
+    "preferred_answer": "Define success with sponsors before planning, include business and user outcomes, specify constraints and tolerances, and review whether the delivered result is usable and adopted.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q099",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Project and project success from a closely related concept?",
+    "preferred_answer": "Output success asks whether deliverables were completed; outcome success asks whether the change produced the intended benefit.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q100",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Project and project success, and how should it be corrected?",
+    "preferred_answer": "A project can be on time and on budget yet fail strategically. Keep the business case, benefits and operating readiness visible throughout delivery.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q101",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Project charter and authorization, and why does it matter in product, project or program management?",
+    "preferred_answer": "A project charter formally authorizes the project and establishes purpose, objectives, high-level scope, key stakeholders, assumptions, constraints, risks, success criteria and authority.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q102",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Project charter and authorization in a real initiative?",
+    "preferred_answer": "Develop it with the sponsor, resolve conflicting objectives, define measurable success and decision rights, and use it as the reference for initiation and major trade-offs.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q103",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Project charter and authorization from a closely related concept?",
+    "preferred_answer": "The charter authorizes and frames the project; the project management plan describes how the work will be managed and controlled in detail.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q104",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Project charter and authorization, and how should it be corrected?",
+    "preferred_answer": "A ceremonial charter signed after work starts provides little control. Use charter development to surface ambiguity before commitments are made.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q105",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Tailoring and delivery approach, and why does it matter in product, project or program management?",
+    "preferred_answer": "Tailoring adapts processes, artifacts, governance and delivery methods to the project's size, uncertainty, risk, regulatory needs, team capability and organizational context.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q106",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Tailoring and delivery approach in a real initiative?",
+    "preferred_answer": "Assess uncertainty and change rate, select predictive, adaptive or hybrid practices, define the minimum controls required, test the approach and adjust based on performance.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q107",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Tailoring and delivery approach from a closely related concept?",
+    "preferred_answer": "Tailoring is deliberate contextual design; omitting discipline because the team is \u201cagile\u201d is not tailoring.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q108",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Tailoring and delivery approach, and how should it be corrected?",
+    "preferred_answer": "Copying a methodology unchanged creates unnecessary overhead or missing controls. Document why each major practice is included, changed or removed.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q109",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Project integration and baselines, and why does it matter in product, project or program management?",
+    "preferred_answer": "Project integration coordinates scope, schedule, cost, quality, resources, risks, communications, procurement and stakeholders so decisions are made for the whole system rather than one area.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q110",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Project integration and baselines in a real initiative?",
+    "preferred_answer": "Maintain an integrated plan and decision log, establish approved baselines where appropriate, assess cross-domain impacts of changes, and keep forecasts synchronized.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q111",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Project integration and baselines from a closely related concept?",
+    "preferred_answer": "A baseline is the approved reference for performance comparison; a forecast is the current expected outcome based on latest information.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q112",
+    "role_slug": "project-product",
+    "domain": "Project Management Foundations and Tailoring",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Project integration and baselines, and how should it be corrected?",
+    "preferred_answer": "Updating one plan without its dependent cost, resource or risk assumptions creates inconsistent reporting. Use integrated change and configuration control.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q113",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Scope definition and acceptance, and why does it matter in product, project or program management?",
+    "preferred_answer": "Scope definition describes the product and project boundaries, deliverables, exclusions, acceptance conditions and constraints needed to align expectations.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q114",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Scope definition and acceptance in a real initiative?",
+    "preferred_answer": "Translate objectives into measurable deliverables, state exclusions, involve users and technical experts, define acceptance evidence, and validate that scope supports the business case.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q115",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Scope definition and acceptance from a closely related concept?",
+    "preferred_answer": "Product scope describes capabilities and characteristics; project scope describes the work required to produce and transition them.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q116",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Scope definition and acceptance, and how should it be corrected?",
+    "preferred_answer": "Ambiguous scope creates disputes late in delivery. Use examples, acceptance criteria and explicit non-goals rather than relying on broad labels.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q117",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Requirements elicitation and traceability, and why does it matter in product, project or program management?",
+    "preferred_answer": "Requirements work identifies, analyzes, validates and manages stakeholder needs and solution conditions; traceability links each requirement to its source, rationale, design, test and delivered outcome.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q118",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Requirements elicitation and traceability in a real initiative?",
+    "preferred_answer": "Use interviews, workshops, observation, process and data analysis; prioritize requirements; resolve conflicts; define quality attributes; and maintain trace links through delivery and change.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q119",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Requirements elicitation and traceability from a closely related concept?",
+    "preferred_answer": "A requirement states a needed condition or capability; acceptance criteria make a backlog item testable; a design specifies how the solution will meet the need.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q120",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Requirements elicitation and traceability, and how should it be corrected?",
+    "preferred_answer": "Collecting requirements as unchallenged requests increases scope and hides contradictions. Validate the underlying need and decision value.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q121",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Work breakdown structure, and why does it matter in product, project or program management?",
+    "preferred_answer": "A work breakdown structure is a hierarchical decomposition of the total project scope into manageable deliverables and work packages that support estimation, ownership and control.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q122",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Work breakdown structure in a real initiative?",
+    "preferred_answer": "Decompose by deliverable, apply the 100 percent rule, define work package boundaries and acceptance, assign control accounts where needed and keep the WBS aligned with scope changes.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q123",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Work breakdown structure from a closely related concept?",
+    "preferred_answer": "A WBS organizes scope; a schedule sequences activities and dependencies derived from the work packages.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q124",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Work breakdown structure, and how should it be corrected?",
+    "preferred_answer": "A task list organized only by departments can miss integration and deliverable ownership. Decompose around complete outcomes and interfaces.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q125",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Integrated change control and scope creep, and why does it matter in product, project or program management?",
+    "preferred_answer": "Integrated change control evaluates proposed changes for value, impact, risk, dependencies, funding and authorization before updating approved plans and baselines.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q126",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Integrated change control and scope creep in a real initiative?",
+    "preferred_answer": "Record the request and rationale, analyze alternatives and whole-system impact, obtain the correct decision, communicate it, update plans and verify implementation.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q127",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Integrated change control and scope creep from a closely related concept?",
+    "preferred_answer": "Scope creep is unapproved expansion; controlled change is transparent, evaluated and authorized adaptation.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q128",
+    "role_slug": "project-product",
+    "domain": "Scope, Requirements and Work Breakdown",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Integrated change control and scope creep, and how should it be corrected?",
+    "preferred_answer": "Blocking all change protects the plan but can destroy value; accepting all change destroys predictability. Use explicit thresholds and decision rights.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q129",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Estimation and uncertainty, and why does it matter in product, project or program management?",
+    "preferred_answer": "Estimation forecasts effort, duration or cost using available evidence; good estimates express assumptions, ranges and confidence rather than pretending uncertain work is exact.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q130",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Estimation and uncertainty in a real initiative?",
+    "preferred_answer": "Select analogous, parametric, bottom-up or three-point methods based on data and maturity, involve the people doing the work, document assumptions and update estimates with actual performance.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q131",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Estimation and uncertainty from a closely related concept?",
+    "preferred_answer": "An estimate is an evidence-based forecast; a target is a desired result; a commitment is an accountable promise. Confusing them hides risk.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q132",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Estimation and uncertainty, and how should it be corrected?",
+    "preferred_answer": "Single-point estimates invite false certainty. Use ranges, confidence levels, contingency and explicit decision dates.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q133",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Critical path and schedule control, and why does it matter in product, project or program management?",
+    "preferred_answer": "The critical path is the longest dependency path through the schedule and determines the earliest possible completion under current assumptions; activities on it generally have zero or minimal total float.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q134",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Critical path and schedule control in a real initiative?",
+    "preferred_answer": "Build a logically connected schedule, calculate critical and near-critical paths, validate resource assumptions, monitor actual progress and evaluate fast-tracking or crashing with risk awareness.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q135",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Critical path and schedule control from a closely related concept?",
+    "preferred_answer": "Critical path is based on network logic; critical chain adds resource constraints and buffers to protect flow.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q136",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Critical path and schedule control, and how should it be corrected?",
+    "preferred_answer": "Tracking milestone color alone can hide a deteriorating near-critical path. Review dependencies, float consumption and forecast finish dates.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q137",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Resource and capacity management, and why does it matter in product, project or program management?",
+    "preferred_answer": "Resource management ensures the project has the people, skills, equipment and capacity needed while resolving over-allocation, dependencies and competing priorities.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q138",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Resource and capacity management in a real initiative?",
+    "preferred_answer": "Create a skills and capacity view, distinguish committed from available capacity, level or smooth assignments, protect critical skills, and coordinate with portfolio owners when demand exceeds supply.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q139",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Resource and capacity management from a closely related concept?",
+    "preferred_answer": "Resource leveling may change the critical path to resolve constraints; smoothing adjusts work within existing float without changing the critical path.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q140",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Resource and capacity management, and how should it be corrected?",
+    "preferred_answer": "Planning people at 100 percent utilization ignores collaboration, support and variability. Preserve capacity for unplanned work and knowledge transfer.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q141",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Earned value management, and why does it matter in product, project or program management?",
+    "preferred_answer": "Earned Value Management integrates scope, schedule and cost by comparing planned value, earned value and actual cost to measure performance and forecast outcomes.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Earned Value Management",
+    "resolution_url": "https://www.pmi.org/standards/earned-value-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q142",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Earned value management in a real initiative?",
+    "preferred_answer": "Establish a time-phased performance baseline, use objective completion rules, calculate schedule and cost variances and indices, forecast estimate at completion, and investigate material deviations.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Earned Value Management",
+    "resolution_url": "https://www.pmi.org/standards/earned-value-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q143",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Earned value management from a closely related concept?",
+    "preferred_answer": "Cost variance equals earned value minus actual cost; schedule variance equals earned value minus planned value. EVM schedule variance is expressed in value units, not calendar time.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Earned Value Management",
+    "resolution_url": "https://www.pmi.org/standards/earned-value-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q144",
+    "role_slug": "project-product",
+    "domain": "Schedule, Estimation, Resources and Cost Control",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Earned value management, and how should it be corrected?",
+    "preferred_answer": "EVM is misleading when progress is reported subjectively or scope is unstable without baseline control. Use clear measurement methods and integrate change management.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Earned Value Management",
+    "resolution_url": "https://www.pmi.org/standards/earned-value-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q145",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Risk management, and why does it matter in product, project or program management?",
+    "preferred_answer": "Risk management identifies uncertainty that can affect objectives, assesses threats and opportunities, plans responses, assigns ownership and monitors exposure throughout the lifecycle.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Risk Management in Portfolios, Programs, and Projects: A Practice Guide",
+    "resolution_url": "https://www.pmi.org/standards/risk-management-in-portfolios",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q146",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Risk management in a real initiative?",
+    "preferred_answer": "Define risk appetite and categories, identify causes and effects, assess probability and impact, select avoid, mitigate, transfer, accept, exploit, enhance or share responses, and track triggers and residual risk.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Risk Management in Portfolios, Programs, and Projects: A Practice Guide",
+    "resolution_url": "https://www.pmi.org/standards/risk-management-in-portfolios",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q147",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Risk management from a closely related concept?",
+    "preferred_answer": "A risk is uncertain; an issue has already occurred. Risks need response plans and triggers, while issues need action, ownership and escalation.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Risk Management in Portfolios, Programs, and Projects: A Practice Guide",
+    "resolution_url": "https://www.pmi.org/standards/risk-management-in-portfolios",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q148",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Risk management, and how should it be corrected?",
+    "preferred_answer": "A risk register that is reviewed only for governance becomes administrative. Focus on decisions, exposure trends, response effectiveness and emerging risks.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Risk Management in Portfolios, Programs, and Projects: A Practice Guide",
+    "resolution_url": "https://www.pmi.org/standards/risk-management-in-portfolios",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q149",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Quality planning and assurance, and why does it matter in product, project or program management?",
+    "preferred_answer": "Quality management defines relevant standards and acceptance criteria, designs processes to prevent defects, verifies deliverables and improves the system that produces them.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q150",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Quality planning and assurance in a real initiative?",
+    "preferred_answer": "Translate stakeholder needs into measurable quality requirements, plan prevention and verification activities, use root-cause analysis, track cost of quality and make quality visible in completion criteria.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q151",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Quality planning and assurance from a closely related concept?",
+    "preferred_answer": "Quality assurance evaluates and improves the process; quality control inspects results against requirements.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q152",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Quality planning and assurance, and how should it be corrected?",
+    "preferred_answer": "Relying on final inspection makes defects expensive and hides systemic causes. Build quality into requirements, design, automation and daily work.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q153",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Procurement and vendor management, and why does it matter in product, project or program management?",
+    "preferred_answer": "Procurement management determines what to obtain externally, selects sourcing and contract approaches, evaluates suppliers, manages performance and controls commercial and delivery risk.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q154",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Procurement and vendor management in a real initiative?",
+    "preferred_answer": "Define outcomes and acceptance, choose contract incentives that match uncertainty, evaluate capability and total cost, manage dependencies and changes, and retain enough internal knowledge to govern the supplier.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q155",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Procurement and vendor management from a closely related concept?",
+    "preferred_answer": "Fixed-price transfers more cost risk to the seller when scope is clear; time-and-materials preserves flexibility but requires stronger oversight and budget controls.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q156",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Procurement and vendor management, and how should it be corrected?",
+    "preferred_answer": "Outsourcing responsibility as well as work weakens governance. The buyer remains accountable for business outcomes, integration, security and acceptance.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q157",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Compliance, security and sustainability, and why does it matter in product, project or program management?",
+    "preferred_answer": "Compliance, security and sustainability requirements constrain and shape delivery so that legal, regulatory, safety, privacy, environmental and ethical obligations are met.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q158",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Compliance, security and sustainability in a real initiative?",
+    "preferred_answer": "Identify applicable obligations early, involve specialists, translate them into traceable requirements and controls, maintain evidence, test continuously and define exception and escalation processes.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q159",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Compliance, security and sustainability from a closely related concept?",
+    "preferred_answer": "Compliance proves specified obligations are met; risk management also considers uncertain threats and opportunities beyond minimum compliance.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q160",
+    "role_slug": "project-product",
+    "domain": "Risk, Quality, Procurement and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Compliance, security and sustainability, and how should it be corrected?",
+    "preferred_answer": "Treating compliance as a final gate creates redesign and launch risk. Integrate it into discovery, architecture, procurement, testing and change decisions.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q161",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Stakeholder analysis and engagement, and why does it matter in product, project or program management?",
+    "preferred_answer": "Stakeholder analysis identifies people and groups who affect or are affected by the work, assesses their interests, influence, impact and current support, and plans appropriate engagement.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q162",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Stakeholder analysis and engagement in a real initiative?",
+    "preferred_answer": "Map stakeholders and relationships, understand success and concerns, segment communication, involve them in relevant decisions, track changes in support and close feedback loops.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q163",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Stakeholder analysis and engagement from a closely related concept?",
+    "preferred_answer": "Communication sends information; engagement creates participation, understanding, commitment and two-way influence.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q164",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Stakeholder analysis and engagement, and how should it be corrected?",
+    "preferred_answer": "Focusing only on senior sponsors misses users, operators and informal influencers. Include affected groups and dissenting voices.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q165",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Communication planning and status reporting, and why does it matter in product, project or program management?",
+    "preferred_answer": "Communication planning defines who needs what information, why, at what level, through which channel, how often and with what decision or action expected.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q166",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Communication planning and status reporting in a real initiative?",
+    "preferred_answer": "Tailor content to the audience, report outcomes and forecast rather than activity volume, highlight decisions and exceptions, preserve a single source of truth and confirm understanding.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q167",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Communication planning and status reporting from a closely related concept?",
+    "preferred_answer": "A status report describes current performance and forecast; a decision paper frames alternatives, evidence, recommendation and required authority.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q168",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Communication planning and status reporting, and how should it be corrected?",
+    "preferred_answer": "Green status based on completed tasks can hide falling value or schedule confidence. Report trend, exposure, assumptions and decision needs honestly.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q169",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Conflict and negotiation, and why does it matter in product, project or program management?",
+    "preferred_answer": "Conflict management surfaces differences in goals, evidence, values, roles or constraints and uses appropriate methods to reach workable decisions while preserving relationships.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q170",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Conflict and negotiation in a real initiative?",
+    "preferred_answer": "Clarify interests behind positions, establish shared criteria, separate facts from assumptions, generate options, make trade-offs visible and document decisions and unresolved risks.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q171",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Conflict and negotiation from a closely related concept?",
+    "preferred_answer": "Compromise splits differences; collaboration seeks an option that addresses underlying interests. Avoidance may be appropriate only for low-value or temporary conflict.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q172",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Conflict and negotiation, and how should it be corrected?",
+    "preferred_answer": "Suppressing conflict creates passive resistance and late escalation. Establish psychological safety and decision rules before high-pressure moments.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q173",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Team leadership and motivation, and why does it matter in product, project or program management?",
+    "preferred_answer": "Team leadership creates clarity, trust, autonomy, capability and accountability so people can coordinate effectively and sustain performance.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Principles Behind the Agile Manifesto",
+    "resolution_url": "https://agilemanifesto.org/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q174",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Team leadership and motivation in a real initiative?",
+    "preferred_answer": "Set meaningful goals, clarify roles, remove impediments, coach rather than micromanage, recognize contribution, manage workload and use retrospectives and feedback to improve the system.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Principles Behind the Agile Manifesto",
+    "resolution_url": "https://agilemanifesto.org/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q175",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Team leadership and motivation from a closely related concept?",
+    "preferred_answer": "Management provides structure and control; leadership creates direction, commitment and adaptation. Effective practitioners use both.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Principles Behind the Agile Manifesto",
+    "resolution_url": "https://agilemanifesto.org/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q176",
+    "role_slug": "project-product",
+    "domain": "Stakeholders, Communication and Team Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Team leadership and motivation, and how should it be corrected?",
+    "preferred_answer": "Heroic intervention by the manager can create dependency. Build distributed decision-making, knowledge sharing and succession capability.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Principles Behind the Agile Manifesto",
+    "resolution_url": "https://agilemanifesto.org/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q177",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Agile principles and adaptive delivery, and why does it matter in product, project or program management?",
+    "preferred_answer": "Agile delivery uses short feedback cycles, close business and delivery collaboration, frequent valuable increments, responsiveness to change and continuous improvement under uncertainty.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Principles Behind the Agile Manifesto",
+    "resolution_url": "https://agilemanifesto.org/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q178",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Agile principles and adaptive delivery in a real initiative?",
+    "preferred_answer": "Break goals into testable increments, involve users and decision-makers frequently, keep work transparent, limit batch size, measure outcomes and adapt plans based on evidence.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Principles Behind the Agile Manifesto",
+    "resolution_url": "https://agilemanifesto.org/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q179",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Agile principles and adaptive delivery from a closely related concept?",
+    "preferred_answer": "Agile is a set of values and principles; Scrum and Kanban are frameworks or methods that can help teams apply agility.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Principles Behind the Agile Manifesto",
+    "resolution_url": "https://agilemanifesto.org/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q180",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Agile principles and adaptive delivery, and how should it be corrected?",
+    "preferred_answer": "Using ceremonies without customer feedback or empowered decisions creates process theater. Inspect whether the approach improves learning and value flow.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Principles Behind the Agile Manifesto",
+    "resolution_url": "https://agilemanifesto.org/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q181",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Scrum accountabilities, events and artifacts, and why does it matter in product, project or program management?",
+    "preferred_answer": "Scrum uses a self-managing Scrum Team with Product Owner, Scrum Master and Developers, operating through Sprints and defined events, artifacts and commitments to create transparency, inspection and adaptation.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Scrum Guide - Official Current Version",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q182",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Scrum accountabilities, events and artifacts in a real initiative?",
+    "preferred_answer": "Use a clear Product Goal, create a Sprint Goal, select work collaboratively, maintain a transparent backlog and Definition of Done, inspect the Increment with stakeholders and improve in the retrospective.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Scrum Guide - Official Current Version",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q183",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Scrum accountabilities, events and artifacts from a closely related concept?",
+    "preferred_answer": "The Product Owner is accountable for maximizing value and backlog ordering; the Scrum Master establishes Scrum effectiveness; Developers create the usable Increment.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Scrum Guide - Official Current Version",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q184",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Scrum accountabilities, events and artifacts, and how should it be corrected?",
+    "preferred_answer": "Turning the Daily Scrum into a manager status meeting weakens self-management. Keep it focused on progress toward the Sprint Goal and adaptation of the plan.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Scrum Guide - Official Current Version",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q185",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Kanban flow management, and why does it matter in product, project or program management?",
+    "preferred_answer": "Kanban manages knowledge work by defining and visualizing workflow, actively managing work in progress, measuring flow and improving the system through explicit policies and feedback.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Kanban Guide",
+    "resolution_url": "https://kanbanguides.org/english/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q186",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Kanban flow management in a real initiative?",
+    "preferred_answer": "Map the actual workflow, define entry and exit policies, set WIP limits, monitor work item age, cycle time and throughput, address blockers and experiment with flow improvements.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Kanban Guide",
+    "resolution_url": "https://kanbanguides.org/english/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q187",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Kanban flow management from a closely related concept?",
+    "preferred_answer": "Scrum structures work in Sprints with defined accountabilities and events; Kanban focuses on continuous flow and can be applied with or without Scrum.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Kanban Guide",
+    "resolution_url": "https://kanbanguides.org/english/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q188",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Kanban flow management, and how should it be corrected?",
+    "preferred_answer": "A board without WIP discipline simply visualizes queues. Use limits and pull policies to expose and resolve bottlenecks.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Kanban Guide",
+    "resolution_url": "https://kanbanguides.org/english/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q189",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Hybrid delivery and scaling coordination, and why does it matter in product, project or program management?",
+    "preferred_answer": "Hybrid delivery intentionally combines predictive controls and adaptive practices to suit different work components, dependencies, governance needs and uncertainty levels.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q190",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Hybrid delivery and scaling coordination in a real initiative?",
+    "preferred_answer": "Separate stable from uncertain work, define integration points, align planning cadences, maintain cross-team dependencies and risks, and use common outcome and release governance.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q191",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Hybrid delivery and scaling coordination from a closely related concept?",
+    "preferred_answer": "Hybrid is not running two independent methods without integration; it needs one coherent governance and value-delivery model.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q192",
+    "role_slug": "project-product",
+    "domain": "Agile, Scrum, Kanban and Hybrid Delivery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Hybrid delivery and scaling coordination, and how should it be corrected?",
+    "preferred_answer": "Adding agile teams beneath fixed annual scope can preserve all constraints while shifting risk to teams. Create real options for scope, sequencing and learning.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q193",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Program management, and why does it matter in product, project or program management?",
+    "preferred_answer": "Program management coordinates related projects and program activities to obtain strategic benefits and control interdependencies that would not be achieved by managing components separately.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q194",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Program management in a real initiative?",
+    "preferred_answer": "Define the program vision and benefits, establish component governance, manage dependencies and shared resources, coordinate change and transition, and adjust components as strategic conditions evolve.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q195",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Program management from a closely related concept?",
+    "preferred_answer": "A project produces a specific result; a program coordinates related components to realize combined benefits over a longer horizon.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q196",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Program management, and how should it be corrected?",
+    "preferred_answer": "A program treated as a large project over-focuses on consolidated schedules and under-manages benefits, organizational change and component adaptation.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q197",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Benefits identification and realization, and why does it matter in product, project or program management?",
+    "preferred_answer": "Benefits management identifies intended measurable advantages, maps how outputs enable outcomes, assigns benefit owners, plans transition and tracks realization through and beyond delivery.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q198",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Benefits identification and realization in a real initiative?",
+    "preferred_answer": "Create a benefits map and register, establish baselines and target dates, identify disbenefits, assign operational owners, define leading indicators and review whether component outputs still support the benefits case.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q199",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Benefits identification and realization from a closely related concept?",
+    "preferred_answer": "A deliverable is produced by a component; a benefit is the measurable improvement enabled when stakeholders adopt and use it.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q200",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Benefits identification and realization, and how should it be corrected?",
+    "preferred_answer": "Benefits assigned only to the program manager often disappear after handover. Operational leaders must own realization and measurement.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q201",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Program dependencies and component integration, and why does it matter in product, project or program management?",
+    "preferred_answer": "Program dependency management identifies technical, schedule, resource, policy and benefit relationships among components and manages them at the level where coordinated action is possible.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q202",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Program dependencies and component integration in a real initiative?",
+    "preferred_answer": "Maintain an integrated dependency map, assign owners, define interface milestones and decision dates, model cascading impact, and escalate cross-component constraints before they become critical.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q203",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Program dependencies and component integration from a closely related concept?",
+    "preferred_answer": "A project dependency is managed within one delivery context; a program dependency crosses components and may require strategic reprioritization or shared architecture decisions.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q204",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Program dependencies and component integration, and how should it be corrected?",
+    "preferred_answer": "Central plans can hide local uncertainty. Combine program-level visibility with accountable component forecasts and direct team collaboration.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q205",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Program governance and collaboration, and why does it matter in product, project or program management?",
+    "preferred_answer": "Program governance establishes decision rights, oversight, controls, escalation, assurance and stakeholder collaboration needed to sustain strategic alignment and benefit delivery.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q206",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Program governance and collaboration in a real initiative?",
+    "preferred_answer": "Define governance bodies and thresholds, separate assurance from delivery ownership, use integrated information, include benefit owners and adapt governance as the program transitions through phases.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q207",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Program governance and collaboration from a closely related concept?",
+    "preferred_answer": "Governance sets authority and accountability; management uses that authority to plan, coordinate and deliver.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q208",
+    "role_slug": "project-product",
+    "domain": "Program Management and Benefits Realization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Program governance and collaboration, and how should it be corrected?",
+    "preferred_answer": "Too many boards duplicate decisions and delay components. Design governance around specific decisions, risks and accountabilities.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Program Management - Fifth Edition",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q209",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Portfolio management and strategic alignment, and why does it matter in product, project or program management?",
+    "preferred_answer": "Portfolio management selects, prioritizes, balances, authorizes and monitors projects, programs and other work to achieve organizational strategy within capacity and risk constraints.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Portfolio Management - Fourth Edition",
+    "resolution_url": "https://www.pmi.org/shop/p-/book/the-standard-for-portfolio-management-%E2%80%94-fourth-edition/00101600601",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q210",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Portfolio management and strategic alignment in a real initiative?",
+    "preferred_answer": "Translate strategy into evaluation criteria, compare components on value, risk, timing and resource demand, authorize a balanced portfolio, review performance and stop or reshape work when assumptions change.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Portfolio Management - Fourth Edition",
+    "resolution_url": "https://www.pmi.org/shop/p-/book/the-standard-for-portfolio-management-%E2%80%94-fourth-edition/00101600601",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q211",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Portfolio management and strategic alignment from a closely related concept?",
+    "preferred_answer": "Programs group related components to realize combined benefits; portfolios group investments for strategic selection and balance even when components are unrelated.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Portfolio Management - Fourth Edition",
+    "resolution_url": "https://www.pmi.org/shop/p-/book/the-standard-for-portfolio-management-%E2%80%94-fourth-edition/00101600601",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q212",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Portfolio management and strategic alignment, and how should it be corrected?",
+    "preferred_answer": "A portfolio that never stops work is only an inventory. Use explicit exit criteria and protect capacity for higher-value opportunities.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Portfolio Management - Fourth Edition",
+    "resolution_url": "https://www.pmi.org/shop/p-/book/the-standard-for-portfolio-management-%E2%80%94-fourth-edition/00101600601",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q213",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Portfolio prioritization and capacity allocation, and why does it matter in product, project or program management?",
+    "preferred_answer": "Portfolio prioritization compares investments using strategic contribution, expected value, risk, urgency, dependencies and resource demand, then allocates constrained capacity accordingly.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Portfolio Management - Fourth Edition",
+    "resolution_url": "https://www.pmi.org/shop/p-/book/the-standard-for-portfolio-management-%E2%80%94-fourth-edition/00101600601",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q214",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Portfolio prioritization and capacity allocation in a real initiative?",
+    "preferred_answer": "Use common criteria and scenarios, separate mandatory from discretionary work, test the impact of capacity constraints, consider concentration risk and sequence investments to maximize strategic value.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Portfolio Management - Fourth Edition",
+    "resolution_url": "https://www.pmi.org/shop/p-/book/the-standard-for-portfolio-management-%E2%80%94-fourth-edition/00101600601",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q215",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Portfolio prioritization and capacity allocation from a closely related concept?",
+    "preferred_answer": "Project prioritization orders work within an initiative; portfolio prioritization determines which initiatives receive funding and scarce organizational capacity.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Portfolio Management - Fourth Edition",
+    "resolution_url": "https://www.pmi.org/shop/p-/book/the-standard-for-portfolio-management-%E2%80%94-fourth-edition/00101600601",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q216",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Portfolio prioritization and capacity allocation, and how should it be corrected?",
+    "preferred_answer": "Scoring models can conceal leadership judgment. Show evidence, uncertainty, constraints and the effect of overrides transparently.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Portfolio Management - Fourth Edition",
+    "resolution_url": "https://www.pmi.org/shop/p-/book/the-standard-for-portfolio-management-%E2%80%94-fourth-edition/00101600601",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q217",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is PMO operating models, and why does it matter in product, project or program management?",
+    "preferred_answer": "A project management office can provide supportive, controlling, directive or strategic services such as standards, assurance, capability building, data, portfolio governance and delivery intervention.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q218",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply PMO operating models in a real initiative?",
+    "preferred_answer": "Define the PMO customer and outcomes, assess organizational maturity and pain points, choose services with clear value, automate low-value administration and measure decision quality and delivery improvement.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q219",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish PMO operating models from a closely related concept?",
+    "preferred_answer": "A delivery PMO supports specific initiatives; an enterprise PMO aligns governance and portfolio decisions across the organization.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q220",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with PMO operating models, and how should it be corrected?",
+    "preferred_answer": "A PMO measured by template compliance can become bureaucracy. Measure reduced risk, faster decisions, improved forecasting and benefits realization.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q221",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Governance, assurance and stage decisions, and why does it matter in product, project or program management?",
+    "preferred_answer": "Governance defines authority, accountability and oversight, while assurance provides independent confidence that objectives, controls and evidence are credible before major decisions.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q222",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Governance, assurance and stage decisions in a real initiative?",
+    "preferred_answer": "Set proportionate stage or funding decisions, define required evidence and tolerances, include independent review for material risk, record decisions and follow through on conditions.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q223",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Governance, assurance and stage decisions from a closely related concept?",
+    "preferred_answer": "Governance makes or delegates decisions; assurance evaluates the reliability of information and controls supporting those decisions.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q224",
+    "role_slug": "project-product",
+    "domain": "Portfolio Management, PMO and Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Governance, assurance and stage decisions, and how should it be corrected?",
+    "preferred_answer": "Stage gates that review documents rather than evidence create false safety. Focus on unresolved uncertainty, user value, delivery confidence and operational readiness.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q225",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Work management tools and information architecture, and why does it matter in product, project or program management?",
+    "preferred_answer": "Work management tools support planning, backlog, workflow, dependencies, documentation and reporting, but their value depends on a clear information model and disciplined use.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Azure Boards?",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q226",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Work management tools and information architecture in a real initiative?",
+    "preferred_answer": "Define work item types and hierarchy, ownership, status policies, required fields, linking and archival rules; integrate tools only where it reduces duplicate entry and improves traceability.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Azure Boards?",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q227",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Work management tools and information architecture from a closely related concept?",
+    "preferred_answer": "A tool is a system of record and collaboration aid; it does not replace governance, prioritization or direct communication.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Azure Boards?",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q228",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Work management tools and information architecture, and how should it be corrected?",
+    "preferred_answer": "Over-customization creates fragile workflows and poor adoption. Start with the minimum fields required for decisions and evidence.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "What is Azure Boards?",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q229",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Dashboards and management information, and why does it matter in product, project or program management?",
+    "preferred_answer": "A management dashboard presents a limited set of trusted indicators, trends, exceptions and decisions needed for a defined audience and cadence.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Use Team Delivery Plans in Azure Boards",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/devops/boards/plans/review-team-plans",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q230",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Dashboards and management information in a real initiative?",
+    "preferred_answer": "Start from decisions, define metric owners and calculation rules, show baseline and trend, include forecast and confidence, drill to evidence, and retire measures that no longer influence action.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Use Team Delivery Plans in Azure Boards",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/devops/boards/plans/review-team-plans",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q231",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Dashboards and management information from a closely related concept?",
+    "preferred_answer": "A dashboard supports rapid situational awareness; an analytical report explores causes and alternatives in greater depth.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Use Team Delivery Plans in Azure Boards",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/devops/boards/plans/review-team-plans",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q232",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Dashboards and management information, and how should it be corrected?",
+    "preferred_answer": "Manual red-amber-green status can reflect optimism rather than evidence. Use transparent thresholds, data quality checks and narrative for uncertainty.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Use Team Delivery Plans in Azure Boards",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/devops/boards/plans/review-team-plans",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q233",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is AI-assisted product and project management, and why does it matter in product, project or program management?",
+    "preferred_answer": "AI can assist planning, summarization, analysis, risk discovery, forecasting and communication, but accountable humans must govern data, validate outputs and retain decision authority.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Artificial Intelligence in Portfolio, Program and Project Management",
+    "resolution_url": "https://www.pmi.org/standards/artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q234",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply AI-assisted product and project management in a real initiative?",
+    "preferred_answer": "Use approved data and tools, define the task and evidence boundary, verify generated content, record material AI use, protect confidential information, monitor bias and errors, and escalate high-impact decisions.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Artificial Intelligence in Portfolio, Program and Project Management",
+    "resolution_url": "https://www.pmi.org/standards/artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q235",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish AI-assisted product and project management from a closely related concept?",
+    "preferred_answer": "Automation executes defined rules; AI produces probabilistic outputs that require context, validation and human judgment.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Artificial Intelligence in Portfolio, Program and Project Management",
+    "resolution_url": "https://www.pmi.org/standards/artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q236",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with AI-assisted product and project management, and how should it be corrected?",
+    "preferred_answer": "Presenting generated summaries or forecasts as facts can mislead governance. Preserve source traceability, confidence and human review.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Artificial Intelligence in Portfolio, Program and Project Management",
+    "resolution_url": "https://www.pmi.org/standards/artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q237",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Data governance and decision traceability, and why does it matter in product, project or program management?",
+    "preferred_answer": "Data governance defines ownership, quality, access, lineage, retention and acceptable use so management decisions are based on trustworthy and responsible information.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Artificial Intelligence in Portfolio, Program and Project Management",
+    "resolution_url": "https://www.pmi.org/standards/artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q238",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Data governance and decision traceability in a real initiative?",
+    "preferred_answer": "Name data owners, define metric and field standards, validate sources, maintain lineage, control access, document transformations and retain the evidence and rationale for material decisions.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Artificial Intelligence in Portfolio, Program and Project Management",
+    "resolution_url": "https://www.pmi.org/standards/artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q239",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Data governance and decision traceability from a closely related concept?",
+    "preferred_answer": "Data quality concerns fitness for use; data governance creates the responsibilities and controls that sustain quality and lawful use.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Artificial Intelligence in Portfolio, Program and Project Management",
+    "resolution_url": "https://www.pmi.org/standards/artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q240",
+    "role_slug": "project-product",
+    "domain": "Tools, Reporting, Data and AI for Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Data governance and decision traceability, and how should it be corrected?",
+    "preferred_answer": "A single polished dashboard can hide inconsistent source systems. Make limitations and reconciliation rules visible.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "The Standard for Artificial Intelligence in Portfolio, Program and Project Management",
+    "resolution_url": "https://www.pmi.org/standards/artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q241",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Ethics, transparency and professional responsibility, and why does it matter in product, project or program management?",
+    "preferred_answer": "Professional ethics requires responsibility, respect, fairness, honesty and transparent handling of conflicts, evidence and consequences in management decisions.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Ethics in Project Management and PMI Code of Ethics",
+    "resolution_url": "https://www.pmi.org/about/ethics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q242",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Ethics, transparency and professional responsibility in a real initiative?",
+    "preferred_answer": "Disclose conflicts and limitations, report material facts promptly, protect confidential information, challenge misleading claims, document decisions and use formal escalation when harm or misconduct may occur.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Ethics in Project Management and PMI Code of Ethics",
+    "resolution_url": "https://www.pmi.org/about/ethics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q243",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Ethics, transparency and professional responsibility from a closely related concept?",
+    "preferred_answer": "Loyalty to an employer does not justify withholding information that makes a report misleading; professional responsibility includes truthful context.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Ethics in Project Management and PMI Code of Ethics",
+    "resolution_url": "https://www.pmi.org/about/ethics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q244",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Ethics, transparency and professional responsibility, and how should it be corrected?",
+    "preferred_answer": "Softening bad news to preserve relationships can delay corrective action. Communicate facts, uncertainty, impact and options respectfully but clearly.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "Ethics in Project Management and PMI Code of Ethics",
+    "resolution_url": "https://www.pmi.org/about/ethics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q245",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Decision-making under uncertainty, and why does it matter in product, project or program management?",
+    "preferred_answer": "Decision-making under uncertainty combines available evidence, assumptions, options, reversibility, expected value, risk tolerance and learning cost rather than waiting for impossible certainty.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q246",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Decision-making under uncertainty in a real initiative?",
+    "preferred_answer": "Frame the decision and deadline, identify the most decision-relevant uncertainty, compare options and downside, use reversible experiments where possible, assign an owner and define review triggers.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q247",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Decision-making under uncertainty from a closely related concept?",
+    "preferred_answer": "A reversible decision can be made quickly with monitoring; an irreversible or high-impact decision needs stronger evidence, assurance and contingency.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q248",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Decision-making under uncertainty, and how should it be corrected?",
+    "preferred_answer": "Analysis paralysis treats more data as automatically valuable. Stop when additional information is unlikely to change the decision enough to justify delay.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q249",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Executive communication and influence without authority, and why does it matter in product, project or program management?",
+    "preferred_answer": "Executive communication frames a decision in strategic terms, presenting outcome, evidence, options, risk, recommendation and required action with appropriate brevity and candor.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q250",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Executive communication and influence without authority in a real initiative?",
+    "preferred_answer": "Lead with the decision or risk, connect it to strategy and measurable impact, show alternatives and trade-offs, anticipate objections, tailor detail and follow up with a recorded decision.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q251",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Executive communication and influence without authority from a closely related concept?",
+    "preferred_answer": "Detailed operational reporting explains work; executive communication focuses attention on consequences, choices and ownership.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q252",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Executive communication and influence without authority, and how should it be corrected?",
+    "preferred_answer": "Escalating a problem without options transfers thinking upward. Present a recommendation, alternatives and the cost of delay.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q253",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Project or product recovery, and why does it matter in product, project or program management?",
+    "preferred_answer": "Recovery stabilizes a distressed initiative, establishes trustworthy facts, protects customers and critical operations, resets objectives and governance, and creates a credible path forward or closure.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q254",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Project or product recovery in a real initiative?",
+    "preferred_answer": "Pause unsafe commitments, assess scope, schedule, cost, quality, team and stakeholder reality, identify root causes, define minimum recovery outcomes, restructure decisions and communicate the new forecast honestly.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q255",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Project or product recovery from a closely related concept?",
+    "preferred_answer": "Recovery is not simply adding people or compressing the schedule; it may require scope reduction, architecture change, supplier action, leadership change or termination.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "PPPM-Q256",
+    "role_slug": "project-product",
+    "domain": "Behavioral, Ethical and Complex Management Scenarios",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Project or product recovery, and how should it be corrected?",
+    "preferred_answer": "Preserving the original baseline to avoid embarrassment prolongs failure. Rebaseline only after understanding causes and securing accountable sponsorship.",
+    "evaluation_points": [
+      "Uses precise role-relevant terminology",
+      "Explains the decision or trade-off, not only a definition",
+      "Connects the concept to value, risk, evidence or governance",
+      "Avoids treating a framework as a rigid universal rule"
+    ],
+    "resolution_title": "PMBOK Guide - Eighth Edition and The Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];

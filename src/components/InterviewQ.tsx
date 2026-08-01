@@ -28,6 +28,7 @@ export interface InterviewQProps {
 }
 
 const ROLE_SLUG_ALIASES: Record<string, string[]> = {
+  'project-product': ['project-product', 'product_project_program_management', 'product-manager', 'project-manager', 'program-manager', 'scrum-master', 'agile-coach', 'technical-program-manager', 'tpm', 'pmo-lead', 'product-owner'],
   'cloud': ['cloud', 'cloud-engineer'],
   'cybersecurity': ['cybersecurity', 'cybersecurity-analyst'],
   'software-dev': ['software-dev', 'software-development-engineer'],
