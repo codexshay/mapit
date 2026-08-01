@@ -97362,5 +97362,5125 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "HESI-Q001",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is MCU, MPU and SoC selection, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "MCUs integrate memory and peripherals for controlled workloads; MPUs support richer operating systems; SoCs combine several processing and peripheral blocks. Selection follows timing, memory, power, cost, lifecycle and security constraints.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arm Cortex-M Processors",
+    "resolution_url": "https://developer.arm.com/Processors/Cortex-M",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q002",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply MCU, MPU and SoC selection in a real product design or troubleshooting task?",
+    "preferred_answer": "Turn product requirements into a scored device matrix, prototype high-risk interfaces and keep capacity and lifecycle margin.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arm Cortex-M Processors",
+    "resolution_url": "https://developer.arm.com/Processors/Cortex-M",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q003",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish MCU, MPU and SoC selection from choosing the fastest processor?",
+    "preferred_answer": "Clock speed is only one factor; peripheral fit, deterministic latency, memory, power states and ecosystem often dominate.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arm Cortex-M Processors",
+    "resolution_url": "https://developer.arm.com/Processors/Cortex-M",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q004",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A battery sensor prototype uses an application processor but misses boot-time and energy targets. What should the engineer do next?",
+    "preferred_answer": "Reopen the architecture decision with measured boot, energy and cost data; compare a suitable MCU or split architecture before freezing the PCB.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arm Cortex-M Processors",
+    "resolution_url": "https://developer.arm.com/Processors/Cortex-M",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q005",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Bare-metal, RTOS and embedded Linux architecture, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Bare-metal gives direct control, an RTOS adds concurrent real-time services, and embedded Linux adds processes and ecosystems at greater resource and boot complexity.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Introduction to Zephyr",
+    "resolution_url": "https://docs.zephyrproject.org/latest/introduction/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q006",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Bare-metal, RTOS and embedded Linux architecture in a real product design or troubleshooting task?",
+    "preferred_answer": "Partition functions by deadline, isolation, drivers, update needs and ecosystem, then select the smallest adequate platform.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Introduction to Zephyr",
+    "resolution_url": "https://docs.zephyrproject.org/latest/introduction/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q007",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Bare-metal, RTOS and embedded Linux architecture from treating OS choice as preference?",
+    "preferred_answer": "The choice is a system response to workload and lifecycle needs, not a developer-style decision.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Introduction to Zephyr",
+    "resolution_url": "https://docs.zephyrproject.org/latest/introduction/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q008",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A Linux control loop misses a 500 microsecond actuator deadline under load. What should the engineer do next?",
+    "preferred_answer": "Measure the path; use real-time Linux only if the bound is proven, otherwise move the hard loop to an MCU or RTOS with a safe interface.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Introduction to Zephyr",
+    "resolution_url": "https://docs.zephyrproject.org/latest/introduction/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q009",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Determinism, latency, jitter and throughput, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Determinism means completing critical work within a bound. Latency, jitter, deadline and throughput are separate measures and must be verified under worst-case conditions.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-RTOS2 API",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/RTOS2/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q010",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Determinism, latency, jitter and throughput in a real product design or troubleshooting task?",
+    "preferred_answer": "Define timing budgets and instrument end-to-end behavior under maximum interrupts, traffic, temperature and compiler settings.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-RTOS2 API",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/RTOS2/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q011",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Determinism, latency, jitter and throughput from average performance?",
+    "preferred_answer": "High throughput does not guarantee bounded latency; averages can hide deadline misses.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-RTOS2 API",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/RTOS2/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q012",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Logging and communication occasionally delay a motor response beyond its safety deadline. What should the engineer do next?",
+    "preferred_answer": "Trace the longest path, remove noncritical work from the critical path, fix scheduling or contention, then verify a worst-case bound.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-RTOS2 API",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/RTOS2/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q013",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Hardware-software co-design and partitioning, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Co-design allocates functions across circuits, programmable peripherals, firmware and cloud so timing, power, cost, testability and change risk are optimized together.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q014",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Hardware-software co-design and partitioning in a real product design or troubleshooting task?",
+    "preferred_answer": "Review interfaces and failure modes jointly and include reset, debug, test points and manufacturing access before layout.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q015",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Hardware-software co-design and partitioning from writing firmware after schematic freeze?",
+    "preferred_answer": "Implementation consumes interfaces; co-design shapes the interfaces and recovery mechanisms before they are fixed.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q016",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Systems Foundations and Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A radio module can lock but the board has no controllable reset or current-measurement point. What should the engineer do next?",
+    "preferred_answer": "Document the gap, add isolation or supervisor hardware where possible and update the design checklist before the next spin.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q017",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Voltage, current, logic levels and level shifting, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Electrical compatibility requires valid thresholds, current limits, voltage tolerance, drive type, common reference and startup behavior.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arduino Language Reference",
+    "resolution_url": "https://docs.arduino.cc/language-reference/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q018",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Voltage, current, logic levels and level shifting in a real product design or troubleshooting task?",
+    "preferred_answer": "Read both datasheets, calculate margins and validate the actual pins with an oscilloscope before production connection.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arduino Language Reference",
+    "resolution_url": "https://docs.arduino.cc/language-reference/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q019",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Voltage, current, logic levels and level shifting from assuming protocol compatibility means electrical compatibility?",
+    "preferred_answer": "Matching baud or protocol does not protect a 3.3 V input from a 5 V output.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arduino Language Reference",
+    "resolution_url": "https://docs.arduino.cc/language-reference/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q020",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A sensor fails after a revision changes the MCU I/O supply. What should the engineer do next?",
+    "preferred_answer": "Stop repeated tests, compare voltage domains and pin modes, add the correct translator and verify across tolerance and temperature.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arduino Language Reference",
+    "resolution_url": "https://docs.arduino.cc/language-reference/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q021",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Pull-ups, open-drain signaling and debounce, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Pull resistors establish idle states for floating or open-drain lines; debounce qualifies mechanical transitions over time.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "UM10204 I2C-bus Specification",
+    "resolution_url": "https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q022",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Pull-ups, open-drain signaling and debounce in a real product design or troubleshooting task?",
+    "preferred_answer": "Calculate pull-ups from capacitance and rise time and implement a nonblocking state or timer based debounce.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "UM10204 I2C-bus Specification",
+    "resolution_url": "https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q023",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Pull-ups, open-drain signaling and debounce from blocking delays for noisy inputs?",
+    "preferred_answer": "Pull-up design and debounce solve different electrical problems.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "UM10204 I2C-bus Specification",
+    "resolution_url": "https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q024",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A button ISR produces five events per press and interrupts are disabled for 200 ms. What should the engineer do next?",
+    "preferred_answer": "Capture the waveform, keep the ISR short and qualify a stable state in deferred code without blocking unrelated interrupts.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "UM10204 I2C-bus Specification",
+    "resolution_url": "https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q025",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Decoupling, grounding, EMI and return paths, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Decoupling supplies local transient current; grounding and return-path design reduce loop area, coupling and emissions. Placement and impedance matter.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "PCB Design Guidelines for Reduced EMI",
+    "resolution_url": "https://www.ti.com/lit/an/szza009/szza009.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q026",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Decoupling, grounding, EMI and return paths in a real product design or troubleshooting task?",
+    "preferred_answer": "Place capacitors close to pins, preserve short returns and reference planes, and inspect clocks, cables and connectors for current loops.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "PCB Design Guidelines for Reduced EMI",
+    "resolution_url": "https://www.ti.com/lit/an/szza009/szza009.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q027",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Decoupling, grounding, EMI and return paths from adding one large capacitor anywhere?",
+    "preferred_answer": "Bulk capacitance does not repair a broken high-frequency return path.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "PCB Design Guidelines for Reduced EMI",
+    "resolution_url": "https://www.ti.com/lit/an/szza009/szza009.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q028",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Radio transmission resets the MCU only inside the enclosure with a long cable. What should the engineer do next?",
+    "preferred_answer": "Measure supply droop and ground bounce at the MCU, inspect return paths and coupling, then improve decoupling, regulation or layout and retest.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "PCB Design Guidelines for Reduced EMI",
+    "resolution_url": "https://www.ti.com/lit/an/szza009/szza009.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q029",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Sampling, aliasing and analog conditioning, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Sampling needs band limiting, adequate rate, source settling and a stable reference; out-of-band signals can alias into false measurements.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MT-002 Nyquist Criterion Tutorial",
+    "resolution_url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q030",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Sampling, aliasing and analog conditioning in a real product design or troubleshooting task?",
+    "preferred_answer": "Define bandwidth and accuracy, design an anti-alias filter and validate acquisition time, reference noise and calibration.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MT-002 Nyquist Criterion Tutorial",
+    "resolution_url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q031",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Sampling, aliasing and analog conditioning from adding ADC bits without reviewing bandwidth?",
+    "preferred_answer": "Resolution is not accuracy and cannot remove aliasing or drift.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MT-002 Nyquist Criterion Tutorial",
+    "resolution_url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q032",
+    "role_slug": "hardware-iot",
+    "domain": "Electronics, Digital Logic and Signal Integrity",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A 980 Hz vibration appears as 20 Hz when sampled at 1 kHz. What should the engineer do next?",
+    "preferred_answer": "Treat it as aliasing, inspect spectrum and clock, increase sample rate and add analog filtering before trusting the data.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MT-002 Nyquist Criterion Tutorial",
+    "resolution_url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q033",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Exception model, vector table and NVIC, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Cortex-M exceptions use a vector table and prioritized controller; correct use includes nesting, stack context and a boundary between ISR and task work.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-Core Documentation",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/Core/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q034",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Exception model, vector table and NVIC in a real product design or troubleshooting task?",
+    "preferred_answer": "Assign priorities from latency requirements, keep handlers bounded and defer substantial work.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-Core Documentation",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/Core/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q035",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Exception model, vector table and NVIC from polling every event?",
+    "preferred_answer": "Polling adds loop-dependent latency; interrupts add concurrency and nesting risk.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-Core Documentation",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/Core/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q036",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A UART interrupt prevents a safety timer interrupt from running. What should the engineer do next?",
+    "preferred_answer": "Review priorities and ISR duration, use buffering or DMA and prove that the safety source can preempt lower-criticality work.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-Core Documentation",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/Core/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q037",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Memory map, flash, SRAM, cache and nonvolatile data, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Memory regions differ in volatility, latency, endurance, alignment, cacheability and permission.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arm Cortex-M Processors",
+    "resolution_url": "https://developer.arm.com/Processors/Cortex-M",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q038",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Memory map, flash, SRAM, cache and nonvolatile data in a real product design or troubleshooting task?",
+    "preferred_answer": "Create linker and memory budgets, manage DMA-cache coherency and store nonvolatile records atomically with version and wear control.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arm Cortex-M Processors",
+    "resolution_url": "https://developer.arm.com/Processors/Cortex-M",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q039",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Memory map, flash, SRAM, cache and nonvolatile data from treating all memory alike?",
+    "preferred_answer": "Capacity alone does not describe persistence, execution speed or write endurance.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arm Cortex-M Processors",
+    "resolution_url": "https://developer.arm.com/Processors/Cortex-M",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q040",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Configuration is corrupted after repeated writes and a power interruption. What should the engineer do next?",
+    "preferred_answer": "Use redundant versioned records, checksums and commit markers, reduce write frequency and test power failure.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arm Cortex-M Processors",
+    "resolution_url": "https://developer.arm.com/Processors/Cortex-M",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q041",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Clock tree, reset causes and watchdogs, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Clock trees determine CPU and peripheral timing; reset and watchdog logic define startup and recovery.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q042",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Clock tree, reset causes and watchdogs in a real product design or troubleshooting task?",
+    "preferred_answer": "Calculate derived clocks, record reset cause early and service the watchdog only after health checks.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q043",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Clock tree, reset causes and watchdogs from using watchdog reset as diagnosis?",
+    "preferred_answer": "A watchdog can restore service but does not identify root cause or guarantee safety.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q044",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Units reset daily and only the watchdog flag is preserved. What should the engineer do next?",
+    "preferred_answer": "Store fault breadcrumbs and task health, reproduce the stall and redesign watchdog servicing so failed subsystems cannot report health.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q045",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is DMA, bus masters and buffer ownership, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "DMA reduces CPU service for transfers but adds ownership, alignment, cache, completion and error concerns.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-Core Documentation",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/Core/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q046",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply DMA, bus masters and buffer ownership in a real product design or troubleshooting task?",
+    "preferred_answer": "Use it where setup cost is justified, define buffer ownership and cache maintenance, and handle partial transfers and timeouts.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-Core Documentation",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/Core/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q047",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish DMA, bus masters and buffer ownership from using DMA for every transfer?",
+    "preferred_answer": "Interrupt I/O may be simpler for short transfers; DMA is not automatically better.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-Core Documentation",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/Core/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q048",
+    "role_slug": "hardware-iot",
+    "domain": "Microcontrollers, CPU Architecture and Peripherals",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A cached MCU receives stale SPI data through DMA. What should the engineer do next?",
+    "preferred_answer": "Verify buffer cacheability and alignment, add required cache maintenance and instrument ownership transitions.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-Core Documentation",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/Core/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q049",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is volatile, const and register access, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "volatile controls compiler access to externally changing objects; const expresses non-modification. Neither provides atomic synchronization.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "SEI CERT C Coding Standard",
+    "resolution_url": "https://wiki.sei.cmu.edu/confluence/display/c",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q050",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply volatile, const and register access in a real product design or troubleshooting task?",
+    "preferred_answer": "Use typed register definitions, atomics or locks for shared state and architecture barriers where ordering matters.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "SEI CERT C Coding Standard",
+    "resolution_url": "https://wiki.sei.cmu.edu/confluence/display/c",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q051",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish volatile, const and register access from using volatile for thread safety?",
+    "preferred_answer": "volatile is not a mutex, and const does not necessarily mean ROM.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "SEI CERT C Coding Standard",
+    "resolution_url": "https://wiki.sei.cmu.edu/confluence/display/c",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q052",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Two tasks lose bits while updating a volatile status word. What should the engineer do next?",
+    "preferred_answer": "Replace the read-modify-write with an atomic operation, critical section or single owner.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "SEI CERT C Coding Standard",
+    "resolution_url": "https://wiki.sei.cmu.edu/confluence/display/c",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q053",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Stack, heap, static allocation and fragmentation, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Embedded memory must have bounded stack use, controlled allocation failure and known object lifetime.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "The FreeRTOS Kernel",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/01-About-the-FreeRTOS-kernel/01-FreeRTOS-kernel",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q054",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Stack, heap, static allocation and fragmentation in a real product design or troubleshooting task?",
+    "preferred_answer": "Measure stack high-water marks, avoid unbounded allocation in real-time paths and use pools or static objects where appropriate.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "The FreeRTOS Kernel",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/01-About-the-FreeRTOS-kernel/01-FreeRTOS-kernel",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q055",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Stack, heap, static allocation and fragmentation from assuming total free heap guarantees allocation?",
+    "preferred_answer": "Fragmentation and stack overflow are different failures.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "The FreeRTOS Kernel",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/01-About-the-FreeRTOS-kernel/01-FreeRTOS-kernel",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q056",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Reconnect fails after weeks because variable buffers fragment the heap. What should the engineer do next?",
+    "preferred_answer": "Capture allocation behavior, replace churn with pools, add failure telemetry and run endurance tests.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "The FreeRTOS Kernel",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/01-About-the-FreeRTOS-kernel/01-FreeRTOS-kernel",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q057",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Bit operations, endianness, alignment and serialization, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Portable protocols use fixed-width fields, explicit byte order and safe encoding rather than relying on padding or native alignment.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "SEI CERT C Coding Standard",
+    "resolution_url": "https://wiki.sei.cmu.edu/confluence/display/c",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q058",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Bit operations, endianness, alignment and serialization in a real product design or troubleshooting task?",
+    "preferred_answer": "Use named masks, bounds checks and golden test vectors on different architectures.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "SEI CERT C Coding Standard",
+    "resolution_url": "https://wiki.sei.cmu.edu/confluence/display/c",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q059",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Bit operations, endianness, alignment and serialization from casting protocol bytes to a struct?",
+    "preferred_answer": "Endianness is byte order; alignment is valid placement for a type.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "SEI CERT C Coding Standard",
+    "resolution_url": "https://wiki.sei.cmu.edu/confluence/display/c",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q060",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A message fails after moving from little-endian to big-endian hardware. What should the engineer do next?",
+    "preferred_answer": "Remove native struct serialization and encode every field in the defined wire format.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "SEI CERT C Coding Standard",
+    "resolution_url": "https://wiki.sei.cmu.edu/confluence/display/c",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q061",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Defensive C/C++ and undefined behavior, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Defensive firmware controls integer ranges, bounds, lifetime and implementation-defined behavior using rules, reviews, analysis and tests.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MISRA C:2023",
+    "resolution_url": "https://misra.org.uk/product/misra-c2023/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q062",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Defensive C/C++ and undefined behavior in a real product design or troubleshooting task?",
+    "preferred_answer": "Adopt a justified rule set, enable strict analysis and test malformed input and hardware failure.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MISRA C:2023",
+    "resolution_url": "https://misra.org.uk/product/misra-c2023/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q063",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Defensive C/C++ and undefined behavior from relying only on compiler warnings?",
+    "preferred_answer": "Warnings help but do not prove absence of races or undefined behavior.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MISRA C:2023",
+    "resolution_url": "https://misra.org.uk/product/misra-c2023/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q064",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded C, C++ and Memory-Safe Firmware",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A signed counter overflows during endurance testing. What should the engineer do next?",
+    "preferred_answer": "Choose a range-safe type, use checked arithmetic and add boundary tests across similar counters.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MISRA C:2023",
+    "resolution_url": "https://misra.org.uk/product/misra-c2023/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q065",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is GPIO modes, drive strength and safe startup, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "GPIO includes input, push-pull, open-drain, pulls, drive and alternate modes; reset states can briefly energize loads.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arduino Language Reference",
+    "resolution_url": "https://docs.arduino.cc/language-reference/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q066",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply GPIO modes, drive strength and safe startup in a real product design or troubleshooting task?",
+    "preferred_answer": "Define states through reset, bootloader and application and use external bias where glitches are unacceptable.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arduino Language Reference",
+    "resolution_url": "https://docs.arduino.cc/language-reference/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q067",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish GPIO modes, drive strength and safe startup from configuring outputs only in application code?",
+    "preferred_answer": "Steady-state firmware does not control the pin before it starts.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arduino Language Reference",
+    "resolution_url": "https://docs.arduino.cc/language-reference/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q068",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A MOSFET turns on for 40 ms during reset. What should the engineer do next?",
+    "preferred_answer": "Inspect reset defaults and add hardware bias or enable gating, then verify every boot and update path.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Arduino Language Reference",
+    "resolution_url": "https://docs.arduino.cc/language-reference/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q069",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Timers, PWM, capture and compare, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Hardware timers generate and timestamp events independently of main-loop execution.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-Core Documentation",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/Core/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q070",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Timers, PWM, capture and compare in a real product design or troubleshooting task?",
+    "preferred_answer": "Calculate clock and prescaler, handle rollover and use buffered compare updates while measuring jitter.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-Core Documentation",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/Core/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q071",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Timers, PWM, capture and compare from blocking delays for precise timing?",
+    "preferred_answer": "Blocking delay consumes CPU and adds scheduler variation.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-Core Documentation",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/Core/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q072",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "PWM glitches when duty is updated near rollover. What should the engineer do next?",
+    "preferred_answer": "Use preload or shadow update at a defined boundary and verify min, max and transition waveforms.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-Core Documentation",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/Core/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q073",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is ADC, DAC, references and calibration, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Converter accuracy depends on reference, source impedance, settling, offset, gain, noise and calibration.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MT-002 Nyquist Criterion Tutorial",
+    "resolution_url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q074",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply ADC, DAC, references and calibration in a real product design or troubleshooting task?",
+    "preferred_answer": "Create an error budget, allow settling and calibrate known points with versioned coefficients.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MT-002 Nyquist Criterion Tutorial",
+    "resolution_url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q075",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish ADC, DAC, references and calibration from equating bit depth with accuracy?",
+    "preferred_answer": "Resolution is code step; accuracy includes the whole chain.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MT-002 Nyquist Criterion Tutorial",
+    "resolution_url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q076",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "One production lot reads battery voltage four percent high. What should the engineer do next?",
+    "preferred_answer": "Measure reference and divider tolerances, compare raw codes and recalibrate or correct the affected lot.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MT-002 Nyquist Criterion Tutorial",
+    "resolution_url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q077",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is ISR design and deferred processing, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "An ISR should acknowledge the event, capture minimal data and notify deferred code.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Binary Semaphores",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/02-Queues-mutexes-and-semaphores/02-Binary-semaphores",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q078",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply ISR design and deferred processing in a real product design or troubleshooting task?",
+    "preferred_answer": "Set a maximum handler time and use interrupt-safe queues or notifications.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Binary Semaphores",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/02-Queues-mutexes-and-semaphores/02-Binary-semaphores",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q079",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish ISR design and deferred processing from parsing complete messages in an ISR?",
+    "preferred_answer": "ISR context is urgent but restricted; task context supports blocking and complex work.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Binary Semaphores",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/02-Queues-mutexes-and-semaphores/02-Binary-semaphores",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q080",
+    "role_slug": "hardware-iot",
+    "domain": "GPIO, Timers, ADC, DAC and Interrupts",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A receive ISR parses JSON and encoder pulses are missed. What should the engineer do next?",
+    "preferred_answer": "Move parsing to a task, use DMA or buffering and monitor lost events and queue pressure.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Binary Semaphores",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/02-Queues-mutexes-and-semaphores/02-Binary-semaphores",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q081",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is UART framing, buffers and recovery, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "UART transports framed bytes; applications still need packets, integrity, buffering, timeouts and resynchronization.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Device Driver Model",
+    "resolution_url": "https://docs.zephyrproject.org/latest/kernel/drivers/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q082",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply UART framing, buffers and recovery in a real product design or troubleshooting task?",
+    "preferred_answer": "Calculate baud tolerance, use ring buffers or DMA and define length or delimiter plus checksum.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Device Driver Model",
+    "resolution_url": "https://docs.zephyrproject.org/latest/kernel/drivers/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q083",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish UART framing, buffers and recovery from treating UART as a message protocol?",
+    "preferred_answer": "UART is a byte transport, not a complete reliable message protocol.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Device Driver Model",
+    "resolution_url": "https://docs.zephyrproject.org/latest/kernel/drivers/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q084",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "One lost byte permanently misaligns a variable stream. What should the engineer do next?",
+    "preferred_answer": "Add explicit framing, discard until synchronization and test loss, corruption and overrun.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Device Driver Model",
+    "resolution_url": "https://docs.zephyrproject.org/latest/kernel/drivers/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q085",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is I2C addressing, pull-ups and bus recovery, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "I2C is a shared open-drain addressed bus with pull-up-limited rise time, acknowledgements and possible arbitration or stretching.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "UM10204 I2C-bus Specification",
+    "resolution_url": "https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q086",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply I2C addressing, pull-ups and bus recovery in a real product design or troubleshooting task?",
+    "preferred_answer": "Calculate pull-ups, use timeouts and implement stuck-low recovery.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "UM10204 I2C-bus Specification",
+    "resolution_url": "https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q087",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish I2C addressing, pull-ups and bus recovery from treating I2C like point-to-point SPI?",
+    "preferred_answer": "SPI uses chip select and push-pull timing; I2C adds shared addressing and arbitration.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "UM10204 I2C-bus Specification",
+    "resolution_url": "https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q088",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A reset peripheral holds SDA low and all transfers time out. What should the engineer do next?",
+    "preferred_answer": "Clock the bus recovery sequence, issue STOP, reset the peripheral and degrade safely if recovery fails.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "UM10204 I2C-bus Specification",
+    "resolution_url": "https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q089",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is SPI modes, chip select and timing, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "SPI devices differ in polarity, phase, word size, maximum clock and chip-select timing.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Device Driver Model",
+    "resolution_url": "https://docs.zephyrproject.org/latest/kernel/drivers/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q090",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply SPI modes, chip select and timing in a real product design or troubleshooting task?",
+    "preferred_answer": "Start conservatively, derive timing from the datasheet and verify at the receiver with a logic analyzer or scope.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Device Driver Model",
+    "resolution_url": "https://docs.zephyrproject.org/latest/kernel/drivers/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q091",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish SPI modes, chip select and timing from assuming all devices use mode 0?",
+    "preferred_answer": "The electrical bus is simple but each device command protocol and timing is specific.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Device Driver Model",
+    "resolution_url": "https://docs.zephyrproject.org/latest/kernel/drivers/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q092",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Flash data shifts only at production clock speed. What should the engineer do next?",
+    "preferred_answer": "Check edge mode, setup and hold, signal integrity and chip-select timing, then adjust based on measurement.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Device Driver Model",
+    "resolution_url": "https://docs.zephyrproject.org/latest/kernel/drivers/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q093",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is CAN and Modbus robustness, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "CAN provides arbitration and error confinement; Modbus defines industrial data exchange. Both need physical-layer design, freshness and safe timeout behavior.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CAN Specification Version 2.0",
+    "resolution_url": "https://www.bosch-semiconductors.com/media/ip_modules/pdf_2/can_protocol_2.0.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q094",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply CAN and Modbus robustness in a real product design or troubleshooting task?",
+    "preferred_answer": "Design termination and addressing, monitor error counters and test disconnect, duplicates and stale data.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CAN Specification Version 2.0",
+    "resolution_url": "https://www.bosch-semiconductors.com/media/ip_modules/pdf_2/can_protocol_2.0.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q095",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish CAN and Modbus robustness from assuming CRC makes data safe?",
+    "preferred_answer": "Frame integrity does not prove data is current or physically valid.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CAN Specification Version 2.0",
+    "resolution_url": "https://www.bosch-semiconductors.com/media/ip_modules/pdf_2/can_protocol_2.0.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q096",
+    "role_slug": "hardware-iot",
+    "domain": "Serial Buses and Industrial Protocols",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A controller uses an old Modbus setpoint for hours after cable removal. What should the engineer do next?",
+    "preferred_answer": "Track data age, enter a safe state after timeout and require valid communication for recovery.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CAN Specification Version 2.0",
+    "resolution_url": "https://www.bosch-semiconductors.com/media/ip_modules/pdf_2/can_protocol_2.0.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q097",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Task decomposition, priorities and scheduling, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Tasks should be grouped by timing, blocking and ownership; priorities represent urgency and deadlines.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Task Scheduling",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/01-Tasks-and-co-routines/04-Task-scheduling",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q098",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Task decomposition, priorities and scheduling in a real product design or troubleshooting task?",
+    "preferred_answer": "Create a timing and blocking model, assign priorities from deadlines and measure stack and CPU use.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Task Scheduling",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/01-Tasks-and-co-routines/04-Task-scheduling",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q099",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Task decomposition, priorities and scheduling from one task per function?",
+    "preferred_answer": "Functional modularity does not always require independent scheduling.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Task Scheduling",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/01-Tasks-and-co-routines/04-Task-scheduling",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q100",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A telemetry task at highest priority starves control during reconnect. What should the engineer do next?",
+    "preferred_answer": "Lower its urgency, add bounded backoff and prove control timing under failure.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Task Scheduling",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/01-Tasks-and-co-routines/04-Task-scheduling",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q101",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Queues, semaphores, mutexes and events, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Queues transfer data or ownership, semaphores signal or count, and mutexes protect owned resources.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Queues",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/02-Queues-mutexes-and-semaphores/01-Queues",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q102",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Queues, semaphores, mutexes and events in a real product design or troubleshooting task?",
+    "preferred_answer": "Define capacity, timeout, backpressure and ownership before choosing a primitive.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Queues",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/02-Queues-mutexes-and-semaphores/01-Queues",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q103",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Queues, semaphores, mutexes and events from one primitive for every problem?",
+    "preferred_answer": "A mutex is not an event and a semaphore does not carry data.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Queues",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/02-Queues-mutexes-and-semaphores/01-Queues",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q104",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A producer blocks on a full queue while holding a mutex needed by the consumer. What should the engineer do next?",
+    "preferred_answer": "Move the send outside the lock and define backpressure and lock ordering.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Queues",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/02-Queues-mutexes-and-semaphores/01-Queues",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q105",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Priority inversion, deadlock and resource ownership, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Priority inversion and deadlock arise from resource dependencies, lock duration and cyclic waits.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Binary Semaphores",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/02-Queues-mutexes-and-semaphores/02-Binary-semaphores",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q106",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Priority inversion, deadlock and resource ownership in a real product design or troubleshooting task?",
+    "preferred_answer": "Map ownership, use inheritance where suitable, establish lock order and bound critical sections.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Binary Semaphores",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/02-Queues-mutexes-and-semaphores/02-Binary-semaphores",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q107",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Priority inversion, deadlock and resource ownership from raising priority to fix timing?",
+    "preferred_answer": "Higher priority can move rather than solve contention.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Binary Semaphores",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/02-Queues-mutexes-and-semaphores/02-Binary-semaphores",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q108",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A high-priority task waits 80 ms for a logging lock. What should the engineer do next?",
+    "preferred_answer": "Remove logging from the critical path or use a queue and verify the new blocking bound.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "FreeRTOS Binary Semaphores",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/02-Queues-mutexes-and-semaphores/02-Binary-semaphores",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q109",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is WCET, jitter and deadline verification, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Real-time confidence needs worst-case execution and blocking bounds, not only average load.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-RTOS2 API",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/RTOS2/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q110",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply WCET, jitter and deadline verification in a real product design or troubleshooting task?",
+    "preferred_answer": "Instrument maximum-load paths and include interrupts, cache, flash and compiler configuration.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-RTOS2 API",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/RTOS2/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q111",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish WCET, jitter and deadline verification from measuring average execution time?",
+    "preferred_answer": "Average timing describes common behavior; deadlines require an upper bound.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-RTOS2 API",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/RTOS2/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q112",
+    "role_slug": "hardware-iot",
+    "domain": "RTOS, Concurrency and Real-Time Design",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A 10 ms loop occasionally takes 14 ms after a feature change. What should the engineer do next?",
+    "preferred_answer": "Find the longest path, separate optional work and add a timing regression gate.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMSIS-RTOS2 API",
+    "resolution_url": "https://arm-software.github.io/CMSIS_6/latest/RTOS2/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q113",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is HAL, driver and BSP boundaries, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "HALs normalize low-level access, drivers own device behavior and BSPs configure board-specific startup and wiring.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Device Driver Model",
+    "resolution_url": "https://docs.zephyrproject.org/latest/kernel/drivers/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q114",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply HAL, driver and BSP boundaries in a real product design or troubleshooting task?",
+    "preferred_answer": "Keep transport mechanics below a stable interface and product policy above it.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Device Driver Model",
+    "resolution_url": "https://docs.zephyrproject.org/latest/kernel/drivers/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q115",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish HAL, driver and BSP boundaries from placing product policy in a driver?",
+    "preferred_answer": "A driver exposes capabilities and errors; the application decides when and why to use them.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Device Driver Model",
+    "resolution_url": "https://docs.zephyrproject.org/latest/kernel/drivers/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q116",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A sensor driver shuts down the whole product on one high sample. What should the engineer do next?",
+    "preferred_answer": "Move policy out of the driver and retain accurate sampling and fault reporting.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Device Driver Model",
+    "resolution_url": "https://docs.zephyrproject.org/latest/kernel/drivers/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q117",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Devicetree and declarative hardware configuration, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Devicetree describes devices and initial configuration outside application logic.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Devicetree",
+    "resolution_url": "https://docs.zephyrproject.org/latest/build/dts/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q118",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Devicetree and declarative hardware configuration in a real product design or troubleshooting task?",
+    "preferred_answer": "Use bindings and overlays for board variants and validate them during the build.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Devicetree",
+    "resolution_url": "https://docs.zephyrproject.org/latest/build/dts/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q119",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Devicetree and declarative hardware configuration from hard-coded pins and addresses?",
+    "preferred_answer": "Declarative configuration reduces source edits and resource conflicts.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Devicetree",
+    "resolution_url": "https://docs.zephyrproject.org/latest/build/dts/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q120",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A board revision needs changes in five source files for one moved sensor. What should the engineer do next?",
+    "preferred_answer": "Move the wiring to an overlay and keep common application code.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Devicetree",
+    "resolution_url": "https://docs.zephyrproject.org/latest/build/dts/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q121",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Driver state machines, timeouts and errors, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Robust drivers model states, bound every external operation and expose actionable errors.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Linux Driver API",
+    "resolution_url": "https://docs.kernel.org/driver-api/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q122",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Driver state machines, timeouts and errors in a real product design or troubleshooting task?",
+    "preferred_answer": "Document transitions, centralize recovery and reject operations in invalid states.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Linux Driver API",
+    "resolution_url": "https://docs.kernel.org/driver-api/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q123",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Driver state machines, timeouts and errors from returning only true or false?",
+    "preferred_answer": "A boolean failure hides whether to retry, reset or stop.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Linux Driver API",
+    "resolution_url": "https://docs.kernel.org/driver-api/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q124",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Initialization times out but later calls use an invalid handle. What should the engineer do next?",
+    "preferred_answer": "Enter a failed state, reject dependent work, attempt bounded recovery and expose diagnostics.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Linux Driver API",
+    "resolution_url": "https://docs.kernel.org/driver-api/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q125",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Build variants and portable configuration, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Controlled build options allow one governed codebase to support boards and features reproducibly.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMake Documentation",
+    "resolution_url": "https://cmake.org/cmake/help/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q126",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Build variants and portable configuration in a real product design or troubleshooting task?",
+    "preferred_answer": "Define a supported matrix, fail invalid combinations and test representative variants in CI.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMake Documentation",
+    "resolution_url": "https://cmake.org/cmake/help/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q127",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Build variants and portable configuration from copying a project per product?",
+    "preferred_answer": "Copies drift in fixes and security controls.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMake Documentation",
+    "resolution_url": "https://cmake.org/cmake/help/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q128",
+    "role_slug": "hardware-iot",
+    "domain": "Device Drivers, HAL, BSP and Devicetree",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A critical fix reaches only three of seven product repositories. What should the engineer do next?",
+    "preferred_answer": "Consolidate shared code and manifests and enforce release builds from versioned configuration.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "CMake Documentation",
+    "resolution_url": "https://cmake.org/cmake/help/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q129",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is JTAG, SWD, breakpoints and watchpoints, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "On-chip debug provides halt, step, register, memory, flash and watchpoint access but can alter timing.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "OpenOCD User Guide",
+    "resolution_url": "https://openocd.org/doc/html/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q130",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply JTAG, SWD, breakpoints and watchpoints in a real product design or troubleshooting task?",
+    "preferred_answer": "Keep debug access on development units, use exact symbols and correlate halted state with fault registers.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "OpenOCD User Guide",
+    "resolution_url": "https://openocd.org/doc/html/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q131",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish JTAG, SWD, breakpoints and watchpoints from debugging only with prints?",
+    "preferred_answer": "Logging observes running behavior; a debugger provides control but may hide races.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "OpenOCD User Guide",
+    "resolution_url": "https://openocd.org/doc/html/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q132",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A fault disappears when the debugger is attached. What should the engineer do next?",
+    "preferred_answer": "Use retained crash evidence or trace and compare clock and watchdog behavior with and without the probe.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "OpenOCD User Guide",
+    "resolution_url": "https://openocd.org/doc/html/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q133",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Oscilloscope, logic analyzer and probing, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Scopes show analog voltage behavior; logic analyzers show many digital states and decode buses. Probe and trigger choices affect truth.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "PCB Design Guidelines for Reduced EMI",
+    "resolution_url": "https://www.ti.com/lit/an/szza009/szza009.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q134",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Oscilloscope, logic analyzer and probing in a real product design or troubleshooting task?",
+    "preferred_answer": "Start with an expected waveform, use correct grounding and bandwidth and correlate with firmware markers.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "PCB Design Guidelines for Reduced EMI",
+    "resolution_url": "https://www.ti.com/lit/an/szza009/szza009.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q135",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Oscilloscope, logic analyzer and probing from trusting software timestamps for electrical faults?",
+    "preferred_answer": "Logs show software belief; instruments show actual edges, noise and timing.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "PCB Design Guidelines for Reduced EMI",
+    "resolution_url": "https://www.ti.com/lit/an/szza009/szza009.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q136",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "SPI fails above 12 MHz but a low-rate decoder looks normal. What should the engineer do next?",
+    "preferred_answer": "Probe at the receiver with adequate bandwidth and inspect ringing, thresholds and setup or hold.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "PCB Design Guidelines for Reduced EMI",
+    "resolution_url": "https://www.ti.com/lit/an/szza009/szza009.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q137",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Board bring-up and first-power safety, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Staged bring-up checks assembly, shorts, rails, reset, clocks and debug before high-current functions.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q138",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Board bring-up and first-power safety in a real product design or troubleshooting task?",
+    "preferred_answer": "Use inspection, resistance checks and a current-limited supply, then enable subsystems one at a time.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q139",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Board bring-up and first-power safety from flashing the full app immediately?",
+    "preferred_answer": "A full app combines many unknowns and can damage hardware.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q140",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A new board draws three times expected current. What should the engineer do next?",
+    "preferred_answer": "Power down, inspect, measure rail resistance, isolate domains and reapply current-limited power safely.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q141",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Fault registers, coredumps and root cause, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "A useful crash record includes exception state, stacked registers, task and stack information, build identity and recent events.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Coredump",
+    "resolution_url": "https://docs.zephyrproject.org/latest/services/debugging/coredump.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q142",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Fault registers, coredumps and root cause in a real product design or troubleshooting task?",
+    "preferred_answer": "Capture a bounded record before recovery and symbolicate against the exact image.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Coredump",
+    "resolution_url": "https://docs.zephyrproject.org/latest/services/debugging/coredump.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q143",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Fault registers, coredumps and root cause from rebooting without evidence?",
+    "preferred_answer": "Reset restores service; evidence prevents recurrence.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Coredump",
+    "resolution_url": "https://docs.zephyrproject.org/latest/services/debugging/coredump.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q144",
+    "role_slug": "hardware-iot",
+    "domain": "Debugging, Instrumentation and Hardware Bring-Up",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A hard fault occurs weekly in the field and cannot be reproduced. What should the engineer do next?",
+    "preferred_answer": "Deploy crash capture, group signatures and reproduce the dominant path with the exact build and workload.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Coredump",
+    "resolution_url": "https://docs.zephyrproject.org/latest/services/debugging/coredump.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q145",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Boot ROM, bootloader, kernel and root filesystem, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "The boot chain progresses through ROM, bootloader, kernel and root filesystem, with verification and recovery responsibilities at each stage.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "U-Boot Documentation",
+    "resolution_url": "https://docs.u-boot.org/en/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q146",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Boot ROM, bootloader, kernel and root filesystem in a real product design or troubleshooting task?",
+    "preferred_answer": "Document images, keys, slots and timings and provide fallback or recovery.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "U-Boot Documentation",
+    "resolution_url": "https://docs.u-boot.org/en/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q147",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Boot ROM, bootloader, kernel and root filesystem from treating boot as one binary launch?",
+    "preferred_answer": "Bootloader selection and kernel device management are separate stages.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "U-Boot Documentation",
+    "resolution_url": "https://docs.u-boot.org/en/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q148",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An interrupted update boots the loader but cannot mount the rootfs. What should the engineer do next?",
+    "preferred_answer": "Use boot counters and known-good slots, preserve failed-slot logs and fix atomic update metadata.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "U-Boot Documentation",
+    "resolution_url": "https://docs.u-boot.org/en/latest/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q149",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Linux device tree, drivers and user space, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Linux device tree describes hardware; kernel drivers own devices and expose stable subsystem interfaces.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Linux Devicetree Usage Model",
+    "resolution_url": "https://docs.kernel.org/devicetree/usage-model.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q150",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Linux device tree, drivers and user space in a real product design or troubleshooting task?",
+    "preferred_answer": "Use the appropriate kernel subsystem and least-privileged user-space API.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Linux Devicetree Usage Model",
+    "resolution_url": "https://docs.kernel.org/devicetree/usage-model.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q151",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Linux device tree, drivers and user space from using /dev/mem in production?",
+    "preferred_answer": "Raw physical access lacks locking, interrupt, power and security behavior.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Linux Devicetree Usage Model",
+    "resolution_url": "https://docs.kernel.org/devicetree/usage-model.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q152",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Two applications write the same register and leave an actuator unsafe. What should the engineer do next?",
+    "preferred_answer": "Move ownership to one driver or service and define a safe state for process failure.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Linux Devicetree Usage Model",
+    "resolution_url": "https://docs.kernel.org/devicetree/usage-model.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q153",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Yocto, Buildroot and reproducible images, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Embedded build systems generate toolchains, packages and images from versioned metadata.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Yocto Project Overview and Concepts Manual",
+    "resolution_url": "https://docs.yoctoproject.org/overview-manual/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q154",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Yocto, Buildroot and reproducible images in a real product design or troubleshooting task?",
+    "preferred_answer": "Pin inputs, archive manifests and create immutable image artifacts and SBOMs.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Yocto Project Overview and Concepts Manual",
+    "resolution_url": "https://docs.yoctoproject.org/overview-manual/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q155",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Yocto, Buildroot and reproducible images from manually installing target packages?",
+    "preferred_answer": "Yocto is layered and flexible; Buildroot is simpler full-image generation, but both avoid undocumented target mutation.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Yocto Project Overview and Concepts Manual",
+    "resolution_url": "https://docs.yoctoproject.org/overview-manual/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q156",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A field library version cannot be reproduced. What should the engineer do next?",
+    "preferred_answer": "Inventory the unit, rebuild from pinned inputs and eliminate manual installation paths.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Yocto Project Overview and Concepts Manual",
+    "resolution_url": "https://docs.yoctoproject.org/overview-manual/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q157",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is systemd supervision and logging, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "systemd expresses dependencies, resource limits, restart policy and logging for Linux services.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "systemd Documentation",
+    "resolution_url": "https://systemd.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q158",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply systemd supervision and logging in a real product design or troubleshooting task?",
+    "preferred_answer": "Use bounded restart, rate limits, privilege controls and structured logs.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "systemd Documentation",
+    "resolution_url": "https://systemd.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q159",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish systemd supervision and logging from shell loops that restart forever?",
+    "preferred_answer": "Unlimited restart can hide persistent failure and fill storage.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "systemd Documentation",
+    "resolution_url": "https://systemd.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q160",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded Linux, Bootloaders and Board Support",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A daemon crash loop fills the root filesystem. What should the engineer do next?",
+    "preferred_answer": "Rate-limit and stop the service, preserve the first crash, roll back or repair and cap logs.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "systemd Documentation",
+    "resolution_url": "https://systemd.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q161",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is TCP, UDP and constrained trade-offs, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "TCP offers an ordered reliable stream; UDP offers datagrams and application-controlled reliability. Energy, loss and semantics decide.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "RFC 7252: The Constrained Application Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7252",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q162",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply TCP, UDP and constrained trade-offs in a real product design or troubleshooting task?",
+    "preferred_answer": "Model reconnect, retry, wake and middlebox costs and implement duplicate and timeout handling.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "RFC 7252: The Constrained Application Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7252",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q163",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish TCP, UDP and constrained trade-offs from choosing by header size only?",
+    "preferred_answer": "Smaller transport headers do not always mean lower total energy.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "RFC 7252: The Constrained Application Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7252",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q164",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A UDP sensor retries aggressively during congestion. What should the engineer do next?",
+    "preferred_answer": "Add randomized bounded backoff, freshness limits and adaptive reporting.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "RFC 7252: The Constrained Application Protocol",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc7252",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q165",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is MQTT topics, QoS, retained data and sessions, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "MQTT is publish-subscribe with topics, sessions, retained state and delivery levels; applications still need authorization and idempotency.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MQTT Version 5.0",
+    "resolution_url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q166",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply MQTT topics, QoS, retained data and sessions in a real product design or troubleshooting task?",
+    "preferred_answer": "Version the namespace, select QoS intentionally and make commands idempotent with IDs and expiry.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MQTT Version 5.0",
+    "resolution_url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q167",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish MQTT topics, QoS, retained data and sessions from assuming QoS 2 means a physical action once?",
+    "preferred_answer": "Protocol delivery guarantees do not prove one physical effect across resets.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MQTT Version 5.0",
+    "resolution_url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q168",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A retained command activates a replacement device unexpectedly. What should the engineer do next?",
+    "preferred_answer": "Do not retain transient commands and require state, device, ID and expiry checks.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MQTT Version 5.0",
+    "resolution_url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q169",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is CoAP and LwM2M device management, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "CoAP supports constrained REST-like transfer; LwM2M adds device objects, bootstrap and update procedures.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "LightweightM2M Specifications",
+    "resolution_url": "https://www.openmobilealliance.org/release/LightweightM2M/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q170",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply CoAP and LwM2M device management in a real product design or troubleshooting task?",
+    "preferred_answer": "Choose message confirmation, model resources and test retries, duplicates and secure bootstrap.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "LightweightM2M Specifications",
+    "resolution_url": "https://www.openmobilealliance.org/release/LightweightM2M/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q171",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish CoAP and LwM2M device management from using a heavyweight API on constrained links?",
+    "preferred_answer": "CoAP is a protocol; LwM2M adds management semantics.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "LightweightM2M Specifications",
+    "resolution_url": "https://www.openmobilealliance.org/release/LightweightM2M/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q172",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A fleet repeatedly downloads the same image after lost acknowledgements. What should the engineer do next?",
+    "preferred_answer": "Persist update identity and state, make operations idempotent and stop after bounded failure.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "LightweightM2M Specifications",
+    "resolution_url": "https://www.openmobilealliance.org/release/LightweightM2M/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q173",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is BLE, Wi-Fi, Thread and Matter selection, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Wireless options differ in topology, throughput, energy, commissioning and ecosystem; Matter is an application layer over supported IP networks.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Thread Primer",
+    "resolution_url": "https://openthread.io/guides/thread-primer",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q174",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply BLE, Wi-Fi, Thread and Matter selection in a real product design or troubleshooting task?",
+    "preferred_answer": "Define duty cycle, data, latency and infrastructure and prototype antenna and coexistence behavior.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Thread Primer",
+    "resolution_url": "https://openthread.io/guides/thread-primer",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q175",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish BLE, Wi-Fi, Thread and Matter selection from choosing radio by range only?",
+    "preferred_answer": "Matter does not replace the Wi-Fi or Thread network underneath it.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Thread Primer",
+    "resolution_url": "https://openthread.io/guides/thread-primer",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q176",
+    "role_slug": "hardware-iot",
+    "domain": "IoT Networking and Messaging Protocols",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A Wi-Fi sensor sending hourly data misses a one-year battery target. What should the engineer do next?",
+    "preferred_answer": "Measure association energy and compare BLE or Thread plus gateway options, batching and sleep.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Thread Primer",
+    "resolution_url": "https://openthread.io/guides/thread-primer",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q177",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Telemetry, commands and device data models, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "A device model defines identity, telemetry, state, commands, units, time, quality and schema version.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "What Is AWS IoT?",
+    "resolution_url": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q178",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Telemetry, commands and device data models in a real product design or troubleshooting task?",
+    "preferred_answer": "Separate desired from reported state and validate backward-compatible schema evolution.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "What Is AWS IoT?",
+    "resolution_url": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q179",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Telemetry, commands and device data models from ad hoc unversioned JSON?",
+    "preferred_answer": "Transport routing does not define semantic meaning.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "What Is AWS IoT?",
+    "resolution_url": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q180",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A firmware update changes Celsius to Fahrenheit under the same field. What should the engineer do next?",
+    "preferred_answer": "Introduce explicit unit and version, transform old and new data separately and add contract tests.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "What Is AWS IoT?",
+    "resolution_url": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q181",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Provisioning, identity and credential lifecycle, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Provisioning gives each device a unique identity and authorized credentials with rotation and revocation.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259A IoT Device Cybersecurity Baseline",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q182",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Provisioning, identity and credential lifecycle in a real product design or troubleshooting task?",
+    "preferred_answer": "Use per-device keys, authenticated bootstrap, ownership records and renewal before expiry.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259A IoT Device Cybersecurity Baseline",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q183",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Provisioning, identity and credential lifecycle from one shared fleet password?",
+    "preferred_answer": "Authentication proves a credential; provisioning binds it to a physical device and owner.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259A IoT Device Cybersecurity Baseline",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q184",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A shared MQTT password is extracted from one returned unit. What should the engineer do next?",
+    "preferred_answer": "Revoke it fleet-wide, move to unique credentials and fix secure factory personalization.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259A IoT Device Cybersecurity Baseline",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q185",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Edge buffering, replay and time synchronization, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Reliable edge storage needs bounded persistence, ordering, deduplication and time-quality information.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "RFC 5905: Network Time Protocol Version 4",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc5905",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q186",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Edge buffering, replay and time synchronization in a real product design or troubleshooting task?",
+    "preferred_answer": "Use atomic records, sequence IDs, source time and throttled replay with backpressure.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "RFC 5905: Network Time Protocol Version 4",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc5905",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q187",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Edge buffering, replay and time synchronization from dropping all data while offline?",
+    "preferred_answer": "Wall clock can jump; monotonic time is better for intervals.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "RFC 5905: Network Time Protocol Version 4",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc5905",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q188",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "All devices reconnect after 12 hours and overload the broker. What should the engineer do next?",
+    "preferred_answer": "Randomize and throttle replay, prioritize data and monitor backlog age.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "RFC 5905: Network Time Protocol Version 4",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc5905",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q189",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Fleet observability and digital twins, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Fleet health combines reported state, freshness, firmware, resources, faults and physical function.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Azure IoT Hub Concepts",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/iot-hub/iot-concepts-and-iot-hub",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q190",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Fleet observability and digital twins in a real product design or troubleshooting task?",
+    "preferred_answer": "Segment metrics by hardware and software and audit remote diagnostics and commands.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Azure IoT Hub Concepts",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/iot-hub/iot-concepts-and-iot-hub",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q191",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Fleet observability and digital twins from connectivity as proof of health?",
+    "preferred_answer": "A connected device may be physically broken and a twin may be stale.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Azure IoT Hub Concepts",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/iot-hub/iot-concepts-and-iot-hub",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q192",
+    "role_slug": "hardware-iot",
+    "domain": "Cloud-Edge Integration and Device Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "One hardware lot reports online but produces invalid readings. What should the engineer do next?",
+    "preferred_answer": "Segment by lot, add plausibility checks, quarantine bad data and target service.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Azure IoT Hub Concepts",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/iot-hub/iot-concepts-and-iot-hub",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q193",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Threat modeling and attack surface, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Threat modeling identifies assets, trust boundaries and abuse paths across physical, debug, radio, update, cloud and supply chain.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259 Rev. 1",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q194",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Threat modeling and attack surface in a real product design or troubleshooting task?",
+    "preferred_answer": "Diagram flows, rank threats and turn mitigations into requirements and tests.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259 Rev. 1",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q195",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Threat modeling and attack surface from adding encryption late?",
+    "preferred_answer": "Encryption does not solve insecure debug, authorization or malicious update.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259 Rev. 1",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q196",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A TLS device has an unauthenticated UART shell on exposed pads. What should the engineer do next?",
+    "preferred_answer": "Remove or authenticate it, restrict production debug and preserve an authorized service path.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259 Rev. 1",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q197",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Secure boot, trust chain and rollback, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Secure boot verifies each mutable stage before execution; rollback protection blocks older vulnerable signed images.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MCUboot Documentation",
+    "resolution_url": "https://docs.mcuboot.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q198",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Secure boot, trust chain and rollback in a real product design or troubleshooting task?",
+    "preferred_answer": "Protect root keys, sign in a controlled system and test corrupted and downgraded images.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MCUboot Documentation",
+    "resolution_url": "https://docs.mcuboot.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q199",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Secure boot, trust chain and rollback from checking integrity after startup?",
+    "preferred_answer": "A checksum detects corruption; a signature proves an authorized signer.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MCUboot Documentation",
+    "resolution_url": "https://docs.mcuboot.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q200",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An attacker installs an old signed vulnerable firmware. What should the engineer do next?",
+    "preferred_answer": "Use a protected security version counter and a controlled recovery process.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MCUboot Documentation",
+    "resolution_url": "https://docs.mcuboot.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q201",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Key storage, TLS and device authentication, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Secure devices need unique protected keys, peer validation and credential rotation and revocation.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "ESP-IDF Security Overview",
+    "resolution_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/security/security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q202",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Key storage, TLS and device authentication in a real product design or troubleshooting task?",
+    "preferred_answer": "Use hardware-backed storage where possible, validate server identity and stage certificate rollover.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "ESP-IDF Security Overview",
+    "resolution_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/security/security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q203",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Key storage, TLS and device authentication from private keys in source?",
+    "preferred_answer": "TLS is weak if keys are shared or hostname validation is disabled.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "ESP-IDF Security Overview",
+    "resolution_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/security/security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q204",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Leaf-certificate pinning breaks the fleet during server rotation. What should the engineer do next?",
+    "preferred_answer": "Use a managed CA or key-pinning strategy with overlapping trust and rollover tests.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "ESP-IDF Security Overview",
+    "resolution_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/security/security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q205",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Signed OTA, atomic update and recovery, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Secure OTA authenticates compatible images, writes atomically, trials health and commits or rolls back.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "ESP-IDF Over-the-Air Updates",
+    "resolution_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q206",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Signed OTA, atomic update and recovery in a real product design or troubleshooting task?",
+    "preferred_answer": "Use signed versioned images, A/B or recovery partitions and staged fleet rollout.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "ESP-IDF Over-the-Air Updates",
+    "resolution_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q207",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Signed OTA, atomic update and recovery from treating update as a download?",
+    "preferred_answer": "TLS protects transport; image signing protects the artifact end to end.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "ESP-IDF Over-the-Air Updates",
+    "resolution_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q208",
+    "role_slug": "hardware-iot",
+    "domain": "Embedded and IoT Security Engineering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Power loss leaves ten percent of devices in a boot loop. What should the engineer do next?",
+    "preferred_answer": "Boot a known-good slot, fix atomic selection and test resets at every update phase.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "ESP-IDF Over-the-Air Updates",
+    "resolution_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q209",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Power budgets, sleep and wake sources, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "System energy includes MCU, radio, sensors, regulator, leakage and transition time; duty cycle often dominates.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Power Management",
+    "resolution_url": "https://docs.zephyrproject.org/latest/services/pm/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q210",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Power budgets, sleep and wake sources in a real product design or troubleshooting task?",
+    "preferred_answer": "Measure each operating mode at representative voltage and temperature and audit wake sources.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Power Management",
+    "resolution_url": "https://docs.zephyrproject.org/latest/services/pm/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q211",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Power budgets, sleep and wake sources from using MCU sleep current as system current?",
+    "preferred_answer": "Component sleep current is not complete board current.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Power Management",
+    "resolution_url": "https://docs.zephyrproject.org/latest/services/pm/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q212",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A one-year design lasts six weeks despite deep sleep. What should the engineer do next?",
+    "preferred_answer": "Measure the full current waveform and fix radio retry, regulator or powered-peripheral losses.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Zephyr Power Management",
+    "resolution_url": "https://docs.zephyrproject.org/latest/services/pm/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q213",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Battery chemistry, charging and state estimation, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Battery capacity, voltage and safety depend on chemistry, load, temperature and aging.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q214",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Battery chemistry, charging and state estimation in a real product design or troubleshooting task?",
+    "preferred_answer": "Use the correct charger and protection and calibrate fuel-gauge behavior to the load profile.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q215",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Battery chemistry, charging and state estimation from estimating charge from voltage alone?",
+    "preferred_answer": "Loaded voltage alone is often a poor state-of-charge estimate.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q216",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A device shuts down at 40 percent indicated charge in cold weather. What should the engineer do next?",
+    "preferred_answer": "Measure voltage sag and internal resistance, tune the model and reduce peak current or add storage.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Raspberry Pi Microcontroller Documentation",
+    "resolution_url": "https://www.raspberrypi.com/documentation/microcontrollers/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q217",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Thermal design, derating and environment, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Temperature affects component limits, clocks, batteries and mechanics; derating improves lifetime and margin.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Functional Safety",
+    "resolution_url": "https://www.iec.ch/functionalsafety",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q218",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Thermal design, derating and environment in a real product design or troubleshooting task?",
+    "preferred_answer": "Model heat, test worst-case enclosure load and define throttling or safe shutdown.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Functional Safety",
+    "resolution_url": "https://www.iec.ch/functionalsafety",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q219",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Thermal design, derating and environment from room-temperature-only testing?",
+    "preferred_answer": "Absolute maximum is a damage boundary, not a design target.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Functional Safety",
+    "resolution_url": "https://www.iec.ch/functionalsafety",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q220",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A sealed outdoor gateway resets at midday. What should the engineer do next?",
+    "preferred_answer": "Measure internal temperature and rails, improve heat paths or reduce power and add verified thermal protection.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Functional Safety",
+    "resolution_url": "https://www.iec.ch/functionalsafety",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q221",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Brownout, watchdog and graceful degradation, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Reliable systems detect power and subsystem failure, preserve data and contain faults while keeping essential service.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "The FreeRTOS Kernel",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/01-About-the-FreeRTOS-kernel/01-FreeRTOS-kernel",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q222",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Brownout, watchdog and graceful degradation in a real product design or troubleshooting task?",
+    "preferred_answer": "Define safe states and fault domains and test brownout and partial failure recovery.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "The FreeRTOS Kernel",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/01-About-the-FreeRTOS-kernel/01-FreeRTOS-kernel",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q223",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Brownout, watchdog and graceful degradation from resetting everything for any error?",
+    "preferred_answer": "A full reset can spread failure and erase evidence.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "The FreeRTOS Kernel",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/01-About-the-FreeRTOS-kernel/01-FreeRTOS-kernel",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q224",
+    "role_slug": "hardware-iot",
+    "domain": "Power, Battery and Reliability Engineering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An optional sensor locks I2C and the safety controller reboots repeatedly. What should the engineer do next?",
+    "preferred_answer": "Recover or isolate the bus, mark the sensor unavailable and preserve essential control.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "The FreeRTOS Kernel",
+    "resolution_url": "https://www.freertos.org/Documentation/02-Kernel/01-About-the-FreeRTOS-kernel/01-FreeRTOS-kernel",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q225",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Unit, integration, SIL and HIL testing, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Unit, simulation, integration and hardware-in-loop tests target different layers of embedded risk.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Unity Unit Testing for C",
+    "resolution_url": "https://www.throwtheswitch.org/unity",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q226",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Unit, integration, SIL and HIL testing in a real product design or troubleshooting task?",
+    "preferred_answer": "Create hardware seams, run host tests on every change and reserve HIL for physical timing and interfaces.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Unity Unit Testing for C",
+    "resolution_url": "https://www.throwtheswitch.org/unity",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q227",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Unit, integration, SIL and HIL testing from final-hardware-only testing?",
+    "preferred_answer": "Unit tests cannot prove driver scale or electrical behavior.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Unity Unit Testing for C",
+    "resolution_url": "https://www.throwtheswitch.org/unity",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q228",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A tested algorithm saturates a real actuator because the driver conversion is wrong. What should the engineer do next?",
+    "preferred_answer": "Add calibrated integration and HIL tests covering limits and faults.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Unity Unit Testing for C",
+    "resolution_url": "https://www.throwtheswitch.org/unity",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q229",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Static analysis, coding standards and review, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Static analysis and coding standards reduce language-level risk but require triage, deviations and connection to hazards and tests.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MISRA C:2023",
+    "resolution_url": "https://misra.org.uk/product/misra-c2023/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q230",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Static analysis, coding standards and review in a real product design or troubleshooting task?",
+    "preferred_answer": "Configure tools for the real compiler, block new severe findings and review every deviation.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MISRA C:2023",
+    "resolution_url": "https://misra.org.uk/product/misra-c2023/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q231",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Static analysis, coding standards and review from clean analyzer equals safe product?",
+    "preferred_answer": "Static and dynamic methods leave different gaps.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MISRA C:2023",
+    "resolution_url": "https://misra.org.uk/product/misra-c2023/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q232",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team suppresses hundreds of warnings globally. What should the engineer do next?",
+    "preferred_answer": "Restore findings, fix high-risk issues and replace broad suppression with local reviewed deviations.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "MISRA C:2023",
+    "resolution_url": "https://misra.org.uk/product/misra-c2023/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q233",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Reproducible CI and artifact provenance, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Firmware CI should lock toolchains, test and analyze code and archive immutable binaries, maps, hashes and metadata.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "GitHub Actions Documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q234",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Reproducible CI and artifact provenance in a real product design or troubleshooting task?",
+    "preferred_answer": "Generate build IDs and SBOMs and separate signing permission from normal builds.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "GitHub Actions Documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q235",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Reproducible CI and artifact provenance from release builds on laptops?",
+    "preferred_answer": "Source commit alone does not identify the compiler, options and dependencies.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "GitHub Actions Documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q236",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A field crash cannot be symbolicated because the exact map is missing. What should the engineer do next?",
+    "preferred_answer": "Archive the full release artifact set and map every deployed image to it.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "GitHub Actions Documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q237",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is EMC, radio, safety and regulatory testing, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Products may require emissions, immunity, radio and safety evidence; pre-compliance reduces late redesign.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Equipment Authorization",
+    "resolution_url": "https://www.fcc.gov/engineering-technology/laboratory-division/general/equipment-authorization",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q238",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply EMC, radio, safety and regulatory testing in a real product design or troubleshooting task?",
+    "preferred_answer": "Identify standards early, create test modes and retain exact hardware and firmware configurations.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Equipment Authorization",
+    "resolution_url": "https://www.fcc.gov/engineering-technology/laboratory-division/general/equipment-authorization",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q239",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish EMC, radio, safety and regulatory testing from waiting for final certification?",
+    "preferred_answer": "Functional success does not imply EMC compliance.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Equipment Authorization",
+    "resolution_url": "https://www.fcc.gov/engineering-technology/laboratory-division/general/equipment-authorization",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q240",
+    "role_slug": "hardware-iot",
+    "domain": "Testing, CI/CD, Simulation and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A radio and display combination fails radiated emissions before launch. What should the engineer do next?",
+    "preferred_answer": "Locate the dominant frequency and loop, change layout, filtering or activity and repeat pre-compliance.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "Equipment Authorization",
+    "resolution_url": "https://www.fcc.gov/engineering-technology/laboratory-division/general/equipment-authorization",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q241",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Design for manufacture, assembly and test, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "DFM and DFT make products repeatable to assemble, program, calibrate and diagnose with traceable measured limits.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259A IoT Device Cybersecurity Baseline",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q242",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Design for manufacture, assembly and test in a real product design or troubleshooting task?",
+    "preferred_answer": "Add safe test points, automated fixtures, failure codes and per-serial records.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259A IoT Device Cybersecurity Baseline",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q243",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Design for manufacture, assembly and test from manual visual inspection only?",
+    "preferred_answer": "A working prototype does not prove a capable production process.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259A IoT Device Cybersecurity Baseline",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q244",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Five percent fail intermittently but factory data is only PASS. What should the engineer do next?",
+    "preferred_answer": "Capture intermediate measurements and correlate failures by lot, station and component.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259A IoT Device Cybersecurity Baseline",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q245",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Calibration, serialization and traceability, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Calibration ties raw values to references; traceability links each unit to hardware, firmware, keys and tests.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259A IoT Device Cybersecurity Baseline",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q246",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Calibration, serialization and traceability in a real product design or troubleshooting task?",
+    "preferred_answer": "Store coefficients, units, dates and algorithm version with integrity and audit.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259A IoT Device Cybersecurity Baseline",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q247",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Calibration, serialization and traceability from one unversioned coefficient?",
+    "preferred_answer": "A serial number identifies a unit; traceability connects its evidence.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259A IoT Device Cybersecurity Baseline",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q248",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Rework copies calibration between devices. What should the engineer do next?",
+    "preferred_answer": "Quarantine the lot, reconcile identities and records, recalibrate and restrict station writes.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "NIST IR 8259A IoT Device Cybersecurity Baseline",
+    "resolution_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q249",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Staged OTA rollout and fleet recovery, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Fleet updates should move through representative cohorts with health metrics, pause thresholds and rollback.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "ESP-IDF Over-the-Air Updates",
+    "resolution_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q250",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Staged OTA rollout and fleet recovery in a real product design or troubleshooting task?",
+    "preferred_answer": "Use hardware-aware canaries and monitor boot, connectivity and physical function after update.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "ESP-IDF Over-the-Air Updates",
+    "resolution_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q251",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Staged OTA rollout and fleet recovery from full-fleet deployment after one test?",
+    "preferred_answer": "Download success is not update success.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "ESP-IDF Over-the-Air Updates",
+    "resolution_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q252",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A release breaks networking on an older radio revision. What should the engineer do next?",
+    "preferred_answer": "Pause, isolate the revision, roll back and add compatibility checks and matrix tests.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "ESP-IDF Over-the-Air Updates",
+    "resolution_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q253",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Lifecycle, obsolescence and engineering leadership, and why does it matter in hardware, embedded systems or IoT engineering?",
+    "preferred_answer": "Embedded lifecycle includes component availability, software inventory, vulnerability response, field diagnosis and controlled retirement.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "SPDX Specifications",
+    "resolution_url": "https://spdx.dev/specifications/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q254",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Lifecycle, obsolescence and engineering leadership in a real product design or troubleshooting task?",
+    "preferred_answer": "Maintain hardware and software bills, monitor EOL and fund migration before supply or security becomes critical.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "SPDX Specifications",
+    "resolution_url": "https://spdx.dev/specifications/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q255",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Lifecycle, obsolescence and engineering leadership from optimizing only for launch?",
+    "preferred_answer": "Launch is one milestone; deployed products create long-term obligations.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "SPDX Specifications",
+    "resolution_url": "https://spdx.dev/specifications/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "HESI-Q256",
+    "role_slug": "hardware-iot",
+    "domain": "Production, Manufacturing, Fleet Operations and Leadership",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A discontinued MCU and library threaten production and field security. What should the engineer do next?",
+    "preferred_answer": "Secure a continuity plan, qualify migration and maintain updates for the installed base.",
+    "evaluation_points": [
+      "Explains the underlying hardware or software mechanism accurately",
+      "Connects the answer to timing, power, reliability, safety or lifecycle constraints",
+      "States assumptions, failure modes, trade-offs and verification evidence",
+      "Proposes a practical diagnostic, design or recovery action"
+    ],
+    "resolution_title": "SPDX Specifications",
+    "resolution_url": "https://spdx.dev/specifications/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];

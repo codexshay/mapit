@@ -349,7 +349,7 @@ export const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: strin
 'hardware-iot': {
     label: 'Hardware, Embedded Systems & IoT Engineering',
     icon: '🔌',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering MCU/MPU Architecture, Embedded C/C++, RTOS (FreeRTOS/Zephyr), I2C/SPI/CAN, Embedded Linux, MQTT/CoAP & Hardware Security'
   },
 'telecom-voice': {
     label: 'Telecom, Voice & Collaboration',
