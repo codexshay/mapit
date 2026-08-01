@@ -2351,10 +2351,10 @@ export default function App() {
 
         
         {/* NEW FLOATING HEADER DOCK - DESKTOP ONLY */}
-        <header className={`hidden md:flex relative transition-all duration-[300ms] ease-in-out px-4 py-2.5 items-center justify-between sticky top-0 z-30 backdrop-blur-md ${
-          isScrolled 
-            ? 'bg-[#070b13]/85 border-b border-[#121c38]/80 shadow-xl' 
-            : 'bg-transparent border-b-2 border-[#121c38]/40'
+        <header className={`hidden md:flex relative transition-all duration-[300ms] ease-in-out px-4 py-3 items-center justify-between sticky top-0 z-40 backdrop-blur-md border-b ${
+          theme === 'light'
+            ? 'bg-white/95 border-slate-200 shadow-sm text-slate-900'
+            : 'bg-[#070b13]/95 border-[#121c38] shadow-xl text-white'
         }`}>
           {/* Left Ribbon Controls Region */}
           <div className="flex items-center gap-3 shrink-0 z-10 min-w-0">
@@ -3133,13 +3133,13 @@ export default function App() {
                       <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-purple-500/10 text-purple-400 border border-purple-500/30">
                         InterviewQ Database
                       </span>
-                      <span className={`text-[10px] font-mono ${theme === 'light' ? 'text-slate-500' : 'text-zinc-500'}`}>1,788+ Qs</span>
+                      <span className={`text-[10px] font-mono font-bold ${theme === 'light' ? 'text-slate-700' : 'text-purple-300'}`}>1,788+ Total Qs</span>
                     </div>
-                    <h4 className={`text-xs font-bold font-sans ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
-                      +336 New Intensive Question Banks
+                    <h4 className={`text-xs font-black font-sans uppercase tracking-tight ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
+                      1,788+ Technical Interview Questions across 23 Role Categories
                     </h4>
                     <p className={`text-[11px] font-sans line-clamp-3 ${theme === 'light' ? 'text-slate-600' : 'text-zinc-400'}`}>
-                      Added +168 System Admin & Infrastructure and +168 IT Support / EUC questions across 42 sub-domains with NIST & ITIL 4 evaluation rubrics.
+                      Newly expanded with +168 System Admin & Infrastructure and +168 IT Support / EUC questions across 42 sub-domains with NIST & ITIL 4 evaluation rubrics.
                     </p>
                   </div>
                   <button
@@ -3169,13 +3169,13 @@ export default function App() {
                       <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
                         Jobs & Referrals
                       </span>
-                      <span className={`text-[10px] font-mono ${theme === 'light' ? 'text-slate-500' : 'text-zinc-500'}`}>50+ Tech Giants</span>
+                      <span className={`text-[10px] font-mono font-bold ${theme === 'light' ? 'text-slate-700' : 'text-cyan-300'}`}>150+ Direct Links</span>
                     </div>
-                    <h4 className={`text-xs font-bold font-sans ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
-                      100% Accordion Dropdown Layout
+                    <h4 className={`text-xs font-black font-sans uppercase tracking-tight ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
+                      50+ Top Tech Companies & 150+ Direct Career, LinkedIn & Referral Links
                     </h4>
                     <p className={`text-[11px] font-sans line-clamp-3 ${theme === 'light' ? 'text-slate-600' : 'text-zinc-400'}`}>
-                      Redesigned company listings into interactive accordion headers with instant access to Official Careers, LinkedIn Jobs, and Referral links.
+                      Redesigned company listings into 100% Accordion Dropdown headers for instant access to Official Careers, LinkedIn Company Jobs, and Referral Portals.
                     </p>
                   </div>
                   <button
@@ -3205,13 +3205,13 @@ export default function App() {
                       <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
                         HR Directory
                       </span>
-                      <span className={`text-[10px] font-mono ${theme === 'light' ? 'text-slate-500' : 'text-zinc-500'}`}>514+ Agencies</span>
+                      <span className={`text-[10px] font-mono font-bold ${theme === 'light' ? 'text-slate-700' : 'text-emerald-300'}`}>514+ Agencies</span>
                     </div>
-                    <h4 className={`text-xs font-bold font-sans ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
-                      Verified IT Recruitment Audit
+                    <h4 className={`text-xs font-black font-sans uppercase tracking-tight ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
+                      514+ Verified IT Recruitment & HR Consultancy Agencies
                     </h4>
                     <p className={`text-[11px] font-sans line-clamp-3 ${theme === 'light' ? 'text-slate-600' : 'text-zinc-400'}`}>
-                      Purified recruiter dataset removing non-IT listings. Features Light Theme city accordions across US, India, APAC, and EMEA hubs.
+                      Purified recruiter dataset removing non-IT listings. Features Light Theme city accordions across US, India, APAC, and EMEA tech hubs.
                     </p>
                   </div>
                   <button
