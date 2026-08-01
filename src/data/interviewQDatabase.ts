@@ -56907,5 +56907,4620 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "EBC-Q001",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an ERP system?",
+    "preferred_answer": "An enterprise resource planning system integrates core business processes and shared data across areas such as finance, procurement, inventory, manufacturing, projects, and human resources. Its value comes from common controls and a consistent transaction model, not merely from placing several modules under one login.",
+    "evaluation_points": [
+      "Focus on ERP",
+      "Focus on foundations"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q002",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a CRM system?",
+    "preferred_answer": "A customer relationship management system supports the lifecycle of prospects and customers across sales, marketing, service, and related interactions. It should provide governed customer data, process visibility, activity history, and measurable outcomes rather than operate as a contact list alone.",
+    "evaluation_points": [
+      "Focus on CRM",
+      "Focus on customer lifecycle"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q003",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is meant by a business application?",
+    "preferred_answer": "A business application is software designed to execute, control, or analyze a business capability or process. It may be a packaged ERP or CRM module, an industry application, a low-code solution, or an extension connected to a wider enterprise platform.",
+    "evaluation_points": [
+      "Focus on business applications",
+      "Focus on enterprise software"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q004",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why is a system of record important?",
+    "preferred_answer": "A system of record is the authoritative source for a defined data domain or transaction. Clear ownership prevents conflicting updates, simplifies reconciliation, and tells integrations which system may create or master each field.",
+    "evaluation_points": [
+      "Focus on system of record",
+      "Focus on data ownership"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q005",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does an integrated suite differ from a best-of-breed landscape?",
+    "preferred_answer": "An integrated suite usually offers a common data model, security model, and vendor roadmap, reducing some integration effort. Best-of-breed products can provide deeper capability in selected areas but require stronger architecture, identity, data governance, and support across vendors.",
+    "evaluation_points": [
+      "Focus on architecture",
+      "Focus on suite",
+      "Focus on best of breed"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q006",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between configuration and customization?",
+    "preferred_answer": "Configuration changes supported settings, metadata, workflows, or rules without altering the product core. Customization adds code or extensions for unmet requirements; it can be justified, but it raises testing, security, upgrade, and maintenance obligations.",
+    "evaluation_points": [
+      "Focus on configuration",
+      "Focus on customization"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q007",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do SaaS ERP and CRM differ operationally from on-premises products?",
+    "preferred_answer": "In SaaS, the vendor operates the underlying service and controls much of the upgrade cadence, while the customer remains responsible for data, access, configuration, integrations, testing, and adoption. On-premises deployments give more infrastructure control but require customer-managed availability, patching, capacity, and disaster recovery.",
+    "evaluation_points": [
+      "Focus on SaaS",
+      "Focus on on premises",
+      "Focus on shared responsibility"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q008",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does fit-to-standard mean?",
+    "preferred_answer": "Fit-to-standard starts with the product's standard process and asks the business to adopt it unless a requirement creates material legal, control, customer, or competitive value. Deviations should be documented with benefits, costs, risks, ownership, and lifecycle impact.",
+    "evaluation_points": [
+      "Focus on fit to standard",
+      "Focus on process design"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q009",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why should an ERP or CRM implementation begin with business value?",
+    "preferred_answer": "A value hypothesis connects the program to measurable outcomes such as faster close, improved forecast accuracy, lower order cycle time, better service resolution, or reduced control failures. Without it, teams can optimize features while failing to improve the business.",
+    "evaluation_points": [
+      "Focus on business value",
+      "Focus on benefits"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q010",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between master data and transactional data?",
+    "preferred_answer": "Master data describes relatively stable business entities such as customers, products, suppliers, employees, and accounts. Transactional data records events such as orders, invoices, payments, cases, and inventory movements that reference those entities.",
+    "evaluation_points": [
+      "Focus on master data",
+      "Focus on transaction data"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA data migration",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/29193bf0ebdd4583930b2176cb993268/a4d4119a2cc9448a98e5d17e6dd0eac4.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q011",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does customer 360 mean in practice?",
+    "preferred_answer": "Customer 360 is a governed, role-appropriate view of customer identity, relationships, interactions, orders, service history, consent, and value. It does not require copying every field into one database; it requires consistent identity, ownership, access, and timely integration.",
+    "evaluation_points": [
+      "Focus on customer 360",
+      "Focus on CRM data"
+    ],
+    "resolution_title": "Salesforce Help - Data quality",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.data_quality.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q012",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are common ERP and CRM implementation roles?",
+    "preferred_answer": "Typical roles include executive sponsor, process owner, product owner, functional consultant, business analyst, solution architect, integration and data specialists, security lead, test lead, change lead, administrator, developer, and support owner. Clear decision rights matter more than job titles.",
+    "evaluation_points": [
+      "Focus on implementation roles",
+      "Focus on RACI"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q013",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you assess whether a requested feature belongs in ERP, CRM, or another application?",
+    "preferred_answer": "Evaluate process ownership, authoritative data, transaction boundaries, user population, latency, control requirements, reporting, and product capability. Place the capability where it has the cleanest ownership and lowest long-term integration and duplication cost.",
+    "evaluation_points": [
+      "Focus on application portfolio",
+      "Focus on architecture"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q014",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why can a technically successful implementation still fail?",
+    "preferred_answer": "The system may be available and defect-free but still fail because processes are poorly designed, data is untrusted, users avoid it, controls are weak, benefits are not measured, or support cannot sustain it. Success must include business outcomes, adoption, control effectiveness, and operability.",
+    "evaluation_points": [
+      "Focus on implementation failure",
+      "Focus on adoption"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q015",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How should an organization govern overlapping capabilities across business applications?",
+    "preferred_answer": "Establish application and data ownership, architecture principles, a capability map, integration standards, and a decision forum. New requests should be evaluated for duplication, strategic fit, data authority, security, cost, and retirement impact.",
+    "evaluation_points": [
+      "Focus on application governance",
+      "Focus on capability map"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 guidance hub",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q016",
+    "role_slug": "erp-crm",
+    "domain": "ERP, CRM and Business Application Foundations",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What indicators would you use to evaluate an ERP or CRM program after go-live?",
+    "preferred_answer": "Use process cycle times, data quality, control exceptions, user adoption, transaction completion, service levels, integration reliability, defect trends, support volume, financial benefits, and stakeholder satisfaction. Compare results with the pre-implementation baseline and assigned benefit owners.",
+    "evaluation_points": [
+      "Focus on KPIs",
+      "Focus on value realization"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q017",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an as-is process?",
+    "preferred_answer": "An as-is process documents how work is actually performed today, including systems, handoffs, controls, exceptions, data, delays, and unofficial workarounds. It creates a fact base for deciding what should be retained, simplified, automated, or stopped.",
+    "evaluation_points": [
+      "Focus on process discovery",
+      "Focus on as is"
+    ],
+    "resolution_title": "Object Management Group - BPMN 2.0.2 specification",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q018",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a to-be process?",
+    "preferred_answer": "A to-be process defines the intended future way of working, including roles, decisions, controls, system interactions, measures, and exception handling. It should be feasible in the target operating model and traceable to business outcomes.",
+    "evaluation_points": [
+      "Focus on process design",
+      "Focus on to be"
+    ],
+    "resolution_title": "Object Management Group - BPMN 2.0.2 specification",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q019",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a business requirement?",
+    "preferred_answer": "A business requirement states the outcome, capability, constraint, or rule the organization needs. It should describe the need before prescribing a specific screen, field, or technical implementation.",
+    "evaluation_points": [
+      "Focus on requirements",
+      "Focus on business analysis"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q020",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why use swimlanes in process mapping?",
+    "preferred_answer": "Swimlanes show responsibility across roles, teams, or systems and make handoffs visible. They help identify unclear ownership, duplicate approvals, manual re-entry, and control gaps.",
+    "evaluation_points": [
+      "Focus on BPMN",
+      "Focus on swimlanes"
+    ],
+    "resolution_title": "Object Management Group - BPMN 2.0.2 specification",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q021",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is fit-gap analysis?",
+    "preferred_answer": "Fit-gap analysis compares business requirements with standard product capability. Each gap should be classified, prioritized, and resolved through process change, configuration, extension, integration, another application, or explicit rejection.",
+    "evaluation_points": [
+      "Focus on fit gap",
+      "Focus on requirements"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q022",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do functional and nonfunctional requirements differ?",
+    "preferred_answer": "Functional requirements describe behavior and business rules; nonfunctional requirements describe qualities and constraints such as performance, availability, security, auditability, localization, accessibility, and supportability. Both must be testable.",
+    "evaluation_points": [
+      "Focus on requirements",
+      "Focus on nonfunctional"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q023",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should acceptance criteria be written for a business application requirement?",
+    "preferred_answer": "Write observable conditions that define success, including role, trigger, data, expected result, permissions, errors, controls, and relevant performance limits. Avoid vague wording such as user-friendly or fast unless a measurable threshold is supplied.",
+    "evaluation_points": [
+      "Focus on acceptance criteria",
+      "Focus on testing"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q024",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is requirements traceability?",
+    "preferred_answer": "Traceability links business outcomes and requirements to design decisions, configurations, integrations, tests, training, and release artifacts. It helps control scope and proves that critical requirements and controls were validated.",
+    "evaluation_points": [
+      "Focus on traceability",
+      "Focus on governance"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q025",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you prioritize a backlog of ERP or CRM requirements?",
+    "preferred_answer": "Use business value, legal and control necessity, user impact, dependency, risk reduction, effort, and time criticality. A method such as MoSCoW can help, but decision owners and rationale must be recorded.",
+    "evaluation_points": [
+      "Focus on prioritization",
+      "Focus on backlog"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q026",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why must exception paths be captured during process discovery?",
+    "preferred_answer": "Standard happy paths often represent only part of operational workload. Returns, cancellations, partial deliveries, credit holds, duplicate customers, approval rejections, and integration failures drive complexity, controls, and support demand.",
+    "evaluation_points": [
+      "Focus on exceptions",
+      "Focus on process design"
+    ],
+    "resolution_title": "APQC - Process Classification Frameworks",
+    "resolution_url": "https://www.apqc.org/process-frameworks",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q027",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you identify business controls in a process workshop?",
+    "preferred_answer": "Ask where errors, fraud, unauthorized actions, or compliance failures could occur, then identify preventive and detective controls, evidence, owners, frequency, and escalation. Separate mandatory controls from historical approvals that add no value.",
+    "evaluation_points": [
+      "Focus on controls",
+      "Focus on workshops"
+    ],
+    "resolution_title": "ISO - ISO/IEC 27001 information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q028",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the purpose of a requirements prototype?",
+    "preferred_answer": "A prototype makes assumptions visible and lets users test navigation, data, rules, and terminology early. It is a learning tool, not proof that integration, security, performance, or full process behavior is complete.",
+    "evaluation_points": [
+      "Focus on prototyping",
+      "Focus on requirements validation"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q029",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How would you handle conflicting requirements from two business units?",
+    "preferred_answer": "Clarify the underlying outcome, legal context, data ownership, volume, and cost of variation. Seek a common standard with controlled exceptions; escalate unresolved policy decisions to the accountable process owner rather than letting configuration hide the conflict.",
+    "evaluation_points": [
+      "Focus on stakeholders",
+      "Focus on conflict resolution"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q030",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can process mining support ERP transformation?",
+    "preferred_answer": "Process mining can reconstruct actual flows from event data to reveal variants, rework, delays, and conformance issues. It should complement interviews because logs may omit manual steps, business rationale, and data quality problems.",
+    "evaluation_points": [
+      "Focus on process mining",
+      "Focus on evidence"
+    ],
+    "resolution_title": "APQC - Process Classification Frameworks",
+    "resolution_url": "https://www.apqc.org/process-frameworks",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q031",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you challenge a request to reproduce every legacy behavior?",
+    "preferred_answer": "Ask what outcome and risk the behavior addresses, whether the target product already provides a standard approach, and what the lifecycle cost of preserving it would be. Retain only behavior that is legally required or produces justified business value.",
+    "evaluation_points": [
+      "Focus on legacy",
+      "Focus on fit to standard"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q032",
+    "role_slug": "erp-crm",
+    "domain": "Business Process Discovery, Requirements and Fit-Gap Analysis",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What should a high-quality fit-gap decision record contain?",
+    "preferred_answer": "It should contain the requirement, process context, standard capability, gap description, options considered, selected disposition, value, risk, cost, dependencies, data and security impact, decision owner, date, and affected tests and training.",
+    "evaluation_points": [
+      "Focus on decision record",
+      "Focus on fit gap"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q033",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a general ledger?",
+    "preferred_answer": "The general ledger is the primary accounting record where balanced journal entries are summarized by account, entity, period, and other dimensions. Subledgers such as receivables, payables, and assets normally post controlled entries into it.",
+    "evaluation_points": [
+      "Focus on finance",
+      "Focus on general ledger"
+    ],
+    "resolution_title": "Oracle - Fusion Cloud implementation process",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25c/oafsm/implementation-process.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q034",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a chart of accounts?",
+    "preferred_answer": "A chart of accounts defines the account structure used to classify financial activity. A good design balances statutory and management reporting needs against excessive detail that complicates posting, reconciliation, and governance.",
+    "evaluation_points": [
+      "Focus on finance",
+      "Focus on chart of accounts"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q035",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is procure-to-pay?",
+    "preferred_answer": "Procure-to-pay covers the flow from demand and supplier selection through requisition, purchase order, receipt, invoice validation, and payment. The system should preserve approvals, matching, liability recognition, and an auditable record.",
+    "evaluation_points": [
+      "Focus on P2P",
+      "Focus on procurement"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q036",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is order-to-cash?",
+    "preferred_answer": "Order-to-cash covers customer order capture, pricing and credit checks, fulfillment, shipping or service delivery, invoicing, collection, and settlement. It crosses sales, logistics, finance, tax, and customer service.",
+    "evaluation_points": [
+      "Focus on O2C",
+      "Focus on sales"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q037",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a subledger and why is it reconciled to the general ledger?",
+    "preferred_answer": "A subledger stores detailed transactions for a domain such as customers, suppliers, or assets. Reconciliation confirms that its control account balance agrees with the general ledger and identifies missing, duplicate, or misclassified postings.",
+    "evaluation_points": [
+      "Focus on subledger",
+      "Focus on reconciliation"
+    ],
+    "resolution_title": "Oracle - Fusion Cloud implementation process",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25c/oafsm/implementation-process.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q038",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Explain two-way and three-way invoice matching.",
+    "preferred_answer": "Two-way matching compares invoice information with the purchase order. Three-way matching also includes the receipt or service confirmation, helping prevent payment for incorrect quantities, prices, or undelivered goods.",
+    "evaluation_points": [
+      "Focus on accounts payable",
+      "Focus on matching"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q039",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What controls would you expect around vendor creation and payment?",
+    "preferred_answer": "Separate vendor master maintenance from invoice entry and payment approval, validate bank changes, require evidence and approvals, screen duplicates, restrict privileged access, and monitor unusual payments. Emergency changes need documented review.",
+    "evaluation_points": [
+      "Focus on P2P",
+      "Focus on controls",
+      "Focus on SoD"
+    ],
+    "resolution_title": "Oracle - ERP security implementation overview",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25d/faser/overview-of-erp-security-implementation.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q040",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do credit limits affect order-to-cash?",
+    "preferred_answer": "Credit checks can warn, block, or route orders for approval when exposure exceeds policy. The design should define exposure calculation, exceptions, overrides, ownership, and how releases are audited.",
+    "evaluation_points": [
+      "Focus on credit management",
+      "Focus on O2C"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q041",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an accounting period close?",
+    "preferred_answer": "Period close is the controlled completion of accounting activities for a reporting period, including posting cutoffs, subledger processing, reconciliations, adjustments, consolidation, review, and locking. Dependencies and evidence should be managed through a close calendar.",
+    "evaluation_points": [
+      "Focus on period close",
+      "Focus on finance operations"
+    ],
+    "resolution_title": "Oracle - Fusion Cloud implementation process",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25c/oafsm/implementation-process.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q042",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should tax configuration be governed?",
+    "preferred_answer": "Tax rules should be owned by qualified finance or tax stakeholders, mapped to jurisdictions and transaction conditions, tested with representative scenarios, versioned, and monitored after regulatory change. Manual overrides should be restricted and reported.",
+    "evaluation_points": [
+      "Focus on tax",
+      "Focus on governance"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q043",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is intercompany processing?",
+    "preferred_answer": "Intercompany processing records transactions between entities in the same group and supports reciprocal postings, transfer pricing, settlement, and elimination. Master data and cutoffs must be consistent to avoid consolidation mismatches.",
+    "evaluation_points": [
+      "Focus on intercompany",
+      "Focus on consolidation"
+    ],
+    "resolution_title": "Oracle - Fusion Cloud implementation process",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25c/oafsm/implementation-process.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q044",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "How would you investigate an invoice that posted to the wrong expense account?",
+    "preferred_answer": "Trace account determination from supplier, item or category, purchase order, receipt, invoice, and configuration. Confirm whether the issue is master data, mapping, override, rule precedence, or user selection, then correct safely and test related scenarios.",
+    "evaluation_points": [
+      "Focus on accounts payable",
+      "Focus on account determination"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q045",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you design approval limits for purchases?",
+    "preferred_answer": "Base approval on risk-relevant dimensions such as amount, category, entity, budget, supplier, and exception type. Avoid unnecessary serial approvals; define delegation, escalation, conflict checks, audit evidence, and rules for changed orders.",
+    "evaluation_points": [
+      "Focus on approval workflow",
+      "Focus on procurement"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q046",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What risks arise when the chart of accounts is redesigned during ERP implementation?",
+    "preferred_answer": "Risks include broken historical comparability, incorrect mappings, reporting gaps, integration failures, user confusion, and unreconciled opening balances. Use governance, mapping rules, mock conversions, parallel reporting, and sign-off by finance owners.",
+    "evaluation_points": [
+      "Focus on chart of accounts",
+      "Focus on migration"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA data migration",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/29193bf0ebdd4583930b2176cb993268/a4d4119a2cc9448a98e5d17e6dd0eac4.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q047",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you reconcile order-to-cash across CRM and ERP?",
+    "preferred_answer": "Agree authoritative systems and identifiers, then reconcile opportunity or order totals, customer, product, tax, fulfillment, invoice, payment, status, and timing. Exceptions should be explainable by documented process states rather than silently corrected.",
+    "evaluation_points": [
+      "Focus on CRM ERP integration",
+      "Focus on reconciliation"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q048",
+    "role_slug": "erp-crm",
+    "domain": "ERP Finance, Procure-to-Pay and Order-to-Cash",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A business requests direct journal posting by many operational users. How would you respond?",
+    "preferred_answer": "Challenge the control objective, volume, and alternatives such as controlled subledger transactions, templates, imports, or workflow. Limit direct journals to trained roles, enforce approvals and evidence, monitor sensitive accounts, and preserve segregation of duties.",
+    "evaluation_points": [
+      "Focus on journals",
+      "Focus on security",
+      "Focus on controls"
+    ],
+    "resolution_title": "Oracle - ERP security implementation overview",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25d/faser/overview-of-erp-security-implementation.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q049",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an item or product master?",
+    "preferred_answer": "The item master contains governed attributes used to buy, sell, plan, store, manufacture, price, and report a product or service. Shared definitions and ownership are essential because errors propagate across many processes.",
+    "evaluation_points": [
+      "Focus on item master",
+      "Focus on supply chain"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q050",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a bill of materials?",
+    "preferred_answer": "A bill of materials defines the components and quantities required to produce or assemble an item. Effective dates, alternatives, units of measure, scrap, and change control affect planning and costing.",
+    "evaluation_points": [
+      "Focus on BOM",
+      "Focus on manufacturing"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q051",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is material requirements planning?",
+    "preferred_answer": "MRP calculates time-phased supply proposals from demand, inventory, lead times, lot-sizing rules, bills of materials, and planning parameters. Its output is only as reliable as the underlying master data and demand signals.",
+    "evaluation_points": [
+      "Focus on MRP",
+      "Focus on planning"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q052",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is available-to-promise?",
+    "preferred_answer": "Available-to-promise estimates whether and when demand can be fulfilled using supply, inventory, allocations, lead times, and business rules. It supports realistic customer commitments but depends on timely transactions and planning accuracy.",
+    "evaluation_points": [
+      "Focus on ATP",
+      "Focus on fulfillment"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q053",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why are units of measure a major implementation concern?",
+    "preferred_answer": "Purchasing, stocking, production, and selling may use different units and conversions. Incorrect precision or conversion rules cause inventory, pricing, costing, tax, and fulfillment errors, so ownership and test coverage are required.",
+    "evaluation_points": [
+      "Focus on unit of measure",
+      "Focus on master data"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q054",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is safety stock?",
+    "preferred_answer": "Safety stock is buffer inventory intended to absorb demand or supply variability. It should be based on service targets and variability, reviewed periodically, and not used to hide poor data or process performance.",
+    "evaluation_points": [
+      "Focus on inventory",
+      "Focus on safety stock"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q055",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do lot and serial tracking differ?",
+    "preferred_answer": "Lot tracking groups units produced or received together, while serial tracking identifies individual units. The choice affects traceability, recalls, warranty, inventory operations, data volume, and scanning requirements.",
+    "evaluation_points": [
+      "Focus on traceability",
+      "Focus on lots",
+      "Focus on serials"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q056",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What controls are important for inventory adjustments?",
+    "preferred_answer": "Restrict access, require reason codes and evidence, apply approval thresholds, count or verify high-risk items, preserve before-and-after quantities and value, and monitor recurring patterns by user, location, and item.",
+    "evaluation_points": [
+      "Focus on inventory controls",
+      "Focus on adjustments"
+    ],
+    "resolution_title": "Oracle - ERP security implementation overview",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25d/faser/overview-of-erp-security-implementation.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q057",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is cycle counting?",
+    "preferred_answer": "Cycle counting verifies selected inventory throughout the year instead of relying only on a full physical count. Count frequency should reflect value, movement, risk, and prior accuracy, with tolerances and root-cause follow-up.",
+    "evaluation_points": [
+      "Focus on inventory",
+      "Focus on cycle count"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q058",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does a routing differ from a bill of materials?",
+    "preferred_answer": "A bill of materials specifies what components are needed; a routing specifies operations, sequence, resources, and standard times. Together they support scheduling, capacity, costing, and production execution.",
+    "evaluation_points": [
+      "Focus on manufacturing",
+      "Focus on routing"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q059",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is project accounting in an ERP?",
+    "preferred_answer": "Project accounting captures budgets, costs, commitments, time, revenue, billing, and profitability by project or work structure. It requires consistent links between operational transactions and financial dimensions.",
+    "evaluation_points": [
+      "Focus on projects",
+      "Focus on project accounting"
+    ],
+    "resolution_title": "Oracle - Fusion Cloud implementation process",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25c/oafsm/implementation-process.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q060",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is worker or employee master data sensitive?",
+    "preferred_answer": "It may include identity, organizational, payroll, tax, bank, performance, and personal information. Access must follow role, purpose, geography, retention, and privacy requirements, with strong controls over interfaces and exports.",
+    "evaluation_points": [
+      "Focus on HCM",
+      "Focus on privacy"
+    ],
+    "resolution_title": "ISO - ISO/IEC 27001 information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q061",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How would you diagnose persistent negative inventory?",
+    "preferred_answer": "Examine transaction timing, backdated posting, integration delays, unit conversions, location rules, reservations, returns, and physical process. Correct the process and configuration rather than repeatedly posting balancing adjustments.",
+    "evaluation_points": [
+      "Focus on inventory",
+      "Focus on negative stock"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q062",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you design master data governance for a global product catalog?",
+    "preferred_answer": "Define global and local attributes, owners, approval workflow, naming and classification standards, duplicate checks, effective dates, quality metrics, downstream distribution, and change impact. Local variations should be controlled rather than copied into separate unmanaged masters.",
+    "evaluation_points": [
+      "Focus on product master",
+      "Focus on governance"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q063",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What should be considered when integrating payroll with finance?",
+    "preferred_answer": "Map earning, deduction, tax, benefit, liability, cost center, project, and legal entity dimensions; protect personal data; reconcile totals and headcount; manage reversals; and align posting and close calendars. Failures need secure rerun procedures.",
+    "evaluation_points": [
+      "Focus on payroll",
+      "Focus on finance integration"
+    ],
+    "resolution_title": "Oracle - REST API for Oracle Fusion Cloud Applications",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25d/farca/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q064",
+    "role_slug": "erp-crm",
+    "domain": "Supply Chain, Inventory, Manufacturing, Projects and Human Resources",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A manufacturer wants MRP to fix chronic late deliveries. What would you assess first?",
+    "preferred_answer": "Assess demand quality, lead times, capacity, yield, safety stock, supplier performance, transaction timeliness, BOM and routing accuracy, and planning discipline. MRP can expose and plan around constraints, but it cannot compensate for uncontrolled data and execution.",
+    "evaluation_points": [
+      "Focus on MRP",
+      "Focus on delivery performance"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q065",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between a lead, account, contact, and opportunity?",
+    "preferred_answer": "A lead is an unqualified prospect record; an account represents an organization or customer entity; a contact represents a person; and an opportunity represents a potential revenue event. Exact models vary, but conversion and ownership rules must be clear.",
+    "evaluation_points": [
+      "Focus on CRM data model",
+      "Focus on sales"
+    ],
+    "resolution_title": "Salesforce Help - Data quality",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.data_quality.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q066",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a sales pipeline stage?",
+    "preferred_answer": "A pipeline stage represents a defined step in the sales process with entry and exit criteria, expected actions, ownership, and probability or forecast treatment. Stages should reflect actual buyer and seller progress, not subjective optimism.",
+    "evaluation_points": [
+      "Focus on sales pipeline",
+      "Focus on opportunity"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q067",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a customer service case?",
+    "preferred_answer": "A case records a customer issue, request, complaint, or inquiry and tracks categorization, priority, ownership, communication, resolution, and service commitments. It should connect to the relevant customer, product, entitlement, and knowledge.",
+    "evaluation_points": [
+      "Focus on customer service",
+      "Focus on case management"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q068",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a CRM activity?",
+    "preferred_answer": "An activity records an interaction or planned action such as a call, meeting, email, or task. Activities should support useful context and follow-up without creating excessive administrative burden or privacy risk.",
+    "evaluation_points": [
+      "Focus on CRM",
+      "Focus on activities"
+    ],
+    "resolution_title": "Salesforce Help - Data quality",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.data_quality.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q069",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How should lead qualification criteria be designed?",
+    "preferred_answer": "Define objective indicators of fit, need, authority, timing, engagement, and disqualifying conditions. The criteria should guide routing and follow-up, be measurable, and be reviewed against conversion outcomes.",
+    "evaluation_points": [
+      "Focus on lead management",
+      "Focus on qualification"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q070",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is territory management?",
+    "preferred_answer": "Territory management assigns accounts, prospects, or opportunities based on geography, segment, product, industry, capacity, or other rules. It affects ownership, sharing, quotas, service, and reporting, so changes require controlled recalculation and communication.",
+    "evaluation_points": [
+      "Focus on territories",
+      "Focus on sales operations"
+    ],
+    "resolution_title": "Salesforce Architects - Platform sharing architecture",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/platform-sharing-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q071",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should opportunity probabilities be used?",
+    "preferred_answer": "Probabilities should follow consistent stage definitions or a documented predictive model. They support expected value and forecasting, but they should not replace judgment about timing, amount, risk, and data freshness.",
+    "evaluation_points": [
+      "Focus on forecasting",
+      "Focus on opportunity"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q072",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is campaign attribution?",
+    "preferred_answer": "Campaign attribution assigns credit for customer engagement or revenue to marketing activities using defined rules or models. It requires consistent campaign membership, identity resolution, time windows, and transparency about limitations.",
+    "evaluation_points": [
+      "Focus on marketing",
+      "Focus on attribution"
+    ],
+    "resolution_title": "Salesforce Help - Data quality",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.data_quality.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q073",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do queues and routing support customer service?",
+    "preferred_answer": "Queues group work awaiting assignment; routing distributes it using priority, skill, capacity, language, channel, or entitlement. The design should prevent starvation, preserve ownership, and expose backlog and aging.",
+    "evaluation_points": [
+      "Focus on case routing",
+      "Focus on queues"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q074",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an SLA or entitlement in customer service?",
+    "preferred_answer": "It defines the service commitment a customer is eligible to receive, such as response and resolution targets, support hours, or covered products. Timers, pause conditions, escalations, and exceptions must match the contract and operating model.",
+    "evaluation_points": [
+      "Focus on service management",
+      "Focus on SLA"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q075",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is a CRM knowledge base valuable?",
+    "preferred_answer": "A governed knowledge base improves consistency, self-service, resolution speed, and onboarding. Articles need ownership, review dates, searchability, access controls, usage feedback, and retirement processes.",
+    "evaluation_points": [
+      "Focus on knowledge management",
+      "Focus on service"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q076",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does omnichannel mean in CRM?",
+    "preferred_answer": "Omnichannel coordinates customer interactions across channels while preserving context, identity, routing, and consistent service. It is more than adding channels; it requires shared process and data across them.",
+    "evaluation_points": [
+      "Focus on omnichannel",
+      "Focus on customer experience"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q077",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How would you improve poor CRM adoption among sales users?",
+    "preferred_answer": "Observe the actual sales workflow, remove unnecessary fields and duplicate entry, improve mobile and integration support, clarify value, train managers, measure usage quality, and make the CRM the easiest path to complete real work. Avoid solving adoption only with mandates.",
+    "evaluation_points": [
+      "Focus on adoption",
+      "Focus on sales CRM"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q078",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you design customer consent and communication preferences?",
+    "preferred_answer": "Capture purpose, channel, legal basis where applicable, source, timestamp, jurisdiction, expiry or withdrawal, and downstream enforcement. Make preferences easy to update and ensure integrations do not reintroduce prohibited contact.",
+    "evaluation_points": [
+      "Focus on consent",
+      "Focus on privacy",
+      "Focus on marketing"
+    ],
+    "resolution_title": "ISO - ISO/IEC 27001 information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q079",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What are key design concerns in configure-price-quote integration?",
+    "preferred_answer": "Product and price authority, eligibility, bundles, discounts, approvals, tax, currency, contract terms, versioning, order creation, and auditability must be aligned. Quote changes should not create silent inconsistencies with orders or invoices.",
+    "evaluation_points": [
+      "Focus on CPQ",
+      "Focus on integration"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q080",
+    "role_slug": "erp-crm",
+    "domain": "CRM Sales, Marketing, Customer Service and Field Service",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you distinguish a service backlog problem from a routing problem?",
+    "preferred_answer": "Compare incoming volume, capacity, handle time, skill distribution, assignment delay, reopen rate, priority mix, and aging by queue. Routing can improve distribution, but sustained excess demand or poor resolution quality requires capacity and process action.",
+    "evaluation_points": [
+      "Focus on customer service",
+      "Focus on backlog"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q081",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is master data management?",
+    "preferred_answer": "Master data management establishes governance, processes, and technology for consistent core entities such as customers, products, suppliers, and locations. It defines ownership, quality, identity, lifecycle, and distribution rather than only centralizing records.",
+    "evaluation_points": [
+      "Focus on MDM",
+      "Focus on master data"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA data migration",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/29193bf0ebdd4583930b2176cb993268/a4d4119a2cc9448a98e5d17e6dd0eac4.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q082",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is reference data?",
+    "preferred_answer": "Reference data is a controlled set of allowable values used to classify other data, such as countries, currencies, payment terms, statuses, or reason codes. Changes can affect rules, integrations, and reporting and therefore need governance.",
+    "evaluation_points": [
+      "Focus on reference data",
+      "Focus on governance"
+    ],
+    "resolution_title": "Oracle - Fusion Cloud implementation process",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25c/oafsm/implementation-process.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q083",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a golden record?",
+    "preferred_answer": "A golden record is the trusted representation of an entity created by matching and consolidating data according to governance and survivorship rules. It should retain source lineage and not hide unresolved conflicts.",
+    "evaluation_points": [
+      "Focus on golden record",
+      "Focus on customer data"
+    ],
+    "resolution_title": "Salesforce Help - Data quality",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.data_quality.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q084",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are common data quality dimensions?",
+    "preferred_answer": "Common dimensions include accuracy, completeness, consistency, validity, uniqueness, timeliness, and integrity. Each metric needs a defined rule, owner, threshold, and business impact.",
+    "evaluation_points": [
+      "Focus on data quality",
+      "Focus on metrics"
+    ],
+    "resolution_title": "Salesforce Help - Data quality",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.data_quality.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q085",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a data owner and how is that different from a data steward?",
+    "preferred_answer": "A data owner is accountable for policy, access, quality, and use of a data domain. A steward performs ongoing governance activities such as definitions, issue management, rule maintenance, and coordination; responsibilities may be distributed but must be explicit.",
+    "evaluation_points": [
+      "Focus on data governance",
+      "Focus on ownership"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q086",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do matching rules and duplicate rules work together?",
+    "preferred_answer": "Matching rules determine whether records are similar enough to be potential duplicates; duplicate rules determine whether to allow, warn, block, or report the action. Thresholds should be tested against false positives and false negatives.",
+    "evaluation_points": [
+      "Focus on duplicates",
+      "Focus on matching"
+    ],
+    "resolution_title": "Salesforce Help - Duplicate management",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.managing_duplicates_overview.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q087",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are survivorship rules?",
+    "preferred_answer": "Survivorship rules decide which source value is retained when records conflict, using factors such as source authority, recency, completeness, verification, or manual stewardship. They should be transparent and reversible where possible.",
+    "evaluation_points": [
+      "Focus on MDM",
+      "Focus on survivorship"
+    ],
+    "resolution_title": "Salesforce Help - Data quality",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.data_quality.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q088",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why are external identifiers useful?",
+    "preferred_answer": "Stable external IDs link records across systems, support upsert and reconciliation, and reduce dependence on names or internal database keys. They need uniqueness, ownership, lifecycle, and collision controls.",
+    "evaluation_points": [
+      "Focus on integration",
+      "Focus on external IDs"
+    ],
+    "resolution_title": "Salesforce Developers - REST API Developer Guide",
+    "resolution_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q089",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How should customer hierarchies be governed?",
+    "preferred_answer": "Define relationship types, effective dates, legal and commercial meaning, source authority, ownership, and reporting use. A single hierarchy may not serve billing, sales, risk, and service equally, so purpose-specific views may be needed.",
+    "evaluation_points": [
+      "Focus on customer hierarchy",
+      "Focus on CRM data"
+    ],
+    "resolution_title": "Microsoft - What is Microsoft Dataverse?",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q090",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is data lineage?",
+    "preferred_answer": "Data lineage shows where data originated, how it was transformed, where it moved, and which reports or processes depend on it. It supports impact analysis, troubleshooting, audit, and trust.",
+    "evaluation_points": [
+      "Focus on lineage",
+      "Focus on data governance"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q091",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do validation rules improve data quality?",
+    "preferred_answer": "Validation rules prevent or flag values that violate defined conditions at entry or import. They should target meaningful errors, provide actionable messages, handle integrations, and avoid blocking legitimate exceptions without an approved path.",
+    "evaluation_points": [
+      "Focus on validation rules",
+      "Focus on data quality"
+    ],
+    "resolution_title": "Microsoft - What is Microsoft Dataverse?",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q092",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is data reconciliation?",
+    "preferred_answer": "Reconciliation compares source and target counts, totals, keys, balances, statuses, and exceptions to prove completeness and correctness. It should use independent control totals and signed ownership rather than visual spot checks alone.",
+    "evaluation_points": [
+      "Focus on reconciliation",
+      "Focus on controls"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA data migration",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/29193bf0ebdd4583930b2176cb993268/a4d4119a2cc9448a98e5d17e6dd0eac4.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q093",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you design duplicate prevention for a global customer database?",
+    "preferred_answer": "Use normalized fields, region-aware matching, tax or registration IDs where lawful, hierarchy and household logic, source priority, review queues, and monitoring. Test with representative languages and naming patterns before blocking records.",
+    "evaluation_points": [
+      "Focus on duplicates",
+      "Focus on global CRM"
+    ],
+    "resolution_title": "Salesforce Help - Duplicate management",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.managing_duplicates_overview.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q094",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should an organization handle conflicting definitions of active customer?",
+    "preferred_answer": "Document each business purpose, appoint an accountable owner, define a canonical metric or explicitly named variants, specify timing and source data, and update reports and processes. Do not force one definition when regulatory, commercial, and service uses genuinely differ.",
+    "evaluation_points": [
+      "Focus on data definitions",
+      "Focus on governance"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q095",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What controls are needed for bulk data correction?",
+    "preferred_answer": "Use approved scope, backup or export, test environment validation, peer review, least-privilege execution, change records, before-and-after evidence, reconciliation, and rollback. Protect automation from partial failure and unintended selection.",
+    "evaluation_points": [
+      "Focus on bulk update",
+      "Focus on controls"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q096",
+    "role_slug": "erp-crm",
+    "domain": "Data Models, Master Data, Reference Data and Data Quality",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "A migration has correct record counts but wrong parent-child relationships. What went wrong?",
+    "preferred_answer": "Counts prove volume, not relational integrity. Investigate source keys, mapping, load order, duplicate resolution, external IDs, failed references, and transformation rules; validate relationship samples and orphan counts before acceptance.",
+    "evaluation_points": [
+      "Focus on migration",
+      "Focus on relationships"
+    ],
+    "resolution_title": "Salesforce Help - Data migration best practices",
+    "resolution_url": "https://help.salesforce.com/articleView?id=000326326&language=en_US&mode=1&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q097",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is metadata-driven configuration?",
+    "preferred_answer": "Metadata-driven configuration stores application behavior such as entities, fields, forms, rules, and workflows as managed definitions rather than hard-coded changes to the product core. It generally improves portability and upgrade support.",
+    "evaluation_points": [
+      "Focus on metadata",
+      "Focus on configuration"
+    ],
+    "resolution_title": "Microsoft - What is Microsoft Dataverse?",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q098",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a low-code business application?",
+    "preferred_answer": "A low-code application uses visual designers, declarative logic, managed connectors, and reusable components to deliver business functionality with limited custom code. It still requires architecture, security, testing, lifecycle, and ownership.",
+    "evaluation_points": [
+      "Focus on low code",
+      "Focus on business apps"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q099",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an approval workflow?",
+    "preferred_answer": "An approval workflow routes a transaction or request to authorized decision makers based on rules, thresholds, and conditions. It should define delegation, escalation, rejection, evidence, and behavior when data changes after approval.",
+    "evaluation_points": [
+      "Focus on workflow",
+      "Focus on approvals"
+    ],
+    "resolution_title": "Odoo 18 - Automation rules",
+    "resolution_url": "https://www.odoo.com/documentation/18.0/applications/studio/automated_actions.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q100",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a custom object or custom entity?",
+    "preferred_answer": "It is a platform-defined data structure created for a business concept not adequately represented by standard entities. Before creating one, confirm ownership, relationships, security, reporting, integration, and lifecycle requirements.",
+    "evaluation_points": [
+      "Focus on custom entity",
+      "Focus on data model"
+    ],
+    "resolution_title": "Microsoft - What is Microsoft Dataverse?",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q101",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When is customization justified?",
+    "preferred_answer": "Customization is justified when a validated requirement cannot be met through process change, standard configuration, integration, or another governed capability and the business value exceeds lifecycle cost and risk. The decision should be documented and owned.",
+    "evaluation_points": [
+      "Focus on customization",
+      "Focus on decision making"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q102",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are extension points?",
+    "preferred_answer": "Extension points are supported mechanisms such as events, APIs, plugins, hooks, or add-ins that allow behavior to be added without modifying the product core. Supported points reduce upgrade risk compared with direct changes.",
+    "evaluation_points": [
+      "Focus on extensibility",
+      "Focus on architecture"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q103",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How would you govern business rules created by citizen developers?",
+    "preferred_answer": "Use environment strategy, data loss prevention, approved connectors, role-based access, naming, ownership, testing, solution packaging, monitoring, and retirement. Higher-risk applications should receive professional review and support planning.",
+    "evaluation_points": [
+      "Focus on citizen development",
+      "Focus on governance"
+    ],
+    "resolution_title": "Microsoft - Power Platform security and governance",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/admin/security/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q104",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the risk of putting too much logic in form scripts?",
+    "preferred_answer": "Form logic can be hard to reuse, test, secure, and execute consistently across imports, APIs, mobile, and background processes. Critical rules should be enforced at the appropriate server or data layer, with the user interface providing guidance.",
+    "evaluation_points": [
+      "Focus on client scripts",
+      "Focus on business rules"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q105",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should approval workflow changes be tested?",
+    "preferred_answer": "Test every threshold, role, delegation, rejection, resubmission, timeout, escalation, data-change condition, and audit trail. Include unauthorized users, integration-created records, and failure recovery.",
+    "evaluation_points": [
+      "Focus on workflow testing",
+      "Focus on approvals"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q106",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is solution packaging?",
+    "preferred_answer": "Solution packaging groups related metadata, components, dependencies, and versions so changes can be promoted across environments consistently. Packages should be source-controlled where supported and deployed through governed pipelines.",
+    "evaluation_points": [
+      "Focus on solutions",
+      "Focus on ALM"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q107",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do feature flags help business application releases?",
+    "preferred_answer": "Feature flags separate deployment from activation, enabling staged rollout, testing, and rapid disablement. They require ownership, default behavior, monitoring, security review, and cleanup to avoid permanent complexity.",
+    "evaluation_points": [
+      "Focus on feature flags",
+      "Focus on release"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q108",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is customization debt?",
+    "preferred_answer": "Customization debt is the accumulated cost and risk of bespoke behavior, duplicated logic, unsupported components, weak documentation, and deferred refactoring. It appears during upgrades, testing, support, security review, and skill turnover.",
+    "evaluation_points": [
+      "Focus on technical debt",
+      "Focus on customization"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q109",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you choose between workflow, plugin, integration, and robotic automation?",
+    "preferred_answer": "Choose based on transaction boundary, latency, reliability, data ownership, security, volume, error handling, observability, and product support. Prefer the simplest supported mechanism that preserves controls and can be operated safely.",
+    "evaluation_points": [
+      "Focus on automation architecture",
+      "Focus on extensibility"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q110",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can low-code platforms create shadow IT risk?",
+    "preferred_answer": "Easy creation can produce unmanaged data stores, excessive permissions, fragile integrations, unowned apps, duplicated capability, and licensing exposure. Governance should enable safe delivery rather than simply prohibit development.",
+    "evaluation_points": [
+      "Focus on shadow IT",
+      "Focus on low code governance"
+    ],
+    "resolution_title": "Microsoft - Power Platform security and governance",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/admin/security/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q111",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you review an upgrade-sensitive customization?",
+    "preferred_answer": "Identify product-core dependencies, deprecated APIs, unsupported database access, client assumptions, security context, performance, test coverage, and rollback. Replace direct modifications with supported extensions where feasible.",
+    "evaluation_points": [
+      "Focus on upgrade",
+      "Focus on customization"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q112",
+    "role_slug": "erp-crm",
+    "domain": "Configuration, Customization, Low-Code and Extensibility",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A department asks for a quick low-code app that stores sensitive customer data. What do you require before approval?",
+    "preferred_answer": "Confirm business owner, data classification, lawful use, access model, retention, approved environment and connectors, audit, backup, support, testing, and integration with authoritative systems. Speed does not remove security and lifecycle obligations.",
+    "evaluation_points": [
+      "Focus on low code",
+      "Focus on sensitive data"
+    ],
+    "resolution_title": "Microsoft - Power Platform security and governance",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/admin/security/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q113",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an API?",
+    "preferred_answer": "An application programming interface is a defined contract that allows software components to exchange requests, responses, events, or data. A usable enterprise API also needs authentication, authorization, versioning, error handling, limits, and operational ownership.",
+    "evaluation_points": [
+      "Focus on API",
+      "Focus on integration"
+    ],
+    "resolution_title": "OpenAPI Initiative - OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q114",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is middleware?",
+    "preferred_answer": "Middleware coordinates communication between applications through capabilities such as routing, transformation, orchestration, security, messaging, and monitoring. It can reduce point-to-point complexity but becomes critical shared infrastructure that must be governed.",
+    "evaluation_points": [
+      "Focus on middleware",
+      "Focus on integration"
+    ],
+    "resolution_title": "SAP Help - SAP Integration Suite",
+    "resolution_url": "https://help.sap.com/docs/integration-suite",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q115",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do synchronous and asynchronous integrations differ?",
+    "preferred_answer": "Synchronous integration waits for a response in the same interaction and suits immediate decisions. Asynchronous integration decouples systems through messages or events and improves resilience and scale, but requires state, retries, ordering, and reconciliation.",
+    "evaluation_points": [
+      "Focus on synchronous",
+      "Focus on asynchronous"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q116",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a webhook?",
+    "preferred_answer": "A webhook is an HTTP callback sent when an event occurs. Consumers must authenticate the sender, handle duplicates and retries, validate payloads, respond quickly, and monitor missed events.",
+    "evaluation_points": [
+      "Focus on webhook",
+      "Focus on events"
+    ],
+    "resolution_title": "Odoo 18 - Automation rules",
+    "resolution_url": "https://www.odoo.com/documentation/18.0/applications/studio/automated_actions.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q117",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is idempotency and why does it matter?",
+    "preferred_answer": "An idempotent operation can be repeated without causing unintended additional effects. It prevents duplicate orders, payments, cases, or updates when clients retry after timeouts or partial failures.",
+    "evaluation_points": [
+      "Focus on idempotency",
+      "Focus on retries"
+    ],
+    "resolution_title": "IETF - RFC 9110 HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q118",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How should integration retries be designed?",
+    "preferred_answer": "Retry only transient failures, use bounded exponential backoff and jitter, preserve correlation and idempotency keys, and route exhausted messages to a review or dead-letter path. Permanent validation errors need correction, not repeated load.",
+    "evaluation_points": [
+      "Focus on retries",
+      "Focus on resilience"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q119",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a dead-letter queue?",
+    "preferred_answer": "A dead-letter queue holds messages that could not be processed after defined attempts. It supports investigation and controlled replay, but needs alerting, ownership, retention, security, and tools to avoid becoming a silent backlog.",
+    "evaluation_points": [
+      "Focus on messaging",
+      "Focus on dead letter queue"
+    ],
+    "resolution_title": "SAP Help - SAP Integration Suite",
+    "resolution_url": "https://help.sap.com/docs/integration-suite",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q120",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do REST and SOAP commonly differ?",
+    "preferred_answer": "REST commonly uses resource-oriented HTTP and JSON, while SOAP uses XML envelopes and formal service contracts with mature enterprise standards. The correct choice depends on platform capability, contract, security, transaction, and interoperability needs.",
+    "evaluation_points": [
+      "Focus on REST",
+      "Focus on SOAP"
+    ],
+    "resolution_title": "Oracle - REST API for Oracle Fusion Cloud Applications",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25d/farca/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q121",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should API rate limits be handled?",
+    "preferred_answer": "Understand the quota and reset model, reduce unnecessary calls, use batching or caching, schedule bulk work, apply backoff, monitor consumption, and coordinate limits across integrations. Never treat repeated throttling as a random error.",
+    "evaluation_points": [
+      "Focus on rate limits",
+      "Focus on API operations"
+    ],
+    "resolution_title": "Salesforce Developers - REST API Developer Guide",
+    "resolution_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q122",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a canonical data model?",
+    "preferred_answer": "A canonical model is a shared representation used to reduce pairwise transformations between systems. It can simplify integration, but it should be scoped and governed because an overly universal model becomes slow and difficult to evolve.",
+    "evaluation_points": [
+      "Focus on canonical model",
+      "Focus on data integration"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q123",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is schema versioning?",
+    "preferred_answer": "Schema versioning manages contract changes so producers and consumers can evolve without uncontrolled breakage. Favor backward-compatible additions, explicit deprecation, consumer testing, and observed usage before removal.",
+    "evaluation_points": [
+      "Focus on versioning",
+      "Focus on API contract"
+    ],
+    "resolution_title": "OpenAPI Initiative - OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q124",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What observability should an enterprise integration provide?",
+    "preferred_answer": "Capture correlation IDs, source and target, timestamps, status, latency, retries, payload metadata, error category, queue depth, and reconciliation totals while protecting sensitive content. Alerts should map to business impact and ownership.",
+    "evaluation_points": [
+      "Focus on integration monitoring",
+      "Focus on observability"
+    ],
+    "resolution_title": "SAP Help - SAP Integration Suite",
+    "resolution_url": "https://help.sap.com/docs/integration-suite",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q125",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you decide between real-time and batch integration?",
+    "preferred_answer": "Use business latency requirements, volume, transaction consistency, source capability, cost, recoverability, and user experience. Real-time adds operational complexity; batch may be safer when timely reconciliation is more important than immediate propagation.",
+    "evaluation_points": [
+      "Focus on real time",
+      "Focus on batch"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q126",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you secure an integration service account?",
+    "preferred_answer": "Use a nonhuman identity, least privilege, strong credential or certificate management, short-lived tokens where possible, network and conditional controls, audit, rotation, usage monitoring, and a named owner. Do not share interactive user credentials.",
+    "evaluation_points": [
+      "Focus on service account",
+      "Focus on API security"
+    ],
+    "resolution_title": "OWASP - API Security Project",
+    "resolution_url": "https://owasp.org/www-project-api-security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q127",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How do you reconcile an event-driven integration when events arrive out of order?",
+    "preferred_answer": "Use event IDs, sequence or version data, timestamps with caution, idempotent upsert, state checks, buffering where required, and periodic source-to-target reconciliation. Business rules should define whether stale events are ignored or compensated.",
+    "evaluation_points": [
+      "Focus on events",
+      "Focus on ordering",
+      "Focus on reconciliation"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q128",
+    "role_slug": "erp-crm",
+    "domain": "Integration, APIs, Middleware and Event-Driven Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An API integration creates duplicate sales orders after network timeouts. What is your response?",
+    "preferred_answer": "Stop or contain retries, identify duplicate scope, use idempotency keys or source transaction IDs, make creation safely repeatable, reconcile affected orders, and test timeout paths. Do not rely only on faster networks or manual deletion.",
+    "evaluation_points": [
+      "Focus on duplicate transactions",
+      "Focus on idempotency"
+    ],
+    "resolution_title": "IETF - RFC 9110 HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q129",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is authentication?",
+    "preferred_answer": "Authentication verifies the identity of a user, service, or device. It should use appropriate assurance such as MFA, federation, certificates, or managed identities before authorization decisions are made.",
+    "evaluation_points": [
+      "Focus on authentication",
+      "Focus on identity"
+    ],
+    "resolution_title": "ISO - ISO/IEC 27001 information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q130",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is authorization?",
+    "preferred_answer": "Authorization determines what an authenticated identity may do and which data it may access. In business applications it commonly combines roles, privileges, organizational scope, ownership, sharing, and field-level controls.",
+    "evaluation_points": [
+      "Focus on authorization",
+      "Focus on access control"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 security controls",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/security-strategy-security-controls",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q131",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is role-based access control?",
+    "preferred_answer": "RBAC assigns permissions to roles aligned with job functions and assigns users to those roles. It improves consistency and reviewability, but roles need ownership, lifecycle management, and controls against excessive combinations.",
+    "evaluation_points": [
+      "Focus on RBAC",
+      "Focus on security roles"
+    ],
+    "resolution_title": "NIST - Role Based Access Control",
+    "resolution_url": "https://csrc.nist.gov/projects/role-based-access-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q132",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is least privilege?",
+    "preferred_answer": "Least privilege gives identities only the access required for approved duties, for the shortest practical time and scope. It reduces accidental and malicious impact and should apply to users, administrators, integrations, and support staff.",
+    "evaluation_points": [
+      "Focus on least privilege",
+      "Focus on access"
+    ],
+    "resolution_title": "ISO - ISO/IEC 27001 information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q133",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is segregation of duties?",
+    "preferred_answer": "Segregation of duties prevents one person from controlling incompatible steps of a sensitive process, such as creating a supplier and releasing payment. Conflicts should be prevented where possible or mitigated through approved review and monitoring.",
+    "evaluation_points": [
+      "Focus on SoD",
+      "Focus on controls"
+    ],
+    "resolution_title": "Oracle - ERP security implementation overview",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25d/faser/overview-of-erp-security-implementation.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q134",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do business roles and data roles differ?",
+    "preferred_answer": "A business or job role defines functional privileges; a data role or security context restricts where those privileges apply, such as legal entity, business unit, territory, or department. Both are needed to avoid broad access.",
+    "evaluation_points": [
+      "Focus on roles",
+      "Focus on data security"
+    ],
+    "resolution_title": "Oracle - ERP security implementation overview",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25d/faser/overview-of-erp-security-implementation.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q135",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is field-level security?",
+    "preferred_answer": "Field-level security controls whether a user can view or change specific attributes even when the record itself is accessible. It is useful for sensitive fields but must also be enforced through APIs, reports, exports, and integrations.",
+    "evaluation_points": [
+      "Focus on field security",
+      "Focus on privacy"
+    ],
+    "resolution_title": "Salesforce Architects - Platform sharing architecture",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/platform-sharing-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q136",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does record sharing differ from object permission?",
+    "preferred_answer": "Object permission allows actions on a type of record; record sharing determines which specific records are visible or editable. A user may have read permission on accounts but see only assigned or shared accounts.",
+    "evaluation_points": [
+      "Focus on sharing",
+      "Focus on object permissions"
+    ],
+    "resolution_title": "Salesforce Architects - Platform sharing architecture",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/platform-sharing-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q137",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a privileged access review?",
+    "preferred_answer": "It is a periodic and event-driven review of administrative, implementation, support, and emergency access to confirm need, scope, ownership, and activity. Unused or unjustified privileges should be removed promptly.",
+    "evaluation_points": [
+      "Focus on privileged access",
+      "Focus on review"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 security controls",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/security-strategy-security-controls",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q138",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should an audit trail record?",
+    "preferred_answer": "Record who performed an action, what changed, when, from where or through which interface, the before-and-after value where appropriate, and relevant context. Logs need protection, retention, searchable access, and monitoring.",
+    "evaluation_points": [
+      "Focus on audit logging",
+      "Focus on compliance"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 security controls",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/security-strategy-security-controls",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q139",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How should break-glass access be controlled?",
+    "preferred_answer": "Use separate emergency identities, strong authentication, vaulting, time limits, approval or documented emergency use, real-time alerting, complete logging, and mandatory post-use review. It must not become routine administrator access.",
+    "evaluation_points": [
+      "Focus on emergency access",
+      "Focus on privileged identity"
+    ],
+    "resolution_title": "ISO - ISO/IEC 27001 information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q140",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What security concerns apply to data exports?",
+    "preferred_answer": "Exports can bypass normal screen controls and create unmanaged copies. Restrict export privileges, apply field security, classify and protect files, log usage, enforce retention, and review bulk or unusual activity.",
+    "evaluation_points": [
+      "Focus on exports",
+      "Focus on data loss"
+    ],
+    "resolution_title": "Microsoft - Power Platform security and governance",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/admin/security/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q141",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you design access for external partners using a CRM portal?",
+    "preferred_answer": "Separate identities, least-privilege roles, record-level sharing, strong authentication, data minimization, tenant or account boundaries, secure registration, monitoring, and tested revocation. Never rely only on hidden navigation.",
+    "evaluation_points": [
+      "Focus on external users",
+      "Focus on portal security"
+    ],
+    "resolution_title": "Salesforce Architects - Platform sharing architecture",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/platform-sharing-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q142",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How should segregation-of-duties conflicts be handled when staffing is limited?",
+    "preferred_answer": "Document the conflict and business necessity, minimize access, require independent approval or review, monitor sensitive transactions, rotate duties where possible, and set an expiry. A mitigation is an owned control, not a permanent exception note.",
+    "evaluation_points": [
+      "Focus on SoD",
+      "Focus on mitigating controls"
+    ],
+    "resolution_title": "Oracle - ERP security implementation overview",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25d/faser/overview-of-erp-security-implementation.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q143",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you investigate suspected unauthorized access to customer records?",
+    "preferred_answer": "Preserve audit and identity evidence, scope accounts and records, suspend or restrict access if necessary, review roles, sharing, sessions, exports, and integrations, follow incident and privacy procedures, and remediate the root cause without altering evidence.",
+    "evaluation_points": [
+      "Focus on unauthorized access",
+      "Focus on audit"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 security controls",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/security-strategy-security-controls",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q144",
+    "role_slug": "erp-crm",
+    "domain": "Identity, Security, Roles, Segregation of Duties, Privacy and Audit",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A consultant requests a broad implementation role in production for convenience. What would you do?",
+    "preferred_answer": "Require task-specific, time-bound access, separate setup from operational data where possible, obtain accountable approval, monitor activity, and remove access after use. Convenience does not justify unrestricted implementation privileges.",
+    "evaluation_points": [
+      "Focus on implementation access",
+      "Focus on least privilege"
+    ],
+    "resolution_title": "Oracle - Fusion Cloud implementation users",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25b/facsa/implementation-users.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q145",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are the main stages of data migration?",
+    "preferred_answer": "Typical stages are scope and inventory, profiling, cleansing, mapping, transformation, mock extraction and load, validation, cutover, reconciliation, and post-load support. Governance and ownership span every stage.",
+    "evaluation_points": [
+      "Focus on data migration",
+      "Focus on lifecycle"
+    ],
+    "resolution_title": "Salesforce Help - Data migration best practices",
+    "resolution_url": "https://help.salesforce.com/articleView?id=000326326&language=en_US&mode=1&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q146",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a migration mapping document?",
+    "preferred_answer": "It defines how source objects and fields map to targets, including transformations, defaults, reference lookups, ownership, exclusions, validation, and error handling. It should be versioned and traceable to tests.",
+    "evaluation_points": [
+      "Focus on mapping",
+      "Focus on migration"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA data migration",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/29193bf0ebdd4583930b2176cb993268/a4d4119a2cc9448a98e5d17e6dd0eac4.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q147",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a mock migration?",
+    "preferred_answer": "A mock migration runs the planned extraction, transformation, load, validation, and timing in a nonproduction environment. Repeated mocks expose data, tooling, dependency, performance, and cutover problems before go-live.",
+    "evaluation_points": [
+      "Focus on mock migration",
+      "Focus on cutover"
+    ],
+    "resolution_title": "SAP Help - The S/4HANA migration process",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/29193bf0ebdd4583930b2176cb993268/c67e14ff693e423aae2b96d9f3b0fc91.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q148",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is cutover?",
+    "preferred_answer": "Cutover is the coordinated transition from old processes and systems to the new solution, including freezes, final data loads, configuration, access, integration switch, validation, communication, and contingency decisions.",
+    "evaluation_points": [
+      "Focus on cutover",
+      "Focus on go live"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q149",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do historical, open, and master data differ in migration planning?",
+    "preferred_answer": "Master data enables operations; open transactions must continue correctly in the target; historical closed transactions may be migrated, summarized, archived, or accessed through a legacy solution. The choice depends on legal, reporting, service, cost, and performance needs.",
+    "evaluation_points": [
+      "Focus on historical data",
+      "Focus on open transactions"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA data migration",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/29193bf0ebdd4583930b2176cb993268/a4d4119a2cc9448a98e5d17e6dd0eac4.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q150",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why are data profiling and cleansing performed before mapping is finalized?",
+    "preferred_answer": "Profiling reveals actual formats, nulls, duplicates, invalid values, volumes, and relationships. This evidence changes mapping and cleansing rules and prevents designs based only on outdated field descriptions.",
+    "evaluation_points": [
+      "Focus on profiling",
+      "Focus on cleansing"
+    ],
+    "resolution_title": "Salesforce Help - Data migration best practices",
+    "resolution_url": "https://help.salesforce.com/articleView?id=000326326&language=en_US&mode=1&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q151",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should parent-child records be loaded?",
+    "preferred_answer": "Preserve stable source identifiers, load parents or referenced masters first, capture target IDs where needed, then load children with validated relationships. Measure orphans and failed references explicitly.",
+    "evaluation_points": [
+      "Focus on load sequence",
+      "Focus on relationships"
+    ],
+    "resolution_title": "Salesforce Help - Data migration best practices",
+    "resolution_url": "https://help.salesforce.com/articleView?id=000326326&language=en_US&mode=1&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q152",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is delta migration?",
+    "preferred_answer": "Delta migration transfers changes made after an earlier extraction or mock load. It requires a reliable change boundary, timestamps or logs, deletion handling, idempotency, and reconciliation so no record is missed or duplicated.",
+    "evaluation_points": [
+      "Focus on delta load",
+      "Focus on cutover"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA data migration",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/29193bf0ebdd4583930b2176cb993268/a4d4119a2cc9448a98e5d17e6dd0eac4.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q153",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a data freeze and why is it used?",
+    "preferred_answer": "A data freeze limits changes during final migration so source and target can be reconciled. The freeze should be as short and targeted as possible, with approved emergency changes captured for later delta processing.",
+    "evaluation_points": [
+      "Focus on data freeze",
+      "Focus on cutover"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA data migration",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/29193bf0ebdd4583930b2176cb993268/a4d4119a2cc9448a98e5d17e6dd0eac4.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q154",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you validate a migrated financial balance?",
+    "preferred_answer": "Reconcile controlled totals by entity, account, currency, period, and subledger; compare counts and exception reports; sample source documents; and obtain finance ownership sign-off. Conversion journals must be separately identifiable.",
+    "evaluation_points": [
+      "Focus on financial reconciliation",
+      "Focus on migration"
+    ],
+    "resolution_title": "Oracle - Fusion Cloud implementation process",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25c/oafsm/implementation-process.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q155",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "What should happen to failed migration records?",
+    "preferred_answer": "Classify the error, preserve the source and error detail, correct data or rules under change control, rerun idempotently, and update reconciliation. Do not silently exclude failed records or manually recreate them without traceability.",
+    "evaluation_points": [
+      "Focus on migration errors",
+      "Focus on reprocessing"
+    ],
+    "resolution_title": "SAP Help - The S/4HANA migration process",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/29193bf0ebdd4583930b2176cb993268/c67e14ff693e423aae2b96d9f3b0fc91.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q156",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should data ownership be assigned during migration?",
+    "preferred_answer": "Business owners approve scope, definitions, cleansing, and acceptance; technical teams implement extraction and load. Stewards manage detailed issues. Every critical object and reconciliation should have named accountability.",
+    "evaluation_points": [
+      "Focus on data ownership",
+      "Focus on migration"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q157",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you plan migration of customer records from multiple CRMs?",
+    "preferred_answer": "Define identity and hierarchy rules, source authority, duplicates, consent, ownership, activities, attachments, external IDs, and source retention. Run staged matching and stewardship before loading the target and reconcile by source and business unit.",
+    "evaluation_points": [
+      "Focus on CRM consolidation",
+      "Focus on migration"
+    ],
+    "resolution_title": "Salesforce Help - Data migration best practices",
+    "resolution_url": "https://help.salesforce.com/articleView?id=000326326&language=en_US&mode=1&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q158",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What makes a migration rollback plan credible?",
+    "preferred_answer": "It defines the decision authority and deadline, how business transactions are stopped or reversed, restoration of systems and integrations, handling of data created after cutover, user communication, and rehearsed technical steps. Some transformations may require forward recovery rather than simple rollback.",
+    "evaluation_points": [
+      "Focus on rollback",
+      "Focus on cutover"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q159",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you determine whether to migrate attachments and activity history?",
+    "preferred_answer": "Evaluate legal retention, operational need, search, privacy, volume, cost, performance, metadata quality, and alternative archival access. Migrate only what users and obligations need, with links and permissions preserved.",
+    "evaluation_points": [
+      "Focus on attachments",
+      "Focus on history"
+    ],
+    "resolution_title": "Salesforce Help - Data migration best practices",
+    "resolution_url": "https://help.salesforce.com/articleView?id=000326326&language=en_US&mode=1&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q160",
+    "role_slug": "erp-crm",
+    "domain": "Data Migration, Cutover and Reconciliation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "The final migration completes within the window, but reconciliation has unexplained differences. Do you go live?",
+    "preferred_answer": "Do not accept unexplained material differences. Assess business and control impact, isolate whether discrepancies are timing or defects, obtain accountable decision-making, correct or invoke contingency, and preserve evidence. Schedule success alone is not acceptance.",
+    "evaluation_points": [
+      "Focus on go live decision",
+      "Focus on reconciliation"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q161",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is system integration testing?",
+    "preferred_answer": "SIT validates that connected components, applications, interfaces, jobs, and end-to-end flows work together with correct data and error handling. It is broader than testing each configuration in isolation.",
+    "evaluation_points": [
+      "Focus on SIT",
+      "Focus on integration testing"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q162",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is user acceptance testing?",
+    "preferred_answer": "UAT is business-led validation that the solution supports agreed processes, controls, roles, and outcomes using representative scenarios and data. It is not a substitute for technical testing.",
+    "evaluation_points": [
+      "Focus on UAT",
+      "Focus on acceptance"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q163",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is regression testing?",
+    "preferred_answer": "Regression testing confirms that previously working capability still works after a change. Prioritize critical end-to-end processes, integrations, controls, and historically fragile areas rather than rerunning only the changed screen.",
+    "evaluation_points": [
+      "Focus on regression",
+      "Focus on quality"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q164",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why test security roles?",
+    "preferred_answer": "Role testing confirms that users can complete authorized work and cannot access prohibited functions or data. Test positive and negative access through UI, reports, exports, APIs, and delegated administration.",
+    "evaluation_points": [
+      "Focus on security testing",
+      "Focus on roles"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 security controls",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/security-strategy-security-controls",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q165",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What should an ERP end-to-end test case contain?",
+    "preferred_answer": "Include business objective, preconditions, roles, master data, steps across systems, expected postings and statuses, controls, integrations, reports, exceptions, and evidence. It should mirror a complete business outcome rather than one module transaction.",
+    "evaluation_points": [
+      "Focus on end to end testing",
+      "Focus on ERP"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q166",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do UAT and training differ?",
+    "preferred_answer": "UAT verifies that the solution meets acceptance criteria; training builds user capability. UAT participants may learn during execution, but scripted pass results should not depend on trainers correcting the system or completing steps for users.",
+    "evaluation_points": [
+      "Focus on UAT",
+      "Focus on training"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q167",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What test data is needed for a CRM implementation?",
+    "preferred_answer": "Use representative customers, prospects, hierarchies, products, territories, consent states, opportunities, cases, integrations, duplicates, and exceptions. Protect personal data and ensure tests cover different roles and regions.",
+    "evaluation_points": [
+      "Focus on test data",
+      "Focus on CRM"
+    ],
+    "resolution_title": "Salesforce Help - Data quality",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.data_quality.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q168",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How should migration testing be structured?",
+    "preferred_answer": "Test extraction, transformation, load, relationships, permissions, reconciliation, performance, rerun, failure recovery, and business usability over repeated mocks. Validate both correct records and expected rejects.",
+    "evaluation_points": [
+      "Focus on migration testing",
+      "Focus on data quality"
+    ],
+    "resolution_title": "Salesforce Help - Data migration best practices",
+    "resolution_url": "https://help.salesforce.com/articleView?id=000326326&language=en_US&mode=1&type=1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q169",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are test entry and exit criteria?",
+    "preferred_answer": "Entry criteria define readiness such as stable build, data, environment, and resolved blockers. Exit criteria define acceptable coverage, pass rate, defect position, performance, reconciliation, and approvals; they make decisions explicit.",
+    "evaluation_points": [
+      "Focus on test governance",
+      "Focus on quality gates"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q170",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should defects be triaged?",
+    "preferred_answer": "Classify business impact, severity, scope, reproducibility, control and data risk, workaround, ownership, and release effect. Priority is a decision about when to act, not simply another name for severity.",
+    "evaluation_points": [
+      "Focus on defect triage",
+      "Focus on governance"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q171",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Where is test automation most valuable in business applications?",
+    "preferred_answer": "Automate stable, repeatable, high-value regression such as APIs, calculations, integrations, role checks, and critical transaction paths. Avoid brittle UI automation where configuration changes frequently unless the risk justifies maintenance.",
+    "evaluation_points": [
+      "Focus on test automation",
+      "Focus on regression"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q172",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What should performance testing cover in ERP or CRM?",
+    "preferred_answer": "Test realistic concurrency, transaction mix, data volumes, reports, imports, batch jobs, integrations, peak periods, and degraded dependencies. Measure user response, throughput, queues, resource limits, and recovery.",
+    "evaluation_points": [
+      "Focus on performance testing",
+      "Focus on nonfunctional"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q173",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you test an approval workflow with complex thresholds?",
+    "preferred_answer": "Use boundary values, all role combinations, delegation, escalation, rejection, resubmission, changed amounts, split transactions, unavailable approvers, integration-created records, and unauthorized attempts. Verify audit evidence and notifications.",
+    "evaluation_points": [
+      "Focus on workflow testing",
+      "Focus on approvals"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q174",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you prevent UAT from becoming informal demonstration?",
+    "preferred_answer": "Provide traceable scenarios and expected results, independent business execution, controlled data, defect capture, evidence, coverage reporting, and accountable sign-off. Demonstrations can prepare users but should not be counted as acceptance.",
+    "evaluation_points": [
+      "Focus on UAT",
+      "Focus on test evidence"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q175",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you test a multi-system order-to-cash process?",
+    "preferred_answer": "Cover customer and product sync, pricing, credit, order creation, fulfillment, tax, invoice, payment, status updates, errors, retries, duplicates, security, and financial reconciliation. Include partial, cancelled, returned, and backordered paths.",
+    "evaluation_points": [
+      "Focus on O2C",
+      "Focus on integration testing"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q176",
+    "role_slug": "erp-crm",
+    "domain": "Testing, UAT, Regression and Quality Assurance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A critical defect is found during go-live readiness but has a manual workaround. How do you decide?",
+    "preferred_answer": "Assess business volume, error and control risk, user capability, data impact, monitoring, duration, ownership, and rollback. A workaround must be documented, tested, approved, and time-bounded; schedule pressure alone is not acceptance.",
+    "evaluation_points": [
+      "Focus on go live",
+      "Focus on risk acceptance"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q177",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is implementation governance?",
+    "preferred_answer": "Implementation governance defines decision rights, accountability, controls, escalation, scope, quality gates, and reporting for the program. It ensures business and technical decisions are made by the appropriate owners.",
+    "evaluation_points": [
+      "Focus on governance",
+      "Focus on implementation"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q178",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a RACI matrix?",
+    "preferred_answer": "RACI identifies who is Responsible, Accountable, Consulted, and Informed for activities and decisions. Each important outcome should have one clear accountable owner.",
+    "evaluation_points": [
+      "Focus on RACI",
+      "Focus on roles"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q179",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is change management in a business application program?",
+    "preferred_answer": "Change management prepares people and the operating model to adopt new processes, roles, controls, data, and technology. It includes stakeholder engagement, impact analysis, communication, training, readiness, reinforcement, and feedback.",
+    "evaluation_points": [
+      "Focus on change management",
+      "Focus on adoption"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q180",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is hypercare?",
+    "preferred_answer": "Hypercare is a time-bound period of heightened monitoring and support after go-live. It uses clear command, triage, staffing, metrics, knowledge transfer, and exit criteria before transition to steady-state support.",
+    "evaluation_points": [
+      "Focus on hypercare",
+      "Focus on go live"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q181",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are typical phases of a business application implementation?",
+    "preferred_answer": "Common phases include strategy and value definition, initiation and design, build and configuration, testing and preparation, deployment, and operation. Iterative delivery may repeat these phases for capabilities or releases.",
+    "evaluation_points": [
+      "Focus on implementation lifecycle",
+      "Focus on methodology"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q182",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the role of an executive sponsor?",
+    "preferred_answer": "The sponsor owns the business case, resolves cross-functional barriers, secures resources, reinforces process decisions, and holds leaders accountable for adoption and benefits. Sponsorship cannot be delegated entirely to the project manager.",
+    "evaluation_points": [
+      "Focus on sponsor",
+      "Focus on leadership"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q183",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does a process owner differ from a project manager?",
+    "preferred_answer": "The process owner is accountable for the ongoing business process, controls, and outcomes. The project manager coordinates delivery scope, schedule, resources, risks, and dependencies; both roles collaborate but have different accountability.",
+    "evaluation_points": [
+      "Focus on process owner",
+      "Focus on project manager"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q184",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should fit-to-standard workshops be governed?",
+    "preferred_answer": "Use defined process scope, decision owners, standard demonstrations, requirement and gap logs, time-boxed decisions, and escalation. Participants should distinguish legal or value-creating needs from preferences based on the legacy system.",
+    "evaluation_points": [
+      "Focus on fit to standard",
+      "Focus on workshops"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q185",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a RAID log?",
+    "preferred_answer": "A RAID log tracks Risks, Assumptions, Issues, and Dependencies with owners, dates, impact, action, and status. It should support decisions and escalation rather than become a passive list.",
+    "evaluation_points": [
+      "Focus on RAID",
+      "Focus on project controls"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q186",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should scope changes be controlled?",
+    "preferred_answer": "Record the requested change, rationale, value, effort, risk, architecture, testing, training, timeline, and benefit impact. An authorized forum decides whether to approve, defer, reject, or exchange scope.",
+    "evaluation_points": [
+      "Focus on scope control",
+      "Focus on change request"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q187",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a super-user network?",
+    "preferred_answer": "Super users are trained business representatives who support design validation, testing, training, adoption, and local issue resolution. They need recognized capacity, clear responsibilities, and a path to the product and support teams.",
+    "evaluation_points": [
+      "Focus on super users",
+      "Focus on adoption"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q188",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should adoption be measured?",
+    "preferred_answer": "Measure meaningful use and process outcomes, such as completion in the system, data quality, active use by role, workaround reduction, cycle time, error rate, and user confidence. Login counts alone are weak evidence.",
+    "evaluation_points": [
+      "Focus on adoption metrics",
+      "Focus on value"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q189",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you organize a global template with local legal requirements?",
+    "preferred_answer": "Define a governed global process and data core, document permitted localization, assign global and local decision rights, use reusable configuration patterns, and prevent local changes from undermining shared controls and reporting.",
+    "evaluation_points": [
+      "Focus on global template",
+      "Focus on localization"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q190",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are the risks of a big-bang implementation?",
+    "preferred_answer": "A big bang concentrates migration, process, integration, training, and operational risk into one event. It can reduce prolonged coexistence but requires stronger rehearsal, readiness evidence, contingency, and support capacity.",
+    "evaluation_points": [
+      "Focus on big bang",
+      "Focus on deployment strategy"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q191",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should implementation partners be governed?",
+    "preferred_answer": "Define deliverables, quality standards, knowledge transfer, architecture and security obligations, evidence, access controls, issue escalation, acceptance criteria, and commercial incentives. Internal owners must retain decisions and capability.",
+    "evaluation_points": [
+      "Focus on partners",
+      "Focus on vendor management"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q192",
+    "role_slug": "erp-crm",
+    "domain": "Implementation Methods, Governance, Change and Adoption",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A sponsor insists on the original go-live date despite incomplete UAT and training. How would you respond?",
+    "preferred_answer": "Present evidence of uncovered process, control, adoption, and operational risk; propose recovery options and decision thresholds; document accountable risk acceptance; and protect mandatory controls. The decision should be transparent, not hidden in optimistic status reporting.",
+    "evaluation_points": [
+      "Focus on sponsor",
+      "Focus on go live decision"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q193",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a KPI?",
+    "preferred_answer": "A key performance indicator is a measurable value linked to an important objective and decision. It needs a precise definition, owner, source, frequency, target, and action when performance changes.",
+    "evaluation_points": [
+      "Focus on KPI",
+      "Focus on analytics"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 guidance hub",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q194",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How does an operational report differ from an analytical report?",
+    "preferred_answer": "Operational reports support current transactions and exceptions, often with detailed and timely data. Analytical reports aggregate and model data for trends, comparison, forecasting, and decision-making.",
+    "evaluation_points": [
+      "Focus on reporting",
+      "Focus on analytics"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 guidance hub",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q195",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a dashboard?",
+    "preferred_answer": "A dashboard presents selected measures, trends, and exceptions for a defined audience and decision process. Good dashboards provide context and action rather than displaying every available metric.",
+    "evaluation_points": [
+      "Focus on dashboard",
+      "Focus on BI"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 guidance hub",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q196",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a semantic model?",
+    "preferred_answer": "A semantic model provides governed business concepts, relationships, measures, hierarchies, and security over data. It reduces inconsistent calculations and separates business meaning from physical source structures.",
+    "evaluation_points": [
+      "Focus on semantic model",
+      "Focus on BI"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 guidance hub",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q197",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why must KPI definitions be governed?",
+    "preferred_answer": "Small differences in filters, timing, currency, status, or hierarchy can create conflicting results. Governance records the formula, data source, owner, version, exclusions, and approved use.",
+    "evaluation_points": [
+      "Focus on metric definitions",
+      "Focus on governance"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q198",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is data latency?",
+    "preferred_answer": "Data latency is the delay between a business event and its availability in a report or downstream system. The acceptable latency depends on the decision and should be visible to users.",
+    "evaluation_points": [
+      "Focus on latency",
+      "Focus on reporting"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q199",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How should row-level security be applied in reporting?",
+    "preferred_answer": "Apply user, role, geography, legal entity, territory, or ownership rules consistently in the semantic and source layers. Test exports, subscriptions, shared links, and service accounts, not only the interactive dashboard.",
+    "evaluation_points": [
+      "Focus on row level security",
+      "Focus on BI"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 security controls",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/security-strategy-security-controls",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q200",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is drill-down and when is it useful?",
+    "preferred_answer": "Drill-down lets users move from summary to contributing detail along governed hierarchies. It supports explanation and action, but access controls and reconciled definitions must remain consistent.",
+    "evaluation_points": [
+      "Focus on drill down",
+      "Focus on analysis"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 guidance hub",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q201",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "How would you reconcile a dashboard total with ERP financial reports?",
+    "preferred_answer": "Confirm source, cutoff, currency, entity, account mapping, status, eliminations, refresh timing, and calculation logic. Use controlled totals and document expected timing differences instead of manually adjusting the dashboard.",
+    "evaluation_points": [
+      "Focus on BI reconciliation",
+      "Focus on finance"
+    ],
+    "resolution_title": "Oracle - Fusion Cloud implementation process",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25c/oafsm/implementation-process.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q202",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is self-service BI governance?",
+    "preferred_answer": "It enables users to explore and create reports within certified data, security, naming, lifecycle, and support guardrails. Certification and ownership help distinguish trusted content from personal analysis.",
+    "evaluation_points": [
+      "Focus on self service BI",
+      "Focus on governance"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 guidance hub",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q203",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How can calculated fields create reporting risk?",
+    "preferred_answer": "Logic may be duplicated, inconsistent, poorly documented, or evaluated differently across tools and times. Critical measures should be centralized, tested, versioned, and reconciled.",
+    "evaluation_points": [
+      "Focus on calculated fields",
+      "Focus on metrics"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 guidance hub",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q204",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "What affects report performance in a business application?",
+    "preferred_answer": "Data volume, joins, calculated logic, filters, indexes, security evaluation, refresh design, API limits, concurrency, and poorly scoped queries all matter. Performance tuning must preserve correctness and access control.",
+    "evaluation_points": [
+      "Focus on report performance",
+      "Focus on BI"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q205",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you design an executive dashboard for order-to-cash?",
+    "preferred_answer": "Link measures to decisions: order intake, backlog, fulfillment, billing, overdue receivables, cycle time, exceptions, and forecast. Show definitions, targets, trends, segmentation, data freshness, and drill paths to accountable action.",
+    "evaluation_points": [
+      "Focus on O2C",
+      "Focus on executive dashboard"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 guidance hub",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q206",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should forecast accuracy be evaluated?",
+    "preferred_answer": "Compare forecast snapshots with actual outcomes by period, segment, owner, and horizon; separate amount and timing error; and track bias. Avoid judging only the final forecast because late changes hide process quality.",
+    "evaluation_points": [
+      "Focus on forecasting",
+      "Focus on CRM analytics"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/get-started/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q207",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What is the risk of embedding analytics directly in transactional screens?",
+    "preferred_answer": "Embedded insight can improve decisions, but stale data, unclear definitions, excessive queries, security leakage, and cognitive overload can harm users. Use purpose-specific measures with visible freshness and tested performance.",
+    "evaluation_points": [
+      "Focus on embedded analytics",
+      "Focus on UX"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 guidance hub",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q208",
+    "role_slug": "erp-crm",
+    "domain": "Reporting, Analytics, KPIs and Embedded BI",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "Two departments publish different customer-retention rates. How would you resolve it?",
+    "preferred_answer": "Trace definitions, cohorts, time windows, cancellations, renewals, source systems, and refresh timing. Agree a governed metric or clearly name valid variants, assign ownership, and update downstream reports and decisions.",
+    "evaluation_points": [
+      "Focus on metric conflict",
+      "Focus on data governance"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q209",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why use separate development, test, and production environments?",
+    "preferred_answer": "Environment separation reduces the risk of untested changes affecting live operations and data. Each environment needs controlled purpose, access, configuration, data handling, and promotion rules.",
+    "evaluation_points": [
+      "Focus on environments",
+      "Focus on ALM"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q210",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is application lifecycle management?",
+    "preferred_answer": "ALM governs requirements, design, build, versioning, testing, deployment, operation, and retirement of applications and configuration. It applies to low-code and packaged-business changes as well as custom code.",
+    "evaluation_points": [
+      "Focus on ALM",
+      "Focus on lifecycle"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q211",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a deployment pipeline?",
+    "preferred_answer": "A deployment pipeline promotes versioned changes through stages with automated or controlled validation, approvals, and evidence. It aims to make releases repeatable and reduce manual variation.",
+    "evaluation_points": [
+      "Focus on deployment pipeline",
+      "Focus on DevOps"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q212",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why use source control for business application changes?",
+    "preferred_answer": "Source control preserves history, review, branching, traceability, and recovery for code and exportable metadata. It reduces dependence on a single environment or administrator.",
+    "evaluation_points": [
+      "Focus on source control",
+      "Focus on configuration"
+    ],
+    "resolution_title": "Salesforce Developers - DevOps Center",
+    "resolution_url": "https://developer.salesforce.com/docs/platform/devops-center/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q213",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should be included in a release package?",
+    "preferred_answer": "Include versioned solution components, dependencies, configuration data, scripts, migration steps, security changes, test results, release notes, deployment order, validation, rollback, and support instructions.",
+    "evaluation_points": [
+      "Focus on release package",
+      "Focus on deployment"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q214",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do managed and unmanaged solution concepts differ?",
+    "preferred_answer": "Managed packages are intended for controlled downstream deployment and protect ownership and upgrade behavior; unmanaged components are typically used during development and can be edited directly. Exact behavior is platform-specific, so teams must follow vendor lifecycle guidance.",
+    "evaluation_points": [
+      "Focus on solutions",
+      "Focus on packaging"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q215",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How should configuration data move across environments?",
+    "preferred_answer": "Identify what is metadata versus business data, use supported export or migration tools, version-controlled reference sets, and environment-specific parameters. Avoid manual re-entry without reconciliation and evidence.",
+    "evaluation_points": [
+      "Focus on configuration migration",
+      "Focus on environments"
+    ],
+    "resolution_title": "Oracle - Migrate Fusion Cloud configurations",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25d/oaext/migrate-your-configurations.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q216",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a smoke test after deployment?",
+    "preferred_answer": "A smoke test quickly checks that the application starts and critical paths, integrations, roles, jobs, and monitoring are functional. It is a release gate, not a replacement for regression testing.",
+    "evaluation_points": [
+      "Focus on smoke test",
+      "Focus on release validation"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q217",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What makes a rollback plan effective?",
+    "preferred_answer": "It defines trigger, decision authority, backups or previous package, database or data implications, integration state, user communication, validation, and time window. It must be tested for the actual release mechanism.",
+    "evaluation_points": [
+      "Focus on rollback",
+      "Focus on release"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q218",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How should secrets be handled in deployment?",
+    "preferred_answer": "Keep secrets outside source packages, use managed vaults or secure platform connections, restrict access, rotate credentials, separate environments, and prevent logs from exposing values. Deployment automation should reference secret identifiers.",
+    "evaluation_points": [
+      "Focus on secrets",
+      "Focus on CI CD"
+    ],
+    "resolution_title": "OWASP - API Security Project",
+    "resolution_url": "https://owasp.org/www-project-api-security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q219",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is dependency management in packaged applications?",
+    "preferred_answer": "It tracks components, APIs, reference data, extensions, integrations, and versions required by a change. Missing or incompatible dependencies are a common cause of deployment and rollback failure.",
+    "evaluation_points": [
+      "Focus on dependencies",
+      "Focus on release"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q220",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How should hotfixes be controlled?",
+    "preferred_answer": "Use an expedited but documented path with impact assessment, targeted testing, approval, versioning, production validation, and merge-back to the main line. Emergency does not mean untraceable.",
+    "evaluation_points": [
+      "Focus on hotfix",
+      "Focus on change control"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q221",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you manage a vendor deprecation that affects several integrations?",
+    "preferred_answer": "Inventory consumers, assess impact and deadlines, design replacement contracts, prioritize and fund changes, test in stages, monitor usage, communicate with owners, and remove old paths before vendor shutdown.",
+    "evaluation_points": [
+      "Focus on deprecation",
+      "Focus on integration"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q222",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What are the risks of manually editing production configuration?",
+    "preferred_answer": "Changes may be unreviewed, unreproducible, untested, overwritten, and absent from lower environments. Restrict emergency edits, capture exact changes, validate immediately, and back-port them into the governed source and pipeline.",
+    "evaluation_points": [
+      "Focus on production changes",
+      "Focus on configuration drift"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q223",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you design release governance for a shared global CRM?",
+    "preferred_answer": "Use a common roadmap, intake and architecture review, environment and branching strategy, regression suite, regional change windows, data and security review, release communications, and emergency path. Local changes must not bypass global ownership.",
+    "evaluation_points": [
+      "Focus on release governance",
+      "Focus on global CRM"
+    ],
+    "resolution_title": "Salesforce Developers - DevOps Center",
+    "resolution_url": "https://developer.salesforce.com/docs/platform/devops-center/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q224",
+    "role_slug": "erp-crm",
+    "domain": "Application Lifecycle, Environments, Releases and DevOps",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A deployment succeeds technically but users see missing fields and wrong permissions. What do you investigate?",
+    "preferred_answer": "Check component inclusion, security role and field permission migration, dependency and layer precedence, environment-specific configuration, cache, license, and deployment logs. Compare the intended package with production and validate by representative roles.",
+    "evaluation_points": [
+      "Focus on deployment troubleshooting",
+      "Focus on security"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q225",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is application support for ERP and CRM?",
+    "preferred_answer": "Application support restores service, fulfills requests, maintains data and configuration, solves recurring problems, and enables safe change. It requires functional, technical, data, integration, and vendor coordination.",
+    "evaluation_points": [
+      "Focus on application support",
+      "Focus on operations"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q226",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How does an incident differ from a service request?",
+    "preferred_answer": "An incident is an unplanned interruption or reduction in service; a service request is a predefined user request such as access, information, or a standard change. Classification affects priority, workflow, and reporting.",
+    "evaluation_points": [
+      "Focus on incident",
+      "Focus on service request"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q227",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a batch job?",
+    "preferred_answer": "A batch job processes scheduled or queued work such as posting, billing, synchronization, reporting, or data maintenance. It needs dependency, duration, restart, alerting, and business-completion controls.",
+    "evaluation_points": [
+      "Focus on batch jobs",
+      "Focus on operations"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q228",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why is a knowledge base important for support?",
+    "preferred_answer": "It provides validated procedures, known errors, business context, and escalation guidance, improving consistency and reducing resolution time. Articles need ownership, evidence, review dates, and feedback.",
+    "evaluation_points": [
+      "Focus on knowledge management",
+      "Focus on support"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q229",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should ERP incidents be prioritized?",
+    "preferred_answer": "Use business impact, urgency, transaction volume, financial or control risk, user scope, deadlines, workaround, and data integrity. A single user can still be critical if the blocked function is unique or time-sensitive.",
+    "evaluation_points": [
+      "Focus on incident priority",
+      "Focus on business impact"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q230",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What should monitoring cover for business applications?",
+    "preferred_answer": "Monitor availability, user experience, integrations, queues, batch jobs, API limits, storage, errors, security events, performance, and business completion such as orders posted or invoices generated.",
+    "evaluation_points": [
+      "Focus on monitoring",
+      "Focus on business services"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q231",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "How would you investigate a failed overnight posting job?",
+    "preferred_answer": "Confirm scope and business deadline, review job and dependency logs, input data, locks, capacity, credentials, configuration, and prior changes. Restore safely, reconcile partial processing, communicate impact, and prevent recurrence.",
+    "evaluation_points": [
+      "Focus on batch failure",
+      "Focus on posting"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q232",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a known error?",
+    "preferred_answer": "A known error is a problem with a documented cause or workaround that support can apply consistently while a permanent fix is planned. It should not become an excuse to leave high-risk defects unaddressed.",
+    "evaluation_points": [
+      "Focus on problem management",
+      "Focus on known error"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q233",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "How should data-fix requests be handled?",
+    "preferred_answer": "Treat them as controlled changes: validate business authorization, scope, root cause, affected records, backup, test, peer review, execution identity, reconciliation, and audit evidence. Prefer correcting the process that created the bad data.",
+    "evaluation_points": [
+      "Focus on data fix",
+      "Focus on change control"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q234",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What operational risks arise near month-end or quarter-end?",
+    "preferred_answer": "Transaction volume, close dependencies, batch contention, integration delays, strict cutoffs, limited change windows, and senior reporting pressure increase impact. Use freeze rules, readiness checks, capacity monitoring, and command paths.",
+    "evaluation_points": [
+      "Focus on period close",
+      "Focus on operational risk"
+    ],
+    "resolution_title": "Oracle - Fusion Cloud implementation process",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25c/oafsm/implementation-process.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q235",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should a vendor support case be raised?",
+    "preferred_answer": "Provide product and version, environment, business impact, severity rationale, timestamps, reproducible steps, logs, correlation IDs, recent changes, troubleshooting performed, and secure evidence. Maintain internal ownership rather than waiting passively.",
+    "evaluation_points": [
+      "Focus on vendor support",
+      "Focus on incident"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 guidance hub",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q236",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is root cause analysis in application operations?",
+    "preferred_answer": "RCA identifies the technical, process, data, control, and organizational conditions that allowed an issue, then assigns corrective actions and measures effectiveness. It should avoid blame and superficial causes such as user error alone.",
+    "evaluation_points": [
+      "Focus on RCA",
+      "Focus on problem management"
+    ],
+    "resolution_title": "PeopleCert - ITIL",
+    "resolution_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q237",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How would you diagnose a CRM that becomes slow only for sales managers?",
+    "preferred_answer": "Compare role permissions, sharing calculations, dashboards, list views, data volume, plugins, browser traces, and territory hierarchy. Test representative users and isolate whether the delay is query, security evaluation, customization, or client behavior.",
+    "evaluation_points": [
+      "Focus on CRM performance",
+      "Focus on security model"
+    ],
+    "resolution_title": "Salesforce Architects - Platform sharing architecture",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/platform-sharing-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q238",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How do you manage application capacity in SaaS?",
+    "preferred_answer": "Track storage, API quotas, job concurrency, license use, integration throughput, report load, and growth trends. Optimize behavior, archive responsibly, and plan entitlement changes before service limits affect operations.",
+    "evaluation_points": [
+      "Focus on capacity",
+      "Focus on SaaS limits"
+    ],
+    "resolution_title": "Microsoft - Prepare a Dynamics 365 production environment to go live",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-to-go-live",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q239",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What should a business application disaster recovery plan address?",
+    "preferred_answer": "Define critical processes, recovery time and point objectives, vendor capabilities, identity, integrations, data exports, manual workarounds, communication, testing, and responsibilities. SaaS availability does not eliminate customer continuity planning.",
+    "evaluation_points": [
+      "Focus on DR",
+      "Focus on business continuity"
+    ],
+    "resolution_title": "ISO - ISO/IEC 27001 information security management",
+    "resolution_url": "https://www.iso.org/isoiec-27001-information-security.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q240",
+    "role_slug": "erp-crm",
+    "domain": "Operations, Support, Performance, Reliability and Vendor Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "An integration queue is growing but no errors are visible. What would you do?",
+    "preferred_answer": "Check consumer throughput, throttling, locks, payload size, downstream latency, stuck messages, capacity, and monitoring gaps. Protect business deadlines, scale or drain safely, reconcile sequence, and add alerting on queue age and growth.",
+    "evaluation_points": [
+      "Focus on integration queue",
+      "Focus on performance"
+    ],
+    "resolution_title": "SAP Help - SAP Integration Suite",
+    "resolution_url": "https://help.sap.com/docs/integration-suite",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q241",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is SAP S/4HANA?",
+    "preferred_answer": "SAP S/4HANA is SAP's enterprise application suite built around an integrated ERP data and process model. Roles may focus on functional configuration, development, data, integration, security, analytics, or operations.",
+    "evaluation_points": [
+      "Focus on SAP",
+      "Focus on S4HANA"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA Cloud documentation",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_CLOUD",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q242",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the business partner concept in SAP S/4HANA?",
+    "preferred_answer": "Business Partner provides a central entity for persons and organizations with roles such as customer or supplier. Migration and integration must preserve role-specific data, relationships, identifiers, and governance.",
+    "evaluation_points": [
+      "Focus on SAP",
+      "Focus on business partner"
+    ],
+    "resolution_title": "SAP Help - SAP S/4HANA data migration",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/29193bf0ebdd4583930b2176cb993268/a4d4119a2cc9448a98e5d17e6dd0eac4.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q243",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does the SAP S/4HANA Migration Cockpit do?",
+    "preferred_answer": "It supports initial migration using defined migration objects, mappings, simulation, transfer, and monitoring. It is designed for migration, not continuous system-to-system synchronization.",
+    "evaluation_points": [
+      "Focus on SAP",
+      "Focus on migration cockpit"
+    ],
+    "resolution_title": "SAP Help - The S/4HANA migration process",
+    "resolution_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/29193bf0ebdd4583930b2176cb993268/c67e14ff693e423aae2b96d9f3b0fc91.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q244",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Oracle Functional Setup Manager?",
+    "preferred_answer": "Functional Setup Manager organizes implementation tasks and setup data for Oracle Fusion Cloud Applications and supports moving verified setup between environments. Access must be assigned carefully to implementation users.",
+    "evaluation_points": [
+      "Focus on Oracle Fusion",
+      "Focus on FSM"
+    ],
+    "resolution_title": "Oracle - Fusion Cloud implementation process",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25c/oafsm/implementation-process.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q245",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How are roles and data access combined in Oracle Fusion Applications?",
+    "preferred_answer": "Oracle uses role-based access with job, abstract, duty, and data roles or security contexts. Functional privilege and the organizational data scope must both be assigned and reviewed.",
+    "evaluation_points": [
+      "Focus on Oracle Fusion",
+      "Focus on roles"
+    ],
+    "resolution_title": "Oracle - ERP security implementation overview",
+    "resolution_url": "https://docs.oracle.com/en/cloud/saas/applications-common/25d/faser/overview-of-erp-security-implementation.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q246",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is Microsoft Dataverse?",
+    "preferred_answer": "Dataverse is the managed data platform underlying many Dynamics 365 and Power Platform applications, providing tables, relationships, security, business logic, APIs, and solution lifecycle capabilities.",
+    "evaluation_points": [
+      "Focus on Dynamics 365",
+      "Focus on Dataverse"
+    ],
+    "resolution_title": "Microsoft - What is Microsoft Dataverse?",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q247",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do Dynamics 365 security roles work?",
+    "preferred_answer": "Security roles grant privileges on tables and functions, while business units, teams, ownership, hierarchy, and field security shape record and field access. Role design should reflect job and data scope.",
+    "evaluation_points": [
+      "Focus on Dynamics 365",
+      "Focus on security roles"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 security controls",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/security-strategy-security-controls",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q248",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a Power Platform solution?",
+    "preferred_answer": "A solution packages application components and dependencies for lifecycle management across environments. Teams should distinguish development and downstream packaging models and automate validation where possible.",
+    "evaluation_points": [
+      "Focus on Power Platform",
+      "Focus on solutions"
+    ],
+    "resolution_title": "Microsoft - Application lifecycle management with Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q249",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the Salesforce object model?",
+    "preferred_answer": "Salesforce stores business data in standard and custom objects with fields and relationships. Good design uses standard capability where appropriate and governs ownership, access, automation, integration, and reporting.",
+    "evaluation_points": [
+      "Focus on Salesforce",
+      "Focus on object model"
+    ],
+    "resolution_title": "Salesforce Developers - REST API Developer Guide",
+    "resolution_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q250",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What shapes record access in Salesforce?",
+    "preferred_answer": "Object permissions, field-level security, organization-wide defaults, role hierarchy, sharing rules, teams, territories, and manual or programmatic sharing combine to determine access. Test at scale because sharing design affects performance.",
+    "evaluation_points": [
+      "Focus on Salesforce",
+      "Focus on sharing"
+    ],
+    "resolution_title": "Salesforce Architects - Platform sharing architecture",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/platform-sharing-architecture",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q251",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does Salesforce duplicate management support data quality?",
+    "preferred_answer": "Matching rules identify potential duplicates; duplicate rules decide whether to warn, block, or report them. Administrators should tune rules with data analysis and monitor false positives, false negatives, and user behavior.",
+    "evaluation_points": [
+      "Focus on Salesforce",
+      "Focus on duplicates"
+    ],
+    "resolution_title": "Salesforce Help - Duplicate management",
+    "resolution_url": "https://help.salesforce.com/s/articleView?id=sf.managing_duplicates_overview.htm&language=en_US&type=5",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q252",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What must be considered when integrating with Salesforce APIs?",
+    "preferred_answer": "Choose the appropriate API and pattern, use OAuth and least-privilege identities, respect limits, handle pagination and retries, preserve IDs, and monitor errors and consumption. Bulk and event use cases often need different interfaces.",
+    "evaluation_points": [
+      "Focus on Salesforce",
+      "Focus on API"
+    ],
+    "resolution_title": "Salesforce Architects - Integration patterns and practices",
+    "resolution_url": "https://architect.salesforce.com/fundamentals/integration-patterns",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q253",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do Odoo access rights and record rules differ?",
+    "preferred_answer": "Access rights allow create, read, update, or delete operations on a model; record rules restrict which records are accessible. Both must be tested, and administrator changes require strong control.",
+    "evaluation_points": [
+      "Focus on Odoo",
+      "Focus on access rights"
+    ],
+    "resolution_title": "Odoo 18 - Access rights",
+    "resolution_url": "https://www.odoo.com/documentation/18.0/applications/general/users/access_rights.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q254",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should be checked before importing data into Odoo?",
+    "preferred_answer": "Validate identifiers, required fields, relational references, formats, duplicates, access, and a rollback or backup approach. Test a sample, review errors, and reconcile the final import.",
+    "evaluation_points": [
+      "Focus on Odoo",
+      "Focus on import"
+    ],
+    "resolution_title": "Odoo 18 - Export and import data",
+    "resolution_url": "https://www.odoo.com/documentation/18.0/applications/essentials/export_import_data.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q255",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you choose among SAP, Oracle, Dynamics 365, Salesforce, and Odoo for a business capability?",
+    "preferred_answer": "Start with process and industry fit, global and local requirements, data and integration architecture, security, extensibility, reporting, ecosystem skills, operating model, roadmap, total cost, and migration risk. Avoid selecting from brand familiarity alone.",
+    "evaluation_points": [
+      "Focus on platform selection",
+      "Focus on ERP CRM"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "EBC-Q256",
+    "role_slug": "erp-crm",
+    "domain": "Platform Specialization: SAP, Oracle, Dynamics 365, Salesforce and Odoo",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What skills transfer across ERP and CRM platforms?",
+    "preferred_answer": "Business process analysis, data modeling, integration, security, migration, testing, reporting, change management, support, and lifecycle governance transfer well. Platform-specific configuration matters, but durable professionals can explain the underlying business and control principles.",
+    "evaluation_points": [
+      "Focus on transferable skills",
+      "Focus on business applications"
+    ],
+    "resolution_title": "Microsoft - Dynamics 365 implementation guide",
+    "resolution_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];
