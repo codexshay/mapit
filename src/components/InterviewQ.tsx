@@ -28,6 +28,7 @@ export interface InterviewQProps {
 }
 
 const ROLE_SLUG_ALIASES: Record<string, string[]> = {
+  'ui-ux-design': ['ui-ux-design', 'ui_ux_product_design_creative_technology', 'ui-ux-designer', 'product-designer', 'ux-researcher', 'interaction-designer', 'design-system-engineer', 'ux-writer', 'creative-technologist', 'visual-designer'],
   'project-product': ['project-product', 'product_project_program_management', 'product-manager', 'project-manager', 'program-manager', 'scrum-master', 'agile-coach', 'technical-program-manager', 'tpm', 'pmo-lead', 'product-owner'],
   'cloud': ['cloud', 'cloud-engineer'],
   'cybersecurity': ['cybersecurity', 'cybersecurity-analyst'],

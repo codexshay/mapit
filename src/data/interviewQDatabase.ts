@@ -71762,5 +71762,5125 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "UXCT-Q001",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Human-centred design lifecycle, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Human-centred design keeps an explicit understanding of users, tasks and environments active throughout planning, design, implementation and evaluation rather than treating user input as a single early activity.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ISO 9241-210:2019 - Human-centred design for interactive systems",
+    "resolution_url": "https://www.iso.org/standard/77520.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q002",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Human-centred design lifecycle in a real product or design initiative?",
+    "preferred_answer": "Define the intended users and context of use, involve representative people, set measurable usability and accessibility outcomes, iterate solutions and evaluate evidence at each delivery stage.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ISO 9241-210:2019 - Human-centred design for interactive systems",
+    "resolution_url": "https://www.iso.org/standard/77520.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q003",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Human-centred design lifecycle from a closely related concept?",
+    "preferred_answer": "User-centred design is a working approach to decisions and iteration; visual design is one contributing discipline and cannot by itself establish that a product meets user needs.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ISO 9241-210:2019 - Human-centred design for interactive systems",
+    "resolution_url": "https://www.iso.org/standard/77520.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q004",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Human-centred design lifecycle, and how should it be corrected?",
+    "preferred_answer": "A team may conduct one research study and then make months of assumption-led decisions. Maintain a live evidence backlog, test risky decisions and revisit context as the product changes.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ISO 9241-210:2019 - Human-centred design for interactive systems",
+    "resolution_url": "https://www.iso.org/standard/77520.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q005",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is User experience, usability and utility, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Utility asks whether a product provides the needed capability, usability asks whether people can use it effectively, efficiently and satisfactorily, and user experience includes the wider perceptions and emotions before, during and after use.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ISO 9241-210:2019 - Human-centred design for interactive systems",
+    "resolution_url": "https://www.iso.org/standard/77520.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q006",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply User experience, usability and utility in a real product or design initiative?",
+    "preferred_answer": "Define the job or outcome first, then measure task success, effort, errors and confidence while also considering trust, brand, accessibility and cross-channel experience.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ISO 9241-210:2019 - Human-centred design for interactive systems",
+    "resolution_url": "https://www.iso.org/standard/77520.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q007",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish User experience, usability and utility from a closely related concept?",
+    "preferred_answer": "A polished interface can have high visual appeal but low utility, while a useful tool can still fail because its workflow is difficult or inaccessible.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ISO 9241-210:2019 - Human-centred design for interactive systems",
+    "resolution_url": "https://www.iso.org/standard/77520.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q008",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with User experience, usability and utility, and how should it be corrected?",
+    "preferred_answer": "Equating UX with aesthetics leads to attractive screens that do not solve the right problem. Validate usefulness and task performance before polishing surface detail.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ISO 9241-210:2019 - Human-centred design for interactive systems",
+    "resolution_url": "https://www.iso.org/standard/77520.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q009",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Design principles and decision criteria, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Design principles are durable statements that guide choices across features and teams, while decision criteria translate them into testable considerations for a specific problem.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design principles",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/design-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q010",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Design principles and decision criteria in a real product or design initiative?",
+    "preferred_answer": "Derive principles from user needs, product strategy, brand and risk; use them to compare options and record why a trade-off was accepted.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design principles",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/design-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q011",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Design principles and decision criteria from a closely related concept?",
+    "preferred_answer": "A principle gives directional guidance, whereas a pattern or component provides a reusable implementation for a recurring interaction.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design principles",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/design-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q012",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Design principles and decision criteria, and how should it be corrected?",
+    "preferred_answer": "Generic principles such as simple or delightful cannot resolve disagreement. Make them specific enough to expose priorities, tensions and evidence needed.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design principles",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/design-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q013",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Systems thinking in product and service design, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Systems thinking considers the connected people, policies, processes, data, channels and technologies that shape an experience, including consequences outside the visible interface.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q014",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Systems thinking in product and service design in a real product or design initiative?",
+    "preferred_answer": "Map actors, dependencies, handoffs, incentives and failure modes; identify where changing one touchpoint shifts effort or risk elsewhere in the service.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q015",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Systems thinking in product and service design from a closely related concept?",
+    "preferred_answer": "A user flow follows one interaction path inside a product; a service system includes backstage operations, policies and other channels that enable or constrain that path.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q016",
+    "role_slug": "ui-ux-design",
+    "domain": "Human-Centred Design Foundations and Product Context",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Systems thinking in product and service design, and how should it be corrected?",
+    "preferred_answer": "Optimizing one screen can create more calls, manual work or exclusion elsewhere. Evaluate the whole journey and operational impact before declaring success.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q017",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Double Diamond and divergent-convergent work, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "The Double Diamond describes alternating periods of exploring a problem broadly and narrowing to a focused definition, then exploring possible solutions and narrowing through testing and delivery.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Framework for Innovation and the Double Diamond",
+    "resolution_url": "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q018",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Double Diamond and divergent-convergent work in a real product or design initiative?",
+    "preferred_answer": "Use discovery to gather varied evidence, synthesize a clear problem frame, generate multiple approaches and progressively test the riskiest assumptions before committing.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Framework for Innovation and the Double Diamond",
+    "resolution_url": "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q019",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Double Diamond and divergent-convergent work from a closely related concept?",
+    "preferred_answer": "Divergence creates options and questions; convergence uses explicit evidence and criteria to choose what to pursue, not merely what stakeholders prefer.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Framework for Innovation and the Double Diamond",
+    "resolution_url": "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q020",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Double Diamond and divergent-convergent work, and how should it be corrected?",
+    "preferred_answer": "Teams often draw the framework as a linear sequence and skip returning to earlier assumptions. Treat it as iterative and reopen the problem when evidence invalidates the frame.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Framework for Innovation and the Double Diamond",
+    "resolution_url": "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q021",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Problem framing and opportunity statements, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Problem framing converts observations into a bounded, evidence-backed description of who is affected, what outcome is blocked, why it matters and what remains uncertain without embedding a preferred solution.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How the discovery phase works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q022",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Problem framing and opportunity statements in a real product or design initiative?",
+    "preferred_answer": "Combine user evidence, business context and operational data; state the current behavior and impact, define success and list assumptions that require validation.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How the discovery phase works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q023",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Problem framing and opportunity statements from a closely related concept?",
+    "preferred_answer": "A problem statement describes an unmet need or harmful condition; a solution brief specifies an intervention after enough evidence exists to justify it.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How the discovery phase works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q024",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Problem framing and opportunity statements, and how should it be corrected?",
+    "preferred_answer": "Writing build an app or add AI as the problem anchors the team to a feature. Restate the underlying outcome and compare non-product, policy and process options.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How the discovery phase works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q025",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Product value proposition and outcome alignment, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "A value proposition explains why a defined group should choose or use a product by connecting a meaningful outcome to a differentiated way of delivering it.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design principles",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/design-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q026",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Product value proposition and outcome alignment in a real product or design initiative?",
+    "preferred_answer": "Link user jobs and pain points to product capabilities, business viability and measurable outcomes; test whether people understand and value the proposition before scaling.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design principles",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/design-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q027",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Product value proposition and outcome alignment from a closely related concept?",
+    "preferred_answer": "A feature states what the product does, while a value proposition explains the benefit and why it is preferable to existing alternatives.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design principles",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/design-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q028",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Product value proposition and outcome alignment, and how should it be corrected?",
+    "preferred_answer": "Using internal slogans as evidence of value creates false confidence. Test comprehension, relevance, switching barriers and willingness to change behavior.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design principles",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/design-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q029",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Assumption mapping and risk-driven discovery, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Assumption mapping makes uncertain beliefs visible and prioritizes those with high consequence and weak evidence so discovery effort reduces decision risk.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How the discovery phase works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q030",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Assumption mapping and risk-driven discovery in a real product or design initiative?",
+    "preferred_answer": "List desirability, usability, feasibility, viability, accessibility and ethical assumptions; score impact and evidence, then choose the fastest credible test for the highest-risk items.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How the discovery phase works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q031",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Assumption mapping and risk-driven discovery from a closely related concept?",
+    "preferred_answer": "A hypothesis is a testable prediction with an expected outcome; an assumption may be an untested belief that must first be clarified before it can be tested.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How the discovery phase works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q032",
+    "role_slug": "ui-ux-design",
+    "domain": "Discovery, Problem Framing and Product Strategy",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Assumption mapping and risk-driven discovery, and how should it be corrected?",
+    "preferred_answer": "Teams frequently test easy interface preferences while ignoring market, policy or technical constraints. Prioritize by consequence, not convenience.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How the discovery phase works",
+    "resolution_url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q033",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Research objectives and questions, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Research objectives define the decisions a study must support, and research questions state what the team needs to learn about users, behaviors, contexts or a proposed design.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Plan user research for your service",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q034",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Research objectives and questions in a real product or design initiative?",
+    "preferred_answer": "Convert assumptions and disagreements into prioritized questions, identify the evidence needed and choose methods that can realistically answer them within the product timeline.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Plan user research for your service",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q035",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Research objectives and questions from a closely related concept?",
+    "preferred_answer": "A discussion-guide question is wording used with participants; a research question is an internal learning goal and should not be asked directly in leading form.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Plan user research for your service",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q036",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Research objectives and questions, and how should it be corrected?",
+    "preferred_answer": "Starting with a preferred method or a list of interview questions can produce interesting but unusable findings. Begin with the decision and evidence gap.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Plan user research for your service",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q037",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Participant recruitment and sampling, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Recruitment selects actual or likely users whose characteristics, circumstances and access needs are relevant to the research question, while sampling deliberately covers meaningful variation.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Finding participants for user research",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/find-user-research-participants",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q038",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Participant recruitment and sampling in a real product or design initiative?",
+    "preferred_answer": "Define inclusion and exclusion criteria, recruit across critical behaviors and barriers, accommodate access needs and record who is not represented.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Finding participants for user research",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/find-user-research-participants",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q039",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Participant recruitment and sampling from a closely related concept?",
+    "preferred_answer": "A persona is a synthesis artifact; a participant profile is a real recruitment specification and must not be replaced by a fictional archetype.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Finding participants for user research",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/find-user-research-participants",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q040",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Participant recruitment and sampling, and how should it be corrected?",
+    "preferred_answer": "Convenience sampling from colleagues or highly engaged customers hides exclusion and edge cases. Recruit for behavior, context and barriers, not demographic decoration.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Finding participants for user research",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/find-user-research-participants",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q041",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Informed consent, privacy and research safety, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Ethical research ensures participants understand the purpose, activities, recording, data use, withdrawal rights and foreseeable risks before taking part.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q042",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Informed consent, privacy and research safety in a real product or design initiative?",
+    "preferred_answer": "Collect only necessary data, obtain explicit consent, protect sensitive material, plan distress or safeguarding responses and separate incentives from pressure to participate.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q043",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Informed consent, privacy and research safety from a closely related concept?",
+    "preferred_answer": "Consent is an ongoing participant choice; a signed form is evidence of a process but does not remove the researcher duty to monitor comfort and power imbalance.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q044",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Informed consent, privacy and research safety, and how should it be corrected?",
+    "preferred_answer": "Treating consent as administration can expose participants or confidential data. Reconfirm consent when scope changes and define retention and deletion controls.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q045",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Choosing qualitative and quantitative methods, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Qualitative methods explain behaviors, motivations and breakdowns in context, while quantitative methods estimate prevalence, magnitude or change across a defined population.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q046",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Choosing qualitative and quantitative methods in a real product or design initiative?",
+    "preferred_answer": "Match the method to the decision: observe or interview to understand why, use usability testing to diagnose interaction problems, and use analytics or experiments to measure patterns and outcomes.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q047",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Choosing qualitative and quantitative methods from a closely related concept?",
+    "preferred_answer": "Qualitative evidence is not weak quantitative evidence, and quantitative data does not explain causality or lived context without additional design and interpretation.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q048",
+    "role_slug": "ui-ux-design",
+    "domain": "User Research Planning, Recruitment and Ethics",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Choosing qualitative and quantitative methods, and how should it be corrected?",
+    "preferred_answer": "Using a survey for an exploratory problem can force unknown issues into predefined answers. Combine methods when the decision requires both explanation and scale.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q049",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Contextual inquiry and observation, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Contextual inquiry studies people performing real or representative work in their environment so researchers can see workarounds, tools, constraints and tacit knowledge that may not appear in interviews.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q050",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Contextual inquiry and observation in a real product or design initiative?",
+    "preferred_answer": "Set observation goals, ask participants to explain actions without interrupting critical work, capture artifacts and exceptions, and verify interpretations before leaving the session.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q051",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Contextual inquiry and observation from a closely related concept?",
+    "preferred_answer": "An interview relies mainly on recalled accounts; contextual inquiry combines conversation with direct observation of behavior and environment.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q052",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Contextual inquiry and observation, and how should it be corrected?",
+    "preferred_answer": "Taking stated process as actual behavior produces inaccurate requirements. Compare what people say, what they do and what systems or records show.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q053",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Moderated usability testing, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Moderated usability testing observes representative participants attempting realistic tasks with a prototype or product to identify barriers in understanding, navigation and interaction.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Using moderated usability testing",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q054",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Moderated usability testing in a real product or design initiative?",
+    "preferred_answer": "Define tasks and success criteria, avoid teaching the interface, ask neutral follow-ups, capture behavior and severity, then prioritize changes by impact and recurrence.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Using moderated usability testing",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q055",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Moderated usability testing from a closely related concept?",
+    "preferred_answer": "Usability testing evaluates whether people can use a design; a preference interview explores attitudes and should not be treated as proof of task success.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Using moderated usability testing",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q056",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Moderated usability testing, and how should it be corrected?",
+    "preferred_answer": "Asking do you like it or explaining the intended flow contaminates results. Let the design communicate, observe failure and separate participant behavior from facilitator rescue.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Using moderated usability testing",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q057",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Affinity analysis and evidence synthesis, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Synthesis organizes observations into patterns and explanations that answer research questions while preserving traceability to individual evidence and important contradictions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q058",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Affinity analysis and evidence synthesis in a real product or design initiative?",
+    "preferred_answer": "Externalize notes, group by meaning rather than participant, label patterns in plain language, test alternative interpretations and connect each insight to evidence and product decisions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q059",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Affinity analysis and evidence synthesis from a closely related concept?",
+    "preferred_answer": "A theme summarizes repeated material; an insight explains why it matters and what it changes about understanding or action.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q060",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Affinity analysis and evidence synthesis, and how should it be corrected?",
+    "preferred_answer": "Forcing every note into a neat cluster can erase outliers and access needs. Retain contradictions, confidence levels and evidence limits.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q061",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Personas, empathy maps and needs models, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Personas and empathy maps are synthesis tools that help teams reason about recurring behaviors, goals and contexts; they are useful only when grounded in current evidence and connected to decisions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Empathy Mapping: The First Step in Design Thinking",
+    "resolution_url": "https://www.nngroup.com/articles/empathy-mapping/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q062",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Personas, empathy maps and needs models in a real product or design initiative?",
+    "preferred_answer": "Build segments from behavioral patterns, cite the evidence base, include constraints and variation, and define where the artifact should or should not influence design.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Empathy Mapping: The First Step in Design Thinking",
+    "resolution_url": "https://www.nngroup.com/articles/empathy-mapping/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q063",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Personas, empathy maps and needs models from a closely related concept?",
+    "preferred_answer": "A persona represents an evidence-based behavioral pattern, whereas a market segment may be defined primarily by commercial or demographic criteria.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Empathy Mapping: The First Step in Design Thinking",
+    "resolution_url": "https://www.nngroup.com/articles/empathy-mapping/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q064",
+    "role_slug": "ui-ux-design",
+    "domain": "Research Methods, Synthesis and Insight Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Personas, empathy maps and needs models, and how should it be corrected?",
+    "preferred_answer": "Invented biographies and stock photos can create stereotypes with no decision value. Prefer concise needs or behavior models when evidence is limited.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Empathy Mapping: The First Step in Design Thinking",
+    "resolution_url": "https://www.nngroup.com/articles/empathy-mapping/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q065",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Journey maps and experience maps, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "A journey map visualizes the stages a person goes through to achieve a goal, including actions, channels, thoughts, emotions, pain points and opportunities across time.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Journey Mapping 101",
+    "resolution_url": "https://www.nngroup.com/articles/journey-mapping-101/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q066",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Journey maps and experience maps in a real product or design initiative?",
+    "preferred_answer": "Choose a defined actor and scenario, combine research from multiple touchpoints, distinguish evidence from assumptions and identify moments that materially affect the outcome.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Journey Mapping 101",
+    "resolution_url": "https://www.nngroup.com/articles/journey-mapping-101/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q067",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Journey maps and experience maps from a closely related concept?",
+    "preferred_answer": "A user flow models paths through a product interface; a journey map includes the wider context before, between and after digital interactions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Journey Mapping 101",
+    "resolution_url": "https://www.nngroup.com/articles/journey-mapping-101/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q068",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Journey maps and experience maps, and how should it be corrected?",
+    "preferred_answer": "A decorative emotional curve assembled in a workshop can masquerade as research. Cite evidence, include backstage constraints and use the map to make decisions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Journey Mapping 101",
+    "resolution_url": "https://www.nngroup.com/articles/journey-mapping-101/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q069",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Service blueprints and backstage dependencies, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "A service blueprint connects the visible customer journey to frontstage staff actions, backstage processes, systems, data and support needed to deliver each step.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q070",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Service blueprints and backstage dependencies in a real product or design initiative?",
+    "preferred_answer": "Map lines of interaction and visibility, ownership, handoffs, failure points and evidence; use the blueprint to identify where experience improvements require operational change.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q071",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Service blueprints and backstage dependencies from a closely related concept?",
+    "preferred_answer": "A journey map is primarily from the user perspective, while a service blueprint adds organizational delivery mechanics and dependencies.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q072",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Service blueprints and backstage dependencies, and how should it be corrected?",
+    "preferred_answer": "Redesigning only the frontstage interface can leave manual work and delays untouched. Validate that backstage capacity and policy can support the promised experience.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q073",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Information architecture and mental models, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Information architecture organizes, labels and connects content and functionality so people can predict where to find information and how concepts relate.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q074",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Information architecture and mental models in a real product or design initiative?",
+    "preferred_answer": "Use user language, content inventory, domain constraints, card sorting, tree testing and search evidence to create navigation and taxonomy that support priority tasks.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q075",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Information architecture and mental models from a closely related concept?",
+    "preferred_answer": "A taxonomy classifies concepts and relationships; navigation is one interface that exposes selected parts of that structure to users.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q076",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Information architecture and mental models, and how should it be corrected?",
+    "preferred_answer": "Mirroring an organization chart makes users understand internal departments before completing their task. Organize around user goals and recognizable concepts.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q077",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Task flows, user flows and state models, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Task flows describe an intended sequence for one goal, user flows include alternative paths and decisions, and state models describe how the interface behaves across conditions such as loading, success, empty and error.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Interaction states - Material Design 3",
+    "resolution_url": "https://m3.material.io/foundations/interaction/states/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q078",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Task flows, user flows and state models in a real product or design initiative?",
+    "preferred_answer": "Start from a user goal, map entry points, decisions and exits, include failure and recovery paths, then annotate data, permissions and system states that affect the experience.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Interaction states - Material Design 3",
+    "resolution_url": "https://m3.material.io/foundations/interaction/states/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q079",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Task flows, user flows and state models from a closely related concept?",
+    "preferred_answer": "A happy-path task flow is not a complete interaction model because it omits alternatives, interruptions and persistent state.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Interaction states - Material Design 3",
+    "resolution_url": "https://m3.material.io/foundations/interaction/states/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q080",
+    "role_slug": "ui-ux-design",
+    "domain": "Journey Mapping, Service Design and Information Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Task flows, user flows and state models, and how should it be corrected?",
+    "preferred_answer": "Designs that show only ideal screens fail during latency, invalid data or permission denial. Specify states and transitions before handoff.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Interaction states - Material Design 3",
+    "resolution_url": "https://m3.material.io/foundations/interaction/states/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q081",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Visibility of system status and feedback, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Interfaces should promptly communicate what is happening, what changed and whether the system accepted an action so people can maintain an accurate mental model.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "10 Usability Heuristics for User Interface Design",
+    "resolution_url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q082",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Visibility of system status and feedback in a real product or design initiative?",
+    "preferred_answer": "Design immediate control states, progress for meaningful waits, success or failure confirmation and persistent status where users may return later.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "10 Usability Heuristics for User Interface Design",
+    "resolution_url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q083",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Visibility of system status and feedback from a closely related concept?",
+    "preferred_answer": "Feedback is the response to an action; feedforward communicates what will happen before the user commits.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "10 Usability Heuristics for User Interface Design",
+    "resolution_url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q084",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Visibility of system status and feedback, and how should it be corrected?",
+    "preferred_answer": "Silent actions, fake progress and disappearing confirmations create uncertainty and repeated input. Match feedback timing and detail to consequence.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "10 Usability Heuristics for User Interface Design",
+    "resolution_url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q085",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Affordances, signifiers and interaction cues, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Affordances are possible actions, while signifiers are perceivable cues such as labels, shape, placement or state that help people discover those actions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q086",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Affordances, signifiers and interaction cues in a real product or design initiative?",
+    "preferred_answer": "Use familiar controls, clear labels, consistent states and visible focus or hover cues; test whether users can predict behavior without instruction.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q087",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Affordances, signifiers and interaction cues from a closely related concept?",
+    "preferred_answer": "A visual style may suggest clickability, but semantic role and keyboard behavior are also required for a usable interactive control.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q088",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Affordances, signifiers and interaction cues, and how should it be corrected?",
+    "preferred_answer": "Minimalist interfaces often remove signifiers until users must guess. Preserve discoverability and do not rely on hidden gestures for essential actions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q089",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Error prevention, validation and recovery, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Good interaction design prevents predictable errors, explains problems in context and provides a low-cost path to correction or reversal.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "10 Usability Heuristics for User Interface Design",
+    "resolution_url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q090",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Error prevention, validation and recovery in a real product or design initiative?",
+    "preferred_answer": "Constrain invalid choices, preserve entered data, validate at an appropriate time, place specific messages near the cause and offer undo or confirmation for high-impact actions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "10 Usability Heuristics for User Interface Design",
+    "resolution_url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q091",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Error prevention, validation and recovery from a closely related concept?",
+    "preferred_answer": "Validation checks whether input meets rules; error recovery helps the person understand and repair the problem without losing progress.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "10 Usability Heuristics for User Interface Design",
+    "resolution_url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q092",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Error prevention, validation and recovery, and how should it be corrected?",
+    "preferred_answer": "Blaming users with generic red messages or disabling controls without explanation increases failure. Explain what is wrong, how to fix it and what remains saved.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "10 Usability Heuristics for User Interface Design",
+    "resolution_url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q093",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Progressive disclosure and cognitive load, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Progressive disclosure presents essential choices first and reveals advanced or contextual detail when needed, reducing simultaneous complexity without hiding critical information.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "GOV.UK Design System patterns",
+    "resolution_url": "https://design-system.service.gov.uk/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q094",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Progressive disclosure and cognitive load in a real product or design initiative?",
+    "preferred_answer": "Prioritize the primary task, group related information, use sensible defaults and disclose secondary controls in a predictable, accessible way.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "GOV.UK Design System patterns",
+    "resolution_url": "https://design-system.service.gov.uk/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q095",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Progressive disclosure and cognitive load from a closely related concept?",
+    "preferred_answer": "Simplification removes unnecessary complexity; progressive disclosure manages necessary complexity over time and must preserve discoverability.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "GOV.UK Design System patterns",
+    "resolution_url": "https://design-system.service.gov.uk/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q096",
+    "role_slug": "ui-ux-design",
+    "domain": "Interaction Design, Usability and Behavioral Patterns",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Progressive disclosure and cognitive load, and how should it be corrected?",
+    "preferred_answer": "Hiding everything behind icons, accordions or menus can shift load from perception to memory. Measure task completion and information scent, not screen cleanliness.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "GOV.UK Design System patterns",
+    "resolution_url": "https://design-system.service.gov.uk/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q097",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Visual hierarchy and composition, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Visual hierarchy uses scale, weight, contrast, spacing, alignment and position to signal importance, grouping and reading order.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q098",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Visual hierarchy and composition in a real product or design initiative?",
+    "preferred_answer": "Identify the primary user decision on each view, create a deliberate reading path, group related elements and test hierarchy at different sizes and zoom levels.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q099",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Visual hierarchy and composition from a closely related concept?",
+    "preferred_answer": "Hierarchy communicates importance and sequence, while decoration adds expression but should not compete with task information.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q100",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Visual hierarchy and composition, and how should it be corrected?",
+    "preferred_answer": "Making every heading, card and call-to-action visually strong produces no hierarchy. Reduce emphasis and reserve contrast for meaningful priorities.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q101",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Typography for digital products, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Digital typography combines typeface, size, weight, line length, spacing and responsive behavior to support legibility, hierarchy, tone and localization.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Accessibility - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q102",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Typography for digital products in a real product or design initiative?",
+    "preferred_answer": "Define a limited semantic type scale, test real content at zoom and narrow widths, support user text settings and avoid relying on font weight alone for meaning.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Accessibility - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q103",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Typography for digital products from a closely related concept?",
+    "preferred_answer": "Legibility concerns recognizing characters; readability concerns comfortably understanding longer content and is affected by language, layout and density.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Accessibility - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q104",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Typography for digital products, and how should it be corrected?",
+    "preferred_answer": "A type system built from ideal short English strings may break with larger text or translated content. Test expansion, wrapping and dynamic type early.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Accessibility - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q105",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Color, contrast and semantic meaning, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "A product color system separates brand choices from semantic roles such as text, surface, success, warning and focus, and must preserve contrast across themes and states.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design tokens - Fluent 2",
+    "resolution_url": "https://fluent2.microsoft.design/design-tokens",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q106",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Color, contrast and semantic meaning in a real product or design initiative?",
+    "preferred_answer": "Create semantic tokens, test foreground-background pairs and component states, support high contrast and dark modes, and pair color with text, shape or icon cues.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design tokens - Fluent 2",
+    "resolution_url": "https://fluent2.microsoft.design/design-tokens",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q107",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Color, contrast and semantic meaning from a closely related concept?",
+    "preferred_answer": "Brand palette colors express identity; semantic colors communicate functional meaning and may need different values to remain accessible in different contexts.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design tokens - Fluent 2",
+    "resolution_url": "https://fluent2.microsoft.design/design-tokens",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q108",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Color, contrast and semantic meaning, and how should it be corrected?",
+    "preferred_answer": "Applying one brand color everywhere can reduce contrast and make status ambiguous. Define role-based tokens and validate each usage rather than approving colors in isolation.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design tokens - Fluent 2",
+    "resolution_url": "https://fluent2.microsoft.design/design-tokens",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q109",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Spacing, grids and density, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Spacing and grid systems create consistent relationships, alignment and rhythm while allowing density to adapt to task complexity, device and input method.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Material Design 3",
+    "resolution_url": "https://m3.material.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q110",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Spacing, grids and density in a real product or design initiative?",
+    "preferred_answer": "Use a coherent spacing scale, align components to flexible grids, define touch and pointer density modes and test content-heavy cases rather than empty mockups.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Material Design 3",
+    "resolution_url": "https://m3.material.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q111",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Spacing, grids and density from a closely related concept?",
+    "preferred_answer": "A grid supports alignment and responsiveness; it is not a fixed template that every screen must fill symmetrically.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Material Design 3",
+    "resolution_url": "https://m3.material.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q112",
+    "role_slug": "ui-ux-design",
+    "domain": "Visual Design Foundations, Hierarchy and Brand Systems",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Spacing, grids and density, and how should it be corrected?",
+    "preferred_answer": "Overly generous spacing can hide information and increase scrolling, while excessive density harms scanning and touch accuracy. Tune density to task and context.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Material Design 3",
+    "resolution_url": "https://m3.material.io/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q113",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Responsive design and content-driven breakpoints, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Responsive design uses flexible layout, media queries and adaptable content so an experience remains usable across viewport sizes, resolutions, zoom and orientation.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Responsive web design",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q114",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Responsive design and content-driven breakpoints in a real product or design initiative?",
+    "preferred_answer": "Start with content and task priorities, use flexible grids and relative units, introduce breakpoints where layout no longer works and test keyboard order and reflow at high zoom.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Responsive web design",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q115",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Responsive design and content-driven breakpoints from a closely related concept?",
+    "preferred_answer": "Responsive design rearranges within a shared experience; adaptive design may deliver distinct layouts or capabilities for defined contexts or devices.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Responsive web design",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q116",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Responsive design and content-driven breakpoints, and how should it be corrected?",
+    "preferred_answer": "Designing only three artboard widths creates gaps between them and ignores zoom. Test a continuous range and let content determine breakpoints.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Responsive web design",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q117",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Platform conventions and cross-platform consistency, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Cross-platform products should preserve the product model and brand while respecting each platform\u2019s navigation, input, permission and component conventions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q118",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Platform conventions and cross-platform consistency in a real product or design initiative?",
+    "preferred_answer": "Identify invariant concepts and tasks, then adapt controls, gestures, navigation and system integrations to platform expectations; document deliberate differences.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q119",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Platform conventions and cross-platform consistency from a closely related concept?",
+    "preferred_answer": "Consistency means predictable behavior and terminology, not pixel-identical screens across devices with different conventions and capabilities.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q120",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Platform conventions and cross-platform consistency, and how should it be corrected?",
+    "preferred_answer": "Copying one platform UI everywhere can make controls unfamiliar or inaccessible. Share principles and tokens while allowing native patterns where they improve use.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q121",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Touch, pointer, keyboard and multimodal input, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Interaction design must support the input methods people actually use, including touch, mouse, keyboard, voice, switch devices and spatial controllers.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Accessibility - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q122",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Touch, pointer, keyboard and multimodal input in a real product or design initiative?",
+    "preferred_answer": "Provide adequate target size and spacing, visible focus, logical keyboard order, alternatives to complex gestures and feedback that does not depend on hover alone.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Accessibility - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q123",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Touch, pointer, keyboard and multimodal input from a closely related concept?",
+    "preferred_answer": "A large visual target may still have a small interactive hit area, and a hover affordance is not available to touch or keyboard users.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Accessibility - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q124",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Touch, pointer, keyboard and multimodal input, and how should it be corrected?",
+    "preferred_answer": "Designing around a designer\u2019s mouse hides keyboard traps and touch errors. Test core workflows with each supported input mode and assistive technology.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Accessibility - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q125",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Offline, low-bandwidth and resilient experience states, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Resilient experience design anticipates poor connectivity, slow responses, partial data and interrupted tasks so users understand status and can continue or recover safely.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q126",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Offline, low-bandwidth and resilient experience states in a real product or design initiative?",
+    "preferred_answer": "Prioritize essential content, show meaningful loading and offline states, preserve input locally where appropriate, avoid duplicate submissions and provide clear retry behavior.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q127",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Offline, low-bandwidth and resilient experience states from a closely related concept?",
+    "preferred_answer": "A loading state handles expected delay; an offline or degraded state reflects unavailable capabilities and may require alternative paths or cached information.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q128",
+    "role_slug": "ui-ux-design",
+    "domain": "Responsive, Adaptive and Cross-Platform Experience Design",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Offline, low-bandwidth and resilient experience states, and how should it be corrected?",
+    "preferred_answer": "Endless spinners and optimistic confirmation can conceal failure. Define timeouts, state transitions and reconciliation with engineering before launch.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q129",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Prototype fidelity and learning goals, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Prototype fidelity is the degree of visual, content and behavioral realism chosen to answer a specific question; higher fidelity is not automatically more useful.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q130",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Prototype fidelity and learning goals in a real product or design initiative?",
+    "preferred_answer": "Define the decision and risk, choose the minimum realism needed, use representative content and data, and state which parts are simulated or out of scope.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q131",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Prototype fidelity and learning goals from a closely related concept?",
+    "preferred_answer": "A wireframe explores structure and flow, while an interactive prototype can test behavior and transitions; either can be low or high fidelity in different dimensions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q132",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Prototype fidelity and learning goals, and how should it be corrected?",
+    "preferred_answer": "Teams often polish screens before testing the core model, making them expensive to change and causing participants to focus on color. Match fidelity to the uncertainty.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design guidance",
+    "resolution_url": "https://www.gov.uk/service-manual/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q133",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Interactive prototyping with variables and state, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Stateful prototypes use variables, conditions and reusable components to simulate dynamic content, choices and system behavior with fewer duplicate screens.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Use variables in prototypes",
+    "resolution_url": "https://help.figma.com/hc/en-us/articles/14506587589399-Use-variables-in-prototypes",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q134",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Interactive prototyping with variables and state in a real product or design initiative?",
+    "preferred_answer": "Model the minimum state needed for key scenarios, name variables semantically, include validation and error paths and keep prototype logic understandable to collaborators.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Use variables in prototypes",
+    "resolution_url": "https://help.figma.com/hc/en-us/articles/14506587589399-Use-variables-in-prototypes",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q135",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Interactive prototyping with variables and state from a closely related concept?",
+    "preferred_answer": "A click-through prototype links static frames; a stateful prototype changes values and behavior based on previous user actions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Use variables in prototypes",
+    "resolution_url": "https://help.figma.com/hc/en-us/articles/14506587589399-Use-variables-in-prototypes",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q136",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Interactive prototyping with variables and state, and how should it be corrected?",
+    "preferred_answer": "Overengineering prototype logic can consume production effort without improving evidence. Build only the interactions needed to test the decision.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Use variables in prototypes",
+    "resolution_url": "https://help.figma.com/hc/en-us/articles/14506587589399-Use-variables-in-prototypes",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q137",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Heuristic evaluation and expert review, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "A heuristic evaluation is a structured expert inspection that compares an interface with established usability principles to find likely problems before or alongside user research.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How to Conduct a Heuristic Evaluation",
+    "resolution_url": "https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q138",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Heuristic evaluation and expert review in a real product or design initiative?",
+    "preferred_answer": "Use multiple evaluators where possible, inspect realistic tasks and states independently, record evidence and severity, then consolidate without treating findings as user proof.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How to Conduct a Heuristic Evaluation",
+    "resolution_url": "https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q139",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Heuristic evaluation and expert review from a closely related concept?",
+    "preferred_answer": "Heuristic evaluation predicts usability risks from expert judgement; usability testing observes actual representative users performing tasks.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How to Conduct a Heuristic Evaluation",
+    "resolution_url": "https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q140",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Heuristic evaluation and expert review, and how should it be corrected?",
+    "preferred_answer": "One designer reviewing their own screens informally can confirm existing bias. Use explicit heuristics, independent review and user testing for high-risk workflows.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How to Conduct a Heuristic Evaluation",
+    "resolution_url": "https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q141",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Design critique and evidence-based feedback, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Design critique evaluates work against the problem, principles and evidence to improve decisions, rather than judging personal taste or rewarding presentation polish.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q142",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Design critique and evidence-based feedback in a real product or design initiative?",
+    "preferred_answer": "Set the critique question, provide context and constraints, ask for observations and reasoning, separate must-fix risks from options and record decisions and follow-ups.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q143",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Design critique and evidence-based feedback from a closely related concept?",
+    "preferred_answer": "Critique improves work through structured feedback; approval is a governance decision and may require additional evidence or accountable sign-off.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q144",
+    "role_slug": "ui-ux-design",
+    "domain": "Prototyping, Evaluation and Design Validation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Design critique and evidence-based feedback, and how should it be corrected?",
+    "preferred_answer": "Unbounded feedback such as make it pop creates churn and hierarchy bias. Anchor comments to users, goals, standards and trade-offs.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q145",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is WCAG principles and conformance, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "WCAG organizes web accessibility under perceivable, operable, understandable and robust principles, with testable success criteria at levels A, AA and AAA.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q146",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply WCAG principles and conformance in a real product or design initiative?",
+    "preferred_answer": "Translate relevant success criteria into design and acceptance requirements, test components and end-to-end journeys with automated and manual methods and document remaining barriers.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q147",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish WCAG principles and conformance from a closely related concept?",
+    "preferred_answer": "WCAG conformance is a defined technical claim for content; inclusive design is broader and also considers needs not fully captured by conformance criteria.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q148",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with WCAG principles and conformance, and how should it be corrected?",
+    "preferred_answer": "Treating a passing automated scan or accessible component library as full conformance misses keyboard, screen-reader, cognitive and contextual issues. Test the complete service.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q149",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Semantic structure, accessible names and ARIA, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Semantic HTML and accessible names communicate element purpose, structure and state to assistive technologies; ARIA supplements native semantics when complex widgets require it.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ARIA Authoring Practices Guide",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q150",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Semantic structure, accessible names and ARIA in a real product or design initiative?",
+    "preferred_answer": "Prefer native elements, define clear labels and descriptions, preserve heading and landmark structure and follow established keyboard and state patterns for custom widgets.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ARIA Authoring Practices Guide",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q151",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Semantic structure, accessible names and ARIA from a closely related concept?",
+    "preferred_answer": "Visual labels help sighted users, while accessible names are programmatically exposed and must remain accurate when visible content or state changes.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ARIA Authoring Practices Guide",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q152",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Semantic structure, accessible names and ARIA, and how should it be corrected?",
+    "preferred_answer": "Adding ARIA roles without expected keyboard behavior can make an interface more misleading than plain HTML. Use APG patterns and test with assistive technologies.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ARIA Authoring Practices Guide",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q153",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Inclusive research and designing with disabled people, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Inclusive design involves disabled people and people using assistive technologies in research and design, recognizing that exclusion often arises from mismatches between environments and product assumptions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Making your service accessible: an introduction",
+    "resolution_url": "https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q154",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Inclusive research and designing with disabled people in a real product or design initiative?",
+    "preferred_answer": "Recruit participants with relevant access needs, provide accommodations, test actual workflows with their technology and involve accessibility expertise throughout delivery.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Making your service accessible: an introduction",
+    "resolution_url": "https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q155",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Inclusive research and designing with disabled people from a closely related concept?",
+    "preferred_answer": "Simulators and impairment personas can build awareness but cannot replace research with people who have lived experience and established strategies.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Making your service accessible: an introduction",
+    "resolution_url": "https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q156",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Inclusive research and designing with disabled people, and how should it be corrected?",
+    "preferred_answer": "Waiting for a final accessibility audit makes barriers expensive and excludes disabled people from shaping the product. Include them from discovery onward.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Making your service accessible: an introduction",
+    "resolution_url": "https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q157",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Motion, sensory alternatives and cognitive accessibility, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Accessible experiences avoid relying on one sensory channel, support reduced motion and provide predictable, comprehensible interactions that limit unnecessary cognitive demand.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Accessibility - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q158",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Motion, sensory alternatives and cognitive accessibility in a real product or design initiative?",
+    "preferred_answer": "Pair color, sound and motion with text or shape alternatives, honor system preferences, avoid flashing or forced timing and simplify language and multi-step tasks.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Accessibility - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q159",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Motion, sensory alternatives and cognitive accessibility from a closely related concept?",
+    "preferred_answer": "Reducing motion preserves meaning with less movement; removing all feedback can make state changes harder to perceive.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Accessibility - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q160",
+    "role_slug": "ui-ux-design",
+    "domain": "Accessibility, Inclusive Design and Assistive Technology",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Motion, sensory alternatives and cognitive accessibility, and how should it be corrected?",
+    "preferred_answer": "Decorative animation, autoplay and timed dismissal can cause distraction, nausea or task failure. Make motion purposeful, controllable and safely replaceable.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Accessibility - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q161",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Design system purpose and scope, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "A design system combines principles, reusable components, tokens, guidance, code and governance to improve consistency and delivery quality across products.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Figma for design systems",
+    "resolution_url": "https://www.figma.com/design-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q162",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Design system purpose and scope in a real product or design initiative?",
+    "preferred_answer": "Define the problems and consumers the system serves, audit existing patterns, establish contribution and release processes and measure adoption and product outcomes.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Figma for design systems",
+    "resolution_url": "https://www.figma.com/design-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q163",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Design system purpose and scope from a closely related concept?",
+    "preferred_answer": "A component library is a set of reusable UI parts; a design system also includes decisions, documentation, standards and operating practices.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Figma for design systems",
+    "resolution_url": "https://www.figma.com/design-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q164",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Design system purpose and scope, and how should it be corrected?",
+    "preferred_answer": "Building a large library before proving shared needs creates maintenance debt. Start with high-value foundations and components used in real products.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Figma for design systems",
+    "resolution_url": "https://www.figma.com/design-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q165",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Design tokens and semantic architecture, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Design tokens store named design decisions such as color, typography, spacing and motion so tools and platforms can share a consistent source of truth.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design Tokens Format Module 2025.10",
+    "resolution_url": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q166",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Design tokens and semantic architecture in a real product or design initiative?",
+    "preferred_answer": "Separate raw values from semantic and component tokens, use aliases for theming, document intent and generate platform outputs with validation and version control.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design Tokens Format Module 2025.10",
+    "resolution_url": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q167",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Design tokens and semantic architecture from a closely related concept?",
+    "preferred_answer": "A primitive token stores a context-free value; a semantic token expresses purpose such as text-primary and can change by theme without changing consumer code.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design Tokens Format Module 2025.10",
+    "resolution_url": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q168",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Design tokens and semantic architecture, and how should it be corrected?",
+    "preferred_answer": "Naming tokens after a current hex value or screen location makes them hard to evolve. Name by meaning and define ownership and deprecation rules.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Design Tokens Format Module 2025.10",
+    "resolution_url": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q169",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Component anatomy, variants and states, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Component architecture defines the stable structure, content slots, properties, variants, states and accessibility behavior that make reuse predictable without excessive flexibility.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Start designing - Fluent 2",
+    "resolution_url": "https://fluent2.microsoft.design/get-started/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q170",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Component anatomy, variants and states in a real product or design initiative?",
+    "preferred_answer": "Start from recurring user needs, document anatomy and constraints, cover loading, error and disabled states, map design properties to code and test responsive and accessible behavior.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Start designing - Fluent 2",
+    "resolution_url": "https://fluent2.microsoft.design/get-started/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q171",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Component anatomy, variants and states from a closely related concept?",
+    "preferred_answer": "A variant represents a supported product decision, while a one-off override may signal a missing pattern or an inappropriate use of the component.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Start designing - Fluent 2",
+    "resolution_url": "https://fluent2.microsoft.design/get-started/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q172",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Component anatomy, variants and states, and how should it be corrected?",
+    "preferred_answer": "Creating combinatorial variants for every visual possibility makes the system unusable. Support meaningful decisions and use composition for complexity.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Start designing - Fluent 2",
+    "resolution_url": "https://fluent2.microsoft.design/get-started/design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q173",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Design system contribution, versioning and adoption, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Design-system governance determines how needs are proposed, researched, reviewed, released, documented, migrated and retired across consuming teams.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Extending and modifying components in production",
+    "resolution_url": "https://design-system.service.gov.uk/get-started/extending-and-modifying-components/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q174",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Design system contribution, versioning and adoption in a real product or design initiative?",
+    "preferred_answer": "Use contribution criteria, accessibility and code review, semantic versioning, migration guidance and adoption metrics; distinguish local experiments from supported system assets.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Extending and modifying components in production",
+    "resolution_url": "https://design-system.service.gov.uk/get-started/extending-and-modifying-components/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q175",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Design system contribution, versioning and adoption from a closely related concept?",
+    "preferred_answer": "Central control can protect quality, while federated contribution increases domain input; effective governance defines shared standards and decision rights for both.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Extending and modifying components in production",
+    "resolution_url": "https://design-system.service.gov.uk/get-started/extending-and-modifying-components/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q176",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Systems, Tokens and Component Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Design system contribution, versioning and adoption, and how should it be corrected?",
+    "preferred_answer": "Forking components silently or blocking all contributions creates drift. Make extension paths explicit and feed validated improvements back to the system.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Extending and modifying components in production",
+    "resolution_url": "https://design-system.service.gov.uk/get-started/extending-and-modifying-components/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q177",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Figma variables, modes and reusable assets, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Figma variables store reusable values and states that can support design tokens, themes, responsive modes and prototype logic across files and libraries.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Guide to variables in Figma",
+    "resolution_url": "https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q178",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Figma variables, modes and reusable assets in a real product or design initiative?",
+    "preferred_answer": "Create semantic collections, define modes for themes or contexts, publish controlled libraries and use aliases so local designs inherit central changes safely.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Guide to variables in Figma",
+    "resolution_url": "https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q179",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Figma variables, modes and reusable assets from a closely related concept?",
+    "preferred_answer": "Styles primarily package visual properties, while variables can represent reusable values, modes and prototype state and can be mapped more directly to token systems.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Guide to variables in Figma",
+    "resolution_url": "https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q180",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Figma variables, modes and reusable assets, and how should it be corrected?",
+    "preferred_answer": "Using unstructured local variables or duplicating library values breaks traceability. Define naming, scope and publishing ownership before scale.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Guide to variables in Figma",
+    "resolution_url": "https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q181",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Auto layout, constraints and responsive component behavior, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Layout rules in design tools should express how components grow, wrap, align and respond to content rather than freezing one ideal arrangement.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Figma for design systems",
+    "resolution_url": "https://www.figma.com/design-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q182",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Auto layout, constraints and responsive component behavior in a real product or design initiative?",
+    "preferred_answer": "Use content-driven sizing, nested layout intentionally, test long and missing content and document where behavior changes by container or platform.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Figma for design systems",
+    "resolution_url": "https://www.figma.com/design-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q183",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Auto layout, constraints and responsive component behavior from a closely related concept?",
+    "preferred_answer": "Constraints describe position relative to a parent, while auto-layout rules describe flow, spacing and sizing among children.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Figma for design systems",
+    "resolution_url": "https://www.figma.com/design-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q184",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Auto layout, constraints and responsive component behavior, and how should it be corrected?",
+    "preferred_answer": "Absolute positioning and fixed dimensions can make mockups look precise but hide responsive behavior. Build with real content and test resizing continuously.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Figma for design systems",
+    "resolution_url": "https://www.figma.com/design-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q185",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Developer handoff and design specifications, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Effective handoff communicates intent, behavior, states, content rules, accessibility, tokens, assets and acceptance criteria while enabling direct collaboration rather than a one-time file transfer.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "The right code for your design system - Code Connect",
+    "resolution_url": "https://www.figma.com/blog/introducing-code-connect/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q186",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Developer handoff and design specifications in a real product or design initiative?",
+    "preferred_answer": "Review the solution with engineering early, annotate non-obvious behavior, link components and tokens to code, provide realistic examples and resolve open decisions in a shared log.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "The right code for your design system - Code Connect",
+    "resolution_url": "https://www.figma.com/blog/introducing-code-connect/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q187",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Developer handoff and design specifications from a closely related concept?",
+    "preferred_answer": "A pixel specification describes appearance, while an implementation contract explains behavior, data, states and quality requirements needed to reproduce the experience.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "The right code for your design system - Code Connect",
+    "resolution_url": "https://www.figma.com/blog/introducing-code-connect/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q188",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Developer handoff and design specifications, and how should it be corrected?",
+    "preferred_answer": "Throwing polished screens over the wall leaves edge cases and rationale implicit. Pair throughout design and validate the implemented product against intent.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "The right code for your design system - Code Connect",
+    "resolution_url": "https://www.figma.com/blog/introducing-code-connect/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q189",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Component-driven development and UI testing, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Component-driven development builds and reviews interface parts in isolated, documented states so teams can validate behavior, accessibility and visual regression before full-page integration.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How to test UIs with Storybook",
+    "resolution_url": "https://storybook.js.org/docs/writing-tests",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q190",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Component-driven development and UI testing in a real product or design initiative?",
+    "preferred_answer": "Represent each meaningful state as a story, use realistic props, add interaction and accessibility tests and run them in continuous integration.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How to test UIs with Storybook",
+    "resolution_url": "https://storybook.js.org/docs/writing-tests",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q191",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Component-driven development and UI testing from a closely related concept?",
+    "preferred_answer": "A design-system component defines supported UI behavior; a Storybook story is an executable example and test case for a particular configuration.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How to test UIs with Storybook",
+    "resolution_url": "https://storybook.js.org/docs/writing-tests",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q192",
+    "role_slug": "ui-ux-design",
+    "domain": "Figma Workflows, Design-to-Code and Front-End Collaboration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Component-driven development and UI testing, and how should it be corrected?",
+    "preferred_answer": "Testing only happy-path screenshots misses interaction and accessibility regressions. Include empty, loading, error, long-content and keyboard states.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How to test UIs with Storybook",
+    "resolution_url": "https://storybook.js.org/docs/writing-tests",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q193",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Plain language and interface microcopy, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Interface copy helps people understand what to do, why it matters and what happened using concise language that matches their vocabulary and decision context.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Writing for user interfaces",
+    "resolution_url": "https://www.gov.uk/service-manual/design/writing-for-user-interfaces",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q194",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Plain language and interface microcopy in a real product or design initiative?",
+    "preferred_answer": "Start with the task, use specific verbs and labels, place guidance where needed, explain consequences and test comprehension with representative users.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Writing for user interfaces",
+    "resolution_url": "https://www.gov.uk/service-manual/design/writing-for-user-interfaces",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q195",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Plain language and interface microcopy from a closely related concept?",
+    "preferred_answer": "Marketing copy persuades and differentiates, while product microcopy primarily supports action, comprehension, recovery and trust.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Writing for user interfaces",
+    "resolution_url": "https://www.gov.uk/service-manual/design/writing-for-user-interfaces",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q196",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Plain language and interface microcopy, and how should it be corrected?",
+    "preferred_answer": "Clever labels and unexplained icons increase cognitive load. Prefer user language and make every word earn its place.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Writing for user interfaces",
+    "resolution_url": "https://www.gov.uk/service-manual/design/writing-for-user-interfaces",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q197",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Error, empty and confirmation content, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "State content should explain the current condition, its impact and the next useful action without blaming users or concealing uncertainty.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "GOV.UK Design System patterns",
+    "resolution_url": "https://design-system.service.gov.uk/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q198",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Error, empty and confirmation content in a real product or design initiative?",
+    "preferred_answer": "Write specific errors linked to fields, preserve context, make empty states purposeful and ensure confirmations identify what changed and whether further action is required.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "GOV.UK Design System patterns",
+    "resolution_url": "https://design-system.service.gov.uk/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q199",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Error, empty and confirmation content from a closely related concept?",
+    "preferred_answer": "An empty state represents no data or activity; an error state represents failure or invalid input and needs different recovery guidance.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "GOV.UK Design System patterns",
+    "resolution_url": "https://design-system.service.gov.uk/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q200",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Error, empty and confirmation content, and how should it be corrected?",
+    "preferred_answer": "Generic messages such as something went wrong provide no recovery path. Include actionable detail without exposing unsafe technical information.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "GOV.UK Design System patterns",
+    "resolution_url": "https://design-system.service.gov.uk/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q201",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Localization, internationalization and content expansion, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Localization adapts language and culturally dependent content for a locale, while internationalization prepares product structure, code and design so that adaptation is possible.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q202",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Localization, internationalization and content expansion in a real product or design initiative?",
+    "preferred_answer": "Use externalized strings, flexible layouts, locale-aware formats, plural rules, bidirectional support and in-context review by qualified language specialists.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q203",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Localization, internationalization and content expansion from a closely related concept?",
+    "preferred_answer": "Translation changes words; localization also adapts formats, examples, tone and conventions, while internationalization is the enabling architecture.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q204",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Localization, internationalization and content expansion, and how should it be corrected?",
+    "preferred_answer": "Designing around short English text or concatenated strings causes truncation and grammatical errors. Test expansion, right-to-left layouts and real localized content.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q205",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Privacy, permissions and trustworthy choice architecture, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Trustworthy permission experiences explain why data or device access is needed, request it at a relevant moment and preserve meaningful choice without manipulation.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Privacy - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/privacy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q206",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Privacy, permissions and trustworthy choice architecture in a real product or design initiative?",
+    "preferred_answer": "Minimize requested data, use clear purpose language, show consequences of granting or denying, support later changes and avoid coercive defaults or repeated pressure.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Privacy - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/privacy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q207",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Privacy, permissions and trustworthy choice architecture from a closely related concept?",
+    "preferred_answer": "A legal privacy notice communicates formal practices; contextual permission copy supports an immediate informed decision in the workflow.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Privacy - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/privacy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q208",
+    "role_slug": "ui-ux-design",
+    "domain": "Content Design, Microcopy, Localization and Trust",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Privacy, permissions and trustworthy choice architecture, and how should it be corrected?",
+    "preferred_answer": "Dark patterns can increase short-term consent while damaging autonomy and trust. Make the least intrusive choice usable and respect denial.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Privacy - Human Interface Guidelines",
+    "resolution_url": "https://developer.apple.com/design/human-interface-guidelines/privacy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q209",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Behavioral metrics and experience outcomes, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Experience metrics translate user and product goals into observable measures such as task success, time, errors, retention, trust or support demand while retaining qualitative context.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q210",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Behavioral metrics and experience outcomes in a real product or design initiative?",
+    "preferred_answer": "Create a metric tree from outcomes to behaviors and diagnostics, define formulas and segments, set baselines and combine analytics with research to interpret causes.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q211",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Behavioral metrics and experience outcomes from a closely related concept?",
+    "preferred_answer": "A business KPI measures organizational performance; a UX metric measures an aspect of user behavior or experience and should connect to the business outcome without replacing it.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q212",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Behavioral metrics and experience outcomes, and how should it be corrected?",
+    "preferred_answer": "Optimizing clicks or time-on-site can reward friction or distraction. Choose measures that represent successful, ethical task completion.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q213",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Experiment hypotheses and controlled testing, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "A product experiment compares defined variants under controlled conditions to estimate whether a change causes a measurable outcome for an eligible population.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Plan user research for your service",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q214",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Experiment hypotheses and controlled testing in a real product or design initiative?",
+    "preferred_answer": "State the user problem, mechanism, primary metric, guardrails, target population and stopping rule; ensure adequate sample and interpret uncertainty rather than only a binary winner.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Plan user research for your service",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q215",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Experiment hypotheses and controlled testing from a closely related concept?",
+    "preferred_answer": "Usability testing diagnoses interaction problems with small qualitative samples, while an A/B test estimates aggregate outcome differences after a sufficiently usable option exists.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Plan user research for your service",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q216",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Experiment hypotheses and controlled testing, and how should it be corrected?",
+    "preferred_answer": "Running experiments on every design decision can optimize local metrics without understanding users. Use experiments when causal measurement is feasible and ethical.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Plan user research for your service",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q217",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Core Web Vitals and perceived performance, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Core Web Vitals quantify key aspects of loading, interactivity and visual stability, while perceived performance also depends on feedback, prioritization and whether users can continue their task.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q218",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Core Web Vitals and perceived performance in a real product or design initiative?",
+    "preferred_answer": "Measure field data at relevant percentiles and segments, diagnose LCP, INP and CLS, optimize critical content and design stable loading states and responsive feedback.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q219",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Core Web Vitals and perceived performance from a closely related concept?",
+    "preferred_answer": "Laboratory performance reproduces controlled conditions; field data reflects real users, devices and networks and may reveal different priorities.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q220",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Core Web Vitals and perceived performance, and how should it be corrected?",
+    "preferred_answer": "A fast average can hide severe mobile or low-end-device failure. Segment data and avoid skeleton screens or animations that disguise unresolved latency.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q221",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Design quality measurement and continuous discovery, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Continuous discovery maintains regular contact with users and operational evidence so teams can identify changing needs, evaluate released experiences and reduce decision risk over time.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research for government services: an introduction",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q222",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Design quality measurement and continuous discovery in a real product or design initiative?",
+    "preferred_answer": "Create a cadence tied to product decisions, monitor qualitative and quantitative signals, maintain an evidence repository and close the loop by measuring whether changes improved outcomes.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research for government services: an introduction",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q223",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Design quality measurement and continuous discovery from a closely related concept?",
+    "preferred_answer": "Continuous discovery is an operating habit, not continuous interviewing; it can include analytics, support evidence, field observation and targeted tests.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research for government services: an introduction",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q224",
+    "role_slug": "ui-ux-design",
+    "domain": "Product Metrics, Experimentation and Experience Optimization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Design quality measurement and continuous discovery, and how should it be corrected?",
+    "preferred_answer": "Collecting research that teams cannot act on creates a knowledge archive without product impact. Prioritize questions linked to upcoming decisions and track action.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "User research for government services: an introduction",
+    "resolution_url": "https://www.gov.uk/service-manual/user-research/how-user-research-improves-service-design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q225",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Creative coding and generative interaction, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Creative coding uses computation as an expressive material, often combining rules, randomness, data and interaction to generate visual or behavioral outcomes.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "p5.js Reference",
+    "resolution_url": "https://p5js.org/reference/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q226",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Creative coding and generative interaction in a real product or design initiative?",
+    "preferred_answer": "Define the intended experience, prototype with a tool such as p5.js, control randomness for reproducibility and test performance and accessibility across input methods.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "p5.js Reference",
+    "resolution_url": "https://p5js.org/reference/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q227",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Creative coding and generative interaction from a closely related concept?",
+    "preferred_answer": "A generative system produces variations from rules and inputs; a fixed animation plays a predetermined sequence even if authored with code.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "p5.js Reference",
+    "resolution_url": "https://p5js.org/reference/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q228",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Creative coding and generative interaction, and how should it be corrected?",
+    "preferred_answer": "Visual novelty without an interaction purpose can obscure content and overwhelm devices. Establish a fallback and measure whether the effect supports the experience.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "p5.js Reference",
+    "resolution_url": "https://p5js.org/reference/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q229",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Motion design and performance, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Product motion communicates continuity, hierarchy, causality and state change through timing, easing and spatial relationships rather than serving only as decoration.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How to create high-performance CSS animations",
+    "resolution_url": "https://web.dev/articles/animations-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q230",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Motion design and performance in a real product or design initiative?",
+    "preferred_answer": "Define the information the motion conveys, use transform and opacity where practical, test frame rate and reduced-motion alternatives and keep interaction responsive.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How to create high-performance CSS animations",
+    "resolution_url": "https://web.dev/articles/animations-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q231",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Motion design and performance from a closely related concept?",
+    "preferred_answer": "Transition motion explains movement between states, while ambient animation may establish atmosphere but must not compete with task feedback.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How to create high-performance CSS animations",
+    "resolution_url": "https://web.dev/articles/animations-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q232",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Motion design and performance, and how should it be corrected?",
+    "preferred_answer": "Long, bouncy or layout-triggering animation delays work and can cause discomfort. Keep motion purposeful, interruptible and performant.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "How to create high-performance CSS animations",
+    "resolution_url": "https://web.dev/articles/animations-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q233",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Interactive audio and spatial sound, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Interactive audio responds to user actions, environment or system state and may use synthesis, routing and spatialization to create feedback or immersive direction.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Audio API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q234",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Interactive audio and spatial sound in a real product or design initiative?",
+    "preferred_answer": "Design audio cues with visual and haptic alternatives, manage user permission and volume, account for latency and test meaning in quiet, noisy and muted contexts.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Audio API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q235",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Interactive audio and spatial sound from a closely related concept?",
+    "preferred_answer": "A notification sound conveys a discrete event; an audio environment may continuously communicate location, mood or system behavior.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Audio API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q236",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Interactive audio and spatial sound, and how should it be corrected?",
+    "preferred_answer": "Autoplay, unclear cues or sound-only instructions exclude users and can violate context expectations. Require intentional activation and provide equivalent non-audio information.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Web Audio API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q237",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is WebXR and immersive interaction design, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "WebXR supports browser-based virtual and augmented reality sessions with spatial tracking and specialized inputs, requiring design for embodiment, safety, comfort and variable hardware support.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "WebXR Device API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q238",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply WebXR and immersive interaction design in a real product or design initiative?",
+    "preferred_answer": "Define reference spaces and interaction reach, minimize motion sickness, provide onboarding and exit paths, protect spatial data and offer a useful non-XR fallback when support is limited.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "WebXR Device API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q239",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish WebXR and immersive interaction design from a closely related concept?",
+    "preferred_answer": "Augmented reality overlays digital content on a view of the physical world, while virtual reality presents a primarily synthetic environment; both may use WebXR capabilities.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "WebXR Device API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q240",
+    "role_slug": "ui-ux-design",
+    "domain": "Creative Technology, Motion, Audio and Immersive Experiences",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with WebXR and immersive interaction design, and how should it be corrected?",
+    "preferred_answer": "Assuming universal headset support or forcing locomotion can make the experience inaccessible or unsafe. Check compatibility and test comfort with real devices and diverse users.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "WebXR Device API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q241",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Design operations and research operations, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Design operations creates the processes, tools, roles and governance that help design work scale, while research operations supports ethical recruitment, consent, repositories and repeatable research practice.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Figma for design systems",
+    "resolution_url": "https://www.figma.com/design-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q242",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Design operations and research operations in a real product or design initiative?",
+    "preferred_answer": "Identify recurring friction, standardize only where it improves quality, define ownership and service levels and measure whether operations reduce delay and increase evidence reuse.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Figma for design systems",
+    "resolution_url": "https://www.figma.com/design-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q243",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Design operations and research operations from a closely related concept?",
+    "preferred_answer": "A design system governs reusable product decisions; DesignOps governs how people plan, collaborate, staff and deliver design across the organization.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Figma for design systems",
+    "resolution_url": "https://www.figma.com/design-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q244",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Design operations and research operations, and how should it be corrected?",
+    "preferred_answer": "Process added without a clear problem can burden designers and centralize control. Treat operations as a product for internal users and iterate from evidence.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Figma for design systems",
+    "resolution_url": "https://www.figma.com/design-systems/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q245",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Design leadership and cross-functional influence, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Design leadership aligns user evidence, product strategy, technical constraints and organizational priorities while creating conditions for teams to make high-quality decisions.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ISO 9241-210:2019 - Human-centred design for interactive systems",
+    "resolution_url": "https://www.iso.org/standard/77520.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q246",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Design leadership and cross-functional influence in a real product or design initiative?",
+    "preferred_answer": "Frame disagreements around outcomes and risks, make trade-offs visible, develop critique and coaching practices, escalate ethical or accessibility concerns and share decision ownership.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ISO 9241-210:2019 - Human-centred design for interactive systems",
+    "resolution_url": "https://www.iso.org/standard/77520.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q247",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Design leadership and cross-functional influence from a closely related concept?",
+    "preferred_answer": "Management is accountable for people and operating systems, while design leadership can be exercised by any practitioner who improves direction, evidence and collaboration.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ISO 9241-210:2019 - Human-centred design for interactive systems",
+    "resolution_url": "https://www.iso.org/standard/77520.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q248",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Design leadership and cross-functional influence, and how should it be corrected?",
+    "preferred_answer": "Relying on taste, title or polished storytelling can silence evidence. Build influence through clarity, facilitation, prototypes and measurable outcomes.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "ISO 9241-210:2019 - Human-centred design for interactive systems",
+    "resolution_url": "https://www.iso.org/standard/77520.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q249",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Responsible AI experience design, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "Responsible AI experience design makes model capabilities, uncertainty, data use, human control and potential harms understandable and manageable throughout the user journey.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Artificial Intelligence Risk Management Framework (AI RMF)",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q250",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Responsible AI experience design in a real product or design initiative?",
+    "preferred_answer": "Map affected people and failure modes, define when AI should defer, communicate uncertainty, support correction and appeal, test harmful edge cases and monitor real-world outcomes.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Artificial Intelligence Risk Management Framework (AI RMF)",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q251",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Responsible AI experience design from a closely related concept?",
+    "preferred_answer": "An AI feature may automate or recommend; human oversight means a person has meaningful information, authority and time to intervene rather than merely confirming output.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Artificial Intelligence Risk Management Framework (AI RMF)",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q252",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Responsible AI experience design, and how should it be corrected?",
+    "preferred_answer": "Presenting generated output with false certainty or hiding automation can create overreliance and harm. Design calibrated trust, provenance and safe fallback paths.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "Artificial Intelligence Risk Management Framework (AI RMF)",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q253",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Portfolio case studies and evidence of impact, and why is it important in UI/UX, product design or creative technology?",
+    "preferred_answer": "A strong design case study explains the problem, role, evidence, decisions, alternatives, collaboration, constraints, outcome and learning rather than displaying only final screens.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q254",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Portfolio case studies and evidence of impact in a real product or design initiative?",
+    "preferred_answer": "Choose work relevant to the target role, show artifacts that support the narrative, quantify outcomes honestly, protect confidential information and explain what you would change.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q255",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Portfolio case studies and evidence of impact from a closely related concept?",
+    "preferred_answer": "A portfolio gallery demonstrates visual craft, while a case study demonstrates reasoning, process, collaboration and impact; many roles require evidence of both.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "UXCT-Q256",
+    "role_slug": "ui-ux-design",
+    "domain": "Design Leadership, Operations, Responsible AI and Portfolio Practice",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Portfolio case studies and evidence of impact, and how should it be corrected?",
+    "preferred_answer": "Claiming team outcomes as individual impact or revealing client data damages credibility. State contribution and uncertainty precisely and sanitize evidence.",
+    "evaluation_points": [
+      "Connects the answer to a specific user need, decision or measurable product outcome",
+      "Explains evidence, alternatives and trade-offs instead of presenting taste as fact",
+      "Considers accessibility, content, technical feasibility and non-happy-path states",
+      "Describes how the decision would be validated and communicated cross-functionally"
+    ],
+    "resolution_title": "U.S. Web Design System design principles",
+    "resolution_url": "https://designsystem.digital.gov/design-principles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];
