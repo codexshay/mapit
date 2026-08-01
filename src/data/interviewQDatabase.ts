@@ -82002,5 +82002,5125 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "ARLC-Q001",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Automation suitability assessment, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Automation suitability evaluates rule stability, digital inputs, volume, exception rate, business value, system change frequency and control requirements before selecting a solution.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Process Mining overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/process-mining-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q002",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Automation suitability assessment in a real enterprise automation initiative?",
+    "preferred_answer": "Score candidate processes using evidence from transaction logs, interviews and observation; reject unstable or judgment-heavy work, and compare API, workflow, low-code and RPA options.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Process Mining overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/process-mining-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q003",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Automation suitability assessment?",
+    "preferred_answer": "RPA suitability asks whether user-interface automation is viable, while automation suitability considers every implementation route including process redesign and native integration.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Process Mining overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/process-mining-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q004",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Automation suitability assessment. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Automating a broken or frequently changing process can scale waste and support cost. Stabilize the process, remove non-value work and define measurable exit criteria before building.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Process Mining overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/process-mining-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q005",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Automation pyramid and technology selection, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "A sound automation portfolio prefers process elimination and native configuration first, then APIs and workflow orchestration, with UI-level RPA used where interfaces or legacy constraints require it.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q006",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Automation pyramid and technology selection in a real enterprise automation initiative?",
+    "preferred_answer": "Map each step to the lowest-risk integration layer, considering ownership, latency, data access, licensing, maintainability and user interaction.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q007",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Automation pyramid and technology selection?",
+    "preferred_answer": "Low-code is a development approach, RPA imitates user actions, and API automation invokes supported interfaces; they can coexist in one end-to-end solution.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q008",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Automation pyramid and technology selection. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Choosing RPA because it is visually fast can create fragile automations when a stable API exists. Document why each layer was chosen and what would trigger migration.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q009",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Automation business case and total cost of ownership, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "An automation business case compares expected benefits with development, licenses, infrastructure, support, change, controls and opportunity costs across the solution lifecycle.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q010",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Automation business case and total cost of ownership in a real enterprise automation initiative?",
+    "preferred_answer": "Baseline cycle time, effort, error and service metrics; model realistic adoption and exception rates; include maintenance and platform costs; then track benefits after release.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q011",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Automation business case and total cost of ownership?",
+    "preferred_answer": "ROI is a financial ratio, while payback period measures recovery time and TCO includes ongoing costs that a simple labour-saving estimate often omits.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q012",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Automation business case and total cost of ownership. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Counting all current effort as removable savings overstates value. Separate capacity released, cashable savings, risk avoidance, revenue and service improvements.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q013",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Automation portfolio prioritization, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Portfolio prioritization ranks opportunities by value, feasibility, risk, strategic fit, dependencies and available capacity rather than approving isolated ideas in request order.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q014",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Automation portfolio prioritization in a real enterprise automation initiative?",
+    "preferred_answer": "Use transparent scoring, architecture and security review, process-owner commitment and a balanced mix of quick wins and foundational programmes.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q015",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Automation portfolio prioritization?",
+    "preferred_answer": "A pipeline is the set of ideas moving through discovery and delivery; a portfolio is the governed set of investments and outcomes across the organization.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q016",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Strategy and Opportunity Assessment",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Automation portfolio prioritization. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "A highest-ROI-only queue can ignore regulatory risk, shared components and change capacity. Revisit scores with actual delivery data and portfolio constraints.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q017",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is As-is and to-be process modelling, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "An as-is model captures current actors, events, decisions, systems, handoffs and exceptions; a to-be model describes the improved process and control design.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q018",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply As-is and to-be process modelling in a real enterprise automation initiative?",
+    "preferred_answer": "Observe real work, validate variants with operators, model normal and exception paths in BPMN, and quantify where automation changes ownership or timing.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q019",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing As-is and to-be process modelling?",
+    "preferred_answer": "A procedure tells people how to perform work, while a process model shows flow, responsibility and decision logic at a selected level of abstraction.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q020",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with As-is and to-be process modelling. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Drawing only the happy path hides the work that breaks automations. Include rework, missing data, manual overrides, queues and end conditions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q021",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Process mining and task mining, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Process mining reconstructs process flows from event logs, while task mining analyzes user-level activities to identify repetitive desktop patterns and variants.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Process Mining overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/process-mining-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q022",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Process mining and task mining in a real enterprise automation initiative?",
+    "preferred_answer": "Confirm event quality, case identifiers and timestamps, compare discovered paths with policy, and use findings to target root causes rather than merely mimic clicks.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Process Mining overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/process-mining-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q023",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Process mining and task mining?",
+    "preferred_answer": "Process mining is system-event oriented; task mining is workstation-activity oriented. Neither replaces interviews, controls review or context from process owners.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Process Mining overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/process-mining-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q024",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Process mining and task mining. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Incomplete logs can produce a persuasive but false process picture. Document coverage, sampling, privacy boundaries and unobserved work before making decisions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Process Mining overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/process-mining-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q025",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Standardization before automation, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Standardization reduces unnecessary variants in rules, inputs, templates and ownership so automation can operate predictably and support teams can diagnose failures.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q026",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Standardization before automation in a real enterprise automation initiative?",
+    "preferred_answer": "Classify legitimate versus accidental variation, define canonical data and decisions, and create controlled exception paths before implementing a bot or app.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q027",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Standardization before automation?",
+    "preferred_answer": "Standardization aligns how work should be performed; automation executes or assists that work. Automation without standardization often encodes local workarounds.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q028",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Standardization before automation. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Forcing one process where regulation or customer segment requires variation can create control failures. Preserve justified variants explicitly in the design.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q029",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Exception taxonomy and decision rules, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "An exception taxonomy separates business exceptions, system exceptions, data-quality failures, policy escalations and unknown conditions so each receives the right response.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robotic Enterprise Framework",
+    "resolution_url": "https://docs.uipath.com/studio/standalone/latest/user-guide/robotic-enterprise-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q030",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Exception taxonomy and decision rules in a real enterprise automation initiative?",
+    "preferred_answer": "Collect historical exceptions, define deterministic rules and ownership, decide which can be auto-resolved, retried, queued for humans or used to stop processing.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robotic Enterprise Framework",
+    "resolution_url": "https://docs.uipath.com/studio/standalone/latest/user-guide/robotic-enterprise-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q031",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Exception taxonomy and decision rules?",
+    "preferred_answer": "A business exception is a valid rule outcome such as insufficient funds; a system exception is a technical inability to complete an otherwise valid transaction.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robotic Enterprise Framework",
+    "resolution_url": "https://docs.uipath.com/studio/standalone/latest/user-guide/robotic-enterprise-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q032",
+    "role_slug": "automation-rpa",
+    "domain": "Process Discovery, Mapping and Improvement",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Exception taxonomy and decision rules. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Treating every failure as a retry can duplicate transactions or hide policy issues. Classify first and use bounded recovery with auditable outcomes.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robotic Enterprise Framework",
+    "resolution_url": "https://docs.uipath.com/studio/standalone/latest/user-guide/robotic-enterprise-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q033",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Attended and unattended automation, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Attended automation assists a logged-in user and depends on human context, while unattended automation runs autonomously under controlled robot identities and orchestration.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robots",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-robots",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q034",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Attended and unattended automation in a real enterprise automation initiative?",
+    "preferred_answer": "Choose attended for fragmented, judgment-assisted steps and unattended for rule-based batch or event work; define credentials, session behavior, support and handoff boundaries.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robots",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-robots",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q035",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Attended and unattended automation?",
+    "preferred_answer": "Attended and unattended describe execution models, not complexity. A solution may use both through human-in-the-loop orchestration.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robots",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-robots",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q036",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Attended and unattended automation. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Running privileged unattended work under personal accounts weakens isolation and continuity. Use dedicated identities, least privilege and centralized scheduling.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robots",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-robots",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q037",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Front-office, back-office and hybrid automation, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Front-office automation supports live customer or employee interactions, back-office automation processes asynchronous work, and hybrid designs connect the two with queues or approvals.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Attended and unattended automation",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/aae-client/attended-automation/attend-automation-overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q038",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Front-office, back-office and hybrid automation in a real enterprise automation initiative?",
+    "preferred_answer": "Design front-office steps for fast feedback and safe takeover, then offload long-running or privileged work to unattended services with status visibility.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Attended and unattended automation",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/aae-client/attended-automation/attend-automation-overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q039",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Front-office, back-office and hybrid automation?",
+    "preferred_answer": "Front-office work is latency-sensitive and user-facing; back-office work is throughput-oriented and can be scheduled or queued.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Attended and unattended automation",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/aae-client/attended-automation/attend-automation-overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q040",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Front-office, back-office and hybrid automation. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Making a user wait for a long unattended process creates poor experience and timeout risk. Use asynchronous patterns and explicit completion notifications.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Attended and unattended automation",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/aae-client/attended-automation/attend-automation-overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q041",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Robot, machine, runtime and orchestrator responsibilities, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "The robot runtime executes automation packages, machines provide sessions and resources, and orchestration manages deployment, scheduling, queues, credentials, capacity and monitoring.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robots",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-robots",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q042",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Robot, machine, runtime and orchestrator responsibilities in a real enterprise automation initiative?",
+    "preferred_answer": "Separate package logic from environment configuration, register machines securely, define execution capacity and centralize operational controls.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robots",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-robots",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q043",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Robot, machine, runtime and orchestrator responsibilities?",
+    "preferred_answer": "A robot is an execution identity/runtime concept; a machine is the host. Multiple runtimes or sessions may share managed infrastructure subject to platform limits.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robots",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-robots",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q044",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Robot, machine, runtime and orchestrator responsibilities. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Hard-coding machine paths or credentials couples logic to one host. Use assets, environment variables, packages and deployment configuration.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robots",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-robots",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q045",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Human-in-the-loop orchestration, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Human-in-the-loop automation pauses or routes work for review, approval, correction or judgment while preserving state, deadlines and audit history.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Automate documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q046",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Human-in-the-loop orchestration in a real enterprise automation initiative?",
+    "preferred_answer": "Define when humans enter, what evidence they receive, who can act, SLA and escalation, and how corrected data resumes without duplicate processing.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Automate documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q047",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Human-in-the-loop orchestration?",
+    "preferred_answer": "Human-in-the-loop is a designed control point, whereas manual fallback is an emergency operating mode when automation is unavailable.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Automate documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q048",
+    "role_slug": "automation-rpa",
+    "domain": "RPA Architecture and Robot Operating Models",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Human-in-the-loop orchestration. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Sending unstructured emails for approvals loses state and traceability. Use durable tasks, role-based queues and explicit completion outcomes.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Automate documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q049",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Selectors and stable UI targeting, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "UiPath selectors are XML-like descriptors built from UI-element attributes and ancestry; stable selectors use persistent attributes and avoid volatile values.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Selectors",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/about-selectors",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q050",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Selectors and stable UI targeting in a real enterprise automation initiative?",
+    "preferred_answer": "Inspect the element tree, remove dynamic attributes, add anchors or variables where needed, validate uniqueness and test across sessions and data states.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Selectors",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/about-selectors",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q051",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Selectors and stable UI targeting?",
+    "preferred_answer": "A strict selector matches structured attributes exactly, while fuzzy, image, text or semantic targeting provides alternate identification strategies.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Selectors",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/about-selectors",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q052",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Selectors and stable UI targeting. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Using coordinates or recorded selectors without validation makes automations fragile. Establish a targeting hierarchy and regression test representative screens.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Selectors",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/about-selectors",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q053",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Modern UI Automation and Unified Target, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Modern UI Automation combines strict and fuzzy selectors, computer vision, image and text methods under a unified target and anchor model.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "UI Automation Modern",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/about-the-ui-automation-next-activities-pack",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q054",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Modern UI Automation and Unified Target in a real enterprise automation initiative?",
+    "preferred_answer": "Select the strongest available methods, configure readiness and visibility checks, and use anchors to disambiguate responsive or remote interfaces.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "UI Automation Modern",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/about-the-ui-automation-next-activities-pack",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q055",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Modern UI Automation and Unified Target?",
+    "preferred_answer": "Modern activities emphasize application containers and multi-method targeting; classic activities expose older activity patterns and selector properties.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "UI Automation Modern",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/about-the-ui-automation-next-activities-pack",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q056",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Modern UI Automation and Unified Target. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Enabling every targeting method can mask design problems and slow execution. Choose deliberate methods and document why fallbacks are safe.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "UI Automation Modern",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/about-the-ui-automation-next-activities-pack",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q057",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Dynamic and parameterized selectors, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Dynamic selectors insert variables or arguments into element attributes so one workflow can target data-dependent controls without copying activities.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Dynamic Selectors",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/dynamic-selectors",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q058",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Dynamic and parameterized selectors in a real enterprise automation initiative?",
+    "preferred_answer": "Parameterize only the changing attribute, escape values safely, validate against duplicates and keep stable parent context around the dynamic portion.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Dynamic Selectors",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/dynamic-selectors",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q059",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Dynamic and parameterized selectors?",
+    "preferred_answer": "A wildcard broadens matching patterns, while a dynamic selector supplies a runtime value. Both can increase ambiguity if not bounded.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Dynamic Selectors",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/dynamic-selectors",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q060",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Dynamic and parameterized selectors. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Overly generic selectors may click the wrong record. Validate the target text or state before destructive actions and log the business key.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Dynamic Selectors",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/dynamic-selectors",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q061",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is OCR, Computer Vision and semantic targeting, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "OCR recognizes displayed text, Computer Vision identifies visual elements, and semantic targeting finds controls by meaning when normal UI metadata is unavailable or unstable.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "OCR Activities",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/ocr-activities",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q062",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply OCR, Computer Vision and semantic targeting in a real enterprise automation initiative?",
+    "preferred_answer": "Use selectors and supported APIs first, then apply visual methods for remote desktops, images or inaccessible applications; measure confidence and create verification steps.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "OCR Activities",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/ocr-activities",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q063",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing OCR, Computer Vision and semantic targeting?",
+    "preferred_answer": "OCR extracts text pixels, Computer Vision models screen structure, and semantic selectors use descriptions and DOM or image understanding to locate intent.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "OCR Activities",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/ocr-activities",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q064",
+    "role_slug": "automation-rpa",
+    "domain": "UiPath Development and UI Automation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with OCR, Computer Vision and semantic targeting. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Visual automation can misread similar screens or changed scale. Control resolution, limit search regions and verify critical values before committing actions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "OCR Activities",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/ocr-activities",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q065",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Cloud flows, desktop flows and business process flows, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Cloud flows orchestrate connectors and events, desktop flows automate Windows and web interfaces, and business process flows guide users through staged records in model-driven apps.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Automate documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q066",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Cloud flows, desktop flows and business process flows in a real enterprise automation initiative?",
+    "preferred_answer": "Combine cloud triggers with desktop execution only where needed, pass typed inputs and outputs, and keep user guidance separate from background processing.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Automate documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q067",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Cloud flows, desktop flows and business process flows?",
+    "preferred_answer": "A cloud flow is workflow automation, a desktop flow is RPA, and a business process flow is an interactive process stage model rather than a general integration engine.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Automate documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q068",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Cloud flows, desktop flows and business process flows. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Using desktop automation for a supported connector increases fragility. Prefer native actions and reserve UI automation for unavoidable gaps.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Automate documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q069",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Solutions, connection references and environment variables, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Solutions package Power Platform components for lifecycle management; connection references and environment variables separate deployable logic from environment-specific endpoints and credentials.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Application lifecycle management with Microsoft Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/overview-alm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q070",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Solutions, connection references and environment variables in a real enterprise automation initiative?",
+    "preferred_answer": "Create flows and apps inside solutions, use named publishers, map connections during deployment and validate dependencies before promotion.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Application lifecycle management with Microsoft Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/overview-alm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q071",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Solutions, connection references and environment variables?",
+    "preferred_answer": "A connection contains authentication context; a connection reference is a solution component pointing to a connection in each environment.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Application lifecycle management with Microsoft Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/overview-alm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q072",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Solutions, connection references and environment variables. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Building production flows in the default environment and hard-coding URLs makes deployment and ownership difficult. Establish managed environments and solution-first development.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Application lifecycle management with Microsoft Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/overview-alm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q073",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Desktop flow machines, groups and run modes, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Machines and machine groups provide execution capacity for desktop flows, while attended and unattended run modes determine session and licensing behavior.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Manage machines",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/desktop-flows/manage-machines",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q074",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Desktop flow machines, groups and run modes in a real enterprise automation initiative?",
+    "preferred_answer": "Secure and register hosts, group equivalent machines, define maintenance windows, control concurrency and ensure screen resolution and application versions are compatible.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Manage machines",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/desktop-flows/manage-machines",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q075",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Desktop flow machines, groups and run modes?",
+    "preferred_answer": "A machine group pools eligible hosts; it does not automatically make stateful local dependencies safe across machines.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Manage machines",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/desktop-flows/manage-machines",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q076",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Desktop flow machines, groups and run modes. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Local files, profiles or cached sessions can cause inconsistent results in a group. Externalize state and validate host configuration.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Manage machines",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/desktop-flows/manage-machines",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q077",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Power Platform data loss prevention policies, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "DLP policies classify connectors into business, non-business and blocked groups to prevent unsafe data movement between services.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Data policies",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q078",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Power Platform data loss prevention policies in a real enterprise automation initiative?",
+    "preferred_answer": "Design policies by environment and risk, test existing flows before enforcement, govern custom connectors and maintain an exception process with owners and expiry.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Data policies",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q079",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Power Platform data loss prevention policies?",
+    "preferred_answer": "DLP controls connector combinations and data movement; it does not replace application authorization, data classification or endpoint security.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Data policies",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q080",
+    "role_slug": "automation-rpa",
+    "domain": "Microsoft Power Automate and Power Platform",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Power Platform data loss prevention policies. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "A broad block policy can break critical workflows, while a permissive policy can enable data exfiltration. Use staged analysis and documented exceptions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Data policies",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q081",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Control Room, Bot Creator and Bot Runner, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Automation Anywhere separates centralized Control Room governance from bot authoring and execution roles, enabling controlled deployment and workload management.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Bot Lifecycle Management",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/bot-insight/user/cloud-bot-lifecycle-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q082",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Control Room, Bot Creator and Bot Runner in a real enterprise automation initiative?",
+    "preferred_answer": "Define role-based permissions, device pools, package dependencies and promotion paths; keep developers from directly changing production credentials or schedules.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Bot Lifecycle Management",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/bot-insight/user/cloud-bot-lifecycle-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q083",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Control Room, Bot Creator and Bot Runner?",
+    "preferred_answer": "Bot Creator builds and tests automations; Bot Runner executes assigned bots; Control Room governs users, devices, packages and operations.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Bot Lifecycle Management",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/bot-insight/user/cloud-bot-lifecycle-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q084",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Control Room, Bot Creator and Bot Runner. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Combining development and privileged production control without review weakens segregation of duties. Use lifecycle stages and least privilege.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Bot Lifecycle Management",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/bot-insight/user/cloud-bot-lifecycle-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q085",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Workload Management queues and device pools, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Workload Management uses queues of structured work items and pools of execution devices to distribute processing and scale throughput.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "WLM key concepts",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/wlm-key-concepts.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q086",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Workload Management queues and device pools in a real enterprise automation initiative?",
+    "preferred_answer": "Define item schemas and statuses, partition workloads, control retries and assign compatible run-as users and device capacity.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "WLM key concepts",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/wlm-key-concepts.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q087",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Workload Management queues and device pools?",
+    "preferred_answer": "A queue stores units of work and outcomes; a device pool supplies execution resources. Scaling one without the other may not improve throughput.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "WLM key concepts",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/wlm-key-concepts.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q088",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Workload Management queues and device pools. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Loading duplicate items or using non-idempotent processing can create repeated business actions. Use unique keys and reconciliation.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "WLM key concepts",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/wlm-key-concepts.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q089",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Credential Vault, credentials and lockers, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Credential Vault centralizes sensitive values, and lockers apply role-based access so bots reference secrets without embedding them in code or devices.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Credentials and lockers in the Credential Vault",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/bots/credentials/cloud-credentials-overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q090",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Credential Vault, credentials and lockers in a real enterprise automation initiative?",
+    "preferred_answer": "Create narrowly scoped credentials, separate environments, restrict locker consumers, rotate values and audit access and failed retrievals.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Credentials and lockers in the Credential Vault",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/bots/credentials/cloud-credentials-overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q091",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Credential Vault, credentials and lockers?",
+    "preferred_answer": "A credential stores secret attributes; a locker groups credentials and controls who may use or administer them.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Credentials and lockers in the Credential Vault",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/bots/credentials/cloud-credentials-overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q092",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Credential Vault, credentials and lockers. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Converting credentials to ordinary strings or logging secret variables defeats the vault. Mask outputs and minimize secret lifetime in memory.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Credentials and lockers in the Credential Vault",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/bots/credentials/cloud-credentials-overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q093",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Try, Catch, Finally and Throw in bot error handling, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Automation Anywhere error-handling actions isolate protected steps, capture exception details, perform cleanup and deliberately raise logical failures when business validation requires it.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Error handler package",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/aae-client/bot-creator/commands/cloud-error-handling-command.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q094",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Try, Catch, Finally and Throw in bot error handling in a real enterprise automation initiative?",
+    "preferred_answer": "Wrap risky operations at the right level, record context and screenshots, clean up sessions in Finally and rethrow or classify errors for the parent workflow.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Error handler package",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/aae-client/bot-creator/commands/cloud-error-handling-command.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q095",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Try, Catch, Finally and Throw in bot error handling?",
+    "preferred_answer": "Catch handles failures; Finally runs cleanup regardless of outcome; Throw converts a detected condition into an exception path.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Error handler package",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/aae-client/bot-creator/commands/cloud-error-handling-command.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q096",
+    "role_slug": "automation-rpa",
+    "domain": "Automation Anywhere and Enterprise RPA",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Try, Catch, Finally and Throw in bot error handling. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Catching every error and continuing can silently corrupt results. Only recover when postconditions and business state are known.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Error handler package",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/aae-client/bot-creator/commands/cloud-error-handling-command.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q097",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Trigger-action workflow model, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "No-code workflow tools start from an event or schedule, transform data and invoke actions across connected applications.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Learn key concepts in Zap workflows",
+    "resolution_url": "https://help.zapier.com/hc/en-us/articles/8496181725453-Learn-key-concepts-in-Zap-workflows",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q098",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Trigger-action workflow model in a real enterprise automation initiative?",
+    "preferred_answer": "Select a trigger with stable identifiers, define filters early, map fields explicitly and record downstream outcomes for observability and replay.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Learn key concepts in Zap workflows",
+    "resolution_url": "https://help.zapier.com/hc/en-us/articles/8496181725453-Learn-key-concepts-in-Zap-workflows",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q099",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Trigger-action workflow model?",
+    "preferred_answer": "A trigger starts an execution; an action changes or retrieves data; a search step locates an existing record to support update-or-create behavior.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Learn key concepts in Zap workflows",
+    "resolution_url": "https://help.zapier.com/hc/en-us/articles/8496181725453-Learn-key-concepts-in-Zap-workflows",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q100",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Trigger-action workflow model. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "A workflow that creates records without checking for prior processing can duplicate data when triggers retry. Add idempotency keys or lookup logic.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Learn key concepts in Zap workflows",
+    "resolution_url": "https://help.zapier.com/hc/en-us/articles/8496181725453-Learn-key-concepts-in-Zap-workflows",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q101",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Filters, branches, routers and paths, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Conditional workflow controls route items based on data rules so irrelevant events stop and distinct cases follow appropriate actions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Filter and path rules in Zap workflows",
+    "resolution_url": "https://help.zapier.com/hc/en-us/articles/8496180919949-Filter-and-path-rules-in-Zap-workflows",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q102",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Filters, branches, routers and paths in a real enterprise automation initiative?",
+    "preferred_answer": "Place filters close to the trigger, make conditions mutually clear, define default and unknown paths and test boundary values with representative payloads.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Filter and path rules in Zap workflows",
+    "resolution_url": "https://help.zapier.com/hc/en-us/articles/8496180919949-Filter-and-path-rules-in-Zap-workflows",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q103",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Filters, branches, routers and paths?",
+    "preferred_answer": "A filter allows or stops one path, while branches or paths choose among multiple routes; a router can send one item to more than one route.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Filter and path rules in Zap workflows",
+    "resolution_url": "https://help.zapier.com/hc/en-us/articles/8496180919949-Filter-and-path-rules-in-Zap-workflows",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q104",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Filters, branches, routers and paths. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Overlapping conditions can execute unintended branches. Document precedence and create test cases for no-match and multi-match outcomes.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Filter and path rules in Zap workflows",
+    "resolution_url": "https://help.zapier.com/hc/en-us/articles/8496180919949-Filter-and-path-rules-in-Zap-workflows",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q105",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Webhook-triggered workflows, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "A webhook exposes an endpoint that receives an HTTP event and starts processing, often enabling near-real-time integration without polling.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Trigger Zap workflows from webhooks",
+    "resolution_url": "https://help.zapier.com/hc/en-us/articles/8496288690317-Trigger-Zaps-from-webhooks",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q106",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Webhook-triggered workflows in a real enterprise automation initiative?",
+    "preferred_answer": "Authenticate or verify signatures, validate schema, acknowledge quickly, queue long work, protect against replay and store a correlation identifier.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Trigger Zap workflows from webhooks",
+    "resolution_url": "https://help.zapier.com/hc/en-us/articles/8496288690317-Trigger-Zaps-from-webhooks",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q107",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Webhook-triggered workflows?",
+    "preferred_answer": "Polling asks periodically for changes; webhooks push events when changes occur. Webhooks reduce latency but require a reachable and secure receiver.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Trigger Zap workflows from webhooks",
+    "resolution_url": "https://help.zapier.com/hc/en-us/articles/8496288690317-Trigger-Zaps-from-webhooks",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q108",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Webhook-triggered workflows. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Trusting any incoming JSON can enable spoofed actions or malformed executions. Validate origin, signature, content type, size and required fields.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Trigger Zap workflows from webhooks",
+    "resolution_url": "https://help.zapier.com/hc/en-us/articles/8496288690317-Trigger-Zaps-from-webhooks",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q109",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Workflow execution history and replay, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Execution history records inputs, node outcomes, timings and failures so operators can diagnose, retry or replay work with the appropriate workflow version.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "All executions",
+    "resolution_url": "https://docs.n8n.io/workflows/executions/all-executions/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q110",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Workflow execution history and replay in a real enterprise automation initiative?",
+    "preferred_answer": "Retain enough sanitized evidence, distinguish retry with original versus current logic, and prevent a replay from duplicating completed external actions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "All executions",
+    "resolution_url": "https://docs.n8n.io/workflows/executions/all-executions/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q111",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Workflow execution history and replay?",
+    "preferred_answer": "A retry repeats failed processing, while a replay reproduces an earlier execution for diagnosis or recovery; both require state awareness.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "All executions",
+    "resolution_url": "https://docs.n8n.io/workflows/executions/all-executions/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q112",
+    "role_slug": "automation-rpa",
+    "domain": "Workflow Automation with n8n, Zapier and Make",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Workflow execution history and replay. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Blindly retrying an old payload after downstream success can duplicate side effects. Reconcile external state before replay.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "All executions",
+    "resolution_url": "https://docs.n8n.io/workflows/executions/all-executions/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q113",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Canvas, model-driven and data-centric app choices, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Canvas apps optimize custom interaction layout, while model-driven apps derive interface and process behavior from a structured data model and platform metadata.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Power Apps documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q114",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Canvas, model-driven and data-centric app choices in a real enterprise automation initiative?",
+    "preferred_answer": "Choose based on process complexity, data relationships, device experience, accessibility, offline needs and governance rather than visual preference alone.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Power Apps documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q115",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Canvas, model-driven and data-centric app choices?",
+    "preferred_answer": "Canvas design starts from screens and formulas; model-driven design starts from Dataverse tables, relationships, forms and views.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Power Apps documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q116",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Canvas, model-driven and data-centric app choices. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Building a complex relational process as ad hoc screen state creates maintenance and security problems. Model data and authorization first.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Power Apps documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q117",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Dataverse tables, relationships and business rules, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Dataverse provides governed tables, relationships, security and platform services for Power Platform apps and automations.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Dataverse documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q118",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Dataverse tables, relationships and business rules in a real enterprise automation initiative?",
+    "preferred_answer": "Define stable business keys, ownership, relationship behavior, validation and least-privilege roles; use server-side controls for critical rules.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Dataverse documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q119",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Dataverse tables, relationships and business rules?",
+    "preferred_answer": "A lookup represents a relationship to another record, while a choice stores a controlled value set; they have different lifecycle and reporting implications.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Dataverse documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q120",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Dataverse tables, relationships and business rules. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Duplicating master data in text fields weakens integrity. Use relationships and alternate keys with controlled integration.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Dataverse documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q121",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Delegation and scalable query design, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Delegation pushes supported filtering and aggregation to the data source so apps do not download and process only a limited local subset.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Canvas apps documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q122",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Delegation and scalable query design in a real enterprise automation initiative?",
+    "preferred_answer": "Use delegable formulas, indexes and server-side views, test with production-like volume and show users when a result is intentionally limited.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Canvas apps documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q123",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Delegation and scalable query design?",
+    "preferred_answer": "Client-side collection processing can be useful for small local data, while delegated queries are required for reliable large-data results.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Canvas apps documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q124",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Delegation and scalable query design. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "A formula that works with sample data may silently miss records at scale. Treat delegation warnings as correctness risks, not cosmetic messages.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Canvas apps documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q125",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Low-code platform fit and escape hatches, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Low-code platforms accelerate common application patterns but must provide governed extensibility for APIs, custom components or code when requirements exceed native capabilities.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Mendix documentation",
+    "resolution_url": "https://docs.mendix.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q126",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Low-code platform fit and escape hatches in a real enterprise automation initiative?",
+    "preferred_answer": "Assess licensing, performance, data location, integration, accessibility, ALM, support and vendor lock-in; define when to extend versus choose another platform.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Mendix documentation",
+    "resolution_url": "https://docs.mendix.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q127",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Low-code platform fit and escape hatches?",
+    "preferred_answer": "An escape hatch is controlled extensibility, not an excuse to embed ungoverned code that bypasses platform security and lifecycle.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Mendix documentation",
+    "resolution_url": "https://docs.mendix.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q128",
+    "role_slug": "automation-rpa",
+    "domain": "Low-Code Application Design and Data Platforms",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Low-code platform fit and escape hatches. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Forcing a platform beyond its limits can create poor performance and opaque workarounds. Run a proof of capability on the hardest requirement early.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Mendix documentation",
+    "resolution_url": "https://docs.mendix.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q129",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is API-first versus UI automation integration, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "API-first integration uses supported machine interfaces and structured contracts; UI automation operates through screens when APIs are absent, incomplete or inaccessible.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q130",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply API-first versus UI automation integration in a real enterprise automation initiative?",
+    "preferred_answer": "Prefer APIs for stable high-volume transactions, then use UI automation only for uncovered steps and protect it with state validation and monitoring.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q131",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing API-first versus UI automation integration?",
+    "preferred_answer": "API automation depends on contract and authorization stability; UI automation depends on visual or accessibility structure and session state.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q132",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with API-first versus UI automation integration. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Using UI automation for a transactional API can be slower and more fragile, but an undocumented API can also be unsafe. Use supported interfaces and ownership evidence.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "OpenAPI Specification",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q133",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is HTTP methods, status codes and retry semantics, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "HTTP methods express intended operations and status codes communicate outcomes; safe and idempotent semantics influence whether automated retries are appropriate.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q134",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply HTTP methods, status codes and retry semantics in a real enterprise automation initiative?",
+    "preferred_answer": "Handle success and error families explicitly, respect Retry-After, distinguish validation from transient failures and use idempotency mechanisms for create operations.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q135",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing HTTP methods, status codes and retry semantics?",
+    "preferred_answer": "GET is safe and idempotent by definition, PUT is idempotent, while POST is not inherently idempotent even though an API may implement an idempotency key.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q136",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with HTTP methods, status codes and retry semantics. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Retrying every 5xx or timeout without limits can amplify incidents or duplicate writes. Use exponential backoff, jitter and reconciliation.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q137",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Authentication, OAuth and service identities, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Automations should use managed service identities or OAuth flows appropriate to confidential clients, with scoped permissions and protected token storage.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "RFC 6749 - OAuth 2.0 Authorization Framework",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc6749.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q138",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Authentication, OAuth and service identities in a real enterprise automation initiative?",
+    "preferred_answer": "Separate development and production identities, request minimal scopes, rotate credentials, validate token audience and avoid interactive personal accounts for unattended work.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "RFC 6749 - OAuth 2.0 Authorization Framework",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc6749.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q139",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Authentication, OAuth and service identities?",
+    "preferred_answer": "Authentication establishes identity; authorization grants permissions. OAuth delegates access and does not by itself define user authentication.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "RFC 6749 - OAuth 2.0 Authorization Framework",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc6749.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q140",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Authentication, OAuth and service identities. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Embedding long-lived tokens in workflow definitions exposes secrets and complicates revocation. Use platform credential stores and short-lived tokens.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "RFC 6749 - OAuth 2.0 Authorization Framework",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc6749.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q141",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Schema validation and canonical data mapping, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Schema validation checks payload structure and types, while canonical mapping translates application-specific fields into a stable internal model.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "JSON Schema Specification",
+    "resolution_url": "https://json-schema.org/specification",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q142",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Schema validation and canonical data mapping in a real enterprise automation initiative?",
+    "preferred_answer": "Validate at boundaries, normalize dates and identifiers, preserve source values for audit and version mappings when contracts evolve.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "JSON Schema Specification",
+    "resolution_url": "https://json-schema.org/specification",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q143",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Schema validation and canonical data mapping?",
+    "preferred_answer": "A schema confirms shape and constraints; business validation confirms that values and combinations are permitted by domain rules.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "JSON Schema Specification",
+    "resolution_url": "https://json-schema.org/specification",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q144",
+    "role_slug": "automation-rpa",
+    "domain": "Data, APIs, Webhooks and Integration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Schema validation and canonical data mapping. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Implicit mappings and silent defaults can corrupt data. Reject or quarantine unknown fields and make conversion failures visible.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "JSON Schema Specification",
+    "resolution_url": "https://json-schema.org/specification",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q145",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Business and system exception handling, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Business exceptions represent expected rule outcomes, while system exceptions represent technical failures; each needs different routing, retry and reporting.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robotic Enterprise Framework",
+    "resolution_url": "https://docs.uipath.com/studio/standalone/latest/user-guide/robotic-enterprise-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q146",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Business and system exception handling in a real enterprise automation initiative?",
+    "preferred_answer": "Classify errors near the source, attach transaction context, send business exceptions to resolution queues and apply bounded retries only to transient system failures.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robotic Enterprise Framework",
+    "resolution_url": "https://docs.uipath.com/studio/standalone/latest/user-guide/robotic-enterprise-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q147",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Business and system exception handling?",
+    "preferred_answer": "A validation failure is usually deterministic; a network timeout may be transient. Treating them identically wastes capacity or hides data problems.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robotic Enterprise Framework",
+    "resolution_url": "https://docs.uipath.com/studio/standalone/latest/user-guide/robotic-enterprise-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q148",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Business and system exception handling. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "A generic catch block that marks everything failed prevents useful analytics and recovery. Preserve error type and original evidence.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Robotic Enterprise Framework",
+    "resolution_url": "https://docs.uipath.com/studio/standalone/latest/user-guide/robotic-enterprise-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q149",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Idempotency and duplicate prevention, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "An idempotent automation produces the same intended business state when the same request is processed more than once.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q150",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Idempotency and duplicate prevention in a real enterprise automation initiative?",
+    "preferred_answer": "Use natural or generated idempotency keys, check existing outcomes, make writes conditional and store completion state before acknowledging triggers.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q151",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Idempotency and duplicate prevention?",
+    "preferred_answer": "Deduplication detects repeated inputs; idempotency ensures repeating an operation does not create additional side effects.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q152",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Idempotency and duplicate prevention. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Relying only on queue status is insufficient when a crash occurs after an external write but before status update. Reconcile external state on recovery.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q153",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Retry, backoff, circuit breaking and dead-letter handling, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Resilience controls repeat transient operations with limits and delay, stops calls to a failing dependency, and isolates unrecoverable items for investigation.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Error handling",
+    "resolution_url": "https://docs.n8n.io/flow-logic/error-handling/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q154",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Retry, backoff, circuit breaking and dead-letter handling in a real enterprise automation initiative?",
+    "preferred_answer": "Define retryable conditions, exponential backoff with jitter, maximum attempts, circuit-open behavior and a dead-letter or manual-resolution queue.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Error handling",
+    "resolution_url": "https://docs.n8n.io/flow-logic/error-handling/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q155",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Retry, backoff, circuit breaking and dead-letter handling?",
+    "preferred_answer": "A retry is item-level repetition; a circuit breaker protects the whole dependency by temporarily preventing calls after repeated failures.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Error handling",
+    "resolution_url": "https://docs.n8n.io/flow-logic/error-handling/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q156",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Retry, backoff, circuit breaking and dead-letter handling. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Aggressive synchronized retries can create a retry storm. Apply jitter, capacity limits and health-based suppression.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Error handling",
+    "resolution_url": "https://docs.n8n.io/flow-logic/error-handling/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q157",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Compensation and rollback in distributed automation, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Compensation performs an explicit business reversal when a multi-system workflow cannot use one atomic transaction.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q158",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Compensation and rollback in distributed automation in a real enterprise automation initiative?",
+    "preferred_answer": "Track completed steps, define reversible actions and irreversible boundaries, execute compensation in reverse order where safe and escalate uncertain state.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q159",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Compensation and rollback in distributed automation?",
+    "preferred_answer": "Technical rollback restores a local transaction; compensation invokes new business actions such as canceling an order or issuing a reversal.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q160",
+    "role_slug": "automation-rpa",
+    "domain": "Error Handling, Resilience and Idempotency",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Compensation and rollback in distributed automation. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Assuming every step is reversible can worsen damage. Document legal and financial constraints and require human review for ambiguous outcomes.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q161",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Least privilege and segregation of duties, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Least privilege grants only required permissions for the necessary duration, while segregation of duties prevents one identity from controlling conflicting development, approval and production actions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Credentials and lockers in the Credential Vault",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/bots/credentials/cloud-credentials-overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q162",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Least privilege and segregation of duties in a real enterprise automation initiative?",
+    "preferred_answer": "Use dedicated robot accounts, role-based access, separate environments, approval gates and periodic access review for bots, makers and administrators.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Credentials and lockers in the Credential Vault",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/bots/credentials/cloud-credentials-overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q163",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Least privilege and segregation of duties?",
+    "preferred_answer": "Least privilege limits scope; segregation of duties separates incompatible responsibilities. Both reduce fraud and accidental impact.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Credentials and lockers in the Credential Vault",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/bots/credentials/cloud-credentials-overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q164",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Least privilege and segregation of duties. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Giving a bot broad administrator access to simplify development creates a large blast radius. Test with production-equivalent restricted roles.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Credentials and lockers in the Credential Vault",
+    "resolution_url": "https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/control-room/bots/credentials/cloud-credentials-overview.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q165",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Secrets management and credential rotation, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Secrets management stores, distributes, rotates and audits credentials without exposing them in source, logs, screenshots or workflow payloads.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Secrets Management Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q166",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Secrets management and credential rotation in a real enterprise automation initiative?",
+    "preferred_answer": "Use platform vaults, references and managed identities; rotate on schedule and incident; restrict read access; redact diagnostic artifacts.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Secrets Management Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q167",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Secrets management and credential rotation?",
+    "preferred_answer": "Configuration values may be non-sensitive and versioned, while secrets require protected storage, controlled retrieval and masking.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Secrets Management Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q168",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Secrets management and credential rotation. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Copying a credential into an ordinary variable or email can create durable leakage. Minimize secret exposure and prohibit logging sensitive values.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Secrets Management Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q169",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Data minimization, retention and privacy by design, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Privacy-aware automation processes only necessary data, for a defined purpose and retention period, with transparent access and deletion controls.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Logging Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q170",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Data minimization, retention and privacy by design in a real enterprise automation initiative?",
+    "preferred_answer": "Map personal data through triggers, logs, queues and screenshots; mask or tokenize where possible; configure retention and support subject requests.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Logging Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q171",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Data minimization, retention and privacy by design?",
+    "preferred_answer": "Data minimization limits collection and use; retention controls how long data and execution evidence remain available.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Logging Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q172",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Data minimization, retention and privacy by design. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Verbose logging can turn an operational tool into a shadow personal-data store. Design logging fields and retention before production.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Logging Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q173",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Connector and webhook security boundaries, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Connectors and webhooks cross trust boundaries and must enforce authentication, authorization, validation, network controls and approved data movement.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Data policies",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q174",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Connector and webhook security boundaries in a real enterprise automation initiative?",
+    "preferred_answer": "Inventory endpoints, verify webhook signatures, restrict connectors with policy, validate schemas, control egress and review third-party permissions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Data policies",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q175",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Connector and webhook security boundaries?",
+    "preferred_answer": "A connector simplifies integration but does not guarantee that its use is compliant with organizational data policy.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Data policies",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q176",
+    "role_slug": "automation-rpa",
+    "domain": "Security, Credentials, Privacy and Compliance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Connector and webhook security boundaries. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "A maker can unintentionally move sensitive data to a consumer service through a convenient connector. Apply DLP and monitor high-risk flows.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Data policies",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q177",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Layered automation testing strategy, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Automation testing should cover reusable components, process logic, integrations, UI behavior, end-to-end outcomes and operational recovery at appropriate layers.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Test Suite documentation",
+    "resolution_url": "https://docs.uipath.com/test-suite/automation-cloud/latest/user-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q178",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Layered automation testing strategy in a real enterprise automation initiative?",
+    "preferred_answer": "Create deterministic test data, mock or sandbox external systems, test negative paths and evaluate both technical success and business postconditions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Test Suite documentation",
+    "resolution_url": "https://docs.uipath.com/test-suite/automation-cloud/latest/user-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q179",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Layered automation testing strategy?",
+    "preferred_answer": "Unit or component tests isolate logic; integration tests verify boundaries; end-to-end tests validate the complete flow but are slower and more fragile.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Test Suite documentation",
+    "resolution_url": "https://docs.uipath.com/test-suite/automation-cloud/latest/user-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q180",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Layered automation testing strategy. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Testing only the recorded happy path misses data and environment variation. Build a risk-based suite including retries, timeouts and duplicate events.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Test Suite documentation",
+    "resolution_url": "https://docs.uipath.com/test-suite/automation-cloud/latest/user-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q181",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Test data and environment management, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Reliable automation tests use controlled data and environments that represent production rules without exposing real sensitive information.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Test Studio",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/test-studio",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q182",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Test data and environment management in a real enterprise automation initiative?",
+    "preferred_answer": "Create synthetic records with unique keys, reset state after runs, manage environment variables and document dependencies and unavailable test cases.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Test Studio",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/test-studio",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q183",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Test data and environment management?",
+    "preferred_answer": "A test environment provides system configuration; test data represents business conditions. Both must be versioned or reproducible enough to explain failures.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Test Studio",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/test-studio",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q184",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Test data and environment management. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Shared mutable test data causes intermittent failures and misleading results. Isolate runs and clean up through APIs or controlled fixtures.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Test Studio",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/test-studio",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q185",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Logging, screenshots and correlation identifiers, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Diagnostic evidence should connect each execution and business transaction across nodes, bots and systems without exposing unnecessary sensitive data.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Logging Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q186",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Logging, screenshots and correlation identifiers in a real enterprise automation initiative?",
+    "preferred_answer": "Generate correlation IDs at ingress, log structured milestones and outcomes, capture screenshots only on controlled failures and link child workflow IDs.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Logging Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q187",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Logging, screenshots and correlation identifiers?",
+    "preferred_answer": "Technical logs explain execution; business audit records prove who or what changed a business object and why.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Logging Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q188",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Logging, screenshots and correlation identifiers. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Logging every variable increases cost and leakage while still missing context. Define a minimal event schema and searchable identifiers.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Logging Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q189",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Flaky automation diagnosis, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Flaky automation passes and fails without a meaningful code or data change, commonly due to timing, unstable selectors, shared state, environment drift or nondeterministic services.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "UI Automation Modern",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/about-the-ui-automation-next-activities-pack",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q190",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Flaky automation diagnosis in a real enterprise automation initiative?",
+    "preferred_answer": "Reproduce with repeated controlled runs, classify failure signatures, replace fixed delays with state waits and remove shared or hidden dependencies.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "UI Automation Modern",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/about-the-ui-automation-next-activities-pack",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q191",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Flaky automation diagnosis?",
+    "preferred_answer": "A product defect is consistent under defined conditions; a flaky test or bot has unreliable detection or environment behavior that obscures the true state.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "UI Automation Modern",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/about-the-ui-automation-next-activities-pack",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q192",
+    "role_slug": "automation-rpa",
+    "domain": "Testing, Debugging and Automation Quality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Flaky automation diagnosis. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Adding larger sleeps can reduce symptoms but increases runtime and leaves the race condition. Wait for verifiable application state.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "UI Automation Modern",
+    "resolution_url": "https://docs.uipath.com/activities/other/latest/ui-automation/about-the-ui-automation-next-activities-pack",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q193",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Queues, transactions and item lifecycle, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Queues decouple work intake from processing and track each transaction through states such as new, in progress, successful, business-exception or application-exception.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Queues and Transactions",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-queues-and-transactions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q194",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Queues, transactions and item lifecycle in a real enterprise automation initiative?",
+    "preferred_answer": "Define item schemas, unique references, priorities, deadlines, retry policies and ownership for manual resolution and reconciliation.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Queues and Transactions",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-queues-and-transactions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q195",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Queues, transactions and item lifecycle?",
+    "preferred_answer": "A scheduler starts work at a time; a queue holds independent work items and supports scalable consumers and item-level outcomes.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Queues and Transactions",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-queues-and-transactions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q196",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Queues, transactions and item lifecycle. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Using one giant batch file removes item-level recovery and visibility. Split work into independently traceable transactions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Queues and Transactions",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-queues-and-transactions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q197",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Assets, environment configuration and reusable components, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Orchestrator assets and environment configuration provide centralized values or credentials, while reusable libraries package shared automation capabilities.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Assets",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-assets",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q198",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Assets, environment configuration and reusable components in a real enterprise automation initiative?",
+    "preferred_answer": "Separate configuration by environment, version libraries, define backward compatibility and avoid storing mutable business state in configuration assets.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Assets",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-assets",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q199",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Assets, environment configuration and reusable components?",
+    "preferred_answer": "An asset is runtime configuration; a library is versioned executable logic. Mixing them creates deployment confusion.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Assets",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-assets",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q200",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Assets, environment configuration and reusable components. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Changing a shared asset without impact analysis can break many processes simultaneously. Use ownership, change control and validation.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Assets",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-assets",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q201",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Triggers, schedules and capacity management, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Triggers start processes from time, queue or event conditions, while capacity management ensures machines and licenses can meet concurrency and service targets.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Triggers",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-triggers",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q202",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Triggers, schedules and capacity management in a real enterprise automation initiative?",
+    "preferred_answer": "Model arrival rates and duration, prevent overlapping runs, set maintenance windows and monitor queue age, utilization and missed triggers.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Triggers",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-triggers",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q203",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Triggers, schedules and capacity management?",
+    "preferred_answer": "A trigger defines when work starts; an SLA defines when business work must complete. A frequent trigger does not guarantee sufficient capacity.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Triggers",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-triggers",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q204",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Triggers, schedules and capacity management. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Scheduling every process at the same hour creates contention and delayed work. Stagger loads and prioritize critical queues.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "About Triggers",
+    "resolution_url": "https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-triggers",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q205",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Operational monitoring and support runbooks, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Production automation operations require health, throughput, failure, backlog and business-outcome monitoring plus runbooks for diagnosis, recovery and escalation.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "All executions",
+    "resolution_url": "https://docs.n8n.io/workflows/executions/all-executions/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q206",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Operational monitoring and support runbooks in a real enterprise automation initiative?",
+    "preferred_answer": "Define alerts with actionable thresholds, dashboards by service, known-error steps, rollback or disable controls and clear process-owner communications.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "All executions",
+    "resolution_url": "https://docs.n8n.io/workflows/executions/all-executions/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q207",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Operational monitoring and support runbooks?",
+    "preferred_answer": "Monitoring detects and displays conditions; observability provides enough evidence to explain internal state and diagnose unknown failure modes.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "All executions",
+    "resolution_url": "https://docs.n8n.io/workflows/executions/all-executions/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q208",
+    "role_slug": "automation-rpa",
+    "domain": "Orchestration, Queues and Production Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Operational monitoring and support runbooks. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Alerting on every failed item overwhelms support. Aggregate known business exceptions and page only on service-impacting conditions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "All executions",
+    "resolution_url": "https://docs.n8n.io/workflows/executions/all-executions/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q209",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Environment strategy and lifecycle promotion, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "A governed automation lifecycle separates development, test, acceptance and production, promoting versioned artifacts and configuration through controlled stages.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Application lifecycle management with Microsoft Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/overview-alm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q210",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Environment strategy and lifecycle promotion in a real enterprise automation initiative?",
+    "preferred_answer": "Define environment purpose, access, data classification, deployment approvals, rollback and emergency change procedures for each platform.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Application lifecycle management with Microsoft Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/overview-alm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q211",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Environment strategy and lifecycle promotion?",
+    "preferred_answer": "Copying a workflow manually is not ALM; ALM manages requirements, versions, dependencies, testing, deployment, support and governance.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Application lifecycle management with Microsoft Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/overview-alm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q212",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Environment strategy and lifecycle promotion. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Direct production editing creates drift and weak rollback. Require source or package history and deploy the tested artifact.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Application lifecycle management with Microsoft Power Platform",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/alm/overview-alm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q213",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Version control for low-code and automation assets, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Version control records changes and supports review and restoration, using platform-native history, exported definitions or source-control representations depending on the tool.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Version control in Power Automate for desktop",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/desktop-flows/version-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q214",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Version control for low-code and automation assets in a real enterprise automation initiative?",
+    "preferred_answer": "Store packages or solution source with meaningful commits, protect branches, review generated diffs carefully and tag production releases.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Version control in Power Automate for desktop",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/desktop-flows/version-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q215",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Version control for low-code and automation assets?",
+    "preferred_answer": "A platform version history may support restore, while Git enables collaboration, branching and automated delivery; they are complementary where supported.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Version control in Power Automate for desktop",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/desktop-flows/version-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q216",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Version control for low-code and automation assets. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Exporting sensitive connection details or credentials into a repository creates risk. Keep secret references and environment values separate.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Version control in Power Automate for desktop",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/desktop-flows/version-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q217",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Automation Center of Excellence operating model, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "A CoE defines standards, platform administration, intake, architecture, reusable components, enablement, risk controls and benefit tracking while supporting federated delivery.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q218",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Automation Center of Excellence operating model in a real enterprise automation initiative?",
+    "preferred_answer": "Clarify central versus business-unit responsibilities, establish maker tiers, publish guardrails and measure adoption, quality, support cost and realized outcomes.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q219",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Automation Center of Excellence operating model?",
+    "preferred_answer": "A centralized factory builds most automations; a federated CoE enables distributed makers within shared governance. Many organizations use a hybrid.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q220",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Automation Center of Excellence operating model. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "A CoE focused only on gatekeeping drives shadow automation. Pair controls with training, templates, office hours and fast review paths.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q221",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is CI/CD and automated quality gates, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "CI/CD validates and promotes automation or low-code artifacts through repeatable pipelines with static analysis, tests, dependency checks, approvals and deployment evidence.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q222",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply CI/CD and automated quality gates in a real enterprise automation initiative?",
+    "preferred_answer": "Build once where possible, scan and test, inject environment configuration during deployment, require protected production approval and keep rollback artifacts.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q223",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing CI/CD and automated quality gates?",
+    "preferred_answer": "Continuous integration validates frequent changes; continuous delivery keeps changes releasable; continuous deployment releases automatically after gates.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q224",
+    "role_slug": "automation-rpa",
+    "domain": "ALM, CI/CD, Governance and Center of Excellence",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with CI/CD and automated quality gates. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Automating deployment without automated validation only accelerates defects. Start with packaging, dependency and smoke-test gates.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q225",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Intelligent document processing pipeline, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "IDP combines ingestion, classification, extraction, validation and export to convert varied documents into structured data with confidence and audit evidence.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Document Understanding",
+    "resolution_url": "https://docs.uipath.com/document-understanding/automation-cloud/latest/user-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q226",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Intelligent document processing pipeline in a real enterprise automation initiative?",
+    "preferred_answer": "Define document types and fields, measure field-level accuracy, route low-confidence or policy-sensitive cases to reviewers and monitor drift.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Document Understanding",
+    "resolution_url": "https://docs.uipath.com/document-understanding/automation-cloud/latest/user-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q227",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Intelligent document processing pipeline?",
+    "preferred_answer": "OCR converts images to text; document understanding interprets document type, fields and relationships. OCR alone is not an end-to-end IDP solution.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Document Understanding",
+    "resolution_url": "https://docs.uipath.com/document-understanding/automation-cloud/latest/user-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q228",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Intelligent document processing pipeline. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Using one confidence threshold for every field ignores business risk. Set thresholds by field criticality and downstream control.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Document Understanding",
+    "resolution_url": "https://docs.uipath.com/document-understanding/automation-cloud/latest/user-guide/introduction",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q229",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Human validation and confidence thresholds, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Confidence-based validation routes uncertain model output to humans while allowing reliable low-risk cases to proceed automatically.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "AI Builder documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/ai-builder/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q230",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Human validation and confidence thresholds in a real enterprise automation initiative?",
+    "preferred_answer": "Calibrate thresholds on representative data, show source context to reviewers, capture corrections and prevent unreviewed output from triggering irreversible actions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "AI Builder documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/ai-builder/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q231",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Human validation and confidence thresholds?",
+    "preferred_answer": "Model confidence is an internal estimate, not guaranteed correctness; business validation checks domain consistency and may override confidence.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "AI Builder documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/ai-builder/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q232",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Human validation and confidence thresholds. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Auto-approving high-confidence but high-impact output can create severe errors. Combine confidence, business rules and risk class.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "AI Builder documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/ai-builder/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q233",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Generative AI in workflow automation, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Generative AI can classify, summarize, draft or transform unstructured content, but its outputs are probabilistic and require constraints, validation and appropriate human oversight.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q234",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Generative AI in workflow automation in a real enterprise automation initiative?",
+    "preferred_answer": "Use structured prompts and schemas, ground in approved data, restrict tools, validate outputs, log model and prompt versions and define fallback behavior.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q235",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Generative AI in workflow automation?",
+    "preferred_answer": "Deterministic automation follows explicit rules; generative AI produces variable outputs from learned patterns. Hybrid designs use deterministic controls around AI.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q236",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Generative AI in workflow automation. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Allowing model text to directly execute privileged actions invites hallucination and prompt-injection risk. Require allow-listed actions and validation.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q237",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is AI automation governance and monitoring, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "AI-enabled automation governance covers intended use, data, model risk, human roles, testing, transparency, security and continuous monitoring.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q238",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply AI automation governance and monitoring in a real enterprise automation initiative?",
+    "preferred_answer": "Create an AI risk assessment, document limitations, test harmful and edge cases, monitor quality and bias, and define suspension and incident response.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q239",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing AI automation governance and monitoring?",
+    "preferred_answer": "Model performance metrics measure output behavior; process KPIs measure whether the complete automated service creates acceptable business outcomes.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q240",
+    "role_slug": "automation-rpa",
+    "domain": "AI, Document Automation and Human Review",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with AI automation governance and monitoring. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "A pilot accuracy number can hide drift and subgroup failures. Monitor production distributions and exception patterns over time.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q241",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Benefits realization and automation KPIs, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Benefits realization verifies that deployed automation produces intended capacity, quality, speed, risk or experience outcomes after adoption and operating costs.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q242",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Benefits realization and automation KPIs in a real enterprise automation initiative?",
+    "preferred_answer": "Set baselines and owners before build, track volume, straight-through rate, exception rate, cycle time and realized financial or service value.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q243",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Benefits realization and automation KPIs?",
+    "preferred_answer": "Technical success rate shows executions completed; straight-through processing shows business cases completed without human intervention.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q244",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Benefits realization and automation KPIs. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Reporting bot hours saved without validating actual demand or redeployment creates vanity benefits. Tie metrics to business outcomes and finance rules.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q245",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Stakeholder and process-owner accountability, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Sustainable automation assigns a process owner for rules and outcomes, a technical owner for platform and code, and operational owners for support and exceptions.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q246",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Stakeholder and process-owner accountability in a real enterprise automation initiative?",
+    "preferred_answer": "Create a RACI, define approval and change responsibilities, agree service levels and require owners to maintain documentation and training.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q247",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Stakeholder and process-owner accountability?",
+    "preferred_answer": "The automation team owns implementation quality, but it should not silently become owner of the underlying business policy.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q248",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Stakeholder and process-owner accountability. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "An orphaned bot may keep running after the process changes. Review ownership and relevance at scheduled intervals.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Business Process Model and Notation (BPMN) 2.0.2",
+    "resolution_url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q249",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is User adoption and operating-model change, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "Automation adoption changes tasks, controls, roles and escalation paths, requiring communication, training and feedback rather than only technical deployment.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q250",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply User adoption and operating-model change in a real enterprise automation initiative?",
+    "preferred_answer": "Map impacted roles, involve users in design, explain what changes and what remains human, train exception handling and monitor workarounds after launch.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q251",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing User adoption and operating-model change?",
+    "preferred_answer": "Training teaches the new procedure; change management addresses readiness, incentives, identity, communication and reinforcement.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q252",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with User adoption and operating-model change. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Ignoring user concerns can drive manual shadow processes that invalidate benefits and controls. Measure adoption and respond to feedback.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Microsoft Power Platform Center of Excellence Starter Kit",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q253",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Automation consulting discovery and recommendation, and why does it matter in automation, RPA or low-code delivery?",
+    "preferred_answer": "A strong consultant frames the business problem, gathers evidence, challenges assumptions and recommends a proportionate solution with risks, roadmap and measurable outcomes.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Process Mining overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/process-mining-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q254",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Automation consulting discovery and recommendation in a real enterprise automation initiative?",
+    "preferred_answer": "Use structured discovery, process and data analysis, architecture options, proof of capability and a decision record that includes non-automation alternatives.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Process Mining overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/process-mining-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q255",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What important distinction should an interviewer hear when discussing Automation consulting discovery and recommendation?",
+    "preferred_answer": "A requirements document captures requested needs; a consulting recommendation evaluates whether those needs and the proposed approach solve the underlying problem.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Process Mining overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/process-mining-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "ARLC-Q256",
+    "role_slug": "automation-rpa",
+    "domain": "Business Value, Change Management and Consulting",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A team is struggling with Automation consulting discovery and recommendation. What failure pattern should you look for, and how would you respond?",
+    "preferred_answer": "Promising a platform before understanding process and constraints turns discovery into sales confirmation. Keep options open until evidence supports a choice.",
+    "evaluation_points": [
+      "Explains the relevant automation mechanism accurately and in context",
+      "Uses a structured approach with measurable validation and business postconditions",
+      "Considers security, resilience, governance, exception paths and human impact",
+      "Communicates trade-offs, ownership, support and rollback clearly"
+    ],
+    "resolution_title": "Process Mining overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-automate/process-mining-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];

@@ -334,7 +334,7 @@ export const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: strin
 'automation-rpa': {
     label: 'Automation, RPA & Low-Code / No-Code',
     icon: '🤖',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering UiPath, Power Automate, Automation Anywhere, n8n/Zapier/Make, Webhooks, Error Resiliency, CoE Governance & Document AI'
   },
 'tech-writing': {
     label: 'Technical Writing & Knowledge Management',
