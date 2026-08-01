@@ -431,7 +431,7 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
 'systems-infra': {
     label: 'System Administration & Infrastructure',
     icon: '🖥️',
-    description: 'Building up interview question bank for this domain...'
+    description: '168 Intensive Questions covering Operating Models, Linux/Windows Administration, AD DS, High Availability, Virtualization, Storage & Security'
   },
 'networking': {
     label: 'Networking & NOC Operations',
