@@ -43239,5 +43239,4626 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "DA-Q001",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate descriptive, diagnostic, predictive, and prescriptive analytics.",
+    "preferred_answer": "Descriptive analytics explains what happened, diagnostic analytics investigates why it happened, predictive analytics estimates what may happen, and prescriptive analytics recommends actions under stated objectives and constraints. A strong answer also notes that the categories can overlap within one decision workflow.",
+    "evaluation_points": [
+      "Focus on descriptive",
+      "Focus on diagnostic",
+      "Focus on predictive",
+      "Focus on prescriptive"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q002",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do you convert a vague request such as 'improve customer retention' into an analytical problem?",
+    "preferred_answer": "Clarify the decision to be made, target population, time horizon, definition of retention, controllable levers, constraints, and success metric. Translate the request into testable questions, identify required data, record assumptions, and agree on what action will follow each possible result.",
+    "evaluation_points": [
+      "Focus on business-question",
+      "Focus on scope"
+    ],
+    "resolution_title": "IIBA - BABOK Guide KnowledgeHub",
+    "resolution_url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q003",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the unit of analysis, and why must it be defined before querying data?",
+    "preferred_answer": "The unit of analysis is the entity represented by one analytical observation, such as one customer, order, session, or customer-month. Defining it prevents accidental duplication, invalid averages, and mismatched joins because every metric and feature must be interpreted at a known grain.",
+    "evaluation_points": [
+      "Focus on grain",
+      "Focus on entity"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q004",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between a population and a sample?",
+    "preferred_answer": "A population is the complete set about which a conclusion is intended; a sample is the observed subset used for analysis. The sample should be selected and evaluated so that sampling error and selection bias are understood before generalising results.",
+    "evaluation_points": [
+      "Focus on population",
+      "Focus on sample"
+    ],
+    "resolution_title": "NIST/SEMATECH - Confidence Intervals",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc14.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q005",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate a dimension from a measure in BI.",
+    "preferred_answer": "Dimensions describe and group observations, such as date, region, customer, or product. Measures are quantitative values aggregated in context, such as revenue, quantity, margin, or distinct customers. A field can behave differently depending on the model and analytical question.",
+    "evaluation_points": [
+      "Focus on dimension",
+      "Focus on measure"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI modeling",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q006",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the difference between leading and lagging indicators?",
+    "preferred_answer": "A lagging indicator records an outcome after it occurs, such as monthly churn. A leading indicator is an earlier signal associated with that outcome, such as declining usage. Leading indicators are useful only when their relationship, timing, and actionability are validated.",
+    "evaluation_points": [
+      "Focus on leading-indicator",
+      "Focus on lagging-indicator"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q007",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why does correlation not establish causation?",
+    "preferred_answer": "Correlation can arise from confounding, reverse causality, selection effects, common trends, or chance. Causal claims require a credible identification strategy such as randomisation or a justified quasi-experimental design, plus assumptions and sensitivity checks.",
+    "evaluation_points": [
+      "Focus on correlation",
+      "Focus on causation"
+    ],
+    "resolution_title": "NIST/SEMATECH - Hypothesis Testing",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc1.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q008",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a baseline, and how would you choose one?",
+    "preferred_answer": "A baseline is the reference against which change is assessed. Choose it to match the decision and seasonality: a prior comparable period, control group, forecast, target, or established benchmark. Document any differences that make the comparison imperfect.",
+    "evaluation_points": [
+      "Focus on baseline",
+      "Focus on comparison"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q009",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why should an analyst examine segments instead of only overall averages?",
+    "preferred_answer": "Overall averages can hide materially different behaviours and even reverse within subgroups. Segment by decision-relevant dimensions, confirm adequate sample sizes, avoid uncontrolled slicing, and distinguish exploratory findings from pre-specified comparisons.",
+    "evaluation_points": [
+      "Focus on segmentation",
+      "Focus on heterogeneity"
+    ],
+    "resolution_title": "NIST/SEMATECH - Hypothesis Testing",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc1.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q010",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you define and analyse a conversion funnel?",
+    "preferred_answer": "Define ordered, observable events, eligibility rules, identity logic, time windows, and mutually consistent denominators. Calculate stage conversion and drop-off, segment results, inspect latency between stages, and validate event completeness before recommending interventions.",
+    "evaluation_points": [
+      "Focus on funnel",
+      "Focus on conversion"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q011",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is cohort analysis, and when is it preferable to a calendar-period trend?",
+    "preferred_answer": "Cohort analysis groups entities by a shared starting event or attribute, such as acquisition month, and follows them over comparable elapsed time. It separates lifecycle effects from changes in the mix of newly added users.",
+    "evaluation_points": [
+      "Focus on cohort",
+      "Focus on retention"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q012",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes a useful north-star metric?",
+    "preferred_answer": "It should reflect recurring customer value, connect to sustainable business outcomes, be understandable and measurable, and respond to meaningful product changes. It needs guardrail metrics so teams cannot improve it by damaging quality, trust, cost, or another stakeholder outcome.",
+    "evaluation_points": [
+      "Focus on north-star-metric",
+      "Focus on guardrail"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q013",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should assumptions and analytical limitations be communicated?",
+    "preferred_answer": "State the assumption, why it was necessary, evidence supporting it, likely direction and magnitude of risk, tests performed, and what would change the conclusion. Separate known facts, estimates, and unresolved uncertainty rather than hiding caveats in footnotes.",
+    "evaluation_points": [
+      "Focus on assumptions",
+      "Focus on limitations"
+    ],
+    "resolution_title": "IIBA - BABOK Guide KnowledgeHub",
+    "resolution_url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q014",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you choose a decision threshold for an analytical score?",
+    "preferred_answer": "Evaluate the costs and benefits of false positives, false negatives, review capacity, prevalence, fairness, and operational constraints. Compare candidate thresholds on an appropriate validation set and document the trade-off rather than choosing a threshold solely for a statistical metric.",
+    "evaluation_points": [
+      "Focus on threshold",
+      "Focus on cost-benefit"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q015",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes an analysis reproducible?",
+    "preferred_answer": "Versioned code or queries, fixed source references, documented transformations, controlled parameters, preserved environments where relevant, deterministic steps or recorded random seeds, data-quality checks, and a clear path from source to output.",
+    "evaluation_points": [
+      "Focus on reproducibility",
+      "Focus on lineage"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q016",
+    "role_slug": "data-analytics",
+    "domain": "Analytics Foundations and Problem Framing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should a decision-ready analytical recommendation contain?",
+    "preferred_answer": "Lead with the decision and expected impact, then present the evidence, uncertainty, alternatives, assumptions, implementation owner, measurable next step, and monitoring plan. The recommendation should be proportional to the strength of the evidence.",
+    "evaluation_points": [
+      "Focus on recommendation",
+      "Focus on decision"
+    ],
+    "resolution_title": "IIBA - BABOK Guide KnowledgeHub",
+    "resolution_url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q017",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do you identify the right stakeholders for an analytics initiative?",
+    "preferred_answer": "Map decision owners, data owners, subject-matter experts, producers, consumers, affected operational teams, and governance or privacy roles. Clarify who approves definitions, who acts on the result, and whose incentives or risks may be overlooked.",
+    "evaluation_points": [
+      "Focus on stakeholders",
+      "Focus on requirements"
+    ],
+    "resolution_title": "IIBA - BABOK Guide KnowledgeHub",
+    "resolution_url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q018",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate business, stakeholder, solution, and data requirements.",
+    "preferred_answer": "Business requirements describe desired outcomes; stakeholder requirements describe stakeholder needs; solution requirements describe capabilities and qualities; data requirements define needed entities, fields, grain, history, quality, access, and lineage. Trace them so technical work remains connected to the decision.",
+    "evaluation_points": [
+      "Focus on business-requirement",
+      "Focus on data-requirement"
+    ],
+    "resolution_title": "IIBA - BABOK Guide KnowledgeHub",
+    "resolution_url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q019",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between a metric and a KPI?",
+    "preferred_answer": "A metric is any quantitative measure. A KPI is a deliberately selected metric tied to a strategic or operational objective, with an owner, target, time horizon, interpretation, and action. Every KPI is a metric, but not every metric deserves KPI status.",
+    "evaluation_points": [
+      "Focus on kpi",
+      "Focus on metric"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q020",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What fields belong in a formal metric definition?",
+    "preferred_answer": "Include business meaning, formula, numerator and denominator, grain, population, filters, exclusions, time basis, currency or units, source, refresh cadence, owner, quality rules, target, and examples. Also state how changes are governed and versioned.",
+    "evaluation_points": [
+      "Focus on metric-definition",
+      "Focus on governance"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q021",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a vanity metric, and how would you challenge one?",
+    "preferred_answer": "A vanity metric looks favourable but does not reliably guide a decision or connect to value, such as raw registrations without activation or retention. Ask what action it changes, what denominator or comparison is missing, and whether it can improve while the real outcome worsens.",
+    "evaluation_points": [
+      "Focus on vanity-metric",
+      "Focus on actionability"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q022",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do OKRs and KPIs relate?",
+    "preferred_answer": "An objective states a qualitative direction; key results define measurable outcomes for that objective. KPIs monitor ongoing health or performance. A KPI may be used as a key result, but operational KPIs often continue beyond one OKR cycle.",
+    "evaluation_points": [
+      "Focus on okr",
+      "Focus on kpi"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q023",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How would you write acceptance criteria for a dashboard?",
+    "preferred_answer": "Specify intended users and decisions, metric definitions, filters, default state, refresh and latency, row-level access, visual behaviour, export needs, performance, accessibility, reconciliation tolerance, and sign-off evidence. Use examples for ambiguous interactions.",
+    "evaluation_points": [
+      "Focus on acceptance-criteria",
+      "Focus on dashboard"
+    ],
+    "resolution_title": "IIBA - BABOK Guide KnowledgeHub",
+    "resolution_url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q024",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "A stakeholder keeps adding dashboard requests. How do you control scope without blocking value?",
+    "preferred_answer": "Return to the decision and priority outcomes, classify requests as essential, deferred, or exploratory, estimate impact, expose trade-offs, and agree on a minimum useful release. Record a backlog and change-control path rather than silently absorbing work.",
+    "evaluation_points": [
+      "Focus on scope",
+      "Focus on change-control"
+    ],
+    "resolution_title": "IIBA - BABOK Guide KnowledgeHub",
+    "resolution_url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q025",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "Sales and Finance define revenue differently. What should the analyst do?",
+    "preferred_answer": "Do not average or choose privately. Document both definitions, purposes, source systems, timing, adjustments, and owners; reconcile to authoritative records; facilitate a governed definition or clearly labelled variants; and prevent ambiguous reuse in shared reports.",
+    "evaluation_points": [
+      "Focus on metric-conflict",
+      "Focus on stakeholder"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q026",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How can service-level concepts be applied to an analytics product?",
+    "preferred_answer": "Define measurable expectations such as refresh completion, freshness, availability, query response, defect response, or data-quality thresholds. An internal SLO is a target used to operate the product; an SLA is a formal commitment with specified consequences or governance.",
+    "evaluation_points": [
+      "Focus on sla",
+      "Focus on slo",
+      "Focus on data-product"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q027",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is requirements traceability useful in BI delivery?",
+    "preferred_answer": "It connects business outcomes and stakeholder needs to data elements, transformations, tests, visuals, and acceptance evidence. Traceability helps assess change impact, identify uncovered requirements, explain outputs, and retire unused work.",
+    "evaluation_points": [
+      "Focus on traceability",
+      "Focus on lineage"
+    ],
+    "resolution_title": "IIBA - BABOK Guide KnowledgeHub",
+    "resolution_url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q028",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you prioritise analytics requirements?",
+    "preferred_answer": "Compare decision value, urgency, risk reduction, regulatory need, user reach, effort, dependencies, data readiness, and reversibility. Use an agreed method, but preserve judgement and explicitly identify mandatory work and uncertainty.",
+    "evaluation_points": [
+      "Focus on prioritisation",
+      "Focus on value-risk"
+    ],
+    "resolution_title": "IIBA - BABOK Guide KnowledgeHub",
+    "resolution_url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q029",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Write the essential structure of an analytics user story.",
+    "preferred_answer": "State the user or role, the decision or task, the required insight or capability, and the value. Add testable acceptance criteria covering data, definitions, filters, security, refresh, performance, and expected examples; the story format alone is not a complete requirement.",
+    "evaluation_points": [
+      "Focus on user-story",
+      "Focus on analytics"
+    ],
+    "resolution_title": "The Scrum Guide",
+    "resolution_url": "https://scrumguides.org/scrum-guide.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q030",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you measure whether a dashboard is successful?",
+    "preferred_answer": "Combine usage with outcome evidence: active intended users, repeat use, task completion, time saved, decision cycle, reduction in manual work, data trust, support burden, and business effects. Avoid treating page views as proof of decision impact.",
+    "evaluation_points": [
+      "Focus on adoption",
+      "Focus on measurement"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q031",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What questions would you ask in a stakeholder requirements interview?",
+    "preferred_answer": "Ask what decision is being made, current process, users, frequency, consequences of error or delay, definitions, examples, exceptions, comparisons, required detail, action thresholds, data constraints, access rules, and how success will be verified.",
+    "evaluation_points": [
+      "Focus on elicitation",
+      "Focus on interview"
+    ],
+    "resolution_title": "IIBA - BABOK Guide KnowledgeHub",
+    "resolution_url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q032",
+    "role_slug": "data-analytics",
+    "domain": "Business Requirements, Metrics, KPIs, and Stakeholders",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should the same analysis be adapted for an executive and an operational analyst?",
+    "preferred_answer": "Keep the underlying facts consistent but tailor depth and action. Executives need the decision, impact, risk, and options; operational analysts need definitions, segments, exceptions, workflow details, and drill paths. Both need visible uncertainty and provenance.",
+    "evaluation_points": [
+      "Focus on executive",
+      "Focus on communication"
+    ],
+    "resolution_title": "IIBA - BABOK Guide KnowledgeHub",
+    "resolution_url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q033",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Name important data-quality dimensions and explain why a single quality score can mislead.",
+    "preferred_answer": "Common dimensions include accuracy, completeness, consistency, validity, uniqueness, timeliness, and fitness for purpose. A composite score can hide a critical failure in one dimension and depends on arbitrary weighting, so report dimensions and business impact separately.",
+    "evaluation_points": [
+      "Focus on accuracy",
+      "Focus on completeness",
+      "Focus on timeliness"
+    ],
+    "resolution_title": "UK Government Data Quality Framework",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q034",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What checks belong in an initial data profile?",
+    "preferred_answer": "Inspect row counts, schema and types, nulls, distinctness, ranges, quantiles, categorical frequencies, patterns, duplicate keys, referential integrity, date coverage, outliers, and changes by partition or source. Compare findings with expected business rules.",
+    "evaluation_points": [
+      "Focus on profiling",
+      "Focus on distribution"
+    ],
+    "resolution_title": "UK Government Data Quality Framework Guidance",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q035",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you decide what to do with missing values?",
+    "preferred_answer": "First determine meaning and mechanism: truly absent, not applicable, not collected, suppressed, delayed, or extraction failure. Measure patterns and business impact, then choose deletion, explicit category, imputation, model handling, or remediation. Preserve a missingness indicator when informative.",
+    "evaluation_points": [
+      "Focus on missing-data",
+      "Focus on imputation"
+    ],
+    "resolution_title": "UK Government Data Quality Framework",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q036",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do exact duplicates differ from business duplicates?",
+    "preferred_answer": "Exact duplicates match across selected fields. Business duplicates represent the same real entity or event despite differing values, formatting, timestamps, or identifiers. Business deduplication requires a defined key or matching rules, precedence, and auditability.",
+    "evaluation_points": [
+      "Focus on duplicates",
+      "Focus on business-key"
+    ],
+    "resolution_title": "UK Government Data Quality Framework Guidance",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q037",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Should outliers be removed automatically?",
+    "preferred_answer": "No. An outlier may be an error, rare valid event, process change, or valuable signal. Validate units and source, examine context and influence, use robust summaries where appropriate, and document any exclusion rule before drawing conclusions.",
+    "evaluation_points": [
+      "Focus on outlier",
+      "Focus on validation"
+    ],
+    "resolution_title": "NIST/SEMATECH - Hypothesis Testing",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc1.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q038",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a data validity rule?",
+    "preferred_answer": "It tests whether a value conforms to an allowed domain, format, range, relationship, or business condition, such as end date not preceding start date. Passing validity does not prove real-world accuracy.",
+    "evaluation_points": [
+      "Focus on validity",
+      "Focus on constraint"
+    ],
+    "resolution_title": "UK Government Data Quality Framework",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q039",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is referential integrity, and how would you test it analytically?",
+    "preferred_answer": "A foreign key should reference an existing permitted parent key unless null is valid. Test unmatched child keys with an anti-join, quantify the affected rows and measures, inspect timing or slowly changing logic, and agree remediation or quarantine.",
+    "evaluation_points": [
+      "Focus on referential-integrity",
+      "Focus on orphan"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q040",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you reconcile a dashboard total to a source system?",
+    "preferred_answer": "Align definition, grain, filters, timezone, currency, status, and as-of time. Compare row counts and control totals at progressively finer levels, identify the first divergence, trace transformations, and record tolerances and unresolved timing differences.",
+    "evaluation_points": [
+      "Focus on reconciliation",
+      "Focus on control-total"
+    ],
+    "resolution_title": "UK Government Data Quality Framework Guidance",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q041",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate data freshness, pipeline latency, and report refresh time.",
+    "preferred_answer": "Freshness is how current the available data is relative to the real event. Pipeline latency is time from event or source availability to the analytical store. Report refresh time is when the semantic model or visual updates; each can fail independently.",
+    "evaluation_points": [
+      "Focus on freshness",
+      "Focus on latency"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q042",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "How should an analytics pipeline respond to unexpected schema drift?",
+    "preferred_answer": "Detect the change, classify compatible versus breaking, stop or quarantine unsafe data, alert owners, preserve evidence, assess downstream impact, and update contracts, transformations, tests, and documentation through controlled deployment.",
+    "evaluation_points": [
+      "Focus on schema-drift",
+      "Focus on contract"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q043",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is data lineage, and what questions should it answer?",
+    "preferred_answer": "Lineage shows where data originated, how it was transformed, and which assets consume it. It should help identify owners, code and version, dependencies, quality checks, refresh history, and the downstream impact of a source or definition change.",
+    "evaluation_points": [
+      "Focus on lineage",
+      "Focus on impact-analysis"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q044",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you set a data-quality threshold?",
+    "preferred_answer": "Tie it to the decision and harm rather than choosing a convenient percentage. Use historical performance, contractual or regulatory needs, process capability, materiality, segment risk, and remediation cost; specify warning and failure actions.",
+    "evaluation_points": [
+      "Focus on threshold",
+      "Focus on fitness-for-purpose"
+    ],
+    "resolution_title": "UK Government Data Quality Framework",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q045",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When is manual sampling useful in data-quality validation?",
+    "preferred_answer": "Sampling is useful for checking semantic accuracy against documents or source screens when full automated validation is impractical. Define the population, sampling method, size, reviewer instructions, evidence, disagreement handling, and limits of inference.",
+    "evaluation_points": [
+      "Focus on sampling",
+      "Focus on audit"
+    ],
+    "resolution_title": "NIST/SEMATECH - Confidence Intervals",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc14.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q046",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes a data-cleaning process auditable?",
+    "preferred_answer": "Keep raw data immutable, implement explicit versioned transformations, log row and value impacts, preserve rejected records and reason codes, test rules, record approvals, and produce before-and-after quality summaries.",
+    "evaluation_points": [
+      "Focus on cleaning",
+      "Focus on audit-trail"
+    ],
+    "resolution_title": "UK Government Data Quality Framework Guidance",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q047",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should a production data-quality monitor include?",
+    "preferred_answer": "Monitor volume, freshness, schema, key integrity, nulls, distributions, business-rule failures, and critical reconciliations by meaningful segment. Add ownership, severity, suppression rules, run history, escalation, and a link to lineage and recovery instructions.",
+    "evaluation_points": [
+      "Focus on monitoring",
+      "Focus on anomaly"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q048",
+    "role_slug": "data-analytics",
+    "domain": "Data Quality, Profiling, Cleaning, and Reconciliation",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A null-rate alert fires. How do you investigate without stopping at the symptom?",
+    "preferred_answer": "Confirm alert validity and scope, compare by source and time, inspect recent code and upstream changes, trace lineage, sample affected records, distinguish delayed from permanently missing data, quantify business impact, fix the generating process, backfill safely, and add a preventive control.",
+    "evaluation_points": [
+      "Focus on root-cause",
+      "Focus on quality-incident"
+    ],
+    "resolution_title": "UK Government Data Quality Framework Guidance",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q049",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why use an Excel Table instead of an unstructured range?",
+    "preferred_answer": "Tables expand with data, provide structured references, consistent formulas, filters, totals, and better PivotTable or Power Query inputs. They reduce fragile fixed-range references, though governance and validation are still needed.",
+    "evaluation_points": [
+      "Focus on excel-table",
+      "Focus on structured-reference"
+    ],
+    "resolution_title": "Microsoft Support - Create a PivotTable",
+    "resolution_url": "https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q050",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How does XLOOKUP improve on common VLOOKUP usage?",
+    "preferred_answer": "XLOOKUP can return from either direction, uses separate lookup and return arrays, supports an explicit not-found result and match modes, and does not depend on a hard-coded column index. Exact matching should normally be specified intentionally.",
+    "evaluation_points": [
+      "Focus on xlookup",
+      "Focus on lookup"
+    ],
+    "resolution_title": "Microsoft Support - XLOOKUP function",
+    "resolution_url": "https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q051",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "An XLOOKUP returns the wrong business result even though the formula has no error. What might be wrong?",
+    "preferred_answer": "The key may not be unique, types or spaces may differ, approximate matching may be unintended, the first match may not be the correct effective record, or the lookup table may have stale or duplicated rows. Validate cardinality and business rules, not only formula syntax.",
+    "evaluation_points": [
+      "Focus on lookup",
+      "Focus on duplicates"
+    ],
+    "resolution_title": "Microsoft Support - XLOOKUP function",
+    "resolution_url": "https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q052",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a PivotTable best suited for?",
+    "preferred_answer": "It quickly groups, filters, and aggregates tabular data across dimensions for exploration and summarisation. The source must have a consistent header row and appropriate grain; refresh, aggregation type, distinct counts, and calculated logic should be checked.",
+    "evaluation_points": [
+      "Focus on pivottable",
+      "Focus on aggregation"
+    ],
+    "resolution_title": "Microsoft Support - Create a PivotTable",
+    "resolution_url": "https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q053",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why can averaging row-level percentages in a spreadsheet be wrong?",
+    "preferred_answer": "Rows may have different denominators. The correct aggregate rate is often total numerator divided by total denominator, a weighted result. Define the intended grain and calculation rather than averaging pre-calculated percentages blindly.",
+    "evaluation_points": [
+      "Focus on ratio",
+      "Focus on aggregation"
+    ],
+    "resolution_title": "Microsoft Support - Create a PivotTable",
+    "resolution_url": "https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q054",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "When should Power Query be preferred over repeated manual spreadsheet steps?",
+    "preferred_answer": "Use it for repeatable import, typing, filtering, joining, reshaping, and cleaning. Steps are recorded and refreshable, improving consistency and auditability compared with copy-paste, while still requiring source and error controls.",
+    "evaluation_points": [
+      "Focus on power-query",
+      "Focus on etl"
+    ],
+    "resolution_title": "Microsoft Learn - Power Query documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-query/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q055",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you audit a critical spreadsheet model?",
+    "preferred_answer": "Map inputs, calculations, and outputs; identify constants and external links; test formula consistency; inspect named ranges; reconcile control totals; challenge assumptions; test edge cases; protect approved cells; and obtain independent review proportional to risk.",
+    "evaluation_points": [
+      "Focus on formula-audit",
+      "Focus on controls"
+    ],
+    "resolution_title": "UK Government Data Quality Framework Guidance",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q056",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Explain relative, absolute, and mixed cell references.",
+    "preferred_answer": "A relative reference changes by row and column when copied, an absolute reference fixes both with dollar signs, and a mixed reference fixes only row or column. The correct choice depends on the intended replication pattern.",
+    "evaluation_points": [
+      "Focus on cell-reference",
+      "Focus on formula"
+    ],
+    "resolution_title": "Microsoft Support - XLOOKUP function",
+    "resolution_url": "https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q057",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "Why can dates and times cause spreadsheet errors?",
+    "preferred_answer": "Dates are stored as serial values and times as fractions, while text that looks like a date may not be numeric. Locale parsing, the 1900 date system, timezone loss, daylight-saving changes, and hidden time components can produce incorrect grouping or comparisons.",
+    "evaluation_points": [
+      "Focus on excel-date",
+      "Focus on timezone"
+    ],
+    "resolution_title": "Microsoft Learn - Power Query documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-query/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q058",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What risk should be considered when using dynamic-array formulas?",
+    "preferred_answer": "Spilled results can change size as data changes and may be blocked by existing cells, tables, or merged cells. Downstream references should deliberately use the spill range and include checks for unexpected size or errors.",
+    "evaluation_points": [
+      "Focus on dynamic-array",
+      "Focus on spill"
+    ],
+    "resolution_title": "Microsoft Support - XLOOKUP function",
+    "resolution_url": "https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q059",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How does data validation improve spreadsheet quality, and what does it not guarantee?",
+    "preferred_answer": "It constrains or warns on entered values using lists, ranges, dates, or custom rules. It reduces input mistakes but may be bypassed by pasting or external processes and does not prove factual accuracy.",
+    "evaluation_points": [
+      "Focus on data-validation",
+      "Focus on input-control"
+    ],
+    "resolution_title": "UK Government Data Quality Framework",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q060",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How should conditional formatting be used in an analytical workbook?",
+    "preferred_answer": "Use it to highlight defined exceptions, thresholds, duplicates, or changes, with a clear legend and accessible alternatives. Avoid decorative colour scales that imply unsupported precision or hide values from colour-blind users.",
+    "evaluation_points": [
+      "Focus on conditional-formatting",
+      "Focus on exception"
+    ],
+    "resolution_title": "W3C Web Accessibility Initiative",
+    "resolution_url": "https://www.w3.org/WAI/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q061",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why are external workbook links risky?",
+    "preferred_answer": "They can break when files move, use stale cached values, hide dependencies, create access problems, and make refresh or review non-reproducible. Prefer governed sources or Power Query and document unavoidable links.",
+    "evaluation_points": [
+      "Focus on external-link",
+      "Focus on governance"
+    ],
+    "resolution_title": "Microsoft Learn - Power Query documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-query/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q062",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What commonly causes slow Excel workbooks?",
+    "preferred_answer": "Large used ranges, volatile functions, whole-column array calculations, excessive conditional formatting, repeated lookups, external links, complex dependencies, and unnecessary recalculation. Measure first, reduce calculation scope, and move repeatable transformation to suitable tools.",
+    "evaluation_points": [
+      "Focus on performance",
+      "Focus on volatile-function"
+    ],
+    "resolution_title": "Microsoft Support - Create a PivotTable",
+    "resolution_url": "https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q063",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why can wrapping every formula in IFERROR be dangerous?",
+    "preferred_answer": "It may hide genuine logic, reference, or data-quality failures and replace them with plausible blanks or zeros. Handle expected conditions explicitly, retain diagnostics, and distinguish not-found from calculation failure.",
+    "evaluation_points": [
+      "Focus on iferror",
+      "Focus on error"
+    ],
+    "resolution_title": "Microsoft Support - XLOOKUP function",
+    "resolution_url": "https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q064",
+    "role_slug": "data-analytics",
+    "domain": "Excel and Spreadsheet Analytics",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should be included when handing over a business-critical spreadsheet?",
+    "preferred_answer": "Purpose, owner, source and refresh process, input locations, definitions, assumptions, controls, protected areas, dependencies, known limitations, test evidence, version history, recovery copy, and a simple operating guide.",
+    "evaluation_points": [
+      "Focus on handoff",
+      "Focus on documentation"
+    ],
+    "resolution_title": "UK Government Data Quality Framework Guidance",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q065",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the typical logical processing order of a SELECT query?",
+    "preferred_answer": "Conceptually, FROM and JOIN establish rows, WHERE filters rows, GROUP BY forms groups, HAVING filters groups, SELECT calculates output expressions, DISTINCT removes duplicates, ORDER BY sorts, and LIMIT or FETCH restricts output. Actual optimizers may execute differently.",
+    "evaluation_points": [
+      "Focus on select",
+      "Focus on logical-processing"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q066",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between WHERE and HAVING?",
+    "preferred_answer": "WHERE filters input rows before grouping; HAVING filters groups after aggregation. Conditions that can be applied before aggregation are generally clearer and more efficient in WHERE.",
+    "evaluation_points": [
+      "Focus on where",
+      "Focus on having"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Tutorial",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q067",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Explain INNER, LEFT, RIGHT, and FULL OUTER JOIN.",
+    "preferred_answer": "INNER returns matched combinations; LEFT preserves every left row plus matches; RIGHT preserves every right row; FULL preserves rows from both sides and fills unmatched columns with nulls. Join conditions and cardinality determine row multiplication.",
+    "evaluation_points": [
+      "Focus on join",
+      "Focus on inner",
+      "Focus on left"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q068",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How does NULL behave in SQL comparisons?",
+    "preferred_answer": "NULL represents unknown or absent, so ordinary comparisons produce unknown rather than true. Use IS NULL or IS NOT NULL, understand three-valued logic, and treat COALESCE as a business decision rather than automatic cleanup.",
+    "evaluation_points": [
+      "Focus on null",
+      "Focus on three-valued-logic"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q069",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How would you calculate total revenue by month and region?",
+    "preferred_answer": "Select a consistent month expression and region, sum the governed revenue measure, filter the intended population, group by month and region, and order explicitly. State timezone, currency, status, and whether returns or tax are included.",
+    "evaluation_points": [
+      "Focus on group-by",
+      "Focus on aggregate"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Tutorial",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q070",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate COUNT(*), COUNT(column), and COUNT(DISTINCT column).",
+    "preferred_answer": "COUNT(*) counts rows, COUNT(column) counts non-null values in that expression, and COUNT(DISTINCT column) counts distinct non-null values. None automatically means unique business entities unless the column represents one.",
+    "evaluation_points": [
+      "Focus on count",
+      "Focus on distinct"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q071",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is CASE used for in SQL?",
+    "preferred_answer": "CASE expresses conditional logic for labels, bucketing, conditional aggregation, or ordering. Categories should be mutually understood, edge cases handled, and an ELSE branch used deliberately to expose or classify unexpected values.",
+    "evaluation_points": [
+      "Focus on case",
+      "Focus on classification"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q072",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does COALESCE do, and what is a common misuse?",
+    "preferred_answer": "It returns the first non-null expression. A misuse is replacing unknown values with zero or text without confirming that the substitution is semantically valid, which can distort averages and reconciliation.",
+    "evaluation_points": [
+      "Focus on coalesce",
+      "Focus on null"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q073",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between UNION and UNION ALL?",
+    "preferred_answer": "UNION combines compatible result sets and removes duplicate rows; UNION ALL retains all rows and is usually cheaper. Choose based on business meaning, not as a shortcut to hide duplicated data.",
+    "evaluation_points": [
+      "Focus on union",
+      "Focus on union-all"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q074",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When would you use a common table expression rather than a nested subquery?",
+    "preferred_answer": "A CTE can name logical steps, improve readability, support recursion, and allow a complex query to be reasoned about in stages. It does not automatically improve performance; optimizer behaviour and reuse should be checked.",
+    "evaluation_points": [
+      "Focus on subquery",
+      "Focus on cte"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q075",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you find customers with no orders?",
+    "preferred_answer": "Use NOT EXISTS with a correlated condition or a LEFT JOIN followed by a null check on a non-null order key. NOT EXISTS is often clear and avoids the NULL pitfalls of NOT IN.",
+    "evaluation_points": [
+      "Focus on anti-join",
+      "Focus on missing"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q076",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "A LEFT JOIN increases the row count unexpectedly. What do you investigate?",
+    "preferred_answer": "Check the grain and uniqueness of both join keys, many-to-many relationships, effective dates, duplicate dimension records, incomplete predicates, and null handling. Quantify multiplication before adding DISTINCT, which can hide the defect.",
+    "evaluation_points": [
+      "Focus on join-cardinality",
+      "Focus on duplicate"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q077",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should a timestamp range usually be filtered for one calendar month?",
+    "preferred_answer": "Use an inclusive lower bound and exclusive next-period upper bound, for example timestamp >= month_start and timestamp < next_month_start. Define timezone first and avoid wrapping indexed columns unnecessarily.",
+    "evaluation_points": [
+      "Focus on date-filter",
+      "Focus on sargable"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q078",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What precautions are needed when matching text fields in SQL?",
+    "preferred_answer": "Inspect case, collation, whitespace, punctuation, Unicode, nulls, and code versus label semantics. Normalisation may help matching but should not overwrite raw values or combine genuinely different identifiers.",
+    "evaluation_points": [
+      "Focus on string",
+      "Focus on normalization"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q079",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why is row order not guaranteed without ORDER BY?",
+    "preferred_answer": "Relational results are unordered unless an explicit ordering is requested. Storage layout or a previous execution plan may appear stable but can change; add deterministic tie-breakers when pagination or reproducibility matters.",
+    "evaluation_points": [
+      "Focus on order-by",
+      "Focus on determinism"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q080",
+    "role_slug": "data-analytics",
+    "domain": "SQL Fundamentals",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you validate the output of an important SQL query?",
+    "preferred_answer": "Check row grain, counts, uniqueness, nulls, ranges, known examples, independent control totals, source-to-output reconciliation, boundary dates, segment totals, and sensitivity to filters. Peer review the logic and retain test queries.",
+    "evaluation_points": [
+      "Focus on validation",
+      "Focus on control-total"
+    ],
+    "resolution_title": "UK Government Data Quality Framework Guidance",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q081",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does a window function differ from GROUP BY?",
+    "preferred_answer": "A window function calculates across related rows while retaining each input row. GROUP BY collapses rows to one row per group. PARTITION BY defines the window groups and ORDER BY can define sequence and frame behaviour.",
+    "evaluation_points": [
+      "Focus on window-function",
+      "Focus on partition"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Window Functions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-window.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q082",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate ROW_NUMBER, RANK, and DENSE_RANK.",
+    "preferred_answer": "ROW_NUMBER assigns a unique sequence even to ties; RANK gives tied rows the same rank and leaves gaps; DENSE_RANK gives tied rows the same rank without gaps. Add deterministic ordering when ROW_NUMBER selects one record.",
+    "evaluation_points": [
+      "Focus on row-number",
+      "Focus on rank",
+      "Focus on dense-rank"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Window Functions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-window.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q083",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you calculate a running total by customer and date?",
+    "preferred_answer": "Use SUM(value) OVER with PARTITION BY customer and ORDER BY date, specifying an appropriate ROWS frame. Include a tie-breaker or pre-aggregate same-date events so the sequence and result are deterministic.",
+    "evaluation_points": [
+      "Focus on running-total",
+      "Focus on window-frame"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Window Functions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-window.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q084",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are LAG and LEAD useful for?",
+    "preferred_answer": "They access a prior or following row within an ordered partition, supporting change, interval, retention, and sequence analysis. Define the partition, ordering, gaps, and whether consecutive rows are consecutive time periods.",
+    "evaluation_points": [
+      "Focus on lag",
+      "Focus on lead",
+      "Focus on change"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Window Functions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-window.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q085",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you return the top three products within each category?",
+    "preferred_answer": "Calculate a rank or row number partitioned by category and ordered by the intended measure, then filter the ranked result. Define tie handling and aggregate to the correct product grain before ranking.",
+    "evaluation_points": [
+      "Focus on top-n",
+      "Focus on ranking"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Window Functions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-window.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q086",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is conditional aggregation?",
+    "preferred_answer": "It combines aggregate functions with CASE or filtered aggregates to calculate multiple measures from one grouped set, such as paid and refunded amounts. Ensure conditions are complete, non-overlapping where required, and use the correct denominator.",
+    "evaluation_points": [
+      "Focus on conditional-aggregation",
+      "Focus on pivot"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q087",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Outline the SQL logic for a monthly cohort-retention table.",
+    "preferred_answer": "Identify each user's cohort month from the qualifying start event, derive activity month, calculate elapsed month, deduplicate user-period activity, count active users by cohort and elapsed month, and divide by a governed cohort denominator. Validate identity, timezone, and late events.",
+    "evaluation_points": [
+      "Focus on retention",
+      "Focus on cohort"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Window Functions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-window.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q088",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How can events be sessionised in SQL?",
+    "preferred_answer": "Order events by entity and time, use LAG to calculate gaps, flag a new session when the gap exceeds the chosen threshold, and cumulatively sum the flags to create a session identifier. Justify threshold, timezone, and treatment of missing or duplicate events.",
+    "evaluation_points": [
+      "Focus on sessionization",
+      "Focus on gaps"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Window Functions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-window.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q089",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is the gaps-and-islands problem?",
+    "preferred_answer": "It identifies consecutive ranges or groups separated by gaps, such as continuous subscription periods. Common solutions compare row numbers with dates or create boundary flags and cumulative groups; the definition of consecutive must be explicit.",
+    "evaluation_points": [
+      "Focus on gaps-and-islands",
+      "Focus on sequence"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Window Functions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-window.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q090",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why might percentiles be preferable to an average?",
+    "preferred_answer": "They describe the distribution and are less dominated by extreme values. Median and tail percentiles are useful for skewed durations or latency, but interpolation method, sample size, grouping, and null treatment should be stated.",
+    "evaluation_points": [
+      "Focus on percentile",
+      "Focus on median"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q091",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "When is a recursive CTE appropriate?",
+    "preferred_answer": "It is useful for traversing hierarchies, graphs with safeguards, or generating sequences. Define an anchor and recursive member, prevent cycles or runaway depth, and consider specialised hierarchy models for frequent large-scale use.",
+    "evaluation_points": [
+      "Focus on recursive-cte",
+      "Focus on hierarchy"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q092",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why is set-based SQL generally preferred to row-by-row processing?",
+    "preferred_answer": "Set-based expressions let the database optimise operations across rows, often reducing round trips and procedural overhead. Clarity and correctness remain primary, and some procedural logic may still be appropriate.",
+    "evaluation_points": [
+      "Focus on set-based",
+      "Focus on performance"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q093",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A query is correct but slow. What is your investigation sequence?",
+    "preferred_answer": "Capture the actual query and parameters, data volume, plan, timing and waits; inspect cardinality estimates, scans, joins, sorts, spills, filters and indexes; reduce rows and columns early where meaningful; test one change at a time and verify correctness after optimisation.",
+    "evaluation_points": [
+      "Focus on query-performance",
+      "Focus on explain"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q094",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What trade-offs arise when querying JSON inside a relational database?",
+    "preferred_answer": "JSON supports flexible ingestion and nested attributes but can weaken constraints, discoverability, type consistency, and performance. Extract stable analytical fields, validate schemas, index supported paths when justified, and preserve raw payloads for lineage.",
+    "evaluation_points": [
+      "Focus on json",
+      "Focus on semi-structured"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q095",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is required for a reliable incremental extraction query?",
+    "preferred_answer": "Use a trustworthy change indicator or log, overlap or late-arrival strategy, idempotent upsert key, deletion handling, timezone and precision controls, checkpointing, reconciliation, and a safe backfill path. A simple greater-than timestamp can miss equal-time or updated rows.",
+    "evaluation_points": [
+      "Focus on incremental",
+      "Focus on watermark"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q096",
+    "role_slug": "data-analytics",
+    "domain": "Advanced SQL and Analytical Querying",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What do you review in a production SQL change?",
+    "preferred_answer": "Business definition, grain, joins and cardinality, filters, nulls, time logic, aggregation, security, readability, tests, performance plan, incremental behaviour, lineage, backward compatibility, and rollback or backfill needs.",
+    "evaluation_points": [
+      "Focus on code-review",
+      "Focus on sql"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q097",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a primary key?",
+    "preferred_answer": "A primary key uniquely identifies each row and is non-null. A table can have other candidate keys and unique constraints; the chosen key should be stable and suitable for relationships, or a surrogate may be used with business-key controls.",
+    "evaluation_points": [
+      "Focus on primary-key",
+      "Focus on unique"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q098",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why normalize transactional data?",
+    "preferred_answer": "Normalization reduces update anomalies and duplicated facts by separating entities and dependencies. It supports integrity in operational systems, while analytical models may deliberately denormalize for usability and performance.",
+    "evaluation_points": [
+      "Focus on normalization",
+      "Focus on 3nf"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q099",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Explain ACID transaction properties.",
+    "preferred_answer": "Atomicity makes a transaction all-or-nothing; consistency preserves declared rules; isolation controls interactions among concurrent transactions; durability preserves committed results after failure. Exact behaviour depends on the database and isolation level.",
+    "evaluation_points": [
+      "Focus on acid",
+      "Focus on transaction"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Transactions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q100",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What anomalies can transaction isolation levels address?",
+    "preferred_answer": "Depending on the system, levels constrain dirty reads, non-repeatable reads, phantom rows, and serialization anomalies. Stronger isolation improves consistency but may increase blocking, retries, or overhead; use the level required by the business operation.",
+    "evaluation_points": [
+      "Focus on isolation-level",
+      "Focus on concurrency"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Transactions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q101",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a database index, and what is its cost?",
+    "preferred_answer": "An index is an auxiliary structure that can accelerate filtering, joins, and ordering. It consumes storage and adds maintenance cost to writes; value depends on selectivity, query patterns, ordering, included columns, and planner choices.",
+    "evaluation_points": [
+      "Focus on index",
+      "Focus on performance"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q102",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you choose column order in a composite index?",
+    "preferred_answer": "Base it on common predicates, equality versus range conditions, sort requirements, selectivity, and the database's index rules. Validate with representative plans; a generally selective column is not automatically the correct first column.",
+    "evaluation_points": [
+      "Focus on composite-index",
+      "Focus on column-order"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q103",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should you look for in an execution plan?",
+    "preferred_answer": "Compare estimated and actual rows, access methods, join algorithms and order, filters, loops, sorts, memory or disk spills, parallelism, and the operators consuming most time or I/O. A high-cost estimate is a clue, not the final diagnosis.",
+    "evaluation_points": [
+      "Focus on explain",
+      "Focus on plan"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q104",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why do inaccurate cardinality estimates cause poor plans?",
+    "preferred_answer": "The optimizer chooses joins, access paths, memory, and parallelism based on expected row counts. Stale or insufficient statistics, correlated columns, skew, or parameter sensitivity can cause estimates far from reality and inappropriate plans.",
+    "evaluation_points": [
+      "Focus on cardinality",
+      "Focus on statistics"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q105",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What is a deadlock, and how should it be handled?",
+    "preferred_answer": "It occurs when transactions wait cyclically for resources. The database aborts one participant. Reduce risk with consistent access order, short transactions, appropriate indexes and retry logic; investigate captured deadlock details rather than only increasing timeouts.",
+    "evaluation_points": [
+      "Focus on deadlock",
+      "Focus on concurrency"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Transactions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q106",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate OLTP and OLAP workloads.",
+    "preferred_answer": "OLTP supports frequent, small, concurrent transactions with strong integrity and current state. OLAP supports scans, aggregations, history, and analytical concurrency. Architecture, storage, modelling, and performance choices differ, though modern platforms can blend capabilities.",
+    "evaluation_points": [
+      "Focus on oltp",
+      "Focus on olap"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q107",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When is a materialized view useful?",
+    "preferred_answer": "It stores a query result to reduce repeated computation for expensive, reusable summaries. Consider refresh mode and latency, storage, consistency, dependency management, incremental options, and whether consumers understand its as-of time.",
+    "evaluation_points": [
+      "Focus on materialized-view",
+      "Focus on refresh"
+    ],
+    "resolution_title": "PostgreSQL Documentation - SQL Language",
+    "resolution_url": "https://www.postgresql.org/docs/current/sql.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q108",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is table partitioning, and when does it help?",
+    "preferred_answer": "Partitioning divides a logical table by a key such as date. It can improve manageability and enable partition pruning, but does not automatically speed every query and can create skew, metadata, and small-partition problems.",
+    "evaluation_points": [
+      "Focus on partitioning",
+      "Focus on pruning"
+    ],
+    "resolution_title": "Google Cloud - Query partitioned tables",
+    "resolution_url": "https://cloud.google.com/bigquery/docs/querying-partitioned-tables",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q109",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why use surrogate keys in analytical models?",
+    "preferred_answer": "They provide stable warehouse identifiers independent of mutable source keys, support multiple sources and slowly changing history, and simplify relationships. Business keys still require uniqueness, lineage, and source-system context.",
+    "evaluation_points": [
+      "Focus on surrogate-key",
+      "Focus on business-key"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q110",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is a replica not a substitute for a backup?",
+    "preferred_answer": "Replication can copy accidental deletion, corruption, or malicious change. Backups preserve recoverable historical states and should be tested against recovery objectives; replicas mainly support availability, reads, or failover.",
+    "evaluation_points": [
+      "Focus on backup",
+      "Focus on replica"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Transactions",
+    "resolution_url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q111",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A dashboard query becomes slow after a deployment without SQL changes. What might you check?",
+    "preferred_answer": "Data growth or skew, statistics, index or schema changes, parameter distribution, plan cache, resource contention, configuration, partition coverage, upstream model changes, and concurrency. Compare plans and environment before and after.",
+    "evaluation_points": [
+      "Focus on regression",
+      "Focus on plan-change"
+    ],
+    "resolution_title": "PostgreSQL Documentation - Using EXPLAIN",
+    "resolution_url": "https://www.postgresql.org/docs/current/using-explain.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q112",
+    "role_slug": "data-analytics",
+    "domain": "Relational Databases, Transactions, and Query Performance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What database-access principles should an analyst follow?",
+    "preferred_answer": "Use least privilege, role-based access, separate service identities, protected credentials, approved environments, audited access, secure views or row controls, and masked or synthetic data where possible. Avoid copying production data into unmanaged tools.",
+    "evaluation_points": [
+      "Focus on least-privilege",
+      "Focus on database"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q113",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "When would you report the median instead of the mean?",
+    "preferred_answer": "Use the median when the distribution is skewed, contains influential extremes, or the middle observation is more decision-relevant. Report additional distribution information because neither statistic alone describes variability or multimodality.",
+    "evaluation_points": [
+      "Focus on mean",
+      "Focus on median"
+    ],
+    "resolution_title": "NIST/SEMATECH - Confidence Intervals",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc14.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q114",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does standard deviation describe?",
+    "preferred_answer": "It describes dispersion around the mean in the original units. It is sensitive to extreme values and should be interpreted with the distribution, sample definition, and whether the calculation describes a sample or population.",
+    "evaluation_points": [
+      "Focus on variance",
+      "Focus on standard-deviation"
+    ],
+    "resolution_title": "NIST/SEMATECH - Confidence Intervals",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc14.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q115",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate standard deviation and standard error.",
+    "preferred_answer": "Standard deviation describes variation among observations. Standard error describes uncertainty in an estimated statistic across repeated samples and usually decreases with larger effective sample size.",
+    "evaluation_points": [
+      "Focus on standard-error",
+      "Focus on uncertainty"
+    ],
+    "resolution_title": "NIST/SEMATECH - Confidence Intervals",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc14.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q116",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should a 95% confidence interval be interpreted?",
+    "preferred_answer": "Under the method's assumptions, repeated intervals built the same way would cover the true parameter about 95% of the time. It is not generally a 95% probability that a fixed parameter lies in this one interval.",
+    "evaluation_points": [
+      "Focus on confidence-interval",
+      "Focus on estimate"
+    ],
+    "resolution_title": "NIST/SEMATECH - Confidence Intervals",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc14.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q117",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does a p-value mean?",
+    "preferred_answer": "It is the probability, under the null model and assumptions, of obtaining a result at least as incompatible with the null as the observed statistic. It is not the probability that the null is true or the size or importance of an effect.",
+    "evaluation_points": [
+      "Focus on p-value",
+      "Focus on hypothesis"
+    ],
+    "resolution_title": "NIST/SEMATECH - Hypothesis Testing",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc1.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q118",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Explain Type I and Type II errors.",
+    "preferred_answer": "A Type I error rejects a true null hypothesis; a Type II error fails to reject a false null. Their consequences, significance level, sample size, variability, effect size, and decision context should guide design.",
+    "evaluation_points": [
+      "Focus on type-i",
+      "Focus on type-ii"
+    ],
+    "resolution_title": "NIST/SEMATECH - Hypothesis Testing",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc1.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q119",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is statistical power?",
+    "preferred_answer": "Power is the probability of detecting a specified effect when it truly exists under the model. It depends on effect size, sample size, variability, test design, allocation, and significance threshold.",
+    "evaluation_points": [
+      "Focus on power",
+      "Focus on sample-size"
+    ],
+    "resolution_title": "NIST/SEMATECH - Hypothesis Testing",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc1.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q120",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Give examples of sampling bias in business analytics.",
+    "preferred_answer": "Examples include analysing only active users, voluntary survey responders, reachable customers, completed transactions, or users exposed by an algorithm. Compare the observed sample with the target population and identify missing selection mechanisms.",
+    "evaluation_points": [
+      "Focus on sampling-bias",
+      "Focus on selection"
+    ],
+    "resolution_title": "NIST/SEMATECH - Confidence Intervals",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc14.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q121",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is random assignment valuable in an experiment?",
+    "preferred_answer": "With sufficient implementation quality, it makes treatment groups comparable in expectation on observed and unobserved factors, supporting causal attribution. Check allocation, interference, attrition, noncompliance, and sample-ratio anomalies.",
+    "evaluation_points": [
+      "Focus on randomization",
+      "Focus on experiment"
+    ],
+    "resolution_title": "NIST/SEMATECH - Hypothesis Testing",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc1.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q122",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you choose primary and guardrail metrics for an A/B test?",
+    "preferred_answer": "Choose a primary outcome tied to the hypothesis and expected time horizon, with a clear unit and denominator. Add guardrails for harm, quality, reliability, or cost. Define them before analysis to limit selective reporting.",
+    "evaluation_points": [
+      "Focus on a-b-test",
+      "Focus on metric"
+    ],
+    "resolution_title": "NIST/SEMATECH - Hypothesis Testing",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc1.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q123",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why is repeated testing or many metrics a problem?",
+    "preferred_answer": "Each additional unplanned comparison raises the chance of at least one false positive. Pre-specify primary analyses, control error rates where appropriate, distinguish exploratory work, and avoid stopping solely when significance appears.",
+    "evaluation_points": [
+      "Focus on multiple-testing",
+      "Focus on false-positive"
+    ],
+    "resolution_title": "NIST/SEMATECH - Hypothesis Testing",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc1.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q124",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why can a statistically significant result be practically unimportant?",
+    "preferred_answer": "With large samples, very small effects can be detected. Decisions should consider effect size and interval, cost, risk, implementation feasibility, duration, segment impact, and opportunity cost, not only a thresholded p-value.",
+    "evaluation_points": [
+      "Focus on effect-size",
+      "Focus on practical-significance"
+    ],
+    "resolution_title": "NIST/SEMATECH - Confidence Intervals",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc14.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q125",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a confounder?",
+    "preferred_answer": "It is a variable associated with both exposure and outcome that can create or distort an observed relationship. Address it through design, randomisation, restriction, matching, stratification, modelling, or sensitivity analysis, while stating assumptions.",
+    "evaluation_points": [
+      "Focus on confounding",
+      "Focus on observational"
+    ],
+    "resolution_title": "NIST/SEMATECH - Hypothesis Testing",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc1.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q126",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How can seasonality mislead a before-and-after analysis?",
+    "preferred_answer": "The periods may differ because of weekly, monthly, holiday, campaign, or weather patterns rather than the intervention. Use comparable periods, controls, decomposition or models, and enough pre-intervention history.",
+    "evaluation_points": [
+      "Focus on seasonality",
+      "Focus on time-series"
+    ],
+    "resolution_title": "NIST/SEMATECH - Hypothesis Testing",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc1.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q127",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is survivorship bias?",
+    "preferred_answer": "It occurs when analysis includes entities that remained observable or successful while excluding those that failed, churned, closed, or were removed. Define the starting population and follow outcomes consistently.",
+    "evaluation_points": [
+      "Focus on survivorship-bias",
+      "Focus on cohort"
+    ],
+    "resolution_title": "NIST/SEMATECH - Confidence Intervals",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc14.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q128",
+    "role_slug": "data-analytics",
+    "domain": "Statistics, Sampling, and Experimentation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What belongs in an experiment readout?",
+    "preferred_answer": "Hypothesis, design and unit, sample and allocation checks, metric definitions, duration, data-quality checks, effect sizes with uncertainty, guardrails, segments planned in advance, limitations, decision, rollout or follow-up, and monitoring.",
+    "evaluation_points": [
+      "Focus on experiment",
+      "Focus on recommendation"
+    ],
+    "resolution_title": "NIST/SEMATECH - Hypothesis Testing",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc1.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q129",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do you choose an appropriate chart?",
+    "preferred_answer": "Start with the analytical task: comparison, trend, distribution, relationship, composition, geography, or flow. Consider data type, number of categories, precision needs, audience, and accessibility; choose the simplest chart that preserves the intended comparison.",
+    "evaluation_points": [
+      "Focus on chart-selection",
+      "Focus on comparison"
+    ],
+    "resolution_title": "Tableau Help - Which chart or graph is right for you?",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/what_chart_example.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q130",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "When should you use a bar chart rather than a line chart?",
+    "preferred_answer": "Bars are suited to comparing discrete categories or periods; lines imply ordered continuity and are best for trends over a meaningful sequence. Avoid connecting unordered categories with lines.",
+    "evaluation_points": [
+      "Focus on bar-chart",
+      "Focus on line-chart"
+    ],
+    "resolution_title": "Tableau Help - Which chart or graph is right for you?",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/what_chart_example.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q131",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Must every chart axis start at zero?",
+    "preferred_answer": "Bar length encodes magnitude, so a zero baseline is normally required. Lines or dot plots may use a restricted range when changes are the focus, but the scale must be clear and not exaggerate conclusions.",
+    "evaluation_points": [
+      "Focus on axis",
+      "Focus on bar-chart"
+    ],
+    "resolution_title": "Tableau Help - Which chart or graph is right for you?",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/what_chart_example.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q132",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are the risks of a dual-axis chart?",
+    "preferred_answer": "Independent scales can create an artificial visual relationship and make comparison difficult. Prefer aligned panels, indexed series, or a shared scale; when dual axes are justified, label scales clearly and avoid implying causation.",
+    "evaluation_points": [
+      "Focus on dual-axis",
+      "Focus on misleading"
+    ],
+    "resolution_title": "Tableau Help - Which chart or graph is right for you?",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/what_chart_example.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q133",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How should colour be used in dashboards?",
+    "preferred_answer": "Use colour sparingly and consistently for meaning, ensure sufficient contrast, avoid relying on colour alone, select colour-blind-safe palettes, and reserve strong emphasis for exceptions or decisions.",
+    "evaluation_points": [
+      "Focus on colour",
+      "Focus on accessibility"
+    ],
+    "resolution_title": "W3C Web Accessibility Initiative",
+    "resolution_url": "https://www.w3.org/WAI/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q134",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "When is a pie chart acceptable, and when should it be avoided?",
+    "preferred_answer": "It can communicate a small number of clearly different parts of one whole. Avoid it for many categories, close values, precise comparison, multiple pies, or values that do not sum to a meaningful whole; bars are often clearer.",
+    "evaluation_points": [
+      "Focus on pie-chart",
+      "Focus on composition"
+    ],
+    "resolution_title": "Tableau Help - Which chart or graph is right for you?",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/what_chart_example.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q135",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you create visual hierarchy in an executive dashboard?",
+    "preferred_answer": "Place the decision and critical KPIs first, group related views, use position, size and limited emphasis, provide context and comparisons, and move diagnostic detail to drill paths. Remove elements that do not support a user task.",
+    "evaluation_points": [
+      "Focus on visual-hierarchy",
+      "Focus on dashboard"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q136",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes an analytical annotation useful?",
+    "preferred_answer": "It points to a meaningful event, threshold, exception, or definition and explains why it matters. It should add context not obvious from the marks, cite the source where needed, and avoid turning the visual into a text wall.",
+    "evaluation_points": [
+      "Focus on annotation",
+      "Focus on context"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q137",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should uncertainty be visualised?",
+    "preferred_answer": "Use intervals, bands, distributions, ranges, or scenario views suited to the estimate. Explain what the uncertainty represents and avoid presenting a forecast line or point estimate as certain.",
+    "evaluation_points": [
+      "Focus on uncertainty",
+      "Focus on confidence-interval"
+    ],
+    "resolution_title": "NIST/SEMATECH - Confidence Intervals",
+    "resolution_url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc14.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q138",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When are small multiples useful?",
+    "preferred_answer": "They repeat the same scale and visual structure across segments, enabling comparison without overplotting. Maintain consistent axes and ordering, limit the number of panels, and highlight only when necessary.",
+    "evaluation_points": [
+      "Focus on small-multiples",
+      "Focus on comparison"
+    ],
+    "resolution_title": "Tableau Help - Which chart or graph is right for you?",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/what_chart_example.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q139",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How should categorical bars be ordered?",
+    "preferred_answer": "Use an order that supports the task: descending value for ranking, natural sequence, business priority, or fixed reference order. Alphabetical order is useful for lookup but often weak for insight.",
+    "evaluation_points": [
+      "Focus on sorting",
+      "Focus on categorical"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q140",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What dashboard elements commonly create unnecessary clutter?",
+    "preferred_answer": "Heavy borders, excessive gridlines, decorative icons, gradients, 3D effects, repeated labels, too many colours, dense legends, and redundant KPIs. Remove or soften them while preserving orientation and accessibility.",
+    "evaluation_points": [
+      "Focus on clutter",
+      "Focus on design"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q141",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a practical structure for an analytical story?",
+    "preferred_answer": "Start with the decision or question, establish context and baseline, show the most important finding, explain drivers and uncertainty, present alternatives, and finish with a specific recommendation and next measurement.",
+    "evaluation_points": [
+      "Focus on storytelling",
+      "Focus on recommendation"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q142",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "A chart shows complaints rising 30%, but transactions doubled. How should it be reframed?",
+    "preferred_answer": "Show both counts and a governed rate per relevant transaction or customer, with comparable periods and uncertainty where needed. Explain that volume and rate answer different questions and avoid dismissing absolute workload implications.",
+    "evaluation_points": [
+      "Focus on denominator",
+      "Focus on rate"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q143",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you test a dashboard before release?",
+    "preferred_answer": "Validate metric definitions and totals, filters and interactions, default states, date and timezone logic, row security, exports, performance, refresh and failure states, responsive layout, accessibility, browser compatibility, and representative user tasks.",
+    "evaluation_points": [
+      "Focus on dashboard",
+      "Focus on validation"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q144",
+    "role_slug": "data-analytics",
+    "domain": "Data Visualization and Storytelling",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What ethical risks arise in data storytelling?",
+    "preferred_answer": "Selective periods, hidden denominators, truncated scales, cherry-picked segments, suppressed uncertainty, loaded labels, inaccessible design, and omission of affected groups can mislead. Preserve material context even when it weakens the preferred narrative.",
+    "evaluation_points": [
+      "Focus on ethics",
+      "Focus on visualization"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q145",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate Import mode and DirectQuery in Power BI.",
+    "preferred_answer": "Import loads data into the semantic model for fast in-memory analysis and scheduled refresh. DirectQuery leaves data at the source and queries it at interaction time, adding source, latency, modelling, and concurrency constraints. Composite approaches can mix modes.",
+    "evaluation_points": [
+      "Focus on import",
+      "Focus on directquery"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q146",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is a star schema recommended for Power BI models?",
+    "preferred_answer": "It separates descriptive dimensions from fact tables at defined grain, creating clear one-to-many relationships and predictable filter propagation. It improves usability, DAX reasoning, compression, and performance compared with a tangled flat or snowflaked model.",
+    "evaluation_points": [
+      "Focus on star-schema",
+      "Focus on power-bi"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI modeling",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q147",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What risks come with bidirectional relationships?",
+    "preferred_answer": "They can create ambiguous filter paths, unexpected results, slower queries, and harder debugging. Prefer single-direction relationships from dimensions to facts and use bidirectional filtering only for a justified scenario tested across the model.",
+    "evaluation_points": [
+      "Focus on relationship",
+      "Focus on filter-direction"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI modeling",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q148",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate a DAX measure and a calculated column.",
+    "preferred_answer": "A calculated column is evaluated row by row during data refresh and stored in the model. A measure is evaluated at query time in filter context and returns an aggregate result. Prefer measures for dynamic analytical calculations.",
+    "evaluation_points": [
+      "Focus on measure",
+      "Focus on calculated-column"
+    ],
+    "resolution_title": "Microsoft Learn - DAX overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dax/dax-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q149",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Explain row context and filter context in DAX.",
+    "preferred_answer": "Row context identifies a current row during calculated-column or iterator evaluation. Filter context is the set of filters applied by visuals, slicers, relationships, and DAX. Measures respond primarily to filter context; context transition can convert row context into filters.",
+    "evaluation_points": [
+      "Focus on row-context",
+      "Focus on filter-context"
+    ],
+    "resolution_title": "Microsoft Learn - DAX overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dax/dax-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q150",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does CALCULATE do in DAX?",
+    "preferred_answer": "CALCULATE evaluates an expression in a modified filter context. It can add, replace, or remove filters and performs context transition where applicable. Correct use requires understanding existing filters and relationship propagation.",
+    "evaluation_points": [
+      "Focus on calculate",
+      "Focus on context-transition"
+    ],
+    "resolution_title": "Microsoft Learn - DAX reference",
+    "resolution_url": "https://learn.microsoft.com/en-us/dax/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q151",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When is SUMX needed instead of SUM?",
+    "preferred_answer": "SUM adds values from one column. SUMX iterates a table, evaluates an expression for each row, and sums the results. Use it when the row-level expression involves multiple fields or generated tables, while checking grain and performance.",
+    "evaluation_points": [
+      "Focus on sumx",
+      "Focus on iterator"
+    ],
+    "resolution_title": "Microsoft Learn - DAX reference",
+    "resolution_url": "https://learn.microsoft.com/en-us/dax/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q152",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is required for reliable time-intelligence calculations?",
+    "preferred_answer": "Use a complete, contiguous date dimension with unique dates, appropriate relationships and business calendars. Define current and comparison periods, fiscal logic, incomplete periods, timezone, and whether calculation uses order, ship, or another date.",
+    "evaluation_points": [
+      "Focus on time-intelligence",
+      "Focus on date-table"
+    ],
+    "resolution_title": "Microsoft Learn - DAX overview",
+    "resolution_url": "https://learn.microsoft.com/en-us/dax/dax-overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q153",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is query folding in Power Query, and why does it matter?",
+    "preferred_answer": "Query folding translates supported transformation steps into a source query so filtering and computation occur closer to the data. It can reduce transfer and refresh time. Verify folding and do not assume every connector or step supports it.",
+    "evaluation_points": [
+      "Focus on query-folding",
+      "Focus on power-query"
+    ],
+    "resolution_title": "Microsoft Learn - Power Query documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-query/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q154",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When should logic be implemented in Power Query versus DAX?",
+    "preferred_answer": "Use Power Query for refresh-time extraction, cleaning, shaping, and reusable columns; use DAX for model calculations that must respond to filter context. Push stable work upstream when governed and efficient, and avoid duplicating logic across layers.",
+    "evaluation_points": [
+      "Focus on power-query-m",
+      "Focus on dax"
+    ],
+    "resolution_title": "Microsoft Learn - Power Query documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-query/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q155",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What problem does incremental refresh solve?",
+    "preferred_answer": "It refreshes only recent or changed partitions while retaining historical data, reducing refresh duration and source load. It requires reliable date or change logic, compatible query folding, policy testing, and a strategy for late corrections or backfill.",
+    "evaluation_points": [
+      "Focus on incremental-refresh",
+      "Focus on partition"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q156",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "How does row-level security work conceptually in Power BI?",
+    "preferred_answer": "Roles apply model filters that restrict rows visible to a user, often through an entitlement table and identity mapping. Test effective access for representative users, deny-by-default behaviour, export paths, and workspace permissions; RLS is not a substitute for source security.",
+    "evaluation_points": [
+      "Focus on rls",
+      "Focus on security"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q157",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should a many-to-many business relationship be modelled?",
+    "preferred_answer": "Often use a bridge table at the relationship grain connecting dimensions or facts, with carefully controlled filter paths and measures. Define allocation or distinct-count semantics; enabling a many-to-many cardinality without understanding grain can double count.",
+    "evaluation_points": [
+      "Focus on many-to-many",
+      "Focus on bridge-table"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI modeling",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q158",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you diagnose a slow Power BI report?",
+    "preferred_answer": "Separate visual, DAX, model, source, and network causes. Use performance diagnostics, reduce visual count and high-cardinality fields, inspect DAX and storage-engine behaviour, simplify relationships, optimise source queries and refresh, and test with representative security.",
+    "evaluation_points": [
+      "Focus on performance",
+      "Focus on diagnostics"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q159",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What controls should exist when promoting a Power BI solution?",
+    "preferred_answer": "Version and review source queries, model and measures; use separate environments and parameters; validate reconciliations, RLS, refresh credentials, gateway, performance, accessibility, ownership, endorsement, rollback, and change communication.",
+    "evaluation_points": [
+      "Focus on deployment",
+      "Focus on governance"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q160",
+    "role_slug": "data-analytics",
+    "domain": "Power BI, Semantic Models, Power Query, and DAX",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What value does a governed semantic layer provide?",
+    "preferred_answer": "It centralises reusable definitions, relationships, security, and business-friendly fields so reports interpret data consistently. It does not eliminate governance: ownership, lineage, testing, versioning, performance, and exceptions must still be managed.",
+    "evaluation_points": [
+      "Focus on semantic-model",
+      "Focus on single-source"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI modeling",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q161",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How do dimensions and measures affect a Tableau view?",
+    "preferred_answer": "Dimensions partition or label the view, while measures are usually aggregated and encoded as marks. Continuous and discrete behaviour also affects axes, headers, and granularity; field roles can be changed when the analytical meaning requires it.",
+    "evaluation_points": [
+      "Focus on tableau",
+      "Focus on dimension",
+      "Focus on measure"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q162",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between discrete and continuous fields in Tableau?",
+    "preferred_answer": "Discrete fields create headers and categorical partitions; continuous fields create axes across a range. A date or number may be used either way depending on whether the task needs categories or a continuous scale.",
+    "evaluation_points": [
+      "Focus on discrete",
+      "Focus on continuous"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q163",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What problem do level-of-detail expressions solve?",
+    "preferred_answer": "LOD expressions calculate at a specified granularity that may differ from the current view, such as customer lifetime revenue while displaying region. The analyst must understand filter order and avoid mixing grains without clear meaning.",
+    "evaluation_points": [
+      "Focus on lod-expression",
+      "Focus on grain"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q164",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a Tableau table calculation?",
+    "preferred_answer": "It computes over values already present in the visual result, such as running total, rank, or percent of total. Results depend on addressing and partitioning, so changes in layout or filters can change the calculation.",
+    "evaluation_points": [
+      "Focus on table-calculation",
+      "Focus on partitioning"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q165",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate a live connection and an extract.",
+    "preferred_answer": "A live connection queries the source during use; an extract stores an optimised snapshot for performance and portability. Choose based on freshness, source capacity, security, offline needs, refresh, volume, and supported features.",
+    "evaluation_points": [
+      "Focus on extract",
+      "Focus on live-connection"
+    ],
+    "resolution_title": "Tableau Help - Optimize Workbook Performance",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/perf_visualization.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q166",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why can a context filter change a Tableau result?",
+    "preferred_answer": "It creates a subset used by dependent filters and can affect top-N or LOD behaviour according to Tableau's order of operations. Use it for a defined need, not as a generic performance fix.",
+    "evaluation_points": [
+      "Focus on context-filter",
+      "Focus on order-of-operations"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q167",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When is a Tableau parameter useful?",
+    "preferred_answer": "A parameter is a single user-controlled value that can drive calculations, reference lines, measure selection, bins, or what-if logic. It is not automatically filtered to available data and needs validation and a clear user purpose.",
+    "evaluation_points": [
+      "Focus on parameter",
+      "Focus on what-if"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q168",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are dashboard actions used for?",
+    "preferred_answer": "Actions connect views through filter, highlight, navigation, URL, or parameter behaviour. They should support a known workflow, have predictable clearing and default behaviour, and be tested for accessibility and performance.",
+    "evaluation_points": [
+      "Focus on filter-action",
+      "Focus on dashboard-action"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q169",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What steps improve Tableau workbook performance?",
+    "preferred_answer": "Reduce unnecessary marks, sheets and quick filters; use appropriate extracts or efficient sources; limit high-cardinality dimensions; simplify calculations; avoid expensive custom SQL; analyse performance recordings; and validate each optimisation against correctness.",
+    "evaluation_points": [
+      "Focus on tableau-performance",
+      "Focus on workbook"
+    ],
+    "resolution_title": "Tableau Help - Optimize Workbook Performance",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/perf_visualization.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q170",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do relationships differ from physical joins in Tableau's data model?",
+    "preferred_answer": "Relationships preserve logical tables and combine them based on the fields used in a view, helping retain each table's grain. Physical joins create a row-level combined table and can duplicate measures. Choice depends on cardinality and analytical behaviour.",
+    "evaluation_points": [
+      "Focus on relationships",
+      "Focus on joins",
+      "Focus on blending"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q171",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you design a Tableau dashboard for desktop and mobile users?",
+    "preferred_answer": "Prioritise the mobile task, reduce visual density, use device-specific layouts where needed, preserve readable text and touch targets, avoid hover-only meaning, test filters and orientation, and validate performance on realistic networks.",
+    "evaluation_points": [
+      "Focus on device-layout",
+      "Focus on responsive"
+    ],
+    "resolution_title": "W3C Web Accessibility Initiative",
+    "resolution_url": "https://www.w3.org/WAI/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q172",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What belongs in a useful tooltip?",
+    "preferred_answer": "A concise label, exact value and unit, relevant comparison or definition, and context that helps interpret the mark. Avoid duplicating every field or hiding essential information that users cannot access without hover.",
+    "evaluation_points": [
+      "Focus on tooltip",
+      "Focus on context"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q173",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A Tableau dashboard is slow when a high-cardinality filter opens. What can you do?",
+    "preferred_answer": "Confirm user need, reduce available values through dependent filters or search, pre-aggregate or index the source, use extracts where appropriate, avoid showing all values, and redesign the workflow rather than only adding hardware.",
+    "evaluation_points": [
+      "Focus on filter",
+      "Focus on performance"
+    ],
+    "resolution_title": "Tableau Help - Optimize Workbook Performance",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/perf_visualization.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q174",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should shared Tableau data sources and dashboards be governed?",
+    "preferred_answer": "Assign owners, use controlled projects and permissions, certify or endorse trusted sources, document definitions and freshness, monitor usage and failures, review access, manage versions, and retire duplicates or abandoned assets.",
+    "evaluation_points": [
+      "Focus on trusted-content",
+      "Focus on governance"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q175",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What accessibility considerations apply to a Tableau dashboard?",
+    "preferred_answer": "Use sufficient contrast, readable sizes, meaningful titles and labels, keyboard-compatible interactions where supported, non-colour encodings, sensible focus and reading order, alternative tabular access, and testing with assistive technologies.",
+    "evaluation_points": [
+      "Focus on accessibility",
+      "Focus on tableau"
+    ],
+    "resolution_title": "W3C Web Accessibility Initiative",
+    "resolution_url": "https://www.w3.org/WAI/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q176",
+    "role_slug": "data-analytics",
+    "domain": "Tableau Analytics and Dashboard Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you validate a complex Tableau calculation?",
+    "preferred_answer": "Write the intended grain and formula, reproduce it independently in SQL or a controlled table, test known records and filters, inspect underlying data, check order-of-operations effects, reconcile totals, and peer review before publishing.",
+    "evaluation_points": [
+      "Focus on validation",
+      "Focus on tableau"
+    ],
+    "resolution_title": "Tableau Help - Build Views",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q177",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate a pandas Series and DataFrame.",
+    "preferred_answer": "A Series is a one-dimensional labelled array; a DataFrame is a two-dimensional labelled table composed of columns that may have different data types. Both use indexes that affect alignment behaviour.",
+    "evaluation_points": [
+      "Focus on pandas",
+      "Focus on series",
+      "Focus on dataframe"
+    ],
+    "resolution_title": "pandas User Guide",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q178",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why prefer vectorised pandas operations over Python row loops?",
+    "preferred_answer": "Vectorised operations express work over arrays and generally use optimised native implementations, producing clearer and faster code. Some custom logic still requires alternatives, but apply should not be the automatic first choice.",
+    "evaluation_points": [
+      "Focus on vectorization",
+      "Focus on performance"
+    ],
+    "resolution_title": "pandas User Guide",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q179",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How can automatic index alignment create unexpected pandas results?",
+    "preferred_answer": "Arithmetic and assignment align labels rather than only positions. Mismatched indexes can introduce nulls or reorder values. Inspect indexes, reset or set them deliberately, and use arrays only when positional semantics are intended.",
+    "evaluation_points": [
+      "Focus on index",
+      "Focus on alignment"
+    ],
+    "resolution_title": "pandas User Guide",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q180",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you make a pandas merge safer?",
+    "preferred_answer": "Specify join keys and type, inspect key uniqueness and nulls, use merge validation for expected cardinality, enable an indicator when reconciling, compare row counts and totals, and avoid silently joining on all same-named columns.",
+    "evaluation_points": [
+      "Focus on merge",
+      "Focus on cardinality"
+    ],
+    "resolution_title": "pandas User Guide - Merge, join, concatenate and compare",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/merging.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q181",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Explain split-apply-combine in pandas GroupBy.",
+    "preferred_answer": "Data is split into groups by keys, a function or aggregation is applied to each group, and results are combined. Define null-key behaviour, output index, aggregation semantics, and grain before using the result.",
+    "evaluation_points": [
+      "Focus on groupby",
+      "Focus on aggregation"
+    ],
+    "resolution_title": "pandas User Guide - GroupBy",
+    "resolution_url": "https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q182",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate pivoting and melting.",
+    "preferred_answer": "Pivoting reshapes long data to wider columns based on key values and requires unique combinations unless aggregation is used. Melting converts wide columns into variable-value rows. Both should preserve identifiers and expected row counts.",
+    "evaluation_points": [
+      "Focus on pivot",
+      "Focus on melt",
+      "Focus on reshape"
+    ],
+    "resolution_title": "pandas User Guide",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q183",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How should missing values be inspected in pandas?",
+    "preferred_answer": "Check counts and rates by column and relevant segments, distinguish numeric NaN, nullable types, None, empty strings, and domain-specific sentinels, inspect patterns, then choose treatment based on meaning and downstream operations.",
+    "evaluation_points": [
+      "Focus on missing",
+      "Focus on pandas"
+    ],
+    "resolution_title": "pandas User Guide",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q184",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why do pandas data types matter?",
+    "preferred_answer": "They affect memory, precision, missing-value support, comparisons, joins, ordering, and performance. Parse dates and numeric fields explicitly, use categorical or nullable types where appropriate, and validate conversions that coerce invalid values.",
+    "evaluation_points": [
+      "Focus on dtype",
+      "Focus on memory"
+    ],
+    "resolution_title": "pandas User Guide",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q185",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why should chained assignment be avoided in pandas?",
+    "preferred_answer": "It can operate on a view or copy ambiguously and may not update the intended object. Use explicit .loc assignment and structure transformations so ownership and mutation are clear.",
+    "evaluation_points": [
+      "Focus on copy",
+      "Focus on assignment"
+    ],
+    "resolution_title": "pandas User Guide",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q186",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a safe approach to datetime handling in pandas?",
+    "preferred_answer": "Parse explicitly, retain timezone information, convert to a canonical timezone for storage, apply business-local timezone for reporting, handle ambiguous or nonexistent daylight-saving times, and avoid mixing naive and aware timestamps.",
+    "evaluation_points": [
+      "Focus on datetime",
+      "Focus on timezone"
+    ],
+    "resolution_title": "pandas User Guide",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q187",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When is DataFrame.apply appropriate?",
+    "preferred_answer": "It is useful for functions across rows or columns when no clear vectorised, aggregation, string, datetime, or NumPy operation exists. Measure performance and keep functions deterministic and testable.",
+    "evaluation_points": [
+      "Focus on apply",
+      "Focus on performance"
+    ],
+    "resolution_title": "pandas User Guide",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q188",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "A CSV is too large for available memory. What options do you consider?",
+    "preferred_answer": "Read selected columns and types, process chunks, aggregate early, use efficient formats such as Parquet, push work to a database or distributed engine, or use an out-of-core tool. Confirm that chunk logic preserves global calculations.",
+    "evaluation_points": [
+      "Focus on chunking",
+      "Focus on scale"
+    ],
+    "resolution_title": "pandas User Guide",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q189",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you make a notebook reproducible and reviewable?",
+    "preferred_answer": "Use ordered executable cells, isolated functions, fixed inputs and parameters, environment metadata, explicit seeds, assertions and tests, no hidden manual edits, saved outputs only when useful, and a clean run from start to finish.",
+    "evaluation_points": [
+      "Focus on notebook",
+      "Focus on reproducibility"
+    ],
+    "resolution_title": "pandas User Guide",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q190",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should be tested in analytical Python code?",
+    "preferred_answer": "Test transformations with known inputs, schema and types, edge cases, nulls, joins and row counts, invariant control totals, time logic, deterministic behaviour, and failure messages. Add integration tests for source and output contracts.",
+    "evaluation_points": [
+      "Focus on unit-test",
+      "Focus on data-test"
+    ],
+    "resolution_title": "pandas User Guide",
+    "resolution_url": "https://pandas.pydata.org/docs/user_guide/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q191",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What data-security practices apply to Python analysis?",
+    "preferred_answer": "Do not hard-code credentials or sensitive extracts; use approved secrets and storage, least privilege, dependency controls, encrypted transfer, masked or synthetic data, restricted outputs, logging without sensitive values, and retention rules.",
+    "evaluation_points": [
+      "Focus on security",
+      "Focus on credentials"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q192",
+    "role_slug": "data-analytics",
+    "domain": "Python, pandas, and Programmatic Analysis",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What changes when an exploratory pandas analysis becomes a production pipeline?",
+    "preferred_answer": "Move logic into versioned modules, define contracts and configuration, automate tests and quality checks, make runs idempotent, add observability, resource limits, secure deployment, lineage, ownership, failure recovery, and controlled releases.",
+    "evaluation_points": [
+      "Focus on production",
+      "Focus on pipeline"
+    ],
+    "resolution_title": "Apache Airflow Documentation",
+    "resolution_url": "https://airflow.apache.org/docs/apache-airflow/stable/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q193",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate fact and dimension tables.",
+    "preferred_answer": "A fact table records measurable business events or states at a declared grain and contains foreign keys and measures. Dimension tables provide descriptive context used to filter, group, and label facts.",
+    "evaluation_points": [
+      "Focus on fact-table",
+      "Focus on dimension-table"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q194",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why must fact-table grain be declared first?",
+    "preferred_answer": "The grain states exactly what one row represents. It controls valid dimensions, measures, keys, deduplication, and aggregation. Mixing grains in one fact table creates ambiguous totals and joins.",
+    "evaluation_points": [
+      "Focus on grain",
+      "Focus on fact-table"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q195",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate transaction, periodic snapshot, and accumulating snapshot fact tables.",
+    "preferred_answer": "Transaction facts record individual events; periodic snapshots record state or measures at regular intervals; accumulating snapshots track milestones of a process in one evolving row. Each supports different questions and update patterns.",
+    "evaluation_points": [
+      "Focus on transaction-fact",
+      "Focus on snapshot"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q196",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are additive, semi-additive, and non-additive measures?",
+    "preferred_answer": "Additive measures can be summed across all dimensions; semi-additive measures can be summed across some dimensions but not others, often time; non-additive measures such as ratios require recomputation from components.",
+    "evaluation_points": [
+      "Focus on additive",
+      "Focus on semi-additive"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q197",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a conformed dimension?",
+    "preferred_answer": "It is a consistently defined and shared dimension used across multiple fact tables or data marts, enabling aligned analysis such as the same product, customer, or calendar definitions across processes.",
+    "evaluation_points": [
+      "Focus on conformed-dimension",
+      "Focus on integration"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q198",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate slowly changing dimension Type 1 and Type 2.",
+    "preferred_answer": "Type 1 overwrites the attribute and keeps no history. Type 2 creates a new version with surrogate key and effective dates or current flag, preserving historical context. Choose by business need at attribute level.",
+    "evaluation_points": [
+      "Focus on scd",
+      "Focus on type-1",
+      "Focus on type-2"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q199",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a degenerate dimension?",
+    "preferred_answer": "It is a business identifier such as an order number stored in the fact table without a separate descriptive dimension, useful for grouping or drill-through at transaction level.",
+    "evaluation_points": [
+      "Focus on degenerate-dimension",
+      "Focus on transaction"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q200",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a junk dimension?",
+    "preferred_answer": "It combines low-cardinality flags, indicators, or small attributes into a dimension to reduce clutter in a fact table. It should be understandable and not become a dumping ground for unrelated high-cardinality data.",
+    "evaluation_points": [
+      "Focus on junk-dimension",
+      "Focus on flags"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q201",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a role-playing dimension?",
+    "preferred_answer": "One physical dimension is used in multiple logical roles, such as order date, ship date, and delivery date. Relationships or aliases must make each role clear and prevent accidental filter ambiguity.",
+    "evaluation_points": [
+      "Focus on role-playing-dimension",
+      "Focus on date"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q202",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How do you handle a fact that arrives before its dimension record?",
+    "preferred_answer": "Use an inferred or unknown member with the business key, load the fact without losing it, and update the dimension attributes later through an auditable process. Preserve the intended historical relationship.",
+    "evaluation_points": [
+      "Focus on late-arriving",
+      "Focus on dimension"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q203",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why use an explicit unknown dimension member?",
+    "preferred_answer": "It preserves referential integrity and makes missing, not applicable, or unresolved dimension references visible and countable instead of dropping facts through inner joins or leaving ambiguous nulls.",
+    "evaluation_points": [
+      "Focus on unknown-member",
+      "Focus on referential-integrity"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q204",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "When is a bridge table used in dimensional modelling?",
+    "preferred_answer": "It represents a many-to-many or multivalued relationship, such as multiple diagnoses per encounter or salespeople per account. Allocation, weighting, effective dates, and distinct-count semantics must be defined.",
+    "evaluation_points": [
+      "Focus on bridge-table",
+      "Focus on multivalued"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q205",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a factless fact table?",
+    "preferred_answer": "It records the occurrence or coverage of relationships without numeric measures, such as attendance, eligibility, or promotion coverage. Counts and anti-joins can answer event and non-event questions.",
+    "evaluation_points": [
+      "Focus on factless-fact",
+      "Focus on coverage"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q206",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Compare star and snowflake schemas.",
+    "preferred_answer": "A star keeps dimensions denormalized around facts for simpler queries and BI usability. A snowflake normalizes dimension hierarchies, which may reduce redundancy but adds joins and complexity. Choose based on governance, size, reuse, and tool behaviour.",
+    "evaluation_points": [
+      "Focus on star-schema",
+      "Focus on snowflake"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q207",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you prevent double counting when exposing multiple fact tables in one semantic model?",
+    "preferred_answer": "Keep each fact at its declared grain, connect through conformed dimensions, avoid direct fact-to-fact joins, write measures with correct filters, use bridge or aggregate designs where justified, and test cross-process visuals.",
+    "evaluation_points": [
+      "Focus on semantic-layer",
+      "Focus on grain"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q208",
+    "role_slug": "data-analytics",
+    "domain": "Dimensional Modeling and Data Warehousing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What do you review before approving a dimensional model?",
+    "preferred_answer": "Business processes and grain, source coverage, keys, conformed dimensions, history strategy, measure additivity, unknown and late data, many-to-many relationships, security, lineage, quality tests, performance, and representative queries.",
+    "evaluation_points": [
+      "Focus on model-review",
+      "Focus on warehouse"
+    ],
+    "resolution_title": "Kimball Group - Dimensional Modeling Techniques",
+    "resolution_url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q209",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate ETL and ELT.",
+    "preferred_answer": "ETL transforms before loading into the target analytical store; ELT loads raw or lightly processed data first and transforms within the target platform. Choice depends on platform capability, governance, cost, latency, data sensitivity, and reuse.",
+    "evaluation_points": [
+      "Focus on etl",
+      "Focus on elt"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q210",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does idempotency mean for a data pipeline?",
+    "preferred_answer": "Rerunning the same logical input produces the same correct target state without duplicate or compounding effects. Achieve it with stable keys, deterministic transformations, transactional or replaceable writes, checkpoints, and explicit side-effect handling.",
+    "evaluation_points": [
+      "Focus on idempotent",
+      "Focus on pipeline"
+    ],
+    "resolution_title": "Apache Airflow Documentation",
+    "resolution_url": "https://airflow.apache.org/docs/apache-airflow/stable/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q211",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When would you use a full load versus an incremental load?",
+    "preferred_answer": "Full loads are simpler and suitable for small data, occasional rebuilds, or uncertain change capture. Incremental loads reduce time and cost at scale but require reliable change detection, deletes, late data, idempotency, reconciliation, and backfill.",
+    "evaluation_points": [
+      "Focus on full-load",
+      "Focus on incremental"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q212",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should a data contract specify?",
+    "preferred_answer": "Producer and consumer ownership, schema and semantics, keys and grain, types, nullability, quality expectations, freshness, compatibility policy, privacy classification, versioning, support, and consequences of breaking changes.",
+    "evaluation_points": [
+      "Focus on data-contract",
+      "Focus on schema"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q213",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a dbt model?",
+    "preferred_answer": "It is typically a version-controlled SQL select statement that dbt materializes as a view, table, incremental model, or ephemeral relation while managing dependencies, configuration, documentation, and tests.",
+    "evaluation_points": [
+      "Focus on dbt",
+      "Focus on model"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q214",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the purpose of generic and singular dbt tests?",
+    "preferred_answer": "Generic tests apply reusable assertions such as not-null, unique, relationships, or accepted values. Singular tests are custom SQL queries that return failing rows. Both should target meaningful contracts and business risks.",
+    "evaluation_points": [
+      "Focus on dbt-test",
+      "Focus on quality"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q215",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What does source freshness testing tell you?",
+    "preferred_answer": "It compares the latest source timestamp with configured warning or error thresholds. It detects stale inputs but does not prove completeness, correctness, or successful downstream transformation.",
+    "evaluation_points": [
+      "Focus on source-freshness",
+      "Focus on sla"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q216",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a DAG in workflow orchestration?",
+    "preferred_answer": "A directed acyclic graph represents tasks and one-way dependencies without cycles. It defines execution order, but reliable orchestration also needs retries, timeouts, scheduling, state, observability, and idempotent tasks.",
+    "evaluation_points": [
+      "Focus on dag",
+      "Focus on dependency"
+    ],
+    "resolution_title": "Apache Airflow - DAGs",
+    "resolution_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q217",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "When are automatic retries appropriate in a pipeline?",
+    "preferred_answer": "Use them for transient failures such as temporary network or service errors, with bounded attempts and backoff. Do not retry deterministic data or code errors indefinitely; ensure tasks are idempotent and alerts preserve root cause.",
+    "evaluation_points": [
+      "Focus on retry",
+      "Focus on failure"
+    ],
+    "resolution_title": "Apache Airflow Documentation",
+    "resolution_url": "https://airflow.apache.org/docs/apache-airflow/stable/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q218",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How do you plan a safe historical backfill?",
+    "preferred_answer": "Define affected periods and dependencies, isolate or parameterise runs, validate capacity and cost, make writes idempotent, protect current production schedules, reconcile outputs, preserve old results or rollback, and communicate downstream changes.",
+    "evaluation_points": [
+      "Focus on backfill",
+      "Focus on historical"
+    ],
+    "resolution_title": "Apache Airflow Documentation",
+    "resolution_url": "https://airflow.apache.org/docs/apache-airflow/stable/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q219",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should late-arriving events be handled?",
+    "preferred_answer": "Define an event-time watermark or correction window, use merge or upsert logic, reopen affected partitions or aggregates, track lateness, reconcile with source totals, and make consumer freshness versus completeness trade-offs explicit.",
+    "evaluation_points": [
+      "Focus on late-arriving",
+      "Focus on watermark"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q220",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What signals belong in data-pipeline observability?",
+    "preferred_answer": "Run state and duration, volume, freshness, schema, quality tests, lineage, retries, resource use, cost, distribution changes, downstream impact, ownership, and actionable logs. Alerts should map to severity and recovery steps.",
+    "evaluation_points": [
+      "Focus on observability",
+      "Focus on pipeline"
+    ],
+    "resolution_title": "Apache Airflow Documentation",
+    "resolution_url": "https://airflow.apache.org/docs/apache-airflow/stable/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q221",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why separate orchestration logic from transformation logic?",
+    "preferred_answer": "Orchestration should coordinate dependencies, schedules, retries, and state; transformation code should express data logic and tests. Separation improves testability, reuse, local development, and migration, though interfaces must be well defined.",
+    "evaluation_points": [
+      "Focus on orchestration",
+      "Focus on transformation"
+    ],
+    "resolution_title": "Apache Airflow Documentation",
+    "resolution_url": "https://airflow.apache.org/docs/apache-airflow/stable/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q222",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What should CI/CD for analytics code validate?",
+    "preferred_answer": "Formatting and static checks, unit and data tests, SQL compilation, dependency graph, contracts, representative builds, security and secrets, migration impact, documentation, performance or cost risks, approvals, deployment order, and rollback.",
+    "evaluation_points": [
+      "Focus on ci-cd",
+      "Focus on analytics"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q223",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What controls show that a pipeline completed correctly?",
+    "preferred_answer": "Do not rely only on a green task state. Compare expected and actual partitions, row counts, key uniqueness, control totals, reject counts, source-to-target balances, quality tests, and downstream publication status.",
+    "evaluation_points": [
+      "Focus on reconciliation",
+      "Focus on pipeline"
+    ],
+    "resolution_title": "UK Government Data Quality Framework Guidance",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q224",
+    "role_slug": "data-analytics",
+    "domain": "ETL, ELT, dbt, Orchestration, and Analytics Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does analytics engineering differ from ad hoc analysis?",
+    "preferred_answer": "Analytics engineering builds governed, tested, documented, reusable data models and delivery practices between raw platforms and analytical consumers. Ad hoc analysis explores specific questions; mature teams connect exploration back into maintained data products when warranted.",
+    "evaluation_points": [
+      "Focus on analytics-engineering",
+      "Focus on role"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q225",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is data governance?",
+    "preferred_answer": "It is the decision rights, roles, policies, standards, controls, and processes used to manage data as an asset. It covers ownership, quality, access, privacy, security, metadata, lifecycle, and issue resolution rather than only documentation.",
+    "evaluation_points": [
+      "Focus on data-governance",
+      "Focus on accountability"
+    ],
+    "resolution_title": "UK Government Data Quality Framework",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q226",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Differentiate a data owner and a data steward.",
+    "preferred_answer": "A data owner is accountable for decisions about use, access, quality, and risk for a data domain. A steward performs or coordinates operational definition, quality, metadata, and issue-management work. Exact titles vary, so decision rights must be explicit.",
+    "evaluation_points": [
+      "Focus on data-owner",
+      "Focus on data-steward"
+    ],
+    "resolution_title": "UK Government Data Quality Framework",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q227",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What types of metadata are useful in analytics?",
+    "preferred_answer": "Business metadata includes definitions and owners; technical metadata includes schemas, types and lineage; operational metadata includes runs, freshness and quality; administrative metadata includes access, classification, retention and certification.",
+    "evaluation_points": [
+      "Focus on metadata",
+      "Focus on business",
+      "Focus on technical"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q228",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes a data catalogue useful rather than a document graveyard?",
+    "preferred_answer": "Automated metadata and lineage, searchable business terms, active ownership, freshness and quality signals, usage context, certification, access workflow, feedback, and retirement processes. Content must be embedded in delivery and review practices.",
+    "evaluation_points": [
+      "Focus on data-catalog",
+      "Focus on discoverability"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q229",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why classify data?",
+    "preferred_answer": "Classification identifies sensitivity and handling requirements so access, masking, encryption, sharing, logging, retention, and incident response are proportional to risk. Classification should follow data through derived assets.",
+    "evaluation_points": [
+      "Focus on classification",
+      "Focus on sensitive-data"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q230",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is least privilege in an analytics environment?",
+    "preferred_answer": "Users and services receive only the access needed for their approved tasks, for the necessary duration and scope. Use roles, separate environments, reviews, expiration, logging, and prompt revocation.",
+    "evaluation_points": [
+      "Focus on least-privilege",
+      "Focus on access"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q231",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How can privacy be built into an analytics project?",
+    "preferred_answer": "Clarify purpose and lawful authority, minimise fields and retention, use aggregation or pseudonymisation, restrict access and outputs, assess re-identification, secure transfers, document lineage, enable rights where applicable, and review changes.",
+    "evaluation_points": [
+      "Focus on privacy-by-design",
+      "Focus on minimization"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q232",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Differentiate anonymisation and pseudonymisation.",
+    "preferred_answer": "Pseudonymisation replaces direct identifiers but allows re-linking with additional protected information, so data remains sensitive. Anonymisation aims to prevent reasonable re-identification; simply removing names is usually insufficient.",
+    "evaluation_points": [
+      "Focus on anonymization",
+      "Focus on pseudonymization"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q233",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Differentiate row-level and column-level security.",
+    "preferred_answer": "Row-level security restricts which records a principal can see; column-level security restricts particular attributes. They can be combined with masking, views, source controls, and semantic-model permissions, and must be tested across exports and alternate tools.",
+    "evaluation_points": [
+      "Focus on row-security",
+      "Focus on column-security"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q234",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should retention be handled for analytical datasets?",
+    "preferred_answer": "Define purpose-based retention, legal and business requirements, source and derived copies, backups, deletion or anonymisation mechanisms, holds, ownership, and evidence. 'Storage is cheap' is not a valid retention policy.",
+    "evaluation_points": [
+      "Focus on retention",
+      "Focus on deletion"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q235",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should an audit trail capture in a BI environment?",
+    "preferred_answer": "Identity, time, action, object, before-and-after or version, access and export events, refresh and publication changes, administrative actions, and outcome. Protect logs, limit sensitive content, and make them reviewable and retained appropriately.",
+    "evaluation_points": [
+      "Focus on audit-log",
+      "Focus on monitoring"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q236",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should shared metrics be governed?",
+    "preferred_answer": "Assign owner and approver, publish definition and lineage, version formulas and effective dates, test at source and semantic layers, document valid dimensions, communicate changes, preserve comparability, and retire duplicates deliberately.",
+    "evaluation_points": [
+      "Focus on metric-store",
+      "Focus on governance"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q237",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A partner asks for a customer-level export for 'research'. What should the analyst do?",
+    "preferred_answer": "Do not send it based on informal approval. Clarify purpose, authority, fields, necessity, contract, recipient controls, retention, cross-border issues, re-identification risk, and secure transfer. Prefer aggregated or minimised data and involve privacy, legal, security, and the accountable owner.",
+    "evaluation_points": [
+      "Focus on data-sharing",
+      "Focus on third-party"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q238",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How should credentials used by dashboards and pipelines be managed?",
+    "preferred_answer": "Use managed identities or an approved secret manager, least privilege, rotation, separate service accounts, secure injection, audit and revocation. Never embed credentials in source code, notebooks, spreadsheets, or shared connection files.",
+    "evaluation_points": [
+      "Focus on secrets",
+      "Focus on credentials"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q239",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How does lineage support safe change management?",
+    "preferred_answer": "It identifies affected models, dashboards, metrics, owners and consumers when a source or transformation changes. Combine lineage with contracts, usage, tests, freshness, and communication; lineage alone does not prove semantic compatibility.",
+    "evaluation_points": [
+      "Focus on lineage",
+      "Focus on change-impact"
+    ],
+    "resolution_title": "dbt Developer Hub",
+    "resolution_url": "https://docs.getdbt.com/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q240",
+    "role_slug": "data-analytics",
+    "domain": "Data Governance, Privacy, Security, and Metadata",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What questions belong in an ethical review of a BI or analytics product?",
+    "preferred_answer": "Who benefits or may be harmed, whether data and definitions represent affected groups, incentives created by metrics, privacy and proportionality, bias and accessibility, possibility of misuse, contestability, transparency, uncertainty, and monitoring after release.",
+    "evaluation_points": [
+      "Focus on ethics",
+      "Focus on bias"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q241",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What advantages do cloud analytical warehouses commonly provide?",
+    "preferred_answer": "Managed storage and compute, elastic scaling, columnar processing, workload separation, integrated security and governance, and reduced infrastructure operations. Costs, lock-in, data movement, permissions, and workload design still require active management.",
+    "evaluation_points": [
+      "Focus on cloud-warehouse",
+      "Focus on separation"
+    ],
+    "resolution_title": "Google Cloud - Query partitioned tables",
+    "resolution_url": "https://cloud.google.com/bigquery/docs/querying-partitioned-tables",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q242",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does partition pruning improve analytical queries?",
+    "preferred_answer": "When a query filters on the partitioning column in a supported way, the engine can skip unrelated partitions, reducing scanned data, time, and cost. Function-wrapped or missing filters may prevent effective pruning.",
+    "evaluation_points": [
+      "Focus on partition-pruning",
+      "Focus on cost"
+    ],
+    "resolution_title": "Google Cloud - Query partitioned tables",
+    "resolution_url": "https://cloud.google.com/bigquery/docs/querying-partitioned-tables",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q243",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does clustering complement partitioning?",
+    "preferred_answer": "Clustering organises data within a table or partitions by selected columns so relevant blocks can be skipped. It is useful for frequently filtered or grouped columns but benefits depend on cardinality, ordering, data size, and query patterns.",
+    "evaluation_points": [
+      "Focus on clustering",
+      "Focus on bigquery"
+    ],
+    "resolution_title": "Google Cloud - Introduction to clustered tables",
+    "resolution_url": "https://cloud.google.com/bigquery/docs/clustered-tables",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q244",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why is columnar storage effective for analytics?",
+    "preferred_answer": "Analytical queries often read a few columns across many rows. Columnar layouts reduce I/O, improve compression and enable vectorised processing, while row-oriented storage may suit transactional point operations better.",
+    "evaluation_points": [
+      "Focus on columnar-storage",
+      "Focus on compression"
+    ],
+    "resolution_title": "Apache Spark - Spark SQL and DataFrames",
+    "resolution_url": "https://spark.apache.org/docs/latest/sql-programming-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q245",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a shuffle in distributed data processing, and why is it expensive?",
+    "preferred_answer": "A shuffle redistributes data across workers for joins, groupings, or sorts, requiring network transfer, serialization, memory and disk. Reduce unnecessary shuffles with partition-aware design, early filtering, suitable joins, and balanced keys.",
+    "evaluation_points": [
+      "Focus on shuffle",
+      "Focus on distributed"
+    ],
+    "resolution_title": "Apache Spark - Spark SQL and DataFrames",
+    "resolution_url": "https://spark.apache.org/docs/latest/sql-programming-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q246",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How does data skew affect a distributed analytics job?",
+    "preferred_answer": "A few keys or partitions receive disproportionate data, creating straggler tasks, memory pressure, spills, and poor utilisation. Confirm partition sizes, then consider salting, pre-aggregation, broadcast joins, repartitioning, or special handling while preserving semantics.",
+    "evaluation_points": [
+      "Focus on data-skew",
+      "Focus on distributed"
+    ],
+    "resolution_title": "Apache Spark - Spark SQL and DataFrames",
+    "resolution_url": "https://spark.apache.org/docs/latest/sql-programming-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q247",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "Why are many small files problematic in a data lake?",
+    "preferred_answer": "They increase metadata operations, task scheduling, file-open overhead, and inefficient scans. Use sensible partitioning, compaction, target file sizes, and controlled streaming output without creating oversized files or slow rewrites.",
+    "evaluation_points": [
+      "Focus on small-files",
+      "Focus on lake"
+    ],
+    "resolution_title": "Apache Spark - Spark SQL and DataFrames",
+    "resolution_url": "https://spark.apache.org/docs/latest/sql-programming-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q248",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "When is a broadcast join useful?",
+    "preferred_answer": "When one input is sufficiently small, it can be copied to workers so the large table need not be shuffled. Confirm actual size, memory, reuse, and engine thresholds; broadcasting an unexpectedly large table can fail.",
+    "evaluation_points": [
+      "Focus on broadcast-join",
+      "Focus on spark"
+    ],
+    "resolution_title": "Apache Spark - Spark SQL and DataFrames",
+    "resolution_url": "https://spark.apache.org/docs/latest/sql-programming-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q249",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you manage cost for cloud analytics workloads?",
+    "preferred_answer": "Tag and attribute usage, monitor scanned data and compute, set budgets and alerts, use partitioning and clustering, right-size reservations or autoscaling, schedule non-urgent work, cache or materialize reused results, and connect cost to product value.",
+    "evaluation_points": [
+      "Focus on cloud-cost",
+      "Focus on finops"
+    ],
+    "resolution_title": "Google Cloud - Query partitioned tables",
+    "resolution_url": "https://cloud.google.com/bigquery/docs/querying-partitioned-tables",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q250",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is workload management in an analytics platform?",
+    "preferred_answer": "It allocates compute, queues, priorities, concurrency, limits, or isolation among dashboards, ELT, notebooks, and ad hoc users. Define service objectives and prevent one workload from degrading critical consumers.",
+    "evaluation_points": [
+      "Focus on concurrency",
+      "Focus on workload"
+    ],
+    "resolution_title": "Google Cloud - Query partitioned tables",
+    "resolution_url": "https://cloud.google.com/bigquery/docs/querying-partitioned-tables",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q251",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "When should aggregate tables be introduced?",
+    "preferred_answer": "Use them for repeated queries at a coarser grain when detailed scans are too costly or slow. Define supported dimensions and measures, refresh and reconciliation, query routing, security, and how users reach detail.",
+    "evaluation_points": [
+      "Focus on aggregate-table",
+      "Focus on semantic-model"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI modeling",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q252",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What trade-offs come with caching analytical results?",
+    "preferred_answer": "Caching improves response and reduces compute but can serve stale or security-inappropriate results. Define cache keys, invalidation, expiry, user or role isolation, refresh dependencies, and visible as-of time.",
+    "evaluation_points": [
+      "Focus on cache",
+      "Focus on freshness"
+    ],
+    "resolution_title": "Microsoft Learn - Power BI documentation",
+    "resolution_url": "https://learn.microsoft.com/en-us/power-bi/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q253",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What does quality engineering mean for data and BI?",
+    "preferred_answer": "It builds quality into design and delivery through contracts, automated tests, profiling, observability, lineage, version control, reviews, safe deployment, resilience, accessibility, and feedback rather than relying only on final dashboard checks.",
+    "evaluation_points": [
+      "Focus on quality-engineering",
+      "Focus on data"
+    ],
+    "resolution_title": "UK Government Data Quality Framework",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q254",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "A critical source misses its daily delivery. How should a BI product behave?",
+    "preferred_answer": "Detect and communicate staleness, avoid presenting partial data as current, use an approved last-known-good or degraded mode where safe, stop dependent decisions if necessary, alert owners, recover and backfill, reconcile, and review prevention.",
+    "evaluation_points": [
+      "Focus on resilience",
+      "Focus on degraded-mode"
+    ],
+    "resolution_title": "UK Government Data Quality Framework Guidance",
+    "resolution_url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q255",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How would you performance-test an analytics product?",
+    "preferred_answer": "Define representative data volume, concurrency, filters, security roles, refresh and query workloads, targets and failure thresholds. Measure source, model, gateway, network and visual timing, run repeatably, analyse bottlenecks, and verify correctness under load.",
+    "evaluation_points": [
+      "Focus on scalability",
+      "Focus on performance-test"
+    ],
+    "resolution_title": "Tableau Help - Optimize Workbook Performance",
+    "resolution_url": "https://help.tableau.com/current/pro/desktop/en-us/perf_visualization.htm",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "DA-Q256",
+    "role_slug": "data-analytics",
+    "domain": "Cloud Analytics, Scale, Performance, and Quality Engineering",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you choose between a spreadsheet, BI semantic model, warehouse, and distributed platform?",
+    "preferred_answer": "Base the choice on decision criticality, data volume and velocity, concurrency, transformation complexity, governance, privacy, latency, skills, integration, cost, reproducibility, and lifecycle. Use the simplest architecture that safely meets present and foreseeable needs.",
+    "evaluation_points": [
+      "Focus on architecture",
+      "Focus on trade-off"
+    ],
+    "resolution_title": "IIBA - The Business Analysis Standard",
+    "resolution_url": "https://www.iiba.org/knowledgehub/the-business-analysis-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];

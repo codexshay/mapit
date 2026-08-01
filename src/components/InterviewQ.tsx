@@ -447,7 +447,7 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
 'data-analytics': {
     label: 'Data, Analytics & Business Intelligence',
     icon: '📊',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering SQL, Power BI (DAX), Tableau, Python (pandas), ETL/ELT/dbt, Data Warehousing, Statistics & Governance'
   },
 'db-admin': {
     label: 'Database Administration (DBA)',
