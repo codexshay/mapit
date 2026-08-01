@@ -76882,5 +76882,5125 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "WCDT-Q001",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Browser-server request lifecycle, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "A browser resolves a host, establishes a secure connection, sends an HTTP request, receives representations and subresources, builds document and style structures, executes scripts and paints the result.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "How the web works",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q002",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Browser-server request lifecycle in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Trace one real navigation with DNS, network and performance tools; separate origin processing, transfer, parsing, rendering and client execution so the slow or failing layer is identified.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "How the web works",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q003",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Browser-server request lifecycle from a closely related concept?",
+    "preferred_answer": "A page load is the complete user-visible sequence, while an HTTP request is one message exchange within that sequence; a single page can trigger many requests.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "How the web works",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q004",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Browser-server request lifecycle, and how should it be corrected?",
+    "preferred_answer": "Treating every blank screen as a server problem causes random changes. Reproduce the issue, inspect status codes and timings, then isolate DNS, TLS, origin, network, render-blocking or runtime failure.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "How the web works",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q005",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is DNS, TLS and HTTP responsibilities, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "DNS maps names to service endpoints, TLS authenticates and protects transport, and HTTP defines request and response semantics above that connection.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "DNS concepts",
+    "resolution_url": "https://developers.cloudflare.com/dns/concepts/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q006",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply DNS, TLS and HTTP responsibilities in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Validate records and propagation, inspect certificate hostname and chain, then inspect HTTP methods, headers, status and content rather than mixing the layers.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "DNS concepts",
+    "resolution_url": "https://developers.cloudflare.com/dns/concepts/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q007",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish DNS, TLS and HTTP responsibilities from a closely related concept?",
+    "preferred_answer": "DNS does not redirect browsers and a TLS certificate does not define application authorization; redirects and permissions are HTTP or application concerns.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "DNS concepts",
+    "resolution_url": "https://developers.cloudflare.com/dns/concepts/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q008",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with DNS, TLS and HTTP responsibilities, and how should it be corrected?",
+    "preferred_answer": "Changing application code for a DNS or certificate fault wastes recovery time. Use layer-specific tests and record ownership, expiry and rollback steps.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "DNS concepts",
+    "resolution_url": "https://developers.cloudflare.com/dns/concepts/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q009",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Multi-page, single-page, SSR and static architectures, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "A multi-page application navigates between server-produced documents, a SPA updates a client shell, server-side rendering produces initial HTML per request, and static generation creates files ahead of traffic.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Learn web development",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q010",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Multi-page, single-page, SSR and static architectures in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Choose by content freshness, personalization, search, interaction, operational skill and cacheability; combine patterns when different routes have different needs.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Learn web development",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q011",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Multi-page, single-page, SSR and static architectures from a closely related concept?",
+    "preferred_answer": "Rendering location is not the same as navigation model: a SPA can be server-rendered initially, and an MPA can contain rich client-side islands.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Learn web development",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q012",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Multi-page, single-page, SSR and static architectures, and how should it be corrected?",
+    "preferred_answer": "Selecting an architecture because it is fashionable can increase JavaScript, hosting complexity and recovery risk. Start with user and operational requirements and measure the chosen trade-offs.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Learn web development",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q013",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Progressive enhancement and graceful degradation, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Progressive enhancement starts with usable semantic content and core actions, then adds styling and scripting when capabilities are available.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q014",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Progressive enhancement and graceful degradation in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Make navigation, content and forms work with resilient HTML first; enhance interaction while preserving keyboard access, error handling and server validation.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q015",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Progressive enhancement and graceful degradation from a closely related concept?",
+    "preferred_answer": "Graceful degradation attempts to preserve an advanced experience when capabilities fail, while progressive enhancement builds upward from a reliable baseline.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q016",
+    "role_slug": "web-cms",
+    "domain": "Web Platform Foundations and Architecture",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Progressive enhancement and graceful degradation, and how should it be corrected?",
+    "preferred_answer": "A JavaScript-only critical path can leave users, crawlers and recovery tools with an empty shell. Define the minimum useful experience and test blocked scripts, slow networks and old content.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q017",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Semantic document structure, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Semantic HTML uses elements according to their meaning so browsers, assistive technology, search systems and maintainers can understand structure and interaction.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q018",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Semantic document structure in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use a logical heading hierarchy, landmarks, lists, buttons, links and tables for their intended roles; validate the outline and accessible tree instead of styling generic containers to imitate semantics.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q019",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Semantic document structure from a closely related concept?",
+    "preferred_answer": "Visual appearance is controlled by CSS, while semantics communicate meaning and behavior; a styled div is not automatically a button.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q020",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Semantic document structure, and how should it be corrected?",
+    "preferred_answer": "Using clickable divs creates missing keyboard behavior, names and states. Prefer native elements and add custom semantics only when no native control fits.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q021",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Native forms, labels and validation, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "HTML forms connect controls, labels, names, types and submission behavior, and native validation can provide a baseline while the server remains authoritative.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard - Forms",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/forms.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q022",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Native forms, labels and validation in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Choose correct input types and autocomplete tokens, associate labels, group related controls, preserve values after errors and return field-specific server messages.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard - Forms",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/forms.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q023",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Native forms, labels and validation from a closely related concept?",
+    "preferred_answer": "Client-side validation improves feedback but is bypassable; server-side validation protects data and business rules.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard - Forms",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/forms.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q024",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Native forms, labels and validation, and how should it be corrected?",
+    "preferred_answer": "Placeholder-only labels, disabled submit buttons and generic errors create inaccessible dead ends. Make requirements explicit and let users correct errors without losing work.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard - Forms",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/forms.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q025",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Document metadata, links and resource hints, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Metadata describes the document and resource relationships, while links connect crawlable destinations and can declare canonical, alternate, preload or stylesheet relationships.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q026",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Document metadata, links and resource hints in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Set a unique title, useful description and language; use real anchors for navigation, canonical and alternate links deliberately, and add resource hints only when measurement supports them.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q027",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Document metadata, links and resource hints from a closely related concept?",
+    "preferred_answer": "Metadata can influence discovery and presentation but cannot replace visible quality content or correct server behavior.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q028",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Document metadata, links and resource hints, and how should it be corrected?",
+    "preferred_answer": "Copying every performance hint or duplicating canonical signals can create contention and indexing confusion. Keep head markup minimal, valid and traceable to a requirement.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "HTML Living Standard",
+    "resolution_url": "https://html.spec.whatwg.org/multipage/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q029",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Images, media and embedded content, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Web media requires appropriate formats, dimensions, alternatives, captions, controls and loading behavior, with embeds treated as third-party performance and security dependencies.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Images Tutorial",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/images/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q030",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Images, media and embedded content in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Provide responsive image sources, intrinsic dimensions and purpose-based alternative text; caption meaningful audio or video and sandbox embeds where appropriate.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Images Tutorial",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/images/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q031",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Images, media and embedded content from a closely related concept?",
+    "preferred_answer": "Alternative text conveys an image purpose, while a caption is visible contextual content; neither should mechanically duplicate the other.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Images Tutorial",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/images/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q032",
+    "role_slug": "web-cms",
+    "domain": "HTML, Semantics and Web Forms",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Images, media and embedded content, and how should it be corrected?",
+    "preferred_answer": "Unbounded media causes layout shifts, slow downloads and accessibility gaps. Define media policy, optimize at ingestion and test keyboard, captions and failure states.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Images Tutorial",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/images/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q033",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Cascade, inheritance and specificity, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "The cascade resolves declarations using origin, importance, layer, specificity and source order, while inheritance passes selected computed values through the element tree.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "CSS reference and guides",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q034",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Cascade, inheritance and specificity in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use low-specificity selectors, cascade layers and component boundaries; inspect computed styles before adding overrides and document intentional global rules.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "CSS reference and guides",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q035",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Cascade, inheritance and specificity from a closely related concept?",
+    "preferred_answer": "Specificity decides among competing selectors within relevant cascade conditions, whereas inheritance supplies a value when the property is inheritable and no winning declaration sets it.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "CSS reference and guides",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q036",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Cascade, inheritance and specificity, and how should it be corrected?",
+    "preferred_answer": "Escalating selectors and important flags makes changes unpredictable. Fix the source rule or architecture rather than winning a local specificity war.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "CSS reference and guides",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q037",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Flexbox, Grid and normal flow, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Normal flow provides the resilient baseline, Flexbox arranges items primarily in one dimension, and Grid controls rows and columns in two dimensions.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "CSS reference and guides",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q038",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Flexbox, Grid and normal flow in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Choose layout by content relationships, allow wrapping and intrinsic sizing, preserve source order and test zoom, long text and missing items.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "CSS reference and guides",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q039",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Flexbox, Grid and normal flow from a closely related concept?",
+    "preferred_answer": "Flexbox is usually content-driven along one main axis; Grid is useful when rows and columns need coordinated placement.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "CSS reference and guides",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q040",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Flexbox, Grid and normal flow, and how should it be corrected?",
+    "preferred_answer": "Absolute positioning for whole-page layout breaks reflow and localization. Use document flow and reserve positioning for overlays or precisely scoped effects.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "CSS reference and guides",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q041",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Responsive and adaptive delivery, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Responsive design lets layout and media respond fluidly to available space, while adaptive solutions may select discrete templates or assets for defined conditions.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Responsive web design",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q042",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Responsive and adaptive delivery in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Start with narrow content-first layouts, add media or container queries where components need space, use responsive media and test input type, zoom and orientation.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Responsive web design",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q043",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Responsive and adaptive delivery from a closely related concept?",
+    "preferred_answer": "A breakpoint should reflect content failure, not a popular device width; responsiveness covers more than screen size.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Responsive web design",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q044",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Responsive and adaptive delivery, and how should it be corrected?",
+    "preferred_answer": "Creating separate mobile and desktop content can cause drift and accessibility gaps. Maintain one source of truth unless business and technical evidence justify variants.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Responsive web design",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q045",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is CSS architecture and reusable component styling, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "A maintainable styling system defines naming, scope, tokens, states and ownership so changes can be made without unintended cross-site effects.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "CSS reference and guides",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q046",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply CSS architecture and reusable component styling in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use semantic design tokens, predictable component APIs, documented variants and visual regression checks; keep utilities and component rules intentionally separated.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "CSS reference and guides",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q047",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish CSS architecture and reusable component styling from a closely related concept?",
+    "preferred_answer": "A design token stores a reusable design decision, while a component class applies behavior and visual rules in a specific context.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "CSS reference and guides",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q048",
+    "role_slug": "web-cms",
+    "domain": "CSS, Responsive Design and Component Styling",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with CSS architecture and reusable component styling, and how should it be corrected?",
+    "preferred_answer": "Global selectors and copied page-specific CSS create regression risk. Track usage, deprecate safely and avoid exposing internal implementation as a permanent public API.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "CSS reference and guides",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q049",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is JavaScript execution and the event loop, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "JavaScript execution coordinates synchronous call stacks with queued tasks and microtasks, allowing asynchronous browser work without making long-running code free.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "JavaScript Guide",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q050",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply JavaScript execution and the event loop in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Break heavy work into appropriate units, avoid blocking input, handle rejected promises and profile long tasks rather than assuming async syntax automatically improves responsiveness.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "JavaScript Guide",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q051",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish JavaScript execution and the event loop from a closely related concept?",
+    "preferred_answer": "A promise schedules continuation through microtasks, while timers and many browser events create tasks; ordering differences matter in debugging.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "JavaScript Guide",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q052",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with JavaScript execution and the event loop, and how should it be corrected?",
+    "preferred_answer": "Large synchronous loops, repeated layout reads and unhandled rejections freeze or destabilize the page. Measure main-thread work and make failure explicit.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "JavaScript Guide",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q053",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is DOM events and state synchronization, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "The DOM represents the document as objects, and events propagate through capture and bubble phases so code can respond to user and system changes.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Document Object Model (DOM)",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q054",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply DOM events and state synchronization in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use stable event delegation where appropriate, update the DOM in coherent batches, clean up listeners and keep application state and rendered state deliberately synchronized.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Document Object Model (DOM)",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q055",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish DOM events and state synchronization from a closely related concept?",
+    "preferred_answer": "The DOM is a browser representation of a document, while application state may live in variables, stores or server data and can diverge from what is displayed.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Document Object Model (DOM)",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q056",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with DOM events and state synchronization, and how should it be corrected?",
+    "preferred_answer": "Direct mutations from many unrelated modules create race conditions and memory leaks. Establish ownership, lifecycle and testable state transitions.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Document Object Model (DOM)",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q057",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Fetch, asynchronous errors and cancellation, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Fetch returns a promise for an HTTP response and does not reject merely because the server returned an error status; callers must check semantics, parse safely and support cancellation or timeout policy.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Fetch API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q058",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Fetch, asynchronous errors and cancellation in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Handle network failure separately from non-success status, validate content type, use AbortController for obsolete requests and present retryable versus permanent errors differently.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Fetch API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q059",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Fetch, asynchronous errors and cancellation from a closely related concept?",
+    "preferred_answer": "A transport succeeded when a response arrived, but the business operation may still have failed; HTTP status and response body must be interpreted.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Fetch API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q060",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Fetch, asynchronous errors and cancellation, and how should it be corrected?",
+    "preferred_answer": "Blindly calling response.json or retrying every failure can hide server errors and duplicate operations. Define idempotency, timeout and retry boundaries.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Fetch API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q061",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Client storage, sessions and offline state, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Browser storage mechanisms have different lifetimes, capacities, security properties and synchronization behavior; they are not interchangeable databases or trusted authorization stores.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web Storage API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q062",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Client storage, sessions and offline state in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Keep sensitive data minimal, version stored schemas, handle eviction and multi-tab changes, and reconcile offline actions with server truth using explicit conflict rules.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web Storage API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q063",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Client storage, sessions and offline state from a closely related concept?",
+    "preferred_answer": "Cookies can be sent with HTTP requests and support server sessions, while Web Storage is script-accessible client storage and should not hold authority.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web Storage API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q064",
+    "role_slug": "web-cms",
+    "domain": "JavaScript and Browser APIs",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Client storage, sessions and offline state, and how should it be corrected?",
+    "preferred_answer": "Storing tokens or personal data without threat analysis increases XSS impact. Prefer secure server-managed sessions and clear data on sign-out or account changes.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web Storage API",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q065",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is WCAG 2.2 conformance and accessibility testing, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "WCAG defines testable success criteria organized around perceivable, operable, understandable and robust content; conformance requires more than passing an automated scanner.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q066",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply WCAG 2.2 conformance and accessibility testing in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Map critical templates and components to relevant criteria, combine automated checks with keyboard, zoom and assistive-technology testing, then track severity and regression ownership.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q067",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish WCAG 2.2 conformance and accessibility testing from a closely related concept?",
+    "preferred_answer": "Automated tools identify a subset of detectable failures, while conformance also depends on human judgment about purpose, sequence, names and task completion.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q068",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with WCAG 2.2 conformance and accessibility testing, and how should it be corrected?",
+    "preferred_answer": "Publishing a perfect scanner score as proof of accessibility creates false confidence. Test representative user journeys and remediate root causes in components and authoring tools.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "resolution_url": "https://www.w3.org/TR/WCAG22/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q069",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Keyboard, focus and ARIA patterns, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Interactive content must expose names, roles, values and predictable keyboard operation, with visible focus and focus movement that matches the user task.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "ARIA Authoring Practices Guide",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q070",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Keyboard, focus and ARIA patterns in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Prefer native controls; for composite widgets, follow established ARIA patterns, keep tab order logical and return focus after dialogs or temporary surfaces close.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "ARIA Authoring Practices Guide",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q071",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Keyboard, focus and ARIA patterns from a closely related concept?",
+    "preferred_answer": "ARIA can describe custom behavior but does not add keyboard handling or state management by itself.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "ARIA Authoring Practices Guide",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q072",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Keyboard, focus and ARIA patterns, and how should it be corrected?",
+    "preferred_answer": "Adding roles without implementing the complete interaction pattern can make a control more misleading. Test the accessibility tree and real keyboard behavior together.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "ARIA Authoring Practices Guide",
+    "resolution_url": "https://www.w3.org/WAI/ARIA/apg/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q073",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Accessible authoring for forms, images and content, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Accessible content uses labels, instructions, headings, alternatives, meaningful links and plain structure so authors do not need code expertise to avoid common barriers.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Forms Tutorial",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/forms/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q074",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Accessible authoring for forms, images and content in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Configure CMS fields and editor guidance to require useful labels and alternatives, restrict harmful formatting and provide preview or checks before publishing.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Forms Tutorial",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/forms/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q075",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Accessible authoring for forms, images and content from a closely related concept?",
+    "preferred_answer": "Authoring-tool support reduces recurring defects, but content governance and review are still needed for context-dependent quality.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Forms Tutorial",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/forms/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q076",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Accessible authoring for forms, images and content, and how should it be corrected?",
+    "preferred_answer": "Treating accessibility as a developer-only responsibility lets new content reintroduce failures after every release. Build requirements into templates, workflows and training.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Forms Tutorial",
+    "resolution_url": "https://www.w3.org/WAI/tutorials/forms/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q077",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Internationalization, localization and bidirectional content, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Internationalization prepares code and content models for varied languages, scripts and cultural formats; localization adapts a specific experience for a locale.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Language on the Web",
+    "resolution_url": "https://www.w3.org/International/getting-started/language",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q078",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Internationalization, localization and bidirectional content in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use Unicode, language metadata, locale-aware formatting, flexible layouts and separate translatable content from code; test expansion, right-to-left direction and fallback.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Language on the Web",
+    "resolution_url": "https://www.w3.org/International/getting-started/language",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q079",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Internationalization, localization and bidirectional content from a closely related concept?",
+    "preferred_answer": "Translation changes language text, while localization may also change dates, number formats, images, legal content and market-specific workflows.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Language on the Web",
+    "resolution_url": "https://www.w3.org/International/getting-started/language",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q080",
+    "role_slug": "web-cms",
+    "domain": "Accessibility and Internationalization",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Internationalization, localization and bidirectional content, and how should it be corrected?",
+    "preferred_answer": "Concatenated strings, fixed widths and assumptions about names or addresses create costly rework. Model complete messages and locale rules before translation begins.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Language on the Web",
+    "resolution_url": "https://www.w3.org/International/getting-started/language",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q081",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is HTTP methods, status codes and idempotency, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "HTTP methods express intended semantics and status codes describe the outcome class; idempotency means repeating a request has the same intended effect as sending it once.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q082",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply HTTP methods, status codes and idempotency in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Choose methods and responses consistently, include validators or idempotency keys where duplication matters, and distinguish authentication, authorization, conflict, validation and server failures.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q083",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish HTTP methods, status codes and idempotency from a closely related concept?",
+    "preferred_answer": "Safe methods are intended to be read-only, while idempotent methods may change state but remain stable when repeated.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q084",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with HTTP methods, status codes and idempotency, and how should it be corrected?",
+    "preferred_answer": "Returning 200 for every outcome or retrying non-idempotent writes can corrupt integrations. Define an error model and test duplicate and partial requests.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q085",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is REST resource design and OpenAPI descriptions, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "A resource-oriented API exposes identifiable concepts through consistent representations and transitions, while an OpenAPI description documents operations, schemas, parameters, security and responses for humans and tools.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "OpenAPI Specification - latest published version",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q086",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply REST resource design and OpenAPI descriptions in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Model domain resources and lifecycle first, keep URLs and methods predictable, define examples and errors, and validate implementation against the published contract.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "OpenAPI Specification - latest published version",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q087",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish REST resource design and OpenAPI descriptions from a closely related concept?",
+    "preferred_answer": "REST is an architectural style, whereas OpenAPI is a machine-readable interface description and does not guarantee a resource-oriented design.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "OpenAPI Specification - latest published version",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q088",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with REST resource design and OpenAPI descriptions, and how should it be corrected?",
+    "preferred_answer": "Generating documentation from undocumented behavior preserves inconsistency. Treat the contract as versioned product surface and review breaking changes.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "OpenAPI Specification - latest published version",
+    "resolution_url": "https://spec.openapis.org/oas/latest.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q089",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Same-origin policy, CORS and browser credentials, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "The same-origin policy limits script access across origins, and CORS uses response headers and optional preflight requests to grant specific browser access.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Cross-Origin Resource Sharing (CORS)",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q090",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Same-origin policy, CORS and browser credentials in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Allow only required origins, methods and headers, understand credential rules and test actual browser requests instead of using wildcard configuration as a quick fix.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Cross-Origin Resource Sharing (CORS)",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q091",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Same-origin policy, CORS and browser credentials from a closely related concept?",
+    "preferred_answer": "CORS is enforced by browsers and is not authentication, a firewall or protection against server-to-server requests.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Cross-Origin Resource Sharing (CORS)",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q092",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Same-origin policy, CORS and browser credentials, and how should it be corrected?",
+    "preferred_answer": "Opening credentials to broad origins or reflecting arbitrary Origin values can expose user data. Pair CORS with proper authorization and CSRF defenses.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Cross-Origin Resource Sharing (CORS)",
+    "resolution_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q093",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Webhooks, retries and delivery guarantees, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "A webhook sends an HTTP callback after an event, but networks and receivers can fail, delay or duplicate deliveries, so consumers must design for verification and replay.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Webhooks overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/extensibility/webhooks/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q094",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Webhooks, retries and delivery guarantees in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Authenticate signatures, acknowledge quickly, queue processing, deduplicate by event ID, retry with backoff and provide dead-letter or replay visibility.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Webhooks overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/extensibility/webhooks/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q095",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Webhooks, retries and delivery guarantees from a closely related concept?",
+    "preferred_answer": "A webhook pushes change notifications, while polling repeatedly asks for current state; both may still require reconciliation.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Webhooks overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/extensibility/webhooks/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q096",
+    "role_slug": "web-cms",
+    "domain": "HTTP, APIs and Integrations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Webhooks, retries and delivery guarantees, and how should it be corrected?",
+    "preferred_answer": "Performing long work before acknowledging or assuming exactly-once delivery causes timeouts and duplicates. Make handlers idempotent and observable.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Webhooks overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/extensibility/webhooks/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q097",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Structured content and page composition, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Structured content stores meaning in reusable fields and relationships, while page composition arranges content into a presentation for a channel or campaign.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Data model",
+    "resolution_url": "https://www.contentful.com/developers/docs/concepts/data-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q098",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Structured content and page composition in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Identify stable domain entities, separate reusable facts from layout choices and provide controlled composition blocks where editors genuinely need flexibility.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Data model",
+    "resolution_url": "https://www.contentful.com/developers/docs/concepts/data-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q099",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Structured content and page composition from a closely related concept?",
+    "preferred_answer": "A page-builder model optimizes local visual assembly, whereas a structured model supports reuse, search, personalization and multiple channels.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Data model",
+    "resolution_url": "https://www.contentful.com/developers/docs/concepts/data-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q100",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Structured content and page composition, and how should it be corrected?",
+    "preferred_answer": "Modeling every paragraph as a generic rich-text blob prevents reuse and migration; modeling every visual fragment as a rigid field makes authoring unusable. Balance semantics and composition.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Data model",
+    "resolution_url": "https://www.contentful.com/developers/docs/concepts/data-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q101",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Taxonomy, metadata and content relationships, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Taxonomies classify content with governed terms, metadata describes attributes, and explicit relationships connect entities for navigation, reuse and discovery.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Entry and asset links",
+    "resolution_url": "https://www.contentful.com/developers/docs/concepts/links/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q102",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Taxonomy, metadata and content relationships in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Define vocabularies, ownership and cardinality; use references instead of duplicated text and plan how deletions, merges and renamed terms affect consumers.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Entry and asset links",
+    "resolution_url": "https://www.contentful.com/developers/docs/concepts/links/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q103",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Taxonomy, metadata and content relationships from a closely related concept?",
+    "preferred_answer": "Tags are usually lightweight labels, while a governed taxonomy has defined meanings, hierarchy, stewardship and usage rules.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Entry and asset links",
+    "resolution_url": "https://www.contentful.com/developers/docs/concepts/links/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q104",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Taxonomy, metadata and content relationships, and how should it be corrected?",
+    "preferred_answer": "Uncontrolled tags fragment reporting and navigation. Provide editorial guidance, validation and periodic cleanup rather than letting each author invent categories.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Entry and asset links",
+    "resolution_url": "https://www.contentful.com/developers/docs/concepts/links/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q105",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Editorial workflows, roles and approvals, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "CMS workflows define who can create, review, approve, schedule and publish content, with separation of duties proportional to risk.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Roles and Capabilities",
+    "resolution_url": "https://wordpress.org/documentation/article/roles-and-capabilities/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q106",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Editorial workflows, roles and approvals in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Map content classes and business risk to roles, transitions, notifications, audit evidence and emergency publishing procedures; keep low-risk work efficient.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Roles and Capabilities",
+    "resolution_url": "https://wordpress.org/documentation/article/roles-and-capabilities/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q107",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Editorial workflows, roles and approvals from a closely related concept?",
+    "preferred_answer": "A role groups permissions, while a workflow governs state changes and approvals; one does not automatically provide the other.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Roles and Capabilities",
+    "resolution_url": "https://wordpress.org/documentation/article/roles-and-capabilities/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q108",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Editorial workflows, roles and approvals, and how should it be corrected?",
+    "preferred_answer": "Giving every editor administrator access or adding approval to every typo either creates security risk or process avoidance. Apply least privilege and risk-based governance.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Roles and Capabilities",
+    "resolution_url": "https://wordpress.org/documentation/article/roles-and-capabilities/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q109",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Traditional, headless and composable CMS choices, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "A traditional CMS couples content management and rendering, a headless CMS exposes content through APIs, and a composable approach integrates multiple specialized services around shared contracts.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GraphQL Content API overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/graphql/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q110",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Traditional, headless and composable CMS choices in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Compare author preview, channel needs, delivery latency, developer capacity, vendor risk, integration ownership and total operational cost before choosing.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GraphQL Content API overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/graphql/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q111",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Traditional, headless and composable CMS choices from a closely related concept?",
+    "preferred_answer": "Headless changes delivery architecture but does not automatically improve content quality, speed or security; these depend on implementation and governance.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GraphQL Content API overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/graphql/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q112",
+    "role_slug": "web-cms",
+    "domain": "CMS Strategy, Architecture and Content Modeling",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Traditional, headless and composable CMS choices, and how should it be corrected?",
+    "preferred_answer": "Choosing headless to escape one template limitation can replace a manageable CMS with permanent integration and preview complexity. Prove the multi-channel or engineering need.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GraphQL Content API overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/graphql/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q113",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is WordPress roles, capabilities and least privilege, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "WordPress roles contain capabilities that control administrative and content actions, and multisite changes which users can manage network-wide functions.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Roles and Capabilities",
+    "resolution_url": "https://wordpress.org/documentation/article/roles-and-capabilities/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q114",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply WordPress roles, capabilities and least privilege in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Assign the smallest capability set required, separate editorial and technical administration, review dormant accounts and test custom roles after plugin changes.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Roles and Capabilities",
+    "resolution_url": "https://wordpress.org/documentation/article/roles-and-capabilities/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q115",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish WordPress roles, capabilities and least privilege from a closely related concept?",
+    "preferred_answer": "A role is a named bundle, while capability checks are the enforceable permissions that code should evaluate.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Roles and Capabilities",
+    "resolution_url": "https://wordpress.org/documentation/article/roles-and-capabilities/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q116",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with WordPress roles, capabilities and least privilege, and how should it be corrected?",
+    "preferred_answer": "Relying only on hidden menu items or giving editors administrator access does not protect actions. Enforce capabilities server-side and maintain an access register.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Roles and Capabilities",
+    "resolution_url": "https://wordpress.org/documentation/article/roles-and-capabilities/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q117",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Site Editor, themes and template ownership, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "The Site Editor manages block-based templates, template parts and global styles, while themes provide the design and code foundation that controls available behavior.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Site Editor",
+    "resolution_url": "https://wordpress.org/documentation/article/site-editor/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q118",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Site Editor, themes and template ownership in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Define which areas editors may change, use child or custom themes for maintained code, version templates and verify responsive and accessibility behavior after global changes.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Site Editor",
+    "resolution_url": "https://wordpress.org/documentation/article/site-editor/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q119",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Site Editor, themes and template ownership from a closely related concept?",
+    "preferred_answer": "Content blocks belong to entries, while templates define repeated structure; editing one when the other is intended creates inconsistent pages.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Site Editor",
+    "resolution_url": "https://wordpress.org/documentation/article/site-editor/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q120",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Site Editor, themes and template ownership, and how should it be corrected?",
+    "preferred_answer": "Direct edits to vendor themes or unrestricted global styles are overwritten or spread regressions. Establish ownership, staging and rollback for design changes.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Site Editor",
+    "resolution_url": "https://wordpress.org/documentation/article/site-editor/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q121",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Plugin, core and theme update operations, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Updates reduce known vulnerabilities and compatibility risk but can introduce breaking changes, so production changes require backup, staging, test and rollback discipline.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Updating WordPress",
+    "resolution_url": "https://wordpress.org/documentation/article/updating-wordpress/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q122",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Plugin, core and theme update operations in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Inventory extensions and owners, remove unused code, test critical journeys on staging, take restorable backups, deploy during a window and monitor errors and business events.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Updating WordPress",
+    "resolution_url": "https://wordpress.org/documentation/article/updating-wordpress/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q123",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Plugin, core and theme update operations from a closely related concept?",
+    "preferred_answer": "Automatic updates improve patch speed, while controlled updates provide more pre-release testing; policy should vary by risk and recovery capability.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Updating WordPress",
+    "resolution_url": "https://wordpress.org/documentation/article/updating-wordpress/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q124",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Plugin, core and theme update operations, and how should it be corrected?",
+    "preferred_answer": "Leaving updates indefinitely or updating production without a tested restore both create avoidable outages. Track supported versions and recovery time.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Updating WordPress",
+    "resolution_url": "https://wordpress.org/documentation/article/updating-wordpress/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q125",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Permalinks, multisite and operational troubleshooting, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Permalinks define durable public URLs, multisite centralizes management for a network, and troubleshooting should isolate theme, plugin, rewrite, database and infrastructure layers.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Updating WordPress",
+    "resolution_url": "https://wordpress.org/documentation/article/updating-wordpress/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q126",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Permalinks, multisite and operational troubleshooting in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Protect existing URLs, test rewrite rules, use staging or safe diagnostic modes, collect logs and reproduce with minimal extensions before changing production data.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Updating WordPress",
+    "resolution_url": "https://wordpress.org/documentation/article/updating-wordpress/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q127",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Permalinks, multisite and operational troubleshooting from a closely related concept?",
+    "preferred_answer": "Multisite shares core and network administration but sites may still have separate content and configuration; it is not simply a folder of cloned pages.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Updating WordPress",
+    "resolution_url": "https://wordpress.org/documentation/article/updating-wordpress/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q128",
+    "role_slug": "web-cms",
+    "domain": "WordPress Administration and Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Permalinks, multisite and operational troubleshooting, and how should it be corrected?",
+    "preferred_answer": "Regenerating URLs or disabling random plugins in production can create SEO and data damage. Record changes and preserve a rollback path.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Updating WordPress",
+    "resolution_url": "https://wordpress.org/documentation/article/updating-wordpress/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q129",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Hooks, actions and filters, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "WordPress hooks let extensions run at defined points without modifying core; actions perform work and filters transform values that are passed through them.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Plugin Developer Handbook",
+    "resolution_url": "https://developer.wordpress.org/plugins/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q130",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Hooks, actions and filters in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Choose documented hooks, keep callbacks focused, set explicit priority only when needed and avoid global side effects that make execution order fragile.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Plugin Developer Handbook",
+    "resolution_url": "https://developer.wordpress.org/plugins/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q131",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Hooks, actions and filters from a closely related concept?",
+    "preferred_answer": "An action does not need to return the supplied value, while a filter must return the value expected by later code.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Plugin Developer Handbook",
+    "resolution_url": "https://developer.wordpress.org/plugins/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q132",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Hooks, actions and filters, and how should it be corrected?",
+    "preferred_answer": "Editing core or relying on undocumented timing creates upgrade failures. Encapsulate behavior in plugins and add integration tests for important hooks.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Plugin Developer Handbook",
+    "resolution_url": "https://developer.wordpress.org/plugins/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q133",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Plugin and theme architecture, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Plugins should hold portable functionality and integrations, while themes should primarily control presentation and templates, with shared code organized for maintenance and testability.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "WordPress Coding Standards",
+    "resolution_url": "https://developer.wordpress.org/coding-standards/wordpress-coding-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q134",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Plugin and theme architecture in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use namespaces or unique prefixes, activation and uninstall routines, settings APIs, dependency checks and coding standards; keep business data independent from a theme switch.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "WordPress Coding Standards",
+    "resolution_url": "https://developer.wordpress.org/coding-standards/wordpress-coding-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q135",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Plugin and theme architecture from a closely related concept?",
+    "preferred_answer": "A theme can add functionality, but placing essential business rules there couples data and operations to visual replacement.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "WordPress Coding Standards",
+    "resolution_url": "https://developer.wordpress.org/coding-standards/wordpress-coding-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q136",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Plugin and theme architecture, and how should it be corrected?",
+    "preferred_answer": "A monolithic functions file with direct queries and no cleanup becomes impossible to upgrade. Separate responsibilities and use platform APIs.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "WordPress Coding Standards",
+    "resolution_url": "https://developer.wordpress.org/coding-standards/wordpress-coding-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q137",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Custom content and WordPress REST API, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Custom post types, taxonomies and fields can model domain content, and the REST API can expose authorized representations to editors, front ends and integrations.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "REST API Handbook",
+    "resolution_url": "https://developer.wordpress.org/rest-api/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q138",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Custom content and WordPress REST API in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Register content deliberately, define capabilities and schemas, expose only required fields, validate inputs and version consumers before changing response structures.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "REST API Handbook",
+    "resolution_url": "https://developer.wordpress.org/rest-api/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q139",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Custom content and WordPress REST API from a closely related concept?",
+    "preferred_answer": "A custom post type is a stored content entity, while a REST endpoint is an interface for accessing or changing data.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "REST API Handbook",
+    "resolution_url": "https://developer.wordpress.org/rest-api/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q140",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Custom content and WordPress REST API, and how should it be corrected?",
+    "preferred_answer": "Exposing private metadata or treating the REST API as a database bypass weakens permissions and contracts. Use callbacks, capability checks and stable schemas.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "REST API Handbook",
+    "resolution_url": "https://developer.wordpress.org/rest-api/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q141",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Sanitization, validation, escaping and nonces, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Validation checks whether data is acceptable, sanitization normalizes input, escaping makes output safe for its context, and nonces help verify intention but do not replace authorization.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Security - Common APIs Handbook",
+    "resolution_url": "https://developer.wordpress.org/apis/security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q142",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Sanitization, validation, escaping and nonces in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Validate expected shape, sanitize only where transformation is acceptable, escape late for HTML, attributes, URLs or JavaScript, and check capabilities on every privileged action.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Security - Common APIs Handbook",
+    "resolution_url": "https://developer.wordpress.org/apis/security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q143",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Sanitization, validation, escaping and nonces from a closely related concept?",
+    "preferred_answer": "Input handling and output encoding address different risks; one generic cleaning function cannot safely cover every context.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Security - Common APIs Handbook",
+    "resolution_url": "https://developer.wordpress.org/apis/security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q144",
+    "role_slug": "web-cms",
+    "domain": "WordPress Development and Integration",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Sanitization, validation, escaping and nonces, and how should it be corrected?",
+    "preferred_answer": "Using a nonce as permission or escaping before storage can create access-control gaps and corrupted content. Apply layered controls at the correct boundary.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Security - Common APIs Handbook",
+    "resolution_url": "https://developer.wordpress.org/apis/security/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q145",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Entities, bundles, content types and fields, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Drupal stores structured information as entities; bundles such as content types define variations, and fields hold typed data that can be displayed or referenced.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Setting Up Content Structure",
+    "resolution_url": "https://www.drupal.org/docs/user_guide/en/content-structure-chapter.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q146",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Entities, bundles, content types and fields in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Plan entity ownership and lifecycle, choose field types and cardinality, use references for relationships and keep content structure independent from one page layout.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Setting Up Content Structure",
+    "resolution_url": "https://www.drupal.org/docs/user_guide/en/content-structure-chapter.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q147",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Entities, bundles, content types and fields from a closely related concept?",
+    "preferred_answer": "An entity type defines a broad storage and API model, while a bundle configures a subtype such as a specific content type.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Setting Up Content Structure",
+    "resolution_url": "https://www.drupal.org/docs/user_guide/en/content-structure-chapter.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q148",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Entities, bundles, content types and fields, and how should it be corrected?",
+    "preferred_answer": "Creating a new content type for every visual page variant causes duplication. Model real domain differences and use display modes or layout for presentation.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Setting Up Content Structure",
+    "resolution_url": "https://www.drupal.org/docs/user_guide/en/content-structure-chapter.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q149",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Taxonomy, Views and display configuration, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Taxonomy provides governed classification, Views builds filtered and sorted listings, and display or view modes control how entity data is rendered in contexts.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Setting Up Content Structure",
+    "resolution_url": "https://www.drupal.org/docs/user_guide/en/content-structure-chapter.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q150",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Taxonomy, Views and display configuration in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Design vocabularies and references first, build Views with clear access and cache rules, and reuse display modes for consistent channel output.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Setting Up Content Structure",
+    "resolution_url": "https://www.drupal.org/docs/user_guide/en/content-structure-chapter.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q151",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Taxonomy, Views and display configuration from a closely related concept?",
+    "preferred_answer": "Taxonomy models classification data, whereas Views queries and presents entities based on conditions; neither replaces a content model.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Setting Up Content Structure",
+    "resolution_url": "https://www.drupal.org/docs/user_guide/en/content-structure-chapter.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q152",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Taxonomy, Views and display configuration, and how should it be corrected?",
+    "preferred_answer": "Complex Views with unrestricted relationships and exposed filters can create slow queries or data exposure. Review access, indexes, caching and empty states.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Setting Up Content Structure",
+    "resolution_url": "https://www.drupal.org/docs/user_guide/en/content-structure-chapter.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q153",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Configuration management across environments, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Drupal configuration management exports site configuration so reviewed changes can move between development, test and production without copying content databases as a deployment method.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Configuration management",
+    "resolution_url": "https://www.drupal.org/docs/administering-a-drupal-site/configuration-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q154",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Configuration management across environments in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Keep exported configuration in version control, align dependencies, import in controlled order, protect environment-specific settings and test database updates and cache rebuilds.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Configuration management",
+    "resolution_url": "https://www.drupal.org/docs/administering-a-drupal-site/configuration-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q155",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Configuration management across environments from a closely related concept?",
+    "preferred_answer": "Configuration describes site behavior, while content is editorial data; deployment processes should not treat them as the same artifact.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Configuration management",
+    "resolution_url": "https://www.drupal.org/docs/administering-a-drupal-site/configuration-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q156",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Configuration management across environments, and how should it be corrected?",
+    "preferred_answer": "Making manual production configuration changes creates drift and unrepeatable recovery. Use controlled exceptions and reconcile them into source.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Configuration management",
+    "resolution_url": "https://www.drupal.org/docs/administering-a-drupal-site/configuration-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q157",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Drupal security, modules and cache strategy, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Drupal security depends on supported core and modules, least-privilege roles, secure configuration and timely advisories, while caches must vary correctly by context and invalidation tags.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Securing your site",
+    "resolution_url": "https://www.drupal.org/docs/administering-a-drupal-site/security-in-drupal/securing-your-site",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q158",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Drupal security, modules and cache strategy in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Track advisories and module ownership, remove unsupported extensions, review permissions, enable appropriate caching and test authenticated, personalized and anonymous variants.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Securing your site",
+    "resolution_url": "https://www.drupal.org/docs/administering-a-drupal-site/security-in-drupal/securing-your-site",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q159",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Drupal security, modules and cache strategy from a closely related concept?",
+    "preferred_answer": "Caching improves delivery but does not authorize content; cache metadata must preserve access and personalization boundaries.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Securing your site",
+    "resolution_url": "https://www.drupal.org/docs/administering-a-drupal-site/security-in-drupal/securing-your-site",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q160",
+    "role_slug": "web-cms",
+    "domain": "Drupal Site Building and Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Drupal security, modules and cache strategy, and how should it be corrected?",
+    "preferred_answer": "Caching user-specific pages under a shared key or installing abandoned modules creates data exposure. Verify cache contexts and support status before release.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Securing your site",
+    "resolution_url": "https://www.drupal.org/docs/administering-a-drupal-site/security-in-drupal/securing-your-site",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q161",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Content Delivery, Preview and Management APIs, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Headless platforms commonly separate read-optimized delivery APIs, preview APIs for unpublished content and management APIs for write operations and administration.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GraphQL Content API overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/graphql/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q162",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Content Delivery, Preview and Management APIs in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use least-privilege tokens, isolate preview from public caches, respect rate limits and choose the correct API so management credentials never reach a browser.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GraphQL Content API overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/graphql/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q163",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Content Delivery, Preview and Management APIs from a closely related concept?",
+    "preferred_answer": "A delivery API is optimized for published consumption, while a management API can change content and therefore has higher privilege and different performance expectations.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GraphQL Content API overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/graphql/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q164",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Content Delivery, Preview and Management APIs, and how should it be corrected?",
+    "preferred_answer": "Using one powerful token everywhere creates a severe compromise path. Define token scope, rotation and server-only boundaries.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GraphQL Content API overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/graphql/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q165",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is GraphQL versus REST content delivery, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "GraphQL lets clients select fields through a typed schema, while REST endpoints return server-defined representations; both require authorization, caching and compatibility design.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GraphQL Content API overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/graphql/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q166",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply GraphQL versus REST content delivery in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use GraphQL for varied content graphs when query governance is available, or REST for simpler stable resources; measure overfetch, complexity, CDN behavior and developer experience.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GraphQL Content API overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/graphql/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q167",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish GraphQL versus REST content delivery from a closely related concept?",
+    "preferred_answer": "GraphQL is not automatically faster and REST is not inherently inflexible; payload shape, caching and request patterns determine outcomes.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GraphQL Content API overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/graphql/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q168",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with GraphQL versus REST content delivery, and how should it be corrected?",
+    "preferred_answer": "Allowing unrestricted nested queries or many tiny REST calls can exhaust backends. Add persisted queries, limits, batching or tailored endpoints based on evidence.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GraphQL Content API overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/graphql/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q169",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Content environments, schema changes and releases, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "CMS environments isolate content models and entries for development and testing, but model changes still affect code contracts, migrations and editorial work.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Environments",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/content-management-api/environments/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q170",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Content environments, schema changes and releases in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Clone representative data safely, version model migrations, test old and new consumers, plan backfill and sequence releases so no client sees an unsupported shape.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Environments",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/content-management-api/environments/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q171",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Content environments, schema changes and releases from a closely related concept?",
+    "preferred_answer": "An environment isolates a state, while an environment alias or release switch changes which state is served; neither removes the need for compatibility.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Environments",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/content-management-api/environments/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q172",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Content environments, schema changes and releases, and how should it be corrected?",
+    "preferred_answer": "Deleting or renaming a required field before consumers migrate causes runtime failures. Use additive changes, deprecation windows and observability.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Environments",
+    "resolution_url": "https://www.contentful.com/developers/docs/references/content-management-api/environments/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q173",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Webhooks, preview and cache revalidation, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Content events can trigger builds, cache purges or incremental revalidation, and preview must show unpublished changes without leaking them into public delivery.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Webhooks overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/extensibility/webhooks/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q174",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Webhooks, preview and cache revalidation in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Filter events, debounce bursts, verify signatures, revalidate only affected routes and provide editors with status and retry visibility.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Webhooks overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/extensibility/webhooks/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q175",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Webhooks, preview and cache revalidation from a closely related concept?",
+    "preferred_answer": "A build webhook starts work after a change, while preview resolves draft state directly; editors may need both for different review stages.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Webhooks overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/extensibility/webhooks/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q176",
+    "role_slug": "web-cms",
+    "domain": "Headless CMS and Composable Delivery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Webhooks, preview and cache revalidation, and how should it be corrected?",
+    "preferred_answer": "Rebuilding an entire site for every autosave or caching preview under public keys creates cost and leakage. Use event filters and separate origins or headers.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Webhooks overview",
+    "resolution_url": "https://www.contentful.com/developers/docs/extensibility/webhooks/overview/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q177",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Crawling, indexing and rendering, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Search systems discover URLs, fetch resources, render content when needed and decide whether pages are eligible and useful for an index; these are separate diagnostic stages.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Get started with Search - developer guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/get-started-developers",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q178",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Crawling, indexing and rendering in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use crawlable links, stable responses and accessible resources, inspect the rendered page and index status, and distinguish blocked discovery from quality or canonical selection.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Get started with Search - developer guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/get-started-developers",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q179",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Crawling, indexing and rendering from a closely related concept?",
+    "preferred_answer": "A crawler fetching a page does not guarantee indexing, and indexing does not guarantee ranking for a query.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Get started with Search - developer guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/get-started-developers",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q180",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Crawling, indexing and rendering, and how should it be corrected?",
+    "preferred_answer": "Assuming a sitemap forces indexing or hiding content behind interactions can delay discovery. Diagnose each stage with logs and search tools.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Get started with Search - developer guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/get-started-developers",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q181",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Canonical URLs, redirects and duplicate content, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Canonicalization indicates a preferred representative among duplicate or similar URLs, while redirects send users and crawlers to a different location.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "SEO Starter Guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q182",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Canonical URLs, redirects and duplicate content in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Choose one durable URL, redirect obsolete equivalents, keep internal links and sitemaps consistent and use canonical hints only where duplicate access must remain.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "SEO Starter Guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q183",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Canonical URLs, redirects and duplicate content from a closely related concept?",
+    "preferred_answer": "A redirect changes navigation, whereas a canonical link is a signal and may be ignored when other evidence conflicts.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "SEO Starter Guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q184",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Canonical URLs, redirects and duplicate content, and how should it be corrected?",
+    "preferred_answer": "Canonical chains, redirected canonical targets or contradictory hreflang and sitemap signals waste crawl and confuse analytics. Align all URL signals.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "SEO Starter Guide",
+    "resolution_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q185",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Sitemaps, robots controls and noindex, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Sitemaps list important canonical URLs, robots.txt controls crawling of paths, and noindex requests exclusion from search results when the page can be fetched.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Learn about sitemaps",
+    "resolution_url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q186",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Sitemaps, robots controls and noindex in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Include only valid canonical URLs, update last modification accurately, avoid blocking pages that must be read for noindex and protect private content with authentication rather than crawler rules.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Learn about sitemaps",
+    "resolution_url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q187",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Sitemaps, robots controls and noindex from a closely related concept?",
+    "preferred_answer": "Blocking crawl does not reliably remove an already known URL, and noindex does not prevent access to the page.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Learn about sitemaps",
+    "resolution_url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q188",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Sitemaps, robots controls and noindex, and how should it be corrected?",
+    "preferred_answer": "Using robots.txt as confidentiality control or submitting every parameterized URL creates leakage and crawl waste. Separate access control from search directives.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Learn about sitemaps",
+    "resolution_url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q189",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Structured data and search enhancements, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Structured data expresses page entities and properties in a machine-readable vocabulary, making eligible content understandable for supported search features.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Introduction to structured data markup",
+    "resolution_url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q190",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Structured data and search enhancements in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use types that match visible page content, generate valid JSON-LD, test required properties and monitor warnings without fabricating ratings, availability or organization facts.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Introduction to structured data markup",
+    "resolution_url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q191",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Structured data and search enhancements from a closely related concept?",
+    "preferred_answer": "Structured data can enable eligibility for enhanced presentation but does not guarantee display or ranking.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Introduction to structured data markup",
+    "resolution_url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q192",
+    "role_slug": "web-cms",
+    "domain": "SEO, Search and Structured Data",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Structured data and search enhancements, and how should it be corrected?",
+    "preferred_answer": "Marking up hidden or misleading content risks manual action and user distrust. Keep structured data synchronized with rendered and transactional truth.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Introduction to structured data markup",
+    "resolution_url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q193",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Measurement plans, events and parameters, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "A measurement plan connects business questions and user outcomes to named events, parameters, ownership and data-quality checks before tags are implemented.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Set up and collect events",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/ga4/events",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q194",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Measurement plans, events and parameters in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Define the decision each metric supports, create a stable event taxonomy, avoid personal data and document triggers, scope, expected volume and validation.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Set up and collect events",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/ga4/events",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q195",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Measurement plans, events and parameters from a closely related concept?",
+    "preferred_answer": "An event records an occurrence, a parameter adds context, and a KPI is a selected measure tied to an objective.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Set up and collect events",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/ga4/events",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q196",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Measurement plans, events and parameters, and how should it be corrected?",
+    "preferred_answer": "Tracking every click without decisions or naming governance creates expensive noise. Start with questions and use consistent reusable parameters.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Set up and collect events",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/ga4/events",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q197",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Tagging, debugging and data quality, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Analytics quality depends on correct tag placement, one-time event firing, consent state, environment filters, identity rules and documented processing delays.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Verify and troubleshoot your Google Analytics setup",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/ga4/troubleshoot",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q198",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Tagging, debugging and data quality in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Validate with browser tools and debug views, test duplicate navigation and single-page changes, compare expected counts and monitor sudden volume or schema shifts.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Verify and troubleshoot your Google Analytics setup",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/ga4/troubleshoot",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q199",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Tagging, debugging and data quality from a closely related concept?",
+    "preferred_answer": "A tag firing proves code execution, not that data was accepted, attributed or reported correctly.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Verify and troubleshoot your Google Analytics setup",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/ga4/troubleshoot",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q200",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Tagging, debugging and data quality, and how should it be corrected?",
+    "preferred_answer": "Declaring success after seeing one network request misses duplicates, blocked consent and wrong parameters. Maintain automated and manual release checks.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Verify and troubleshoot your Google Analytics setup",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/ga4/troubleshoot",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q201",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Consent, privacy and data minimization, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Analytics implementations must provide required notice and choice, honor consent or opt-out states and collect only data justified for the stated purpose.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Measurement Protocol, SDK and User ID Feature Policy",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/protocol/ga4/policy",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q202",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Consent, privacy and data minimization in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Classify tags and data, default to the legally approved state, prevent accidental personal data, propagate consent changes and document retention, access and deletion.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Measurement Protocol, SDK and User ID Feature Policy",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/protocol/ga4/policy",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q203",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Consent, privacy and data minimization from a closely related concept?",
+    "preferred_answer": "Consent management controls collection choices, while privacy governance also covers purpose, minimization, security, retention and user rights.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Measurement Protocol, SDK and User ID Feature Policy",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/protocol/ga4/policy",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q204",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Consent, privacy and data minimization, and how should it be corrected?",
+    "preferred_answer": "Loading trackers before consent or encoding personal data in URLs creates irreversible exposure. Review network traffic and server logs, not only the banner.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Measurement Protocol, SDK and User ID Feature Policy",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/protocol/ga4/policy",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q205",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Experiments, causality and guardrails, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "A controlled experiment compares randomized variants against a pre-defined hypothesis and primary metric, with guardrails for harm, performance and data quality.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Set up and collect events",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/ga4/events",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q206",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Experiments, causality and guardrails in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Define eligibility and unit of randomization, estimate duration, prevent sample contamination, analyze practical effect and stop or roll back when guardrails fail.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Set up and collect events",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/ga4/events",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q207",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Experiments, causality and guardrails from a closely related concept?",
+    "preferred_answer": "A before-and-after trend can suggest change but lacks the concurrent control needed to separate treatment effect from seasonality or other events.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Set up and collect events",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/ga4/events",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q208",
+    "role_slug": "web-cms",
+    "domain": "Analytics, Experimentation and Privacy",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Experiments, causality and guardrails, and how should it be corrected?",
+    "preferred_answer": "Peeking until significance, running overlapping tests or optimizing one conversion while harming accessibility produces false or unethical wins.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Set up and collect events",
+    "resolution_url": "https://developers.google.com/analytics/devguides/collection/ga4/events",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q209",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Core Web Vitals and field versus lab data, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Core Web Vitals capture loading, responsiveness and visual stability from user experience, while field data reflects real populations and lab tests provide repeatable diagnosis.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q210",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Core Web Vitals and field versus lab data in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Segment field metrics by template, device and geography, reproduce poor experiences in lab tools, fix root causes and monitor the 75th percentile after deployment.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q211",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Core Web Vitals and field versus lab data from a closely related concept?",
+    "preferred_answer": "Lab scores are controlled samples and can explain causes; field metrics show actual distributions but are slower and less deterministic.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q212",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Core Web Vitals and field versus lab data, and how should it be corrected?",
+    "preferred_answer": "Optimizing one Lighthouse run or averages can hide slow users. Use percentiles, representative pages and business guardrails.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web Vitals",
+    "resolution_url": "https://web.dev/articles/vitals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q213",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Critical resource loading, images and fonts, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Browsers discover and prioritize HTML, CSS, scripts, images and fonts; critical-path improvements reduce blocking work and deliver appropriate assets for the viewport and device.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web performance",
+    "resolution_url": "https://web.dev/performance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q214",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Critical resource loading, images and fonts in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Remove unused code, defer non-critical scripts, size and compress media, preload only proven critical assets, set dimensions and use font strategies that protect readability and stability.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web performance",
+    "resolution_url": "https://web.dev/performance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q215",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Critical resource loading, images and fonts from a closely related concept?",
+    "preferred_answer": "Lazy loading delays offscreen resources, but applying it to the primary image can worsen the largest content render.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web performance",
+    "resolution_url": "https://web.dev/performance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q216",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Critical resource loading, images and fonts, and how should it be corrected?",
+    "preferred_answer": "Overusing preload or shipping desktop media to every device competes for bandwidth. Confirm network priority and field effect.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Web performance",
+    "resolution_url": "https://web.dev/performance/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q217",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is HTTP caching, CDN keys and invalidation, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "HTTP caches reuse responses according to freshness and validation rules, while CDN configuration adds shared cache keys, purge and edge behavior that must preserve privacy and variation.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "RFC 9111 - HTTP Caching",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9111.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q218",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply HTTP caching, CDN keys and invalidation in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Set explicit Cache-Control and validators, include required Vary dimensions, keep personalized responses private and test HIT, MISS, stale and purge behavior.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "RFC 9111 - HTTP Caching",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9111.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q219",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish HTTP caching, CDN keys and invalidation from a closely related concept?",
+    "preferred_answer": "Browser cache is private to a user agent, while a CDN is generally a shared cache and needs stricter separation of user-specific content.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "RFC 9111 - HTTP Caching",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9111.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q220",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with HTTP caching, CDN keys and invalidation, and how should it be corrected?",
+    "preferred_answer": "Caching authenticated HTML or omitting language and device variation from the key can leak or serve wrong content. Start conservatively and verify headers.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "RFC 9111 - HTTP Caching",
+    "resolution_url": "https://www.rfc-editor.org/rfc/rfc9111.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q221",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Performance budgets and continuous monitoring, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "A performance budget sets enforceable limits for metrics or resource quantities so regressions are caught before they accumulate.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Performance budgets 101",
+    "resolution_url": "https://web.dev/articles/performance-budgets-101",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q222",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Performance budgets and continuous monitoring in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Select user-centered metrics and page classes, add CI checks for bundles and lab thresholds, alert on field regressions and require an explicit trade-off for exceptions.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Performance budgets 101",
+    "resolution_url": "https://web.dev/articles/performance-budgets-101",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q223",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Performance budgets and continuous monitoring from a closely related concept?",
+    "preferred_answer": "A budget is a release constraint, while a target is an aspiration that can be missed without consequence.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Performance budgets 101",
+    "resolution_url": "https://web.dev/articles/performance-budgets-101",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q224",
+    "role_slug": "web-cms",
+    "domain": "Performance, Caching and Content Delivery",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Performance budgets and continuous monitoring, and how should it be corrected?",
+    "preferred_answer": "Setting impossible universal thresholds leads teams to ignore the system. Base budgets on user needs, baseline and template risk, then ratchet deliberately.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Performance budgets 101",
+    "resolution_url": "https://web.dev/articles/performance-budgets-101",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q225",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Broken access control and security configuration, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Access control must be enforced server-side for every protected operation, and production configuration should remove unnecessary services, privileges, defaults and debug exposure.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "OWASP Top 10:2025",
+    "resolution_url": "https://owasp.org/Top10/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q226",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Broken access control and security configuration in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Create role and resource authorization tests, deny by default, review CMS permissions and secrets, patch supported components and validate environment-specific hardening.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "OWASP Top 10:2025",
+    "resolution_url": "https://owasp.org/Top10/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q227",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Broken access control and security configuration from a closely related concept?",
+    "preferred_answer": "Authentication establishes identity, while authorization decides what that identity may do with a particular resource.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "OWASP Top 10:2025",
+    "resolution_url": "https://owasp.org/Top10/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q228",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Broken access control and security configuration, and how should it be corrected?",
+    "preferred_answer": "Hiding admin links, trusting object IDs or leaving staging tools public creates broken access control. Test direct requests and cross-tenant cases.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "OWASP Top 10:2025",
+    "resolution_url": "https://owasp.org/Top10/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q229",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Input validation, injection and cross-site scripting, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Input validation rejects unacceptable data early, parameterized APIs prevent command or query injection, and context-aware output encoding prevents untrusted content from becoming executable markup or script.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Input Validation Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q230",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Input validation, injection and cross-site scripting in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Define allow-listed formats and limits, use framework query APIs, sanitize rich content with a maintained policy and escape at the final output context.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Input Validation Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q231",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Input validation, injection and cross-site scripting from a closely related concept?",
+    "preferred_answer": "Validation improves data quality and attack reduction, but output encoding and safe APIs remain necessary because valid text can still be dangerous in a different context.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Input Validation Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q232",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Input validation, injection and cross-site scripting, and how should it be corrected?",
+    "preferred_answer": "A generic blacklist or stripping script tags misses encoded and context-specific attacks. Use layered controls and security tests.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Input Validation Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q233",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is CSRF, sessions and browser security headers, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Cookie-authenticated state changes need CSRF defenses, secure session attributes and origin checks, while headers such as CSP add defense in depth against content injection and embedding.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Cross-Site Request Forgery Prevention Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q234",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply CSRF, sessions and browser security headers in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use framework CSRF tokens, SameSite and secure cookies, re-authenticate sensitive changes, deploy CSP in report-only mode first and monitor violations.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Cross-Site Request Forgery Prevention Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q235",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish CSRF, sessions and browser security headers from a closely related concept?",
+    "preferred_answer": "CORS controls cross-origin reading by browser scripts, while CSRF concerns unwanted authenticated requests and requires separate protection.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Cross-Site Request Forgery Prevention Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q236",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with CSRF, sessions and browser security headers, and how should it be corrected?",
+    "preferred_answer": "Treating SameSite or CSP as a single complete control leaves bypasses and unsupported flows. Combine authorization, token, session and output defenses.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Cross-Site Request Forgery Prevention Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q237",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Software supply chain, backups and incident readiness, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Web platforms depend on packages, plugins, themes and services, so governance must track provenance, support, vulnerabilities, backups and a rehearsed response path.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "OWASP Top 10:2025",
+    "resolution_url": "https://owasp.org/Top10/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q238",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Software supply chain, backups and incident readiness in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Maintain an inventory and owners, pin or review dependencies, scan and patch, keep immutable tested backups, centralize logs and define containment, recovery and communication steps.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "OWASP Top 10:2025",
+    "resolution_url": "https://owasp.org/Top10/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q239",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Software supply chain, backups and incident readiness from a closely related concept?",
+    "preferred_answer": "A backup is a stored recovery asset; disaster recovery is the tested people, process and infrastructure needed to restore service within objectives.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "OWASP Top 10:2025",
+    "resolution_url": "https://owasp.org/Top10/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q240",
+    "role_slug": "web-cms",
+    "domain": "Security, Privacy and Digital Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Software supply chain, backups and incident readiness, and how should it be corrected?",
+    "preferred_answer": "Installing abandoned extensions or keeping untested backups creates false resilience. Exercise restore and remove unnecessary attack surface.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "OWASP Top 10:2025",
+    "resolution_url": "https://owasp.org/Top10/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q241",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Version control, CI and release pipelines, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Version control records reviewed change, continuous integration builds and tests it, and deployment pipelines promote known artifacts through environments with evidence and approvals.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q242",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Version control, CI and release pipelines in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use protected branches, reproducible builds, automated checks, immutable artifacts and traceable release notes; keep manual production actions exceptional and recorded.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q243",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Version control, CI and release pipelines from a closely related concept?",
+    "preferred_answer": "Continuous delivery keeps software deployable, while continuous deployment automatically releases every qualifying change.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q244",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Version control, CI and release pipelines, and how should it be corrected?",
+    "preferred_answer": "Building separately in production or copying files by hand creates untraceable drift. Promote the exact tested artifact.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "GitHub Actions documentation",
+    "resolution_url": "https://docs.github.com/en/actions",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q245",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Environment configuration, secrets and rollback, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Environments separate configuration and risk, secrets must be scoped and rotated, and rollback or roll-forward procedures must be tested before a release.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Deployments and environments",
+    "resolution_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q246",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Environment configuration, secrets and rollback in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Use environment protection rules, external secret storage where appropriate, migrations compatible with both versions and clear triggers for rollback.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Deployments and environments",
+    "resolution_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q247",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Environment configuration, secrets and rollback from a closely related concept?",
+    "preferred_answer": "Configuration selects environment behavior, while secrets are sensitive values requiring stricter access, masking and audit.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Deployments and environments",
+    "resolution_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q248",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Environment configuration, secrets and rollback, and how should it be corrected?",
+    "preferred_answer": "Embedding secrets in repositories or deploying irreversible database changes turns a small fault into a prolonged incident. Design backward compatibility and recovery.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Deployments and environments",
+    "resolution_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q249",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is DNS, reverse proxies, CDN and TLS operations, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "Domains route through DNS to origins or reverse proxies, where TLS termination, caching, security and routing may be applied before requests reach the application.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Proxy status",
+    "resolution_url": "https://developers.cloudflare.com/dns/proxy-status/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q250",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply DNS, reverse proxies, CDN and TLS operations in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Document authoritative DNS, proxy status, origin certificates and health checks; lower TTL before planned moves and verify both proxied and direct dependencies.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Proxy status",
+    "resolution_url": "https://developers.cloudflare.com/dns/proxy-status/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q251",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish DNS, reverse proxies, CDN and TLS operations from a closely related concept?",
+    "preferred_answer": "A CDN can cache and protect HTTP traffic, while authoritative DNS answers name queries; one provider may offer both but they remain distinct functions.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Proxy status",
+    "resolution_url": "https://developers.cloudflare.com/dns/proxy-status/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q252",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with DNS, reverse proxies, CDN and TLS operations, and how should it be corrected?",
+    "preferred_answer": "Changing nameservers, proxy mode and origin TLS simultaneously makes failures difficult to isolate. Stage changes and preserve out-of-band origin access.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Proxy status",
+    "resolution_url": "https://developers.cloudflare.com/dns/proxy-status/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q253",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Content migration, cutover and release governance, and why is it important in web, CMS or digital technology work?",
+    "preferred_answer": "A CMS migration combines schema mapping, extraction, transformation, validation, redirects, author training and cutover controls, not merely copying pages.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Configuration management",
+    "resolution_url": "https://www.drupal.org/docs/administering-a-drupal-site/configuration-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q254",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How would you apply Content migration, cutover and release governance in a real website, CMS or digital platform initiative?",
+    "preferred_answer": "Inventory content and integrations, define acceptance and reconciliation, rehearse migration, freeze or delta-sync changes, preserve URLs and monitor technical and editorial outcomes.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Configuration management",
+    "resolution_url": "https://www.drupal.org/docs/administering-a-drupal-site/configuration-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q255",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an interview candidate distinguish Content migration, cutover and release governance from a closely related concept?",
+    "preferred_answer": "Content migration moves and transforms information, while a redesign changes presentation and journeys; combining them increases scope and attribution risk.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Configuration management",
+    "resolution_url": "https://www.drupal.org/docs/administering-a-drupal-site/configuration-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
+  },
+  {
+    "id": "WCDT-Q256",
+    "role_slug": "web-cms",
+    "domain": "Deployment, Hosting and Digital Operations",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What common failure or interview red flag is associated with Content migration, cutover and release governance, and how should it be corrected?",
+    "preferred_answer": "Migrating low-quality duplicates into a new model or launching without redirect and rollback plans creates long-term damage. Archive deliberately and validate samples plus totals.",
+    "evaluation_points": [
+      "Explains the relevant web or CMS mechanism accurately and in context",
+      "Uses a structured diagnosis or implementation approach with measurable validation",
+      "Considers accessibility, security, performance, content and non-happy-path behavior",
+      "Communicates trade-offs, ownership, rollback and operational impact clearly"
+    ],
+    "resolution_title": "Configuration management",
+    "resolution_url": "https://www.drupal.org/docs/administering-a-drupal-site/configuration-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-01",
+    "status": "published"
   }
 ];

@@ -28,8 +28,19 @@ export interface InterviewQProps {
 }
 
 const ROLE_SLUG_ALIASES: Record<string, string[]> = {
-  'ui-ux-design': ['ui-ux-design', 'ui_ux_product_design_creative_technology', 'ui-ux-designer', 'product-designer', 'ux-researcher', 'interaction-designer', 'design-system-engineer', 'ux-writer', 'creative-technologist', 'visual-designer'],
-  'project-product': ['project-product', 'product_project_program_management', 'product-manager', 'project-manager', 'program-manager', 'scrum-master', 'agile-coach', 'technical-program-manager', 'tpm', 'pmo-lead', 'product-owner'],
+  'ui-ux-design': ['ui-ux-design', 'uiux-design', 'ui_ux_product_design_creative_technology', 'ui-ux-designer', 'product-designer', 'ux-researcher', 'interaction-designer', 'design-system-engineer', 'ux-writer', 'creative-technologist', 'visual-designer'],
+  'uiux-design': ['ui-ux-design', 'uiux-design', 'ui_ux_product_design_creative_technology', 'ui-ux-designer', 'product-designer', 'ux-researcher', 'interaction-designer', 'design-system-engineer', 'ux-writer', 'creative-technologist', 'visual-designer'],
+  'project-product': ['project-product', 'product-mgmt', 'product_project_program_management', 'product-manager', 'project-manager', 'program-manager', 'scrum-master', 'agile-coach', 'technical-program-manager', 'tpm', 'pmo-lead', 'product-owner'],
+  'product-mgmt': ['project-product', 'product-mgmt', 'product_project_program_management', 'product-manager', 'project-manager', 'program-manager', 'scrum-master', 'agile-coach', 'technical-program-manager', 'tpm', 'pmo-lead', 'product-owner'],
+  'business-analysis': ['business-analysis', 'business_analysis_tech_consulting', 'business-analyst', 'tech-consultant', 'technology-consultant', 'functional-consultant', 'process-analyst', 'systems-analyst', 'management-consultant', 'it-business-analyst'],
+  'erp-crm': ['erp-crm', 'erp_crm_business_application_roles', 'sap-consultant', 'salesforce-administrator', 'salesforce-developer', 'dynamics-365-consultant', 'oracle-erp-consultant', 'erp-functional-consultant', 'crm-consultant', 'erp-solution-architect'],
+  'it-ops-itsm': ['it-ops-itsm', 'it_operations_itsm_process_management', 'it-operations-manager', 'itsm-manager', 'incident-manager', 'change-manager', 'problem-manager', 'service-delivery-manager', 'itsm-consultant', 'it-ops-engineer'],
+  'db-admin': ['db-admin', 'database_administration_dba', 'dba', 'database-administrator', 'postgres-dba', 'mysql-dba', 'sql-server-dba', 'oracle-dba', 'cloud-dba'],
+  'data-analytics': ['data-analytics', 'data_analytics_business_intelligence', 'data-analyst', 'bi-analyst', 'business-intelligence-engineer', 'analytics-engineer', 'bi-developer', 'data-reporting-analyst'],
+  'qa-testing': ['qa-testing', 'qa_software_testing_quality_engineering', 'qa-engineer', 'software-tester', 'sdet', 'qa-analyst', 'quality-engineer', 'automation-test-engineer'],
+  'networking': ['networking', 'networking_noc_operations', 'network-engineer', 'noc-engineer', 'network-administrator', 'noc-analyst', 'network-security-engineer'],
+  'it-support': ['it-support', 'it-support-technician', 'service-desk-analyst', 'desktop-support-engineer', 'technical-support-engineer', 'end-user-computing-engineer', 'field-support-engineer', 'application-support-analyst', 'vip-support-engineer', 'hardware-support-engineer', 'service-desk-lead', 'it-support-manager'],
+  'systems-infra': ['systems-infra', 'system-administrator', 'infrastructure-engineer', 'server-administrator', 'infrastructure-architect'],
   'cloud': ['cloud', 'cloud-engineer'],
   'cybersecurity': ['cybersecurity', 'cybersecurity-analyst'],
   'software-dev': ['software-dev', 'software-development-engineer'],
@@ -37,8 +48,7 @@ const ROLE_SLUG_ALIASES: Record<string, string[]> = {
   'data-science-ai': ['data-science-ai', 'prompt-engineer'],
   'green-computing': ['green-computing', 'green-computing-engineer'],
   'frontend-developer': ['frontend-developer'],
-  'backend-developer': ['backend-developer'],
-  'systems-infra': ['systems-infra', 'system-administrator', 'infrastructure-engineer', 'server-administrator', 'infrastructure-architect']
+  'backend-developer': ['backend-developer']
 };
 
 const isRoleMatch = (itemRoleSlug: string, targetSlug: string) => {
@@ -212,175 +222,10 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     hoverBorder: 'hover:border-amber-500/60',
     badgeActive: 'bg-amber-500 text-black border-amber-500 font-bold',
     badgeInactive: 'bg-amber-500/10 text-amber-400 border-amber-500/40'
-  },
-'db-admin': {
-    color: 'teal',
-    accentBar: 'bg-teal-500',
-    accentText: 'text-teal-400',
-    activeBorder: 'border-teal-500',
-    activeBg: 'bg-teal-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#14b8a6]',
-    hoverBorder: 'hover:border-teal-500/60',
-    badgeActive: 'bg-teal-500 text-black border-teal-500 font-bold',
-    badgeInactive: 'bg-teal-500/10 text-teal-400 border-teal-500/40'
-  },
-'it-ops-itsm': {
-    color: 'indigo',
-    accentBar: 'bg-indigo-500',
-    accentText: 'text-indigo-400',
-    activeBorder: 'border-indigo-500',
-    activeBg: 'bg-indigo-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
-    hoverBorder: 'hover:border-indigo-500/60',
-    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
-    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
-  },
-'erp-crm': {
-    color: 'blue',
-    accentBar: 'bg-blue-500',
-    accentText: 'text-blue-400',
-    activeBorder: 'border-blue-500',
-    activeBg: 'bg-blue-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#3b82f6]',
-    hoverBorder: 'hover:border-blue-500/60',
-    badgeActive: 'bg-blue-500 text-black border-blue-500 font-bold',
-    badgeInactive: 'bg-blue-500/10 text-blue-400 border-blue-500/40'
-  },
-'product-mgmt': {
-    color: 'yellow',
-    accentBar: 'bg-yellow-500',
-    accentText: 'text-yellow-400',
-    activeBorder: 'border-yellow-500',
-    activeBg: 'bg-yellow-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#eab308]',
-    hoverBorder: 'hover:border-yellow-500/60',
-    badgeActive: 'bg-yellow-500 text-black border-yellow-500 font-bold',
-    badgeInactive: 'bg-yellow-500/10 text-yellow-400 border-yellow-500/40'
-  },
-'business-analysis': {
-    color: 'indigo',
-    accentBar: 'bg-indigo-500',
-    accentText: 'text-indigo-400',
-    activeBorder: 'border-indigo-500',
-    activeBg: 'bg-indigo-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
-    hoverBorder: 'hover:border-indigo-500/60',
-    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
-    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
-  },
-'uiux-design': {
-    color: 'purple',
-    accentBar: 'bg-purple-500',
-    accentText: 'text-purple-400',
-    activeBorder: 'border-purple-500',
-    activeBg: 'bg-purple-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#a855f7]',
-    hoverBorder: 'hover:border-purple-500/60',
-    badgeActive: 'bg-purple-500 text-black border-purple-500 font-bold',
-    badgeInactive: 'bg-purple-500/10 text-purple-400 border-purple-500/40'
-  },
-'web-cms': {
-    color: 'cyan',
-    accentBar: 'bg-cyan-500',
-    accentText: 'text-cyan-400',
-    activeBorder: 'border-cyan-500',
-    activeBg: 'bg-cyan-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#06b6d4]',
-    hoverBorder: 'hover:border-cyan-500/60',
-    badgeActive: 'bg-cyan-500 text-black border-cyan-500 font-bold',
-    badgeInactive: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/40'
-  },
-'automation-rpa': {
-    color: 'rose',
-    accentBar: 'bg-rose-500',
-    accentText: 'text-rose-400',
-    activeBorder: 'border-rose-500',
-    activeBg: 'bg-rose-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#f43f5e]',
-    hoverBorder: 'hover:border-rose-500/60',
-    badgeActive: 'bg-rose-500 text-white border-rose-500 font-bold',
-    badgeInactive: 'bg-rose-500/10 text-rose-400 border-rose-500/40'
-  },
-'tech-writing': {
-    color: 'emerald',
-    accentBar: 'bg-emerald-500',
-    accentText: 'text-emerald-400',
-    activeBorder: 'border-emerald-500',
-    activeBg: 'bg-emerald-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
-    hoverBorder: 'hover:border-emerald-500/60',
-    badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
-    badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
-  },
-'sales-customer-success': {
-    color: 'blue',
-    accentBar: 'bg-blue-500',
-    accentText: 'text-blue-400',
-    activeBorder: 'border-blue-500',
-    activeBg: 'bg-blue-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#3b82f6]',
-    hoverBorder: 'hover:border-blue-500/60',
-    badgeActive: 'bg-blue-500 text-black border-blue-500 font-bold',
-    badgeInactive: 'bg-blue-500/10 text-blue-400 border-blue-500/40'
-  },
-'hardware-iot': {
-    color: 'indigo',
-    accentBar: 'bg-indigo-500',
-    accentText: 'text-indigo-400',
-    activeBorder: 'border-indigo-500',
-    activeBg: 'bg-indigo-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
-    hoverBorder: 'hover:border-indigo-500/60',
-    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
-    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
-  },
-'telecom-voice': {
-    color: 'amber',
-    accentBar: 'bg-amber-500',
-    accentText: 'text-amber-400',
-    activeBorder: 'border-amber-500',
-    activeBg: 'bg-amber-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#f59e0b]',
-    hoverBorder: 'hover:border-amber-500/60',
-    badgeActive: 'bg-amber-500 text-black border-amber-500 font-bold',
-    badgeInactive: 'bg-amber-500/10 text-amber-400 border-amber-500/40'
-  },
-'governance-audit': {
-    color: 'red',
-    accentBar: 'bg-red-500',
-    accentText: 'text-red-400',
-    activeBorder: 'border-red-500',
-    activeBg: 'bg-red-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#ef4444]',
-    hoverBorder: 'hover:border-red-500/60',
-    badgeActive: 'bg-red-500 text-white border-red-500 font-bold',
-    badgeInactive: 'bg-red-500/10 text-red-400 border-red-500/40'
-  },
-'architecture': {
-    color: 'emerald',
-    accentBar: 'bg-emerald-500',
-    accentText: 'text-emerald-400',
-    activeBorder: 'border-emerald-500',
-    activeBg: 'bg-emerald-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
-    hoverBorder: 'hover:border-emerald-500/60',
-    badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
-    badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
-  },
-'executive': {
-    color: 'fuchsia',
-    accentBar: 'bg-fuchsia-500',
-    accentText: 'text-fuchsia-400',
-    activeBorder: 'border-fuchsia-500',
-    activeBg: 'bg-fuchsia-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#d946ef]',
-    hoverBorder: 'hover:border-fuchsia-500/60',
-    badgeActive: 'bg-fuchsia-500 text-black border-fuchsia-500 font-bold',
-    badgeInactive: 'bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/40'
   }
 };
 
-const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; description: string }> = {
+export const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; description: string }> = {
   all: {
     label: 'All Role Categories',
     icon: '🌐',
@@ -454,37 +299,37 @@ const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: string; desc
 'db-admin': {
     label: 'Database Administration (DBA)',
     icon: '🛢️',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering PostgreSQL, MySQL, MS SQL Server, Oracle, HA/DR, Backup & PITR, Locking, Query Optimization & Cloud DBs'
   },
 'it-ops-itsm': {
     label: 'IT Operations, ITSM & Process Management',
     icon: '📋',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering ITIL 4, Incident & Major Incident, Problem RCA, Change Enablement, CMDB, SLAs/XLAs, Event Management & Runbooks'
   },
 'erp-crm': {
     label: 'ERP, CRM & Business Application Roles',
     icon: '🏢',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering SAP, Salesforce, Dynamics 365, Oracle ERP, Fit-Gap Analysis, Data Migration, Cutover, UAT & Segregation of Duties'
   },
-'product-mgmt': {
+'project-product': {
     label: 'Product, Project & Program Management',
     icon: '🎯',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering Product Discovery, Strategy, Backlog Prioritization, WBS, Risk Management, Agile/Scrum, PMO & Portfolio Governance'
   },
 'business-analysis': {
     label: 'Business Analysis & Tech Consulting',
     icon: '📈',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering Requirements Elicitation, BPMN Process Modeling, Business Cases, Solution Evaluation, UAT & Tech Consulting Advisory'
   },
-'uiux-design': {
+'ui-ux-design': {
     label: 'UI/UX, Product Design & Creative Technology',
     icon: '🎨',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering Human-Centred Design, User Research, Journey Mapping, WCAG 2.2 Accessibility, Figma Design Tokens & Immersive UX'
   },
 'web-cms': {
     label: 'Web, CMS & Digital Technology',
     icon: '🌐',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering HTML/CSS/JS, WordPress, Drupal, Headless CMS, Core Web Vitals, SEO, CDN Caching & Web Security'
   },
 'automation-rpa': {
     label: 'Automation, RPA & Low-Code / No-Code',
