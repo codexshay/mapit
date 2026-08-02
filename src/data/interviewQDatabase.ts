@@ -107602,5 +107602,14349 @@ export const interviewQDatabase: InterviewQItem[] = [
     "source_tier": "A",
     "last_verified_at": "2026-08-01",
     "status": "published"
+  },
+  {
+    "id": "GRC-Q001",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What does GRC mean in an enterprise context?",
+    "preferred_answer": "GRC integrates governance, risk management, and compliance so objectives, decisions, controls, evidence, and accountability are managed coherently rather than through isolated functions.",
+    "evaluation_points": [
+      "Focus on GRC",
+      "Focus on governance"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q002",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How are governance and management different?",
+    "preferred_answer": "Governance evaluates stakeholder needs, sets direction, and monitors outcomes. Management plans, builds, runs, and monitors activities to achieve the direction established by the governing body.",
+    "evaluation_points": [
+      "Focus on governance",
+      "Focus on management"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q003",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is enterprise governance of information and technology?",
+    "preferred_answer": "It is the system by which enterprise information and technology are directed and controlled to support value delivery, risk optimization, resource optimization, and strategic alignment.",
+    "evaluation_points": [
+      "Focus on EGIT",
+      "Focus on value delivery"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q004",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the purpose of a governance framework?",
+    "preferred_answer": "A governance framework establishes decision rights, accountability, oversight, objectives, policies, performance measures, and escalation paths so activities remain aligned with enterprise goals.",
+    "evaluation_points": [
+      "Focus on framework",
+      "Focus on accountability"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q005",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is the Three Lines Model?",
+    "preferred_answer": "The governing body is accountable for oversight; management owns and manages risk through first- and second-line roles; internal audit provides independent assurance as the third line.",
+    "evaluation_points": [
+      "Focus on three lines",
+      "Focus on assurance"
+    ],
+    "resolution_title": "The IIA - Three Lines Model",
+    "resolution_url": "https://www.theiia.org/en/content/position-papers/2020/three-lines-model-updated/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q006",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "foundation",
+    "question_type": "scenario",
+    "prompt": "Who owns risk in an organization?",
+    "preferred_answer": "Management and business process owners own risk. Risk, compliance, and security functions advise and monitor, while internal audit independently evaluates governance, risk management, and controls.",
+    "evaluation_points": [
+      "Focus on risk ownership",
+      "Focus on accountability"
+    ],
+    "resolution_title": "The IIA - Three Lines Model",
+    "resolution_url": "https://www.theiia.org/en/content/position-papers/2020/three-lines-model-updated/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q007",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a policy hierarchy?",
+    "preferred_answer": "A policy hierarchy connects board or executive policy to standards, processes, procedures, guidelines, and evidence. Lower-level documents operationalize mandatory intent without contradicting higher-level requirements.",
+    "evaluation_points": [
+      "Focus on policy",
+      "Focus on documentation"
+    ],
+    "resolution_title": "ISO/IEC 27001:2022 - Information Security Management Systems",
+    "resolution_url": "https://www.iso.org/standard/27001",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q008",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "What makes a policy effective?",
+    "preferred_answer": "An effective policy has clear purpose, scope, authority, ownership, mandatory statements, defined exceptions, review frequency, communication, enforcement, and evidence that it is used.",
+    "evaluation_points": [
+      "Focus on policy governance",
+      "Focus on effectiveness"
+    ],
+    "resolution_title": "ISO/IEC 27001:2022 - Information Security Management Systems",
+    "resolution_url": "https://www.iso.org/standard/27001",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q009",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is governance by design?",
+    "preferred_answer": "Governance by design embeds ownership, approvals, segregation, monitoring, records, and escalation into processes and systems instead of adding compliance checks after implementation.",
+    "evaluation_points": [
+      "Focus on governance by design",
+      "Focus on controls"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q010",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "What is a governance committee expected to do?",
+    "preferred_answer": "It should make or oversee defined decisions, review risk and performance information, resolve cross-functional conflicts, approve exceptions, and track actions to closure.",
+    "evaluation_points": [
+      "Focus on committee",
+      "Focus on oversight"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q011",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is organizational accountability?",
+    "preferred_answer": "Accountability means an identified role is answerable for an outcome, has sufficient authority and resources, and must explain decisions, performance, and unresolved risks.",
+    "evaluation_points": [
+      "Focus on accountability",
+      "Focus on roles"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q012",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why are decision rights important in GRC?",
+    "preferred_answer": "Decision rights specify who may approve, accept risk, grant exceptions, change controls, and escalate issues, reducing ambiguity and unauthorized commitments.",
+    "evaluation_points": [
+      "Focus on decision rights",
+      "Focus on risk acceptance"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q013",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What is a governance operating model?",
+    "preferred_answer": "It defines bodies, roles, decision forums, processes, information flows, metrics, technology, and assurance relationships used to govern the organization.",
+    "evaluation_points": [
+      "Focus on operating model",
+      "Focus on governance"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q014",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should GRC support business value rather than only compliance?",
+    "preferred_answer": "GRC should connect controls and obligations to business objectives, prioritize material risks, simplify duplicated requirements, and provide decision-ready information that enables responsible execution.",
+    "evaluation_points": [
+      "Focus on business value",
+      "Focus on risk-based"
+    ],
+    "resolution_title": "COSO - Enterprise Risk Management",
+    "resolution_url": "https://www.coso.org/enterprise-risk-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q015",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is tone at the top?",
+    "preferred_answer": "Tone at the top is the behavior and messaging of leaders that shapes ethics, control discipline, transparency, and willingness to report problems. It must be reinforced by incentives and consequences.",
+    "evaluation_points": [
+      "Focus on ethics",
+      "Focus on culture"
+    ],
+    "resolution_title": "COSO - Internal Control Integrated Framework",
+    "resolution_url": "https://www.coso.org/internal-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q016",
+    "role_slug": "governance-audit",
+    "domain": "GRC Foundations and Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How would you assess governance maturity?",
+    "preferred_answer": "Assess whether governance objectives, roles, forums, information, decisions, controls, and outcomes are defined, consistently performed, measured, improved, and supported by evidence.",
+    "evaluation_points": [
+      "Focus on maturity",
+      "Focus on governance assessment"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q017",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is risk?",
+    "preferred_answer": "Risk is the effect of uncertainty on objectives. In practice, describe the event or condition, affected objective, causes, consequences, and uncertainty rather than using a vague label.",
+    "evaluation_points": [
+      "Focus on risk",
+      "Focus on objectives"
+    ],
+    "resolution_title": "ISO 31000 - Risk Management",
+    "resolution_url": "https://www.iso.org/iso-31000-risk-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q018",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between inherent and residual risk?",
+    "preferred_answer": "Inherent risk is exposure before considering controls; residual risk is exposure remaining after controls and other responses. Both should use stated assumptions and the same risk criteria.",
+    "evaluation_points": [
+      "Focus on inherent risk",
+      "Focus on residual risk"
+    ],
+    "resolution_title": "NIST SP 800-30 Rev. 1 - Guide for Conducting Risk Assessments",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q019",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is risk appetite?",
+    "preferred_answer": "Risk appetite is the amount and type of risk an organization is willing to pursue or retain while achieving objectives. It guides boundaries, investment, and escalation.",
+    "evaluation_points": [
+      "Focus on risk appetite",
+      "Focus on governance"
+    ],
+    "resolution_title": "COSO - Enterprise Risk Management",
+    "resolution_url": "https://www.coso.org/enterprise-risk-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q020",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does risk tolerance differ from risk appetite?",
+    "preferred_answer": "Appetite is broad strategic willingness to accept risk; tolerance translates it into measurable variation or limits for specific objectives, processes, or risk indicators.",
+    "evaluation_points": [
+      "Focus on risk tolerance",
+      "Focus on limits"
+    ],
+    "resolution_title": "COSO - Enterprise Risk Management",
+    "resolution_url": "https://www.coso.org/enterprise-risk-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q021",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are threat, vulnerability, likelihood, and impact?",
+    "preferred_answer": "A threat can exploit a vulnerability and cause harm. Likelihood estimates the chance of occurrence; impact estimates consequences to objectives, operations, assets, people, or obligations.",
+    "evaluation_points": [
+      "Focus on threat",
+      "Focus on vulnerability",
+      "Focus on likelihood",
+      "Focus on impact"
+    ],
+    "resolution_title": "NIST SP 800-30 Rev. 1 - Guide for Conducting Risk Assessments",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q022",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes a good risk statement?",
+    "preferred_answer": "A good statement uses cause-event-impact logic, names the objective at risk, avoids embedding the control as the risk, and is specific enough to assign ownership and treatment.",
+    "evaluation_points": [
+      "Focus on risk statement",
+      "Focus on risk register"
+    ],
+    "resolution_title": "ISO 31000 - Risk Management",
+    "resolution_url": "https://www.iso.org/iso-31000-risk-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q023",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What should a risk register contain?",
+    "preferred_answer": "It should record risk statements, owners, assets or processes, causes, impacts, ratings, controls, treatment actions, due dates, indicators, status, dependencies, and acceptance decisions.",
+    "evaluation_points": [
+      "Focus on risk register",
+      "Focus on documentation"
+    ],
+    "resolution_title": "NIST SP 800-39 - Managing Information Security Risk",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/39/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q024",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should risk be scored?",
+    "preferred_answer": "Use defined, repeatable criteria for likelihood and impact, document assumptions, consider multiple impact dimensions, and avoid false precision. Escalation should not depend on arithmetic alone.",
+    "evaluation_points": [
+      "Focus on risk scoring",
+      "Focus on criteria"
+    ],
+    "resolution_title": "NIST SP 800-30 Rev. 1 - Guide for Conducting Risk Assessments",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q025",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is qualitative versus quantitative risk analysis?",
+    "preferred_answer": "Qualitative analysis uses defined categories and expert judgment; quantitative analysis uses numerical distributions, frequencies, and loss estimates. The method should match decision needs and data quality.",
+    "evaluation_points": [
+      "Focus on qualitative",
+      "Focus on quantitative"
+    ],
+    "resolution_title": "NIST SP 800-30 Rev. 1 - Guide for Conducting Risk Assessments",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q026",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are risk response options?",
+    "preferred_answer": "Common responses are avoid, reduce or mitigate, transfer or share, accept, and sometimes pursue or increase risk for opportunity. Each requires an owner and decision authority.",
+    "evaluation_points": [
+      "Focus on risk response",
+      "Focus on treatment"
+    ],
+    "resolution_title": "ISO 31000 - Risk Management",
+    "resolution_url": "https://www.iso.org/iso-31000-risk-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q027",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "When is risk acceptance valid?",
+    "preferred_answer": "Acceptance is valid when an authorized owner understands residual exposure, alternatives, duration, conditions, monitoring, and obligations, and records the decision within appetite.",
+    "evaluation_points": [
+      "Focus on risk acceptance",
+      "Focus on residual risk"
+    ],
+    "resolution_title": "NIST SP 800-37 Rev. 2 - Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q028",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a key risk indicator?",
+    "preferred_answer": "A KRI is a measurable signal of changing exposure or control conditions. It needs a threshold, owner, data source, frequency, response, and relationship to a defined risk.",
+    "evaluation_points": [
+      "Focus on KRI",
+      "Focus on monitoring"
+    ],
+    "resolution_title": "COSO - Enterprise Risk Management",
+    "resolution_url": "https://www.coso.org/enterprise-risk-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q029",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "How do risk assessments become stale?",
+    "preferred_answer": "They become stale when assets, threats, dependencies, regulations, controls, or business objectives change but the assessment is not updated. Trigger-based reviews complement periodic reviews.",
+    "evaluation_points": [
+      "Focus on risk review",
+      "Focus on change"
+    ],
+    "resolution_title": "NIST SP 800-39 - Managing Information Security Risk",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/39/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q030",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is risk aggregation?",
+    "preferred_answer": "Risk aggregation combines related exposures and dependencies to show enterprise-level concentration or cumulative impact without simply adding incompatible scores.",
+    "evaluation_points": [
+      "Focus on risk aggregation",
+      "Focus on enterprise risk"
+    ],
+    "resolution_title": "COSO - Enterprise Risk Management",
+    "resolution_url": "https://www.coso.org/enterprise-risk-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q031",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should cyber risk connect to enterprise risk management?",
+    "preferred_answer": "Translate cyber scenarios into business objectives, financial and operational impacts, appetite, ownership, and portfolio decisions so cyber risk is governed with other enterprise risks.",
+    "evaluation_points": [
+      "Focus on cyber risk",
+      "Focus on ERM"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework (CSF) 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q032",
+    "role_slug": "governance-audit",
+    "domain": "Enterprise and IT Risk Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is continuous risk monitoring?",
+    "preferred_answer": "It is ongoing collection and review of risk, control, threat, and business-change information to identify material changes and trigger reassessment or action.",
+    "evaluation_points": [
+      "Focus on continuous monitoring",
+      "Focus on risk"
+    ],
+    "resolution_title": "NIST SP 800-137 - Information Security Continuous Monitoring",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/137/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q033",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an internal control?",
+    "preferred_answer": "An internal control is an action or mechanism designed to provide reasonable assurance that objectives are achieved and risks are managed within acceptable limits.",
+    "evaluation_points": [
+      "Focus on internal control",
+      "Focus on assurance"
+    ],
+    "resolution_title": "COSO - Internal Control Integrated Framework",
+    "resolution_url": "https://www.coso.org/internal-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q034",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are preventive, detective, and corrective controls?",
+    "preferred_answer": "Preventive controls reduce the chance of an event; detective controls identify events or deviations; corrective controls restore conditions, remediate causes, or limit consequences.",
+    "evaluation_points": [
+      "Focus on control types",
+      "Focus on preventive",
+      "Focus on detective"
+    ],
+    "resolution_title": "COSO - Internal Control Integrated Framework",
+    "resolution_url": "https://www.coso.org/internal-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q035",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a key control?",
+    "preferred_answer": "A key control is one whose failure could materially affect an objective or leave a significant risk insufficiently addressed. Key status should be justified, not inherited from a template.",
+    "evaluation_points": [
+      "Focus on key control",
+      "Focus on materiality"
+    ],
+    "resolution_title": "COSO - Internal Control Integrated Framework",
+    "resolution_url": "https://www.coso.org/internal-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q036",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "What is control design effectiveness?",
+    "preferred_answer": "Design effectiveness asks whether the control, if performed as intended by competent people with appropriate authority, could prevent or detect the relevant risk in time.",
+    "evaluation_points": [
+      "Focus on design effectiveness",
+      "Focus on control testing"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q037",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "What is operating effectiveness?",
+    "preferred_answer": "Operating effectiveness asks whether the control actually operated as designed, consistently, by authorized and competent performers, throughout the relevant period.",
+    "evaluation_points": [
+      "Focus on operating effectiveness",
+      "Focus on testing"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q038",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "What is a compensating control?",
+    "preferred_answer": "A compensating control provides equivalent risk reduction when the primary requirement cannot be met. It must address the same objective and be formally justified, tested, and monitored.",
+    "evaluation_points": [
+      "Focus on compensating control",
+      "Focus on exception"
+    ],
+    "resolution_title": "PCI Security Standards Council - PCI DSS v4.0.1",
+    "resolution_url": "https://www.pcisecuritystandards.org/document_library/?class=pcidss&doc=pci_dss",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q039",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a control objective?",
+    "preferred_answer": "A control objective states the desired outcome that controls are intended to achieve. It should be risk-linked, testable, and technology-neutral where possible.",
+    "evaluation_points": [
+      "Focus on control objective",
+      "Focus on outcome"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q040",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do manual and automated controls differ?",
+    "preferred_answer": "Manual controls depend mainly on human performance; automated controls are executed by systems. IT-dependent manual controls rely on reports or configurations and require testing of those dependencies.",
+    "evaluation_points": [
+      "Focus on manual control",
+      "Focus on automated control"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q041",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a control matrix?",
+    "preferred_answer": "A risk and control matrix links objectives and risks to controls, owners, frequency, evidence, assertions, systems, testing steps, results, deficiencies, and remediation.",
+    "evaluation_points": [
+      "Focus on RCM",
+      "Focus on control matrix"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q042",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "Why map controls across frameworks?",
+    "preferred_answer": "Mapping identifies common objectives, reduces duplicated evidence requests, supports compliance reuse, and reveals gaps. Mapping should not assume differently worded requirements are automatically equivalent.",
+    "evaluation_points": [
+      "Focus on control mapping",
+      "Focus on frameworks"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework (CSF) 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q043",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What is a common control?",
+    "preferred_answer": "A common control is implemented once and inherited by multiple systems or processes. The provider defines scope, operation, evidence, responsibilities, and conditions of inheritance.",
+    "evaluation_points": [
+      "Focus on common control",
+      "Focus on inheritance"
+    ],
+    "resolution_title": "NIST SP 800-37 Rev. 2 - Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q044",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is control ownership?",
+    "preferred_answer": "The control owner is accountable for design, documentation, operation, evidence, performance, issue response, and change impact, even when execution is delegated.",
+    "evaluation_points": [
+      "Focus on control owner",
+      "Focus on accountability"
+    ],
+    "resolution_title": "COSO - Internal Control Integrated Framework",
+    "resolution_url": "https://www.coso.org/internal-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q045",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should control frequency be selected?",
+    "preferred_answer": "Frequency should reflect risk velocity, transaction volume, detection window, dependency on other controls, legal requirements, and the time available to prevent material harm.",
+    "evaluation_points": [
+      "Focus on control frequency",
+      "Focus on risk velocity"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q046",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a control baseline?",
+    "preferred_answer": "A baseline is a selected starting set of controls tailored to system impact, environment, threats, obligations, and organizational requirements. It is not a substitute for risk analysis.",
+    "evaluation_points": [
+      "Focus on baseline",
+      "Focus on tailoring"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q047",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How do you prevent control proliferation?",
+    "preferred_answer": "Use a normalized control library, map multiple requirements to shared objectives, remove duplicates, assign authoritative ownership, and retain only controls that address defined risks or obligations.",
+    "evaluation_points": [
+      "Focus on control library",
+      "Focus on rationalization"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q048",
+    "role_slug": "governance-audit",
+    "domain": "Control Design, Frameworks and Mapping",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "What evidence demonstrates a control is sustainable?",
+    "preferred_answer": "Sustainable evidence includes clear ownership, repeatable procedures, reliable data, retained records, exception handling, monitoring, training, capacity, and integration with change management.",
+    "evaluation_points": [
+      "Focus on control sustainability",
+      "Focus on evidence"
+    ],
+    "resolution_title": "ISO/IEC 27001:2022 - Information Security Management Systems",
+    "resolution_url": "https://www.iso.org/standard/27001",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q049",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the purpose of internal auditing?",
+    "preferred_answer": "Internal auditing strengthens the organization through independent, risk-based assurance and advice on governance, risk management, and control processes.",
+    "evaluation_points": [
+      "Focus on internal audit",
+      "Focus on purpose"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q050",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is audit independence?",
+    "preferred_answer": "Independence is the freedom from conditions that threaten the internal audit function ability to perform responsibilities objectively, supported by appropriate organizational positioning and board access.",
+    "evaluation_points": [
+      "Focus on independence",
+      "Focus on board"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q051",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is auditor objectivity?",
+    "preferred_answer": "Objectivity is an unbiased mental attitude that enables auditors to make balanced judgments without subordinating conclusions to others or conflicts of interest.",
+    "evaluation_points": [
+      "Focus on objectivity",
+      "Focus on ethics"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q052",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is reasonable assurance?",
+    "preferred_answer": "Reasonable assurance is a high but not absolute level of confidence because controls and audits face limitations such as judgment, sampling, collusion, change, and cost.",
+    "evaluation_points": [
+      "Focus on reasonable assurance",
+      "Focus on limitations"
+    ],
+    "resolution_title": "COSO - Internal Control Integrated Framework",
+    "resolution_url": "https://www.coso.org/internal-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q053",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an assurance engagement?",
+    "preferred_answer": "An assurance engagement independently evaluates evidence against criteria and communicates a conclusion about governance, risk, controls, or performance.",
+    "evaluation_points": [
+      "Focus on assurance",
+      "Focus on criteria"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q054",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an advisory engagement?",
+    "preferred_answer": "An advisory engagement provides advice, facilitation, training, or insight without assuming management responsibility. Scope and independence safeguards should be agreed.",
+    "evaluation_points": [
+      "Focus on advisory",
+      "Focus on management responsibility"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q055",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is due professional care?",
+    "preferred_answer": "It is the diligence, judgment, skepticism, competence, and attention expected from a prudent auditor, considering complexity, materiality, fraud risk, and evidence quality.",
+    "evaluation_points": [
+      "Focus on due care",
+      "Focus on professional skepticism"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q056",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is professional skepticism?",
+    "preferred_answer": "Professional skepticism is a questioning mindset that critically evaluates evidence, contradictory information, management bias, and the possibility of error or fraud.",
+    "evaluation_points": [
+      "Focus on skepticism",
+      "Focus on evidence"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q057",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an audit charter?",
+    "preferred_answer": "The charter formally defines internal audit purpose, authority, responsibility, independence, access rights, scope, and relationship with the board and management.",
+    "evaluation_points": [
+      "Focus on audit charter",
+      "Focus on authority"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q058",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a risk-based audit plan?",
+    "preferred_answer": "It prioritizes assurance work based on enterprise objectives, risk exposure, change, prior findings, regulatory needs, coverage gaps, and available resources, with dynamic updates.",
+    "evaluation_points": [
+      "Focus on audit plan",
+      "Focus on risk-based"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q059",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How does ITAF relate to IT audit?",
+    "preferred_answer": "ITAF provides standards, guidance, and techniques for planning, performing, reporting, and following up IT audit and assurance engagements.",
+    "evaluation_points": [
+      "Focus on ITAF",
+      "Focus on IT audit"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q060",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the difference between internal and external audit?",
+    "preferred_answer": "Internal audit provides broad assurance and advice for the organization; external audit primarily expresses opinions required by external stakeholders, often on financial statements and related controls.",
+    "evaluation_points": [
+      "Focus on internal audit",
+      "Focus on external audit"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q061",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "When can internal audit rely on other assurance providers?",
+    "preferred_answer": "Reliance is appropriate after assessing the provider mandate, independence, competence, methodology, scope, evidence quality, results, and whether work addresses the audit objective.",
+    "evaluation_points": [
+      "Focus on reliance",
+      "Focus on combined assurance"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q062",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a quality assurance and improvement program?",
+    "preferred_answer": "A QAIP evaluates conformance, efficiency, stakeholder value, and improvement of internal audit through ongoing monitoring and periodic internal and external assessments.",
+    "evaluation_points": [
+      "Focus on QAIP",
+      "Focus on audit quality"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q063",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should auditors handle conflicts of interest?",
+    "preferred_answer": "Disclose the conflict promptly, avoid or modify the assignment, apply safeguards, and document the decision so objectivity is protected and transparent.",
+    "evaluation_points": [
+      "Focus on conflict of interest",
+      "Focus on ethics"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q064",
+    "role_slug": "governance-audit",
+    "domain": "Internal Audit Fundamentals and Standards",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is audit universe?",
+    "preferred_answer": "The audit universe is the structured inventory of auditable entities, processes, systems, risks, programs, legal entities, and third parties used to plan coverage.",
+    "evaluation_points": [
+      "Focus on audit universe",
+      "Focus on coverage"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q065",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an audit objective?",
+    "preferred_answer": "An audit objective states what the engagement will determine or evaluate and should be linked to risk, stakeholder needs, and measurable criteria.",
+    "evaluation_points": [
+      "Focus on audit objective",
+      "Focus on scope"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q066",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is audit scope defined?",
+    "preferred_answer": "Scope defines entities, locations, systems, processes, time period, control domains, interfaces, exclusions, and dependencies necessary to achieve the objective.",
+    "evaluation_points": [
+      "Focus on scope",
+      "Focus on boundaries"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q067",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is materiality in an IT audit?",
+    "preferred_answer": "Materiality is the significance of an issue to decisions or objectives, considering financial, operational, regulatory, security, privacy, customer, and reputational consequences.",
+    "evaluation_points": [
+      "Focus on materiality",
+      "Focus on impact"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q068",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a preliminary risk assessment?",
+    "preferred_answer": "It identifies objectives, changes, assets, dependencies, threats, prior issues, regulations, and control concerns to focus scope, resources, and testing.",
+    "evaluation_points": [
+      "Focus on preliminary risk assessment",
+      "Focus on scoping"
+    ],
+    "resolution_title": "NIST SP 800-30 Rev. 1 - Guide for Conducting Risk Assessments",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q069",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "Why perform a process walkthrough?",
+    "preferred_answer": "A walkthrough validates understanding from initiation to recording and reporting, identifies systems and handoffs, confirms control placement, and exposes differences between documentation and practice.",
+    "evaluation_points": [
+      "Focus on walkthrough",
+      "Focus on process understanding"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q070",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should be included in an audit planning memo?",
+    "preferred_answer": "Include background, objective, scope, risks, criteria, systems, locations, stakeholders, approach, sampling, resources, schedule, dependencies, communication, and limitations.",
+    "evaluation_points": [
+      "Focus on planning memo",
+      "Focus on audit program"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q071",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do you select audit criteria?",
+    "preferred_answer": "Use authoritative laws, regulations, contracts, policies, standards, frameworks, approved designs, service commitments, and risk expectations that are relevant, reliable, and communicated.",
+    "evaluation_points": [
+      "Focus on criteria",
+      "Focus on standards"
+    ],
+    "resolution_title": "ISO 19011 - Guidelines for Auditing Management Systems",
+    "resolution_url": "https://www.iso.org/standard/70017.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q072",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an audit program?",
+    "preferred_answer": "An audit program translates objectives and risks into detailed procedures, evidence requirements, populations, sampling, responsibilities, timing, and review points.",
+    "evaluation_points": [
+      "Focus on audit program",
+      "Focus on procedures"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q073",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "How should prior findings affect scope?",
+    "preferred_answer": "Evaluate remediation status, recurrence, root causes, compensating controls, and related risk. Prior findings may increase testing depth but should not replace current risk assessment.",
+    "evaluation_points": [
+      "Focus on prior findings",
+      "Focus on scope"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q074",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do system interfaces affect audit scope?",
+    "preferred_answer": "Interfaces can introduce completeness, accuracy, authorization, timing, transformation, and reconciliation risks, so source, transfer, error handling, and target controls may all require testing.",
+    "evaluation_points": [
+      "Focus on interfaces",
+      "Focus on data flow"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q075",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How should cloud services be scoped?",
+    "preferred_answer": "Define service and deployment models, data and regions, tenant configuration, shared responsibilities, inherited controls, provider reports, subcontractors, integrations, and customer-managed controls.",
+    "evaluation_points": [
+      "Focus on cloud scope",
+      "Focus on shared responsibility"
+    ],
+    "resolution_title": "Cloud Security Alliance - Cloud Controls Matrix",
+    "resolution_url": "https://cloudsecurityalliance.org/research/cloud-controls-matrix",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q076",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How do you scope a SOX ITGC audit?",
+    "preferred_answer": "Start from material financial reporting processes and systems, identify relevant applications, databases, infrastructure, interfaces, reports, and ITGCs that support automated and IT-dependent controls.",
+    "evaluation_points": [
+      "Focus on SOX",
+      "Focus on ITGC",
+      "Focus on scoping"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q077",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "What is a scope limitation?",
+    "preferred_answer": "A scope limitation is a restriction that prevents sufficient work, such as denied access, unavailable evidence, time constraints, or excluded systems. Its effect must be evaluated and communicated.",
+    "evaluation_points": [
+      "Focus on scope limitation",
+      "Focus on evidence"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q078",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you budget audit effort?",
+    "preferred_answer": "Estimate effort based on risk, complexity, locations, populations, specialist needs, data availability, coordination, review time, and contingency for exceptions.",
+    "evaluation_points": [
+      "Focus on audit budget",
+      "Focus on resources"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q079",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an opening meeting for?",
+    "preferred_answer": "It confirms objective, scope, responsibilities, logistics, evidence channels, timelines, escalation, confidentiality, and expectations while allowing management to share context and changes.",
+    "evaluation_points": [
+      "Focus on opening meeting",
+      "Focus on stakeholders"
+    ],
+    "resolution_title": "ISO 19011 - Guidelines for Auditing Management Systems",
+    "resolution_url": "https://www.iso.org/standard/70017.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q080",
+    "role_slug": "governance-audit",
+    "domain": "IT Audit Planning, Scoping and Materiality",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "When should an audit plan be changed?",
+    "preferred_answer": "Change it when new risks, incidents, acquisitions, control failures, regulatory deadlines, evidence limitations, or business changes materially affect objectives or planned coverage.",
+    "evaluation_points": [
+      "Focus on dynamic planning",
+      "Focus on change"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q081",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "foundation",
+    "question_type": "troubleshooting",
+    "prompt": "What makes audit evidence sufficient and appropriate?",
+    "preferred_answer": "Sufficiency is the quantity of evidence; appropriateness is its relevance and reliability. Both depend on risk, source, method, consistency, and the strength of conclusions required.",
+    "evaluation_points": [
+      "Focus on evidence",
+      "Focus on sufficiency"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q082",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "Which evidence is generally more reliable?",
+    "preferred_answer": "Evidence obtained directly by the auditor from independent sources or controlled systems is generally stronger than uncorroborated verbal explanations or manually prepared screenshots.",
+    "evaluation_points": [
+      "Focus on reliability",
+      "Focus on evidence source"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q083",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "foundation",
+    "question_type": "troubleshooting",
+    "prompt": "What is inquiry and why is it insufficient alone?",
+    "preferred_answer": "Inquiry asks knowledgeable people for information, but responses can be incomplete or biased. Corroborate with observation, inspection, reperformance, analytics, or external evidence.",
+    "evaluation_points": [
+      "Focus on inquiry",
+      "Focus on corroboration"
+    ],
+    "resolution_title": "ISO 19011 - Guidelines for Auditing Management Systems",
+    "resolution_url": "https://www.iso.org/standard/70017.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q084",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is reperformance?",
+    "preferred_answer": "Reperformance independently executes a control or calculation using the same inputs and criteria to determine whether the expected result is produced.",
+    "evaluation_points": [
+      "Focus on reperformance",
+      "Focus on testing"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q085",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "foundation",
+    "question_type": "troubleshooting",
+    "prompt": "What is inspection of evidence?",
+    "preferred_answer": "Inspection examines documents, records, configurations, logs, reports, tickets, approvals, or physical assets to verify occurrence, authorization, completeness, and consistency.",
+    "evaluation_points": [
+      "Focus on inspection",
+      "Focus on records"
+    ],
+    "resolution_title": "ISO 19011 - Guidelines for Auditing Management Systems",
+    "resolution_url": "https://www.iso.org/standard/70017.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q086",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "foundation",
+    "question_type": "troubleshooting",
+    "prompt": "What is observation as an audit technique?",
+    "preferred_answer": "Observation watches a process or control being performed. It is useful for understanding behavior but represents only the observed time and may influence participants.",
+    "evaluation_points": [
+      "Focus on observation",
+      "Focus on limitations"
+    ],
+    "resolution_title": "ISO 19011 - Guidelines for Auditing Management Systems",
+    "resolution_url": "https://www.iso.org/standard/70017.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q087",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is population completeness?",
+    "preferred_answer": "Population completeness means the dataset includes all relevant items for the period and criteria. Validate source, extraction logic, date boundaries, duplicates, reconciliations, and record counts.",
+    "evaluation_points": [
+      "Focus on population",
+      "Focus on completeness"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q088",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do statistical and non-statistical sampling differ?",
+    "preferred_answer": "Statistical sampling uses probability selection and quantified sampling risk; non-statistical sampling uses auditor judgment. Both require a defined population, selection method, and evaluation.",
+    "evaluation_points": [
+      "Focus on sampling",
+      "Focus on sampling risk"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q089",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is sampling risk?",
+    "preferred_answer": "Sampling risk is the chance that the selected sample leads to a different conclusion than testing the full population. Sample design should reflect expected deviation and tolerable risk.",
+    "evaluation_points": [
+      "Focus on sampling risk",
+      "Focus on sample size"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q090",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How should exceptions be evaluated?",
+    "preferred_answer": "Confirm facts, determine whether the item is an error or control deviation, investigate cause and frequency, project implications where appropriate, and assess compensating controls and impact.",
+    "evaluation_points": [
+      "Focus on exception",
+      "Focus on evaluation"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q091",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is data analytics in auditing?",
+    "preferred_answer": "Audit analytics uses structured or unstructured data to test full populations, identify anomalies, stratify risk, validate controls, and support conclusions, while preserving reproducibility and data integrity.",
+    "evaluation_points": [
+      "Focus on audit analytics",
+      "Focus on full population"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q092",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What controls are needed over auditor-developed scripts?",
+    "preferred_answer": "Use version control, documented logic, test cases, peer review, source reconciliation, parameter checks, protected outputs, and retained execution evidence.",
+    "evaluation_points": [
+      "Focus on audit scripts",
+      "Focus on quality control"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q093",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "How do screenshots affect evidence quality?",
+    "preferred_answer": "Screenshots can show a point-in-time state but may lack provenance, completeness, timestamps, or hidden settings. Prefer exported configurations, logs, queries, or direct observation where possible.",
+    "evaluation_points": [
+      "Focus on screenshots",
+      "Focus on evidence quality"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q094",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is chain of custody for audit evidence?",
+    "preferred_answer": "It documents who collected, accessed, transferred, stored, and changed evidence so authenticity, integrity, confidentiality, and admissibility can be demonstrated.",
+    "evaluation_points": [
+      "Focus on chain of custody",
+      "Focus on integrity"
+    ],
+    "resolution_title": "NIST SP 800-115 - Technical Guide to Security Testing and Assessment",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/115/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q095",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "How should audit workpapers be structured?",
+    "preferred_answer": "Workpapers should show objective, procedure, population, selection, evidence, analysis, result, reviewer sign-off, cross-references, and a clear link from risk to conclusion.",
+    "evaluation_points": [
+      "Focus on workpapers",
+      "Focus on documentation"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q096",
+    "role_slug": "governance-audit",
+    "domain": "Audit Evidence, Sampling and Testing",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is evidence retention?",
+    "preferred_answer": "Retention preserves records long enough to support conclusions, quality reviews, legal or regulatory needs, and follow-up, with controls for confidentiality, access, integrity, and disposal.",
+    "evaluation_points": [
+      "Focus on retention",
+      "Focus on workpapers"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q097",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are IT general controls?",
+    "preferred_answer": "ITGCs are foundational controls over access, change, operations, development, security, and continuity that support reliable processing and application controls across systems.",
+    "evaluation_points": [
+      "Focus on ITGC",
+      "Focus on general controls"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q098",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "Why do weak ITGCs affect automated controls?",
+    "preferred_answer": "Automated controls depend on systems, configurations, code, data, and access. Weak ITGCs reduce confidence that the automated control remained authorized, accurate, and unchanged.",
+    "evaluation_points": [
+      "Focus on automated controls",
+      "Focus on ITGC reliance"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q099",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are common ITGC domains?",
+    "preferred_answer": "Common domains include logical access, privileged access, change management, computer operations, backup and recovery, job scheduling, incident management, development, and vendor management.",
+    "evaluation_points": [
+      "Focus on ITGC domains",
+      "Focus on controls"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q100",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an ITGC control dependency?",
+    "preferred_answer": "A dependency is another control, system, report, or data source required for the control to work. Dependencies must be identified and tested when material.",
+    "evaluation_points": [
+      "Focus on dependency",
+      "Focus on ITGC"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q101",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should batch job controls be tested?",
+    "preferred_answer": "Evaluate scheduling authorization, parameter protection, monitoring, failure alerts, restart procedures, output reconciliation, exception handling, and evidence across the period.",
+    "evaluation_points": [
+      "Focus on batch jobs",
+      "Focus on operations"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q102",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is an interface control?",
+    "preferred_answer": "An interface control ensures data transferred between systems is complete, accurate, authorized, timely, and reconciled, with rejected items logged and resolved.",
+    "evaluation_points": [
+      "Focus on interface",
+      "Focus on completeness"
+    ],
+    "resolution_title": "COSO - Internal Control Integrated Framework",
+    "resolution_url": "https://www.coso.org/internal-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q103",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are backup controls expected to cover?",
+    "preferred_answer": "They should define scope, frequency, encryption, retention, offsite or immutable copies, monitoring, failures, restoration testing, ownership, and alignment with recovery objectives.",
+    "evaluation_points": [
+      "Focus on backup",
+      "Focus on recovery"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q104",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "Why is restore testing more important than backup success logs?",
+    "preferred_answer": "A successful backup job only shows data was copied. Restore testing demonstrates usability, integrity, procedures, access, dependencies, timing, and the ability to meet recovery objectives.",
+    "evaluation_points": [
+      "Focus on restore test",
+      "Focus on backup"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q105",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is configuration management control?",
+    "preferred_answer": "It establishes approved baselines, secure settings, change authorization, version control, drift detection, exception management, and periodic review for technology assets.",
+    "evaluation_points": [
+      "Focus on configuration management",
+      "Focus on baseline"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q106",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "What is an end-user computing control?",
+    "preferred_answer": "EUC controls govern spreadsheets, scripts, databases, and user-developed tools through inventory, risk classification, access, change control, validation, backup, and independent review.",
+    "evaluation_points": [
+      "Focus on EUC",
+      "Focus on spreadsheets"
+    ],
+    "resolution_title": "COSO - Internal Control Integrated Framework",
+    "resolution_url": "https://www.coso.org/internal-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q107",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How should system-generated reports used in controls be audited?",
+    "preferred_answer": "Test report logic, parameters, source data, interfaces, access, change controls, completeness, accuracy, and whether the control performer reviews the correct output.",
+    "evaluation_points": [
+      "Focus on IPE",
+      "Focus on reports"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q108",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is information produced by the entity (IPE)?",
+    "preferred_answer": "IPE is data, reports, or spreadsheets generated by the organization and used as audit evidence or in controls. Its completeness and accuracy must be established.",
+    "evaluation_points": [
+      "Focus on IPE",
+      "Focus on evidence"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q109",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What operational controls support time synchronization?",
+    "preferred_answer": "Define authoritative time sources, redundant synchronization, secure configuration, drift monitoring, exception alerts, timezone handling, and review because accurate timestamps support logs and investigations.",
+    "evaluation_points": [
+      "Focus on time sync",
+      "Focus on logs"
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q110",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "How are incident and problem records relevant to ITGC testing?",
+    "preferred_answer": "They reveal recurring failures, control bypasses, unauthorized changes, operational instability, unresolved root causes, and whether escalation and corrective actions are effective.",
+    "evaluation_points": [
+      "Focus on incidents",
+      "Focus on problem management"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q111",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "What is the role of service organization controls reports?",
+    "preferred_answer": "SOC reports may provide assurance over outsourced controls, but users must assess scope, period, opinion, exceptions, subservice organizations, complementary user controls, and bridge coverage.",
+    "evaluation_points": [
+      "Focus on SOC report",
+      "Focus on service organization"
+    ],
+    "resolution_title": "AICPA & CIMA - SOC for Service Organizations",
+    "resolution_url": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q112",
+    "role_slug": "governance-audit",
+    "domain": "IT General Controls (ITGC)",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How do you conclude on ITGC effectiveness?",
+    "preferred_answer": "Aggregate design and operating results, exceptions, compensating controls, dependencies, duration, pervasiveness, affected applications, and impact on planned reliance or substantive work.",
+    "evaluation_points": [
+      "Focus on ITGC conclusion",
+      "Focus on deficiency"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q113",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is least privilege?",
+    "preferred_answer": "Least privilege grants only the access needed for approved duties, at the minimum level and duration, with periodic validation and prompt removal.",
+    "evaluation_points": [
+      "Focus on least privilege",
+      "Focus on access"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q114",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is segregation of duties?",
+    "preferred_answer": "Segregation of duties divides incompatible responsibilities so one person cannot initiate, approve, execute, and conceal a sensitive transaction or change.",
+    "evaluation_points": [
+      "Focus on SoD",
+      "Focus on conflict"
+    ],
+    "resolution_title": "COSO - Internal Control Integrated Framework",
+    "resolution_url": "https://www.coso.org/internal-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q115",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is joiner-mover-leaver control?",
+    "preferred_answer": "JML controls create access from approved roles, update it when duties change, and revoke it promptly at termination, including accounts, tokens, groups, applications, and physical access.",
+    "evaluation_points": [
+      "Focus on JML",
+      "Focus on provisioning"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q116",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should access requests be controlled?",
+    "preferred_answer": "Require verified identity, business justification, appropriate owner approval, role and SoD checks, least privilege, defined duration, logging, and evidence of provisioning.",
+    "evaluation_points": [
+      "Focus on access request",
+      "Focus on approval"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q117",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "What is periodic access recertification?",
+    "preferred_answer": "It is a documented review by accountable owners to confirm users, privileges, roles, service accounts, and exceptions remain appropriate, followed by tracked removal of unnecessary access.",
+    "evaluation_points": [
+      "Focus on access review",
+      "Focus on recertification"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q118",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "What makes an access review ineffective?",
+    "preferred_answer": "Common failures include incomplete populations, unclear entitlements, rubber-stamp approval, inappropriate reviewers, no SoD context, excluded service accounts, and untracked revocation.",
+    "evaluation_points": [
+      "Focus on access review",
+      "Focus on failure"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q119",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are privileged access management controls?",
+    "preferred_answer": "PAM controls discover and vault privileged credentials, enforce approval and time limits, record sessions, rotate secrets, restrict paths, monitor activity, and review emergency use.",
+    "evaluation_points": [
+      "Focus on PAM",
+      "Focus on privileged access"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q120",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "What is a break-glass account?",
+    "preferred_answer": "A break-glass account provides emergency privileged access under strict conditions, with secured credentials, limited use, immediate alerts, complete logging, post-use review, and rotation.",
+    "evaluation_points": [
+      "Focus on break glass",
+      "Focus on emergency access"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q121",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should service accounts be governed?",
+    "preferred_answer": "Assign owners and purpose, prohibit interactive use where possible, use managed identities or vaulting, rotate credentials, restrict privileges, monitor activity, and review dependencies before changes.",
+    "evaluation_points": [
+      "Focus on service accounts",
+      "Focus on secrets"
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q122",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is role-based access control?",
+    "preferred_answer": "RBAC assigns permissions to defined job or functional roles and users to roles. Good governance requires role ownership, lifecycle, SoD analysis, and avoidance of role explosion.",
+    "evaluation_points": [
+      "Focus on RBAC",
+      "Focus on roles"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q123",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is attribute-based access control?",
+    "preferred_answer": "ABAC makes decisions using attributes of subjects, resources, actions, and environment. It is flexible but depends on reliable attributes, policy logic, governance, and testing.",
+    "evaluation_points": [
+      "Focus on ABAC",
+      "Focus on policy"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q124",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should multi-factor authentication be audited?",
+    "preferred_answer": "Verify scope, factor strength, enrollment, recovery, exemptions, privileged and remote coverage, conditional access, logging, failure handling, and resistance to bypass.",
+    "evaluation_points": [
+      "Focus on MFA",
+      "Focus on authentication"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q125",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is an orphan account?",
+    "preferred_answer": "An orphan account lacks a valid active owner or business purpose, often after termination, transfer, application change, or contractor departure, and creates unauthorized access risk.",
+    "evaluation_points": [
+      "Focus on orphan account",
+      "Focus on access"
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q126",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How do you test termination access removal?",
+    "preferred_answer": "Select terminated users from authoritative HR data, trace all relevant identities and entitlements, compare timestamps to policy, inspect exceptions, and verify privileged, remote, and physical access removal.",
+    "evaluation_points": [
+      "Focus on termination",
+      "Focus on testing"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q127",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What controls apply to third-party access?",
+    "preferred_answer": "Use sponsor approval, contractual requirements, identity verification, least privilege, time limits, MFA, segmented access, monitoring, periodic review, and immediate revocation when the engagement ends.",
+    "evaluation_points": [
+      "Focus on third-party access",
+      "Focus on vendors"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q128",
+    "role_slug": "governance-audit",
+    "domain": "Identity and Access Management Controls",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How should access-control exceptions be managed?",
+    "preferred_answer": "Document the need, risk, compensating controls, owner, approver, duration, monitoring, review date, and removal plan. Permanent undocumented exceptions indicate control failure.",
+    "evaluation_points": [
+      "Focus on access exception",
+      "Focus on risk acceptance"
+    ],
+    "resolution_title": "NIST SP 800-37 Rev. 2 - Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q129",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the objective of change management control?",
+    "preferred_answer": "It ensures production changes are authorized, tested, traceable, segregated, scheduled, implemented, validated, and reversible so integrity and availability are protected.",
+    "evaluation_points": [
+      "Focus on change management",
+      "Focus on production"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q130",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What evidence should exist for a normal change?",
+    "preferred_answer": "Evidence should include request, business and technical justification, risk, approvals, testing, affected assets, implementation plan, communication, rollback, validation, and closure.",
+    "evaluation_points": [
+      "Focus on change evidence",
+      "Focus on approval"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q131",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "How should emergency changes be controlled?",
+    "preferred_answer": "Define genuine emergency criteria, restrict approvers and implementers, capture minimum pre-change evidence, test where feasible, monitor impact, and perform prompt retrospective review.",
+    "evaluation_points": [
+      "Focus on emergency change",
+      "Focus on retrospective"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q132",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "Why is developer access to production risky?",
+    "preferred_answer": "It can bypass independent approval, testing, and traceability. Where unavoidable, use time-bound privileged access, monitoring, ticket linkage, independent review, and rapid removal.",
+    "evaluation_points": [
+      "Focus on developer access",
+      "Focus on segregation"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q133",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is source-code version control expected to provide?",
+    "preferred_answer": "It should provide identity, history, branches, approvals, protected repositories, integrity, rollback, issue linkage, and restricted changes to production-bound code.",
+    "evaluation_points": [
+      "Focus on version control",
+      "Focus on source code"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q134",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are secure SDLC controls?",
+    "preferred_answer": "Secure SDLC integrates security requirements, threat modeling, approved components, code review, testing, vulnerability remediation, release approval, and post-release monitoring throughout development.",
+    "evaluation_points": [
+      "Focus on SSDLC",
+      "Focus on software security"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q135",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is application control?",
+    "preferred_answer": "An application control supports complete, accurate, authorized, valid, and timely processing within a business application, including input, processing, interface, and output controls.",
+    "evaluation_points": [
+      "Focus on application control",
+      "Focus on processing"
+    ],
+    "resolution_title": "COSO - Internal Control Integrated Framework",
+    "resolution_url": "https://www.coso.org/internal-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q136",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is input validation control?",
+    "preferred_answer": "It verifies submitted data format, range, completeness, authorization, reasonableness, and duplicates before processing, with rejected items logged and resolved.",
+    "evaluation_points": [
+      "Focus on input validation",
+      "Focus on data quality"
+    ],
+    "resolution_title": "OWASP Application Security Verification Standard",
+    "resolution_url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q137",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "What are automated calculations and configurations tested for?",
+    "preferred_answer": "Test approved logic, parameters, effective dates, access, changes, boundary conditions, source data, rounding, exceptions, and reconciliation to expected results.",
+    "evaluation_points": [
+      "Focus on calculation",
+      "Focus on configuration"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q138",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a three-way match control?",
+    "preferred_answer": "It compares purchase order, receipt, and invoice data before payment, using defined tolerances and approval of exceptions to reduce invalid or inaccurate payments.",
+    "evaluation_points": [
+      "Focus on three-way match",
+      "Focus on application control"
+    ],
+    "resolution_title": "COSO - Internal Control Integrated Framework",
+    "resolution_url": "https://www.coso.org/internal-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q139",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should interface reconciliation work?",
+    "preferred_answer": "Compare record counts, totals, control fields, rejected transactions, duplicate detection, timing, and correction status between source and target systems.",
+    "evaluation_points": [
+      "Focus on interface reconciliation",
+      "Focus on completeness"
+    ],
+    "resolution_title": "COSO - Internal Control Integrated Framework",
+    "resolution_url": "https://www.coso.org/internal-control",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q140",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is user acceptance testing governance?",
+    "preferred_answer": "UAT should have representative business users, traceability to requirements and risks, controlled data, documented results, defect decisions, and accountable sign-off before release.",
+    "evaluation_points": [
+      "Focus on UAT",
+      "Focus on sign-off"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q141",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is migration control?",
+    "preferred_answer": "Migration controls protect completeness, accuracy, security, and traceability through profiling, cleansing, mapping, test loads, reconciliations, approvals, cutover, rollback, and retention.",
+    "evaluation_points": [
+      "Focus on data migration",
+      "Focus on reconciliation"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q142",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should open-source component risk be governed?",
+    "preferred_answer": "Maintain an inventory and provenance, assess licenses and vulnerabilities, approve use, monitor dependencies, patch or replace components, and define response for unsupported libraries.",
+    "evaluation_points": [
+      "Focus on open source",
+      "Focus on supply chain"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q143",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What control concerns arise in CI/CD pipelines?",
+    "preferred_answer": "Review repository access, branch protection, build integrity, secrets, approvals, test gates, artifact signing, environment segregation, deployment rights, logs, and rollback.",
+    "evaluation_points": [
+      "Focus on CI/CD",
+      "Focus on pipeline controls"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q144",
+    "role_slug": "governance-audit",
+    "domain": "Change, SDLC and Application Controls",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How do you test change-management operating effectiveness?",
+    "preferred_answer": "Select a complete change population, stratify by risk and type, test required attributes and evidence, inspect emergency changes and direct production activity, and evaluate exceptions across the period.",
+    "evaluation_points": [
+      "Focus on change testing",
+      "Focus on sample"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q145",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the shared responsibility model?",
+    "preferred_answer": "The provider secures defined cloud infrastructure and services while the customer secures its data, identities, configurations, workloads, and usage according to the service model. Responsibilities must be explicitly mapped.",
+    "evaluation_points": [
+      "Focus on cloud",
+      "Focus on shared responsibility"
+    ],
+    "resolution_title": "AWS - Shared Responsibility Model",
+    "resolution_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q146",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should cloud configuration be audited?",
+    "preferred_answer": "Use authoritative asset inventory, organization and account structure, identity, network exposure, encryption, logging, backup, guardrails, exceptions, and automated configuration evidence across environments.",
+    "evaluation_points": [
+      "Focus on cloud configuration",
+      "Focus on audit"
+    ],
+    "resolution_title": "Cloud Security Alliance - Cloud Controls Matrix",
+    "resolution_url": "https://cloudsecurityalliance.org/research/cloud-controls-matrix",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q147",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What is cloud control inheritance?",
+    "preferred_answer": "Customers may inherit provider controls, but must validate the service, scope, assurance report, customer responsibilities, configuration conditions, and any gaps not covered by the provider.",
+    "evaluation_points": [
+      "Focus on inheritance",
+      "Focus on cloud assurance"
+    ],
+    "resolution_title": "FedRAMP - Authorization and Continuous Monitoring",
+    "resolution_url": "https://www.fedramp.gov/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q148",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a security baseline audit?",
+    "preferred_answer": "It compares actual configurations to approved secure baselines, evaluates deviations and exceptions, and confirms remediation or risk acceptance using reliable automated and manual evidence.",
+    "evaluation_points": [
+      "Focus on baseline",
+      "Focus on configuration audit"
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q149",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should vulnerability-management controls include?",
+    "preferred_answer": "Asset coverage, authenticated scanning where appropriate, frequency, prioritization, ownership, remediation targets, exceptions, validation, threat context, and reporting of overdue exposure.",
+    "evaluation_points": [
+      "Focus on vulnerability management",
+      "Focus on remediation"
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q150",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How should penetration-test results be used in audit?",
+    "preferred_answer": "Assess scope, independence, methodology, limitations, findings, validation, remediation, and whether testing covers relevant attack paths; do not treat a clean report as complete assurance.",
+    "evaluation_points": [
+      "Focus on penetration testing",
+      "Focus on assurance"
+    ],
+    "resolution_title": "NIST SP 800-115 - Technical Guide to Security Testing and Assessment",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/115/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q151",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is zero trust from an audit perspective?",
+    "preferred_answer": "Zero trust requires continuous, context-aware authorization for each access request, strong identity, least privilege, segmentation, telemetry, and policy enforcement rather than trust based on network location.",
+    "evaluation_points": [
+      "Focus on zero trust",
+      "Focus on authorization"
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q152",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What logging controls should be evaluated?",
+    "preferred_answer": "Evaluate required events, source coverage, integrity, time synchronization, centralization, access, retention, alerting, review, storage capacity, privacy, and response to logging failures.",
+    "evaluation_points": [
+      "Focus on logging",
+      "Focus on monitoring"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q153",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do you audit security monitoring effectiveness?",
+    "preferred_answer": "Trace prioritized threats to data sources, detection logic, alert quality, coverage, triage, response, tuning, testing, staffing, and metrics such as detection and containment time.",
+    "evaluation_points": [
+      "Focus on SOC",
+      "Focus on detection"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework (CSF) 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q154",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is encryption key management control?",
+    "preferred_answer": "It governs key generation, ownership, storage, access, separation, rotation, backup, revocation, destruction, usage, and monitoring across the key lifecycle.",
+    "evaluation_points": [
+      "Focus on encryption",
+      "Focus on key management"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q155",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should endpoint security controls be audited?",
+    "preferred_answer": "Confirm inventory, approved agents, configuration, update health, tamper protection, alert coverage, exclusions, response integration, and treatment of unsupported or unmanaged endpoints.",
+    "evaluation_points": [
+      "Focus on endpoint security",
+      "Focus on EDR"
+    ],
+    "resolution_title": "CIS Critical Security Controls v8.1",
+    "resolution_url": "https://www.cisecurity.org/controls/v8-1",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q156",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is network segmentation control?",
+    "preferred_answer": "Segmentation limits communication and blast radius using defined zones, allowed flows, enforcement points, rule governance, testing, and monitoring of unauthorized paths.",
+    "evaluation_points": [
+      "Focus on segmentation",
+      "Focus on network"
+    ],
+    "resolution_title": "PCI Security Standards Council - PCI DSS v4.0.1",
+    "resolution_url": "https://www.pcisecuritystandards.org/document_library/?class=pcidss&doc=pci_dss",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q157",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should firewall rules be reviewed?",
+    "preferred_answer": "Evaluate business ownership, source and destination, ports, purpose, risk, approval, expiry, overly broad rules, shadowed rules, unused rules, and evidence of periodic recertification.",
+    "evaluation_points": [
+      "Focus on firewall",
+      "Focus on rule review"
+    ],
+    "resolution_title": "PCI Security Standards Council - PCI DSS v4.0.1",
+    "resolution_url": "https://www.pcisecuritystandards.org/document_library/?class=pcidss&doc=pci_dss",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q158",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What is secure-by-design evidence?",
+    "preferred_answer": "Evidence includes security requirements, threat modeling, safe defaults, reduced customer burden, vulnerability handling, product telemetry, and executive accountability throughout the product lifecycle.",
+    "evaluation_points": [
+      "Focus on secure by design",
+      "Focus on product security"
+    ],
+    "resolution_title": "CISA - Secure by Design",
+    "resolution_url": "https://www.cisa.gov/securebydesign",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q159",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should cyber maturity be assessed?",
+    "preferred_answer": "Use defined outcomes and evidence across governance, identification, protection, detection, response, and recovery, while distinguishing capability, implementation, consistency, and measured effectiveness.",
+    "evaluation_points": [
+      "Focus on maturity",
+      "Focus on CSF"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework (CSF) 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q160",
+    "role_slug": "governance-audit",
+    "domain": "Infrastructure, Cloud and Cybersecurity Audit",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is continuous control monitoring in cybersecurity?",
+    "preferred_answer": "It uses recurring automated and manual evidence to identify control drift, exceptions, and risk changes, with ownership, thresholds, validation, and tracked response.",
+    "evaluation_points": [
+      "Focus on CCM",
+      "Focus on cybersecurity"
+    ],
+    "resolution_title": "NIST SP 800-137 - Information Security Continuous Monitoring",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/137/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q161",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is data governance?",
+    "preferred_answer": "Data governance defines decision rights, ownership, policies, standards, quality, security, privacy, lifecycle, and accountability for data as an enterprise asset.",
+    "evaluation_points": [
+      "Focus on data governance",
+      "Focus on ownership"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q162",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is data classification?",
+    "preferred_answer": "Classification assigns data categories based on sensitivity, criticality, legal obligations, and business value so handling and protection requirements can be applied consistently.",
+    "evaluation_points": [
+      "Focus on classification",
+      "Focus on data protection"
+    ],
+    "resolution_title": "ISO/IEC 27001:2022 - Information Security Management Systems",
+    "resolution_url": "https://www.iso.org/standard/27001",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q163",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a data owner?",
+    "preferred_answer": "A data owner is accountable for business use, classification, quality, access rules, retention, sharing, and risk decisions for a defined data domain.",
+    "evaluation_points": [
+      "Focus on data owner",
+      "Focus on accountability"
+    ],
+    "resolution_title": "ISO/IEC 27001:2022 - Information Security Management Systems",
+    "resolution_url": "https://www.iso.org/standard/27001",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q164",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is data minimization?",
+    "preferred_answer": "Collect and process only personal data that is adequate, relevant, and necessary for the defined purpose, and avoid retaining or exposing unnecessary fields.",
+    "evaluation_points": [
+      "Focus on data minimization",
+      "Focus on privacy"
+    ],
+    "resolution_title": "European Union - General Data Protection Regulation",
+    "resolution_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q165",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is purpose limitation?",
+    "preferred_answer": "Personal data should be collected for specified, explicit, legitimate purposes and not reused incompatibly without a valid legal basis and appropriate transparency.",
+    "evaluation_points": [
+      "Focus on purpose limitation",
+      "Focus on privacy"
+    ],
+    "resolution_title": "European Union - General Data Protection Regulation",
+    "resolution_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q166",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a record of processing activities?",
+    "preferred_answer": "A ROPA documents processing purposes, data categories, subjects, recipients, transfers, retention, security measures, and responsible parties to support accountability.",
+    "evaluation_points": [
+      "Focus on ROPA",
+      "Focus on privacy inventory"
+    ],
+    "resolution_title": "European Union - General Data Protection Regulation",
+    "resolution_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q167",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a data protection impact assessment?",
+    "preferred_answer": "A DPIA assesses necessity, proportionality, risks to individuals, safeguards, residual risk, consultation, and approvals for processing likely to create high privacy risk.",
+    "evaluation_points": [
+      "Focus on DPIA",
+      "Focus on privacy risk"
+    ],
+    "resolution_title": "ICO - Data Protection Impact Assessments",
+    "resolution_url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q168",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What is privacy by design and by default?",
+    "preferred_answer": "Embed privacy into architecture and processes from the start, and configure defaults to process only data necessary for each purpose, with lifecycle controls and demonstrable accountability.",
+    "evaluation_points": [
+      "Focus on privacy by design",
+      "Focus on defaults"
+    ],
+    "resolution_title": "European Union - General Data Protection Regulation",
+    "resolution_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q169",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should consent be governed?",
+    "preferred_answer": "Consent must be informed, specific, freely given, unambiguous, recorded, easy to withdraw, separated from unnecessary terms, and refreshed when purpose or conditions change.",
+    "evaluation_points": [
+      "Focus on consent",
+      "Focus on lawful basis"
+    ],
+    "resolution_title": "European Union - General Data Protection Regulation",
+    "resolution_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q170",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is data retention governance?",
+    "preferred_answer": "Define legal and business retention periods, owners, triggers, legal holds, storage locations, deletion methods, exceptions, and evidence that disposal occurs across primary and backup systems.",
+    "evaluation_points": [
+      "Focus on retention",
+      "Focus on disposal"
+    ],
+    "resolution_title": "ISO/IEC 27001:2022 - Information Security Management Systems",
+    "resolution_url": "https://www.iso.org/standard/27001",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q171",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How should data deletion be audited?",
+    "preferred_answer": "Test approved schedules, trigger dates, system coverage, deletion jobs, exceptions, backups, legal holds, third parties, validation reports, and evidence that inaccessible data is not still usable.",
+    "evaluation_points": [
+      "Focus on data deletion",
+      "Focus on retention"
+    ],
+    "resolution_title": "European Union - General Data Protection Regulation",
+    "resolution_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q172",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a data lineage control?",
+    "preferred_answer": "Lineage documents data origin, transformations, movement, storage, and use so accuracy, ownership, impact analysis, privacy, and reporting can be validated.",
+    "evaluation_points": [
+      "Focus on data lineage",
+      "Focus on traceability"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q173",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should cross-border data transfers be governed?",
+    "preferred_answer": "Identify transfers, destinations, legal mechanisms, transfer assessments, contractual terms, security measures, onward transfers, and changes in law or provider location.",
+    "evaluation_points": [
+      "Focus on cross-border transfer",
+      "Focus on privacy"
+    ],
+    "resolution_title": "European Data Protection Board - Guidelines",
+    "resolution_url": "https://www.edpb.europa.eu/our-work-tools/general-guidance/guidelines-recommendations-best-practices_en",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q174",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is privacy risk?",
+    "preferred_answer": "Privacy risk concerns adverse effects on individuals arising from data processing, distinct from but related to organizational compliance, security, and reputational risk.",
+    "evaluation_points": [
+      "Focus on privacy risk",
+      "Focus on individuals"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q175",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How should privacy incidents be managed?",
+    "preferred_answer": "Contain and investigate the event, assess data and individuals affected, legal notification thresholds and deadlines, preserve evidence, communicate appropriately, remediate causes, and document decisions.",
+    "evaluation_points": [
+      "Focus on privacy incident",
+      "Focus on breach"
+    ],
+    "resolution_title": "HHS - Breach Notification Rule",
+    "resolution_url": "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q176",
+    "role_slug": "governance-audit",
+    "domain": "Data Governance, Privacy and Records",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "What evidence supports data-governance effectiveness?",
+    "preferred_answer": "Evidence includes authoritative inventories, ownership, classification, access rules, quality metrics, lineage, retention execution, issue resolution, privacy assessments, and governance decisions.",
+    "evaluation_points": [
+      "Focus on data governance",
+      "Focus on evidence"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q177",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is third-party risk management?",
+    "preferred_answer": "TPRM manages risks from suppliers, service providers, contractors, partners, and subcontractors through selection, contracting, monitoring, change, incident response, and exit.",
+    "evaluation_points": [
+      "Focus on TPRM",
+      "Focus on vendors"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q178",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should vendor risk tiering consider?",
+    "preferred_answer": "Consider service criticality, data access, connectivity, concentration, substitutability, geography, regulatory impact, transaction volume, financial dependency, and potential harm.",
+    "evaluation_points": [
+      "Focus on vendor tiering",
+      "Focus on criticality"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q179",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is due diligence before onboarding a vendor?",
+    "preferred_answer": "Evaluate capability, financial and operational resilience, security and privacy controls, compliance, legal history, subcontractors, architecture, evidence, and ability to meet contractual requirements.",
+    "evaluation_points": [
+      "Focus on due diligence",
+      "Focus on onboarding"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q180",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What security clauses belong in vendor contracts?",
+    "preferred_answer": "Define control requirements, data use, access, breach notification, audit rights, subcontractors, locations, retention, deletion, resilience, vulnerability handling, evidence, remediation, and termination assistance.",
+    "evaluation_points": [
+      "Focus on contracts",
+      "Focus on security clauses"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q181",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is concentration risk?",
+    "preferred_answer": "Concentration risk arises when many critical services depend on one provider, region, technology, or subcontractor, creating correlated failure and weak exit options.",
+    "evaluation_points": [
+      "Focus on concentration risk",
+      "Focus on resilience"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q182",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should fourth-party risk be managed?",
+    "preferred_answer": "Require visibility and contractual governance of critical subcontractors, assess material dependencies, define notification and approval rights, and include them in monitoring, incident, and exit planning.",
+    "evaluation_points": [
+      "Focus on fourth party",
+      "Focus on subcontractor"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q183",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is vendor continuous monitoring?",
+    "preferred_answer": "It combines periodic reassessment with ongoing signals such as incidents, control reports, vulnerability exposure, financial changes, regulatory events, service performance, and material subcontractor changes.",
+    "evaluation_points": [
+      "Focus on continuous monitoring",
+      "Focus on vendors"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q184",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How should a SOC 2 report be reviewed?",
+    "preferred_answer": "Evaluate opinion, scope, services, system description, criteria, period, tests and exceptions, subservice method, complementary user controls, subsequent events, and relevance to your risks.",
+    "evaluation_points": [
+      "Focus on SOC 2",
+      "Focus on report review"
+    ],
+    "resolution_title": "AICPA & CIMA - SOC for Service Organizations",
+    "resolution_url": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q185",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "What are complementary user entity controls?",
+    "preferred_answer": "CUECs are controls the service organization assumes customers will implement. The customer must identify, assign, operate, and test relevant CUECs before relying on the report.",
+    "evaluation_points": [
+      "Focus on CUEC",
+      "Focus on SOC report"
+    ],
+    "resolution_title": "AICPA & CIMA - SOC for Service Organizations",
+    "resolution_url": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q186",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a bridge letter?",
+    "preferred_answer": "A bridge letter covers the period after a SOC report date and describes material changes or incidents. It provides limited management representation, not an independent audit opinion.",
+    "evaluation_points": [
+      "Focus on bridge letter",
+      "Focus on SOC"
+    ],
+    "resolution_title": "AICPA & CIMA - SOC for Service Organizations",
+    "resolution_url": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q187",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How do you handle a vendor without a SOC or certification?",
+    "preferred_answer": "Use alternative evidence such as targeted questionnaires, independent assessments, test results, policies, architecture reviews, contract controls, onsite review, and enhanced monitoring based on risk.",
+    "evaluation_points": [
+      "Focus on alternative assurance",
+      "Focus on vendor"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q188",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is an exit strategy for a critical provider?",
+    "preferred_answer": "It defines triggers, data return and deletion, transition support, replacement options, credentials, configurations, records, continuity, costs, responsibilities, and testing of portability.",
+    "evaluation_points": [
+      "Focus on exit strategy",
+      "Focus on vendor continuity"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q189",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How should vendor incidents be governed?",
+    "preferred_answer": "Require rapid notification, joint response roles, evidence access, impact assessment, regulatory coordination, containment, customer communication, root-cause analysis, and corrective-action validation.",
+    "evaluation_points": [
+      "Focus on vendor incident",
+      "Focus on breach"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q190",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is software supply-chain risk?",
+    "preferred_answer": "It includes compromised components, build systems, repositories, dependencies, updates, vendors, and provenance. Controls cover inventory, secure development, signing, verification, monitoring, and response.",
+    "evaluation_points": [
+      "Focus on software supply chain",
+      "Focus on SBOM"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q191",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should vendor exceptions be approved?",
+    "preferred_answer": "Document unmet requirements, exposure, compensating controls, business need, owner, duration, monitoring, contractual actions, and approval by authorized risk owners.",
+    "evaluation_points": [
+      "Focus on vendor exception",
+      "Focus on risk acceptance"
+    ],
+    "resolution_title": "NIST SP 800-37 Rev. 2 - Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q192",
+    "role_slug": "governance-audit",
+    "domain": "Third-Party and Supply Chain Risk",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How do you audit TPRM effectiveness?",
+    "preferred_answer": "Test inventory completeness, tiering, due diligence, contract requirements, reassessments, issue tracking, monitoring, incidents, fourth parties, and offboarding across representative vendors.",
+    "evaluation_points": [
+      "Focus on TPRM audit",
+      "Focus on testing"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q193",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a compliance obligation register?",
+    "preferred_answer": "It inventories applicable laws, regulations, contracts, standards, and commitments, with scope, owners, requirements, mapped controls, evidence, deadlines, and change monitoring.",
+    "evaluation_points": [
+      "Focus on obligation register",
+      "Focus on compliance"
+    ],
+    "resolution_title": "ISO/IEC 27001:2022 - Information Security Management Systems",
+    "resolution_url": "https://www.iso.org/standard/27001",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q194",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "How is compliance different from risk management?",
+    "preferred_answer": "Compliance addresses mandatory or committed requirements; risk management addresses uncertainty affecting objectives. A compliant organization can still face unacceptable risk, and risk decisions cannot override law.",
+    "evaluation_points": [
+      "Focus on compliance",
+      "Focus on risk"
+    ],
+    "resolution_title": "ISO 31000 - Risk Management",
+    "resolution_url": "https://www.iso.org/iso-31000-risk-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q195",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is regulatory change management?",
+    "preferred_answer": "It identifies changes, assesses applicability and impact, assigns owners, updates controls and documents, trains affected people, tests implementation, and retains evidence by required dates.",
+    "evaluation_points": [
+      "Focus on regulatory change",
+      "Focus on compliance"
+    ],
+    "resolution_title": "ISO/IEC 27001:2022 - Information Security Management Systems",
+    "resolution_url": "https://www.iso.org/standard/27001",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q196",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is SOX Section 404 focused on?",
+    "preferred_answer": "It requires management assessment and, where applicable, auditor attestation regarding the effectiveness of internal control over financial reporting using a suitable control framework.",
+    "evaluation_points": [
+      "Focus on SOX 404",
+      "Focus on ICFR"
+    ],
+    "resolution_title": "SEC - Management Report on Internal Control over Financial Reporting",
+    "resolution_url": "https://www.sec.gov/rules-regulations/2003/03/managements-report-internal-control-over-financial-reporting-certification-disclosure-exchange-act",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q197",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "What are financially relevant ITGCs?",
+    "preferred_answer": "They are IT controls over systems that support material financial reporting, especially access, change, operations, interfaces, reports, and related system dependencies.",
+    "evaluation_points": [
+      "Focus on SOX ITGC",
+      "Focus on financial reporting"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q198",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "What is a significant deficiency versus material weakness?",
+    "preferred_answer": "Both are control deficiencies; a material weakness creates a reasonable possibility that a material misstatement will not be prevented or detected timely, while a significant deficiency is less severe but merits governance attention.",
+    "evaluation_points": [
+      "Focus on material weakness",
+      "Focus on deficiency"
+    ],
+    "resolution_title": "PCAOB AS 2201 - Audit of Internal Control Over Financial Reporting",
+    "resolution_url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q199",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is PCI DSS scope?",
+    "preferred_answer": "It includes people, processes, and technologies that store, process, transmit cardholder data or can affect the security of the cardholder data environment, unless properly segmented and validated.",
+    "evaluation_points": [
+      "Focus on PCI DSS",
+      "Focus on scope"
+    ],
+    "resolution_title": "PCI Security Standards Council - PCI DSS v4.0.1",
+    "resolution_url": "https://www.pcisecuritystandards.org/document_library/?class=pcidss&doc=pci_dss",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q200",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is a PCI compensating control?",
+    "preferred_answer": "It is an alternative that meets the intent and rigor of the original requirement, provides similar defense, addresses added risk, and is documented and validated under PCI criteria.",
+    "evaluation_points": [
+      "Focus on PCI",
+      "Focus on compensating control"
+    ],
+    "resolution_title": "PCI Security Standards Council - PCI DSS v4.0.1",
+    "resolution_url": "https://www.pcisecuritystandards.org/document_library/?class=pcidss&doc=pci_dss",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q201",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What are GDPR accountability expectations?",
+    "preferred_answer": "Organizations must be able to demonstrate lawful, fair, transparent, secure, and purpose-limited processing through governance, records, assessments, contracts, controls, and evidence.",
+    "evaluation_points": [
+      "Focus on GDPR",
+      "Focus on accountability"
+    ],
+    "resolution_title": "European Union - General Data Protection Regulation",
+    "resolution_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q202",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a personal data breach under GDPR?",
+    "preferred_answer": "It is a security breach leading to accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to personal data.",
+    "evaluation_points": [
+      "Focus on GDPR breach",
+      "Focus on personal data"
+    ],
+    "resolution_title": "European Union - General Data Protection Regulation",
+    "resolution_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q203",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are HIPAA Security Rule safeguard categories?",
+    "preferred_answer": "The rule organizes safeguards into administrative, physical, and technical requirements for protecting electronic protected health information.",
+    "evaluation_points": [
+      "Focus on HIPAA",
+      "Focus on safeguards"
+    ],
+    "resolution_title": "HHS - HIPAA Security Rule",
+    "resolution_url": "https://www.hhs.gov/hipaa/for-professionals/security/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q204",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a HIPAA risk analysis?",
+    "preferred_answer": "It identifies where electronic protected health information exists, threats and vulnerabilities, current measures, likelihood and impact, risk levels, and needed responses, with ongoing updates.",
+    "evaluation_points": [
+      "Focus on HIPAA",
+      "Focus on risk analysis"
+    ],
+    "resolution_title": "HHS - HIPAA Security Rule",
+    "resolution_url": "https://www.hhs.gov/hipaa/for-professionals/security/index.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q205",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How should evidence be reused across compliance frameworks?",
+    "preferred_answer": "Map requirements to normalized control objectives and authoritative evidence, record scope and differences, and avoid claiming equivalence where criteria, populations, periods, or assurance levels differ.",
+    "evaluation_points": [
+      "Focus on evidence reuse",
+      "Focus on control mapping"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework (CSF) 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q206",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a compliance monitoring plan?",
+    "preferred_answer": "It defines obligations, controls, testing frequency, owners, populations, evidence, thresholds, issue handling, reporting, and triggers for additional review.",
+    "evaluation_points": [
+      "Focus on monitoring plan",
+      "Focus on compliance"
+    ],
+    "resolution_title": "ISO 19011 - Guidelines for Auditing Management Systems",
+    "resolution_url": "https://www.iso.org/standard/70017.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q207",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How should noncompliance be handled?",
+    "preferred_answer": "Confirm facts, contain harm, notify required parties, assess legal and business impact, preserve evidence, identify causes, remediate, validate, and document decisions without suppressing reporting.",
+    "evaluation_points": [
+      "Focus on noncompliance",
+      "Focus on remediation"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q208",
+    "role_slug": "governance-audit",
+    "domain": "Regulatory and Compliance Programs",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is the risk of treating certification as complete assurance?",
+    "preferred_answer": "Certification is limited to its scope, criteria, sampling, period, and assessor. It does not prove all risks, systems, locations, or ongoing operations are controlled.",
+    "evaluation_points": [
+      "Focus on certification",
+      "Focus on assurance limitation"
+    ],
+    "resolution_title": "ISO/IEC 27001:2022 - Information Security Management Systems",
+    "resolution_url": "https://www.iso.org/standard/27001",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q209",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is business continuity management?",
+    "preferred_answer": "BCM establishes capabilities to continue or recover prioritized products and services during disruption through governance, analysis, strategies, plans, exercises, and improvement.",
+    "evaluation_points": [
+      "Focus on BCM",
+      "Focus on continuity"
+    ],
+    "resolution_title": "ISO 22301 - Business Continuity Management Systems",
+    "resolution_url": "https://www.iso.org/standard/75106.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q210",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a business impact analysis?",
+    "preferred_answer": "A BIA identifies critical activities, dependencies, disruption impacts over time, maximum tolerable periods, recovery priorities, resource needs, and recovery objectives.",
+    "evaluation_points": [
+      "Focus on BIA",
+      "Focus on criticality"
+    ],
+    "resolution_title": "ISO 22301 - Business Continuity Management Systems",
+    "resolution_url": "https://www.iso.org/standard/75106.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q211",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is recovery time objective?",
+    "preferred_answer": "RTO is the targeted time to restore a service or capability after disruption. It should reflect business impact and be supported by tested technology and operational plans.",
+    "evaluation_points": [
+      "Focus on RTO",
+      "Focus on recovery"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q212",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is recovery point objective?",
+    "preferred_answer": "RPO is the maximum targeted period of data loss measured backward from disruption. Backup and replication design must be capable of meeting it.",
+    "evaluation_points": [
+      "Focus on RPO",
+      "Focus on data loss"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q213",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How do RTO and maximum tolerable downtime differ?",
+    "preferred_answer": "RTO is the planned restoration target; maximum tolerable downtime is the limit beyond which unacceptable impact occurs. RTO should be shorter and include time for business resumption.",
+    "evaluation_points": [
+      "Focus on RTO",
+      "Focus on MTD"
+    ],
+    "resolution_title": "ISO 22301 - Business Continuity Management Systems",
+    "resolution_url": "https://www.iso.org/standard/75106.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q214",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is operational resilience?",
+    "preferred_answer": "Operational resilience is the ability to prevent, adapt, respond, recover, and learn while continuing important services within defined impact tolerances.",
+    "evaluation_points": [
+      "Focus on operational resilience",
+      "Focus on impact tolerance"
+    ],
+    "resolution_title": "ISO 22301 - Business Continuity Management Systems",
+    "resolution_url": "https://www.iso.org/standard/75106.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q215",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should a continuity plan contain?",
+    "preferred_answer": "It should define activation, roles, contacts, priorities, procedures, dependencies, alternate arrangements, communications, data and technology recovery, return to normal, and maintenance.",
+    "evaluation_points": [
+      "Focus on continuity plan",
+      "Focus on response"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q216",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a tabletop exercise?",
+    "preferred_answer": "A facilitated scenario discussion tests decisions, roles, plans, assumptions, coordination, and escalation without executing full technical recovery. Actions and owners should be recorded.",
+    "evaluation_points": [
+      "Focus on tabletop",
+      "Focus on exercise"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q217",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is a technical recovery test?",
+    "preferred_answer": "It executes restoration or failover of systems, data, networks, and dependencies in a controlled manner to measure results against RTO, RPO, integrity, and operational readiness.",
+    "evaluation_points": [
+      "Focus on recovery test",
+      "Focus on failover"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q218",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should incident response connect to GRC?",
+    "preferred_answer": "Incident response should use approved governance, risk criteria, legal and regulatory obligations, evidence handling, communication, third-party coordination, and lessons that update controls and risk assessments.",
+    "evaluation_points": [
+      "Focus on incident governance",
+      "Focus on GRC"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q219",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "Who should declare a major cyber incident?",
+    "preferred_answer": "An authorized role should declare based on defined impact and escalation criteria, with clear transfer to incident command and rapid notification of executives, legal, privacy, communications, and affected operations.",
+    "evaluation_points": [
+      "Focus on major incident",
+      "Focus on declaration"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q220",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is crisis communication governance?",
+    "preferred_answer": "It defines decision authority, audiences, channels, approvals, frequency, factual validation, legal considerations, spokespersons, and records for internal and external communication.",
+    "evaluation_points": [
+      "Focus on crisis communication",
+      "Focus on governance"
+    ],
+    "resolution_title": "ISO 22301 - Business Continuity Management Systems",
+    "resolution_url": "https://www.iso.org/standard/75106.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q221",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "How should ransomware preparedness be audited?",
+    "preferred_answer": "Assess asset and identity controls, segmentation, protected backups, detection, response roles, legal and communications plans, restoration testing, third parties, exercises, and recovery priorities.",
+    "evaluation_points": [
+      "Focus on ransomware",
+      "Focus on resilience"
+    ],
+    "resolution_title": "CISA - Cross-Sector Cybersecurity Performance Goals",
+    "resolution_url": "https://www.cisa.gov/cross-sector-cybersecurity-performance-goals",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q222",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is single-point-of-failure analysis?",
+    "preferred_answer": "It identifies components, people, vendors, data, facilities, or decisions whose loss can stop a critical service, then evaluates redundancy, workarounds, and recovery.",
+    "evaluation_points": [
+      "Focus on SPOF",
+      "Focus on dependency"
+    ],
+    "resolution_title": "ISO 22301 - Business Continuity Management Systems",
+    "resolution_url": "https://www.iso.org/standard/75106.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q223",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How are continuity exceptions governed?",
+    "preferred_answer": "Document the unmet objective, affected service, exposure, temporary measures, owner, decision authority, deadline, monitoring, and funded remediation plan.",
+    "evaluation_points": [
+      "Focus on continuity exception",
+      "Focus on risk acceptance"
+    ],
+    "resolution_title": "NIST SP 800-37 Rev. 2 - Risk Management Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q224",
+    "role_slug": "governance-audit",
+    "domain": "Business Continuity, Resilience and Incident Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should lessons learned be converted into control improvement?",
+    "preferred_answer": "Validate facts, identify systemic causes, assign actions to control owners, update risks and plans, prioritize by impact, test changes, and track effectiveness rather than only closing tasks.",
+    "evaluation_points": [
+      "Focus on lessons learned",
+      "Focus on improvement"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q225",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "foundation",
+    "question_type": "troubleshooting",
+    "prompt": "What are the elements of a strong audit finding?",
+    "preferred_answer": "A strong finding explains criteria, condition, cause, consequence or risk, evidence, affected scope, ownership, and a practical recommendation or agreed action.",
+    "evaluation_points": [
+      "Focus on finding",
+      "Focus on reporting"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q226",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should finding severity be rated?",
+    "preferred_answer": "Use defined criteria considering impact, likelihood, exposure duration, scope, control importance, legal obligations, compensating controls, and urgency, with governance calibration.",
+    "evaluation_points": [
+      "Focus on severity",
+      "Focus on rating"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q227",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is root cause in an audit finding?",
+    "preferred_answer": "Root cause is the underlying reason the condition occurred and may involve governance, incentives, ownership, design, capacity, data, training, technology, or culture rather than the visible symptom.",
+    "evaluation_points": [
+      "Focus on root cause",
+      "Focus on finding"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q228",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What makes a recommendation useful?",
+    "preferred_answer": "It addresses the risk and cause, is proportionate, clear about the outcome, allows management to choose implementation details, and can be validated with objective evidence.",
+    "evaluation_points": [
+      "Focus on recommendation",
+      "Focus on remediation"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q229",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is management action planning?",
+    "preferred_answer": "Management defines the agreed action, accountable owner, milestones, target date, resources, dependencies, interim risk treatment, and evidence required for closure.",
+    "evaluation_points": [
+      "Focus on action plan",
+      "Focus on owner"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q230",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is risk acceptance of an audit finding?",
+    "preferred_answer": "Authorized management may accept residual exposure after understanding consequences and obligations. Internal audit should communicate material acceptance to the appropriate governance body.",
+    "evaluation_points": [
+      "Focus on risk acceptance",
+      "Focus on finding"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q231",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should disputed findings be handled?",
+    "preferred_answer": "Reconfirm facts and criteria, share evidence, understand management context, involve appropriate reviewers, distinguish factual disagreement from risk appetite, and transparently report unresolved disagreement.",
+    "evaluation_points": [
+      "Focus on dispute",
+      "Focus on audit finding"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q232",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is a closing meeting for?",
+    "preferred_answer": "It confirms factual accuracy, discusses risk and causes, records management responses, clarifies ratings and timelines, and identifies unresolved matters before final reporting.",
+    "evaluation_points": [
+      "Focus on closing meeting",
+      "Focus on reporting"
+    ],
+    "resolution_title": "ISO 19011 - Guidelines for Auditing Management Systems",
+    "resolution_url": "https://www.iso.org/standard/70017.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q233",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What should an executive audit report include?",
+    "preferred_answer": "Include objectives, scope, overall conclusion, key risks and findings, themes, limitations, management actions, overdue issues, and implications for governance and strategy.",
+    "evaluation_points": [
+      "Focus on audit report",
+      "Focus on executive"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q234",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should issue aging be monitored?",
+    "preferred_answer": "Track due dates, milestones, severity, business owner, dependencies, interim controls, repeated extensions, risk changes, and escalation thresholds rather than only counting open items.",
+    "evaluation_points": [
+      "Focus on issue aging",
+      "Focus on dashboard"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q235",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "intermediate",
+    "question_type": "troubleshooting",
+    "prompt": "What is remediation validation?",
+    "preferred_answer": "It independently confirms that agreed actions were implemented, address the cause and risk, operate effectively, and do not create unacceptable new risks before closure.",
+    "evaluation_points": [
+      "Focus on validation",
+      "Focus on closure"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q236",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a finding remain open?",
+    "preferred_answer": "Keep it open when actions are incomplete, evidence is insufficient, the control has not operated long enough, risk remains above acceptance, or validation identifies failure.",
+    "evaluation_points": [
+      "Focus on open finding",
+      "Focus on closure criteria"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q237",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How do repeat findings affect assessment?",
+    "preferred_answer": "Repeat findings suggest ineffective root-cause analysis, weak accountability, insufficient resources, or poor governance and may justify higher severity and escalation.",
+    "evaluation_points": [
+      "Focus on repeat finding",
+      "Focus on governance"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q238",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is thematic reporting?",
+    "preferred_answer": "Thematic reporting aggregates related findings across audits to reveal systemic causes, concentrations, cultural issues, and enterprise risks that isolated reports may miss.",
+    "evaluation_points": [
+      "Focus on themes",
+      "Focus on enterprise reporting"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q239",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should audit recommendations avoid management responsibility?",
+    "preferred_answer": "Internal audit may describe risk outcomes and options but management must own decisions, design, implementation, operation, and acceptance of controls.",
+    "evaluation_points": [
+      "Focus on management responsibility",
+      "Focus on independence"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q240",
+    "role_slug": "governance-audit",
+    "domain": "Findings, Reporting, Remediation and Issue Validation",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What metrics indicate effective issue management?",
+    "preferred_answer": "Use risk-weighted overdue exposure, recurrence, extension frequency, root-cause themes, validation failure, time to remediate, action quality, and residual risk - not closure volume alone.",
+    "evaluation_points": [
+      "Focus on issue metrics",
+      "Focus on effectiveness"
+    ],
+    "resolution_title": "The IIA - Global Internal Audit Standards",
+    "resolution_url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q241",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "foundation",
+    "question_type": "design",
+    "prompt": "What capabilities should a GRC platform provide?",
+    "preferred_answer": "It should support authoritative inventories, relationships, workflows, controls, risks, obligations, evidence, issues, assessments, reporting, access governance, audit trails, and integrations.",
+    "evaluation_points": [
+      "Focus on GRC platform",
+      "Focus on capabilities"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q242",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "intermediate",
+    "question_type": "design",
+    "prompt": "What is a common-control framework in a GRC tool?",
+    "preferred_answer": "It is a normalized library that maps many requirements to shared control objectives, owners, tests, and evidence while preserving framework-specific scope and wording.",
+    "evaluation_points": [
+      "Focus on common controls",
+      "Focus on mapping"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework (CSF) 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q243",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What data-quality controls are needed in GRC systems?",
+    "preferred_answer": "Define ownership, required fields, validation, deduplication, reconciliation, reference data, status rules, change logs, completeness metrics, and periodic certification.",
+    "evaluation_points": [
+      "Focus on data quality",
+      "Focus on GRC system"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q244",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should GRC workflow automation be governed?",
+    "preferred_answer": "Automate approved rules with role segregation, testing, version control, exception paths, monitoring, audit logs, access restrictions, rollback, and accountable process ownership.",
+    "evaluation_points": [
+      "Focus on workflow automation",
+      "Focus on governance"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework: Introduction and Methodology",
+    "resolution_url": "https://www.isaca.org/store2/product/WCB19FIM",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q245",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What is continuous control monitoring automation?",
+    "preferred_answer": "It repeatedly collects evidence and evaluates defined control conditions to identify deviations quickly. Results require validation, ownership, thresholds, and response workflows.",
+    "evaluation_points": [
+      "Focus on CCM",
+      "Focus on automation"
+    ],
+    "resolution_title": "NIST SP 800-137 - Information Security Continuous Monitoring",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/137/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q246",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "What is continuous auditing?",
+    "preferred_answer": "Continuous auditing uses recurring data collection and analysis to provide more timely assurance, but requires independence, validated logic, population integrity, and follow-up processes.",
+    "evaluation_points": [
+      "Focus on continuous auditing",
+      "Focus on analytics"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q247",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should access to a GRC platform be controlled?",
+    "preferred_answer": "Apply least privilege, role segregation, strong authentication, privileged administration controls, workflow authority limits, report confidentiality, audit logs, and periodic recertification.",
+    "evaluation_points": [
+      "Focus on GRC access",
+      "Focus on RBAC"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q248",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is model risk in automated compliance scoring?",
+    "preferred_answer": "Model risk is the chance that assumptions, mappings, weights, data, or algorithms produce misleading scores. Governance requires validation, transparency, monitoring, and human challenge.",
+    "evaluation_points": [
+      "Focus on model risk",
+      "Focus on scoring"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework 1.0",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q249",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "advanced",
+    "question_type": "scenario",
+    "prompt": "How should AI-generated audit content be used?",
+    "preferred_answer": "Use it as assisted drafting or analysis, verify every claim and source, protect confidential data, document use, manage bias and hallucination, and retain human accountability for judgment.",
+    "evaluation_points": [
+      "Focus on AI audit",
+      "Focus on human oversight"
+    ],
+    "resolution_title": "NIST AI RMF - Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q250",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What are the main AI governance functions in the NIST AI RMF?",
+    "preferred_answer": "The core functions are Govern, Map, Measure, and Manage, applied across the AI lifecycle to address trustworthiness and risk.",
+    "evaluation_points": [
+      "Focus on AI RMF",
+      "Focus on AI governance"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework 1.0",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q251",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should an organization inventory AI systems?",
+    "preferred_answer": "Record purpose, owner, provider, model, data, users, decisions, affected people, integrations, risk tier, testing, monitoring, legal basis, incidents, and lifecycle status.",
+    "evaluation_points": [
+      "Focus on AI inventory",
+      "Focus on governance"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework 1.0",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q252",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "advanced",
+    "question_type": "troubleshooting",
+    "prompt": "What evidence supports responsible AI assurance?",
+    "preferred_answer": "Evidence includes impact assessments, data provenance, testing, performance by relevant groups, security, human oversight, limitations, monitoring, incident response, change control, and accountability.",
+    "evaluation_points": [
+      "Focus on AI assurance",
+      "Focus on evidence"
+    ],
+    "resolution_title": "NIST AI RMF - Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q253",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "How should regulatory horizon scanning work?",
+    "preferred_answer": "Use accountable sources, jurisdictions, topics, ownership, applicability analysis, impact assessment, deadlines, workflow, legal review, and traceable implementation status.",
+    "evaluation_points": [
+      "Focus on horizon scanning",
+      "Focus on regulatory change"
+    ],
+    "resolution_title": "ISO/IEC 27001:2022 - Information Security Management Systems",
+    "resolution_url": "https://www.iso.org/standard/27001",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q254",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What is control-as-code?",
+    "preferred_answer": "Control-as-code expresses policy and control checks in machine-executable form for consistent preventive or detective enforcement, with versioning, testing, approvals, and exception governance.",
+    "evaluation_points": [
+      "Focus on control as code",
+      "Focus on policy as code"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q255",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "How should dashboards avoid misleading governance decisions?",
+    "preferred_answer": "Show definitions, scope, data freshness, limitations, trends, thresholds, denominators, confidence, and underlying exposure; avoid single scores that hide material weaknesses.",
+    "evaluation_points": [
+      "Focus on dashboards",
+      "Focus on metrics"
+    ],
+    "resolution_title": "COSO - Enterprise Risk Management",
+    "resolution_url": "https://www.coso.org/enterprise-risk-management",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "GRC-Q256",
+    "role_slug": "governance-audit",
+    "domain": "GRC Technology, Analytics, Automation and Emerging Risk",
+    "difficulty": "intermediate",
+    "question_type": "concept",
+    "prompt": "What skills are most important for a modern GRC and IT audit professional?",
+    "preferred_answer": "Combine risk and control reasoning, audit methods, technology and cloud knowledge, data analytics, regulation, communication, professional skepticism, ethics, and business understanding.",
+    "evaluation_points": [
+      "Focus on skills",
+      "Focus on GRC career"
+    ],
+    "resolution_title": "ISACA - IT Audit Resources and ITAF",
+    "resolution_url": "https://www.isaca.org/resources/it-audit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q001",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is architecture versus detailed design, and what architectural decision does it support?",
+    "preferred_answer": "Architecture identifies the fundamental structure, responsibilities, boundaries, constraints, and significant decisions of a system; detailed design specifies how individual elements implement those decisions. It supports decisions that are expensive to reverse, affect several teams, or determine system-wide qualities.",
+    "evaluation_points": [
+      "Focus on architecture",
+      "Focus on design",
+      "Focus on decision significance"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q002",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use architecture versus detailed design, and when should it not be treated as a default?",
+    "preferred_answer": "It supports decisions that are expensive to reverse, affect several teams, or determine system-wide qualities. It should not be treated as a default because treating every implementation detail as architecture creates review bottlenecks, while treating all choices as local design hides cross-system risk.",
+    "evaluation_points": [
+      "Focus on architecture",
+      "Focus on design",
+      "Focus on decision significance"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q003",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether architecture versus detailed design has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: a clear decision boundary, named owners, traceability to requirements, and implementation designs that remain consistent with the agreed structure. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on architecture",
+      "Focus on design",
+      "Focus on decision significance"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q004",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for architecture versus detailed design?",
+    "preferred_answer": "Key failure modes are that treating every implementation detail as architecture creates review bottlenecks, while treating all choices as local design hides cross-system risk. A strong response is to use decision significance, blast radius, reversibility, and cross-team impact to decide what requires architectural treatment.",
+    "evaluation_points": [
+      "Focus on architecture",
+      "Focus on design",
+      "Focus on decision significance"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q005",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the technology architect role, and what architectural decision does it support?",
+    "preferred_answer": "A technology architect translates business outcomes and constraints into coherent technical structures, options, standards, and transition decisions while making risks and trade-offs explicit. It is most valuable where systems span teams, platforms, suppliers, or lifecycle stages and where local optimization could damage the whole.",
+    "evaluation_points": [
+      "Focus on architect role",
+      "Focus on accountability",
+      "Focus on collaboration"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q006",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use the technology architect role, and when should it not be treated as a default?",
+    "preferred_answer": "It is most valuable where systems span teams, platforms, suppliers, or lifecycle stages and where local optimization could damage the whole. It should not be treated as a default because an architect can become an approval gate, prescribe technologies without context, or remain detached from implementation and operations.",
+    "evaluation_points": [
+      "Focus on architect role",
+      "Focus on accountability",
+      "Focus on collaboration"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q007",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether the technology architect role has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: decisions are understood, delivery teams can implement them, risks are owned, and production outcomes are reviewed against assumptions. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on architect role",
+      "Focus on accountability",
+      "Focus on collaboration"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q008",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for the technology architect role?",
+    "preferred_answer": "Key failure modes are that an architect can become an approval gate, prescribe technologies without context, or remain detached from implementation and operations. A strong response is to work as an enabling partner, keep feedback loops with engineering and operations, and reserve formal approval for material risk.",
+    "evaluation_points": [
+      "Focus on architect role",
+      "Focus on accountability",
+      "Focus on collaboration"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q009",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is architecture principles, and what architectural decision does it support?",
+    "preferred_answer": "Architecture principles are durable statements that guide recurring decisions, with a rationale and implications that make the principle operational rather than aspirational. They reduce repeated debate and align decentralized teams when many solutions must make similar choices.",
+    "evaluation_points": [
+      "Focus on principles",
+      "Focus on standards",
+      "Focus on governance"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q010",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use architecture principles, and when should it not be treated as a default?",
+    "preferred_answer": "They reduce repeated debate and align decentralized teams when many solutions must make similar choices. It should not be treated as a default because vague or conflicting principles become slogans; too many principles reduce autonomy and conceal the real decision criteria.",
+    "evaluation_points": [
+      "Focus on principles",
+      "Focus on standards",
+      "Focus on governance"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q011",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether architecture principles has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: principles are few, prioritized, linked to standards and exceptions, and visibly influence choices in architecture records and reviews. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on principles",
+      "Focus on standards",
+      "Focus on governance"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q012",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for architecture principles?",
+    "preferred_answer": "Key failure modes are that vague or conflicting principles become slogans; too many principles reduce autonomy and conceal the real decision criteria. A strong response is to define rationale, implications, measurable checks, ownership, and an exception path; retire principles that no longer serve strategy.",
+    "evaluation_points": [
+      "Focus on principles",
+      "Focus on standards",
+      "Focus on governance"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q013",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is ethical and evidence-based architectural judgement, and what architectural decision does it support?",
+    "preferred_answer": "Professional judgement combines technical evidence, stakeholder impact, legal and security duties, uncertainty, and transparent communication instead of optimizing only for delivery speed or personal preference. It is essential for safety, privacy, accessibility, AI, security, resilience, and vendor decisions with material user or enterprise consequences.",
+    "evaluation_points": [
+      "Focus on ethics",
+      "Focus on professional judgement",
+      "Focus on evidence"
+    ],
+    "resolution_title": "NIST SP 800-160 Vol. 1 Rev. 1 - Systems Security Engineering",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q014",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use ethical and evidence-based architectural judgement, and when should it not be treated as a default?",
+    "preferred_answer": "It is essential for safety, privacy, accessibility, AI, security, resilience, and vendor decisions with material user or enterprise consequences. It should not be treated as a default because hidden conflicts of interest, unsupported certainty, selective evidence, and shifting risk to users or operations can produce technically elegant but irresponsible systems.",
+    "evaluation_points": [
+      "Focus on ethics",
+      "Focus on professional judgement",
+      "Focus on evidence"
+    ],
+    "resolution_title": "NIST SP 800-160 Vol. 1 Rev. 1 - Systems Security Engineering",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q015",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether ethical and evidence-based architectural judgement has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: assumptions and uncertainty are recorded, affected stakeholders are considered, risks are escalated, and decisions can be independently reviewed. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on ethics",
+      "Focus on professional judgement",
+      "Focus on evidence"
+    ],
+    "resolution_title": "NIST SP 800-160 Vol. 1 Rev. 1 - Systems Security Engineering",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q016",
+    "role_slug": "architecture",
+    "domain": "Architecture Foundations, Roles and Professional Practice",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for ethical and evidence-based architectural judgement?",
+    "preferred_answer": "Key failure modes are that hidden conflicts of interest, unsupported certainty, selective evidence, and shifting risk to users or operations can produce technically elegant but irresponsible systems. A strong response is to disclose uncertainty and conflicts, seek diverse review, document rejected options, and define monitoring or reversal triggers.",
+    "evaluation_points": [
+      "Focus on ethics",
+      "Focus on professional judgement",
+      "Focus on evidence"
+    ],
+    "resolution_title": "NIST SP 800-160 Vol. 1 Rev. 1 - Systems Security Engineering",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q017",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is business capability mapping, and what architectural decision does it support?",
+    "preferred_answer": "A business capability describes what an organization must be able to do, independent of its current processes, organization chart, applications, or vendors. Capability maps connect strategy and investment to technology portfolios and help identify duplication, gaps, and differentiated capabilities.",
+    "evaluation_points": [
+      "Focus on capability map",
+      "Focus on strategy",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q018",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use business capability mapping, and when should it not be treated as a default?",
+    "preferred_answer": "Capability maps connect strategy and investment to technology portfolios and help identify duplication, gaps, and differentiated capabilities. It should not be treated as a default because capabilities can be defined at inconsistent levels or turned into application inventories, making comparisons and investment decisions misleading.",
+    "evaluation_points": [
+      "Focus on capability map",
+      "Focus on strategy",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q019",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether business capability mapping has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: stable capability names, agreed definitions, ownership, maturity or importance ratings, and traceability to applications, data, and initiatives. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on capability map",
+      "Focus on strategy",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q020",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for business capability mapping?",
+    "preferred_answer": "Key failure modes are that capabilities can be defined at inconsistent levels or turned into application inventories, making comparisons and investment decisions misleading. A strong response is to use a consistent decomposition level, validate with business leaders, and keep capabilities distinct from processes and systems.",
+    "evaluation_points": [
+      "Focus on capability map",
+      "Focus on strategy",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q021",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is baseline, target and gap architecture, and what architectural decision does it support?",
+    "preferred_answer": "A baseline describes the relevant current state, a target describes the desired future state, and gap analysis identifies changes required to move between them. It supports transformation planning where dependencies, legacy constraints, sequencing, and intermediate states matter.",
+    "evaluation_points": [
+      "Focus on baseline",
+      "Focus on target architecture",
+      "Focus on gap analysis"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q022",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use baseline, target and gap architecture, and when should it not be treated as a default?",
+    "preferred_answer": "It supports transformation planning where dependencies, legacy constraints, sequencing, and intermediate states matter. It should not be treated as a default because an over-detailed baseline consumes time without improving decisions; an idealized target can ignore organizational readiness and migration risk.",
+    "evaluation_points": [
+      "Focus on baseline",
+      "Focus on target architecture",
+      "Focus on gap analysis"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q023",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether baseline, target and gap architecture has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: the scope is decision-relevant, gaps have owners and rationale, and transition work is connected to measurable outcomes. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on baseline",
+      "Focus on target architecture",
+      "Focus on gap analysis"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q024",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for baseline, target and gap architecture?",
+    "preferred_answer": "Key failure modes are that an over-detailed baseline consumes time without improving decisions; an idealized target can ignore organizational readiness and migration risk. A strong response is to model only what influences the decision, validate current-state evidence, and include transition architectures rather than a single big-bang target.",
+    "evaluation_points": [
+      "Focus on baseline",
+      "Focus on target architecture",
+      "Focus on gap analysis"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q025",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is operating-model alignment, and what architectural decision does it support?",
+    "preferred_answer": "Operating-model alignment ensures the architecture matches how the enterprise standardizes, integrates, governs, funds, and owns business processes and technology. It guides choices about shared platforms, local autonomy, data ownership, common services, and governance boundaries.",
+    "evaluation_points": [
+      "Focus on operating model",
+      "Focus on decision rights",
+      "Focus on organization"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q026",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use operating-model alignment, and when should it not be treated as a default?",
+    "preferred_answer": "It guides choices about shared platforms, local autonomy, data ownership, common services, and governance boundaries. It should not be treated as a default because copying a centralized or federated model from another organization can create ownership gaps, duplicated platforms, or excessive coordination.",
+    "evaluation_points": [
+      "Focus on operating model",
+      "Focus on decision rights",
+      "Focus on organization"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q027",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether operating-model alignment has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: decision rights, service ownership, funding, support, data stewardship, and escalation paths align with the technical boundaries. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on operating model",
+      "Focus on decision rights",
+      "Focus on organization"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q028",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for operating-model alignment?",
+    "preferred_answer": "Key failure modes are that copying a centralized or federated model from another organization can create ownership gaps, duplicated platforms, or excessive coordination. A strong response is to design technology and governance together, and test the model with real decisions such as change approval, incident ownership, and product funding.",
+    "evaluation_points": [
+      "Focus on operating model",
+      "Focus on decision rights",
+      "Focus on organization"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q029",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is transition architectures and architecture roadmaps, and what architectural decision does it support?",
+    "preferred_answer": "Transition architectures describe viable intermediate states, while the roadmap sequences work, dependencies, value, risk reduction, and retirement actions toward the target. They are needed when the target cannot be reached in one release or when business continuity requires coexistence and staged migration.",
+    "evaluation_points": [
+      "Focus on roadmap",
+      "Focus on transition architecture",
+      "Focus on transformation"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q030",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use transition architectures and architecture roadmaps, and when should it not be treated as a default?",
+    "preferred_answer": "They are needed when the target cannot be reached in one release or when business continuity requires coexistence and staged migration. It should not be treated as a default because roadmaps become feature lists without dependency logic, or remain fixed despite evidence, funding, and strategy changes.",
+    "evaluation_points": [
+      "Focus on roadmap",
+      "Focus on transition architecture",
+      "Focus on transformation"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q031",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether transition architectures and architecture roadmaps has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: each transition state is operable, has exit criteria, resolves specific gaps, and exposes dependencies and temporary complexity. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on roadmap",
+      "Focus on transition architecture",
+      "Focus on transformation"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q032",
+    "role_slug": "architecture",
+    "domain": "Enterprise Architecture, Strategy and Transformation",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for transition architectures and architecture roadmaps?",
+    "preferred_answer": "Key failure modes are that roadmaps become feature lists without dependency logic, or remain fixed despite evidence, funding, and strategy changes. A strong response is to use outcome-based milestones, architecture runway, explicit decommissioning, and regular re-planning based on delivery and operational feedback.",
+    "evaluation_points": [
+      "Focus on roadmap",
+      "Focus on transition architecture",
+      "Focus on transformation"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q033",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is functional requirements and quality attributes, and what architectural decision does it support?",
+    "preferred_answer": "Functional requirements describe capabilities and behavior; quality attributes describe how well the system must operate, including reliability, security, performance, modifiability, usability, and cost. Architectural choices are primarily shaped by quality attributes and constraints because they drive cross-cutting structure and trade-offs.",
+    "evaluation_points": [
+      "Focus on requirements",
+      "Focus on quality attributes",
+      "Focus on non-functional"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q034",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use functional requirements and quality attributes, and when should it not be treated as a default?",
+    "preferred_answer": "Architectural choices are primarily shaped by quality attributes and constraints because they drive cross-cutting structure and trade-offs. It should not be treated as a default because unmeasurable words such as fast, scalable, or secure allow incompatible interpretations and late surprises.",
+    "evaluation_points": [
+      "Focus on requirements",
+      "Focus on quality attributes",
+      "Focus on non-functional"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q035",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether functional requirements and quality attributes has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: attributes are prioritized, measurable, linked to business impact, and verified through tests, reviews, or operational indicators. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on requirements",
+      "Focus on quality attributes",
+      "Focus on non-functional"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q036",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for functional requirements and quality attributes?",
+    "preferred_answer": "Key failure modes are that unmeasurable words such as fast, scalable, or secure allow incompatible interpretations and late surprises. A strong response is to express qualities as scenarios with stimulus, environment, response, and response measure, then agree priorities and tolerances.",
+    "evaluation_points": [
+      "Focus on requirements",
+      "Focus on quality attributes",
+      "Focus on non-functional"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q037",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is quality-attribute scenarios, and what architectural decision does it support?",
+    "preferred_answer": "A quality-attribute scenario makes a quality requirement testable by defining the source and stimulus, affected artifact, operating environment, expected response, and measurable response criterion. Use it to clarify ambiguous cross-cutting requirements and compare architecture options against concrete conditions.",
+    "evaluation_points": [
+      "Focus on quality scenario",
+      "Focus on measurability",
+      "Focus on acceptance criteria"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q038",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use quality-attribute scenarios, and when should it not be treated as a default?",
+    "preferred_answer": "Use it to clarify ambiguous cross-cutting requirements and compare architecture options against concrete conditions. It should not be treated as a default because scenarios may describe only normal operation, omit scale or failure conditions, or use measures disconnected from user and business impact.",
+    "evaluation_points": [
+      "Focus on quality scenario",
+      "Focus on measurability",
+      "Focus on acceptance criteria"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q039",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether quality-attribute scenarios has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: scenarios cover normal, peak, degraded, and recovery states and are linked to tests, SLOs, or acceptance criteria. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on quality scenario",
+      "Focus on measurability",
+      "Focus on acceptance criteria"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q040",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for quality-attribute scenarios?",
+    "preferred_answer": "Key failure modes are that scenarios may describe only normal operation, omit scale or failure conditions, or use measures disconnected from user and business impact. A strong response is to review scenarios with business, engineering, security, and operations stakeholders and include boundary and failure cases.",
+    "evaluation_points": [
+      "Focus on quality scenario",
+      "Focus on measurability",
+      "Focus on acceptance criteria"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q041",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is constraints, assumptions and dependencies, and what architectural decision does it support?",
+    "preferred_answer": "Constraints limit the solution space, assumptions are beliefs accepted for planning, and dependencies are external conditions or components required for success. Making them explicit prevents the architecture from silently relying on budgets, skills, regulations, vendors, networks, or timelines that may not hold.",
+    "evaluation_points": [
+      "Focus on constraints",
+      "Focus on assumptions",
+      "Focus on dependencies"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Architecture Decision Records",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q042",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use constraints, assumptions and dependencies, and when should it not be treated as a default?",
+    "preferred_answer": "Making them explicit prevents the architecture from silently relying on budgets, skills, regulations, vendors, networks, or timelines that may not hold. It should not be treated as a default because assumptions can harden into false facts; artificial constraints can preserve legacy choices; unmanaged dependencies can dominate the critical path.",
+    "evaluation_points": [
+      "Focus on constraints",
+      "Focus on assumptions",
+      "Focus on dependencies"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Architecture Decision Records",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q043",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether constraints, assumptions and dependencies has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: each item has a source, owner, validation date, impact, and action if it changes or proves false. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on constraints",
+      "Focus on assumptions",
+      "Focus on dependencies"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Architecture Decision Records",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q044",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for constraints, assumptions and dependencies?",
+    "preferred_answer": "Key failure modes are that assumptions can harden into false facts; artificial constraints can preserve legacy choices; unmanaged dependencies can dominate the critical path. A strong response is to challenge constraints, time-box assumptions, validate high-impact dependencies early, and include contingency options.",
+    "evaluation_points": [
+      "Focus on constraints",
+      "Focus on assumptions",
+      "Focus on dependencies"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Architecture Decision Records",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q045",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is architecture trade-off analysis, and what architectural decision does it support?",
+    "preferred_answer": "Trade-off analysis compares credible options against prioritized quality attributes, constraints, cost, delivery risk, operability, and reversibility instead of searching for a universally best design. It supports decisions where improving one quality can reduce another, such as consistency versus availability or isolation versus cost.",
+    "evaluation_points": [
+      "Focus on trade-offs",
+      "Focus on options analysis",
+      "Focus on risk"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q046",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use architecture trade-off analysis, and when should it not be treated as a default?",
+    "preferred_answer": "It supports decisions where improving one quality can reduce another, such as consistency versus availability or isolation versus cost. It should not be treated as a default because weighted scorecards can hide poor evidence or false precision, and teams may optimize the easiest metric rather than the important outcome.",
+    "evaluation_points": [
+      "Focus on trade-offs",
+      "Focus on options analysis",
+      "Focus on risk"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q047",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether architecture trade-off analysis has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: options and rejected alternatives are documented, criteria are traceable, sensitivities are explored, and residual risk has an owner. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on trade-offs",
+      "Focus on options analysis",
+      "Focus on risk"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q048",
+    "role_slug": "architecture",
+    "domain": "Requirements, Quality Attributes and Trade-offs",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for architecture trade-off analysis?",
+    "preferred_answer": "Key failure modes are that weighted scorecards can hide poor evidence or false precision, and teams may optimize the easiest metric rather than the important outcome. A strong response is to use scenarios and experiments, expose uncertainty, test assumptions, and record what evidence would trigger reconsideration.",
+    "evaluation_points": [
+      "Focus on trade-offs",
+      "Focus on options analysis",
+      "Focus on risk"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q049",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is stakeholders, concerns, viewpoints and views, and what architectural decision does it support?",
+    "preferred_answer": "Stakeholders have concerns; a viewpoint defines conventions for addressing a set of concerns; a view applies that viewpoint to a specific system. This prevents a single overloaded diagram from trying to serve executives, developers, security teams, operations, and auditors simultaneously.",
+    "evaluation_points": [
+      "Focus on viewpoint",
+      "Focus on view",
+      "Focus on stakeholder concerns"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q050",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use stakeholders, concerns, viewpoints and views, and when should it not be treated as a default?",
+    "preferred_answer": "This prevents a single overloaded diagram from trying to serve executives, developers, security teams, operations, and auditors simultaneously. It should not be treated as a default because missing stakeholders leave critical concerns unaddressed, while redundant views create inconsistent documentation.",
+    "evaluation_points": [
+      "Focus on viewpoint",
+      "Focus on view",
+      "Focus on stakeholder concerns"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q051",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether stakeholders, concerns, viewpoints and views has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: every material concern maps to an appropriate view, terminology is defined, and views remain mutually consistent. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on viewpoint",
+      "Focus on view",
+      "Focus on stakeholder concerns"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q052",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for stakeholders, concerns, viewpoints and views?",
+    "preferred_answer": "Key failure modes are that missing stakeholders leave critical concerns unaddressed, while redundant views create inconsistent documentation. A strong response is to start from stakeholder decisions, choose the minimum useful views, and automate model consistency where practical.",
+    "evaluation_points": [
+      "Focus on viewpoint",
+      "Focus on view",
+      "Focus on stakeholder concerns"
+    ],
+    "resolution_title": "ISO/IEC/IEEE 42010:2022 - Architecture Description",
+    "resolution_url": "https://www.iso.org/standard/74393.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q053",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the C4 model, and what architectural decision does it support?",
+    "preferred_answer": "The C4 model communicates software structure through progressive levels of abstraction: system context, containers, components, and optionally code, with supporting dynamic and deployment diagrams. It is useful for explaining boundaries, responsibilities, technologies, and relationships to different technical audiences without mixing abstraction levels.",
+    "evaluation_points": [
+      "Focus on C4",
+      "Focus on diagrams",
+      "Focus on software architecture"
+    ],
+    "resolution_title": "C4 Model - Diagrams",
+    "resolution_url": "https://c4model.com/diagrams",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q054",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use the C4 model, and when should it not be treated as a default?",
+    "preferred_answer": "It is useful for explaining boundaries, responsibilities, technologies, and relationships to different technical audiences without mixing abstraction levels. It should not be treated as a default because unlabelled boxes and arrows, ambiguous container terminology, excessive code-level detail, or stale diagrams reduce trust.",
+    "evaluation_points": [
+      "Focus on C4",
+      "Focus on diagrams",
+      "Focus on software architecture"
+    ],
+    "resolution_title": "C4 Model - Diagrams",
+    "resolution_url": "https://c4model.com/diagrams",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q055",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether the C4 model has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: diagrams have explicit scope, audience, element descriptions, relationship labels, technology choices, and links to source-controlled documentation. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on C4",
+      "Focus on diagrams",
+      "Focus on software architecture"
+    ],
+    "resolution_title": "C4 Model - Diagrams",
+    "resolution_url": "https://c4model.com/diagrams",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q056",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for the C4 model?",
+    "preferred_answer": "Key failure modes are that unlabelled boxes and arrows, ambiguous container terminology, excessive code-level detail, or stale diagrams reduce trust. A strong response is to use context and container views by default, add detail only for decisions, and update diagrams through documentation-as-code or delivery checks.",
+    "evaluation_points": [
+      "Focus on C4",
+      "Focus on diagrams",
+      "Focus on software architecture"
+    ],
+    "resolution_title": "C4 Model - Diagrams",
+    "resolution_url": "https://c4model.com/diagrams",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q057",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is ArchiMate modeling, and what architectural decision does it support?",
+    "preferred_answer": "ArchiMate is an open enterprise-architecture modeling language for expressing and analyzing relationships across strategy, business, application, technology, implementation, and motivation elements. It supports portfolio and transformation views that cross organizational and technology domains and require a shared notation.",
+    "evaluation_points": [
+      "Focus on ArchiMate",
+      "Focus on enterprise modeling",
+      "Focus on traceability"
+    ],
+    "resolution_title": "The Open Group - ArchiMate 3.2",
+    "resolution_url": "https://www.opengroup.org/certifications/archimate",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q058",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use ArchiMate modeling, and when should it not be treated as a default?",
+    "preferred_answer": "It supports portfolio and transformation views that cross organizational and technology domains and require a shared notation. It should not be treated as a default because models can become notation-heavy repositories that are difficult for stakeholders to understand or maintain.",
+    "evaluation_points": [
+      "Focus on ArchiMate",
+      "Focus on enterprise modeling",
+      "Focus on traceability"
+    ],
+    "resolution_title": "The Open Group - ArchiMate 3.2",
+    "resolution_url": "https://www.opengroup.org/certifications/archimate",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q059",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether ArchiMate modeling has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: each model has a decision purpose, consistent relationships, governed viewpoints, and traceability across layers without unnecessary elements. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on ArchiMate",
+      "Focus on enterprise modeling",
+      "Focus on traceability"
+    ],
+    "resolution_title": "The Open Group - ArchiMate 3.2",
+    "resolution_url": "https://www.opengroup.org/certifications/archimate",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q060",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for ArchiMate modeling?",
+    "preferred_answer": "Key failure modes are that models can become notation-heavy repositories that are difficult for stakeholders to understand or maintain. A strong response is to use stakeholder-specific viewpoints, a controlled metamodel, modeling conventions, and repository stewardship.",
+    "evaluation_points": [
+      "Focus on ArchiMate",
+      "Focus on enterprise modeling",
+      "Focus on traceability"
+    ],
+    "resolution_title": "The Open Group - ArchiMate 3.2",
+    "resolution_url": "https://www.opengroup.org/certifications/archimate",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q061",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is architecture decision records, and what architectural decision does it support?",
+    "preferred_answer": "An architecture decision record captures the context, decision, status, consequences, alternatives, and evidence for a significant decision. ADRs preserve decision history close to implementation and help teams understand why a choice was made and when it should be revisited.",
+    "evaluation_points": [
+      "Focus on ADR",
+      "Focus on decision record",
+      "Focus on documentation"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Architecture Decision Records",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q062",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use architecture decision records, and when should it not be treated as a default?",
+    "preferred_answer": "ADRs preserve decision history close to implementation and help teams understand why a choice was made and when it should be revisited. It should not be treated as a default because aDRs become meeting minutes, omit rejected alternatives, or remain approved after their assumptions expire.",
+    "evaluation_points": [
+      "Focus on ADR",
+      "Focus on decision record",
+      "Focus on documentation"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Architecture Decision Records",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q063",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether architecture decision records has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: records are concise, immutable except for status, linked to implementation, discoverable, and superseded explicitly. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on ADR",
+      "Focus on decision record",
+      "Focus on documentation"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Architecture Decision Records",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q064",
+    "role_slug": "architecture",
+    "domain": "Architecture Descriptions, Views, Models and Decisions",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for architecture decision records?",
+    "preferred_answer": "Key failure modes are that aDRs become meeting minutes, omit rejected alternatives, or remain approved after their assumptions expire. A strong response is to define significance criteria, use a lightweight template, review at decision time, and attach reconsideration triggers.",
+    "evaluation_points": [
+      "Focus on ADR",
+      "Focus on decision record",
+      "Focus on documentation"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Architecture Decision Records",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q065",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is modular monolith architecture, and what architectural decision does it support?",
+    "preferred_answer": "A modular monolith deploys as one unit while enforcing strong internal module boundaries, explicit interfaces, and controlled data ownership. It is often appropriate when one team or a small number of teams need transactional simplicity and rapid delivery without distributed-system overhead.",
+    "evaluation_points": [
+      "Focus on modular monolith",
+      "Focus on modularity",
+      "Focus on application architecture"
+    ],
+    "resolution_title": "Azure Architecture Center - Architecture Styles",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q066",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use modular monolith architecture, and when should it not be treated as a default?",
+    "preferred_answer": "It is often appropriate when one team or a small number of teams need transactional simplicity and rapid delivery without distributed-system overhead. It should not be treated as a default because weak boundaries allow a big ball of mud; assuming a monolith cannot scale can cause premature service decomposition.",
+    "evaluation_points": [
+      "Focus on modular monolith",
+      "Focus on modularity",
+      "Focus on application architecture"
+    ],
+    "resolution_title": "Azure Architecture Center - Architecture Styles",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q067",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether modular monolith architecture has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: modules have clear responsibilities, dependency rules, separate tests, controlled database access, and observable runtime behavior. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on modular monolith",
+      "Focus on modularity",
+      "Focus on application architecture"
+    ],
+    "resolution_title": "Azure Architecture Center - Architecture Styles",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q068",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for modular monolith architecture?",
+    "preferred_answer": "Key failure modes are that weak boundaries allow a big ball of mud; assuming a monolith cannot scale can cause premature service decomposition. A strong response is to enforce architecture tests and APIs between modules, measure scaling constraints, and extract services only when independent deployment or scaling creates value.",
+    "evaluation_points": [
+      "Focus on modular monolith",
+      "Focus on modularity",
+      "Focus on application architecture"
+    ],
+    "resolution_title": "Azure Architecture Center - Architecture Styles",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q069",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is layered or N-tier architecture, and what architectural decision does it support?",
+    "preferred_answer": "Layered architecture organizes responsibilities such as presentation, business logic, and data access, while N-tier deployment separates selected layers across processes or network tiers. It fits conventional business applications with stable workflows, shared data, and moderate change frequency.",
+    "evaluation_points": [
+      "Focus on layered architecture",
+      "Focus on N-tier",
+      "Focus on separation of concerns"
+    ],
+    "resolution_title": "Azure Architecture Center - Architecture Styles",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q070",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use layered or N-tier architecture, and when should it not be treated as a default?",
+    "preferred_answer": "It fits conventional business applications with stable workflows, shared data, and moderate change frequency. It should not be treated as a default because strict horizontal layers can create chatty calls, weak domain boundaries, and changes that cut through every layer.",
+    "evaluation_points": [
+      "Focus on layered architecture",
+      "Focus on N-tier",
+      "Focus on separation of concerns"
+    ],
+    "resolution_title": "Azure Architecture Center - Architecture Styles",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q071",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether layered or N-tier architecture has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: dependencies flow deliberately, business rules are not trapped in UI or database code, and deployment tiers match security and scaling needs. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on layered architecture",
+      "Focus on N-tier",
+      "Focus on separation of concerns"
+    ],
+    "resolution_title": "Azure Architecture Center - Architecture Styles",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q072",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for layered or N-tier architecture?",
+    "preferred_answer": "Key failure modes are that strict horizontal layers can create chatty calls, weak domain boundaries, and changes that cut through every layer. A strong response is to use layers as responsibility boundaries rather than ceremony, avoid needless network hops, and combine with domain modules where complexity warrants.",
+    "evaluation_points": [
+      "Focus on layered architecture",
+      "Focus on N-tier",
+      "Focus on separation of concerns"
+    ],
+    "resolution_title": "Azure Architecture Center - Architecture Styles",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q073",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is microservices and bounded contexts, and what architectural decision does it support?",
+    "preferred_answer": "Microservices are independently deployable services aligned to cohesive business capabilities, commonly bounded by a domain model and owning their data and lifecycle. They are justified when domains, team autonomy, release cadence, scale, or reliability needs require independent evolution.",
+    "evaluation_points": [
+      "Focus on microservices",
+      "Focus on bounded context",
+      "Focus on service ownership"
+    ],
+    "resolution_title": "Azure Architecture Center - Design a Microservices Architecture",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q074",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use microservices and bounded contexts, and when should it not be treated as a default?",
+    "preferred_answer": "They are justified when domains, team autonomy, release cadence, scale, or reliability needs require independent evolution. It should not be treated as a default because premature decomposition creates distributed transactions, operational overhead, inconsistent contracts, duplicated data, and a distributed monolith.",
+    "evaluation_points": [
+      "Focus on microservices",
+      "Focus on bounded context",
+      "Focus on service ownership"
+    ],
+    "resolution_title": "Azure Architecture Center - Design a Microservices Architecture",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q075",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether microservices and bounded contexts has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: service boundaries match business language, teams own build-to-run responsibilities, contracts are explicit, and services can deploy and fail independently. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on microservices",
+      "Focus on bounded context",
+      "Focus on service ownership"
+    ],
+    "resolution_title": "Azure Architecture Center - Design a Microservices Architecture",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q076",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for microservices and bounded contexts?",
+    "preferred_answer": "Key failure modes are that premature decomposition creates distributed transactions, operational overhead, inconsistent contracts, duplicated data, and a distributed monolith. A strong response is to start with domain analysis, invest in platform and observability capabilities, and prefer fewer well-bounded services over size-based splitting.",
+    "evaluation_points": [
+      "Focus on microservices",
+      "Focus on bounded context",
+      "Focus on service ownership"
+    ],
+    "resolution_title": "Azure Architecture Center - Design a Microservices Architecture",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/design/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q077",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is hexagonal architecture and dependency inversion, and what architectural decision does it support?",
+    "preferred_answer": "Hexagonal architecture places domain behavior behind ports and isolates external technologies through adapters, so business rules do not depend directly on UI, databases, or transport frameworks. It supports testability, technology substitution, and clearer boundaries in systems where domain logic must outlive infrastructure choices.",
+    "evaluation_points": [
+      "Focus on hexagonal architecture",
+      "Focus on ports and adapters",
+      "Focus on dependency inversion"
+    ],
+    "resolution_title": "Azure Architecture Center - Domain Analysis for Microservices",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q078",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use hexagonal architecture and dependency inversion, and when should it not be treated as a default?",
+    "preferred_answer": "It supports testability, technology substitution, and clearer boundaries in systems where domain logic must outlive infrastructure choices. It should not be treated as a default because excessive interfaces and abstraction can add ceremony to simple applications, while leaky adapters can still expose vendor semantics to the core.",
+    "evaluation_points": [
+      "Focus on hexagonal architecture",
+      "Focus on ports and adapters",
+      "Focus on dependency inversion"
+    ],
+    "resolution_title": "Azure Architecture Center - Domain Analysis for Microservices",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q079",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether hexagonal architecture and dependency inversion has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: domain tests run without external infrastructure, dependencies point inward, and adapters translate external protocols and errors explicitly. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on hexagonal architecture",
+      "Focus on ports and adapters",
+      "Focus on dependency inversion"
+    ],
+    "resolution_title": "Azure Architecture Center - Domain Analysis for Microservices",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q080",
+    "role_slug": "architecture",
+    "domain": "Application Architecture Styles and Domain Decomposition",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for hexagonal architecture and dependency inversion?",
+    "preferred_answer": "Key failure modes are that excessive interfaces and abstraction can add ceremony to simple applications, while leaky adapters can still expose vendor semantics to the core. A strong response is to abstract stable business seams rather than every class, and validate the approach through test speed and change impact.",
+    "evaluation_points": [
+      "Focus on hexagonal architecture",
+      "Focus on ports and adapters",
+      "Focus on dependency inversion"
+    ],
+    "resolution_title": "Azure Architecture Center - Domain Analysis for Microservices",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q081",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is resource-oriented HTTP API design, and what architectural decision does it support?",
+    "preferred_answer": "A resource-oriented HTTP API exposes domain resources through consistent URIs, methods, representations, status semantics, caching, and conditional requests based on HTTP standards. Use it for interoperable request-response interactions where clients benefit from a uniform interface and independent evolution.",
+    "evaluation_points": [
+      "Focus on HTTP",
+      "Focus on REST",
+      "Focus on API design"
+    ],
+    "resolution_title": "IETF RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/info/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q082",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use resource-oriented HTTP API design, and when should it not be treated as a default?",
+    "preferred_answer": "Use it for interoperable request-response interactions where clients benefit from a uniform interface and independent evolution. It should not be treated as a default because rPC disguised as REST, misuse of methods and status codes, unstable schemas, and coupling clients to internal data models reduce evolvability.",
+    "evaluation_points": [
+      "Focus on HTTP",
+      "Focus on REST",
+      "Focus on API design"
+    ],
+    "resolution_title": "IETF RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/info/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q083",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether resource-oriented HTTP API design has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: the API contract defines operations, errors, pagination, security, compatibility, and examples, and is validated against implementation. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on HTTP",
+      "Focus on REST",
+      "Focus on API design"
+    ],
+    "resolution_title": "IETF RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/info/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q084",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for resource-oriented HTTP API design?",
+    "preferred_answer": "Key failure modes are that rPC disguised as REST, misuse of methods and status codes, unstable schemas, and coupling clients to internal data models reduce evolvability. A strong response is to model consumer tasks and resources, use OpenAPI, establish compatibility rules, and review API security and lifecycle from the start.",
+    "evaluation_points": [
+      "Focus on HTTP",
+      "Focus on REST",
+      "Focus on API design"
+    ],
+    "resolution_title": "IETF RFC 9110 - HTTP Semantics",
+    "resolution_url": "https://www.rfc-editor.org/info/rfc9110",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q085",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is asynchronous messaging and event-driven architecture, and what architectural decision does it support?",
+    "preferred_answer": "Asynchronous architecture decouples producers and consumers through queues, publish-subscribe channels, or durable event streams so work can proceed independently in time and scale. It fits variable workloads, integration across availability boundaries, fan-out, long-running work, and real-time event processing.",
+    "evaluation_points": [
+      "Focus on event-driven",
+      "Focus on messaging",
+      "Focus on asynchronous"
+    ],
+    "resolution_title": "Azure Architecture Center - Event-Driven Architecture Style",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q086",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use asynchronous messaging and event-driven architecture, and when should it not be treated as a default?",
+    "preferred_answer": "It fits variable workloads, integration across availability boundaries, fan-out, long-running work, and real-time event processing. It should not be treated as a default because eventual consistency, ordering, duplicates, schema evolution, replay, poison messages, and difficult end-to-end debugging become design responsibilities.",
+    "evaluation_points": [
+      "Focus on event-driven",
+      "Focus on messaging",
+      "Focus on asynchronous"
+    ],
+    "resolution_title": "Azure Architecture Center - Event-Driven Architecture Style",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q087",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether asynchronous messaging and event-driven architecture has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: delivery semantics, ordering scope, retention, schemas, consumer ownership, dead-letter handling, and trace correlation are explicit and tested. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on event-driven",
+      "Focus on messaging",
+      "Focus on asynchronous"
+    ],
+    "resolution_title": "Azure Architecture Center - Event-Driven Architecture Style",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q088",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for asynchronous messaging and event-driven architecture?",
+    "preferred_answer": "Key failure modes are that eventual consistency, ordering, duplicates, schema evolution, replay, poison messages, and difficult end-to-end debugging become design responsibilities. A strong response is to design idempotent consumers, version schemas, use retries with limits, preserve correlation, and operate replay and DLQ procedures.",
+    "evaluation_points": [
+      "Focus on event-driven",
+      "Focus on messaging",
+      "Focus on asynchronous"
+    ],
+    "resolution_title": "Azure Architecture Center - Event-Driven Architecture Style",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q089",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is idempotency, retries and timeouts, and what architectural decision does it support?",
+    "preferred_answer": "Idempotency makes repeated processing produce an equivalent intended outcome; bounded retries and timeouts prevent transient failures from causing duplicate effects or resource exhaustion. They are necessary wherever networks, brokers, clients, or services may retry after ambiguous outcomes.",
+    "evaluation_points": [
+      "Focus on idempotency",
+      "Focus on retries",
+      "Focus on timeouts"
+    ],
+    "resolution_title": "Azure Architecture Center - Cloud Design Patterns",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q090",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use idempotency, retries and timeouts, and when should it not be treated as a default?",
+    "preferred_answer": "They are necessary wherever networks, brokers, clients, or services may retry after ambiguous outcomes. It should not be treated as a default because unbounded retries amplify outages, synchronized retries create storms, and idempotency keys without scope or retention can permit incorrect reuse.",
+    "evaluation_points": [
+      "Focus on idempotency",
+      "Focus on retries",
+      "Focus on timeouts"
+    ],
+    "resolution_title": "Azure Architecture Center - Cloud Design Patterns",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q091",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether idempotency, retries and timeouts has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: operations define safe retry conditions, timeout budgets, backoff and jitter, deduplication scope, and observability for retries and abandoned work. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on idempotency",
+      "Focus on retries",
+      "Focus on timeouts"
+    ],
+    "resolution_title": "Azure Architecture Center - Cloud Design Patterns",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q092",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for idempotency, retries and timeouts?",
+    "preferred_answer": "Key failure modes are that unbounded retries amplify outages, synchronized retries create storms, and idempotency keys without scope or retention can permit incorrect reuse. A strong response is to set end-to-end deadlines, cap attempts, use exponential backoff with jitter, and design state-changing operations around idempotency keys or unique business identifiers.",
+    "evaluation_points": [
+      "Focus on idempotency",
+      "Focus on retries",
+      "Focus on timeouts"
+    ],
+    "resolution_title": "Azure Architecture Center - Cloud Design Patterns",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q093",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is distributed consistency and saga patterns, and what architectural decision does it support?",
+    "preferred_answer": "Distributed consistency coordinates state changes without relying on a single global transaction, commonly using local transactions, events, orchestration or choreography, and compensating actions. Use sagas when a business process spans independently owned services and can tolerate defined intermediate states.",
+    "evaluation_points": [
+      "Focus on saga",
+      "Focus on consistency",
+      "Focus on distributed transactions"
+    ],
+    "resolution_title": "Azure Architecture Center - Cloud Design Patterns",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q094",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use distributed consistency and saga patterns, and when should it not be treated as a default?",
+    "preferred_answer": "Use sagas when a business process spans independently owned services and can tolerate defined intermediate states. It should not be treated as a default because compensation may not restore the original world, event ordering can alter outcomes, and hidden state machines make support and audit difficult.",
+    "evaluation_points": [
+      "Focus on saga",
+      "Focus on consistency",
+      "Focus on distributed transactions"
+    ],
+    "resolution_title": "Azure Architecture Center - Cloud Design Patterns",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q095",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether distributed consistency and saga patterns has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: business invariants, state transitions, compensation limits, ownership, timeouts, reconciliation, and manual recovery are documented and tested. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on saga",
+      "Focus on consistency",
+      "Focus on distributed transactions"
+    ],
+    "resolution_title": "Azure Architecture Center - Cloud Design Patterns",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q096",
+    "role_slug": "architecture",
+    "domain": "Distributed Systems, APIs and Integration",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for distributed consistency and saga patterns?",
+    "preferred_answer": "Key failure modes are that compensation may not restore the original world, event ordering can alter outcomes, and hidden state machines make support and audit difficult. A strong response is to minimize cross-service transactions, make state explicit, design reconciliation, and reserve strong consistency for invariants that truly require it.",
+    "evaluation_points": [
+      "Focus on saga",
+      "Focus on consistency",
+      "Focus on distributed transactions"
+    ],
+    "resolution_title": "Azure Architecture Center - Cloud Design Patterns",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q097",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is data ownership aligned to domain boundaries, and what architectural decision does it support?",
+    "preferred_answer": "Data ownership assigns accountability for meaning, quality, access, lifecycle, and change to a defined domain or product rather than to a shared database with unclear responsibility. It supports autonomous services and analytics while preserving authoritative definitions and stewardship.",
+    "evaluation_points": [
+      "Focus on data ownership",
+      "Focus on domain data",
+      "Focus on system of record"
+    ],
+    "resolution_title": "Azure Architecture Center - Domain Analysis for Microservices",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q098",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use data ownership aligned to domain boundaries, and when should it not be treated as a default?",
+    "preferred_answer": "It supports autonomous services and analytics while preserving authoritative definitions and stewardship. It should not be treated as a default because duplicated copies become competing sources of truth, while overly centralized ownership slows change and weakens domain accountability.",
+    "evaluation_points": [
+      "Focus on data ownership",
+      "Focus on domain data",
+      "Focus on system of record"
+    ],
+    "resolution_title": "Azure Architecture Center - Domain Analysis for Microservices",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q099",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether data ownership aligned to domain boundaries has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: authoritative sources, owners, contracts, lineage, quality measures, access rules, and change processes are identifiable. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on data ownership",
+      "Focus on domain data",
+      "Focus on system of record"
+    ],
+    "resolution_title": "Azure Architecture Center - Domain Analysis for Microservices",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q100",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for data ownership aligned to domain boundaries?",
+    "preferred_answer": "Key failure modes are that duplicated copies become competing sources of truth, while overly centralized ownership slows change and weakens domain accountability. A strong response is to define system-of-record responsibilities, publish data contracts, govern replication, and reconcile copies explicitly.",
+    "evaluation_points": [
+      "Focus on data ownership",
+      "Focus on domain data",
+      "Focus on system of record"
+    ],
+    "resolution_title": "Azure Architecture Center - Domain Analysis for Microservices",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q101",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is operational and analytical data separation, and what architectural decision does it support?",
+    "preferred_answer": "Operational stores optimize current transactions and application behavior; analytical platforms optimize historical, cross-domain, aggregative, and exploratory workloads. Separate them when analytical queries, retention, integration, or governance needs would impair operational systems or require different data models.",
+    "evaluation_points": [
+      "Focus on OLTP",
+      "Focus on analytics",
+      "Focus on data platform"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q102",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use operational and analytical data separation, and when should it not be treated as a default?",
+    "preferred_answer": "Separate them when analytical queries, retention, integration, or governance needs would impair operational systems or require different data models. It should not be treated as a default because uncontrolled extracts create stale data and privacy risk; forcing all workloads onto one platform creates performance and ownership conflicts.",
+    "evaluation_points": [
+      "Focus on OLTP",
+      "Focus on analytics",
+      "Focus on data platform"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q103",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether operational and analytical data separation has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: ingestion latency, freshness, lineage, reconciliation, retention, and workload isolation meet defined requirements. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on OLTP",
+      "Focus on analytics",
+      "Focus on data platform"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q104",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for operational and analytical data separation?",
+    "preferred_answer": "Key failure modes are that uncontrolled extracts create stale data and privacy risk; forcing all workloads onto one platform creates performance and ownership conflicts. A strong response is to use governed pipelines or change data capture, publish freshness expectations, and avoid direct analytical dependence on production schemas.",
+    "evaluation_points": [
+      "Focus on OLTP",
+      "Focus on analytics",
+      "Focus on data platform"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q105",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is transaction isolation and consistency models, and what architectural decision does it support?",
+    "preferred_answer": "Isolation defines how concurrent transactions observe and affect one another, while distributed consistency models describe what ordering and visibility guarantees clients can rely on. The choice must follow business invariants, contention, latency, availability, and scale rather than database defaults alone.",
+    "evaluation_points": [
+      "Focus on transactions",
+      "Focus on isolation",
+      "Focus on consistency"
+    ],
+    "resolution_title": "PostgreSQL - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q106",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use transaction isolation and consistency models, and when should it not be treated as a default?",
+    "preferred_answer": "The choice must follow business invariants, contention, latency, availability, and scale rather than database defaults alone. It should not be treated as a default because weak isolation can allow anomalies; stronger isolation can reduce throughput or availability; application assumptions may differ across data stores.",
+    "evaluation_points": [
+      "Focus on transactions",
+      "Focus on isolation",
+      "Focus on consistency"
+    ],
+    "resolution_title": "PostgreSQL - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q107",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether transaction isolation and consistency models has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: critical invariants are enumerated, concurrency tests reproduce conflict cases, and chosen guarantees are documented at API boundaries. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on transactions",
+      "Focus on isolation",
+      "Focus on consistency"
+    ],
+    "resolution_title": "PostgreSQL - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q108",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for transaction isolation and consistency models?",
+    "preferred_answer": "Key failure modes are that weak isolation can allow anomalies; stronger isolation can reduce throughput or availability; application assumptions may differ across data stores. A strong response is to use the weakest model that safely preserves invariants, apply locking or optimistic concurrency deliberately, and monitor conflicts and retries.",
+    "evaluation_points": [
+      "Focus on transactions",
+      "Focus on isolation",
+      "Focus on consistency"
+    ],
+    "resolution_title": "PostgreSQL - Transaction Isolation",
+    "resolution_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q109",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is data lifecycle, classification and governance, and what architectural decision does it support?",
+    "preferred_answer": "Data lifecycle architecture governs creation, classification, storage, use, sharing, retention, archival, and disposal according to business value, legal duties, privacy, and security. It influences storage tiers, encryption, residency, access control, backup, analytics, and deletion across every architecture domain.",
+    "evaluation_points": [
+      "Focus on data lifecycle",
+      "Focus on classification",
+      "Focus on governance"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q110",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use data lifecycle, classification and governance, and when should it not be treated as a default?",
+    "preferred_answer": "It influences storage tiers, encryption, residency, access control, backup, analytics, and deletion across every architecture domain. It should not be treated as a default because data accumulates without purpose, sensitive data propagates to uncontrolled systems, and deletion promises cannot be fulfilled across replicas and backups.",
+    "evaluation_points": [
+      "Focus on data lifecycle",
+      "Focus on classification",
+      "Focus on governance"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q111",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether data lifecycle, classification and governance has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: classes, owners, lawful purpose, lineage, retention schedules, deletion workflows, and control evidence are mapped to systems. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on data lifecycle",
+      "Focus on classification",
+      "Focus on governance"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q112",
+    "role_slug": "architecture",
+    "domain": "Data Architecture and Information Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for data lifecycle, classification and governance?",
+    "preferred_answer": "Key failure modes are that data accumulates without purpose, sensitive data propagates to uncontrolled systems, and deletion promises cannot be fulfilled across replicas and backups. A strong response is to minimize collection, classify at source, automate retention, govern copies, and test deletion and restoration behavior.",
+    "evaluation_points": [
+      "Focus on data lifecycle",
+      "Focus on classification",
+      "Focus on governance"
+    ],
+    "resolution_title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q113",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the cloud shared-responsibility model, and what architectural decision does it support?",
+    "preferred_answer": "Shared responsibility divides security, availability, configuration, data, identity, and operational duties between the cloud provider and the customer, with boundaries varying by service model. It is the starting point for control ownership and operating models when selecting IaaS, PaaS, SaaS, or managed services.",
+    "evaluation_points": [
+      "Focus on shared responsibility",
+      "Focus on cloud security",
+      "Focus on operating model"
+    ],
+    "resolution_title": "AWS Shared Responsibility Model",
+    "resolution_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q114",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use the cloud shared-responsibility model, and when should it not be treated as a default?",
+    "preferred_answer": "It is the starting point for control ownership and operating models when selecting IaaS, PaaS, SaaS, or managed services. It should not be treated as a default because teams may assume the provider handles customer configuration, data protection, identity, backup, or application security when those duties remain theirs.",
+    "evaluation_points": [
+      "Focus on shared responsibility",
+      "Focus on cloud security",
+      "Focus on operating model"
+    ],
+    "resolution_title": "AWS Shared Responsibility Model",
+    "resolution_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q115",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether the cloud shared-responsibility model has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: a responsibility matrix maps each control and failure mode to an owner, evidence source, escalation path, and service-specific implementation. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on shared responsibility",
+      "Focus on cloud security",
+      "Focus on operating model"
+    ],
+    "resolution_title": "AWS Shared Responsibility Model",
+    "resolution_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q116",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for the cloud shared-responsibility model?",
+    "preferred_answer": "Key failure modes are that teams may assume the provider handles customer configuration, data protection, identity, backup, or application security when those duties remain theirs. A strong response is to review responsibility per service, not per vendor, and integrate the matrix into design, runbooks, audits, and supplier management.",
+    "evaluation_points": [
+      "Focus on shared responsibility",
+      "Focus on cloud security",
+      "Focus on operating model"
+    ],
+    "resolution_title": "AWS Shared Responsibility Model",
+    "resolution_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q117",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is cloud landing zones, and what architectural decision does it support?",
+    "preferred_answer": "A landing zone is a governed cloud foundation for accounts or subscriptions, identity, network connectivity, policy, logging, security, billing, and workload onboarding. It enables repeatable and controlled cloud adoption at scale rather than allowing every workload to build foundational controls independently.",
+    "evaluation_points": [
+      "Focus on landing zone",
+      "Focus on cloud foundation",
+      "Focus on guardrails"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q118",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use cloud landing zones, and when should it not be treated as a default?",
+    "preferred_answer": "It enables repeatable and controlled cloud adoption at scale rather than allowing every workload to build foundational controls independently. It should not be treated as a default because a rigid central platform can block delivery; a weak landing zone can multiply inconsistent identity, network, logging, and cost configurations.",
+    "evaluation_points": [
+      "Focus on landing zone",
+      "Focus on cloud foundation",
+      "Focus on guardrails"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q119",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether cloud landing zones has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: automated provisioning, policy guardrails, account structure, central logs, connectivity, exception handling, and workload onboarding are tested. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on landing zone",
+      "Focus on cloud foundation",
+      "Focus on guardrails"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q120",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for cloud landing zones?",
+    "preferred_answer": "Key failure modes are that a rigid central platform can block delivery; a weak landing zone can multiply inconsistent identity, network, logging, and cost configurations. A strong response is to treat the landing zone as a product, provide paved roads, version changes, and measure developer experience as well as control outcomes.",
+    "evaluation_points": [
+      "Focus on landing zone",
+      "Focus on cloud foundation",
+      "Focus on guardrails"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q121",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is hybrid and multi-cloud strategy, and what architectural decision does it support?",
+    "preferred_answer": "Hybrid architecture connects on-premises and cloud environments; multi-cloud deliberately uses more than one cloud provider for defined business or technical outcomes. Choose them for regulatory, latency, data gravity, acquisition, service capability, resilience, or negotiated commercial reasons that outweigh complexity.",
+    "evaluation_points": [
+      "Focus on hybrid cloud",
+      "Focus on multi-cloud",
+      "Focus on workload placement"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q122",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use hybrid and multi-cloud strategy, and when should it not be treated as a default?",
+    "preferred_answer": "Choose them for regulatory, latency, data gravity, acquisition, service capability, resilience, or negotiated commercial reasons that outweigh complexity. It should not be treated as a default because unclear rationale creates duplicated skills and tooling, inconsistent security, fragmented data, higher network cost, and lowest-common-denominator designs.",
+    "evaluation_points": [
+      "Focus on hybrid cloud",
+      "Focus on multi-cloud",
+      "Focus on workload placement"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q123",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether hybrid and multi-cloud strategy has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: workload placement criteria, connectivity, identity, operations, data movement, exit plans, and total cost are explicit. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on hybrid cloud",
+      "Focus on multi-cloud",
+      "Focus on workload placement"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q124",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for hybrid and multi-cloud strategy?",
+    "preferred_answer": "Key failure modes are that unclear rationale creates duplicated skills and tooling, inconsistent security, fragmented data, higher network cost, and lowest-common-denominator designs. A strong response is to use workload-specific decisions, standardize interfaces and controls where valuable, and avoid multi-cloud as an abstract risk slogan.",
+    "evaluation_points": [
+      "Focus on hybrid cloud",
+      "Focus on multi-cloud",
+      "Focus on workload placement"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q125",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is well-architected reviews, and what architectural decision does it support?",
+    "preferred_answer": "A well-architected review evaluates a workload against structured quality pillars such as security, reliability, performance, cost, operations, and sustainability to identify risks and improvements. Use reviews before major launches, after material changes or incidents, and periodically for critical workloads.",
+    "evaluation_points": [
+      "Focus on well-architected",
+      "Focus on architecture review",
+      "Focus on cloud"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q126",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use well-architected reviews, and when should it not be treated as a default?",
+    "preferred_answer": "Use reviews before major launches, after material changes or incidents, and periodically for critical workloads. It should not be treated as a default because a checklist-only exercise can ignore business context, become an audit, or produce findings without ownership and prioritization.",
+    "evaluation_points": [
+      "Focus on well-architected",
+      "Focus on architecture review",
+      "Focus on cloud"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q127",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether well-architected reviews has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: the review includes the right stakeholders, documented evidence, risk-ranked actions, accepted residual risk, and follow-up verification. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on well-architected",
+      "Focus on architecture review",
+      "Focus on cloud"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q128",
+    "role_slug": "architecture",
+    "domain": "Cloud, Hybrid and Multi-Cloud Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for well-architected reviews?",
+    "preferred_answer": "Key failure modes are that a checklist-only exercise can ignore business context, become an audit, or produce findings without ownership and prioritization. A strong response is to frame it as a constructive trade-off conversation, tailor the lens to the workload, and track remediation through normal product governance.",
+    "evaluation_points": [
+      "Focus on well-architected",
+      "Focus on architecture review",
+      "Focus on cloud"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q129",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is network segmentation and hub-spoke topology, and what architectural decision does it support?",
+    "preferred_answer": "Segmentation creates controlled trust boundaries and traffic paths; hub-spoke centralizes shared connectivity and security services while isolating workload networks. It supports scalable hybrid connectivity, separation of environments or tenants, and centralized inspection where the trust model requires it.",
+    "evaluation_points": [
+      "Focus on network architecture",
+      "Focus on segmentation",
+      "Focus on hub-spoke"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q130",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use network segmentation and hub-spoke topology, and when should it not be treated as a default?",
+    "preferred_answer": "It supports scalable hybrid connectivity, separation of environments or tenants, and centralized inspection where the trust model requires it. It should not be treated as a default because over-segmentation increases routing and policy complexity, while flat networks expand blast radius and make ownership unclear.",
+    "evaluation_points": [
+      "Focus on network architecture",
+      "Focus on segmentation",
+      "Focus on hub-spoke"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q131",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether network segmentation and hub-spoke topology has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: trust zones, permitted flows, routing, DNS, inspection, egress, failover, and ownership are documented and tested. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on network architecture",
+      "Focus on segmentation",
+      "Focus on hub-spoke"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q132",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for network segmentation and hub-spoke topology?",
+    "preferred_answer": "Key failure modes are that over-segmentation increases routing and policy complexity, while flat networks expand blast radius and make ownership unclear. A strong response is to segment by risk and responsibility, automate policy, minimize transitive trust, and validate flows through continuous testing.",
+    "evaluation_points": [
+      "Focus on network architecture",
+      "Focus on segmentation",
+      "Focus on hub-spoke"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q133",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is DNS, load balancing and content delivery, and what architectural decision does it support?",
+    "preferred_answer": "DNS maps names to endpoints, load balancers distribute traffic according to health and policy, and CDNs cache or accelerate content near users. Together they support availability, traffic management, performance, geographic routing, and controlled failover.",
+    "evaluation_points": [
+      "Focus on DNS",
+      "Focus on load balancing",
+      "Focus on CDN"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q134",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use DNS, load balancing and content delivery, and when should it not be treated as a default?",
+    "preferred_answer": "Together they support availability, traffic management, performance, geographic routing, and controlled failover. It should not be treated as a default because long DNS caching delays recovery, health checks can miss dependency failures, and CDN caching can expose stale or sensitive content.",
+    "evaluation_points": [
+      "Focus on DNS",
+      "Focus on load balancing",
+      "Focus on CDN"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q135",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether DNS, load balancing and content delivery has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: tTL strategy, health semantics, origin protection, cache rules, failover tests, certificates, and observability are defined. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on DNS",
+      "Focus on load balancing",
+      "Focus on CDN"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q136",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for DNS, load balancing and content delivery?",
+    "preferred_answer": "Key failure modes are that long DNS caching delays recovery, health checks can miss dependency failures, and CDN caching can expose stale or sensitive content. A strong response is to design layered health checks, safe cache keys and invalidation, realistic failover tests, and ownership of global traffic changes.",
+    "evaluation_points": [
+      "Focus on DNS",
+      "Focus on load balancing",
+      "Focus on CDN"
+    ],
+    "resolution_title": "Microsoft Azure Architecture Center",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q137",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is compute, storage and managed-service selection, and what architectural decision does it support?",
+    "preferred_answer": "Service selection matches workload characteristics such as state, latency, throughput, consistency, elasticity, portability, skills, compliance, and operating effort to an appropriate platform. The decision determines much of the workload cost, reliability, security boundary, and team responsibility.",
+    "evaluation_points": [
+      "Focus on service selection",
+      "Focus on compute",
+      "Focus on storage"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected Framework",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q138",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use compute, storage and managed-service selection, and when should it not be treated as a default?",
+    "preferred_answer": "The decision determines much of the workload cost, reliability, security boundary, and team responsibility. It should not be treated as a default because feature-led selection can ignore lifecycle cost, service quotas, data egress, portability, or operational capability.",
+    "evaluation_points": [
+      "Focus on service selection",
+      "Focus on compute",
+      "Focus on storage"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected Framework",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q139",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether compute, storage and managed-service selection has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: a decision matrix uses measured workload profiles, quality scenarios, proof-of-concept results, and exit considerations. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on service selection",
+      "Focus on compute",
+      "Focus on storage"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected Framework",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q140",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for compute, storage and managed-service selection?",
+    "preferred_answer": "Key failure modes are that feature-led selection can ignore lifecycle cost, service quotas, data egress, portability, or operational capability. A strong response is to prefer the simplest managed service that meets requirements, test critical limits, and document portability only where its value exceeds abstraction cost.",
+    "evaluation_points": [
+      "Focus on service selection",
+      "Focus on compute",
+      "Focus on storage"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected Framework",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q141",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is infrastructure as code and immutable infrastructure, and what architectural decision does it support?",
+    "preferred_answer": "Infrastructure as code defines environments through versioned, reviewable declarations; immutable approaches replace components rather than modifying them in place. They improve repeatability, change control, recovery, testing, and environment consistency at scale.",
+    "evaluation_points": [
+      "Focus on infrastructure as code",
+      "Focus on immutable infrastructure",
+      "Focus on automation"
+    ],
+    "resolution_title": "HashiCorp Terraform - Introduction",
+    "resolution_url": "https://developer.hashicorp.com/terraform/intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q142",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use infrastructure as code and immutable infrastructure, and when should it not be treated as a default?",
+    "preferred_answer": "They improve repeatability, change control, recovery, testing, and environment consistency at scale. It should not be treated as a default because state drift, secrets in code, unsafe modules, broad permissions, and unreviewed automation can propagate errors rapidly.",
+    "evaluation_points": [
+      "Focus on infrastructure as code",
+      "Focus on immutable infrastructure",
+      "Focus on automation"
+    ],
+    "resolution_title": "HashiCorp Terraform - Introduction",
+    "resolution_url": "https://developer.hashicorp.com/terraform/intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q143",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether infrastructure as code and immutable infrastructure has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: plans are reviewed, policies are tested, state and secrets are protected, drift is detected, and deployments can be reproduced and rolled back. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on infrastructure as code",
+      "Focus on immutable infrastructure",
+      "Focus on automation"
+    ],
+    "resolution_title": "HashiCorp Terraform - Introduction",
+    "resolution_url": "https://developer.hashicorp.com/terraform/intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q144",
+    "role_slug": "architecture",
+    "domain": "Infrastructure, Network and Platform Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for infrastructure as code and immutable infrastructure?",
+    "preferred_answer": "Key failure modes are that state drift, secrets in code, unsafe modules, broad permissions, and unreviewed automation can propagate errors rapidly. A strong response is to use modules with ownership, policy as code, least privilege, automated tests, and separate promotion from direct production mutation.",
+    "evaluation_points": [
+      "Focus on infrastructure as code",
+      "Focus on immutable infrastructure",
+      "Focus on automation"
+    ],
+    "resolution_title": "HashiCorp Terraform - Introduction",
+    "resolution_url": "https://developer.hashicorp.com/terraform/intro",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q145",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Kubernetes control-plane and workload architecture, and what architectural decision does it support?",
+    "preferred_answer": "Kubernetes uses a control plane to reconcile desired state and worker nodes to run Pods, with controllers, scheduling, networking, storage, and APIs coordinating workloads. It is appropriate when teams need standardized orchestration, scheduling, self-healing, and deployment for containerized workloads at sufficient scale.",
+    "evaluation_points": [
+      "Focus on Kubernetes",
+      "Focus on control plane",
+      "Focus on containers"
+    ],
+    "resolution_title": "Kubernetes - Cluster Architecture",
+    "resolution_url": "https://kubernetes.io/docs/concepts/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q146",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use Kubernetes control-plane and workload architecture, and when should it not be treated as a default?",
+    "preferred_answer": "It is appropriate when teams need standardized orchestration, scheduling, self-healing, and deployment for containerized workloads at sufficient scale. It should not be treated as a default because using Kubernetes for simple workloads can add large operational and security overhead, and control-plane assumptions may be hidden by managed services.",
+    "evaluation_points": [
+      "Focus on Kubernetes",
+      "Focus on control plane",
+      "Focus on containers"
+    ],
+    "resolution_title": "Kubernetes - Cluster Architecture",
+    "resolution_url": "https://kubernetes.io/docs/concepts/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q147",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether Kubernetes control-plane and workload architecture has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: cluster failure domains, node pools, workload controllers, quotas, upgrade paths, backup, and responsibility boundaries are documented. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on Kubernetes",
+      "Focus on control plane",
+      "Focus on containers"
+    ],
+    "resolution_title": "Kubernetes - Cluster Architecture",
+    "resolution_url": "https://kubernetes.io/docs/concepts/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q148",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for Kubernetes control-plane and workload architecture?",
+    "preferred_answer": "Key failure modes are that using Kubernetes for simple workloads can add large operational and security overhead, and control-plane assumptions may be hidden by managed services. A strong response is to choose managed control planes where appropriate, standardize cluster patterns, and justify Kubernetes against simpler compute options.",
+    "evaluation_points": [
+      "Focus on Kubernetes",
+      "Focus on control plane",
+      "Focus on containers"
+    ],
+    "resolution_title": "Kubernetes - Cluster Architecture",
+    "resolution_url": "https://kubernetes.io/docs/concepts/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q149",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Kubernetes service discovery, ingress and network policy, and what architectural decision does it support?",
+    "preferred_answer": "Services provide stable discovery and virtual addressing, ingress or gateway components manage north-south traffic, and network policies constrain allowed Pod communications. These mechanisms shape application reachability, routing, TLS termination, multi-tenancy, and service-to-service trust.",
+    "evaluation_points": [
+      "Focus on Kubernetes networking",
+      "Focus on service discovery",
+      "Focus on ingress"
+    ],
+    "resolution_title": "Kubernetes - Cluster Architecture",
+    "resolution_url": "https://kubernetes.io/docs/concepts/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q150",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use Kubernetes service discovery, ingress and network policy, and when should it not be treated as a default?",
+    "preferred_answer": "These mechanisms shape application reachability, routing, TLS termination, multi-tenancy, and service-to-service trust. It should not be treated as a default because default-open east-west traffic, inconsistent ingress controllers, overlapping policy layers, and hidden DNS dependencies create security and reliability gaps.",
+    "evaluation_points": [
+      "Focus on Kubernetes networking",
+      "Focus on service discovery",
+      "Focus on ingress"
+    ],
+    "resolution_title": "Kubernetes - Cluster Architecture",
+    "resolution_url": "https://kubernetes.io/docs/concepts/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q151",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether Kubernetes service discovery, ingress and network policy has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: traffic flows, policy enforcement, certificate ownership, DNS behavior, gateway capacity, and failure handling are tested. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on Kubernetes networking",
+      "Focus on service discovery",
+      "Focus on ingress"
+    ],
+    "resolution_title": "Kubernetes - Cluster Architecture",
+    "resolution_url": "https://kubernetes.io/docs/concepts/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q152",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for Kubernetes service discovery, ingress and network policy?",
+    "preferred_answer": "Key failure modes are that default-open east-west traffic, inconsistent ingress controllers, overlapping policy layers, and hidden DNS dependencies create security and reliability gaps. A strong response is to adopt default-deny where feasible, standardize gateways, automate certificates, and trace requests across ingress and services.",
+    "evaluation_points": [
+      "Focus on Kubernetes networking",
+      "Focus on service discovery",
+      "Focus on ingress"
+    ],
+    "resolution_title": "Kubernetes - Cluster Architecture",
+    "resolution_url": "https://kubernetes.io/docs/concepts/architecture/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q153",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Kubernetes multi-tenancy and platform guardrails, and what architectural decision does it support?",
+    "preferred_answer": "Multi-tenancy shares clusters or platform services across teams or customers while isolating workloads, identities, networks, resources, policies, and operational duties. It can improve utilization and platform consistency when isolation requirements and trust levels are understood.",
+    "evaluation_points": [
+      "Focus on multi-tenancy",
+      "Focus on guardrails",
+      "Focus on Kubernetes security"
+    ],
+    "resolution_title": "Kubernetes - Multi-tenancy",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/multi-tenancy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q154",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use Kubernetes multi-tenancy and platform guardrails, and when should it not be treated as a default?",
+    "preferred_answer": "It can improve utilization and platform consistency when isolation requirements and trust levels are understood. It should not be treated as a default because namespace boundaries alone may not satisfy hostile-tenancy requirements; noisy neighbors and privileged controllers can cross tenant boundaries.",
+    "evaluation_points": [
+      "Focus on multi-tenancy",
+      "Focus on guardrails",
+      "Focus on Kubernetes security"
+    ],
+    "resolution_title": "Kubernetes - Multi-tenancy",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/multi-tenancy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q155",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether Kubernetes multi-tenancy and platform guardrails has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: tenant model, identity, admission policy, quotas, network policy, secrets, node isolation, audit logs, and incident ownership are validated. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on multi-tenancy",
+      "Focus on guardrails",
+      "Focus on Kubernetes security"
+    ],
+    "resolution_title": "Kubernetes - Multi-tenancy",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/multi-tenancy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q156",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for Kubernetes multi-tenancy and platform guardrails?",
+    "preferred_answer": "Key failure modes are that namespace boundaries alone may not satisfy hostile-tenancy requirements; noisy neighbors and privileged controllers can cross tenant boundaries. A strong response is to choose namespace, virtual-cluster, or separate-cluster isolation based on threat model and use policy enforcement plus resource controls.",
+    "evaluation_points": [
+      "Focus on multi-tenancy",
+      "Focus on guardrails",
+      "Focus on Kubernetes security"
+    ],
+    "resolution_title": "Kubernetes - Multi-tenancy",
+    "resolution_url": "https://kubernetes.io/docs/concepts/security/multi-tenancy/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q157",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is platform engineering and internal developer platforms, and what architectural decision does it support?",
+    "preferred_answer": "Platform engineering provides product-managed self-service capabilities, paved roads, templates, policies, and observability that reduce cognitive load while preserving necessary standards. It is valuable when many teams repeatedly solve delivery, infrastructure, security, and service ownership problems.",
+    "evaluation_points": [
+      "Focus on platform engineering",
+      "Focus on developer platform",
+      "Focus on golden path"
+    ],
+    "resolution_title": "Backstage - Software Catalog",
+    "resolution_url": "https://backstage.io/docs/features/software-catalog/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q158",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use platform engineering and internal developer platforms, and when should it not be treated as a default?",
+    "preferred_answer": "It is valuable when many teams repeatedly solve delivery, infrastructure, security, and service ownership problems. It should not be treated as a default because a platform can become a mandatory ticket queue, hide critical abstractions, or optimize central metrics rather than developer and product outcomes.",
+    "evaluation_points": [
+      "Focus on platform engineering",
+      "Focus on developer platform",
+      "Focus on golden path"
+    ],
+    "resolution_title": "Backstage - Software Catalog",
+    "resolution_url": "https://backstage.io/docs/features/software-catalog/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q159",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether platform engineering and internal developer platforms has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: adoption is voluntary or clearly justified, onboarding time falls, ownership is visible, reliability improves, and feedback drives the roadmap. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on platform engineering",
+      "Focus on developer platform",
+      "Focus on golden path"
+    ],
+    "resolution_title": "Backstage - Software Catalog",
+    "resolution_url": "https://backstage.io/docs/features/software-catalog/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q160",
+    "role_slug": "architecture",
+    "domain": "Containers, Kubernetes and Platform Engineering",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for platform engineering and internal developer platforms?",
+    "preferred_answer": "Key failure modes are that a platform can become a mandatory ticket queue, hide critical abstractions, or optimize central metrics rather than developer and product outcomes. A strong response is to run the platform as a product, publish supported paths and escape hatches, and measure developer experience and production outcomes.",
+    "evaluation_points": [
+      "Focus on platform engineering",
+      "Focus on developer platform",
+      "Focus on golden path"
+    ],
+    "resolution_title": "Backstage - Software Catalog",
+    "resolution_url": "https://backstage.io/docs/features/software-catalog/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q161",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is zero trust architecture, and what architectural decision does it support?",
+    "preferred_answer": "Zero trust removes implicit trust based on network location and makes access decisions using identities, devices, resources, policy, context, and continuous evaluation. It supports modern environments with remote users, cloud services, service identities, and distributed resources beyond a single trusted perimeter.",
+    "evaluation_points": [
+      "Focus on zero trust",
+      "Focus on identity",
+      "Focus on access control"
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q162",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use zero trust architecture, and when should it not be treated as a default?",
+    "preferred_answer": "It supports modern environments with remote users, cloud services, service identities, and distributed resources beyond a single trusted perimeter. It should not be treated as a default because buying a product without redesigning policy and identity, excessive user friction, and incomplete asset visibility can undermine the model.",
+    "evaluation_points": [
+      "Focus on zero trust",
+      "Focus on identity",
+      "Focus on access control"
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q163",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether zero trust architecture has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: resources and identities are inventoried, policy decisions are explicit, access is least-privileged, telemetry informs decisions, and trust is continually reassessed. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on zero trust",
+      "Focus on identity",
+      "Focus on access control"
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q164",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for zero trust architecture?",
+    "preferred_answer": "Key failure modes are that buying a product without redesigning policy and identity, excessive user friction, and incomplete asset visibility can undermine the model. A strong response is to prioritize high-value resources, strengthen identity and device signals, phase enforcement, and measure access and incident outcomes.",
+    "evaluation_points": [
+      "Focus on zero trust",
+      "Focus on identity",
+      "Focus on access control"
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q165",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is OAuth, token and identity-federation architecture, and what architectural decision does it support?",
+    "preferred_answer": "Federated identity separates authentication and authorization responsibilities and uses protocols and tokens to convey limited, verifiable claims between trust domains. It enables single sign-on, delegated API access, partner integration, and service-to-service authorization without sharing credentials.",
+    "evaluation_points": [
+      "Focus on OAuth",
+      "Focus on federation",
+      "Focus on tokens"
+    ],
+    "resolution_title": "IETF RFC 9700 - OAuth 2.0 Security Best Current Practice",
+    "resolution_url": "https://www.rfc-editor.org/info/rfc9700/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q166",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use OAuth, token and identity-federation architecture, and when should it not be treated as a default?",
+    "preferred_answer": "It enables single sign-on, delegated API access, partner integration, and service-to-service authorization without sharing credentials. It should not be treated as a default because bearer-token theft, overly broad scopes, weak redirect validation, long token lifetimes, and confused issuer or audience validation can compromise systems.",
+    "evaluation_points": [
+      "Focus on OAuth",
+      "Focus on federation",
+      "Focus on tokens"
+    ],
+    "resolution_title": "IETF RFC 9700 - OAuth 2.0 Security Best Current Practice",
+    "resolution_url": "https://www.rfc-editor.org/info/rfc9700/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q167",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether OAuth, token and identity-federation architecture has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: trust boundaries, flows, issuers, audiences, scopes, key rotation, revocation, token storage, and failure behavior are specified and tested. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on OAuth",
+      "Focus on federation",
+      "Focus on tokens"
+    ],
+    "resolution_title": "IETF RFC 9700 - OAuth 2.0 Security Best Current Practice",
+    "resolution_url": "https://www.rfc-editor.org/info/rfc9700/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q168",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for OAuth, token and identity-federation architecture?",
+    "preferred_answer": "Key failure modes are that bearer-token theft, overly broad scopes, weak redirect validation, long token lifetimes, and confused issuer or audience validation can compromise systems. A strong response is to follow current OAuth security BCP, use short-lived scoped tokens, validate all token properties, and prefer sender-constrained credentials where appropriate.",
+    "evaluation_points": [
+      "Focus on OAuth",
+      "Focus on federation",
+      "Focus on tokens"
+    ],
+    "resolution_title": "IETF RFC 9700 - OAuth 2.0 Security Best Current Practice",
+    "resolution_url": "https://www.rfc-editor.org/info/rfc9700/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q169",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is threat modeling, and what architectural decision does it support?",
+    "preferred_answer": "Threat modeling is a structured and repeatable process for modeling a system from an adversarial perspective, identifying threats, and selecting responses early and throughout the lifecycle. Use it for new systems, material changes, high-risk data flows, trust boundaries, third-party integrations, and incident-driven redesign.",
+    "evaluation_points": [
+      "Focus on threat modeling",
+      "Focus on security architecture",
+      "Focus on trust boundary"
+    ],
+    "resolution_title": "OWASP Threat Modeling Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q170",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use threat modeling, and when should it not be treated as a default?",
+    "preferred_answer": "Use it for new systems, material changes, high-risk data flows, trust boundaries, third-party integrations, and incident-driven redesign. It should not be treated as a default because a one-time workshop can become generic, miss business abuse cases, or produce findings that are not connected to delivery.",
+    "evaluation_points": [
+      "Focus on threat modeling",
+      "Focus on security architecture",
+      "Focus on trust boundary"
+    ],
+    "resolution_title": "OWASP Threat Modeling Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q171",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether threat modeling has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: system and data-flow models, trust boundaries, threat assumptions, prioritized mitigations, owners, and verification tasks remain current. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on threat modeling",
+      "Focus on security architecture",
+      "Focus on trust boundary"
+    ],
+    "resolution_title": "OWASP Threat Modeling Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q172",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for threat modeling?",
+    "preferred_answer": "Key failure modes are that a one-time workshop can become generic, miss business abuse cases, or produce findings that are not connected to delivery. A strong response is to integrate threat modeling into architecture and backlog workflows, include diverse roles, and revisit it when the system or threat environment changes.",
+    "evaluation_points": [
+      "Focus on threat modeling",
+      "Focus on security architecture",
+      "Focus on trust boundary"
+    ],
+    "resolution_title": "OWASP Threat Modeling Cheat Sheet",
+    "resolution_url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q173",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is secure-by-design and software supply-chain architecture, and what architectural decision does it support?",
+    "preferred_answer": "Secure-by-design architecture embeds security requirements, protected development environments, provenance, dependency controls, verification, and vulnerability response into the delivery system. It is necessary where software, containers, infrastructure modules, models, or third-party components become part of the production trust chain.",
+    "evaluation_points": [
+      "Focus on secure by design",
+      "Focus on SSDF",
+      "Focus on software supply chain"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework 1.1",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q174",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use secure-by-design and software supply-chain architecture, and when should it not be treated as a default?",
+    "preferred_answer": "It is necessary where software, containers, infrastructure modules, models, or third-party components become part of the production trust chain. It should not be treated as a default because scanning alone can create false assurance; untrusted build systems, mutable artifacts, unknown dependencies, and excessive developer privilege remain exploitable.",
+    "evaluation_points": [
+      "Focus on secure by design",
+      "Focus on SSDF",
+      "Focus on software supply chain"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework 1.1",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q175",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether secure-by-design and software supply-chain architecture has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: threat-informed requirements, protected repositories and pipelines, signed or traceable artifacts, dependency inventories, tests, and response procedures exist. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on secure by design",
+      "Focus on SSDF",
+      "Focus on software supply chain"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework 1.1",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q176",
+    "role_slug": "architecture",
+    "domain": "Security, Identity and Zero Trust Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for secure-by-design and software supply-chain architecture?",
+    "preferred_answer": "Key failure modes are that scanning alone can create false assurance; untrusted build systems, mutable artifacts, unknown dependencies, and excessive developer privilege remain exploitable. A strong response is to apply SSDF practices, minimize privileges, isolate builds, verify provenance, manage dependencies, and treat the delivery platform as production security infrastructure.",
+    "evaluation_points": [
+      "Focus on secure by design",
+      "Focus on SSDF",
+      "Focus on software supply chain"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework 1.1",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q177",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is availability, reliability and resilience, and what architectural decision does it support?",
+    "preferred_answer": "Availability measures whether a service is usable, reliability describes correct and consistent behavior over time, and resilience is the ability to withstand and recover from disruption. Distinguishing them helps architects select meaningful user outcomes rather than relying only on infrastructure uptime.",
+    "evaluation_points": [
+      "Focus on availability",
+      "Focus on reliability",
+      "Focus on resilience"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Reliability Design Principles",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q178",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use availability, reliability and resilience, and when should it not be treated as a default?",
+    "preferred_answer": "Distinguishing them helps architects select meaningful user outcomes rather than relying only on infrastructure uptime. It should not be treated as a default because redundant components can be highly available while the end-to-end service is incorrect, slow, or unable to recover from dependency failures.",
+    "evaluation_points": [
+      "Focus on availability",
+      "Focus on reliability",
+      "Focus on resilience"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Reliability Design Principles",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q179",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether availability, reliability and resilience has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: user-focused SLIs, dependency maps, failure scenarios, recovery measures, and historical performance demonstrate the required behavior. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on availability",
+      "Focus on reliability",
+      "Focus on resilience"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Reliability Design Principles",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q180",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for availability, reliability and resilience?",
+    "preferred_answer": "Key failure modes are that redundant components can be highly available while the end-to-end service is incorrect, slow, or unable to recover from dependency failures. A strong response is to design from critical user journeys, set measurable objectives, remove single points of failure, and test degraded and recovery modes.",
+    "evaluation_points": [
+      "Focus on availability",
+      "Focus on reliability",
+      "Focus on resilience"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Reliability Design Principles",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/reliability/principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q181",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is redundancy, fault domains and graceful degradation, and what architectural decision does it support?",
+    "preferred_answer": "Redundancy provides alternate capacity, fault domains limit correlated failure, and graceful degradation preserves the most important functions when dependencies or capacity are impaired. They support critical workloads whose business requirements justify continued operation during component, zone, region, or dependency failures.",
+    "evaluation_points": [
+      "Focus on redundancy",
+      "Focus on fault domain",
+      "Focus on graceful degradation"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q182",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use redundancy, fault domains and graceful degradation, and when should it not be treated as a default?",
+    "preferred_answer": "They support critical workloads whose business requirements justify continued operation during component, zone, region, or dependency failures. It should not be treated as a default because redundant components can share hidden dependencies, active-active designs can create consistency conflicts, and degraded modes may be untested.",
+    "evaluation_points": [
+      "Focus on redundancy",
+      "Focus on fault domain",
+      "Focus on graceful degradation"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q183",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether redundancy, fault domains and graceful degradation has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: failure-domain independence, capacity under failover, data behavior, health detection, and degraded user journeys are validated through exercises. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on redundancy",
+      "Focus on fault domain",
+      "Focus on graceful degradation"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q184",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for redundancy, fault domains and graceful degradation?",
+    "preferred_answer": "Key failure modes are that redundant components can share hidden dependencies, active-active designs can create consistency conflicts, and degraded modes may be untested. A strong response is to map correlated dependencies, design explicit degradation priorities, test failover under load, and automate only where failure detection is trustworthy.",
+    "evaluation_points": [
+      "Focus on redundancy",
+      "Focus on fault domain",
+      "Focus on graceful degradation"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q185",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is RTO, RPO and disaster-recovery strategy, and what architectural decision does it support?",
+    "preferred_answer": "Recovery time objective defines the target time to restore service; recovery point objective defines the acceptable data-loss window; recovery strategy aligns systems, data, people, and procedures to those business targets. It determines backup frequency, replication, standby capacity, runbooks, testing, and investment for disruptions beyond normal high availability.",
+    "evaluation_points": [
+      "Focus on RTO",
+      "Focus on RPO",
+      "Focus on disaster recovery"
+    ],
+    "resolution_title": "AWS Reliability Pillar - Disaster Recovery Objectives",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q186",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use RTO, RPO and disaster-recovery strategy, and when should it not be treated as a default?",
+    "preferred_answer": "It determines backup frequency, replication, standby capacity, runbooks, testing, and investment for disruptions beyond normal high availability. It should not be treated as a default because targets may be copied from tiers without business validation, backups may not be restorable, and dependencies may have weaker recovery capabilities.",
+    "evaluation_points": [
+      "Focus on RTO",
+      "Focus on RPO",
+      "Focus on disaster recovery"
+    ],
+    "resolution_title": "AWS Reliability Pillar - Disaster Recovery Objectives",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q187",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether RTO, RPO and disaster-recovery strategy has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: business-approved targets, dependency alignment, tested restoration, clean-room access, communications, and measured exercise results exist. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on RTO",
+      "Focus on RPO",
+      "Focus on disaster recovery"
+    ],
+    "resolution_title": "AWS Reliability Pillar - Disaster Recovery Objectives",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q188",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for RTO, RPO and disaster-recovery strategy?",
+    "preferred_answer": "Key failure modes are that targets may be copied from tiers without business validation, backups may not be restorable, and dependencies may have weaker recovery capabilities. A strong response is to perform business impact analysis, tier workloads, test complete recovery regularly, and close gaps between stated and demonstrated recovery.",
+    "evaluation_points": [
+      "Focus on RTO",
+      "Focus on RPO",
+      "Focus on disaster recovery"
+    ],
+    "resolution_title": "AWS Reliability Pillar - Disaster Recovery Objectives",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q189",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is performance, capacity and backpressure, and what architectural decision does it support?",
+    "preferred_answer": "Performance architecture models latency, throughput, concurrency, resource demand, queues, and scale limits; backpressure prevents producers from overwhelming constrained consumers. It supports predictable user experience and safe scaling under normal, peak, burst, and degraded conditions.",
+    "evaluation_points": [
+      "Focus on performance",
+      "Focus on capacity",
+      "Focus on backpressure"
+    ],
+    "resolution_title": "Google Cloud Architecture Framework - Performance Optimization",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/performance-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q190",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use performance, capacity and backpressure, and when should it not be treated as a default?",
+    "preferred_answer": "It supports predictable user experience and safe scaling under normal, peak, burst, and degraded conditions. It should not be treated as a default because average-load sizing hides tail latency, horizontal scaling can move bottlenecks downstream, and unbounded queues convert overload into delayed failure.",
+    "evaluation_points": [
+      "Focus on performance",
+      "Focus on capacity",
+      "Focus on backpressure"
+    ],
+    "resolution_title": "Google Cloud Architecture Framework - Performance Optimization",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/performance-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q191",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether performance, capacity and backpressure has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: workload models, percentile objectives, load tests, bottleneck analysis, quotas, queue limits, and capacity forecasts are current. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on performance",
+      "Focus on capacity",
+      "Focus on backpressure"
+    ],
+    "resolution_title": "Google Cloud Architecture Framework - Performance Optimization",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/performance-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q192",
+    "role_slug": "architecture",
+    "domain": "Reliability, Resilience, Disaster Recovery and Performance",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for performance, capacity and backpressure?",
+    "preferred_answer": "Key failure modes are that average-load sizing hides tail latency, horizontal scaling can move bottlenecks downstream, and unbounded queues convert overload into delayed failure. A strong response is to test realistic traffic and failure, use bounded concurrency and queues, shed noncritical load, and scale based on leading indicators.",
+    "evaluation_points": [
+      "Focus on performance",
+      "Focus on capacity",
+      "Focus on backpressure"
+    ],
+    "resolution_title": "Google Cloud Architecture Framework - Performance Optimization",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework/performance-optimization",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q193",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is logs, metrics, traces and telemetry context, and what architectural decision does it support?",
+    "preferred_answer": "Logs record events, metrics aggregate measurements, traces follow work across components, and propagated context correlates signals across distributed systems. A balanced telemetry design enables detection, diagnosis, capacity decisions, security investigation, and product insight.",
+    "evaluation_points": [
+      "Focus on observability",
+      "Focus on logs",
+      "Focus on metrics",
+      "Focus on traces"
+    ],
+    "resolution_title": "OpenTelemetry - Signals",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/signals/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q194",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use logs, metrics, traces and telemetry context, and when should it not be treated as a default?",
+    "preferred_answer": "A balanced telemetry design enables detection, diagnosis, capacity decisions, security investigation, and product insight. It should not be treated as a default because collecting everything creates high cost and noise; missing context, inconsistent schemas, or high-cardinality labels make signals difficult to use.",
+    "evaluation_points": [
+      "Focus on observability",
+      "Focus on logs",
+      "Focus on metrics",
+      "Focus on traces"
+    ],
+    "resolution_title": "OpenTelemetry - Signals",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/signals/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q195",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether logs, metrics, traces and telemetry context has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: telemetry is tied to user journeys and failure modes, schemas are governed, trace context propagates, and retention and access match purpose. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on observability",
+      "Focus on logs",
+      "Focus on metrics",
+      "Focus on traces"
+    ],
+    "resolution_title": "OpenTelemetry - Signals",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/signals/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q196",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for logs, metrics, traces and telemetry context?",
+    "preferred_answer": "Key failure modes are that collecting everything creates high cost and noise; missing context, inconsistent schemas, or high-cardinality labels make signals difficult to use. A strong response is to instrument critical paths first, standardize semantic conventions, control cardinality and sampling, and continuously remove unused telemetry.",
+    "evaluation_points": [
+      "Focus on observability",
+      "Focus on logs",
+      "Focus on metrics",
+      "Focus on traces"
+    ],
+    "resolution_title": "OpenTelemetry - Signals",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/signals/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q197",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is service-level indicators, objectives and error budgets, and what architectural decision does it support?",
+    "preferred_answer": "An SLI measures service behavior, an SLO sets a target over a period, and an error budget quantifies the acceptable unreliability that balances feature velocity and stability. They align product and engineering decisions around user-visible reliability instead of component uptime alone.",
+    "evaluation_points": [
+      "Focus on SLI",
+      "Focus on SLO",
+      "Focus on error budget"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering Book",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q198",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use service-level indicators, objectives and error budgets, and when should it not be treated as a default?",
+    "preferred_answer": "They align product and engineering decisions around user-visible reliability instead of component uptime alone. It should not be treated as a default because poor SLIs measure what is easy, unrealistic SLOs create permanent breach, and error budgets can be treated as permission to fail carelessly.",
+    "evaluation_points": [
+      "Focus on SLI",
+      "Focus on SLO",
+      "Focus on error budget"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering Book",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q199",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether service-level indicators, objectives and error budgets has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: sLIs reflect critical user journeys, objectives follow business impact, burn alerts are actionable, and budget policy influences prioritization. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on SLI",
+      "Focus on SLO",
+      "Focus on error budget"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering Book",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q200",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for service-level indicators, objectives and error budgets?",
+    "preferred_answer": "Key failure modes are that poor SLIs measure what is easy, unrealistic SLOs create permanent breach, and error budgets can be treated as permission to fail carelessly. A strong response is to start with a small set of user-centered indicators, use historical data, define budget policy, and revisit objectives as the product evolves.",
+    "evaluation_points": [
+      "Focus on SLI",
+      "Focus on SLO",
+      "Focus on error budget"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering Book",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q201",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is operability, runbooks and ownership, and what architectural decision does it support?",
+    "preferred_answer": "Operability is the ability to deploy, observe, support, change, recover, and retire a service safely, supported by clear ownership and executable runbooks. It must be designed alongside functionality because production complexity and support effort are architectural qualities.",
+    "evaluation_points": [
+      "Focus on operability",
+      "Focus on runbook",
+      "Focus on service ownership"
+    ],
+    "resolution_title": "OpenTelemetry - Observability Primer",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q202",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use operability, runbooks and ownership, and when should it not be treated as a default?",
+    "preferred_answer": "It must be designed alongside functionality because production complexity and support effort are architectural qualities. It should not be treated as a default because runbooks can be stale, ownership can stop at deployment, and manual steps can fail during high-pressure incidents.",
+    "evaluation_points": [
+      "Focus on operability",
+      "Focus on runbook",
+      "Focus on service ownership"
+    ],
+    "resolution_title": "OpenTelemetry - Observability Primer",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q203",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether operability, runbooks and ownership has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: services have owners, dashboards, alerts, dependency information, runbooks, access, rollback, and regular operational review. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on operability",
+      "Focus on runbook",
+      "Focus on service ownership"
+    ],
+    "resolution_title": "OpenTelemetry - Observability Primer",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q204",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for operability, runbooks and ownership?",
+    "preferred_answer": "Key failure modes are that runbooks can be stale, ownership can stop at deployment, and manual steps can fail during high-pressure incidents. A strong response is to automate routine actions, exercise runbooks, include operations in design reviews, and make service ownership visible in a catalog.",
+    "evaluation_points": [
+      "Focus on operability",
+      "Focus on runbook",
+      "Focus on service ownership"
+    ],
+    "resolution_title": "OpenTelemetry - Observability Primer",
+    "resolution_url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q205",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is resilience testing and controlled fault injection, and what architectural decision does it support?",
+    "preferred_answer": "Resilience testing validates system behavior under failures, load, dependency degradation, and recovery, ranging from component tests to game days and controlled fault injection. Use it to test assumptions that cannot be proven by diagrams or redundancy claims, especially for critical distributed systems.",
+    "evaluation_points": [
+      "Focus on resilience testing",
+      "Focus on chaos engineering",
+      "Focus on game day"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q206",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use resilience testing and controlled fault injection, and when should it not be treated as a default?",
+    "preferred_answer": "Use it to test assumptions that cannot be proven by diagrams or redundancy claims, especially for critical distributed systems. It should not be treated as a default because unsafe experiments can harm customers, while trivial tests can produce false confidence and ignore organizational response.",
+    "evaluation_points": [
+      "Focus on resilience testing",
+      "Focus on chaos engineering",
+      "Focus on game day"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q207",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether resilience testing and controlled fault injection has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: hypotheses, blast-radius controls, stop conditions, monitoring, recovery procedures, findings, and remediation are documented. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on resilience testing",
+      "Focus on chaos engineering",
+      "Focus on game day"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q208",
+    "role_slug": "architecture",
+    "domain": "Observability, Operability and Site Reliability",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for resilience testing and controlled fault injection?",
+    "preferred_answer": "Key failure modes are that unsafe experiments can harm customers, while trivial tests can produce false confidence and ignore organizational response. A strong response is to begin in lower environments, automate steady-state checks, obtain ownership approval, limit blast radius, and progressively test production where justified.",
+    "evaluation_points": [
+      "Focus on resilience testing",
+      "Focus on chaos engineering",
+      "Focus on game day"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q209",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is architecture review boards and decision forums, and what architectural decision does it support?",
+    "preferred_answer": "An architecture review forum provides proportionate oversight for material cross-cutting decisions, risks, standards exceptions, and portfolio impacts. It is useful where decisions affect shared platforms, regulated controls, enterprise data, security boundaries, or major investment.",
+    "evaluation_points": [
+      "Focus on architecture review board",
+      "Focus on governance",
+      "Focus on decision forum"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q210",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use architecture review boards and decision forums, and when should it not be treated as a default?",
+    "preferred_answer": "It is useful where decisions affect shared platforms, regulated controls, enterprise data, security boundaries, or major investment. It should not be treated as a default because a centralized board can delay delivery, duplicate team expertise, and review documents rather than real risks.",
+    "evaluation_points": [
+      "Focus on architecture review board",
+      "Focus on governance",
+      "Focus on decision forum"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q211",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether architecture review boards and decision forums has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: review criteria are risk-based, decisions are timely and recorded, actions have owners, and teams receive reusable guidance. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on architecture review board",
+      "Focus on governance",
+      "Focus on decision forum"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q212",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for architecture review boards and decision forums?",
+    "preferred_answer": "Key failure modes are that a centralized board can delay delivery, duplicate team expertise, and review documents rather than real risks. A strong response is to use delegated authority and asynchronous review, publish decision criteria, and measure lead time and outcome quality.",
+    "evaluation_points": [
+      "Focus on architecture review board",
+      "Focus on governance",
+      "Focus on decision forum"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q213",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is standards, reference architectures and paved roads, and what architectural decision does it support?",
+    "preferred_answer": "Standards define mandatory or preferred constraints; reference architectures show validated structures; paved roads provide supported implementation paths with tooling and controls. Together they accelerate common solutions, reduce risk, and concentrate expertise while allowing justified variation.",
+    "evaluation_points": [
+      "Focus on standards",
+      "Focus on reference architecture",
+      "Focus on paved road"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q214",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use standards, reference architectures and paved roads, and when should it not be treated as a default?",
+    "preferred_answer": "Together they accelerate common solutions, reduce risk, and concentrate expertise while allowing justified variation. It should not be treated as a default because standards can freeze outdated technology, reference diagrams can be copied without context, and paved roads can become compulsory monopolies.",
+    "evaluation_points": [
+      "Focus on standards",
+      "Focus on reference architecture",
+      "Focus on paved road"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q215",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether standards, reference architectures and paved roads has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: each asset has scope, owner, version, evidence, adoption data, exceptions, and a lifecycle review date. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on standards",
+      "Focus on reference architecture",
+      "Focus on paved road"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q216",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for standards, reference architectures and paved roads?",
+    "preferred_answer": "Key failure modes are that standards can freeze outdated technology, reference diagrams can be copied without context, and paved roads can become compulsory monopolies. A strong response is to separate principles from product choices, publish rationale and escape hatches, and retire assets based on outcomes and technology change.",
+    "evaluation_points": [
+      "Focus on standards",
+      "Focus on reference architecture",
+      "Focus on paved road"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q217",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is architecture exceptions and risk acceptance, and what architectural decision does it support?",
+    "preferred_answer": "An exception is a governed, time-bounded deviation from a standard or control, supported by rationale, compensating measures, ownership, and approval at the correct risk level. It preserves delivery flexibility when a standard does not fit while keeping deviations visible and accountable.",
+    "evaluation_points": [
+      "Focus on exception",
+      "Focus on risk acceptance",
+      "Focus on governance"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/cyberframework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q218",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use architecture exceptions and risk acceptance, and when should it not be treated as a default?",
+    "preferred_answer": "It preserves delivery flexibility when a standard does not fit while keeping deviations visible and accountable. It should not be treated as a default because permanent waivers create unmanaged shadow standards, and approval by people without risk authority transfers accountability improperly.",
+    "evaluation_points": [
+      "Focus on exception",
+      "Focus on risk acceptance",
+      "Focus on governance"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/cyberframework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q219",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether architecture exceptions and risk acceptance has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: the exception records scope, risk, compensating controls, owner, approver, expiry, and remediation or review date. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on exception",
+      "Focus on risk acceptance",
+      "Focus on governance"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/cyberframework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q220",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for architecture exceptions and risk acceptance?",
+    "preferred_answer": "Key failure modes are that permanent waivers create unmanaged shadow standards, and approval by people without risk authority transfers accountability improperly. A strong response is to make exceptions easy to discover, monitor expiry, aggregate recurring causes, and update standards when repeated exceptions reveal a design flaw.",
+    "evaluation_points": [
+      "Focus on exception",
+      "Focus on risk acceptance",
+      "Focus on governance"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/cyberframework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q221",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technology portfolio rationalization, and what architectural decision does it support?",
+    "preferred_answer": "Portfolio rationalization evaluates applications, platforms, data stores, and technologies by business value, risk, cost, duplication, lifecycle, and strategic fit to decide invest, tolerate, migrate, consolidate, or retire. It supports funding decisions, simplification, modernization, and reduction of operational and security exposure.",
+    "evaluation_points": [
+      "Focus on portfolio rationalization",
+      "Focus on application portfolio",
+      "Focus on technology lifecycle"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q222",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use technology portfolio rationalization, and when should it not be treated as a default?",
+    "preferred_answer": "It supports funding decisions, simplification, modernization, and reduction of operational and security exposure. It should not be treated as a default because inventory without ownership becomes stale, scoring can ignore business dependencies, and retirement plans may omit data and user transition.",
+    "evaluation_points": [
+      "Focus on portfolio rationalization",
+      "Focus on application portfolio",
+      "Focus on technology lifecycle"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q223",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether technology portfolio rationalization has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: assets have owners, usage, cost, dependencies, lifecycle status, risks, and an approved disposition with measurable progress. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on portfolio rationalization",
+      "Focus on application portfolio",
+      "Focus on technology lifecycle"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q224",
+    "role_slug": "architecture",
+    "domain": "Architecture Governance, Standards and Portfolio Management",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for technology portfolio rationalization?",
+    "preferred_answer": "Key failure modes are that inventory without ownership becomes stale, scoring can ignore business dependencies, and retirement plans may omit data and user transition. A strong response is to combine quantitative data with business review, prioritize high-risk and duplicate capabilities, and fund decommissioning as real delivery work.",
+    "evaluation_points": [
+      "Focus on portfolio rationalization",
+      "Focus on application portfolio",
+      "Focus on technology lifecycle"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q225",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is workload migration strategies, and what architectural decision does it support?",
+    "preferred_answer": "Migration strategies such as rehost, relocate, replatform, refactor, repurchase, retain, and retire select different levels of change, value, risk, and effort for each workload. They enable portfolio-level planning instead of assuming every system should be rewritten or moved in the same way.",
+    "evaluation_points": [
+      "Focus on migration strategy",
+      "Focus on cloud migration",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q226",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use workload migration strategies, and when should it not be treated as a default?",
+    "preferred_answer": "They enable portfolio-level planning instead of assuming every system should be rewritten or moved in the same way. It should not be treated as a default because rehosting can preserve structural problems, refactoring can overrun, and strategy labels can hide data, dependency, testing, and operating-model work.",
+    "evaluation_points": [
+      "Focus on migration strategy",
+      "Focus on cloud migration",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q227",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether workload migration strategies has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: each workload has business drivers, dependency analysis, target benefits, migration waves, acceptance criteria, and a decommissioning plan. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on migration strategy",
+      "Focus on cloud migration",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q228",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for workload migration strategies?",
+    "preferred_answer": "Key failure modes are that rehosting can preserve structural problems, refactoring can overrun, and strategy labels can hide data, dependency, testing, and operating-model work. A strong response is to choose per workload, validate through pilots, sequence dependencies, and measure realized outcomes after migration.",
+    "evaluation_points": [
+      "Focus on migration strategy",
+      "Focus on cloud migration",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q229",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is the strangler pattern and anti-corruption layers, and what architectural decision does it support?",
+    "preferred_answer": "The strangler pattern incrementally routes capabilities from a legacy system to new components, while an anti-corruption layer translates models and contracts to prevent legacy semantics from contaminating the new design. Use them when business continuity and risk make incremental modernization preferable to a full replacement.",
+    "evaluation_points": [
+      "Focus on strangler pattern",
+      "Focus on anti-corruption layer",
+      "Focus on legacy modernization"
+    ],
+    "resolution_title": "Azure Architecture Center - Cloud Design Patterns",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q230",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use the strangler pattern and anti-corruption layers, and when should it not be treated as a default?",
+    "preferred_answer": "Use them when business continuity and risk make incremental modernization preferable to a full replacement. It should not be treated as a default because temporary coexistence can become permanent, duplicated writes can diverge, and translation layers can hide unclear ownership.",
+    "evaluation_points": [
+      "Focus on strangler pattern",
+      "Focus on anti-corruption layer",
+      "Focus on legacy modernization"
+    ],
+    "resolution_title": "Azure Architecture Center - Cloud Design Patterns",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q231",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether the strangler pattern and anti-corruption layers has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: capability boundaries, routing, data authority, reconciliation, cutover criteria, and legacy retirement milestones are explicit. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on strangler pattern",
+      "Focus on anti-corruption layer",
+      "Focus on legacy modernization"
+    ],
+    "resolution_title": "Azure Architecture Center - Cloud Design Patterns",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q232",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for the strangler pattern and anti-corruption layers?",
+    "preferred_answer": "Key failure modes are that temporary coexistence can become permanent, duplicated writes can diverge, and translation layers can hide unclear ownership. A strong response is to modernize by business slice, keep one authority per data element, monitor parity, and attach deadlines and funding to retirement.",
+    "evaluation_points": [
+      "Focus on strangler pattern",
+      "Focus on anti-corruption layer",
+      "Focus on legacy modernization"
+    ],
+    "resolution_title": "Azure Architecture Center - Cloud Design Patterns",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q233",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technical debt management, and what architectural decision does it support?",
+    "preferred_answer": "Technical debt is the future cost and risk created by expedient or outdated technical choices; it includes principal, recurring interest, and uncertainty rather than simply old code. Managing it helps teams balance short-term delivery with reliability, security, change cost, and strategic adaptability.",
+    "evaluation_points": [
+      "Focus on technical debt",
+      "Focus on maintainability",
+      "Focus on risk"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Architecture Decision Records",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q234",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use technical debt management, and when should it not be treated as a default?",
+    "preferred_answer": "Managing it helps teams balance short-term delivery with reliability, security, change cost, and strategic adaptability. It should not be treated as a default because a debt backlog without business impact is ignored, while labeling every disliked design as debt obscures deliberate trade-offs.",
+    "evaluation_points": [
+      "Focus on technical debt",
+      "Focus on maintainability",
+      "Focus on risk"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Architecture Decision Records",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q235",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether technical debt management has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: debt items state affected outcomes, risk, recurring cost, trigger, owner, and treatment, and are visible in planning and architecture reviews. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on technical debt",
+      "Focus on maintainability",
+      "Focus on risk"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Architecture Decision Records",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q236",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for technical debt management?",
+    "preferred_answer": "Key failure modes are that a debt backlog without business impact is ignored, while labeling every disliked design as debt obscures deliberate trade-offs. A strong response is to quantify impact where possible, prevent high-interest debt, reserve capacity, and remove root causes through standards or platform improvements.",
+    "evaluation_points": [
+      "Focus on technical debt",
+      "Focus on maintainability",
+      "Focus on risk"
+    ],
+    "resolution_title": "Microsoft Azure Well-Architected - Architecture Decision Records",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q237",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is vendor lock-in and exit architecture, and what architectural decision does it support?",
+    "preferred_answer": "Vendor lock-in is the economic, technical, contractual, data, skill, or operational cost of changing a provider; exit architecture defines how critical services and data could transition if required. It should be analyzed proportionately for strategic, regulated, high-cost, or long-lived dependencies.",
+    "evaluation_points": [
+      "Focus on vendor lock-in",
+      "Focus on exit strategy",
+      "Focus on portability"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q238",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use vendor lock-in and exit architecture, and when should it not be treated as a default?",
+    "preferred_answer": "It should be analyzed proportionately for strategic, regulated, high-cost, or long-lived dependencies. It should not be treated as a default because avoiding all provider features sacrifices value and still does not guarantee portability; ignoring exit can expose the enterprise to price, service, or geopolitical change.",
+    "evaluation_points": [
+      "Focus on vendor lock-in",
+      "Focus on exit strategy",
+      "Focus on portability"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q239",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether vendor lock-in and exit architecture has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: dependency inventory, data export, contract rights, replacement options, transition time, skill needs, and tested recovery paths are understood. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on vendor lock-in",
+      "Focus on exit strategy",
+      "Focus on portability"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q240",
+    "role_slug": "architecture",
+    "domain": "Modernization, Migration and Technical Debt",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for vendor lock-in and exit architecture?",
+    "preferred_answer": "Key failure modes are that avoiding all provider features sacrifices value and still does not guarantee portability; ignoring exit can expose the enterprise to price, service, or geopolitical change. A strong response is to optimize for business value, isolate only high-risk dependencies, use open formats and contracts, and test exit for critical services.",
+    "evaluation_points": [
+      "Focus on vendor lock-in",
+      "Focus on exit strategy",
+      "Focus on portability"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q241",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is FinOps and unit economics, and what architectural decision does it support?",
+    "preferred_answer": "FinOps is an operating framework and cultural practice that maximizes technology value through collaboration, timely data, ownership, planning, optimization, and business-aligned measures. Architecture uses FinOps to compare workload placement, managed services, scaling, resilience, licensing, and data movement by value rather than cost alone.",
+    "evaluation_points": [
+      "Focus on FinOps",
+      "Focus on unit economics",
+      "Focus on cost architecture"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q242",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use FinOps and unit economics, and when should it not be treated as a default?",
+    "preferred_answer": "Architecture uses FinOps to compare workload placement, managed services, scaling, resilience, licensing, and data movement by value rather than cost alone. It should not be treated as a default because simple cost cutting can reduce reliability or innovation, while unallocated shared cost and missing unit metrics prevent accountable decisions.",
+    "evaluation_points": [
+      "Focus on FinOps",
+      "Focus on unit economics",
+      "Focus on cost architecture"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q243",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether FinOps and unit economics has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: costs map to products or capabilities, unit economics and forecasts exist, anomalies are managed, and optimization actions preserve required qualities. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on FinOps",
+      "Focus on unit economics",
+      "Focus on cost architecture"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q244",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for FinOps and unit economics?",
+    "preferred_answer": "Key failure modes are that simple cost cutting can reduce reliability or innovation, while unallocated shared cost and missing unit metrics prevent accountable decisions. A strong response is to engage finance, engineering, and product early, design allocation tags and telemetry, and evaluate cost with business outcomes and risk.",
+    "evaluation_points": [
+      "Focus on FinOps",
+      "Focus on unit economics",
+      "Focus on cost architecture"
+    ],
+    "resolution_title": "FinOps Framework",
+    "resolution_url": "https://www.finops.org/framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q245",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is sustainable software and carbon-aware architecture, and what architectural decision does it support?",
+    "preferred_answer": "Sustainable architecture reduces energy and carbon impact through efficient software, demand shaping, workload placement, hardware utilization, data management, and lifecycle decisions. It is relevant where workloads are large, elastic, compute-intensive, data-intensive, or subject to environmental commitments.",
+    "evaluation_points": [
+      "Focus on sustainability",
+      "Focus on green software",
+      "Focus on carbon aware"
+    ],
+    "resolution_title": "Green Software Foundation - Principles of Green Software Engineering",
+    "resolution_url": "https://principles.green/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q246",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use sustainable software and carbon-aware architecture, and when should it not be treated as a default?",
+    "preferred_answer": "It is relevant where workloads are large, elastic, compute-intensive, data-intensive, or subject to environmental commitments. It should not be treated as a default because optimizing only measured cloud energy can shift impact elsewhere, and efficiency gains can be erased by increased demand or longer retention.",
+    "evaluation_points": [
+      "Focus on sustainability",
+      "Focus on green software",
+      "Focus on carbon aware"
+    ],
+    "resolution_title": "Green Software Foundation - Principles of Green Software Engineering",
+    "resolution_url": "https://principles.green/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q247",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether sustainable software and carbon-aware architecture has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: energy or carbon proxies, utilization, data volume, hardware lifecycle, region and time choices, and business trade-offs are measured. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on sustainability",
+      "Focus on green software",
+      "Focus on carbon aware"
+    ],
+    "resolution_title": "Green Software Foundation - Principles of Green Software Engineering",
+    "resolution_url": "https://principles.green/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q248",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for sustainable software and carbon-aware architecture?",
+    "preferred_answer": "Key failure modes are that optimizing only measured cloud energy can shift impact elsewhere, and efficiency gains can be erased by increased demand or longer retention. A strong response is to eliminate waste first, improve utilization, choose appropriate regions and times, minimize data movement and retention, and report assumptions transparently.",
+    "evaluation_points": [
+      "Focus on sustainability",
+      "Focus on green software",
+      "Focus on carbon aware"
+    ],
+    "resolution_title": "Green Software Foundation - Principles of Green Software Engineering",
+    "resolution_url": "https://principles.green/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q249",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is AI and machine-learning system architecture, and what architectural decision does it support?",
+    "preferred_answer": "AI architecture connects data acquisition, model development or selection, evaluation, deployment, inference, monitoring, security, human oversight, and lifecycle governance as one socio-technical system. It supports use cases where model behavior, data quality, latency, cost, privacy, and operational risk must be managed beyond a prototype.",
+    "evaluation_points": [
+      "Focus on AI architecture",
+      "Focus on ML systems",
+      "Focus on AI governance"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q250",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use AI and machine-learning system architecture, and when should it not be treated as a default?",
+    "preferred_answer": "It supports use cases where model behavior, data quality, latency, cost, privacy, and operational risk must be managed beyond a prototype. It should not be treated as a default because data leakage, model drift, prompt injection, hallucination, opaque dependencies, excessive inference cost, and unclear accountability can cause harm.",
+    "evaluation_points": [
+      "Focus on AI architecture",
+      "Focus on ML systems",
+      "Focus on AI governance"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q251",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether AI and machine-learning system architecture has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: use-case boundaries, evaluation criteria, data lineage, model and prompt versions, guardrails, monitoring, fallback, and human escalation are defined. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on AI architecture",
+      "Focus on ML systems",
+      "Focus on AI governance"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q252",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for AI and machine-learning system architecture?",
+    "preferred_answer": "Key failure modes are that data leakage, model drift, prompt injection, hallucination, opaque dependencies, excessive inference cost, and unclear accountability can cause harm. A strong response is to apply risk-based governance, minimize sensitive data, evaluate before and after release, isolate tools, monitor behavior, and provide safe fallback paths.",
+    "evaluation_points": [
+      "Focus on AI architecture",
+      "Focus on ML systems",
+      "Focus on AI governance"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q253",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is edge and IoT architecture, and what architectural decision does it support?",
+    "preferred_answer": "Edge and IoT architecture distributes sensing, control, compute, storage, and connectivity across constrained devices, gateways, networks, cloud platforms, and fleet operations. It fits low-latency control, intermittent connectivity, high-volume local data, privacy, or bandwidth constraints.",
+    "evaluation_points": [
+      "Focus on edge",
+      "Focus on IoT",
+      "Focus on distributed architecture"
+    ],
+    "resolution_title": "NIST SP 800-160 Vol. 1 Rev. 1 - Systems Security Engineering",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q254",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should an architect use edge and IoT architecture, and when should it not be treated as a default?",
+    "preferred_answer": "It fits low-latency control, intermittent connectivity, high-volume local data, privacy, or bandwidth constraints. It should not be treated as a default because physical exposure, long device lifecycles, weak identity, unreliable links, unsafe updates, clock drift, and fleet heterogeneity complicate security and operations.",
+    "evaluation_points": [
+      "Focus on edge",
+      "Focus on IoT",
+      "Focus on distributed architecture"
+    ],
+    "resolution_title": "NIST SP 800-160 Vol. 1 Rev. 1 - Systems Security Engineering",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q255",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "How would you evaluate whether edge and IoT architecture has been implemented effectively?",
+    "preferred_answer": "Look for the following evidence: device identity, secure boot and update, offline behavior, protocol choices, data buffering, fleet inventory, telemetry, and decommissioning are designed. Review the evidence against stated requirements, owners, and production outcomes rather than the diagram or policy alone.",
+    "evaluation_points": [
+      "Focus on edge",
+      "Focus on IoT",
+      "Focus on distributed architecture"
+    ],
+    "resolution_title": "NIST SP 800-160 Vol. 1 Rev. 1 - Systems Security Engineering",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "TA-Q256",
+    "role_slug": "architecture",
+    "domain": "FinOps, Sustainability, AI and Emerging Architecture",
+    "difficulty": "advanced",
+    "question_type": "design",
+    "prompt": "What trade-offs or failure modes should be discussed for edge and IoT architecture?",
+    "preferred_answer": "Key failure modes are that physical exposure, long device lifecycles, weak identity, unreliable links, unsafe updates, clock drift, and fleet heterogeneity complicate security and operations. A strong response is to assume hostile physical conditions, minimize device trust, support signed updates and rollback, design for disconnection, and operate the fleet as a managed product.",
+    "evaluation_points": [
+      "Focus on edge",
+      "Focus on IoT",
+      "Focus on distributed architecture"
+    ],
+    "resolution_title": "NIST SP 800-160 Vol. 1 Rev. 1 - Systems Security Engineering",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q001",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is CIO, CTO, CISO, CDO and CPO role boundaries, and why does it matter at executive level?",
+    "preferred_answer": "Executive technology roles should have explicit accountability for enterprise technology, product and engineering, security, data, and product outcomes while sharing decisions that cross those domains. Use clear role charters when responsibilities overlap, the company is scaling, or technology leadership has become person-dependent.",
+    "evaluation_points": [
+      "Focus on C-suite",
+      "Focus on role charter",
+      "Focus on accountability"
+    ],
+    "resolution_title": "ISO/IEC 38500:2024 - Governance of IT for the Organization",
+    "resolution_url": "https://www.iso.org/standard/81684.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q002",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply CIO, CTO, CISO, CDO and CPO role boundaries, and what should not be treated as a default?",
+    "preferred_answer": "Use clear role charters when responsibilities overlap, the company is scaling, or technology leadership has become person-dependent. It should not be treated as a default because unclear boundaries create duplicated authority, missed decisions, political escalation, and gaps between product, operations, data, and security.",
+    "evaluation_points": [
+      "Focus on C-suite",
+      "Focus on role charter",
+      "Focus on accountability"
+    ],
+    "resolution_title": "ISO/IEC 38500:2024 - Governance of IT for the Organization",
+    "resolution_url": "https://www.iso.org/standard/81684.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q003",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate CIO, CTO, CISO, CDO and CPO role boundaries?",
+    "preferred_answer": "Look for signed role charters, decision rights, shared objectives, escalation paths, and evidence that cross-functional decisions are made quickly. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on C-suite",
+      "Focus on role charter",
+      "Focus on accountability"
+    ],
+    "resolution_title": "ISO/IEC 38500:2024 - Governance of IT for the Organization",
+    "resolution_url": "https://www.iso.org/standard/81684.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q004",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for CIO, CTO, CISO, CDO and CPO role boundaries, and how should they respond?",
+    "preferred_answer": "Key failure modes are that unclear boundaries create duplicated authority, missed decisions, political escalation, and gaps between product, operations, data, and security. A strong executive response is to define outcomes rather than titles, assign one accountable executive per decision class, and review boundaries after major strategy or organization changes.",
+    "evaluation_points": [
+      "Focus on C-suite",
+      "Focus on role charter",
+      "Focus on accountability"
+    ],
+    "resolution_title": "ISO/IEC 38500:2024 - Governance of IT for the Organization",
+    "resolution_url": "https://www.iso.org/standard/81684.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q005",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technology operating model, and why does it matter at executive level?",
+    "preferred_answer": "A technology operating model explains how strategy becomes funded work through structures, governance, product or service ownership, processes, talent, platforms, data, and measures. Use it when changing from projects to products, centralizing or federating teams, scaling digital delivery, or integrating acquisitions.",
+    "evaluation_points": [
+      "Focus on operating model",
+      "Focus on value flow",
+      "Focus on federation"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q006",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply technology operating model, and what should not be treated as a default?",
+    "preferred_answer": "Use it when changing from projects to products, centralizing or federating teams, scaling digital delivery, or integrating acquisitions. It should not be treated as a default because copying a fashionable model can ignore business diversity; too much central control slows delivery while uncontrolled federation duplicates platforms and risk.",
+    "evaluation_points": [
+      "Focus on operating model",
+      "Focus on value flow",
+      "Focus on federation"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q007",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate technology operating model?",
+    "preferred_answer": "Look for clear team and service boundaries, funding paths, governance forums, reusable platforms, service measures, and reduced handoffs or unresolved ownership. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on operating model",
+      "Focus on value flow",
+      "Focus on federation"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q008",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for technology operating model, and how should they respond?",
+    "preferred_answer": "Key failure modes are that copying a fashionable model can ignore business diversity; too much central control slows delivery while uncontrolled federation duplicates platforms and risk. A strong executive response is to design around value flows and risk, centralize scarce or common capabilities, federate domain decisions with guardrails, and evolve through measured experiments.",
+    "evaluation_points": [
+      "Focus on operating model",
+      "Focus on value flow",
+      "Focus on federation"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q009",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is executive decision rights and delegation, and why does it matter at executive level?",
+    "preferred_answer": "Decision rights define who recommends, decides, executes, assures, and is consulted for material technology choices. Use them for investments, architecture exceptions, cyber risk acceptance, vendor commitments, data use, and incident materiality.",
+    "evaluation_points": [
+      "Focus on decision rights",
+      "Focus on delegation",
+      "Focus on governance"
+    ],
+    "resolution_title": "ISO/IEC 38500:2024 - Governance of IT for the Organization",
+    "resolution_url": "https://www.iso.org/standard/81684.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q010",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply executive decision rights and delegation, and what should not be treated as a default?",
+    "preferred_answer": "Use them for investments, architecture exceptions, cyber risk acceptance, vendor commitments, data use, and incident materiality. It should not be treated as a default because committees without accountable decision owners delay action; excessive delegation can hide material risk from the governing body.",
+    "evaluation_points": [
+      "Focus on decision rights",
+      "Focus on delegation",
+      "Focus on governance"
+    ],
+    "resolution_title": "ISO/IEC 38500:2024 - Governance of IT for the Organization",
+    "resolution_url": "https://www.iso.org/standard/81684.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q011",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate executive decision rights and delegation?",
+    "preferred_answer": "Look for a decision catalogue, thresholds, named owners, time-boxed forums, recorded rationales, and escalation based on value, risk, reversibility, and regulatory impact. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on decision rights",
+      "Focus on delegation",
+      "Focus on governance"
+    ],
+    "resolution_title": "ISO/IEC 38500:2024 - Governance of IT for the Organization",
+    "resolution_url": "https://www.iso.org/standard/81684.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q012",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for executive decision rights and delegation, and how should they respond?",
+    "preferred_answer": "Key failure modes are that committees without accountable decision owners delay action; excessive delegation can hide material risk from the governing body. A strong executive response is to assign decisions to the lowest competent level within risk limits, preserve independent challenge, and escalate only when thresholds or conflicts are reached.",
+    "evaluation_points": [
+      "Focus on decision rights",
+      "Focus on delegation",
+      "Focus on governance"
+    ],
+    "resolution_title": "ISO/IEC 38500:2024 - Governance of IT for the Organization",
+    "resolution_url": "https://www.iso.org/standard/81684.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q013",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is business and technology co-ownership, and why does it matter at executive level?",
+    "preferred_answer": "Business and technology leaders jointly own outcomes because digital capability, operating process, data, risk, and customer experience are inseparable. Use co-ownership for product portfolios, transformation programs, data platforms, AI adoption, and operating resilience.",
+    "evaluation_points": [
+      "Focus on business alignment",
+      "Focus on co-ownership",
+      "Focus on outcomes"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q014",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply business and technology co-ownership, and what should not be treated as a default?",
+    "preferred_answer": "Use co-ownership for product portfolios, transformation programs, data platforms, AI adoption, and operating resilience. It should not be treated as a default because treating technology as an order-taking function weakens value; treating business partners as sponsors without delivery accountability creates one-sided commitments.",
+    "evaluation_points": [
+      "Focus on business alignment",
+      "Focus on co-ownership",
+      "Focus on outcomes"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q015",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate business and technology co-ownership?",
+    "preferred_answer": "Look for joint outcome metrics, shared roadmaps and funding, product or service owners with authority, and business participation in risk and adoption decisions. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on business alignment",
+      "Focus on co-ownership",
+      "Focus on outcomes"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q016",
+    "role_slug": "executive",
+    "domain": "Executive Mandate, Role Boundaries and Operating Model",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for business and technology co-ownership, and how should they respond?",
+    "preferred_answer": "Key failure modes are that treating technology as an order-taking function weakens value; treating business partners as sponsors without delivery accountability creates one-sided commitments. A strong executive response is to replace demand queues with outcome-based planning, make benefits and change ownership explicit, and use shared forums that resolve trade-offs.",
+    "evaluation_points": [
+      "Focus on business alignment",
+      "Focus on co-ownership",
+      "Focus on outcomes"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q017",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is business-linked technology strategy, and why does it matter at executive level?",
+    "preferred_answer": "A technology strategy states how capabilities, platforms, data, security, talent, and sourcing will create or protect enterprise value under explicit assumptions. Use it to translate business choices into a small set of technology bets, guardrails, sequencing decisions, and measurable outcomes.",
+    "evaluation_points": [
+      "Focus on technology strategy",
+      "Focus on strategic alignment",
+      "Focus on choices"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q018",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply business-linked technology strategy, and what should not be treated as a default?",
+    "preferred_answer": "Use it to translate business choices into a small set of technology bets, guardrails, sequencing decisions, and measurable outcomes. It should not be treated as a default because a list of projects or vendor products is not a strategy; vague ambitions create unfunded dependencies and no basis for stopping work.",
+    "evaluation_points": [
+      "Focus on technology strategy",
+      "Focus on strategic alignment",
+      "Focus on choices"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q019",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate business-linked technology strategy?",
+    "preferred_answer": "Look for strategic choices, excluded options, capability gaps, investment implications, risks, milestones, leading indicators, and traceability to enterprise goals. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on technology strategy",
+      "Focus on strategic alignment",
+      "Focus on choices"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q020",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for business-linked technology strategy, and how should they respond?",
+    "preferred_answer": "Key failure modes are that a list of projects or vendor products is not a strategy; vague ambitions create unfunded dependencies and no basis for stopping work. A strong executive response is to write choices in business language, test assumptions with scenarios, fund enabling capabilities, and refresh when market or regulatory conditions change.",
+    "evaluation_points": [
+      "Focus on technology strategy",
+      "Focus on strategic alignment",
+      "Focus on choices"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q021",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is capability-based planning, and why does it matter at executive level?",
+    "preferred_answer": "Capability-based planning connects business abilities to processes, information, applications, platforms, people, risk, and investment without starting from the current org chart. Use it to prioritize modernization, M&A integration, operating-model change, and portfolio rationalization.",
+    "evaluation_points": [
+      "Focus on business capability",
+      "Focus on planning",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q022",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply capability-based planning, and what should not be treated as a default?",
+    "preferred_answer": "Use it to prioritize modernization, M&A integration, operating-model change, and portfolio rationalization. It should not be treated as a default because capability maps can become static taxonomies or political ownership maps without performance, cost, lifecycle, and risk evidence.",
+    "evaluation_points": [
+      "Focus on business capability",
+      "Focus on planning",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q023",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate capability-based planning?",
+    "preferred_answer": "Look for a stable capability model, heat maps for strategic importance and health, linked technology assets, accountable owners, and investment decisions based on gaps. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on business capability",
+      "Focus on planning",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q024",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for capability-based planning, and how should they respond?",
+    "preferred_answer": "Key failure modes are that capability maps can become static taxonomies or political ownership maps without performance, cost, lifecycle, and risk evidence. A strong executive response is to keep the model decision-oriented, use a small number of levels, combine qualitative heat maps with evidence, and revisit after strategy changes.",
+    "evaluation_points": [
+      "Focus on business capability",
+      "Focus on planning",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q025",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is strategic roadmaps and transition states, and why does it matter at executive level?",
+    "preferred_answer": "An executive roadmap sequences capability, platform, organization, data, and risk changes through viable transition states rather than presenting a date-only project list. Use it when dependencies, migration waves, adoption, and operational continuity matter across several years.",
+    "evaluation_points": [
+      "Focus on roadmap",
+      "Focus on transition architecture",
+      "Focus on sequencing"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q026",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply strategic roadmaps and transition states, and what should not be treated as a default?",
+    "preferred_answer": "Use it when dependencies, migration waves, adoption, and operational continuity matter across several years. It should not be treated as a default because over-detailed roadmaps become false promises, while high-level vision without transition architecture leaves teams unable to execute safely.",
+    "evaluation_points": [
+      "Focus on roadmap",
+      "Focus on transition architecture",
+      "Focus on sequencing"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q027",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate strategic roadmaps and transition states?",
+    "preferred_answer": "Look for outcome milestones, decision gates, dependencies, transition architectures, funding ranges, benefit hypotheses, adoption measures, and exit criteria. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on roadmap",
+      "Focus on transition architecture",
+      "Focus on sequencing"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q028",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for strategic roadmaps and transition states, and how should they respond?",
+    "preferred_answer": "Key failure modes are that over-detailed roadmaps become false promises, while high-level vision without transition architecture leaves teams unable to execute safely. A strong executive response is to plan at the level of irreversible decisions and outcomes, maintain rolling detail, and re-plan based on evidence rather than protecting obsolete dates.",
+    "evaluation_points": [
+      "Focus on roadmap",
+      "Focus on transition architecture",
+      "Focus on sequencing"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q029",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is scenario planning and strategic options, and why does it matter at executive level?",
+    "preferred_answer": "Scenario planning tests technology choices against plausible changes in demand, regulation, supply, talent, security, economics, and technology maturity. Use it for long-lived platforms, data center exits, AI investment, geopolitical exposure, and capacity or resilience decisions.",
+    "evaluation_points": [
+      "Focus on scenario planning",
+      "Focus on strategic options",
+      "Focus on uncertainty"
+    ],
+    "resolution_title": "ISO 31000 - Risk Management",
+    "resolution_url": "https://www.iso.org/iso-31000-risk-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q030",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply scenario planning and strategic options, and what should not be treated as a default?",
+    "preferred_answer": "Use it for long-lived platforms, data center exits, AI investment, geopolitical exposure, and capacity or resilience decisions. It should not be treated as a default because treating one forecast as certain creates brittle commitments; producing many narratives without decisions wastes executive attention.",
+    "evaluation_points": [
+      "Focus on scenario planning",
+      "Focus on strategic options",
+      "Focus on uncertainty"
+    ],
+    "resolution_title": "ISO 31000 - Risk Management",
+    "resolution_url": "https://www.iso.org/iso-31000-risk-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q031",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate scenario planning and strategic options?",
+    "preferred_answer": "Look for a small set of plausible scenarios, critical uncertainties, leading signals, no-regret moves, option investments, and explicit trigger points. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on scenario planning",
+      "Focus on strategic options",
+      "Focus on uncertainty"
+    ],
+    "resolution_title": "ISO 31000 - Risk Management",
+    "resolution_url": "https://www.iso.org/iso-31000-risk-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q032",
+    "role_slug": "executive",
+    "domain": "Technology Strategy and Strategic Alignment",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for scenario planning and strategic options, and how should they respond?",
+    "preferred_answer": "Key failure modes are that treating one forecast as certain creates brittle commitments; producing many narratives without decisions wastes executive attention. A strong executive response is to separate reversible from irreversible bets, preserve options where uncertainty is high, and monitor signals that cause a planned pivot.",
+    "evaluation_points": [
+      "Focus on scenario planning",
+      "Focus on strategic options",
+      "Focus on uncertainty"
+    ],
+    "resolution_title": "ISO 31000 - Risk Management",
+    "resolution_url": "https://www.iso.org/iso-31000-risk-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q033",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is evaluate-direct-monitor governance, and why does it matter at executive level?",
+    "preferred_answer": "Effective governance evaluates stakeholder needs and conditions, directs strategy and policy, and monitors performance, conformance, and responsible use without taking over management execution. Use it to structure board and executive oversight of technology investment, risk, data, AI, resilience, and major change.",
+    "evaluation_points": [
+      "Focus on governance",
+      "Focus on board oversight",
+      "Focus on assurance"
+    ],
+    "resolution_title": "ISO/IEC 38500:2024 - Governance of IT for the Organization",
+    "resolution_url": "https://www.iso.org/standard/81684.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q034",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply evaluate-direct-monitor governance, and what should not be treated as a default?",
+    "preferred_answer": "Use it to structure board and executive oversight of technology investment, risk, data, AI, resilience, and major change. It should not be treated as a default because boards can become operational review committees, while management can hide strategic risk behind technical detail.",
+    "evaluation_points": [
+      "Focus on governance",
+      "Focus on board oversight",
+      "Focus on assurance"
+    ],
+    "resolution_title": "ISO/IEC 38500:2024 - Governance of IT for the Organization",
+    "resolution_url": "https://www.iso.org/standard/81684.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q035",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate evaluate-direct-monitor governance?",
+    "preferred_answer": "Look for defined governance responsibilities, board information requirements, decision thresholds, independent assurance, and evidence that direction changes when outcomes or risks change. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on governance",
+      "Focus on board oversight",
+      "Focus on assurance"
+    ],
+    "resolution_title": "ISO/IEC 38500:2024 - Governance of IT for the Organization",
+    "resolution_url": "https://www.iso.org/standard/81684.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q036",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for evaluate-direct-monitor governance, and how should they respond?",
+    "preferred_answer": "Key failure modes are that boards can become operational review committees, while management can hide strategic risk behind technical detail. A strong executive response is to separate governance from management, provide decision-useful information, preserve challenge, and periodically assess governance effectiveness.",
+    "evaluation_points": [
+      "Focus on governance",
+      "Focus on board oversight",
+      "Focus on assurance"
+    ],
+    "resolution_title": "ISO/IEC 38500:2024 - Governance of IT for the Organization",
+    "resolution_url": "https://www.iso.org/standard/81684.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q037",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is board technology reporting, and why does it matter at executive level?",
+    "preferred_answer": "Board reporting should connect technology conditions to enterprise purpose, value, risk, resilience, customers, and obligations rather than overwhelm directors with operational metrics. Use a stable dashboard plus focused decision papers for investments, incidents, cyber posture, AI, transformation, and systemic risks.",
+    "evaluation_points": [
+      "Focus on board reporting",
+      "Focus on indicators",
+      "Focus on materiality"
+    ],
+    "resolution_title": "ISO 37005:2024 - Developing Indicators for Effective Governance",
+    "resolution_url": "https://www.iso.org/standard/65038.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q038",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply board technology reporting, and what should not be treated as a default?",
+    "preferred_answer": "Use a stable dashboard plus focused decision papers for investments, incidents, cyber posture, AI, transformation, and systemic risks. It should not be treated as a default because green dashboards can hide weak thresholds; excessive technical metrics obscure material exposure and create false confidence.",
+    "evaluation_points": [
+      "Focus on board reporting",
+      "Focus on indicators",
+      "Focus on materiality"
+    ],
+    "resolution_title": "ISO 37005:2024 - Developing Indicators for Effective Governance",
+    "resolution_url": "https://www.iso.org/standard/65038.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q039",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate board technology reporting?",
+    "preferred_answer": "Look for trends, risk appetite breaches, business impact, independent assurance, forecast and scenario views, decisions required, and transparent data limitations. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on board reporting",
+      "Focus on indicators",
+      "Focus on materiality"
+    ],
+    "resolution_title": "ISO 37005:2024 - Developing Indicators for Effective Governance",
+    "resolution_url": "https://www.iso.org/standard/65038.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q040",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for board technology reporting, and how should they respond?",
+    "preferred_answer": "Key failure modes are that green dashboards can hide weak thresholds; excessive technical metrics obscure material exposure and create false confidence. A strong executive response is to use a concise core set, explain changes and uncertainty, include leading and lagging indicators, and validate measures through assurance.",
+    "evaluation_points": [
+      "Focus on board reporting",
+      "Focus on indicators",
+      "Focus on materiality"
+    ],
+    "resolution_title": "ISO 37005:2024 - Developing Indicators for Effective Governance",
+    "resolution_url": "https://www.iso.org/standard/65038.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q041",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is policy, standards and exception governance, and why does it matter at executive level?",
+    "preferred_answer": "Policies set required outcomes, standards define common controls or technology choices, and exceptions authorize bounded deviations with ownership and expiry. Use them where consistency reduces systemic risk, duplication, cost, or interoperability problems.",
+    "evaluation_points": [
+      "Focus on policy",
+      "Focus on standards",
+      "Focus on exceptions"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q042",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply policy, standards and exception governance, and what should not be treated as a default?",
+    "preferred_answer": "Use them where consistency reduces systemic risk, duplication, cost, or interoperability problems. It should not be treated as a default because rigid standards can block legitimate innovation; permanent exceptions create shadow architecture and unmanaged control gaps.",
+    "evaluation_points": [
+      "Focus on policy",
+      "Focus on standards",
+      "Focus on exceptions"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q043",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate policy, standards and exception governance?",
+    "preferred_answer": "Look for a policy hierarchy, accountable owners, risk-based standards, automated checks, exception records, compensating controls, expiry dates, and recurring-pattern analysis. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on policy",
+      "Focus on standards",
+      "Focus on exceptions"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q044",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for policy, standards and exception governance, and how should they respond?",
+    "preferred_answer": "Key failure modes are that rigid standards can block legitimate innovation; permanent exceptions create shadow architecture and unmanaged control gaps. A strong executive response is to keep standards outcome-oriented where possible, automate guardrails, time-box exceptions, and improve platforms when exceptions reveal unmet needs.",
+    "evaluation_points": [
+      "Focus on policy",
+      "Focus on standards",
+      "Focus on exceptions"
+    ],
+    "resolution_title": "ISACA - COBIT 2019 Framework",
+    "resolution_url": "https://www.isaca.org/resources/cobit",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q045",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is three lines and independent assurance, and why does it matter at executive level?",
+    "preferred_answer": "Management owns risks and controls, specialist functions provide support and challenge, and internal audit provides independent assurance to the governing body. Use the model to clarify cybersecurity, privacy, compliance, resilience, AI, and major transformation assurance.",
+    "evaluation_points": [
+      "Focus on three lines",
+      "Focus on assurance",
+      "Focus on independence"
+    ],
+    "resolution_title": "The IIA - Three Lines Model",
+    "resolution_url": "https://www.theiia.org/en/content/position-papers/2020/three-lines-model-updated/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q046",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply three lines and independent assurance, and what should not be treated as a default?",
+    "preferred_answer": "Use the model to clarify cybersecurity, privacy, compliance, resilience, AI, and major transformation assurance. It should not be treated as a default because the second line can become an approval factory or shadow operator; internal audit can be involved too late to assess strategic risk.",
+    "evaluation_points": [
+      "Focus on three lines",
+      "Focus on assurance",
+      "Focus on independence"
+    ],
+    "resolution_title": "The IIA - Three Lines Model",
+    "resolution_url": "https://www.theiia.org/en/content/position-papers/2020/three-lines-model-updated/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q047",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate three lines and independent assurance?",
+    "preferred_answer": "Look for clear mandates, independence, coordinated assurance plans, issue ownership, escalation paths, and no gaps or duplication across assurance providers. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on three lines",
+      "Focus on assurance",
+      "Focus on independence"
+    ],
+    "resolution_title": "The IIA - Three Lines Model",
+    "resolution_url": "https://www.theiia.org/en/content/position-papers/2020/three-lines-model-updated/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q048",
+    "role_slug": "executive",
+    "domain": "Governance, Board Oversight and Assurance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for three lines and independent assurance, and how should they respond?",
+    "preferred_answer": "Key failure modes are that the second line can become an approval factory or shadow operator; internal audit can be involved too late to assess strategic risk. A strong executive response is to maintain management accountability, engage assurance early without transferring ownership, and report unresolved material issues directly to the proper authority.",
+    "evaluation_points": [
+      "Focus on three lines",
+      "Focus on assurance",
+      "Focus on independence"
+    ],
+    "resolution_title": "The IIA - Three Lines Model",
+    "resolution_url": "https://www.theiia.org/en/content/position-papers/2020/three-lines-model-updated/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q049",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technology investment portfolio governance, and why does it matter at executive level?",
+    "preferred_answer": "Portfolio governance allocates scarce capital and capacity across run, grow, transform, risk, debt, and mandatory work based on strategy and constraints. Use it when demand exceeds capacity or when projects compete across business units and funding cycles.",
+    "evaluation_points": [
+      "Focus on portfolio",
+      "Focus on investment",
+      "Focus on prioritization"
+    ],
+    "resolution_title": "PMI - PMBOK Guide and Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q050",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply technology investment portfolio governance, and what should not be treated as a default?",
+    "preferred_answer": "Use it when demand exceeds capacity or when projects compete across business units and funding cycles. It should not be treated as a default because annual project selection can lock in weak assumptions, hide cross-portfolio dependencies, and protect sunk costs.",
+    "evaluation_points": [
+      "Focus on portfolio",
+      "Focus on investment",
+      "Focus on prioritization"
+    ],
+    "resolution_title": "PMI - PMBOK Guide and Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q051",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate technology investment portfolio governance?",
+    "preferred_answer": "Look for strategic contribution, value and risk hypotheses, capacity consumption, dependencies, option value, confidence ranges, and regular continue-pivot-stop decisions. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on portfolio",
+      "Focus on investment",
+      "Focus on prioritization"
+    ],
+    "resolution_title": "PMI - PMBOK Guide and Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q052",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for technology investment portfolio governance, and how should they respond?",
+    "preferred_answer": "Key failure modes are that annual project selection can lock in weak assumptions, hide cross-portfolio dependencies, and protect sunk costs. A strong executive response is to fund outcomes in smaller tranches, reserve capacity for reliability and debt, and reallocate based on evidence rather than sponsor power.",
+    "evaluation_points": [
+      "Focus on portfolio",
+      "Focus on investment",
+      "Focus on prioritization"
+    ],
+    "resolution_title": "PMI - PMBOK Guide and Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q053",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technology business cases and benefits realization, and why does it matter at executive level?",
+    "preferred_answer": "A technology business case links an intervention to measurable outcomes, total costs, risks, assumptions, adoption, and accountable benefit ownership. Use it for major platforms, transformations, automation, cloud, data, security, and sourcing commitments.",
+    "evaluation_points": [
+      "Focus on business case",
+      "Focus on benefits realization",
+      "Focus on investment"
+    ],
+    "resolution_title": "PMI - Standard for Program Management",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q054",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply technology business cases and benefits realization, and what should not be treated as a default?",
+    "preferred_answer": "Use it for major platforms, transformations, automation, cloud, data, security, and sourcing commitments. It should not be treated as a default because benefits can be double-counted, expressed only as cost avoidance, or assigned to technology teams that cannot change business behavior.",
+    "evaluation_points": [
+      "Focus on business case",
+      "Focus on benefits realization",
+      "Focus on investment"
+    ],
+    "resolution_title": "PMI - Standard for Program Management",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q055",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate technology business cases and benefits realization?",
+    "preferred_answer": "Look for baseline measures, causal assumptions, ranges, sensitivity analysis, adoption milestones, benefit owners, and post-investment reviews. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on business case",
+      "Focus on benefits realization",
+      "Focus on investment"
+    ],
+    "resolution_title": "PMI - Standard for Program Management",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q056",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for technology business cases and benefits realization, and how should they respond?",
+    "preferred_answer": "Key failure modes are that benefits can be double-counted, expressed only as cost avoidance, or assigned to technology teams that cannot change business behavior. A strong executive response is to use reference-class evidence, separate cashable from non-cashable value, assign business owners, and revise the case as learning changes.",
+    "evaluation_points": [
+      "Focus on business case",
+      "Focus on benefits realization",
+      "Focus on investment"
+    ],
+    "resolution_title": "PMI - Standard for Program Management",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q057",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is product and value-stream funding, and why does it matter at executive level?",
+    "preferred_answer": "Product funding allocates persistent capacity to customer or business outcomes while governance reviews value, risk, health, and strategy rather than approving every feature. Use it where products or services need continuous discovery, delivery, operations, and improvement.",
+    "evaluation_points": [
+      "Focus on product funding",
+      "Focus on value stream",
+      "Focus on outcomes"
+    ],
+    "resolution_title": "Evidence-Based Management Guide",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q058",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply product and value-stream funding, and what should not be treated as a default?",
+    "preferred_answer": "Use it where products or services need continuous discovery, delivery, operations, and improvement. It should not be treated as a default because persistent funding without outcome accountability becomes entitlement; forcing all work into products can obscure shared platforms and regulatory commitments.",
+    "evaluation_points": [
+      "Focus on product funding",
+      "Focus on value stream",
+      "Focus on outcomes"
+    ],
+    "resolution_title": "Evidence-Based Management Guide",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q059",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate product and value-stream funding?",
+    "preferred_answer": "Look for product missions, accountable leaders, outcome measures, cost transparency, capacity allocation, health metrics, and periodic investment reviews. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on product funding",
+      "Focus on value stream",
+      "Focus on outcomes"
+    ],
+    "resolution_title": "Evidence-Based Management Guide",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q060",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for product and value-stream funding, and how should they respond?",
+    "preferred_answer": "Key failure modes are that persistent funding without outcome accountability becomes entitlement; forcing all work into products can obscure shared platforms and regulatory commitments. A strong executive response is to set funding guardrails, include total lifecycle work, compare marginal value, and stop or reshape products that no longer justify investment.",
+    "evaluation_points": [
+      "Focus on product funding",
+      "Focus on value stream",
+      "Focus on outcomes"
+    ],
+    "resolution_title": "Evidence-Based Management Guide",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q061",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is continue, pivot, scale or stop decisions, and why does it matter at executive level?",
+    "preferred_answer": "Executive governance should treat investments as hypotheses and make explicit decisions based on evidence, strategic fit, risk, and opportunity cost. Use staged decisions for innovation, AI pilots, platform adoption, acquisitions, and large transformation waves.",
+    "evaluation_points": [
+      "Focus on stage gates",
+      "Focus on pivot",
+      "Focus on stop decisions"
+    ],
+    "resolution_title": "Evidence-Based Management Guide",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q062",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply continue, pivot, scale or stop decisions, and what should not be treated as a default?",
+    "preferred_answer": "Use staged decisions for innovation, AI pilots, platform adoption, acquisitions, and large transformation waves. It should not be treated as a default because sunk-cost bias, executive sponsorship, selective metrics, and fear of reputational loss can keep failing initiatives alive.",
+    "evaluation_points": [
+      "Focus on stage gates",
+      "Focus on pivot",
+      "Focus on stop decisions"
+    ],
+    "resolution_title": "Evidence-Based Management Guide",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q063",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate continue, pivot, scale or stop decisions?",
+    "preferred_answer": "Look for predefined decision criteria, independent evidence, customer and operational outcomes, forecast updates, alternative uses of resources, and documented decisions. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on stage gates",
+      "Focus on pivot",
+      "Focus on stop decisions"
+    ],
+    "resolution_title": "Evidence-Based Management Guide",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q064",
+    "role_slug": "executive",
+    "domain": "Portfolio, Investment and Benefits Governance",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for continue, pivot, scale or stop decisions, and how should they respond?",
+    "preferred_answer": "Key failure modes are that sunk-cost bias, executive sponsorship, selective metrics, and fear of reputational loss can keep failing initiatives alive. A strong executive response is to set kill criteria before launch, reward truthful escalation, protect teams that surface weak hypotheses, and preserve lessons when stopping work.",
+    "evaluation_points": [
+      "Focus on stage gates",
+      "Focus on pivot",
+      "Focus on stop decisions"
+    ],
+    "resolution_title": "Evidence-Based Management Guide",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q065",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technology total cost of ownership, and why does it matter at executive level?",
+    "preferred_answer": "TCO includes acquisition, implementation, integration, operations, support, security, resilience, data movement, change, compliance, and exit costs across the lifecycle. Use it to compare build, buy, SaaS, cloud, on-premises, managed services, and modernization options.",
+    "evaluation_points": [
+      "Focus on TCO",
+      "Focus on technology economics",
+      "Focus on lifecycle cost"
+    ],
+    "resolution_title": "FinOps Framework 2026",
+    "resolution_url": "https://www.finops.org/insights/2026-finops-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q066",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply technology total cost of ownership, and what should not be treated as a default?",
+    "preferred_answer": "Use it to compare build, buy, SaaS, cloud, on-premises, managed services, and modernization options. It should not be treated as a default because headline prices can ignore migration, skills, egress, support tiers, control requirements, and decommissioning; uncertain forecasts can look precise.",
+    "evaluation_points": [
+      "Focus on TCO",
+      "Focus on technology economics",
+      "Focus on lifecycle cost"
+    ],
+    "resolution_title": "FinOps Framework 2026",
+    "resolution_url": "https://www.finops.org/insights/2026-finops-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q067",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate technology total cost of ownership?",
+    "preferred_answer": "Look for cost-driver models, ranges and sensitivity, shared-cost treatment, lifecycle assumptions, owner validation, and comparison with delivered outcomes. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on TCO",
+      "Focus on technology economics",
+      "Focus on lifecycle cost"
+    ],
+    "resolution_title": "FinOps Framework 2026",
+    "resolution_url": "https://www.finops.org/insights/2026-finops-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q068",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for technology total cost of ownership, and how should they respond?",
+    "preferred_answer": "Key failure modes are that headline prices can ignore migration, skills, egress, support tiers, control requirements, and decommissioning; uncertain forecasts can look precise. A strong executive response is to use scenario ranges, expose assumptions, include residual and transition costs, and update TCO with actual usage and operational evidence.",
+    "evaluation_points": [
+      "Focus on TCO",
+      "Focus on technology economics",
+      "Focus on lifecycle cost"
+    ],
+    "resolution_title": "FinOps Framework 2026",
+    "resolution_url": "https://www.finops.org/insights/2026-finops-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q069",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technology unit economics, and why does it matter at executive level?",
+    "preferred_answer": "Unit economics relates technology spend and resource consumption to meaningful business units such as transaction, active customer, order, claim, or model inference. Use it to understand scale efficiency, product profitability, architecture choices, and cost-to-serve.",
+    "evaluation_points": [
+      "Focus on unit economics",
+      "Focus on cost to serve",
+      "Focus on FinOps"
+    ],
+    "resolution_title": "FinOps - Unit Economics",
+    "resolution_url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q070",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply technology unit economics, and what should not be treated as a default?",
+    "preferred_answer": "Use it to understand scale efficiency, product profitability, architecture choices, and cost-to-serve. It should not be treated as a default because poor units or allocations can encourage local optimization, exclude shared services, or penalize growth and resilience.",
+    "evaluation_points": [
+      "Focus on unit economics",
+      "Focus on cost to serve",
+      "Focus on FinOps"
+    ],
+    "resolution_title": "FinOps - Unit Economics",
+    "resolution_url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q071",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate technology unit economics?",
+    "preferred_answer": "Look for stable business units, complete cost allocation, workload drivers, trend and cohort views, service quality context, and reconciliation to finance. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on unit economics",
+      "Focus on cost to serve",
+      "Focus on FinOps"
+    ],
+    "resolution_title": "FinOps - Unit Economics",
+    "resolution_url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q072",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for technology unit economics, and how should they respond?",
+    "preferred_answer": "Key failure modes are that poor units or allocations can encourage local optimization, exclude shared services, or penalize growth and resilience. A strong executive response is to choose decision-relevant units, pair cost with value and quality, and investigate driver changes rather than setting arbitrary reduction targets.",
+    "evaluation_points": [
+      "Focus on unit economics",
+      "Focus on cost to serve",
+      "Focus on FinOps"
+    ],
+    "resolution_title": "FinOps - Unit Economics",
+    "resolution_url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q073",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is budgeting, forecasting, showback and chargeback, and why does it matter at executive level?",
+    "preferred_answer": "Technology financial operations should combine driver-based forecasts, accountable budgets, transparent showback, and chargeback only where it improves behavior and financial control. Use it across cloud, SaaS, data, shared platforms, and enterprise services with variable consumption.",
+    "evaluation_points": [
+      "Focus on forecasting",
+      "Focus on showback",
+      "Focus on chargeback"
+    ],
+    "resolution_title": "FinOps - Forecasting",
+    "resolution_url": "https://www.finops.org/framework/capabilities/forecasting/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q074",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply budgeting, forecasting, showback and chargeback, and what should not be treated as a default?",
+    "preferred_answer": "Use it across cloud, SaaS, data, shared platforms, and enterprise services with variable consumption. It should not be treated as a default because chargeback can cause gaming or avoidance; inaccurate allocation and delayed data reduce trust and decision usefulness.",
+    "evaluation_points": [
+      "Focus on forecasting",
+      "Focus on showback",
+      "Focus on chargeback"
+    ],
+    "resolution_title": "FinOps - Forecasting",
+    "resolution_url": "https://www.finops.org/framework/capabilities/forecasting/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q075",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate budgeting, forecasting, showback and chargeback?",
+    "preferred_answer": "Look for allocation coverage, forecast accuracy, anomaly response, owner actions, commitment performance, and finance reconciliation. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on forecasting",
+      "Focus on showback",
+      "Focus on chargeback"
+    ],
+    "resolution_title": "FinOps - Forecasting",
+    "resolution_url": "https://www.finops.org/framework/capabilities/forecasting/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q076",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for budgeting, forecasting, showback and chargeback, and how should they respond?",
+    "preferred_answer": "Key failure modes are that chargeback can cause gaming or avoidance; inaccurate allocation and delayed data reduce trust and decision usefulness. A strong executive response is to start with transparent showback, improve tagging and data quality, assign owners, and introduce chargeback where benefits exceed complexity.",
+    "evaluation_points": [
+      "Focus on forecasting",
+      "Focus on showback",
+      "Focus on chargeback"
+    ],
+    "resolution_title": "FinOps - Forecasting",
+    "resolution_url": "https://www.finops.org/framework/capabilities/forecasting/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q077",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is cost, value, risk and technical debt trade-offs, and why does it matter at executive level?",
+    "preferred_answer": "Executives should treat cost optimization as a constrained value decision that protects reliability, security, regulatory duties, and future change capacity. Use it for budget reductions, cloud optimization, vendor consolidation, platform standardization, and debt remediation.",
+    "evaluation_points": [
+      "Focus on cost optimization",
+      "Focus on technical debt",
+      "Focus on risk trade-off"
+    ],
+    "resolution_title": "FinOps - Executive Strategy Alignment",
+    "resolution_url": "https://www.finops.org/framework/capabilities/executive-strategy-alignment/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q078",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply cost, value, risk and technical debt trade-offs, and what should not be treated as a default?",
+    "preferred_answer": "Use it for budget reductions, cloud optimization, vendor consolidation, platform standardization, and debt remediation. It should not be treated as a default because across-the-board cuts can increase outages, cyber exposure, delivery delay, and future cost; technical debt can be exaggerated without business impact.",
+    "evaluation_points": [
+      "Focus on cost optimization",
+      "Focus on technical debt",
+      "Focus on risk trade-off"
+    ],
+    "resolution_title": "FinOps - Executive Strategy Alignment",
+    "resolution_url": "https://www.finops.org/framework/capabilities/executive-strategy-alignment/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q079",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate cost, value, risk and technical debt trade-offs?",
+    "preferred_answer": "Look for unit cost, service levels, incident and vulnerability trends, delivery friction, option value, debt exposure, and scenario-based savings estimates. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on cost optimization",
+      "Focus on technical debt",
+      "Focus on risk trade-off"
+    ],
+    "resolution_title": "FinOps - Executive Strategy Alignment",
+    "resolution_url": "https://www.finops.org/framework/capabilities/executive-strategy-alignment/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q080",
+    "role_slug": "executive",
+    "domain": "Financial Management, FinOps and Technology Economics",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for cost, value, risk and technical debt trade-offs, and how should they respond?",
+    "preferred_answer": "Key failure modes are that across-the-board cuts can increase outages, cyber exposure, delivery delay, and future cost; technical debt can be exaggerated without business impact. A strong executive response is to target waste and low-value demand first, protect critical capabilities, fund debt based on risk and economics, and monitor unintended consequences.",
+    "evaluation_points": [
+      "Focus on cost optimization",
+      "Focus on technical debt",
+      "Focus on risk trade-off"
+    ],
+    "resolution_title": "FinOps - Executive Strategy Alignment",
+    "resolution_url": "https://www.finops.org/framework/capabilities/executive-strategy-alignment/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q081",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is enterprise architecture as executive decision support, and why does it matter at executive level?",
+    "preferred_answer": "Enterprise architecture connects strategy, capabilities, information, applications, platforms, technologies, and transition choices to support coherent investment decisions. Use it for portfolio planning, modernization, data strategy, cloud adoption, M&A, and systemic risk.",
+    "evaluation_points": [
+      "Focus on enterprise architecture",
+      "Focus on decision support",
+      "Focus on coherence"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q082",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply enterprise architecture as executive decision support, and what should not be treated as a default?",
+    "preferred_answer": "Use it for portfolio planning, modernization, data strategy, cloud adoption, M&A, and systemic risk. It should not be treated as a default because architecture can become a document function detached from delivery, or a centralized approval gate that slows teams.",
+    "evaluation_points": [
+      "Focus on enterprise architecture",
+      "Focus on decision support",
+      "Focus on coherence"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q083",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate enterprise architecture as executive decision support?",
+    "preferred_answer": "Look for decision records, capability and dependency views, reusable standards, transition roadmaps, exception insights, and measurable reduction in duplication or risk. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on enterprise architecture",
+      "Focus on decision support",
+      "Focus on coherence"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q084",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for enterprise architecture as executive decision support, and how should they respond?",
+    "preferred_answer": "Key failure modes are that architecture can become a document function detached from delivery, or a centralized approval gate that slows teams. A strong executive response is to embed architects in strategy and delivery, focus on material decisions, provide paved roads, and measure outcomes rather than diagram volume.",
+    "evaluation_points": [
+      "Focus on enterprise architecture",
+      "Focus on decision support",
+      "Focus on coherence"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q085",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is legacy modernization strategy, and why does it matter at executive level?",
+    "preferred_answer": "Modernization should select retain, retire, replace, rehost, replatform, refactor, or rebuild options based on business value, risk, constraints, and transition feasibility. Use it when systems constrain growth, resilience, security, cost, compliance, or talent.",
+    "evaluation_points": [
+      "Focus on modernization",
+      "Focus on legacy",
+      "Focus on migration strategy"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q086",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply legacy modernization strategy, and what should not be treated as a default?",
+    "preferred_answer": "Use it when systems constrain growth, resilience, security, cost, compliance, or talent. It should not be treated as a default because a rewrite-first strategy can miss deadlines and hidden dependencies; lift-and-shift can preserve cost and operational problems.",
+    "evaluation_points": [
+      "Focus on modernization",
+      "Focus on legacy",
+      "Focus on migration strategy"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q087",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate legacy modernization strategy?",
+    "preferred_answer": "Look for application and dependency inventory, lifecycle and risk data, target capabilities, migration waves, data authority, rollback, benefits, and retirement evidence. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on modernization",
+      "Focus on legacy",
+      "Focus on migration strategy"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q088",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for legacy modernization strategy, and how should they respond?",
+    "preferred_answer": "Key failure modes are that a rewrite-first strategy can miss deadlines and hidden dependencies; lift-and-shift can preserve cost and operational problems. A strong executive response is to separate urgent risk reduction from structural change, sequence by dependencies, use incremental patterns, and fund decommissioning explicitly.",
+    "evaluation_points": [
+      "Focus on modernization",
+      "Focus on legacy",
+      "Focus on migration strategy"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q089",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is platform standardization versus team autonomy, and why does it matter at executive level?",
+    "preferred_answer": "Executives should standardize common, high-risk, or high-leverage capabilities while preserving domain autonomy inside clear interfaces and guardrails. Use platforms for identity, delivery, observability, data, integration, infrastructure, and developer workflows shared across teams.",
+    "evaluation_points": [
+      "Focus on platform engineering",
+      "Focus on standardization",
+      "Focus on autonomy"
+    ],
+    "resolution_title": "Team Topologies - Key Concepts",
+    "resolution_url": "https://teamtopologies.com/key-concepts-content",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q090",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply platform standardization versus team autonomy, and what should not be treated as a default?",
+    "preferred_answer": "Use platforms for identity, delivery, observability, data, integration, infrastructure, and developer workflows shared across teams. It should not be treated as a default because too many mandated tools create lock-in and poor fit; unlimited autonomy increases cognitive load, duplication, cost, and security variation.",
+    "evaluation_points": [
+      "Focus on platform engineering",
+      "Focus on standardization",
+      "Focus on autonomy"
+    ],
+    "resolution_title": "Team Topologies - Key Concepts",
+    "resolution_url": "https://teamtopologies.com/key-concepts-content",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q091",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate platform standardization versus team autonomy?",
+    "preferred_answer": "Look for platform adoption and satisfaction, time-to-first-value, service levels, exception rates, duplication, cognitive load, and measurable team outcomes. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on platform engineering",
+      "Focus on standardization",
+      "Focus on autonomy"
+    ],
+    "resolution_title": "Team Topologies - Key Concepts",
+    "resolution_url": "https://teamtopologies.com/key-concepts-content",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q092",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for platform standardization versus team autonomy, and how should they respond?",
+    "preferred_answer": "Key failure modes are that too many mandated tools create lock-in and poor fit; unlimited autonomy increases cognitive load, duplication, cost, and security variation. A strong executive response is to treat platforms as products, earn adoption, define minimum guardrails, allow bounded alternatives, and retire standards that do not create value.",
+    "evaluation_points": [
+      "Focus on platform engineering",
+      "Focus on standardization",
+      "Focus on autonomy"
+    ],
+    "resolution_title": "Team Topologies - Key Concepts",
+    "resolution_url": "https://teamtopologies.com/key-concepts-content",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q093",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is cloud, hybrid and workload placement strategy, and why does it matter at executive level?",
+    "preferred_answer": "Workload placement should consider business criticality, latency, data sovereignty, resilience, service fit, cost, skills, concentration risk, and exit needs. Use it before cloud migration, data center renewal, edge deployment, or provider concentration decisions.",
+    "evaluation_points": [
+      "Focus on cloud strategy",
+      "Focus on hybrid",
+      "Focus on workload placement"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q094",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply cloud, hybrid and workload placement strategy, and what should not be treated as a default?",
+    "preferred_answer": "Use it before cloud migration, data center renewal, edge deployment, or provider concentration decisions. It should not be treated as a default because cloud-first or multi-cloud slogans can replace workload evidence; superficial portability can add cost without credible exit capability.",
+    "evaluation_points": [
+      "Focus on cloud strategy",
+      "Focus on hybrid",
+      "Focus on workload placement"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q095",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate cloud, hybrid and workload placement strategy?",
+    "preferred_answer": "Look for placement criteria, workload assessments, dependency and data-flow maps, TCO, resilience tests, provider risk, and documented exceptions. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on cloud strategy",
+      "Focus on hybrid",
+      "Focus on workload placement"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q096",
+    "role_slug": "executive",
+    "domain": "Enterprise Architecture and Modernization Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for cloud, hybrid and workload placement strategy, and how should they respond?",
+    "preferred_answer": "Key failure modes are that cloud-first or multi-cloud slogans can replace workload evidence; superficial portability can add cost without credible exit capability. A strong executive response is to define decision criteria, use a small number of strategic patterns, prove critical constraints, and maintain tested exit or continuity options for material services.",
+    "evaluation_points": [
+      "Focus on cloud strategy",
+      "Focus on hybrid",
+      "Focus on workload placement"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q097",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is product operating model, and why does it matter at executive level?",
+    "preferred_answer": "A product operating model organizes persistent cross-functional teams around customer or business outcomes with discovery, delivery, operations, and lifecycle accountability. Use it where digital products and services require continuous learning and improvement.",
+    "evaluation_points": [
+      "Focus on product model",
+      "Focus on empowered teams",
+      "Focus on lifecycle"
+    ],
+    "resolution_title": "Evidence-Based Management Guide",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q098",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply product operating model, and what should not be treated as a default?",
+    "preferred_answer": "Use it where digital products and services require continuous learning and improvement. It should not be treated as a default because renaming projects as products without changing funding, authority, measures, and ownership creates ceremony without outcomes.",
+    "evaluation_points": [
+      "Focus on product model",
+      "Focus on empowered teams",
+      "Focus on lifecycle"
+    ],
+    "resolution_title": "Evidence-Based Management Guide",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q099",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate product operating model?",
+    "preferred_answer": "Look for clear product missions, empowered leaders, customer evidence, outcome metrics, technical health, lifecycle ownership, and reduced handoffs. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on product model",
+      "Focus on empowered teams",
+      "Focus on lifecycle"
+    ],
+    "resolution_title": "Evidence-Based Management Guide",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q100",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for product operating model, and how should they respond?",
+    "preferred_answer": "Key failure modes are that renaming projects as products without changing funding, authority, measures, and ownership creates ceremony without outcomes. A strong executive response is to change funding and governance with team design, connect product and platform work, and hold teams accountable for both value and reliability.",
+    "evaluation_points": [
+      "Focus on product model",
+      "Focus on empowered teams",
+      "Focus on lifecycle"
+    ],
+    "resolution_title": "Evidence-Based Management Guide",
+    "resolution_url": "https://www.scrum.org/resources/online-evidence-based-management-guide",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q101",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is platform engineering and internal developer platforms, and why does it matter at executive level?",
+    "preferred_answer": "Platform engineering provides reusable self-service capabilities, guardrails, and support that reduce cognitive load and improve secure delivery. Use it when many teams repeatedly solve infrastructure, CI/CD, observability, identity, or environment problems.",
+    "evaluation_points": [
+      "Focus on platform engineering",
+      "Focus on developer experience",
+      "Focus on self service"
+    ],
+    "resolution_title": "Team Topologies - Key Concepts",
+    "resolution_url": "https://teamtopologies.com/key-concepts-content",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q102",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply platform engineering and internal developer platforms, and what should not be treated as a default?",
+    "preferred_answer": "Use it when many teams repeatedly solve infrastructure, CI/CD, observability, identity, or environment problems. It should not be treated as a default because building a platform without user research creates a costly internal mandate; broad scope can turn the platform team into a ticket queue.",
+    "evaluation_points": [
+      "Focus on platform engineering",
+      "Focus on developer experience",
+      "Focus on self service"
+    ],
+    "resolution_title": "Team Topologies - Key Concepts",
+    "resolution_url": "https://teamtopologies.com/key-concepts-content",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q103",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate platform engineering and internal developer platforms?",
+    "preferred_answer": "Look for adoption, developer satisfaction, lead time, failure rates, support demand, golden-path coverage, service levels, and platform unit cost. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on platform engineering",
+      "Focus on developer experience",
+      "Focus on self service"
+    ],
+    "resolution_title": "Team Topologies - Key Concepts",
+    "resolution_url": "https://teamtopologies.com/key-concepts-content",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q104",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for platform engineering and internal developer platforms, and how should they respond?",
+    "preferred_answer": "Key failure modes are that building a platform without user research creates a costly internal mandate; broad scope can turn the platform team into a ticket queue. A strong executive response is to define platform users and jobs, start with high-friction journeys, publish interfaces and SLOs, and fund the platform as a product.",
+    "evaluation_points": [
+      "Focus on platform engineering",
+      "Focus on developer experience",
+      "Focus on self service"
+    ],
+    "resolution_title": "Team Topologies - Key Concepts",
+    "resolution_url": "https://teamtopologies.com/key-concepts-content",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q105",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is engineering performance measurement, and why does it matter at executive level?",
+    "preferred_answer": "Executive engineering measures should balance throughput, stability, quality, customer outcomes, security, developer experience, and system context. Use DORA measures and complementary product or workforce indicators for continuous improvement at the service or team level.",
+    "evaluation_points": [
+      "Focus on DORA",
+      "Focus on engineering metrics",
+      "Focus on continuous improvement"
+    ],
+    "resolution_title": "DORA - Software Delivery Performance Metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q106",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply engineering performance measurement, and what should not be treated as a default?",
+    "preferred_answer": "Use DORA measures and complementary product or workforce indicators for continuous improvement at the service or team level. It should not be treated as a default because ranking individuals or unlike teams with a single metric drives gaming; speed targets without stability or value can increase rework.",
+    "evaluation_points": [
+      "Focus on DORA",
+      "Focus on engineering metrics",
+      "Focus on continuous improvement"
+    ],
+    "resolution_title": "DORA - Software Delivery Performance Metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q107",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate engineering performance measurement?",
+    "preferred_answer": "Look for trends in the current five DORA metrics, product outcomes, reliability, quality, security, developer experience, and contextual qualitative evidence. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on DORA",
+      "Focus on engineering metrics",
+      "Focus on continuous improvement"
+    ],
+    "resolution_title": "DORA - Software Delivery Performance Metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q108",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for engineering performance measurement, and how should they respond?",
+    "preferred_answer": "Key failure modes are that ranking individuals or unlike teams with a single metric drives gaming; speed targets without stability or value can increase rework. A strong executive response is to measure systems rather than individuals, use metrics for learning, segment by service context, and pair improvement experiments with outcome checks.",
+    "evaluation_points": [
+      "Focus on DORA",
+      "Focus on engineering metrics",
+      "Focus on continuous improvement"
+    ],
+    "resolution_title": "DORA - Software Delivery Performance Metrics",
+    "resolution_url": "https://dora.dev/guides/dora-metrics/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q109",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is secure and high-quality software delivery, and why does it matter at executive level?",
+    "preferred_answer": "Executive leadership should make quality and security part of product economics through secure defaults, automated controls, testing, provenance, and accountable ownership. Use it to govern software development, open-source use, CI/CD, AI-assisted coding, and software supply chains.",
+    "evaluation_points": [
+      "Focus on secure SDLC",
+      "Focus on quality",
+      "Focus on software supply chain"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q110",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply secure and high-quality software delivery, and what should not be treated as a default?",
+    "preferred_answer": "Use it to govern software development, open-source use, CI/CD, AI-assisted coding, and software supply chains. It should not be treated as a default because late approval gates create delays without reducing root causes; tool adoption alone does not create secure engineering behavior.",
+    "evaluation_points": [
+      "Focus on secure SDLC",
+      "Focus on quality",
+      "Focus on software supply chain"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q111",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate secure and high-quality software delivery?",
+    "preferred_answer": "Look for defect escape, vulnerabilities, patch latency, provenance, control automation, change failure, recovery, customer impact, and independent validation. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on secure SDLC",
+      "Focus on quality",
+      "Focus on software supply chain"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q112",
+    "role_slug": "executive",
+    "domain": "Product, Platform and Engineering Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for secure and high-quality software delivery, and how should they respond?",
+    "preferred_answer": "Key failure modes are that late approval gates create delays without reducing root causes; tool adoption alone does not create secure engineering behavior. A strong executive response is to shift controls into platforms and workflows, prioritize systemic defect removal, secure the supply chain, and align incentives with customer security outcomes.",
+    "evaluation_points": [
+      "Focus on secure SDLC",
+      "Focus on quality",
+      "Focus on software supply chain"
+    ],
+    "resolution_title": "NIST SP 800-218 - Secure Software Development Framework",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q113",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is enterprise data strategy, and why does it matter at executive level?",
+    "preferred_answer": "A data strategy defines how trusted, governed, accessible, interoperable, and economically sustainable data will support operations, decisions, products, and obligations. Use it to align data domains, platforms, analytics, AI, privacy, quality, and skills with business priorities.",
+    "evaluation_points": [
+      "Focus on data strategy",
+      "Focus on data products",
+      "Focus on governance"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q114",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply enterprise data strategy, and what should not be treated as a default?",
+    "preferred_answer": "Use it to align data domains, platforms, analytics, AI, privacy, quality, and skills with business priorities. It should not be treated as a default because centralizing all data can create bottlenecks; decentralization without contracts and governance creates inconsistent definitions and duplicated risk.",
+    "evaluation_points": [
+      "Focus on data strategy",
+      "Focus on data products",
+      "Focus on governance"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q115",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate enterprise data strategy?",
+    "preferred_answer": "Look for prioritized data products, ownership, quality and lineage measures, access lead time, platform economics, privacy controls, adoption, and business outcomes. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on data strategy",
+      "Focus on data products",
+      "Focus on governance"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q116",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for enterprise data strategy, and how should they respond?",
+    "preferred_answer": "Key failure modes are that centralizing all data can create bottlenecks; decentralization without contracts and governance creates inconsistent definitions and duplicated risk. A strong executive response is to organize around domains and use cases, establish common standards and platforms, assign owners, and fund quality at the source.",
+    "evaluation_points": [
+      "Focus on data strategy",
+      "Focus on data products",
+      "Focus on governance"
+    ],
+    "resolution_title": "Google Cloud Well-Architected Framework",
+    "resolution_url": "https://docs.cloud.google.com/architecture/framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q117",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is data governance and accountable ownership, and why does it matter at executive level?",
+    "preferred_answer": "Data governance assigns decision rights and accountability for definitions, quality, access, sharing, retention, privacy, and lifecycle across domains. Use it where data is shared, regulated, monetized, used for AI, or critical to financial and operational decisions.",
+    "evaluation_points": [
+      "Focus on data governance",
+      "Focus on ownership",
+      "Focus on data quality"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q118",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply data governance and accountable ownership, and what should not be treated as a default?",
+    "preferred_answer": "Use it where data is shared, regulated, monetized, used for AI, or critical to financial and operational decisions. It should not be treated as a default because governance councils without operational owners produce policies without remediation; ownership titles without authority cannot fix source problems.",
+    "evaluation_points": [
+      "Focus on data governance",
+      "Focus on ownership",
+      "Focus on data quality"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q119",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate data governance and accountable ownership?",
+    "preferred_answer": "Look for named data owners and stewards, critical-data definitions, quality thresholds, lineage, access decisions, issue resolution, and audit evidence. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on data governance",
+      "Focus on ownership",
+      "Focus on data quality"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q120",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for data governance and accountable ownership, and how should they respond?",
+    "preferred_answer": "Key failure modes are that governance councils without operational owners produce policies without remediation; ownership titles without authority cannot fix source problems. A strong executive response is to tie ownership to business processes, embed controls in platforms, prioritize critical data, and report unresolved quality or access risk to accountable executives.",
+    "evaluation_points": [
+      "Focus on data governance",
+      "Focus on ownership",
+      "Focus on data quality"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q121",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is AI portfolio and responsible AI governance, and why does it matter at executive level?",
+    "preferred_answer": "AI governance should connect use-case value, risk classification, data rights, evaluation, human oversight, security, monitoring, accountability, and regulatory obligations across the lifecycle. Use a tiered process for internally built, vendor, embedded, and general-purpose AI systems.",
+    "evaluation_points": [
+      "Focus on AI governance",
+      "Focus on AI portfolio",
+      "Focus on responsible AI"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q122",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply AI portfolio and responsible AI governance, and what should not be treated as a default?",
+    "preferred_answer": "Use a tiered process for internally built, vendor, embedded, and general-purpose AI systems. It should not be treated as a default because innovation can be blocked by one-size-fits-all review, while uncontrolled pilots can expose sensitive data, bias decisions, or create unowned model risk.",
+    "evaluation_points": [
+      "Focus on AI governance",
+      "Focus on AI portfolio",
+      "Focus on responsible AI"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q123",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate AI portfolio and responsible AI governance?",
+    "preferred_answer": "Look for an AI inventory, use-case owners, risk tiers, evaluation evidence, approvals, incident paths, monitoring, vendor controls, and retirement decisions. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on AI governance",
+      "Focus on AI portfolio",
+      "Focus on responsible AI"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q124",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for AI portfolio and responsible AI governance, and how should they respond?",
+    "preferred_answer": "Key failure modes are that innovation can be blocked by one-size-fits-all review, while uncontrolled pilots can expose sensitive data, bias decisions, or create unowned model risk. A strong executive response is to use proportional controls, approved sandboxes, reusable evaluation and guardrail services, and executive review for material or high-risk uses.",
+    "evaluation_points": [
+      "Focus on AI governance",
+      "Focus on AI portfolio",
+      "Focus on responsible AI"
+    ],
+    "resolution_title": "NIST AI Risk Management Framework",
+    "resolution_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q125",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is generative AI adoption and risk, and why does it matter at executive level?",
+    "preferred_answer": "Generative AI adoption requires portfolio discipline around task suitability, data exposure, output evaluation, human review, model and tool permissions, cost, and workforce impact. Use it for coding, content, service, analytics, knowledge, and workflow augmentation after controlled experimentation.",
+    "evaluation_points": [
+      "Focus on generative AI",
+      "Focus on AI adoption",
+      "Focus on AI risk"
+    ],
+    "resolution_title": "NIST AI RMF - Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q126",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply generative AI adoption and risk, and what should not be treated as a default?",
+    "preferred_answer": "Use it for coding, content, service, analytics, knowledge, and workflow augmentation after controlled experimentation. It should not be treated as a default because hallucination, prompt injection, sensitive-data leakage, automation bias, intellectual-property risk, and uncontrolled inference costs can scale quickly.",
+    "evaluation_points": [
+      "Focus on generative AI",
+      "Focus on AI adoption",
+      "Focus on AI risk"
+    ],
+    "resolution_title": "NIST AI RMF - Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q127",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate generative AI adoption and risk?",
+    "preferred_answer": "Look for task-level baselines, quality and safety evaluations, data controls, tool isolation, human override, cost per outcome, adoption, incidents, and vendor change monitoring. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on generative AI",
+      "Focus on AI adoption",
+      "Focus on AI risk"
+    ],
+    "resolution_title": "NIST AI RMF - Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q128",
+    "role_slug": "executive",
+    "domain": "Data, Analytics and AI Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for generative AI adoption and risk, and how should they respond?",
+    "preferred_answer": "Key failure modes are that hallucination, prompt injection, sensitive-data leakage, automation bias, intellectual-property risk, and uncontrolled inference costs can scale quickly. A strong executive response is to begin with bounded tasks, define unacceptable failures, preserve human accountability, monitor real use, and scale only when value and risk evidence support it.",
+    "evaluation_points": [
+      "Focus on generative AI",
+      "Focus on AI adoption",
+      "Focus on AI risk"
+    ],
+    "resolution_title": "NIST AI RMF - Generative AI Profile",
+    "resolution_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q129",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is enterprise cybersecurity governance, and why does it matter at executive level?",
+    "preferred_answer": "Cybersecurity governance aligns risk appetite, roles, investment, policy, assurance, incident oversight, and business strategy across the enterprise. Use CSF 2.0 governance outcomes to integrate cyber risk with enterprise risk and legal obligations.",
+    "evaluation_points": [
+      "Focus on cyber governance",
+      "Focus on risk appetite",
+      "Focus on CSF"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q130",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply enterprise cybersecurity governance, and what should not be treated as a default?",
+    "preferred_answer": "Use CSF 2.0 governance outcomes to integrate cyber risk with enterprise risk and legal obligations. It should not be treated as a default because security isolated in the CISO function can miss product and business accountability; maturity scores can create false assurance without exposure data.",
+    "evaluation_points": [
+      "Focus on cyber governance",
+      "Focus on risk appetite",
+      "Focus on CSF"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q131",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate enterprise cybersecurity governance?",
+    "preferred_answer": "Look for material risk scenarios, risk appetite, control and exposure evidence, incident trends, third-party risk, remediation age, independent assurance, and board decisions. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on cyber governance",
+      "Focus on risk appetite",
+      "Focus on CSF"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q132",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for enterprise cybersecurity governance, and how should they respond?",
+    "preferred_answer": "Key failure modes are that security isolated in the CISO function can miss product and business accountability; maturity scores can create false assurance without exposure data. A strong executive response is to assign business ownership, prioritize by impact and exposure, integrate cyber into strategy and portfolio decisions, and report uncertainty transparently.",
+    "evaluation_points": [
+      "Focus on cyber governance",
+      "Focus on risk appetite",
+      "Focus on CSF"
+    ],
+    "resolution_title": "NIST Cybersecurity Framework 2.0",
+    "resolution_url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q133",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is zero trust and identity-centered security, and why does it matter at executive level?",
+    "preferred_answer": "Zero trust treats access as a continuously evaluated decision based on identity, device, workload, data, context, and least privilege rather than network location. Use it as an architecture and transformation strategy for workforce, cloud, applications, APIs, and third parties.",
+    "evaluation_points": [
+      "Focus on zero trust",
+      "Focus on identity",
+      "Focus on least privilege"
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q134",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply zero trust and identity-centered security, and what should not be treated as a default?",
+    "preferred_answer": "Use it as an architecture and transformation strategy for workforce, cloud, applications, APIs, and third parties. It should not be treated as a default because buying a zero-trust product or removing perimeters without identity, asset, policy, and telemetry foundations can increase complexity and gaps.",
+    "evaluation_points": [
+      "Focus on zero trust",
+      "Focus on identity",
+      "Focus on least privilege"
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q135",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate zero trust and identity-centered security?",
+    "preferred_answer": "Look for strong identity coverage, short-lived credentials, policy enforcement, privileged access reduction, segmentation, device posture, telemetry, and tested denial or revocation. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on zero trust",
+      "Focus on identity",
+      "Focus on least privilege"
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q136",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for zero trust and identity-centered security, and how should they respond?",
+    "preferred_answer": "Key failure modes are that buying a zero-trust product or removing perimeters without identity, asset, policy, and telemetry foundations can increase complexity and gaps. A strong executive response is to prioritize critical resources, modernize identity and asset data, phase policy enforcement, measure access risk, and avoid big-bang programs.",
+    "evaluation_points": [
+      "Focus on zero trust",
+      "Focus on identity",
+      "Focus on least privilege"
+    ],
+    "resolution_title": "NIST SP 800-207 - Zero Trust Architecture",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q137",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is privacy by design and data protection governance, and why does it matter at executive level?",
+    "preferred_answer": "Privacy governance embeds purpose limitation, minimization, lawful processing, transparency, rights, retention, and protection into products and operations. Use it for customer data, workforce systems, analytics, AI, vendors, cross-border transfers, and new digital services.",
+    "evaluation_points": [
+      "Focus on privacy by design",
+      "Focus on data protection",
+      "Focus on DPIA"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q138",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply privacy by design and data protection governance, and what should not be treated as a default?",
+    "preferred_answer": "Use it for customer data, workforce systems, analytics, AI, vendors, cross-border transfers, and new digital services. It should not be treated as a default because consent can be treated as a universal solution; data inventories can become stale and privacy reviews can occur after design choices are fixed.",
+    "evaluation_points": [
+      "Focus on privacy by design",
+      "Focus on data protection",
+      "Focus on DPIA"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q139",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate privacy by design and data protection governance?",
+    "preferred_answer": "Look for processing inventories, purpose and legal basis, data-flow maps, impact assessments, rights performance, deletion evidence, incidents, and vendor oversight. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on privacy by design",
+      "Focus on data protection",
+      "Focus on DPIA"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q140",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for privacy by design and data protection governance, and how should they respond?",
+    "preferred_answer": "Key failure modes are that consent can be treated as a universal solution; data inventories can become stale and privacy reviews can occur after design choices are fixed. A strong executive response is to minimize collection, define retention, use privacy-enhancing patterns, engage privacy early, and make product and business owners accountable.",
+    "evaluation_points": [
+      "Focus on privacy by design",
+      "Focus on data protection",
+      "Focus on DPIA"
+    ],
+    "resolution_title": "NIST Privacy Framework",
+    "resolution_url": "https://www.nist.gov/privacy-framework",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q141",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is secure by design and customer security outcomes, and why does it matter at executive level?",
+    "preferred_answer": "Secure by design makes manufacturers and service providers responsible for reducing exploitable defects, safe defaults, transparent support, and customer security outcomes. Use it in product strategy, architecture, engineering incentives, procurement, and lifecycle support.",
+    "evaluation_points": [
+      "Focus on secure by design",
+      "Focus on product security",
+      "Focus on digital trust"
+    ],
+    "resolution_title": "CISA - Secure by Design",
+    "resolution_url": "https://www.cisa.gov/securebydesign",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q142",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply secure by design and customer security outcomes, and what should not be treated as a default?",
+    "preferred_answer": "Use it in product strategy, architecture, engineering incentives, procurement, and lifecycle support. It should not be treated as a default because passing security burden to customers creates externalized risk; feature deadlines can repeatedly override systemic defect removal.",
+    "evaluation_points": [
+      "Focus on secure by design",
+      "Focus on product security",
+      "Focus on digital trust"
+    ],
+    "resolution_title": "CISA - Secure by Design",
+    "resolution_url": "https://www.cisa.gov/securebydesign",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q143",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate secure by design and customer security outcomes?",
+    "preferred_answer": "Look for safe defaults, vulnerability classes eliminated, secure configuration adoption, patch and disclosure performance, support lifecycle, and customer-impact evidence. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on secure by design",
+      "Focus on product security",
+      "Focus on digital trust"
+    ],
+    "resolution_title": "CISA - Secure by Design",
+    "resolution_url": "https://www.cisa.gov/securebydesign",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q144",
+    "role_slug": "executive",
+    "domain": "Cybersecurity, Privacy and Digital Trust",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for secure by design and customer security outcomes, and how should they respond?",
+    "preferred_answer": "Key failure modes are that passing security burden to customers creates externalized risk; feature deadlines can repeatedly override systemic defect removal. A strong executive response is to set executive product-security objectives, fund root-cause engineering, build security into platforms, and include security outcomes in product decisions.",
+    "evaluation_points": [
+      "Focus on secure by design",
+      "Focus on product security",
+      "Focus on digital trust"
+    ],
+    "resolution_title": "CISA - Secure by Design",
+    "resolution_url": "https://www.cisa.gov/securebydesign",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q145",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is service level objectives and error budgets, and why does it matter at executive level?",
+    "preferred_answer": "SLOs define user-relevant reliability targets, while error budgets make the trade-off between change velocity and reliability explicit. Use them for critical digital services with measurable customer journeys and accountable service owners.",
+    "evaluation_points": [
+      "Focus on SLO",
+      "Focus on error budget",
+      "Focus on reliability"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering Book",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q146",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply service level objectives and error budgets, and what should not be treated as a default?",
+    "preferred_answer": "Use them for critical digital services with measurable customer journeys and accountable service owners. It should not be treated as a default because availability averages can hide severe user harm; unrealistic targets waste cost, and error budgets can be used mechanically without business judgment.",
+    "evaluation_points": [
+      "Focus on SLO",
+      "Focus on error budget",
+      "Focus on reliability"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering Book",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q147",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate service level objectives and error budgets?",
+    "preferred_answer": "Look for sLIs tied to user experience, target rationale, budget consumption, incident and dependency trends, release decisions, and business review. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on SLO",
+      "Focus on error budget",
+      "Focus on reliability"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering Book",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q148",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for service level objectives and error budgets, and how should they respond?",
+    "preferred_answer": "Key failure modes are that availability averages can hide severe user harm; unrealistic targets waste cost, and error budgets can be used mechanically without business judgment. A strong executive response is to start with critical journeys, set achievable targets from business impact, improve measurement, and use budgets as a decision input rather than punishment.",
+    "evaluation_points": [
+      "Focus on SLO",
+      "Focus on error budget",
+      "Focus on reliability"
+    ],
+    "resolution_title": "Google - Site Reliability Engineering Book",
+    "resolution_url": "https://sre.google/sre-book/table-of-contents/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q149",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is major incident and crisis leadership, and why does it matter at executive level?",
+    "preferred_answer": "Major incident leadership establishes command, protects people and customers, restores service, preserves evidence, communicates clearly, and separates response from later accountability. Use predefined roles and executive thresholds for outages, cyber events, data integrity failures, and vendor incidents.",
+    "evaluation_points": [
+      "Focus on major incident",
+      "Focus on crisis leadership",
+      "Focus on incident command"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q150",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply major incident and crisis leadership, and what should not be treated as a default?",
+    "preferred_answer": "Use predefined roles and executive thresholds for outages, cyber events, data integrity failures, and vendor incidents. It should not be treated as a default because executives can disrupt response by demanding constant detail, making premature promises, or bypassing the incident commander.",
+    "evaluation_points": [
+      "Focus on major incident",
+      "Focus on crisis leadership",
+      "Focus on incident command"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q151",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate major incident and crisis leadership?",
+    "preferred_answer": "Look for fast detection and mobilization, clear command, decision logs, stakeholder updates, recovery verification, customer remediation, and completed learning actions. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on major incident",
+      "Focus on crisis leadership",
+      "Focus on incident command"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q152",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for major incident and crisis leadership, and how should they respond?",
+    "preferred_answer": "Key failure modes are that executives can disrupt response by demanding constant detail, making premature promises, or bypassing the incident commander. A strong executive response is to empower incident command, provide business priorities, coordinate legal and disclosure decisions, communicate uncertainty, and require blameless systemic follow-up.",
+    "evaluation_points": [
+      "Focus on major incident",
+      "Focus on crisis leadership",
+      "Focus on incident command"
+    ],
+    "resolution_title": "NIST SP 800-61 Rev. 3 - Incident Response",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q153",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is operational resilience and disaster recovery, and why does it matter at executive level?",
+    "preferred_answer": "Operational resilience ensures important services remain within impact tolerance through prevention, response, recovery, adaptation, and tested dependencies. Use it for critical business services, regulated operations, cloud concentration, cyber recovery, and supply-chain disruption.",
+    "evaluation_points": [
+      "Focus on operational resilience",
+      "Focus on disaster recovery",
+      "Focus on business continuity"
+    ],
+    "resolution_title": "ISO 22301 - Business Continuity Management Systems",
+    "resolution_url": "https://www.iso.org/standard/75106.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q154",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply operational resilience and disaster recovery, and what should not be treated as a default?",
+    "preferred_answer": "Use it for critical business services, regulated operations, cloud concentration, cyber recovery, and supply-chain disruption. It should not be treated as a default because documented plans can fail if identity, people, data, vendors, facilities, or communications are not tested together.",
+    "evaluation_points": [
+      "Focus on operational resilience",
+      "Focus on disaster recovery",
+      "Focus on business continuity"
+    ],
+    "resolution_title": "ISO 22301 - Business Continuity Management Systems",
+    "resolution_url": "https://www.iso.org/standard/75106.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q155",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate operational resilience and disaster recovery?",
+    "preferred_answer": "Look for business service maps, impact tolerances, RTO and RPO, dependency tiers, recovery evidence, scenario exercises, backup integrity, and remediation tracking. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on operational resilience",
+      "Focus on disaster recovery",
+      "Focus on business continuity"
+    ],
+    "resolution_title": "ISO 22301 - Business Continuity Management Systems",
+    "resolution_url": "https://www.iso.org/standard/75106.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q156",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for operational resilience and disaster recovery, and how should they respond?",
+    "preferred_answer": "Key failure modes are that documented plans can fail if identity, people, data, vendors, facilities, or communications are not tested together. A strong executive response is to design for graceful degradation, test realistic scenarios including clean recovery, involve business leaders, and fund gaps based on impact.",
+    "evaluation_points": [
+      "Focus on operational resilience",
+      "Focus on disaster recovery",
+      "Focus on business continuity"
+    ],
+    "resolution_title": "ISO 22301 - Business Continuity Management Systems",
+    "resolution_url": "https://www.iso.org/standard/75106.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q157",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is IT service management and continual improvement, and why does it matter at executive level?",
+    "preferred_answer": "ITSM provides lifecycle practices for services, incidents, changes, requests, knowledge, assets, suppliers, and continual improvement linked to value and risk. Use it to create reliable, transparent operations across internal teams and providers without turning practices into bureaucracy.",
+    "evaluation_points": [
+      "Focus on ITSM",
+      "Focus on service management",
+      "Focus on continual improvement"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT Service Management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q158",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply IT service management and continual improvement, and what should not be treated as a default?",
+    "preferred_answer": "Use it to create reliable, transparent operations across internal teams and providers without turning practices into bureaucracy. It should not be treated as a default because process compliance can replace outcomes; excessive change control or ticket handoffs can slow delivery and obscure service ownership.",
+    "evaluation_points": [
+      "Focus on ITSM",
+      "Focus on service management",
+      "Focus on continual improvement"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT Service Management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q159",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate IT service management and continual improvement?",
+    "preferred_answer": "Look for service ownership, customer outcomes, flow and resolution time, change success, knowledge use, repeat incidents, automation, and improvement results. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on ITSM",
+      "Focus on service management",
+      "Focus on continual improvement"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT Service Management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q160",
+    "role_slug": "executive",
+    "domain": "Reliability, Operations and Service Management",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for IT service management and continual improvement, and how should they respond?",
+    "preferred_answer": "Key failure modes are that process compliance can replace outcomes; excessive change control or ticket handoffs can slow delivery and obscure service ownership. A strong executive response is to tailor controls by risk, automate routine work, connect ITSM with DevOps and SRE, and measure customer and service outcomes.",
+    "evaluation_points": [
+      "Focus on ITSM",
+      "Focus on service management",
+      "Focus on continual improvement"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT Service Management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q161",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technology organization design and team topology, and why does it matter at executive level?",
+    "preferred_answer": "Organization design should align teams, interaction modes, cognitive load, platforms, and decision rights with value streams and system architecture. Use it when scaling, reorganizing, modernizing, integrating acquisitions, or addressing slow flow and unclear ownership.",
+    "evaluation_points": [
+      "Focus on organization design",
+      "Focus on team topology",
+      "Focus on cognitive load"
+    ],
+    "resolution_title": "Team Topologies - Key Concepts",
+    "resolution_url": "https://teamtopologies.com/key-concepts-content",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q162",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply technology organization design and team topology, and what should not be treated as a default?",
+    "preferred_answer": "Use it when scaling, reorganizing, modernizing, integrating acquisitions, or addressing slow flow and unclear ownership. It should not be treated as a default because reorganizations based on reporting ratios can leave dependencies unchanged; frequent restructuring creates instability and talent loss.",
+    "evaluation_points": [
+      "Focus on organization design",
+      "Focus on team topology",
+      "Focus on cognitive load"
+    ],
+    "resolution_title": "Team Topologies - Key Concepts",
+    "resolution_url": "https://teamtopologies.com/key-concepts-content",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q163",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate technology organization design and team topology?",
+    "preferred_answer": "Look for flow of work, dependency and handoff data, ownership clarity, team cognitive load, platform support, service outcomes, and employee evidence. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on organization design",
+      "Focus on team topology",
+      "Focus on cognitive load"
+    ],
+    "resolution_title": "Team Topologies - Key Concepts",
+    "resolution_url": "https://teamtopologies.com/key-concepts-content",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q164",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for technology organization design and team topology, and how should they respond?",
+    "preferred_answer": "Key failure modes are that reorganizations based on reporting ratios can leave dependencies unchanged; frequent restructuring creates instability and talent loss. A strong executive response is to design around stable missions and boundaries, change enabling systems with structure, and evaluate results before another reorganization.",
+    "evaluation_points": [
+      "Focus on organization design",
+      "Focus on team topology",
+      "Focus on cognitive load"
+    ],
+    "resolution_title": "Team Topologies - Key Concepts",
+    "resolution_url": "https://teamtopologies.com/key-concepts-content",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q165",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technology workforce and skills strategy, and why does it matter at executive level?",
+    "preferred_answer": "A workforce strategy forecasts critical capabilities, capacity, location, sourcing, succession, learning, and role evolution under the technology roadmap. Use it for cloud, cyber, data, AI, architecture, product, engineering, operations, and leadership pipelines.",
+    "evaluation_points": [
+      "Focus on workforce strategy",
+      "Focus on skills",
+      "Focus on succession"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q166",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply technology workforce and skills strategy, and what should not be treated as a default?",
+    "preferred_answer": "Use it for cloud, cyber, data, AI, architecture, product, engineering, operations, and leadership pipelines. It should not be treated as a default because headcount plans can ignore skill depth and productivity systems; overreliance on contractors can hollow out critical knowledge.",
+    "evaluation_points": [
+      "Focus on workforce strategy",
+      "Focus on skills",
+      "Focus on succession"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q167",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate technology workforce and skills strategy?",
+    "preferred_answer": "Look for capability inventories, proficiency evidence, demand scenarios, time-to-productivity, attrition, succession, internal mobility, learning application, and sourcing risk. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on workforce strategy",
+      "Focus on skills",
+      "Focus on succession"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q168",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for technology workforce and skills strategy, and how should they respond?",
+    "preferred_answer": "Key failure modes are that headcount plans can ignore skill depth and productivity systems; overreliance on contractors can hollow out critical knowledge. A strong executive response is to prioritize scarce strategic skills, build learning into work, preserve critical knowledge, use partners deliberately, and measure capability outcomes.",
+    "evaluation_points": [
+      "Focus on workforce strategy",
+      "Focus on skills",
+      "Focus on succession"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q169",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is leadership culture and psychological safety, and why does it matter at executive level?",
+    "preferred_answer": "Technology leaders shape whether teams raise risks, learn from failure, challenge decisions, collaborate, and act ethically under pressure. Use explicit leadership behaviors and mechanisms in incidents, delivery reviews, architecture decisions, and performance management.",
+    "evaluation_points": [
+      "Focus on leadership culture",
+      "Focus on psychological safety",
+      "Focus on ethics"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q170",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply leadership culture and psychological safety, and what should not be treated as a default?",
+    "preferred_answer": "Use explicit leadership behaviors and mechanisms in incidents, delivery reviews, architecture decisions, and performance management. It should not be treated as a default because blameless language without accountability can become superficial; fear-driven delivery hides defects, bad news, and unrealistic commitments.",
+    "evaluation_points": [
+      "Focus on leadership culture",
+      "Focus on psychological safety",
+      "Focus on ethics"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q171",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate leadership culture and psychological safety?",
+    "preferred_answer": "Look for employee and incident evidence, early risk escalation, postmortem quality, speak-up channels, cross-team cooperation, ethical issue handling, and retention. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on leadership culture",
+      "Focus on psychological safety",
+      "Focus on ethics"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q172",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for leadership culture and psychological safety, and how should they respond?",
+    "preferred_answer": "Key failure modes are that blameless language without accountability can become superficial; fear-driven delivery hides defects, bad news, and unrealistic commitments. A strong executive response is to model curiosity and candor, distinguish accountability from blame, reward early escalation, and act consistently when values conflict with deadlines.",
+    "evaluation_points": [
+      "Focus on leadership culture",
+      "Focus on psychological safety",
+      "Focus on ethics"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q173",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is performance, incentives and executive succession, and why does it matter at executive level?",
+    "preferred_answer": "Performance systems should reinforce customer value, reliability, security, collaboration, learning, and long-term capability rather than local output alone. Use balanced expectations for executives, product leaders, engineers, operations, security, data, and platform teams.",
+    "evaluation_points": [
+      "Focus on performance management",
+      "Focus on incentives",
+      "Focus on succession"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q174",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply performance, incentives and executive succession, and what should not be treated as a default?",
+    "preferred_answer": "Use balanced expectations for executives, product leaders, engineers, operations, security, data, and platform teams. It should not be treated as a default because individual utilization, feature counts, or budget underspend can damage quality, cooperation, and future capacity; weak succession creates key-person risk.",
+    "evaluation_points": [
+      "Focus on performance management",
+      "Focus on incentives",
+      "Focus on succession"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q175",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate performance, incentives and executive succession?",
+    "preferred_answer": "Look for balanced objectives, team and enterprise outcomes, behavior evidence, skill growth, succession coverage, leadership bench strength, and regretted attrition. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on performance management",
+      "Focus on incentives",
+      "Focus on succession"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q176",
+    "role_slug": "executive",
+    "domain": "Talent, Organization and Leadership Culture",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for performance, incentives and executive succession, and how should they respond?",
+    "preferred_answer": "Key failure modes are that individual utilization, feature counts, or budget underspend can damage quality, cooperation, and future capacity; weak succession creates key-person risk. A strong executive response is to remove conflicting incentives, calibrate across functions, invest in successors, and assess leaders on both outcomes and how they achieve them.",
+    "evaluation_points": [
+      "Focus on performance management",
+      "Focus on incentives",
+      "Focus on succession"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q177",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technology transformation thesis, and why does it matter at executive level?",
+    "preferred_answer": "A transformation thesis explains the business problem, target operating capabilities, structural changes, value logic, risks, and why incremental improvement alone is insufficient. Use it before launching enterprise-wide cloud, data, ERP, product, AI, or operating-model transformations.",
+    "evaluation_points": [
+      "Focus on transformation",
+      "Focus on business case",
+      "Focus on target state"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q178",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply technology transformation thesis, and what should not be treated as a default?",
+    "preferred_answer": "Use it before launching enterprise-wide cloud, data, ERP, product, AI, or operating-model transformations. It should not be treated as a default because transformation branding can bundle unrelated initiatives, inflate benefits, and postpone hard decisions about process, ownership, and retirement.",
+    "evaluation_points": [
+      "Focus on transformation",
+      "Focus on business case",
+      "Focus on target state"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q179",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate technology transformation thesis?",
+    "preferred_answer": "Look for clear problem evidence, target outcomes, scope boundaries, capability and behavior changes, economic case, dependencies, and accountable leadership. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on transformation",
+      "Focus on business case",
+      "Focus on target state"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q180",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for technology transformation thesis, and how should they respond?",
+    "preferred_answer": "Key failure modes are that transformation branding can bundle unrelated initiatives, inflate benefits, and postpone hard decisions about process, ownership, and retirement. A strong executive response is to make choices explicit, separate enabling foundations from business change, define what stops, and validate the thesis before scaling.",
+    "evaluation_points": [
+      "Focus on transformation",
+      "Focus on business case",
+      "Focus on target state"
+    ],
+    "resolution_title": "Microsoft Cloud Adoption Framework for Azure",
+    "resolution_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q181",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is change adoption and business readiness, and why does it matter at executive level?",
+    "preferred_answer": "Technology value is realized when people, processes, policies, data, incentives, and customer behavior adopt the new capability. Use structured readiness and adoption planning for ERP, CRM, workflow, data, AI, security, and service changes.",
+    "evaluation_points": [
+      "Focus on change management",
+      "Focus on adoption",
+      "Focus on readiness"
+    ],
+    "resolution_title": "PMI - PMBOK Guide and Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q182",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply change adoption and business readiness, and what should not be treated as a default?",
+    "preferred_answer": "Use structured readiness and adoption planning for ERP, CRM, workflow, data, AI, security, and service changes. It should not be treated as a default because training-only approaches ignore incentives and process ownership; adoption can be claimed from login counts without outcome change.",
+    "evaluation_points": [
+      "Focus on change management",
+      "Focus on adoption",
+      "Focus on readiness"
+    ],
+    "resolution_title": "PMI - PMBOK Guide and Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q183",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate change adoption and business readiness?",
+    "preferred_answer": "Look for stakeholder impacts, readiness, role and process changes, adoption cohorts, proficiency, behavior, customer outcomes, benefit realization, and resistance themes. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on change management",
+      "Focus on adoption",
+      "Focus on readiness"
+    ],
+    "resolution_title": "PMI - PMBOK Guide and Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q184",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for change adoption and business readiness, and how should they respond?",
+    "preferred_answer": "Key failure modes are that training-only approaches ignore incentives and process ownership; adoption can be claimed from login counts without outcome change. A strong executive response is to co-design with affected users, align incentives and policies, provide local support, measure behavior and outcomes, and adapt deployment waves.",
+    "evaluation_points": [
+      "Focus on change management",
+      "Focus on adoption",
+      "Focus on readiness"
+    ],
+    "resolution_title": "PMI - PMBOK Guide and Standard for Project Management",
+    "resolution_url": "https://www.pmi.org/standards/pmbok",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q185",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technical debt and legacy risk governance, and why does it matter at executive level?",
+    "preferred_answer": "Technical debt is a portfolio of intentional or accidental design, code, infrastructure, data, process, and vendor constraints that increase future cost or risk. Use governance to prioritize debt based on business impact, exposure, change friction, and strategic options rather than age alone.",
+    "evaluation_points": [
+      "Focus on technical debt",
+      "Focus on legacy risk",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q186",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply technical debt and legacy risk governance, and what should not be treated as a default?",
+    "preferred_answer": "Use governance to prioritize debt based on business impact, exposure, change friction, and strategic options rather than age alone. It should not be treated as a default because a large debt backlog without economics competes poorly for funding; calling disliked technology debt can disguise preference.",
+    "evaluation_points": [
+      "Focus on technical debt",
+      "Focus on legacy risk",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q187",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate technical debt and legacy risk governance?",
+    "preferred_answer": "Look for incident and change evidence, vulnerability and lifecycle risk, engineering effort, customer impact, concentration, option loss, and remediation outcomes. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on technical debt",
+      "Focus on legacy risk",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q188",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for technical debt and legacy risk governance, and how should they respond?",
+    "preferred_answer": "Key failure modes are that a large debt backlog without economics competes poorly for funding; calling disliked technology debt can disguise preference. A strong executive response is to quantify consequences, connect debt to products and risks, reserve capacity, remove recurring root causes, and retire assets when economics support it.",
+    "evaluation_points": [
+      "Focus on technical debt",
+      "Focus on legacy risk",
+      "Focus on portfolio"
+    ],
+    "resolution_title": "AWS Well-Architected Framework",
+    "resolution_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q189",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is transformation governance and value tracking, and why does it matter at executive level?",
+    "preferred_answer": "Transformation governance coordinates interdependent outcomes, decisions, risks, funding, adoption, and benefits while keeping delivery ownership in product and business teams. Use it for multi-year programs with shared platforms, process redesign, data migration, regulatory commitments, and organization change.",
+    "evaluation_points": [
+      "Focus on transformation governance",
+      "Focus on benefits",
+      "Focus on program management"
+    ],
+    "resolution_title": "PMI - Standard for Program Management",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q190",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply transformation governance and value tracking, and what should not be treated as a default?",
+    "preferred_answer": "Use it for multi-year programs with shared platforms, process redesign, data migration, regulatory commitments, and organization change. It should not be treated as a default because a central office can create reporting theater and duplicate delivery management; green status can persist until late failure.",
+    "evaluation_points": [
+      "Focus on transformation governance",
+      "Focus on benefits",
+      "Focus on program management"
+    ],
+    "resolution_title": "PMI - Standard for Program Management",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q191",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate transformation governance and value tracking?",
+    "preferred_answer": "Look for outcome and benefit trends, dependency health, decision latency, risk exposure, adoption, technical health, forecast confidence, and independent reviews. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on transformation governance",
+      "Focus on benefits",
+      "Focus on program management"
+    ],
+    "resolution_title": "PMI - Standard for Program Management",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q192",
+    "role_slug": "executive",
+    "domain": "Transformation and Change Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for transformation governance and value tracking, and how should they respond?",
+    "preferred_answer": "Key failure modes are that a central office can create reporting theater and duplicate delivery management; green status can persist until late failure. A strong executive response is to focus governance on cross-cutting decisions and evidence, use leading indicators, escalate early, and re-plan or stop work when assumptions fail.",
+    "evaluation_points": [
+      "Focus on transformation governance",
+      "Focus on benefits",
+      "Focus on program management"
+    ],
+    "resolution_title": "PMI - Standard for Program Management",
+    "resolution_url": "https://www.pmi.org/standards/program-management-fifth-edition",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q193",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is build, buy, partner and source decisions, and why does it matter at executive level?",
+    "preferred_answer": "Sourcing decisions compare strategic differentiation, time, capability, lifecycle economics, control, security, resilience, ecosystem fit, and exit options. Use them for platforms, SaaS, managed services, development, operations, AI models, data, and specialist capabilities.",
+    "evaluation_points": [
+      "Focus on sourcing",
+      "Focus on build vs buy",
+      "Focus on partnership"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q194",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply build, buy, partner and source decisions, and what should not be treated as a default?",
+    "preferred_answer": "Use them for platforms, SaaS, managed services, development, operations, AI models, data, and specialist capabilities. It should not be treated as a default because buy can become unmanaged customization; build can underestimate operations; outsourcing can transfer activity but not accountability.",
+    "evaluation_points": [
+      "Focus on sourcing",
+      "Focus on build vs buy",
+      "Focus on partnership"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q195",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate build, buy, partner and source decisions?",
+    "preferred_answer": "Look for decision criteria, TCO ranges, capability and risk assessment, integration, operating model, contract and exit plan, and post-decision outcome review. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on sourcing",
+      "Focus on build vs buy",
+      "Focus on partnership"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q196",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for build, buy, partner and source decisions, and how should they respond?",
+    "preferred_answer": "Key failure modes are that buy can become unmanaged customization; build can underestimate operations; outsourcing can transfer activity but not accountability. A strong executive response is to decide at the capability level, retain accountable ownership and architecture knowledge, test critical claims, and plan transition and exit before commitment.",
+    "evaluation_points": [
+      "Focus on sourcing",
+      "Focus on build vs buy",
+      "Focus on partnership"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q197",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is outcome-based contracts and service governance, and why does it matter at executive level?",
+    "preferred_answer": "Contracts should translate business and service outcomes into responsibilities, service levels, incentives, data rights, security, change, transparency, and remedies. Use them for strategic SaaS, cloud, managed services, outsourcing, and technology partners.",
+    "evaluation_points": [
+      "Focus on vendor governance",
+      "Focus on contracts",
+      "Focus on SLA"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT Service Management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q198",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply outcome-based contracts and service governance, and what should not be treated as a default?",
+    "preferred_answer": "Use them for strategic SaaS, cloud, managed services, outsourcing, and technology partners. It should not be treated as a default because sLA compliance can coexist with poor customer outcomes; penalty-heavy contracts can reduce collaboration and hide systemic dependencies.",
+    "evaluation_points": [
+      "Focus on vendor governance",
+      "Focus on contracts",
+      "Focus on SLA"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT Service Management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q199",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate outcome-based contracts and service governance?",
+    "preferred_answer": "Look for business and technical outcomes, service health, risk and audit rights, innovation and improvement, cost transparency, disputes, and exit readiness. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on vendor governance",
+      "Focus on contracts",
+      "Focus on SLA"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT Service Management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q200",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for outcome-based contracts and service governance, and how should they respond?",
+    "preferred_answer": "Key failure modes are that sLA compliance can coexist with poor customer outcomes; penalty-heavy contracts can reduce collaboration and hide systemic dependencies. A strong executive response is to define a small set of meaningful measures, govern relationships at operational and executive levels, and preserve rights to data, evidence, continuity, and exit.",
+    "evaluation_points": [
+      "Focus on vendor governance",
+      "Focus on contracts",
+      "Focus on SLA"
+    ],
+    "resolution_title": "ISO/IEC 20000 - IT Service Management",
+    "resolution_url": "https://www.iso.org/isoiec-20000-it-service-management.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q201",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is third-party and technology supply-chain risk, and why does it matter at executive level?",
+    "preferred_answer": "Supply-chain risk management covers vendors, software, open source, cloud, hardware, data, services, and dependencies whose compromise or failure affects the enterprise. Use tiered due diligence, ongoing monitoring, secure development requirements, resilience testing, and concentration analysis.",
+    "evaluation_points": [
+      "Focus on third-party risk",
+      "Focus on supply chain",
+      "Focus on concentration"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q202",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply third-party and technology supply-chain risk, and what should not be treated as a default?",
+    "preferred_answer": "Use tiered due diligence, ongoing monitoring, secure development requirements, resilience testing, and concentration analysis. It should not be treated as a default because questionnaires alone provide weak assurance; fourth parties and software provenance may remain invisible until an incident.",
+    "evaluation_points": [
+      "Focus on third-party risk",
+      "Focus on supply chain",
+      "Focus on concentration"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q203",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate third-party and technology supply-chain risk?",
+    "preferred_answer": "Look for critical supplier inventory, dependency and concentration maps, control evidence, provenance, vulnerability and incident data, resilience exercises, and remediation. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on third-party risk",
+      "Focus on supply chain",
+      "Focus on concentration"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q204",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for third-party and technology supply-chain risk, and how should they respond?",
+    "preferred_answer": "Key failure modes are that questionnaires alone provide weak assurance; fourth parties and software provenance may remain invisible until an incident. A strong executive response is to prioritize material suppliers, require verifiable evidence, use secure procurement and provenance, monitor change, and maintain continuity or exit options.",
+    "evaluation_points": [
+      "Focus on third-party risk",
+      "Focus on supply chain",
+      "Focus on concentration"
+    ],
+    "resolution_title": "NIST SP 800-161 Rev. 1 - Cybersecurity Supply Chain Risk Management",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q205",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is vendor lock-in and exit strategy, and why does it matter at executive level?",
+    "preferred_answer": "Lock-in is a business trade-off involving proprietary services, data, skills, contracts, operating models, and migration cost rather than a binary architectural defect. Use explicit exit planning for material providers, regulated services, critical data, and long-lived commitments.",
+    "evaluation_points": [
+      "Focus on vendor lock-in",
+      "Focus on exit strategy",
+      "Focus on portability"
+    ],
+    "resolution_title": "FinOps Framework 2026",
+    "resolution_url": "https://www.finops.org/insights/2026-finops-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q206",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply vendor lock-in and exit strategy, and what should not be treated as a default?",
+    "preferred_answer": "Use explicit exit planning for material providers, regulated services, critical data, and long-lived commitments. It should not be treated as a default because paying for theoretical portability can reduce value, while ignoring exit can create unacceptable leverage, concentration, or resilience risk.",
+    "evaluation_points": [
+      "Focus on vendor lock-in",
+      "Focus on exit strategy",
+      "Focus on portability"
+    ],
+    "resolution_title": "FinOps Framework 2026",
+    "resolution_url": "https://www.finops.org/insights/2026-finops-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q207",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate vendor lock-in and exit strategy?",
+    "preferred_answer": "Look for dependency inventory, data export and deletion tests, interface and skill portability, contractual assistance, cost and time estimates, and trigger conditions. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on vendor lock-in",
+      "Focus on exit strategy",
+      "Focus on portability"
+    ],
+    "resolution_title": "FinOps Framework 2026",
+    "resolution_url": "https://www.finops.org/insights/2026-finops-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q208",
+    "role_slug": "executive",
+    "domain": "Vendor, Sourcing and Ecosystem Leadership",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for vendor lock-in and exit strategy, and how should they respond?",
+    "preferred_answer": "Key failure modes are that paying for theoretical portability can reduce value, while ignoring exit can create unacceptable leverage, concentration, or resilience risk. A strong executive response is to choose deliberate lock-in where value justifies it, isolate critical dependencies, negotiate rights early, and test credible exit or continuity paths.",
+    "evaluation_points": [
+      "Focus on vendor lock-in",
+      "Focus on exit strategy",
+      "Focus on portability"
+    ],
+    "resolution_title": "FinOps Framework 2026",
+    "resolution_url": "https://www.finops.org/insights/2026-finops-framework/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q209",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technology due diligence for M&A, and why does it matter at executive level?",
+    "preferred_answer": "Technology due diligence assesses capability, architecture, cyber and privacy risk, data, operations, talent, contracts, technical debt, cost, and scalability relative to the deal thesis. Use it before acquisition, investment, joint venture, or major partnership, with depth proportional to value and access.",
+    "evaluation_points": [
+      "Focus on M&A",
+      "Focus on due diligence",
+      "Focus on technology risk"
+    ],
+    "resolution_title": "NIST SP 800-30 Rev. 1 - Guide for Conducting Risk Assessments",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q210",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply technology due diligence for M&A, and what should not be treated as a default?",
+    "preferred_answer": "Use it before acquisition, investment, joint venture, or major partnership, with depth proportional to value and access. It should not be treated as a default because checklist diligence can miss hidden dependencies, unrecorded liabilities, weak IP ownership, or the cost of integration and separation.",
+    "evaluation_points": [
+      "Focus on M&A",
+      "Focus on due diligence",
+      "Focus on technology risk"
+    ],
+    "resolution_title": "NIST SP 800-30 Rev. 1 - Guide for Conducting Risk Assessments",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q211",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate technology due diligence for M&A?",
+    "preferred_answer": "Look for evidence-backed findings, quantified risks and costs, deal assumptions, remediation and integration implications, red flags, and decision impact. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on M&A",
+      "Focus on due diligence",
+      "Focus on technology risk"
+    ],
+    "resolution_title": "NIST SP 800-30 Rev. 1 - Guide for Conducting Risk Assessments",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q212",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for technology due diligence for M&A, and how should they respond?",
+    "preferred_answer": "Key failure modes are that checklist diligence can miss hidden dependencies, unrecorded liabilities, weak IP ownership, or the cost of integration and separation. A strong executive response is to focus on the value thesis and material risks, triangulate management claims, request operational evidence, and preserve uncertainty in valuation and plans.",
+    "evaluation_points": [
+      "Focus on M&A",
+      "Focus on due diligence",
+      "Focus on technology risk"
+    ],
+    "resolution_title": "NIST SP 800-30 Rev. 1 - Guide for Conducting Risk Assessments",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q213",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is Day 1 and Day 100 technology integration, and why does it matter at executive level?",
+    "preferred_answer": "Integration planning protects business continuity and establishes identity, connectivity, security, data, support, governance, and prioritized synergies through staged decisions. Use clean teams and transition plans before close where law allows, then execute with clear Day 1 and Day 100 outcomes.",
+    "evaluation_points": [
+      "Focus on M&A integration",
+      "Focus on Day 1",
+      "Focus on Day 100"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q214",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply Day 1 and Day 100 technology integration, and what should not be treated as a default?",
+    "preferred_answer": "Use clean teams and transition plans before close where law allows, then execute with clear Day 1 and Day 100 outcomes. It should not be treated as a default because premature consolidation can disrupt revenue and customers; delayed governance permits duplicate investment and unmanaged access.",
+    "evaluation_points": [
+      "Focus on M&A integration",
+      "Focus on Day 1",
+      "Focus on Day 100"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q215",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate Day 1 and Day 100 technology integration?",
+    "preferred_answer": "Look for critical service readiness, identity and security controls, support, legal constraints, synergy tracking, decision rights, integration waves, and risk burn-down. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on M&A integration",
+      "Focus on Day 1",
+      "Focus on Day 100"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q216",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for Day 1 and Day 100 technology integration, and how should they respond?",
+    "preferred_answer": "Key failure modes are that premature consolidation can disrupt revenue and customers; delayed governance permits duplicate investment and unmanaged access. A strong executive response is to secure and stabilize first, preserve customer operations, sequence by dependencies and value, and avoid irreversible platform choices before evidence.",
+    "evaluation_points": [
+      "Focus on M&A integration",
+      "Focus on Day 1",
+      "Focus on Day 100"
+    ],
+    "resolution_title": "AWS Cloud Adoption Framework",
+    "resolution_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q217",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is application, data and platform rationalization after acquisition, and why does it matter at executive level?",
+    "preferred_answer": "Rationalization selects strategic systems and data authorities based on business operating model, capability fit, lifecycle, cost, risk, and migration feasibility. Use it after clarifying the combined product, process, geography, and customer strategy.",
+    "evaluation_points": [
+      "Focus on rationalization",
+      "Focus on application portfolio",
+      "Focus on data integration"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q218",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply application, data and platform rationalization after acquisition, and what should not be treated as a default?",
+    "preferred_answer": "Use it after clarifying the combined product, process, geography, and customer strategy. It should not be treated as a default because choosing the acquiring company platform by default can destroy target capabilities; keeping everything delays synergies and increases risk.",
+    "evaluation_points": [
+      "Focus on rationalization",
+      "Focus on application portfolio",
+      "Focus on data integration"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q219",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate application, data and platform rationalization after acquisition?",
+    "preferred_answer": "Look for capability comparison, business fit, architecture and data quality, contract and lifecycle, total transition cost, adoption, and retirement milestones. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on rationalization",
+      "Focus on application portfolio",
+      "Focus on data integration"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q220",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for application, data and platform rationalization after acquisition, and how should they respond?",
+    "preferred_answer": "Key failure modes are that choosing the acquiring company platform by default can destroy target capabilities; keeping everything delays synergies and increases risk. A strong executive response is to use objective criteria, preserve differentiated capabilities, design transition states, govern master data, and fund decommissioning.",
+    "evaluation_points": [
+      "Focus on rationalization",
+      "Focus on application portfolio",
+      "Focus on data integration"
+    ],
+    "resolution_title": "The TOGAF Standard, 10th Edition",
+    "resolution_url": "https://publications.opengroup.org/standards/togaf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q221",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is divestiture, carve-out and transition service agreements, and why does it matter at executive level?",
+    "preferred_answer": "Technology separation identifies shared services, data, identity, licenses, infrastructure, people, and contracts, then creates independent capability under timed TSAs. Use it when selling a business, creating a joint venture, or separating regulated or regional operations.",
+    "evaluation_points": [
+      "Focus on divestiture",
+      "Focus on carve-out",
+      "Focus on TSA"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q222",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply divestiture, carve-out and transition service agreements, and what should not be treated as a default?",
+    "preferred_answer": "Use it when selling a business, creating a joint venture, or separating regulated or regional operations. It should not be treated as a default because incomplete dependency discovery causes Day 1 failure; open-ended TSAs reduce urgency and create security and cost exposure.",
+    "evaluation_points": [
+      "Focus on divestiture",
+      "Focus on carve-out",
+      "Focus on TSA"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q223",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate divestiture, carve-out and transition service agreements?",
+    "preferred_answer": "Look for separation perimeter, data and access rules, Day 1 readiness, TSA service levels and exit milestones, stranded costs, licenses, and verification of independence. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on divestiture",
+      "Focus on carve-out",
+      "Focus on TSA"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q224",
+    "role_slug": "executive",
+    "domain": "Mergers, Acquisitions and Divestitures",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for divestiture, carve-out and transition service agreements, and how should they respond?",
+    "preferred_answer": "Key failure modes are that incomplete dependency discovery causes Day 1 failure; open-ended TSAs reduce urgency and create security and cost exposure. A strong executive response is to start dependency discovery early, define clean boundaries, minimize TSA scope, price extensions, and test cutover and data deletion.",
+    "evaluation_points": [
+      "Focus on divestiture",
+      "Focus on carve-out",
+      "Focus on TSA"
+    ],
+    "resolution_title": "NIST SP 800-34 Rev. 1 - Contingency Planning Guide",
+    "resolution_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q225",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is board and executive technology storytelling, and why does it matter at executive level?",
+    "preferred_answer": "Executive communication turns complex technology evidence into a clear narrative about business context, options, value, risk, uncertainty, recommendation, and decision required. Use decision memos and concise visuals for investments, incidents, cyber risk, AI, transformation, and architecture.",
+    "evaluation_points": [
+      "Focus on executive communication",
+      "Focus on board",
+      "Focus on decision memo"
+    ],
+    "resolution_title": "ISO 37005:2024 - Developing Indicators for Effective Governance",
+    "resolution_url": "https://www.iso.org/standard/65038.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q226",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply board and executive technology storytelling, and what should not be treated as a default?",
+    "preferred_answer": "Use decision memos and concise visuals for investments, incidents, cyber risk, AI, transformation, and architecture. It should not be treated as a default because simplifying can become misleading; technical detail without business relevance can prevent informed challenge.",
+    "evaluation_points": [
+      "Focus on executive communication",
+      "Focus on board",
+      "Focus on decision memo"
+    ],
+    "resolution_title": "ISO 37005:2024 - Developing Indicators for Effective Governance",
+    "resolution_url": "https://www.iso.org/standard/65038.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q227",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate board and executive technology storytelling?",
+    "preferred_answer": "Look for a clear question, relevant evidence, alternatives, quantified ranges, assumptions, dissent, recommendation, consequences, and explicit decision. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on executive communication",
+      "Focus on board",
+      "Focus on decision memo"
+    ],
+    "resolution_title": "ISO 37005:2024 - Developing Indicators for Effective Governance",
+    "resolution_url": "https://www.iso.org/standard/65038.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q228",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for board and executive technology storytelling, and how should they respond?",
+    "preferred_answer": "Key failure modes are that simplifying can become misleading; technical detail without business relevance can prevent informed challenge. A strong executive response is to lead with business impact, show uncertainty honestly, separate facts from judgement, and provide technical appendices for assurance.",
+    "evaluation_points": [
+      "Focus on executive communication",
+      "Focus on board",
+      "Focus on decision memo"
+    ],
+    "resolution_title": "ISO 37005:2024 - Developing Indicators for Effective Governance",
+    "resolution_url": "https://www.iso.org/standard/65038.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q229",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is stakeholder alignment and conflict resolution, and why does it matter at executive level?",
+    "preferred_answer": "Executive alignment identifies interests, incentives, constraints, decision rights, and non-negotiable obligations, then resolves trade-offs around enterprise outcomes. Use it where business units, product, engineering, security, finance, legal, and operations hold conflicting priorities.",
+    "evaluation_points": [
+      "Focus on stakeholder management",
+      "Focus on conflict",
+      "Focus on influence"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q230",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply stakeholder alignment and conflict resolution, and what should not be treated as a default?",
+    "preferred_answer": "Use it where business units, product, engineering, security, finance, legal, and operations hold conflicting priorities. It should not be treated as a default because consensus-seeking can postpone decisions; positional escalation can damage trust and hide the real trade-off.",
+    "evaluation_points": [
+      "Focus on stakeholder management",
+      "Focus on conflict",
+      "Focus on influence"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q231",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate stakeholder alignment and conflict resolution?",
+    "preferred_answer": "Look for shared facts, decision criteria, documented options, accountable decision owner, dissent captured, commitments, and follow-through. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on stakeholder management",
+      "Focus on conflict",
+      "Focus on influence"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q232",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for stakeholder alignment and conflict resolution, and how should they respond?",
+    "preferred_answer": "Key failure modes are that consensus-seeking can postpone decisions; positional escalation can damage trust and hide the real trade-off. A strong executive response is to clarify the decision and stakes, surface incentives, negotiate on interests, time-box analysis, and escalate only when authority or risk requires it.",
+    "evaluation_points": [
+      "Focus on stakeholder management",
+      "Focus on conflict",
+      "Focus on influence"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q233",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is materiality and external incident disclosure, and why does it matter at executive level?",
+    "preferred_answer": "Executives must rapidly assess incident facts, business and investor impact, legal duties, public statements, and response without delaying materiality decisions or exposing harmful detail. Use a cross-functional disclosure process involving security, operations, legal, finance, communications, risk, and accountable executives.",
+    "evaluation_points": [
+      "Focus on materiality",
+      "Focus on incident disclosure",
+      "Focus on crisis communication"
+    ],
+    "resolution_title": "SEC - Cybersecurity Risk Management, Strategy, Governance, and Incident Disclosure",
+    "resolution_url": "https://www.sec.gov/rules-regulations/2023/07/s7-09-22",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q234",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply materiality and external incident disclosure, and what should not be treated as a default?",
+    "preferred_answer": "Use a cross-functional disclosure process involving security, operations, legal, finance, communications, risk, and accountable executives. It should not be treated as a default because technical severity alone may not equal materiality, while incomplete information and reputational fear can delay required disclosure or create inconsistent statements.",
+    "evaluation_points": [
+      "Focus on materiality",
+      "Focus on incident disclosure",
+      "Focus on crisis communication"
+    ],
+    "resolution_title": "SEC - Cybersecurity Risk Management, Strategy, Governance, and Incident Disclosure",
+    "resolution_url": "https://www.sec.gov/rules-regulations/2023/07/s7-09-22",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q235",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate materiality and external incident disclosure?",
+    "preferred_answer": "Look for decision criteria, documented facts and uncertainty, board notification, legal deadlines, consistent communications, preserved response security, and later updates. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on materiality",
+      "Focus on incident disclosure",
+      "Focus on crisis communication"
+    ],
+    "resolution_title": "SEC - Cybersecurity Risk Management, Strategy, Governance, and Incident Disclosure",
+    "resolution_url": "https://www.sec.gov/rules-regulations/2023/07/s7-09-22",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q236",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for materiality and external incident disclosure, and how should they respond?",
+    "preferred_answer": "Key failure modes are that technical severity alone may not equal materiality, while incomplete information and reputational fear can delay required disclosure or create inconsistent statements. A strong executive response is to predefine the process, separate incident command from disclosure governance, make decisions without unreasonable delay, and communicate what is known and not known.",
+    "evaluation_points": [
+      "Focus on materiality",
+      "Focus on incident disclosure",
+      "Focus on crisis communication"
+    ],
+    "resolution_title": "SEC - Cybersecurity Risk Management, Strategy, Governance, and Incident Disclosure",
+    "resolution_url": "https://www.sec.gov/rules-regulations/2023/07/s7-09-22",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q237",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is executive negotiation and influence without direct authority, and why does it matter at executive level?",
+    "preferred_answer": "C-level technology leaders often influence peers, boards, regulators, partners, and business leaders through evidence, credibility, options, reciprocity, and shared outcomes. Use it for funding, standards, risk acceptance, operating-model change, and cross-enterprise dependencies.",
+    "evaluation_points": [
+      "Focus on negotiation",
+      "Focus on influence",
+      "Focus on executive leadership"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q238",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply executive negotiation and influence without direct authority, and what should not be treated as a default?",
+    "preferred_answer": "Use it for funding, standards, risk acceptance, operating-model change, and cross-enterprise dependencies. It should not be treated as a default because overreliance on technical authority or escalation creates compliance without commitment; unbounded compromise can accept hidden risk.",
+    "evaluation_points": [
+      "Focus on negotiation",
+      "Focus on influence",
+      "Focus on executive leadership"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q239",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate executive negotiation and influence without direct authority?",
+    "preferred_answer": "Look for stakeholder commitments, decision speed, resolved dependencies, transparent trade-offs, durable behavior change, and preserved relationships. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on negotiation",
+      "Focus on influence",
+      "Focus on executive leadership"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q240",
+    "role_slug": "executive",
+    "domain": "Executive Communication, Stakeholder Leadership and Crisis Decisions",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for executive negotiation and influence without direct authority, and how should they respond?",
+    "preferred_answer": "Key failure modes are that overreliance on technical authority or escalation creates compliance without commitment; unbounded compromise can accept hidden risk. A strong executive response is to build trust before decisions, tailor evidence to stakeholder concerns, offer viable options, define boundaries, and confirm commitments and consequences.",
+    "evaluation_points": [
+      "Focus on negotiation",
+      "Focus on influence",
+      "Focus on executive leadership"
+    ],
+    "resolution_title": "ISO 37000:2021 - Governance of Organizations",
+    "resolution_url": "https://www.iso.org/standard/65036.html",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q241",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is sustainable technology and green software leadership, and why does it matter at executive level?",
+    "preferred_answer": "Sustainable technology reduces environmental impact through demand management, efficient software, workload placement, utilization, data lifecycle, hardware longevity, and supplier choices. Use it in architecture, cloud and AI economics, procurement, data retention, device lifecycle, and sustainability commitments.",
+    "evaluation_points": [
+      "Focus on sustainability",
+      "Focus on green software",
+      "Focus on carbon"
+    ],
+    "resolution_title": "Green Software Foundation - Principles of Green Software Engineering",
+    "resolution_url": "https://principles.green/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q242",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply sustainable technology and green software leadership, and what should not be treated as a default?",
+    "preferred_answer": "Use it in architecture, cloud and AI economics, procurement, data retention, device lifecycle, and sustainability commitments. It should not be treated as a default because carbon claims can omit scope, geography, rebound effects, embodied impact, or business demand; efficiency can be mistaken for absolute reduction.",
+    "evaluation_points": [
+      "Focus on sustainability",
+      "Focus on green software",
+      "Focus on carbon"
+    ],
+    "resolution_title": "Green Software Foundation - Principles of Green Software Engineering",
+    "resolution_url": "https://principles.green/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q243",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate sustainable technology and green software leadership?",
+    "preferred_answer": "Look for energy and carbon proxies, utilization, data movement and retention, hardware lifecycle, supplier evidence, business output, and transparent methodology. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on sustainability",
+      "Focus on green software",
+      "Focus on carbon"
+    ],
+    "resolution_title": "Green Software Foundation - Principles of Green Software Engineering",
+    "resolution_url": "https://principles.green/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q244",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for sustainable technology and green software leadership, and how should they respond?",
+    "preferred_answer": "Key failure modes are that carbon claims can omit scope, geography, rebound effects, embodied impact, or business demand; efficiency can be mistaken for absolute reduction. A strong executive response is to remove waste first, measure boundaries and assumptions, align cost and carbon incentives, and include sustainability in architecture and procurement decisions.",
+    "evaluation_points": [
+      "Focus on sustainability",
+      "Focus on green software",
+      "Focus on carbon"
+    ],
+    "resolution_title": "Green Software Foundation - Principles of Green Software Engineering",
+    "resolution_url": "https://principles.green/",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q245",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is technology ethics, human rights and inclusion, and why does it matter at executive level?",
+    "preferred_answer": "Responsible leadership considers how technology affects rights, safety, fairness, accessibility, workers, communities, and vulnerable groups across products and supply chains. Use impact assessment and stakeholder engagement for AI, surveillance, identity, platforms, workforce automation, and high-consequence products.",
+    "evaluation_points": [
+      "Focus on ethics",
+      "Focus on human rights",
+      "Focus on inclusion"
+    ],
+    "resolution_title": "UN Guiding Principles on Business and Human Rights",
+    "resolution_url": "https://www.ohchr.org/sites/default/files/Documents/Publications/GuidingPrinciplesBusinessHR_EN.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q246",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply technology ethics, human rights and inclusion, and what should not be treated as a default?",
+    "preferred_answer": "Use impact assessment and stakeholder engagement for AI, surveillance, identity, platforms, workforce automation, and high-consequence products. It should not be treated as a default because legal compliance alone may miss foreseeable harm; ethics committees without authority can become reputation management.",
+    "evaluation_points": [
+      "Focus on ethics",
+      "Focus on human rights",
+      "Focus on inclusion"
+    ],
+    "resolution_title": "UN Guiding Principles on Business and Human Rights",
+    "resolution_url": "https://www.ohchr.org/sites/default/files/Documents/Publications/GuidingPrinciplesBusinessHR_EN.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q247",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate technology ethics, human rights and inclusion?",
+    "preferred_answer": "Look for affected-stakeholder input, impact assessments, design changes, grievance and remedy channels, accessibility and fairness evidence, and accountable decisions. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on ethics",
+      "Focus on human rights",
+      "Focus on inclusion"
+    ],
+    "resolution_title": "UN Guiding Principles on Business and Human Rights",
+    "resolution_url": "https://www.ohchr.org/sites/default/files/Documents/Publications/GuidingPrinciplesBusinessHR_EN.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q248",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for technology ethics, human rights and inclusion, and how should they respond?",
+    "preferred_answer": "Key failure modes are that legal compliance alone may miss foreseeable harm; ethics committees without authority can become reputation management. A strong executive response is to set red lines, engage affected groups, integrate ethics into product governance, document trade-offs, and provide effective challenge and remedy.",
+    "evaluation_points": [
+      "Focus on ethics",
+      "Focus on human rights",
+      "Focus on inclusion"
+    ],
+    "resolution_title": "UN Guiding Principles on Business and Human Rights",
+    "resolution_url": "https://www.ohchr.org/sites/default/files/Documents/Publications/GuidingPrinciplesBusinessHR_EN.pdf",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q249",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is regulatory, sovereignty and geopolitical technology risk, and why does it matter at executive level?",
+    "preferred_answer": "Executives should anticipate how regulation, sanctions, data localization, supply disruption, cyber conflict, and national technology policy affect architecture and operations. Use horizon scanning and scenario planning for global services, critical infrastructure, AI, cloud, telecom, and supplier concentration.",
+    "evaluation_points": [
+      "Focus on regulation",
+      "Focus on digital sovereignty",
+      "Focus on geopolitics"
+    ],
+    "resolution_title": "EU NIS2 Directive - Directive (EU) 2022/2555",
+    "resolution_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q250",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply regulatory, sovereignty and geopolitical technology risk, and what should not be treated as a default?",
+    "preferred_answer": "Use horizon scanning and scenario planning for global services, critical infrastructure, AI, cloud, telecom, and supplier concentration. It should not be treated as a default because fragmented compliance responses can duplicate platforms and data; assuming global continuity can expose critical dependencies.",
+    "evaluation_points": [
+      "Focus on regulation",
+      "Focus on digital sovereignty",
+      "Focus on geopolitics"
+    ],
+    "resolution_title": "EU NIS2 Directive - Directive (EU) 2022/2555",
+    "resolution_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q251",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate regulatory, sovereignty and geopolitical technology risk?",
+    "preferred_answer": "Look for regulatory inventory, jurisdiction and data-flow mapping, supplier and regional concentration, alternative scenarios, trigger indicators, and tested continuity options. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on regulation",
+      "Focus on digital sovereignty",
+      "Focus on geopolitics"
+    ],
+    "resolution_title": "EU NIS2 Directive - Directive (EU) 2022/2555",
+    "resolution_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q252",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for regulatory, sovereignty and geopolitical technology risk, and how should they respond?",
+    "preferred_answer": "Key failure modes are that fragmented compliance responses can duplicate platforms and data; assuming global continuity can expose critical dependencies. A strong executive response is to build modular compliance patterns, reduce opaque dependencies, preserve regional options, and involve legal, policy, security, architecture, and business leaders.",
+    "evaluation_points": [
+      "Focus on regulation",
+      "Focus on digital sovereignty",
+      "Focus on geopolitics"
+    ],
+    "resolution_title": "EU NIS2 Directive - Directive (EU) 2022/2555",
+    "resolution_url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q253",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "foundation",
+    "question_type": "concept",
+    "prompt": "What is emerging technology sensing and strategic experimentation, and why does it matter at executive level?",
+    "preferred_answer": "Future readiness combines structured horizon scanning, business-relevant hypotheses, controlled experiments, option value, ecosystem learning, and explicit scale or stop criteria. Use it for AI, quantum, edge, robotics, privacy-enhancing technology, spatial computing, and new infrastructure models.",
+    "evaluation_points": [
+      "Focus on emerging technology",
+      "Focus on innovation",
+      "Focus on strategic options"
+    ],
+    "resolution_title": "OECD AI Principles",
+    "resolution_url": "https://oecd.ai/en/ai-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q254",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "intermediate",
+    "question_type": "scenario",
+    "prompt": "When should a C-level technology leader apply emerging technology sensing and strategic experimentation, and what should not be treated as a default?",
+    "preferred_answer": "Use it for AI, quantum, edge, robotics, privacy-enhancing technology, spatial computing, and new infrastructure models. It should not be treated as a default because innovation labs can become disconnected showcases; executive hype can force premature scale before safety, economics, and operating capability are understood.",
+    "evaluation_points": [
+      "Focus on emerging technology",
+      "Focus on innovation",
+      "Focus on strategic options"
+    ],
+    "resolution_title": "OECD AI Principles",
+    "resolution_url": "https://oecd.ai/en/ai-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q255",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What evidence and measures would you use to evaluate emerging technology sensing and strategic experimentation?",
+    "preferred_answer": "Look for trend and signal analysis, hypothesis portfolio, experiment evidence, option cost, ecosystem learning, risk assessment, and scale or stop decisions. Measures should support a decision and be interpreted with business context, uncertainty, and independent challenge.",
+    "evaluation_points": [
+      "Focus on emerging technology",
+      "Focus on innovation",
+      "Focus on strategic options"
+    ],
+    "resolution_title": "OECD AI Principles",
+    "resolution_url": "https://oecd.ai/en/ai-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
+  },
+  {
+    "id": "EL-Q256",
+    "role_slug": "executive",
+    "domain": "Sustainability, Ethics, Regulation and Future Readiness",
+    "difficulty": "advanced",
+    "question_type": "concept",
+    "prompt": "What failure modes or trade-offs should an executive discuss for emerging technology sensing and strategic experimentation, and how should they respond?",
+    "preferred_answer": "Key failure modes are that innovation labs can become disconnected showcases; executive hype can force premature scale before safety, economics, and operating capability are understood. A strong executive response is to connect experiments to strategic questions, use bounded sandboxes, include operations and risk early, and preserve learning even when a technology is not adopted.",
+    "evaluation_points": [
+      "Focus on emerging technology",
+      "Focus on innovation",
+      "Focus on strategic options"
+    ],
+    "resolution_title": "OECD AI Principles",
+    "resolution_url": "https://oecd.ai/en/ai-principles",
+    "source_tier": "A",
+    "last_verified_at": "2026-08-02",
+    "status": "published"
   }
 ];

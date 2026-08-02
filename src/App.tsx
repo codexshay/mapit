@@ -3133,10 +3133,10 @@ export default function App() {
                       <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-purple-500/10 text-purple-400 border border-purple-500/30">
                         InterviewQ Database
                       </span>
-                      <span className={`text-[10px] font-mono font-bold ${theme === 'light' ? 'text-slate-700' : 'text-purple-300'}`}>5,537+ Total Qs</span>
+                      <span className={`text-[10px] font-mono font-bold ${theme === 'light' ? 'text-slate-700' : 'text-purple-300'}`}>6,305+ Total Qs</span>
                     </div>
                     <h4 className={`text-xs font-black font-sans uppercase tracking-tight ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
-                      5,537+ Technical Interview Questions across 23 Role Categories
+                      6,305+ Technical Interview Questions across ALL 23 Role Categories
                     </h4>
                     <p className={`text-[11px] font-sans line-clamp-3 ${theme === 'light' ? 'text-slate-600' : 'text-zinc-400'}`}>
                       Newly expanded with +168 System Admin & Infrastructure and +168 IT Support / EUC questions across 42 sub-domains with NIST & ITIL 4 evaluation rubrics.
@@ -3169,10 +3169,10 @@ export default function App() {
                       <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
                         Jobs & Referrals
                       </span>
-                      <span className={`text-[10px] font-mono font-bold ${theme === 'light' ? 'text-slate-700' : 'text-cyan-300'}`}>150+ Direct Links</span>
+                      <span className={`text-[10px] font-mono font-bold ${theme === 'light' ? 'text-slate-700' : 'text-cyan-300'}`}>257+ Companies</span>
                     </div>
                     <h4 className={`text-xs font-black font-sans uppercase tracking-tight ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
-                      50+ Top Tech Companies & 150+ Direct Career, LinkedIn & Referral Links
+                      257+ Technology Companies & 150+ Direct Career, LinkedIn & Referral Links
                     </h4>
                     <p className={`text-[11px] font-sans line-clamp-3 ${theme === 'light' ? 'text-slate-600' : 'text-zinc-400'}`}>
                       Redesigned company listings into 100% Accordion Dropdown headers for instant access to Official Careers, LinkedIn Company Jobs, and Referral Portals.

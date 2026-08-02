@@ -80,7 +80,7 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-white text-black border-white',
     badgeInactive: 'bg-zinc-900 text-zinc-300 border-zinc-700'
   },
-'green-computing': {
+  'green-computing': {
     color: 'emerald',
     accentBar: 'bg-emerald-500',
     accentText: 'text-emerald-400',
@@ -91,7 +91,7 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
     badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
   },
-'cloud': {
+  'cloud': {
     color: 'cyan',
     accentBar: 'bg-cyan-500',
     accentText: 'text-cyan-400',
@@ -102,7 +102,7 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-cyan-500 text-black border-cyan-500 font-bold',
     badgeInactive: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/40'
   },
-'cybersecurity': {
+  'cybersecurity': {
     color: 'red',
     accentBar: 'bg-red-500',
     accentText: 'text-red-400',
@@ -113,7 +113,7 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-red-500 text-white border-red-500 font-bold',
     badgeInactive: 'bg-red-500/10 text-red-400 border-red-500/40'
   },
-'software-dev': {
+  'software-dev': {
     color: 'fuchsia',
     accentBar: 'bg-fuchsia-500',
     accentText: 'text-fuchsia-400',
@@ -124,7 +124,7 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-fuchsia-500 text-black border-fuchsia-500 font-bold',
     badgeInactive: 'bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/40'
   },
-'devops-sre': {
+  'devops-sre': {
     color: 'sky',
     accentBar: 'bg-sky-500',
     accentText: 'text-sky-400',
@@ -135,7 +135,7 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-sky-500 text-black border-sky-500 font-bold',
     badgeInactive: 'bg-sky-500/10 text-sky-400 border-sky-500/40'
   },
-'data-science-ai': {
+  'data-science-ai': {
     color: 'rose',
     accentBar: 'bg-rose-500',
     accentText: 'text-rose-400',
@@ -146,7 +146,7 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-rose-500 text-white border-rose-500 font-bold',
     badgeInactive: 'bg-rose-500/10 text-rose-400 border-rose-500/40'
   },
-'frontend-developer': {
+  'frontend-developer': {
     color: 'pink',
     accentBar: 'bg-pink-500',
     accentText: 'text-pink-400',
@@ -157,7 +157,7 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-pink-500 text-black border-pink-500 font-bold',
     badgeInactive: 'bg-pink-500/10 text-pink-400 border-pink-500/40'
   },
-'backend-developer': {
+  'backend-developer': {
     color: 'purple',
     accentBar: 'bg-purple-500',
     accentText: 'text-purple-400',
@@ -168,7 +168,7 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-purple-500 text-black border-purple-500 font-bold',
     badgeInactive: 'bg-purple-500/10 text-purple-400 border-purple-500/40'
   },
-'it-support': {
+  'it-support': {
     color: 'blue',
     accentBar: 'bg-blue-500',
     accentText: 'text-blue-400',
@@ -179,29 +179,106 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-blue-500 text-black border-blue-500 font-bold',
     badgeInactive: 'bg-blue-500/10 text-blue-400 border-blue-500/40'
   },
-'systems-infra': {
+  'systems-infra': {
     color: 'purple',
-    accentBar: 'bg-purple-500',
-    accentText: 'text-purple-400',
+    accentBar: 'bg-purple-600',
+    accentText: 'text-purple-300',
     activeBorder: 'border-purple-500',
     activeBg: 'bg-purple-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#a855f7]',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#9333ea]',
     hoverBorder: 'hover:border-purple-500/60',
-    badgeActive: 'bg-purple-500 text-black border-purple-500 font-bold',
-    badgeInactive: 'bg-purple-500/10 text-purple-400 border-purple-500/40'
+    badgeActive: 'bg-purple-600 text-white border-purple-600 font-bold',
+    badgeInactive: 'bg-purple-500/10 text-purple-300 border-purple-500/40'
   },
-'networking': {
-    color: 'emerald',
-    accentBar: 'bg-emerald-500',
-    accentText: 'text-emerald-400',
-    activeBorder: 'border-emerald-500',
-    activeBg: 'bg-emerald-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#10b981]',
-    hoverBorder: 'hover:border-emerald-500/60',
-    badgeActive: 'bg-emerald-500 text-black border-emerald-500 font-bold',
-    badgeInactive: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/40'
+  'networking': {
+    color: 'teal',
+    accentBar: 'bg-teal-500',
+    accentText: 'text-teal-400',
+    activeBorder: 'border-teal-500',
+    activeBg: 'bg-teal-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#14b8a6]',
+    hoverBorder: 'hover:border-teal-500/60',
+    badgeActive: 'bg-teal-500 text-black border-teal-500 font-bold',
+    badgeInactive: 'bg-teal-500/10 text-teal-400 border-teal-500/40'
   },
-'qa-testing': {
+  'qa-testing': {
+    color: 'pink',
+    accentBar: 'bg-pink-600',
+    accentText: 'text-pink-300',
+    activeBorder: 'border-pink-500',
+    activeBg: 'bg-pink-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#db2777]',
+    hoverBorder: 'hover:border-pink-500/60',
+    badgeActive: 'bg-pink-600 text-white border-pink-600 font-bold',
+    badgeInactive: 'bg-pink-500/10 text-pink-300 border-pink-500/40'
+  },
+  'data-analytics': {
+    color: 'amber',
+    accentBar: 'bg-amber-500',
+    accentText: 'text-amber-400',
+    activeBorder: 'border-amber-500',
+    activeBg: 'bg-amber-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#f59e0b]',
+    hoverBorder: 'hover:border-amber-500/60',
+    badgeActive: 'bg-amber-500 text-black border-amber-500 font-bold',
+    badgeInactive: 'bg-amber-500/10 text-amber-400 border-amber-500/40'
+  },
+  'db-admin': {
+    color: 'orange',
+    accentBar: 'bg-orange-500',
+    accentText: 'text-orange-400',
+    activeBorder: 'border-orange-500',
+    activeBg: 'bg-orange-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#f97316]',
+    hoverBorder: 'hover:border-orange-500/60',
+    badgeActive: 'bg-orange-500 text-black border-orange-500 font-bold',
+    badgeInactive: 'bg-orange-500/10 text-orange-400 border-orange-500/40'
+  },
+  'it-ops-itsm': {
+    color: 'indigo',
+    accentBar: 'bg-indigo-500',
+    accentText: 'text-indigo-400',
+    activeBorder: 'border-indigo-500',
+    activeBg: 'bg-indigo-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#6366f1]',
+    hoverBorder: 'hover:border-indigo-500/60',
+    badgeActive: 'bg-indigo-500 text-white border-indigo-500 font-bold',
+    badgeInactive: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/40'
+  },
+  'erp-crm': {
+    color: 'violet',
+    accentBar: 'bg-violet-500',
+    accentText: 'text-violet-400',
+    activeBorder: 'border-violet-500',
+    activeBg: 'bg-violet-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#8b5cf6]',
+    hoverBorder: 'hover:border-violet-500/60',
+    badgeActive: 'bg-violet-500 text-white border-violet-500 font-bold',
+    badgeInactive: 'bg-violet-500/10 text-violet-400 border-violet-500/40'
+  },
+  'project-product': {
+    color: 'teal',
+    accentBar: 'bg-teal-400',
+    accentText: 'text-teal-300',
+    activeBorder: 'border-teal-400',
+    activeBg: 'bg-teal-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#2dd4bf]',
+    hoverBorder: 'hover:border-teal-400/60',
+    badgeActive: 'bg-teal-400 text-black border-teal-400 font-bold',
+    badgeInactive: 'bg-teal-400/10 text-teal-300 border-teal-400/40'
+  },
+  'business-analysis': {
+    color: 'lime',
+    accentBar: 'bg-lime-500',
+    accentText: 'text-lime-400',
+    activeBorder: 'border-lime-500',
+    activeBg: 'bg-lime-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#84cc16]',
+    hoverBorder: 'hover:border-lime-500/60',
+    badgeActive: 'bg-lime-500 text-black border-lime-500 font-bold',
+    badgeInactive: 'bg-lime-500/10 text-lime-400 border-lime-500/40'
+  },
+  'ui-ux-design': {
     color: 'pink',
     accentBar: 'bg-pink-500',
     accentText: 'text-pink-400',
@@ -212,16 +289,115 @@ const DOMAIN_COLOR_PALETTE: Record<string, {
     badgeActive: 'bg-pink-500 text-black border-pink-500 font-bold',
     badgeInactive: 'bg-pink-500/10 text-pink-400 border-pink-500/40'
   },
-'data-analytics': {
+  'uiux-design': {
+    color: 'pink',
+    accentBar: 'bg-pink-500',
+    accentText: 'text-pink-400',
+    activeBorder: 'border-pink-500',
+    activeBg: 'bg-pink-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#ec4899]',
+    hoverBorder: 'hover:border-pink-500/60',
+    badgeActive: 'bg-pink-500 text-black border-pink-500 font-bold',
+    badgeInactive: 'bg-pink-500/10 text-pink-400 border-pink-500/40'
+  },
+  'web-cms': {
+    color: 'sky',
+    accentBar: 'bg-sky-400',
+    accentText: 'text-sky-300',
+    activeBorder: 'border-sky-400',
+    activeBg: 'bg-sky-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#38bdf8]',
+    hoverBorder: 'hover:border-sky-400/60',
+    badgeActive: 'bg-sky-400 text-black border-sky-400 font-bold',
+    badgeInactive: 'bg-sky-400/10 text-sky-300 border-sky-400/40'
+  },
+  'automation-rpa': {
+    color: 'orange',
+    accentBar: 'bg-orange-500',
+    accentText: 'text-orange-400',
+    activeBorder: 'border-orange-500',
+    activeBg: 'bg-orange-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#f97316]',
+    hoverBorder: 'hover:border-orange-500/60',
+    badgeActive: 'bg-orange-500 text-black border-orange-500 font-bold',
+    badgeInactive: 'bg-orange-500/10 text-orange-400 border-orange-500/40'
+  },
+  'tech-writing': {
+    color: 'slate',
+    accentBar: 'bg-cyan-400',
+    accentText: 'text-cyan-300',
+    activeBorder: 'border-cyan-400',
+    activeBg: 'bg-cyan-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#22d3ee]',
+    hoverBorder: 'hover:border-cyan-400/60',
+    badgeActive: 'bg-cyan-400 text-black border-cyan-400 font-bold',
+    badgeInactive: 'bg-cyan-400/10 text-cyan-300 border-cyan-400/40'
+  },
+  'sales-customer-success': {
+    color: 'emerald',
+    accentBar: 'bg-emerald-400',
+    accentText: 'text-emerald-300',
+    activeBorder: 'border-emerald-400',
+    activeBg: 'bg-emerald-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#34d399]',
+    hoverBorder: 'hover:border-emerald-400/60',
+    badgeActive: 'bg-emerald-400 text-black border-emerald-400 font-bold',
+    badgeInactive: 'bg-emerald-400/10 text-emerald-300 border-emerald-400/40'
+  },
+  'hardware-iot': {
     color: 'amber',
-    accentBar: 'bg-amber-500',
-    accentText: 'text-amber-400',
-    activeBorder: 'border-amber-500',
+    accentBar: 'bg-amber-400',
+    accentText: 'text-amber-300',
+    activeBorder: 'border-amber-400',
     activeBg: 'bg-amber-950/40',
-    activeShadow: 'shadow-[4px_4px_0px_0px_#f59e0b]',
-    hoverBorder: 'hover:border-amber-500/60',
-    badgeActive: 'bg-amber-500 text-black border-amber-500 font-bold',
-    badgeInactive: 'bg-amber-500/10 text-amber-400 border-amber-500/40'
+    activeShadow: 'shadow-[4px_4px_0px_0px_#fbbf24]',
+    hoverBorder: 'hover:border-amber-400/60',
+    badgeActive: 'bg-amber-400 text-black border-amber-400 font-bold',
+    badgeInactive: 'bg-amber-400/10 text-amber-300 border-amber-400/40'
+  },
+  'telecom-voice': {
+    color: 'indigo',
+    accentBar: 'bg-indigo-400',
+    accentText: 'text-indigo-300',
+    activeBorder: 'border-indigo-400',
+    activeBg: 'bg-indigo-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#818cf8]',
+    hoverBorder: 'hover:border-indigo-400/60',
+    badgeActive: 'bg-indigo-400 text-black border-indigo-400 font-bold',
+    badgeInactive: 'bg-indigo-400/10 text-indigo-300 border-indigo-400/40'
+  },
+  'governance-audit': {
+    color: 'red',
+    accentBar: 'bg-rose-500',
+    accentText: 'text-rose-300',
+    activeBorder: 'border-rose-500',
+    activeBg: 'bg-rose-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#f43f5e]',
+    hoverBorder: 'hover:border-rose-500/60',
+    badgeActive: 'bg-rose-500 text-white border-rose-500 font-bold',
+    badgeInactive: 'bg-rose-500/10 text-rose-300 border-rose-500/40'
+  },
+  'architecture': {
+    color: 'blue',
+    accentBar: 'bg-blue-400',
+    accentText: 'text-blue-300',
+    activeBorder: 'border-blue-400',
+    activeBg: 'bg-blue-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#60a5fa]',
+    hoverBorder: 'hover:border-blue-400/60',
+    badgeActive: 'bg-blue-400 text-black border-blue-400 font-bold',
+    badgeInactive: 'bg-blue-400/10 text-blue-300 border-blue-400/40'
+  },
+  'executive': {
+    color: 'amber',
+    accentBar: 'bg-yellow-400',
+    accentText: 'text-yellow-300',
+    activeBorder: 'border-yellow-400',
+    activeBg: 'bg-yellow-950/40',
+    activeShadow: 'shadow-[4px_4px_0px_0px_#facc15]',
+    hoverBorder: 'hover:border-yellow-400/60',
+    badgeActive: 'bg-yellow-400 text-black border-yellow-400 font-bold',
+    badgeInactive: 'bg-yellow-400/10 text-yellow-300 border-yellow-400/40'
   }
 };
 
@@ -359,17 +535,17 @@ export const ROLE_CATEGORY_METADATA: Record<string, { label: string; icon: strin
 'governance-audit': {
     label: 'Governance, Risk, Compliance (GRC) & IT Audit',
     icon: '🛡️',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering COBIT 2019, ITGC (IT General Controls), SOX 404, ISO 27001, SOC 1/SOC 2, NIST SP 800-53, Third-Party Risk & Remediation Validation'
   },
 'architecture': {
     label: 'Technology Architecture Track',
     icon: '🏛️',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering TOGAF 10, Microservices vs Monoliths, Domain-Driven Design (DDD), Event-Driven Architecture, Multi-Cloud, Zero Trust & FinOps'
   },
 'executive': {
     label: 'Executive & C-Level Tech Leadership',
     icon: '👑',
-    description: 'Building up interview question bank for this domain...'
+    description: '256 Intensive Questions covering CIO/CTO/CISO Governance, Tech Strategy, Board Oversight, FinOps Economics, M&A Integration & Crisis Decisions'
   }
 };
 
