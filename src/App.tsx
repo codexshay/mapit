@@ -2072,7 +2072,7 @@ export default function App() {
                         }`}
                       >
                         <span className="text-[11px] font-mono font-bold tracking-tight uppercase flex items-center gap-1.5 truncate">
-                          {(tabId === 'hr-contacts' || tabId === 'interviewq' || tabId === 'jobs') && (
+                          {(tabId === 'hr-contacts' || tabId === 'jobs') && (
                             <span className="bg-yellow-400 text-black px-1.5 py-0.5 text-[8.5px] font-extrabold uppercase rounded-xs tracking-wide shrink-0">
                               beta
                             </span>
@@ -3107,7 +3107,7 @@ export default function App() {
                   </div>
                   <div>
                     <h3 className={`text-sm font-black uppercase tracking-wider font-mono ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
-                      What's New & Significant Additions
+                      What's New
                     </h3>
                     <p className={`text-[11px] font-sans ${theme === 'light' ? 'text-slate-600' : 'text-zinc-400'}`}>
                       Latest platform features, new databases & section upgrades
@@ -3448,7 +3448,7 @@ export default function App() {
               <React.Suspense fallback={
                 <div className="min-h-[400px] flex flex-col items-center justify-center bg-[#070b14] text-emerald-400 font-mono text-sm border border-slate-800 rounded-2xl p-8 space-y-3">
                   <div className="w-8 h-8 border-2 border-emerald-400 border-t-transparent rounded-full animate-spin"></div>
-                  <div>Loading MapIT InterviewQ [BETA] Database...</div>
+                  <div>Loading MapIT InterviewQ Database...</div>
                 </div>
               }>
                 <InterviewQ 

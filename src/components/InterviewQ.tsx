@@ -711,9 +711,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
                 <BookOpen className={`w-7 h-7 md:w-8 md:h-8 ${isLight ? 'text-slate-900' : 'text-white'}`} />
                 MapIT InterviewQ
               </h1>
-              <span className="bg-yellow-400 text-black px-2 py-0.5 text-[10px] font-extrabold uppercase rounded-xs tracking-wide shrink-0 font-mono">
-                beta
-              </span>
+
             </div>
             <p className={`hidden md:block text-sm md:text-base max-w-3xl font-sans ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
               Role-mapped technical interview questions &amp; practical assessment labs with preferred answers, evaluator checkpoints, and direct links to official documentation.
