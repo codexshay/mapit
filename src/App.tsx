@@ -3166,9 +3166,14 @@ export default function App() {
                 }`}>
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
-                        Jobs & Referrals
-                      </span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
+                          Jobs & Referrals
+                        </span>
+                        <span className="bg-yellow-400 text-black px-1.5 py-0.5 text-[8.5px] font-extrabold uppercase rounded-xs tracking-wide shrink-0 font-mono">
+                          beta
+                        </span>
+                      </div>
                       <span className={`text-[10px] font-mono font-bold ${theme === 'light' ? 'text-slate-700' : 'text-cyan-300'}`}>257+ Companies</span>
                     </div>
                     <h4 className={`text-xs font-black font-sans uppercase tracking-tight ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
@@ -3202,9 +3207,14 @@ export default function App() {
                 }`}>
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
-                        HR Directory
-                      </span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                          HR Directory
+                        </span>
+                        <span className="bg-yellow-400 text-black px-1.5 py-0.5 text-[8.5px] font-extrabold uppercase rounded-xs tracking-wide shrink-0 font-mono">
+                          beta
+                        </span>
+                      </div>
                       <span className={`text-[10px] font-mono font-bold ${theme === 'light' ? 'text-slate-700' : 'text-emerald-300'}`}>514+ Agencies</span>
                     </div>
                     <h4 className={`text-xs font-black font-sans uppercase tracking-tight ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
