@@ -24,6 +24,7 @@ import { CERTIFICATIONS_LIBRARY, SKILLS_LIBRARY, TOOLS_LIBRARY, CertLibraryItem,
 import { CHANNELS_POOL, YouTubeChannel } from '../data/youtubeDatabase';
 import { GLOBAL_HACKATHONS, Hackathon } from './Hackathons';
 import { getOfferedStudyPortals } from '../utils/studyPortalLookup';
+import { expandQueryViaKnowledgeGraph } from '../utils/knowledgeGraphEngine';
 
 export interface SearchResultsViewProps {
   query: string;
@@ -31,34 +32,6 @@ export interface SearchResultsViewProps {
   onSelectRole: (roleId: string) => void;
   theme?: 'light' | 'dark';
   isLight?: boolean;
-}
-
-// Synonym & Abbreviation Expansion Helper
-function expandSearchTerms(rawQuery: string): string[] {
-  const q = rawQuery.trim().toLowerCase();
-  const tokens: string[] = [q];
-
-  // SCCM / MECM / Microsoft Configuration Manager Synonym Mapping
-  if (q === 'sccm' || q.includes('sccm') || q.includes('mecm') || q.includes('configuration manager')) {
-    tokens.push('sccm', 'mecm', 'configuration manager', 'microsoft endpoint configuration manager', 'system center configuration manager', 'patch management', 'osd', 'wsus', 'endpoint configuration');
-  }
-
-  // Active Directory Synonym Mapping
-  if (q === 'ad' || q === 'active directory' || q.includes('active directory') || q.includes('ad ds')) {
-    tokens.push('active directory', 'ad ds', 'ad', 'domain controller', 'gpo', 'group policy', 'entra id', 'azure ad', 'directory services', 'ldap');
-  }
-
-  // Intune Synonym Mapping
-  if (q.includes('intune')) {
-    tokens.push('intune', 'microsoft intune', 'endpoint manager', 'mdm', 'mam', 'autopilot', 'device compliance');
-  }
-
-  // PowerShell Synonym Mapping
-  if (q.includes('powershell')) {
-    tokens.push('powershell', 'ps1', 'scripting', 'cmdlet', 'automation');
-  }
-
-  return Array.from(new Set(tokens));
 }
 
 export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
@@ -70,12 +43,15 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
 }) => {
   const isLight = isLightProp !== undefined ? isLightProp : theme === 'light';
   const cleanQuery = (query || '').trim().toLowerCase();
-  const searchTerms = useMemo(() => expandSearchTerms(cleanQuery), [cleanQuery]);
+
+  // Knowledge Graph Expanded Concept Vector
+  const knowledgeGraph = useMemo(() => expandQueryViaKnowledgeGraph(cleanQuery), [cleanQuery]);
+  const searchTerms = knowledgeGraph.queryTerms;
 
   const matchesTerm = (text: string | undefined): boolean => {
     if (!text) return false;
     const lower = text.toLowerCase();
-    return searchTerms.some(term => lower.includes(term));
+    return searchTerms.some(term => lower.includes(term) || term.includes(lower));
   };
 
   // 1. Matched Job Roles
@@ -84,11 +60,13 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
     return Object.values(ALL_ROLES_DATA).filter((role: RoleDetail) => 
       matchesTerm(role.title) ||
       matchesTerm(role.domain) ||
+      matchesTerm(role.id) ||
+      (knowledgeGraph.associatedRoleSlugs.some(slug => role.id.toLowerCase().includes(slug) || slug.includes(role.id.toLowerCase()))) ||
       (role.roleAsk && matchesTerm(role.roleAsk.explanation)) ||
       (role.mustHaves && role.mustHaves.tech && role.mustHaves.tech.some(s => matchesTerm(s))) ||
       (role.toolsToLearn && role.toolsToLearn.some(t => matchesTerm(t)))
     ).slice(0, 12);
-  }, [cleanQuery, searchTerms]);
+  }, [cleanQuery, searchTerms, knowledgeGraph]);
 
   // 2. Matched Interview Questions & Practical Labs
   const matchedInterviewQ = useMemo(() => {
@@ -98,31 +76,52 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
       matchesTerm(q.preferred_answer) ||
       matchesTerm(q.domain) ||
       matchesTerm(q.id) ||
+      matchesTerm(q.role_slug) ||
+      (knowledgeGraph.associatedRoleSlugs.some(slug => q.role_slug.toLowerCase().includes(slug) || slug.includes(q.role_slug.toLowerCase()))) ||
       matchesTerm(q.resolution_title)
-    ).slice(0, 15);
-  }, [cleanQuery, searchTerms]);
+    ).slice(0, 18);
+  }, [cleanQuery, searchTerms, knowledgeGraph]);
 
-  // 3. Matched Tools Library (SCCM, Active Directory, Intune, etc.)
+  // 3. Matched Tools Library (Sorted by Searched Role Relevance)
   const matchedTools = useMemo(() => {
     if (!cleanQuery) return [];
-    return TOOLS_LIBRARY.filter((tool: ToolLibraryItem) => 
+    const filtered = TOOLS_LIBRARY.filter((tool: ToolLibraryItem) => 
       matchesTerm(tool.name) ||
       matchesTerm(tool.category) ||
       matchesTerm(tool.description) ||
-      matchesTerm(tool.howToPractice)
-    ).slice(0, 10);
-  }, [cleanQuery, searchTerms]);
+      matchesTerm(tool.howToPractice) ||
+      (knowledgeGraph.associatedTools.some(at => tool.name.toLowerCase().includes(at) || at.includes(tool.name.toLowerCase())))
+    );
 
-  // 4. Matched Skills Library
+    // Sort so tools explicitly listed in the concept vector appear first
+    return filtered.sort((a, b) => {
+      const aIsPrimary = knowledgeGraph.associatedTools.some(at => a.name.toLowerCase().includes(at));
+      const bIsPrimary = knowledgeGraph.associatedTools.some(at => b.name.toLowerCase().includes(at));
+      if (aIsPrimary && !bIsPrimary) return -1;
+      if (!aIsPrimary && bIsPrimary) return 1;
+      return 0;
+    }).slice(0, 12);
+  }, [cleanQuery, searchTerms, knowledgeGraph]);
+
+  // 4. Matched Skills Library (Sorted by Searched Role Relevance)
   const matchedSkills = useMemo(() => {
     if (!cleanQuery) return [];
-    return SKILLS_LIBRARY.filter((skill: SkillLibraryItem) => 
+    const filtered = SKILLS_LIBRARY.filter((skill: SkillLibraryItem) => 
       matchesTerm(skill.name) ||
       matchesTerm(skill.category) ||
       matchesTerm(skill.description) ||
-      (skill.associatedTools && skill.associatedTools.some(t => matchesTerm(t)))
-    ).slice(0, 10);
-  }, [cleanQuery, searchTerms]);
+      (skill.associatedTools && skill.associatedTools.some(t => matchesTerm(t))) ||
+      (knowledgeGraph.associatedTools.some(at => skill.name.toLowerCase().includes(at) || at.includes(skill.name.toLowerCase())))
+    );
+
+    return filtered.sort((a, b) => {
+      const aIsPrimary = knowledgeGraph.associatedTools.some(at => a.name.toLowerCase().includes(at));
+      const bIsPrimary = knowledgeGraph.associatedTools.some(at => b.name.toLowerCase().includes(at));
+      if (aIsPrimary && !bIsPrimary) return -1;
+      if (!aIsPrimary && bIsPrimary) return 1;
+      return 0;
+    }).slice(0, 12);
+  }, [cleanQuery, searchTerms, knowledgeGraph]);
 
   // 5. Matched Certifications Library
   const matchedCertifications = useMemo(() => {
@@ -132,7 +131,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
       matchesTerm(item.provider) ||
       matchesTerm(item.description) ||
       (item.relatedRoles && item.relatedRoles.some(r => matchesTerm(r)))
-    ).slice(0, 10);
+    ).slice(0, 12);
   }, [cleanQuery, searchTerms]);
 
   // 6. Matched IT Companies (Jobs & Referrals)
@@ -162,12 +161,12 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
               city: cityName,
               contact: c
             });
-            if (results.length >= 10) break;
+            if (results.length >= 12) break;
           }
         }
-        if (results.length >= 10) break;
+        if (results.length >= 12) break;
       }
-      if (results.length >= 10) break;
+      if (results.length >= 12) break;
     }
     return results;
   }, [cleanQuery, searchTerms]);
@@ -179,7 +178,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
       matchesTerm(ch.name) ||
       matchesTerm(ch.domain) ||
       matchesTerm(ch.bestFor)
-    ).slice(0, 8);
+    ).slice(0, 12);
   }, [cleanQuery, searchTerms]);
 
   // 9. Matched Global Hackathons & Events
@@ -412,6 +411,29 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
       {/* Main Results Content Container */}
       <div className="max-w-7xl mx-auto space-y-12">
         
+        {/* Knowledge Graph Concept Cluster Banner */}
+        {knowledgeGraph.matchedClusters.length > 0 && (
+          <div className={`p-4 border-2 font-mono text-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-3 ${
+            isLight ? 'bg-indigo-50/90 border-indigo-300 text-indigo-900 shadow-xs' : 'bg-[#090e1e] border-indigo-500/50 text-indigo-200'
+          }`}>
+            <div className="space-y-1.5">
+              <div className="flex items-center gap-2 font-bold uppercase text-indigo-600 dark:text-indigo-400">
+                <Sparkles className="w-4 h-4 text-amber-500 animate-pulse" />
+                <span>MapIT Knowledge Graph Concept Resolved:</span>
+                <span className="underline font-extrabold text-sm">{knowledgeGraph.matchedClusters[0].primaryTitle}</span>
+              </div>
+              <div className="flex flex-wrap gap-1.5 text-[11px] items-center">
+                <span className="text-slate-500 font-bold uppercase">Associated Synonyms &amp; Roles:</span>
+                {knowledgeGraph.matchedClusters[0].synonymRoles.slice(0, 7).map(r => (
+                  <span key={r} className="px-2 py-0.5 bg-indigo-100 dark:bg-indigo-950 text-indigo-800 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 uppercase font-bold">
+                    {r}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* SECTION 1: MATCHED JOB ROLES */}
         {matchedRoles.length > 0 && (
           <section id="search-sec-roles" className="space-y-4">
