@@ -260,32 +260,151 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
           </div>
         </div>
 
-        {/* Category Breakdown Pills */}
+        {/* Category Breakdown Pills - Clickable Navigation Buttons */}
         <div className="flex flex-wrap gap-2 text-xs font-bold uppercase">
-          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
-            💼 Roles ({matchedRoles.length})
-          </span>
-          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
-            ⚡ InterviewQ ({matchedInterviewQ.length})
-          </span>
-          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
-            🛠️ Tools &amp; Skills ({matchedTools.length + matchedSkills.length})
-          </span>
-          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
-            📜 Certifications ({matchedCertifications.length})
-          </span>
-          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
-            🏢 Companies ({matchedCompanies.length})
-          </span>
-          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
-            👥 HR Directory ({matchedHRContacts.length})
-          </span>
-          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
-            📺 YouTube ({matchedYouTubeChannels.length})
-          </span>
-          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
-            🏆 Hackathons ({matchedHackathons.length})
-          </span>
+          <button
+            onClick={() => {
+              const el = document.getElementById('search-sec-roles');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+              else onNavigateTab('map');
+            }}
+            className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
+              matchedRoles.length > 0 
+                ? (isLight ? 'bg-emerald-50 border-emerald-400 text-emerald-900 hover:bg-emerald-100 font-bold' : 'bg-emerald-950/60 border-emerald-500/60 text-emerald-300 hover:bg-emerald-900')
+                : (isLight ? 'bg-white border-slate-300 text-slate-400' : 'bg-zinc-900 border-zinc-700 text-zinc-500')
+            }`}
+          >
+            <span>💼 Roles</span>
+            <span className={`px-1.5 py-0.2 text-[10px] font-mono font-bold rounded-xs ${matchedRoles.length > 0 ? 'bg-emerald-600 text-white' : 'bg-slate-200 dark:bg-zinc-800 text-slate-500'}`}>
+              {matchedRoles.length}
+            </span>
+          </button>
+
+          <button
+            onClick={() => {
+              const el = document.getElementById('search-sec-interviewq');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+              else onNavigateTab('interviewq');
+            }}
+            className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
+              matchedInterviewQ.length > 0 
+                ? (isLight ? 'bg-indigo-50 border-indigo-400 text-indigo-900 hover:bg-indigo-100 font-bold' : 'bg-indigo-950/60 border-indigo-500/60 text-indigo-300 hover:bg-indigo-900')
+                : (isLight ? 'bg-white border-slate-300 text-slate-400' : 'bg-zinc-900 border-zinc-700 text-zinc-500')
+            }`}
+          >
+            <span>⚡ InterviewQ</span>
+            <span className={`px-1.5 py-0.2 text-[10px] font-mono font-bold rounded-xs ${matchedInterviewQ.length > 0 ? 'bg-indigo-600 text-white' : 'bg-slate-200 dark:bg-zinc-800 text-slate-500'}`}>
+              {matchedInterviewQ.length}
+            </span>
+          </button>
+
+          <button
+            onClick={() => {
+              const el = document.getElementById('search-sec-tools');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+              else onNavigateTab('libraries', { tab: 'tools-skills' });
+            }}
+            className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
+              (matchedTools.length + matchedSkills.length) > 0 
+                ? (isLight ? 'bg-sky-50 border-sky-400 text-sky-900 hover:bg-sky-100 font-bold' : 'bg-sky-950/60 border-sky-500/60 text-sky-300 hover:bg-sky-900')
+                : (isLight ? 'bg-white border-slate-300 text-slate-400' : 'bg-zinc-900 border-zinc-700 text-zinc-500')
+            }`}
+          >
+            <span>🛠️ Tools &amp; Skills</span>
+            <span className={`px-1.5 py-0.2 text-[10px] font-mono font-bold rounded-xs ${(matchedTools.length + matchedSkills.length) > 0 ? 'bg-sky-600 text-white' : 'bg-slate-200 dark:bg-zinc-800 text-slate-500'}`}>
+              {matchedTools.length + matchedSkills.length}
+            </span>
+          </button>
+
+          <button
+            onClick={() => {
+              const el = document.getElementById('search-sec-certs');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+              else onNavigateTab('libraries', { tab: 'certs' });
+            }}
+            className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
+              matchedCertifications.length > 0 
+                ? (isLight ? 'bg-amber-50 border-amber-400 text-amber-900 hover:bg-amber-100 font-bold' : 'bg-amber-950/60 border-amber-500/60 text-amber-300 hover:bg-amber-900')
+                : (isLight ? 'bg-white border-slate-300 text-slate-400' : 'bg-zinc-900 border-zinc-700 text-zinc-500')
+            }`}
+          >
+            <span>📜 Certifications</span>
+            <span className={`px-1.5 py-0.2 text-[10px] font-mono font-bold rounded-xs ${matchedCertifications.length > 0 ? 'bg-amber-600 text-white' : 'bg-slate-200 dark:bg-zinc-800 text-slate-500'}`}>
+              {matchedCertifications.length}
+            </span>
+          </button>
+
+          <button
+            onClick={() => {
+              const el = document.getElementById('search-sec-companies');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+              else onNavigateTab('jobs');
+            }}
+            className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
+              matchedCompanies.length > 0 
+                ? (isLight ? 'bg-sky-50 border-sky-400 text-sky-900 hover:bg-sky-100 font-bold' : 'bg-sky-950/60 border-sky-500/60 text-sky-300 hover:bg-sky-900')
+                : (isLight ? 'bg-white border-slate-300 text-slate-400' : 'bg-zinc-900 border-zinc-700 text-zinc-500')
+            }`}
+          >
+            <span>🏢 Companies</span>
+            <span className={`px-1.5 py-0.2 text-[10px] font-mono font-bold rounded-xs ${matchedCompanies.length > 0 ? 'bg-sky-600 text-white' : 'bg-slate-200 dark:bg-zinc-800 text-slate-500'}`}>
+              {matchedCompanies.length}
+            </span>
+          </button>
+
+          <button
+            onClick={() => {
+              const el = document.getElementById('search-sec-hr');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+              else onNavigateTab('hr');
+            }}
+            className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
+              matchedHRContacts.length > 0 
+                ? (isLight ? 'bg-indigo-50 border-indigo-400 text-indigo-900 hover:bg-indigo-100 font-bold' : 'bg-indigo-950/60 border-indigo-500/60 text-indigo-300 hover:bg-indigo-900')
+                : (isLight ? 'bg-white border-slate-300 text-slate-400' : 'bg-zinc-900 border-zinc-700 text-zinc-500')
+            }`}
+          >
+            <span>👥 HR Directory</span>
+            <span className={`px-1.5 py-0.2 text-[10px] font-mono font-bold rounded-xs ${matchedHRContacts.length > 0 ? 'bg-indigo-600 text-white' : 'bg-slate-200 dark:bg-zinc-800 text-slate-500'}`}>
+              {matchedHRContacts.length}
+            </span>
+          </button>
+
+          <button
+            onClick={() => {
+              const el = document.getElementById('search-sec-youtube');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+              else onNavigateTab('libraries', { tab: 'youtubeTeachers' });
+            }}
+            className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
+              matchedYouTubeChannels.length > 0 
+                ? (isLight ? 'bg-red-50 border-red-400 text-red-900 hover:bg-red-100 font-bold' : 'bg-red-950/60 border-red-500/60 text-red-300 hover:bg-red-900')
+                : (isLight ? 'bg-white border-slate-300 text-slate-400' : 'bg-zinc-900 border-zinc-700 text-zinc-500')
+            }`}
+          >
+            <span>📺 YouTube</span>
+            <span className={`px-1.5 py-0.2 text-[10px] font-mono font-bold rounded-xs ${matchedYouTubeChannels.length > 0 ? 'bg-red-600 text-white' : 'bg-slate-200 dark:bg-zinc-800 text-slate-500'}`}>
+              {matchedYouTubeChannels.length}
+            </span>
+          </button>
+
+          <button
+            onClick={() => {
+              const el = document.getElementById('search-sec-hackathons');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+              else onNavigateTab('hackathons');
+            }}
+            className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
+              matchedHackathons.length > 0 
+                ? (isLight ? 'bg-amber-50 border-amber-400 text-amber-900 hover:bg-amber-100 font-bold' : 'bg-amber-950/60 border-amber-500/60 text-amber-300 hover:bg-amber-900')
+                : (isLight ? 'bg-white border-slate-300 text-slate-400' : 'bg-zinc-900 border-zinc-700 text-zinc-500')
+            }`}
+          >
+            <span>🏆 Hackathons</span>
+            <span className={`px-1.5 py-0.2 text-[10px] font-mono font-bold rounded-xs ${matchedHackathons.length > 0 ? 'bg-amber-600 text-white' : 'bg-slate-200 dark:bg-zinc-800 text-slate-500'}`}>
+              {matchedHackathons.length}
+            </span>
+          </button>
         </div>
       </header>
 
@@ -294,7 +413,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
         
         {/* SECTION 1: MATCHED JOB ROLES */}
         {matchedRoles.length > 0 && (
-          <section className="space-y-4">
+          <section id="search-sec-roles" className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
               <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
                 <Briefcase className="w-5 h-5 text-emerald-500" />
@@ -345,7 +464,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
 
         {/* SECTION 2: MATCHED TOOLS & SKILLS LIBRARY */}
         {(matchedTools.length > 0 || matchedSkills.length > 0) && (
-          <section className="space-y-4">
+          <section id="search-sec-tools" className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
               <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
                 <Wrench className="w-5 h-5 text-sky-500" />
@@ -427,7 +546,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
 
         {/* SECTION 3: MATCHED INTERVIEW QUESTIONS & LABS */}
         {matchedInterviewQ.length > 0 && (
-          <section className="space-y-4">
+          <section id="search-sec-interviewq" className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
               <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
                 <HelpCircle className="w-5 h-5 text-indigo-500" />
@@ -472,7 +591,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
 
         {/* SECTION 4: MATCHED CERTIFICATIONS LIBRARY */}
         {matchedCertifications.length > 0 && (
-          <section className="space-y-4">
+          <section id="search-sec-certs" className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
               <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
                 <Award className="w-5 h-5 text-amber-500" />
@@ -519,7 +638,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
 
         {/* SECTION 5: MATCHED IT COMPANIES & REFERRALS */}
         {matchedCompanies.length > 0 && (
-          <section className="space-y-4">
+          <section id="search-sec-companies" className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
               <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
                 <Building2 className="w-5 h-5 text-sky-600" />
@@ -565,7 +684,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
 
         {/* SECTION 6: MATCHED HR CONTACTS DIRECTORY */}
         {matchedHRContacts.length > 0 && (
-          <section className="space-y-4">
+          <section id="search-sec-hr" className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
               <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
                 <Users className="w-5 h-5 text-indigo-600" />
@@ -614,7 +733,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
 
         {/* SECTION 7: MATCHED YOUTUBE TECH EDUCATORS */}
         {matchedYouTubeChannels.length > 0 && (
-          <section className="space-y-4">
+          <section id="search-sec-youtube" className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
               <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
                 <Youtube className="w-5 h-5 text-red-600" />
@@ -660,7 +779,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
 
         {/* SECTION 8: MATCHED GLOBAL HACKATHONS & EVENTS */}
         {matchedHackathons.length > 0 && (
-          <section className="space-y-4">
+          <section id="search-sec-hackathons" className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
               <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
                 <Trophy className="w-5 h-5 text-amber-500" />

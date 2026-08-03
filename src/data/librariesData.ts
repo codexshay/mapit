@@ -1058,11 +1058,53 @@ export const SKILLS_LIBRARY: SkillLibraryItem[] = [
     associatedTools: ['Carbon Aware SDK', 'Scaphandre', 'Kepler Exporter']
   },
   {
-    name: 'Active Directory User Access',
+    name: 'Active Directory User Access & Group Policy',
     category: 'Security',
-    description: 'Creating, disabling, resetting passwords for enterprise users, configuring groups inside domain forests.',
+    description: 'Creating, disabling, resetting passwords for enterprise users, configuring OUs, GPO security policies, and group permissions inside domain forests.',
     bestFreeTutorial: 'https://www.youtube.com/results?search_query=active+directory+crash+course+for+helpdesk',
-    associatedTools: ['Active Directory Users & Computers', 'Microsoft Entra ID']
+    associatedTools: ['Active Directory Users & Computers', 'Group Policy Console', 'Microsoft Entra ID', 'PowerShell']
+  },
+  {
+    name: 'Active Directory Domain Services (AD DS) & PKI',
+    category: 'Network & Infrastructure',
+    description: 'Managing Domain Controllers, Forest/Domain Trusts, FSMO roles, Kerberos/NTLM authentication, and Certificate Services (AD CS).',
+    bestFreeTutorial: 'https://www.youtube.com/results?search_query=active+directory+domain+services+full+course',
+    associatedTools: ['AD Administrative Center', 'Ntdsutil', 'Certmgr.msc', 'DNS Manager']
+  },
+  {
+    name: 'DNS Architecture & Record Resolution',
+    category: 'Network & Infrastructure',
+    description: 'Configuring recursive & authoritative DNS, A/AAAA records, CNAME, MX, TXT, PTR, NS records, and troubleshooting Port 53 resolution bottlenecks.',
+    bestFreeTutorial: 'https://www.youtube.com/results?search_query=dns+explained+simply+networking',
+    associatedTools: ['nslookup', 'dig', 'ping', 'DNS Management Console']
+  },
+  {
+    name: 'DHCP & Dynamic IP Lease Management',
+    category: 'Network & Infrastructure',
+    description: 'Configuring the DORA process (Discover, Offer, Request, Acknowledge), DHCP scopes, static IP reservations, lease times, and relay agents.',
+    bestFreeTutorial: 'https://www.youtube.com/results?search_query=dhcp+dora+process+explained',
+    associatedTools: ['DHCP Console', 'ipconfig /renew', 'Wireshark']
+  },
+  {
+    name: 'TCP/IP Protocol & 7-Layer OSI Model',
+    category: 'Network & Infrastructure',
+    description: 'Analyzing packet flow across OSI layers (Physical, Data Link, Network, Transport, Session, Presentation, Application) & TCP 3-Way Handshake (SYN/ACK).',
+    bestFreeTutorial: 'https://www.youtube.com/results?search_query=osi+model+7+layers+explained+practical',
+    associatedTools: ['Wireshark', 'Tcpdump', 'Netstat', 'Ping / Traceroute']
+  },
+  {
+    name: 'SSL/TLS Encryption & HTTPS PKI Certificates',
+    category: 'Security',
+    description: 'Understanding Public Key Infrastructure (PKI), Certificate Authorities (CA), TLS 1.3 Handshake, RSA/ECC keys, and web server SSL installation.',
+    bestFreeTutorial: 'https://www.youtube.com/results?search_query=ssl+tls+handshake+explained',
+    associatedTools: ['OpenSSL', 'Certmgr.msc', 'Let\'s Encrypt / Certbot']
+  },
+  {
+    name: 'Network Address Translation (NAT) & Firewall Rules',
+    category: 'Network & Infrastructure',
+    description: 'Translating private RFC 1918 IP addresses to public IPs using Static NAT, Dynamic NAT, Port Address Translation (PAT), and inbound firewall policy rules.',
+    bestFreeTutorial: 'https://www.youtube.com/results?search_query=nat+pat+explained+networking',
+    associatedTools: ['Router Console', 'Firewall CLI', 'Cisco Packet Tracer']
   },
   {
     name: 'OS Troubleshooting (Windows/Mac)',
@@ -1075,21 +1117,21 @@ export const SKILLS_LIBRARY: SkillLibraryItem[] = [
     name: 'Subnetting & IP Configuration',
     category: 'Network & Infrastructure',
     description: 'Structuring IP addresses into logical network segments, checking gateway routes, CIDR notation, and subnet masks.',
-    bestFreeTutorial: 'https://www.youtube.com/@PracticalNetworking', // Practical Networking
+    bestFreeTutorial: 'https://www.youtube.com/@PracticalNetworking',
     associatedTools: ['IPCONFIG / IFCONFIG', 'Ping', 'Traceroute']
   },
   {
     name: 'SQL Querying (Window/Joins)',
     category: 'Programming & Data',
     description: 'Writing relational database requests to merge logs, identify values, aggregate metrics, and clean records.',
-    bestFreeTutorial: 'https://www.youtube.com/@freecodecamp', // freeCodeCamp
+    bestFreeTutorial: 'https://www.youtube.com/@freecodecamp',
     associatedTools: ['PostgreSQL', 'MySQL Workbench', 'DB Fiddle']
   },
   {
     name: 'Linux Server Navigation',
     category: 'Operating Systems',
     description: 'Connecting via SSH, configuring directory permissions (chmod), tailing logs (tail -f), and running shell script tasks.',
-    bestFreeTutorial: 'https://www.youtube.com/@freecodecamp', // freeCodeCamp Linux
+    bestFreeTutorial: 'https://www.youtube.com/@freecodecamp',
     associatedTools: ['Putty', 'Bash Shell', 'OpenSSH']
   },
   {
@@ -1103,7 +1145,7 @@ export const SKILLS_LIBRARY: SkillLibraryItem[] = [
     name: 'Container Isolation',
     category: 'Cloud & Virtualization',
     description: 'Writing Dockerfiles to pack applications and standard dependencies into isolated server layers.',
-    bestFreeTutorial: 'https://www.youtube.com/@TechWorldwithNana', // TechWorld with Nana Docker
+    bestFreeTutorial: 'https://www.youtube.com/@TechWorldwithNana',
     associatedTools: ['Docker Desktop', 'Docker CLI']
   },
   {
