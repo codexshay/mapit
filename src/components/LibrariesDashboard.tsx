@@ -13,6 +13,7 @@ import { auditPrerequisites } from '../utils/prereqAudit';
 import { IT_TAXONOMY_DATA } from './ITTaxonomyExplorer';
 import { useDebounce, getCrossTabSummary, searchUnifiedIndex } from '../utils/searchIndex';
 import { STORAGE_KEYS, getStorageItem, setStorageItem } from '../utils/storageMigration';
+import { resolveKeywordMetadata } from '../utils/masterKeywordSearch';
 
 const cleanFamilyName = (name: string): string => {
   return name.replace(/^(?:\d+\.\s*|[^a-zA-Z\d\s]+\s*)/, '');
@@ -2487,13 +2488,30 @@ export default function LibrariesDashboard({
                             </div>
                           </div>
 
-                          <div className="mb-2 flex flex-wrap gap-1.5 items-center">
-                            <span className={`text-[9px] px-1.5 py-0.5 rounded-none font-bold uppercase ${
-                              isLight ? 'bg-indigo-50 text-indigo-700 border border-indigo-100' : 'bg-indigo-950/40 text-indigo-300 border border-indigo-900/40'
-                            }`}>
-                              🧬 Taxonomy: {getTaxonomyCategoryForCert(cert.name)}
-                            </span>
-                          </div>
+                          {(() => {
+                            const meta = resolveKeywordMetadata(cert.name);
+                            return (
+                              <div className="mb-2 flex flex-wrap gap-1.5 items-center">
+                                <span className={`text-[9px] px-1.5 py-0.5 rounded-none font-bold uppercase ${
+                                  isLight ? 'bg-indigo-50 text-indigo-700 border border-indigo-100' : 'bg-indigo-950/40 text-indigo-300 border border-indigo-900/40'
+                                }`}>
+                                  🧬 Taxonomy: {getTaxonomyCategoryForCert(cert.name)}
+                                </span>
+                                {meta.domainLabel && (
+                                  <span className={`text-[9px] px-1.5 py-0.5 rounded-none font-bold uppercase ${
+                                    isLight ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' : 'bg-emerald-950/40 text-emerald-300 border border-emerald-800/40'
+                                  }`}>
+                                    🏷️ Domain: {meta.domainLabel}
+                                  </span>
+                                )}
+                                {meta.isHotTech && (
+                                  <span className="px-1.5 py-0.5 text-[8px] bg-red-500 text-white font-bold rounded-none uppercase flex items-center gap-1">
+                                    🔥 HOT TECH 2026
+                                  </span>
+                                )}
+                              </div>
+                            );
+                          })()}
 
                           <p className={`leading-normal mb-4 text-[11px] ${isLight ? 'text-slate-650' : 'text-gray-400'}`}>
                             {cert.description}
@@ -2734,10 +2752,29 @@ export default function LibrariesDashboard({
                           )}
                         </div>
 
-                        <div className="flex flex-wrap gap-1 text-[10px]">
-                          <span className="bg-black/60 border border-slate-800 text-cyan-400 px-1.5 py-0.5 font-bold">Domain: {sk.domain}</span>
-                          <span className="bg-black/60 border border-slate-800 text-slate-300 px-1.5 py-0.5">Topic: {sk.topic}</span>
-                        </div>
+                        {(() => {
+                          const meta = resolveKeywordMetadata(sk.name);
+                          return (
+                            <div className="flex flex-wrap gap-1 text-[10px]">
+                              <span className={`border px-1.5 py-0.5 font-bold ${
+                                isLight ? 'bg-cyan-50 text-cyan-800 border-cyan-200' : 'bg-black/60 border-slate-800 text-cyan-400'
+                              }`}>Domain: {meta.domainLabel || sk.domain}</span>
+                              <span className={`border px-1.5 py-0.5 ${
+                                isLight ? 'bg-slate-100 text-slate-700 border-slate-200' : 'bg-black/60 border-slate-800 text-slate-300'
+                              }`}>Topic: {sk.topic}</span>
+                              {meta.typeLabel && (
+                                <span className={`border px-1.5 py-0.5 font-bold ${
+                                  isLight ? 'bg-purple-50 text-purple-700 border-purple-200' : 'bg-purple-950/40 text-purple-300 border-purple-900/40'
+                                }`}>🏷️ {meta.typeLabel}</span>
+                              )}
+                              {meta.isHotTech && (
+                                <span className="px-1.5 py-0.5 text-[8px] bg-red-500 text-white font-bold rounded-none uppercase flex items-center gap-1">
+                                  🔥 HOT TECH 2026
+                                </span>
+                              )}
+                            </div>
+                          );
+                        })()}
 
                         {sk.notes && (
                           <p className="text-[10.5px] text-gray-400 font-sans leading-normal line-clamp-2">
