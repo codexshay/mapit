@@ -2783,27 +2783,34 @@ export default function LibrariesDashboard({
                         )}
 
                         {/* Offered by Study Portals */}
-                        {sk.portals && sk.portals.length > 0 && (
-                          <div className="pt-2 border-t border-slate-800/80">
-                            <span className="text-[9px] text-gray-400 font-bold uppercase block mb-1">OFFERED BY STUDY PORTALS:</span>
-                            <div className="flex flex-wrap gap-1.5">
-                              {sk.portals.map((portalName: string, pIdx: number) => {
-                                const url = sk.officialUrls && sk.officialUrls[pIdx] ? sk.officialUrls[pIdx] : 'https://www.google.com';
-                                return (
+                        {(() => {
+                          const hasExistingPortals = sk.portals && sk.portals.length > 0;
+                          const portalsList = hasExistingPortals 
+                            ? sk.portals.map((pName: string, idx: number) => ({
+                                portal: pName,
+                                url: sk.officialUrls && sk.officialUrls[idx] ? sk.officialUrls[idx] : 'https://www.google.com'
+                              }))
+                            : getOfferedStudyPortals(sk.name, sk.domain);
+
+                          return (
+                            <div className="pt-2 border-t border-slate-800/80">
+                              <span className="text-[9px] text-gray-400 font-bold uppercase block mb-1">🎓 OFFERED BY STUDY PORTALS:</span>
+                              <div className="flex flex-wrap gap-1.5">
+                                {portalsList.map((p: any, pIdx: number) => (
                                   <a
-                                    key={portalName}
-                                    href={url}
+                                    key={pIdx}
+                                    href={p.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="px-2 py-0.5 bg-emerald-950/30 hover:bg-emerald-900/40 border border-emerald-800/50 hover:border-emerald-400 text-[10px] text-emerald-300 hover:text-white flex items-center gap-1 transition"
+                                    className="px-2 py-0.5 bg-emerald-950/30 hover:bg-emerald-900/40 border border-emerald-800/50 hover:border-emerald-400 text-[10px] text-emerald-300 hover:text-white flex items-center gap-1 transition font-mono font-bold"
                                   >
-                                    {portalName} <ExternalLink className="w-2.5 h-2.5 shrink-0" />
+                                    {p.portal} <ExternalLink className="w-2.5 h-2.5 shrink-0" />
                                   </a>
-                                );
-                              })}
+                                ))}
+                              </div>
                             </div>
-                          </div>
-                        )}
+                          );
+                        })()}
                       </div>
 
                       <div className="mt-3 pt-2.5 border-t border-slate-800 flex items-center justify-between">

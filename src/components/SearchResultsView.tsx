@@ -23,6 +23,7 @@ import { RAW_DIRECTORY_DATABASE, HRContact } from './HRContacts';
 import { CERTIFICATIONS_LIBRARY, SKILLS_LIBRARY, TOOLS_LIBRARY, CertLibraryItem, SkillLibraryItem, ToolLibraryItem } from '../data/librariesData';
 import { CHANNELS_POOL, YouTubeChannel } from '../data/youtubeDatabase';
 import { GLOBAL_HACKATHONS, Hackathon } from './Hackathons';
+import { getOfferedStudyPortals } from '../utils/studyPortalLookup';
 
 export interface SearchResultsViewProps {
   query: string;
@@ -449,7 +450,31 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                       <p className={`text-xs font-sans line-clamp-2 ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
                         {role.roleAsk.explanation}
                       </p>
-                    )}
+                    {/* Offered Study Portals for Role */}
+                    {(() => {
+                      const portals = getOfferedStudyPortals(role.title, role.domain);
+                      return (
+                        <div className="pt-2 border-t border-slate-100 dark:border-zinc-900 space-y-1">
+                          <span className="text-[9px] font-mono font-bold uppercase text-slate-500 block">🎓 Verified Study Portals:</span>
+                          <div className="flex flex-wrap gap-1">
+                            {portals.map((p, pIdx) => (
+                              <a
+                                key={pIdx}
+                                href={p.url}
+                                target="_blank"
+                                rel="noreferrer"
+                                onClick={(e) => e.stopPropagation()}
+                                className={`px-2 py-0.5 text-[9.5px] font-mono border rounded-xs transition flex items-center gap-1 font-bold ${
+                                  isLight ? 'bg-emerald-50 text-emerald-800 border-emerald-300 hover:bg-emerald-100' : 'bg-emerald-950/40 text-emerald-300 border-emerald-800/50 hover:bg-emerald-900'
+                                }`}
+                              >
+                                {p.portal} <ExternalLink className="w-2.5 h-2.5" />
+                              </a>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    })()}
                   </div>
 
                   <div className="pt-2 border-t border-slate-100 dark:border-zinc-900 flex items-center justify-between text-xs font-bold text-emerald-600 dark:text-emerald-400">
@@ -498,6 +523,32 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                   <p className={`text-xs font-sans ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
                     {tool.description}
                   </p>
+                  
+                  {/* Offered Study Portals for Tool */}
+                  {(() => {
+                    const portals = getOfferedStudyPortals(tool.name, tool.category);
+                    return (
+                      <div className="pt-2 border-t border-slate-100 dark:border-zinc-900 space-y-1">
+                        <span className="text-[9px] font-mono font-bold uppercase text-slate-500 block">🎓 Verified Study Portals:</span>
+                        <div className="flex flex-wrap gap-1">
+                          {portals.map((p, pIdx) => (
+                            <a
+                              key={pIdx}
+                              href={p.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className={`px-2 py-0.5 text-[9.5px] font-mono border rounded-xs transition flex items-center gap-1 font-bold ${
+                                isLight ? 'bg-sky-50 text-sky-800 border-sky-300 hover:bg-sky-100' : 'bg-sky-950/40 text-sky-300 border-sky-800/50 hover:bg-sky-900'
+                              }`}
+                            >
+                              {p.portal} <ExternalLink className="w-2.5 h-2.5" />
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })()}
+
                   <div className="pt-2">
                     <a
                       href={tool.freeResourceLink}
@@ -538,6 +589,31 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                       ))}
                     </div>
                   )}
+
+                  {/* Offered Study Portals for Skill */}
+                  {(() => {
+                    const portals = getOfferedStudyPortals(skill.name, skill.category);
+                    return (
+                      <div className="pt-2 border-t border-slate-100 dark:border-zinc-900 space-y-1">
+                        <span className="text-[9px] font-mono font-bold uppercase text-slate-500 block">🎓 Verified Study Portals:</span>
+                        <div className="flex flex-wrap gap-1">
+                          {portals.map((p, pIdx) => (
+                            <a
+                              key={pIdx}
+                              href={p.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className={`px-2 py-0.5 text-[9.5px] font-mono border rounded-xs transition flex items-center gap-1 font-bold ${
+                                isLight ? 'bg-teal-50 text-teal-800 border-teal-300 hover:bg-teal-100' : 'bg-teal-950/40 text-teal-300 border-teal-800/50 hover:bg-teal-900'
+                              }`}
+                            >
+                              {p.portal} <ExternalLink className="w-2.5 h-2.5" />
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })()}
                 </div>
               ))}
             </div>
