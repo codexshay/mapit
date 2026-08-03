@@ -14,6 +14,7 @@ import { IT_TAXONOMY_DATA } from './ITTaxonomyExplorer';
 import { useDebounce, getCrossTabSummary, searchUnifiedIndex } from '../utils/searchIndex';
 import { STORAGE_KEYS, getStorageItem, setStorageItem } from '../utils/storageMigration';
 import { resolveKeywordMetadata } from '../utils/masterKeywordSearch';
+import { getOfferedStudyPortals } from '../utils/studyPortalLookup';
 
 const cleanFamilyName = (name: string): string => {
   return name.replace(/^(?:\d+\.\s*|[^a-zA-Z\d\s]+\s*)/, '');
