@@ -653,7 +653,20 @@ export default function App() {
     };
   }, []);
 
+  const [searchInputVal, setSearchInputVal] = useState<string>('');
   const [searchQuery, setSearchQuery] = useState<string>('');
+
+  // 300ms Debounced sync from searchInputVal to searchQuery to ensure fast 60fps typing without keypress dropping
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSearchQuery(searchInputVal);
+      if (searchInputVal.trim() && searchInputVal.length >= 2 && activeTab !== 'search') {
+        setActiveTab('search');
+      }
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [searchInputVal]);
+
   const [activeFilters, setActiveFilters] = useState({
     beginnerFriendly: false,
     noCoding: false,
@@ -2455,35 +2468,23 @@ export default function App() {
                 </div>
                 <input
                   type="text"
-                  value={searchQuery}
-                  onChange={(e) => {
-                    const val = e.target.value;
-                    setSearchQuery(val);
-                    setGlobalSearchQuery(val);
-                    setLibrariesQuery(val);
-                    setYoutubeSearchQuery(val);
-                    setHackathonsSearchQuery(val);
-                    if (val.trim()) {
-                      setActiveTab('search');
-                    }
-                  }}
+                  value={searchInputVal}
+                  onChange={(e) => setSearchInputVal(e.target.value)}
                   onKeyDown={(e) => {
-                    if (e.key === 'Enter' && searchQuery.trim()) {
+                    if (e.key === 'Enter' && searchInputVal.trim()) {
+                      setSearchQuery(searchInputVal);
                       setActiveTab('search');
                     }
                   }}
                   placeholder="Search all sections (roles, questions, companies, HR)..."
                   className="w-full pl-9 pr-8 py-1.5 text-xs font-sans rounded-md border text-slate-100 placeholder-slate-400 bg-[#111827]/90 border-slate-700/70 focus:outline-none transition-all focus:bg-[#0f172a] focus:border-[#10b981] focus:ring-1 focus:ring-[#10b981]/50 shadow-md"
                 />
-                {searchQuery && (
+                {searchInputVal && (
                   <button
                     type="button"
                     onClick={() => {
+                      setSearchInputVal('');
                       setSearchQuery('');
-                      setGlobalSearchQuery('');
-                      setLibrariesQuery('');
-                      setYoutubeSearchQuery('');
-                      setHackathonsSearchQuery('');
                       setActiveTab('map');
                     }}
                     className="absolute inset-y-0 right-0 pr-2.5 flex items-center text-gray-400 hover:text-white cursor-pointer"
@@ -2528,35 +2529,23 @@ export default function App() {
                 </div>
                 <input
                   type="text"
-                  value={searchQuery}
-                  onChange={(e) => {
-                    const val = e.target.value;
-                    setSearchQuery(val);
-                    setGlobalSearchQuery(val);
-                    setLibrariesQuery(val);
-                    setYoutubeSearchQuery(val);
-                    setHackathonsSearchQuery(val);
-                    if (val.trim()) {
-                      setActiveTab('search');
-                    }
-                  }}
+                  value={searchInputVal}
+                  onChange={(e) => setSearchInputVal(e.target.value)}
                   onKeyDown={(e) => {
-                    if (e.key === 'Enter' && searchQuery.trim()) {
+                    if (e.key === 'Enter' && searchInputVal.trim()) {
+                      setSearchQuery(searchInputVal);
                       setActiveTab('search');
                     }
                   }}
                   placeholder="Search all sections..."
                   className="w-full pl-8.5 pr-2.5 py-1.5 text-xs font-sans rounded-md border text-slate-100 placeholder-slate-400 bg-[#111827]/80 border-slate-700/60 focus:outline-none transition-all focus:bg-[#0f172a] focus:border-[#10b981] focus:ring-1 focus:ring-[#10b981]/50"
                 />
-                {searchQuery && (
+                {searchInputVal && (
                   <button
                     type="button"
                     onClick={() => {
+                      setSearchInputVal('');
                       setSearchQuery('');
-                      setGlobalSearchQuery('');
-                      setLibrariesQuery('');
-                      setYoutubeSearchQuery('');
-                      setHackathonsSearchQuery('');
                       setActiveTab('map');
                     }}
                     className="absolute inset-y-0 right-0 pr-2.5 flex items-center text-gray-400 hover:text-white cursor-pointer"
