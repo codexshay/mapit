@@ -348,7 +348,6 @@ export default function App() {
     setLibrariesQuery(q);
     setYoutubeSearchQuery(q);
     setHackathonsSearchQuery(q);
-    setSearchQuery(q);
   };
 
   const isBookmarked = (id: string, type: BookmarkItem['type']) => {
