@@ -450,6 +450,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                       <p className={`text-xs font-sans line-clamp-2 ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
                         {role.roleAsk.explanation}
                       </p>
+                    )}
                     {/* Offered Study Portals for Role */}
                     {(() => {
                       const portals = getOfferedStudyPortals(role.title, role.domain);
