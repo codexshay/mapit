@@ -1954,6 +1954,41 @@ export default function LibrariesDashboard({
       }`} 
       id="libraries-dashboard-block"
     >
+      {/* 🔍 DEDICATED RESOURCES SEARCH CONSOLE INPUT */}
+      <div className={`mb-4 border-2 p-3 flex flex-col md:flex-row items-center justify-between gap-3 ${
+        isLight ? 'bg-slate-50 border-slate-300 text-slate-900 shadow-xs' : 'bg-[#0a0f1d] border-[#1e2e54] text-white'
+      }`}>
+        <div className="relative flex-1 w-full flex items-center">
+          <Search className={`w-4 h-4 absolute left-3 ${isLight ? 'text-slate-500' : 'text-emerald-400'}`} />
+          <input
+            type="text"
+            value={query}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setYtSearchQuery(e.target.value);
+            }}
+            placeholder="Search across all resources (Books, Certifications, SCCM, Active Directory, Tools, YouTube Educators, Hackathons)..."
+            className={`w-full pl-9 pr-8 py-2 font-mono text-xs border rounded-none focus:outline-none transition-all ${
+              isLight 
+                ? 'bg-white border-slate-300 text-slate-900 focus:border-emerald-600' 
+                : 'bg-[#040812] border-[#1e2e54] text-white focus:border-emerald-400'
+            }`}
+          />
+          {query && (
+            <button
+              onClick={() => {
+                setQuery('');
+                setYtSearchQuery('');
+              }}
+              className="absolute right-2 text-xs font-mono text-gray-400 hover:text-red-500 p-1 cursor-pointer"
+              title="Clear search query"
+            >
+              ✕
+            </button>
+          )}
+        </div>
+      </div>
+
       {/* Header element */}
       <div className={`flex flex-col xl:flex-row xl:items-center justify-start gap-3 border-b-2 pb-3 mb-4 ${isLight ? 'border-gray-200' : 'border-[#121c38]'}`}>
         {/* Tab triggers */}

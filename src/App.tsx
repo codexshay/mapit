@@ -16,6 +16,9 @@ const AntCrossingGame = React.lazy(() => import('./components/AntCrossingGame'))
 const AICareerAssistant = React.lazy(() => import('./components/AICareerAssistant'));
 const HRContacts = React.lazy(() => import('./components/HRContacts'));
 const InterviewQ = React.lazy(() => import('./components/InterviewQ'));
+const InterviewQLaunch = React.lazy(() => import('./components/launch/InterviewQLaunch'));
+const ResourcesLaunch = React.lazy(() => import('./components/launch/ResourcesLaunch'));
+const FullWebsiteLaunch = React.lazy(() => import('./components/launch/FullWebsiteLaunch'));
 const JobsReferrals = React.lazy(() => import('./components/JobsReferrals'));
 const SearchResultsView = React.lazy(() => import('./components/SearchResultsView'));
 import { interviewQDatabase } from './data/interviewQDatabase';
@@ -1213,6 +1216,35 @@ export default function App() {
   const [hackathonsSelectedItemId, setHackathonsSelectedItemId] = useState<string | null>(null);
   const [hackathonsSearchQuery, setHackathonsSearchQuery] = useState<string>('');
 
+  const [launchTarget, setLaunchTarget] = useState<'interviewq' | 'resources' | 'full' | null>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const val = params.get('launch');
+      if (val === 'interviewq' || window.location.hash === '#launch-interviewq') return 'interviewq';
+      if (val === 'resources' || val === 'libraries' || window.location.hash === '#launch-resources') return 'resources';
+      if (val === 'full' || val === 'website' || val === 'mapit' || window.location.hash === '#launch-full') return 'full';
+    }
+    return null;
+  });
+
+  useEffect(() => {
+    const handleLocationCheck = () => {
+      if (typeof window !== 'undefined') {
+        const params = new URLSearchParams(window.location.search);
+        const val = params.get('launch');
+        if (val === 'interviewq' || window.location.hash === '#launch-interviewq') {
+          setLaunchTarget('interviewq');
+        } else if (val === 'resources' || val === 'libraries' || window.location.hash === '#launch-resources') {
+          setLaunchTarget('resources');
+        } else if (val === 'full' || val === 'website' || val === 'mapit' || window.location.hash === '#launch-full') {
+          setLaunchTarget('full');
+        }
+      }
+    };
+    window.addEventListener('popstate', handleLocationCheck);
+    return () => window.removeEventListener('popstate', handleLocationCheck);
+  }, []);
+
   // Tab states to isolate sections independently
   const [activeTab, setActiveTab] = useState<string>('about');
   const [careerMapViewMode, setCareerMapViewMode] = useState<'mindmap' | 'comparison'>('mindmap');
@@ -1823,6 +1855,54 @@ export default function App() {
       }
     }, 150);
   };
+
+  if (launchTarget === 'interviewq') {
+    return (
+      <React.Suspense fallback={
+        <div className="min-h-screen bg-[#05070d] text-cyan-400 font-mono text-sm flex flex-col items-center justify-center space-y-3">
+          <div className="w-8 h-8 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin"></div>
+          <div>Loading InterviewQ Launch Preview...</div>
+        </div>
+      }>
+        <InterviewQLaunch 
+          bookmarks={bookmarks}
+          toggleBookmark={toggleBookmark}
+          isBookmarked={isBookmarked}
+          theme={theme}
+        />
+      </React.Suspense>
+    );
+  }
+
+  if (launchTarget === 'resources') {
+    return (
+      <React.Suspense fallback={
+        <div className="min-h-screen bg-[#05070d] text-cyan-400 font-mono text-sm flex flex-col items-center justify-center space-y-3">
+          <div className="w-8 h-8 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin"></div>
+          <div>Loading Resources Launch Preview...</div>
+        </div>
+      }>
+        <ResourcesLaunch 
+          theme={theme}
+        />
+      </React.Suspense>
+    );
+  }
+
+  if (launchTarget === 'full') {
+    return (
+      <React.Suspense fallback={
+        <div className="min-h-screen bg-[#05070d] text-cyan-400 font-mono text-sm flex flex-col items-center justify-center space-y-3">
+          <div className="w-8 h-8 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin"></div>
+          <div>Loading Full Platform Reel...</div>
+        </div>
+      }>
+        <FullWebsiteLaunch 
+          theme={theme}
+        />
+      </React.Suspense>
+    );
+  }
 
   return (
     <div className={`min-h-screen ${theme === 'light' ? 'light-theme' : 'bg-[#03060c]'} text-slate-100 font-sans relative flex flex-col md:flex-row overflow-x-hidden`}>
@@ -4049,6 +4129,8 @@ export default function App() {
             <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-zinc-400 border border-zinc-800 bg-black">Loading Search Results...</div>}>
               <SearchResultsView 
                 query={searchQuery}
+                theme={theme}
+                isLight={theme === 'light'}
                 onNavigateTab={(t) => {
                   setActiveTab(t);
                   window.scrollTo({ top: 0, behavior: 'smooth' });

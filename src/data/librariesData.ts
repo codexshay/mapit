@@ -1179,6 +1179,46 @@ export const TOOLS_LIBRARY: ToolLibraryItem[] = [
     costModel: 'Free Desktop application / Pro licenses needed for online sharing',
     howToPractice: 'Download Power BI Desktop free on the Microsoft Store and upload Kaggle CSV datasets.',
     freeResourceLink: 'https://powerbi.microsoft.com/en-us/desktop/'
+  },
+  {
+    name: 'SCCM / MECM (Microsoft Configuration Manager)',
+    category: 'Active Directory & Identity',
+    description: 'Microsoft Endpoint Configuration Manager (SCCM/MECM) for enterprise OS deployment (OSD), software patch distribution (WSUS), application packaging, asset management, and Endpoint compliance.',
+    costModel: 'Microsoft System Center Licensing',
+    howToPractice: 'Build a local Windows Server 2022 lab VM and install MECM Technical Preview with Active Directory integration.',
+    freeResourceLink: 'https://learn.microsoft.com/en-us/mem/configmgr/'
+  },
+  {
+    name: 'Microsoft Intune (Cloud MDM / MAM)',
+    category: 'Active Directory & Identity',
+    description: 'Cloud-native endpoint management solution for mobile devices (MDM), mobile applications (MAM), zero-touch deployment (Autopilot), and security compliance for Windows, macOS, iOS, and Android.',
+    costModel: 'Included in M365 E3/E5 / EMS licensing',
+    howToPractice: 'Sign up for a free 90-day renewable Microsoft 365 Developer tenant with Intune evaluation licenses.',
+    freeResourceLink: 'https://learn.microsoft.com/en-us/mem/intune/'
+  },
+  {
+    name: 'Group Policy Management (GPO)',
+    category: 'Active Directory & Identity',
+    description: 'Centralized policy configuration framework in Active Directory to enforce security baselines, user profiles, software restriction policies, and registry keys across enterprise Windows networks.',
+    costModel: 'Bundled in Windows Server',
+    howToPractice: 'Configure Active Directory OUs and link GPOs to mandate password complexity, disable USB drives, and enforce Windows Firewall rules.',
+    freeResourceLink: 'https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn168923(v=ws.11)'
+  },
+  {
+    name: 'Microsoft Entra ID (Azure Active Directory)',
+    category: 'Active Directory & Identity',
+    description: 'Enterprise cloud identity solution providing Single Sign-On (SSO), Multi-Factor Authentication (MFA), Conditional Access rules, and hybrid cloud identity sync via Entra Connect.',
+    costModel: 'Free tier included / P1 & P2 premium licenses',
+    howToPractice: 'Set up a free Azure Portal tenant and sync test domain accounts using Entra ID Connect Sync.',
+    freeResourceLink: 'https://learn.microsoft.com/en-us/entra/identity/'
+  },
+  {
+    name: 'PowerShell Automation & Scripting',
+    category: 'Cloud Console & CLI',
+    description: 'Command-line shell and object-oriented scripting language built for automating system administration, Active Directory workflows, Azure/M365 tasks, and CI/CD pipelines.',
+    costModel: '100% Free & Open Source',
+    howToPractice: 'Open PowerShell terminal and write scripts to bulk create Active Directory users, query event logs, and parse JSON data.',
+    freeResourceLink: 'https://learn.microsoft.com/en-us/powershell/'
   }
 ];
 

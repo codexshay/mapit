@@ -8,60 +8,142 @@ import {
   BookOpen, 
   ExternalLink, 
   ArrowRight,
-  Phone
+  Phone,
+  Wrench,
+  Award,
+  Youtube,
+  Trophy,
+  Layers,
+  Sparkles
 } from 'lucide-react';
 import { ALL_ROLES_DATA, RoleDetail } from '../data/rolesData';
 import { interviewQDatabase, InterviewQItem } from '../data/interviewQDatabase';
 import { TOP_50_COMPANIES, CompanyInfo, getLinkedInSearchUrl } from '../data/topCompaniesData';
 import { RAW_DIRECTORY_DATABASE, HRContact } from './HRContacts';
-import { CERTIFICATIONS_LIBRARY, CertLibraryItem } from '../data/librariesData';
+import { CERTIFICATIONS_LIBRARY, SKILLS_LIBRARY, TOOLS_LIBRARY, CertLibraryItem, SkillLibraryItem, ToolLibraryItem } from '../data/librariesData';
+import { CHANNELS_POOL, YouTubeChannel } from '../data/youtubeDatabase';
+import { GLOBAL_HACKATHONS, Hackathon } from './Hackathons';
 
-interface SearchResultsViewProps {
+export interface SearchResultsViewProps {
   query: string;
   onNavigateTab: (tabId: string, params?: any) => void;
   onSelectRole: (roleId: string) => void;
+  theme?: 'light' | 'dark';
+  isLight?: boolean;
+}
+
+// Synonym & Abbreviation Expansion Helper
+function expandSearchTerms(rawQuery: string): string[] {
+  const q = rawQuery.trim().toLowerCase();
+  const tokens: string[] = [q];
+
+  // SCCM / MECM / Microsoft Configuration Manager Synonym Mapping
+  if (q === 'sccm' || q.includes('sccm') || q.includes('mecm') || q.includes('configuration manager')) {
+    tokens.push('sccm', 'mecm', 'configuration manager', 'microsoft endpoint configuration manager', 'system center configuration manager', 'patch management', 'osd', 'wsus', 'endpoint configuration');
+  }
+
+  // Active Directory Synonym Mapping
+  if (q === 'ad' || q === 'active directory' || q.includes('active directory') || q.includes('ad ds')) {
+    tokens.push('active directory', 'ad ds', 'ad', 'domain controller', 'gpo', 'group policy', 'entra id', 'azure ad', 'directory services', 'ldap');
+  }
+
+  // Intune Synonym Mapping
+  if (q.includes('intune')) {
+    tokens.push('intune', 'microsoft intune', 'endpoint manager', 'mdm', 'mam', 'autopilot', 'device compliance');
+  }
+
+  // PowerShell Synonym Mapping
+  if (q.includes('powershell')) {
+    tokens.push('powershell', 'ps1', 'scripting', 'cmdlet', 'automation');
+  }
+
+  return Array.from(new Set(tokens));
 }
 
 export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
   query,
   onNavigateTab,
-  onSelectRole
+  onSelectRole,
+  theme = 'light',
+  isLight: isLightProp
 }) => {
+  const isLight = isLightProp !== undefined ? isLightProp : theme === 'light';
   const cleanQuery = (query || '').trim().toLowerCase();
+  const searchTerms = useMemo(() => expandSearchTerms(cleanQuery), [cleanQuery]);
+
+  const matchesTerm = (text: string | undefined): boolean => {
+    if (!text) return false;
+    const lower = text.toLowerCase();
+    return searchTerms.some(term => lower.includes(term));
+  };
 
   // 1. Matched Job Roles
   const matchedRoles = useMemo(() => {
     if (!cleanQuery) return [];
     return Object.values(ALL_ROLES_DATA).filter((role: RoleDetail) => 
-      role.title.toLowerCase().includes(cleanQuery) ||
-      role.domain.toLowerCase().includes(cleanQuery) ||
-      (role.roleAsk && role.roleAsk.explanation && role.roleAsk.explanation.toLowerCase().includes(cleanQuery)) ||
-      (role.mustHaves && role.mustHaves.tech && role.mustHaves.tech.some(s => s.toLowerCase().includes(cleanQuery))) ||
-      (role.toolsToLearn && role.toolsToLearn.some(t => t.toLowerCase().includes(cleanQuery)))
+      matchesTerm(role.title) ||
+      matchesTerm(role.domain) ||
+      (role.roleAsk && matchesTerm(role.roleAsk.explanation)) ||
+      (role.mustHaves && role.mustHaves.tech && role.mustHaves.tech.some(s => matchesTerm(s))) ||
+      (role.toolsToLearn && role.toolsToLearn.some(t => matchesTerm(t)))
     ).slice(0, 12);
-  }, [cleanQuery]);
+  }, [cleanQuery, searchTerms]);
 
-  // 2. Matched Interview Questions & Labs
+  // 2. Matched Interview Questions & Practical Labs
   const matchedInterviewQ = useMemo(() => {
     if (!cleanQuery) return [];
     return interviewQDatabase.filter((q: InterviewQItem) => 
-      q.prompt.toLowerCase().includes(cleanQuery) ||
-      q.preferred_answer.toLowerCase().includes(cleanQuery) ||
-      q.domain.toLowerCase().includes(cleanQuery) ||
-      q.id.toLowerCase().includes(cleanQuery)
-    ).slice(0, 12);
-  }, [cleanQuery]);
+      matchesTerm(q.prompt) ||
+      matchesTerm(q.preferred_answer) ||
+      matchesTerm(q.domain) ||
+      matchesTerm(q.id) ||
+      matchesTerm(q.resolution_title)
+    ).slice(0, 15);
+  }, [cleanQuery, searchTerms]);
 
-  // 3. Matched Companies (Jobs & Referrals)
+  // 3. Matched Tools Library (SCCM, Active Directory, Intune, etc.)
+  const matchedTools = useMemo(() => {
+    if (!cleanQuery) return [];
+    return TOOLS_LIBRARY.filter((tool: ToolLibraryItem) => 
+      matchesTerm(tool.name) ||
+      matchesTerm(tool.category) ||
+      matchesTerm(tool.description) ||
+      matchesTerm(tool.howToPractice)
+    ).slice(0, 10);
+  }, [cleanQuery, searchTerms]);
+
+  // 4. Matched Skills Library
+  const matchedSkills = useMemo(() => {
+    if (!cleanQuery) return [];
+    return SKILLS_LIBRARY.filter((skill: SkillLibraryItem) => 
+      matchesTerm(skill.name) ||
+      matchesTerm(skill.category) ||
+      matchesTerm(skill.description) ||
+      (skill.associatedTools && skill.associatedTools.some(t => matchesTerm(t)))
+    ).slice(0, 10);
+  }, [cleanQuery, searchTerms]);
+
+  // 5. Matched Certifications Library
+  const matchedCertifications = useMemo(() => {
+    if (!cleanQuery) return [];
+    return CERTIFICATIONS_LIBRARY.filter((item: CertLibraryItem) => 
+      matchesTerm(item.name) ||
+      matchesTerm(item.provider) ||
+      matchesTerm(item.description) ||
+      (item.relatedRoles && item.relatedRoles.some(r => matchesTerm(r)))
+    ).slice(0, 10);
+  }, [cleanQuery, searchTerms]);
+
+  // 6. Matched IT Companies (Jobs & Referrals)
   const matchedCompanies = useMemo(() => {
     if (!cleanQuery) return [];
     return TOP_50_COMPANIES.filter((comp: CompanyInfo) => 
-      comp.name.toLowerCase().includes(cleanQuery) ||
-      comp.category.toLowerCase().includes(cleanQuery)
+      matchesTerm(comp.name) ||
+      matchesTerm(comp.category)
     ).slice(0, 12);
-  }, [cleanQuery]);
+  }, [cleanQuery, searchTerms]);
 
-  // 4. Matched HR Contacts
+  // 7. Matched HR Contacts Directory
   const matchedHRContacts = useMemo(() => {
     if (!cleanQuery) return [];
     const results: Array<{ country: string; city: string; contact: HRContact }> = [];
@@ -70,12 +152,12 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
       for (const [cityName, contacts] of Object.entries(cities)) {
         for (const c of contacts) {
           if (
-            c.companyName.toLowerCase().includes(cleanQuery) ||
-            c.category.toLowerCase().includes(cleanQuery) ||
-            cityName.toLowerCase().includes(cleanQuery)
+            matchesTerm(c.companyName) ||
+            matchesTerm(c.category) ||
+            matchesTerm(cityName)
           ) {
             results.push({
-              country: countryCode === 'IN' ? 'India' : 'Philippines',
+              country: countryCode === 'IN' ? 'India 🇮🇳' : countryCode === 'US' ? 'United States 🇺🇸' : 'Philippines 🇵🇭',
               city: cityName,
               contact: c
             });
@@ -87,333 +169,546 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
       if (results.length >= 10) break;
     }
     return results;
-  }, [cleanQuery]);
+  }, [cleanQuery, searchTerms]);
 
-  // 5. Matched Certifications & Resources
-  const matchedResources = useMemo(() => {
+  // 8. Matched YouTube Tech Educators
+  const matchedYouTubeChannels = useMemo(() => {
     if (!cleanQuery) return [];
-    return CERTIFICATIONS_LIBRARY.filter((item: CertLibraryItem) => 
-      item.name.toLowerCase().includes(cleanQuery) ||
-      item.provider.toLowerCase().includes(cleanQuery) ||
-      (item.description && item.description.toLowerCase().includes(cleanQuery))
-    ).slice(0, 10);
-  }, [cleanQuery]);
+    return CHANNELS_POOL.filter((ch: YouTubeChannel) => 
+      matchesTerm(ch.name) ||
+      matchesTerm(ch.domain) ||
+      matchesTerm(ch.bestFor)
+    ).slice(0, 8);
+  }, [cleanQuery, searchTerms]);
 
-  const totalResultsCount = matchedRoles.length + matchedInterviewQ.length + matchedCompanies.length + matchedHRContacts.length + matchedResources.length;
+  // 9. Matched Global Hackathons & Events
+  const matchedHackathons = useMemo(() => {
+    if (!cleanQuery) return [];
+    return GLOBAL_HACKATHONS.filter((h: Hackathon) => 
+      matchesTerm(h.title) ||
+      matchesTerm(h.organizer) ||
+      matchesTerm(h.description) ||
+      matchesTerm(h.category) ||
+      (h.themes && h.themes.some(t => matchesTerm(t)))
+    ).slice(0, 8);
+  }, [cleanQuery, searchTerms]);
+
+  const totalResultsCount = 
+    matchedRoles.length + 
+    matchedInterviewQ.length + 
+    matchedTools.length + 
+    matchedSkills.length + 
+    matchedCertifications.length + 
+    matchedCompanies.length + 
+    matchedHRContacts.length + 
+    matchedYouTubeChannels.length + 
+    matchedHackathons.length;
 
   if (!cleanQuery) {
     return (
-      <div className="min-h-screen bg-black text-zinc-100 p-6 md:p-12 font-mono flex flex-col items-center justify-center text-center">
-        <div className="w-16 h-16 rounded-full bg-zinc-900 border-2 border-zinc-700 flex items-center justify-center mb-4 text-zinc-400">
+      <div className={`min-h-screen p-6 md:p-12 font-mono flex flex-col items-center justify-center text-center ${
+        isLight ? 'bg-white text-slate-900' : 'bg-[#03060c] text-zinc-100'
+      }`}>
+        <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center mb-4 ${
+          isLight ? 'bg-slate-100 border-slate-300 text-slate-600' : 'bg-zinc-900 border-zinc-700 text-zinc-400'
+        }`}>
           <Search className="w-8 h-8 animate-pulse" />
         </div>
-        <h2 className="text-2xl font-black uppercase text-white mb-2">Global Search Console</h2>
-        <p className="text-zinc-400 text-sm max-w-md font-sans mb-6">
-          Type any keyword, role, company, certification, question topic, or HR directory location into the search bar above to query all sections simultaneously.
+        <h2 className={`text-2xl font-black uppercase mb-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
+          Global Search Console
+        </h2>
+        <p className={`text-sm max-w-md font-sans mb-6 ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
+          Type any tool (SCCM, Active Directory, Intune, Terraform), role, company, certification, question, or HR directory into the search bar above to query all sections simultaneously.
         </p>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-black text-zinc-100 p-4 md:p-8 font-mono">
+    <div className={`min-h-screen p-4 md:p-8 font-mono transition-colors duration-300 ${
+      isLight ? 'bg-white text-slate-900' : 'bg-[#03060c] text-zinc-100'
+    }`}>
       {/* Search Header Banner */}
-      <header className="max-w-7xl mx-auto mb-8 border-2 border-zinc-800 bg-zinc-950 p-6 md:p-8 shadow-2xl">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-zinc-800 pb-6 mb-6">
+      <header className={`max-w-7xl mx-auto mb-8 border-2 p-6 md:p-8 shadow-md rounded-sm ${
+        isLight ? 'border-slate-200 bg-slate-50 text-slate-900' : 'border-zinc-800 bg-zinc-950 text-white'
+      }`}>
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 pb-6 mb-6 border-slate-200 dark:border-zinc-800">
           <div>
-            <div className="flex items-center gap-3 mb-2">
-              <h1 className="text-3xl md:text-4xl font-black tracking-tight text-white flex items-center gap-2 uppercase">
-                <Search className="w-8 h-8 text-white" />
+            <div className="flex items-center gap-3 mb-2 flex-wrap">
+              <h1 className={`text-2xl md:text-4xl font-black tracking-tight flex items-center gap-2 uppercase ${
+                isLight ? 'text-slate-900' : 'text-white'
+              }`}>
+                <Search className={`w-8 h-8 ${isLight ? 'text-emerald-600' : 'text-emerald-400'}`} />
                 Global Search Results
               </h1>
-              <span className="bg-white text-black px-2.5 py-0.5 text-xs font-black uppercase tracking-wider">
+              <span className={`px-3 py-1 text-xs font-black uppercase tracking-wider rounded-xs ${
+                isLight ? 'bg-emerald-600 text-white' : 'bg-white text-black'
+              }`}>
                 {totalResultsCount} RESULTS FOUND
               </span>
             </div>
-            <p className="text-zinc-400 text-sm md:text-base font-sans">
-              Displaying filtered search results for <span className="text-white font-bold font-mono">"{cleanQuery}"</span> across all MapIT sections with direct navigation links.
+            <p className={`text-sm md:text-base font-sans ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
+              Displaying indexed search matches for <span className={`font-bold font-mono ${isLight ? 'text-emerald-700' : 'text-white'}`}>"{cleanQuery}"</span> across all MapIT databases with direct navigation links.
             </p>
           </div>
 
-          <div className="text-xs font-mono text-zinc-400 bg-zinc-900 px-4 py-3 border border-zinc-700 shrink-0">
-            <span className="text-white font-bold block uppercase">Index Coverage</span>
-            <span className="text-[10px] text-zinc-400">Job Roles • InterviewQ • Companies • HR • Resources</span>
+          <div className={`text-xs font-mono px-4 py-3 border rounded-xs shrink-0 ${
+            isLight ? 'bg-white border-slate-300 text-slate-700' : 'bg-zinc-900 border-zinc-700 text-zinc-400'
+          }`}>
+            <span className={`font-bold block uppercase ${isLight ? 'text-slate-900' : 'text-white'}`}>FULL INDEX COVERAGE</span>
+            <span className="text-[10px] text-slate-600 dark:text-zinc-400">Roles • InterviewQs • Tools &amp; Skills • Certs • Companies • HR • YouTube • Hackathons</span>
           </div>
         </div>
 
         {/* Category Breakdown Pills */}
         <div className="flex flex-wrap gap-2 text-xs font-bold uppercase">
-          <span className="px-3 py-1.5 bg-zinc-900 border border-zinc-700 text-zinc-200">
+          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
             💼 Roles ({matchedRoles.length})
           </span>
-          <span className="px-3 py-1.5 bg-zinc-900 border border-zinc-700 text-zinc-200">
+          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
             ⚡ InterviewQ ({matchedInterviewQ.length})
           </span>
-          <span className="px-3 py-1.5 bg-zinc-900 border border-zinc-700 text-zinc-200">
+          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
+            🛠️ Tools &amp; Skills ({matchedTools.length + matchedSkills.length})
+          </span>
+          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
+            📜 Certifications ({matchedCertifications.length})
+          </span>
+          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
             🏢 Companies ({matchedCompanies.length})
           </span>
-          <span className="px-3 py-1.5 bg-zinc-900 border border-zinc-700 text-zinc-200">
-            👥 HR Contacts ({matchedHRContacts.length})
+          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
+            👥 HR Directory ({matchedHRContacts.length})
           </span>
-          <span className="px-3 py-1.5 bg-zinc-900 border border-zinc-700 text-zinc-200">
-            📖 Resources ({matchedResources.length})
+          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
+            📺 YouTube ({matchedYouTubeChannels.length})
+          </span>
+          <span className={`px-3 py-1.5 border rounded-xs ${isLight ? 'bg-white border-slate-300 text-slate-800' : 'bg-zinc-900 border-zinc-700 text-zinc-200'}`}>
+            🏆 Hackathons ({matchedHackathons.length})
           </span>
         </div>
       </header>
 
-      {/* Main Results Container */}
-      <main className="max-w-7xl mx-auto space-y-10">
-        {totalResultsCount === 0 ? (
-          <div className="text-center py-16 bg-zinc-950 border-2 border-zinc-800 p-8">
-            <Search className="w-12 h-12 text-zinc-600 mx-auto mb-4" />
-            <h2 className="text-xl font-bold text-zinc-200 mb-2 uppercase">No matching results found</h2>
-            <p className="text-zinc-400 text-sm max-w-md mx-auto font-sans">
-              No direct matches found for "{cleanQuery}". Try checking for spelling errors or searching for broader terms like "DevOps", "Java", "Delhi", "Security", or "AWS".
-            </p>
-          </div>
-        ) : (
-          <>
-            {/* 1. MATCHED JOB ROLES SECTION */}
-            {matchedRoles.length > 0 && (
-              <section className="space-y-4">
-                <div className="flex items-center justify-between border-b-2 border-zinc-800 pb-2">
-                  <h2 className="text-xl font-black uppercase text-white flex items-center gap-2">
-                    <Briefcase className="w-5 h-5 text-white" />
-                    Job Roles ({matchedRoles.length})
-                  </h2>
-                  <span className="text-xs text-zinc-400">Click role to open in Career Map</span>
-                </div>
+      {/* Main Results Content Container */}
+      <div className="max-w-7xl mx-auto space-y-12">
+        
+        {/* SECTION 1: MATCHED JOB ROLES */}
+        {matchedRoles.length > 0 && (
+          <section className="space-y-4">
+            <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
+              <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
+                <Briefcase className="w-5 h-5 text-emerald-500" />
+                Matched IT Job Roles ({matchedRoles.length})
+              </h2>
+              <button
+                onClick={() => onNavigateTab('map')}
+                className="text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:underline flex items-center gap-1 uppercase"
+              >
+                View Full IT Map <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {matchedRoles.map((role) => (
-                    <div
-                      key={role.id}
-                      onClick={() => {
-                        onSelectRole(role.id);
-                        onNavigateTab('map');
-                      }}
-                      className="bg-zinc-950 border-2 border-zinc-800 hover:border-white p-5 transition-all cursor-pointer group flex flex-col justify-between"
-                    >
-                      <div>
-                        <div className="flex items-center justify-between gap-2 mb-2">
-                          <span className="text-[10px] font-bold uppercase px-2 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700">
-                            {role.domain}
-                          </span>
-                          <span className="text-[10px] text-zinc-400">{role.level || 'Mid-Level'}</span>
-                        </div>
-                        <h3 className="text-lg font-bold text-white group-hover:underline font-sans mb-1">
-                          {role.title}
-                        </h3>
-                        <p className="text-xs text-zinc-400 font-sans line-clamp-2 mb-3">
-                          {role.roleAsk?.explanation || 'Comprehensive career role details and roadmap in MapIT.'}
-                        </p>
-                      </div>
-
-                      <div className="pt-3 border-t border-zinc-800 flex items-center justify-between text-xs text-white font-bold uppercase">
-                        <span>View Role Roadmap</span>
-                        <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
-                      </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {matchedRoles.map((role) => (
+                <div
+                  key={role.id}
+                  onClick={() => onSelectRole(role.id)}
+                  className={`p-5 border-2 transition cursor-pointer flex flex-col justify-between space-y-4 rounded-sm shadow-xs ${
+                    isLight 
+                      ? 'bg-white border-slate-200 text-slate-900 hover:border-emerald-500 hover:shadow-md' 
+                      : 'bg-zinc-950 border-zinc-800 text-white hover:border-emerald-500'
+                  }`}
+                >
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-emerald-100 text-emerald-800 uppercase">
+                        {role.domain}
+                      </span>
                     </div>
-                  ))}
+                    <h3 className="text-base font-black font-sans leading-snug">{role.title}</h3>
+                    {role.roleAsk && (
+                      <p className={`text-xs font-sans line-clamp-2 ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
+                        {role.roleAsk.explanation}
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="pt-2 border-t border-slate-100 dark:border-zinc-900 flex items-center justify-between text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                    <span>Explore Career Map</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </div>
                 </div>
-              </section>
-            )}
-
-            {/* 2. MATCHED INTERVIEW QUESTIONS & LABS */}
-            {matchedInterviewQ.length > 0 && (
-              <section className="space-y-4">
-                <div className="flex items-center justify-between border-b-2 border-zinc-800 pb-2">
-                  <h2 className="text-xl font-black uppercase text-white flex items-center gap-2">
-                    <HelpCircle className="w-5 h-5 text-white" />
-                    Interview Questions &amp; Practical Labs ({matchedInterviewQ.length})
-                  </h2>
-                  <span className="text-xs text-zinc-400">Click to open in InterviewQ</span>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {matchedInterviewQ.map((item) => (
-                    <div
-                      key={item.id}
-                      onClick={() => onNavigateTab('interviewq')}
-                      className="bg-zinc-950 border-2 border-zinc-800 hover:border-white p-5 transition-all cursor-pointer group flex flex-col justify-between"
-                    >
-                      <div>
-                        <div className="flex items-center justify-between gap-2 mb-2">
-                          <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-white text-black">
-                            {item.id}
-                          </span>
-                          <span className="text-[10px] font-bold uppercase px-2 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700">
-                            {item.difficulty}
-                          </span>
-                        </div>
-                        <h3 className="text-sm font-bold text-white font-sans line-clamp-2 mb-2 group-hover:underline">
-                          {item.prompt}
-                        </h3>
-                        <p className="text-xs text-zinc-400 font-sans line-clamp-2 mb-3">
-                          {item.preferred_answer}
-                        </p>
-                      </div>
-
-                      <div className="pt-3 border-t border-zinc-800 flex items-center justify-between text-xs text-white font-bold uppercase">
-                        <span className="text-zinc-400 font-mono text-[10px]">{item.domain}</span>
-                        <span className="flex items-center gap-1">
-                          View Answer <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {/* 3. MATCHED JOBS & REFERRALS COMPANIES */}
-            {matchedCompanies.length > 0 && (
-              <section className="space-y-4">
-                <div className="flex items-center justify-between border-b-2 border-zinc-800 pb-2">
-                  <h2 className="text-xl font-black uppercase text-white flex items-center gap-2">
-                    <Building2 className="w-5 h-5 text-white" />
-                    Companies &amp; LinkedIn Portals ({matchedCompanies.length})
-                  </h2>
-                  <span className="text-xs text-zinc-400">Click to open in Jobs section</span>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {matchedCompanies.map((comp) => {
-                    const linkedInJobsUrl = comp.jobsSectionLink || (comp.companySlug ? `https://www.linkedin.com/company/${comp.companySlug}/jobs/` : comp.careerUrl);
-                    const referralUrl = getLinkedInSearchUrl(comp.name, '', 'referral');
-
-                    return (
-                      <div
-                        key={comp.name}
-                        className="bg-zinc-950 border-2 border-zinc-800 hover:border-zinc-500 p-5 transition-all flex flex-col justify-between space-y-4"
-                      >
-                        <div>
-                          <span className="text-[10px] px-2 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700 font-medium">
-                            {comp.category}
-                          </span>
-                          <h3 className="text-lg font-bold text-white uppercase font-sans mt-2">
-                            {comp.name}
-                          </h3>
-                        </div>
-
-                        <div className="space-y-2 pt-3 border-t border-zinc-800 text-xs">
-                          <a
-                            href={linkedInJobsUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full py-2 px-3 bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-700 flex items-center justify-between font-bold uppercase transition-all"
-                          >
-                            <span>LinkedIn Jobs Tab</span>
-                            <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
-                          </a>
-                          <a
-                            href={referralUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full py-2 px-3 bg-white hover:bg-zinc-200 text-black border border-white flex items-center justify-between font-bold uppercase transition-all"
-                          >
-                            <span>Find Referrals</span>
-                            <Users className="w-3.5 h-3.5 text-black" />
-                          </a>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </section>
-            )}
-
-            {/* 4. MATCHED HR CONTACTS */}
-            {matchedHRContacts.length > 0 && (
-              <section className="space-y-4">
-                <div className="flex items-center justify-between border-b-2 border-zinc-800 pb-2">
-                  <h2 className="text-xl font-black uppercase text-white flex items-center gap-2">
-                    <Users className="w-5 h-5 text-white" />
-                    HR Contacts &amp; Directories ({matchedHRContacts.length})
-                  </h2>
-                  <span className="text-xs text-zinc-400">Click to open HR Contacts</span>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {matchedHRContacts.map(({ country, city, contact }) => (
-                    <div
-                      key={contact.companyName}
-                      onClick={() => onNavigateTab('hr-contacts')}
-                      className="bg-zinc-950 border-2 border-zinc-800 hover:border-white p-4 transition-all cursor-pointer flex flex-col justify-between"
-                    >
-                      <div>
-                        <div className="flex items-center justify-between gap-1 text-[10px] text-zinc-400 mb-1">
-                          <span>{country} • {city}</span>
-                          <span>★ {contact.rating.toFixed(1)}</span>
-                        </div>
-                        <h3 className="text-sm font-bold text-white uppercase font-sans mb-1">
-                          {contact.companyName}
-                        </h3>
-                        <div className="text-xs text-zinc-400 font-sans flex items-center gap-2">
-                          <Phone className="w-3 h-3 text-zinc-500" />
-                          <span>{contact.phone}</span>
-                        </div>
-                      </div>
-
-                      <div className="pt-3 mt-3 border-t border-zinc-800 flex items-center justify-between text-[10px] text-white font-bold uppercase">
-                        <span>{contact.category}</span>
-                        <ArrowRight className="w-3.5 h-3.5" />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {/* 5. MATCHED RESOURCES & COURSES */}
-            {matchedResources.length > 0 && (
-              <section className="space-y-4">
-                <div className="flex items-center justify-between border-b-2 border-zinc-800 pb-2">
-                  <h2 className="text-xl font-black uppercase text-white flex items-center gap-2">
-                    <BookOpen className="w-5 h-5 text-white" />
-                    Resources, Courses &amp; Certifications ({matchedResources.length})
-                  </h2>
-                  <span className="text-xs text-zinc-400">Click to open in Resources tab</span>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {matchedResources.map((item) => (
-                    <div
-                      key={item.id}
-                      onClick={() => onNavigateTab('libraries')}
-                      className="bg-zinc-950 border-2 border-zinc-800 hover:border-white p-5 transition-all cursor-pointer group flex flex-col justify-between"
-                    >
-                      <div>
-                        <div className="flex items-center justify-between gap-2 mb-2">
-                          <span className="text-[10px] font-bold uppercase px-2 py-0.5 bg-zinc-900 text-zinc-300 border border-zinc-700">
-                            {item.difficulty}
-                          </span>
-                          {item.provider && (
-                            <span className="text-[10px] text-zinc-400">{item.provider}</span>
-                          )}
-                        </div>
-                        <h3 className="text-base font-bold text-white font-sans mb-1 group-hover:underline">
-                          {item.name}
-                        </h3>
-                        {item.description && (
-                          <p className="text-xs text-zinc-400 font-sans line-clamp-2 mb-3">
-                            {item.description}
-                          </p>
-                        )}
-                      </div>
-
-                      <div className="pt-3 border-t border-zinc-800 flex items-center justify-between text-xs text-white font-bold uppercase">
-                        <span>Open Resource</span>
-                        <ExternalLink className="w-3.5 h-3.5 text-zinc-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
-          </>
+              ))}
+            </div>
+          </section>
         )}
-      </main>
+
+        {/* SECTION 2: MATCHED TOOLS & SKILLS LIBRARY */}
+        {(matchedTools.length > 0 || matchedSkills.length > 0) && (
+          <section className="space-y-4">
+            <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
+              <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
+                <Wrench className="w-5 h-5 text-sky-500" />
+                Tools &amp; Skills Library ({matchedTools.length + matchedSkills.length})
+              </h2>
+              <button
+                onClick={() => onNavigateTab('libraries')}
+                className="text-xs font-bold text-sky-600 dark:text-sky-400 hover:underline flex items-center gap-1 uppercase"
+              >
+                View Resources Hub <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {matchedTools.map((tool, idx) => (
+                <div
+                  key={`tool-${idx}`}
+                  className={`p-5 border-2 space-y-3 rounded-sm shadow-xs ${
+                    isLight 
+                      ? 'bg-white border-slate-200 text-slate-900' 
+                      : 'bg-zinc-950 border-zinc-800 text-white'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-sky-100 text-sky-800 uppercase">
+                      {tool.category}
+                    </span>
+                    <span className="text-[10px] font-mono text-slate-500">{tool.costModel}</span>
+                  </div>
+                  <h3 className="text-sm font-black font-mono text-sky-700 dark:text-sky-400">{tool.name}</h3>
+                  <p className={`text-xs font-sans ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
+                    {tool.description}
+                  </p>
+                  <div className="pt-2">
+                    <a
+                      href={tool.freeResourceLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-bold text-sky-600 hover:underline"
+                    >
+                      Official Docs / Practice Link <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                </div>
+              ))}
+
+              {matchedSkills.map((skill, idx) => (
+                <div
+                  key={`skill-${idx}`}
+                  className={`p-5 border-2 space-y-3 rounded-sm shadow-xs ${
+                    isLight 
+                      ? 'bg-white border-slate-200 text-slate-900' 
+                      : 'bg-zinc-950 border-zinc-800 text-white'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-teal-100 text-teal-800 uppercase">
+                      {skill.category}
+                    </span>
+                  </div>
+                  <h3 className="text-sm font-black font-mono text-teal-700 dark:text-teal-400">{skill.name}</h3>
+                  <p className={`text-xs font-sans ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
+                    {skill.description}
+                  </p>
+                  {skill.associatedTools && (
+                    <div className="flex flex-wrap gap-1 text-[10px] font-mono">
+                      {skill.associatedTools.map(t => (
+                        <span key={t} className="px-1.5 py-0.5 bg-slate-100 text-slate-700 border border-slate-200">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* SECTION 3: MATCHED INTERVIEW QUESTIONS & LABS */}
+        {matchedInterviewQ.length > 0 && (
+          <section className="space-y-4">
+            <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
+              <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
+                <HelpCircle className="w-5 h-5 text-indigo-500" />
+                Matched Technical InterviewQs &amp; Scenario Labs ({matchedInterviewQ.length})
+              </h2>
+              <button
+                onClick={() => onNavigateTab('interviewq')}
+                className="text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1 uppercase"
+              >
+                View InterviewQ Bank <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {matchedInterviewQ.map((q) => (
+                <div
+                  key={q.id}
+                  className={`p-5 border-2 space-y-3 rounded-sm shadow-xs ${
+                    isLight 
+                      ? 'bg-white border-slate-200 text-slate-900' 
+                      : 'bg-zinc-950 border-zinc-800 text-white'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-indigo-100 text-indigo-800 uppercase">
+                      {q.domain}
+                    </span>
+                    <span className="text-[10px] font-mono text-slate-400">{q.id}</span>
+                  </div>
+                  <h3 className="text-sm font-bold font-sans">{q.prompt}</h3>
+                  <div className={`p-3 text-xs font-sans border-l-4 border-indigo-500 rounded-xs ${
+                    isLight ? 'bg-slate-50 text-slate-700' : 'bg-zinc-900 text-zinc-300'
+                  }`}>
+                    <strong>Preferred Answer / Solution:</strong>
+                    <p className="mt-1 line-clamp-3">{q.preferred_answer}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* SECTION 4: MATCHED CERTIFICATIONS LIBRARY */}
+        {matchedCertifications.length > 0 && (
+          <section className="space-y-4">
+            <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
+              <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
+                <Award className="w-5 h-5 text-amber-500" />
+                Matched Industry Certifications ({matchedCertifications.length})
+              </h2>
+              <button
+                onClick={() => onNavigateTab('libraries')}
+                className="text-xs font-bold text-amber-600 dark:text-amber-400 hover:underline flex items-center gap-1 uppercase"
+              >
+                View All Certifications <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {matchedCertifications.map((cert) => (
+                <div
+                  key={cert.id}
+                  className={`p-5 border-2 space-y-3 rounded-sm shadow-xs ${
+                    isLight 
+                      ? 'bg-white border-slate-200 text-slate-900' 
+                      : 'bg-zinc-950 border-zinc-800 text-white'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-amber-100 text-amber-900 uppercase">
+                      {cert.provider}
+                    </span>
+                    <span className="text-[10px] font-mono text-slate-500">{cert.difficulty}</span>
+                  </div>
+                  <h3 className="text-sm font-black font-sans text-slate-900 dark:text-white">{cert.name}</h3>
+                  <p className={`text-xs font-sans ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
+                    {cert.description}
+                  </p>
+                  <div className="pt-2 flex items-center justify-between text-xs font-bold">
+                    <a href={cert.officialLink} target="_blank" rel="noreferrer" className="text-amber-600 hover:underline flex items-center gap-1">
+                      Official Cert Page <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* SECTION 5: MATCHED IT COMPANIES & REFERRALS */}
+        {matchedCompanies.length > 0 && (
+          <section className="space-y-4">
+            <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
+              <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
+                <Building2 className="w-5 h-5 text-sky-600" />
+                Matched IT Companies &amp; Referrals ({matchedCompanies.length})
+              </h2>
+              <button
+                onClick={() => onNavigateTab('jobs')}
+                className="text-xs font-bold text-sky-600 dark:text-sky-400 hover:underline flex items-center gap-1 uppercase"
+              >
+                View Jobs &amp; Referrals <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {matchedCompanies.map((comp, idx) => (
+                <div
+                  key={`comp-${idx}`}
+                  className={`p-4 border-2 flex items-center justify-between rounded-sm shadow-xs ${
+                    isLight 
+                      ? 'bg-white border-slate-200 text-slate-900' 
+                      : 'bg-zinc-950 border-zinc-800 text-white'
+                  }`}
+                >
+                  <div className="space-y-1">
+                    <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 bg-sky-100 text-sky-800 uppercase">
+                      {comp.category}
+                    </span>
+                    <h3 className="text-sm font-bold font-sans">{comp.name}</h3>
+                  </div>
+                  <a
+                    href={getLinkedInSearchUrl(comp.name, cleanQuery)}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-3 py-1.5 bg-[#0077b5] text-white font-mono text-xs font-bold uppercase rounded-xs hover:bg-[#005885] transition"
+                  >
+                    Jobs Link
+                  </a>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* SECTION 6: MATCHED HR CONTACTS DIRECTORY */}
+        {matchedHRContacts.length > 0 && (
+          <section className="space-y-4">
+            <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
+              <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
+                <Users className="w-5 h-5 text-indigo-600" />
+                Matched HR Contacts Directory ({matchedHRContacts.length})
+              </h2>
+              <button
+                onClick={() => onNavigateTab('hr')}
+                className="text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1 uppercase"
+              >
+                View HR Directory [BETA] <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {matchedHRContacts.map((item, idx) => (
+                <div
+                  key={`hr-${idx}`}
+                  className={`p-4 border-2 flex items-center justify-between rounded-sm shadow-xs ${
+                    isLight 
+                      ? 'bg-white border-slate-200 text-slate-900' 
+                      : 'bg-zinc-950 border-zinc-800 text-white'
+                  }`}
+                >
+                  <div className="space-y-1">
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-mono font-bold text-indigo-600">{item.country}</span>
+                      <span className="text-xs text-slate-500">• {item.city}</span>
+                    </div>
+                    <h3 className="text-sm font-bold font-sans">{item.contact.companyName}</h3>
+                    <span className="text-[10px] font-mono text-slate-500">{item.contact.category}</span>
+                  </div>
+                  {item.contact.phone && (
+                    <a
+                      href={`tel:${item.contact.phone}`}
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-emerald-600 text-white font-mono text-xs font-bold rounded-xs hover:bg-emerald-700 transition"
+                    >
+                      <Phone className="w-3.5 h-3.5" />
+                      <span>{item.contact.phone}</span>
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* SECTION 7: MATCHED YOUTUBE TECH EDUCATORS */}
+        {matchedYouTubeChannels.length > 0 && (
+          <section className="space-y-4">
+            <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
+              <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
+                <Youtube className="w-5 h-5 text-red-600" />
+                Matched YouTube Tech Educators ({matchedYouTubeChannels.length})
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {matchedYouTubeChannels.map((ch, idx) => (
+                <div
+                  key={`yt-${idx}`}
+                  className={`p-4 border-2 space-y-2 rounded-sm shadow-xs ${
+                    isLight 
+                      ? 'bg-white border-slate-200 text-slate-900' 
+                      : 'bg-zinc-950 border-zinc-800 text-white'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 bg-red-100 text-red-800 uppercase">
+                      {ch.domain}
+                    </span>
+                  </div>
+                  <h3 className="text-sm font-bold font-sans flex items-center gap-1.5">
+                    <Youtube className="w-4 h-4 text-red-600 fill-current" />
+                    {ch.name}
+                  </h3>
+                  <p className={`text-xs font-sans ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
+                    {ch.bestFor}
+                  </p>
+                  <a
+                    href={ch.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 text-xs font-bold text-red-600 hover:underline pt-1"
+                  >
+                    Open YouTube Channel <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* SECTION 8: MATCHED GLOBAL HACKATHONS & EVENTS */}
+        {matchedHackathons.length > 0 && (
+          <section className="space-y-4">
+            <div className="flex items-center justify-between border-b pb-2 border-slate-200 dark:border-zinc-800">
+              <h2 className={`text-xl font-black uppercase flex items-center gap-2 ${isLight ? 'text-slate-900' : 'text-white'}`}>
+                <Trophy className="w-5 h-5 text-amber-500" />
+                Matched Hackathons &amp; Events ({matchedHackathons.length})
+              </h2>
+              <button
+                onClick={() => onNavigateTab('hackathons')}
+                className="text-xs font-bold text-amber-600 dark:text-amber-400 hover:underline flex items-center gap-1 uppercase"
+              >
+                View Hackathons Hub <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {matchedHackathons.map((h) => (
+                <div
+                  key={h.id}
+                  className={`p-4 border-2 space-y-2 rounded-sm shadow-xs ${
+                    isLight 
+                      ? 'bg-white border-slate-200 text-slate-900' 
+                      : 'bg-zinc-950 border-zinc-800 text-white'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 bg-amber-100 text-amber-900 uppercase">
+                      {h.category || 'Hackathon'}
+                    </span>
+                    <span className="text-[10px] font-mono text-emerald-600 font-bold">{h.prizes}</span>
+                  </div>
+                  <h3 className="text-sm font-bold font-sans">{h.title}</h3>
+                  <p className={`text-xs font-sans ${isLight ? 'text-slate-600' : 'text-zinc-400'}`}>
+                    {h.organizer} • {h.location}
+                  </p>
+                  <a
+                    href={h.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 text-xs font-bold text-amber-600 hover:underline pt-1"
+                  >
+                    Apply / Official Link <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+      </div>
     </div>
   );
 };
