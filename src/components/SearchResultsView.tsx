@@ -24,7 +24,7 @@ import { CERTIFICATIONS_LIBRARY, SKILLS_LIBRARY, TOOLS_LIBRARY, CertLibraryItem,
 import { CHANNELS_POOL, YouTubeChannel } from '../data/youtubeDatabase';
 import { GLOBAL_HACKATHONS, Hackathon } from './Hackathons';
 import { getOfferedStudyPortals } from '../utils/studyPortalLookup';
-import { expandQueryViaKnowledgeGraph } from '../utils/knowledgeGraphEngine';
+import { expandQueryViaKnowledgeGraph, calculateItemRelevanceScore } from '../utils/knowledgeGraphEngine';
 
 export interface SearchResultsViewProps {
   query: string;
@@ -54,10 +54,14 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
     return searchTerms.some(term => lower.includes(term) || term.includes(lower));
   };
 
-  // 1. Matched Job Roles
+  // Helper score wrapper
+  const getScore = (title: string, category: string = '', desc: string = '') => 
+    calculateItemRelevanceScore(title, category, desc, cleanQuery, knowledgeGraph);
+
+  // 1. Matched Job Roles (Sorted by Relevance Score)
   const matchedRoles = useMemo(() => {
     if (!cleanQuery) return [];
-    return Object.values(ALL_ROLES_DATA).filter((role: RoleDetail) => 
+    const filtered = Object.values(ALL_ROLES_DATA).filter((role: RoleDetail) => 
       matchesTerm(role.title) ||
       matchesTerm(role.domain) ||
       matchesTerm(role.id) ||
@@ -65,13 +69,19 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
       (role.roleAsk && matchesTerm(role.roleAsk.explanation)) ||
       (role.mustHaves && role.mustHaves.tech && role.mustHaves.tech.some(s => matchesTerm(s))) ||
       (role.toolsToLearn && role.toolsToLearn.some(t => matchesTerm(t)))
-    ).slice(0, 12);
+    );
+
+    return filtered.sort((a, b) => {
+      const scoreA = getScore(a.title, a.domain, a.roleAsk?.explanation || '');
+      const scoreB = getScore(b.title, b.domain, b.roleAsk?.explanation || '');
+      return scoreB - scoreA;
+    }).slice(0, 12);
   }, [cleanQuery, searchTerms, knowledgeGraph]);
 
-  // 2. Matched Interview Questions & Practical Labs
+  // 2. Matched Interview Questions & Practical Labs (Sorted by Relevance Score)
   const matchedInterviewQ = useMemo(() => {
     if (!cleanQuery) return [];
-    return interviewQDatabase.filter((q: InterviewQItem) => 
+    const filtered = interviewQDatabase.filter((q: InterviewQItem) => 
       matchesTerm(q.prompt) ||
       matchesTerm(q.preferred_answer) ||
       matchesTerm(q.domain) ||
@@ -79,10 +89,16 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
       matchesTerm(q.role_slug) ||
       (knowledgeGraph.associatedRoleSlugs.some(slug => q.role_slug.toLowerCase().includes(slug) || slug.includes(q.role_slug.toLowerCase()))) ||
       matchesTerm(q.resolution_title)
-    ).slice(0, 18);
+    );
+
+    return filtered.sort((a, b) => {
+      const scoreA = getScore(a.prompt, a.domain, a.preferred_answer);
+      const scoreB = getScore(b.prompt, b.domain, b.preferred_answer);
+      return scoreB - scoreA;
+    }).slice(0, 18);
   }, [cleanQuery, searchTerms, knowledgeGraph]);
 
-  // 3. Matched Tools Library (Sorted by Searched Role Relevance)
+  // 3. Matched Tools Library (Sorted by Relevance Score)
   const matchedTools = useMemo(() => {
     if (!cleanQuery) return [];
     const filtered = TOOLS_LIBRARY.filter((tool: ToolLibraryItem) => 
@@ -93,17 +109,14 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
       (knowledgeGraph.associatedTools.some(at => tool.name.toLowerCase().includes(at) || at.includes(tool.name.toLowerCase())))
     );
 
-    // Sort so tools explicitly listed in the concept vector appear first
     return filtered.sort((a, b) => {
-      const aIsPrimary = knowledgeGraph.associatedTools.some(at => a.name.toLowerCase().includes(at));
-      const bIsPrimary = knowledgeGraph.associatedTools.some(at => b.name.toLowerCase().includes(at));
-      if (aIsPrimary && !bIsPrimary) return -1;
-      if (!aIsPrimary && bIsPrimary) return 1;
-      return 0;
+      const scoreA = getScore(a.name, a.category, a.description);
+      const scoreB = getScore(b.name, b.category, b.description);
+      return scoreB - scoreA;
     }).slice(0, 12);
   }, [cleanQuery, searchTerms, knowledgeGraph]);
 
-  // 4. Matched Skills Library (Sorted by Searched Role Relevance)
+  // 4. Matched Skills Library (Sorted by Relevance Score)
   const matchedSkills = useMemo(() => {
     if (!cleanQuery) return [];
     const filtered = SKILLS_LIBRARY.filter((skill: SkillLibraryItem) => 
@@ -115,33 +128,43 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
     );
 
     return filtered.sort((a, b) => {
-      const aIsPrimary = knowledgeGraph.associatedTools.some(at => a.name.toLowerCase().includes(at));
-      const bIsPrimary = knowledgeGraph.associatedTools.some(at => b.name.toLowerCase().includes(at));
-      if (aIsPrimary && !bIsPrimary) return -1;
-      if (!aIsPrimary && bIsPrimary) return 1;
-      return 0;
+      const scoreA = getScore(a.name, a.category, a.description);
+      const scoreB = getScore(b.name, b.category, b.description);
+      return scoreB - scoreA;
     }).slice(0, 12);
   }, [cleanQuery, searchTerms, knowledgeGraph]);
 
-  // 5. Matched Certifications Library
+  // 5. Matched Certifications Library (Sorted by Relevance Score)
   const matchedCertifications = useMemo(() => {
     if (!cleanQuery) return [];
-    return CERTIFICATIONS_LIBRARY.filter((item: CertLibraryItem) => 
+    const filtered = CERTIFICATIONS_LIBRARY.filter((item: CertLibraryItem) => 
       matchesTerm(item.name) ||
       matchesTerm(item.provider) ||
       matchesTerm(item.description) ||
       (item.relatedRoles && item.relatedRoles.some(r => matchesTerm(r)))
-    ).slice(0, 12);
-  }, [cleanQuery, searchTerms]);
+    );
 
-  // 6. Matched IT Companies (Jobs & Referrals)
+    return filtered.sort((a, b) => {
+      const scoreA = getScore(a.name, a.provider, a.description);
+      const scoreB = getScore(b.name, b.provider, b.description);
+      return scoreB - scoreA;
+    }).slice(0, 12);
+  }, [cleanQuery, searchTerms, knowledgeGraph]);
+
+  // 6. Matched IT Companies (Sorted by Relevance Score)
   const matchedCompanies = useMemo(() => {
     if (!cleanQuery) return [];
-    return TOP_50_COMPANIES.filter((comp: CompanyInfo) => 
+    const filtered = TOP_50_COMPANIES.filter((comp: CompanyInfo) => 
       matchesTerm(comp.name) ||
       matchesTerm(comp.category)
-    ).slice(0, 12);
-  }, [cleanQuery, searchTerms]);
+    );
+
+    return filtered.sort((a, b) => {
+      const scoreA = getScore(a.name, a.category, '');
+      const scoreB = getScore(b.name, b.category, '');
+      return scoreB - scoreA;
+    }).slice(0, 12);
+  }, [cleanQuery, searchTerms, knowledgeGraph]);
 
   // 7. Matched HR Contacts Directory
   const matchedHRContacts = useMemo(() => {

@@ -15,6 +15,7 @@ import { useDebounce, getCrossTabSummary, searchUnifiedIndex } from '../utils/se
 import { STORAGE_KEYS, getStorageItem, setStorageItem } from '../utils/storageMigration';
 import { resolveKeywordMetadata } from '../utils/masterKeywordSearch';
 import { getOfferedStudyPortals } from '../utils/studyPortalLookup';
+import { expandQueryViaKnowledgeGraph, calculateItemRelevanceScore } from '../utils/knowledgeGraphEngine';
 
 const cleanFamilyName = (name: string): string => {
   return name.replace(/^(?:\d+\.\s*|[^a-zA-Z\d\s]+\s*)/, '');
@@ -2711,10 +2712,19 @@ export default function LibrariesDashboard({
               );
             }
 
-            const totalPages = Math.ceil(filteredSkills.length / skillPageSize);
+            // Relevance score sorting
+            const sortedSkills = [...filteredSkills].sort((a: any, b: any) => {
+              if (!debouncedQuery.trim()) return 0;
+              const kg = expandQueryViaKnowledgeGraph(debouncedQuery);
+              const scoreA = calculateItemRelevanceScore(a.name, a.domain, a.topic, debouncedQuery, kg);
+              const scoreB = calculateItemRelevanceScore(b.name, b.domain, b.topic, debouncedQuery, kg);
+              return scoreB - scoreA;
+            });
+
+            const totalPages = Math.ceil(sortedSkills.length / skillPageSize);
             const activeSkillPage = Math.min(skillPage, Math.max(1, totalPages));
             const startIdx = (activeSkillPage - 1) * skillPageSize;
-            const slicedSkills = filteredSkills.slice(startIdx, startIdx + skillPageSize);
+            const slicedSkills = sortedSkills.slice(startIdx, startIdx + skillPageSize);
 
             return (
               <div className="space-y-4">

@@ -234,3 +234,89 @@ export function expandQueryViaKnowledgeGraph(userQuery: string): {
     associatedDomains: Array.from(associatedDomainsSet)
   };
 }
+
+/**
+ * Calculates a dynamic Relevance Score (0 to 100+) for any item based on user query 
+ * and Knowledge Graph concept vector matching.
+ */
+export function calculateItemRelevanceScore(
+  itemTitle: string = '',
+  itemCategory: string = '',
+  itemDesc: string = '',
+  rawQuery: string = '',
+  knowledgeGraph: {
+    queryTerms: string[];
+    matchedClusters: ConceptCluster[];
+    associatedTools: string[];
+    associatedRoleSlugs: string[];
+  }
+): number {
+  if (!rawQuery || !rawQuery.trim()) return 0;
+  const cleanQ = rawQuery.trim().toLowerCase();
+  const lowerTitle = (itemTitle || '').toLowerCase();
+  const lowerCat = (itemCategory || '').toLowerCase();
+  const lowerDesc = (itemDesc || '').toLowerCase();
+
+  let score = 0;
+
+  // 1. Direct Exact Title Match (+100 Points)
+  if (lowerTitle === cleanQ) {
+    score += 100;
+  } else if (lowerTitle.startsWith(cleanQ)) {
+    score += 85;
+  } else if (lowerTitle.includes(cleanQ)) {
+    score += 70;
+  }
+
+  // 2. Primary Concept Cluster Match (+75 Points)
+  if (knowledgeGraph.matchedClusters.length > 0) {
+    const primaryCluster = knowledgeGraph.matchedClusters[0];
+    
+    // Direct synonym role match in title (e.g. EUC, Technical Support, Help Desk, Desktop Support)
+    if (primaryCluster.synonymRoles.some(r => lowerTitle.includes(r.toLowerCase()))) {
+      score += 75;
+    }
+    
+    // Direct associated skill/tool match in title (e.g. Active Directory, ServiceNow, Intune)
+    if (primaryCluster.associatedSkillsAndTools.some(t => lowerTitle.includes(t.toLowerCase()))) {
+      score += 70;
+    }
+
+    // Role slug match
+    if (primaryCluster.roleSlugs.some(s => lowerTitle.includes(s) || s.includes(lowerTitle))) {
+      score += 60;
+    }
+  }
+
+  // 3. Synonym Terms Match in Title (+40 Points)
+  for (const term of knowledgeGraph.queryTerms) {
+    if (term.length >= 2 && lowerTitle.includes(term)) {
+      score += 40;
+      break;
+    }
+  }
+
+  // 4. Category Match (+20 Points)
+  if (knowledgeGraph.queryTerms.some(term => lowerCat.includes(term))) {
+    score += 20;
+  }
+
+  // 5. Description Match (+5 Points)
+  if (knowledgeGraph.queryTerms.some(term => lowerDesc.includes(term))) {
+    score += 5;
+  }
+
+  // Specific penalty for tangential/peripheral items when searching for core IT roles
+  if (cleanQ.includes('technical support') || cleanQ.includes('it support') || cleanQ.includes('help desk')) {
+    if (
+      lowerTitle.includes('green computing') || 
+      lowerTitle.includes('accessibility') || 
+      lowerTitle.includes('3d printing') ||
+      lowerTitle.includes('quantum')
+    ) {
+      score -= 80;
+    }
+  }
+
+  return Math.max(0, score);
+}
