@@ -44,81 +44,64 @@ import { motion, AnimatePresence } from 'motion/react';
 
 const TAB_DETAILS: Record<string, { label: string; activeStyle: string; hoverStyle: string }> = {
   about: {
-    label: '[About]',
+    label: '> DASH',
     activeStyle: 'text-white font-bold bg-[#121c38] border-gray-600/50 shadow-[0_0_10px_rgba(255,255,255,0.1)]',
     hoverStyle: 'hover:text-white hover:bg-slate-900 border border-transparent'
-  },
-  map: {
-    label: '🕹️ Career Domains',
-    activeStyle: 'text-[#eab308] font-bold bg-[#121c38] border-yellow-600/30 shadow-[0_0_10px_rgba(234,179,8,0.2)]',
-    hoverStyle: 'hover:text-[#eab308] hover:bg-slate-900 border border-transparent'
-  },
-  taxonomy: {
-    label: '📡 Taxonomy Mind Map',
-    activeStyle: 'text-[#ec4899] font-bold bg-[#121c38] border-pink-700/30 shadow-[0_0_10px_rgba(236,72,153,0.2)]',
-    hoverStyle: 'hover:text-[#ec4899] hover:bg-slate-900 border border-transparent'
-  },
-  pathfinder: {
-    label: '🧭 Ambition Path Planner',
-    activeStyle: 'text-[#10b981] font-bold bg-[#121c38] border-[#10b981]/30 shadow-[0_0_10px_rgba(16,185,129,0.25)]',
-    hoverStyle: 'hover:text-[#10b981] hover:bg-[#10b981]/5 border border-transparent'
-  },
-  comparison: {
-    label: '⚖️ Side-by-Side Comparator',
-    activeStyle: 'text-[#8b5cf6] font-bold bg-[#121c38] border-[#8b5cf6]/30 shadow-[0_0_10px_rgba(139,92,246,0.25)]',
-    hoverStyle: 'hover:text-[#8b5cf6] hover:bg-[#8b5cf6]/5 border border-transparent'
-  },
-  libraries: {
-    label: '📖 Resources',
-    activeStyle: 'text-cyan-400 font-bold bg-[#121c38] border-cyan-800/30 shadow-[0_0_10px_rgba(6,182,212,0.25)]',
-    hoverStyle: 'hover:text-cyan-400 hover:bg-cyan-950/20 border border-transparent'
   },
   saved: {
     label: '🔖 Bookmarks',
     activeStyle: 'text-yellow-400 font-bold bg-[#121c38] border-yellow-600/30 shadow-[0_0_10px_rgba(250,204,21,0.25)]',
     hoverStyle: 'hover:text-yellow-400 hover:bg-yellow-950/20 border border-transparent'
   },
-  'hr-contacts': {
-    label: '👥 HR CONTACTS',
-    activeStyle: 'text-slate-200 font-bold bg-[#121c38] border-slate-700/40 shadow-[0_0_10px_rgba(255,255,255,0.05)]',
-    hoverStyle: 'hover:text-slate-200 hover:bg-slate-800/40 border border-transparent'
+  libraries: {
+    label: '📖 Resources',
+    activeStyle: 'text-cyan-400 font-bold bg-[#121c38] border-cyan-800/30 shadow-[0_0_10px_rgba(6,182,212,0.25)]',
+    hoverStyle: 'hover:text-cyan-400 hover:bg-cyan-950/20 border border-transparent'
   },
   interviewq: {
     label: '⚡ InterviewQ',
     activeStyle: 'text-zinc-100 font-bold bg-[#121c38] border-zinc-500/40 shadow-[0_0_10px_rgba(255,255,255,0.15)]',
     hoverStyle: 'hover:text-zinc-100 hover:bg-zinc-800/40 border border-transparent'
   },
+  map: {
+    label: '🕹️ Career Domains',
+    activeStyle: 'text-[#eab308] font-bold bg-[#121c38] border-yellow-600/30 shadow-[0_0_10px_rgba(234,179,8,0.2)]',
+    hoverStyle: 'hover:text-[#eab308] hover:bg-slate-900 border border-transparent'
+  },
+  comparison: {
+    label: '⚖️ Side-by-Side Comparator',
+    activeStyle: 'text-[#8b5cf6] font-bold bg-[#121c38] border-[#8b5cf6]/30 shadow-[0_0_10px_rgba(139,92,246,0.25)]',
+    hoverStyle: 'hover:text-[#8b5cf6] hover:bg-[#8b5cf6]/5 border border-transparent'
+  },
+  pathfinder: {
+    label: '🧭 Ambition Path Planner',
+    activeStyle: 'text-[#10b981] font-bold bg-[#121c38] border-[#10b981]/30 shadow-[0_0_10px_rgba(16,185,129,0.25)]',
+    hoverStyle: 'hover:text-[#10b981] hover:bg-[#10b981]/5 border border-transparent'
+  },
   jobs: {
-    label: '💼 Jobs & Referrals',
+    label: '💼 Jobs & Referrals beta',
     activeStyle: 'text-zinc-100 font-bold bg-[#121c38] border-zinc-500/40 shadow-[0_0_10px_rgba(255,255,255,0.15)]',
     hoverStyle: 'hover:text-zinc-100 hover:bg-zinc-800/40 border border-transparent'
+  },
+  'hr-contacts': {
+    label: '👥 HR Contacts beta',
+    activeStyle: 'text-slate-200 font-bold bg-[#121c38] border-slate-700/40 shadow-[0_0_10px_rgba(255,255,255,0.05)]',
+    hoverStyle: 'hover:text-slate-200 hover:bg-slate-800/40 border border-transparent'
   }
 };
 
 const TAB_METADATA: Record<string, { label: string; icon: React.ComponentType<any>; colorClass: string; activeStyle: string }> = {
   about: {
-    label: 'About',
-    icon: Info,
+    label: 'DASH',
+    icon: ChevronRight,
     colorClass: 'text-white',
     activeStyle: 'text-white border-white bg-slate-900/80 shadow-[0_0_12px_rgba(255,255,255,0.1)] font-bold'
   },
-  map: {
-    label: 'Career Domains',
-    icon: Network,
+  saved: {
+    label: 'Bookmarks',
+    icon: CustomBookmarkIcon,
     colorClass: 'text-yellow-400',
-    activeStyle: 'text-[#eab308] border-[#eab308] bg-yellow-950/20 shadow-[0_0_12px_rgba(234,179,8,0.15)] font-bold'
-  },
-  pathfinder: {
-    label: 'Path Planner',
-    icon: Compass,
-    colorClass: 'text-emerald-400',
-    activeStyle: 'text-[#10b981] border-[#10b981] bg-emerald-950/20 shadow-[0_0_12px_rgba(16,185,129,0.15)] font-bold'
-  },
-  comparison: {
-    label: 'Comparator',
-    icon: Scale,
-    colorClass: 'text-purple-400',
-    activeStyle: 'text-[#8b5cf6] border-[#8b5cf6] bg-purple-950/20 shadow-[0_0_12px_rgba(139,92,246,0.15)] font-bold'
+    activeStyle: 'text-yellow-400 border-yellow-400 bg-yellow-950/25 shadow-[0_0_12px_rgba(250,204,21,0.2)] font-bold'
   },
   libraries: {
     label: 'Resources',
@@ -132,20 +115,32 @@ const TAB_METADATA: Record<string, { label: string; icon: React.ComponentType<an
     colorClass: 'text-zinc-200',
     activeStyle: 'text-zinc-100 border-zinc-100 bg-zinc-900/80 shadow-[0_0_12px_rgba(255,255,255,0.15)] font-bold'
   },
+  map: {
+    label: 'Career Domains',
+    icon: Network,
+    colorClass: 'text-yellow-400',
+    activeStyle: 'text-[#eab308] border-[#eab308] bg-yellow-950/20 shadow-[0_0_12px_rgba(234,179,8,0.15)] font-bold'
+  },
+  comparison: {
+    label: 'Comparator',
+    icon: Scale,
+    colorClass: 'text-purple-400',
+    activeStyle: 'text-[#8b5cf6] border-[#8b5cf6] bg-purple-950/20 shadow-[0_0_12px_rgba(139,92,246,0.15)] font-bold'
+  },
+  pathfinder: {
+    label: 'Path Planner',
+    icon: Compass,
+    colorClass: 'text-emerald-400',
+    activeStyle: 'text-[#10b981] border-[#10b981] bg-emerald-950/20 shadow-[0_0_12px_rgba(16,185,129,0.15)] font-bold'
+  },
   jobs: {
     label: 'Jobs & Referrals',
     icon: Briefcase,
     colorClass: 'text-zinc-200',
     activeStyle: 'text-zinc-100 border-zinc-100 bg-zinc-900/80 shadow-[0_0_12px_rgba(255,255,255,0.15)] font-bold'
   },
-  saved: {
-    label: 'Bookmarks',
-    icon: CustomBookmarkIcon,
-    colorClass: 'text-yellow-400',
-    activeStyle: 'text-yellow-400 border-yellow-400 bg-yellow-950/25 shadow-[0_0_12px_rgba(250,204,21,0.2)] font-bold'
-  },
   'hr-contacts': {
-    label: 'HR CONTACTS',
+    label: 'HR Contacts',
     icon: UserCheck,
     colorClass: 'text-slate-300',
     activeStyle: 'text-slate-200 border-slate-700 bg-slate-900/40 shadow-[0_0_12px_rgba(255,255,255,0.05)] font-bold'
@@ -1750,8 +1745,8 @@ export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [isChatOpen, setIsChatOpen] = useState<boolean>(false);
 
-  // Dynamic order of tabs - Sorted alphabetically by their visible section labels
-  const [tabOrder, setTabOrder] = useState<string[]>(['about', 'saved', 'map', 'comparison', 'pathfinder', 'libraries', 'interviewq', 'jobs', 'hr-contacts']);
+  // Dynamic order of tabs: DASH - BOOKMARKS - RESOURCES - INTERVIEWQ - CAREER DOMAINS - COMPARATOR - PATH PLANNER - JOBS & REFERRALS beta - HR CONTACTS beta
+  const [tabOrder, setTabOrder] = useState<string[]>(['about', 'saved', 'libraries', 'interviewq', 'map', 'comparison', 'pathfinder', 'jobs', 'hr-contacts']);
 
   const [draggedTabId, setDraggedTabId] = useState<string | null>(null);
 
@@ -2556,7 +2551,7 @@ export default function App() {
               </div>
             )}
 
-            {/* About Info Trigger Beside Search Bar */}
+            {/* DASH Trigger Beside Search Bar */}
             <button
               onClick={() => handleTabClick('about')}
               className={`p-2 rounded-full flex items-center justify-center border transition shrink-0 cursor-pointer ${
@@ -2564,9 +2559,9 @@ export default function App() {
                   ? 'bg-[#10b981]/15 border-[#10b981] text-[#10b981]'
                   : 'bg-[#111827]/80 border-slate-700/60 text-gray-300 hover:text-white'
               }`}
-              title="About Information View"
+              title="DASH View"
             >
-              <Info className="w-4 h-4" />
+              <ChevronRight className="w-4 h-4" />
             </button>
           </div>
 
@@ -3045,7 +3040,7 @@ export default function App() {
               ) : (
                 <>
 
-        {/* 1. ABOUT VIEW - THE DEFAULT LANDING PAGE */}
+        {/* 1. DASH VIEW - THE DEFAULT LANDING PAGE */}
         <div id="section-about" className={activeTab === 'about' ? 'block' : 'hidden'}>
           <section className="fade-in space-y-6">
             
