@@ -1204,7 +1204,7 @@ export default function Hackathons({
     >
       {/* Top Bar: Back to Primary List Arrow Button */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b pb-4 mb-5 border-emerald-500/20 font-mono">
-        {showBackButton ? (
+        {showBackButton && (
           <button
             type="button"
             onClick={() => setSelectedItemId(null)}
@@ -1212,10 +1212,6 @@ export default function Hackathons({
           >
             <span>← Back to Hackathons List</span>
           </button>
-        ) : (
-          <span className="text-[10px] uppercase font-bold tracking-widest text-emerald-400">
-            EVENT SPECIFICATIONS & BLUEPRINT
-          </span>
         )}
 
         {/* Event Counter & Prev/Next Quick Cycle Controls */}
@@ -1254,9 +1250,6 @@ export default function Hackathons({
       <div className="space-y-4">
         <div className={`flex flex-wrap items-center justify-between border-b pb-3 font-mono gap-2 ${isLight ? 'border-gray-200' : 'border-[#121c38]'}`}>
           <div className="flex-1 min-w-[200px]">
-            <span className="text-[10px] uppercase font-bold tracking-widest block leading-none mb-1 text-emerald-400">
-              {item.prizes.toLowerCase().includes('cash') || item.prizes.toLowerCase().includes('$') ? 'ACTIVE BUILD OPPORTUNITY SPECIFICATIONS' : 'EXPERT TECHNOLOGY SUMMIT/FEST'}
-            </span>
             <div className="flex items-center gap-2">
               <h4 className={`font-bold font-sans text-md uppercase leading-tight ${isLight ? 'text-slate-800' : 'text-slate-100'}`}>
                 {item.organizer}
