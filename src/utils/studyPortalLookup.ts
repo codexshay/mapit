@@ -7,6 +7,105 @@ export interface StudyPortalLink {
   badgeFormat?: string;
 }
 
+const W3SCHOOLS_TOPIC_MAP: Record<string, string> = {
+  "html": "https://www.w3schools.com/html/",
+  "html introduction": "https://www.w3schools.com/html/html_intro.asp",
+  "intro to html & css": "https://www.w3schools.com/html/html_intro.asp",
+  "css": "https://www.w3schools.com/css/",
+  "responsive web design": "https://www.w3schools.com/css/css_rwd_intro.asp",
+  "rwd": "https://www.w3schools.com/css/css_rwd_intro.asp",
+  "bootstrap": "https://www.w3schools.com/bootstrap5/",
+  "bootstrap 5": "https://www.w3schools.com/bootstrap5/",
+  "bootstrap 4": "https://www.w3schools.com/bootstrap4/",
+  "bootstrap 3": "https://www.w3schools.com/bootstrap/",
+  "how to bootstrap": "https://www.w3schools.com/bootstrap5/",
+  "w3.css": "https://www.w3schools.com/w3css/",
+  "w3css": "https://www.w3schools.com/w3css/",
+  "sass": "https://www.w3schools.com/sass/",
+  "colors": "https://www.w3schools.com/colors/",
+  "icons": "https://www.w3schools.com/icons/",
+  "svg": "https://www.w3schools.com/graphics/svg_intro.asp",
+  "canvas": "https://www.w3schools.com/graphics/canvas_intro.asp",
+  "graphics": "https://www.w3schools.com/graphics/",
+  "accessibility": "https://www.w3schools.com/accessibility/",
+  "how to": "https://www.w3schools.com/howto/",
+  "javascript": "https://www.w3schools.com/js/",
+  "js": "https://www.w3schools.com/js/",
+  "typescript": "https://www.w3schools.com/typescript/",
+  "python": "https://www.w3schools.com/python/",
+  "java": "https://www.w3schools.com/java/",
+  "c": "https://www.w3schools.com/c/",
+  "c++": "https://www.w3schools.com/cpp/",
+  "cpp": "https://www.w3schools.com/cpp/",
+  "c#": "https://www.w3schools.com/cs/",
+  "csharp": "https://www.w3schools.com/cs/",
+  "cs": "https://www.w3schools.com/cs/",
+  "php": "https://www.w3schools.com/php/",
+  "go": "https://www.w3schools.com/go/",
+  "golang": "https://www.w3schools.com/go/",
+  "kotlin": "https://www.w3schools.com/kotlin/",
+  "swift": "https://www.w3schools.com/swift/",
+  "rust": "https://www.w3schools.com/rust/",
+  "r": "https://www.w3schools.com/r/",
+  "bash": "https://www.w3schools.com/bash/",
+  "shell": "https://www.w3schools.com/bash/",
+  "asp": "https://www.w3schools.com/asp/",
+  "react": "https://www.w3schools.com/react/",
+  "reactjs": "https://www.w3schools.com/react/",
+  "angular": "https://www.w3schools.com/angular/",
+  "angularjs": "https://www.w3schools.com/angular/",
+  "vue": "https://www.w3schools.com/vue/",
+  "vuejs": "https://www.w3schools.com/vue/",
+  "jquery": "https://www.w3schools.com/jquery/",
+  "ajax": "https://www.w3schools.com/js/js_ajax_intro.asp",
+  "json": "https://www.w3schools.com/js/js_json_intro.asp",
+  "appml": "https://www.w3schools.com/appml/",
+  "w3.js": "https://www.w3schools.com/w3js/",
+  "nodejs": "https://www.w3schools.com/nodejs/",
+  "node.js": "https://www.w3schools.com/nodejs/",
+  "node": "https://www.w3schools.com/nodejs/",
+  "django": "https://www.w3schools.com/django/",
+  "sql": "https://www.w3schools.com/sql/",
+  "mysql": "https://www.w3schools.com/mysql/",
+  "postgresql": "https://www.w3schools.com/postgresql/",
+  "postgres": "https://www.w3schools.com/postgresql/",
+  "mongodb": "https://www.w3schools.com/mongodb/",
+  "mongo": "https://www.w3schools.com/mongodb/",
+  "data science": "https://www.w3schools.com/datascience/",
+  "numpy": "https://www.w3schools.com/python/numpy/",
+  "pandas": "https://www.w3schools.com/python/pandas/",
+  "scipy": "https://www.w3schools.com/python/scipy/",
+  "matplotlib": "https://www.w3schools.com/python/matplotlib_intro.asp",
+  "statistics": "https://www.w3schools.com/statistics/",
+  "machine learning": "https://www.w3schools.com/python/python_ml_getting_started.asp",
+  "ml": "https://www.w3schools.com/python/python_ml_getting_started.asp",
+  "artificial intelligence": "https://www.w3schools.com/ai/",
+  "ai": "https://www.w3schools.com/ai/",
+  "generative ai": "https://www.w3schools.com/gen_ai/",
+  "gen ai": "https://www.w3schools.com/gen_ai/",
+  "chatgpt": "https://www.w3schools.com/gen_ai/chatgpt-3-5/",
+  "google bard": "https://www.w3schools.com/gen_ai/google_bard/",
+  "gemini": "https://www.w3schools.com/gen_ai/google_bard/",
+  "data structures & algorithms": "https://www.w3schools.com/dsa/",
+  "data structures and algorithms": "https://www.w3schools.com/dsa/",
+  "dsa": "https://www.w3schools.com/dsa/",
+  "data structures": "https://www.w3schools.com/dsa/",
+  "algorithms": "https://www.w3schools.com/dsa/",
+  "aws": "https://www.w3schools.com/aws/",
+  "git": "https://www.w3schools.com/git/",
+  "github": "https://www.w3schools.com/git/",
+  "cyber security": "https://www.w3schools.com/cybersecurity/",
+  "cybersecurity": "https://www.w3schools.com/cybersecurity/",
+  "excel": "https://www.w3schools.com/excel/",
+  "google sheets": "https://www.w3schools.com/googlesheets/",
+  "sheets": "https://www.w3schools.com/googlesheets/",
+  "xml": "https://www.w3schools.com/xml/",
+  "utf-8 & character sets": "https://www.w3schools.com/charsets/",
+  "raspberry pi": "https://www.w3schools.com/raspberrypi/",
+  "programming basics": "https://www.w3schools.com/programming/",
+  "intro to programming": "https://www.w3schools.com/programming/"
+};
+
 /**
  * Resolves a direct, specific course/tutorial deep link for any given skill on a specific Study Portal.
  * Prevents redirecting to generic homepage domains.
@@ -54,6 +153,15 @@ export function getPortalCourseDirectUrl(
     return `https://skillsforall.com/search?query=${q}`;
   }
   if (p.includes('w3schools')) {
+    const key = cleanSkillName.toLowerCase().trim();
+    if (W3SCHOOLS_TOPIC_MAP[key]) {
+      return W3SCHOOLS_TOPIC_MAP[key];
+    }
+    for (const [tName, tUrl] of Object.entries(W3SCHOOLS_TOPIC_MAP)) {
+      if (key.includes(tName) || tName.includes(key)) {
+        return tUrl;
+      }
+    }
     const slug = cleanSkillName.toLowerCase().replace(/[^a-z0-9]/g, '');
     return `https://www.w3schools.com/${slug}/`;
   }
