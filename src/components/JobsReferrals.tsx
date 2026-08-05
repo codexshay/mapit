@@ -13,8 +13,10 @@ import {
   Compass,
   XCircle,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  ChevronRight
 } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
 import { TOP_50_COMPANIES, CompanyInfo } from '../data/topCompaniesData';
 
 export interface JobsReferralsProps {
@@ -172,6 +174,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
     setExpandedCompanies(prev => ({ ...prev, [compName]: !prev[compName] }));
   };
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [isCategoriesOpen, setIsCategoriesOpen] = useState<boolean>(true);
   const [localBookmarkedIds, setLocalBookmarkedIds] = useState<Record<string, boolean>>({});
 
   // Active role keyword used for embedding into portals & referrals
@@ -379,23 +382,54 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
           </div>
         )}
 
-        {/* Category Pills & Active Keyword Badge */}
-        <div className="mt-5 pt-4 border-t border-zinc-800 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-2 overflow-x-auto pb-1">
-            <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider mr-1">Category:</span>
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`px-3 py-1.5 rounded-none text-xs font-bold uppercase border transition-all ${
-                  selectedCategory === cat
-                    ? (isLight ? 'bg-slate-900 text-white border-slate-900 shadow-xs' : 'bg-white text-black border-white')
-                    : (isLight ? 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100' : 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-white')
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+        {/* Category Pills & Active Keyword Badge (Collapsible Right-Slide Bar) */}
+        <div className="mt-5 pt-4 border-t border-zinc-800 flex flex-wrap items-center justify-between gap-3 font-mono">
+          <div className="flex items-center gap-2 overflow-hidden max-w-full">
+            {/* ">" Icon Button replacing standard category tabs */}
+            <button
+              type="button"
+              onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
+              className={`px-3 py-1.5 font-black text-xs uppercase border transition-all cursor-pointer flex items-center justify-center gap-1 shrink-0 ${
+                isCategoriesOpen
+                  ? 'bg-emerald-500 text-slate-950 border-emerald-400 font-extrabold shadow-[2px_2px_0px_0px_#ffffff]'
+                  : 'bg-white text-emerald-700 border-emerald-300 hover:bg-emerald-50 shadow-xs'
+              }`}
+              title={isCategoriesOpen ? "Collapse job categories" : "Expand job categories"}
+            >
+              <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${isCategoriesOpen ? 'rotate-90 md:rotate-0' : ''}`} />
+              <span className="text-[10px] font-extrabold uppercase">CATEGORIES</span>
+            </button>
+
+            {/* Right sliding light-theme container holding all job categories with horizontal scroll surfing */}
+            <AnimatePresence>
+              {isCategoriesOpen && (
+                <motion.div
+                  initial={{ opacity: 0, x: -30, width: 0 }}
+                  animate={{ opacity: 1, x: 0, width: 'auto' }}
+                  exit={{ opacity: 0, x: -30, width: 0 }}
+                  transition={{ duration: 0.3, ease: 'easeOut' }}
+                  className="overflow-x-auto scrollbar-none flex items-center gap-1.5 p-1 bg-white border-2 border-emerald-400/80 shadow-md rounded-xs shrink-0 whitespace-nowrap"
+                >
+                  {categories.map((cat) => {
+                    const isSelected = selectedCategory === cat;
+                    return (
+                      <button
+                        key={cat}
+                        type="button"
+                        onClick={() => setSelectedCategory(cat)}
+                        className={`px-2.5 py-1 text-[9.5px] font-mono font-bold uppercase transition-all cursor-pointer flex items-center gap-1 rounded-xs shrink-0 ${
+                          isSelected
+                            ? 'bg-emerald-600 text-white font-extrabold shadow-xs'
+                            : 'bg-white text-emerald-800 hover:bg-emerald-50 hover:text-emerald-950 border border-emerald-200/70'
+                        }`}
+                      >
+                        <span>{cat}</span>
+                      </button>
+                    );
+                  })}
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
 
           <div className={`text-xs font-mono flex items-center gap-2 px-3 py-1.5 border ${isLight ? "bg-slate-50 border-slate-300 text-slate-700" : "bg-zinc-900 border-zinc-800 text-zinc-400"}`}>

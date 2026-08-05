@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { 
   Phone, Star, MapPin, Globe, Building, Search, Users, 
   Accessibility, Layers, RefreshCw, Database, ExternalLink, ArrowRight, Check, Zap,
-  Compass, Map, Filter, RotateCcw, Clock, AlertCircle, PlusCircle, ChevronDown, ChevronUp
+  Compass, Map, Filter, RotateCcw, Clock, AlertCircle, PlusCircle, ChevronDown, ChevronUp, ChevronRight
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -7462,6 +7462,7 @@ interface HRContactsProps {
 
 export default function HRContacts({ theme }: HRContactsProps) {
   const [selectedRegion, setSelectedRegion] = useState<string>('APJ');
+  const [isRegionsOpen, setIsRegionsOpen] = useState<boolean>(true);
   const [selectedCountryCode, setSelectedCountryCode] = useState<string>('IN');
   const [selectedCityName, setSelectedCityName] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState('');
@@ -7540,9 +7541,6 @@ export default function HRContacts({ theme }: HRContactsProps) {
                 beta
               </span>
             </div>
-            <p className={`text-sm md:text-base max-w-3xl font-sans ${isLight ? "text-slate-600" : "text-zinc-400"}`}>
-              Verified IT &amp; Tech recruitment agency directory. Explore top-ranked agencies (ranked by ratings and review count &gt; 20), direct website portals, and interactive accordion dropdown city streams.
-            </p>
           </div>
 
           <div className="flex items-center gap-2">
@@ -7556,31 +7554,61 @@ export default function HRContacts({ theme }: HRContactsProps) {
           </div>
         </div>
 
-        {/* 1. PRIMARY REGION SELECTOR BUTTONS */}
-        <div className="space-y-4">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider mr-2">Region Track:</span>
-            {[
-              { id: 'APJ', label: 'APJ (Asia Pacific & India)', icon: '🌏' },
-              { id: 'NA', label: 'NA (North America / US)', icon: '🌎' },
-              { id: 'EMEA', label: 'EMEA (Europe, Mid-East, Africa)', icon: '🌍' },
-              { id: 'LATAM', label: 'LATAM (Latin America)', icon: '🌐' },
-              { id: 'ALL', label: 'All Regions', icon: '🌐' },
-            ].map(reg => (
-              <button
-                key={reg.id}
-                type="button"
-                onClick={() => handleRegionClick(reg.id)}
-                className={`px-3.5 py-2 text-xs font-bold uppercase border transition-all cursor-pointer flex items-center gap-1.5 ${
-                  selectedRegion === reg.id
-                    ? (isLight ? 'bg-slate-900 text-white border-slate-900 shadow-xs' : 'bg-white text-black border-white shadow-[2px_2px_0px_0px_#ffffff]')
-                    : (isLight ? 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100' : 'bg-zinc-900 text-zinc-300 border-zinc-800 hover:border-zinc-500 hover:text-white')
-                }`}
-              >
-                <span>{reg.icon}</span>
-                <span>{reg.label}</span>
-              </button>
-            ))}
+        {/* 1. PRIMARY REGION SELECTOR (Collapsible Right-Slide Bar) */}
+        <div className="space-y-4 font-mono">
+          <div className="flex items-center gap-2 overflow-hidden">
+            {/* ">" Icon Button replacing standard region tabs */}
+            <button
+              type="button"
+              onClick={() => setIsRegionsOpen(!isRegionsOpen)}
+              className={`px-3 py-1.5 font-black text-xs uppercase border transition-all cursor-pointer flex items-center justify-center gap-1 shrink-0 ${
+                isRegionsOpen
+                  ? 'bg-emerald-500 text-slate-950 border-emerald-400 font-extrabold shadow-[2px_2px_0px_0px_#ffffff]'
+                  : 'bg-white text-emerald-700 border-emerald-300 hover:bg-emerald-50 shadow-xs'
+              }`}
+              title={isRegionsOpen ? "Collapse HR region tracks" : "Expand HR region tracks"}
+            >
+              <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${isRegionsOpen ? 'rotate-90 md:rotate-0' : ''}`} />
+              <span className="text-[10px] font-extrabold">REGIONS</span>
+            </button>
+
+            {/* Right sliding light-theme container holding all HR region options */}
+            <AnimatePresence>
+              {isRegionsOpen && (
+                <motion.div
+                  initial={{ opacity: 0, x: -30, width: 0 }}
+                  animate={{ opacity: 1, x: 0, width: 'auto' }}
+                  exit={{ opacity: 0, x: -30, width: 0 }}
+                  transition={{ duration: 0.3, ease: 'easeOut' }}
+                  className="overflow-x-auto scrollbar-none flex items-center gap-1.5 p-1 bg-white border-2 border-emerald-400/80 shadow-md rounded-xs shrink-0 whitespace-nowrap"
+                >
+                  {[
+                    { id: 'APJ', label: 'APJ (Asia Pacific & India)', icon: '🌏' },
+                    { id: 'NA', label: 'NA (North America / US)', icon: '🌎' },
+                    { id: 'EMEA', label: 'EMEA (Europe, Mid-East, Africa)', icon: '🌍' },
+                    { id: 'LATAM', label: 'LATAM (Latin America)', icon: '🌐' },
+                    { id: 'ALL', label: 'All Regions', icon: '🌐' },
+                  ].map(reg => {
+                    const isSelected = selectedRegion === reg.id;
+                    return (
+                      <button
+                        key={reg.id}
+                        type="button"
+                        onClick={() => handleRegionClick(reg.id)}
+                        className={`px-2.5 py-1 text-[9.5px] font-mono font-bold uppercase transition-all cursor-pointer flex items-center gap-1 rounded-xs shrink-0 ${
+                          isSelected
+                            ? 'bg-emerald-600 text-white font-extrabold shadow-xs'
+                            : 'bg-white text-emerald-800 hover:bg-emerald-50 hover:text-emerald-950 border border-emerald-200/70'
+                        }`}
+                      >
+                        <span className="text-[10px]">{reg.icon}</span>
+                        <span>{reg.label}</span>
+                      </button>
+                    );
+                  })}
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
 
           {/* 2. SUB-CATEGORY COUNTRY PILLS */}
