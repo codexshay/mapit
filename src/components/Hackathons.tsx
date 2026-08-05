@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   Flame, Globe, Search, RefreshCw, Calendar, Tag, MapPin, 
   ExternalLink, Trophy, Users, CheckCircle2, AlertCircle, ArrowUpRight, 
-  Compass, Radio, Sparkles, Filter, Bookmark, Info, Bell, BellOff
+  Compass, Radio, Sparkles, Filter, Bookmark, Info, Bell, BellOff, ChevronRight
 } from 'lucide-react';
 import CustomBookmarkIcon from './CustomBookmarkIcon';
 import { motion, AnimatePresence } from 'motion/react';
@@ -711,6 +711,7 @@ export default function Hackathons({
   const [domainFilter, setDomainFilter] = useState<string>('All');
   const [categoryFilter, setCategoryFilter] = useState<string>('All');
   const [statusFilter, setStatusFilter] = useState<string>('All');
+  const [isStreamsOpen, setIsStreamsOpen] = useState<boolean>(true);
   
   const [localSelectedItemId, setLocalSelectedItemId] = useState<string | null>(null);
   const selectedItemId = selectedItemIdProp !== undefined ? selectedItemIdProp : localSelectedItemId;
@@ -1521,34 +1522,65 @@ export default function Hackathons({
         </select>
       </div>
 
-      {/* DESKTOP STREAM BUTTON TABS */}
-      <div className="hidden md:flex flex-wrap items-center gap-2 font-mono">
-        {[
-          { id: 'All', label: 'All Streams', icon: '🌐' },
-          { id: 'Hackathon', label: 'Hackathons', icon: '🏆' },
-          { id: 'Quiz', label: 'Competitions & Quizzes', icon: '⚔️' },
-          { id: 'College Fest', label: 'College Fests & Cultural', icon: '🚀' },
-          { id: 'Scholarship', label: 'Scholarships & Grants', icon: '🎓' },
-          { id: 'Workshop', label: 'Workshops & Masterclasses', icon: '🛠️' },
-          { id: 'Conference', label: 'Conferences & Summits', icon: '🎙️' },
-          { id: 'Hiring Challenge', label: 'Hiring Challenges', icon: '💼' },
-          { id: 'Bootcamp', label: 'Bootcamps', icon: '⚡' },
-          { id: 'CFP', label: 'CFP Trackers', icon: '📝' },
-        ].map(cat => (
-          <button
-            key={cat.id}
-            type="button"
-            onClick={() => setCategoryFilter(cat.id)}
-            className={`px-3 py-1.5 text-xs font-bold uppercase border transition-all cursor-pointer flex items-center gap-1.5 ${
-              categoryFilter === cat.id
-                ? 'bg-emerald-500 text-black border-emerald-400 font-black shadow-[2px_2px_0px_0px_#ffffff]'
-                : 'bg-zinc-900 text-zinc-300 border-zinc-700 hover:border-white hover:text-white'
-            }`}
-          >
-            <span>{cat.icon}</span>
-            <span>{cat.label}</span>
-          </button>
-        ))}
+      {/* DESKTOP STREAM BUTTON TABS (Collapsible Right-Slide Bar) */}
+      <div className="hidden md:flex items-center gap-2 font-mono my-2 overflow-hidden">
+        {/* ">" Icon Button replacing ALL STREAMS */}
+        <button
+          type="button"
+          onClick={() => setIsStreamsOpen(!isStreamsOpen)}
+          className={`px-3 py-1.5 font-black text-xs uppercase border transition-all cursor-pointer flex items-center justify-center gap-1 shrink-0 ${
+            isStreamsOpen
+              ? 'bg-emerald-500 text-slate-950 border-emerald-400 font-extrabold shadow-[2px_2px_0px_0px_#ffffff]'
+              : 'bg-white text-emerald-700 border-emerald-300 hover:bg-emerald-50 shadow-xs'
+          }`}
+          title={isStreamsOpen ? "Collapse stream categories" : "Expand stream categories"}
+        >
+          <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${isStreamsOpen ? 'rotate-90 md:rotate-0' : ''}`} />
+          <span className="text-[10px] font-extrabold">STREAMS</span>
+        </button>
+
+        {/* Right sliding light-theme container holding all category options */}
+        <AnimatePresence>
+          {isStreamsOpen && (
+            <motion.div
+              initial={{ opacity: 0, x: -30, width: 0 }}
+              animate={{ opacity: 1, x: 0, width: 'auto' }}
+              exit={{ opacity: 0, x: -30, width: 0 }}
+              transition={{ duration: 0.3, ease: 'easeOut' }}
+              className="overflow-x-auto scrollbar-none flex items-center gap-1.5 p-1 bg-white border-2 border-emerald-400/80 shadow-md rounded-xs shrink-0 whitespace-nowrap"
+            >
+              {[
+                { id: 'All', label: 'All', icon: '🌐' },
+                { id: 'Hackathon', label: 'Hackathons', icon: '🏆' },
+                { id: 'Quiz', label: 'Quizzes', icon: '⚔️' },
+                { id: 'College Fest', label: 'College Fests', icon: '🚀' },
+                { id: 'Scholarship', label: 'Scholarships', icon: '🎓' },
+                { id: 'Workshop', label: 'Workshops', icon: '🛠️' },
+                { id: 'Conference', label: 'Conferences', icon: '🎙️' },
+                { id: 'Hiring Challenge', label: 'Hiring', icon: '💼' },
+                { id: 'Bootcamp', label: 'Bootcamps', icon: '⚡' },
+                { id: 'CFP', label: 'CFP', icon: '📝' },
+              ].map(cat => {
+                const isSelected = categoryFilter === cat.id;
+                return (
+                  <button
+                    key={cat.id}
+                    type="button"
+                    onClick={() => setCategoryFilter(cat.id)}
+                    className={`px-2 py-1 text-[9.5px] font-mono font-bold uppercase transition-all cursor-pointer flex items-center gap-1 rounded-xs shrink-0 ${
+                      isSelected
+                        ? 'bg-emerald-600 text-white font-extrabold shadow-xs'
+                        : 'bg-white text-emerald-800 hover:bg-emerald-50 hover:text-emerald-950 border border-emerald-200/70'
+                    }`}
+                  >
+                    <span className="text-[10px]">{cat.icon}</span>
+                    <span>{cat.label}</span>
+                  </button>
+                );
+              })}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* 3. FILTERS BAR */}
