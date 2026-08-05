@@ -7,7 +7,7 @@
     "domains": [
       "AWS Cloud Skills"
     ],
-    "totalSkillsCount": 67
+    "totalSkillsCount": 39
   },
   {
     "id": "coursera",
@@ -18,7 +18,7 @@
       "Main Category",
       "Topic Search"
     ],
-    "totalSkillsCount": 98
+    "totalSkillsCount": 52
   },
   {
     "id": "edx",
@@ -28,7 +28,7 @@
     "domains": [
       "edX Topic"
     ],
-    "totalSkillsCount": 111
+    "totalSkillsCount": 60
   },
   {
     "id": "fedvte-cisa-learning",
@@ -39,7 +39,7 @@
       "Cybersecurity Training",
       "Catalog"
     ],
-    "totalSkillsCount": 45
+    "totalSkillsCount": 30
   },
   {
     "id": "futureskills-prime",
@@ -55,7 +55,7 @@
       "Software Development",
       "Catalog"
     ],
-    "totalSkillsCount": 86
+    "totalSkillsCount": 20
   },
   {
     "id": "geeksforgeeks",
@@ -73,7 +73,7 @@
       "Databases",
       "Emerging Technology"
     ],
-    "totalSkillsCount": 115
+    "totalSkillsCount": 44
   },
   {
     "id": "google-cloud-learning",
@@ -87,7 +87,7 @@
       "Credentials",
       "Certification"
     ],
-    "totalSkillsCount": 59
+    "totalSkillsCount": 27
   },
   {
     "id": "google-cloud-skills-boost",
@@ -97,7 +97,7 @@
     "domains": [
       "Google Cloud"
     ],
-    "totalSkillsCount": 64
+    "totalSkillsCount": 37
   },
   {
     "id": "google-developers-learn",
@@ -116,7 +116,7 @@
       "Hands-on Labs",
       "Credentials"
     ],
-    "totalSkillsCount": 59
+    "totalSkillsCount": 28
   },
   {
     "id": "google-tech-dev-guide",
@@ -126,7 +126,7 @@
     "domains": [
       "Computer Science & Career Preparation"
     ],
-    "totalSkillsCount": 47
+    "totalSkillsCount": 30
   },
   {
     "id": "green-software-foundation-learn",
@@ -138,7 +138,7 @@
       "Practical Patterns",
       "Measurement Standards"
     ],
-    "totalSkillsCount": 12
+    "totalSkillsCount": 10
   },
   {
     "id": "grow-with-google",
@@ -151,7 +151,7 @@
       "Catalog",
       "Business Skills"
     ],
-    "totalSkillsCount": 68
+    "totalSkillsCount": 14
   },
   {
     "id": "ibm-skillsbuild",
@@ -166,7 +166,7 @@
       "Sustainability",
       "Catalog"
     ],
-    "totalSkillsCount": 72
+    "totalSkillsCount": 19
   },
   {
     "id": "infosys-springboard",
@@ -176,7 +176,7 @@
     "domains": [
       "Infosys Springboard Learning Area"
     ],
-    "totalSkillsCount": 75
+    "totalSkillsCount": 30
   },
   {
     "id": "linkedin-learning",
@@ -189,7 +189,7 @@
       "Creative",
       "Credentials"
     ],
-    "totalSkillsCount": 77
+    "totalSkillsCount": 41
   },
   {
     "id": "microsoft-learn",
@@ -199,7 +199,7 @@
     "domains": [
       "Microsoft Products & Roles"
     ],
-    "totalSkillsCount": 86
+    "totalSkillsCount": 46
   },
   {
     "id": "nptel",
@@ -210,7 +210,7 @@
       "NPTEL Discipline or Domain",
       "Catalog"
     ],
-    "totalSkillsCount": 69
+    "totalSkillsCount": 42
   },
   {
     "id": "swayam",
@@ -220,7 +220,7 @@
     "domains": [
       "SWAYAM Subject Area"
     ],
-    "totalSkillsCount": 34
+    "totalSkillsCount": 24
   },
   {
     "id": "w3schools",
@@ -237,6 +237,6 @@
       "Security",
       "Web Development"
     ],
-    "totalSkillsCount": 113
+    "totalSkillsCount": 58
   }
 ]

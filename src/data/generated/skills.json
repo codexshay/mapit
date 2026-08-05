@@ -2088,7 +2088,7 @@
       },
       {
         "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/pathways/data-analytics/"
+        "url": "https://www.futureskillsprime.in/pathways/iot-data-analytics/"
       },
       {
         "portal": "Google Cloud Skills Boost",
@@ -4147,11 +4147,10 @@
     "domain": "Topic Search",
     "topic": "Product Management",
     "learningFormat": "Free & Paid Modules",
-    "portalsCount": 3,
+    "portalsCount": 2,
     "portals": [
       "Coursera",
-      "edX",
-      "FutureSkills Prime"
+      "edX"
     ],
     "portalLinks": [
       {
@@ -4161,10 +4160,6 @@
       {
         "portal": "edX",
         "url": "https://www.edx.org/learn/product-management"
-      },
-      {
-        "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/tech-sectors/product-management/"
       }
     ]
   },
@@ -4806,12 +4801,11 @@
     "domain": "Topic Search",
     "topic": "Communication Skills",
     "learningFormat": "Free & Paid Modules",
-    "portalsCount": 7,
+    "portalsCount": 6,
     "portals": [
       "Coursera",
       "edX",
       "Google Cloud Learning",
-      "IBM SkillsBuild",
       "Infosys Springboard",
       "LinkedIn Learning",
       "NPTEL"
@@ -4828,10 +4822,6 @@
       {
         "portal": "Google Cloud Learning",
         "url": "https://cloud.google.com/learn/certification/cloud-architect"
-      },
-      {
-        "portal": "IBM SkillsBuild",
-        "url": "https://skillsbuild.org/students/course-catalog/professional-skills"
       },
       {
         "portal": "Infosys Springboard",
@@ -5301,7 +5291,7 @@
       },
       {
         "portal": "GeeksforGeeks",
-        "url": "https://www.geeksforgeeks.org/cpp/c-plus-plus/"
+        "url": "https://www.geeksforgeeks.org/java/java/"
       },
       {
         "portal": "Google Developers Learn",
@@ -5606,12 +5596,11 @@
     "domain": "edX Topic",
     "topic": "C Programming",
     "learningFormat": "Free & Paid Modules",
-    "portalsCount": 4,
+    "portalsCount": 3,
     "portals": [
       "edX",
       "GeeksforGeeks",
-      "Google Tech Dev Guide",
-      "W3Schools"
+      "Google Tech Dev Guide"
     ],
     "portalLinks": [
       {
@@ -5625,10 +5614,6 @@
       {
         "portal": "Google Tech Dev Guide",
         "url": "https://techdevguide.withgoogle.com/resources/topics/dynamic-programming/"
-      },
-      {
-        "portal": "W3Schools",
-        "url": "https://www.w3schools.com/cpp/"
       }
     ]
   },
@@ -6030,10 +6015,9 @@
     "domain": "edX Topic",
     "topic": "Internet of Things",
     "learningFormat": "Free & Paid Modules",
-    "portalsCount": 5,
+    "portalsCount": 4,
     "portals": [
       "edX",
-      "FutureSkills Prime",
       "GeeksforGeeks",
       "Infosys Springboard",
       "NPTEL"
@@ -6042,10 +6026,6 @@
       {
         "portal": "edX",
         "url": "https://www.edx.org/learn/internet-of-things"
-      },
-      {
-        "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/course/course-on-internet-of-things/"
       },
       {
         "portal": "GeeksforGeeks",
@@ -7100,25 +7080,6 @@
     ]
   },
   {
-    "id": "niccs-education-and-training-catalog",
-    "name": "NICCS Education and Training Catalog",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Catalog",
-    "topic": "NICCS Education and Training Catalog",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "FedVTE / CISA Learning"
-    ],
-    "portalLinks": [
-      {
-        "portal": "FedVTE / CISA Learning",
-        "url": "https://niccs.cisa.gov/training/catalog"
-      }
-    ]
-  },
-  {
     "id": "cybersecurity-training",
     "name": "Cybersecurity Training",
     "type": "Skill / Topic",
@@ -7181,25 +7142,6 @@
     ]
   },
   {
-    "id": "introduction-to-artificial-intelligence",
-    "name": "Introduction to Artificial Intelligence",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Emerging Technology",
-    "topic": "Introduction to Artificial Intelligence",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "FutureSkills Prime"
-    ],
-    "portalLinks": [
-      {
-        "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/pathways/introduction-to-artificial-intelligence/"
-      }
-    ]
-  },
-  {
     "id": "ai-fundamentals",
     "name": "AI Fundamentals",
     "type": "Skill / Topic",
@@ -7238,25 +7180,6 @@
     ]
   },
   {
-    "id": "machine-learning-and-ai-algorithms",
-    "name": "Machine Learning and AI Algorithms",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Emerging Technology",
-    "topic": "Machine Learning and AI Algorithms",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "FutureSkills Prime"
-    ],
-    "portalLinks": [
-      {
-        "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/pathways/machine-learning-and-ai-algorithms/"
-      }
-    ]
-  },
-  {
     "id": "ai-algorithms",
     "name": "AI Algorithms",
     "type": "Skill / Topic",
@@ -7272,25 +7195,6 @@
       {
         "portal": "FutureSkills Prime",
         "url": "https://www.futureskillsprime.in/pathways/machine-learning-and-ai-algorithms/"
-      }
-    ]
-  },
-  {
-    "id": "advanced-data-analytics",
-    "name": "Advanced Data Analytics",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Data",
-    "topic": "Advanced Data Analytics",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "FutureSkills Prime"
-    ],
-    "portalLinks": [
-      {
-        "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/course/advanced-data-analytics/"
       }
     ]
   },
@@ -7415,25 +7319,6 @@
     ]
   },
   {
-    "id": "data-science-and-analytics",
-    "name": "Data Science and Analytics",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Data",
-    "topic": "Data Science and Analytics",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "FutureSkills Prime"
-    ],
-    "portalLinks": [
-      {
-        "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/course/data-science-and-analytics/"
-      }
-    ]
-  },
-  {
     "id": "virtualization",
     "name": "Virtualization",
     "type": "Skill / Topic",
@@ -7473,25 +7358,6 @@
       {
         "portal": "IBM SkillsBuild",
         "url": "https://skillsbuild.org/students/course-catalog/cloud-computing"
-      }
-    ]
-  },
-  {
-    "id": "cloud-computing-and-cloud-security",
-    "name": "Cloud Computing and Cloud Security",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Cloud",
-    "topic": "Cloud Computing and Cloud Security",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "FutureSkills Prime"
-    ],
-    "portalLinks": [
-      {
-        "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/pathways/cloud-computing-cloud-security/"
       }
     ]
   },
@@ -7568,25 +7434,6 @@
       {
         "portal": "FutureSkills Prime",
         "url": "https://www.futureskillsprime.in/journey/cybersecurity/"
-      }
-    ]
-  },
-  {
-    "id": "cybersecurity-foundation",
-    "name": "Cybersecurity Foundation",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Security",
-    "topic": "Cybersecurity Foundation",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "FutureSkills Prime"
-    ],
-    "portalLinks": [
-      {
-        "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/course/ai-in-cybersecurity-a-beginners-foundation-course/"
       }
     ]
   },
@@ -7682,25 +7529,6 @@
       {
         "portal": "FutureSkills Prime",
         "url": "https://www.futureskillsprime.in/course/course-on-internet-of-things/"
-      }
-    ]
-  },
-  {
-    "id": "iot-data-analytics",
-    "name": "IoT Data Analytics",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Emerging Technology",
-    "topic": "IoT Data Analytics",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "FutureSkills Prime"
-    ],
-    "portalLinks": [
-      {
-        "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/pathways/iot-data-analytics/"
       }
     ]
   },
@@ -7914,30 +7742,6 @@
     ]
   },
   {
-    "id": "full-stack-development",
-    "name": "Full Stack Development",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Software Development",
-    "topic": "Full Stack Development",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 2,
-    "portals": [
-      "FutureSkills Prime",
-      "Infosys Springboard"
-    ],
-    "portalLinks": [
-      {
-        "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/course/academy/"
-      },
-      {
-        "portal": "Infosys Springboard",
-        "url": "https://infyspringboard.onwingspan.com/web/en/web"
-      }
-    ]
-  },
-  {
     "id": "html",
     "name": "HTML",
     "type": "Skill / Topic",
@@ -8083,25 +7887,6 @@
     ]
   },
   {
-    "id": "software-development-foundation",
-    "name": "Software Development Foundation",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Software Development",
-    "topic": "Software Development Foundation",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "FutureSkills Prime"
-    ],
-    "portalLinks": [
-      {
-        "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/course/intensive/"
-      }
-    ]
-  },
-  {
     "id": "programming",
     "name": "Programming",
     "type": "Skill / Topic",
@@ -8214,25 +7999,6 @@
       {
         "portal": "Google Tech Dev Guide",
         "url": "https://techdevguide.withgoogle.com/resources/command-line-tutorial/"
-      }
-    ]
-  },
-  {
-    "id": "futureskills-prime-catalog",
-    "name": "FutureSkills Prime Catalog",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Catalog",
-    "topic": "FutureSkills Prime Catalog",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "FutureSkills Prime"
-    ],
-    "portalLinks": [
-      {
-        "portal": "FutureSkills Prime",
-        "url": "https://www.futureskillsprime.in/iDH/fsp/Catalog"
       }
     ]
   },
@@ -8713,11 +8479,11 @@
   },
   {
     "id": "c",
-    "name": "C++",
+    "name": "C#",
     "type": "Skill / Topic",
     "level": "Varies",
     "domain": "Programming Languages",
-    "topic": "C++ Programming",
+    "topic": "C#",
     "learningFormat": "Free & Paid Modules",
     "portalsCount": 3,
     "portals": [
@@ -8728,7 +8494,7 @@
     "portalLinks": [
       {
         "portal": "GeeksforGeeks",
-        "url": "https://www.geeksforgeeks.org/cpp/c-plus-plus/"
+        "url": "https://www.geeksforgeeks.org/csharp-programming-language/"
       },
       {
         "portal": "Microsoft Learn",
@@ -8748,11 +8514,10 @@
     "domain": "Programming Languages",
     "topic": "C#",
     "learningFormat": "Free & Paid Modules",
-    "portalsCount": 3,
+    "portalsCount": 2,
     "portals": [
       "GeeksforGeeks",
-      "Microsoft Learn",
-      "W3Schools"
+      "Microsoft Learn"
     ],
     "portalLinks": [
       {
@@ -8762,10 +8527,6 @@
       {
         "portal": "Microsoft Learn",
         "url": "https://learn.microsoft.com/en-us/training/browse/?terms=.NET"
-      },
-      {
-        "portal": "W3Schools",
-        "url": "https://www.w3schools.com/cs/"
       }
     ]
   },
@@ -11342,25 +11103,6 @@
     ]
   },
   {
-    "id": "google-ai-professional-certificate",
-    "name": "Google AI Professional Certificate",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Career Certificates",
-    "topic": "Google AI Professional Certificate",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/intl/en_in/ai-professional/"
-      }
-    ]
-  },
-  {
     "id": "ai-productivity",
     "name": "AI Productivity",
     "type": "Skill / Topic",
@@ -11399,25 +11141,6 @@
     ]
   },
   {
-    "id": "google-ai-essentials",
-    "name": "Google AI Essentials",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Career Essentials",
-    "topic": "Google AI Essentials",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/ai-essentials/"
-      }
-    ]
-  },
-  {
     "id": "productivity",
     "name": "Productivity",
     "type": "Skill / Topic",
@@ -11433,25 +11156,6 @@
       {
         "portal": "Grow with Google",
         "url": "https://grow.google/ai-essentials/"
-      }
-    ]
-  },
-  {
-    "id": "google-data-analytics-certificate",
-    "name": "Google Data Analytics Certificate",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Career Certificates",
-    "topic": "Google Data Analytics Certificate",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/certificates/data-analytics/"
       }
     ]
   },
@@ -11475,25 +11179,6 @@
     ]
   },
   {
-    "id": "google-advanced-data-analytics-certificate",
-    "name": "Google Advanced Data Analytics Certificate",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Career Certificates",
-    "topic": "Google Advanced Data Analytics Certificate",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/certificates/advanced-data-analytics/"
-      }
-    ]
-  },
-  {
     "id": "regression",
     "name": "Regression",
     "type": "Skill / Topic",
@@ -11509,25 +11194,6 @@
       {
         "portal": "Grow with Google",
         "url": "https://grow.google/certificates/advanced-data-analytics/"
-      }
-    ]
-  },
-  {
-    "id": "google-business-intelligence-certificate",
-    "name": "Google Business Intelligence Certificate",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Career Certificates",
-    "topic": "Google Business Intelligence Certificate",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/certificates/business-intelligence/"
       }
     ]
   },
@@ -11609,25 +11275,6 @@
     ]
   },
   {
-    "id": "google-cybersecurity-certificate",
-    "name": "Google Cybersecurity Certificate",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Career Certificates",
-    "topic": "Google Cybersecurity Certificate",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/certificates/cybersecurity/"
-      }
-    ]
-  },
-  {
     "id": "siem",
     "name": "SIEM",
     "type": "Skill / Topic",
@@ -11647,44 +11294,6 @@
     ]
   },
   {
-    "id": "google-it-support-certificate",
-    "name": "Google IT Support Certificate",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Career Certificates",
-    "topic": "Google IT Support Certificate",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/certificates/it-support/"
-      }
-    ]
-  },
-  {
-    "id": "google-it-automation-with-python",
-    "name": "Google IT Automation with Python",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Career Certificates",
-    "topic": "Google IT Automation with Python",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/certificates/it-automation/"
-      }
-    ]
-  },
-  {
     "id": "configuration-management",
     "name": "Configuration Management",
     "type": "Skill / Topic",
@@ -11700,25 +11309,6 @@
       {
         "portal": "Grow with Google",
         "url": "https://grow.google/certificates/it-automation/"
-      }
-    ]
-  },
-  {
-    "id": "google-project-management-certificate",
-    "name": "Google Project Management Certificate",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Career Certificates",
-    "topic": "Google Project Management Certificate",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/certificates/project-management/"
       }
     ]
   },
@@ -11748,25 +11338,6 @@
       {
         "portal": "Infosys Springboard",
         "url": "https://infyspringboard.onwingspan.com/web/en/web"
-      }
-    ]
-  },
-  {
-    "id": "google-ux-design-certificate",
-    "name": "Google UX Design Certificate",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Career Certificates",
-    "topic": "Google UX Design Certificate",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/certificates/ux-design/"
       }
     ]
   },
@@ -11805,25 +11376,6 @@
       {
         "portal": "Grow with Google",
         "url": "https://grow.google/certificates/ux-design/"
-      }
-    ]
-  },
-  {
-    "id": "google-digital-marketing-and-e-commerce-certificate",
-    "name": "Google Digital Marketing and E-commerce Certificate",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Career Certificates",
-    "topic": "Google Digital Marketing and E-commerce Certificate",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/certificates/digital-marketing-ecommerce/"
       }
     ]
   },
@@ -11904,25 +11456,6 @@
     ]
   },
   {
-    "id": "google-career-certificates-india",
-    "name": "Google Career Certificates India",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Catalog",
-    "topic": "Google Career Certificates India",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/intl/en_in/certificates/"
-      }
-    ]
-  },
-  {
     "id": "career-development",
     "name": "Career Development",
     "type": "Skill / Topic",
@@ -11990,25 +11523,6 @@
     ]
   },
   {
-    "id": "google-ads-training",
-    "name": "Google Ads Training",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Business Skills",
-    "topic": "Google Ads Training",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://skillshop.withgoogle.com/"
-      }
-    ]
-  },
-  {
     "id": "google-ads",
     "name": "Google Ads",
     "type": "Skill / Topic",
@@ -12024,25 +11538,6 @@
       {
         "portal": "Grow with Google",
         "url": "https://skillshop.withgoogle.com/"
-      }
-    ]
-  },
-  {
-    "id": "grow-with-google-courses-and-tools",
-    "name": "Grow with Google Courses and Tools",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Catalog",
-    "topic": "Grow with Google Courses and Tools",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "Grow with Google"
-    ],
-    "portalLinks": [
-      {
-        "portal": "Grow with Google",
-        "url": "https://grow.google/intl/en_in/"
       }
     ]
   },
@@ -12143,25 +11638,6 @@
       {
         "portal": "LinkedIn Learning",
         "url": "https://www.linkedin.com/learning/topics/hardware"
-      }
-    ]
-  },
-  {
-    "id": "infrastructure-and-operations",
-    "name": "Infrastructure and Operations",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Technical Skills",
-    "topic": "Infrastructure and Operations",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "IBM SkillsBuild"
-    ],
-    "portalLinks": [
-      {
-        "portal": "IBM SkillsBuild",
-        "url": "https://skillsbuild.org/college-students/course-catalog"
       }
     ]
   },
@@ -12342,25 +11818,6 @@
     ]
   },
   {
-    "id": "enterprise-design-thinking",
-    "name": "Enterprise Design Thinking",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Workplace Skills",
-    "topic": "Enterprise Design Thinking",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "IBM SkillsBuild"
-    ],
-    "portalLinks": [
-      {
-        "portal": "IBM SkillsBuild",
-        "url": "https://skillsbuild.org/students/course-catalog/design-thinking"
-      }
-    ]
-  },
-  {
     "id": "human-centered-design",
     "name": "Human-centered Design",
     "type": "Skill / Topic",
@@ -12414,25 +11871,6 @@
       {
         "portal": "IBM SkillsBuild",
         "url": "https://skillsbuild.org/students/course-catalog/professional-skills"
-      }
-    ]
-  },
-  {
-    "id": "job-readiness",
-    "name": "Job Readiness",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Workplace Skills",
-    "topic": "Job Readiness",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "IBM SkillsBuild"
-    ],
-    "portalLinks": [
-      {
-        "portal": "IBM SkillsBuild",
-        "url": "https://skillsbuild.org/students/course-catalog/job-readiness"
       }
     ]
   },
@@ -12551,25 +11989,6 @@
     ]
   },
   {
-    "id": "adult-learner-pathways",
-    "name": "Adult Learner Pathways",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Catalog",
-    "topic": "Adult Learner Pathways",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "IBM SkillsBuild"
-    ],
-    "portalLinks": [
-      {
-        "portal": "IBM SkillsBuild",
-        "url": "https://skillsbuild.org/adult-learners/explore-learning"
-      }
-    ]
-  },
-  {
     "id": "customer-service",
     "name": "Customer Service",
     "type": "Skill / Topic",
@@ -12651,25 +12070,6 @@
     ]
   },
   {
-    "id": "college-course-catalog",
-    "name": "College Course Catalog",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Catalog",
-    "topic": "College Course Catalog",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "IBM SkillsBuild"
-    ],
-    "portalLinks": [
-      {
-        "portal": "IBM SkillsBuild",
-        "url": "https://skillsbuild.org/college-students/course-catalog"
-      }
-    ]
-  },
-  {
     "id": "ai-and-data-science",
     "name": "AI and Data Science",
     "type": "Skill / Topic",
@@ -12689,12 +12089,12 @@
     ]
   },
   {
-    "id": "learning-catalog",
-    "name": "Learning Catalog",
+    "id": "infrastructure-and-operations",
+    "name": "Infrastructure and Operations",
     "type": "Skill / Topic",
     "level": "Varies",
     "domain": "Catalog",
-    "topic": "Learning Catalog",
+    "topic": "College Course Catalog",
     "learningFormat": "Free & Paid Modules",
     "portalsCount": 1,
     "portals": [
@@ -12703,7 +12103,7 @@
     "portalLinks": [
       {
         "portal": "IBM SkillsBuild",
-        "url": "https://skillsbuild.org/learning-catalog"
+        "url": "https://skillsbuild.org/college-students/course-catalog"
       }
     ]
   },
@@ -12752,6 +12152,25 @@
     "level": "Varies",
     "domain": "Infosys Springboard Learning Area",
     "topic": "C Sharp",
+    "learningFormat": "Free & Paid Modules",
+    "portalsCount": 1,
+    "portals": [
+      "Infosys Springboard"
+    ],
+    "portalLinks": [
+      {
+        "portal": "Infosys Springboard",
+        "url": "https://infyspringboard.onwingspan.com/web/en/web"
+      }
+    ]
+  },
+  {
+    "id": "full-stack-development",
+    "name": "Full Stack Development",
+    "type": "Tool / Platform",
+    "level": "Varies",
+    "domain": "Infosys Springboard Learning Area",
+    "topic": "Full Stack Development",
     "learningFormat": "Free & Paid Modules",
     "portalsCount": 1,
     "portals": [
@@ -14448,25 +13867,6 @@
     ]
   },
   {
-    "id": "discipline-wise-course-list",
-    "name": "Discipline-wise Course List",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Catalog",
-    "topic": "Discipline-wise Course List",
-    "learningFormat": "Free Access",
-    "portalsCount": 1,
-    "portals": [
-      "NPTEL"
-    ],
-    "portalLinks": [
-      {
-        "portal": "NPTEL",
-        "url": "https://nptel.ac.in/localchapter/discipline"
-      }
-    ]
-  },
-  {
     "id": "sciences",
     "name": "Sciences",
     "type": "Skill / Topic",
@@ -14482,25 +13882,6 @@
       {
         "portal": "NPTEL",
         "url": "https://nptel.ac.in/localchapter/discipline"
-      }
-    ]
-  },
-  {
-    "id": "nptel-domain-certifications",
-    "name": "NPTEL Domain Certifications",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Catalog",
-    "topic": "NPTEL Domain Certifications",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "NPTEL"
-    ],
-    "portalLinks": [
-      {
-        "portal": "NPTEL",
-        "url": "https://nptel.ac.in/domains/discipline"
       }
     ]
   },
@@ -14539,25 +13920,6 @@
       {
         "portal": "NPTEL",
         "url": "https://nptel.ac.in/domains/discipline"
-      }
-    ]
-  },
-  {
-    "id": "nptel-course-catalog",
-    "name": "NPTEL Course Catalog",
-    "type": "Skill / Topic",
-    "level": "Varies",
-    "domain": "Catalog",
-    "topic": "NPTEL Course Catalog",
-    "learningFormat": "Free & Paid Modules",
-    "portalsCount": 1,
-    "portals": [
-      "NPTEL"
-    ],
-    "portalLinks": [
-      {
-        "portal": "NPTEL",
-        "url": "https://www.nptel.ac.in/courses"
       }
     ]
   },

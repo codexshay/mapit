@@ -1689,6 +1689,7 @@ export default function LibrariesDashboard({
   const [showAllChannels, setShowAllChannels] = useState<boolean>(false);
   const [showAllBooks, setShowAllBooks] = useState<boolean>(false);
   const [selectedPortalId, setSelectedPortalId] = useState<string | null>(null);
+  const [expandedCardIds, setExpandedCardIds] = useState<Record<string, boolean>>({});
 
   const dynamicDomains = React.useMemo(() => {
     const domainCounts = new Map<string, number>();
@@ -3454,10 +3455,49 @@ export default function LibrariesDashboard({
                                       )}
                                     </div>
 
-                                    {sk.topic && sk.topic !== mainTitle && (
-                                      <span className="text-[10px] font-mono text-amber-400/90 block">
-                                        {sk.topic}
-                                      </span>
+                                    {/* COVERED SKILLS SLIDING DRAWER TOGGLE */}
+                                    {Array.isArray(sk.skills) && sk.skills.length > 0 && (
+                                      <div className="pt-1">
+                                        <button
+                                          type="button"
+                                          onClick={() => setExpandedCardIds(prev => ({ ...prev, [skillKey]: !prev[skillKey] }))}
+                                          className={`px-2 py-0.5 text-[9.5px] font-mono font-bold uppercase transition-all cursor-pointer flex items-center gap-1 rounded-xs border ${
+                                            expandedCardIds[skillKey]
+                                              ? (isLight ? 'bg-amber-100 text-amber-900 border-amber-300' : 'bg-amber-950/80 text-amber-200 border-amber-500/50')
+                                              : (isLight ? 'bg-amber-50 text-amber-800 border-amber-200 hover:bg-amber-100' : 'bg-[#151c28] text-amber-400/90 border-[#2d3a52] hover:border-amber-500/50 hover:text-amber-300')
+                                          }`}
+                                          title={expandedCardIds[skillKey] ? "Hide covered skills" : "View covered skills"}
+                                        >
+                                          <ChevronRight className={`w-3 h-3 text-amber-400 transition-transform duration-300 ${expandedCardIds[skillKey] ? 'rotate-90' : ''}`} />
+                                          <span>Covered Skills ({sk.skills.length})</span>
+                                        </button>
+
+                                        <AnimatePresence>
+                                          {expandedCardIds[skillKey] && (
+                                            <motion.div
+                                              initial={{ opacity: 0, height: 0, x: -10 }}
+                                              animate={{ opacity: 1, height: 'auto', x: 0 }}
+                                              exit={{ opacity: 0, height: 0, x: -10 }}
+                                              transition={{ duration: 0.2, ease: 'easeOut' }}
+                                              className="mt-2 p-2 bg-amber-950/40 border-l-2 border-amber-400/80 space-y-1 overflow-hidden rounded-r-xs"
+                                            >
+                                              <span className="text-[8.5px] font-mono font-bold uppercase text-amber-400/80 block">
+                                                Skills covered in this topic:
+                                              </span>
+                                              <div className="flex flex-wrap gap-1">
+                                                {sk.skills.map((skillName: string, idx: number) => (
+                                                  <span
+                                                    key={idx}
+                                                    className="px-1.5 py-0.5 text-[9px] font-mono bg-amber-500/15 text-amber-200 border border-amber-500/30 rounded-xs"
+                                                  >
+                                                    {skillName}
+                                                  </span>
+                                                ))}
+                                              </div>
+                                            </motion.div>
+                                          )}
+                                        </AnimatePresence>
+                                      </div>
                                     )}
                                   </div>
 
