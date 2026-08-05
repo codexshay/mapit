@@ -108,7 +108,7 @@ const W3SCHOOLS_TOPIC_MAP: Record<string, string> = {
 
 /**
  * Resolves a direct, specific course/tutorial deep link for any given skill on a specific Study Portal.
- * Prevents redirecting to generic homepage domains.
+ * Prevents redirecting to generic homepage domains or misaligned topic URLs.
  */
 export function getPortalCourseDirectUrl(
   portalNameOrSlug: string = '',
@@ -120,111 +120,196 @@ export function getPortalCourseDirectUrl(
     return existingUrl || 'https://www.coursera.org/';
   }
 
-  // If existingUrl is already a deep-link with search/course path, keep it
-  if (existingUrl && (
-    existingUrl.includes('/search') || 
-    existingUrl.includes('/courses/') || 
-    existingUrl.includes('/learn/') || 
-    existingUrl.includes('/catalog?') ||
-    existingUrl.includes('/training?') ||
-    existingUrl.includes('?q=') ||
-    existingUrl.includes('?query=') ||
-    existingUrl.includes('?terms=') ||
-    existingUrl.includes('?keywords=') ||
-    existingUrl.includes('?searchText=') ||
-    existingUrl.includes('?s=')
-  )) {
-    return existingUrl;
-  }
-
   const p = (portalNameOrSlug || '').toLowerCase().trim();
+  const key = cleanSkillName.toLowerCase().trim();
   const q = encodeURIComponent(cleanSkillName);
 
-  if (p.includes('microsoft') || p.includes('ms-learn') || p.includes('azure')) {
-    return `https://learn.microsoft.com/en-us/search/?terms=${q}`;
-  }
-  if (p.includes('aws') || p.includes('amazon')) {
-    return `https://explore.skillbuilder.aws/learn/search?type=COURSE&query=${q}`;
-  }
-  if (p.includes('google') || p.includes('gcp') || p.includes('cloudskillsboost')) {
-    return `https://www.cloudskillsboost.google/catalog?keywords=${q}`;
-  }
-  if (p.includes('cisco') || p.includes('netacad') || p.includes('skillsforall')) {
-    return `https://skillsforall.com/search?query=${q}`;
-  }
+  // 1. W3SCHOOLS SPECIFIC TOPIC MAPPING & STATIC TUTORIAL PAGES
   if (p.includes('w3schools')) {
-    const key = cleanSkillName.toLowerCase().trim();
     if (W3SCHOOLS_TOPIC_MAP[key]) {
       return W3SCHOOLS_TOPIC_MAP[key];
     }
     for (const [tName, tUrl] of Object.entries(W3SCHOOLS_TOPIC_MAP)) {
-      if (key.includes(tName) || tName.includes(key)) {
+      if (key === tName || key.includes(tName) || tName.includes(key)) {
         return tUrl;
       }
     }
     const slug = cleanSkillName.toLowerCase().replace(/[^a-z0-9]/g, '');
     return `https://www.w3schools.com/${slug}/`;
   }
+
+  // If existingUrl is already a direct static course/tutorial page specific to this item, keep it
+  if (existingUrl && (
+    existingUrl.includes('/courses/') || 
+    existingUrl.includes('/learn/') ||
+    existingUrl.includes('/tutorial/') ||
+    existingUrl.includes('/pathway/') ||
+    existingUrl.includes('/module/')
+  ) && !existingUrl.endsWith('/catalog') && !existingUrl.endsWith('/browse')) {
+    return existingUrl;
+  }
+
+  // 2. MICROSOFT LEARN
+  if (p.includes('microsoft') || p.includes('ms-learn') || p.includes('azure')) {
+    return `https://learn.microsoft.com/en-us/search/?terms=${q}`;
+  }
+
+  // 3. AWS SKILL BUILDER
+  if (p.includes('aws') || p.includes('amazon')) {
+    return `https://explore.skillbuilder.aws/learn/search?type=COURSE&query=${q}`;
+  }
+
+  // 4. GOOGLE CLOUD SKILLS BOOST / GOOGLE CLOUD
+  if (p.includes('skills boost') || p.includes('cloudskillsboost') || (p.includes('google') && p.includes('cloud'))) {
+    return `https://www.cloudskillsboost.google/catalog?keywords=${q}`;
+  }
+
+  // 5. GOOGLE DEVELOPERS LEARN
+  if (p.includes('google developers') || p.includes('developers.google')) {
+    return `https://developers.google.com/learn/search?q=${q}`;
+  }
+
+  // 6. GROW WITH GOOGLE
+  if (p.includes('grow with google')) {
+    return `https://grow.google/search/?q=${q}`;
+  }
+
+  // 7. GOOGLE TECH DEV GUIDE
+  if (p.includes('tech dev guide') || p.includes('techdevguide')) {
+    return `https://techdevguide.withgoogle.com/resources/?q=${q}`;
+  }
+
+  // 8. CISCO SKILLS FOR ALL / NETACAD
+  if (p.includes('cisco') || p.includes('netacad') || p.includes('skills for all')) {
+    return `https://skillsforall.com/search?query=${q}`;
+  }
+
+  // 9. GEEKSFORGEEKS
   if (p.includes('geeksforgeeks') || p.includes('gfg')) {
     return `https://www.geeksforgeeks.org/search/?q=${q}`;
   }
-  if (p.includes('linux')) {
-    return `https://training.linuxfoundation.org/?s=${q}`;
+
+  // 10. FUTURESKILLS PRIME
+  if (p.includes('futureskills') || p.includes('future skills')) {
+    return `https://www.futureskillsprime.in/iDH/fsp/Catalog?terms=${q}`;
   }
-  if (p.includes('servicenow')) {
-    return `https://nowlearning.servicenow.com/lxp/en/pages/search?q=${q}`;
-  }
+
+  // 11. SWAYAM / NPTEL
   if (p.includes('swayam') || p.includes('nptel')) {
     return `https://swayam.gov.in/explorer?searchText=${q}`;
   }
+
+  // 12. COURSERA
+  if (p.includes('coursera')) {
+    return `https://www.coursera.org/search?query=${q}`;
+  }
+
+  // 13. EDX
   if (p.includes('edx')) {
     return `https://www.edx.org/search?q=${q}`;
   }
+
+  // 14. UDEMY
   if (p.includes('udemy')) {
     return `https://www.udemy.com/courses/search/?q=${q}`;
   }
+
+  // 15. FREECODECAMP
   if (p.includes('freecodecamp')) {
     return `https://www.freecodecamp.org/news/search/?query=${q}`;
   }
-  if (p.includes('baeldung')) {
-    return `https://www.baeldung.com/?s=${q}`;
+
+  // 16. LINUX FOUNDATION
+  if (p.includes('linux')) {
+    return `https://training.linuxfoundation.org/?s=${q}`;
   }
-  if (p.includes('cloud academy') || p.includes('cloudacademy')) {
-    return `https://cloudacademy.com/search/?q=${q}`;
+
+  // 17. SERVICENOW
+  if (p.includes('servicenow')) {
+    return `https://nowlearning.servicenow.com/lxp/en/pages/search?q=${q}`;
   }
-  if (p.includes('mit') || p.includes('opencourseware')) {
-    return `https://ocw.mit.edu/search/?q=${q}`;
+
+  // 18. LINKEDIN LEARNING
+  if (p.includes('linkedin')) {
+    return `https://www.linkedin.com/learning/search?keywords=${q}`;
   }
-  if (p.includes('stanford')) {
-    return `https://online.stanford.edu/search/catalog?keywords=${q}`;
+
+  // 19. IBM SKILLSBUILD
+  if (p.includes('ibm') || p.includes('skillsbuild')) {
+    return `https://skillsbuild.org/learning-catalog?query=${q}`;
   }
-  if (p.includes('harvard')) {
-    return `https://pll.harvard.edu/catalog?keywords=${q}`;
+
+  // 20. INFOSYS SPRINGBOARD
+  if (p.includes('infosys') || p.includes('springboard')) {
+    return `https://infyspringboard.onwingspan.com/web/en/web?query=${q}`;
   }
+
+  // 21. FEDVTE / CISA
+  if (p.includes('fedvte') || p.includes('cisa') || p.includes('niccs')) {
+    return `https://niccs.cisa.gov/training/catalog?query=${q}`;
+  }
+
+  // 22. GREEN SOFTWARE FOUNDATION
+  if (p.includes('green software')) {
+    return `https://learn.greensoftware.foundation/search?q=${q}`;
+  }
+
+  // 23. PLURALSIGHT
   if (p.includes('pluralsight')) {
     return `https://www.pluralsight.com/search?q=${q}`;
   }
+
+  // 24. CODECADEMY
   if (p.includes('codecademy')) {
     return `https://www.codecademy.com/search?query=${q}`;
   }
+
+  // 25. KHAN ACADEMY
   if (p.includes('khan')) {
     return `https://www.khanacademy.org/search?page_search_query=${q}`;
   }
+
+  // 26. DATACAMP
   if (p.includes('datacamp')) {
     return `https://www.datacamp.com/search?q=${q}`;
   }
+
+  // 27. MIT OPENCOURSEWARE
+  if (p.includes('mit') || p.includes('opencourseware')) {
+    return `https://ocw.mit.edu/search/?q=${q}`;
+  }
+
+  // 28. HARVARD ONLINE
+  if (p.includes('harvard')) {
+    return `https://pll.harvard.edu/catalog?keywords=${q}`;
+  }
+
+  // 29. STANFORD ONLINE
+  if (p.includes('stanford')) {
+    return `https://online.stanford.edu/search/catalog?keywords=${q}`;
+  }
+
+  // 30. BAELDUNG
+  if (p.includes('baeldung')) {
+    return `https://www.baeldung.com/?s=${q}`;
+  }
+
+  // 31. LEETCODE
   if (p.includes('leetcode')) {
     return `https://leetcode.com/problemset/all/?search=${q}`;
   }
+
+  // 32. HACKERRANK
   if (p.includes('hackerrank')) {
     return `https://www.hackerrank.com/domains/${encodeURIComponent(cleanSkillName.toLowerCase().replace(/\s+/g, '-'))}`;
   }
-  if (p.includes('red hat') || p.includes('redhat')) {
-    return `https://www.redhat.com/en/services/training/search?q=${q}`;
-  }
+
+  // 33. ROADMAP.SH
   if (p.includes('roadmap')) {
     return `https://roadmap.sh/${encodeURIComponent(cleanSkillName.toLowerCase().replace(/\s+/g, '-'))}`;
   }
+
+  // 34. MDN
   if (p.includes('mdn') || p.includes('mozilla')) {
     return `https://developer.mozilla.org/en-US/search?q=${q}`;
   }
