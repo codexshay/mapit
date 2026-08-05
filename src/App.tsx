@@ -1743,6 +1743,7 @@ export default function App() {
   }, [activeTab, selectedRoleId]);
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  const [isMobileMoreSheetOpen, setIsMobileMoreSheetOpen] = useState<boolean>(false);
   const [isChatOpen, setIsChatOpen] = useState<boolean>(false);
 
   // Dynamic order of tabs: DASH - BOOKMARKS - RESOURCES - INTERVIEWQ - CAREER DOMAINS - COMPARATOR - PATH PLANNER - JOBS & REFERRALS beta - HR CONTACTS beta
@@ -2563,6 +2564,37 @@ export default function App() {
             >
               <ChevronRight className="w-4 h-4" />
             </button>
+          </div>
+
+          {/* GOOGLE CLOUD CONSOLE STYLE MOBILE QUICK CATEGORY NAV RAIL */}
+          <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-1 border-t border-[#121c38]/40 whitespace-nowrap select-none font-mono">
+            {tabOrder.map((tabId) => {
+              const meta = TAB_METADATA[tabId];
+              if (!meta) return null;
+              const isActive = activeTab === tabId;
+              const Icon = meta.icon;
+              return (
+                <button
+                  key={tabId}
+                  type="button"
+                  onClick={() => {
+                    handleTabClick(tabId);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                  className={`px-2.5 py-1 rounded-full text-[10px] font-bold uppercase transition-all duration-150 flex items-center gap-1 shrink-0 border ${
+                    isActive
+                      ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/60 shadow-[0_0_8px_rgba(16,185,129,0.3)]'
+                      : 'bg-[#0e1628]/80 text-slate-400 border-slate-700/50 hover:text-white hover:bg-slate-800/60'
+                  }`}
+                >
+                  <Icon className="w-3 h-3 shrink-0" />
+                  <span>{meta.label}</span>
+                  {(tabId === 'jobs' || tabId === 'hr-contacts') && (
+                    <span className="text-[7.5px] bg-amber-400 text-black font-extrabold px-1 rounded-xs">beta</span>
+                  )}
+                </button>
+              );
+            })}
           </div>
 
           {/* Animated horizontal clocks & theme ribbon */}
@@ -4217,30 +4249,136 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      {/* MOBILE BOTTOM NAVIGATION RIBBON (LinkedIn App Standards) */}
+      {/* GOOGLE CLOUD CONSOLE MOBILE SLIDE-UP BOTTOM ACTION SHEET DRAWER */}
+      <AnimatePresence>
+        {isMobile && isMobileMoreSheetOpen && (
+          <>
+            {/* Backdrop overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsMobileMoreSheetOpen(false)}
+              className="fixed inset-0 z-[140] bg-black/75 backdrop-blur-xs md:hidden"
+            />
+
+            {/* Bottom Sheet Modal Container */}
+            <motion.div
+              initial={{ y: '100%' }}
+              animate={{ y: 0 }}
+              exit={{ y: '100%' }}
+              transition={{ type: 'spring', damping: 25, stiffness: 280 }}
+              className="fixed bottom-0 left-0 right-0 z-[150] bg-[#070b13] border-t-2 border-emerald-500/60 rounded-t-2xl p-4 md:hidden shadow-[0_-12px_32px_rgba(0,0,0,0.9)] select-none font-mono text-xs max-h-[85vh] overflow-y-auto"
+            >
+              {/* Drag Handle Bar */}
+              <div className="w-12 h-1 bg-slate-700 rounded-full mx-auto mb-4" />
+
+              <div className="flex items-center justify-between pb-3 border-b border-[#121c38]">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                  <h3 className="text-sm font-black uppercase text-white tracking-wider">MapIT Console Drawer</h3>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setIsMobileMoreSheetOpen(false)}
+                  className="p-1 text-slate-400 hover:text-white bg-slate-900 border border-slate-700 rounded-full"
+                >
+                  ✕
+                </button>
+              </div>
+
+              {/* Auxiliary Navigation Grid */}
+              <div className="grid grid-cols-2 gap-2.5 my-4">
+                {[
+                  { id: 'pathfinder', label: 'Path Planner', icon: TAB_METADATA.pathfinder.icon, color: 'text-emerald-400 border-emerald-500/40 bg-emerald-950/30' },
+                  { id: 'comparison', label: 'Comparator', icon: TAB_METADATA.comparison.icon, color: 'text-purple-400 border-purple-500/40 bg-purple-950/30' },
+                  { id: 'jobs', label: 'Jobs & Referrals', icon: TAB_METADATA.jobs.icon, color: 'text-zinc-200 border-zinc-500/40 bg-zinc-900/40', isBeta: true },
+                  { id: 'hr-contacts', label: 'HR Contacts', icon: TAB_METADATA['hr-contacts'].icon, color: 'text-slate-200 border-slate-700/40 bg-slate-900/40', isBeta: true },
+                  { id: 'saved', label: 'Bookmarks', icon: TAB_METADATA.saved.icon, color: 'text-yellow-400 border-yellow-500/40 bg-yellow-950/30' },
+                ].map((item) => {
+                  const Icon = item.icon;
+                  const isActive = activeTab === item.id;
+                  return (
+                    <button
+                      key={item.id}
+                      type="button"
+                      onClick={() => {
+                        handleTabClick(item.id);
+                        setIsMobileMoreSheetOpen(false);
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }}
+                      className={`p-3 border rounded-md flex items-center gap-3 transition-all cursor-pointer ${
+                        isActive
+                          ? 'border-emerald-400 bg-emerald-500/20 text-white font-extrabold shadow-[0_0_12px_rgba(16,185,129,0.25)]'
+                          : `${item.color} hover:bg-slate-800/80`
+                      }`}
+                    >
+                      <Icon className="w-5 h-5 shrink-0" />
+                      <div className="flex flex-col items-start truncate">
+                        <span className="text-xs font-bold truncate flex items-center gap-1">
+                          {item.label}
+                          {item.isBeta && (
+                            <span className="text-[7.5px] bg-amber-400 text-black font-extrabold px-1 rounded-xs">beta</span>
+                          )}
+                        </span>
+                        <span className="text-[9px] text-slate-400 font-sans">Open module</span>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Bottom Console Stats & Theme Control */}
+              <div className="pt-3 border-t border-[#121c38] flex items-center justify-between text-[10px] text-slate-400">
+                <div className="flex items-center gap-2">
+                  <span className="text-emerald-400 font-bold">Catalog v2026</span>
+                  <span>•</span>
+                  <span>{theme === 'light' ? 'Light Mode' : 'Dark Mode'}</span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    toggleTheme();
+                    setIsMobileMoreSheetOpen(false);
+                  }}
+                  className="px-2.5 py-1 bg-slate-900 border border-slate-700 text-slate-200 rounded text-[10px] font-bold"
+                >
+                  Toggle Theme {theme === 'light' ? '🌙' : '☀️'}
+                </button>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+
+      {/* GOOGLE CLOUD CONSOLE MOBILE 5-SLOT FIXED BOTTOM NAVIGATION BAR */}
       {isMobile && (
-        <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#070b13]/95 border-t border-[#121c38]/70 backdrop-blur-md px-1 py-1.5 flex items-center justify-around h-16 shadow-[0_-4px_16px_rgba(0,0,0,0.6)]">
+        <div className="fixed bottom-0 left-0 right-0 z-[130] bg-[#070b13]/95 border-t border-[#121c38]/80 backdrop-blur-md px-1 py-1 flex items-center justify-around h-15 shadow-[0_-4px_16px_rgba(0,0,0,0.7)] font-mono">
           {[
-            { id: 'saved', label: 'Bookmarks', icon: TAB_METADATA.saved.icon, activeColor: 'text-yellow-400 border-yellow-400' },
-            { id: 'map', label: 'Career Domains', icon: TAB_METADATA.map.icon, activeColor: 'text-yellow-500 border-yellow-500' },
-            { id: 'pathfinder', label: 'Path Planner', icon: TAB_METADATA.pathfinder.icon, activeColor: 'text-[#10b981] border-[#10b981]' },
-            { id: 'libraries', label: 'Resources', icon: TAB_METADATA.libraries.icon, activeColor: 'text-cyan-400 border-cyan-400' },
-            { id: 'interviewq', label: 'InterviewQ', icon: TAB_METADATA.interviewq.icon, activeColor: 'text-zinc-100 border-zinc-100' },
-            { id: 'jobs', label: 'Jobs', icon: TAB_METADATA.jobs.icon, activeColor: 'text-zinc-100 border-zinc-100' },
-            { id: 'hr-contacts', label: 'HR Contacts', icon: TAB_METADATA['hr-contacts'].icon, activeColor: 'text-slate-100 border-slate-100' }
+            { id: 'about', label: 'DASH', icon: ChevronRight, activeColor: 'text-white border-white' },
+            { id: 'map', label: 'DOMAINS', icon: TAB_METADATA.map.icon, activeColor: 'text-yellow-400 border-yellow-400' },
+            { id: 'libraries', label: 'RESOURCES', icon: TAB_METADATA.libraries.icon, activeColor: 'text-cyan-400 border-cyan-400' },
+            { id: 'interviewq', label: 'INTERVIEWQ', icon: TAB_METADATA.interviewq.icon, activeColor: 'text-zinc-100 border-zinc-100' },
+            { id: 'more', label: 'MORE ☰', icon: Menu, activeColor: 'text-emerald-400 border-emerald-400', isActionSheet: true }
           ].map((item) => {
-            const isActive = activeTab === item.id;
+            const isActive = item.isActionSheet ? isMobileMoreSheetOpen : activeTab === item.id;
             const Icon = item.icon;
             return (
               <button
                 key={item.id}
+                type="button"
                 onClick={() => {
-                  setActiveTab(item.id);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  if (item.isActionSheet) {
+                    setIsMobileMoreSheetOpen(prev => !prev);
+                  } else {
+                    setIsMobileMoreSheetOpen(false);
+                    handleTabClick(item.id);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
                 }}
                 className={`flex-1 flex flex-col items-center justify-center py-1 select-none transition-all duration-150 relative cursor-pointer ${
                   isActive 
-                    ? `${item.activeColor.split(' ')[0]} font-semibold` 
+                    ? `${item.activeColor.split(' ')[0]} font-extrabold` 
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
@@ -4248,14 +4386,13 @@ export default function App() {
                 {isActive && (
                   <motion.div 
                     layoutId="mobileActiveTabIndicator"
-                    className="absolute top-[-6px] left-1/4 right-1/4 h-0.5 rounded-full"
-                    style={{ backgroundColor: isActive ? (item.id === 'saved' ? '#facc15' : item.id === 'libraries' ? '#22d3ee' : item.id === 'pathfinder' ? '#10b981' : item.id === 'hr-contacts' ? '#f8fafc' : '#eab308') : 'transparent' }}
+                    className="absolute top-[-4px] left-1/4 right-1/4 h-0.5 rounded-full bg-emerald-400 shadow-[0_0_8px_#10b981]"
                   />
                 )}
-                <div className={`p-1 ${isActive ? 'scale-105 transition-transform animate-pulse' : ''}`} style={isActive ? { animationDuration: '2s' } : {}}>
-                  <Icon className="w-5 h-5" />
+                <div className={`p-0.5 ${isActive ? 'scale-110 transition-transform text-emerald-400' : ''}`}>
+                  <Icon className="w-4.5 h-4.5" />
                 </div>
-                <span className="text-[9px] mt-0.5 tracking-tight">{item.label}</span>
+                <span className="text-[8.5px] mt-0.5 font-bold tracking-tight uppercase">{item.label}</span>
               </button>
             );
           })}
