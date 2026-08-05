@@ -712,6 +712,7 @@ export default function Hackathons({
   const [categoryFilter, setCategoryFilter] = useState<string>('All');
   const [statusFilter, setStatusFilter] = useState<string>('All');
   const [isStreamsOpen, setIsStreamsOpen] = useState<boolean>(false);
+  const [isFiltersOpen, setIsFiltersOpen] = useState<boolean>(false);
 
   // Mouse Drag-to-Scroll Handlers for Streams Slider
   const streamsSliderRef = useRef<HTMLDivElement>(null);
@@ -1564,131 +1565,148 @@ export default function Hackathons({
         </select>
       </div>
 
-      {/* DESKTOP STREAM BUTTON TABS (Collapsible Right-Slide Bar) */}
-      <div className="hidden md:flex items-center gap-2 font-mono my-2 overflow-hidden">
-        {/* ">" Icon Button replacing ALL STREAMS */}
-        <button
-          type="button"
-          onClick={() => setIsStreamsOpen(!isStreamsOpen)}
-          className={`px-3 py-1.5 font-black text-xs uppercase border transition-all cursor-pointer flex items-center justify-center gap-1 shrink-0 ${
-            isStreamsOpen
-              ? 'bg-emerald-500 text-slate-950 border-emerald-400 font-extrabold shadow-[2px_2px_0px_0px_#ffffff]'
-              : 'bg-white text-emerald-700 border-emerald-300 hover:bg-emerald-50 shadow-xs'
-          }`}
-          title={isStreamsOpen ? "Collapse stream categories" : "Expand stream categories"}
-        >
-          <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${isStreamsOpen ? 'rotate-90 md:rotate-0' : ''}`} />
-          <span className="text-[10px] font-extrabold">STREAMS</span>
-        </button>
+      {/* DESKTOP STREAM & FILTERS BUTTON TABS (Collapsible Right-Slide Bars) */}
+      <div className="hidden md:flex flex-wrap items-center gap-3 font-mono my-2 overflow-hidden">
+        {/* STREAMS TAB BUTTON */}
+        <div className="flex items-center gap-2 overflow-hidden">
+          <button
+            type="button"
+            onClick={() => setIsStreamsOpen(!isStreamsOpen)}
+            className={`px-3 py-1.5 font-black text-xs uppercase border transition-all cursor-pointer flex items-center justify-center gap-1 shrink-0 ${
+              isStreamsOpen
+                ? 'bg-emerald-500 text-slate-950 border-emerald-400 font-extrabold shadow-[2px_2px_0px_0px_#ffffff]'
+                : 'bg-white text-emerald-700 border-emerald-300 hover:bg-emerald-50 shadow-xs'
+            }`}
+            title={isStreamsOpen ? "Collapse stream categories" : "Expand stream categories"}
+          >
+            <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${isStreamsOpen ? 'rotate-90 md:rotate-0' : ''}`} />
+            <span className="text-[10px] font-extrabold">STREAMS</span>
+          </button>
 
-        {/* Right sliding light-theme container holding all category options */}
-        <AnimatePresence>
-          {isStreamsOpen && (
-            <motion.div
-              ref={streamsSliderRef}
-              onMouseDown={handleStreamsMouseDown}
-              onMouseLeave={handleStreamsMouseLeave}
-              onMouseUp={handleStreamsMouseUp}
-              onMouseMove={handleStreamsMouseMove}
-              onWheel={handleStreamsWheel}
-              initial={{ opacity: 0, x: -30, width: 0 }}
-              animate={{ opacity: 1, x: 0, width: 'auto' }}
-              exit={{ opacity: 0, x: -30, width: 0 }}
-              transition={{ duration: 0.3, ease: 'easeOut' }}
-              className="overflow-x-auto scrollbar-none flex items-center gap-1.5 p-1 bg-white border-2 border-emerald-400/80 shadow-md rounded-xs shrink-0 whitespace-nowrap cursor-grab active:cursor-grabbing max-w-[calc(100vw-120px)] md:max-w-[calc(100vw-420px)]"
-            >
-              {[
-                { id: 'All', label: 'All', icon: '🌐' },
-                { id: 'Hackathon', label: 'Hackathons', icon: '🏆' },
-                { id: 'Quiz', label: 'Quizzes', icon: '⚔️' },
-                { id: 'College Fest', label: 'College Fests', icon: '🚀' },
-                { id: 'Scholarship', label: 'Scholarships', icon: '🎓' },
-                { id: 'Workshop', label: 'Workshops', icon: '🛠️' },
-                { id: 'Conference', label: 'Conferences', icon: '🎙️' },
-                { id: 'Hiring Challenge', label: 'Hiring', icon: '💼' },
-                { id: 'Bootcamp', label: 'Bootcamps', icon: '⚡' },
-                { id: 'CFP', label: 'CFP', icon: '📝' },
-              ].map(cat => {
-                const isSelected = categoryFilter === cat.id;
-                return (
-                  <button
-                    key={cat.id}
-                    type="button"
-                    onClick={() => setCategoryFilter(cat.id)}
-                    className={`px-2 py-1 text-[9.5px] font-mono font-bold uppercase transition-all cursor-pointer flex items-center gap-1 rounded-xs shrink-0 ${
-                      isSelected
-                        ? 'bg-emerald-600 text-white font-extrabold shadow-xs'
-                        : 'bg-white text-emerald-800 hover:bg-emerald-50 hover:text-emerald-950 border border-emerald-200/70'
-                    }`}
-                  >
-                    <span className="text-[10px]">{cat.icon}</span>
-                    <span>{cat.label}</span>
-                  </button>
-                );
-              })}
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-
-      {/* 3. FILTERS BAR */}
-      <div className={`${isMobile ? (isMobileFiltersOpen ? 'flex flex-col' : 'hidden') : 'flex flex-col lg:flex-row'} border-2 p-4 items-stretch lg:items-center justify-between gap-4 font-mono text-xs ${isLight ? 'bg-white border-gray-200 text-slate-800 shadow-[3px_3px_0px_0px_#cbd5e1]' : 'bg-[#070b14] border-[#121c38] text-white shadow-[3px_3px_0px_#121c38]'}`}>
-        
-        <div className="flex flex-wrap items-center gap-3">
-          <span className={`font-bold flex items-center gap-1 uppercase mr-1 hidden lg:flex ${isLight ? 'text-slate-900 font-extrabold' : 'text-white'}`}>
-            <Filter className="w-3.5 h-3.5 text-red-500" />
-          </span>
-
-          {/* Region selector */}
-          <div className={`flex items-center gap-1 border px-2 py-1 ${isLight ? 'bg-gray-50 border-gray-200 text-slate-800' : 'bg-[#050912] border-[#121c38]'}`}>
-            <span className="text-gray-500 text-[10px] uppercase font-bold">REGION:</span>
-            <select 
-              value={regionFilter} 
-              onChange={(e) => setRegionFilter(e.target.value)}
-              className={`bg-transparent font-bold text-xs uppercase outline-none cursor-pointer pr-1 ${isLight ? 'text-slate-900 *:bg-white *:text-slate-800' : 'text-white *:bg-[#050912] *:text-white'}`}
-            >
-              <option value="All">All Regions</option>
-              <option value="Global">Global Reach</option>
-              <option value="India">India</option>
-              <option value="Asia Pacific">Asia Pacific</option>
-              <option value="North America">North America</option>
-              <option value="Europe">Europe</option>
-              <option value="Middle East">Middle East</option>
-            </select>
-          </div>
-
-          {/* Domains selector */}
-          <div className={`flex items-center gap-1 border px-2 py-1 ${isLight ? 'bg-gray-50 border-gray-200 text-slate-800' : 'bg-[#050912] border-[#121c38]'}`}>
-            <span className="text-gray-500 text-[10px] uppercase font-bold">DOMAINS:</span>
-            <select 
-              value={domainFilter} 
-              onChange={(e) => setDomainFilter(e.target.value)}
-              className={`bg-transparent font-bold text-xs uppercase outline-none cursor-pointer pr-1 ${isLight ? 'text-slate-900 *:bg-white *:text-slate-800' : 'text-white *:bg-[#050912] *:text-white'}`}
-            >
-              {ALL_DOMAINS.map(domain => (
-                <option key={domain} value={domain}>{domain === 'All' ? 'All Domains' : domain}</option>
-              ))}
-            </select>
-          </div>
-
-          {/* Status selector */}
-          <div className={`flex items-center gap-1 border px-2 py-1 ${isLight ? 'bg-gray-50 border-gray-200 text-slate-800' : 'bg-[#050912] border-[#121c38]'}`}>
-            <span className="text-gray-500 text-[10px] uppercase font-bold">STATUS:</span>
-            <select 
-              value={statusFilter} 
-              onChange={(e) => setStatusFilter(e.target.value)}
-              className={`bg-transparent font-bold text-xs uppercase outline-none cursor-pointer pr-1 ${isLight ? 'text-slate-900 *:bg-white *:text-slate-800' : 'text-white *:bg-[#050912] *:text-white'}`}
-            >
-              <option value="All">All Statuses</option>
-              <option value="Active">Active</option>
-              <option value="Upcoming">Upcoming</option>
-              <option value="Closed">Closed</option>
-            </select>
-          </div>
+          <AnimatePresence>
+            {isStreamsOpen && (
+              <motion.div
+                ref={streamsSliderRef}
+                onMouseDown={handleStreamsMouseDown}
+                onMouseLeave={handleStreamsMouseLeave}
+                onMouseUp={handleStreamsMouseUp}
+                onMouseMove={handleStreamsMouseMove}
+                onWheel={handleStreamsWheel}
+                initial={{ opacity: 0, x: -30, width: 0 }}
+                animate={{ opacity: 1, x: 0, width: 'auto' }}
+                exit={{ opacity: 0, x: -30, width: 0 }}
+                transition={{ duration: 0.3, ease: 'easeOut' }}
+                className="overflow-x-auto scrollbar-none flex items-center gap-1.5 p-1 bg-white border-2 border-emerald-400/80 shadow-md rounded-xs shrink-0 whitespace-nowrap cursor-grab active:cursor-grabbing max-w-[calc(100vw-350px)]"
+              >
+                {[
+                  { id: 'All', label: 'All', icon: '🌐' },
+                  { id: 'Hackathon', label: 'Hackathons', icon: '🏆' },
+                  { id: 'Quiz', label: 'Quizzes', icon: '⚔️' },
+                  { id: 'College Fest', label: 'College Fests', icon: '🚀' },
+                  { id: 'Scholarship', label: 'Scholarships', icon: '🎓' },
+                  { id: 'Workshop', label: 'Workshops', icon: '🛠️' },
+                  { id: 'Conference', label: 'Conferences', icon: '🎙️' },
+                  { id: 'Hiring Challenge', label: 'Hiring', icon: '💼' },
+                  { id: 'Bootcamp', label: 'Bootcamps', icon: '⚡' },
+                  { id: 'CFP', label: 'CFP', icon: '📝' },
+                ].map(cat => {
+                  const isSelected = categoryFilter === cat.id;
+                  return (
+                    <button
+                      key={cat.id}
+                      type="button"
+                      onClick={() => setCategoryFilter(cat.id)}
+                      className={`px-2 py-1 text-[9.5px] font-mono font-bold uppercase transition-all cursor-pointer flex items-center gap-1 rounded-xs shrink-0 ${
+                        isSelected
+                          ? 'bg-emerald-600 text-white font-extrabold shadow-xs'
+                          : 'bg-white text-emerald-800 hover:bg-emerald-50 hover:text-emerald-950 border border-emerald-200/70'
+                      }`}
+                    >
+                      <span className="text-[10px]">{cat.icon}</span>
+                      <span>{cat.label}</span>
+                    </button>
+                  );
+                })}
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
+        {/* FILTERS TAB BUTTON */}
+        <div className="flex items-center gap-2 overflow-hidden">
+          <button
+            type="button"
+            onClick={() => setIsFiltersOpen(!isFiltersOpen)}
+            className={`px-3 py-1.5 font-black text-xs uppercase border transition-all cursor-pointer flex items-center justify-center gap-1 shrink-0 ${
+              isFiltersOpen
+                ? 'bg-red-500 text-white border-red-400 font-extrabold shadow-[2px_2px_0px_0px_#ffffff]'
+                : 'bg-white text-red-600 border-red-300 hover:bg-red-50 shadow-xs'
+            }`}
+            title={isFiltersOpen ? "Collapse filter options" : "Expand filter options"}
+          >
+            <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${isFiltersOpen ? 'rotate-90 md:rotate-0' : ''}`} />
+            <span className="text-[10px] font-extrabold">FILTERS</span>
+          </button>
 
+          <AnimatePresence>
+            {isFiltersOpen && (
+              <motion.div
+                initial={{ opacity: 0, x: -30, width: 0 }}
+                animate={{ opacity: 1, x: 0, width: 'auto' }}
+                exit={{ opacity: 0, x: -30, width: 0 }}
+                transition={{ duration: 0.3, ease: 'easeOut' }}
+                className="overflow-x-auto scrollbar-none flex items-center gap-2 p-1.5 bg-white border-2 border-red-400/80 shadow-md rounded-xs shrink-0 whitespace-nowrap"
+              >
+                {/* Region selector */}
+                <div className="flex items-center gap-1 border px-2 py-1 bg-gray-50 border-gray-200 text-slate-800 text-xs">
+                  <span className="text-gray-500 text-[10px] uppercase font-bold">REGION:</span>
+                  <select 
+                    value={regionFilter} 
+                    onChange={(e) => setRegionFilter(e.target.value)}
+                    className="bg-transparent font-bold text-xs uppercase outline-none cursor-pointer pr-1 text-slate-900 *:bg-white *:text-slate-800"
+                  >
+                    <option value="All">All Regions</option>
+                    <option value="Global">Global Reach</option>
+                    <option value="India">India</option>
+                    <option value="Asia Pacific">Asia Pacific</option>
+                    <option value="North America">North America</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Middle East">Middle East</option>
+                  </select>
+                </div>
 
+                {/* Domains selector */}
+                <div className="flex items-center gap-1 border px-2 py-1 bg-gray-50 border-gray-200 text-slate-800 text-xs">
+                  <span className="text-gray-500 text-[10px] uppercase font-bold">DOMAINS:</span>
+                  <select 
+                    value={domainFilter} 
+                    onChange={(e) => setDomainFilter(e.target.value)}
+                    className="bg-transparent font-bold text-xs uppercase outline-none cursor-pointer pr-1 text-slate-900 *:bg-white *:text-slate-800 max-w-[160px] truncate"
+                  >
+                    {ALL_DOMAINS.map(domain => (
+                      <option key={domain} value={domain}>{domain === 'All' ? 'All Domains' : domain}</option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Status selector */}
+                <div className="flex items-center gap-1 border px-2 py-1 bg-gray-50 border-gray-200 text-slate-800 text-xs">
+                  <span className="text-gray-500 text-[10px] uppercase font-bold">STATUS:</span>
+                  <select 
+                    value={statusFilter} 
+                    onChange={(e) => setStatusFilter(e.target.value)}
+                    className="bg-transparent font-bold text-xs uppercase outline-none cursor-pointer pr-1 text-slate-900 *:bg-white *:text-slate-800"
+                  >
+                    <option value="All">All Statuses</option>
+                    <option value="Active">Active</option>
+                    <option value="Upcoming">Upcoming</option>
+                    <option value="Closed">Closed</option>
+                  </select>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </div>
 
       {/* 4. MAIN LAYOUT: DESKTOP SPLIT VIEW vs MOBILE SINGLE VIEW */}
