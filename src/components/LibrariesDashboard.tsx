@@ -5,7 +5,8 @@ import importedSkills from '../data/generated/skills.json';
 import importedTopics from '../data/generated/topics.json';
 import importedDomains from '../data/generated/domains.json';
 import importedCatalog from '../data/generated/catalog-normalized.json';
-import { BookOpen, Award, Terminal, Wrench, Search, Play, ExternalLink, HelpCircle, Globe, Layers, Book, ArrowRight, Youtube, FileDown, AlertCircle, CheckCircle, Video, Trophy, Filter, RefreshCw } from 'lucide-react';
+import { BookOpen, Award, Terminal, Wrench, Search, Play, ExternalLink, HelpCircle, Globe, Layers, Book, ArrowRight, Youtube, FileDown, AlertCircle, CheckCircle, Video, Trophy, Filter, RefreshCw, GitBranch, LayoutGrid, ChevronRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
 import CustomBookmarkIcon from './CustomBookmarkIcon';
 import YoutubeTeachers, { TEACHERS_DIRECTORY } from './YoutubeTeachers';
 import Hackathons, { GLOBAL_HACKATHONS, GLOBAL_FESTS } from './Hackathons';
@@ -1687,6 +1688,8 @@ export default function LibrariesDashboard({
   const [showAllCerts, setShowAllCerts] = useState<boolean>(false);
   const [showAllChannels, setShowAllChannels] = useState<boolean>(false);
   const [showAllBooks, setShowAllBooks] = useState<boolean>(false);
+  const [selectedPortalId, setSelectedPortalId] = useState<string | null>(null);
+  const [portalViewMode, setPortalViewMode] = useState<'mindmap' | 'grid'>('mindmap');
 
   const [certPage, setCertPage] = useState<number>(1);
   const [bookPage, setBookPage] = useState<number>(1);
@@ -3232,102 +3235,348 @@ export default function LibrariesDashboard({
         </div>
       )}
 
-      {/* 3. EDU PORTALS TAB RENDER */}
+      {/* 3. STUDY PORTALS MIND-MAP & SKILL BRANCHING TREE RENDER */}
       {activeTab === 'channels' && (
-        <div className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4.5 custom-scrollbar overflow-y-auto max-h-[580px] pr-1">
-            {filteredChannels.slice(0, isMobile && !showAllChannels ? 4 : undefined).map((plat) => (
-              <div key={plat.id || plat.name} className={`border-2 hover:border-cyan-500/40 p-4.5 flex flex-col justify-between font-mono text-xs transition duration-200 ${isLight ? 'bg-white border-gray-200 hover:border-cyan-500/65 text-slate-850' : 'bg-[#090f1e] border-[#121c38] hover:border-cyan-500/40 text-slate-300'}`}>
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between gap-1">
-                    <span className={`text-[9px] font-bold uppercase px-2 py-0.5 w-fit block ${
-                      plat.category === 'Government Authorised Program' 
-                        ? (isLight ? 'bg-amber-100/60 text-amber-800 border border-amber-300' : 'bg-amber-950/40 text-amber-400 border border-amber-900/40') 
-                        : plat.category === 'Developer Handbooks'
-                        ? (isLight ? 'bg-emerald-100/60 text-emerald-800 border border-emerald-300' : 'bg-emerald-950/40 text-emerald-400 border border-emerald-900/40')
-                        : (isLight ? 'bg-purple-100/60 text-purple-800 border border-purple-300' : 'bg-purple-950/40 text-purple-400 border border-purple-900/40')
-                    }`}>
-                      {plat.category}
-                    </span>
-                    <span className="text-[9.5px] font-bold text-cyan-400 bg-cyan-950/40 border border-cyan-800/40 px-1.5 py-0.5 rounded-xs">
-                      {plat.totalSkillsCount} Skills
-                    </span>
-                  </div>
-
-                  <div className="flex justify-between items-start gap-1">
-                    <strong className={`text-sm block font-bold leading-snug mt-1 ${isLight ? 'text-slate-900' : 'text-white'}`}>{plat.name}</strong>
-                    {toggleBookmark && isBookmarked && (
-                      <button
-                        onClick={() => toggleBookmark({
-                          id: plat.id || plat.name,
-                          name: plat.name,
-                          type: 'studyPortal',
-                          subtext: `${plat.category} Portal`,
-                          url: plat.officialUrl || (plat as any).url
-                        })}
-                        className="p-1 text-gray-400 hover:text-yellow-400 transition cursor-pointer flex items-center justify-center shrink-0 mt-0.5"
-                        title={isBookmarked(plat.id || plat.name, 'studyPortal') ? 'Remove portal bookmark' : 'Bookmark study portal'}
-                      >
-                        <CustomBookmarkIcon className={`w-3.5 h-3.5 ${isBookmarked(plat.id || plat.name, 'studyPortal') ? 'text-yellow-400 fill-yellow-400' : ''}`} />
-                      </button>
-                    )}
-                  </div>
-                  <p className={`text-[11px] leading-relaxed font-sans font-light normal-case ${isLight ? 'text-slate-655' : 'text-gray-400'}`}>
-                    {plat.learningFormat ? `Format: ${plat.learningFormat}` : (plat as any).description}
-                  </p>
-
-                  {/* Highlight matching skills if search query is active */}
-                  {Boolean(query.trim()) && plat.matchingSkillsCount > 0 && (
-                    <div className="bg-cyan-950/30 border border-cyan-800/50 p-2 my-2 rounded-xs">
-                      <span className="text-[10px] font-bold text-cyan-300 uppercase block mb-1">
-                        ✓ {plat.matchingSkillsCount} Matching Catalog Skills:
-                      </span>
-                      <div className="flex flex-wrap gap-1">
-                        {plat.matchingSkillsList.map((mRec: any, mIdx: number) => (
-                          <span key={`${mRec.id || 'rec'}-${mIdx}`} className="text-[9px] bg-black/60 border border-cyan-900 text-cyan-200 px-1.5 py-0.5">
-                            {mRec.skillOrTool} ({mRec.topic})
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-
-                <div className={`mt-4 pt-3 border-t space-y-2.5 ${isLight ? 'border-gray-200' : 'border-[#121c38]'}`}>
-                  {plat.domains && plat.domains.length > 0 && (
-                    <div className="flex flex-wrap gap-1">
-                      {plat.domains.slice(0, 4).map((d: string) => (
-                        <span key={d} className={`text-[9px] px-1.5 py-0.5 font-sans font-semibold ${isLight ? 'text-cyan-700 bg-cyan-50/70 border border-cyan-200' : 'text-gray-400 bg-black/60'}`}>#{d}</span>
-                      ))}
-                    </div>
-                  )}
-
-                  <a 
-                    href={plat.officialUrl || (plat as any).url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`w-full p-2 border text-[11px] text-[#0891b2] hover:text-white flex items-center justify-center gap-1.5 transition uppercase font-bold font-mono ${isLight ? 'bg-cyan-50/75 hover:bg-[#0891b2] border-cyan-350' : 'bg-black hover:bg-cyan-500/10 border-slate-800'}`}
-                  >
-                    Visit Learning Portal <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </div>
+        <div className="space-y-4 font-mono">
+          {/* Top Control Bar: View Toggle & Portal Summary */}
+          <div className={`p-4 border-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-all ${
+            isLight ? 'bg-cyan-50/50 border-cyan-300 text-slate-900' : 'bg-[#081324] border-cyan-500/40 text-white'
+          }`}>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] text-cyan-400 font-bold uppercase tracking-widest block">Interactive Knowledge Tree</span>
+                <span className="bg-cyan-400 text-black px-1.5 py-0.2 text-[9px] font-extrabold uppercase rounded-xs">
+                  {filteredChannels.length} Portals Listed
+                </span>
               </div>
-            ))}
+              <h4 className="text-sm md:text-base font-extrabold text-white flex items-center gap-2 mt-0.5">
+                <GitBranch className="w-4 h-4 text-cyan-400" />
+                Study Portals Skill Tree & Domain Hierarchy
+              </h4>
+            </div>
 
-            {filteredChannels.length === 0 && (
-              <div className={`col-span-full p-8 text-center border-2 border-dashed font-mono text-xs my-4 ${isLight ? 'border-cyan-300 bg-cyan-50/50 text-slate-800' : 'border-cyan-500/30 bg-cyan-950/10 text-cyan-300'}`}>
-                <p className="font-bold uppercase mb-2">No learning portals matched "{query}"</p>
-                <button
-                  type="button"
-                  onClick={() => setQuery('')}
-                  className="px-3 py-1 bg-cyan-500/10 border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black font-bold uppercase transition cursor-pointer"
-                >
-                  Clear Search Query
-                </button>
-              </div>
-            )}
+            {/* View Mode Toggle */}
+            <div className="flex items-center gap-1.5 bg-black/40 p-1 border border-cyan-800/40 rounded-xs self-start sm:self-auto">
+              <button
+                type="button"
+                onClick={() => setPortalViewMode('mindmap')}
+                className={`px-3 py-1.5 text-xs font-bold uppercase border transition cursor-pointer flex items-center gap-1.5 ${
+                  portalViewMode === 'mindmap'
+                    ? 'bg-cyan-500 text-black border-cyan-400 font-black shadow-[2px_2px_0px_#000]'
+                    : 'text-cyan-300 border-transparent hover:text-white'
+                }`}
+              >
+                <GitBranch className="w-3.5 h-3.5" />
+                <span>Tree View 🌳</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setPortalViewMode('grid')}
+                className={`px-3 py-1.5 text-xs font-bold uppercase border transition cursor-pointer flex items-center gap-1.5 ${
+                  portalViewMode === 'grid'
+                    ? 'bg-cyan-500 text-black border-cyan-400 font-black shadow-[2px_2px_0px_#000]'
+                    : 'text-cyan-300 border-transparent hover:text-white'
+                }`}
+              >
+                <LayoutGrid className="w-3.5 h-3.5" />
+                <span>Grid Cards 🎴</span>
+              </button>
+            </div>
           </div>
 
+          {/* MAIN SPLIT-VIEW CANVAS */}
+          {portalViewMode === 'mindmap' ? (
+            <div className="flex flex-col md:flex-row gap-5 items-start">
+              {/* LEFT SIDE PANEL: Study Portals Selector */}
+              <div className={`w-full md:w-80 lg:w-96 shrink-0 border-2 p-3.5 space-y-2.5 max-h-[680px] overflow-y-auto custom-scrollbar ${
+                isLight ? 'bg-white border-slate-200' : 'bg-[#060d1b] border-[#102444]'
+              }`}>
+                <div className="flex items-center justify-between border-b pb-2 border-slate-800">
+                  <span className="text-[11px] font-extrabold uppercase text-cyan-400 flex items-center gap-1.5">
+                    <BookOpen className="w-3.5 h-3.5" /> Select Study Portal
+                  </span>
+                  <span className="text-[10px] text-gray-400 font-mono">
+                    {filteredChannels.length} Options
+                  </span>
+                </div>
+
+                <div className="space-y-2">
+                  {filteredChannels.map((plat) => {
+                    const platKey = plat.id || plat.name;
+                    const isSelected = (selectedPortalId || filteredChannels[0]?.id || filteredChannels[0]?.name) === platKey;
+                    
+                    return (
+                      <button
+                        key={platKey}
+                        type="button"
+                        onClick={() => setSelectedPortalId(platKey)}
+                        className={`w-full text-left p-3 border transition-all cursor-pointer relative overflow-hidden group ${
+                          isSelected
+                            ? (isLight ? 'bg-cyan-50 border-cyan-500 text-slate-900 shadow-sm' : 'bg-[#0a2336] border-cyan-400 text-white shadow-[0_0_15px_rgba(34,211,238,0.2)]')
+                            : (isLight ? 'bg-slate-50 border-slate-200 hover:border-slate-400 text-slate-700' : 'bg-[#091122] border-[#13223f] hover:border-cyan-800 text-slate-300')
+                        }`}
+                      >
+                        {isSelected && (
+                          <div className="absolute top-0 left-0 bottom-0 w-1 bg-cyan-400 shadow-[0_0_8px_#22d3ee]" />
+                        )}
+                        
+                        <div className="flex items-center justify-between gap-1 mb-1">
+                          <span className={`text-[8.5px] font-bold uppercase px-1.5 py-0.5 rounded-xs ${
+                            plat.category === 'Government Authorised Program' 
+                              ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40' 
+                              : plat.category === 'Developer Handbooks'
+                              ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
+                              : 'bg-purple-500/20 text-purple-300 border border-purple-500/40'
+                          }`}>
+                            {plat.category}
+                          </span>
+                          <span className={`text-[9px] font-extrabold px-1.5 py-0.2 border ${
+                            isSelected ? 'bg-cyan-400 text-black border-cyan-300' : 'bg-cyan-950/60 text-cyan-300 border-cyan-800/40'
+                          }`}>
+                            {plat.totalSkillsCount} Skills
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between gap-2">
+                          <h5 className={`text-xs font-extrabold ${isSelected ? 'text-cyan-300' : 'group-hover:text-white'}`}>
+                            {plat.name}
+                          </h5>
+                          <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isSelected ? 'rotate-90 text-cyan-400' : 'text-gray-500'}`} />
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* RIGHT SIDE CANVAS: Groovy Mind-Map Skill Tree */}
+              {(() => {
+                const activeKey = selectedPortalId || filteredChannels[0]?.id || filteredChannels[0]?.name;
+                const activePortal = filteredChannels.find(p => (p.id || p.name) === activeKey) || filteredChannels[0];
+
+                if (!activePortal) {
+                  return (
+                    <div className="w-full p-12 text-center border-2 border-dashed border-cyan-500/30 bg-cyan-950/10 text-cyan-300">
+                      Select a Study Portal from the left list to expand its skill tree.
+                    </div>
+                  );
+                }
+
+                // Get all skill records associated with active portal
+                const portalRecords = importedCatalog.filter((rec: any) => 
+                  rec && (rec.portalSlug === activePortal.id || rec.portal === activePortal.name)
+                );
+
+                // Group skills by Domain into tree branches
+                const domainBranchesMap = new Map<string, any[]>();
+                portalRecords.forEach((rec: any) => {
+                  const dom = rec.domain || 'Software Engineering & Architecture';
+                  if (!domainBranchesMap.has(dom)) {
+                    domainBranchesMap.set(dom, []);
+                  }
+                  domainBranchesMap.get(dom)!.push(rec);
+                });
+
+                const domainBranches = Array.from(domainBranchesMap.entries());
+
+                return (
+                  <div className={`flex-1 w-full border-2 p-5 space-y-6 min-h-[600px] max-h-[680px] overflow-y-auto custom-scrollbar relative transition-all ${
+                    isLight ? 'bg-slate-50/80 border-slate-300' : 'bg-[#030914] border-[#0e1e38]'
+                  }`}>
+                    {/* Active Portal Header & Direct Portal Visit Link */}
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b-2 pb-4 border-slate-800">
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-widest">
+                            🎓 Active Study Portal Skill Map
+                          </span>
+                          <span className="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[9px] font-mono px-2 py-0.5 uppercase">
+                            {portalRecords.length} Taught Skills
+                          </span>
+                        </div>
+                        <h3 className="text-lg md:text-xl font-black text-white flex items-center gap-2 mt-1">
+                          {activePortal.name}
+                        </h3>
+                      </div>
+
+                      <a
+                        href={activePortal.officialUrl || (activePortal as any).url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3.5 py-2 bg-cyan-500 hover:bg-cyan-400 text-black border border-cyan-300 font-extrabold text-xs uppercase transition flex items-center gap-1.5 rounded-xs shrink-0 shadow-[2px_2px_0px_#ffffff]"
+                      >
+                        <span>Visit Official Portal</span>
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    </div>
+
+                    {/* ROOT NODE: PORTAL HUB */}
+                    <div className="flex justify-center my-2">
+                      <motion.div
+                        layout
+                        layoutId={`portal-root-${activePortal.id || activePortal.name}`}
+                        initial={{ scale: 0.9, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                        className="px-5 py-3 bg-gradient-to-r from-cyan-950 via-[#0a2336] to-emerald-950 border-2 border-cyan-400 text-white rounded-xs shadow-[0_0_20px_rgba(34,211,238,0.3)] text-center flex items-center gap-3"
+                      >
+                        <div className="p-2 bg-cyan-400 text-black rounded-xs font-black text-lg">
+                          🎓
+                        </div>
+                        <div className="text-left">
+                          <span className="text-[9px] font-mono text-cyan-300 font-bold uppercase block">Central Knowledge Portal Hub</span>
+                          <strong className="text-sm font-extrabold block text-white">{activePortal.name}</strong>
+                          <span className="text-[10px] text-gray-300 font-mono">{activePortal.category} • {portalRecords.length} Verified Modules</span>
+                        </div>
+                      </motion.div>
+                    </div>
+
+                    {/* DOMAIN BRANCHES & GROOVY SKILL NODES */}
+                    <AnimatePresence mode="popLayout">
+                      <div className="space-y-8 relative">
+                        {domainBranches.map(([domainName, skillsInDomain], branchIdx) => (
+                          <motion.div
+                            key={`${activePortal.id || activePortal.name}-${domainName}`}
+                            layout
+                            initial={{ opacity: 0, y: 15 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -15 }}
+                            transition={{ duration: 0.25, delay: branchIdx * 0.05 }}
+                            className="space-y-3 relative pl-4 border-l-2 border-cyan-500/30"
+                          >
+                            {/* Branch Hub Header */}
+                            <div className="flex items-center gap-2">
+                              <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]" />
+                              <h4 className="text-xs font-extrabold uppercase text-cyan-300 tracking-wider flex items-center gap-1.5">
+                                <Layers className="w-3.5 h-3.5 text-emerald-400" />
+                                {domainName}
+                                <span className="bg-black/60 border border-slate-800 text-gray-400 text-[9px] px-1.5 py-0.2 rounded-xs font-mono ml-1">
+                                  {skillsInDomain.length} Skills
+                                </span>
+                              </h4>
+                            </div>
+
+                            {/* Skills Nodes Grid under this Branch */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-1">
+                              {skillsInDomain.map((sk: any, sIdx: number) => {
+                                const skillKey = sk.id || sk.skillOrTool || sk.name || `sk-${sIdx}`;
+                                
+                                return (
+                                  <motion.div
+                                    key={skillKey}
+                                    layout
+                                    layoutId={`skill-node-${skillKey}`}
+                                    initial={{ opacity: 0, scale: 0.85 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    exit={{ opacity: 0, scale: 0.85 }}
+                                    transition={{ type: 'spring', stiffness: 350, damping: 28 }}
+                                    className={`p-3.5 border-2 flex flex-col justify-between transition-all duration-200 hover:border-cyan-400 group relative ${
+                                      isLight
+                                        ? 'bg-white border-slate-200 hover:shadow-md text-slate-800'
+                                        : 'bg-[#081326] border-[#122244] hover:bg-[#0c1c38] text-slate-200'
+                                    }`}
+                                  >
+                                    <div className="space-y-2">
+                                      <div className="flex items-center justify-between gap-1">
+                                        <span className={`text-[8.5px] font-bold uppercase px-1.5 py-0.5 rounded-xs border ${
+                                          sk.type === 'Tool / Platform'
+                                            ? 'bg-purple-950/60 text-purple-300 border-purple-800/60'
+                                            : 'bg-emerald-950/60 text-emerald-300 border-emerald-800/60'
+                                        }`}>
+                                          {sk.type || 'Skill'}
+                                        </span>
+                                        <span className="text-[8.5px] font-mono text-gray-400 uppercase font-bold">
+                                          {sk.level || 'All Levels'}
+                                        </span>
+                                      </div>
+
+                                      <h5 className="text-xs font-extrabold text-white group-hover:text-cyan-300 transition-colors leading-snug">
+                                        {sk.skillOrTool || sk.name}
+                                      </h5>
+
+                                      {sk.topic && (
+                                        <span className="text-[9.5px] font-mono text-cyan-400/90 block">
+                                          Topic: {sk.topic}
+                                        </span>
+                                      )}
+                                    </div>
+
+                                    {/* Action Links */}
+                                    <div className="mt-3 pt-2.5 border-t border-slate-800/80 flex items-center justify-between gap-2">
+                                      <a
+                                        href={sk.url || sk.officialUrl || (activePortal.officialUrl || (activePortal as any).url)}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-[9.5px] text-cyan-400 hover:text-white font-bold flex items-center gap-1 transition uppercase"
+                                      >
+                                        Course Link <ExternalLink className="w-2.5 h-2.5" />
+                                      </a>
+
+                                      <a
+                                        href={`https://www.youtube.com/results?search_query=${encodeURIComponent((sk.skillOrTool || sk.name) + ' tutorial')}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-[9.5px] text-red-400 hover:text-white font-bold flex items-center gap-1 transition uppercase"
+                                        title="Search YouTube video lessons"
+                                      >
+                                        <Youtube className="w-2.5 h-2.5 text-red-500" /> YouTube
+                                      </a>
+                                    </div>
+                                  </motion.div>
+                                );
+                              })}
+                            </div>
+                          </motion.div>
+                        ))}
+                      </div>
+                    </AnimatePresence>
+                  </div>
+                );
+              })()}
+            </div>
+          ) : (
+            /* COMPACT GRID CARD VIEW (FALLBACK) */
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4.5 custom-scrollbar overflow-y-auto max-h-[580px] pr-1">
+              {filteredChannels.map((plat) => (
+                <div key={plat.id || plat.name} className={`border-2 hover:border-cyan-500/40 p-4.5 flex flex-col justify-between font-mono text-xs transition duration-200 ${isLight ? 'bg-white border-gray-200 hover:border-cyan-500/65 text-slate-850' : 'bg-[#090f1e] border-[#121c38] hover:border-cyan-500/40 text-slate-300'}`}>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between gap-1">
+                      <span className={`text-[9px] font-bold uppercase px-2 py-0.5 w-fit block ${
+                        plat.category === 'Government Authorised Program' 
+                          ? (isLight ? 'bg-amber-100/60 text-amber-800 border border-amber-300' : 'bg-amber-950/40 text-amber-400 border border-amber-900/40') 
+                          : plat.category === 'Developer Handbooks'
+                          ? (isLight ? 'bg-emerald-100/60 text-emerald-800 border border-emerald-300' : 'bg-emerald-950/40 text-emerald-400 border border-emerald-900/40')
+                          : (isLight ? 'bg-purple-100/60 text-purple-800 border border-purple-300' : 'bg-purple-950/40 text-purple-400 border border-purple-900/40')
+                      }`}>
+                        {plat.category}
+                      </span>
+                      <span className="text-[9.5px] font-bold text-cyan-400 bg-cyan-950/40 border border-cyan-800/40 px-1.5 py-0.5 rounded-xs">
+                        {plat.totalSkillsCount} Skills
+                      </span>
+                    </div>
+
+                    <div className="flex justify-between items-start gap-1">
+                      <strong className={`text-sm block font-bold leading-snug mt-1 ${isLight ? 'text-slate-900' : 'text-white'}`}>{plat.name}</strong>
+                    </div>
+                    <p className={`text-[11px] leading-relaxed font-sans font-light normal-case ${isLight ? 'text-slate-655' : 'text-gray-400'}`}>
+                      {plat.learningFormat ? `Format: ${plat.learningFormat}` : (plat as any).description}
+                    </p>
+                  </div>
+
+                  <div className={`mt-4 pt-3 border-t space-y-2.5 ${isLight ? 'border-gray-200' : 'border-[#121c38]'}`}>
+                    <a 
+                      href={plat.officialUrl || (plat as any).url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`w-full p-2 border text-[11px] text-[#0891b2] hover:text-white flex items-center justify-center gap-1.5 transition uppercase font-bold font-mono ${isLight ? 'bg-cyan-50/75 hover:bg-[#0891b2] border-cyan-350' : 'bg-black hover:bg-cyan-500/10 border-slate-800'}`}
+                    >
+                      Visit Learning Portal <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
           {isMobile && filteredChannels.length > 4 && (
             <div className="mt-4 flex justify-center">
               <button
