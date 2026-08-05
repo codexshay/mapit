@@ -1572,7 +1572,7 @@ export default function Hackathons({
           <button
             type="button"
             onClick={() => setIsStreamsOpen(!isStreamsOpen)}
-            className={`px-3 py-1.5 font-black text-xs uppercase border transition-all cursor-pointer flex items-center justify-center gap-1 shrink-0 ${
+            className={`px-2.5 py-1.5 font-black text-xs uppercase border transition-all cursor-pointer flex items-center justify-center shrink-0 ${
               isStreamsOpen
                 ? 'bg-emerald-500 text-slate-950 border-emerald-400 font-extrabold shadow-[2px_2px_0px_0px_#ffffff]'
                 : 'bg-white text-emerald-700 border-emerald-300 hover:bg-emerald-50 shadow-xs'
@@ -1580,7 +1580,6 @@ export default function Hackathons({
             title={isStreamsOpen ? "Collapse stream categories" : "Expand stream categories"}
           >
             <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${isStreamsOpen ? 'rotate-90 md:rotate-0' : ''}`} />
-            <span className="text-[10px] font-extrabold">STREAMS</span>
           </button>
 
           <AnimatePresence>
