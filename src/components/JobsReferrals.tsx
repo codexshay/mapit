@@ -17,7 +17,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { TOP_50_COMPANIES, CompanyInfo } from '../data/topCompaniesData';
+import { TOP_50_COMPANIES, CompanyInfo, getCompanyCategories } from '../data/topCompaniesData';
 
 export interface JobsReferralsProps {
   bookmarks?: Array<{ id: string; name: string; type: string; subtext?: string; url?: string }>;
@@ -218,23 +218,25 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
     return selectedRoleTitle.trim();
   }, [selectedRoleTitle, customRoleInput]);
 
-  // Extract all unique categories
+  // Extract all unique categories across multi-domain resolved tags
   const categories = useMemo(() => {
     const set = new Set<string>();
     TOP_50_COMPANIES.forEach(c => {
-      if (c.category) set.add(c.category);
+      const cats = getCompanyCategories(c);
+      cats.forEach(cat => set.add(cat));
     });
     return ['All', ...Array.from(set).sort()];
   }, []);
 
-  // Filtered companies based on search query, category & letter index
+  // Filtered companies based on search query, multi-domain category & letter index
   const filteredCompanies = useMemo(() => {
     return TOP_50_COMPANIES.filter(comp => {
+      const companyCats = getCompanyCategories(comp);
       const matchesSearch = companySearchQuery === '' || 
         comp.name.toLowerCase().includes(companySearchQuery.toLowerCase()) ||
-        comp.category?.toLowerCase().includes(companySearchQuery.toLowerCase());
+        companyCats.some(cat => cat.toLowerCase().includes(companySearchQuery.toLowerCase()));
       
-      const matchesCategory = selectedCategory === 'All' || comp.category === selectedCategory;
+      const matchesCategory = selectedCategory === 'All' || companyCats.includes(selectedCategory);
 
       const firstChar = comp.name.charAt(0).toUpperCase();
       const matchesLetter = selectedLetter === 'ALL' || firstChar === selectedLetter;

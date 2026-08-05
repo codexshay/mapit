@@ -2,11 +2,100 @@ export interface CompanyInfo {
   name: string;
   careerUrl: string;
   category: string;
+  categories?: string[];
   companySlug?: string;
   companyChannelLink?: string;
   jobsSectionLink?: string;
   indiaJobsSearchLink?: string;
   searchPattern?: (role: string) => string;
+}
+
+/**
+ * Returns all tech domain categories applicable to a company based on its
+ * primary category, multi-domain tags, product suite, and career job roles.
+ */
+export function getCompanyCategories(company: CompanyInfo): string[] {
+  const cats = new Set<string>();
+  if (company.category) cats.add(company.category);
+  if (company.categories && Array.isArray(company.categories)) {
+    company.categories.forEach(c => cats.add(c));
+  }
+
+  const name = company.name.toLowerCase();
+  const primaryCat = (company.category || '').toLowerCase();
+
+  // Big Tech & FANG
+  if (
+    primaryCat.includes('big tech') ||
+    ['microsoft', 'apple', 'google', 'alphabet', 'amazon', 'meta', 'facebook', 'ibm', 'netflix', 'uber', 'sony', 'samsung', 'intel', 'oracle', 'cisco'].some(k => name.includes(k))
+  ) {
+    cats.add('Big Tech & FANG');
+  }
+
+  // Cloud & Infrastructure
+  if (
+    primaryCat.includes('cloud') || primaryCat.includes('saas') ||
+    ['microsoft', 'google', 'amazon', 'ibm', 'oracle', 'sap', 'vmware', 'broadcom', 'cloudflare', 'cisco', 'hpe', 'hewlett', 'dell', 'nutanix', 'digitalocean', 'snowflake', 'databricks', 'akamai', 'red hat', 'rackspace', 'arista', 'juniper', 'fastly'].some(k => name.includes(k))
+  ) {
+    cats.add('Cloud & Infrastructure');
+  }
+
+  // AI & Deep Learning
+  if (
+    ['nvidia', 'openai', 'anthropic', 'google', 'microsoft', 'meta', 'ibm', 'amazon', 'palantir', 'snowflake', 'databricks', 'amd', 'intel', 'qualcomm', 'scale ai', 'cohere', 'c3.ai', 'elastic', 'teradata', 'splunk', 'mathworks'].some(k => name.includes(k))
+  ) {
+    cats.add('AI & Deep Learning');
+  }
+
+  // Cybersecurity & Identity
+  if (
+    primaryCat.includes('cyber') || primaryCat.includes('security') ||
+    ['palo alto', 'crowdstrike', 'cloudflare', 'cisco', 'fortinet', 'zscaler', 'okta', 'check point', 'sentinelone', 'cyberark', 'rapid7', 'trend micro', 'tenable', 'qualys', 'splunk', 'microsoft', 'ibm', 'proofpoint', 'imperva'].some(k => name.includes(k))
+  ) {
+    cats.add('Cybersecurity & Identity');
+  }
+
+  // SaaS & Enterprise Software
+  if (
+    primaryCat.includes('saas') || primaryCat.includes('cloud') ||
+    ['salesforce', 'oracle', 'sap', 'servicenow', 'workday', 'adobe', 'atlassian', 'intuit', 'hubspot', 'zoom', 'autodesk', 'slack', 'docusign', 'zendesk', 'box', 'dropbox', 'asana', 'monday.com', 'smartsheet'].some(k => name.includes(k))
+  ) {
+    cats.add('SaaS & Enterprise');
+  }
+
+  // FinTech & Financial Engineering
+  if (
+    primaryCat.includes('fintech') || primaryCat.includes('bank') ||
+    ['jpmorgan', 'goldman', 'morgan stanley', 'paypal', 'stripe', 'visa', 'mastercard', 'intuit', 'razorpay', 'block', 'square', 'adyen', 'plaid', 'robinhood', 'fidelity', 'schwab', 'bloomberg', 'factset', 'barclays', 'citi', 'hsbc', 'standard chartered'].some(k => name.includes(k))
+  ) {
+    cats.add('FinTech & Financial');
+  }
+
+  // Semiconductor & Hardware
+  if (
+    primaryCat.includes('semiconductor') || primaryCat.includes('hardware') ||
+    ['nvidia', 'intel', 'amd', 'qualcomm', 'apple', 'broadcom', 'texas instruments', 'applied materials', 'asml', 'tsmc', 'lam research', 'arm', 'marvell', 'micron', 'samsung', 'sony', 'dell', 'hp', 'lenovo'].some(k => name.includes(k))
+  ) {
+    cats.add('Semiconductor & Hardware');
+  }
+
+  // IT Services & Consulting
+  if (
+    primaryCat.includes('it services') || primaryCat.includes('consulting') || primaryCat.includes('transformation') ||
+    ['accenture', 'tcs', 'tata consultancy', 'infosys', 'wipro', 'hcl', 'cognizant', 'capgemini', 'deloitte', 'pwc', 'ey', 'kpmg', 'tech mahindra', 'ltimindtree', 'dxc', 'ntt', 'atos', 'genpact', 'persistent', 'mphasis', 'mindtree', 'hexaware'].some(k => name.includes(k))
+  ) {
+    cats.add('IT Services & Consulting');
+  }
+
+  // E-Commerce & Digital Platforms
+  if (
+    primaryCat.includes('e-commerce') || primaryCat.includes('consumer') ||
+    ['amazon', 'flipkart', 'shopify', 'ebay', 'booking', 'uber', 'airbnb', 'doordash', 'swiggy', 'zomato', 'etsy', 'wayfair', 'mercadolibre', 'coupang', 'walmart'].some(k => name.includes(k))
+  ) {
+    cats.add('E-Commerce & Digital');
+  }
+
+  return Array.from(cats);
 }
 
 export const TOP_50_COMPANIES: CompanyInfo[] = [
