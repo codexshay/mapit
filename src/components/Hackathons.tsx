@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import CustomBookmarkIcon from './CustomBookmarkIcon';
 import { motion, AnimatePresence } from 'motion/react';
+import autoHackathons from '../data/generated/auto_hackathons.json';
 
 export interface Hackathon {
   id: string;
@@ -690,7 +691,11 @@ export default function Hackathons({
       }
     }
     if (baseList.length === 0) {
-      baseList = [...GLOBAL_HACKATHONS, ...GLOBAL_FESTS];
+      baseList = [
+        ...(Array.isArray(autoHackathons) ? (autoHackathons as Hackathon[]) : []),
+        ...GLOBAL_HACKATHONS,
+        ...GLOBAL_FESTS
+      ];
     }
     return baseList
       .map((item: any) => ({ ...item, isNewAddition: false }))

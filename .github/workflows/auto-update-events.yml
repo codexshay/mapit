@@ -1,0 +1,38 @@
+name: Auto-Fetch Hackathons & Events
+
+on:
+  schedule:
+    # Runs automatically every 12 hours (00:00, 12:00 UTC)
+    - cron: '0 */12 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  auto-fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Auto Ingestion Bot Script
+        run: node scripts/auto-fetch-hackathons.js
+
+      - name: Commit and Push Updated Hackathons Data
+        run: |
+          git config --global user.name "MapIT Auto-Ingestion Bot"
+          git config --global user.email "bot@mapit.app"
+          git add src/data/generated/auto_hackathons.json
+          if git diff --staged --quiet; then
+            echo "No new hackathons found at this time."
+          else
+            git commit -m "Auto-update live hackathons and events listings"
+            git push origin main
+          fi
