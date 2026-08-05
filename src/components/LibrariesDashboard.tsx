@@ -15,7 +15,7 @@ import { IT_TAXONOMY_DATA } from './ITTaxonomyExplorer';
 import { useDebounce, getCrossTabSummary, searchUnifiedIndex } from '../utils/searchIndex';
 import { STORAGE_KEYS, getStorageItem, setStorageItem } from '../utils/storageMigration';
 import { resolveKeywordMetadata } from '../utils/masterKeywordSearch';
-import { getOfferedStudyPortals } from '../utils/studyPortalLookup';
+import { getOfferedStudyPortals, getPortalCourseDirectUrl } from '../utils/studyPortalLookup';
 import { expandQueryViaKnowledgeGraph, calculateItemRelevanceScore } from '../utils/knowledgeGraphEngine';
 
 const cleanFamilyName = (name: string): string => {
@@ -3504,7 +3504,7 @@ export default function LibrariesDashboard({
                                     {/* Action Links */}
                                     <div className="mt-3 pt-2.5 border-t border-slate-800/80 flex items-center justify-between gap-2">
                                       <a
-                                        href={sk.url || sk.officialUrl || (activePortal.officialUrl || (activePortal as any).url)}
+                                        href={getPortalCourseDirectUrl(activePortal.name, sk.skillOrTool || sk.name, sk.url || sk.officialUrl)}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-[9.5px] text-cyan-400 hover:text-white font-bold flex items-center gap-1 transition uppercase"

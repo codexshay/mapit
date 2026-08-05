@@ -7,27 +7,135 @@ export interface StudyPortalLink {
   badgeFormat?: string;
 }
 
-const DEFAULT_PORTALS: Record<string, StudyPortalLink> = {
-  microsoft: { portal: "Microsoft Learn", url: "https://learn.microsoft.com/" },
-  aws: { portal: "AWS Skill Builder", url: "https://aws.amazon.com/training/" },
-  google: { portal: "Google Cloud Skills Boost", url: "https://www.cloudskillsboost.google/" },
-  cisco: { portal: "Cisco Skills for All", url: "https://skillsforall.com/" },
-  w3schools: { portal: "W3Schools", url: "https://www.w3schools.com/" },
-  geeksforgeeks: { portal: "GeeksforGeeks", url: "https://www.geeksforgeeks.org/" },
-  linux: { portal: "Linux Foundation Learn", url: "https://training.linuxfoundation.org/" },
-  servicenow: { portal: "ServiceNow Learning", url: "https://nowlearning.servicenow.com/" },
-  swayam: { portal: "Swayam NPTEL", url: "https://swayam.gov.in/" },
-  coursera: { portal: "Coursera Tech Hub", url: "https://www.coursera.org/" }
-};
+/**
+ * Resolves a direct, specific course/tutorial deep link for any given skill on a specific Study Portal.
+ * Prevents redirecting to generic homepage domains.
+ */
+export function getPortalCourseDirectUrl(
+  portalNameOrSlug: string = '',
+  skillOrToolName: string = '',
+  existingUrl?: string
+): string {
+  const cleanSkillName = (skillOrToolName || '').trim();
+  if (!cleanSkillName) {
+    return existingUrl || 'https://www.coursera.org/';
+  }
+
+  // If existingUrl is already a deep-link with search/course path, keep it
+  if (existingUrl && (
+    existingUrl.includes('/search') || 
+    existingUrl.includes('/courses/') || 
+    existingUrl.includes('/learn/') || 
+    existingUrl.includes('/catalog?') ||
+    existingUrl.includes('/training?') ||
+    existingUrl.includes('?q=') ||
+    existingUrl.includes('?query=') ||
+    existingUrl.includes('?terms=') ||
+    existingUrl.includes('?keywords=') ||
+    existingUrl.includes('?searchText=') ||
+    existingUrl.includes('?s=')
+  )) {
+    return existingUrl;
+  }
+
+  const p = (portalNameOrSlug || '').toLowerCase().trim();
+  const q = encodeURIComponent(cleanSkillName);
+
+  if (p.includes('microsoft') || p.includes('ms-learn') || p.includes('azure')) {
+    return `https://learn.microsoft.com/en-us/search/?terms=${q}`;
+  }
+  if (p.includes('aws') || p.includes('amazon')) {
+    return `https://explore.skillbuilder.aws/learn/search?type=COURSE&query=${q}`;
+  }
+  if (p.includes('google') || p.includes('gcp') || p.includes('cloudskillsboost')) {
+    return `https://www.cloudskillsboost.google/catalog?keywords=${q}`;
+  }
+  if (p.includes('cisco') || p.includes('netacad') || p.includes('skillsforall')) {
+    return `https://skillsforall.com/search?query=${q}`;
+  }
+  if (p.includes('w3schools')) {
+    const slug = cleanSkillName.toLowerCase().replace(/[^a-z0-9]/g, '');
+    return `https://www.w3schools.com/${slug}/`;
+  }
+  if (p.includes('geeksforgeeks') || p.includes('gfg')) {
+    return `https://www.geeksforgeeks.org/search/?q=${q}`;
+  }
+  if (p.includes('linux')) {
+    return `https://training.linuxfoundation.org/?s=${q}`;
+  }
+  if (p.includes('servicenow')) {
+    return `https://nowlearning.servicenow.com/lxp/en/pages/search?q=${q}`;
+  }
+  if (p.includes('swayam') || p.includes('nptel')) {
+    return `https://swayam.gov.in/explorer?searchText=${q}`;
+  }
+  if (p.includes('edx')) {
+    return `https://www.edx.org/search?q=${q}`;
+  }
+  if (p.includes('udemy')) {
+    return `https://www.udemy.com/courses/search/?q=${q}`;
+  }
+  if (p.includes('freecodecamp')) {
+    return `https://www.freecodecamp.org/news/search/?query=${q}`;
+  }
+  if (p.includes('baeldung')) {
+    return `https://www.baeldung.com/?s=${q}`;
+  }
+  if (p.includes('cloud academy') || p.includes('cloudacademy')) {
+    return `https://cloudacademy.com/search/?q=${q}`;
+  }
+  if (p.includes('mit') || p.includes('opencourseware')) {
+    return `https://ocw.mit.edu/search/?q=${q}`;
+  }
+  if (p.includes('stanford')) {
+    return `https://online.stanford.edu/search/catalog?keywords=${q}`;
+  }
+  if (p.includes('harvard')) {
+    return `https://pll.harvard.edu/catalog?keywords=${q}`;
+  }
+  if (p.includes('pluralsight')) {
+    return `https://www.pluralsight.com/search?q=${q}`;
+  }
+  if (p.includes('codecademy')) {
+    return `https://www.codecademy.com/search?query=${q}`;
+  }
+  if (p.includes('khan')) {
+    return `https://www.khanacademy.org/search?page_search_query=${q}`;
+  }
+  if (p.includes('datacamp')) {
+    return `https://www.datacamp.com/search?q=${q}`;
+  }
+  if (p.includes('leetcode')) {
+    return `https://leetcode.com/problemset/all/?search=${q}`;
+  }
+  if (p.includes('hackerrank')) {
+    return `https://www.hackerrank.com/domains/${encodeURIComponent(cleanSkillName.toLowerCase().replace(/\s+/g, '-'))}`;
+  }
+  if (p.includes('red hat') || p.includes('redhat')) {
+    return `https://www.redhat.com/en/services/training/search?q=${q}`;
+  }
+  if (p.includes('roadmap')) {
+    return `https://roadmap.sh/${encodeURIComponent(cleanSkillName.toLowerCase().replace(/\s+/g, '-'))}`;
+  }
+  if (p.includes('mdn') || p.includes('mozilla')) {
+    return `https://developer.mozilla.org/en-US/search?q=${q}`;
+  }
+
+  // Default Coursera Course Deep Search for any other general portal
+  return `https://www.coursera.org/search?query=${q}`;
+}
 
 /**
- * Returns verified Study Portals for any given skill, tool, certification, or job role name.
+ * Returns verified Study Portals for any given skill, tool, certification, or job role name,
+ * with direct course/tutorial deep links.
  */
 export function getOfferedStudyPortals(
   itemName: string, 
   categoryOrDomain: string = ''
 ): StudyPortalLink[] {
-  if (!itemName) return [DEFAULT_PORTALS.coursera];
+  if (!itemName) {
+    return [{ portal: 'Coursera Learning Hub', url: 'https://www.coursera.org/' }];
+  }
 
   const lowerItem = itemName.toLowerCase().trim();
   const lowerCat = categoryOrDomain.toLowerCase().trim();
@@ -44,16 +152,16 @@ export function getOfferedStudyPortals(
   );
 
   catalogMatches.slice(0, 4).forEach((rec: any) => {
-    if (rec.portal && rec.officialUrl && !portalsMap.has(rec.portal)) {
+    if (rec.portal && !portalsMap.has(rec.portal)) {
       portalsMap.set(rec.portal, {
         portal: rec.portal,
-        url: rec.officialUrl,
+        url: getPortalCourseDirectUrl(rec.portal, itemName, rec.officialUrl),
         badgeFormat: rec.learningFormat ? rec.learningFormat.split(',')[0] : undefined
       });
     }
   });
 
-  // 2. Keyword & Brand Domain Smart Fallbacks
+  // 2. Keyword & Brand Domain Smart Deep-Link Fallbacks
   if (
     lowerItem.includes('azure') || 
     lowerItem.includes('microsoft') || 
@@ -68,7 +176,10 @@ export function getOfferedStudyPortals(
     lowerItem.includes('c#') ||
     lowerItem.includes('.net')
   ) {
-    portalsMap.set('Microsoft Learn', DEFAULT_PORTALS.microsoft);
+    portalsMap.set('Microsoft Learn', {
+      portal: 'Microsoft Learn',
+      url: getPortalCourseDirectUrl('Microsoft Learn', itemName)
+    });
   }
 
   if (
@@ -79,7 +190,10 @@ export function getOfferedStudyPortals(
     lowerItem.includes('lambda') || 
     lowerItem.includes('cloudwatch')
   ) {
-    portalsMap.set('AWS Skill Builder', DEFAULT_PORTALS.aws);
+    portalsMap.set('AWS Skill Builder', {
+      portal: 'AWS Skill Builder',
+      url: getPortalCourseDirectUrl('AWS Skill Builder', itemName)
+    });
   }
 
   if (
@@ -92,7 +206,10 @@ export function getOfferedStudyPortals(
     lowerItem.includes('flutter') || 
     lowerItem.includes('firebase')
   ) {
-    portalsMap.set('Google Cloud Skills Boost', DEFAULT_PORTALS.google);
+    portalsMap.set('Google Cloud Skills Boost', {
+      portal: 'Google Cloud Skills Boost',
+      url: getPortalCourseDirectUrl('Google Cloud Skills Boost', itemName)
+    });
   }
 
   if (
@@ -105,7 +222,10 @@ export function getOfferedStudyPortals(
     lowerItem.includes('bgp') ||
     lowerItem.includes('firewall')
   ) {
-    portalsMap.set('Cisco Skills for All', DEFAULT_PORTALS.cisco);
+    portalsMap.set('Cisco Skills for All', {
+      portal: 'Cisco Skills for All',
+      url: getPortalCourseDirectUrl('Cisco Skills for All', itemName)
+    });
   }
 
   if (
@@ -119,7 +239,10 @@ export function getOfferedStudyPortals(
     lowerCat.includes('devops') || 
     lowerCat.includes('cloud')
   ) {
-    portalsMap.set('Linux Foundation Learn', DEFAULT_PORTALS.linux);
+    portalsMap.set('Linux Foundation Learn', {
+      portal: 'Linux Foundation Learn',
+      url: getPortalCourseDirectUrl('Linux Foundation Learn', itemName)
+    });
   }
 
   if (
@@ -133,8 +256,14 @@ export function getOfferedStudyPortals(
     lowerItem.includes('c++') || 
     lowerItem.includes('java')
   ) {
-    portalsMap.set('W3Schools', DEFAULT_PORTALS.w3schools);
-    portalsMap.set('GeeksforGeeks', DEFAULT_PORTALS.geeksforgeeks);
+    portalsMap.set('W3Schools', {
+      portal: 'W3Schools',
+      url: getPortalCourseDirectUrl('W3Schools', itemName)
+    });
+    portalsMap.set('GeeksforGeeks', {
+      portal: 'GeeksforGeeks',
+      url: getPortalCourseDirectUrl('GeeksforGeeks', itemName)
+    });
   }
 
   if (
@@ -143,7 +272,10 @@ export function getOfferedStudyPortals(
     lowerItem.includes('helpdesk') || 
     lowerItem.includes('ticket')
   ) {
-    portalsMap.set('ServiceNow Learning', DEFAULT_PORTALS.servicenow);
+    portalsMap.set('ServiceNow Learning', {
+      portal: 'ServiceNow Learning',
+      url: getPortalCourseDirectUrl('ServiceNow Learning', itemName)
+    });
   }
 
   if (
@@ -152,16 +284,22 @@ export function getOfferedStudyPortals(
     lowerItem.includes('swayam') || 
     lowerCat.includes('government')
   ) {
-    portalsMap.set('Swayam NPTEL', DEFAULT_PORTALS.swayam);
+    portalsMap.set('Swayam NPTEL', {
+      portal: 'Swayam NPTEL',
+      url: getPortalCourseDirectUrl('Swayam NPTEL', itemName)
+    });
   }
 
   // Ensure every item has at least 2 study portals available
   if (portalsMap.size < 2) {
     portalsMap.set('Coursera Tech Hub', {
       portal: 'Coursera Learning Hub',
-      url: `https://www.coursera.org/search?query=${encodeURIComponent(itemName)}`
+      url: getPortalCourseDirectUrl('Coursera', itemName)
     });
-    portalsMap.set('GeeksforGeeks', DEFAULT_PORTALS.geeksforgeeks);
+    portalsMap.set('GeeksforGeeks', {
+      portal: 'GeeksforGeeks',
+      url: getPortalCourseDirectUrl('GeeksforGeeks', itemName)
+    });
   }
 
   return Array.from(portalsMap.values()).slice(0, 4);
