@@ -2052,8 +2052,8 @@ export default function LibrariesDashboard({
             onClick={() => setActiveTab('channels')}
             className={`px-3 py-1.5 font-mono text-xs border uppercase transition-all rounded-none cursor-pointer flex items-center gap-1.5 ${
               activeTab === 'channels'
-                ? 'bg-cyan-500/10 text-cyan-400 border-cyan-400 font-bold shadow-[2px_2px_0px_#22d3ee]'
-                : 'text-[#22d3ee] border-[#1e2e54] hover:border-cyan-800'
+                ? 'bg-amber-500/10 text-amber-400 border-amber-400 font-bold shadow-[2px_2px_0px_#f59e0b]'
+                : 'text-amber-400/80 border-[#1e2e54] hover:border-amber-700'
             }`}
           >
             Study Portals
@@ -3278,11 +3278,11 @@ export default function LibrariesDashboard({
           <div className="flex flex-col md:flex-row gap-5 items-start">
             {/* LEFT SIDE PANEL: Study Portals Selector */}
             <div className={`w-full md:w-80 lg:w-96 shrink-0 border-2 p-3.5 space-y-2.5 max-h-[680px] overflow-y-auto custom-scrollbar ${
-              isLight ? 'bg-white border-slate-200' : 'bg-[#060d1b] border-[#102444]'
+              isLight ? 'bg-[#fbf9f5] border-amber-200/80' : 'bg-[#121620] border-[#222938]'
             }`}>
-              <div className="flex items-center justify-between border-b pb-2 border-slate-800">
-                <span className="text-[11px] font-extrabold uppercase text-cyan-400 flex items-center gap-1.5">
-                  <BookOpen className="w-3.5 h-3.5" /> Select Study Portal
+              <div className="flex items-center justify-between border-b pb-2 border-slate-800/80">
+                <span className="text-[11px] font-extrabold uppercase text-amber-400 flex items-center gap-1.5">
+                  <BookOpen className="w-3.5 h-3.5 text-amber-400" /> Select Study Portal
                 </span>
                 <span className="text-[10px] text-gray-400 font-mono">
                   {filteredChannels.length} Options
@@ -3301,12 +3301,12 @@ export default function LibrariesDashboard({
                       onClick={() => setSelectedPortalId(platKey)}
                       className={`w-full text-left p-3 border transition-all cursor-pointer relative overflow-hidden group ${
                         isSelected
-                          ? (isLight ? 'bg-cyan-50 border-cyan-500 text-slate-900 shadow-sm' : 'bg-[#0a2336] border-cyan-400 text-white shadow-[0_0_15px_rgba(34,211,238,0.2)]')
-                          : (isLight ? 'bg-slate-50 border-slate-200 hover:border-slate-400 text-slate-700' : 'bg-[#091122] border-[#13223f] hover:border-cyan-800 text-slate-300')
+                          ? (isLight ? 'bg-amber-50/90 border-amber-500 text-slate-900 shadow-xs' : 'bg-[#241f17] border-amber-400 text-white shadow-[0_0_12px_rgba(245,158,11,0.15)]')
+                          : (isLight ? 'bg-white border-amber-100 hover:border-amber-300 text-slate-700' : 'bg-[#181d2a] border-[#252e42] hover:border-amber-700/60 text-slate-300')
                       }`}
                     >
                       {isSelected && (
-                        <div className="absolute top-0 left-0 bottom-0 w-1 bg-cyan-400 shadow-[0_0_8px_#22d3ee]" />
+                        <div className="absolute top-0 left-0 bottom-0 w-1 bg-amber-400 shadow-[0_0_8px_#f59e0b]" />
                       )}
                       
                       <div className="flex items-center justify-between gap-1 mb-1">
@@ -3320,17 +3320,17 @@ export default function LibrariesDashboard({
                           {plat.category}
                         </span>
                         <span className={`text-[9px] font-extrabold px-1.5 py-0.2 border ${
-                          isSelected ? 'bg-cyan-400 text-black border-cyan-300' : 'bg-cyan-950/60 text-cyan-300 border-cyan-800/40'
+                          isSelected ? 'bg-amber-400 text-black border-amber-300' : 'bg-amber-950/50 text-amber-300 border-amber-800/40'
                         }`}>
                           {plat.totalSkillsCount} Skills
                         </span>
                       </div>
 
                       <div className="flex items-center justify-between gap-2">
-                        <h5 className={`text-xs font-extrabold ${isSelected ? 'text-cyan-300' : 'group-hover:text-white'}`}>
+                        <h5 className={`text-xs font-extrabold ${isSelected ? 'text-amber-300' : 'group-hover:text-white'}`}>
                           {plat.name}
                         </h5>
-                        <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isSelected ? 'rotate-90 text-cyan-400' : 'text-gray-500'}`} />
+                        <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isSelected ? 'rotate-90 text-amber-400' : 'text-gray-500'}`} />
                       </div>
                     </button>
                   );
@@ -3345,7 +3345,7 @@ export default function LibrariesDashboard({
 
               if (!activePortal) {
                 return (
-                  <div className="w-full p-12 text-center border-2 border-dashed border-cyan-500/30 bg-cyan-950/10 text-cyan-300">
+                  <div className="w-full p-12 text-center border-2 border-dashed border-amber-500/30 bg-amber-950/10 text-amber-300">
                     Select a Study Portal from the left list to expand its skill tree.
                   </div>
                 );
@@ -3370,12 +3370,12 @@ export default function LibrariesDashboard({
 
               return (
                 <div className={`flex-1 w-full border-2 p-5 space-y-6 min-h-[600px] max-h-[680px] overflow-y-auto custom-scrollbar relative transition-all ${
-                  isLight ? 'bg-slate-50/80 border-slate-300' : 'bg-[#030914] border-[#0e1e38]'
+                  isLight ? 'bg-[#f7f5f0] border-amber-200/80' : 'bg-[#131722] border-[#222938]'
                 }`}>
                   {/* Active Portal Header & Direct Portal Visit Link */}
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b-2 pb-4 border-slate-800">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b-2 pb-4 border-slate-800/80">
                     <div>
-                      <h3 className="text-lg md:text-xl font-black text-white flex items-center gap-2">
+                      <h3 className="text-lg md:text-xl font-black text-amber-100 flex items-center gap-2">
                         {activePortal.name}
                       </h3>
                     </div>
@@ -3384,7 +3384,7 @@ export default function LibrariesDashboard({
                       href={activePortal.officialUrl || (activePortal as any).url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-3.5 py-2 bg-cyan-500 hover:bg-cyan-400 text-black border border-cyan-300 font-extrabold text-xs uppercase transition flex items-center gap-1.5 rounded-xs shrink-0 shadow-[2px_2px_0px_#ffffff]"
+                      className="px-3.5 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 border border-amber-300 font-extrabold text-xs uppercase transition flex items-center gap-1.5 rounded-xs shrink-0 shadow-[2px_2px_0px_#ffffff]"
                     >
                       <span>Visit Official Portal</span>
                       <ExternalLink className="w-3.5 h-3.5" />
@@ -3402,12 +3402,12 @@ export default function LibrariesDashboard({
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -15 }}
                           transition={{ duration: 0.25, delay: branchIdx * 0.05 }}
-                          className="space-y-3 relative pl-4 border-l-2 border-cyan-500/30"
+                          className="space-y-3 relative pl-4 border-l-2 border-amber-500/40"
                         >
                           {/* Branch Hub Header */}
                           <div className="flex items-center gap-2">
-                            <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]" />
-                            <h4 className="text-xs font-extrabold uppercase text-cyan-300 tracking-wider flex items-center gap-1.5">
+                            <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shadow-[0_0_6px_#f59e0b]" />
+                            <h4 className="text-xs font-extrabold uppercase text-amber-300 tracking-wider flex items-center gap-1.5">
                               <Layers className="w-3.5 h-3.5 text-emerald-400" />
                               {domainName}
                               <span className="bg-black/60 border border-slate-800 text-gray-400 text-[9px] px-1.5 py-0.2 rounded-xs font-mono ml-1">
@@ -3430,10 +3430,10 @@ export default function LibrariesDashboard({
                                   animate={{ opacity: 1, scale: 1 }}
                                   exit={{ opacity: 0, scale: 0.85 }}
                                   transition={{ type: 'spring', stiffness: 350, damping: 28 }}
-                                  className={`p-3.5 border-2 flex flex-col justify-between transition-all duration-200 hover:border-cyan-400 group relative ${
+                                  className={`p-3.5 border-2 flex flex-col justify-between transition-all duration-200 hover:border-amber-400 group relative ${
                                     isLight
-                                      ? 'bg-white border-slate-200 hover:shadow-md text-slate-800'
-                                      : 'bg-[#081326] border-[#122244] hover:bg-[#0c1c38] text-slate-200'
+                                      ? 'bg-white border-amber-100 hover:shadow-md text-slate-800'
+                                      : 'bg-[#1a202c] border-[#293448] hover:bg-[#202838] text-slate-200'
                                   }`}
                                 >
                                   <div className="space-y-2">
@@ -3461,12 +3461,12 @@ export default function LibrariesDashboard({
                                       )}
                                     </div>
 
-                                    <h5 className="text-xs font-extrabold text-white group-hover:text-cyan-300 transition-colors leading-snug">
+                                    <h5 className="text-xs font-extrabold text-amber-50 group-hover:text-amber-300 transition-colors leading-snug">
                                       {sk.skillOrTool || sk.name}
                                     </h5>
 
                                     {sk.topic && (
-                                      <span className="text-[9.5px] font-mono text-cyan-400/90 block">
+                                      <span className="text-[9.5px] font-mono text-amber-400/90 block">
                                         Topic: {sk.topic}
                                       </span>
                                     )}
@@ -3478,7 +3478,7 @@ export default function LibrariesDashboard({
                                       href={getPortalCourseDirectUrl(activePortal.name, sk.skillOrTool || sk.name, sk.url || sk.officialUrl)}
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      className="text-[9.5px] text-cyan-400 hover:text-white font-bold flex items-center gap-1 transition uppercase"
+                                      className="text-[9.5px] text-amber-400 hover:text-white font-bold flex items-center gap-1 transition uppercase"
                                     >
                                       Course Link <ExternalLink className="w-2.5 h-2.5" />
                                     </a>
@@ -3510,7 +3510,7 @@ export default function LibrariesDashboard({
             <div className="mt-4 flex justify-center">
               <button
                 onClick={() => setShowAllChannels(!showAllChannels)}
-                className="w-full py-2.5 bg-slate-950 hover:bg-[#121c38] border border-[#1e2e54] hover:border-[#0891b2] text-[#0891b2] font-mono text-xs font-bold uppercase transition focus:outline-none flex items-center justify-center gap-1.5 cursor-pointer"
+                className="w-full py-2.5 bg-slate-950 hover:bg-[#121c38] border border-[#1e2e54] hover:border-amber-600 text-amber-400 font-mono text-xs font-bold uppercase transition focus:outline-none flex items-center justify-center gap-1.5 cursor-pointer"
               >
                 <span>{showAllChannels ? '▲ Show Fewer Portals' : `▼ Show All Portals (${filteredChannels.length})`}</span>
               </button>
