@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { 
   Phone, Star, MapPin, Globe, Building, Search, Users, 
   Accessibility, Layers, RefreshCw, Database, ExternalLink, ArrowRight, Check, Zap,
@@ -7463,6 +7463,41 @@ interface HRContactsProps {
 export default function HRContacts({ theme }: HRContactsProps) {
   const [selectedRegion, setSelectedRegion] = useState<string>('APJ');
   const [isRegionsOpen, setIsRegionsOpen] = useState<boolean>(true);
+
+  // Mouse Drag-to-Scroll Handlers for Regions Slider
+  const regionsSliderRef = useRef<HTMLDivElement>(null);
+  const isRegionsMouseDown = useRef<boolean>(false);
+  const regionsStartX = useRef<number>(0);
+  const regionsScrollLeft = useRef<number>(0);
+
+  const handleRegionsMouseDown = (e: React.MouseEvent) => {
+    if (!regionsSliderRef.current) return;
+    isRegionsMouseDown.current = true;
+    regionsStartX.current = e.pageX - regionsSliderRef.current.offsetLeft;
+    regionsScrollLeft.current = regionsSliderRef.current.scrollLeft;
+  };
+
+  const handleRegionsMouseLeave = () => {
+    isRegionsMouseDown.current = false;
+  };
+
+  const handleRegionsMouseUp = () => {
+    isRegionsMouseDown.current = false;
+  };
+
+  const handleRegionsMouseMove = (e: React.MouseEvent) => {
+    if (!isRegionsMouseDown.current || !regionsSliderRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - regionsSliderRef.current.offsetLeft;
+    const walk = (x - regionsStartX.current) * 2;
+    regionsSliderRef.current.scrollLeft = regionsScrollLeft.current - walk;
+  };
+
+  const handleRegionsWheel = (e: React.WheelEvent) => {
+    if (regionsSliderRef.current) {
+      regionsSliderRef.current.scrollLeft += e.deltaY;
+    }
+  };
   const [selectedCountryCode, setSelectedCountryCode] = useState<string>('IN');
   const [selectedCityName, setSelectedCityName] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState('');
@@ -7576,11 +7611,17 @@ export default function HRContacts({ theme }: HRContactsProps) {
             <AnimatePresence>
               {isRegionsOpen && (
                 <motion.div
+                  ref={regionsSliderRef}
+                  onMouseDown={handleRegionsMouseDown}
+                  onMouseLeave={handleRegionsMouseLeave}
+                  onMouseUp={handleRegionsMouseUp}
+                  onMouseMove={handleRegionsMouseMove}
+                  onWheel={handleRegionsWheel}
                   initial={{ opacity: 0, x: -30, width: 0 }}
                   animate={{ opacity: 1, x: 0, width: 'auto' }}
                   exit={{ opacity: 0, x: -30, width: 0 }}
                   transition={{ duration: 0.3, ease: 'easeOut' }}
-                  className="overflow-x-auto scrollbar-none flex items-center gap-1.5 p-1 bg-white border-2 border-emerald-400/80 shadow-md rounded-xs shrink-0 whitespace-nowrap"
+                  className="overflow-x-auto scrollbar-none flex items-center gap-1.5 p-1 bg-white border-2 border-emerald-400/80 shadow-md rounded-xs shrink-0 whitespace-nowrap cursor-grab active:cursor-grabbing max-w-[calc(100vw-120px)] md:max-w-[calc(100vw-420px)]"
                 >
                   {[
                     { id: 'APJ', label: 'APJ (Asia Pacific & India)', icon: '🌏' },

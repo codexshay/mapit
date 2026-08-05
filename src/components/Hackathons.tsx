@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   Flame, Globe, Search, RefreshCw, Calendar, Tag, MapPin, 
   ExternalLink, Trophy, Users, CheckCircle2, AlertCircle, ArrowUpRight, 
@@ -712,6 +712,41 @@ export default function Hackathons({
   const [categoryFilter, setCategoryFilter] = useState<string>('All');
   const [statusFilter, setStatusFilter] = useState<string>('All');
   const [isStreamsOpen, setIsStreamsOpen] = useState<boolean>(true);
+
+  // Mouse Drag-to-Scroll Handlers for Streams Slider
+  const streamsSliderRef = useRef<HTMLDivElement>(null);
+  const isStreamsMouseDown = useRef<boolean>(false);
+  const streamsStartX = useRef<number>(0);
+  const streamsScrollLeft = useRef<number>(0);
+
+  const handleStreamsMouseDown = (e: React.MouseEvent) => {
+    if (!streamsSliderRef.current) return;
+    isStreamsMouseDown.current = true;
+    streamsStartX.current = e.pageX - streamsSliderRef.current.offsetLeft;
+    streamsScrollLeft.current = streamsSliderRef.current.scrollLeft;
+  };
+
+  const handleStreamsMouseLeave = () => {
+    isStreamsMouseDown.current = false;
+  };
+
+  const handleStreamsMouseUp = () => {
+    isStreamsMouseDown.current = false;
+  };
+
+  const handleStreamsMouseMove = (e: React.MouseEvent) => {
+    if (!isStreamsMouseDown.current || !streamsSliderRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - streamsSliderRef.current.offsetLeft;
+    const walk = (x - streamsStartX.current) * 2;
+    streamsSliderRef.current.scrollLeft = streamsScrollLeft.current - walk;
+  };
+
+  const handleStreamsWheel = (e: React.WheelEvent) => {
+    if (streamsSliderRef.current) {
+      streamsSliderRef.current.scrollLeft += e.deltaY;
+    }
+  };
   
   const [localSelectedItemId, setLocalSelectedItemId] = useState<string | null>(null);
   const selectedItemId = selectedItemIdProp !== undefined ? selectedItemIdProp : localSelectedItemId;
@@ -1550,11 +1585,17 @@ export default function Hackathons({
         <AnimatePresence>
           {isStreamsOpen && (
             <motion.div
+              ref={streamsSliderRef}
+              onMouseDown={handleStreamsMouseDown}
+              onMouseLeave={handleStreamsMouseLeave}
+              onMouseUp={handleStreamsMouseUp}
+              onMouseMove={handleStreamsMouseMove}
+              onWheel={handleStreamsWheel}
               initial={{ opacity: 0, x: -30, width: 0 }}
               animate={{ opacity: 1, x: 0, width: 'auto' }}
               exit={{ opacity: 0, x: -30, width: 0 }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
-              className="overflow-x-auto scrollbar-none flex items-center gap-1.5 p-1 bg-white border-2 border-emerald-400/80 shadow-md rounded-xs shrink-0 whitespace-nowrap"
+              className="overflow-x-auto scrollbar-none flex items-center gap-1.5 p-1 bg-white border-2 border-emerald-400/80 shadow-md rounded-xs shrink-0 whitespace-nowrap cursor-grab active:cursor-grabbing max-w-[calc(100vw-120px)] md:max-w-[calc(100vw-420px)]"
             >
               {[
                 { id: 'All', label: 'All', icon: '🌐' },

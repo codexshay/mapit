@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 import { 
   Search, 
   ExternalLink, 
@@ -163,7 +163,7 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
   theme = 'dark',
   isLight = false
 }) => {
-  const [selectedRoleTitle, setSelectedRoleTitle] = useState<string>('Site Reliability Engineer');
+  const [selectedRoleTitle, setSelectedRoleTitle] = useState<string>('');
   const [customRoleInput, setCustomRoleInput] = useState<string>('');
   const [companySearchQuery, setCompanySearchQuery] = useState<string>('');
   const [selectedLetter, setSelectedLetter] = useState<string>('ALL');
@@ -176,6 +176,41 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [isCategoriesOpen, setIsCategoriesOpen] = useState<boolean>(true);
   const [localBookmarkedIds, setLocalBookmarkedIds] = useState<Record<string, boolean>>({});
+
+  // Mouse Drag-to-Scroll Handlers for Category Slider
+  const categorySliderRef = useRef<HTMLDivElement>(null);
+  const isMouseDownRef = useRef<boolean>(false);
+  const startXRef = useRef<number>(0);
+  const scrollLeftRef = useRef<number>(0);
+
+  const handleSliderMouseDown = (e: React.MouseEvent) => {
+    if (!categorySliderRef.current) return;
+    isMouseDownRef.current = true;
+    startXRef.current = e.pageX - categorySliderRef.current.offsetLeft;
+    scrollLeftRef.current = categorySliderRef.current.scrollLeft;
+  };
+
+  const handleSliderMouseLeave = () => {
+    isMouseDownRef.current = false;
+  };
+
+  const handleSliderMouseUp = () => {
+    isMouseDownRef.current = false;
+  };
+
+  const handleSliderMouseMove = (e: React.MouseEvent) => {
+    if (!isMouseDownRef.current || !categorySliderRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - categorySliderRef.current.offsetLeft;
+    const walk = (x - startXRef.current) * 2;
+    categorySliderRef.current.scrollLeft = scrollLeftRef.current - walk;
+  };
+
+  const handleSliderWheel = (e: React.WheelEvent) => {
+    if (categorySliderRef.current) {
+      categorySliderRef.current.scrollLeft += e.deltaY;
+    }
+  };
 
   // Active role keyword used for embedding into portals & referrals
   const activeRoleKeyword = useMemo(() => {
@@ -404,11 +439,17 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
             <AnimatePresence>
               {isCategoriesOpen && (
                 <motion.div
+                  ref={categorySliderRef}
+                  onMouseDown={handleSliderMouseDown}
+                  onMouseLeave={handleSliderMouseLeave}
+                  onMouseUp={handleSliderMouseUp}
+                  onMouseMove={handleSliderMouseMove}
+                  onWheel={handleSliderWheel}
                   initial={{ opacity: 0, x: -30, width: 0 }}
                   animate={{ opacity: 1, x: 0, width: 'auto' }}
                   exit={{ opacity: 0, x: -30, width: 0 }}
                   transition={{ duration: 0.3, ease: 'easeOut' }}
-                  className="overflow-x-auto scrollbar-none flex items-center gap-1.5 p-1 bg-white border-2 border-emerald-400/80 shadow-md rounded-xs shrink-0 whitespace-nowrap"
+                  className="overflow-x-auto scrollbar-none flex items-center gap-1.5 p-1 bg-white border-2 border-emerald-400/80 shadow-md rounded-xs shrink-0 whitespace-nowrap cursor-grab active:cursor-grabbing max-w-[calc(100vw-120px)] md:max-w-[calc(100vw-420px)]"
                 >
                   {categories.map((cat) => {
                     const isSelected = selectedCategory === cat;
