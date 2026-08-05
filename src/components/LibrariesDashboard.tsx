@@ -2026,8 +2026,8 @@ export default function LibrariesDashboard({
             onClick={() => setActiveTab('hackathons')}
             className={`px-3 py-1.5 font-mono text-xs border uppercase transition-all rounded-none cursor-pointer flex items-center gap-1.5 ${
               activeTab === 'hackathons'
-                ? 'bg-amber-500/10 text-amber-500 border-amber-500/50 font-bold shadow-[2px_2px_0px_#f59e0b]'
-                : 'text-amber-500 border-[#1e2e54] hover:border-amber-800'
+                ? (isLight ? 'bg-white text-amber-600 border-amber-500 font-bold shadow-[2px_2px_0px_#d97706]' : 'bg-amber-500/10 text-amber-500 border-amber-500/50 font-bold shadow-[2px_2px_0px_#f59e0b]')
+                : (isLight ? 'bg-white text-amber-700 border-slate-300 hover:border-amber-400' : 'bg-[#091120] text-amber-500 border-[#1e2e54] hover:border-amber-800')
             }`}
           >
             Hackathons & Events
@@ -2039,8 +2039,8 @@ export default function LibrariesDashboard({
             onClick={() => setActiveTab('youtubeTeachers')}
             className={`px-3 py-1.5 font-mono text-xs border uppercase transition-all rounded-none cursor-pointer flex items-center gap-1.5 ${
               activeTab === 'youtubeTeachers'
-                ? 'bg-red-500/10 text-red-400 border-red-500/50 font-bold shadow-[2px_2px_0px_#ef4444]'
-                : 'text-red-400 border-[#1e2e54] hover:border-red-800'
+                ? (isLight ? 'bg-white text-red-600 border-red-500 font-bold shadow-[2px_2px_0px_#dc2626]' : 'bg-red-500/10 text-red-400 border-red-500/50 font-bold shadow-[2px_2px_0px_#ef4444]')
+                : (isLight ? 'bg-white text-red-600 border-slate-300 hover:border-red-400' : 'bg-[#091120] text-red-400 border-[#1e2e54] hover:border-red-800')
             }`}
           >
             YouTube Teachers
@@ -2052,8 +2052,8 @@ export default function LibrariesDashboard({
             onClick={() => setActiveTab('channels')}
             className={`px-3 py-1.5 font-mono text-xs border uppercase transition-all rounded-none cursor-pointer flex items-center gap-1.5 ${
               activeTab === 'channels'
-                ? 'bg-amber-500/10 text-amber-400 border-amber-400 font-bold shadow-[2px_2px_0px_#f59e0b]'
-                : 'text-amber-400/80 border-[#1e2e54] hover:border-amber-700'
+                ? (isLight ? 'bg-white text-amber-600 border-amber-500 font-bold shadow-[2px_2px_0px_#d97706]' : 'bg-amber-500/10 text-amber-400 border-amber-400 font-bold shadow-[2px_2px_0px_#f59e0b]')
+                : (isLight ? 'bg-white text-amber-700 border-slate-300 hover:border-amber-400' : 'bg-[#091122] text-amber-400/80 border-[#1e2e54] hover:border-amber-700')
             }`}
           >
             Study Portals
@@ -2064,8 +2064,8 @@ export default function LibrariesDashboard({
             onClick={() => setActiveTab('tools-skills')}
             className={`px-3 py-1.5 font-mono text-xs border uppercase transition-all rounded-none cursor-pointer flex items-center gap-1.5 ${
               activeTab === 'tools-skills'
-                ? 'bg-emerald-500/10 text-[#10b981] border-[#10b981] font-bold shadow-[2px_2px_0px_#10b981]'
-                : 'text-emerald-600 dark:text-emerald-400 border-[#1e2e54] hover:border-emerald-800'
+                ? (isLight ? 'bg-white text-emerald-600 border-emerald-500 font-bold shadow-[2px_2px_0px_#059669]' : 'bg-emerald-500/10 text-[#10b981] border-[#10b981] font-bold shadow-[2px_2px_0px_#10b981]')
+                : (isLight ? 'bg-white text-emerald-700 border-slate-300 hover:border-emerald-400' : 'bg-[#091120] text-emerald-400 border-[#1e2e54] hover:border-emerald-800')
             }`}
           >
             Skills & Tools Pool
@@ -2076,8 +2076,8 @@ export default function LibrariesDashboard({
             onClick={() => setActiveTab('certs')}
             className={`px-3 py-1.5 font-mono text-xs border uppercase transition-all rounded-none cursor-pointer flex items-center gap-1.5 ${
               activeTab === 'certs'
-                ? (isLight ? 'bg-slate-900 text-white border-slate-900 font-bold shadow-[2px_2px_0px_#475569]' : 'bg-slate-900 text-white border-white font-bold shadow-[2px_2px_0px_#ffffff]')
-                : (isLight ? 'bg-slate-100 text-slate-700 border-gray-200 hover:border-slate-400' : 'bg-slate-800 text-white/80 border-[#1e2e54] hover:border-slate-500')
+                ? (isLight ? 'bg-white text-slate-900 border-slate-900 font-bold shadow-[2px_2px_0px_#334155]' : 'bg-slate-900 text-white border-white font-bold shadow-[2px_2px_0px_#ffffff]')
+                : (isLight ? 'bg-white text-slate-800 border-slate-300 hover:border-slate-500' : 'bg-[#091120] text-white/80 border-[#1e2e54] hover:border-slate-500')
             }`}
           >
             Certifications
@@ -2088,10 +2088,9 @@ export default function LibrariesDashboard({
             onClick={() => setActiveTab('bookshelf')}
             className={`px-3 py-1.5 font-mono text-xs border uppercase transition-all rounded-none cursor-pointer flex items-center gap-1.5 ${
               activeTab === 'bookshelf'
-                ? 'bg-[#8b4513]/10 text-[#8b4513] border-[#8b4513] font-bold shadow-[2px_2px_0px_#8b4513]'
-                : 'text-[#a0522d] border-[#1e2e54] hover:border-[#8b4513]'
+                ? (isLight ? 'bg-white text-[#8b4513] border-[#8b4513] font-bold shadow-[2px_2px_0px_#8b4513]' : 'bg-[#8b4513]/10 text-[#8b4513] border-[#8b4513] font-bold shadow-[2px_2px_0px_#8b4513]')
+                : (isLight ? 'bg-white text-[#a0522d] border-slate-300 hover:border-[#8b4513]' : 'bg-[#091120] text-[#a0522d] border-[#1e2e54] hover:border-[#8b4513]')
             }`}
-            style={{ color: activeTab === 'bookshelf' ? '#8b4513' : '#a0522d', borderColor: activeTab === 'bookshelf' ? '#8b4513' : undefined }}
           >
             Bookshelf
           </button>
@@ -2808,7 +2807,7 @@ export default function LibrariesDashboard({
                         <div className="flex items-center justify-between gap-1">
                           <span className={`text-[9px] font-bold uppercase px-2 py-0.5 border ${
                             sk.type === 'Tool / Platform'
-                              ? (isLight ? 'bg-purple-100 text-purple-800 border-purple-300' : 'bg-purple-950/50 text-purple-300 border-purple-800/60')
+                              ? 'bg-white text-black border-slate-300 font-extrabold'
                               : (isLight ? 'bg-emerald-100 text-emerald-800 border-emerald-300' : 'bg-emerald-950/50 text-emerald-300 border-emerald-800/60')
                           }`}>
                             {sk.type}
@@ -3315,7 +3314,7 @@ export default function LibrariesDashboard({
                             ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40' 
                             : plat.category === 'Developer Handbooks'
                             ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
-                            : 'bg-purple-500/20 text-purple-300 border border-purple-500/40'
+                            : 'bg-white text-black border border-slate-300 font-extrabold'
                         }`}>
                           {plat.category}
                         </span>
@@ -3440,7 +3439,7 @@ export default function LibrariesDashboard({
                                     <div className="flex items-center justify-between gap-1">
                                       <span className={`text-[8.5px] font-bold uppercase px-1.5 py-0.5 rounded-xs border ${
                                         sk.type === 'Tool / Platform'
-                                          ? 'bg-purple-950/60 text-purple-300 border-purple-800/60'
+                                          ? 'bg-white text-black border-slate-300 font-extrabold'
                                           : 'bg-emerald-950/60 text-emerald-300 border-emerald-800/60'
                                       }`}>
                                         {sk.type || 'Skill'}
