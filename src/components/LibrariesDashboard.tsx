@@ -3309,16 +3309,7 @@ export default function LibrariesDashboard({
                         <div className="absolute top-0 left-0 bottom-0 w-1 bg-amber-400 shadow-[0_0_8px_#f59e0b]" />
                       )}
                       
-                      <div className="flex items-center justify-between gap-1 mb-1">
-                        <span className={`text-[8.5px] font-bold uppercase px-1.5 py-0.5 rounded-xs ${
-                          plat.category === 'Government Authorised Program' 
-                            ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40' 
-                            : plat.category === 'Developer Handbooks'
-                            ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
-                            : 'bg-white text-black border border-slate-300 font-extrabold'
-                        }`}>
-                          {plat.category}
-                        </span>
+                      <div className="flex items-center justify-end gap-1 mb-1">
                         <span className={`text-[9px] font-extrabold px-1.5 py-0.2 border ${
                           isSelected ? 'bg-amber-400 text-black border-amber-300' : 'bg-amber-950/50 text-amber-300 border-amber-800/40'
                         }`}>
