@@ -39,7 +39,7 @@
       "Cybersecurity Training",
       "Catalog"
     ],
-    "totalSkillsCount": 44
+    "totalSkillsCount": 45
   },
   {
     "id": "futureskills-prime",
@@ -55,7 +55,7 @@
       "Software Development",
       "Catalog"
     ],
-    "totalSkillsCount": 74
+    "totalSkillsCount": 86
   },
   {
     "id": "geeksforgeeks",
@@ -151,7 +151,7 @@
       "Catalog",
       "Business Skills"
     ],
-    "totalSkillsCount": 54
+    "totalSkillsCount": 68
   },
   {
     "id": "ibm-skillsbuild",
@@ -166,7 +166,7 @@
       "Sustainability",
       "Catalog"
     ],
-    "totalSkillsCount": 66
+    "totalSkillsCount": 72
   },
   {
     "id": "infosys-springboard",
@@ -210,7 +210,7 @@
       "NPTEL Discipline or Domain",
       "Catalog"
     ],
-    "totalSkillsCount": 66
+    "totalSkillsCount": 69
   },
   {
     "id": "swayam",

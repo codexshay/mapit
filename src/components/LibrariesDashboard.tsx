@@ -3473,11 +3473,11 @@ export default function LibrariesDashboard({
                                     </a>
 
                                     <a
-                                      href={`https://www.youtube.com/results?search_query=${encodeURIComponent(mainTitle + ' tutorial')}`}
+                                      href={`https://www.youtube.com/results?search_query=${encodeURIComponent(activePortal.name + ' ' + mainTitle + ' tutorial')}`}
                                       target="_blank"
                                       rel="noopener noreferrer"
                                       className="text-[9.5px] text-red-400 hover:text-white font-bold flex items-center gap-1 transition uppercase"
-                                      title="Search YouTube video lessons"
+                                      title={`Search YouTube video lessons for ${activePortal.name} ${mainTitle}`}
                                     >
                                       <Youtube className="w-2.5 h-2.5 text-red-500" /> YouTube
                                     </a>

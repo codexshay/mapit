@@ -115,9 +115,14 @@ export function getPortalCourseDirectUrl(
   skillOrToolName: string = '',
   existingUrl?: string
 ): string {
+  // If an exact, verified URL from the portal JSON exists, use it directly!
+  if (existingUrl && existingUrl.trim() && existingUrl.startsWith('http')) {
+    return existingUrl.trim();
+  }
+
   const cleanSkillName = (skillOrToolName || '').trim();
   if (!cleanSkillName) {
-    return existingUrl || 'https://www.coursera.org/';
+    return 'https://www.coursera.org/';
   }
 
   const p = (portalNameOrSlug || '').toLowerCase().trim();
