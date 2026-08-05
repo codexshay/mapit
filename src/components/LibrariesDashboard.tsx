@@ -3136,42 +3136,11 @@ export default function LibrariesDashboard({
       {/* 4. BOOKSHELF TAB RENDER */}
       {activeTab === 'bookshelf' && (
         <div className="space-y-4 font-mono">
-
-          <div className={`border p-3.5 flex items-center justify-start gap-3 ${isLight ? 'border-gray-250 bg-gray-50/50' : 'border-slate-800 bg-[#070b13]'}`}>
-            <label htmlFor="dept-select" className="text-xs text-gray-400 font-bold uppercase whitespace-nowrap flex items-center gap-1.5">
-              <Filter className="w-4 h-4 text-[#8b4513]" />
-            </label>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-2 shrink-0">
-              <select
-                id="dept-select"
-                value={selectedBookDept}
-                onChange={(e) => setSelectedBookDept(e.target.value)}
-                className={`border p-2 text-xs focus:outline-none focus:border-[#8b4513] font-mono cursor-pointer rounded-none ${isLight ? 'bg-white text-slate-800 border-slate-205' : 'bg-[#070b13] text-slate-200 border-slate-800 w-full sm:w-auto'}`}
-              >
-                <option value="All">All Departments (CEO to HR)</option>
-                <option value="CEO">Boardroom & Chief Executive Office (CEO)</option>
-                <option value="CTO">Chief Technology Office (CTO) & Architecture</option>
-                <option value="Product">Product Management & Design (CPO / UX)</option>
-                <option value="Dev">Engineering, Development & QA</option>
-                <option value="DevOps">Infrastructure, Cloud & DevOps (SRE)</option>
-                <option value="Security">Security & Compliance (CISO / Cybersecurity)</option>
-                <option value="Data">Data, AI & Analytics (CDO / Data Scientist)</option>
-                <option value="Operations">Operations & IT Service Support (COO / Helpdesk)</option>
-                <option value="HR">Human Resources & Talent Operations (CHRO)</option>
-                <option value="Marketing">Marketing & Technical Sales (CMO/Solutions Eng)</option>
-                <option value="Academic">Academic Foundations (School, Exam & Placements Prep)</option>
-              </select>
-            </div>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4.5">
             {(() => {
               const filtered = books.filter(b => {
-                if (selectedBookDept !== 'All' && b.category !== selectedBookDept) {
-                  return false;
-                }
-                if (query === '') return true;
-                const lowerQ = query.toLowerCase();
+                if (!debouncedQuery.trim()) return true;
+                const lowerQ = debouncedQuery.toLowerCase();
                 const titleMatch = b.title ? b.title.toLowerCase().includes(lowerQ) : false;
                 const authorMatch = b.author ? b.author.toLowerCase().includes(lowerQ) : false;
                 const bestForMatch = b.bestFor ? b.bestFor.toLowerCase().includes(lowerQ) : false;
