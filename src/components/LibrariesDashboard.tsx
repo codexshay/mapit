@@ -2665,50 +2665,100 @@ export default function LibrariesDashboard({
       {activeTab === 'tools-skills' && (
         <div className="space-y-6 font-mono">
 
-          {/* FILTERS TOOLBAR FOR SKILLS & TOOLS POOL */}
-          <div className="flex flex-wrap items-center justify-between gap-3 text-xs pb-3 border-b border-emerald-500/30">
-            <div className="flex flex-wrap items-center gap-3">
-              {/* Domain filter */}
-              <div className="flex items-center gap-1.5">
-                <label className="text-[10.5px] text-emerald-400 font-bold uppercase tracking-wider">Domain:</label>
-                <select
-                  value={skillDomainFilter}
-                  onChange={(e) => {
-                    setSkillDomainFilter(e.target.value);
-                    setSkillPage(1);
-                  }}
-                  className={`p-1.5 text-[11px] font-mono border rounded-none cursor-pointer ${isLight ? 'bg-white text-slate-800 border-slate-300' : 'bg-[#081220] text-slate-200 border-slate-700'}`}
-                >
-                  <option value="All">All Domains ({dynamicDomains.length})</option>
-                  {dynamicDomains.map((d: any) => (
-                    <option key={d.name} value={d.name}>{d.name} ({d.skillCount})</option>
-                  ))}
-                </select>
-              </div>
+          {/* FILTERS TOOLBAR FOR SKILLS & TOOLS POOL WITH TOP-RIGHT PAGINATION */}
+          {(() => {
+            const filteredSkillsForBar = importedSkills.filter((sk: any) => {
+              if (skillDomainFilter !== 'All' && sk.domain !== skillDomainFilter) return false;
+              if (skillTypeFilter !== 'All' && sk.type !== skillTypeFilter) return false;
+              if (!debouncedQuery.trim()) return true;
+              return (
+                matchesQuery(sk.name, debouncedQuery) ||
+                matchesQuery(sk.domain, debouncedQuery) ||
+                matchesQuery(sk.topic, debouncedQuery) ||
+                matchesQuery(sk.type, debouncedQuery) ||
+                (sk.portals && sk.portals.some((p: string) => matchesQuery(p, debouncedQuery)))
+              );
+            });
+            const totalSkillPagesForBar = Math.ceil(filteredSkillsForBar.length / skillPageSize);
+            const activeSkillPageForBar = Math.min(skillPage, Math.max(1, totalSkillPagesForBar));
 
-              {/* Type filter */}
-              <div className="flex items-center gap-1.5">
-                <label className="text-[10.5px] text-emerald-400 font-bold uppercase tracking-wider">Type:</label>
-                <select
-                  value={skillTypeFilter}
-                  onChange={(e) => {
-                    setSkillTypeFilter(e.target.value);
-                    setSkillPage(1);
-                  }}
-                  className={`p-1.5 text-[11px] font-mono border rounded-none cursor-pointer ${isLight ? 'bg-white text-slate-800 border-slate-300' : 'bg-[#081220] text-slate-200 border-slate-700'}`}
-                >
-                  <option value="All">All Types ({dynamicTypes.length})</option>
-                  {dynamicTypes.map((tName: string) => (
-                    <option key={tName} value={tName}>{tName}</option>
-                  ))}
-                </select>
-              </div>
-            </div>
+            return (
+              <div className="flex flex-wrap items-center justify-between gap-3 text-xs pb-3 border-b border-emerald-500/30">
+                <div className="flex flex-wrap items-center gap-3">
+                  {/* Domain filter */}
+                  <div className="flex items-center gap-1.5">
+                    <label className="text-[10.5px] text-emerald-400 font-bold uppercase tracking-wider">Domain:</label>
+                    <select
+                      value={skillDomainFilter}
+                      onChange={(e) => {
+                        setSkillDomainFilter(e.target.value);
+                        setSkillPage(1);
+                      }}
+                      className={`p-1.5 text-[11px] font-mono border rounded-none cursor-pointer ${isLight ? 'bg-white text-slate-800 border-slate-300' : 'bg-[#081220] text-slate-200 border-slate-700'}`}
+                    >
+                      <option value="All">All Domains ({dynamicDomains.length})</option>
+                      {dynamicDomains.map((d: any) => (
+                        <option key={d.name} value={d.name}>{d.name} ({d.skillCount})</option>
+                      ))}
+                    </select>
+                  </div>
 
-            <span className="text-[10px] text-gray-400 font-mono font-bold">
-              {importedSkills.length} Total Verified Entries
-            </span>
-          </div>
+                  {/* Type filter */}
+                  <div className="flex items-center gap-1.5">
+                    <label className="text-[10.5px] text-emerald-400 font-bold uppercase tracking-wider">Type:</label>
+                    <select
+                      value={skillTypeFilter}
+                      onChange={(e) => {
+                        setSkillTypeFilter(e.target.value);
+                        setSkillPage(1);
+                      }}
+                      className={`p-1.5 text-[11px] font-mono border rounded-none cursor-pointer ${isLight ? 'bg-white text-slate-800 border-slate-300' : 'bg-[#081220] text-slate-200 border-slate-700'}`}
+                    >
+                      <option value="All">All Types ({dynamicTypes.length})</option>
+                      {dynamicTypes.map((tName: string) => (
+                        <option key={tName} value={tName}>{tName}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                {/* TOP RIGHT CORNER: PAGINATION CONTROLS REPLACING "586 Total Verified Entries" */}
+                {totalSkillPagesForBar > 1 ? (
+                  <div className="flex items-center gap-1.5 font-mono">
+                    <button
+                      onClick={() => setSkillPage(prev => Math.max(1, prev - 1))}
+                      disabled={activeSkillPageForBar === 1}
+                      className={`px-2.5 py-1 text-[10px] border font-bold uppercase transition select-none cursor-pointer ${
+                        activeSkillPageForBar === 1 
+                          ? 'opacity-40 cursor-not-allowed border-slate-800 text-gray-600'
+                          : (isLight ? 'border-slate-300 bg-white hover:bg-slate-50 text-slate-800' : 'border-slate-700 bg-black hover:border-emerald-500 text-emerald-400')
+                      }`}
+                    >
+                      Prev
+                    </button>
+                    <span className="text-[10px] font-extrabold text-emerald-400 px-1">
+                      {activeSkillPageForBar} / {totalSkillPagesForBar}
+                    </span>
+                    <button
+                      onClick={() => setSkillPage(prev => Math.min(totalSkillPagesForBar, prev + 1))}
+                      disabled={activeSkillPageForBar === totalSkillPagesForBar}
+                      className={`px-2.5 py-1 text-[10px] border font-bold uppercase transition select-none cursor-pointer ${
+                        activeSkillPageForBar === totalSkillPagesForBar 
+                          ? 'opacity-40 cursor-not-allowed border-slate-800 text-gray-600'
+                          : (isLight ? 'border-slate-300 bg-white hover:bg-slate-50 text-slate-800' : 'border-slate-700 bg-black hover:border-emerald-500 text-emerald-400')
+                      }`}
+                    >
+                      Next ➔
+                    </button>
+                  </div>
+                ) : (
+                  <span className="text-[10px] text-gray-400 font-mono font-bold">
+                    {filteredSkillsForBar.length} Entries
+                  </span>
+                )}
+              </div>
+            );
+          })()}
 
           {/* CATALOG SKILLS GRID */}
           {(() => {
