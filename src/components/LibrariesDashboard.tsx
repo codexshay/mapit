@@ -3410,26 +3410,7 @@ export default function LibrariesDashboard({
                       </a>
                     </div>
 
-                    {/* ROOT NODE: PORTAL HUB */}
-                    <div className="flex justify-center my-2">
-                      <motion.div
-                        layout
-                        layoutId={`portal-root-${activePortal.id || activePortal.name}`}
-                        initial={{ scale: 0.9, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        transition={{ type: 'spring', stiffness: 300, damping: 25 }}
-                        className="px-5 py-3 bg-gradient-to-r from-cyan-950 via-[#0a2336] to-emerald-950 border-2 border-cyan-400 text-white rounded-xs shadow-[0_0_20px_rgba(34,211,238,0.3)] text-center flex items-center gap-3"
-                      >
-                        <div className="p-2 bg-cyan-400 text-black rounded-xs font-black text-lg">
-                          🎓
-                        </div>
-                        <div className="text-left">
-                          <span className="text-[9px] font-mono text-cyan-300 font-bold uppercase block">Central Knowledge Portal Hub</span>
-                          <strong className="text-sm font-extrabold block text-white">{activePortal.name}</strong>
-                          <span className="text-[10px] text-gray-300 font-mono">{activePortal.category} • {portalRecords.length} Verified Modules</span>
-                        </div>
-                      </motion.div>
-                    </div>
+
 
                     {/* DOMAIN BRANCHES & GROOVY SKILL NODES */}
                     <AnimatePresence mode="popLayout">
