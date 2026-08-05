@@ -711,7 +711,7 @@ export default function Hackathons({
   const [domainFilter, setDomainFilter] = useState<string>('All');
   const [categoryFilter, setCategoryFilter] = useState<string>('All');
   const [statusFilter, setStatusFilter] = useState<string>('All');
-  const [isStreamsOpen, setIsStreamsOpen] = useState<boolean>(true);
+  const [isStreamsOpen, setIsStreamsOpen] = useState<boolean>(false);
 
   // Mouse Drag-to-Scroll Handlers for Streams Slider
   const streamsSliderRef = useRef<HTMLDivElement>(null);
