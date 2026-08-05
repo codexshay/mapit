@@ -30,6 +30,7 @@ export interface Hackathon {
   replayUrl?: string;
   replayTitle?: string;
   isNewAddition?: boolean;
+  autoIngested?: boolean;
   category?: 'Hackathon' | 'Event' | 'Bootcamp' | 'Challenge' | 'Webinar' | 'CFP' | 'Training' | 'Quiz' | 'College Fest' | 'Scholarship' | 'Workshop' | 'Conference' | 'Hiring Challenge';
   scheduleStatus?: 'Active' | 'Upcoming' | 'Closed';
 }
@@ -1713,6 +1714,8 @@ export default function Hackathons({
         <div className="lg:col-span-5 flex flex-col gap-2 max-h-[650px] overflow-y-auto pr-1">
           {filteredItems.map((item) => {
             const isSelected = selectedItemId ? selectedItemId === item.id : selectedItemDesktop?.id === item.id;
+            const isNew = item.isNewAddition || item.autoIngested;
+
             return (
               <div
                 key={item.id}
@@ -1726,14 +1729,14 @@ export default function Hackathons({
                   }
                 }}
                 style={{
-                  borderColor: isSelected ? '#10b981' : (item.isNewAddition ? '#10b981' : (isLight ? '#cbd5e1' : '#121c38')),
-                  boxShadow: isSelected ? '3px 3px 0px 0px #10b981' : (item.isNewAddition ? '3px 3px 0px 0px rgba(16,185,129,0.3)' : 'none')
+                  borderColor: isSelected ? '#10b981' : (isNew ? '#f59e0b' : (isLight ? '#cbd5e1' : '#121c38')),
+                  boxShadow: isSelected ? '3px 3px 0px 0px #10b981' : (isNew ? '3px 3px 0px 0px #f59e0b' : 'none')
                 }}
                 className={`w-full p-4 text-left border-2 transition-all relative rounded-none flex flex-col gap-2 font-mono text-xs cursor-pointer ${
                   isSelected 
                     ? (isLight ? 'bg-slate-100 text-slate-900 border-emerald-500' : 'bg-[#0f2c20]/40 text-white border-emerald-500') 
-                    : item.isNewAddition
-                      ? (isLight ? 'bg-[#f0fdf4] text-slate-850' : 'bg-[#0a1e16] text-gray-300')
+                    : isNew
+                      ? (isLight ? 'bg-[#fffbeb] text-slate-850' : 'bg-[#261d09]/70 text-gray-200')
                       : (isLight ? 'bg-white hover:bg-slate-50 text-slate-700' : 'bg-[#090f1e] hover:bg-[#0c162b] text-gray-400')
                 }`}
               >
@@ -1743,10 +1746,10 @@ export default function Hackathons({
                   </span>
                   
                   <div className="flex items-center gap-1.5 shrink-0 flex-wrap justify-end">
-                    {item.isNewAddition && (
-                      <span className="px-1.5 py-0.5 text-[8px] border border-[#10b981] bg-[#10b981]/15 text-[#10b981] font-bold rounded-none uppercase animate-pulse flex items-center gap-1">
-                        <span className="w-1.5 h-1.5 bg-[#10b981] rounded-full inline-block animate-ping" />
-                        LATEST
+                    {isNew && (
+                      <span className="px-1.5 py-0.5 text-[8px] border border-amber-400 bg-amber-400/20 text-amber-300 font-bold rounded-none uppercase animate-pulse flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 bg-amber-400 rounded-full inline-block animate-ping" />
+                        NEW
                       </span>
                     )}
                     
@@ -1846,20 +1849,23 @@ export default function Hackathons({
         ) : (
           /* Primary Mobile Listings View */
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {filteredItems.slice(0, showAllHackathons ? undefined : 4).map((item) => (
+            {filteredItems.slice(0, showAllHackathons ? undefined : 4).map((item) => {
+              const isNew = item.isNewAddition || item.autoIngested;
+              
+              return (
               <div
                 key={item.id}
                 role="button"
                 tabIndex={0}
                 onClick={() => setSelectedItemId(item.id)}
                 className={`w-full p-4 text-left border-2 transition-all relative rounded-none flex flex-col justify-between gap-3 font-mono text-xs cursor-pointer group ${
-                  item.isNewAddition
-                    ? (isLight ? 'bg-[#f0fdf4] text-slate-850' : 'bg-[#0a1e16] text-gray-300')
+                  isNew
+                    ? (isLight ? 'bg-[#fffbeb] text-slate-850' : 'bg-[#261d09]/70 text-gray-200')
                     : (isLight ? 'bg-white hover:bg-slate-50 text-slate-700 hover:border-emerald-500/60' : 'bg-[#090f1e] hover:bg-[#0c162b] text-gray-400 hover:border-emerald-500/60')
                 }`}
                 style={{
-                  borderColor: item.isNewAddition ? '#10b981' : (isLight ? '#cbd5e1' : '#121c38'),
-                  boxShadow: item.isNewAddition ? '3px 3px 0px 0px rgba(16,185,129,0.3)' : 'none'
+                  borderColor: isNew ? '#f59e0b' : (isLight ? '#cbd5e1' : '#121c38'),
+                  boxShadow: isNew ? '3px 3px 0px 0px #f59e0b' : 'none'
                 }}
               >
                 <div className="space-y-2">
@@ -1869,10 +1875,10 @@ export default function Hackathons({
                     </span>
                     
                     <div className="flex items-center gap-1.5 shrink-0 flex-wrap justify-end">
-                      {item.isNewAddition && (
-                        <span className="px-1.5 py-0.5 text-[8px] border border-[#10b981] bg-[#10b981]/15 text-[#10b981] font-bold rounded-none uppercase animate-pulse flex items-center gap-1">
-                          <span className="w-1.5 h-1.5 bg-[#10b981] rounded-full inline-block animate-ping" />
-                          LATEST
+                      {isNew && (
+                        <span className="px-1.5 py-0.5 text-[8px] border border-amber-400 bg-amber-400/20 text-amber-300 font-bold rounded-none uppercase animate-pulse flex items-center gap-1">
+                          <span className="w-1.5 h-1.5 bg-amber-400 rounded-full inline-block animate-ping" />
+                          NEW
                         </span>
                       )}
                       
@@ -1956,7 +1962,8 @@ export default function Hackathons({
                   </button>
                 </div>
               </div>
-            ))}
+            );
+          })}
 
             {filteredItems.length === 0 && (
               <div className="col-span-full border-2 border-dashed border-red-500/20 bg-red-950/10 p-10 text-center text-red-400 font-mono text-xs">
