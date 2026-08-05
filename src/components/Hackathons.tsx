@@ -738,6 +738,13 @@ export default function Hackathons({
   useEffect(() => {
     setShowAllHackathons(false);
   }, [regionFilter, domainFilter, categoryFilter, statusFilter]);
+
+  // Live Sync Broadcast: Dispatch event to DASH card in App.tsx whenever eventsList updates
+  useEffect(() => {
+    if (typeof window !== 'undefined' && eventsList && eventsList.length > 0) {
+      window.dispatchEvent(new CustomEvent('mapit_hackathons_updated', { detail: eventsList }));
+    }
+  }, [eventsList]);
   
   // Real-time ticking system
   const [secondsTick, setSecondsTick] = useState<number>(0);

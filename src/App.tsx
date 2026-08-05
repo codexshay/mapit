@@ -773,39 +773,50 @@ export default function App() {
   const [isLoadingHackathons, setIsLoadingHackathons] = useState<boolean>(true);
 
   useEffect(() => {
-    let initial: Hackathon[] = [...GLOBAL_HACKATHONS, ...GLOBAL_FESTS];
-    try {
-      const stored = localStorage.getItem('pathfinder_synced_hackathons');
-      if (stored) {
-        initial = JSON.parse(stored);
+    const updateAppHackathons = (customList?: Hackathon[]) => {
+      let list: Hackathon[] = customList || [...GLOBAL_HACKATHONS, ...GLOBAL_FESTS];
+      if (!customList) {
+        try {
+          const stored = localStorage.getItem('pathfinder_synced_hackathons');
+          if (stored) {
+            const parsed = JSON.parse(stored);
+            if (Array.isArray(parsed) && parsed.length > 0) {
+              list = parsed;
+            }
+          }
+        } catch (e) {
+          console.error("Error reading hackathons from storage:", e);
+        }
       }
-    } catch (e) {
-      console.error("Error reading hackathons from storage:", e);
-    }
-    
-    // Filter initial state to remove expired/concluded/closed events immediately
-    const activeInitial = initial.filter(item => {
-      const hasDaysLeft = item.daysLeft !== undefined && item.daysLeft > 0;
-      const isNotClosed = item.scheduleStatus !== 'Closed';
-      return hasDaysLeft && isNotClosed;
-    });
-    setAppHackathons(activeInitial);
-    setIsLoadingHackathons(true);
+      
+      const activeList = list.filter(item => {
+        const daysSinceClosed = item.concludedDaysAgo !== undefined 
+          ? item.concludedDaysAgo 
+          : (item.daysLeft !== undefined && item.daysLeft <= 0 ? Math.abs(item.daysLeft) : (item.isConcluded || item.scheduleStatus === 'Closed' ? 1 : 0));
+        if (item.isConcluded || item.scheduleStatus === 'Closed' || (item.daysLeft !== undefined && item.daysLeft <= 0)) {
+          return daysSinceClosed <= 15;
+        }
+        return true;
+      });
+
+      setAppHackathons(activeList);
+      setIsLoadingHackathons(false);
+    };
+
+    updateAppHackathons();
 
     const fetchLatest = async () => {
       try {
         const res = await fetch("/api/hackathons/update-events");
         if (res.ok) {
           const data = await res.json();
-          if (data.events && Array.isArray(data.events)) {
-            // Keep only active/upcoming
-            const filtered = data.events.filter((item: any) => {
-              const hasDaysLeft = item.daysLeft !== undefined && item.daysLeft > 0;
-              const isNotClosed = item.scheduleStatus !== 'Closed';
-              return hasDaysLeft && isNotClosed;
-            });
-            setAppHackathons(filtered);
-            localStorage.setItem('pathfinder_synced_hackathons', JSON.stringify(filtered));
+          if (data.events && Array.isArray(data.events) && data.events.length > 0) {
+            updateAppHackathons(data.events);
+            try {
+              localStorage.setItem('pathfinder_synced_hackathons', JSON.stringify(data.events));
+            } catch (e) {
+              // ignore
+            }
           }
         }
       } catch (err) {
@@ -815,6 +826,29 @@ export default function App() {
       }
     };
     fetchLatest();
+
+    const handleCustomEvent = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      if (customEvent.detail && Array.isArray(customEvent.detail)) {
+        updateAppHackathons(customEvent.detail);
+      } else {
+        updateAppHackathons();
+      }
+    };
+
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'pathfinder_synced_hackathons') {
+        updateAppHackathons();
+      }
+    };
+
+    window.addEventListener('mapit_hackathons_updated', handleCustomEvent as EventListener);
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      window.removeEventListener('mapit_hackathons_updated', handleCustomEvent as EventListener);
+      window.removeEventListener('storage', handleStorageChange);
+    };
   }, []);
 
   const selectedRole = selectedRoleId ? ALL_ROLES_DATA[selectedRoleId] : null;
