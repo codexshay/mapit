@@ -1689,11 +1689,6 @@ export default function LibrariesDashboard({
   const [showAllChannels, setShowAllChannels] = useState<boolean>(false);
   const [showAllBooks, setShowAllBooks] = useState<boolean>(false);
   const [selectedPortalId, setSelectedPortalId] = useState<string | null>(null);
-  const [activePortalCategoryTab, setActivePortalCategoryTab] = useState<string>('All');
-
-  React.useEffect(() => {
-    setActivePortalCategoryTab('All');
-  }, [selectedPortalId]);
 
   const dynamicDomains = React.useMemo(() => {
     const domainCounts = new Map<string, number>();
@@ -3342,7 +3337,7 @@ export default function LibrariesDashboard({
               </div>
             </div>
 
-            {/* RIGHT SIDE CANVAS: Mind-Map Category Tabs & Skill Nodes */}
+            {/* RIGHT SIDE CANVAS: Groovy Mind-Map Skill Tree */}
             {(() => {
               const activeKey = selectedPortalId || filteredChannels[0]?.id || filteredChannels[0]?.name;
               const activePortal = filteredChannels.find(p => (p.id || p.name) === activeKey) || filteredChannels[0];
@@ -3371,15 +3366,9 @@ export default function LibrariesDashboard({
               });
 
               const domainBranches = Array.from(domainBranchesMap.entries());
-              const portalCategoriesList = ['All', ...domainBranches.map(([dom]) => dom)];
-              const currentCategoryTab = portalCategoriesList.includes(activePortalCategoryTab) ? activePortalCategoryTab : 'All';
-
-              const displayedBranches = currentCategoryTab === 'All'
-                ? domainBranches
-                : domainBranches.filter(([dom]) => dom === currentCategoryTab);
 
               return (
-                <div className={`flex-1 w-full border-2 p-5 space-y-5 min-h-[600px] max-h-[680px] overflow-y-auto custom-scrollbar relative transition-all ${
+                <div className={`flex-1 w-full border-2 p-5 space-y-6 min-h-[600px] max-h-[680px] overflow-y-auto custom-scrollbar relative transition-all ${
                   isLight ? 'bg-[#f7f5f0] border-amber-200/80' : 'bg-[#131722] border-[#222938]'
                 }`}>
                   {/* Active Portal Header & Direct Portal Visit Link */}
@@ -3401,36 +3390,10 @@ export default function LibrariesDashboard({
                     </a>
                   </div>
 
-                  {/* HORIZONTAL CATEGORY TABS ROW */}
-                  <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-2 border-b border-slate-800/80">
-                    <span className="text-[10px] font-extrabold uppercase text-amber-400 tracking-wider shrink-0 flex items-center gap-1">
-                      <Layers className="w-3.5 h-3.5 text-emerald-400" /> Categories:
-                    </span>
-                    <div className="flex items-center gap-1.5 whitespace-nowrap">
-                      {portalCategoriesList.map((catName) => {
-                        const isSelected = currentCategoryTab === catName;
-                        return (
-                          <button
-                            key={catName}
-                            type="button"
-                            onClick={() => setActivePortalCategoryTab(catName)}
-                            className={`px-3 py-1 text-[11px] font-mono font-extrabold uppercase transition-all cursor-pointer rounded-xs border ${
-                              isSelected
-                                ? (isLight ? 'bg-amber-500 text-slate-950 border-amber-400 shadow-xs' : 'bg-amber-400 text-black border-amber-300 font-black shadow-[0_0_8px_rgba(245,158,11,0.3)]')
-                                : (isLight ? 'bg-white text-slate-700 border-amber-200 hover:border-amber-400' : 'bg-[#1a202c] text-slate-300 border-[#2a3447] hover:border-amber-500/60 hover:text-amber-300')
-                            }`}
-                          >
-                            {catName}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-
                   {/* DOMAIN BRANCHES & CLEAN TOPIC NODES */}
                   <AnimatePresence mode="popLayout">
                     <div className="space-y-7 relative">
-                      {displayedBranches.map(([domainName, skillsInDomain], branchIdx) => (
+                      {domainBranches.map(([domainName, skillsInDomain], branchIdx) => (
                         <motion.div
                           key={`${activePortal.id || activePortal.name}-${domainName}`}
                           layout
@@ -3440,7 +3403,7 @@ export default function LibrariesDashboard({
                           transition={{ duration: 0.25, delay: branchIdx * 0.05 }}
                           className="space-y-3 relative pl-4 border-l-2 border-amber-500/40"
                         >
-                          {/* Branch Hub Header (No Skill Counts) */}
+                          {/* Branch Hub Header */}
                           <div className="flex items-center gap-2">
                             <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shadow-[0_0_6px_#f59e0b]" />
                             <h4 className="text-xs font-extrabold uppercase text-amber-300 tracking-wider flex items-center gap-1.5">
