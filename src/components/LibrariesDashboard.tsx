@@ -1689,6 +1689,11 @@ export default function LibrariesDashboard({
   const [showAllChannels, setShowAllChannels] = useState<boolean>(false);
   const [showAllBooks, setShowAllBooks] = useState<boolean>(false);
   const [selectedPortalId, setSelectedPortalId] = useState<string | null>(null);
+  const [activePortalCategoryTab, setActivePortalCategoryTab] = useState<string>('All');
+
+  React.useEffect(() => {
+    setActivePortalCategoryTab('All');
+  }, [selectedPortalId]);
 
   const dynamicDomains = React.useMemo(() => {
     const domainCounts = new Map<string, number>();
@@ -3337,7 +3342,7 @@ export default function LibrariesDashboard({
               </div>
             </div>
 
-            {/* RIGHT SIDE CANVAS: Groovy Mind-Map Skill Tree */}
+            {/* RIGHT SIDE CANVAS: Mind-Map Category Tabs & Skill Nodes */}
             {(() => {
               const activeKey = selectedPortalId || filteredChannels[0]?.id || filteredChannels[0]?.name;
               const activePortal = filteredChannels.find(p => (p.id || p.name) === activeKey) || filteredChannels[0];
@@ -3345,7 +3350,7 @@ export default function LibrariesDashboard({
               if (!activePortal) {
                 return (
                   <div className="w-full p-12 text-center border-2 border-dashed border-amber-500/30 bg-amber-950/10 text-amber-300">
-                    Select a Study Portal from the left list to expand its skill tree.
+                    Select a Study Portal from the left list to expand its topics.
                   </div>
                 );
               }
@@ -3366,9 +3371,15 @@ export default function LibrariesDashboard({
               });
 
               const domainBranches = Array.from(domainBranchesMap.entries());
+              const portalCategoriesList = ['All', ...domainBranches.map(([dom]) => dom)];
+              const currentCategoryTab = portalCategoriesList.includes(activePortalCategoryTab) ? activePortalCategoryTab : 'All';
+
+              const displayedBranches = currentCategoryTab === 'All'
+                ? domainBranches
+                : domainBranches.filter(([dom]) => dom === currentCategoryTab);
 
               return (
-                <div className={`flex-1 w-full border-2 p-5 space-y-6 min-h-[600px] max-h-[680px] overflow-y-auto custom-scrollbar relative transition-all ${
+                <div className={`flex-1 w-full border-2 p-5 space-y-5 min-h-[600px] max-h-[680px] overflow-y-auto custom-scrollbar relative transition-all ${
                   isLight ? 'bg-[#f7f5f0] border-amber-200/80' : 'bg-[#131722] border-[#222938]'
                 }`}>
                   {/* Active Portal Header & Direct Portal Visit Link */}
@@ -3390,10 +3401,36 @@ export default function LibrariesDashboard({
                     </a>
                   </div>
 
-                  {/* DOMAIN BRANCHES & GROOVY SKILL NODES */}
+                  {/* HORIZONTAL CATEGORY TABS ROW */}
+                  <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-2 border-b border-slate-800/80">
+                    <span className="text-[10px] font-extrabold uppercase text-amber-400 tracking-wider shrink-0 flex items-center gap-1">
+                      <Layers className="w-3.5 h-3.5 text-emerald-400" /> Categories:
+                    </span>
+                    <div className="flex items-center gap-1.5 whitespace-nowrap">
+                      {portalCategoriesList.map((catName) => {
+                        const isSelected = currentCategoryTab === catName;
+                        return (
+                          <button
+                            key={catName}
+                            type="button"
+                            onClick={() => setActivePortalCategoryTab(catName)}
+                            className={`px-3 py-1 text-[11px] font-mono font-extrabold uppercase transition-all cursor-pointer rounded-xs border ${
+                              isSelected
+                                ? (isLight ? 'bg-amber-500 text-slate-950 border-amber-400 shadow-xs' : 'bg-amber-400 text-black border-amber-300 font-black shadow-[0_0_8px_rgba(245,158,11,0.3)]')
+                                : (isLight ? 'bg-white text-slate-700 border-amber-200 hover:border-amber-400' : 'bg-[#1a202c] text-slate-300 border-[#2a3447] hover:border-amber-500/60 hover:text-amber-300')
+                            }`}
+                          >
+                            {catName}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* DOMAIN BRANCHES & CLEAN TOPIC NODES */}
                   <AnimatePresence mode="popLayout">
-                    <div className="space-y-8 relative">
-                      {domainBranches.map(([domainName, skillsInDomain], branchIdx) => (
+                    <div className="space-y-7 relative">
+                      {displayedBranches.map(([domainName, skillsInDomain], branchIdx) => (
                         <motion.div
                           key={`${activePortal.id || activePortal.name}-${domainName}`}
                           layout
@@ -3403,22 +3440,19 @@ export default function LibrariesDashboard({
                           transition={{ duration: 0.25, delay: branchIdx * 0.05 }}
                           className="space-y-3 relative pl-4 border-l-2 border-amber-500/40"
                         >
-                          {/* Branch Hub Header */}
+                          {/* Branch Hub Header (No Skill Counts) */}
                           <div className="flex items-center gap-2">
                             <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shadow-[0_0_6px_#f59e0b]" />
                             <h4 className="text-xs font-extrabold uppercase text-amber-300 tracking-wider flex items-center gap-1.5">
-                              <Layers className="w-3.5 h-3.5 text-emerald-400" />
                               {domainName}
-                              <span className="bg-black/60 border border-slate-800 text-gray-400 text-[9px] px-1.5 py-0.2 rounded-xs font-mono ml-1">
-                                {skillsInDomain.length} Skills
-                              </span>
                             </h4>
                           </div>
 
-                          {/* Skills Nodes Grid under this Branch */}
+                          {/* Skills / Topics Nodes Grid */}
                           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-1">
                             {skillsInDomain.map((sk: any, sIdx: number) => {
                               const skillKey = sk.id || sk.skillOrTool || sk.name || `sk-${sIdx}`;
+                              const mainTitle = sk.skillOrTool || sk.name;
                               
                               return (
                                 <motion.div
@@ -3436,37 +3470,30 @@ export default function LibrariesDashboard({
                                   }`}
                                 >
                                   <div className="space-y-2">
-                                    <div className="flex items-center justify-between gap-1">
-                                      <span className={`text-[8.5px] font-bold uppercase px-1.5 py-0.5 rounded-xs border ${
-                                        sk.type === 'Tool / Platform'
-                                          ? 'bg-white text-black border-slate-300 font-extrabold'
-                                          : 'bg-emerald-950/60 text-emerald-300 border-emerald-800/60'
-                                      }`}>
-                                        {sk.type || 'Skill'}
-                                      </span>
+                                    <div className="flex items-start justify-between gap-2">
+                                      <h5 className="text-xs font-extrabold text-amber-50 group-hover:text-amber-300 transition-colors leading-snug">
+                                        {mainTitle}
+                                      </h5>
+
                                       {toggleBookmark && isBookmarked && (
                                         <button
                                           onClick={() => toggleBookmark({
-                                            id: sk.id || sk.skillOrTool || sk.name,
-                                            name: sk.skillOrTool || sk.name,
+                                            id: sk.id || mainTitle,
+                                            name: mainTitle,
                                             type: 'skill',
-                                            subtext: `${sk.domain || 'Skill'} • ${sk.topic || 'Tech'}`
+                                            subtext: `${sk.domain || ''}`
                                           })}
                                           className="p-0.5 text-gray-400 hover:text-yellow-400 transition cursor-pointer shrink-0"
-                                          title={isBookmarked(sk.id || sk.skillOrTool || sk.name, 'skill') ? 'Remove bookmark' : 'Bookmark skill'}
+                                          title={isBookmarked(sk.id || mainTitle, 'skill') ? 'Remove bookmark' : 'Bookmark topic'}
                                         >
-                                          <CustomBookmarkIcon className={`w-3.5 h-3.5 ${isBookmarked(sk.id || sk.skillOrTool || sk.name, 'skill') ? 'text-yellow-400 fill-yellow-400' : ''}`} />
+                                          <CustomBookmarkIcon className={`w-3.5 h-3.5 ${isBookmarked(sk.id || mainTitle, 'skill') ? 'text-yellow-400 fill-yellow-400' : ''}`} />
                                         </button>
                                       )}
                                     </div>
 
-                                    <h5 className="text-xs font-extrabold text-amber-50 group-hover:text-amber-300 transition-colors leading-snug">
-                                      {sk.skillOrTool || sk.name}
-                                    </h5>
-
-                                    {sk.topic && (
-                                      <span className="text-[9.5px] font-mono text-amber-400/90 block">
-                                        Topic: {sk.topic}
+                                    {sk.topic && sk.topic !== mainTitle && (
+                                      <span className="text-[10px] font-mono text-amber-400/90 block">
+                                        {sk.topic}
                                       </span>
                                     )}
                                   </div>
@@ -3474,7 +3501,7 @@ export default function LibrariesDashboard({
                                   {/* Action Links */}
                                   <div className="mt-3 pt-2.5 border-t border-slate-800/80 flex items-center justify-between gap-2">
                                     <a
-                                      href={getPortalCourseDirectUrl(activePortal.name, sk.skillOrTool || sk.name, sk.url || sk.officialUrl)}
+                                      href={getPortalCourseDirectUrl(activePortal.name, mainTitle, sk.url || sk.officialUrl)}
                                       target="_blank"
                                       rel="noopener noreferrer"
                                       className="text-[9.5px] text-amber-400 hover:text-white font-bold flex items-center gap-1 transition uppercase"
@@ -3483,7 +3510,7 @@ export default function LibrariesDashboard({
                                     </a>
 
                                     <a
-                                      href={`https://www.youtube.com/results?search_query=${encodeURIComponent((sk.skillOrTool || sk.name) + ' tutorial')}`}
+                                      href={`https://www.youtube.com/results?search_query=${encodeURIComponent(mainTitle + ' tutorial')}`}
                                       target="_blank"
                                       rel="noopener noreferrer"
                                       className="text-[9.5px] text-red-400 hover:text-white font-bold flex items-center gap-1 transition uppercase"
