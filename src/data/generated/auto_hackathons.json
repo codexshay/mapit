@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "devpost-revenuecat-shipaton-2026",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "devpost-build-with-datahub-the-agent-hackathon",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "devpost-arm-create-ai-optimization-challenge",
@@ -139,7 +139,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -163,7 +163,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "devpost-africa-deep-tech-challenge-2026",
@@ -176,7 +176,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 20,
+    "daysLeft": 19,
     "url": "https://adtc-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -186,7 +186,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "devpost-youcam-api-skin-ai-apparel-vto-hackathon",
@@ -210,7 +210,314 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
+  },
+  {
+    "id": "unstop-code-rush-3-0",
+    "title": "Code Rush 3.0",
+    "organizer": "Krishna Institute of Engineering and Technology (KIET), Ghaziabad",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/code-rush-30-krishna-institute-of-engineering-and-technology-kiet-ghaziabad-1731472",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Code Rush 3.0 organized by Krishna Institute of Engineering and Technology (KIET), Ghaziabad. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-06"
+  },
+  {
+    "id": "unstop-ctf-2026-brand-new-sunday",
+    "title": "CTF 2026 - Brand New Sunday",
+    "organizer": "hackosquadCTF",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/ctf-2026-brand-new-sunday-hackosquadctf-1731414",
+    "type": "Online",
+    "location": "online",
+    "description": "CTF 2026 - Brand New Sunday organized by hackosquadCTF. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-06"
+  },
+  {
+    "id": "unstop-ai-with-initiative-ai-makes-the-first-move-hackathon",
+    "title": "AI with Initiative: AI Makes the First Move - Hackathon",
+    "organizer": "Symbiosis Institute of Digital and Telecom Management (SIDTM)",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3838807,
+        "rank": "Winners",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1731061,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Certificates of Merit, along with a trophy will be provided to the winners.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3838808,
+        "rank": "1st Runners Up",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1731061,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Certificates of Merit, along with a trophy will be provided to the 1st Runners Up.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3838809,
+        "rank": "2nd Runners Up",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1731061,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Certificates of Merit, along with a trophy will be provided to the 2nd Runners up.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/ai-with-initiative-ai-makes-the-first-move-hackathon-symbiosis-institute-of-digital-and-telecom-management-si-1731061",
+    "type": "In-person",
+    "location": "offline",
+    "description": "AI with Initiative: AI Makes the First Move - Hackathon organized by Symbiosis Institute of Digital and Telecom Management (SIDTM). Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-06"
+  },
+  {
+    "id": "unstop-pathway-hackathon",
+    "title": "Pathway Hackathon",
+    "organizer": "E-Cell, JSS Noida",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3838964,
+        "rank": "Winner",
+        "cash": 15000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1731395,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3838965,
+        "rank": "1 Runner-Up",
+        "cash": 10000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1731395,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3838966,
+        "rank": "2nd Runner-Up",
+        "cash": 5000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1731395,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3838967,
+        "rank": "Top 10 Teams",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1731395,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/pathway-hackathon-e-cell-jss-noida-1731395",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Pathway Hackathon organized by E-Cell, JSS Noida. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-06"
+  },
+  {
+    "id": "unstop-resolve-26-national-level-48-hour-game-jam",
+    "title": "Resolve'26 – National Level 48-Hour Game Jam",
+    "organizer": "SRM Insitute of Science and Technology",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/resolve26-national-level-48-hour-game-jam-srm-insitute-of-science-and-technology-1731440",
+    "type": "Online",
+    "location": "online",
+    "description": "Resolve'26 – National Level 48-Hour Game Jam organized by SRM Insitute of Science and Technology. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-06"
+  },
+  {
+    "id": "unstop-edge-nova-26",
+    "title": "Edge Nova'26",
+    "organizer": "SRM Institute of Science and Technology (SRMIST), Kattankulathur, Chennai",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3838740,
+        "rank": "First Prize",
+        "cash": 20000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1730853,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Cash Price Includes ACM Membership",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3838741,
+        "rank": "Second Prize",
+        "cash": 12000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1730853,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Cash Price Includes ACM Membership",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3838742,
+        "rank": "Third Prize",
+        "cash": 8000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1730853,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Cash Price Includes ACM Membership",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/edge-nova26-srm-institute-of-science-and-technology-kattankulathur-chennai-1730853",
+    "type": "Online",
+    "location": "online",
+    "description": "Edge Nova'26 organized by SRM Institute of Science and Technology (SRMIST), Kattankulathur, Chennai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "unstop-vcet-hackathon-2026",
@@ -309,7 +616,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "unstop-velohack-2k26-24-hour-international-hackathon",
@@ -443,7 +750,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "unstop-beyond-the-mood-board-the-alendei-design-hackathon",
@@ -527,7 +834,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "unstop-supernova-hackathon",
@@ -601,335 +908,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
-  },
-  {
-    "id": "unstop-build-bank",
-    "title": "Build Bank",
-    "organizer": "Indira Gandhi Delhi Technical University for Women (IGDTUW), Delhi",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3837665,
-        "rank": "1",
-        "cash": 15000,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1728282,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "INR 15k for the winning team",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3837666,
-        "rank": "2",
-        "cash": 10000,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1728282,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "INR 10k for the 2nd team",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3837667,
-        "rank": "3",
-        "cash": 5000,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1728282,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "INR 5k for 3rd prize",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/build-bank-igdtuw-delhi-1728282",
-    "type": "In-person",
-    "location": "offline",
-    "description": "Build Bank organized by Indira Gandhi Delhi Technical University for Women (IGDTUW), Delhi. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-05"
-  },
-  {
-    "id": "unstop-binary-hacks-4-0",
-    "title": "Binary Hacks 4.0",
-    "organizer": "Raj Kumar Goel Institute of Technology (RKGIT), Ghaziabad",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "Undergraduate",
-      "Engineering Students"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/binary-hacks-40-raj-kumar-goel-institute-of-technology-rkgit-ghaziabad-1730767",
-    "type": "In-person",
-    "location": "offline",
-    "description": "Binary Hacks 4.0 organized by Raj Kumar Goel Institute of Technology (RKGIT), Ghaziabad. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-05"
-  },
-  {
-    "id": "unstop-hack-fusion-2026",
-    "title": "Hack Fusion 2026",
-    "organizer": "Chennai Institute of Technology",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3838613,
-        "rank": "Winner",
-        "cash": 50000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1730112,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3838614,
-        "rank": "Runner-up",
-        "cash": 30000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1730112,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3838615,
-        "rank": "Second Runner-up",
-        "cash": 20000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1730112,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Engineering Students"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/hack-fusion-2026-chennai-institute-of-technology-1730112",
-    "type": "In-person",
-    "location": "offline",
-    "description": "Hack Fusion 2026 organized by Chennai Institute of Technology. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-05"
-  },
-  {
-    "id": "unstop-orvix-hackathon",
-    "title": "Orvix Hackathon",
-    "organizer": "NIMBLUX",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3838654,
-        "rank": "Top 20 Performers",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1730437,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "FREE .xyz Domain for each of the Top 20 performers",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/orvix-hackathon-nimblux-1730437",
-    "type": "Online",
-    "location": "online",
-    "description": "Orvix Hackathon organized by NIMBLUX. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-05"
-  },
-  {
-    "id": "unstop-the-chandigarh-police-hackathon",
-    "title": "The Chandigarh Police Hackathon",
-    "organizer": "University Institute of Engineering and Technology (UIET), Chandigarh",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3838454,
-        "rank": "1st Rank",
-        "cash": 100000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1730320,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3838455,
-        "rank": "2nd rank",
-        "cash": 50000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1730320,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3838456,
-        "rank": "3rd Rank",
-        "cash": 25000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1730320,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/the-chandigarh-police-hackathon-university-institute-of-engineering-and-technology-uiet-chandigarh-1730320",
-    "type": "In-person",
-    "location": "offline",
-    "description": "The Chandigarh Police Hackathon organized by University Institute of Engineering and Technology (UIET), Chandigarh. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-05"
-  },
-  {
-    "id": "unstop-aethos-day-zero",
-    "title": "AETHOS - Day Zero",
-    "organizer": "Together We Solve",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3838806,
-        "rank": "Prizes to be announced soon 🤫",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1730263,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "🤫",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/aethos-day-zero-together-we-solve-1730263",
-    "type": "Online",
-    "location": "online",
-    "description": "AETHOS - Day Zero organized by Together We Solve. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "hackerrank-projecteuler",
@@ -953,7 +932,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "hackerrank-hackerrank-orchestrate-august-26",
@@ -977,7 +956,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "hackerrank-hackerrank-orchestrate-june-26",
@@ -1001,7 +980,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "hackerrank-hackerrank-orchestrate-may-26",
@@ -1025,7 +1004,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -1049,7 +1028,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -1073,7 +1052,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -1097,7 +1076,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -1121,7 +1100,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1145,7 +1124,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1169,7 +1148,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-asia-pacific",
@@ -1193,6 +1172,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-05"
+    "fetchedAt": "2026-08-06"
   }
 ]
