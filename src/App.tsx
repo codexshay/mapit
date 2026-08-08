@@ -648,8 +648,14 @@ export default function App() {
     };
   }, []);
 
-  const [searchInputVal, setSearchInputVal] = useState<string>('');
-  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [searchInputVal, setSearchInputVal] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('query') || params.get('q') || params.get('search') || params.get('domain') || params.get('role') || '';
+    }
+    return '';
+  });
+  const [searchQuery, setSearchQuery] = useState<string>(searchInputVal);
 
   // 300ms Debounced sync from searchInputVal to searchQuery to ensure fast 60fps typing without keypress dropping
   useEffect(() => {

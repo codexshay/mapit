@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { IT_DOMAINS, ALL_ROLES_DATA, Domain, RoleDetail } from '../data/rolesData';
+import { IT_DOMAINS, ALL_ROLES_DATA, Domain, RoleDetail, checkDomainMatchesSearchQuery, checkRoleMatchesSearchQuery } from '../data/rolesData';
 import { Search, Filter, HelpCircle, Network, Flame, Sparkles, BookOpen, Layers, ChevronDown, ChevronUp, ArrowRight, Scale, ExternalLink } from 'lucide-react';
 import CustomBookmarkIcon from './CustomBookmarkIcon';
 import { motion, AnimatePresence } from 'motion/react';
@@ -127,6 +127,32 @@ export default function CareerMap({
     setShowAllRoles(false);
   }, [activeDomainId]);
 
+  // 1. Initialize search query from URL search parameters if available (?query=..., ?q=..., ?search=..., ?domain=..., ?role=...)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlQuery = params.get('query') || params.get('q') || params.get('search') || params.get('domain') || params.get('role') || '';
+      if (urlQuery && (!searchQuery || searchQuery.trim() === '')) {
+        setSearchQuery(urlQuery);
+      }
+    }
+  }, []);
+
+  // 2. Embed active search query into browser URL search params for seamless sharing & bookmarking
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      if (searchQuery && searchQuery.trim()) {
+        url.searchParams.set('query', searchQuery.trim());
+      } else {
+        url.searchParams.delete('query');
+        url.searchParams.delete('q');
+        url.searchParams.delete('search');
+      }
+      window.history.replaceState({}, '', url.toString());
+    }
+  }, [searchQuery]);
+
   const toggleDomain = (domainId: string) => {
     setExpandedDomains(prev => ({
       ...prev,
@@ -143,19 +169,22 @@ export default function CareerMap({
     return false;
   };
 
-  // Filter computation for roles in each domain
+  // Filter computation for roles in each domain using comprehensive technical aliases and aspects
   const getFilteredRolesForDomain = (domain: Domain) => {
+    const qLower = searchQuery.toLowerCase().trim();
+    const domainMatchesDirectly = qLower !== '' && (
+      domain.name.toLowerCase().includes(qLower) ||
+      domain.description.toLowerCase().includes(qLower) ||
+      domain.id.toLowerCase().includes(qLower)
+    );
+
     const matched = domain.roles
       .map(id => ALL_ROLES_DATA[id])
       .filter(role => {
         if (!role) return false;
         
-        // Search match
-        const matchesSearch = searchQuery.trim() === '' || 
-          role.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          role.mustHaves.tech.some(s => s.toLowerCase().includes(searchQuery.toLowerCase())) ||
-          role.toolsToLearn.some(t => t.toLowerCase().includes(searchQuery.toLowerCase())) ||
-          role.recommendedCertifications.some(c => c.name.toLowerCase().includes(searchQuery.toLowerCase()));
+        // Search match: true if domain directly matches or role matches via title, ID, aliases, tech aspects, tools, keywords
+        const matchesSearch = qLower === '' || domainMatchesDirectly || checkRoleMatchesSearchQuery(role, qLower);
 
         if (!matchesSearch) return false;
 
@@ -181,7 +210,7 @@ export default function CareerMap({
     if (activeFilters.sortBySalary === 'high-to-low') {
       matched.sort((a, b) => getNumericSalary(b, activeFilters.marketRegion) - getNumericSalary(a, activeFilters.marketRegion));
     } else if (activeFilters.sortBySalary === 'low-to-high') {
-      matched.sort((a, b) => getNumericSalary(a, activeFilters.marketRegion) - getNumericSalary(b, activeFilters.marketRegion));
+      matched.sort((a, b) => getNumericSalary(a, activeFilters.marketRegion) - getNumericSalary(a, activeFilters.marketRegion));
     }
 
     return matched;

@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Search, 
@@ -18,6 +18,7 @@ import {
   RotateCcw
 } from 'lucide-react';
 import { interviewQDatabase, InterviewQItem } from '../data/interviewQDatabase';
+import { TECHNICAL_ROLE_ALIASES } from '../data/rolesData';
 
 export interface InterviewQProps {
   bookmarks?: Array<{ id: string; name: string; type: string; subtext?: string; url?: string }>;
@@ -555,7 +556,30 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
   theme = 'dark',
   isLight = false
 }) => {
-  const [searchQuery, setSearchQuery] = useState('');
+  // 1. Initialize search query from URL parameters if available (?query=..., ?q=..., ?search=..., ?domain=..., ?role=..., ?skill=..., ?tool=...)
+  const [searchQuery, setSearchQuery] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('query') || params.get('q') || params.get('search') || params.get('domain') || params.get('role') || params.get('skill') || params.get('tool') || '';
+    }
+    return '';
+  });
+
+  // 2. Sync searchQuery into browser URL parameters dynamically for shareable search links
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      if (searchQuery && searchQuery.trim()) {
+        url.searchParams.set('query', searchQuery.trim());
+      } else {
+        url.searchParams.delete('query');
+        url.searchParams.delete('q');
+        url.searchParams.delete('search');
+      }
+      window.history.replaceState({}, '', url.toString());
+    }
+  }, [searchQuery]);
+
   const [selectedRole, setSelectedRole] = useState<string>('all');
   const [selectedDomains, setSelectedDomains] = useState<string[]>([]);
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('all');
@@ -640,16 +664,30 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
     setCurrentPage(1);
   };
 
-  // Filtered Questions
+  // Multi-facet Filtered Questions Engine (Matches prompt, preferred answers, rubric checkpoints, domain names, role aliases, tools, skills, reference titles)
   const filteredQuestions = useMemo(() => {
     return interviewQDatabase.filter(item => {
       const q = searchQuery.toLowerCase().trim();
-      const matchesSearch = q === '' || 
+      
+      // 1. Direct prompt, answer, id, domain, role_slug, reference title match
+      const directMatch = q === '' || 
         item.prompt.toLowerCase().includes(q) ||
         item.preferred_answer.toLowerCase().includes(q) ||
         item.id.toLowerCase().includes(q) ||
-        item.domain.toLowerCase().includes(q);
-      
+        item.domain.toLowerCase().includes(q) ||
+        item.role_slug.toLowerCase().includes(q) ||
+        (item.resolution_title && item.resolution_title.toLowerCase().includes(q));
+
+      // 2. Evaluator checkpoints / rubric match
+      const evalMatch = q !== '' && Array.isArray(item.evaluation_points) && 
+        item.evaluation_points.some(pt => pt.toLowerCase().includes(q));
+
+      // 3. Role aliases, acronyms & alternate names match (e.g. k8s, pentester, sdet, soc, mlops, prompt engineer, fullstack, dba, sysadmin, devops, sre)
+      const roleAliases = TECHNICAL_ROLE_ALIASES[item.role_slug] || [];
+      const aliasMatch = q !== '' && roleAliases.some(alias => alias.toLowerCase().includes(q) || q.includes(alias.toLowerCase()));
+
+      const matchesSearch = directMatch || evalMatch || aliasMatch;
+
       const matchesRole = isRoleMatch(item.role_slug, selectedRole);
       const matchesDomain = selectedDomains.length === 0 || selectedDomains.includes(item.domain);
       const matchesDifficulty = selectedDifficulty === 'all' || item.difficulty === selectedDifficulty;
@@ -725,7 +763,7 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
             <Search className={`absolute left-3.5 top-3 w-4 h-4 ${isLight ? 'text-slate-400' : 'text-zinc-400'}`} />
             <input
               type="text"
-              placeholder="Search questions, topics, keywords..."
+              placeholder="Search questions, skills, tools, roles, aliases (e.g. 'k8s', 'Pentester', 'SDET', 'Docker')..."
               value={searchQuery}
               onChange={(e) => { setSearchQuery(e.target.value); setCurrentPage(1); }}
               className={`w-full border rounded-none pl-10 pr-4 py-2.5 text-xs font-mono focus:outline-none transition-all ${
@@ -996,7 +1034,52 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
             </div>
           </div>
 
-          {/* Question Cards List */}
+          {/* Top Pagination Bar (Right above question list) */}
+          {totalPages > 1 && filteredQuestions.length > 0 && (
+            <div className={`border-2 p-3 sm:p-4 flex items-center justify-between text-xs font-mono mb-4 transition-all ${
+              isLight ? 'bg-slate-100 border-slate-300 text-slate-900' : 'bg-zinc-950 border-zinc-800 text-white'
+            }`}>
+              <button
+                disabled={currentPage === 1}
+                onClick={() => {
+                  setCurrentPage(p => Math.max(1, p - 1));
+                  const el = document.getElementById('interviewq-questions-scroll-container');
+                  if (el) el.scrollTop = 0;
+                }}
+                className={`px-3.5 py-1.5 border font-bold uppercase transition cursor-pointer text-xs flex items-center gap-1.5 disabled:opacity-30 disabled:pointer-events-none ${
+                  isLight ? 'bg-white border-slate-400 text-slate-900 hover:bg-slate-900 hover:text-white' : 'bg-black border-zinc-700 text-white hover:bg-white hover:text-black'
+                }`}
+                title="Previous Page"
+              >
+                <span>◀</span>
+                <span className="hidden sm:inline">Previous Page</span>
+                <span className="inline sm:hidden">Prev</span>
+              </button>
+
+              <span className="text-zinc-400 text-xs font-mono font-semibold">
+                Page <span className={`font-bold ${isLight ? 'text-slate-900' : 'text-white'}`}>{currentPage}</span> of {totalPages}
+              </span>
+
+              <button
+                disabled={currentPage >= totalPages}
+                onClick={() => {
+                  setCurrentPage(p => p + 1);
+                  const el = document.getElementById('interviewq-questions-scroll-container');
+                  if (el) el.scrollTop = 0;
+                }}
+                className={`px-3.5 py-1.5 border font-bold uppercase transition cursor-pointer text-xs flex items-center gap-1.5 disabled:opacity-30 disabled:pointer-events-none ${
+                  isLight ? 'bg-white border-slate-400 text-slate-900 hover:bg-slate-900 hover:text-white' : 'bg-black border-zinc-700 text-white hover:bg-white hover:text-black'
+                }`}
+                title="Next Page"
+              >
+                <span className="hidden sm:inline">Next Page</span>
+                <span className="inline sm:hidden">Next</span>
+                <span>▶</span>
+              </button>
+            </div>
+          )}
+
+          {/* Question Cards List with Dedicated Scroll Bar */}
           {filteredQuestions.length === 0 ? (
             <div className="text-center py-16 bg-zinc-950 border-2 border-amber-500/40 p-8 shadow-[4px_4px_0px_0px_rgba(245,158,11,0.2)]">
               <Sparkles className="w-12 h-12 text-amber-400 mx-auto mb-4 animate-pulse" />
@@ -1024,7 +1107,16 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
               </button>
             </div>
           ) : (
-            <div className="space-y-4">
+            <div 
+              id="interviewq-questions-scroll-container"
+              className={`space-y-4 max-h-[750px] overflow-y-auto pr-2 border-y sm:border-2 p-1.5 sm:p-3 transition-all ${
+                isLight ? 'bg-slate-50/50 border-slate-200' : 'bg-zinc-950/40 border-zinc-900'
+              }`}
+              style={{
+                scrollbarWidth: 'thin',
+                scrollbarColor: isLight ? '#cbd5e1 #f1f5f9' : '#3f3f46 #09090b'
+              }}
+            >
               {paginatedQuestions.map((item) => {
                 const isExpanded = !!expandedIds[item.id];
                 const bookmarked = checkIsBookmarked(item.id);
@@ -1170,25 +1262,41 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
             </div>
           )}
 
-          {/* Pagination Bar */}
+          {/* Bottom Pagination Bar */}
           {totalPages > 1 && (
-            <div className="border-2 border-zinc-800 bg-zinc-950 p-4 flex items-center justify-between text-xs font-mono">
+            <div className={`border-2 p-4 flex items-center justify-between text-xs font-mono mt-4 ${
+              isLight ? 'bg-slate-100 border-slate-300 text-slate-900' : 'bg-zinc-950 border-zinc-800 text-white'
+            }`}>
               <button
                 disabled={currentPage === 1}
-                onClick={() => { setCurrentPage(p => Math.max(1, p - 1)); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className="px-4 py-2 border border-zinc-700 bg-black text-white disabled:opacity-30 disabled:pointer-events-none hover:bg-white hover:text-black font-bold uppercase transition cursor-pointer"
+                onClick={() => {
+                  setCurrentPage(p => Math.max(1, p - 1));
+                  const el = document.getElementById('interviewq-questions-scroll-container');
+                  if (el) el.scrollTop = 0;
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className={`px-4 py-2 border font-bold uppercase transition cursor-pointer disabled:opacity-30 disabled:pointer-events-none ${
+                  isLight ? 'bg-white border-slate-400 text-slate-900 hover:bg-slate-900 hover:text-white' : 'bg-black border-zinc-700 text-white hover:bg-white hover:text-black'
+                }`}
               >
                 ◀ Previous Page
               </button>
 
               <span className="text-zinc-400">
-                Page <span className="text-white font-bold">{currentPage}</span> of {totalPages}
+                Page <span className={`font-bold ${isLight ? 'text-slate-900' : 'text-white'}`}>{currentPage}</span> of {totalPages}
               </span>
 
               <button
                 disabled={currentPage >= totalPages}
-                onClick={() => { setCurrentPage(p => p + 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className="px-4 py-2 border border-zinc-700 bg-black text-white disabled:opacity-30 disabled:pointer-events-none hover:bg-white hover:text-black font-bold uppercase transition cursor-pointer"
+                onClick={() => {
+                  setCurrentPage(p => p + 1);
+                  const el = document.getElementById('interviewq-questions-scroll-container');
+                  if (el) el.scrollTop = 0;
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className={`px-4 py-2 border font-bold uppercase transition cursor-pointer disabled:opacity-30 disabled:pointer-events-none ${
+                  isLight ? 'bg-white border-slate-400 text-slate-900 hover:bg-slate-900 hover:text-white' : 'bg-black border-zinc-700 text-white hover:bg-white hover:text-black'
+                }`}
               >
                 Next Page ▶
               </button>

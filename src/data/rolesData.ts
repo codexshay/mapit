@@ -62,6 +62,130 @@ export interface Domain {
   roles: string[]; // Role IDs
 }
 
+export const TECHNICAL_ROLE_ALIASES: Record<string, string[]> = {
+  // Kubernetes & Infrastructure
+  "kubernetes-operator-specialist": ["k8s", "kubernetes", "kube", "container admin", "k8s operator", "helm", "kubectl", "docker", "cluster admin"],
+  "container-security-specialist": ["k8s security", "container security", "trivy", "falco", "cluster security", "image scanning"],
+
+  // AI, ML & Data Science
+  "machine-learning-engineer": ["ml", "ml engineer", "ai engineer", "ai/ml", "deep learning", "model deployment", "pytorch", "tensorflow", "neural networks"],
+  "prompt-engineer": ["prompt engineer", "llm", "genai", "generative ai", "chatgpt", "gpt", "rag", "langchain", "prompting", "ai trainer"],
+  "generative-ai-engineer": ["genai", "generative ai", "llm developer", "ai engineer", "transformers", "fine-tuning", "ollama"],
+  "nlp-developer": ["nlp", "natural language processing", "text analytics", "llm", "spacy", "bert"],
+  "mlops-automation-specialist": ["mlops", "ml devops", "model ops", "ml pipeline", "kubeflow", "mlflow"],
+  "data-scientist": ["data science", "statistician", "predictive analytics", "machine learning scientist", "r", "python data"],
+  "data-analyst": ["analytics", "data analysis", "sql analyst", "data reporting", "excel analyst"],
+  "business-intelligence-analyst": ["bi", "bi analyst", "power bi", "tableau", "dashboards", "business intelligence"],
+  "big-data-developer": ["big data", "hadoop", "spark", "pyspark", "data lake", "hive"],
+  "data-lakehouse-engineer": ["lakehouse", "snowflake", "databricks", "delta lake", "dbt"],
+
+  // DevOps & SRE
+  "devops-engineer": ["devops", "cicd", "ci/cd", "gitops", "jenkins", "gitlab ci", "github actions", "pipeline engineer"],
+  "site-reliability-engineer": ["sre", "site reliability", "observability", "prometheus", "grafana", "slo", "sla", "error budget"],
+  "site-reliability-engineer-sre": ["sre", "site reliability engineer", "observability", "prometheus", "grafana", "slo", "sla"],
+  "platform-engineer": ["platform engineering", "developer portal", "backstage", "infrastructure automation", "internal developer platform", "idp"],
+  "cloud-systems-engineer": ["cloud engineer", "aws engineer", "azure engineer", "gcp engineer", "terraform", "ansible", "iac"],
+  "cloud-solutions-architect": ["cloud architect", "aws architect", "azure architect", "gcp architect", "solutions architect"],
+  "infrastructure-lead-engineer": ["infra lead", "infrastructure lead", "iac", "terraform", "ansible"],
+
+  // Cybersecurity & SOC & Pentesting
+  "soc-analyst-level-1-trainee": ["soc", "soc analyst", "l1 analyst", "siem", "splunk", "sentinel", "threat triage"],
+  "soc-analyst-level-2": ["soc analyst", "l2 analyst", "threat detection", "incident triage", "soc"],
+  "soc-analyst-level-3-specialist": ["soc lead", "l3 analyst", "threat hunter", "forensics", "soc"],
+  "penetration-tester": ["pentester", "pen testing", "penetration testing", "ethical hacker", "ethical hacking", "red team", "burp suite", "metasploit", "offensive security"],
+  "cybersecurity-analyst": ["cyber analyst", "infosec", "security analyst", "cyber", "sec", "threat intelligence"],
+  "incident-response-engineer": ["dfir", "digital forensics", "incident response", "blue team", "malware analysis"],
+  "grc-analyst": ["grc", "governance risk compliance", "iso 27001", "soc 2", "compliance auditor", "risk analyst"],
+  "cloud-security-engineer": ["devsecops", "secops", "cloud sec", "iam security", "zero trust"],
+
+  // QA & Testing
+  "software-dev-engineer-in-test-sdet": ["sdet", "qa automation", "automation engineer", "selenium", "cypress", "playwright", "test automation"],
+  "qa-analyst": ["qa", "qa engineer", "quality assurance", "software tester", "manual testing", "test cases"],
+  "qa-automation-tester": ["qa automation", "automation tester", "test scriptwriter", "sdet"],
+  "performance-testing-specialist": ["performance tester", "jmeter", "loadrunner", "stress testing", "load testing"],
+
+  // Software Development
+  "full-stack-developer": ["fullstack", "full-stack", "mern", "mean", "software engineer", "sde", "swe", "web developer"],
+  "frontend-developer": ["frontend", "front-end", "react", "vue", "angular", "nextjs", "web developer", "ui developer", "html/css"],
+  "backend-developer": ["backend", "back-end", "node", "nodejs", "express", "java spring", "django", "python backend", "golang", "go", "api developer"],
+  "software-developer": ["sde", "swe", "software engineer", "programmer", "coder"],
+  "android-developer": ["android", "mobile developer", "kotlin", "java android", "app developer"],
+
+  // System Administration & IT Support
+  "service-desk-analyst-trainee": ["service desk", "helpdesk", "it support", "tier 1 support", "ticketing", "servicenow"],
+  "desktop-support-technician": ["desktop support", "euc", "end user computing", "sysadmin", "hardware repair"],
+  "system-administrator": ["sysadmin", "system admin", "linux admin", "windows admin", "active directory", "sys admin"],
+  "linux-system-administrator": ["linux admin", "sysadmin", "rhel", "ubuntu server", "bash scripting"],
+  "windows-system-administrator": ["windows admin", "active directory", "group policy", "powershell"],
+
+  // Database Administration
+  "database-administrator-dba": ["dba", "db admin", "database administrator", "sql dba", "postgres dba", "oracle dba", "mysql dba"],
+  "postgresql-administrator": ["postgres dba", "postgresql", "postgres admin", "dba"],
+  "mysql-dba": ["mysql", "mysql administrator", "dba"],
+  "oracle-administrator": ["oracle dba", "oracle admin", "dba"],
+
+  // Networking & Telecom
+  "network-engineer": ["network admin", "noc", "ccna", "ccnp", "router", "switch", "routing", "switching", "cisco"],
+  "noc-technician": ["noc", "network operations center", "noc analyst", "monitoring"],
+
+  // Project Management & Agile
+  "scrum-master": ["scrum", "agile coach", "agile master", "kanban", "sprint master"],
+  "it-project-manager": ["pmp", "project manager", "it pm", "project lead", "program manager"],
+
+  // Green Computing
+  "green-computing-specialist": ["green computing", "sustainable IT", "carbon-aware", "eco tech", "energy efficient IT"]
+};
+
+export function checkRoleMatchesSearchQuery(role: RoleDetail, queryStr: string): boolean {
+  if (!queryStr || !queryStr.trim()) return true;
+  const q = queryStr.toLowerCase().trim();
+
+  // 1. Direct Title or ID match
+  if (role.title.toLowerCase().includes(q) || role.id.toLowerCase().includes(q)) return true;
+
+  // 2. Technical Role Aliases / Alternate Names / Acronyms
+  const aliases = TECHNICAL_ROLE_ALIASES[role.id] || [];
+  if (aliases.some(alias => alias.toLowerCase().includes(q) || q.includes(alias.toLowerCase()))) return true;
+
+  // 3. Technical Must-Haves (Tech & Process)
+  if (role.mustHaves?.tech?.some(s => s.toLowerCase().includes(q))) return true;
+  if (role.mustHaves?.process?.some(p => p.toLowerCase().includes(q))) return true;
+
+  // 4. Tools to Learn
+  if (role.toolsToLearn?.some(t => t.toLowerCase().includes(q))) return true;
+
+  // 5. Recommended Certifications
+  if (role.recommendedCertifications?.some(c => c.name.toLowerCase().includes(q))) return true;
+
+  // 6. Resume Keywords
+  if (role.resumeKeywords?.some(rk => rk.keyword.toLowerCase().includes(q))) return true;
+
+  // 7. Technical Aspects & Interview Topics
+  if (role.interviewTopics?.technical?.some(it => it.toLowerCase().includes(q))) return true;
+  if (role.interviewTopics?.scenario?.some(sc => sc.toLowerCase().includes(q))) return true;
+
+  // 8. Role Ask & Explanation
+  if (role.roleAsk?.explanation?.toLowerCase().includes(q) || role.roleAsk?.suitableFor?.toLowerCase().includes(q)) return true;
+
+  return false;
+}
+
+export function checkDomainMatchesSearchQuery(domain: Domain, queryStr: string, allRolesData: Record<string, RoleDetail>): boolean {
+  if (!queryStr || !queryStr.trim()) return true;
+  const q = queryStr.toLowerCase().trim();
+
+  // 1. Domain Name, Description or ID match
+  if (domain.name.toLowerCase().includes(q) || domain.description.toLowerCase().includes(q) || domain.id.toLowerCase().includes(q)) {
+    return true;
+  }
+
+  // 2. Check if ANY role in domain matches (including title, aliases, technical aspects, key skills, tools, and keywords)
+  return domain.roles.some(roleId => {
+    const role = allRolesData[roleId];
+    return role ? checkRoleMatchesSearchQuery(role, q) : false;
+  });
+}
+
 export const IT_DOMAINS: Domain[] = [
   {
     id: "it-support",
