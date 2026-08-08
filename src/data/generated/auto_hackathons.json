@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "devpost-revenuecat-shipaton-2026",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "devpost-build-with-datahub-the-agent-hackathon",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "devpost-arm-create-ai-optimization-challenge",
@@ -139,7 +139,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -163,7 +163,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "devpost-africa-deep-tech-challenge-2026",
@@ -176,7 +176,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 18,
+    "daysLeft": 17,
     "url": "https://adtc-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -186,7 +186,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "devpost-youcam-api-skin-ai-apparel-vto-hackathon",
@@ -210,7 +210,205 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
+  },
+  {
+    "id": "unstop-coarena-hackathon",
+    "title": "CoArena Hackathon",
+    "organizer": "CoArena",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/coarena-hackathon-coarena-1733431",
+    "type": "Online",
+    "location": "online",
+    "description": "CoArena Hackathon organized by CoArena. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-08"
+  },
+  {
+    "id": "unstop-evil-corp-ctf-v2",
+    "title": "Evil Corp CTF V2",
+    "organizer": "Nexploit",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3840109,
+        "rank": "1st Rank Team",
+        "cash": 1000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1733381,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Physical Trophy and Certificate. Solve our Special CTF for an exclusive bonus gift!",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3840110,
+        "rank": "2nd Rank Team",
+        "cash": 500,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1733381,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Physical Certificate and Digital Badge",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3840111,
+        "rank": "3rd Rank team",
+        "cash": 200,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1733381,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Digital Badge and Free learning Resources",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3840112,
+        "rank": "Top 10 Ranked team",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1733381,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Digital Certificate and Digital Badges",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical",
+      "Fresher",
+      "Experienced Professionals"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/evil-corp-ctf-v2-nexploit-1733381",
+    "type": "Online",
+    "location": "online",
+    "description": "Evil Corp CTF V2 organized by Nexploit. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-08"
+  },
+  {
+    "id": "unstop-precision-care-challenge-2026",
+    "title": "Precision Care Challenge 2026",
+    "organizer": "GE HealthCare",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3838877,
+        "rank": "Winner",
+        "cash": 150000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1731208,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "The Winner/Winning team will receive a cash prize of INR 1,50,000 along with a certificate. T&Cs Apply*",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3838878,
+        "rank": "1st Runner-Up",
+        "cash": 100000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1731208,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "The 1st Runner-Up/team will receive a cash prize of INR 1,00,000 along with a certificate. T&Cs Apply*",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3838879,
+        "rank": "2nd Runner-Up",
+        "cash": 75000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1731208,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "The 2nd Runner-Up/team will receive a cash prize of INR 75,000 along with a certificate. T&Cs Apply*",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3838921,
+        "rank": "Grand Finalists",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1731208,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "All Grand Finalists will receive a Certificate of Participation.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/crp-precision-care-challenge-2026-ge-healthcare-1731208",
+    "type": "Online",
+    "location": "online",
+    "description": "Precision Care Challenge 2026 organized by GE HealthCare. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "unstop-aethon-2026-24-hour-national-hackathon",
@@ -254,7 +452,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "unstop-tejas-india-hackathon-2026",
@@ -324,7 +522,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "unstop-edge-ai-hackathon-2026",
@@ -395,7 +593,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "unstop-bharatbuild-a-low-code-hackathon",
@@ -423,7 +621,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "unstop-pasumai-hackathon",
@@ -445,7 +643,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "unstop-campus-championship-challenge",
@@ -473,7 +671,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "unstop-nextgen-hackathon",
@@ -564,195 +762,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
-  },
-  {
-    "id": "unstop-oosc-4-o-hackathon",
-    "title": "OOSC 4.O Hackathon",
-    "organizer": "Indian Institute of Information Technology (IIIT), Allahabad",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3839262,
-        "rank": "1st Prize",
-        "cash": 20000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1730805,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": "INR",
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3839263,
-        "rank": "2nd Prize",
-        "cash": 10000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1730805,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": "INR",
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3839264,
-        "rank": "3rd Prize",
-        "cash": 5000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1730805,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": "INR",
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/oosc-4o-hackathon-indian-institute-of-information-technology-iiit-allahabad-1730805",
-    "type": "Online",
-    "location": "online",
-    "description": "OOSC 4.O Hackathon organized by Indian Institute of Information Technology (IIIT), Allahabad. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-07"
-  },
-  {
-    "id": "unstop-hackblox-ai-open-source-hackathon",
-    "title": "Hackblox AI & Open Source Hackathon",
-    "organizer": "Hackers Cult",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/hackblox-open-source-hackathon-hackers-cult-1731738",
-    "type": "Online",
-    "location": "online",
-    "description": "Hackblox AI & Open Source Hackathon organized by Hackers Cult. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-07"
-  },
-  {
-    "id": "unstop-bitmela-launchpad-ideathon-01",
-    "title": "Bitmela Launchpad: Ideathon 01",
-    "organizer": "Bitmela",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3834470,
-        "rank": "Winner",
-        "cash": 100000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1722812,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Winner of BITMELA LAUNCHPAD IDEATHON 01 + On-site Rewards",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3834471,
-        "rank": "First Runner-Up",
-        "cash": 50000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1722812,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "On-site reward + certificate",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3834472,
-        "rank": "Second Runner-Up",
-        "cash": 20000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1722812,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "On-site rewards + certificate",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3834473,
-        "rank": "Third Runner-Up",
-        "cash": 15000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1722812,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "On-site reward + certificate",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3834474,
-        "rank": "Fourth Runner-Up",
-        "cash": 15000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1722812,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "On-site reward + certificate",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/bitmela-launchpad-ideathon-01-bitmela-1722812",
-    "type": "In-person",
-    "location": "offline",
-    "description": "Bitmela Launchpad: Ideathon 01 organized by Bitmela. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "hackerrank-projecteuler",
@@ -776,7 +786,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "hackerrank-hackerrank-orchestrate-september-26",
@@ -800,7 +810,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "hackerrank-hackerrank-orchestrate-august-26",
@@ -824,7 +834,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "hackerrank-hackerrank-orchestrate-june-26",
@@ -848,7 +858,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "hackerrank-hackerrank-orchestrate-may-26",
@@ -872,7 +882,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -896,7 +906,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -920,7 +930,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -944,7 +954,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -968,7 +978,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -992,7 +1002,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1016,7 +1026,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-asia-pacific",
@@ -1040,6 +1050,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-07"
+    "fetchedAt": "2026-08-08"
   }
 ]
