@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "devpost-revenuecat-shipaton-2026",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -59,7 +59,7 @@
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 7,
+    "daysLeft": 30,
     "url": "https://agentic-cinema.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "devpost-build-with-datahub-the-agent-hackathon",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "devpost-arm-create-ai-optimization-challenge",
@@ -139,7 +139,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -163,7 +163,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "devpost-africa-deep-tech-challenge-2026",
@@ -176,7 +176,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 17,
+    "daysLeft": 16,
     "url": "https://adtc-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -186,7 +186,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "devpost-youcam-api-skin-ai-apparel-vto-hackathon",
@@ -210,7 +210,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "unstop-coarena-hackathon",
@@ -232,7 +232,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "unstop-evil-corp-ctf-v2",
@@ -249,7 +249,7 @@
         "entity_id": 1733381,
         "entity_type": "App\\Model\\Opportunity",
         "others": "Physical Trophy and Certificate. Solve our Special CTF for an exclusive bonus gift!",
-        "currencyCode": null,
+        "currencyCode": "INR",
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -264,7 +264,7 @@
         "entity_id": 1733381,
         "entity_type": "App\\Model\\Opportunity",
         "others": "Physical Certificate and Digital Badge",
-        "currencyCode": null,
+        "currencyCode": "INR",
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -279,7 +279,7 @@
         "entity_id": 1733381,
         "entity_type": "App\\Model\\Opportunity",
         "others": "Digital Badge and Free learning Resources",
-        "currencyCode": null,
+        "currencyCode": "INR",
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -294,7 +294,7 @@
         "entity_id": 1733381,
         "entity_type": "App\\Model\\Opportunity",
         "others": "Digital Certificate and Digital Badges",
-        "currencyCode": null,
+        "currencyCode": "INR",
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -323,7 +323,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "unstop-precision-care-challenge-2026",
@@ -408,7 +408,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "unstop-aethon-2026-24-hour-national-hackathon",
@@ -452,7 +452,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "unstop-tejas-india-hackathon-2026",
@@ -522,7 +522,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "unstop-edge-ai-hackathon-2026",
@@ -593,7 +593,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "unstop-bharatbuild-a-low-code-hackathon",
@@ -621,7 +621,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "unstop-pasumai-hackathon",
@@ -643,7 +643,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "unstop-campus-championship-challenge",
@@ -671,7 +671,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "unstop-nextgen-hackathon",
@@ -762,7 +762,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "hackerrank-projecteuler",
@@ -786,7 +786,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "hackerrank-hackerrank-orchestrate-september-26",
@@ -810,7 +810,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "hackerrank-hackerrank-orchestrate-august-26",
@@ -834,7 +834,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "hackerrank-hackerrank-orchestrate-june-26",
@@ -858,7 +858,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "hackerrank-hackerrank-orchestrate-may-26",
@@ -882,7 +882,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -906,7 +906,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -930,7 +930,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -954,7 +954,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -978,7 +978,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1002,7 +1002,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1026,7 +1026,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-asia-pacific",
@@ -1050,6 +1050,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-08"
+    "fetchedAt": "2026-08-09"
   }
 ]
