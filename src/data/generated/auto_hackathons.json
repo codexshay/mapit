@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "devpost-revenuecat-shipaton-2026",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
@@ -93,31 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
-  },
-  {
-    "id": "devpost-build-with-datahub-the-agent-hackathon",
-    "title": "Build with DataHub: The Agent Hackathon",
-    "organizer": "DataHub",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>20,500</span>",
-    "themes": [
-      "Machine Learning/AI",
-      "DevOps",
-      "Open Ended"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 7,
-    "url": "https://datahub.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "Build with DataHub: The Agent Hackathon is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "devpost-arm-create-ai-optimization-challenge",
@@ -139,7 +115,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -163,30 +139,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
-  },
-  {
-    "id": "devpost-africa-deep-tech-challenge-2026",
-    "title": "Africa Deep Tech Challenge 2026",
-    "organizer": "Africa Deep Tech Foundation",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>16,500</span>",
-    "themes": [
-      "Machine Learning/AI",
-      "Productivity"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 15,
-    "url": "https://adtc-2026.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "Africa Deep Tech Challenge 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -210,7 +163,98 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
+  },
+  {
+    "id": "devpost-youcam-api-skin-ai-apparel-vto-hackathon",
+    "title": "YouCam API Skin AI & Apparel VTO Hackathon",
+    "organizer": "Perfect Corp",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>6,000</span>",
+    "themes": [
+      "Machine Learning/AI",
+      "AR/VR",
+      "E-commerce/Retail"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 7,
+    "url": "https://youcam-api.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "YouCam API Skin AI & Apparel VTO Hackathon  is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-11"
+  },
+  {
+    "id": "devpost-africa-deep-tech-challenge-2026",
+    "title": "Africa Deep Tech Challenge 2026",
+    "organizer": "Africa Deep Tech Foundation",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>16,500</span>",
+    "themes": [
+      "Machine Learning/AI",
+      "Productivity"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 14,
+    "url": "https://adtc-2026.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "Africa Deep Tech Challenge 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-11"
+  },
+  {
+    "id": "unstop-markathon-2026-india-s-biggest-marketing-innovation-challenge",
+    "title": "MARKATHON 2026 – India's Biggest Marketing Innovation Challenge",
+    "organizer": "IcyPluto",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3841126,
+        "rank": "Top 5",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1734496,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Top 5 performing participants will receive an opportunity to interview with our hiring partners and participating organizations. Interview invitations are subject to candidate performance, eligibility, and partner hiring requirements.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 1,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/markathon-2026-indias-biggest-marketing-innovation-challenge-icypluto-1734496",
+    "type": "In-person",
+    "location": "offline",
+    "description": "MARKATHON 2026 – India's Biggest Marketing Innovation Challenge organized by IcyPluto. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "unstop-zyrora-24-hour-national-level-inter-college-hackathon",
@@ -238,7 +282,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "unstop-washing-app-debug-challenge",
@@ -266,7 +310,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "unstop-startupx-hackathon-2026",
@@ -283,7 +327,7 @@
         "entity_id": 1733546,
         "entity_type": "App\\Model\\Opportunity",
         "others": "5000 Cash + 12 Months Uplearn Subscription",
-        "currencyCode": "INR",
+        "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -298,7 +342,7 @@
         "entity_id": 1733546,
         "entity_type": "App\\Model\\Opportunity",
         "others": "3000 Cash + 12 Months Uplearn Subscription",
-        "currencyCode": "INR",
+        "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -313,7 +357,7 @@
         "entity_id": 1733546,
         "entity_type": "App\\Model\\Opportunity",
         "others": "2000 Cash + 6 Months Uplearn Subscription",
-        "currencyCode": "INR",
+        "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -328,7 +372,7 @@
         "entity_id": 1733546,
         "entity_type": "App\\Model\\Opportunity",
         "others": "6 Months Uplearn Subscription",
-        "currencyCode": "INR",
+        "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -343,7 +387,7 @@
         "entity_id": 1733546,
         "entity_type": "App\\Model\\Opportunity",
         "others": "3 Months Uplearn Subscription",
-        "currencyCode": "INR",
+        "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -358,7 +402,7 @@
         "entity_id": 1733546,
         "entity_type": "App\\Model\\Opportunity",
         "others": "3 Months Uplearn Subscription",
-        "currencyCode": "INR",
+        "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -379,7 +423,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "unstop-zero-dependency-72-hour-hackathon",
@@ -477,7 +521,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "unstop-webverse-hackathon",
@@ -551,7 +595,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "unstop-pitchx-2026-india-s-biggest-startup-pitch-challenge",
@@ -625,7 +669,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "unstop-bytebuilt-1-0",
@@ -669,7 +713,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "unstop-quantstorm",
@@ -768,7 +812,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "unstop-sn1phers-3-0-capture-the-flag-ctf",
@@ -796,53 +840,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
-  },
-  {
-    "id": "unstop-coarena-hackathon",
-    "title": "CoArena Hackathon",
-    "organizer": "CoArena",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/coarena-hackathon-coarena-1733431",
-    "type": "Online",
-    "location": "online",
-    "description": "CoArena Hackathon organized by CoArena. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-10"
-  },
-  {
-    "id": "hackerrank-projecteuler",
-    "title": "ProjectEuler+",
-    "organizer": "HackerRank Community",
-    "region": "Global",
-    "prizes": "HackerRank Badges & Global Leaderboard Ranking",
-    "themes": [
-      "Algorithms",
-      "Data Structures",
-      "Competitive Programming"
-    ],
-    "difficulty": "Intermediate / Advanced",
-    "daysLeft": 5,
-    "url": "https://www.hackerrank.com/contests/projecteuler",
-    "type": "Online",
-    "location": "HackerRank Web Platform",
-    "description": "ProjectEuler+ hosted on HackerRank. Solve algorithmic challenges, optimize code performance, and benchmark your ranking globally.",
-    "targetAudience": "Competitive Programmers, CS Students, and Software Engineers",
-    "careerBenefit": "Showcase verified problem-solving speed and algorithmic proficiency to top tech recruiters.",
-    "category": "Challenge",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -866,7 +864,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -890,7 +888,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -914,7 +912,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -938,7 +936,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -962,7 +960,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -986,7 +984,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -1010,7 +1008,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -1034,7 +1032,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1058,7 +1056,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1082,11 +1080,11 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   },
   {
-    "id": "hackerrank-hack-the-interview-iv-asia-pacific",
-    "title": "Hack the Interview IV (Asia Pacific)",
+    "id": "hackerrank-hack-the-interview-iv-u-s",
+    "title": "Hack the Interview IV (U.S.)",
     "organizer": "HackerRank Community",
     "region": "Global",
     "prizes": "HackerRank Badges & Global Leaderboard Ranking",
@@ -1097,15 +1095,15 @@
     ],
     "difficulty": "Intermediate / Advanced",
     "daysLeft": 5,
-    "url": "https://www.hackerrank.com/contests/hack-the-interview-iv-apac",
+    "url": "https://www.hackerrank.com/contests/hack-the-interview-iv",
     "type": "Online",
     "location": "HackerRank Web Platform",
-    "description": "Hack the Interview IV (Asia Pacific) hosted on HackerRank. Solve algorithmic challenges, optimize code performance, and benchmark your ranking globally.",
+    "description": "Hack the Interview IV (U.S.) hosted on HackerRank. Solve algorithmic challenges, optimize code performance, and benchmark your ranking globally.",
     "targetAudience": "Competitive Programmers, CS Students, and Software Engineers",
     "careerBenefit": "Showcase verified problem-solving speed and algorithmic proficiency to top tech recruiters.",
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-10"
+    "fetchedAt": "2026-08-11"
   }
 ]
