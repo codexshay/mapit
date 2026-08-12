@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "devpost-revenuecat-shipaton-2026",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
@@ -93,29 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
-  },
-  {
-    "id": "devpost-arm-create-ai-optimization-challenge",
-    "title": "Arm Create: AI Optimization Challenge",
-    "organizer": "arm",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>8,000</span>",
-    "themes": [
-      "Machine Learning/AI"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 3,
-    "url": "https://arm-ai-optimization-challenge.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "Arm Create: AI Optimization Challenge is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -139,7 +117,29 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
+  },
+  {
+    "id": "devpost-arm-create-ai-optimization-challenge",
+    "title": "Arm Create: AI Optimization Challenge",
+    "organizer": "arm",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>8,000</span>",
+    "themes": [
+      "Machine Learning/AI"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 3,
+    "url": "https://arm-ai-optimization-challenge.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "Arm Create: AI Optimization Challenge is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -163,7 +163,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "devpost-youcam-api-skin-ai-apparel-vto-hackathon",
@@ -187,30 +187,114 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
-    "id": "devpost-africa-deep-tech-challenge-2026",
-    "title": "Africa Deep Tech Challenge 2026",
-    "organizer": "Africa Deep Tech Foundation",
+    "id": "devpost-agents-for-humans-hackathon",
+    "title": "Agents for Humans Hackathon",
+    "organizer": "Amazon",
     "region": "Global",
-    "prizes": "$<span data-currency-value>16,500</span>",
+    "prizes": "$<span data-currency-value>40,000</span>",
     "themes": [
+      "Beginner Friendly",
       "Machine Learning/AI",
-      "Productivity"
+      "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 14,
-    "url": "https://adtc-2026.devpost.com/",
+    "daysLeft": 7,
+    "url": "https://agentsforhumans.devpost.com/",
     "type": "Online",
     "location": "Online",
-    "description": "Africa Deep Tech Challenge 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "description": "Agents for Humans Hackathon is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
     "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
     "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
+  },
+  {
+    "id": "unstop-devcrest-buildathon-26",
+    "title": "DevCrest Buildathon '26",
+    "organizer": "DevCrest",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3840945,
+        "rank": "1st Prize — Champion",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1734263,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Mechanical Keyboard + Mouse + MousePad + Laptop Stand",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3840946,
+        "rank": "2nd Prize — Runner-Up",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1734263,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Mouse +Mouse pad+ Laptop Stand",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3840947,
+        "rank": "3rd Prize — Third Place",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1734263,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Mouse + Mouse pad",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3840948,
+        "rank": "Category Awards",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1734263,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Surprise prizes — revealed live at the event",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/devcrest-buildathon-26-devcrest-1734263",
+    "type": "Online",
+    "location": "online",
+    "description": "DevCrest Buildathon '26 organized by DevCrest. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "unstop-markathon-2026-india-s-biggest-marketing-innovation-challenge",
@@ -254,7 +338,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "unstop-zyrora-24-hour-national-level-inter-college-hackathon",
@@ -282,7 +366,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "unstop-washing-app-debug-challenge",
@@ -310,7 +394,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "unstop-startupx-hackathon-2026",
@@ -423,7 +507,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "unstop-zero-dependency-72-hour-hackathon",
@@ -521,7 +605,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "unstop-webverse-hackathon",
@@ -538,7 +622,7 @@
         "entity_id": 1733529,
         "entity_type": "App\\Model\\Opportunity",
         "others": null,
-        "currencyCode": "INR",
+        "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -553,7 +637,7 @@
         "entity_id": 1733529,
         "entity_type": "App\\Model\\Opportunity",
         "others": null,
-        "currencyCode": "INR",
+        "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -568,7 +652,7 @@
         "entity_id": 1733529,
         "entity_type": "App\\Model\\Opportunity",
         "others": null,
-        "currencyCode": "INR",
+        "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -595,7 +679,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "unstop-pitchx-2026-india-s-biggest-startup-pitch-challenge",
@@ -669,7 +753,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "unstop-bytebuilt-1-0",
@@ -713,7 +797,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "unstop-quantstorm",
@@ -812,35 +896,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
-  },
-  {
-    "id": "unstop-sn1phers-3-0-capture-the-flag-ctf",
-    "title": "SN1PHERS 3.0: Capture The Flag(CTF)",
-    "organizer": "St.Joseph's Institute of Technology (STJIT), Chennai",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/sn1phers-30-capture-the-flagctf-stjosephs-institute-of-technology-stjit-chennai-1732038",
-    "type": "In-person",
-    "location": "offline",
-    "description": "SN1PHERS 3.0: Capture The Flag(CTF) organized by St.Joseph's Institute of Technology (STJIT), Chennai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -864,7 +920,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -888,7 +944,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -912,7 +968,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -936,7 +992,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -960,7 +1016,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -984,7 +1040,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -1008,7 +1064,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -1032,7 +1088,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1056,7 +1112,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1080,7 +1136,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -1104,6 +1160,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-11"
+    "fetchedAt": "2026-08-12"
   }
 ]
