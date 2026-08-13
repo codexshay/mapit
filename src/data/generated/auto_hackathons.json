@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "devpost-revenuecat-shipaton-2026",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -59,7 +59,7 @@
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 26,
+    "daysLeft": 28,
     "url": "https://agentic-cinema.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "devpost-arm-create-ai-optimization-challenge",
@@ -139,7 +139,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -163,31 +163,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
-  },
-  {
-    "id": "devpost-youcam-api-skin-ai-apparel-vto-hackathon",
-    "title": "YouCam API Skin AI & Apparel VTO Hackathon",
-    "organizer": "Perfect Corp",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>6,000</span>",
-    "themes": [
-      "Machine Learning/AI",
-      "AR/VR",
-      "E-commerce/Retail"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 5,
-    "url": "https://youcam-api.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "YouCam API Skin AI & Apparel VTO Hackathon  is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -211,7 +187,187 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
+  },
+  {
+    "id": "devpost-youcam-api-skin-ai-apparel-vto-hackathon",
+    "title": "YouCam API Skin AI & Apparel VTO Hackathon",
+    "organizer": "Perfect Corp",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>6,000</span>",
+    "themes": [
+      "Machine Learning/AI",
+      "AR/VR",
+      "E-commerce/Retail"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 5,
+    "url": "https://youcam-api.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "YouCam API Skin AI & Apparel VTO Hackathon  is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-13"
+  },
+  {
+    "id": "unstop-internal-smart-india-hackathon-2026",
+    "title": "Internal Smart India Hackathon 2026",
+    "organizer": "Bharat Ratna baba saheb bhim rao ambedkar rajkiya engineering college pratapgarh",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3842412,
+        "rank": "🥇 1st Prize",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1736096,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Memento, Medal and Appreciation Certificate for all team members.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3842413,
+        "rank": "🥈 2nd Prize",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1736096,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Memento, Medal and Appreciation Certificate for all team members.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3842414,
+        "rank": "🥉 3rd Prize",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1736096,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Memento, Medal and Appreciation Certificate for all team members.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3842415,
+        "rank": "Participation Certificate",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1736096,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "All eligible participants will receive a Participation Certificate.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Engineering Students"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/internal-smart-india-hackathon-2026-bharat-ratna-baba-saheb-bhim-rao-ambedkar-rajkiya-engineering-college-pra-1736096",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Internal Smart India Hackathon 2026 organized by Bharat Ratna baba saheb bhim rao ambedkar rajkiya engineering college pratapgarh. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-13"
+  },
+  {
+    "id": "unstop-infinix-26-national-level-32-hour-hackathon",
+    "title": "InfiniX'26 – National Level 32-Hour Hackathon",
+    "organizer": "Ramco Institute of Technology",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/infinix26-national-level-32-hour-hackathon-ramco-institute-of-technology-1730876",
+    "type": "Online",
+    "location": "online",
+    "description": "InfiniX'26 – National Level 32-Hour Hackathon organized by Ramco Institute of Technology. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-13"
+  },
+  {
+    "id": "unstop-idea-competition-2026",
+    "title": "Idea Competition 2026",
+    "organizer": "Fr. Conceicao Rodrigues College of Engineering (FRCRCE), Bandra",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/idea-competition-2026-fr-conceicao-rodrigues-college-of-engineering-frcrce-bandra-1736048",
+    "type": "Online",
+    "location": "online",
+    "description": "Idea Competition 2026 organized by Fr. Conceicao Rodrigues College of Engineering (FRCRCE), Bandra. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-13"
+  },
+  {
+    "id": "unstop-hack-forge-ai-powered-vibe-coding-hackathon",
+    "title": "Hack Forge-Ai Powered Vibe Coding Hackathon",
+    "organizer": "C. Abdul Hakeem College of Engineering and Technology (CAHCET), Veppur, Tamil Nadu",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/hack-forge-ai-powered-vibe-coding-hackathon-c-abdul-hakeem-college-of-engineering-and-technology-cahcet-veppu-1735862",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Hack Forge-Ai Powered Vibe Coding Hackathon organized by C. Abdul Hakeem College of Engineering and Technology (CAHCET), Veppur, Tamil Nadu. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "unstop-devcrest-buildathon-26",
@@ -294,7 +450,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "unstop-markathon-2026-india-s-biggest-marketing-innovation-challenge",
@@ -338,7 +494,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "unstop-zyrora-24-hour-national-level-inter-college-hackathon",
@@ -366,7 +522,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "unstop-washing-app-debug-challenge",
@@ -394,7 +550,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "unstop-startupx-hackathon-2026",
@@ -507,7 +663,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "unstop-zero-dependency-72-hour-hackathon",
@@ -605,298 +761,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
-  },
-  {
-    "id": "unstop-webverse-hackathon",
-    "title": "Webverse Hackathon",
-    "organizer": "Modern Education Society's College of Engineering - (MES), Pune",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3841523,
-        "rank": "1",
-        "cash": 7000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1733529,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3841524,
-        "rank": "2",
-        "cash": 5000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1733529,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3841525,
-        "rank": "3",
-        "cash": 3000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1733529,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/webverse-hackathon-modern-education-societys-college-of-engineering-mes-pune-1733529",
-    "type": "Online",
-    "location": "online",
-    "description": "Webverse Hackathon organized by Modern Education Society's College of Engineering - (MES), Pune. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-12"
-  },
-  {
-    "id": "unstop-pitchx-2026-india-s-biggest-startup-pitch-challenge",
-    "title": "PitchX 2026 – India's Biggest Startup Pitch Challenge",
-    "organizer": "DevTech It Solution",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3838140,
-        "rank": "Winner",
-        "cash": 75000,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1729843,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Cash prize, Winner Trophy, Certificate, Startup Recognition & Exclusive Partner Benefits.",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 1,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3838141,
-        "rank": "Runner-up",
-        "cash": 45000,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1729843,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Cash prize, Trophy, Certificate & Exclusive Startup Benefits.",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 1,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3838142,
-        "rank": "Second Runner-up",
-        "cash": 30000,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1729843,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Cash prize, Trophy, Certificate & Startup Recognition.",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 1,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/pitchx-2026-indias-biggest-startup-pitch-challenge-devtech-it-solution-1729843",
-    "type": "In-person",
-    "location": "offline",
-    "description": "PitchX 2026 – India's Biggest Startup Pitch Challenge organized by DevTech It Solution. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-12"
-  },
-  {
-    "id": "unstop-bytebuilt-1-0",
-    "title": "byteBuilt 1.0",
-    "organizer": "Chandigah University",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3840863,
-        "rank": "Winner",
-        "cash": 150000,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1733940,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/bytebuilt-10-chandigah-university-1733940",
-    "type": "In-person",
-    "location": "offline",
-    "description": "byteBuilt 1.0 organized by Chandigah University. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-12"
-  },
-  {
-    "id": "unstop-quantstorm",
-    "title": "QuantStorm",
-    "organizer": "Indian Institute of Technology (IIT), Guwahati",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3840838,
-        "rank": "Winner",
-        "cash": 100000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1733840,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3840839,
-        "rank": "First Runner Up",
-        "cash": 60000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1733840,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3840840,
-        "rank": "Second Runner Up",
-        "cash": 40000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1733840,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3840841,
-        "rank": "Third Runner Up",
-        "cash": 30000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1733840,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3840842,
-        "rank": "Fourth Runner Up",
-        "cash": 20000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1733840,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Engineering Students"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/quantstorm-iit-guwahati-1733840",
-    "type": "Online",
-    "location": "online",
-    "description": "QuantStorm organized by Indian Institute of Technology (IIT), Guwahati. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -920,7 +785,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -944,7 +809,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -968,7 +833,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -992,7 +857,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -1016,7 +881,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -1040,7 +905,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -1064,7 +929,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -1088,7 +953,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1112,7 +977,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1136,7 +1001,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -1160,6 +1025,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-12"
+    "fetchedAt": "2026-08-13"
   }
 ]
