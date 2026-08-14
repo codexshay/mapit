@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "devpost-revenuecat-shipaton-2026",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "devpost-arm-create-ai-optimization-challenge",
@@ -129,7 +129,7 @@
       "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 1,
+    "daysLeft": 7,
     "url": "https://arm-ai-optimization-challenge.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -139,31 +139,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
-  },
-  {
-    "id": "devpost-call-e-your-code-is-calling",
-    "title": "CALL-E: Your Code Is Calling",
-    "organizer": "CALL-E",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>10,000</span>",
-    "themes": [
-      "Communication",
-      "Enterprise",
-      "Machine Learning/AI"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 7,
-    "url": "https://call-e.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "CALL-E: Your Code Is Calling is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -187,7 +163,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
+  },
+  {
+    "id": "devpost-call-e-your-code-is-calling",
+    "title": "CALL-E: Your Code Is Calling",
+    "organizer": "CALL-E",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>10,000</span>",
+    "themes": [
+      "Communication",
+      "Enterprise",
+      "Machine Learning/AI"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 7,
+    "url": "https://call-e.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "CALL-E: Your Code Is Calling is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "devpost-youcam-api-skin-ai-apparel-vto-hackathon",
@@ -211,7 +211,135 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
+  },
+  {
+    "id": "unstop-legend-of-the-treasure-takara-no-densetsu",
+    "title": "Legend of the Treasure (Takara No Densetsu)",
+    "organizer": "Amity School of Engineering & Technology (AMITY), Noida",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3842881,
+        "rank": "1",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1736600,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Exclusive Goodies and Trophy",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3842882,
+        "rank": "2",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1736600,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Trophy",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3842883,
+        "rank": "3",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1736600,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Trophy",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical",
+      "Fresher"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/legend-of-the-treasure-takara-no-densetsu-amity-school-of-engineering-technology-amity-noida-1736600",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Legend of the Treasure (Takara No Densetsu) organized by Amity School of Engineering & Technology (AMITY), Noida. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-14"
+  },
+  {
+    "id": "unstop-signal-quest-ieee-sps-hackathon-2026",
+    "title": "Signal Quest – IEEE SPS Hackathon 2026",
+    "organizer": "CMR Institute Of Technology ",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/signal-quest-ieee-sps-hackathon-2026-cmr-institute-of-technology-1736521",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Signal Quest – IEEE SPS Hackathon 2026 organized by CMR Institute Of Technology . Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-14"
+  },
+  {
+    "id": "unstop-devjams-26",
+    "title": "DevJams'26",
+    "organizer": "Vellore Institute of Technology (VIT), Vellore",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/devjams26-gravitas26-vit-vellore-1735999",
+    "type": "In-person",
+    "location": "offline",
+    "description": "DevJams'26 organized by Vellore Institute of Technology (VIT), Vellore. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "unstop-breakpoint-hackathon-2026",
@@ -294,7 +422,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "unstop-bsm-agentic-ai-competition",
@@ -368,7 +496,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "unstop-codewars",
@@ -466,7 +594,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "unstop-internal-smart-india-hackathon-2026",
@@ -550,7 +678,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "unstop-infinix-26-national-level-32-hour-hackathon",
@@ -578,7 +706,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "unstop-idea-competition-2026",
@@ -600,7 +728,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "unstop-hack-forge-ai-powered-vibe-coding-hackathon",
@@ -622,162 +750,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
-  },
-  {
-    "id": "unstop-devcrest-buildathon-26",
-    "title": "DevCrest Buildathon '26",
-    "organizer": "DevCrest",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3840945,
-        "rank": "1st Prize — Champion",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1734263,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Mechanical Keyboard + Mouse + MousePad + Laptop Stand",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3840946,
-        "rank": "2nd Prize — Runner-Up",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1734263,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Mouse +Mouse pad+ Laptop Stand",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3840947,
-        "rank": "3rd Prize — Third Place",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1734263,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Mouse + Mouse pad",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3840948,
-        "rank": "Category Awards",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1734263,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Surprise prizes — revealed live at the event",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/devcrest-buildathon-26-devcrest-1734263",
-    "type": "Online",
-    "location": "online",
-    "description": "DevCrest Buildathon '26 organized by DevCrest. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-13"
-  },
-  {
-    "id": "unstop-markathon-2026-india-s-biggest-marketing-innovation-challenge",
-    "title": "MARKATHON 2026 – India's Biggest Marketing Innovation Challenge",
-    "organizer": "IcyPluto",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3841126,
-        "rank": "Top 5",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1734496,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Top 5 performing participants will receive an opportunity to interview with our hiring partners and participating organizations. Interview invitations are subject to candidate performance, eligibility, and partner hiring requirements.",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 1,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/markathon-2026-indias-biggest-marketing-innovation-challenge-icypluto-1734496",
-    "type": "In-person",
-    "location": "offline",
-    "description": "MARKATHON 2026 – India's Biggest Marketing Innovation Challenge organized by IcyPluto. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-13"
-  },
-  {
-    "id": "unstop-zyrora-24-hour-national-level-inter-college-hackathon",
-    "title": "ZYRORA - 24-Hour National Level Inter-College  Hackathon",
-    "organizer": "AAA College of Engineering and Technology (AAACET), Sivakasi, Tamil Nadu",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/zyrora-24-hour-national-level-inter-college-hackathon-aaa-college-of-engineering-and-technology-aaacet-sivaka-1734489",
-    "type": "In-person",
-    "location": "offline",
-    "description": "ZYRORA - 24-Hour National Level Inter-College  Hackathon organized by AAA College of Engineering and Technology (AAACET), Sivakasi, Tamil Nadu. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -801,7 +774,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -825,7 +798,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -849,7 +822,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -873,7 +846,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -897,7 +870,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -921,7 +894,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -945,7 +918,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -969,7 +942,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -993,7 +966,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1017,7 +990,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -1041,6 +1014,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-13"
+    "fetchedAt": "2026-08-14"
   }
 ]
