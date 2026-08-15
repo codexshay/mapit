@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "devpost-revenuecat-shipaton-2026",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -69,31 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
-  },
-  {
-    "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
-    "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
-    "organizer": "Cockroach Labs",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>8,750</span>",
-    "themes": [
-      "Machine Learning/AI",
-      "Databases",
-      "DevOps"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 4,
-    "url": "https://cockroachdb-ai.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "CockroachDB × AWS Hackathon - Build with Agentic Memory is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -117,29 +93,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
-    "id": "devpost-arm-create-ai-optimization-challenge",
-    "title": "Arm Create: AI Optimization Challenge",
-    "organizer": "arm",
+    "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
+    "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
+    "organizer": "Cockroach Labs",
     "region": "Global",
-    "prizes": "$<span data-currency-value>8,000</span>",
+    "prizes": "$<span data-currency-value>8,750</span>",
     "themes": [
-      "Machine Learning/AI"
+      "Machine Learning/AI",
+      "Databases",
+      "DevOps"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 7,
-    "url": "https://arm-ai-optimization-challenge.devpost.com/",
+    "daysLeft": 4,
+    "url": "https://cockroachdb-ai.devpost.com/",
     "type": "Online",
     "location": "Online",
-    "description": "Arm Create: AI Optimization Challenge is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "description": "CockroachDB × AWS Hackathon - Build with Agentic Memory is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
     "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
     "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -163,7 +141,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -187,7 +165,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "devpost-youcam-api-skin-ai-apparel-vto-hackathon",
@@ -211,7 +189,30 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
+  },
+  {
+    "id": "devpost-africa-deep-tech-challenge-2026",
+    "title": "Africa Deep Tech Challenge 2026",
+    "organizer": "Africa Deep Tech Foundation",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>16,500</span>",
+    "themes": [
+      "Machine Learning/AI",
+      "Productivity"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 10,
+    "url": "https://adtc-2026.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "Africa Deep Tech Challenge 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "unstop-hackathon-to-solve-india-s-garbage-problem",
@@ -233,7 +234,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "unstop-code-voyage",
@@ -255,7 +256,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "unstop-legend-of-the-treasure-takara-no-densetsu",
@@ -330,7 +331,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "unstop-signal-quest-ieee-sps-hackathon-2026",
@@ -358,7 +359,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "unstop-devjams-26",
@@ -383,7 +384,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "unstop-breakpoint-hackathon-2026",
@@ -466,7 +467,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "unstop-bsm-agentic-ai-competition",
@@ -540,7 +541,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "unstop-codewars",
@@ -638,7 +639,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "unstop-internal-smart-india-hackathon-2026",
@@ -722,7 +723,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "unstop-infinix-26-national-level-32-hour-hackathon",
@@ -750,7 +751,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -774,7 +775,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -798,7 +799,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -822,7 +823,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -846,7 +847,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -870,7 +871,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -894,7 +895,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -918,7 +919,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -942,7 +943,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -966,7 +967,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -990,7 +991,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -1014,6 +1015,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-14"
+    "fetchedAt": "2026-08-15"
   }
 ]
