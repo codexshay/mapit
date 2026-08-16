@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "devpost-revenuecat-shipaton-2026",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -131,7 +131,7 @@
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 7,
+    "daysLeft": 30,
     "url": "https://agentsforhumans.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -141,7 +141,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -155,7 +155,7 @@
       "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 7,
+    "daysLeft": 30,
     "url": "https://call-e.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -165,7 +165,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "devpost-youcam-api-skin-ai-apparel-vto-hackathon",
@@ -179,7 +179,7 @@
       "E-commerce/Retail"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 2,
+    "daysLeft": 1,
     "url": "https://youcam-api.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -189,7 +189,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "devpost-africa-deep-tech-challenge-2026",
@@ -202,7 +202,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 10,
+    "daysLeft": 9,
     "url": "https://adtc-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -212,7 +212,281 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
+  },
+  {
+    "id": "unstop-matrix-2026",
+    "title": "Matrix 2026",
+    "organizer": "Government Engineering College (GEC), Thrissur",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3843568,
+        "rank": "Overall Winner",
+        "cash": 15000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1737241,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3843569,
+        "rank": "First Runner-up",
+        "cash": 10000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1737241,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3843570,
+        "rank": "Second Runner-up",
+        "cash": 5000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1737241,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/matrix-2026-government-engineering-college-gec-thrissur-1737241",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Matrix 2026 organized by Government Engineering College (GEC), Thrissur. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-16"
+  },
+  {
+    "id": "unstop-ai-innovation-hackathon-2026-build-real-world-ai-solutions",
+    "title": "AI Innovation Hackathon 2026 – Build Real-World AI Solutions",
+    "organizer": "Bharat Academix",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3843581,
+        "rank": "1",
+        "cash": 21000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1737263,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3843582,
+        "rank": "2",
+        "cash": 11000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1737263,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3843583,
+        "rank": "3",
+        "cash": 5100,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1737263,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/ai-innovation-hackathon-2026-build-real-world-ai-solutions-bharat-academix-1737263",
+    "type": "Online",
+    "location": "online",
+    "description": "AI Innovation Hackathon 2026 – Build Real-World AI Solutions organized by Bharat Academix. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-16"
+  },
+  {
+    "id": "unstop-gameathon-2026",
+    "title": "Gameathon 2026",
+    "organizer": "Amrita Vishwa Vidyapeetham Chennai",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3842409,
+        "rank": "First prize",
+        "cash": 10000,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1736083,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3842410,
+        "rank": "Second prize",
+        "cash": 7000,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1736083,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3842411,
+        "rank": "Third prize",
+        "cash": 3000,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1736083,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/gameathon-2026-amrita-vishwa-vidyapeetham-chennai-1736083",
+    "type": "Online",
+    "location": "online",
+    "description": "Gameathon 2026 organized by Amrita Vishwa Vidyapeetham Chennai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-16"
+  },
+  {
+    "id": "unstop-mirage-ctf-2-0",
+    "title": "Mirage CTF 2.0",
+    "organizer": "Amrita Vishwa Vidyapeetham (AVV), Chennai",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3842492,
+        "rank": "Winner",
+        "cash": 10000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1736179,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3842493,
+        "rank": "Runner Up",
+        "cash": 7000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1736179,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3842494,
+        "rank": "2nd Runner UP",
+        "cash": 3000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1736179,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/mirage-ctf-20-amrita-vishwa-vidyapeetham-avv-chennai-1736179",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Mirage CTF 2.0 organized by Amrita Vishwa Vidyapeetham (AVV), Chennai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "unstop-cypherverse",
@@ -282,7 +556,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "unstop-nerds-room-launch-hacks",
@@ -308,7 +582,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "unstop-nari-kavach",
@@ -336,7 +610,75 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
+  },
+  {
+    "id": "unstop-nexhack-2-0",
+    "title": "NexHack 2.0",
+    "organizer": "Geeta University, Naultha, Panipat",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3841935,
+        "rank": "1st Prize",
+        "cash": 25000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1733198,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3841936,
+        "rank": "2nd Prize",
+        "cash": 15000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1733198,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3841937,
+        "rank": "3rd Prize",
+        "cash": 10000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1733198,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/nexhack-20-geeta-university-naultha-panipat-1733198",
+    "type": "In-person",
+    "location": "offline",
+    "description": "NexHack 2.0 organized by Geeta University, Naultha, Panipat. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "unstop-vakyabhed",
@@ -376,35 +718,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
-  },
-  {
-    "id": "unstop-codeneurax-algorush",
-    "title": "CodeNeuraX: AlgoRush",
-    "organizer": "CodeNeuraX",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/codeneurax-algorush-codeneurax-1737089",
-    "type": "Online",
-    "location": "online",
-    "description": "CodeNeuraX: AlgoRush organized by CodeNeuraX. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "unstop-innovik-6-0-international-hackathon-2026",
@@ -491,154 +805,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
-  },
-  {
-    "id": "unstop-hackathon-to-solve-india-s-garbage-problem",
-    "title": "Hackathon to Solve India's Garbage Problem",
-    "organizer": "Wonksknow India Technologies Pvt Ltd",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/hackathon-to-solve-indias-garbage-problem-wonksknow-india-technologies-pvt-ltd-1733085",
-    "type": "Online",
-    "location": "online",
-    "description": "Hackathon to Solve India's Garbage Problem organized by Wonksknow India Technologies Pvt Ltd. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-15"
-  },
-  {
-    "id": "unstop-code-voyage",
-    "title": "Code Voyage",
-    "organizer": "IEM Kolkata",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/code-voyage-iem-kolkata-1736284",
-    "type": "In-person",
-    "location": "offline",
-    "description": "Code Voyage organized by IEM Kolkata. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-15"
-  },
-  {
-    "id": "unstop-legend-of-the-treasure-takara-no-densetsu",
-    "title": "Legend of the Treasure (Takara No Densetsu)",
-    "organizer": "Amity School of Engineering & Technology (AMITY), Noida",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3842881,
-        "rank": "1",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1736600,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Exclusive Goodies and Trophy",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3842882,
-        "rank": "2",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1736600,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Trophy",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3842883,
-        "rank": "3",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1736600,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Trophy",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical",
-      "Fresher"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/legend-of-the-treasure-takara-no-densetsu-amity-school-of-engineering-technology-amity-noida-1736600",
-    "type": "In-person",
-    "location": "offline",
-    "description": "Legend of the Treasure (Takara No Densetsu) organized by Amity School of Engineering & Technology (AMITY), Noida. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-15"
-  },
-  {
-    "id": "unstop-signal-quest-ieee-sps-hackathon-2026",
-    "title": "Signal Quest – IEEE SPS Hackathon 2026",
-    "organizer": "CMR Institute Of Technology ",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/signal-quest-ieee-sps-hackathon-2026-cmr-institute-of-technology-1736521",
-    "type": "In-person",
-    "location": "offline",
-    "description": "Signal Quest – IEEE SPS Hackathon 2026 organized by CMR Institute Of Technology . Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -662,7 +829,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -686,7 +853,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -710,7 +877,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -734,7 +901,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -758,7 +925,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -782,7 +949,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -806,7 +973,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -830,7 +997,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -854,7 +1021,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -878,7 +1045,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -902,6 +1069,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-15"
+    "fetchedAt": "2026-08-16"
   }
 ]
