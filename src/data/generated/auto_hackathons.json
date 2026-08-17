@@ -11,7 +11,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 1,
+    "daysLeft": 7,
     "url": "https://xprize.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "devpost-revenuecat-shipaton-2026",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -93,31 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
-  },
-  {
-    "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
-    "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
-    "organizer": "Cockroach Labs",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>8,750</span>",
-    "themes": [
-      "Machine Learning/AI",
-      "Databases",
-      "DevOps"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 2,
-    "url": "https://cockroachdb-ai.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "CockroachDB × AWS Hackathon - Build with Agentic Memory is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -141,7 +117,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
+  },
+  {
+    "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
+    "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
+    "organizer": "Cockroach Labs",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>8,750</span>",
+    "themes": [
+      "Machine Learning/AI",
+      "Databases",
+      "DevOps"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 2,
+    "url": "https://cockroachdb-ai.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "CockroachDB × AWS Hackathon - Build with Agentic Memory is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -165,7 +165,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "devpost-youcam-api-skin-ai-apparel-vto-hackathon",
@@ -179,7 +179,7 @@
       "E-commerce/Retail"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 1,
+    "daysLeft": 7,
     "url": "https://youcam-api.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -189,7 +189,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "devpost-africa-deep-tech-challenge-2026",
@@ -202,7 +202,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 9,
+    "daysLeft": 8,
     "url": "https://adtc-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -212,7 +212,57 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
+  },
+  {
+    "id": "unstop-z0d1ak-ctf",
+    "title": "Z0d1ak CTF",
+    "organizer": "Vellore Institute of Technology (VIT), Vellore",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/z0d1ak-ctf-gravitas26-vit-vellore-1735740",
+    "type": "Online",
+    "location": "online",
+    "description": "Z0d1ak CTF organized by Vellore Institute of Technology (VIT), Vellore. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-17"
+  },
+  {
+    "id": "unstop-the-pirate-s-flag-capture-the-flag-challenge",
+    "title": "The Pirate’s Flag – Capture the Flag Challenge",
+    "organizer": "Thakur Ramnarayan College of Arts and Commerce",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/the-pirates-flag-capture-the-flag-challenge-thakur-ramnarayan-college-of-arts-and-commerce-1737865",
+    "type": "In-person",
+    "location": "offline",
+    "description": "The Pirate’s Flag – Capture the Flag Challenge organized by Thakur Ramnarayan College of Arts and Commerce. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "unstop-quantum-alpha",
@@ -256,7 +306,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "unstop-matrix-2026",
@@ -326,7 +376,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "unstop-ai-innovation-hackathon-2026-build-real-world-ai-solutions",
@@ -394,7 +444,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "unstop-gameathon-2026",
@@ -462,7 +512,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "unstop-mirage-ctf-2-0",
@@ -479,7 +529,7 @@
         "entity_id": 1736179,
         "entity_type": "App\\Model\\Opportunity",
         "others": null,
-        "currencyCode": null,
+        "currencyCode": "INR",
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -494,7 +544,7 @@
         "entity_id": 1736179,
         "entity_type": "App\\Model\\Opportunity",
         "others": null,
-        "currencyCode": null,
+        "currencyCode": "INR",
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -509,7 +559,7 @@
         "entity_id": 1736179,
         "entity_type": "App\\Model\\Opportunity",
         "others": null,
-        "currencyCode": null,
+        "currencyCode": "INR",
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": 0,
@@ -530,7 +580,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "unstop-cypherverse",
@@ -598,7 +648,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "unstop-nerds-room-launch-hacks",
@@ -624,7 +674,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "unstop-nari-kavach",
@@ -652,115 +702,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
-  },
-  {
-    "id": "unstop-nexhack-2-0",
-    "title": "NexHack 2.0",
-    "organizer": "Geeta University, Naultha, Panipat",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3841935,
-        "rank": "1st Prize",
-        "cash": 25000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1733198,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3841936,
-        "rank": "2nd Prize",
-        "cash": 15000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1733198,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3841937,
-        "rank": "3rd Prize",
-        "cash": 10000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1733198,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/nexhack-20-geeta-university-naultha-panipat-1733198",
-    "type": "In-person",
-    "location": "offline",
-    "description": "NexHack 2.0 organized by Geeta University, Naultha, Panipat. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-16"
-  },
-  {
-    "id": "unstop-vakyabhed",
-    "title": "VakyaBhed",
-    "organizer": "Faculty of Technology, Delhi University",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3843353,
-        "rank": "Prize Pool",
-        "cash": 10000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1736989,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Engineering Students",
-      "Arts, Commerce, Sciences & Others"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/vakyabhed-yantrika-10-innovate-elevate-faculty-of-technology-delhi-university-1736989",
-    "type": "In-person",
-    "location": "offline",
-    "description": "VakyaBhed organized by Faculty of Technology, Delhi University. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -784,7 +726,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -808,7 +750,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -832,7 +774,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -856,7 +798,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -880,7 +822,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -904,7 +846,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -928,7 +870,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -952,7 +894,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -976,7 +918,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1000,7 +942,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -1024,6 +966,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-16"
+    "fetchedAt": "2026-08-17"
   }
 ]
