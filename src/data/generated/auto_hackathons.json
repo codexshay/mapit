@@ -1,29 +1,5 @@
 [
   {
-    "id": "devpost-build-with-gemini-xprize",
-    "title": "Build with Gemini XPRIZE",
-    "organizer": "XPRIZE",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>2,000,000</span>",
-    "themes": [
-      "Machine Learning/AI",
-      "Education",
-      "Productivity"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 7,
-    "url": "https://xprize.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "Build with Gemini XPRIZE is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-17"
-  },
-  {
     "id": "devpost-revenuecat-shipaton-2026",
     "title": "RevenueCat Shipaton 2026",
     "organizer": "RevenueCat",
@@ -45,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -69,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -93,7 +69,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
+  },
+  {
+    "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
+    "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
+    "organizer": "Cockroach Labs",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>8,750</span>",
+    "themes": [
+      "Machine Learning/AI",
+      "Databases",
+      "DevOps"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 7,
+    "url": "https://cockroachdb-ai.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "CockroachDB × AWS Hackathon - Build with Agentic Memory is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -117,31 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
-  },
-  {
-    "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
-    "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
-    "organizer": "Cockroach Labs",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>8,750</span>",
-    "themes": [
-      "Machine Learning/AI",
-      "Databases",
-      "DevOps"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 1,
-    "url": "https://cockroachdb-ai.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "CockroachDB × AWS Hackathon - Build with Agentic Memory is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -165,31 +141,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
-  },
-  {
-    "id": "devpost-youcam-api-skin-ai-apparel-vto-hackathon",
-    "title": "YouCam API Skin AI & Apparel VTO Hackathon",
-    "organizer": "Perfect Corp",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>6,000</span>",
-    "themes": [
-      "Machine Learning/AI",
-      "AR/VR",
-      "E-commerce/Retail"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 7,
-    "url": "https://youcam-api.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "YouCam API Skin AI & Apparel VTO Hackathon  is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "devpost-africa-deep-tech-challenge-2026",
@@ -202,7 +154,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 8,
+    "daysLeft": 7,
     "url": "https://adtc-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -212,7 +164,144 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
+  },
+  {
+    "id": "devpost-reverie-hacks-2026",
+    "title": "Reverie Hacks 2026",
+    "organizer": "ReverieHacks",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>1,096,950</span>",
+    "themes": [
+      "Beginner Friendly",
+      "Machine Learning/AI",
+      "Open Ended"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 6,
+    "url": "https://reverie-hacks-2026.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "Reverie Hacks 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-18"
+  },
+  {
+    "id": "devpost-volthacks",
+    "title": "VoltHacks",
+    "organizer": "Dialogate",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>32,785</span>",
+    "themes": [
+      "IoT",
+      "Machine Learning/AI",
+      "Beginner Friendly"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 19,
+    "url": "https://volthacks.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "VoltHacks is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-18"
+  },
+  {
+    "id": "unstop-mosip-decode-2026",
+    "title": "MOSIP Decode 2026",
+    "organizer": "International Institute of Information Technology (IIIT), Bangalore",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3841971,
+        "rank": "Prize money of INR 500000",
+        "cash": 500000,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1735221,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Top winning solutions will be awarded prize money from a total pool of USD 5,000.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3841972,
+        "rank": "Internship Opportunities",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1735221,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Exceptional participants may earn an internship with MOSIP, gaining mentorship from MOSIP experts and further enhancing their skills and career prospects. They will also have the opportunity to refine their solutions and integrate it into MOSIP.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": null,
+        "pre_placement_opportunity": null
+      },
+      {
+        "id": 3841973,
+        "rank": "Showcase at MOSIP Connect 2027",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1735221,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "The top solutions will be showcased at MOSIP Connect 2027 – an international event with representatives from over 30 countries.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3841974,
+        "rank": "Integration into MOSIP Platform",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1735221,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Outstanding solutions could be integrated into the MOSIP platform, providing students with industry recognition and a significant career boost.",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": null,
+        "pre_placement_opportunity": null
+      }
+    ],
+    "themes": [
+      "Engineering Students",
+      "Undergraduate",
+      "Postgraduate",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/mosip-decode-2026-synergy-26-international-institute-of-information-technology-iiit-bangalore-1735221",
+    "type": "Online",
+    "location": "online",
+    "description": "MOSIP Decode 2026 organized by International Institute of Information Technology (IIIT), Bangalore. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "unstop-cardioviz-xr-48-hour-medical-animation-challenge",
@@ -250,7 +339,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "unstop-one-hack-8-hours-web3-hackathon",
@@ -272,7 +361,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "unstop-aurex-26-classical-tamil-s-first-lingual-tech-hackathon",
@@ -343,11 +432,11 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "unstop-z0d1ak-ctf",
-    "title": "Z0d1ak CTF",
+    "title": "z0d1ak CTF",
     "organizer": "Vellore Institute of Technology (VIT), Vellore",
     "region": "India",
     "prizes": [],
@@ -359,13 +448,13 @@
     "url": "https://unstop.com/https://unstop.com/hackathons/z0d1ak-ctf-gravitas26-vit-vellore-1735740",
     "type": "Online",
     "location": "online",
-    "description": "Z0d1ak CTF organized by Vellore Institute of Technology (VIT), Vellore. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "description": "z0d1ak CTF organized by Vellore Institute of Technology (VIT), Vellore. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
     "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
     "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "unstop-the-pirate-s-flag-capture-the-flag-challenge",
@@ -439,7 +528,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "unstop-quantum-alpha",
@@ -483,7 +572,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "unstop-matrix-2026",
@@ -553,7 +642,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "unstop-ai-innovation-hackathon-2026-build-real-world-ai-solutions",
@@ -621,7 +710,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "unstop-gameathon-2026",
@@ -689,75 +778,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
-  },
-  {
-    "id": "unstop-mirage-ctf-2-0",
-    "title": "Mirage CTF 2.0",
-    "organizer": "Amrita Vishwa Vidyapeetham (AVV), Chennai",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3842492,
-        "rank": "Winner",
-        "cash": 10000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1736179,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3842493,
-        "rank": "Runner Up",
-        "cash": 7000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1736179,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3842494,
-        "rank": "2nd Runner UP",
-        "cash": 3000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1736179,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/mirage-ctf-20-amrita-vishwa-vidyapeetham-avv-chennai-1736179",
-    "type": "In-person",
-    "location": "offline",
-    "description": "Mirage CTF 2.0 organized by Amrita Vishwa Vidyapeetham (AVV), Chennai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -781,7 +802,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -805,7 +826,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -829,7 +850,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -853,7 +874,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -877,7 +898,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -901,7 +922,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -925,7 +946,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -949,7 +970,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -973,7 +994,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -997,7 +1018,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -1021,6 +1042,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-17"
+    "fetchedAt": "2026-08-18"
   }
 ]
