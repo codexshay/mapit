@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -69,31 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
-  },
-  {
-    "id": "devpost-cockroachdb-aws-hackathon-build-with-agentic-memory",
-    "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
-    "organizer": "Cockroach Labs",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>8,750</span>",
-    "themes": [
-      "Machine Learning/AI",
-      "Databases",
-      "DevOps"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 7,
-    "url": "https://cockroachdb-ai.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "CockroachDB × AWS Hackathon - Build with Agentic Memory is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -117,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -141,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "devpost-africa-deep-tech-challenge-2026",
@@ -154,7 +130,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 7,
+    "daysLeft": 6,
     "url": "https://adtc-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -164,21 +140,21 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "devpost-reverie-hacks-2026",
     "title": "Reverie Hacks 2026",
     "organizer": "ReverieHacks",
     "region": "Global",
-    "prizes": "$<span data-currency-value>1,096,950</span>",
+    "prizes": "$<span data-currency-value>1,302,600</span>",
     "themes": [
       "Beginner Friendly",
       "Machine Learning/AI",
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 6,
+    "daysLeft": 5,
     "url": "https://reverie-hacks-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -188,14 +164,14 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "devpost-volthacks",
     "title": "VoltHacks",
     "organizer": "Dialogate",
     "region": "Global",
-    "prizes": "$<span data-currency-value>32,785</span>",
+    "prizes": "$<span data-currency-value>35,785</span>",
     "themes": [
       "IoT",
       "Machine Learning/AI",
@@ -212,7 +188,59 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
+  },
+  {
+    "id": "devpost-3d-websites-hackathon",
+    "title": "3D Websites Hackathon",
+    "organizer": "high school",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>55</span>",
+    "themes": [
+      "Design",
+      "Web",
+      "Beginner Friendly"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 13,
+    "url": "https://3d-websites-hackathon.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "3D Websites Hackathon is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-19"
+  },
+  {
+    "id": "unstop-hackathon-4-0",
+    "title": "Hackathon 4.0",
+    "organizer": "Indian Education Society Management College & Research, Mumbai",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/hackathon-40-indian-education-society-management-college-research-mumbai-1739792",
+    "type": "Online",
+    "location": "online",
+    "description": "Hackathon 4.0 organized by Indian Education Society Management College & Research, Mumbai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "unstop-e-on-future-makers-challenge",
@@ -286,7 +314,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "unstop-mosip-decode-2026",
@@ -375,7 +403,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "unstop-cardioviz-xr-48-hour-medical-animation-challenge",
@@ -413,11 +441,11 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
-    "id": "unstop-one-hack-8-hours-web3-hackathon",
-    "title": "ONE HACK: 8 Hours Web3 Hackathon",
+    "id": "unstop-one-hack-8-hours-ai-web3-hackathon",
+    "title": "ONE HACK: 8 Hours AI & Web3 Hackathon",
     "organizer": "Hackers Cult",
     "region": "India",
     "prizes": [],
@@ -429,13 +457,13 @@
     "url": "https://unstop.com/https://unstop.com/hackathons/one-hack-8-hours-web3-hackathon-hackers-cult-1737227",
     "type": "In-person",
     "location": "offline",
-    "description": "ONE HACK: 8 Hours Web3 Hackathon organized by Hackers Cult. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "description": "ONE HACK: 8 Hours AI & Web3 Hackathon organized by Hackers Cult. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
     "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
     "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "unstop-aurex-26-classical-tamil-s-first-lingual-tech-hackathon",
@@ -506,7 +534,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "unstop-z0d1ak-ctf",
@@ -528,7 +556,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "unstop-the-pirate-s-flag-capture-the-flag-challenge",
@@ -602,7 +630,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "unstop-quantum-alpha",
@@ -646,7 +674,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "unstop-matrix-2026",
@@ -716,75 +744,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
-  },
-  {
-    "id": "unstop-ai-innovation-hackathon-2026-build-real-world-ai-solutions",
-    "title": "AI Innovation Hackathon 2026 – Build Real-World AI Solutions",
-    "organizer": "Bharat Academix",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3843581,
-        "rank": "1",
-        "cash": 21000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1737263,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3843582,
-        "rank": "2",
-        "cash": 11000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1737263,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3843583,
-        "rank": "3",
-        "cash": 5100,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1737263,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/ai-innovation-hackathon-2026-build-real-world-ai-solutions-bharat-academix-1737263",
-    "type": "Online",
-    "location": "online",
-    "description": "AI Innovation Hackathon 2026 – Build Real-World AI Solutions organized by Bharat Academix. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -808,7 +768,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -832,7 +792,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -856,7 +816,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -880,7 +840,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -904,7 +864,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -928,7 +888,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -952,7 +912,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -976,7 +936,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1000,7 +960,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1024,7 +984,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -1048,6 +1008,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-18"
+    "fetchedAt": "2026-08-19"
   }
 ]
