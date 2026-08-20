@@ -4,7 +4,7 @@
     "title": "RevenueCat Shipaton 2026",
     "organizer": "RevenueCat",
     "region": "Global",
-    "prizes": "$<span data-currency-value>685,000</span>",
+    "prizes": "$<span data-currency-value>740,000</span>",
     "themes": [
       "Design",
       "Gaming",
@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "devpost-africa-deep-tech-challenge-2026",
@@ -130,7 +130,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 6,
+    "daysLeft": 5,
     "url": "https://adtc-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -140,21 +140,21 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "devpost-reverie-hacks-2026",
     "title": "Reverie Hacks 2026",
     "organizer": "ReverieHacks",
     "region": "Global",
-    "prizes": "$<span data-currency-value>1,302,600</span>",
+    "prizes": "$<span data-currency-value>1,336,350</span>",
     "themes": [
       "Beginner Friendly",
       "Machine Learning/AI",
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 5,
+    "daysLeft": 4,
     "url": "https://reverie-hacks-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -164,7 +164,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "devpost-volthacks",
@@ -188,7 +188,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "devpost-3d-websites-hackathon",
@@ -212,7 +212,169 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
+  },
+  {
+    "id": "unstop-code-to-creation-project-submission",
+    "title": "Code to Creation (Project Submission)",
+    "organizer": "Samrat Ashok Technological Institute (SATI), Vidisha",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3845558,
+        "rank": "Top 10 Participants",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1740116,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Get Exclusive Swags",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/code-to-creation-project-submission-samrat-ashok-technological-institute-sati-vidisha-1740116",
+    "type": "Online",
+    "location": "online",
+    "description": "Code to Creation (Project Submission) organized by Samrat Ashok Technological Institute (SATI), Vidisha. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-20"
+  },
+  {
+    "id": "unstop-captain-s-code-blind-typing-challenge",
+    "title": "Captain’s Code – Blind Typing Challenge",
+    "organizer": "Thakur Ramnarayan College of Arts and Commerce",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3846075,
+        "rank": "Winner",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1740464,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Trophy",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3846076,
+        "rank": "First Runner-up",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1740464,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Trophy",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3846117,
+        "rank": "Second Runner Up",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1740464,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Prize",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/captains-code-blind-typing-challenge-thakur-ramnarayan-college-of-arts-and-commerce-1740464",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Captain’s Code – Blind Typing Challenge organized by Thakur Ramnarayan College of Arts and Commerce. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-20"
+  },
+  {
+    "id": "unstop-hackcelestial-3-0",
+    "title": "HackCelestial 3.0",
+    "organizer": "Pillai University, Navi Mumbai",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3844813,
+        "rank": "Prize Pool",
+        "cash": 150000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1737808,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Engineering Students",
+      "Arts, Commerce, Sciences & Others",
+      "Postgraduate",
+      "Management",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/hackcelestial-30-pillai-university-navi-mumbai-1737808",
+    "type": "In-person",
+    "location": "offline",
+    "description": "HackCelestial 3.0 organized by Pillai University, Navi Mumbai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "unstop-csi-kjsse-hackday-2-0",
@@ -234,7 +396,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "unstop-code-x-novas-innovathon-2026-national-software-ai-hackathon",
@@ -310,7 +472,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "unstop-manufacture-your-dream-rc-car-building-and-racing",
@@ -338,7 +500,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "unstop-battlecode",
@@ -366,7 +528,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "unstop-celestia-2-0",
@@ -394,7 +556,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "unstop-we-hack-5-0",
@@ -422,7 +584,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "unstop-what-the-flag",
@@ -450,198 +612,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
-  },
-  {
-    "id": "unstop-hackathon-4-0",
-    "title": "Hackathon 4.0",
-    "organizer": "Indian Education Society Management College & Research, Mumbai",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/hackathon-40-indian-education-society-management-college-research-mumbai-1739792",
-    "type": "Online",
-    "location": "online",
-    "description": "Hackathon 4.0 organized by Indian Education Society Management College & Research, Mumbai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-19"
-  },
-  {
-    "id": "unstop-e-on-future-makers-challenge",
-    "title": "E.ON Future Makers Challenge",
-    "organizer": "Infosys",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3845233,
-        "rank": "Top 4 Selected Ideas",
-        "cash": null,
-        "currency": "fa-euro",
-        "certificate": 0,
-        "entity_id": 1739537,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Funding for up to 4 selected ideas to the extent of up to EUR 80,000 in total",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3845234,
-        "rank": "Top 2 Ideas from Phase 2",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1739537,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "support for development into real-world solutions or products in Phase 3",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3845235,
-        "rank": "Selected Teams",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1739537,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Selected ideas will receive innovation and entrepreneurship mentorship from Infosys and IIT Madras, access to labs, research infrastructure and deep-tech expertise for prototyping, support from Infosys to pursue early client pilot opportunities, and the opportunity to be part of the IIT Madras Energy Consortium Ventures.",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/crp-eon-future-makers-challenge-infosys-1739537",
-    "type": "Online",
-    "location": "online",
-    "description": "E.ON Future Makers Challenge organized by Infosys. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-19"
-  },
-  {
-    "id": "unstop-mosip-decode-2026",
-    "title": "MOSIP Decode 2026",
-    "organizer": "International Institute of Information Technology (IIIT), Bangalore",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3841971,
-        "rank": "Prize money of INR 500000",
-        "cash": 500000,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1735221,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Top winning solutions will be awarded prize money from a total pool of USD 5,000.",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3841972,
-        "rank": "Internship Opportunities",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1735221,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Exceptional participants may earn an internship with MOSIP, gaining mentorship from MOSIP experts and further enhancing their skills and career prospects. They will also have the opportunity to refine their solutions and integrate it into MOSIP.",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": null,
-        "pre_placement_opportunity": null
-      },
-      {
-        "id": 3841973,
-        "rank": "Showcase at MOSIP Connect 2027",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1735221,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "The top solutions will be showcased at MOSIP Connect 2027 – an international event with representatives from over 30 countries.",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3841974,
-        "rank": "Integration into MOSIP Platform",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 0,
-        "entity_id": 1735221,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Outstanding solutions could be integrated into the MOSIP platform, providing students with industry recognition and a significant career boost.",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": null,
-        "pre_placement_opportunity": null
-      }
-    ],
-    "themes": [
-      "Engineering Students",
-      "Undergraduate",
-      "Postgraduate",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/mosip-decode-2026-synergy-26-international-institute-of-information-technology-iiit-bangalore-1735221",
-    "type": "Online",
-    "location": "online",
-    "description": "MOSIP Decode 2026 organized by International Institute of Information Technology (IIIT), Bangalore. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -665,7 +636,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -689,7 +660,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -713,7 +684,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -737,7 +708,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -761,7 +732,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -785,7 +756,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -809,7 +780,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -833,7 +804,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -857,7 +828,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -881,7 +852,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -905,6 +876,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-19"
+    "fetchedAt": "2026-08-20"
   }
 ]
