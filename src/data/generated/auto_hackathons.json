@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "devpost-africa-deep-tech-challenge-2026",
@@ -130,7 +130,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 5,
+    "daysLeft": 4,
     "url": "https://adtc-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -140,21 +140,21 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "devpost-reverie-hacks-2026",
     "title": "Reverie Hacks 2026",
     "organizer": "ReverieHacks",
     "region": "Global",
-    "prizes": "$<span data-currency-value>1,447,350</span>",
+    "prizes": "$<span data-currency-value>2,206,164</span>",
     "themes": [
       "Beginner Friendly",
       "Machine Learning/AI",
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 4,
+    "daysLeft": 3,
     "url": "https://reverie-hacks-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -164,7 +164,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "devpost-volthacks",
@@ -188,12 +188,12 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "devpost-3d-websites-hackathon",
     "title": "3D Websites Hackathon",
-    "organizer": "high school",
+    "organizer": "Tanishq Kumar",
     "region": "Global",
     "prizes": "$<span data-currency-value>55</span>",
     "themes": [
@@ -212,7 +212,51 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
+  },
+  {
+    "id": "unstop-cloudforge",
+    "title": "Cloudforge",
+    "organizer": "Atal Bihari Vajpayee-Indian Institute of Information Technology and Management",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3846978,
+        "rank": "Top Submissions",
+        "cash": 120000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1741840,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Worth of AWS Credits",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/cloudforge-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-1741840",
+    "type": "Online",
+    "location": "online",
+    "description": "Cloudforge organized by Atal Bihari Vajpayee-Indian Institute of Information Technology and Management. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "unstop-identity-under-attack",
@@ -301,7 +345,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "unstop-ignition-hackathon-series-2026",
@@ -329,7 +373,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "unstop-deepsprint-hackathon",
@@ -357,7 +401,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "unstop-bug-blitz",
@@ -385,7 +429,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "unstop-crew-assemble-build-battle-conquer",
@@ -413,7 +457,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "unstop-the-lost-algorithm-dsa",
@@ -441,7 +485,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "unstop-rebuild-the-classroom-build-the-tool-that-teaches-when-ai-is-the-teacher",
@@ -479,7 +523,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "unstop-the-agents-bounty-ai-agent-build-challenge",
@@ -507,7 +551,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "unstop-code-insight-2k26",
@@ -535,75 +579,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
-  },
-  {
-    "id": "unstop-hacks-11-0",
-    "title": "Hacks 11.0",
-    "organizer": "ACM Manipal University (MU), Jaipur",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3845237,
-        "rank": "1st",
-        "cash": 40000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1739750,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3845238,
-        "rank": "2nd",
-        "cash": 24000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1739750,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3845239,
-        "rank": "3rd",
-        "cash": 16000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1739750,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/hacks-110-elicit26-acm-manipal-university-mu-jaipur-1739750",
-    "type": "In-person",
-    "location": "offline",
-    "description": "Hacks 11.0 organized by ACM Manipal University (MU), Jaipur. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -627,7 +603,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -651,7 +627,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -675,7 +651,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -699,7 +675,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -723,7 +699,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -747,7 +723,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -771,7 +747,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -795,7 +771,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -819,7 +795,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -843,7 +819,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -867,6 +843,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-20"
+    "fetchedAt": "2026-08-21"
   }
 ]
