@@ -1,0 +1,1162 @@
+# ITMap Mobile Navigation and Section-Shell Implementation Plan
+
+## 1. Objective
+
+Redesign the mobile structure of [itmap.in](https://itmap.in/) so that:
+
+- Every opened section gets its own path/breadcrumb bar.
+- Sections with multiple existing views, categories, or tabs get a section navigator.
+- Existing filters appear beneath the section title as chips or a filter sheet.
+- Existing home-page and section content continues to use normal vertical scrolling.
+- No new product sections or unsupported features are introduced.
+
+The change should reorganize existing MapIT functionality, not redesign its underlying content.
+
+---
+
+# 2. Target information architecture
+
+MapIT should have four distinct navigation layers.
+
+| Layer | Purpose |
+|---|---|
+| Global header | Persistent access to menu, home, search, and Bookmarks |
+| Global drawer | Access to every major MapIT section |
+| Section path bar | Shows the currently opened section and view |
+| Section navigator and filters | Switches existing views and narrows current content |
+
+These layers must remain visually and behaviorally distinct.
+
+---
+
+# 3. Global mobile application shell
+
+Every mobile page should use the same top-level shell:
+
+```text
+Application shell
+├── Global header
+├── Global navigation drawer
+├── Global search overlay
+├── Section shell or home shell
+├── Floating sPAM me control
+└── Page content
+```
+
+The global header remains present when moving between sections.
+
+## Header structure
+
+Recommended order:
+
+```text
+[Menu] [MapIT logo] [Flexible space] [Search] [Bookmarks]
+```
+
+### Menu button
+
+- Opens the global navigation drawer.
+- Uses a minimum 44 × 44px touch target.
+- Communicates open/closed state.
+- Returns focus after the drawer closes.
+- Is hidden only if a persistent desktop navigation is visible.
+
+### MapIT identity
+
+- Use the existing `MI` mark or compact MapIT logo.
+- Selecting it opens Dash/home.
+- Keep the existing green brand treatment.
+- Do not introduce Google Cloud branding or styling.
+
+### Global search button
+
+- Replaces the permanently visible mobile search box.
+- Opens the existing “Search all sections...” functionality.
+- Searches across all MapIT sections.
+- Uses an accessible label such as “Search MapIT.”
+
+### Bookmarks button
+
+- Occupies the position analogous to the notification button in Google Cloud.
+- Opens the existing Bookmarks module directly.
+- Uses an accessible label such as “Open Bookmarks.”
+- May display an existing bookmark count, but only if MapIT already tracks it.
+- Must not open a notification panel.
+
+### Excluded elements
+
+Do not add:
+
+- Notification functionality
+- Three-dot utilities menu
+- User avatar unless MapIT already requires one
+- Horizontally overflowing mobile section buttons
+- A replacement bottom navigation bar
+
+---
+
+# 4. Global navigation drawer
+
+The drawer becomes the primary mobile navigation.
+
+## Dimensions and behavior
+
+- Opens from the left.
+- Uses approximately 80% of the viewport width.
+- Maximum width: approximately 320px.
+- Covers the full available height.
+- Has an independently scrolling body.
+- Applies a translucent dark backdrop to the page.
+- Locks background page scrolling.
+- Closes through:
+  - Close button
+  - Backdrop selection
+  - Escape
+  - Completed navigation
+
+## Drawer header
+
+Include:
+
+- Close button
+- MapIT identity
+- Optional current release label such as `v1.4.3`
+
+Optional subtitle:
+
+> IT Career Mind-Map & InterviewQ Bank
+
+Do not include account controls unless they already exist elsewhere in MapIT.
+
+## Drawer content
+
+### Primary
+
+- Dash
+- Career Domains
+- Resources
+- InterviewQ
+
+### Planning tools
+
+- Path Planner
+- Comparator
+
+### Opportunities
+
+- Jobs & Referrals `beta`
+- HR Contacts `beta`
+
+### Personal
+
+- Bookmarks
+
+### Drawer footer
+
+- Catalog v2026
+- Current theme label
+- Theme toggle
+
+The existing `sPAM me` action should remain outside the drawer.
+
+## Active navigation state
+
+The current global section should be indicated using:
+
+- MapIT green leading indicator
+- Pale green row background
+- Stronger label weight
+- Appropriate current-page accessibility state
+
+Do not rely on color alone.
+
+---
+
+# 5. Global search overlay
+
+## Closed state
+
+Only the search icon appears in the top bar.
+
+## Open state
+
+The search interface should appear as a top sheet or large overlay beneath/over the header.
+
+Recommended structure:
+
+```text
+Search surface
+├── Back/close control
+├── Search input
+├── Clear control
+├── Grouped results
+└── Empty/loading states
+```
+
+## Existing search scope
+
+Search only MapIT content already available in:
+
+- Career Domains
+- Resources
+- InterviewQ
+- Path Planner
+- Comparator
+- Jobs & Referrals
+- HR Contacts
+- Bookmarks
+- Relevant Dash/home content
+
+## Result structure
+
+Each result should contain:
+
+- Primary result title
+- Source section
+- Optional existing metadata
+- Destination
+
+Example:
+
+```text
+Kubernetes
+Career Domains
+```
+
+or:
+
+```text
+Kubernetes administration questions
+InterviewQ
+```
+
+## Search interaction requirements
+
+- Focus the input automatically.
+- Support existing result selection.
+- Close after navigation.
+- Restore focus to the search button.
+- Lock background scrolling.
+- Close with Escape.
+- Prevent the global drawer and search overlay from being open simultaneously.
+- Preserve the existing “Search all sections...” indexing logic where possible.
+
+---
+
+# 6. Home-page shell
+
+Dash/home is the only page that does not require a section breadcrumb.
+
+It should contain:
+
+```text
+Global header
+Existing scrolling home content
+Floating sPAM me control
+```
+
+## Existing home content to preserve
+
+Maintain the current order:
+
+1. Pathfinder/ant companion strip
+2. “WELCOME TO MAPIT” hero
+3. Hackathons & Tech Events
+4. What’s New
+5. ANT framework/game area
+6. Footer
+
+Do not convert these sections into tabs.
+
+## Scrolling
+
+- Use one uninterrupted document scroll.
+- The global header may be sticky.
+- Remove the bottom padding previously needed for bottom navigation.
+- Retain enough bottom and side space for `sPAM me`.
+- Ensure the floating control does not cover event links, buttons, or game controls.
+
+---
+
+# 7. Reusable opened-section shell
+
+Every major MapIT module should use a shared mobile structure:
+
+```text
+Global header
+Section path bar
+Page heading and contextual actions
+Optional filter area
+Section-specific content
+```
+
+## Section path bar
+
+Structure:
+
+```text
+[Section navigator] Parent section / Current view
+```
+
+Examples:
+
+- `Career Domains / Overview`
+- `Resources / All Resources`
+- `InterviewQ / All Questions`
+- `Path Planner / Current Plan`
+- `Comparator / Compare`
+- `Jobs & Referrals / Companies`
+- `HR Contacts / Agencies`
+- `Bookmarks / All`
+
+The names must come from MapIT’s existing page/category labels. Do not expose internal route names.
+
+## Section-navigation control
+
+- Appears only when the current module has multiple existing views or category groups.
+- Opens the current module’s section navigator.
+- Must look different from the global hamburger.
+- A sliders, panel, list, or compact section icon is suitable.
+- Uses a 44px touch target.
+
+If a module has only one current view, omit the button rather than opening a one-item menu.
+
+## Breadcrumb behavior
+
+- Parent section returns to that module’s default view.
+- Current view identifies the active category/tab.
+- For a two-level route:
+
+  `InterviewQ / DevOps`
+
+- For a necessary third level:
+
+  `InterviewQ / DevOps / Kubernetes`
+
+Limit visible depth to three levels.
+
+On narrow screens:
+
+- Keep the current view visible.
+- Truncate the parent before the current view.
+- Do not make the breadcrumb horizontally scrollable.
+
+---
+
+# 8. Section navigator
+
+The section navigator replaces cramped mobile tabs, category strips, or view selectors.
+
+## Behavior
+
+- Opens from the left or directly beneath the path bar.
+- Contains only destinations belonging to the current module.
+- Does not repeat global sections.
+- Shows the active view.
+- Closes after selecting a view.
+- Locks background scrolling when presented as a drawer.
+- Returns focus to its trigger when dismissed.
+
+## Source of navigator items
+
+For each module, populate the section navigator from existing:
+
+- Tabs
+- Top-level category buttons
+- Accordion groups
+- Existing route views
+- Major content databases
+- Region/category selectors that already function as page destinations
+
+Do not invent categories simply to make every navigator appear equally populated.
+
+---
+
+# 9. Filters and sorting
+
+Filters operate below the page title and only affect the current section view.
+
+## Collapsed mobile presentation
+
+Use:
+
+```text
+[Filter icon + Filter] [Active chip] [Active chip]
+```
+
+The visible row can contain:
+
+- Filter button
+- One or two active chips
+- “+N” indicator when more filters are active
+
+## Expanded filter sheet
+
+A mobile bottom or side sheet may contain the existing filter controls.
+
+Recommended structure:
+
+```text
+Filters
+├── Existing filter group
+├── Existing filter group
+├── Reset
+└── Apply
+```
+
+This filter sheet is an appropriate use of a bottom sheet because it is a temporary editing task. Primary navigation should not use a bottom sheet.
+
+## Filter chips
+
+Applied filters should show:
+
+- Filter name
+- Selected value
+- Remove action where supported
+
+Examples based on existing section data could include:
+
+- `Role: DevOps`
+- `Region: India`
+- `Category: Security`
+- `Type: Career Link`
+- `Bookmarked`
+- `Level: Beginner`
+
+Only expose filters supported by the existing dataset.
+
+## URL and history
+
+Where technically practical:
+
+- Selected section view should be represented in the route.
+- Applied filters should be represented in query or route state.
+- Reloading should preserve the current view and filters.
+- Browser Back should restore the previous state.
+- Shared filtered URLs should open the same filtered view.
+
+---
+
+# 10. Per-section implementation
+
+## A. Dash
+
+### Shell
+
+- Global header only
+- No section breadcrumb
+- No section navigator
+
+### Preserve
+
+- Welcome hero
+- Events
+- What’s New
+- ANT game
+- Footer
+
+### Remove
+
+- Bottom navigation
+- Mobile horizontal section-strip overflow
+
+### Actions
+
+Existing buttons in What’s New should continue opening their corresponding modules.
+
+---
+
+## B. Career Domains
+
+### Default path
+
+> Career Domains / Overview
+
+### Section navigator
+
+Populate it from the existing Career Domains category or domain-group structure.
+
+Potential entries must use actual existing group labels. Do not hard-code a proposed taxonomy if the data source already defines one.
+
+### Content
+
+Preserve:
+
+- Existing domain cards
+- Existing category grouping
+- Existing domain descriptions
+- Existing navigation into domain details
+- Existing indicators or saved states
+
+### Domain-detail path
+
+> Career Domains / `[Domain name]`
+
+If the domain has existing subtopics:
+
+> Career Domains / `[Domain name]` / `[Subtopic]`
+
+### Filters
+
+Use only filters already supported by domain data. Appropriate candidates include existing level, category, or skill group attributes.
+
+---
+
+## C. Resources
+
+### Default path
+
+> Resources / All Resources
+
+### Section navigator
+
+Construct it from existing resource categories or top-level resource views.
+
+### Content
+
+Preserve:
+
+- Existing resources
+- Category organisation
+- External-link behavior
+- Existing resource metadata
+- Existing saved/bookmarked behavior
+
+### Filters
+
+Use existing values such as:
+
+- Category
+- Technology
+- Type
+- Level
+
+Do not add rating, pricing, or certification filters unless that metadata already exists.
+
+### Resource detail
+
+If details open inside MapIT:
+
+> Resources / `[Category]` / `[Resource]`
+
+External resources should continue opening according to current behavior.
+
+---
+
+## D. InterviewQ
+
+### Default path
+
+> InterviewQ / All Questions
+
+### Summary information
+
+Preserve existing indicators such as:
+
+- 6,305+ total questions
+- 23 role categories
+- Existing sub-domain counts
+- Existing framework/evaluation information
+
+### Section navigator
+
+Populate from current top-level InterviewQ views, role categories, or database groupings.
+
+Avoid placing all 23 roles in the first visible panel if it becomes unwieldy. Existing roles may be grouped under an existing “Role Categories” view.
+
+### Question-list path
+
+> InterviewQ / `[Role category]`
+
+Deeper view:
+
+> InterviewQ / `[Role category]` / `[Sub-domain]`
+
+### Filters
+
+Use existing InterviewQ metadata:
+
+- Role
+- Sub-domain
+- Difficulty or level, if present
+- Framework, if present
+- Bookmarked questions
+
+### Bookmarks
+
+Question bookmark controls should continue adding to the unified existing Bookmarks module.
+
+---
+
+## E. Path Planner
+
+### Default path
+
+> Path Planner / Plan
+
+Use the exact existing view label if it differs.
+
+### Section navigator
+
+Only provide this if Path Planner currently has distinct views or stages. Otherwise omit it.
+
+### Content
+
+Preserve:
+
+- Existing user selections
+- Existing planning controls
+- Existing generated path
+- Existing reset/edit behavior
+- Existing related-domain links
+
+### State
+
+Opening and closing navigation must not discard an in-progress plan.
+
+---
+
+## F. Comparator
+
+### Default path
+
+> Comparator / Compare
+
+### Section navigator
+
+Only include existing comparator modes, categories, or result views.
+
+### Content
+
+Preserve:
+
+- Existing comparison selections
+- Existing side-by-side data
+- Existing result indicators
+- Existing reset or change controls
+
+### Mobile layout
+
+If comparisons are currently horizontal:
+
+- Stack comparison subjects vertically on narrow screens, or
+- Keep the first identifying columns sticky within an intentional horizontal comparison region.
+
+Do not make the entire page horizontally scroll.
+
+Opening the global or section drawer must not reset selected comparison items.
+
+---
+
+## G. Jobs & Referrals
+
+### Default path
+
+> Jobs & Referrals / Companies
+
+Keep the existing `beta` marker beside the module title.
+
+### Existing content to preserve
+
+- 257+ technology companies
+- Official career links
+- LinkedIn company-job links
+- Referral portals
+- Existing accordion structure
+
+### Section navigator
+
+Use existing content types or company groupings if they currently function as separate views.
+
+Possible names must be drawn from actual current UI labels, such as the existing company listings and link types.
+
+### Filters
+
+Use only existing company metadata, potentially:
+
+- Company category
+- Location
+- Link type
+
+### Accordion behavior
+
+- Preserve the existing accordion interaction.
+- Opening the navigation drawer should not collapse expanded company rows.
+- Returning from an external link should restore the previous list position where possible.
+
+---
+
+## H. HR Contacts
+
+### Default path
+
+> HR Contacts / Agencies
+
+Keep the existing `beta` marker.
+
+### Existing content to preserve
+
+- 514+ verified IT recruitment and HR consultancy agencies
+- Existing geographic organisation
+- US
+- India
+- APAC
+- EMEA
+- Existing city accordions
+
+### Section navigator
+
+Use the existing regional structure if regions are already treated as major views:
+
+- Agencies
+- India
+- US
+- APAC
+- EMEA
+
+Otherwise, keep regions as filters or accordions instead of duplicating them as routes.
+
+### Filters
+
+Use existing data such as:
+
+- Region
+- Country
+- City
+- Agency type, if present
+
+### Path examples
+
+> HR Contacts / India
+
+or, where city navigation is route-level:
+
+> HR Contacts / India / Bengaluru
+
+---
+
+## I. Bookmarks
+
+### Default path
+
+> Bookmarks / All
+
+Bookmarks is available from:
+
+- Global header shortcut
+- Global navigation drawer
+
+### Section navigator
+
+If the current bookmark data supports content types, provide views such as the actual existing categories:
+
+- All
+- Career Domains
+- Resources
+- InterviewQ
+
+Only list modules that can currently be bookmarked.
+
+### Empty state
+
+Use an existing MapIT-style empty state:
+
+- Clear heading
+- Short explanation
+- Link back to a relevant section
+
+Do not invent notifications, collections, folders, or sharing unless these already exist.
+
+### Filters
+
+Possible existing filters:
+
+- Content type
+- Recently added
+- Search within Bookmarks
+
+---
+
+# 11. Floating `sPAM me` control
+
+The floating control remains available without becoming part of navigation.
+
+## Positioning
+
+- Keep it above the lower safe-area inset.
+- Move it upward only when another temporary bottom surface is open.
+- Ensure it does not cover:
+  - Event actions
+  - Accordion headers
+  - Question controls
+  - Game controls
+  - Filter Apply/Reset actions
+
+## Overlay interaction
+
+Hide or temporarily reposition it while:
+
+- Global drawer is open
+- Section navigator is open
+- Search overlay is open
+- Filter sheet is open
+
+This prevents it from visually floating above modal surfaces.
+
+---
+
+# 12. Responsive rules
+
+## Mobile: up to approximately 767px
+
+- Global header visible
+- Global drawer used
+- Search icon used
+- Bookmarks icon used
+- Bottom navigation hidden
+- Current “More” drawer removed
+- Section path bar visible on opened modules
+- Horizontal section tabs replaced by section navigator
+- Content uses one-column layout
+
+## Tablet: approximately 768–1023px
+
+- Retain global drawer
+- Consider showing the full search input when space permits
+- Section navigator may become a narrow persistent rail if it does not reduce content excessively
+- Multi-column cards may appear where existing content supports them
+
+## Desktop: 1024px and above
+
+For the initial release:
+
+- Preserve current desktop navigation behavior.
+- Reuse the same route registry.
+- Reuse the same active-section state.
+- Do not force the mobile drawer model onto desktop.
+
+A later desktop redesign can introduce a persistent global sidebar.
+
+---
+
+# 13. Navigation data model
+
+Maintain one central configuration for global destinations.
+
+Each item should provide:
+
+- Stable identifier
+- Existing visible label
+- Existing destination/route
+- Existing icon
+- Navigation group
+- Existing badge, such as `beta`
+- Mobile visibility
+- Desktop visibility
+- Search inclusion
+- Bookmark content type, where applicable
+
+The global header, mobile drawer, desktop navigation, and search result labels should consume this shared information.
+
+Maintain separate configurations for module subsection navigation. Do not mix global routes and subsection routes in the same flat list.
+
+---
+
+# 14. State management
+
+The application shell should track:
+
+- Whether global navigation is open
+- Whether search is open
+- Whether section navigation is open
+- Whether filters are open
+- Active global section
+- Active section view
+- Applied filters
+- Page scroll position
+- Current theme
+
+Only one modal navigation surface should be open at a time.
+
+Opening one surface should close another:
+
+- Opening search closes the global drawer.
+- Opening the global drawer closes section navigation.
+- Opening filters closes section navigation.
+- Route navigation closes all temporary surfaces.
+
+Module-specific state must remain independent:
+
+- Path Planner selections
+- Comparator selections
+- Expanded company accordions
+- Expanded HR region/city accordions
+- InterviewQ filters
+- Current scroll position where reasonable
+
+---
+
+# 15. Visual system
+
+Retain MapIT’s existing design language.
+
+## Colors
+
+- Primary active color: MapIT green
+- Main text: existing dark navy/black
+- Surfaces: white or current light theme
+- Selected navigation: pale green
+- Comparator accents: preserve existing purple where relevant
+- Beta badges: retain existing treatment
+- Backdrop: translucent charcoal
+- Borders: light and restrained
+
+## Typography
+
+- Continue using MapIT’s existing typeface.
+- Page title: approximately 28–34px on mobile.
+- Section title: approximately 24–28px.
+- Navigation labels: approximately 14–16px.
+- Metadata: approximately 12–14px.
+
+## Spacing
+
+- Header: 50–56px high
+- Path bar: 44–48px high
+- Icon touch targets: minimum 44px
+- Drawer rows: minimum 44–48px
+- Main content inset: approximately 16px
+- Card gaps: approximately 12–16px
+- Filter-chip gap: approximately 8px
+
+---
+
+# 16. Accessibility requirements
+
+## Global drawer
+
+- Label it as global navigation.
+- Connect the menu button to the drawer.
+- Communicate expanded state.
+- Move focus into the drawer.
+- Trap focus while modal.
+- Return focus after closing.
+
+## Section navigator
+
+- Label it with the active module name.
+- Announce the active view.
+- Use current-page state on the selected destination.
+- Return focus to the section-navigation button.
+
+## Search
+
+- Provide a visible or accessible search label.
+- Announce result counts where possible.
+- Support keyboard result navigation.
+- Preserve logical focus order.
+
+## Filters
+
+- Associate each control with its filter group.
+- Do not communicate selection through color alone.
+- Announce filter removal.
+- Ensure Reset and Apply are clearly distinguishable.
+
+## General
+
+- Minimum 44px touch targets.
+- Sufficient contrast in both themes.
+- Reduced-motion support for drawers and overlays.
+- Keyboard and Escape behavior.
+- Logical heading hierarchy.
+- No inaccessible icon-only buttons.
+
+---
+
+# 17. Performance requirements
+
+- Do not render all section content inside the global drawer.
+- Keep navigation data lightweight.
+- Load search results incrementally if the existing index is large.
+- Preserve route-level code splitting.
+- Avoid rerendering the entire home page when opening a drawer.
+- Prevent the ANT game from restarting solely because an overlay opened.
+- Lazy-load content farther down long module pages where practical.
+- Avoid large layout shifts when the sticky header initializes.
+
+---
+
+# 18. Implementation phases
+
+## Phase 1: Audit
+
+Inventory:
+
+- Existing routes
+- Existing desktop navigation
+- Bottom-navigation actions
+- “More” drawer actions
+- Existing subsection tabs
+- Existing filter controls
+- Bookmark-supported content
+- Theme behavior
+- Search implementation
+
+Create a route-and-feature parity checklist before removing anything.
+
+## Phase 2: Shared navigation registry
+
+Centralize the nine global destinations:
+
+- Dash
+- Career Domains
+- Resources
+- InterviewQ
+- Path Planner
+- Comparator
+- Jobs & Referrals
+- HR Contacts
+- Bookmarks
+
+Include existing labels, icons, routes, and badges.
+
+## Phase 3: Mobile header
+
+Implement:
+
+- Hamburger
+- MapIT home link
+- Search icon
+- Bookmarks icon
+
+Hide the current mobile search field and overflowing header navigation.
+
+## Phase 4: Global drawer
+
+Implement:
+
+- Header
+- Grouped navigation
+- Active state
+- Beta badges
+- Theme footer
+- Backdrop
+- Focus behavior
+- Scroll locking
+
+## Phase 5: Navigation migration
+
+Move bottom-bar destinations into the drawer.
+
+Move “More” destinations and theme controls into the drawer.
+
+After parity testing:
+
+- Remove the bottom bar.
+- Remove the “More” bottom sheet.
+- Remove duplicate mobile navigation controls.
+
+## Phase 6: Search overlay
+
+Adapt the existing global search to:
+
+- Icon-triggered mobile opening
+- Grouped results
+- Full MapIT content scope
+- Overlay scrolling
+- Background lock
+- Focus restoration
+
+## Phase 7: Section shell
+
+Create the reusable opened-section structure:
+
+- Path bar
+- Section-navigation trigger
+- Breadcrumb
+- Page title
+- Action slot
+- Filter slot
+- Content slot
+
+Apply it to each global module except Dash.
+
+## Phase 8: Section navigators
+
+For every module:
+
+1. Inventory existing tabs, categories, and routes.
+2. Choose only true view-level destinations.
+3. Move cramped mobile tabs into the navigator.
+4. Preserve in-content accordions when they represent content rather than routes.
+5. Add active-state and focus behavior.
+
+## Phase 9: Filters
+
+For each section:
+
+- Reuse existing filter data.
+- Add mobile filter trigger.
+- Render active chips.
+- Add Reset and Apply behavior where required.
+- Synchronize filters with route state where practical.
+
+## Phase 10: Home-page adjustment
+
+- Remove bottom-navigation compensation.
+- Reposition `sPAM me`.
+- Verify hero spacing below the header.
+- Preserve all home sections and their order.
+- Ensure the ANT game retains state.
+
+## Phase 11: Responsive QA
+
+Test at:
+
+- 320px
+- 360px
+- 390px
+- 430px
+- Tablet widths
+- Existing desktop breakpoints
+
+Test both themes.
+
+## Phase 12: Accessibility and regression QA
+
+Verify:
+
+- Every old destination remains reachable.
+- Search behavior is unchanged functionally.
+- Bookmark creation and access still work.
+- Path Planner and Comparator retain state.
+- External links behave as before.
+- Accordions and game controls still work.
+- Keyboard and screen-reader navigation are valid.
+
+---
+
+# 19. Acceptance criteria
+
+The implementation is complete when:
+
+- Mobile bottom navigation no longer appears.
+- The “More” navigation bottom sheet no longer appears.
+- No three-dot menu is added.
+- The top bar contains menu, MapIT, search, and Bookmarks.
+- All nine existing global destinations appear in the drawer.
+- Jobs & Referrals and HR Contacts retain their beta labels.
+- Catalog and theme controls remain accessible.
+- Bookmarks opens from both the header and drawer.
+- Search continues to search all supported MapIT sections.
+- Dash retains its existing vertical home content.
+- Every other major section displays a path bar.
+- Modules with multiple existing views have a section navigator.
+- Filters are contextual and use existing data only.
+- Temporary surfaces lock background scrolling.
+- `sPAM me` does not cover navigation or content controls.
+- Existing section state is not lost when opening navigation.
+- Mobile paths and controls remain usable at 320px.
+- Desktop behavior remains stable.
+- No existing MapIT section or function becomes unreachable.

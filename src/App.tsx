@@ -23,6 +23,7 @@ const JobsReferrals = React.lazy(() => import('./components/JobsReferrals'));
 const SearchResultsView = React.lazy(() => import('./components/SearchResultsView'));
 import MobileNavDrawer from './components/MobileNavDrawer';
 import MobileSearchOverlay from './components/MobileSearchOverlay';
+import SectionShell from './components/SectionShell';
 import { interviewQDatabase } from './data/interviewQDatabase';
 import { ALL_ROLES_DATA, IT_DOMAINS } from './data/rolesData';
 import { CORNER_TIPS, CERTIFICATIONS_LIBRARY } from './data/librariesData';
@@ -40,7 +41,7 @@ import {
   Terminal, ArrowUpRight, Award, HelpCircle, UserCheck, Flame, ExternalLink,
   Layers, Video, Trophy, Menu, ChevronLeft, Trash2, Sun, Moon,
   ArrowLeft, ArrowRight, Search, ChevronDown, ChevronUp, Book, RefreshCw,
-  PanelLeftClose, PanelLeftOpen, Sparkles, Briefcase
+  PanelLeftClose, PanelLeftOpen, Sparkles, Briefcase, Wrench, Youtube
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -3367,248 +3368,338 @@ export default function App() {
 
         {/* 2. INTERACTIVE MAP VIEW */}
         <div id="section-map" className={activeTab === 'map' ? 'block' : 'hidden'}>
-          <section className="fade-in space-y-6">
-            
-            {/* Left: Dynamic Career Map (Full Width) */}
-            <div className="w-full">
-              <CareerMap 
-                theme={theme}
-                onSelectRole={(id) => {
-                  setSelectedRoleId(id);
-                  setTimeout(() => handleScrollToSection('selected-role-focus-anchor'), 100);
-                }}
-                selectedRoleId={selectedRoleId}
-                searchQuery={searchQuery}
-                setSearchQuery={setSearchQuery}
-                activeFilters={activeFilters}
-                setActiveFilters={setActiveFilters}
-                isHighlighted={blinkSectionId === 'map'}
-                bookmarks={bookmarks}
-                toggleBookmark={toggleBookmark}
-                isBookmarked={isBookmarked}
-                activeDomainId={careerMapDomainId}
-                setActiveDomainId={setCareerMapDomainId}
-                onNavigateToSection={handleNavigateToSection}
-                taxonomyCategoryId={taxonomyCategoryId}
-                setTaxonomyCategoryId={setTaxonomyCategoryId}
-                taxonomyRoleSlug={taxonomyRoleSlug}
-                setTaxonomyRoleSlug={setTaxonomyRoleSlug}
-                viewMode={careerMapViewMode}
-                setViewMode={setCareerMapViewMode}
-              />
-            </div>
-
-            {/* Selected Role Focus Anchor */}
-            <div id="selected-role-focus-anchor" className="scroll-mt-6 pt-2" />
-
-            {/* Display Full Role Detail view at the bottom of the map page */}
-            {selectedRole && (
-              <div className="w-full fade-in">
-                <RoleDetailPanel 
-                  role={selectedRole}
-                  onClose={() => setSelectedRoleId(null)}
-                  marketRegion={activeFilters.marketRegion}
-                  isBookmarked={savedRoleIds.includes(selectedRole.id)}
-                  onToggleBookmark={() => handleToggleBookmark(selectedRole.id)}
+          <SectionShell
+            sectionTitle="Career Domains"
+            parentLabel="Career Domains"
+            currentViewLabel={selectedRole ? selectedRole.title : careerMapViewMode === 'mindmap' ? 'Career Mind-Map' : 'Overview'}
+            subViews={[
+              { id: 'mindmap', label: 'Career Mind-Map', icon: Compass },
+              { id: 'grid', label: 'All 23 Domains', icon: Network }
+            ]}
+            activeSubViewId={careerMapViewMode}
+            onSelectSubView={(id) => setCareerMapViewMode(id as any)}
+            onNavigateParent={() => {
+              setSelectedRoleId(null);
+              setCareerMapViewMode('mindmap');
+            }}
+            theme={theme}
+            isLight={theme === 'light'}
+          >
+            <section className="fade-in space-y-6">
+              
+              {/* Left: Dynamic Career Map (Full Width) */}
+              <div className="w-full">
+                <CareerMap 
+                  theme={theme}
+                  onSelectRole={(id) => {
+                    setSelectedRoleId(id);
+                    setTimeout(() => handleScrollToSection('selected-role-focus-anchor'), 100);
+                  }}
+                  selectedRoleId={selectedRoleId}
+                  searchQuery={searchQuery}
+                  setSearchQuery={setSearchQuery}
+                  activeFilters={activeFilters}
+                  setActiveFilters={setActiveFilters}
+                  isHighlighted={blinkSectionId === 'map'}
+                  bookmarks={bookmarks}
+                  toggleBookmark={toggleBookmark}
+                  isBookmarked={isBookmarked}
+                  activeDomainId={careerMapDomainId}
+                  setActiveDomainId={setCareerMapDomainId}
                   onNavigateToSection={handleNavigateToSection}
-                  onCompareRole={handleCompareRoleDirectly}
+                  taxonomyCategoryId={taxonomyCategoryId}
+                  setTaxonomyCategoryId={setTaxonomyCategoryId}
+                  taxonomyRoleSlug={taxonomyRoleSlug}
+                  setTaxonomyRoleSlug={setTaxonomyRoleSlug}
+                  viewMode={careerMapViewMode}
+                  setViewMode={setCareerMapViewMode}
                 />
               </div>
-            )}
 
-          </section>
+              {/* Selected Role Focus Anchor */}
+              <div id="selected-role-focus-anchor" className="scroll-mt-6 pt-2" />
+
+              {/* Display Full Role Detail view at the bottom of the map page */}
+              {selectedRole && (
+                <div className="w-full fade-in">
+                  <RoleDetailPanel 
+                    role={selectedRole}
+                    onClose={() => setSelectedRoleId(null)}
+                    marketRegion={activeFilters.marketRegion}
+                    isBookmarked={savedRoleIds.includes(selectedRole.id)}
+                    onToggleBookmark={() => handleToggleBookmark(selectedRole.id)}
+                    onNavigateToSection={handleNavigateToSection}
+                    onCompareRole={handleCompareRoleDirectly}
+                  />
+                </div>
+              )}
+
+            </section>
+          </SectionShell>
         </div>
 
         {/* 3. PATH PLANNED VIEW */}
         <div id="section-pathfinder" className={activeTab === 'pathfinder' ? 'block' : 'hidden'}>
-          <section className="fade-in space-y-5">
-            
-            {/* The main inputs panel (Full Width) */}
-            <div className="w-full">
-              <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-emerald-400 border border-slate-800 bg-[#070b13]">Loading Path Planner...</div>}>
-                <PathFinder 
-                  theme={theme}
-                  onSelectRole={(id) => {
-                    setSelectedRoleId(id);
-                    setTimeout(() => handleScrollToSection('pathfinder-role-detail-anchor'), 100);
-                  }} 
-                  isHighlighted={blinkSectionId === 'pathfinder'}
-                  onScrollToSection={(sectionId) => {
-                    // Direct tab switcher bridges! Redirects users seamlessly to respective tabs
-                    if (sectionId === 'libraries-section') setActiveTab('libraries');
-                    else if (sectionId === 'interactive-map-section') { setCareerMapViewMode('mindmap'); setActiveTab('map'); }
-                    else if (sectionId === 'it-taxonomy-explorer-section') { setCareerMapViewMode('mindmap'); setActiveTab('map'); }
-                    else if (sectionId === 'comparison-section') setActiveTab('comparison');
-                  }}
-                  savedPathways={savedPathways}
-                  setSavedPathways={setSavedPathways}
-                  restoredPathway={restoredPathway}
-                />
-              </React.Suspense>
-            </div>
-
-            {/* Active targeted details (placed below the main Career Finder panel) */}
-            <div className="w-full">
-              <div className="bg-[#070b13] border-[#121c38] border-2 p-4 font-mono text-xs text-gray-500 shadow-[3px_3px_0px_#121c38]">
-                <h4 className="text-white font-bold uppercase tracking-wider mb-2 border-b border-[#121c38] pb-1.5">
-                  🧭 ADVICE METADATA PANEL
-                </h4>
-                <p className="leading-relaxed text-gray-400 text-[11px] mb-2">
-                  The Ambition Path Planner automatically identifies systemic technology gaps. If it recommends a course or documentation hub, you can tap the <span className="text-[#ec4899] font-bold">"View on Page"</span> buttons to immediately open that section of our portal.
-                </p>
-                <p className="leading-relaxed text-[11px]">
-                  All certifications referenced are cross-compiled inside the <strong className="text-white font-normal hover:underline cursor-pointer" onClick={() => setActiveTab('libraries')}>Resourcing Libraries tab</strong>.
-                </p>
+          <SectionShell
+            sectionTitle="Path Planner"
+            parentLabel="Path Planner"
+            currentViewLabel="Ambition Path Planner"
+            onNavigateParent={() => setActiveTab('pathfinder')}
+            theme={theme}
+            isLight={theme === 'light'}
+          >
+            <section className="fade-in space-y-5">
+              
+              {/* The main inputs panel (Full Width) */}
+              <div className="w-full">
+                <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-emerald-400 border border-slate-800 bg-[#070b13]">Loading Path Planner...</div>}>
+                  <PathFinder 
+                    theme={theme}
+                    onSelectRole={(id) => {
+                      setSelectedRoleId(id);
+                      setTimeout(() => handleScrollToSection('pathfinder-role-detail-anchor'), 100);
+                    }} 
+                    isHighlighted={blinkSectionId === 'pathfinder'}
+                    onScrollToSection={(sectionId) => {
+                      // Direct tab switcher bridges! Redirects users seamlessly to respective tabs
+                      if (sectionId === 'libraries-section') setActiveTab('libraries');
+                      else if (sectionId === 'interactive-map-section') { setCareerMapViewMode('mindmap'); setActiveTab('map'); }
+                      else if (sectionId === 'it-taxonomy-explorer-section') { setCareerMapViewMode('mindmap'); setActiveTab('map'); }
+                      else if (sectionId === 'comparison-section') setActiveTab('comparison');
+                    }}
+                    savedPathways={savedPathways}
+                    setSavedPathways={setSavedPathways}
+                    restoredPathway={restoredPathway}
+                  />
+                </React.Suspense>
               </div>
-            </div>
 
-            <div id="pathfinder-role-detail-anchor" className="scroll-mt-6" />
-
-            {selectedRole && (
-              <div className="fade-in">
-                <RoleDetailPanel 
-                  role={selectedRole}
-                  onClose={() => setSelectedRoleId(null)}
-                  marketRegion={activeFilters.marketRegion}
-                  isBookmarked={savedRoleIds.includes(selectedRole.id)}
-                  onToggleBookmark={() => handleToggleBookmark(selectedRole.id)}
-                  onNavigateToSection={handleNavigateToSection}
-                  onCompareRole={handleCompareRoleDirectly}
-                />
+              {/* Active targeted details (placed below the main Career Finder panel) */}
+              <div className="w-full">
+                <div className="bg-[#070b13] border-[#121c38] border-2 p-4 font-mono text-xs text-gray-500 shadow-[3px_3px_0px_#121c38]">
+                  <h4 className="text-white font-bold uppercase tracking-wider mb-2 border-b border-[#121c38] pb-1.5">
+                    🧭 ADVICE METADATA PANEL
+                  </h4>
+                  <p className="leading-relaxed text-gray-400 text-[11px] mb-2">
+                    The Ambition Path Planner automatically identifies systemic technology gaps. If it recommends a course or documentation hub, you can tap the <span className="text-[#ec4899] font-bold">"View on Page"</span> buttons to immediately open that section of our portal.
+                  </p>
+                  <p className="leading-relaxed text-[11px]">
+                    All certifications referenced are cross-compiled inside the <strong className="text-white font-normal hover:underline cursor-pointer" onClick={() => setActiveTab('libraries')}>Resourcing Libraries tab</strong>.
+                  </p>
+                </div>
               </div>
-            )}
 
-          </section>
+              <div id="pathfinder-role-detail-anchor" className="scroll-mt-6" />
+
+              {selectedRole && (
+                <div className="fade-in">
+                  <RoleDetailPanel 
+                    role={selectedRole}
+                    onClose={() => setSelectedRoleId(null)}
+                    marketRegion={activeFilters.marketRegion}
+                    isBookmarked={savedRoleIds.includes(selectedRole.id)}
+                    onToggleBookmark={() => handleToggleBookmark(selectedRole.id)}
+                    onNavigateToSection={handleNavigateToSection}
+                    onCompareRole={handleCompareRoleDirectly}
+                  />
+                </div>
+              )}
+
+            </section>
+          </SectionShell>
         </div>
 
         {/* 5. COMPARATOR VIEW */}
         <div id="section-comparison" className={activeTab === 'comparison' ? 'block' : 'hidden'}>
-          <section className="fade-in space-y-6">
-            <RoleComparison 
-              isHighlighted={blinkSectionId === 'comparison'} 
-              marketRegion={activeFilters.marketRegion} 
-              onSelectRole={(id) => {
-                setSelectedRoleId(id);
-                setTimeout(() => handleScrollToSection('comparison-role-detail-anchor'), 100);
-              }}
-              presetRoleAId={presetRoleAId}
-              setPresetRoleAId={setPresetRoleAId}
-              presetRoleBId={presetRoleBId}
-              setPresetRoleBId={setPresetRoleBId}
-            />
+          <SectionShell
+            sectionTitle="Comparator"
+            parentLabel="Comparator"
+            currentViewLabel="Side-by-Side Comparison"
+            onNavigateParent={() => setActiveTab('comparison')}
+            theme={theme}
+            isLight={theme === 'light'}
+          >
+            <section className="fade-in space-y-6">
+              <RoleComparison 
+                isHighlighted={blinkSectionId === 'comparison'} 
+                marketRegion={activeFilters.marketRegion} 
+                onSelectRole={(id) => {
+                  setSelectedRoleId(id);
+                  setTimeout(() => handleScrollToSection('comparison-role-detail-anchor'), 100);
+                }}
+                presetRoleAId={presetRoleAId}
+                setPresetRoleAId={setPresetRoleAId}
+                presetRoleBId={presetRoleBId}
+                setPresetRoleBId={setPresetRoleBId}
+              />
 
-            <div id="comparison-role-detail-anchor" className="scroll-mt-6 pt-2" />
+              <div id="comparison-role-detail-anchor" className="scroll-mt-6 pt-2" />
 
-            {selectedRole && (
-              <div className="fade-in">
-                <RoleDetailPanel 
-                  role={selectedRole}
-                  onClose={() => setSelectedRoleId(null)}
-                  marketRegion={activeFilters.marketRegion}
-                  isBookmarked={savedRoleIds.includes(selectedRole.id)}
-                  onToggleBookmark={() => handleToggleBookmark(selectedRole.id)}
-                  onNavigateToSection={handleNavigateToSection}
-                  onCompareRole={handleCompareRoleDirectly}
-                />
-              </div>
-            )}
-          </section>
+              {selectedRole && (
+                <div className="fade-in">
+                  <RoleDetailPanel 
+                    role={selectedRole}
+                    onClose={() => setSelectedRoleId(null)}
+                    marketRegion={activeFilters.marketRegion}
+                    isBookmarked={savedRoleIds.includes(selectedRole.id)}
+                    onToggleBookmark={() => handleToggleBookmark(selectedRole.id)}
+                    onNavigateToSection={handleNavigateToSection}
+                    onCompareRole={handleCompareRoleDirectly}
+                  />
+                </div>
+              )}
+            </section>
+          </SectionShell>
         </div>
 
         {/* 6. LIBRARIES VIEW */}
         <div id="section-libraries" className={activeTab === 'libraries' ? 'block' : 'hidden'}>
-          <section className="fade-in space-y-6">
-            <ErrorBoundary 
-              fallbackTitle="Resources Directory View Error"
-              onReset={() => {
-                setLibrariesQuery('');
-                setYoutubeSearchQuery('');
-                setHackathonsSearchQuery('');
-              }}
-            >
-              <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-cyan-400 border border-slate-800 bg-[#070b13]">Loading Resources Directory...</div>}>
-                <LibrariesDashboard 
-                  theme={theme}
-                  isHighlighted={blinkSectionId === 'libraries'} 
-                  bookmarks={bookmarks}
-                  toggleBookmark={toggleBookmark}
-                  isBookmarked={isBookmarked}
-                  activeTab={librariesActiveTab}
-                  setActiveTab={setLibrariesActiveTab}
-                  query={librariesQuery}
-                  setQuery={handleSetAllLibrariesQuery}
-                  selectedRoleFamily={librariesRoleFamily}
-                  setSelectedRoleFamily={setLibrariesRoleFamily}
-                  youtubeSearchQuery={youtubeSearchQuery}
-                  setYoutubeSearchQuery={handleSetAllLibrariesQuery}
-                  youtubeCategoryId={youtubeCategoryId}
-                  setSelectedCategoryId={setYoutubeCategoryId}
-                  hackathonsSelectedItemId={hackathonsSelectedItemId}
-                  setHackathonsSelectedItemId={setHackathonsSelectedItemId}
-                  hackathonsSearchQuery={hackathonsSearchQuery}
-                  setHackathonsSearchQuery={handleSetAllLibrariesQuery}
-                  tipIndex={tipIndex}
-                  globalActiveTab={activeTab}
-                />
-              </React.Suspense>
-            </ErrorBoundary>
-          </section>
+          <SectionShell
+            sectionTitle="Resources"
+            parentLabel="Resources"
+            currentViewLabel={
+              librariesActiveTab === 'certs' ? 'IT Certifications' :
+              librariesActiveTab === 'tools-skills' ? 'Tools & Key Skills' :
+              librariesActiveTab === 'bookshelf' ? 'Study Portals & Books' :
+              librariesActiveTab === 'youtubeTeachers' ? 'YouTube Instructors' :
+              librariesActiveTab === 'channels' ? 'YouTube Channels' :
+              librariesActiveTab === 'hackathons' ? 'Hackathons & Events' : 'All Resources'
+            }
+            subViews={[
+              { id: 'certs', label: 'IT Certifications', icon: Award },
+              { id: 'tools-skills', label: 'Tools & Key Skills', icon: Wrench },
+              { id: 'bookshelf', label: 'Study Portals & Books', icon: BookOpen },
+              { id: 'youtubeTeachers', label: 'YouTube Instructors', icon: Video },
+              { id: 'channels', label: 'YouTube Channels', icon: Youtube },
+              { id: 'hackathons', label: 'Hackathons & Tech Events', icon: Trophy }
+            ]}
+            activeSubViewId={librariesActiveTab}
+            onSelectSubView={(id) => setLibrariesActiveTab(id as any)}
+            onNavigateParent={() => setLibrariesActiveTab('certs')}
+            theme={theme}
+            isLight={theme === 'light'}
+          >
+            <section className="fade-in space-y-6">
+              <ErrorBoundary 
+                fallbackTitle="Resources Directory View Error"
+                onReset={() => {
+                  setLibrariesQuery('');
+                  setYoutubeSearchQuery('');
+                  setHackathonsSearchQuery('');
+                }}
+              >
+                <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-cyan-400 border border-slate-800 bg-[#070b13]">Loading Resources Directory...</div>}>
+                  <LibrariesDashboard 
+                    theme={theme}
+                    isHighlighted={blinkSectionId === 'libraries'} 
+                    bookmarks={bookmarks}
+                    toggleBookmark={toggleBookmark}
+                    isBookmarked={isBookmarked}
+                    activeTab={librariesActiveTab}
+                    setActiveTab={setLibrariesActiveTab}
+                    query={librariesQuery}
+                    setQuery={handleSetAllLibrariesQuery}
+                    selectedRoleFamily={librariesRoleFamily}
+                    setSelectedRoleFamily={setLibrariesRoleFamily}
+                    youtubeSearchQuery={youtubeSearchQuery}
+                    setYoutubeSearchQuery={handleSetAllLibrariesQuery}
+                    youtubeCategoryId={youtubeCategoryId}
+                    setSelectedCategoryId={setYoutubeCategoryId}
+                    hackathonsSelectedItemId={hackathonsSelectedItemId}
+                    setHackathonsSelectedItemId={setHackathonsSelectedItemId}
+                    hackathonsSearchQuery={hackathonsSearchQuery}
+                    setHackathonsSearchQuery={handleSetAllLibrariesQuery}
+                    tipIndex={tipIndex}
+                    globalActiveTab={activeTab}
+                  />
+                </React.Suspense>
+              </ErrorBoundary>
+            </section>
+          </SectionShell>
         </div>
 
         {/* 7. INTERVIEWQ [BETA] VIEW */}
         <div id="section-interviewq" className={activeTab === 'interviewq' ? 'block' : 'hidden'}>
-          <section className="fade-in space-y-6">
-            <ErrorBoundary fallbackTitle="InterviewQ View Error">
-              <React.Suspense fallback={
-                <div className="min-h-[400px] flex flex-col items-center justify-center bg-[#070b14] text-emerald-400 font-mono text-sm border border-slate-800 rounded-2xl p-8 space-y-3">
-                  <div className="w-8 h-8 border-2 border-emerald-400 border-t-transparent rounded-full animate-spin"></div>
-                  <div>Loading MapIT InterviewQ Database...</div>
-                </div>
-              }>
-                <InterviewQ 
-                  bookmarks={bookmarks}
-                  toggleBookmark={toggleBookmark}
-                  isBookmarked={isBookmarked}
-                  theme={theme}
-                  isLight={theme === 'light'}
-                />
-              </React.Suspense>
-            </ErrorBoundary>
-          </section>
+          <SectionShell
+            sectionTitle="InterviewQ"
+            parentLabel="InterviewQ"
+            currentViewLabel="6,305+ Technical Questions"
+            badge="beta"
+            onNavigateParent={() => setActiveTab('interviewq')}
+            theme={theme}
+            isLight={theme === 'light'}
+          >
+            <section className="fade-in space-y-6">
+              <ErrorBoundary fallbackTitle="InterviewQ View Error">
+                <React.Suspense fallback={
+                  <div className="min-h-[400px] flex flex-col items-center justify-center bg-[#070b14] text-emerald-400 font-mono text-sm border border-slate-800 rounded-2xl p-8 space-y-3">
+                    <div className="w-8 h-8 border-2 border-emerald-400 border-t-transparent rounded-full animate-spin"></div>
+                    <div>Loading MapIT InterviewQ Database...</div>
+                  </div>
+                }>
+                  <InterviewQ 
+                    bookmarks={bookmarks}
+                    toggleBookmark={toggleBookmark}
+                    isBookmarked={isBookmarked}
+                    theme={theme}
+                    isLight={theme === 'light'}
+                  />
+                </React.Suspense>
+              </ErrorBoundary>
+            </section>
+          </SectionShell>
         </div>
 
         {/* 8. JOBS & LINKEDIN REFERRALS PORTAL */}
         <div id="section-jobs" className={activeTab === 'jobs' ? 'block' : 'hidden'}>
-          <section className="fade-in space-y-6">
-            <ErrorBoundary fallbackTitle="Jobs Portal Error">
-              <React.Suspense fallback={
-                <div className="min-h-[400px] flex flex-col items-center justify-center bg-[#070b14] text-blue-400 font-mono text-sm border border-slate-800 rounded-2xl p-8 space-y-3">
-                  <div className="w-8 h-8 border-2 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
-                  <div>Loading MapIT Jobs &amp; LinkedIn Referrals...</div>
-                </div>
-              }>
-                <JobsReferrals 
-                  bookmarks={bookmarks}
-                  toggleBookmark={toggleBookmark}
-                  isBookmarked={isBookmarked}
-                  theme={theme}
-                  isLight={theme === "light"}
-                />
-              </React.Suspense>
-            </ErrorBoundary>
-          </section>
+          <SectionShell
+            sectionTitle="Jobs & Referrals"
+            parentLabel="Jobs & Referrals"
+            currentViewLabel="257+ Tech Companies"
+            badge="beta"
+            onNavigateParent={() => setActiveTab('jobs')}
+            theme={theme}
+            isLight={theme === 'light'}
+          >
+            <section className="fade-in space-y-6">
+              <ErrorBoundary fallbackTitle="Jobs Portal Error">
+                <React.Suspense fallback={
+                  <div className="min-h-[400px] flex flex-col items-center justify-center bg-[#070b14] text-blue-400 font-mono text-sm border border-slate-800 rounded-2xl p-8 space-y-3">
+                    <div className="w-8 h-8 border-2 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
+                    <div>Loading MapIT Jobs &amp; LinkedIn Referrals...</div>
+                  </div>
+                }>
+                  <JobsReferrals 
+                    bookmarks={bookmarks}
+                    toggleBookmark={toggleBookmark}
+                    isBookmarked={isBookmarked}
+                    theme={theme}
+                    isLight={theme === "light"}
+                  />
+                </React.Suspense>
+              </ErrorBoundary>
+            </section>
+          </SectionShell>
         </div>
 
         {/* 9. SAVED VIEWS & PERSISTED CAREER PATHS */}
         <div id="section-saved" className={activeTab === 'saved' ? 'block' : 'hidden'}>
-          <section className="fade-in space-y-6">
-            {(() => {
-              const bookmarkedRoles = bookmarks.filter(b => b.type === 'role');
-              const bookmarkedDomains = bookmarks.filter(b => b.type === 'domain' || b.type === 'jobCategory');
-              const bookmarkedYoutube = bookmarks.filter(b => b.type === 'youtubeTeacher' || b.type === 'division');
-              const bookmarkedHackathons = bookmarks.filter(b => b.type === 'hackathon');
-              const bookmarkedResources = bookmarks.filter(b => b.type === 'certification' || b.type === 'studyPortal' || b.type === 'skill' || b.type === 'tool');
-              const bookmarkedInterviewQ = bookmarks.filter(b => b.type === 'interviewQ');
+          <SectionShell
+            sectionTitle="Bookmarks"
+            parentLabel="Bookmarks"
+            currentViewLabel={bookmarks.length > 0 ? `Saved Items (${bookmarks.length})` : 'Saved Items'}
+            onNavigateParent={() => setActiveTab('saved')}
+            theme={theme}
+            isLight={theme === 'light'}
+          >
+            <section className="fade-in space-y-6">
+              {(() => {
+                const bookmarkedRoles = bookmarks.filter(b => b.type === 'role');
+                const bookmarkedDomains = bookmarks.filter(b => b.type === 'domain' || b.type === 'jobCategory');
+                const bookmarkedYoutube = bookmarks.filter(b => b.type === 'youtubeTeacher' || b.type === 'division');
+                const bookmarkedHackathons = bookmarks.filter(b => b.type === 'hackathon');
+                const bookmarkedResources = bookmarks.filter(b => b.type === 'certification' || b.type === 'studyPortal' || b.type === 'skill' || b.type === 'tool');
+                const bookmarkedInterviewQ = bookmarks.filter(b => b.type === 'interviewQ');
 
               return (
                 <>
@@ -4135,39 +4226,59 @@ export default function App() {
                 </>
               );
             })()}
-          </section>
+            </section>
+          </SectionShell>
         </div>
 
         {/* HR CONTACTS VIEW */}
         <div id="section-hr-contacts" className={activeTab === 'hr-contacts' ? 'block' : 'hidden'}>
-          <section className="fade-in space-y-6">
-            <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-slate-400 border border-slate-800 bg-[#070b13]">Loading HR Contacts...</div>}>
-              <HRContacts theme={theme} isLight={theme === "light"} />
-            </React.Suspense>
-          </section>
+          <SectionShell
+            sectionTitle="HR Contacts"
+            parentLabel="HR Contacts"
+            currentViewLabel="514+ IT Recruitment Agencies"
+            badge="beta"
+            onNavigateParent={() => setActiveTab('hr-contacts')}
+            theme={theme}
+            isLight={theme === 'light'}
+          >
+            <section className="fade-in space-y-6">
+              <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-slate-400 border border-slate-800 bg-[#070b13]">Loading HR Contacts...</div>}>
+                <HRContacts theme={theme} isLight={theme === "light"} />
+              </React.Suspense>
+            </section>
+          </SectionShell>
         </div>
 
         {/* GLOBAL SEARCH RESULTS VIEW */}
         <div id="section-search" className={activeTab === 'search' ? 'block' : 'hidden'}>
-          <section className="fade-in space-y-6">
-            <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-zinc-400 border border-zinc-800 bg-black">Loading Search Results...</div>}>
-              <SearchResultsView 
-                query={searchQuery}
-                theme={theme}
-                isLight={theme === 'light'}
-                onNavigateTab={(t) => {
-                  setActiveTab(t);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-                onSelectRole={(rId) => {
-                  handleToggleBookmark(rId);
-                  setSelectedRoleId(rId);
-                  setActiveTab('map');
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-              />
-            </React.Suspense>
-          </section>
+          <SectionShell
+            sectionTitle="Search"
+            parentLabel="Search"
+            currentViewLabel={searchQuery ? `"${searchQuery}"` : 'Global Console'}
+            onNavigateParent={() => setActiveTab('search')}
+            theme={theme}
+            isLight={theme === 'light'}
+          >
+            <section className="fade-in space-y-6">
+              <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-zinc-400 border border-zinc-800 bg-black">Loading Search Results...</div>}>
+                <SearchResultsView 
+                  query={searchQuery}
+                  theme={theme}
+                  isLight={theme === 'light'}
+                  onNavigateTab={(t) => {
+                    setActiveTab(t);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                  onSelectRole={(rId) => {
+                    handleToggleBookmark(rId);
+                    setSelectedRoleId(rId);
+                    setActiveTab('map');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                />
+              </React.Suspense>
+            </section>
+          </SectionShell>
         </div>
 
               </>
