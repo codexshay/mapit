@@ -1029,7 +1029,7 @@ export default function RoleDetailPanel({
         
         {/* Short Executive Summary */}
         <div className="bg-[#05070c] p-4 border border-[#121c38]/80 font-mono text-xs text-gray-300">
-          <span className="text-amber-500 uppercase font-bold block mb-1">í ¼í¾¯ BRIEF DEFINITION</span>
+          <span className="text-amber-500 uppercase font-bold block mb-1">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ BRIEF DEFINITION</span>
           <p>{role.roleAsk.explanation}</p>
           <p className="mt-2 text-cyan-400 text-[11px] italic">ðŸ’¡ Ideal Candidates: {role.roleAsk.suitableFor}</p>
         </div>

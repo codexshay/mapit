@@ -4797,10 +4797,15 @@ export default function App() {
                     handleUniversalTabNavigate(t, params);
                   }}
                   onSelectRole={(rId) => {
-                    handleToggleBookmark(rId);
                     setSelectedRoleId(rId);
+                    const foundDomain = IT_DOMAINS.find(d => d.roles.includes(rId));
+                    if (foundDomain) {
+                      setCareerMapDomainId(foundDomain.id);
+                    }
                     setActiveTab('map');
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    setTimeout(() => {
+                      handleScrollToSection('selected-role-focus-anchor');
+                    }, 150);
                   }}
                 />
               </React.Suspense>
