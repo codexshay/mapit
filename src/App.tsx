@@ -41,7 +41,9 @@ import {
   Terminal, ArrowUpRight, Award, HelpCircle, UserCheck, Flame, ExternalLink,
   Layers, Video, Trophy, Menu, ChevronLeft, Trash2, Sun, Moon,
   ArrowLeft, ArrowRight, Search, ChevronDown, ChevronUp, Book, RefreshCw,
-  PanelLeftClose, PanelLeftOpen, Sparkles, Briefcase, Wrench, Youtube, Globe
+  PanelLeftClose, PanelLeftOpen, Sparkles, Briefcase, Wrench, Youtube, Globe,
+  Building2, MapPin, TrendingUp, Code2, Cpu, Cloud, ShieldCheck, FolderTree,
+  LayoutGrid, Zap, Building
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -1299,6 +1301,22 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<string>('about');
   const [careerMapViewMode, setCareerMapViewMode] = useState<'mindmap' | 'comparison'>('mindmap');
   const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState<boolean>(false);
+  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({
+    libraries: true,
+    map: false,
+    interviewq: false,
+    jobs: false,
+    'hr-contacts': false,
+    saved: false,
+    pathfinder: false
+  });
+
+  const toggleSectionDropdown = (tabId: string) => {
+    setExpandedSections(prev => ({
+      ...prev,
+      [tabId]: !prev[tabId]
+    }));
+  };
 
   // Cross-section query & filter forwarding states
   const [interviewQSearchQuery, setInterviewQSearchQuery] = useState<string>('');
@@ -2325,130 +2343,558 @@ export default function App() {
                       </div>
                     )}
 
-                    {/* Dedicated Chevron toggle button for Resources tab dropdown */}
-                    {tabId === 'libraries' && (
-                      <button
-                        type="button"
-                        aria-label={isResourcesDropdownOpen ? "Close Resources menu" : "Open Resources menu"}
-                        aria-expanded={isResourcesDropdownOpen}
-                        aria-controls="resources-submenu"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handleSidebarItemClick(() => {
-                            setIsResourcesDropdownOpen(!isResourcesDropdownOpen);
-                          });
-                        }}
-                        onKeyDown={(e) => {
-                          if (e.key === 'Enter' || e.key === ' ') {
-                            e.stopPropagation();
-                          }
-                        }}
-                        className={`p-1 text-slate-400 hover:text-white hover:bg-slate-800/80 rounded transition cursor-pointer shrink-0 focus:outline-none focus:ring-2 focus:ring-cyan-400 ${
-                          isSidebarExpanded ? 'mr-1' : 'absolute right-1 top-1/2 -translate-y-1/2 z-10'
-                        }`}
-                        title={isResourcesDropdownOpen ? "Close Resources menu" : "Open Resources menu"}
-                      >
-                        <ChevronDown 
-                          className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                            isResourcesDropdownOpen ? 'rotate-180 text-cyan-400' : 'text-slate-400 hover:text-slate-200'
-                          }`} 
-                        />
-                      </button>
-                    )}
+                    {/* Dedicated Chevron toggle button for any tab that has sub-tabs */}
+                    {(() => {
+                      const getSubTabs = () => {
+                        switch (tabId) {
+                          case 'map':
+                            return [
+                              {
+                                id: 'mindmap',
+                                label: 'Interactive Mind Map',
+                                icon: Network,
+                                onClick: () => { setCareerMapViewMode('mindmap'); handleTabClick('map'); },
+                                isActive: activeTab === 'map' && careerMapViewMode === 'mindmap'
+                              },
+                              {
+                                id: 'comparison',
+                                label: 'Role Comparator',
+                                icon: Scale,
+                                onClick: () => { handleTabClick('comparison'); },
+                                isActive: activeTab === 'comparison'
+                              },
+                              {
+                                id: 'branches',
+                                label: '18 Career Branches',
+                                icon: FolderTree,
+                                onClick: () => { setCareerMapViewMode('mindmap'); handleTabClick('map'); },
+                                isActive: false
+                              }
+                            ];
+                          case 'pathfinder':
+                            return [
+                              {
+                                id: 'advisor',
+                                label: 'Ambition Path Advisor',
+                                icon: Compass,
+                                onClick: () => { handleTabClick('pathfinder'); },
+                                isActive: activeTab === 'pathfinder'
+                              },
+                              {
+                                id: 'saved-routes',
+                                label: `Saved Pathways (${savedPathways.length})`,
+                                icon: CustomBookmarkIcon,
+                                onClick: () => { handleTabClick('saved'); },
+                                isActive: activeTab === 'saved'
+                              }
+                            ];
+                          case 'libraries':
+                            return [
+                              {
+                                id: 'hackathons',
+                                label: 'Hackathons & Events',
+                                icon: Trophy,
+                                onClick: () => { setLibrariesActiveTab('hackathons'); handleTabClick('libraries'); },
+                                isActive: activeTab === 'libraries' && librariesActiveTab === 'hackathons'
+                              },
+                              {
+                                id: 'youtubeTeachers',
+                                label: 'YouTube Teachers',
+                                icon: Video,
+                                onClick: () => { setLibrariesActiveTab('youtubeTeachers'); handleTabClick('libraries'); },
+                                isActive: activeTab === 'libraries' && librariesActiveTab === 'youtubeTeachers'
+                              },
+                              {
+                                id: 'channels',
+                                label: 'Study Portals',
+                                icon: Globe,
+                                onClick: () => { setLibrariesActiveTab('channels'); handleTabClick('libraries'); },
+                                isActive: activeTab === 'libraries' && librariesActiveTab === 'channels'
+                              },
+                              {
+                                id: 'tools-skills',
+                                label: 'Skills & Tools Pool',
+                                icon: Terminal,
+                                onClick: () => { setLibrariesActiveTab('tools-skills'); handleTabClick('libraries'); },
+                                isActive: activeTab === 'libraries' && librariesActiveTab === 'tools-skills'
+                              },
+                              {
+                                id: 'certs',
+                                label: 'Certifications',
+                                icon: Award,
+                                onClick: () => { setLibrariesActiveTab('certs'); handleTabClick('libraries'); },
+                                isActive: activeTab === 'libraries' && librariesActiveTab === 'certs'
+                              },
+                              {
+                                id: 'bookshelf',
+                                label: 'Bookshelf',
+                                icon: Book,
+                                onClick: () => { setLibrariesActiveTab('bookshelf'); handleTabClick('libraries'); },
+                                isActive: activeTab === 'libraries' && librariesActiveTab === 'bookshelf'
+                              }
+                            ];
+                          case 'interviewq':
+                            return [
+                              {
+                                id: 'all-q',
+                                label: 'All Questions & Labs',
+                                icon: HelpCircle,
+                                onClick: () => { setInterviewQSearchQuery(''); setInterviewQSelectedRole('all'); handleTabClick('interviewq'); },
+                                isActive: activeTab === 'interviewq' && (!interviewQSearchQuery || interviewQSearchQuery === '')
+                              },
+                              {
+                                id: 'system-design',
+                                label: 'System Design & Arch',
+                                icon: Layers,
+                                onClick: () => { setInterviewQSearchQuery('system design'); handleTabClick('interviewq'); },
+                                isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('system')
+                              },
+                              {
+                                id: 'coding-dsa',
+                                label: 'Coding & DSA',
+                                icon: Code2,
+                                onClick: () => { setInterviewQSearchQuery('coding'); handleTabClick('interviewq'); },
+                                isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('coding')
+                              },
+                              {
+                                id: 'cloud-devops',
+                                label: 'Cloud & DevOps',
+                                icon: Cloud,
+                                onClick: () => { setInterviewQSearchQuery('cloud'); handleTabClick('interviewq'); },
+                                isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('cloud')
+                              },
+                              {
+                                id: 'ai-ml',
+                                label: 'AI & Data Science',
+                                icon: Cpu,
+                                onClick: () => { setInterviewQSearchQuery('machine learning'); handleTabClick('interviewq'); },
+                                isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('machine')
+                              }
+                            ];
+                          case 'jobs':
+                            return [
+                              {
+                                id: 'all-companies',
+                                label: 'All 257+ Companies',
+                                icon: Building2,
+                                onClick: () => { setJobsCompanySearchQuery(''); handleTabClick('jobs'); },
+                                isActive: activeTab === 'jobs' && (!jobsCompanySearchQuery || jobsCompanySearchQuery === '')
+                              },
+                              {
+                                id: 'faang',
+                                label: 'FAANG & Tier 1',
+                                icon: Sparkles,
+                                onClick: () => { setJobsCompanySearchQuery('Google'); handleTabClick('jobs'); },
+                                isActive: activeTab === 'jobs' && jobsCompanySearchQuery === 'Google'
+                              },
+                              {
+                                id: 'fintech',
+                                label: 'FinTech & Banking',
+                                icon: TrendingUp,
+                                onClick: () => { setJobsCompanySearchQuery('Fintech'); handleTabClick('jobs'); },
+                                isActive: activeTab === 'jobs' && jobsCompanySearchQuery === 'Fintech'
+                              },
+                              {
+                                id: 'consulting',
+                                label: 'Consulting & Services',
+                                icon: Briefcase,
+                                onClick: () => { setJobsCompanySearchQuery('Consulting'); handleTabClick('jobs'); },
+                                isActive: activeTab === 'jobs' && jobsCompanySearchQuery === 'Consulting'
+                              }
+                            ];
+                          case 'hr-contacts':
+                            return [
+                              {
+                                id: 'apj',
+                                label: 'APJ & India Tech HR',
+                                icon: Globe,
+                                onClick: () => { setHrContactsSearchQuery(''); handleTabClick('hr-contacts'); },
+                                isActive: activeTab === 'hr-contacts' && (!hrContactsSearchQuery || hrContactsSearchQuery === '')
+                              },
+                              {
+                                id: 'emea',
+                                label: 'EMEA (Europe & UK)',
+                                icon: MapPin,
+                                onClick: () => { setHrContactsSearchQuery('London'); handleTabClick('hr-contacts'); },
+                                isActive: activeTab === 'hr-contacts' && hrContactsSearchQuery === 'London'
+                              },
+                              {
+                                id: 'amer',
+                                label: 'AMER (USA & Americas)',
+                                icon: Building,
+                                onClick: () => { setHrContactsSearchQuery('US'); handleTabClick('hr-contacts'); },
+                                isActive: activeTab === 'hr-contacts' && hrContactsSearchQuery === 'US'
+                              }
+                            ];
+                          case 'saved':
+                            return [
+                              {
+                                id: 'all-saved',
+                                label: `All Bookmarks (${bookmarks.length})`,
+                                icon: CustomBookmarkIcon,
+                                onClick: () => { handleTabClick('saved'); },
+                                isActive: activeTab === 'saved'
+                              },
+                              {
+                                id: 'saved-roles',
+                                label: `Roles (${bookmarks.filter(b => b.type === 'role').length})`,
+                                icon: Network,
+                                onClick: () => { handleTabClick('saved'); },
+                                isActive: false
+                              },
+                              {
+                                id: 'saved-resources',
+                                label: `Resources (${bookmarks.filter(b => b.type === 'certification' || b.type === 'studyPortal' || b.type === 'skill' || b.type === 'tool').length})`,
+                                icon: BookOpen,
+                                onClick: () => { handleTabClick('saved'); },
+                                isActive: false
+                              },
+                              {
+                                id: 'saved-questions',
+                                label: `InterviewQ (${bookmarks.filter(b => b.type === 'interviewQ').length})`,
+                                icon: HelpCircle,
+                                onClick: () => { handleTabClick('saved'); },
+                                isActive: false
+                              }
+                            ];
+                          default:
+                            return [];
+                        }
+                      };
 
-                    {/* Popover text tooltips for minimized state */}
-                    {!isSidebarExpanded && (
-                      <div className="absolute left-[76px] bg-[#070b13] border border-[#1e2e54] text-[9.5px] tracking-wider px-2.5 py-1.5 whitespace-nowrap hidden group-hover:block transition-all z-50 pointer-events-none font-mono font-bold rounded-xs shadow-[3px_3px_0px_#121c38]">
-                        <span className={`${tabDetails.colorClass} mr-1.5 font-bold`}>►</span> {tabDetails.label.toUpperCase()}
-                      </div>
-                    )}
+                      const subTabs = getSubTabs();
+                      const hasSubTabs = subTabs.length > 0;
+                      const isDropdownOpen = !!expandedSections[tabId];
+
+                      return (
+                        <>
+                          {hasSubTabs && (
+                            <button
+                              type="button"
+                              aria-label={isDropdownOpen ? `Close ${tabDetails.label} menu` : `Open ${tabDetails.label} menu`}
+                              aria-expanded={isDropdownOpen}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleSidebarItemClick(() => {
+                                  toggleSectionDropdown(tabId);
+                                });
+                              }}
+                              className={`p-1 text-slate-400 hover:text-white hover:bg-slate-800/80 rounded transition cursor-pointer shrink-0 focus:outline-none focus:ring-2 focus:ring-cyan-400 ${
+                                isSidebarExpanded ? 'mr-1' : 'absolute right-1 top-1/2 -translate-y-1/2 z-10'
+                              }`}
+                              title={isDropdownOpen ? `Close ${tabDetails.label} menu` : `Open ${tabDetails.label} menu`}
+                            >
+                              <ChevronDown 
+                                className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                                  isDropdownOpen ? 'rotate-180 text-cyan-400' : 'text-slate-400 hover:text-slate-200'
+                                }`} 
+                              />
+                            </button>
+                          )}
+
+                          {/* Popover text tooltips for minimized state */}
+                          {!isSidebarExpanded && (
+                            <div className="absolute left-[76px] bg-[#070b13] border border-[#1e2e54] text-[9.5px] tracking-wider px-2.5 py-1.5 whitespace-nowrap hidden group-hover:block transition-all z-50 pointer-events-none font-mono font-bold rounded-xs shadow-[3px_3px_0px_#121c38]">
+                              <span className={`${tabDetails.colorClass} mr-1.5 font-bold`}>►</span> {tabDetails.label.toUpperCase()}
+                            </div>
+                          )}
+                        </>
+                      );
+                    })()}
                   </div>
 
-                  {/* Dropdown sub-menu if tabId is 'libraries' and Resources is open */}
-                  {tabId === 'libraries' && isResourcesDropdownOpen && (
-                    <div id="resources-submenu">
-                      {/* Expanded view: full icon-and-label menu */}
-                      {isSidebarExpanded && (
-                        <div className="mt-1 ml-[72px] pl-2 border-l border-cyan-800/40 space-y-0.5 flex flex-col pr-2">
-                          {[
-                            { id: 'hackathons', label: 'Hackathons & Events', icon: Trophy },
-                            { id: 'youtubeTeachers', label: 'YouTube Teachers', icon: Video },
-                            { id: 'channels', label: 'Study Portals', icon: BookOpen },
-                            { id: 'tools-skills', label: 'Skills & Tools Pool', icon: Terminal },
-                            { id: 'certs', label: 'Certifications', icon: Award },
-                            { id: 'bookshelf', label: 'Bookshelf', icon: Book },
-                          ].map((sub) => {
-                            const isSubActive = activeTab === 'libraries' && librariesActiveTab === sub.id;
-                            const SubIcon = sub.icon;
-                            return (
-                              <button
-                                key={sub.id}
-                                onClick={() => {
-                                  handleSidebarItemClick(() => {
-                                    setLibrariesActiveTab(sub.id as any);
-                                    handleTabClick('libraries');
-                                  });
-                                }}
-                                className={`w-full flex items-center py-1 px-1.5 text-left text-[10px] font-mono font-bold tracking-tight rounded-xs transition-all cursor-pointer ${
-                                  isSubActive
-                                    ? 'text-cyan-400 bg-cyan-950/20 border-l border-cyan-400 pl-2'
-                                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/40'
-                                }`}
-                              >
-                                <SubIcon className={`w-3 h-3 mr-1.5 shrink-0 ${isSubActive ? 'text-cyan-400' : 'text-slate-500'}`} />
-                                <span className="truncate">{sub.label}</span>
-                              </button>
-                            );
-                          })}
-                        </div>
-                      )}
+                  {/* Dropdown sub-menu for sections with sub-tabs */}
+                  {(() => {
+                    const getSubTabs = () => {
+                      switch (tabId) {
+                        case 'map':
+                          return [
+                            {
+                              id: 'mindmap',
+                              label: 'Interactive Mind Map',
+                              icon: Network,
+                              onClick: () => { setCareerMapViewMode('mindmap'); handleTabClick('map'); },
+                              isActive: activeTab === 'map' && careerMapViewMode === 'mindmap'
+                            },
+                            {
+                              id: 'comparison',
+                              label: 'Role Comparator',
+                              icon: Scale,
+                              onClick: () => { handleTabClick('comparison'); },
+                              isActive: activeTab === 'comparison'
+                            },
+                            {
+                              id: 'branches',
+                              label: '18 Career Branches',
+                              icon: FolderTree,
+                              onClick: () => { setCareerMapViewMode('mindmap'); handleTabClick('map'); },
+                              isActive: false
+                            }
+                          ];
+                        case 'pathfinder':
+                          return [
+                            {
+                              id: 'advisor',
+                              label: 'Ambition Path Advisor',
+                              icon: Compass,
+                              onClick: () => { handleTabClick('pathfinder'); },
+                              isActive: activeTab === 'pathfinder'
+                            },
+                            {
+                              id: 'saved-routes',
+                              label: `Saved Pathways (${savedPathways.length})`,
+                              icon: CustomBookmarkIcon,
+                              onClick: () => { handleTabClick('saved'); },
+                              isActive: activeTab === 'saved'
+                            }
+                          ];
+                        case 'libraries':
+                          return [
+                            {
+                              id: 'hackathons',
+                              label: 'Hackathons & Events',
+                              icon: Trophy,
+                              onClick: () => { setLibrariesActiveTab('hackathons'); handleTabClick('libraries'); },
+                              isActive: activeTab === 'libraries' && librariesActiveTab === 'hackathons'
+                            },
+                            {
+                              id: 'youtubeTeachers',
+                              label: 'YouTube Teachers',
+                              icon: Video,
+                              onClick: () => { setLibrariesActiveTab('youtubeTeachers'); handleTabClick('libraries'); },
+                              isActive: activeTab === 'libraries' && librariesActiveTab === 'youtubeTeachers'
+                            },
+                            {
+                              id: 'channels',
+                              label: 'Study Portals',
+                              icon: Globe,
+                              onClick: () => { setLibrariesActiveTab('channels'); handleTabClick('libraries'); },
+                              isActive: activeTab === 'libraries' && librariesActiveTab === 'channels'
+                            },
+                            {
+                              id: 'tools-skills',
+                              label: 'Skills & Tools Pool',
+                              icon: Terminal,
+                              onClick: () => { setLibrariesActiveTab('tools-skills'); handleTabClick('libraries'); },
+                              isActive: activeTab === 'libraries' && librariesActiveTab === 'tools-skills'
+                            },
+                            {
+                              id: 'certs',
+                              label: 'Certifications',
+                              icon: Award,
+                              onClick: () => { setLibrariesActiveTab('certs'); handleTabClick('libraries'); },
+                              isActive: activeTab === 'libraries' && librariesActiveTab === 'certs'
+                            },
+                            {
+                              id: 'bookshelf',
+                              label: 'Bookshelf',
+                              icon: Book,
+                              onClick: () => { setLibrariesActiveTab('bookshelf'); handleTabClick('libraries'); },
+                              isActive: activeTab === 'libraries' && librariesActiveTab === 'bookshelf'
+                            }
+                          ];
+                        case 'interviewq':
+                          return [
+                            {
+                              id: 'all-q',
+                              label: 'All Questions & Labs',
+                              icon: HelpCircle,
+                              onClick: () => { setInterviewQSearchQuery(''); setInterviewQSelectedRole('all'); handleTabClick('interviewq'); },
+                              isActive: activeTab === 'interviewq' && (!interviewQSearchQuery || interviewQSearchQuery === '')
+                            },
+                            {
+                              id: 'system-design',
+                              label: 'System Design & Arch',
+                              icon: Layers,
+                              onClick: () => { setInterviewQSearchQuery('system design'); handleTabClick('interviewq'); },
+                              isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('system')
+                            },
+                            {
+                              id: 'coding-dsa',
+                              label: 'Coding & DSA',
+                              icon: Code2,
+                              onClick: () => { setInterviewQSearchQuery('coding'); handleTabClick('interviewq'); },
+                              isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('coding')
+                            },
+                            {
+                              id: 'cloud-devops',
+                              label: 'Cloud & DevOps',
+                              icon: Cloud,
+                              onClick: () => { setInterviewQSearchQuery('cloud'); handleTabClick('interviewq'); },
+                              isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('cloud')
+                            },
+                            {
+                              id: 'ai-ml',
+                              label: 'AI & Data Science',
+                              icon: Cpu,
+                              onClick: () => { setInterviewQSearchQuery('machine learning'); handleTabClick('interviewq'); },
+                              isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('machine')
+                            }
+                          ];
+                        case 'jobs':
+                          return [
+                            {
+                              id: 'all-companies',
+                              label: 'All 257+ Companies',
+                              icon: Building2,
+                              onClick: () => { setJobsCompanySearchQuery(''); handleTabClick('jobs'); },
+                              isActive: activeTab === 'jobs' && (!jobsCompanySearchQuery || jobsCompanySearchQuery === '')
+                            },
+                            {
+                              id: 'faang',
+                              label: 'FAANG & Tier 1',
+                              icon: Sparkles,
+                              onClick: () => { setJobsCompanySearchQuery('Google'); handleTabClick('jobs'); },
+                              isActive: activeTab === 'jobs' && jobsCompanySearchQuery === 'Google'
+                            },
+                            {
+                              id: 'fintech',
+                              label: 'FinTech & Banking',
+                              icon: TrendingUp,
+                              onClick: () => { setJobsCompanySearchQuery('Fintech'); handleTabClick('jobs'); },
+                              isActive: activeTab === 'jobs' && jobsCompanySearchQuery === 'Fintech'
+                            },
+                            {
+                              id: 'consulting',
+                              label: 'Consulting & Services',
+                              icon: Briefcase,
+                              onClick: () => { setJobsCompanySearchQuery('Consulting'); handleTabClick('jobs'); },
+                              isActive: activeTab === 'jobs' && jobsCompanySearchQuery === 'Consulting'
+                            }
+                          ];
+                        case 'hr-contacts':
+                          return [
+                            {
+                              id: 'apj',
+                              label: 'APJ & India Tech HR',
+                              icon: Globe,
+                              onClick: () => { setHrContactsSearchQuery(''); handleTabClick('hr-contacts'); },
+                              isActive: activeTab === 'hr-contacts' && (!hrContactsSearchQuery || hrContactsSearchQuery === '')
+                            },
+                            {
+                              id: 'emea',
+                              label: 'EMEA (Europe & UK)',
+                              icon: MapPin,
+                              onClick: () => { setHrContactsSearchQuery('London'); handleTabClick('hr-contacts'); },
+                              isActive: activeTab === 'hr-contacts' && hrContactsSearchQuery === 'London'
+                            },
+                            {
+                              id: 'amer',
+                              label: 'AMER (USA & Americas)',
+                              icon: Building,
+                              onClick: () => { setHrContactsSearchQuery('US'); handleTabClick('hr-contacts'); },
+                              isActive: activeTab === 'hr-contacts' && hrContactsSearchQuery === 'US'
+                            }
+                          ];
+                        case 'saved':
+                          return [
+                            {
+                              id: 'all-saved',
+                              label: `All Bookmarks (${bookmarks.length})`,
+                              icon: CustomBookmarkIcon,
+                              onClick: () => { handleTabClick('saved'); },
+                              isActive: activeTab === 'saved'
+                            },
+                            {
+                              id: 'saved-roles',
+                              label: `Roles (${bookmarks.filter(b => b.type === 'role').length})`,
+                              icon: Network,
+                              onClick: () => { handleTabClick('saved'); },
+                              isActive: false
+                            },
+                            {
+                              id: 'saved-resources',
+                              label: `Resources (${bookmarks.filter(b => b.type === 'certification' || b.type === 'studyPortal' || b.type === 'skill' || b.type === 'tool').length})`,
+                              icon: BookOpen,
+                              onClick: () => { handleTabClick('saved'); },
+                              isActive: false
+                            },
+                            {
+                              id: 'saved-questions',
+                              label: `InterviewQ (${bookmarks.filter(b => b.type === 'interviewQ').length})`,
+                              icon: HelpCircle,
+                              onClick: () => { handleTabClick('saved'); },
+                              isActive: false
+                            }
+                          ];
+                        default:
+                          return [];
+                      }
+                    };
 
-                      {/* Minimized view: compact icon-only vertical submenu perfectly aligned in 72px rail */}
-                      {!isSidebarExpanded && (
-                        <div className="my-1 py-1.5 w-[72px] flex flex-col items-center gap-1.5 bg-cyan-950/20 border-y border-cyan-900/40 max-h-[220px] overflow-y-auto custom-scrollbar">
-                          {[
-                            { id: 'hackathons', label: 'Hackathons & Events', icon: Trophy },
-                            { id: 'youtubeTeachers', label: 'YouTube Teachers', icon: Video },
-                            { id: 'channels', label: 'Study Portals', icon: BookOpen },
-                            { id: 'tools-skills', label: 'Skills & Tools Pool', icon: Terminal },
-                            { id: 'certs', label: 'Certifications', icon: Award },
-                            { id: 'bookshelf', label: 'Bookshelf', icon: Book },
-                          ].map((sub) => {
-                            const isSubActive = activeTab === 'libraries' && librariesActiveTab === sub.id;
-                            const SubIcon = sub.icon;
-                            return (
-                              <button
-                                key={sub.id}
-                                type="button"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  handleSidebarItemClick(() => {
-                                    setLibrariesActiveTab(sub.id as any);
-                                    handleTabClick('libraries');
-                                  });
-                                }}
-                                aria-label={sub.label}
-                                aria-current={isSubActive ? 'page' : undefined}
-                                className={`group/sub flex items-center justify-center w-8 h-8 rounded transition-all cursor-pointer relative focus:outline-none focus:ring-1 focus:ring-cyan-400 ${
-                                  isSubActive
-                                    ? 'bg-cyan-500/25 text-cyan-300 border border-cyan-400/80 shadow-[0_0_8px_rgba(34,211,238,0.3)]'
-                                    : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/80 border border-transparent'
-                                }`}
-                                title={sub.label}
-                              >
-                                <SubIcon className={`w-3.5 h-3.5 shrink-0 ${isSubActive ? 'text-cyan-300' : 'text-slate-400 group-hover/sub:text-slate-200'}`} />
+                    const subTabs = getSubTabs();
+                    const hasSubTabs = subTabs.length > 0;
+                    const isDropdownOpen = !!expandedSections[tabId];
 
-                                {/* Tooltip for compact submenu icon */}
-                                <div className="absolute left-[76px] bg-[#070b13] border border-[#1e2e54] text-[9.5px] tracking-wider px-2.5 py-1.5 whitespace-nowrap hidden group-hover/sub:block group-focus/sub:block transition-all z-50 pointer-events-none font-mono font-bold rounded-xs shadow-[3px_3px_0px_#121c38]">
-                                  <span className="text-cyan-400 mr-1.5 font-bold">►</span> {sub.label.toUpperCase()}
-                                </div>
-                              </button>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  )}
+                    if (!hasSubTabs || !isDropdownOpen) return null;
+
+                    return (
+                      <div id={`${tabId}-submenu`}>
+                        {/* Expanded view: full icon-and-label menu */}
+                        {isSidebarExpanded && (
+                          <div className="mt-1 ml-[72px] pl-2 border-l border-cyan-800/40 space-y-0.5 flex flex-col pr-2">
+                            {subTabs.map((sub) => {
+                              const SubIcon = sub.icon;
+                              return (
+                                <button
+                                  key={sub.id}
+                                  onClick={() => {
+                                    handleSidebarItemClick(() => {
+                                      sub.onClick();
+                                    });
+                                  }}
+                                  className={`w-full flex items-center py-1 px-1.5 text-left text-[10px] font-mono font-bold tracking-tight rounded-xs transition-all cursor-pointer ${
+                                    sub.isActive
+                                      ? 'text-cyan-400 bg-cyan-950/20 border-l border-cyan-400 pl-2'
+                                      : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/40'
+                                  }`}
+                                >
+                                  <SubIcon className={`w-3 h-3 mr-1.5 shrink-0 ${sub.isActive ? 'text-cyan-400' : 'text-slate-500'}`} />
+                                  <span className="truncate">{sub.label}</span>
+                                </button>
+                              );
+                            })}
+                          </div>
+                        )}
+
+                        {/* Minimized view: compact icon-only vertical submenu perfectly aligned in 72px rail */}
+                        {!isSidebarExpanded && (
+                          <div className="my-1 py-1.5 w-[72px] flex flex-col items-center gap-1.5 bg-cyan-950/20 border-y border-cyan-900/40 max-h-[220px] overflow-y-auto custom-scrollbar">
+                            {subTabs.map((sub) => {
+                              const SubIcon = sub.icon;
+                              return (
+                                <button
+                                  key={sub.id}
+                                  type="button"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    handleSidebarItemClick(() => {
+                                      sub.onClick();
+                                    });
+                                  }}
+                                  aria-label={sub.label}
+                                  aria-current={sub.isActive ? 'page' : undefined}
+                                  className={`group/sub flex items-center justify-center w-8 h-8 rounded transition-all cursor-pointer relative focus:outline-none focus:ring-1 focus:ring-cyan-400 ${
+                                    sub.isActive
+                                      ? 'bg-cyan-500/25 text-cyan-300 border border-cyan-400/80 shadow-[0_0_8px_rgba(34,211,238,0.3)]'
+                                      : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/80 border border-transparent'
+                                  }`}
+                                  title={sub.label}
+                                >
+                                  <SubIcon className={`w-3.5 h-3.5 shrink-0 ${sub.isActive ? 'text-cyan-300' : 'text-slate-400 group-hover/sub:text-slate-200'}`} />
+
+                                  {/* Tooltip for compact submenu icon */}
+                                  <div className="absolute left-[76px] bg-[#070b13] border border-[#1e2e54] text-[9.5px] tracking-wider px-2.5 py-1.5 whitespace-nowrap hidden group-hover/sub:block group-focus/sub:block transition-all z-50 pointer-events-none font-mono font-bold rounded-xs shadow-[3px_3px_0px_#121c38]">
+                                    <span className="text-cyan-400 mr-1.5 font-bold">►</span> {sub.label.toUpperCase()}
+                                  </div>
+                                </button>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })()}
                 </div>
               );
             })}
@@ -4455,9 +4901,8 @@ export default function App() {
         isOpen={isMobile && isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}
         activeTab={activeTab}
-        onSelectTab={(tabId) => {
-          handleTabClick(tabId);
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+        onSelectTab={(tabId, params) => {
+          handleUniversalTabNavigate(tabId, params);
         }}
         bookmarksCount={bookmarks.length}
         theme={theme}

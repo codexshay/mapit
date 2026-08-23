@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { 
   X, 
   ChevronRight, 
@@ -13,7 +13,23 @@ import {
   Sun, 
   Moon, 
   Sparkles,
-  Award
+  Award,
+  ChevronDown,
+  ChevronUp,
+  Trophy,
+  Video,
+  Terminal,
+  Book,
+  Globe,
+  Building2,
+  MapPin,
+  TrendingUp,
+  Code2,
+  Cpu,
+  Cloud,
+  Layers,
+  FolderTree,
+  Building
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -21,7 +37,7 @@ export interface MobileNavDrawerProps {
   isOpen: boolean;
   onClose: () => void;
   activeTab: string;
-  onSelectTab: (tabId: string) => void;
+  onSelectTab: (tabId: string, params?: any) => void;
   bookmarksCount?: number;
   theme: 'light' | 'dark';
   onToggleTheme: () => void;
@@ -29,12 +45,20 @@ export interface MobileNavDrawerProps {
   catalogVersion?: string;
 }
 
-interface NavItem {
+export interface SubNavItem {
+  id: string;
+  label: string;
+  icon: React.ComponentType<{ className?: string }>;
+  actionParams?: any;
+}
+
+export interface NavItem {
   id: string;
   label: string;
   icon: React.ComponentType<{ className?: string }>;
   isBeta?: boolean;
   showCount?: boolean;
+  subTabs?: SubNavItem[];
 }
 
 interface NavGroup {
@@ -52,29 +76,101 @@ const NAV_GROUPS: NavGroup[] = [
   {
     groupTitle: 'Explore',
     items: [
-      { id: 'map', label: 'Career Domains', icon: Network },
-      { id: 'libraries', label: 'Resources', icon: BookOpen },
-      { id: 'interviewq', label: 'InterviewQ', icon: HelpCircle }
+      { 
+        id: 'map', 
+        label: 'Career Domains', 
+        icon: Network,
+        subTabs: [
+          { id: 'mindmap', label: 'Interactive Mind Map', icon: Network, actionParams: { mode: 'mindmap' } },
+          { id: 'comparison', label: 'Role Comparator', icon: Scale, actionParams: { tab: 'comparison' } },
+          { id: 'branches', label: '18 Career Branches', icon: FolderTree, actionParams: { mode: 'mindmap' } }
+        ]
+      },
+      { 
+        id: 'libraries', 
+        label: 'Resources', 
+        icon: BookOpen,
+        subTabs: [
+          { id: 'hackathons', label: 'Hackathons & Events', icon: Trophy, actionParams: { tab: 'hackathons' } },
+          { id: 'youtubeTeachers', label: 'YouTube Teachers', icon: Video, actionParams: { tab: 'youtubeTeachers' } },
+          { id: 'channels', label: 'Study Portals', icon: Globe, actionParams: { tab: 'channels' } },
+          { id: 'tools-skills', label: 'Skills & Tools Pool', icon: Terminal, actionParams: { tab: 'tools-skills' } },
+          { id: 'certs', label: 'Certifications', icon: Award, actionParams: { tab: 'certs' } },
+          { id: 'bookshelf', label: 'Bookshelf', icon: Book, actionParams: { tab: 'bookshelf' } }
+        ]
+      },
+      { 
+        id: 'interviewq', 
+        label: 'InterviewQ', 
+        icon: HelpCircle,
+        subTabs: [
+          { id: 'all-q', label: 'All Questions & Labs', icon: HelpCircle, actionParams: { query: '' } },
+          { id: 'system-design', label: 'System Design & Arch', icon: Layers, actionParams: { query: 'system design' } },
+          { id: 'coding-dsa', label: 'Coding & DSA', icon: Code2, actionParams: { query: 'coding' } },
+          { id: 'cloud-devops', label: 'Cloud & DevOps', icon: Cloud, actionParams: { query: 'cloud' } },
+          { id: 'ai-ml', label: 'AI & Data Science', icon: Cpu, actionParams: { query: 'machine learning' } }
+        ]
+      }
     ]
   },
   {
     groupTitle: 'Plan',
     items: [
-      { id: 'pathfinder', label: 'Path Planner', icon: Compass },
+      { 
+        id: 'pathfinder', 
+        label: 'Path Planner', 
+        icon: Compass,
+        subTabs: [
+          { id: 'advisor', label: 'Ambition Path Advisor', icon: Compass, actionParams: {} },
+          { id: 'saved-routes', label: 'Saved Career Pathways', icon: Bookmark, actionParams: { target: 'saved' } }
+        ]
+      },
       { id: 'comparison', label: 'Comparator', icon: Scale }
     ]
   },
   {
     groupTitle: 'Opportunities',
     items: [
-      { id: 'jobs', label: 'Jobs & Referrals', icon: Briefcase, isBeta: true },
-      { id: 'hr-contacts', label: 'HR Contacts', icon: Users, isBeta: true }
+      { 
+        id: 'jobs', 
+        label: 'Jobs & Referrals', 
+        icon: Briefcase, 
+        isBeta: true,
+        subTabs: [
+          { id: 'all-companies', label: 'All 257+ Companies', icon: Building2, actionParams: { companyQuery: '' } },
+          { id: 'faang', label: 'FAANG & Tier 1', icon: Sparkles, actionParams: { companyQuery: 'Google' } },
+          { id: 'fintech', label: 'FinTech & Banking', icon: TrendingUp, actionParams: { companyQuery: 'Fintech' } },
+          { id: 'consulting', label: 'Consulting & Services', icon: Briefcase, actionParams: { companyQuery: 'Consulting' } }
+        ]
+      },
+      { 
+        id: 'hr-contacts', 
+        label: 'HR Contacts', 
+        icon: Users, 
+        isBeta: true,
+        subTabs: [
+          { id: 'apj', label: 'APJ & India Tech HR', icon: Globe, actionParams: { query: '' } },
+          { id: 'emea', label: 'EMEA (Europe & UK)', icon: MapPin, actionParams: { query: 'London' } },
+          { id: 'amer', label: 'AMER (USA & Americas)', icon: Building, actionParams: { query: 'US' } }
+        ]
+      }
     ]
   },
   {
     groupTitle: 'Personal',
     items: [
-      { id: 'saved', label: 'Bookmarks', icon: Bookmark, showCount: true }
+      { 
+        id: 'saved', 
+        label: 'Bookmarks', 
+        icon: Bookmark, 
+        showCount: true,
+        subTabs: [
+          { id: 'all-saved', label: 'All Saved Items', icon: Bookmark, actionParams: {} },
+          { id: 'saved-roles', label: 'Saved Roles', icon: Network, actionParams: {} },
+          { id: 'saved-resources', label: 'Saved Resources', icon: BookOpen, actionParams: {} },
+          { id: 'saved-questions', label: 'Saved InterviewQs', icon: HelpCircle, actionParams: {} }
+        ]
+      }
     ]
   }
 ];
@@ -92,10 +188,24 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
 }) => {
   const drawerRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>(() => ({
+    [activeTab]: true,
+    libraries: activeTab === 'libraries',
+    map: activeTab === 'map',
+    interviewq: activeTab === 'interviewq'
+  }));
+
+  const toggleItemDropdown = (itemId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setExpandedItems(prev => ({ ...prev, [itemId]: !prev[itemId] }));
+  };
 
   // Focus management & Escape key listener
   useEffect(() => {
     if (!isOpen) return;
+
+    // Auto expand active tab
+    setExpandedItems(prev => ({ ...prev, [activeTab]: true }));
 
     // Focus close button on open
     const timer = setTimeout(() => {
@@ -113,7 +223,7 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
       clearTimeout(timer);
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isOpen, onClose]);
+  }, [isOpen, onClose, activeTab]);
 
   return (
     <AnimatePresence>
@@ -137,7 +247,7 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
             animate={{ x: 0 }}
             exit={{ x: '-100%' }}
             transition={{ type: 'spring', damping: 28, stiffness: 300 }}
-            className={`fixed top-0 bottom-0 left-0 w-[82vw] max-w-[316px] z-[200] flex flex-col font-mono shadow-[12px_0_32px_rgba(0,0,0,0.85)] border-r ${
+            className={`fixed top-0 bottom-0 left-0 w-[85vw] max-w-[320px] z-[200] flex flex-col font-mono shadow-[12px_0_32px_rgba(0,0,0,0.85)] border-r ${
               theme === 'light'
                 ? 'bg-[#f8fafc] text-slate-900 border-slate-300'
                 : 'bg-[#070b13] text-slate-100 border-[#121c38]'
@@ -212,52 +322,102 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
                   </div>
 
                   {/* Group Items */}
-                  <div className="space-y-0.5">
+                  <div className="space-y-1">
                     {group.items.map((item) => {
                       const isActive = activeTab === item.id || (item.id === 'jobs' && activeTab === 'jobs-referrals');
                       const Icon = item.icon;
+                      const hasSubTabs = !!item.subTabs && item.subTabs.length > 0;
+                      const isExpanded = !!expandedItems[item.id];
 
                       return (
-                        <button
-                          key={item.id}
-                          type="button"
-                          onClick={() => {
-                            onSelectTab(item.id);
-                            onClose();
-                          }}
-                          aria-current={isActive ? 'page' : undefined}
-                          className={`w-full min-h-[44px] px-3 py-2.5 rounded-md flex items-center justify-between text-xs font-mono transition-all duration-150 cursor-pointer ${
+                        <div key={item.id} className="space-y-0.5">
+                          <div className={`w-full min-h-[44px] px-3 py-2 rounded-md flex items-center justify-between text-xs font-mono transition-all duration-150 ${
                             isActive
                               ? theme === 'light'
-                                ? 'bg-emerald-500/15 text-emerald-700 font-extrabold border-l-4 border-emerald-500 shadow-sm'
+                                ? 'bg-emerald-500/15 text-emerald-700 font-extrabold border-l-4 border-emerald-500 shadow-xs'
                                 : 'bg-emerald-500/15 text-emerald-400 font-extrabold border-l-4 border-emerald-400 shadow-[inset_0_0_12px_rgba(16,185,129,0.15)]'
                               : theme === 'light'
                                 ? 'text-slate-700 hover:text-slate-900 hover:bg-slate-100 border-l-4 border-transparent'
                                 : 'text-slate-300 hover:text-white hover:bg-slate-800/60 border-l-4 border-transparent'
-                          }`}
-                        >
-                          <div className="flex items-center gap-3 truncate">
-                            <Icon className={`w-4 h-4 shrink-0 ${
-                              isActive
-                                ? 'text-emerald-400'
-                                : theme === 'light' ? 'text-slate-500' : 'text-slate-400'
-                            }`} />
-                            <span className="truncate">{item.label}</span>
+                          }`}>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                onSelectTab(item.id);
+                                if (hasSubTabs) {
+                                  setExpandedItems(prev => ({ ...prev, [item.id]: true }));
+                                } else {
+                                  onClose();
+                                }
+                              }}
+                              className="flex-1 flex items-center gap-3 truncate text-left cursor-pointer focus:outline-none"
+                            >
+                              <Icon className={`w-4 h-4 shrink-0 ${
+                                isActive
+                                  ? 'text-emerald-400'
+                                  : theme === 'light' ? 'text-slate-500' : 'text-slate-400'
+                              }`} />
+                              <span className="truncate">{item.label}</span>
+                            </button>
+
+                            <div className="flex items-center gap-1.5 shrink-0 ml-2">
+                              {item.isBeta && (
+                                <span className="text-[8px] bg-amber-400 text-black font-extrabold px-1.5 py-0.5 rounded-xs tracking-wider uppercase">
+                                  beta
+                                </span>
+                              )}
+                              {item.showCount && bookmarksCount > 0 && (
+                                <span className="text-[9px] bg-yellow-400 text-black font-bold px-1.5 py-0.5 rounded-full font-mono">
+                                  {bookmarksCount}
+                                </span>
+                              )}
+
+                              {hasSubTabs && (
+                                <button
+                                  type="button"
+                                  onClick={(e) => toggleItemDropdown(item.id, e)}
+                                  className={`p-1.5 rounded transition hover:bg-slate-800/40 cursor-pointer ${
+                                    isExpanded ? 'text-emerald-400' : 'text-slate-400'
+                                  }`}
+                                  title={isExpanded ? `Collapse ${item.label}` : `Expand ${item.label}`}
+                                >
+                                  <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                                    isExpanded ? 'rotate-180 text-emerald-400' : ''
+                                  }`} />
+                                </button>
+                              )}
+                            </div>
                           </div>
 
-                          <div className="flex items-center gap-1.5 shrink-0 ml-2">
-                            {item.isBeta && (
-                              <span className="text-[8px] bg-amber-400 text-black font-extrabold px-1.5 py-0.5 rounded-xs tracking-wider uppercase">
-                                beta
-                              </span>
-                            )}
-                            {item.showCount && bookmarksCount > 0 && (
-                              <span className="text-[9px] bg-yellow-400 text-black font-bold px-1.5 py-0.5 rounded-full font-mono">
-                                {bookmarksCount}
-                              </span>
-                            )}
-                          </div>
-                        </button>
+                          {/* Sub-tabs dropdown accordion */}
+                          {hasSubTabs && isExpanded && (
+                            <div className={`ml-4 pl-3 border-l-2 py-1 space-y-0.5 ${
+                              theme === 'light' ? 'border-slate-300' : 'border-emerald-500/30'
+                            }`}>
+                              {item.subTabs!.map((sub) => {
+                                const SubIcon = sub.icon;
+                                return (
+                                  <button
+                                    key={sub.id}
+                                    type="button"
+                                    onClick={() => {
+                                      onSelectTab(item.id, sub.actionParams);
+                                      onClose();
+                                    }}
+                                    className={`w-full py-1.5 px-2 text-left text-[11px] font-mono flex items-center gap-2 rounded transition cursor-pointer ${
+                                      theme === 'light'
+                                        ? 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
+                                        : 'text-slate-400 hover:text-white hover:bg-slate-800/50'
+                                    }`}
+                                  >
+                                    <SubIcon className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                                    <span className="truncate">{sub.label}</span>
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          )}
+                        </div>
                       );
                     })}
                   </div>
