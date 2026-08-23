@@ -41,7 +41,7 @@ import {
   Terminal, ArrowUpRight, Award, HelpCircle, UserCheck, Flame, ExternalLink,
   Layers, Video, Trophy, Menu, ChevronLeft, Trash2, Sun, Moon,
   ArrowLeft, ArrowRight, Search, ChevronDown, ChevronUp, Book, RefreshCw,
-  PanelLeftClose, PanelLeftOpen, Sparkles, Briefcase, Wrench, Youtube
+  PanelLeftClose, PanelLeftOpen, Sparkles, Briefcase, Wrench, Youtube, Globe
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -3560,17 +3560,17 @@ export default function App() {
             currentViewLabel={
               librariesActiveTab === 'certs' ? 'IT Certifications' :
               librariesActiveTab === 'tools-skills' ? 'Tools & Key Skills' :
-              librariesActiveTab === 'bookshelf' ? 'Study Portals & Books' :
-              librariesActiveTab === 'youtubeTeachers' ? 'YouTube Instructors' :
-              librariesActiveTab === 'channels' ? 'YouTube Channels' :
+              librariesActiveTab === 'channels' ? 'Study Portals' :
+              librariesActiveTab === 'bookshelf' ? 'Bookshelf' :
+              librariesActiveTab === 'youtubeTeachers' ? 'YouTube Educators' :
               librariesActiveTab === 'hackathons' ? 'Hackathons & Events' : 'All Resources'
             }
             subViews={[
               { id: 'certs', label: 'IT Certifications', icon: Award },
               { id: 'tools-skills', label: 'Tools & Key Skills', icon: Wrench },
-              { id: 'bookshelf', label: 'Study Portals & Books', icon: BookOpen },
-              { id: 'youtubeTeachers', label: 'YouTube Instructors', icon: Video },
-              { id: 'channels', label: 'YouTube Channels', icon: Youtube },
+              { id: 'channels', label: 'Study Portals', icon: Globe },
+              { id: 'bookshelf', label: 'Bookshelf', icon: BookOpen },
+              { id: 'youtubeTeachers', label: 'YouTube Educators', icon: Video },
               { id: 'hackathons', label: 'Hackathons & Tech Events', icon: Trophy }
             ]}
             activeSubViewId={librariesActiveTab}
