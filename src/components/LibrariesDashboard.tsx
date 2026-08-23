@@ -5,7 +5,7 @@ import importedSkills from '../data/generated/skills.json';
 import importedTopics from '../data/generated/topics.json';
 import importedDomains from '../data/generated/domains.json';
 import importedCatalog from '../data/generated/catalog-normalized.json';
-import { BookOpen, Award, Terminal, Wrench, Search, Play, ExternalLink, HelpCircle, Globe, Layers, Book, ArrowRight, Youtube, FileDown, AlertCircle, CheckCircle, Video, Trophy, Filter, RefreshCw, GitBranch, LayoutGrid, ChevronRight } from 'lucide-react';
+import { BookOpen, Award, Terminal, Wrench, Search, Play, ExternalLink, HelpCircle, Globe, Layers, Book, ArrowRight, Youtube, FileDown, AlertCircle, CheckCircle, Video, Trophy, Filter, RefreshCw, GitBranch, LayoutGrid, ChevronRight, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import CustomBookmarkIcon from './CustomBookmarkIcon';
 import YoutubeTeachers, { TEACHERS_DIRECTORY } from './YoutubeTeachers';
@@ -3274,268 +3274,338 @@ export default function LibrariesDashboard({
       {/* 3. STUDY PORTALS MIND-MAP & SKILL BRANCHING TREE RENDER */}
       {activeTab === 'channels' && (
         <div className="space-y-4 font-mono">
-          {/* MAIN SPLIT-VIEW CANVAS */}
-          <div className="flex flex-col md:flex-row gap-5 items-start">
-            {/* LEFT SIDE PANEL: Study Portals Selector */}
-            <div className={`w-full md:w-80 lg:w-96 shrink-0 border-2 p-3.5 space-y-2.5 max-h-[680px] overflow-y-auto custom-scrollbar ${
-              isLight ? 'bg-[#fbf9f5] border-amber-200/80' : 'bg-[#121620] border-[#222938]'
-            }`}>
-              <div className="flex items-center justify-between border-b pb-2 border-slate-800/80">
-                <span className="text-[11px] font-extrabold uppercase text-amber-400 flex items-center gap-1.5">
-                  <BookOpen className="w-3.5 h-3.5 text-amber-400" /> Select Study Portal
-                </span>
-                <span className="text-[10px] text-gray-400 font-mono">
-                  {filteredChannels.length} Options
-                </span>
-              </div>
+          {(() => {
+            const activeKey = selectedPortalId || filteredChannels[0]?.id || filteredChannels[0]?.name;
+            const activePortal = filteredChannels.find(p => (p.id || p.name) === activeKey) || filteredChannels[0];
 
-              <div className="space-y-2">
-                {filteredChannels.map((plat) => {
-                  const platKey = plat.id || plat.name;
-                  const isSelected = (selectedPortalId || filteredChannels[0]?.id || filteredChannels[0]?.name) === platKey;
-                  
-                  return (
-                    <button
-                      key={platKey}
-                      type="button"
-                      onClick={() => setSelectedPortalId(platKey)}
-                      className={`w-full text-left p-3 border transition-all cursor-pointer relative overflow-hidden group ${
-                        isSelected
-                          ? (isLight ? 'bg-amber-50/90 border-amber-500 text-slate-900 shadow-xs' : 'bg-[#241f17] border-amber-400 text-white shadow-[0_0_12px_rgba(245,158,11,0.15)]')
-                          : (isLight ? 'bg-white border-amber-100 hover:border-amber-300 text-slate-700' : 'bg-[#181d2a] border-[#252e42] hover:border-amber-700/60 text-slate-300')
-                      }`}
-                    >
-                      {isSelected && (
-                        <div className="absolute top-0 left-0 bottom-0 w-1 bg-amber-400 shadow-[0_0_8px_#f59e0b]" />
-                      )}
-                      
-                      <div className="flex items-center justify-end gap-1 mb-1">
-                        <span className={`text-[9px] font-extrabold px-1.5 py-0.2 border ${
-                          isSelected ? 'bg-amber-400 text-black border-amber-300' : 'bg-amber-950/50 text-amber-300 border-amber-800/40'
-                        }`}>
-                          {plat.totalSkillsCount} Skills
-                        </span>
-                      </div>
+            // Get all skill records associated with active portal
+            const portalRecords = activePortal ? importedCatalog.filter((rec: any) => 
+              rec && (rec.portalSlug === activePortal.id || rec.portal === activePortal.name)
+            ) : [];
 
-                      <div className="flex items-center justify-between gap-2">
-                        <h5 className={`text-xs font-extrabold ${isSelected ? 'text-amber-300' : 'group-hover:text-white'}`}>
-                          {plat.name}
-                        </h5>
-                        <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isSelected ? 'rotate-90 text-amber-400' : 'text-gray-500'}`} />
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* RIGHT SIDE CANVAS: Groovy Mind-Map Skill Tree */}
-            {(() => {
-              const activeKey = selectedPortalId || filteredChannels[0]?.id || filteredChannels[0]?.name;
-              const activePortal = filteredChannels.find(p => (p.id || p.name) === activeKey) || filteredChannels[0];
-
-              if (!activePortal) {
-                return (
-                  <div className="w-full p-12 text-center border-2 border-dashed border-amber-500/30 bg-amber-950/10 text-amber-300">
-                    Select a Study Portal from the left list to expand its topics.
-                  </div>
-                );
+            // Group skills by Domain into tree branches
+            const domainBranchesMap = new Map<string, any[]>();
+            portalRecords.forEach((rec: any) => {
+              const dom = rec.domain || 'Software Engineering & Architecture';
+              if (!domainBranchesMap.has(dom)) {
+                domainBranchesMap.set(dom, []);
               }
+              domainBranchesMap.get(dom)!.push(rec);
+            });
 
-              // Get all skill records associated with active portal
-              const portalRecords = importedCatalog.filter((rec: any) => 
-                rec && (rec.portalSlug === activePortal.id || rec.portal === activePortal.name)
-              );
+            const domainBranches = Array.from(domainBranchesMap.entries());
 
-              // Group skills by Domain into tree branches
-              const domainBranchesMap = new Map<string, any[]>();
-              portalRecords.forEach((rec: any) => {
-                const dom = rec.domain || 'Software Engineering & Architecture';
-                if (!domainBranchesMap.has(dom)) {
-                  domainBranchesMap.set(dom, []);
-                }
-                domainBranchesMap.get(dom)!.push(rec);
-              });
-
-              const domainBranches = Array.from(domainBranchesMap.entries());
-
-              return (
-                <div className={`flex-1 w-full border-2 p-5 space-y-6 min-h-[600px] max-h-[680px] overflow-y-auto custom-scrollbar relative transition-all ${
-                  isLight ? 'bg-[#f7f5f0] border-amber-200/80' : 'bg-[#131722] border-[#222938]'
+            return (
+              <>
+                {/* 🌐 INTERACTIVE BREADCRUMB & PORTAL FILTER BAR */}
+                <div className={`p-3 border-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 ${
+                  isLight ? 'bg-amber-50/70 border-amber-300 text-slate-900 shadow-xs' : 'bg-[#121622] border-[#222b3d] text-slate-100'
                 }`}>
-                  {/* Active Portal Header & Direct Portal Visit Link */}
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b-2 pb-4 border-slate-800/80">
-                    <div>
-                      <h3 className="text-lg md:text-xl font-black text-amber-100 flex items-center gap-2">
-                        {activePortal.name}
-                      </h3>
-                    </div>
+                  {/* Breadcrumb Path & Dropdown Filter */}
+                  <div className="flex items-center gap-2 flex-wrap text-xs">
+                    <span className="text-amber-500 font-extrabold flex items-center gap-1.5 uppercase">
+                      <BookOpen className="w-4 h-4 text-amber-400 shrink-0" /> Study Portals
+                    </span>
 
-                    <a
-                      href={activePortal.officialUrl || (activePortal as any).url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3.5 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 border border-amber-300 font-extrabold text-xs uppercase transition flex items-center gap-1.5 rounded-xs shrink-0 shadow-[2px_2px_0px_#ffffff]"
-                    >
-                      <span>Visit Official Portal</span>
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
+                    <span className="text-slate-500">/</span>
+
+                    {/* Portal Selector Dropdown (Breadcrumb Filter) */}
+                    <div className="relative inline-flex items-center">
+                      <select
+                        value={activeKey}
+                        onChange={(e) => setSelectedPortalId(e.target.value)}
+                        aria-label="Filter by Study Portal"
+                        className={`pl-2.5 pr-7 py-1 text-xs font-mono font-bold rounded-none border cursor-pointer focus:outline-none transition-all ${
+                          isLight 
+                            ? 'bg-white border-amber-400 text-amber-900 focus:border-amber-600 shadow-xs' 
+                            : 'bg-[#1a202c] border-amber-400/80 text-amber-300 focus:border-amber-400 shadow-[0_0_8px_rgba(245,158,11,0.2)]'
+                        }`}
+                      >
+                        {filteredChannels.map((plat) => {
+                          const platKey = plat.id || plat.name;
+                          return (
+                            <option key={platKey} value={platKey} className={isLight ? 'bg-white text-slate-900' : 'bg-[#121620] text-amber-200'}>
+                              {plat.name} ({plat.totalSkillsCount} Skills)
+                            </option>
+                          );
+                        })}
+                      </select>
+                      <ChevronDown className="w-3.5 h-3.5 text-amber-400 absolute right-2 pointer-events-none" />
+                    </div>
                   </div>
 
-                  {/* DOMAIN BRANCHES & CLEAN TOPIC NODES */}
-                  <AnimatePresence mode="popLayout">
-                    <div className="space-y-7 relative">
-                      {domainBranches.map(([domainName, skillsInDomain], branchIdx) => (
-                        <motion.div
-                          key={`${activePortal.id || activePortal.name}-${domainName}`}
-                          layout
-                          initial={{ opacity: 0, y: 15 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -15 }}
-                          transition={{ duration: 0.25, delay: branchIdx * 0.05 }}
-                          className="space-y-3 relative pl-4 border-l-2 border-amber-500/40"
+                  {/* Quick Switch Horizontal Filter Pills */}
+                  <div className="flex items-center gap-1.5 overflow-x-auto py-0.5 custom-scrollbar text-[10px]">
+                    <span className="text-gray-400 shrink-0 text-[9.5px] uppercase font-bold hidden lg:inline">
+                      Quick Switch:
+                    </span>
+                    {filteredChannels.map((plat) => {
+                      const platKey = plat.id || plat.name;
+                      const isSelected = activeKey === platKey;
+                      return (
+                        <button
+                          key={platKey}
+                          type="button"
+                          onClick={() => setSelectedPortalId(platKey)}
+                          className={`px-2 py-0.5 border text-[10px] uppercase font-bold shrink-0 transition cursor-pointer ${
+                            isSelected
+                              ? 'bg-amber-400 text-black border-amber-400 shadow-xs'
+                              : isLight
+                                ? 'bg-white text-slate-700 border-amber-200 hover:border-amber-400'
+                                : 'bg-[#181d2a] text-slate-300 border-[#2d384d] hover:border-amber-500/60'
+                          }`}
                         >
-                          {/* Branch Hub Header */}
-                          <div className="flex items-center gap-2">
-                            <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shadow-[0_0_6px_#f59e0b]" />
-                            <h4 className="text-xs font-extrabold uppercase text-amber-300 tracking-wider flex items-center gap-1.5">
-                              {domainName}
-                            </h4>
-                          </div>
-
-                          {/* Skills / Topics Nodes Grid */}
-                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-1">
-                            {skillsInDomain.map((sk: any, sIdx: number) => {
-                              const skillKey = sk.id || sk.skillOrTool || sk.name || `sk-${sIdx}`;
-                              const mainTitle = sk.skillOrTool || sk.name;
-                              
-                              return (
-                                <motion.div
-                                  key={skillKey}
-                                  layout
-                                  layoutId={`skill-node-${skillKey}`}
-                                  initial={{ opacity: 0, scale: 0.85 }}
-                                  animate={{ opacity: 1, scale: 1 }}
-                                  exit={{ opacity: 0, scale: 0.85 }}
-                                  transition={{ type: 'spring', stiffness: 350, damping: 28 }}
-                                  className={`p-3.5 border-2 flex flex-col justify-between transition-all duration-200 hover:border-amber-400 group relative ${
-                                    isLight
-                                      ? 'bg-white border-amber-100 hover:shadow-md text-slate-800'
-                                      : 'bg-[#1a202c] border-[#293448] hover:bg-[#202838] text-slate-200'
-                                  }`}
-                                >
-                                  <div className="space-y-2">
-                                    <div className="flex items-start justify-between gap-2">
-                                      <h5 className="text-xs font-extrabold text-amber-50 group-hover:text-amber-300 transition-colors leading-snug">
-                                        {mainTitle}
-                                      </h5>
-
-                                      {toggleBookmark && isBookmarked && (
-                                        <button
-                                          onClick={() => toggleBookmark({
-                                            id: sk.id || mainTitle,
-                                            name: mainTitle,
-                                            type: 'skill',
-                                            subtext: `${sk.domain || ''}`
-                                          })}
-                                          className="p-0.5 text-gray-400 hover:text-yellow-400 transition cursor-pointer shrink-0"
-                                          title={isBookmarked(sk.id || mainTitle, 'skill') ? 'Remove bookmark' : 'Bookmark topic'}
-                                        >
-                                          <CustomBookmarkIcon className={`w-3.5 h-3.5 ${isBookmarked(sk.id || mainTitle, 'skill') ? 'text-yellow-400 fill-yellow-400' : ''}`} />
-                                        </button>
-                                      )}
-                                    </div>
-
-                                    {/* COVERED SKILLS SLIDING DRAWER TOGGLE */}
-                                    {Array.isArray(sk.skills) && sk.skills.length > 0 && (
-                                      <div className="pt-1">
-                                        <button
-                                          type="button"
-                                          onClick={() => setExpandedCardIds(prev => ({ ...prev, [skillKey]: !prev[skillKey] }))}
-                                          className={`px-2 py-0.5 text-[9.5px] font-mono font-bold uppercase transition-all cursor-pointer flex items-center gap-1 rounded-xs border ${
-                                            expandedCardIds[skillKey]
-                                              ? (isLight ? 'bg-amber-100 text-amber-900 border-amber-300' : 'bg-amber-950/80 text-amber-200 border-amber-500/50')
-                                              : (isLight ? 'bg-amber-50 text-amber-800 border-amber-200 hover:bg-amber-100' : 'bg-[#151c28] text-amber-400/90 border-[#2d3a52] hover:border-amber-500/50 hover:text-amber-300')
-                                          }`}
-                                          title={expandedCardIds[skillKey] ? "Hide covered skills" : "View covered skills"}
-                                        >
-                                          <ChevronRight className={`w-3 h-3 text-amber-400 transition-transform duration-300 ${expandedCardIds[skillKey] ? 'rotate-90' : ''}`} />
-                                          <span>Covered Skills ({sk.skills.length})</span>
-                                        </button>
-
-                                        <AnimatePresence>
-                                          {expandedCardIds[skillKey] && (
-                                            <motion.div
-                                              initial={{ opacity: 0, height: 0, x: -10 }}
-                                              animate={{ opacity: 1, height: 'auto', x: 0 }}
-                                              exit={{ opacity: 0, height: 0, x: -10 }}
-                                              transition={{ duration: 0.2, ease: 'easeOut' }}
-                                              className="mt-2 p-2 bg-amber-950/40 border-l-2 border-amber-400/80 space-y-1 overflow-hidden rounded-r-xs"
-                                            >
-                                              <span className="text-[8.5px] font-mono font-bold uppercase text-amber-400/80 block">
-                                                Skills covered in this topic:
-                                              </span>
-                                              <div className="flex flex-wrap gap-1">
-                                                {sk.skills.map((skillName: string, idx: number) => (
-                                                  <span
-                                                    key={idx}
-                                                    className="px-1.5 py-0.5 text-[9px] font-mono bg-amber-500/15 text-amber-200 border border-amber-500/30 rounded-xs"
-                                                  >
-                                                    {skillName}
-                                                  </span>
-                                                ))}
-                                              </div>
-                                            </motion.div>
-                                          )}
-                                        </AnimatePresence>
-                                      </div>
-                                    )}
-                                  </div>
-
-                                  {/* Action Links */}
-                                  <div className="mt-3 pt-2.5 border-t border-slate-800/80 flex items-center justify-between gap-2">
-                                    <a
-                                      href={getPortalCourseDirectUrl(activePortal.name, mainTitle, sk.url || sk.officialUrl)}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="text-[9.5px] text-amber-400 hover:text-white font-bold flex items-center gap-1 transition uppercase"
-                                    >
-                                      Course Link <ExternalLink className="w-2.5 h-2.5" />
-                                    </a>
-
-                                    <a
-                                      href={`https://www.youtube.com/results?search_query=${encodeURIComponent(activePortal.name + ' ' + mainTitle + ' tutorial')}`}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="text-[9.5px] text-red-400 hover:text-white font-bold flex items-center gap-1 transition uppercase"
-                                      title={`Search YouTube video lessons for ${activePortal.name} ${mainTitle}`}
-                                    >
-                                      <Youtube className="w-2.5 h-2.5 text-red-500" /> YouTube
-                                    </a>
-                                  </div>
-                                </motion.div>
-                              );
-                            })}
-                          </div>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </AnimatePresence>
+                          {plat.name}
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
-              );
-            })()}
-          </div>
 
-          {isMobile && filteredChannels.length > 4 && (
-            <div className="mt-4 flex justify-center">
-              <button
-                onClick={() => setShowAllChannels(!showAllChannels)}
-                className="w-full py-2.5 bg-slate-950 hover:bg-[#121c38] border border-[#1e2e54] hover:border-amber-600 text-amber-400 font-mono text-xs font-bold uppercase transition focus:outline-none flex items-center justify-center gap-1.5 cursor-pointer"
-              >
-                <span>{showAllChannels ? '▲ Show Fewer Portals' : `▼ Show All Portals (${filteredChannels.length})`}</span>
-              </button>
-            </div>
-          )}
+                {/* MAIN SPLIT-VIEW CANVAS */}
+                <div className="flex flex-col md:flex-row gap-5 items-start">
+                  {/* LEFT SIDE PANEL: Study Portals Selector (visible on desktop) */}
+                  <div className={`hidden md:block w-full md:w-80 lg:w-96 shrink-0 border-2 p-3.5 space-y-2.5 max-h-[680px] overflow-y-auto custom-scrollbar ${
+                    isLight ? 'bg-[#fbf9f5] border-amber-200/80' : 'bg-[#121620] border-[#222938]'
+                  }`}>
+                    <div className="flex items-center justify-between border-b pb-2 border-slate-800/80">
+                      <span className="text-[11px] font-extrabold uppercase text-amber-400 flex items-center gap-1.5">
+                        <BookOpen className="w-3.5 h-3.5 text-amber-400" /> Select Study Portal
+                      </span>
+                      <span className="text-[10px] text-gray-400 font-mono">
+                        {filteredChannels.length} Options
+                      </span>
+                    </div>
+
+                    <div className="space-y-2">
+                      {filteredChannels.map((plat) => {
+                        const platKey = plat.id || plat.name;
+                        const isSelected = activeKey === platKey;
+                        
+                        return (
+                          <button
+                            key={platKey}
+                            type="button"
+                            onClick={() => setSelectedPortalId(platKey)}
+                            className={`w-full text-left p-3 border transition-all cursor-pointer relative overflow-hidden group ${
+                              isSelected
+                                ? (isLight ? 'bg-amber-50/90 border-amber-500 text-slate-900 shadow-xs' : 'bg-[#241f17] border-amber-400 text-white shadow-[0_0_12px_rgba(245,158,11,0.15)]')
+                                : (isLight ? 'bg-white border-amber-100 hover:border-amber-300 text-slate-700' : 'bg-[#181d2a] border-[#252e42] hover:border-amber-700/60 text-slate-300')
+                            }`}
+                          >
+                            {isSelected && (
+                              <div className="absolute top-0 left-0 bottom-0 w-1 bg-amber-400 shadow-[0_0_8px_#f59e0b]" />
+                            )}
+                            
+                            <div className="flex items-center justify-end gap-1 mb-1">
+                              <span className={`text-[9px] font-extrabold px-1.5 py-0.2 border ${
+                                isSelected ? 'bg-amber-400 text-black border-amber-300' : 'bg-amber-950/50 text-amber-300 border-amber-800/40'
+                              }`}>
+                                {plat.totalSkillsCount} Skills
+                              </span>
+                            </div>
+
+                            <div className="flex items-center justify-between gap-2">
+                              <h5 className={`text-xs font-extrabold ${isSelected ? 'text-amber-300' : 'group-hover:text-white'}`}>
+                                {plat.name}
+                              </h5>
+                              <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isSelected ? 'rotate-90 text-amber-400' : 'text-gray-500'}`} />
+                            </div>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* MAIN CANVAS: Embedded Skills Mind-Map Tree */}
+                  {!activePortal ? (
+                    <div className="w-full p-12 text-center border-2 border-dashed border-amber-500/30 bg-amber-950/10 text-amber-300">
+                      Select a Study Portal from the breadcrumb filter to expand its topics.
+                    </div>
+                  ) : (
+                    <div className={`flex-1 w-full border-2 p-4 sm:p-5 space-y-6 min-h-[500px] max-h-[720px] overflow-y-auto custom-scrollbar relative transition-all ${
+                      isLight ? 'bg-[#f7f5f0] border-amber-200/80' : 'bg-[#131722] border-[#222938]'
+                    }`}>
+                      {/* Active Portal Header & Direct Portal Visit Link */}
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b-2 pb-4 border-slate-800/80">
+                        <div>
+                          <div className="flex items-center gap-2">
+                            <span className="text-[10px] font-bold px-2 py-0.5 bg-amber-500/20 text-amber-400 border border-amber-500/40 uppercase">
+                              Active Portal
+                            </span>
+                            <span className="text-[10px] text-gray-400 font-mono">
+                              {portalRecords.length} Embedded Skills
+                            </span>
+                          </div>
+                          <h3 className={`text-lg md:text-xl font-black mt-1 flex items-center gap-2 ${
+                            isLight ? 'text-slate-900' : 'text-amber-100'
+                          }`}>
+                            {activePortal.name}
+                          </h3>
+                        </div>
+
+                        <a
+                          href={activePortal.officialUrl || (activePortal as any).url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-3.5 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 border border-amber-300 font-extrabold text-xs uppercase transition flex items-center gap-1.5 rounded-xs shrink-0 shadow-[2px_2px_0px_#ffffff]"
+                        >
+                          <span>Visit Official Portal</span>
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </a>
+                      </div>
+
+                      {/* DOMAIN BRANCHES & CLEAN TOPIC NODES */}
+                      {domainBranches.length === 0 ? (
+                        <div className="p-8 text-center border border-dashed border-amber-500/30 text-gray-400 text-xs font-mono">
+                          No embedded skills matching the current filter.
+                        </div>
+                      ) : (
+                        <AnimatePresence mode="popLayout">
+                          <div className="space-y-7 relative">
+                            {domainBranches.map(([domainName, skillsInDomain], branchIdx) => (
+                              <motion.div
+                                key={`${activePortal.id || activePortal.name}-${domainName}`}
+                                layout
+                                initial={{ opacity: 0, y: 15 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -15 }}
+                                transition={{ duration: 0.25, delay: branchIdx * 0.05 }}
+                                className="space-y-3 relative pl-4 border-l-2 border-amber-500/40"
+                              >
+                                {/* Branch Hub Header */}
+                                <div className="flex items-center gap-2">
+                                  <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shadow-[0_0_6px_#f59e0b]" />
+                                  <h4 className="text-xs font-extrabold uppercase text-amber-300 tracking-wider flex items-center gap-1.5">
+                                    {domainName}
+                                  </h4>
+                                </div>
+
+                                {/* Skills / Topics Nodes Grid */}
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-1">
+                                  {skillsInDomain.map((sk: any, sIdx: number) => {
+                                    const skillKey = sk.id || sk.skillOrTool || sk.name || `sk-${sIdx}`;
+                                    const mainTitle = sk.skillOrTool || sk.name;
+                                    
+                                    return (
+                                      <motion.div
+                                        key={skillKey}
+                                        layout
+                                        layoutId={`skill-node-${skillKey}`}
+                                        initial={{ opacity: 0, scale: 0.85 }}
+                                        animate={{ opacity: 1, scale: 1 }}
+                                        exit={{ opacity: 0, scale: 0.85 }}
+                                        transition={{ type: 'spring', stiffness: 350, damping: 28 }}
+                                        className={`p-3.5 border-2 flex flex-col justify-between transition-all duration-200 hover:border-amber-400 group relative ${
+                                          isLight
+                                            ? 'bg-white border-amber-100 hover:shadow-md text-slate-800'
+                                            : 'bg-[#1a202c] border-[#293448] hover:bg-[#202838] text-slate-200'
+                                        }`}
+                                      >
+                                        <div className="space-y-2">
+                                          <div className="flex items-start justify-between gap-2">
+                                            <h5 className="text-xs font-extrabold text-amber-50 group-hover:text-amber-300 transition-colors leading-snug">
+                                              {mainTitle}
+                                            </h5>
+
+                                            {toggleBookmark && isBookmarked && (
+                                              <button
+                                                onClick={() => toggleBookmark({
+                                                  id: sk.id || mainTitle,
+                                                  name: mainTitle,
+                                                  type: 'skill',
+                                                  subtext: `${sk.domain || ''}`
+                                                })}
+                                                className="p-0.5 text-gray-400 hover:text-yellow-400 transition cursor-pointer shrink-0"
+                                                title={isBookmarked(sk.id || mainTitle, 'skill') ? 'Remove bookmark' : 'Bookmark topic'}
+                                              >
+                                                <CustomBookmarkIcon className={`w-3.5 h-3.5 ${isBookmarked(sk.id || mainTitle, 'skill') ? 'text-yellow-400 fill-yellow-400' : ''}`} />
+                                              </button>
+                                            )}
+                                          </div>
+
+                                          {/* COVERED SKILLS SLIDING DRAWER TOGGLE */}
+                                          {Array.isArray(sk.skills) && sk.skills.length > 0 && (
+                                            <div className="pt-1">
+                                              <button
+                                                type="button"
+                                                onClick={() => setExpandedCardIds(prev => ({ ...prev, [skillKey]: !prev[skillKey] }))}
+                                                className={`px-2 py-0.5 text-[9.5px] font-mono font-bold uppercase transition-all cursor-pointer flex items-center gap-1 rounded-xs border ${
+                                                  expandedCardIds[skillKey]
+                                                    ? (isLight ? 'bg-amber-100 text-amber-900 border-amber-300' : 'bg-amber-950/80 text-amber-200 border-amber-500/50')
+                                                    : (isLight ? 'bg-amber-50 text-amber-800 border-amber-200 hover:bg-amber-100' : 'bg-[#151c28] text-amber-400/90 border-[#2d3a52] hover:border-amber-500/50 hover:text-amber-300')
+                                                }`}
+                                                title={expandedCardIds[skillKey] ? "Hide covered skills" : "View covered skills"}
+                                              >
+                                                <ChevronRight className={`w-3 h-3 text-amber-400 transition-transform duration-300 ${expandedCardIds[skillKey] ? 'rotate-90' : ''}`} />
+                                                <span>Covered Skills ({sk.skills.length})</span>
+                                              </button>
+
+                                              <AnimatePresence>
+                                                {expandedCardIds[skillKey] && (
+                                                  <motion.div
+                                                    initial={{ opacity: 0, height: 0, x: -10 }}
+                                                    animate={{ opacity: 1, height: 'auto', x: 0 }}
+                                                    exit={{ opacity: 0, height: 0, x: -10 }}
+                                                    transition={{ duration: 0.2, ease: 'easeOut' }}
+                                                    className="mt-2 p-2 bg-amber-950/40 border-l-2 border-amber-400/80 space-y-1 overflow-hidden rounded-r-xs"
+                                                  >
+                                                    <span className="text-[8.5px] font-mono font-bold uppercase text-amber-400/80 block">
+                                                      Skills covered in this topic:
+                                                    </span>
+                                                    <div className="flex flex-wrap gap-1">
+                                                      {sk.skills.map((skillName: string, idx: number) => (
+                                                        <span
+                                                          key={idx}
+                                                          className="px-1.5 py-0.5 text-[9px] font-mono bg-amber-500/15 text-amber-200 border border-amber-500/30 rounded-xs"
+                                                        >
+                                                          {skillName}
+                                                        </span>
+                                                      ))}
+                                                    </div>
+                                                  </motion.div>
+                                                )}
+                                              </AnimatePresence>
+                                            </div>
+                                          )}
+                                        </div>
+
+                                        {/* Action Links */}
+                                        <div className="mt-3 pt-2.5 border-t border-slate-800/80 flex items-center justify-between gap-2">
+                                          <a
+                                            href={getPortalCourseDirectUrl(activePortal.name, mainTitle, sk.url || sk.officialUrl)}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-[9.5px] text-amber-400 hover:text-white font-bold flex items-center gap-1 transition uppercase"
+                                          >
+                                            Course Link <ExternalLink className="w-2.5 h-2.5" />
+                                          </a>
+
+                                          <a
+                                            href={`https://www.youtube.com/results?search_query=${encodeURIComponent(activePortal.name + ' ' + mainTitle + ' tutorial')}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-[9.5px] text-red-400 hover:text-white font-bold flex items-center gap-1 transition uppercase"
+                                            title={`Search YouTube video lessons for ${activePortal.name} ${mainTitle}`}
+                                          >
+                                            <Youtube className="w-2.5 h-2.5 text-red-500" /> YouTube
+                                          </a>
+                                        </div>
+                                      </motion.div>
+                                    );
+                                  })}
+                                </div>
+                              </motion.div>
+                            ))}
+                          </div>
+                        </AnimatePresence>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </>
+            );
+          })()}
         </div>
       )}
 
