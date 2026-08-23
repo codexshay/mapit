@@ -2017,8 +2017,8 @@ export default function LibrariesDashboard({
         </div>
       </div>
 
-      {/* Header element */}
-      <div className={`flex flex-col xl:flex-row xl:items-center justify-start gap-3 border-b-2 pb-3 mb-4 ${isLight ? 'border-gray-200' : 'border-[#121c38]'}`}>
+      {/* Header element - visible on desktop, managed via SectionShell Navigator on mobile */}
+      <div className={`hidden md:flex flex-col xl:flex-row xl:items-center justify-start gap-3 border-b-2 pb-3 mb-4 ${isLight ? 'border-gray-200' : 'border-[#121c38]'}`}>
         {/* Tab triggers */}
         <div className="flex flex-wrap gap-1.5 sm:gap-2">
           {/* HACKATHONS TAB */}
@@ -2152,7 +2152,7 @@ export default function LibrariesDashboard({
       </div>
 
       {/* Universal Blue Line Divider between Tab Navigation and Content Area */}
-      <div className="w-full h-0.5 bg-[#0891b2] my-4 shadow-[0_0_10px_rgba(8,145,178,0.4)]" />
+      <div className="hidden md:block w-full h-0.5 bg-[#0891b2] my-4 shadow-[0_0_10px_rgba(8,145,178,0.4)]" />
 
       {/* Cross-Tab Search Active Banner & Match Pills */}
       {Boolean(query) && Boolean(query.trim()) && (
