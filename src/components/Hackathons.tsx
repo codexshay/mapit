@@ -1519,49 +1519,170 @@ export default function Hackathons({
         </div>
       )}
       
-      {/* Collapsible Mobile Preferences Button */}
-      <div className="flex items-center justify-between lg:hidden p-3 border-2 border-red-500/20 bg-red-950/5 font-mono text-xs">
-        <div className="flex items-center gap-1.5 text-slate-400">
-          <Filter className="w-3.5 h-3.5 text-red-500" />
-          <span className="font-bold text-white uppercase text-[10px]">Filter Options</span>
-        </div>
-        <button 
-          type="button"
-          onClick={() => setIsMobileFiltersOpen(!isMobileFiltersOpen)}
-          className="flex items-center gap-1.5 px-3 py-1.5 border-2 border-red-500 bg-red-500/10 hover:bg-red-500/20 text-red-500 font-bold uppercase transition cursor-pointer select-none"
-        >
-          <span>Preferences {isMobileFiltersOpen ? '▲' : '▼'}</span>
-        </button>
-      </div>
+      {/* Collapsible Mobile Preferences & Filters Container */}
+      <div className="lg:hidden w-full font-mono text-xs space-y-2 mb-2">
+        {/* Mobile Header Bar with Active Filter Count & Toggle */}
+        <div className={`flex items-center justify-between p-3 border-2 transition-colors ${
+          isLight ? 'bg-slate-50 border-slate-300' : 'bg-[#0f1523] border-[#1e2e54]'
+        }`}>
+          <div className="flex items-center gap-2">
+            <Filter className="w-4 h-4 text-emerald-400" />
+            <span className={`font-bold uppercase text-xs ${isLight ? 'text-slate-900' : 'text-white'}`}>
+              Filter Options & Preferences
+            </span>
+            {(regionFilter !== 'All' || domainFilter !== 'All' || categoryFilter !== 'All' || statusFilter !== 'All') && (
+              <span className="px-1.5 py-0.2 bg-emerald-500 text-black text-[9px] font-extrabold rounded-full">
+                Active
+              </span>
+            )}
+          </div>
 
-      {/* PROMINENT UNSTOP INDIA & GLOBAL CATEGORY STREAM TABS */}
-      {/* MOBILE STREAMS SELECT DROPDOWN */}
-      <div className="block md:hidden w-full font-mono mb-2">
-        <label className="text-[10px] font-bold uppercase text-slate-500 block mb-1">
-          Select Stream Category:
-        </label>
-        <select
-          value={categoryFilter}
-          onChange={(e) => setCategoryFilter(e.target.value)}
-          className="w-full p-2.5 bg-white text-slate-900 border-2 border-slate-300 font-bold text-xs uppercase focus:outline-none cursor-pointer shadow-xs"
-        >
-          {[
-            { id: 'All', label: 'All Streams 🌐' },
-            { id: 'Hackathon', label: 'Hackathons 🏆' },
-            { id: 'Quiz', label: 'Competitions & Quizzes ⚔️' },
-            { id: 'College Fest', label: 'College Fests & Cultural 🚀' },
-            { id: 'Scholarship', label: 'Scholarships & Grants 🎓' },
-            { id: 'Workshop', label: 'Workshops & Masterclasses 🛠️' },
-            { id: 'Conference', label: 'Conferences & Summits 🎙️' },
-            { id: 'Hiring Challenge', label: 'Hiring Challenges 💼' },
-            { id: 'Bootcamp', label: 'Bootcamps ⚡' },
-            { id: 'CFP', label: 'CFP Trackers 📝' },
-          ].map(cat => (
-            <option key={cat.id} value={cat.id}>
-              {cat.label}
-            </option>
-          ))}
-        </select>
+          <button 
+            type="button"
+            onClick={() => setIsMobileFiltersOpen(!isMobileFiltersOpen)}
+            className={`flex items-center gap-1.5 px-3 py-1.5 border font-bold uppercase transition cursor-pointer text-xs ${
+              isMobileFiltersOpen
+                ? 'bg-emerald-500 text-slate-950 border-emerald-400 shadow-xs'
+                : isLight
+                  ? 'bg-white text-emerald-700 border-emerald-300 hover:bg-emerald-50'
+                  : 'bg-emerald-950/40 text-emerald-400 border-emerald-500/50 hover:bg-emerald-900/40'
+            }`}
+          >
+            <span>{isMobileFiltersOpen ? '▲ Hide Filters' : '▼ Preferences'}</span>
+          </button>
+        </div>
+
+        {/* Expanded Mobile Filter & Preferences Panel */}
+        <AnimatePresence>
+          {isMobileFiltersOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.25, ease: 'easeOut' }}
+              className={`overflow-hidden border-2 p-4 space-y-3.5 shadow-md ${
+                isLight ? 'bg-white border-slate-300 text-slate-900' : 'bg-[#0a0f1d] border-[#1e2e54] text-slate-100'
+              }`}
+            >
+              {/* 1. Category / Stream Filter */}
+              <div>
+                <label className="text-[10px] font-bold uppercase text-slate-400 block mb-1.5 flex items-center justify-between">
+                  <span>Stream Category:</span>
+                  <span className="text-emerald-400">{categoryFilter}</span>
+                </label>
+                <select
+                  value={categoryFilter}
+                  onChange={(e) => setCategoryFilter(e.target.value)}
+                  className={`w-full p-2.5 border font-bold text-xs uppercase focus:outline-none cursor-pointer ${
+                    isLight ? 'bg-slate-50 border-slate-300 text-slate-900' : 'bg-[#121829] border-[#253352] text-white'
+                  }`}
+                >
+                  {[
+                    { id: 'All', label: 'All Streams 🌐' },
+                    { id: 'Hackathon', label: 'Hackathons 🏆' },
+                    { id: 'Quiz', label: 'Competitions & Quizzes ⚔️' },
+                    { id: 'College Fest', label: 'College Fests & Cultural 🚀' },
+                    { id: 'Scholarship', label: 'Scholarships & Grants 🎓' },
+                    { id: 'Workshop', label: 'Workshops & Masterclasses 🛠️' },
+                    { id: 'Conference', label: 'Conferences & Summits 🎙️' },
+                    { id: 'Hiring Challenge', label: 'Hiring Challenges 💼' },
+                    { id: 'Bootcamp', label: 'Bootcamps ⚡' },
+                    { id: 'CFP', label: 'CFP Trackers 📝' },
+                  ].map(cat => (
+                    <option key={cat.id} value={cat.id} className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>
+                      {cat.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* 2. Region Selector */}
+              <div>
+                <label className="text-[10px] font-bold uppercase text-slate-400 block mb-1.5 flex items-center justify-between">
+                  <span>Target Region:</span>
+                  <span className="text-emerald-400">{regionFilter}</span>
+                </label>
+                <select 
+                  value={regionFilter} 
+                  onChange={(e) => setRegionFilter(e.target.value)}
+                  className={`w-full p-2.5 border font-bold text-xs uppercase focus:outline-none cursor-pointer ${
+                    isLight ? 'bg-slate-50 border-slate-300 text-slate-900' : 'bg-[#121829] border-[#253352] text-white'
+                  }`}
+                >
+                  <option value="All" className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>All Regions</option>
+                  <option value="Global" className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>Global Reach</option>
+                  <option value="India" className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>India 🇮🇳</option>
+                  <option value="Asia Pacific" className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>Asia Pacific 🌏</option>
+                  <option value="North America" className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>North America 🇺🇸</option>
+                  <option value="Europe" className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>Europe 🇪🇺</option>
+                  <option value="Middle East" className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>Middle East 🌍</option>
+                </select>
+              </div>
+
+              {/* 3. Tech Domain Selector */}
+              <div>
+                <label className="text-[10px] font-bold uppercase text-slate-400 block mb-1.5 flex items-center justify-between">
+                  <span>Tech Domain / Theme:</span>
+                  <span className="text-emerald-400 truncate max-w-[150px]">{domainFilter}</span>
+                </label>
+                <select 
+                  value={domainFilter} 
+                  onChange={(e) => setDomainFilter(e.target.value)}
+                  className={`w-full p-2.5 border font-bold text-xs uppercase focus:outline-none cursor-pointer ${
+                    isLight ? 'bg-slate-50 border-slate-300 text-slate-900' : 'bg-[#121829] border-[#253352] text-white'
+                  }`}
+                >
+                  {ALL_DOMAINS.map(domain => (
+                    <option key={domain} value={domain} className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>
+                      {domain === 'All' ? 'All Domains & Tracks' : domain}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* 4. Schedule Status Selector */}
+              <div>
+                <label className="text-[10px] font-bold uppercase text-slate-400 block mb-1.5 flex items-center justify-between">
+                  <span>Schedule Status:</span>
+                  <span className="text-emerald-400">{statusFilter}</span>
+                </label>
+                <select 
+                  value={statusFilter} 
+                  onChange={(e) => setStatusFilter(e.target.value)}
+                  className={`w-full p-2.5 border font-bold text-xs uppercase focus:outline-none cursor-pointer ${
+                    isLight ? 'bg-slate-50 border-slate-300 text-slate-900' : 'bg-[#121829] border-[#253352] text-white'
+                  }`}
+                >
+                  <option value="All" className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>All Statuses</option>
+                  <option value="Active" className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>Active (Open for Submissions)</option>
+                  <option value="Upcoming" className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>Upcoming Soon</option>
+                  <option value="Closed" className={isLight ? 'bg-white text-slate-900' : 'bg-[#121829] text-white'}>Concluded / Closed</option>
+                </select>
+              </div>
+
+              {/* Reset Filters / Actions */}
+              <div className="pt-2 flex items-center justify-between gap-2 border-t border-slate-800">
+                <span className="text-[10px] text-gray-400">
+                  Showing <strong className="text-emerald-400">{filteredItems.length}</strong> matches
+                </span>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    setRegionFilter('All');
+                    setDomainFilter('All');
+                    setCategoryFilter('All');
+                    setStatusFilter('All');
+                    setSearchQuery('');
+                  }}
+                  className="px-3 py-1.5 text-[10.5px] bg-red-950/30 text-red-400 border border-red-800/60 hover:bg-red-900/40 uppercase font-bold transition cursor-pointer"
+                >
+                  Reset All Filters
+                </button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* DESKTOP STREAM & FILTERS BUTTON TABS (Collapsible Right-Slide Bars) */}
