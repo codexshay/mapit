@@ -1300,6 +1300,75 @@ export default function App() {
   const [careerMapViewMode, setCareerMapViewMode] = useState<'mindmap' | 'comparison'>('mindmap');
   const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState<boolean>(false);
 
+  // Cross-section query & filter forwarding states
+  const [interviewQSearchQuery, setInterviewQSearchQuery] = useState<string>('');
+  const [interviewQSelectedRole, setInterviewQSelectedRole] = useState<string>('all');
+  const [jobsCompanySearchQuery, setJobsCompanySearchQuery] = useState<string>('');
+  const [jobsRoleKeyword, setJobsRoleKeyword] = useState<string>('');
+  const [hrContactsSearchQuery, setHrContactsSearchQuery] = useState<string>('');
+
+  const handleUniversalTabNavigate = (tabId: string, params?: any) => {
+    let targetTab = tabId;
+    if (tabId === 'hr' || tabId === 'hr_contacts') {
+      targetTab = 'hr-contacts';
+    } else if (tabId === 'hackathons') {
+      targetTab = 'libraries';
+      setLibrariesActiveTab('hackathons');
+    }
+
+    if (params) {
+      if (params.query) {
+        if (targetTab === 'interviewq') {
+          setInterviewQSearchQuery(params.query);
+        } else if (targetTab === 'libraries') {
+          setLibrariesQuery(params.query);
+          setYoutubeSearchQuery(params.query);
+          setHackathonsSearchQuery(params.query);
+        } else if (targetTab === 'jobs') {
+          setJobsCompanySearchQuery(params.query);
+          setJobsRoleKeyword(params.query);
+        } else if (targetTab === 'hr-contacts') {
+          setHrContactsSearchQuery(params.query);
+        }
+      }
+
+      if (params.tab && targetTab === 'libraries') {
+        setLibrariesActiveTab(params.tab);
+      }
+
+      if (params.role) {
+        if (targetTab === 'interviewq') {
+          setInterviewQSelectedRole(params.role);
+        } else if (targetTab === 'map') {
+          setSelectedRoleId(params.role);
+        }
+      }
+
+      if (params.companyQuery && targetTab === 'jobs') {
+        setJobsCompanySearchQuery(params.companyQuery);
+      }
+
+      if (params.roleKeyword && targetTab === 'jobs') {
+        setJobsRoleKeyword(params.roleKeyword);
+      }
+    } else if (searchQuery && searchQuery.trim()) {
+      if (targetTab === 'interviewq') {
+        setInterviewQSearchQuery(searchQuery);
+      } else if (targetTab === 'libraries') {
+        setLibrariesQuery(searchQuery);
+        setYoutubeSearchQuery(searchQuery);
+        setHackathonsSearchQuery(searchQuery);
+      } else if (targetTab === 'jobs') {
+        setJobsCompanySearchQuery(searchQuery);
+      } else if (targetTab === 'hr-contacts') {
+        setHrContactsSearchQuery(searchQuery);
+      }
+    }
+
+    setActiveTab(targetTab);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   // Mobile navigation and search states
   const [isMobile, setIsMobile] = useState<boolean>(false);
   
@@ -3643,6 +3712,10 @@ export default function App() {
                     isBookmarked={isBookmarked}
                     theme={theme}
                     isLight={theme === 'light'}
+                    searchQuery={interviewQSearchQuery}
+                    setSearchQuery={setInterviewQSearchQuery}
+                    selectedRole={interviewQSelectedRole}
+                    setSelectedRole={setInterviewQSelectedRole}
                   />
                 </React.Suspense>
               </ErrorBoundary>
@@ -3675,6 +3748,10 @@ export default function App() {
                     isBookmarked={isBookmarked}
                     theme={theme}
                     isLight={theme === "light"}
+                    companySearchQuery={jobsCompanySearchQuery}
+                    setCompanySearchQuery={setJobsCompanySearchQuery}
+                    roleKeyword={jobsRoleKeyword}
+                    setRoleKeyword={setJobsRoleKeyword}
                   />
                 </React.Suspense>
               </ErrorBoundary>
@@ -4243,7 +4320,12 @@ export default function App() {
           >
             <section className="fade-in space-y-6">
               <React.Suspense fallback={<div className="h-64 flex items-center justify-center text-xs font-mono text-slate-400 border border-slate-800 bg-[#070b13]">Loading HR Contacts...</div>}>
-                <HRContacts theme={theme} isLight={theme === "light"} />
+                <HRContacts 
+                  theme={theme} 
+                  isLight={theme === "light"} 
+                  searchQuery={hrContactsSearchQuery}
+                  setSearchQuery={setHrContactsSearchQuery}
+                />
               </React.Suspense>
             </section>
           </SectionShell>
@@ -4265,9 +4347,8 @@ export default function App() {
                   query={searchQuery}
                   theme={theme}
                   isLight={theme === 'light'}
-                  onNavigateTab={(t) => {
-                    setActiveTab(t);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  onNavigateTab={(t, params) => {
+                    handleUniversalTabNavigate(t, params);
                   }}
                   onSelectRole={(rId) => {
                     handleToggleBookmark(rId);
@@ -4390,9 +4471,8 @@ export default function App() {
         isOpen={isMobile && isMobileSearchOpen}
         onClose={() => setIsMobileSearchOpen(false)}
         initialQuery={searchInputVal}
-        onNavigateTab={(tabId) => {
-          handleTabClick(tabId);
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+        onNavigateTab={(tabId, params) => {
+          handleUniversalTabNavigate(tabId, params);
         }}
         onSelectRole={(roleId) => {
           handleToggleBookmark(roleId);

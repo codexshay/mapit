@@ -26,6 +26,10 @@ export interface InterviewQProps {
   isBookmarked?: (id: string, type: any) => boolean;
   theme?: 'light' | 'dark';
   isLight?: boolean;
+  searchQuery?: string;
+  setSearchQuery?: (q: string) => void;
+  selectedRole?: string;
+  setSelectedRole?: (r: string) => void;
 }
 
 const ROLE_SLUG_ALIASES: Record<string, string[]> = {
@@ -554,16 +558,40 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
   toggleBookmark,
   isBookmarked,
   theme = 'dark',
-  isLight = false
+  isLight = false,
+  searchQuery: externalSearchQuery,
+  setSearchQuery: setExternalSearchQuery,
+  selectedRole: externalSelectedRole,
+  setSelectedRole: setExternalSelectedRole
 }) => {
-  // 1. Initialize search query from URL parameters if available (?query=..., ?q=..., ?search=..., ?domain=..., ?role=..., ?skill=..., ?tool=...)
+  // 1. Initialize search query from URL parameters if available
   const [searchQuery, setSearchQuery] = useState<string>(() => {
+    if (externalSearchQuery !== undefined && externalSearchQuery !== '') return externalSearchQuery;
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
       return params.get('query') || params.get('q') || params.get('search') || params.get('domain') || params.get('role') || params.get('skill') || params.get('tool') || '';
     }
     return '';
   });
+
+  const [selectedRole, setSelectedRole] = useState<string>(() => {
+    if (externalSelectedRole !== undefined && externalSelectedRole !== '') return externalSelectedRole;
+    return 'all';
+  });
+
+  // Sync external search query changes
+  useEffect(() => {
+    if (externalSearchQuery !== undefined) {
+      setSearchQuery(externalSearchQuery);
+    }
+  }, [externalSearchQuery]);
+
+  // Sync external selected role changes
+  useEffect(() => {
+    if (externalSelectedRole !== undefined) {
+      setSelectedRole(externalSelectedRole);
+    }
+  }, [externalSelectedRole]);
 
   // 2. Sync searchQuery into browser URL parameters dynamically for shareable search links
   useEffect(() => {
@@ -578,9 +606,10 @@ export const InterviewQ: React.FC<InterviewQProps> = ({
       }
       window.history.replaceState({}, '', url.toString());
     }
+    if (setExternalSearchQuery && searchQuery !== externalSearchQuery) {
+      setExternalSearchQuery(searchQuery);
+    }
   }, [searchQuery]);
-
-  const [selectedRole, setSelectedRole] = useState<string>('all');
   const [selectedDomains, setSelectedDomains] = useState<string[]>([]);
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('all');
   const [selectedType, setSelectedType] = useState<string>('all');

@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useRef } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { 
   Search, 
   ExternalLink, 
@@ -25,6 +25,10 @@ export interface JobsReferralsProps {
   isBookmarked?: (id: string, type: any) => boolean;
   theme?: 'light' | 'dark';
   isLight?: boolean;
+  companySearchQuery?: string;
+  setCompanySearchQuery?: (q: string) => void;
+  roleKeyword?: string;
+  setRoleKeyword?: (r: string) => void;
 }
 
 // 14 Major Global & Indian Job Portals with Official SVGs
@@ -161,14 +165,33 @@ export const JobsReferrals: React.FC<JobsReferralsProps> = ({
   toggleBookmark,
   isBookmarked,
   theme = 'dark',
-  isLight = false
+  isLight = false,
+  companySearchQuery: externalCompanySearchQuery,
+  setCompanySearchQuery: setExternalCompanySearchQuery,
+  roleKeyword: externalRoleKeyword,
+  setRoleKeyword: setExternalRoleKeyword
 }) => {
   const [selectedRoleTitle, setSelectedRoleTitle] = useState<string>('');
-  const [customRoleInput, setCustomRoleInput] = useState<string>('');
-  const [companySearchQuery, setCompanySearchQuery] = useState<string>('');
+  const [customRoleInput, setCustomRoleInput] = useState<string>(() => externalRoleKeyword || '');
+  const [companySearchQuery, setCompanySearchQuery] = useState<string>(() => externalCompanySearchQuery || '');
   const [selectedLetter, setSelectedLetter] = useState<string>('ALL');
   const [mobilePage, setMobilePage] = useState<number>(1);
   const [expandedCompanies, setExpandedCompanies] = useState<Record<string, boolean>>({});
+
+  // Synchronize external company search query changes
+  useEffect(() => {
+    if (externalCompanySearchQuery !== undefined) {
+      setCompanySearchQuery(externalCompanySearchQuery);
+      setMobilePage(1);
+    }
+  }, [externalCompanySearchQuery]);
+
+  // Synchronize external role keyword changes
+  useEffect(() => {
+    if (externalRoleKeyword !== undefined) {
+      setCustomRoleInput(externalRoleKeyword);
+    }
+  }, [externalRoleKeyword]);
 
   const toggleCompanyExpand = (compName: string) => {
     setExpandedCompanies(prev => ({ ...prev, [compName]: !prev[compName] }));

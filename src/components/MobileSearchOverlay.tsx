@@ -369,7 +369,7 @@ export const MobileSearchOverlay: React.FC<MobileSearchOverlayProps> = ({
                           <div
                             key={q.id}
                             onClick={() => {
-                              onNavigateTab('interviewq');
+                              onNavigateTab('interviewq', { query: q.prompt });
                               onClose();
                             }}
                             className={`p-2 rounded-md border flex items-center justify-between transition cursor-pointer ${
@@ -401,7 +401,10 @@ export const MobileSearchOverlay: React.FC<MobileSearchOverlayProps> = ({
                           <div
                             key={`${res.id}-${i}`}
                             onClick={() => {
-                              onNavigateTab('libraries');
+                              onNavigateTab('libraries', { 
+                                tab: res.type === 'Certification' ? 'certs' : 'tools-skills', 
+                                query: res.name 
+                              });
                               onClose();
                             }}
                             className={`p-2 rounded-md border flex items-center justify-between transition cursor-pointer ${
@@ -433,7 +436,7 @@ export const MobileSearchOverlay: React.FC<MobileSearchOverlayProps> = ({
                           <div
                             key={c.name}
                             onClick={() => {
-                              onNavigateTab('jobs');
+                              onNavigateTab('jobs', { companyQuery: c.name });
                               onClose();
                             }}
                             className={`p-2 rounded-md border flex items-center justify-between transition cursor-pointer ${
@@ -465,7 +468,7 @@ export const MobileSearchOverlay: React.FC<MobileSearchOverlayProps> = ({
                           <div
                             key={`${hr.name}-${idx}`}
                             onClick={() => {
-                              onNavigateTab('hr-contacts');
+                              onNavigateTab('hr-contacts', { query: hr.name });
                               onClose();
                             }}
                             className={`p-2 rounded-md border flex items-center justify-between transition cursor-pointer ${

@@ -287,7 +287,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
             onClick={() => {
               const el = document.getElementById('search-sec-roles');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
-              else onNavigateTab('map');
+              else onNavigateTab('map', { query: cleanQuery });
             }}
             className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
               matchedRoles.length > 0 
@@ -305,7 +305,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
             onClick={() => {
               const el = document.getElementById('search-sec-interviewq');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
-              else onNavigateTab('interviewq');
+              else onNavigateTab('interviewq', { query: cleanQuery });
             }}
             className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
               matchedInterviewQ.length > 0 
@@ -323,7 +323,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
             onClick={() => {
               const el = document.getElementById('search-sec-tools');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
-              else onNavigateTab('libraries', { tab: 'tools-skills' });
+              else onNavigateTab('libraries', { tab: 'tools-skills', query: cleanQuery });
             }}
             className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
               (matchedTools.length + matchedSkills.length) > 0 
@@ -341,7 +341,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
             onClick={() => {
               const el = document.getElementById('search-sec-certs');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
-              else onNavigateTab('libraries', { tab: 'certs' });
+              else onNavigateTab('libraries', { tab: 'certs', query: cleanQuery });
             }}
             className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
               matchedCertifications.length > 0 
@@ -359,7 +359,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
             onClick={() => {
               const el = document.getElementById('search-sec-companies');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
-              else onNavigateTab('jobs');
+              else onNavigateTab('jobs', { query: cleanQuery });
             }}
             className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
               matchedCompanies.length > 0 
@@ -377,7 +377,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
             onClick={() => {
               const el = document.getElementById('search-sec-hr');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
-              else onNavigateTab('hr');
+              else onNavigateTab('hr-contacts', { query: cleanQuery });
             }}
             className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
               matchedHRContacts.length > 0 
@@ -395,7 +395,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
             onClick={() => {
               const el = document.getElementById('search-sec-youtube');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
-              else onNavigateTab('libraries', { tab: 'youtubeTeachers' });
+              else onNavigateTab('libraries', { tab: 'youtubeTeachers', query: cleanQuery });
             }}
             className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
               matchedYouTubeChannels.length > 0 
@@ -413,7 +413,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
             onClick={() => {
               const el = document.getElementById('search-sec-hackathons');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
-              else onNavigateTab('hackathons');
+              else onNavigateTab('libraries', { tab: 'hackathons', query: cleanQuery });
             }}
             className={`px-3 py-1.5 border rounded-xs transition cursor-pointer flex items-center gap-1.5 ${
               matchedHackathons.length > 0 
@@ -540,7 +540,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                 Tools &amp; Skills Library ({matchedTools.length + matchedSkills.length})
               </h2>
               <button
-                onClick={() => onNavigateTab('libraries')}
+                onClick={() => onNavigateTab('libraries', { tab: 'tools-skills', query: cleanQuery })}
                 className="text-xs font-bold text-sky-600 dark:text-sky-400 hover:underline flex items-center gap-1 uppercase"
               >
                 View Resources Hub <ArrowRight className="w-3.5 h-3.5" />
@@ -551,10 +551,11 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
               {matchedTools.map((tool, idx) => (
                 <div
                   key={`tool-${idx}`}
-                  className={`p-5 border-2 space-y-3 rounded-sm shadow-xs ${
+                  onClick={() => onNavigateTab('libraries', { tab: 'tools-skills', query: tool.name })}
+                  className={`p-5 border-2 space-y-3 rounded-sm shadow-xs cursor-pointer transition ${
                     isLight 
-                      ? 'bg-white border-slate-200 text-slate-900' 
-                      : 'bg-zinc-950 border-zinc-800 text-white'
+                      ? 'bg-white border-slate-200 text-slate-900 hover:border-sky-400' 
+                      : 'bg-zinc-950 border-zinc-800 text-white hover:border-sky-500'
                   }`}
                 >
                   <div className="flex items-center justify-between">
@@ -581,6 +582,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                               href={p.url}
                               target="_blank"
                               rel="noreferrer"
+                              onClick={(e) => e.stopPropagation()}
                               className={`px-2 py-0.5 text-[9.5px] font-mono border rounded-xs transition flex items-center gap-1 font-bold ${
                                 isLight ? 'bg-sky-50 text-sky-800 border-sky-300 hover:bg-sky-100' : 'bg-sky-950/40 text-sky-300 border-sky-800/50 hover:bg-sky-900'
                               }`}
@@ -598,6 +600,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                       href={tool.freeResourceLink}
                       target="_blank"
                       rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
                       className="inline-flex items-center gap-1 text-xs font-bold text-sky-600 hover:underline"
                     >
                       Official Docs / Practice Link <ExternalLink className="w-3.5 h-3.5" />
@@ -609,10 +612,11 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
               {matchedSkills.map((skill, idx) => (
                 <div
                   key={`skill-${idx}`}
-                  className={`p-5 border-2 space-y-3 rounded-sm shadow-xs ${
+                  onClick={() => onNavigateTab('libraries', { tab: 'tools-skills', query: skill.name })}
+                  className={`p-5 border-2 space-y-3 rounded-sm shadow-xs cursor-pointer transition ${
                     isLight 
-                      ? 'bg-white border-slate-200 text-slate-900' 
-                      : 'bg-zinc-950 border-zinc-800 text-white'
+                      ? 'bg-white border-slate-200 text-slate-900 hover:border-teal-400' 
+                      : 'bg-zinc-950 border-zinc-800 text-white hover:border-teal-500'
                   }`}
                 >
                   <div className="flex items-center justify-between">
@@ -647,6 +651,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                               href={p.url}
                               target="_blank"
                               rel="noreferrer"
+                              onClick={(e) => e.stopPropagation()}
                               className={`px-2 py-0.5 text-[9.5px] font-mono border rounded-xs transition flex items-center gap-1 font-bold ${
                                 isLight ? 'bg-teal-50 text-teal-800 border-teal-300 hover:bg-teal-100' : 'bg-teal-950/40 text-teal-300 border-teal-800/50 hover:bg-teal-900'
                               }`}
@@ -673,7 +678,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                 Matched Technical InterviewQs &amp; Scenario Labs ({matchedInterviewQ.length})
               </h2>
               <button
-                onClick={() => onNavigateTab('interviewq')}
+                onClick={() => onNavigateTab('interviewq', { query: cleanQuery })}
                 className="text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1 uppercase"
               >
                 View InterviewQ Bank <ArrowRight className="w-3.5 h-3.5" />
@@ -684,10 +689,11 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
               {matchedInterviewQ.map((q) => (
                 <div
                   key={q.id}
-                  className={`p-5 border-2 space-y-3 rounded-sm shadow-xs ${
+                  onClick={() => onNavigateTab('interviewq', { query: q.prompt })}
+                  className={`p-5 border-2 space-y-3 rounded-sm shadow-xs cursor-pointer transition ${
                     isLight 
-                      ? 'bg-white border-slate-200 text-slate-900' 
-                      : 'bg-zinc-950 border-zinc-800 text-white'
+                      ? 'bg-white border-slate-200 text-slate-900 hover:border-indigo-400' 
+                      : 'bg-zinc-950 border-zinc-800 text-white hover:border-indigo-500'
                   }`}
                 >
                   <div className="flex items-center justify-between">
@@ -702,6 +708,10 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                   }`}>
                     <strong>Preferred Answer / Solution:</strong>
                     <p className="mt-1 line-clamp-3">{q.preferred_answer}</p>
+                  </div>
+                  <div className="pt-1 text-[11px] font-bold text-indigo-600 dark:text-indigo-400 flex items-center gap-1">
+                    <span>Open in InterviewQ Bank</span>
+                    <ArrowRight className="w-3 h-3" />
                   </div>
                 </div>
               ))}
@@ -718,7 +728,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                 Matched Industry Certifications ({matchedCertifications.length})
               </h2>
               <button
-                onClick={() => onNavigateTab('libraries')}
+                onClick={() => onNavigateTab('libraries', { tab: 'certs', query: cleanQuery })}
                 className="text-xs font-bold text-amber-600 dark:text-amber-400 hover:underline flex items-center gap-1 uppercase"
               >
                 View All Certifications <ArrowRight className="w-3.5 h-3.5" />
@@ -729,10 +739,11 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
               {matchedCertifications.map((cert) => (
                 <div
                   key={cert.id}
-                  className={`p-5 border-2 space-y-3 rounded-sm shadow-xs ${
+                  onClick={() => onNavigateTab('libraries', { tab: 'certs', query: cert.name })}
+                  className={`p-5 border-2 space-y-3 rounded-sm shadow-xs cursor-pointer transition ${
                     isLight 
-                      ? 'bg-white border-slate-200 text-slate-900' 
-                      : 'bg-zinc-950 border-zinc-800 text-white'
+                      ? 'bg-white border-slate-200 text-slate-900 hover:border-amber-400' 
+                      : 'bg-zinc-950 border-zinc-800 text-white hover:border-amber-500'
                   }`}
                 >
                   <div className="flex items-center justify-between">
@@ -746,7 +757,13 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                     {cert.description}
                   </p>
                   <div className="pt-2 flex items-center justify-between text-xs font-bold">
-                    <a href={cert.officialLink} target="_blank" rel="noreferrer" className="text-amber-600 hover:underline flex items-center gap-1">
+                    <a 
+                      href={cert.officialLink} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-amber-600 hover:underline flex items-center gap-1"
+                    >
                       Official Cert Page <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -765,7 +782,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                 Matched IT Companies &amp; Referrals ({matchedCompanies.length})
               </h2>
               <button
-                onClick={() => onNavigateTab('jobs')}
+                onClick={() => onNavigateTab('jobs', { query: cleanQuery })}
                 className="text-xs font-bold text-sky-600 dark:text-sky-400 hover:underline flex items-center gap-1 uppercase"
               >
                 View Jobs &amp; Referrals <ArrowRight className="w-3.5 h-3.5" />
@@ -776,10 +793,11 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
               {matchedCompanies.map((comp, idx) => (
                 <div
                   key={`comp-${idx}`}
-                  className={`p-4 border-2 flex items-center justify-between rounded-sm shadow-xs ${
+                  onClick={() => onNavigateTab('jobs', { companyQuery: comp.name })}
+                  className={`p-4 border-2 flex items-center justify-between rounded-sm shadow-xs cursor-pointer transition ${
                     isLight 
-                      ? 'bg-white border-slate-200 text-slate-900' 
-                      : 'bg-zinc-950 border-zinc-800 text-white'
+                      ? 'bg-white border-slate-200 text-slate-900 hover:border-sky-400' 
+                      : 'bg-zinc-950 border-zinc-800 text-white hover:border-sky-500'
                   }`}
                 >
                   <div className="space-y-1">
@@ -792,6 +810,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                     href={getLinkedInSearchUrl(comp.name, cleanQuery)}
                     target="_blank"
                     rel="noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className="px-3 py-1.5 bg-[#0077b5] text-white font-mono text-xs font-bold uppercase rounded-xs hover:bg-[#005885] transition"
                   >
                     Jobs Link
@@ -811,7 +830,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                 Matched HR Contacts Directory ({matchedHRContacts.length})
               </h2>
               <button
-                onClick={() => onNavigateTab('hr')}
+                onClick={() => onNavigateTab('hr-contacts', { query: cleanQuery })}
                 className="text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1 uppercase"
               >
                 View HR Directory [BETA] <ArrowRight className="w-3.5 h-3.5" />
@@ -822,10 +841,11 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
               {matchedHRContacts.map((item, idx) => (
                 <div
                   key={`hr-${idx}`}
-                  className={`p-4 border-2 flex items-center justify-between rounded-sm shadow-xs ${
+                  onClick={() => onNavigateTab('hr-contacts', { query: item.contact.companyName })}
+                  className={`p-4 border-2 flex items-center justify-between rounded-sm shadow-xs cursor-pointer transition ${
                     isLight 
-                      ? 'bg-white border-slate-200 text-slate-900' 
-                      : 'bg-zinc-950 border-zinc-800 text-white'
+                      ? 'bg-white border-slate-200 text-slate-900 hover:border-indigo-400' 
+                      : 'bg-zinc-950 border-zinc-800 text-white hover:border-indigo-500'
                   }`}
                 >
                   <div className="space-y-1">
@@ -839,6 +859,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                   {item.contact.phone && (
                     <a
                       href={`tel:${item.contact.phone}`}
+                      onClick={(e) => e.stopPropagation()}
                       className="inline-flex items-center gap-1 px-3 py-1.5 bg-emerald-600 text-white font-mono text-xs font-bold rounded-xs hover:bg-emerald-700 transition"
                     >
                       <Phone className="w-3.5 h-3.5" />
@@ -859,16 +880,23 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                 <Youtube className="w-5 h-5 text-red-600" />
                 Matched YouTube Tech Educators ({matchedYouTubeChannels.length})
               </h2>
+              <button
+                onClick={() => onNavigateTab('libraries', { tab: 'youtubeTeachers', query: cleanQuery })}
+                className="text-xs font-bold text-red-600 hover:underline flex items-center gap-1 uppercase"
+              >
+                View YouTube Educators <ArrowRight className="w-3.5 h-3.5" />
+              </button>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {matchedYouTubeChannels.map((ch, idx) => (
                 <div
                   key={`yt-${idx}`}
-                  className={`p-4 border-2 space-y-2 rounded-sm shadow-xs ${
+                  onClick={() => onNavigateTab('libraries', { tab: 'youtubeTeachers', query: ch.name })}
+                  className={`p-4 border-2 space-y-2 rounded-sm shadow-xs cursor-pointer transition ${
                     isLight 
-                      ? 'bg-white border-slate-200 text-slate-900' 
-                      : 'bg-zinc-950 border-zinc-800 text-white'
+                      ? 'bg-white border-slate-200 text-slate-900 hover:border-red-400' 
+                      : 'bg-zinc-950 border-zinc-800 text-white hover:border-red-500'
                   }`}
                 >
                   <div className="flex items-center justify-between">
@@ -887,6 +915,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                     href={ch.url}
                     target="_blank"
                     rel="noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className="inline-flex items-center gap-1 text-xs font-bold text-red-600 hover:underline pt-1"
                   >
                     Open YouTube Channel <ExternalLink className="w-3 h-3" />
@@ -906,7 +935,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                 Matched Hackathons &amp; Events ({matchedHackathons.length})
               </h2>
               <button
-                onClick={() => onNavigateTab('hackathons')}
+                onClick={() => onNavigateTab('libraries', { tab: 'hackathons', query: cleanQuery })}
                 className="text-xs font-bold text-amber-600 dark:text-amber-400 hover:underline flex items-center gap-1 uppercase"
               >
                 View Hackathons Hub <ArrowRight className="w-3.5 h-3.5" />
@@ -917,10 +946,11 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
               {matchedHackathons.map((h) => (
                 <div
                   key={h.id}
-                  className={`p-4 border-2 space-y-2 rounded-sm shadow-xs ${
+                  onClick={() => onNavigateTab('libraries', { tab: 'hackathons', query: h.title })}
+                  className={`p-4 border-2 space-y-2 rounded-sm shadow-xs cursor-pointer transition ${
                     isLight 
-                      ? 'bg-white border-slate-200 text-slate-900' 
-                      : 'bg-zinc-950 border-zinc-800 text-white'
+                      ? 'bg-white border-slate-200 text-slate-900 hover:border-amber-400' 
+                      : 'bg-zinc-950 border-zinc-800 text-white hover:border-amber-500'
                   }`}
                 >
                   <div className="flex items-center justify-between">
@@ -937,6 +967,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                     href={h.url}
                     target="_blank"
                     rel="noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className="inline-flex items-center gap-1 text-xs font-bold text-amber-600 hover:underline pt-1"
                   >
                     Apply / Official Link <ExternalLink className="w-3 h-3" />

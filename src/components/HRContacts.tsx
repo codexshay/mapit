@@ -7458,9 +7458,16 @@ export const RAW_DIRECTORY_DATABASE: Record<string, Record<string, HRContact[]>>
 interface HRContactsProps {
   theme: string;
   isLight?: boolean;
+  searchQuery?: string;
+  setSearchQuery?: (q: string) => void;
 }
 
-export default function HRContacts({ theme }: HRContactsProps) {
+export default function HRContacts({
+  theme,
+  isLight: isLightProp,
+  searchQuery: externalSearchQuery,
+  setSearchQuery: setExternalSearchQuery
+}: HRContactsProps) {
   const [selectedRegion, setSelectedRegion] = useState<string>('APJ');
   const [isRegionsOpen, setIsRegionsOpen] = useState<boolean>(true);
 
@@ -7500,7 +7507,14 @@ export default function HRContacts({ theme }: HRContactsProps) {
   };
   const [selectedCountryCode, setSelectedCountryCode] = useState<string>('IN');
   const [selectedCityName, setSelectedCityName] = useState<string>('ALL');
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState(externalSearchQuery || '');
+
+  // Synchronize external search query changes
+  useEffect(() => {
+    if (externalSearchQuery !== undefined) {
+      setSearchQuery(externalSearchQuery);
+    }
+  }, [externalSearchQuery]);
 
   // ACCORDION DROPDOWN STATE: Track open/closed status per city key (Default: Minimized / Collapsed)
   const [openCities, setOpenCities] = useState<Record<string, boolean>>({});
