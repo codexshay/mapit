@@ -1,0 +1,418 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "Google Cloud Learning",
+  "homepage": "https://cloud.google.com/learn",
+  "catalog_url": "https://cloud.google.com/learn/training",
+  "coverage_level": "official_training_areas_certificates_and_certifications",
+  "entries": [
+    {
+      "topic": "Google Cloud Learning Hub",
+      "category": "Catalog",
+      "skills": [
+        "Google Cloud Learning Hub",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://cloud.google.com/learn",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Cloud Training",
+      "category": "Catalog",
+      "skills": [
+        "Google Cloud Training",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://cloud.google.com/learn/training",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Machine Learning and Artificial Intelligence",
+      "category": "Training Area",
+      "skills": [
+        "Machine Learning and Artificial Intelligence",
+        "Machine Learning",
+        "Model Training",
+        "Feature Engineering",
+        "Model Evaluation",
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI"
+      ],
+      "url": "https://cloud.google.com/learn/training/machinelearning-ai",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Analytics and Data Engineering",
+      "category": "Training Area",
+      "skills": [
+        "Data Analytics and Data Engineering",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://cloud.google.com/learn/training/data",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Infrastructure Modernization",
+      "category": "Training Area",
+      "skills": [
+        "Infrastructure Modernization"
+      ],
+      "url": "https://cloud.google.com/learn/training/infrastructure-modernization",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Application Modernization",
+      "category": "Training Area",
+      "skills": [
+        "Application Modernization"
+      ],
+      "url": "https://cloud.google.com/learn/training/application-modernization",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Application Development",
+      "category": "Training Area",
+      "skills": [
+        "Application Development"
+      ],
+      "url": "https://cloud.google.com/learn/training/application-development",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Security",
+      "category": "Training Area",
+      "skills": [
+        "Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://cloud.google.com/learn/training/security",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Networking",
+      "category": "Training Area",
+      "skills": [
+        "Networking",
+        "Computer Networking",
+        "TCP/IP",
+        "Network Troubleshooting"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Cloud+Networking",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "DevOps and SRE",
+      "category": "Training Area",
+      "skills": [
+        "DevOps and SRE",
+        "DevOps",
+        "CI/CD",
+        "Infrastructure Automation",
+        "Monitoring"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=DevOps+SRE",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Generative AI",
+      "category": "Training Area",
+      "skills": [
+        "Generative AI",
+        "Artificial Intelligence",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Generative+AI",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Vertex AI",
+      "category": "Product Skill",
+      "skills": [
+        "Vertex AI",
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Vertex+AI",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "BigQuery",
+      "category": "Product Skill",
+      "skills": [
+        "BigQuery"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=BigQuery",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Kubernetes Engine",
+      "category": "Product Skill",
+      "skills": [
+        "Google Kubernetes Engine"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Google+Kubernetes+Engine",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Cloud Run",
+      "category": "Product Skill",
+      "skills": [
+        "Cloud Run",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Cloud+Run",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Cloud Security",
+      "category": "Product Skill",
+      "skills": [
+        "Cloud Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Cloud+Security",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Cloud Career Certificates",
+      "category": "Credentials",
+      "skills": [
+        "Cloud Career Certificates",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://cloud.google.com/learn/certificates",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Cloud Digital Leader",
+      "category": "Certification",
+      "skills": [
+        "Cloud Digital Leader",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Git",
+        "Version Control",
+        "Collaboration"
+      ],
+      "url": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Associate Cloud Engineer",
+      "category": "Certification",
+      "skills": [
+        "Associate Cloud Engineer",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://cloud.google.com/learn/certification/cloud-engineer",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Professional Cloud Architect",
+      "category": "Certification",
+      "skills": [
+        "Professional Cloud Architect",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Communication",
+        "Collaboration",
+        "Professional Skills"
+      ],
+      "url": "https://cloud.google.com/learn/certification/cloud-architect",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Professional Data Engineer",
+      "category": "Certification",
+      "skills": [
+        "Professional Data Engineer",
+        "Communication",
+        "Collaboration",
+        "Professional Skills"
+      ],
+      "url": "https://cloud.google.com/learn/certification/data-engineer",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Professional Cloud Developer",
+      "category": "Certification",
+      "skills": [
+        "Professional Cloud Developer",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Communication",
+        "Collaboration",
+        "Professional Skills"
+      ],
+      "url": "https://cloud.google.com/learn/certification/cloud-developer",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Professional Cloud DevOps Engineer",
+      "category": "Certification",
+      "skills": [
+        "Professional Cloud DevOps Engineer",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "DevOps",
+        "CI/CD",
+        "Infrastructure Automation",
+        "Monitoring"
+      ],
+      "url": "https://cloud.google.com/learn/certification/cloud-devops-engineer",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Professional Cloud Security Engineer",
+      "category": "Certification",
+      "skills": [
+        "Professional Cloud Security Engineer",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Professional Cloud Network Engineer",
+      "category": "Certification",
+      "skills": [
+        "Professional Cloud Network Engineer",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Computer Networking",
+        "TCP/IP",
+        "Network Troubleshooting",
+        "Communication"
+      ],
+      "url": "https://cloud.google.com/learn/certification/cloud-network-engineer",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Professional Machine Learning Engineer",
+      "category": "Certification",
+      "skills": [
+        "Professional Machine Learning Engineer",
+        "Machine Learning",
+        "Model Training",
+        "Feature Engineering",
+        "Model Evaluation",
+        "Communication",
+        "Collaboration",
+        "Professional Skills"
+      ],
+      "url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Cloud Credentials",
+      "category": "Credentials",
+      "skills": [
+        "Google Cloud Credentials",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://cloud.google.com/learn/training/credentials",
+      "url_type": "topic_page",
+      "access": "free_and_paid",
+      "official_domain": true
+    }
+  ]
+}

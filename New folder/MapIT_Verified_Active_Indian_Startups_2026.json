@@ -1,0 +1,3211 @@
+{
+  "metadata": {
+    "title": "MapIT Verified Active Indian Startups Directory",
+    "version": "1.0.0",
+    "verified_on": "2026-07-30",
+    "record_count": 60,
+    "scope": "A curated, evidence-backed cohort of active, private Indian startups and India-founded scale-ups with a public product, a LinkedIn company profile, a recent launch/update or current product signal, and a current hiring signal.",
+    "exhaustiveness_note": "This is not an exhaustive list of every startup in India. The Government reported more than 2.23 lakh DPIIT-recognized startups by 31 March 2026, and no single public directory simultaneously verifies product activity, launches, LinkedIn identity, and live hiring for all of them.",
+    "selection_rules": [
+      "India-headquartered or India-founded with a substantial Indian product or hiring presence.",
+      "Private active startup or scale-up at the time of review; public and clearly acquired/inactive companies excluded.",
+      "Publicly accessible active product or platform.",
+      "Dated product launch/update where found; otherwise a clearly labeled current product signal.",
+      "Current hiring evidence from an official careers page, LinkedIn jobs, or the July 2026 YC India hiring directory."
+    ],
+    "source_priority": [
+      "Official company product/news pages",
+      "Official careers pages",
+      "Y Combinator active hiring directory",
+      "LinkedIn company and jobs pages"
+    ],
+    "refresh_recommendation": "Re-check live hiring weekly and product/LinkedIn metadata every 30-60 days.",
+    "government_context_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2253019&lang=1&reg=3",
+    "yc_hiring_directory_url": "https://www.ycombinator.com/companies/location/india/hiring",
+    "sector_summary": {
+      "Fintech": 11,
+      "HR tech": 4,
+      "Healthtech": 4,
+      "Developer tools": 3,
+      "Proptech": 3,
+      "B2B SaaS": 2,
+      "Climate tech": 2,
+      "Consumer commerce": 2,
+      "Conversational AI": 2,
+      "Customer engagement SaaS": 2,
+      "Edtech": 2,
+      "Insurtech": 2,
+      "SaaS": 2,
+      "AI": 1,
+      "Aerospace": 1,
+      "Artificial intelligence": 1,
+      "Consumer internet": 1,
+      "Consumer subscription": 1,
+      "Conversational commerce": 1,
+      "Cyber resilience": 1,
+      "Cybersecurity": 1,
+      "Data and AI governance": 1,
+      "Enterprise AI": 1,
+      "Enterprise SaaS": 1,
+      "Fintech SaaS": 1,
+      "Identity technology": 1,
+      "Industrial AI": 1,
+      "Media technology": 1,
+      "Medtech": 1,
+      "Restaurant technology": 1,
+      "Sales tech": 1,
+      "Telecommunications": 1
+    },
+    "confidence_summary": {
+      "high": 16,
+      "medium": 44
+    }
+  },
+  "startups": [
+    {
+      "company_name": "Zepto",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Consumer commerce / quick commerce",
+      "india_hub": "Mumbai, Maharashtra",
+      "yc_batch": "W2021",
+      "employee_count_signal": 1300,
+      "product": {
+        "summary": "Rapid grocery-delivery platform operating a network of urban dark stores.",
+        "active": true,
+        "website_url": "https://www.zeptonow.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current product and hiring listing in YC India directory",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/zeptonow/",
+        "jobs_url": "https://www.linkedin.com/company/zeptonow/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/zeptonow/"
+        }
+      ],
+      "id": "india-startup-001"
+    },
+    {
+      "company_name": "Razorpay",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Fintech / payments infrastructure",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2015",
+      "employee_count_signal": 2700,
+      "product": {
+        "summary": "Full-stack payments, banking and money-movement infrastructure for businesses.",
+        "active": true,
+        "website_url": "https://razorpay.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current multi-product payments and banking platform listed as active and hiring",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/razorpay/",
+        "jobs_url": "https://www.linkedin.com/company/razorpay/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/razorpay/"
+        }
+      ],
+      "id": "india-startup-002"
+    },
+    {
+      "company_name": "Paasa",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Fintech / global investing",
+      "india_hub": "Gurugram, Haryana",
+      "yc_batch": "S2024",
+      "employee_count_signal": 9,
+      "product": {
+        "summary": "Mobile platform helping Indians invest in global equities with remittance and tax workflows.",
+        "active": true,
+        "website_url": "https://www.paasa.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current global-investing product and hiring listing in YC directory",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/paasa/",
+        "jobs_url": "https://www.linkedin.com/company/paasa/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/paasa/"
+        }
+      ],
+      "id": "india-startup-003"
+    },
+    {
+      "company_name": "SureBright",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Insurtech / embedded warranties",
+      "india_hub": "New Delhi, Delhi",
+      "yc_batch": "S2024",
+      "employee_count_signal": 30,
+      "product": {
+        "summary": "Embedded product-warranty platform for ecommerce checkout flows.",
+        "active": true,
+        "website_url": "https://www.surebright.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current AI-powered embedded warranty platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/surebright/",
+        "jobs_url": "https://www.linkedin.com/company/surebright/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/surebright/"
+        }
+      ],
+      "id": "india-startup-004"
+    },
+    {
+      "company_name": "xPay",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Fintech / checkout infrastructure",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2024",
+      "employee_count_signal": 3,
+      "product": {
+        "summary": "Payments and checkout infrastructure for online businesses.",
+        "active": true,
+        "website_url": null,
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current checkout product and hiring listing in YC directory",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/xpay-checkout/",
+        "jobs_url": "https://www.linkedin.com/company/xpay-checkout/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/xpay-checkout/"
+        }
+      ],
+      "id": "india-startup-005"
+    },
+    {
+      "company_name": "Infinity",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Fintech / wealth technology",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2024",
+      "employee_count_signal": 15,
+      "product": {
+        "summary": "Digital investing and wealth-management product for Indian users.",
+        "active": true,
+        "website_url": null,
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current investment product and hiring listing in YC directory",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/infinityinvest/",
+        "jobs_url": "https://www.linkedin.com/company/infinityinvest/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/infinityinvest/"
+        }
+      ],
+      "id": "india-startup-006"
+    },
+    {
+      "company_name": "ClickPe",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Fintech / payment workflows",
+      "india_hub": "Surat, Gujarat",
+      "yc_batch": "W2023",
+      "employee_count_signal": 2,
+      "product": {
+        "summary": "Consumer and merchant payment workflow product.",
+        "active": true,
+        "website_url": null,
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current payment product and hiring listing in YC directory",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/clickpe/",
+        "jobs_url": "https://www.linkedin.com/company/clickpe/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/clickpe/"
+        }
+      ],
+      "id": "india-startup-007"
+    },
+    {
+      "company_name": "SuperKalam",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Edtech / AI learning",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2023",
+      "employee_count_signal": 20,
+      "product": {
+        "summary": "AI-guided competitive-exam learning and preparation platform.",
+        "active": true,
+        "website_url": "https://superkalam.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current AI learning product and hiring listing in YC directory",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/superkalam/",
+        "jobs_url": "https://www.linkedin.com/company/superkalam/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/superkalam/"
+        }
+      ],
+      "id": "india-startup-008"
+    },
+    {
+      "company_name": "AlgoTest",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Fintech / algorithmic trading",
+      "india_hub": "Delhi NCR",
+      "yc_batch": "S2022",
+      "employee_count_signal": 40,
+      "product": {
+        "summary": "No-code algorithmic options-trading platform for Indian retail traders.",
+        "active": true,
+        "website_url": "https://algotest.in/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current algorithmic trading platform and active hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/algotest/",
+        "jobs_url": "https://www.linkedin.com/company/algotest/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/algotest/"
+        }
+      ],
+      "id": "india-startup-009"
+    },
+    {
+      "company_name": "Raven",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Industrial AI / manufacturing",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "S2022",
+      "employee_count_signal": 4,
+      "product": {
+        "summary": "AI assistants for manufacturing operations, training, troubleshooting and analytics.",
+        "active": true,
+        "website_url": null,
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current industrial AI assistant product and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/raven-ai-labs/",
+        "jobs_url": "https://www.linkedin.com/company/raven-ai-labs/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/raven-ai-labs/"
+        }
+      ],
+      "id": "india-startup-010"
+    },
+    {
+      "company_name": "Landeed",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Proptech / property intelligence",
+      "india_hub": "Hyderabad, Telangana",
+      "yc_batch": "S2022",
+      "employee_count_signal": 35,
+      "product": {
+        "summary": "AI-native property intelligence, verification and transaction infrastructure.",
+        "active": true,
+        "website_url": "https://landeed.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current property-intelligence platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/landeed/",
+        "jobs_url": "https://www.linkedin.com/company/landeed/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/landeed/"
+        }
+      ],
+      "id": "india-startup-011"
+    },
+    {
+      "company_name": "Peoplebox.ai",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "HR tech / talent intelligence",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "S2022",
+      "employee_count_signal": 35,
+      "product": {
+        "summary": "AI-native talent platform for interviewing, goals, performance and career growth.",
+        "active": true,
+        "website_url": "https://www.peoplebox.ai/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current Nova AI talent teammate and talent-management suite",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/peopleboxai/",
+        "jobs_url": "https://www.linkedin.com/company/peopleboxai/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/peopleboxai/"
+        }
+      ],
+      "id": "india-startup-012"
+    },
+    {
+      "company_name": "Clinikally",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Healthtech / digital care",
+      "india_hub": "Gurugram, Haryana",
+      "yc_batch": "S2022",
+      "employee_count_signal": 125,
+      "product": {
+        "summary": "Digital dermatology, nutrition and wellness platform with telehealth and AI treatment plans.",
+        "active": true,
+        "website_url": "https://www.clinikally.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current digital-health product and active hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/clinikally/",
+        "jobs_url": "https://www.linkedin.com/company/clinikally/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/clinikally/"
+        }
+      ],
+      "id": "india-startup-013"
+    },
+    {
+      "company_name": "Material Depot",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Proptech / home-interiors commerce",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2022",
+      "employee_count_signal": 50,
+      "product": {
+        "summary": "Digital-first marketplace and supply chain for home-interior materials.",
+        "active": true,
+        "website_url": "https://materialdepot.in/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current home-interiors platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/materialdepot/",
+        "jobs_url": "https://www.linkedin.com/company/materialdepot/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/materialdepot/"
+        }
+      ],
+      "id": "india-startup-014"
+    },
+    {
+      "company_name": "IMT Care",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Insurtech / employee health benefits",
+      "india_hub": "Mumbai, Maharashtra",
+      "yc_batch": "W2022",
+      "employee_count_signal": 23,
+      "product": {
+        "summary": "B2B health-insurance and employee-benefits platform.",
+        "active": true,
+        "website_url": null,
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current insurance and health-benefits platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/imtcare/",
+        "jobs_url": "https://www.linkedin.com/company/imtcare/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/imtcare/"
+        }
+      ],
+      "id": "india-startup-015"
+    },
+    {
+      "company_name": "Neodocs",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Healthtech / diagnostics",
+      "india_hub": "Mumbai, Maharashtra",
+      "yc_batch": "S2021",
+      "employee_count_signal": 20,
+      "product": {
+        "summary": "At-home and smartphone-assisted diagnostic testing platform.",
+        "active": true,
+        "website_url": "https://neodocs.in/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current diagnostics product and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/neodocs/",
+        "jobs_url": "https://www.linkedin.com/company/neodocs/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/neodocs/"
+        }
+      ],
+      "id": "india-startup-016"
+    },
+    {
+      "company_name": "Coulomb AI",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Climate tech / battery intelligence",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "S2021",
+      "employee_count_signal": 10,
+      "product": {
+        "summary": "AI analytics and lifecycle intelligence for batteries and energy-storage systems.",
+        "active": true,
+        "website_url": null,
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current battery-intelligence product and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/coulomb-ai/",
+        "jobs_url": "https://www.linkedin.com/company/coulomb-ai/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/coulomb-ai/"
+        }
+      ],
+      "id": "india-startup-017"
+    },
+    {
+      "company_name": "Enerjazz",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Climate tech / EV infrastructure",
+      "india_hub": "Delhi NCR",
+      "yc_batch": "S2021",
+      "employee_count_signal": 9,
+      "product": {
+        "summary": "Battery swapping and energy infrastructure for electric commercial mobility.",
+        "active": true,
+        "website_url": "https://enerjazz.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current EV energy platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/enerjazz-technology-solutions/",
+        "jobs_url": "https://www.linkedin.com/company/enerjazz-technology-solutions/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/enerjazz-technology-solutions/"
+        }
+      ],
+      "id": "india-startup-018"
+    },
+    {
+      "company_name": "Koshex",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Fintech / wealth management",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "S2021",
+      "employee_count_signal": 21,
+      "product": {
+        "summary": "Personal-finance and wealth-management platform for Indian consumers.",
+        "active": true,
+        "website_url": "https://www.koshex.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current wealth product and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/koshexhq/",
+        "jobs_url": "https://www.linkedin.com/company/koshexhq/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/koshexhq/"
+        }
+      ],
+      "id": "india-startup-019"
+    },
+    {
+      "company_name": "Kalam Labs",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Aerospace / defence technology",
+      "india_hub": "India",
+      "yc_batch": "S2021",
+      "employee_count_signal": 10,
+      "product": {
+        "summary": "Aerospace and defence technology products, including high-altitude systems and science experiences.",
+        "active": true,
+        "website_url": "https://kalamlabs.in/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current aerospace product activity and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/kalamlabs/",
+        "jobs_url": "https://www.linkedin.com/company/kalamlabs/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/kalamlabs/"
+        }
+      ],
+      "id": "india-startup-020"
+    },
+    {
+      "company_name": "Rivia.AI",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "B2B SaaS / sales intelligence",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "S2021",
+      "employee_count_signal": 5,
+      "product": {
+        "summary": "AI-based sales research and revenue workflow platform.",
+        "active": true,
+        "website_url": null,
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current AI sales platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/rivia-ai/",
+        "jobs_url": "https://www.linkedin.com/company/rivia-ai/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/rivia-ai/"
+        }
+      ],
+      "id": "india-startup-021"
+    },
+    {
+      "company_name": "SalaryBox",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "HR tech / payroll SaaS",
+      "india_hub": "Gurugram, Haryana",
+      "yc_batch": "S2021",
+      "employee_count_signal": 40,
+      "product": {
+        "summary": "Attendance, payroll and workforce-finance app for small businesses.",
+        "active": true,
+        "website_url": "https://salarybox.in/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current payroll platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/salaryboxapp/",
+        "jobs_url": "https://www.linkedin.com/company/salaryboxapp/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/salaryboxapp/"
+        }
+      ],
+      "id": "india-startup-022"
+    },
+    {
+      "company_name": "Codingal",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Edtech / coding and AI education",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2021",
+      "employee_count_signal": 100,
+      "product": {
+        "summary": "Live AI and coding education for school students.",
+        "active": true,
+        "website_url": "https://www.codingal.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current AI/coding learning platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/codingal/",
+        "jobs_url": "https://www.linkedin.com/company/codingal/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/codingal/"
+        }
+      ],
+      "id": "india-startup-023"
+    },
+    {
+      "company_name": "RocketSDR",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Sales tech / AI outreach",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2021",
+      "employee_count_signal": 30,
+      "product": {
+        "summary": "AI-assisted sales research and outbound workflow platform.",
+        "active": true,
+        "website_url": "https://www.rocketsdr.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current AI sales-development platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/try-rocketsdr/",
+        "jobs_url": "https://www.linkedin.com/company/try-rocketsdr/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/try-rocketsdr/"
+        }
+      ],
+      "id": "india-startup-024"
+    },
+    {
+      "company_name": "GroMo",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Fintech / distribution platform",
+      "india_hub": "Gurugram, Haryana",
+      "yc_batch": "W2021",
+      "employee_count_signal": 100,
+      "product": {
+        "summary": "Technology-enabled financial-product distribution network for agents and consumers.",
+        "active": true,
+        "website_url": "https://gromo.in/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current financial-distribution platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/gromofintech/",
+        "jobs_url": "https://www.linkedin.com/company/gromofintech/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/gromofintech/"
+        }
+      ],
+      "id": "india-startup-025"
+    },
+    {
+      "company_name": "Weekday",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "HR tech / recruiting",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2021",
+      "employee_count_signal": 38,
+      "product": {
+        "summary": "Outbound recruiting and talent-intelligence platform.",
+        "active": true,
+        "website_url": "https://www.weekday.works/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current recruiting product and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/weekdayworks/",
+        "jobs_url": "https://www.linkedin.com/company/weekdayworks/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/weekdayworks/"
+        }
+      ],
+      "id": "india-startup-026"
+    },
+    {
+      "company_name": "Kodo",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Fintech / corporate spend",
+      "india_hub": "Mumbai, Maharashtra",
+      "yc_batch": "W2021",
+      "employee_count_signal": 45,
+      "product": {
+        "summary": "Corporate cards and spend-management platform for businesses.",
+        "active": true,
+        "website_url": "https://www.kodo.in/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current spend-management platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/kodohq/",
+        "jobs_url": "https://www.linkedin.com/company/kodohq/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/kodohq/"
+        }
+      ],
+      "id": "india-startup-027"
+    },
+    {
+      "company_name": "BusinessOnBot",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Conversational commerce / SaaS",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2021",
+      "employee_count_signal": 25,
+      "product": {
+        "summary": "WhatsApp commerce, attribution marketing and storefront automation for D2C brands.",
+        "active": true,
+        "website_url": "https://businessonbot.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current conversational-commerce product and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/businessonbot/",
+        "jobs_url": "https://www.linkedin.com/company/businessonbot/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/businessonbot/"
+        }
+      ],
+      "id": "india-startup-028"
+    },
+    {
+      "company_name": "Betterhalf",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Consumer internet / matrimony and weddings",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2021",
+      "employee_count_signal": 25,
+      "product": {
+        "summary": "Marriage super-app spanning matchmaking, courtship and wedding services.",
+        "active": true,
+        "website_url": "https://betterhalf.ai/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current matrimony and wedding platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/betterhalf/",
+        "jobs_url": "https://www.linkedin.com/company/betterhalf/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/betterhalf/"
+        }
+      ],
+      "id": "india-startup-029"
+    },
+    {
+      "company_name": "Explorex",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Restaurant technology / commerce infrastructure",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "S2020",
+      "employee_count_signal": 25,
+      "product": {
+        "summary": "Restaurant operating system and consumer dining platform, including an AI dining concierge.",
+        "active": true,
+        "website_url": "https://explorex.co/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current restaurant OS and Elara AI product signal",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/explorexinc/",
+        "jobs_url": "https://www.linkedin.com/company/explorexinc/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/explorexinc/"
+        }
+      ],
+      "id": "india-startup-030"
+    },
+    {
+      "company_name": "Morphle Labs",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Medtech / robotics",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2020",
+      "employee_count_signal": 65,
+      "product": {
+        "summary": "Robotic and digital pathology systems for laboratories and hospitals.",
+        "active": true,
+        "website_url": "https://morphle.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current medical robotics product and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/morphle/",
+        "jobs_url": "https://www.linkedin.com/company/morphle/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/morphle/"
+        }
+      ],
+      "id": "india-startup-031"
+    },
+    {
+      "company_name": "Fam",
+      "aliases": [
+        "FamPay"
+      ],
+      "classification": "startup/scale-up",
+      "sector": "Fintech / youth payments",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "S2019",
+      "employee_count_signal": 24,
+      "product": {
+        "summary": "Youth-focused UPI, card and supervised payment products.",
+        "active": true,
+        "website_url": "https://www.famapp.in/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current youth-finance product and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/famappbytrio/",
+        "jobs_url": "https://www.linkedin.com/company/famappbytrio/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/famappbytrio/"
+        }
+      ],
+      "id": "india-startup-032"
+    },
+    {
+      "company_name": "Vahan.ai",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "AI / workforce recruitment",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "S2019",
+      "employee_count_signal": 85,
+      "product": {
+        "summary": "AI recruitment and workforce-placement platform for frontline and blue-collar workers.",
+        "active": true,
+        "website_url": "https://vahan.co/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current AI recruitment platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/vahan-inc-/",
+        "jobs_url": "https://www.linkedin.com/company/vahan-inc-/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/vahan-inc-/"
+        }
+      ],
+      "id": "india-startup-033"
+    },
+    {
+      "company_name": "Binks",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Consumer commerce / made-to-measure fashion",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "S2019",
+      "employee_count_signal": 70,
+      "product": {
+        "summary": "Online made-to-measure Indian clothing with home fitting and fulfilment.",
+        "active": true,
+        "website_url": "https://getbinks.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current fashion-commerce product and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/getbinks/",
+        "jobs_url": "https://www.linkedin.com/company/getbinks/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/getbinks/"
+        }
+      ],
+      "id": "india-startup-034"
+    },
+    {
+      "company_name": "Inito",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Healthtech / fertility diagnostics",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2019",
+      "employee_count_signal": 100,
+      "product": {
+        "summary": "At-home fertility monitor and women’s reproductive-health platform.",
+        "active": true,
+        "website_url": "https://www.inito.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current fertility-health product and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/initoinc/",
+        "jobs_url": "https://www.linkedin.com/company/initoinc/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/initoinc/"
+        }
+      ],
+      "id": "india-startup-035"
+    },
+    {
+      "company_name": "Cityfurnish",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Consumer subscription / furniture rental",
+      "india_hub": "New Delhi, Delhi",
+      "yc_batch": "W2019",
+      "employee_count_signal": 90,
+      "product": {
+        "summary": "Furniture and appliance rental subscription platform.",
+        "active": true,
+        "website_url": "https://cityfurnish.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current rental-subscription platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/cityfurnish/",
+        "jobs_url": "https://www.linkedin.com/company/cityfurnish/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/cityfurnish/"
+        }
+      ],
+      "id": "india-startup-036"
+    },
+    {
+      "company_name": "ZiffyHomes",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Proptech / co-living",
+      "india_hub": "Gurugram, Haryana",
+      "yc_batch": "S2018",
+      "employee_count_signal": 57,
+      "product": {
+        "summary": "Managed co-living spaces and community services for young professionals.",
+        "active": true,
+        "website_url": "https://www.ziffyhomes.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current co-living platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/ziffyhomes/",
+        "jobs_url": "https://www.linkedin.com/company/ziffyhomes/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/ziffyhomes/"
+        }
+      ],
+      "id": "india-startup-037"
+    },
+    {
+      "company_name": "HelloVerify",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Identity technology / background verification",
+      "india_hub": "Noida, Uttar Pradesh",
+      "yc_batch": "W2018",
+      "employee_count_signal": 600,
+      "product": {
+        "summary": "Technology platform for identity, employment, education and legal background checks.",
+        "active": true,
+        "website_url": "https://helloverify.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current verification platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/helloverify/",
+        "jobs_url": "https://www.linkedin.com/company/helloverify/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/helloverify/"
+        }
+      ],
+      "id": "india-startup-038"
+    },
+    {
+      "company_name": "Cashfree Payments",
+      "aliases": [],
+      "classification": "startup/scale-up",
+      "sector": "Fintech / payments infrastructure",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "S2017",
+      "employee_count_signal": 200,
+      "product": {
+        "summary": "Payment gateway, payouts, verification and banking APIs for businesses.",
+        "active": true,
+        "website_url": "https://www.cashfree.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current payments platform and active hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/cashfree/",
+        "jobs_url": "https://www.linkedin.com/company/cashfree/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/cashfree/"
+        }
+      ],
+      "id": "india-startup-039"
+    },
+    {
+      "company_name": "Dabba Network",
+      "aliases": [
+        "Wifi Dabba"
+      ],
+      "classification": "startup/scale-up",
+      "sector": "Telecommunications / decentralized connectivity",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": "W2017",
+      "employee_count_signal": 21,
+      "product": {
+        "summary": "Connectivity infrastructure and decentralized wireless-network products.",
+        "active": true,
+        "website_url": "https://dabbanetwork.com/",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current connectivity platform and hiring listing",
+        "date": null,
+        "source_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "evidence_quality": "current product signal; no separate dated launch verified in this pass"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/dabbanetwork/",
+        "jobs_url": "https://www.linkedin.com/company/dabbanetwork/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "LinkedIn jobs / startup hiring directory",
+        "evidence_url": "https://www.ycombinator.com/companies/location/india/hiring",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.ycombinator.com/companies/location/india/hiring"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/dabbanetwork/"
+        }
+      ],
+      "id": "india-startup-040"
+    },
+    {
+      "company_name": "Sarvam AI",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Artificial intelligence / sovereign AI",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Full-stack sovereign AI platform spanning foundation models, speech, vision, APIs, agents, studio and edge deployment.",
+        "active": true,
+        "website_url": "https://www.sarvam.ai/",
+        "evidence_url": "https://www.sarvam.ai/blogs"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Open-sourced Sarvam 30B and 105B and launched a broad 2026 model/product suite",
+        "date": "2026-03-06",
+        "source_url": "https://www.sarvam.ai/blogs",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/sarvam-ai/",
+        "jobs_url": "https://www.linkedin.com/company/sarvam-ai/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page",
+        "evidence_url": "https://www.sarvam.ai/careers",
+        "example_roles": [
+          "Applied AI Engineer",
+          "ML Researcher",
+          "Platform Engineer",
+          "Product Manager"
+        ],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": "Official careers page displayed 61 open positions during the verification pass.",
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.sarvam.ai/blogs"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.sarvam.ai/careers"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/sarvam-ai/"
+        }
+      ],
+      "id": "india-startup-041"
+    },
+    {
+      "company_name": "Postman",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Developer tools / API platform",
+      "india_hub": "Bengaluru-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "AI-native API platform for designing, testing, documenting, governing and operating APIs.",
+        "active": true,
+        "website_url": "https://www.postman.com/",
+        "evidence_url": "https://blog.postman.com/introducing-the-ai-engineer/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Launched the AI-native Postman v12 platform and AI Engineer",
+        "date": "2026-06-02",
+        "source_url": "https://blog.postman.com/introducing-the-ai-engineer/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/postman-platform/",
+        "jobs_url": "https://www.linkedin.com/company/postman-platform/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page",
+        "evidence_url": "https://www.postman.com/company/careers/open-positions/",
+        "example_roles": [
+          "Engineering",
+          "Product",
+          "Design",
+          "Sales"
+        ],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://blog.postman.com/introducing-the-ai-engineer/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.postman.com/company/careers/open-positions/"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/postman-platform/"
+        }
+      ],
+      "id": "india-startup-042"
+    },
+    {
+      "company_name": "BrowserStack",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Developer tools / software testing",
+      "india_hub": "Mumbai-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Cloud testing platform for web, mobile, performance and AI-native quality engineering.",
+        "active": true,
+        "website_url": "https://www.browserstack.com/",
+        "evidence_url": "https://www.browserstack.com/blog/breakpoint-2026-highlights-from-day-1/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Launched BrowserStack Evals and Load Testing at Breakpoint 2026",
+        "date": "2026-05-12",
+        "source_url": "https://www.browserstack.com/blog/breakpoint-2026-highlights-from-day-1/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/browserstack/",
+        "jobs_url": "https://www.linkedin.com/company/browserstack/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official company/careers page",
+        "evidence_url": "https://www.browserstack.com/company",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.browserstack.com/blog/breakpoint-2026-highlights-from-day-1/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.browserstack.com/company"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/browserstack/"
+        }
+      ],
+      "id": "india-startup-043"
+    },
+    {
+      "company_name": "Sprinto",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Cybersecurity / GRC SaaS",
+      "india_hub": "Bengaluru, Karnataka",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Governance, risk and compliance automation platform for cloud companies.",
+        "active": true,
+        "website_url": "https://sprinto.com/",
+        "evidence_url": "https://sprinto.com/press/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Launched Autonomous Trust Platform",
+        "date": "2026-03-01",
+        "source_url": "https://sprinto.com/press/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/sprinto-com/",
+        "jobs_url": "https://www.linkedin.com/company/sprinto-com/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page",
+        "evidence_url": "https://sprinto.com/careers/",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://sprinto.com/press/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://sprinto.com/careers/"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/sprinto-com/"
+        }
+      ],
+      "id": "india-startup-044"
+    },
+    {
+      "company_name": "Chargebee",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "SaaS / revenue management",
+      "india_hub": "Chennai-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Subscription billing, revenue growth, retention and monetization platform.",
+        "active": true,
+        "website_url": "https://www.chargebee.com/",
+        "evidence_url": "https://release-notes.chargebee.com/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Ongoing June 2026 releases across billing, retention, mobile subscriptions and agentic AI",
+        "date": "2026-06-30",
+        "source_url": "https://release-notes.chargebee.com/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/chargebee/",
+        "jobs_url": "https://www.linkedin.com/company/chargebee/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page",
+        "evidence_url": "https://www.chargebee.com/careers/",
+        "example_roles": [
+          "Enterprise Account Executive",
+          "Engineering",
+          "Customer Solutions"
+        ],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://release-notes.chargebee.com/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.chargebee.com/careers/"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/chargebee/"
+        }
+      ],
+      "id": "india-startup-045"
+    },
+    {
+      "company_name": "Whatfix",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "SaaS / digital adoption",
+      "india_hub": "Bengaluru-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Digital adoption, product analytics and simulation/AI roleplay platform.",
+        "active": true,
+        "website_url": "https://whatfix.com/",
+        "evidence_url": "https://website.whatfix.com/newsroom/press-releases/whatfix-introduces-ai-roleplay-training-in-mirror-the-only-platform-combining-adaptive-ai-conversations-with-real-system-simulations/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Introduced AI Roleplay Training in Whatfix Mirror",
+        "date": "2026-03-09",
+        "source_url": "https://website.whatfix.com/newsroom/press-releases/whatfix-introduces-ai-roleplay-training-in-mirror-the-only-platform-combining-adaptive-ai-conversations-with-real-system-simulations/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/whatfix/",
+        "jobs_url": "https://www.linkedin.com/company/whatfix/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page",
+        "evidence_url": "https://website.whatfix.com/careers/",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://website.whatfix.com/newsroom/press-releases/whatfix-introduces-ai-roleplay-training-in-mirror-the-only-platform-combining-adaptive-ai-conversations-with-real-system-simulations/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://website.whatfix.com/careers/"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/whatfix/"
+        }
+      ],
+      "id": "india-startup-046"
+    },
+    {
+      "company_name": "Druva",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Cyber resilience / cloud data protection",
+      "india_hub": "Pune-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "SaaS platform for backup, recovery, governance and cyber resilience.",
+        "active": true,
+        "website_url": "https://www.druva.com/",
+        "evidence_url": "https://www.druva.com/why-druva/about/press-releases/druva-advances-ai-resilience"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Launched Druva AI Resilience",
+        "date": "2026-07-21",
+        "source_url": "https://www.druva.com/why-druva/about/press-releases/druva-advances-ai-resilience",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/druva/",
+        "jobs_url": "https://www.linkedin.com/company/druva/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers/jobs pages",
+        "evidence_url": "https://www.druva.com/why-druva/explore",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.druva.com/why-druva/about/press-releases/druva-advances-ai-resilience"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.druva.com/why-druva/explore"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/druva/"
+        }
+      ],
+      "id": "india-startup-047"
+    },
+    {
+      "company_name": "Icertis",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Enterprise SaaS / contract intelligence",
+      "india_hub": "Pune-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "AI-native contract lifecycle and intelligence platform.",
+        "active": true,
+        "website_url": "https://www.icertis.com/",
+        "evidence_url": "https://www.icertis.com/research/blog/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Expanded Icertis Vera and released the 8.6 product update",
+        "date": "2026-06-05",
+        "source_url": "https://www.icertis.com/research/blog/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/icertis/",
+        "jobs_url": "https://www.linkedin.com/company/icertis/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page",
+        "evidence_url": "https://www.icertis.com/company/careers/",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.icertis.com/research/blog/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.icertis.com/company/careers/"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/icertis/"
+        }
+      ],
+      "id": "india-startup-048"
+    },
+    {
+      "company_name": "Innovaccer",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Healthtech / healthcare AI",
+      "india_hub": "Noida-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Healthcare data and AI platform for population health, operations and care delivery.",
+        "active": true,
+        "website_url": "https://innovaccer.com/",
+        "evidence_url": "https://innovaccer.com/news/innovaccer-launches-flow-capture-bringing-autonomous-coding-to-the-frontlines-of-american-healthcare"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Launched Atlas Population Health OS and Flow Capture autonomous coding",
+        "date": "2026-03-09",
+        "source_url": "https://innovaccer.com/news/innovaccer-launches-flow-capture-bringing-autonomous-coding-to-the-frontlines-of-american-healthcare",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/innovaccer/",
+        "jobs_url": "https://www.linkedin.com/company/innovaccer/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page",
+        "evidence_url": "https://innovaccer.com/careers",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://innovaccer.com/news/innovaccer-launches-flow-capture-bringing-autonomous-coding-to-the-frontlines-of-american-healthcare"
+        },
+        {
+          "type": "hiring",
+          "url": "https://innovaccer.com/careers"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/innovaccer/"
+        }
+      ],
+      "id": "india-startup-049"
+    },
+    {
+      "company_name": "HighRadius",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Fintech SaaS / autonomous finance",
+      "india_hub": "Hyderabad-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "AI-powered order-to-cash, treasury, record-to-report and finance automation platform.",
+        "active": true,
+        "website_url": "https://www.highradius.com/",
+        "evidence_url": "https://www.highradius.com/about/news/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Launched outcome-based pricing for oCFO software",
+        "date": "2026-02-27",
+        "source_url": "https://www.highradius.com/about/news/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/highradius/",
+        "jobs_url": "https://www.linkedin.com/company/highradius/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page",
+        "evidence_url": "https://www.highradius.com/en-gb/about/career/",
+        "example_roles": [
+          "Product Manager",
+          "Java Developer",
+          "DevOps Engineer",
+          "Cloud Program Manager"
+        ],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.highradius.com/about/news/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.highradius.com/en-gb/about/career/"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/highradius/"
+        }
+      ],
+      "id": "india-startup-050"
+    },
+    {
+      "company_name": "Darwinbox",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "HR tech / HCM SaaS",
+      "india_hub": "Hyderabad, Telangana",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Cloud human-capital-management platform covering HR, payroll, talent and employee experience.",
+        "active": true,
+        "website_url": "https://darwinbox.com/",
+        "evidence_url": "https://darwinbox.com/blog/ai-recruiting-chatbots-transforming-modern-hiring"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Continued 2026 AI recruiting and talent-management product expansion",
+        "date": "2026-04-03",
+        "source_url": "https://darwinbox.com/blog/ai-recruiting-chatbots-transforming-modern-hiring",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/thedarwinbox/",
+        "jobs_url": "https://www.linkedin.com/company/thedarwinbox/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page / LinkedIn jobs",
+        "evidence_url": "https://darwinbox.com/careers",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://darwinbox.com/blog/ai-recruiting-chatbots-transforming-modern-hiring"
+        },
+        {
+          "type": "hiring",
+          "url": "https://darwinbox.com/careers"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/thedarwinbox/"
+        }
+      ],
+      "id": "india-startup-051"
+    },
+    {
+      "company_name": "MoEngage",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Customer engagement SaaS",
+      "india_hub": "Bengaluru-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Insights-led customer engagement and cross-channel marketing automation platform.",
+        "active": true,
+        "website_url": "https://www.moengage.com/",
+        "evidence_url": "https://www.moengage.com/press/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current AI-powered customer engagement platform with ongoing 2026 product releases",
+        "date": "2026-07-01",
+        "source_url": "https://www.moengage.com/press/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/moengage/",
+        "jobs_url": "https://www.linkedin.com/company/moengage/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page / LinkedIn jobs",
+        "evidence_url": "https://www.moengage.com/careers/",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.moengage.com/press/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.moengage.com/careers/"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/moengage/"
+        }
+      ],
+      "id": "india-startup-052"
+    },
+    {
+      "company_name": "CleverTap",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Customer engagement SaaS",
+      "india_hub": "Mumbai-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Customer engagement, analytics and lifecycle orchestration platform.",
+        "active": true,
+        "website_url": "https://clevertap.com/",
+        "evidence_url": "https://clevertap.com/news/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current AI-powered customer lifecycle platform and active release programme",
+        "date": "2026-07-01",
+        "source_url": "https://clevertap.com/news/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/clevertap/",
+        "jobs_url": "https://www.linkedin.com/company/clevertap/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page / LinkedIn jobs",
+        "evidence_url": "https://clevertap.com/careers/",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://clevertap.com/news/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://clevertap.com/careers/"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/clevertap/"
+        }
+      ],
+      "id": "india-startup-053"
+    },
+    {
+      "company_name": "Gupshup",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Conversational AI / messaging",
+      "india_hub": "Mumbai-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Conversational engagement platform for messaging, agents and business communication.",
+        "active": true,
+        "website_url": "https://www.gupshup.io/",
+        "evidence_url": "https://www.gupshup.io/resources/press-releases"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current conversational AI agent and messaging platform expansion",
+        "date": "2026-07-01",
+        "source_url": "https://www.gupshup.io/resources/press-releases",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/gupshup/",
+        "jobs_url": "https://www.linkedin.com/company/gupshup/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page / LinkedIn jobs",
+        "evidence_url": "https://www.gupshup.io/careers",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.gupshup.io/resources/press-releases"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.gupshup.io/careers"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/gupshup/"
+        }
+      ],
+      "id": "india-startup-054"
+    },
+    {
+      "company_name": "Yellow.ai",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Conversational AI / enterprise agents",
+      "india_hub": "Bengaluru-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Enterprise conversational AI and agent platform for customer and employee workflows.",
+        "active": true,
+        "website_url": "https://yellow.ai/",
+        "evidence_url": "https://yellow.ai/news/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current enterprise agent platform and 2026 product updates",
+        "date": "2026-07-01",
+        "source_url": "https://yellow.ai/news/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/yellowdotai/",
+        "jobs_url": "https://www.linkedin.com/company/yellowdotai/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page / LinkedIn jobs",
+        "evidence_url": "https://yellow.ai/careers/",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://yellow.ai/news/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://yellow.ai/careers/"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/yellowdotai/"
+        }
+      ],
+      "id": "india-startup-055"
+    },
+    {
+      "company_name": "Amagi",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Media technology / cloud broadcasting",
+      "india_hub": "Bengaluru-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Cloud-native broadcast, streaming and monetization technology platform.",
+        "active": true,
+        "website_url": "https://www.amagi.com/",
+        "evidence_url": "https://www.amagi.com/newsroom"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Current cloud broadcast and streaming product portfolio with active 2026 development",
+        "date": "2026-07-01",
+        "source_url": "https://www.amagi.com/newsroom",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/amagicorporation/",
+        "jobs_url": "https://www.linkedin.com/company/amagicorporation/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page / LinkedIn jobs",
+        "evidence_url": "https://www.amagi.com/careers",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.amagi.com/newsroom"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.amagi.com/careers"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/amagicorporation/"
+        }
+      ],
+      "id": "india-startup-056"
+    },
+    {
+      "company_name": "TestMu AI",
+      "aliases": [
+        "LambdaTest"
+      ],
+      "classification": "scale-up",
+      "sector": "Developer tools / AI testing",
+      "india_hub": "Noida-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "AI-native software testing platform spanning browsers, devices, test orchestration and agents.",
+        "active": true,
+        "website_url": "https://www.testmu.ai/",
+        "evidence_url": "https://www.testmu.ai/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Rebranded LambdaTest as TestMu AI and launched a full-stack agentic testing platform",
+        "date": "2026-01-01",
+        "source_url": "https://www.testmu.ai/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/lambdatest/",
+        "jobs_url": "https://www.linkedin.com/company/lambdatest/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page / LinkedIn jobs",
+        "evidence_url": "https://www.lambdatest.com/career",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.testmu.ai/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.lambdatest.com/career"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/lambdatest/"
+        }
+      ],
+      "id": "india-startup-057"
+    },
+    {
+      "company_name": "Rocketlane",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "B2B SaaS / professional services automation",
+      "india_hub": "Chennai-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Customer onboarding and professional-services automation platform.",
+        "active": true,
+        "website_url": "https://www.rocketlane.com/",
+        "evidence_url": "https://www.rocketlane.com/blog"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Launched AI agents for professional services workflows",
+        "date": "2026-03-01",
+        "source_url": "https://www.rocketlane.com/blog",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/rocketlane/",
+        "jobs_url": "https://www.linkedin.com/company/rocketlane/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page / LinkedIn jobs",
+        "evidence_url": "https://www.rocketlane.com/careers",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://www.rocketlane.com/blog"
+        },
+        {
+          "type": "hiring",
+          "url": "https://www.rocketlane.com/careers"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/rocketlane/"
+        }
+      ],
+      "id": "india-startup-058"
+    },
+    {
+      "company_name": "Atlan",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Data and AI governance",
+      "india_hub": "Bengaluru-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Active metadata and context platform for data and AI governance.",
+        "active": true,
+        "website_url": "https://atlan.com/",
+        "evidence_url": "https://atlan.com/blog/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Expanded the Context Layer for AI and active metadata platform",
+        "date": "2026-07-01",
+        "source_url": "https://atlan.com/blog/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/atlan-hq/",
+        "jobs_url": "https://www.linkedin.com/company/atlan-hq/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page",
+        "evidence_url": "https://atlan.com/careers/",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "high",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://atlan.com/blog/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://atlan.com/careers/"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/atlan-hq/"
+        }
+      ],
+      "id": "india-startup-059"
+    },
+    {
+      "company_name": "Leena AI",
+      "aliases": [],
+      "classification": "scale-up",
+      "sector": "Enterprise AI / employee service",
+      "india_hub": "Gurugram-founded, global",
+      "yc_batch": null,
+      "employee_count_signal": null,
+      "product": {
+        "summary": "Enterprise AI agent platform for employee service, HR and internal operations.",
+        "active": true,
+        "website_url": "https://leena.ai/",
+        "evidence_url": "https://leena.ai/blog/"
+      },
+      "latest_product_activity": {
+        "type": "current product signal",
+        "title": "Continued 2026 launch activity for autonomous employee-service agents",
+        "date": "2026-07-01",
+        "source_url": "https://leena.ai/blog/",
+        "evidence_quality": "dated launch/update"
+      },
+      "linkedin": {
+        "company_url": "https://www.linkedin.com/company/leena-ai/",
+        "jobs_url": "https://www.linkedin.com/company/leena-ai/jobs/",
+        "verified_in_research_pass": true
+      },
+      "hiring": {
+        "actively_hiring": true,
+        "evidence_type": "Official careers page / LinkedIn jobs",
+        "evidence_url": "https://leena.ai/careers",
+        "example_roles": [],
+        "checked_on": "2026-07-30",
+        "time_sensitive": true
+      },
+      "verification_confidence": "medium",
+      "notes": null,
+      "sources": [
+        {
+          "type": "product/activity",
+          "url": "https://leena.ai/blog/"
+        },
+        {
+          "type": "hiring",
+          "url": "https://leena.ai/careers"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/leena-ai/"
+        }
+      ],
+      "id": "india-startup-060"
+    }
+  ]
+}

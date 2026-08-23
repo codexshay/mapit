@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "GeeksforGeeks",
+  "homepage": "https://www.geeksforgeeks.org/",
+  "catalog_url": "https://www.geeksforgeeks.org/tutorials/",
+  "coverage_level": "major_tutorial_hubs",
+  "entries": [
+    {
+      "topic": "Data Structures",
+      "category": "Computer Science",
+      "skills": [
+        "Data Structures",
+        "Algorithms",
+        "Problem Solving",
+        "Complexity Analysis"
+      ],
+      "url": "https://www.geeksforgeeks.org/data-structures/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Algorithms",
+      "category": "Computer Science",
+      "skills": [
+        "Algorithms",
+        "Data Structures",
+        "Problem Solving",
+        "Complexity Analysis"
+      ],
+      "url": "https://www.geeksforgeeks.org/fundamentals-of-algorithms/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Structures and Algorithms",
+      "category": "Computer Science",
+      "skills": [
+        "Data Structures and Algorithms",
+        "Data Structures",
+        "Algorithms",
+        "Problem Solving",
+        "Complexity Analysis"
+      ],
+      "url": "https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Competitive Programming",
+      "category": "Computer Science",
+      "skills": [
+        "Competitive Programming"
+      ],
+      "url": "https://www.geeksforgeeks.org/competitive-programming-a-complete-guide/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "System Design",
+      "category": "Computer Science",
+      "skills": [
+        "System Design",
+        "Scalability",
+        "Distributed Systems",
+        "Architecture"
+      ],
+      "url": "https://www.geeksforgeeks.org/system-design/system-design-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Operating Systems",
+      "category": "Core CS",
+      "skills": [
+        "Operating Systems",
+        "System Administration",
+        "Troubleshooting"
+      ],
+      "url": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Computer Networks",
+      "category": "Core CS",
+      "skills": [
+        "Computer Networks",
+        "Computer Networking",
+        "TCP/IP",
+        "Network Troubleshooting"
+      ],
+      "url": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Database Management Systems",
+      "category": "Core CS",
+      "skills": [
+        "Database Management Systems",
+        "SQL",
+        "Database Design",
+        "Queries",
+        "Data Management"
+      ],
+      "url": "https://www.geeksforgeeks.org/dbms/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Software Engineering",
+      "category": "Core CS",
+      "skills": [
+        "Software Engineering",
+        "Testing",
+        "Design Patterns",
+        "Software Development Lifecycle"
+      ],
+      "url": "https://www.geeksforgeeks.org/software-engineering/software-engineering/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Computer Organization and Architecture",
+      "category": "Core CS",
+      "skills": [
+        "Computer Organization and Architecture"
+      ],
+      "url": "https://www.geeksforgeeks.org/computer-organization-and-architecture-tutorials/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Theory of Computation",
+      "category": "Core CS",
+      "skills": [
+        "Theory of Computation"
+      ],
+      "url": "https://www.geeksforgeeks.org/theory-of-computation-automata-tutorials/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Compiler Design",
+      "category": "Core CS",
+      "skills": [
+        "Compiler Design"
+      ],
+      "url": "https://www.geeksforgeeks.org/compiler-design-tutorials/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "C Programming",
+      "category": "Programming Languages",
+      "skills": [
+        "C Programming",
+        "Pointers",
+        "Memory Management"
+      ],
+      "url": "https://www.geeksforgeeks.org/c/c-programming-language/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "C++ Programming",
+      "category": "Programming Languages",
+      "skills": [
+        "C++ Programming",
+        "C++",
+        "Object-Oriented Programming",
+        "Memory Management"
+      ],
+      "url": "https://www.geeksforgeeks.org/cpp/c-plus-plus/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Java",
+      "category": "Programming Languages",
+      "skills": [
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://www.geeksforgeeks.org/java/java/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Python",
+      "category": "Programming Languages",
+      "skills": [
+        "Python",
+        "Programming Fundamentals",
+        "Scripting",
+        "Automation"
+      ],
+      "url": "https://www.geeksforgeeks.org/python/python-programming-language-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "JavaScript",
+      "category": "Programming Languages",
+      "skills": [
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://www.geeksforgeeks.org/javascript/javascript/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "C#",
+      "category": "Programming Languages",
+      "skills": [
+        "C#",
+        ".NET",
+        "Object-Oriented Programming"
+      ],
+      "url": "https://www.geeksforgeeks.org/csharp-programming-language/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Go",
+      "category": "Programming Languages",
+      "skills": [
+        "Go"
+      ],
+      "url": "https://www.geeksforgeeks.org/go-language/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Kotlin",
+      "category": "Programming Languages",
+      "skills": [
+        "Kotlin"
+      ],
+      "url": "https://www.geeksforgeeks.org/kotlin-programming-language/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "R Programming",
+      "category": "Programming Languages",
+      "skills": [
+        "R Programming"
+      ],
+      "url": "https://www.geeksforgeeks.org/r-programming-language/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Web Development",
+      "category": "Development",
+      "skills": [
+        "Web Development"
+      ],
+      "url": "https://www.geeksforgeeks.org/web-tech/web-technology/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "HTML",
+      "category": "Development",
+      "skills": [
+        "HTML",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility"
+      ],
+      "url": "https://www.geeksforgeeks.org/html/html-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "CSS",
+      "category": "Development",
+      "skills": [
+        "CSS",
+        "Responsive Design",
+        "Layouts",
+        "Styling",
+        "CSS Frameworks"
+      ],
+      "url": "https://www.geeksforgeeks.org/css/css-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "React",
+      "category": "Development",
+      "skills": [
+        "React",
+        "Components",
+        "State Management",
+        "Frontend Development"
+      ],
+      "url": "https://www.geeksforgeeks.org/reactjs/reactjs-tutorials/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Node.js",
+      "category": "Development",
+      "skills": [
+        "Node.js"
+      ],
+      "url": "https://www.geeksforgeeks.org/node-js/nodejs/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Angular",
+      "category": "Development",
+      "skills": [
+        "Angular",
+        "TypeScript",
+        "Components",
+        "Frontend Architecture"
+      ],
+      "url": "https://www.geeksforgeeks.org/angularjs/angularjs-tutorials/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Django",
+      "category": "Development",
+      "skills": [
+        "Django"
+      ],
+      "url": "https://www.geeksforgeeks.org/python/django-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Android Development",
+      "category": "Development",
+      "skills": [
+        "Android Development"
+      ],
+      "url": "https://www.geeksforgeeks.org/android/android-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Machine Learning",
+      "category": "AI & Data",
+      "skills": [
+        "Machine Learning",
+        "Model Training",
+        "Feature Engineering",
+        "Model Evaluation",
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Artificial Intelligence",
+      "category": "AI & Data",
+      "skills": [
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/artificial-intelligence/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Science",
+      "category": "AI & Data",
+      "skills": [
+        "Data Science",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy",
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI"
+      ],
+      "url": "https://www.geeksforgeeks.org/data-science/data-science-for-beginners/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Analysis",
+      "category": "AI & Data",
+      "skills": [
+        "Data Analysis",
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.geeksforgeeks.org/data-analysis/data-analysis-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Deep Learning",
+      "category": "AI & Data",
+      "skills": [
+        "Deep Learning",
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering",
+        "Neural Networks",
+        "Model Training"
+      ],
+      "url": "https://www.geeksforgeeks.org/deep-learning/deep-learning-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Natural Language Processing",
+      "category": "AI & Data",
+      "skills": [
+        "Natural Language Processing",
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.geeksforgeeks.org/nlp/natural-language-processing-nlp-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "DevOps",
+      "category": "Cloud & Operations",
+      "skills": [
+        "DevOps",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "CI/CD",
+        "Infrastructure Automation",
+        "Monitoring"
+      ],
+      "url": "https://www.geeksforgeeks.org/devops/devops-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Cloud Computing",
+      "category": "Cloud & Operations",
+      "skills": [
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://www.geeksforgeeks.org/cloud-computing/cloud-computing/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Linux",
+      "category": "Cloud & Operations",
+      "skills": [
+        "Linux",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Operating Systems",
+        "System Administration",
+        "Troubleshooting",
+        "User Experience Design"
+      ],
+      "url": "https://www.geeksforgeeks.org/linux-unix/linux-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Git",
+      "category": "Cloud & Operations",
+      "skills": [
+        "Git",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Version Control",
+        "Collaboration"
+      ],
+      "url": "https://www.geeksforgeeks.org/git/git-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Cyber Security",
+      "category": "Security",
+      "skills": [
+        "Cyber Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://www.geeksforgeeks.org/cyber-security/cyber-security-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Ethical Hacking",
+      "category": "Security",
+      "skills": [
+        "Ethical Hacking",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://www.geeksforgeeks.org/ethical-hacking/ethical-hacking-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "SQL",
+      "category": "Databases",
+      "skills": [
+        "SQL",
+        "Database Design",
+        "Queries",
+        "Data Management"
+      ],
+      "url": "https://www.geeksforgeeks.org/sql/sql-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "MongoDB",
+      "category": "Databases",
+      "skills": [
+        "MongoDB",
+        "SQL",
+        "Database Design",
+        "Queries",
+        "Data Management",
+        "NoSQL",
+        "Document Databases"
+      ],
+      "url": "https://www.geeksforgeeks.org/mongodb/mongodb-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Blockchain",
+      "category": "Emerging Technology",
+      "skills": [
+        "Blockchain",
+        "Distributed Ledgers",
+        "Smart Contracts"
+      ],
+      "url": "https://www.geeksforgeeks.org/blockchain/blockchain-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Internet of Things",
+      "category": "Emerging Technology",
+      "skills": [
+        "Internet of Things",
+        "Sensors",
+        "Embedded Systems",
+        "IoT Networking"
+      ],
+      "url": "https://www.geeksforgeeks.org/internet-of-things-iot/internet-of-things-iot-tutorial/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    }
+  ]
+}

@@ -1,0 +1,730 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "AWS Skill Builder",
+  "homepage": "https://skillbuilder.aws/",
+  "catalog_url": "https://skillbuilder.aws/search",
+  "coverage_level": "official_catalog_search_links",
+  "entries": [
+    {
+      "topic": "AWS Cloud Practitioner",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "AWS Cloud Practitioner",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=AWS+Cloud+Practitioner",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "AWS Cloud Practitioner"
+    },
+    {
+      "topic": "Solutions Architect",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Solutions Architect",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Solutions+Architect",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Solutions Architect"
+    },
+    {
+      "topic": "Developer",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Developer",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Developer",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Developer"
+    },
+    {
+      "topic": "SysOps Administrator",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "SysOps Administrator",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=SysOps+Administrator",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "SysOps Administrator"
+    },
+    {
+      "topic": "DevOps Engineer",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "DevOps Engineer",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services",
+        "DevOps",
+        "CI/CD"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=DevOps+Engineer",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "DevOps Engineer"
+    },
+    {
+      "topic": "Security Engineer",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Security Engineer",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Security+Engineer",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Security Engineer"
+    },
+    {
+      "topic": "Data Engineer",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Data Engineer",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Data+Engineer",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Data Engineer"
+    },
+    {
+      "topic": "Machine Learning Engineer",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Machine Learning Engineer",
+        "Machine Learning",
+        "Model Training",
+        "Feature Engineering",
+        "Model Evaluation",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Machine+Learning+Engineer",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Machine Learning Engineer"
+    },
+    {
+      "topic": "AI Practitioner",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "AI Practitioner",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=AI+Practitioner",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "AI Practitioner"
+    },
+    {
+      "topic": "Generative AI",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Generative AI",
+        "Artificial Intelligence",
+        "Responsible AI",
+        "Prompt Engineering",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Generative+AI",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Generative AI"
+    },
+    {
+      "topic": "Amazon Bedrock",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Amazon Bedrock",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Amazon+Bedrock",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Amazon Bedrock"
+    },
+    {
+      "topic": "Amazon SageMaker",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Amazon SageMaker",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Amazon+SageMaker",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Amazon SageMaker"
+    },
+    {
+      "topic": "Amazon Q",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Amazon Q",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Amazon+Q",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Amazon Q"
+    },
+    {
+      "topic": "Amazon EC2",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Amazon EC2",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Amazon+EC2",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Amazon EC2"
+    },
+    {
+      "topic": "Amazon S3",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Amazon S3",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Amazon+S3",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Amazon S3"
+    },
+    {
+      "topic": "Amazon VPC",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Amazon VPC",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Amazon+VPC",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Amazon VPC"
+    },
+    {
+      "topic": "AWS Lambda",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "AWS Lambda",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=AWS+Lambda",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "AWS Lambda"
+    },
+    {
+      "topic": "Amazon RDS",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Amazon RDS",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Amazon+RDS",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Amazon RDS"
+    },
+    {
+      "topic": "Amazon DynamoDB",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Amazon DynamoDB",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Amazon+DynamoDB",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Amazon DynamoDB"
+    },
+    {
+      "topic": "Amazon EKS",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Amazon EKS",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Amazon+EKS",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Amazon EKS"
+    },
+    {
+      "topic": "Amazon ECS",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Amazon ECS",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Amazon+ECS",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Amazon ECS"
+    },
+    {
+      "topic": "AWS IAM",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "AWS IAM",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=AWS+IAM",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "AWS IAM"
+    },
+    {
+      "topic": "AWS Organizations",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "AWS Organizations",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=AWS+Organizations",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "AWS Organizations"
+    },
+    {
+      "topic": "AWS Control Tower",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "AWS Control Tower",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=AWS+Control+Tower",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "AWS Control Tower"
+    },
+    {
+      "topic": "AWS Well-Architected Framework",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "AWS Well-Architected Framework",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=AWS+Well-Architected+Framework",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "AWS Well-Architected Framework"
+    },
+    {
+      "topic": "Serverless",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Serverless",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Serverless",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Serverless"
+    },
+    {
+      "topic": "Cloud Security",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Cloud Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Cloud+Security",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Cloud Security"
+    },
+    {
+      "topic": "Cloud Networking",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Cloud Networking",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services",
+        "Computer Networking",
+        "TCP/IP"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Cloud+Networking",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Cloud Networking"
+    },
+    {
+      "topic": "Data Analytics",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Data Analytics",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Data+Analytics",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Data Analytics"
+    },
+    {
+      "topic": "Migration and Modernization",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Migration and Modernization",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Migration+and+Modernization",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Migration and Modernization"
+    },
+    {
+      "topic": "Containers",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Containers",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Containers",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Containers"
+    },
+    {
+      "topic": "Storage",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Storage",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Storage",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Storage"
+    },
+    {
+      "topic": "Databases",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Databases",
+        "SQL",
+        "Database Design",
+        "Queries",
+        "Data Management",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Databases",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Databases"
+    },
+    {
+      "topic": "Observability",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "Observability",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=Observability",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "Observability"
+    },
+    {
+      "topic": "FinOps",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "FinOps",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=FinOps",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "FinOps"
+    },
+    {
+      "topic": "AWS Certification Exam Prep",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "AWS Certification Exam Prep",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=AWS+Certification+Exam+Prep",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "AWS Certification Exam Prep"
+    },
+    {
+      "topic": "AWS Cloud Quest",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "AWS Cloud Quest",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=AWS+Cloud+Quest",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "AWS Cloud Quest"
+    },
+    {
+      "topic": "AWS Builder Labs",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "AWS Builder Labs",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=AWS+Builder+Labs",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "AWS Builder Labs"
+    },
+    {
+      "topic": "AWS SimuLearn",
+      "category": "AWS Cloud Skills",
+      "skills": [
+        "AWS SimuLearn",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://skillbuilder.aws/search?searchText=AWS+SimuLearn",
+      "url_type": "catalog_search",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "notes": "AWS Skill Builder is JavaScript-driven; the URL opens an official catalog search.",
+      "search_term": "AWS SimuLearn"
+    }
+  ]
+}

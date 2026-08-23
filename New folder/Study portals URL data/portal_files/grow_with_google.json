@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "Grow with Google",
+  "homepage": "https://grow.google/",
+  "catalog_url": "https://grow.google/intl/en_in/certificates/",
+  "coverage_level": "major_certificates_and_training_hubs",
+  "entries": [
+    {
+      "topic": "Google AI Professional Certificate",
+      "category": "Career Certificates",
+      "skills": [
+        "Artificial Intelligence",
+        "AI Productivity",
+        "Prompting",
+        "Responsible AI"
+      ],
+      "url": "https://grow.google/intl/en_in/ai-professional/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google AI Essentials",
+      "category": "Career Essentials",
+      "skills": [
+        "Generative AI",
+        "Prompting",
+        "Productivity",
+        "Responsible AI"
+      ],
+      "url": "https://grow.google/ai-essentials/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Data Analytics Certificate",
+      "category": "Career Certificates",
+      "skills": [
+        "Data Analysis",
+        "Spreadsheets",
+        "SQL",
+        "Tableau",
+        "R Programming"
+      ],
+      "url": "https://grow.google/certificates/data-analytics/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Advanced Data Analytics Certificate",
+      "category": "Career Certificates",
+      "skills": [
+        "Python",
+        "Statistics",
+        "Regression",
+        "Machine Learning",
+        "Data Analysis"
+      ],
+      "url": "https://grow.google/certificates/advanced-data-analytics/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Business Intelligence Certificate",
+      "category": "Career Certificates",
+      "skills": [
+        "Business Intelligence",
+        "Data Modeling",
+        "Dashboards",
+        "SQL",
+        "Data Visualization"
+      ],
+      "url": "https://grow.google/certificates/business-intelligence/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Cybersecurity Certificate",
+      "category": "Career Certificates",
+      "skills": [
+        "Cybersecurity",
+        "SIEM",
+        "Linux",
+        "SQL",
+        "Incident Response"
+      ],
+      "url": "https://grow.google/certificates/cybersecurity/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google IT Support Certificate",
+      "category": "Career Certificates",
+      "skills": [
+        "IT Support",
+        "Computer Networking",
+        "Operating Systems",
+        "System Administration",
+        "Troubleshooting"
+      ],
+      "url": "https://grow.google/certificates/it-support/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google IT Automation with Python",
+      "category": "Career Certificates",
+      "skills": [
+        "Python",
+        "Automation",
+        "Git",
+        "Configuration Management",
+        "Troubleshooting"
+      ],
+      "url": "https://grow.google/certificates/it-automation/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Project Management Certificate",
+      "category": "Career Certificates",
+      "skills": [
+        "Project Management",
+        "Agile",
+        "Risk Management",
+        "Stakeholder Management"
+      ],
+      "url": "https://grow.google/certificates/project-management/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google UX Design Certificate",
+      "category": "Career Certificates",
+      "skills": [
+        "UX Design",
+        "User Research",
+        "Wireframing",
+        "Prototyping",
+        "Usability Testing"
+      ],
+      "url": "https://grow.google/certificates/ux-design/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Digital Marketing and E-commerce Certificate",
+      "category": "Career Certificates",
+      "skills": [
+        "Digital Marketing",
+        "E-commerce",
+        "SEO",
+        "Email Marketing",
+        "Marketing Analytics"
+      ],
+      "url": "https://grow.google/certificates/digital-marketing-ecommerce/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Career Certificates India",
+      "category": "Catalog",
+      "skills": [
+        "Career Development",
+        "Job-ready Skills",
+        "Professional Certificates"
+      ],
+      "url": "https://grow.google/intl/en_in/certificates/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Ads Training",
+      "category": "Business Skills",
+      "skills": [
+        "Google Ads",
+        "Campaign Management",
+        "Measurement",
+        "Digital Marketing"
+      ],
+      "url": "https://skillshop.withgoogle.com/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Grow with Google Courses and Tools",
+      "category": "Catalog",
+      "skills": [
+        "Digital Skills",
+        "Business Growth",
+        "Career Development",
+        "AI Skills"
+      ],
+      "url": "https://grow.google/intl/en_in/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    }
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "FedVTE / CISA Learning",
+  "homepage": "https://niccs.cisa.gov/training/cisa-learning",
+  "catalog_url": "https://niccs.cisa.gov/training/catalog",
+  "coverage_level": "current_successor_platform_topics",
+  "status": "FedVTE was sunset and replaced by CISA Learning.",
+  "entries": [
+    {
+      "topic": "Cloud Security",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Cloud Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Cloud Security"
+    },
+    {
+      "topic": "Ethical Hacking",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Ethical Hacking",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Ethical Hacking"
+    },
+    {
+      "topic": "Cybersecurity Surveillance",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Cybersecurity Surveillance",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Cybersecurity Surveillance"
+    },
+    {
+      "topic": "Risk Management",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Risk Management",
+        "Cybersecurity",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Risk Management"
+    },
+    {
+      "topic": "Malware Analysis",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Malware Analysis",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Malware Analysis"
+    },
+    {
+      "topic": "Incident Response",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Incident Response",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Incident Response"
+    },
+    {
+      "topic": "Threat Intelligence",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Threat Intelligence",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Threat Intelligence"
+    },
+    {
+      "topic": "Vulnerability Analysis",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Vulnerability Analysis",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Vulnerability Analysis"
+    },
+    {
+      "topic": "Network Security",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Network Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls",
+        "Computer Networking",
+        "TCP/IP",
+        "Network Troubleshooting"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Network Security"
+    },
+    {
+      "topic": "Digital Forensics",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Digital Forensics",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls",
+        "Git",
+        "Version Control",
+        "Collaboration"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Digital Forensics"
+    },
+    {
+      "topic": "Secure Coding",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Secure Coding",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Secure Coding"
+    },
+    {
+      "topic": "Security Operations",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Security Operations",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Security Operations"
+    },
+    {
+      "topic": "Identity and Access Management",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Identity and Access Management",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Identity and Access Management"
+    },
+    {
+      "topic": "Security Architecture",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Security Architecture",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Security Architecture"
+    },
+    {
+      "topic": "Industrial Control Systems Security",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Industrial Control Systems Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Industrial Control Systems Security"
+    },
+    {
+      "topic": "Operational Technology Security",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Operational Technology Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Operational Technology Security"
+    },
+    {
+      "topic": "Continuous Diagnostics and Mitigation",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Continuous Diagnostics and Mitigation",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Continuous Diagnostics and Mitigation"
+    },
+    {
+      "topic": "FISMA",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "FISMA",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "FISMA"
+    },
+    {
+      "topic": "NICE Cybersecurity Workforce Framework",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "NICE Cybersecurity Workforce Framework",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "NICE Cybersecurity Workforce Framework"
+    },
+    {
+      "topic": "Certified Ethical Hacker Preparation",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Certified Ethical Hacker Preparation",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Certified Ethical Hacker Preparation"
+    },
+    {
+      "topic": "CISSP Preparation",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "CISSP Preparation",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "CISSP Preparation"
+    },
+    {
+      "topic": "CISM Preparation",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "CISM Preparation",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "CISM Preparation"
+    },
+    {
+      "topic": "CompTIA Security Plus Preparation",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "CompTIA Security Plus Preparation",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "CompTIA Security Plus Preparation"
+    },
+    {
+      "topic": "Cloud Computing Security",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Cloud Computing Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Cloud Computing Security"
+    },
+    {
+      "topic": "Cybersecurity Leadership",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Cybersecurity Leadership",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Cybersecurity Leadership"
+    },
+    {
+      "topic": "Cyber Law and Policy",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Cyber Law and Policy",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Cyber Law and Policy"
+    },
+    {
+      "topic": "Ransomware Defense",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Ransomware Defense",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Ransomware Defense"
+    },
+    {
+      "topic": "Log Management",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Log Management",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Log Management"
+    },
+    {
+      "topic": "Indicators of Compromise",
+      "category": "Cybersecurity Training",
+      "skills": [
+        "Indicators of Compromise",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://niccs.cisa.gov/training/cisa-learning",
+      "url_type": "platform_entry",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "FedVTE was replaced by CISA Learning. Sign in to CISA Learning and search the listed topic; course availability varies by audience.",
+      "search_term": "Indicators of Compromise"
+    },
+    {
+      "topic": "NICCS Education and Training Catalog",
+      "category": "Catalog",
+      "skills": [
+        "Cybersecurity Training",
+        "NICE Framework",
+        "Course Discovery"
+      ],
+      "url": "https://niccs.cisa.gov/training/catalog",
+      "url_type": "topic_page",
+      "access": "mixed",
+      "official_domain": true
+    }
+  ]
+}

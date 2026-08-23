@@ -1,0 +1,671 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "Google Cloud Skills Boost",
+  "homepage": "https://www.cloudskillsboost.google/",
+  "catalog_url": "https://www.cloudskillsboost.google/catalog",
+  "coverage_level": "official_catalog_keyword_links",
+  "entries": [
+    {
+      "topic": "Cloud Digital Leader",
+      "category": "Google Cloud",
+      "skills": [
+        "Cloud Digital Leader",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services",
+        "Git",
+        "Version Control"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Cloud+Digital+Leader",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Cloud Digital Leader"
+    },
+    {
+      "topic": "Associate Cloud Engineer",
+      "category": "Google Cloud",
+      "skills": [
+        "Associate Cloud Engineer",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Associate+Cloud+Engineer",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Associate Cloud Engineer"
+    },
+    {
+      "topic": "Professional Cloud Architect",
+      "category": "Google Cloud",
+      "skills": [
+        "Professional Cloud Architect",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services",
+        "Communication",
+        "Collaboration"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Professional+Cloud+Architect",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Professional Cloud Architect"
+    },
+    {
+      "topic": "Professional Data Engineer",
+      "category": "Google Cloud",
+      "skills": [
+        "Professional Data Engineer",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services",
+        "Communication",
+        "Collaboration"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Professional+Data+Engineer",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Professional Data Engineer"
+    },
+    {
+      "topic": "Professional Cloud Developer",
+      "category": "Google Cloud",
+      "skills": [
+        "Professional Cloud Developer",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services",
+        "Communication",
+        "Collaboration"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Professional+Cloud+Developer",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Professional Cloud Developer"
+    },
+    {
+      "topic": "Professional Cloud DevOps Engineer",
+      "category": "Google Cloud",
+      "skills": [
+        "Professional Cloud DevOps Engineer",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services",
+        "DevOps",
+        "CI/CD"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Professional+Cloud+DevOps+Engineer",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Professional Cloud DevOps Engineer"
+    },
+    {
+      "topic": "Professional Cloud Security Engineer",
+      "category": "Google Cloud",
+      "skills": [
+        "Professional Cloud Security Engineer",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Professional+Cloud+Security+Engineer",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Professional Cloud Security Engineer"
+    },
+    {
+      "topic": "Professional Cloud Network Engineer",
+      "category": "Google Cloud",
+      "skills": [
+        "Professional Cloud Network Engineer",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services",
+        "Computer Networking",
+        "TCP/IP"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Professional+Cloud+Network+Engineer",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Professional Cloud Network Engineer"
+    },
+    {
+      "topic": "Professional Machine Learning Engineer",
+      "category": "Google Cloud",
+      "skills": [
+        "Professional Machine Learning Engineer",
+        "Machine Learning",
+        "Model Training",
+        "Feature Engineering",
+        "Model Evaluation",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Professional+Machine+Learning+Engineer",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Professional Machine Learning Engineer"
+    },
+    {
+      "topic": "Generative AI",
+      "category": "Google Cloud",
+      "skills": [
+        "Generative AI",
+        "Artificial Intelligence",
+        "Responsible AI",
+        "Prompt Engineering",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Generative+AI",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Generative AI"
+    },
+    {
+      "topic": "Vertex AI",
+      "category": "Google Cloud",
+      "skills": [
+        "Vertex AI",
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Vertex+AI",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Vertex AI"
+    },
+    {
+      "topic": "Gemini for Google Cloud",
+      "category": "Google Cloud",
+      "skills": [
+        "Gemini for Google Cloud",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Gemini+for+Google+Cloud",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Gemini for Google Cloud"
+    },
+    {
+      "topic": "BigQuery",
+      "category": "Google Cloud",
+      "skills": [
+        "BigQuery",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=BigQuery",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "BigQuery"
+    },
+    {
+      "topic": "Cloud Storage",
+      "category": "Google Cloud",
+      "skills": [
+        "Cloud Storage",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Cloud+Storage",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Cloud Storage"
+    },
+    {
+      "topic": "Compute Engine",
+      "category": "Google Cloud",
+      "skills": [
+        "Compute Engine",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Compute+Engine",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Compute Engine"
+    },
+    {
+      "topic": "Google Kubernetes Engine",
+      "category": "Google Cloud",
+      "skills": [
+        "Google Kubernetes Engine",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Google+Kubernetes+Engine",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Google Kubernetes Engine"
+    },
+    {
+      "topic": "Cloud Run",
+      "category": "Google Cloud",
+      "skills": [
+        "Cloud Run",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Cloud+Run",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Cloud Run"
+    },
+    {
+      "topic": "App Engine",
+      "category": "Google Cloud",
+      "skills": [
+        "App Engine",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=App+Engine",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "App Engine"
+    },
+    {
+      "topic": "Cloud Functions",
+      "category": "Google Cloud",
+      "skills": [
+        "Cloud Functions",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Cloud+Functions",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Cloud Functions"
+    },
+    {
+      "topic": "IAM",
+      "category": "Google Cloud",
+      "skills": [
+        "IAM",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=IAM",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "IAM"
+    },
+    {
+      "topic": "Cloud Networking",
+      "category": "Google Cloud",
+      "skills": [
+        "Cloud Networking",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services",
+        "Computer Networking",
+        "TCP/IP"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Cloud+Networking",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Cloud Networking"
+    },
+    {
+      "topic": "Cloud Security",
+      "category": "Google Cloud",
+      "skills": [
+        "Cloud Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Cloud+Security",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Cloud Security"
+    },
+    {
+      "topic": "Data Analytics",
+      "category": "Google Cloud",
+      "skills": [
+        "Data Analytics",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Data+Analytics",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Data Analytics"
+    },
+    {
+      "topic": "Data Engineering",
+      "category": "Google Cloud",
+      "skills": [
+        "Data Engineering",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Data+Engineering",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Data Engineering"
+    },
+    {
+      "topic": "Machine Learning",
+      "category": "Google Cloud",
+      "skills": [
+        "Machine Learning",
+        "Model Training",
+        "Feature Engineering",
+        "Model Evaluation",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Machine+Learning",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Machine Learning"
+    },
+    {
+      "topic": "MLOps",
+      "category": "Google Cloud",
+      "skills": [
+        "MLOps",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=MLOps",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "MLOps"
+    },
+    {
+      "topic": "DevOps",
+      "category": "Google Cloud",
+      "skills": [
+        "DevOps",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services",
+        "CI/CD",
+        "Infrastructure Automation"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=DevOps",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "DevOps"
+    },
+    {
+      "topic": "SRE",
+      "category": "Google Cloud",
+      "skills": [
+        "SRE",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=SRE",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "SRE"
+    },
+    {
+      "topic": "Apigee",
+      "category": "Google Cloud",
+      "skills": [
+        "Apigee",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Apigee",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Apigee"
+    },
+    {
+      "topic": "Looker",
+      "category": "Google Cloud",
+      "skills": [
+        "Looker",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Looker",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Looker"
+    },
+    {
+      "topic": "Firebase",
+      "category": "Google Cloud",
+      "skills": [
+        "Firebase",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Firebase",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Firebase"
+    },
+    {
+      "topic": "Workspace",
+      "category": "Google Cloud",
+      "skills": [
+        "Workspace",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Workspace",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Workspace"
+    },
+    {
+      "topic": "Migration",
+      "category": "Google Cloud",
+      "skills": [
+        "Migration",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Migration",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Migration"
+    },
+    {
+      "topic": "Infrastructure Modernization",
+      "category": "Google Cloud",
+      "skills": [
+        "Infrastructure Modernization",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Infrastructure+Modernization",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Infrastructure Modernization"
+    },
+    {
+      "topic": "Application Modernization",
+      "category": "Google Cloud",
+      "skills": [
+        "Application Modernization",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Application+Modernization",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Application Modernization"
+    },
+    {
+      "topic": "Skill Badges",
+      "category": "Google Cloud",
+      "skills": [
+        "Skill Badges",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Skill+Badges",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Skill Badges"
+    },
+    {
+      "topic": "Hands-on Labs",
+      "category": "Google Cloud",
+      "skills": [
+        "Hands-on Labs",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.cloudskillsboost.google/catalog?keywords=Hands-on+Labs",
+      "url_type": "catalog_filter",
+      "access": "free_and_subscription",
+      "official_domain": true,
+      "search_term": "Hands-on Labs"
+    }
+  ]
+}

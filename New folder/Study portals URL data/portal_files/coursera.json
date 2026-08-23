@@ -1,0 +1,692 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "Coursera",
+  "homepage": "https://www.coursera.org/",
+  "catalog_url": "https://www.coursera.org/browse",
+  "coverage_level": "main_categories_and_high_demand_topic_searches",
+  "entries": [
+    {
+      "topic": "Arts and Humanities",
+      "category": "Main Category",
+      "skills": [
+        "Arts and Humanities"
+      ],
+      "url": "https://www.coursera.org/browse/arts-and-humanities",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Business",
+      "category": "Main Category",
+      "skills": [
+        "Business"
+      ],
+      "url": "https://www.coursera.org/browse/business",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Computer Science",
+      "category": "Main Category",
+      "skills": [
+        "Computer Science"
+      ],
+      "url": "https://www.coursera.org/browse/computer-science",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Science",
+      "category": "Main Category",
+      "skills": [
+        "Data Science",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://www.coursera.org/browse/data-science",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Health",
+      "category": "Main Category",
+      "skills": [
+        "Health"
+      ],
+      "url": "https://www.coursera.org/browse/health",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Information Technology",
+      "category": "Main Category",
+      "skills": [
+        "Information Technology"
+      ],
+      "url": "https://www.coursera.org/browse/information-technology",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Language Learning",
+      "category": "Main Category",
+      "skills": [
+        "Language Learning"
+      ],
+      "url": "https://www.coursera.org/browse/language-learning",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Math and Logic",
+      "category": "Main Category",
+      "skills": [
+        "Math and Logic"
+      ],
+      "url": "https://www.coursera.org/browse/math-and-logic",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Personal Development",
+      "category": "Main Category",
+      "skills": [
+        "Personal Development"
+      ],
+      "url": "https://www.coursera.org/browse/personal-development",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Physical Science and Engineering",
+      "category": "Main Category",
+      "skills": [
+        "Physical Science and Engineering"
+      ],
+      "url": "https://www.coursera.org/browse/physical-science-and-engineering",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Social Sciences",
+      "category": "Main Category",
+      "skills": [
+        "Social Sciences"
+      ],
+      "url": "https://www.coursera.org/browse/social-sciences",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Artificial Intelligence",
+      "category": "Topic Search",
+      "skills": [
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.coursera.org/search?query=Artificial+Intelligence",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Artificial Intelligence"
+    },
+    {
+      "topic": "Generative AI",
+      "category": "Topic Search",
+      "skills": [
+        "Generative AI",
+        "Artificial Intelligence",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.coursera.org/search?query=Generative+AI",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Generative AI"
+    },
+    {
+      "topic": "Machine Learning",
+      "category": "Topic Search",
+      "skills": [
+        "Machine Learning",
+        "Model Training",
+        "Feature Engineering",
+        "Model Evaluation"
+      ],
+      "url": "https://www.coursera.org/search?query=Machine+Learning",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Machine Learning"
+    },
+    {
+      "topic": "Deep Learning",
+      "category": "Topic Search",
+      "skills": [
+        "Deep Learning",
+        "Neural Networks",
+        "Model Training"
+      ],
+      "url": "https://www.coursera.org/search?query=Deep+Learning",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Deep Learning"
+    },
+    {
+      "topic": "Data Analysis",
+      "category": "Topic Search",
+      "skills": [
+        "Data Analysis"
+      ],
+      "url": "https://www.coursera.org/search?query=Data+Analysis",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Data Analysis"
+    },
+    {
+      "topic": "Data Engineering",
+      "category": "Topic Search",
+      "skills": [
+        "Data Engineering"
+      ],
+      "url": "https://www.coursera.org/search?query=Data+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Data Engineering"
+    },
+    {
+      "topic": "Data Visualization",
+      "category": "Topic Search",
+      "skills": [
+        "Data Visualization"
+      ],
+      "url": "https://www.coursera.org/search?query=Data+Visualization",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Data Visualization"
+    },
+    {
+      "topic": "Statistics",
+      "category": "Topic Search",
+      "skills": [
+        "Statistics"
+      ],
+      "url": "https://www.coursera.org/search?query=Statistics",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Statistics"
+    },
+    {
+      "topic": "Python",
+      "category": "Topic Search",
+      "skills": [
+        "Python",
+        "Programming Fundamentals",
+        "Scripting",
+        "Automation"
+      ],
+      "url": "https://www.coursera.org/search?query=Python",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Python"
+    },
+    {
+      "topic": "R Programming",
+      "category": "Topic Search",
+      "skills": [
+        "R Programming"
+      ],
+      "url": "https://www.coursera.org/search?query=R+Programming",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "R Programming"
+    },
+    {
+      "topic": "SQL",
+      "category": "Topic Search",
+      "skills": [
+        "SQL",
+        "Database Design",
+        "Queries",
+        "Data Management"
+      ],
+      "url": "https://www.coursera.org/search?query=SQL",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "SQL"
+    },
+    {
+      "topic": "Cloud Computing",
+      "category": "Topic Search",
+      "skills": [
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://www.coursera.org/search?query=Cloud+Computing",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Cloud Computing"
+    },
+    {
+      "topic": "AWS",
+      "category": "Topic Search",
+      "skills": [
+        "AWS",
+        "Amazon Web Services",
+        "Cloud Computing",
+        "AWS Services"
+      ],
+      "url": "https://www.coursera.org/search?query=AWS",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "AWS"
+    },
+    {
+      "topic": "Microsoft Azure",
+      "category": "Topic Search",
+      "skills": [
+        "Microsoft Azure",
+        "Cloud Computing",
+        "Azure Services"
+      ],
+      "url": "https://www.coursera.org/search?query=Microsoft+Azure",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Microsoft Azure"
+    },
+    {
+      "topic": "Google Cloud",
+      "category": "Topic Search",
+      "skills": [
+        "Google Cloud",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud Services"
+      ],
+      "url": "https://www.coursera.org/search?query=Google+Cloud",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Google Cloud"
+    },
+    {
+      "topic": "Cybersecurity",
+      "category": "Topic Search",
+      "skills": [
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://www.coursera.org/search?query=Cybersecurity",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Cybersecurity"
+    },
+    {
+      "topic": "Information Security",
+      "category": "Topic Search",
+      "skills": [
+        "Information Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://www.coursera.org/search?query=Information+Security",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Information Security"
+    },
+    {
+      "topic": "IT Support",
+      "category": "Topic Search",
+      "skills": [
+        "IT Support"
+      ],
+      "url": "https://www.coursera.org/search?query=IT+Support",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "IT Support"
+    },
+    {
+      "topic": "Computer Networking",
+      "category": "Topic Search",
+      "skills": [
+        "Computer Networking",
+        "TCP/IP",
+        "Network Troubleshooting"
+      ],
+      "url": "https://www.coursera.org/search?query=Computer+Networking",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Computer Networking"
+    },
+    {
+      "topic": "Software Engineering",
+      "category": "Topic Search",
+      "skills": [
+        "Software Engineering",
+        "Testing",
+        "Design Patterns",
+        "Software Development Lifecycle"
+      ],
+      "url": "https://www.coursera.org/search?query=Software+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Software Engineering"
+    },
+    {
+      "topic": "Web Development",
+      "category": "Topic Search",
+      "skills": [
+        "Web Development"
+      ],
+      "url": "https://www.coursera.org/search?query=Web+Development",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Web Development"
+    },
+    {
+      "topic": "Mobile Development",
+      "category": "Topic Search",
+      "skills": [
+        "Mobile Development"
+      ],
+      "url": "https://www.coursera.org/search?query=Mobile+Development",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Mobile Development"
+    },
+    {
+      "topic": "DevOps",
+      "category": "Topic Search",
+      "skills": [
+        "DevOps",
+        "CI/CD",
+        "Infrastructure Automation",
+        "Monitoring"
+      ],
+      "url": "https://www.coursera.org/search?query=DevOps",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "DevOps"
+    },
+    {
+      "topic": "Project Management",
+      "category": "Topic Search",
+      "skills": [
+        "Project Management",
+        "Planning",
+        "Risk Management",
+        "Stakeholder Management"
+      ],
+      "url": "https://www.coursera.org/search?query=Project+Management",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Project Management"
+    },
+    {
+      "topic": "Product Management",
+      "category": "Topic Search",
+      "skills": [
+        "Product Management",
+        "Product Strategy",
+        "Product Discovery",
+        "Roadmapping",
+        "User Research"
+      ],
+      "url": "https://www.coursera.org/search?query=Product+Management",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Product Management"
+    },
+    {
+      "topic": "Business Analysis",
+      "category": "Topic Search",
+      "skills": [
+        "Business Analysis"
+      ],
+      "url": "https://www.coursera.org/search?query=Business+Analysis",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Business Analysis"
+    },
+    {
+      "topic": "Digital Marketing",
+      "category": "Topic Search",
+      "skills": [
+        "Digital Marketing",
+        "Git",
+        "Version Control",
+        "Collaboration",
+        "Campaign Management",
+        "Analytics"
+      ],
+      "url": "https://www.coursera.org/search?query=Digital+Marketing",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Digital Marketing"
+    },
+    {
+      "topic": "Finance",
+      "category": "Topic Search",
+      "skills": [
+        "Finance"
+      ],
+      "url": "https://www.coursera.org/search?query=Finance",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Finance"
+    },
+    {
+      "topic": "Leadership",
+      "category": "Topic Search",
+      "skills": [
+        "Leadership"
+      ],
+      "url": "https://www.coursera.org/search?query=Leadership",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Leadership"
+    },
+    {
+      "topic": "Communication Skills",
+      "category": "Topic Search",
+      "skills": [
+        "Communication Skills",
+        "Communication",
+        "Collaboration",
+        "Professional Skills"
+      ],
+      "url": "https://www.coursera.org/search?query=Communication+Skills",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Communication Skills"
+    },
+    {
+      "topic": "UX Design",
+      "category": "Topic Search",
+      "skills": [
+        "UX Design",
+        "User Experience Design",
+        "User Research",
+        "Prototyping",
+        "Usability"
+      ],
+      "url": "https://www.coursera.org/search?query=UX+Design",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "UX Design"
+    },
+    {
+      "topic": "Graphic Design",
+      "category": "Topic Search",
+      "skills": [
+        "Graphic Design"
+      ],
+      "url": "https://www.coursera.org/search?query=Graphic+Design",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Graphic Design"
+    },
+    {
+      "topic": "Healthcare",
+      "category": "Topic Search",
+      "skills": [
+        "Healthcare"
+      ],
+      "url": "https://www.coursera.org/search?query=Healthcare",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Healthcare"
+    },
+    {
+      "topic": "Public Health",
+      "category": "Topic Search",
+      "skills": [
+        "Public Health"
+      ],
+      "url": "https://www.coursera.org/search?query=Public+Health",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Public Health"
+    },
+    {
+      "topic": "Psychology",
+      "category": "Topic Search",
+      "skills": [
+        "Psychology"
+      ],
+      "url": "https://www.coursera.org/search?query=Psychology",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Psychology"
+    },
+    {
+      "topic": "Research Methods",
+      "category": "Topic Search",
+      "skills": [
+        "Research Methods"
+      ],
+      "url": "https://www.coursera.org/search?query=Research+Methods",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Research Methods"
+    },
+    {
+      "topic": "English Language",
+      "category": "Topic Search",
+      "skills": [
+        "English Language"
+      ],
+      "url": "https://www.coursera.org/search?query=English+Language",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "English Language"
+    },
+    {
+      "topic": "Mathematics",
+      "category": "Topic Search",
+      "skills": [
+        "Mathematics"
+      ],
+      "url": "https://www.coursera.org/search?query=Mathematics",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Mathematics"
+    },
+    {
+      "topic": "Physics",
+      "category": "Topic Search",
+      "skills": [
+        "Physics"
+      ],
+      "url": "https://www.coursera.org/search?query=Physics",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Physics"
+    },
+    {
+      "topic": "Sustainability",
+      "category": "Topic Search",
+      "skills": [
+        "Sustainability"
+      ],
+      "url": "https://www.coursera.org/search?query=Sustainability",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Sustainability"
+    },
+    {
+      "topic": "Entrepreneurship",
+      "category": "Topic Search",
+      "skills": [
+        "Entrepreneurship"
+      ],
+      "url": "https://www.coursera.org/search?query=Entrepreneurship",
+      "url_type": "catalog_search",
+      "access": "free_audit_or_paid",
+      "official_domain": true,
+      "search_term": "Entrepreneurship"
+    }
+  ],
+  "limitations": "Coursera has more than ten thousand courses; the file indexes stable categories and direct topic searches rather than every individual course."
+}

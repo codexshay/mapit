@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "Google Developers Learn",
+  "homepage": "https://developers.google.com/learn",
+  "catalog_url": "https://developers.google.com/learn/pathways",
+  "coverage_level": "official_pathways_and_product_learning_hubs",
+  "entries": [
+    {
+      "topic": "Developer Learning Pathways",
+      "category": "Catalog",
+      "skills": [
+        "Developer Learning Pathways"
+      ],
+      "url": "https://developers.google.com/learn/pathways",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Developer Topics",
+      "category": "Catalog",
+      "skills": [
+        "Developer Topics"
+      ],
+      "url": "https://developers.google.com/learn/topics",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "AI and Machine Learning Pathways",
+      "category": "AI & ML",
+      "skills": [
+        "AI and Machine Learning Pathways",
+        "Machine Learning",
+        "Model Training",
+        "Feature Engineering",
+        "Model Evaluation",
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI"
+      ],
+      "url": "https://developers.google.com/learn/pathways?category=aiandmachinelearning",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "TensorFlow Neural Networks",
+      "category": "AI & ML",
+      "skills": [
+        "TensorFlow Neural Networks",
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering",
+        "Computer Networking",
+        "TCP/IP",
+        "Network Troubleshooting"
+      ],
+      "url": "https://developers.google.com/learn/pathways/tensorflow",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Mobile Image Classification",
+      "category": "AI & ML",
+      "skills": [
+        "Mobile Image Classification",
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://developers.google.com/learn/pathways/get-started-image-classification",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Cloud Projects",
+      "category": "Cloud",
+      "skills": [
+        "Google Cloud Projects",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Google Cloud",
+        "Google Cloud Services"
+      ],
+      "url": "https://developers.google.com/learn/pathways/gcp/get-started-projects",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Android Training",
+      "category": "Mobile",
+      "skills": [
+        "Android Training"
+      ],
+      "url": "https://developer.android.com/courses",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Android Basics with Compose",
+      "category": "Mobile",
+      "skills": [
+        "Android Basics with Compose"
+      ],
+      "url": "https://developer.android.com/courses/android-basics-compose/course",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Kotlin for Android",
+      "category": "Mobile",
+      "skills": [
+        "Kotlin for Android"
+      ],
+      "url": "https://developer.android.com/kotlin",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Flutter Learning",
+      "category": "Mobile",
+      "skills": [
+        "Flutter Learning"
+      ],
+      "url": "https://docs.flutter.dev/get-started/learn-flutter",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Firebase Learning",
+      "category": "App Development",
+      "skills": [
+        "Firebase Learning"
+      ],
+      "url": "https://firebase.google.com/learn",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Firebase Codelabs",
+      "category": "App Development",
+      "skills": [
+        "Firebase Codelabs"
+      ],
+      "url": "https://firebase.google.com/codelabs",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Chrome for Developers",
+      "category": "Web",
+      "skills": [
+        "Chrome for Developers"
+      ],
+      "url": "https://developer.chrome.com/docs/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Web.dev Learn",
+      "category": "Web",
+      "skills": [
+        "Web.dev Learn"
+      ],
+      "url": "https://web.dev/learn/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Learn HTML",
+      "category": "Web",
+      "skills": [
+        "Learn HTML",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility"
+      ],
+      "url": "https://web.dev/learn/html",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Learn CSS",
+      "category": "Web",
+      "skills": [
+        "Learn CSS",
+        "Responsive Design",
+        "Layouts",
+        "Styling",
+        "CSS Frameworks"
+      ],
+      "url": "https://web.dev/learn/css",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Learn JavaScript",
+      "category": "Web",
+      "skills": [
+        "Learn JavaScript",
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://web.dev/learn/javascript",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Learn Accessibility",
+      "category": "Web",
+      "skills": [
+        "Learn Accessibility"
+      ],
+      "url": "https://web.dev/learn/accessibility",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Learn Performance",
+      "category": "Web",
+      "skills": [
+        "Learn Performance"
+      ],
+      "url": "https://web.dev/learn/performance",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Progressive Web Apps",
+      "category": "Web",
+      "skills": [
+        "Progressive Web Apps"
+      ],
+      "url": "https://web.dev/learn/pwa",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Maps Platform",
+      "category": "APIs",
+      "skills": [
+        "Google Maps Platform"
+      ],
+      "url": "https://developers.google.com/maps/learn",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Workspace Developers",
+      "category": "APIs",
+      "skills": [
+        "Google Workspace Developers"
+      ],
+      "url": "https://developers.google.com/workspace",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Ads API",
+      "category": "APIs",
+      "skills": [
+        "Google Ads API"
+      ],
+      "url": "https://developers.google.com/google-ads/api/docs/start",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "YouTube API",
+      "category": "APIs",
+      "skills": [
+        "YouTube API"
+      ],
+      "url": "https://developers.google.com/youtube/v3/getting-started",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Pay API",
+      "category": "APIs",
+      "skills": [
+        "Google Pay API"
+      ],
+      "url": "https://developers.google.com/pay/api",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Assistant Learning",
+      "category": "Conversational Apps",
+      "skills": [
+        "Google Assistant Learning"
+      ],
+      "url": "https://developers.google.com/assistant",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Codelabs",
+      "category": "Hands-on Labs",
+      "skills": [
+        "Google Codelabs"
+      ],
+      "url": "https://codelabs.developers.google.com/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Developer Certification",
+      "category": "Credentials",
+      "skills": [
+        "Google Developer Certification"
+      ],
+      "url": "https://developers.google.com/certification",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    }
+  ]
+}

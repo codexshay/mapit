@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "portal_count": 19,
+  "total_entry_count": 654,
+  "files": [
+    {
+      "portal_key": "w3schools",
+      "portal_name": "W3Schools",
+      "filename": "w3schools.json",
+      "entry_count": 60,
+      "coverage_level": "individual_tutorial_entry_points",
+      "homepage": "https://www.w3schools.com/",
+      "catalog_url": "https://www.w3schools.com/tutorials/"
+    },
+    {
+      "portal_key": "geeksforgeeks",
+      "portal_name": "GeeksforGeeks",
+      "filename": "geeksforgeeks.json",
+      "entry_count": 45,
+      "coverage_level": "major_tutorial_hubs",
+      "homepage": "https://www.geeksforgeeks.org/",
+      "catalog_url": "https://www.geeksforgeeks.org/tutorials/"
+    },
+    {
+      "portal_key": "microsoft_learn",
+      "portal_name": "Microsoft Learn",
+      "filename": "microsoft_learn.json",
+      "entry_count": 46,
+      "coverage_level": "filtered_official_training_catalog",
+      "homepage": "https://learn.microsoft.com/",
+      "catalog_url": "https://learn.microsoft.com/en-us/training/browse/"
+    },
+    {
+      "portal_key": "aws_skill_builder",
+      "portal_name": "AWS Skill Builder",
+      "filename": "aws_skill_builder.json",
+      "entry_count": 39,
+      "coverage_level": "official_catalog_search_links",
+      "homepage": "https://skillbuilder.aws/",
+      "catalog_url": "https://skillbuilder.aws/search"
+    },
+    {
+      "portal_key": "google_cloud_skills_boost",
+      "portal_name": "Google Cloud Skills Boost",
+      "filename": "google_cloud_skills_boost.json",
+      "entry_count": 37,
+      "coverage_level": "official_catalog_keyword_links",
+      "homepage": "https://www.cloudskillsboost.google/",
+      "catalog_url": "https://www.cloudskillsboost.google/catalog"
+    },
+    {
+      "portal_key": "grow_with_google",
+      "portal_name": "Grow with Google",
+      "filename": "grow_with_google.json",
+      "entry_count": 14,
+      "coverage_level": "major_certificates_and_training_hubs",
+      "homepage": "https://grow.google/",
+      "catalog_url": "https://grow.google/intl/en_in/certificates/"
+    },
+    {
+      "portal_key": "green_software_foundation",
+      "portal_name": "Green Software Foundation Learn",
+      "filename": "green_software_foundation.json",
+      "entry_count": 10,
+      "coverage_level": "course_sections_and_official_standards",
+      "homepage": "https://learn.greensoftware.foundation/",
+      "catalog_url": "https://learn.greensoftware.foundation/"
+    },
+    {
+      "portal_key": "google_developers_learn",
+      "portal_name": "Google Developers Learn",
+      "filename": "google_developers_learn.json",
+      "entry_count": 28,
+      "coverage_level": "official_pathways_and_product_learning_hubs",
+      "homepage": "https://developers.google.com/learn",
+      "catalog_url": "https://developers.google.com/learn/pathways"
+    },
+    {
+      "portal_key": "google_tech_dev_guide",
+      "portal_name": "Google Tech Dev Guide",
+      "filename": "google_tech_dev_guide.json",
+      "entry_count": 30,
+      "coverage_level": "topic_resource_hubs",
+      "homepage": "https://techdevguide.withgoogle.com/",
+      "catalog_url": "https://techdevguide.withgoogle.com/resources/"
+    },
+    {
+      "portal_key": "futureskills_prime",
+      "portal_name": "FutureSkills Prime",
+      "filename": "futureskills_prime.json",
+      "entry_count": 20,
+      "coverage_level": "major_technology_pathways_and_catalog",
+      "homepage": "https://www.futureskillsprime.in/",
+      "catalog_url": "https://www.futureskillsprime.in/iDH/fsp/Catalog"
+    },
+    {
+      "portal_key": "ibm_skillsbuild",
+      "portal_name": "IBM SkillsBuild",
+      "filename": "ibm_skillsbuild.json",
+      "entry_count": 19,
+      "coverage_level": "learning_paths_and_public_catalogs",
+      "homepage": "https://skillsbuild.org/",
+      "catalog_url": "https://skillsbuild.org/learning-catalog"
+    },
+    {
+      "portal_key": "swayam",
+      "portal_name": "SWAYAM",
+      "filename": "swayam.json",
+      "entry_count": 24,
+      "coverage_level": "subject_search_links_for_rotating_semester_catalog",
+      "homepage": "https://swayam.gov.in/",
+      "catalog_url": "https://swayam.gov.in/search_courses"
+    },
+    {
+      "portal_key": "nptel",
+      "portal_name": "NPTEL",
+      "filename": "nptel.json",
+      "entry_count": 42,
+      "coverage_level": "discipline_and_domain_search_links",
+      "homepage": "https://nptel.ac.in/",
+      "catalog_url": "https://www.nptel.ac.in/courses"
+    },
+    {
+      "portal_key": "infosys_springboard",
+      "portal_name": "Infosys Springboard",
+      "filename": "infosys_springboard.json",
+      "entry_count": 30,
+      "coverage_level": "publicly_described_focus_areas_with_login_dependent_catalog",
+      "homepage": "https://infyspringboard.onwingspan.com/web/en/web",
+      "catalog_url": "https://infyspringboard.onwingspan.com/web/en/web"
+    },
+    {
+      "portal_key": "fedvte_cisa_learning",
+      "portal_name": "FedVTE / CISA Learning",
+      "filename": "fedvte_cisa_learning.json",
+      "entry_count": 30,
+      "coverage_level": "current_successor_platform_topics",
+      "homepage": "https://niccs.cisa.gov/training/cisa-learning",
+      "catalog_url": "https://niccs.cisa.gov/training/catalog"
+    },
+    {
+      "portal_key": "coursera",
+      "portal_name": "Coursera",
+      "filename": "coursera.json",
+      "entry_count": 52,
+      "coverage_level": "main_categories_and_high_demand_topic_searches",
+      "homepage": "https://www.coursera.org/",
+      "catalog_url": "https://www.coursera.org/browse"
+    },
+    {
+      "portal_key": "edx",
+      "portal_name": "edX",
+      "filename": "edx.json",
+      "entry_count": 60,
+      "coverage_level": "topic_pages",
+      "homepage": "https://www.edx.org/",
+      "catalog_url": "https://www.edx.org/learn"
+    },
+    {
+      "portal_key": "linkedin_learning",
+      "portal_name": "LinkedIn Learning",
+      "filename": "linkedin_learning.json",
+      "entry_count": 41,
+      "coverage_level": "official_topic_hubs_and_search_links",
+      "homepage": "https://www.linkedin.com/learning/",
+      "catalog_url": "https://www.linkedin.com/learning/topics"
+    },
+    {
+      "portal_key": "google_cloud_learning",
+      "portal_name": "Google Cloud Learning",
+      "filename": "google_cloud_learning.json",
+      "entry_count": 27,
+      "coverage_level": "official_training_areas_certificates_and_certifications",
+      "homepage": "https://cloud.google.com/learn",
+      "catalog_url": "https://cloud.google.com/learn/training"
+    }
+  ]
+}

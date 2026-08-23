@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "FutureSkills Prime",
+  "homepage": "https://www.futureskillsprime.in/",
+  "catalog_url": "https://www.futureskillsprime.in/iDH/fsp/Catalog",
+  "coverage_level": "major_technology_pathways_and_catalog",
+  "entries": [
+    {
+      "topic": "Artificial Intelligence",
+      "category": "Emerging Technology",
+      "skills": [
+        "Artificial Intelligence",
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "Responsible AI"
+      ],
+      "url": "https://www.futureskillsprime.in/course/artificial-intelligence/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Introduction to Artificial Intelligence",
+      "category": "Emerging Technology",
+      "skills": [
+        "AI Fundamentals",
+        "AI Applications",
+        "Responsible AI"
+      ],
+      "url": "https://www.futureskillsprime.in/pathways/introduction-to-artificial-intelligence/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Machine Learning and AI Algorithms",
+      "category": "Emerging Technology",
+      "skills": [
+        "Machine Learning",
+        "AI Algorithms",
+        "Responsible AI"
+      ],
+      "url": "https://www.futureskillsprime.in/pathways/machine-learning-and-ai-algorithms/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Advanced Data Analytics",
+      "category": "Data",
+      "skills": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Statistics",
+        "MySQL",
+        "Power BI",
+        "Excel"
+      ],
+      "url": "https://www.futureskillsprime.in/course/advanced-data-analytics/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Analytics",
+      "category": "Data",
+      "skills": [
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Business Analytics"
+      ],
+      "url": "https://www.futureskillsprime.in/pathways/data-analytics/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Science and Analytics",
+      "category": "Data",
+      "skills": [
+        "Data Science",
+        "Machine Learning",
+        "Statistics",
+        "Python"
+      ],
+      "url": "https://www.futureskillsprime.in/course/data-science-and-analytics/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Cloud Computing",
+      "category": "Cloud",
+      "skills": [
+        "Cloud Computing",
+        "Virtualization",
+        "Cloud Services",
+        "Cloud Architecture"
+      ],
+      "url": "https://www.futureskillsprime.in/pathways/cloud-computing-this/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Cloud Computing and Cloud Security",
+      "category": "Cloud",
+      "skills": [
+        "Cloud Security",
+        "Encryption",
+        "Access Control",
+        "Compliance"
+      ],
+      "url": "https://www.futureskillsprime.in/pathways/cloud-computing-cloud-security/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Cybersecurity",
+      "category": "Security",
+      "skills": [
+        "Cybersecurity",
+        "Threat Management",
+        "Risk Management",
+        "Security Operations"
+      ],
+      "url": "https://www.futureskillsprime.in/journey/cybersecurity/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Cybersecurity Foundation",
+      "category": "Security",
+      "skills": [
+        "Cybersecurity Fundamentals",
+        "Digital Security",
+        "Threat Management"
+      ],
+      "url": "https://www.futureskillsprime.in/course/ai-in-cybersecurity-a-beginners-foundation-course/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Internet of Things",
+      "category": "Emerging Technology",
+      "skills": [
+        "IoT",
+        "Arduino",
+        "Raspberry Pi",
+        "Sensors",
+        "IoT Protocols"
+      ],
+      "url": "https://www.futureskillsprime.in/course/course-on-internet-of-things/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "IoT Data Analytics",
+      "category": "Emerging Technology",
+      "skills": [
+        "IoT",
+        "Data Analytics",
+        "Smart Cities",
+        "Real-time Data"
+      ],
+      "url": "https://www.futureskillsprime.in/pathways/iot-data-analytics/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Industrial IoT",
+      "category": "Emerging Technology",
+      "skills": [
+        "Industrial IoT",
+        "Sensors",
+        "Operations Analytics",
+        "Predictive Maintenance"
+      ],
+      "url": "https://www.futureskillsprime.in/pathways/industrial-internet-of-things-or-iiot/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Blockchain",
+      "category": "Emerging Technology",
+      "skills": [
+        "Blockchain",
+        "Distributed Ledgers",
+        "Ethereum",
+        "Smart Contracts"
+      ],
+      "url": "https://www.futureskillsprime.in/course/course-on-blockchain/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Product Management",
+      "category": "Professional Skills",
+      "skills": [
+        "Product Strategy",
+        "Product Development",
+        "Product Marketing",
+        "Roadmapping"
+      ],
+      "url": "https://www.futureskillsprime.in/tech-sectors/product-management/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Product Discovery",
+      "category": "Professional Skills",
+      "skills": [
+        "Product Discovery",
+        "User Research",
+        "Prioritization",
+        "Product Validation"
+      ],
+      "url": "https://www.futureskillsprime.in/pathways/product-management-product-discovery/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Product Management Tools",
+      "category": "Professional Skills",
+      "skills": [
+        "Product Management Tools",
+        "Roadmapping",
+        "Analytics",
+        "Collaboration"
+      ],
+      "url": "https://www.futureskillsprime.in/pathways/product-management-tools-this/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Full Stack Development",
+      "category": "Software Development",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "SQL",
+        "REST APIs"
+      ],
+      "url": "https://www.futureskillsprime.in/course/academy/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Software Development Foundation",
+      "category": "Software Development",
+      "skills": [
+        "Programming",
+        "Databases",
+        "Operating Systems",
+        "Networks",
+        "Command Line"
+      ],
+      "url": "https://www.futureskillsprime.in/course/intensive/",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "FutureSkills Prime Catalog",
+      "category": "Catalog",
+      "skills": [
+        "AI",
+        "Big Data Analytics",
+        "Cloud Computing",
+        "Cybersecurity",
+        "IoT",
+        "RPA",
+        "Blockchain",
+        "AR/VR"
+      ],
+      "url": "https://www.futureskillsprime.in/iDH/fsp/Catalog",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    }
+  ]
+}

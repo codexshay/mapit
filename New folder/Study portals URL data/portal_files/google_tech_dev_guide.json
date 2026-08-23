@@ -1,0 +1,370 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "Google Tech Dev Guide",
+  "homepage": "https://techdevguide.withgoogle.com/",
+  "catalog_url": "https://techdevguide.withgoogle.com/resources/",
+  "coverage_level": "topic_resource_hubs",
+  "entries": [
+    {
+      "topic": "Data Structures and Algorithms",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Data Structures and Algorithms",
+        "Data Structures",
+        "Algorithms",
+        "Problem Solving",
+        "Complexity Analysis"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/data-structures-and-algorithms/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Algorithms",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Algorithms",
+        "Data Structures",
+        "Problem Solving",
+        "Complexity Analysis"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/algorithms/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Structures",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Data Structures",
+        "Algorithms",
+        "Problem Solving",
+        "Complexity Analysis"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/data-structures/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Arrays",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Arrays"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/arrays/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Strings",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Strings"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/strings/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Linked Lists",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Linked Lists"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/linked-lists/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Stacks",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Stacks"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/stacks/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Queues",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Queues"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/queues/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Trees",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Trees"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/trees/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Graphs",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Graphs"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/graphs/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Hash Tables",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Hash Tables"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/hash-tables/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Recursion",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Recursion"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/recursion/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Dynamic Programming",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Dynamic Programming",
+        "C Programming",
+        "Pointers",
+        "Memory Management"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/dynamic-programming/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Sorting",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Sorting"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/sorting/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Searching",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Searching"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/searching/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Complexity Analysis",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Complexity Analysis"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/complexity-analysis/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Object-Oriented Programming",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Object-Oriented Programming"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/object-oriented-programming/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Testing",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Testing"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/testing/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Debugging",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Debugging"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/debugging/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Code Review",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Code Review"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/code-review/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Software Design",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Software Design"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/design/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Software Engineering Principles",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Software Engineering Principles",
+        "Software Engineering",
+        "Testing",
+        "Design Patterns",
+        "Software Development Lifecycle"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/courses/principles/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Open Source",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Open Source"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/open-source/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Command Line",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Command Line"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/command-line-tutorial/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Git and Version Control",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Git and Version Control",
+        "Git",
+        "Version Control",
+        "Collaboration"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/git-and-version-control/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Web Development",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Web Development"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/web-development/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Machine Learning",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Machine Learning",
+        "Model Training",
+        "Feature Engineering",
+        "Model Evaluation"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/machine-learning/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Science",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Data Science",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/data-science-projects-for-beginners/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Interview Preparation",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Interview Preparation"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/interview-preparation/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Former Google Interview Questions",
+      "category": "Computer Science & Career Preparation",
+      "skills": [
+        "Former Google Interview Questions"
+      ],
+      "url": "https://techdevguide.withgoogle.com/resources/topics/former-google-interview-questions/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    }
+  ],
+  "limitations": "Some legacy resource routes may redirect because the guide is maintained as an archive-style resource collection."
+}

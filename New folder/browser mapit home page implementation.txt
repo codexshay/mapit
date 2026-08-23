@@ -1,0 +1,426 @@
+I inspected the current mobile implementation of [itmap.in](https://itmap.in/). The redesign should preserve its existing content and modules, while replacing the mobile bottom navigation and “More” bottom sheet with a Google Cloud–style top bar and left navigation drawer.
+
+## 1. Target mobile structure
+
+The redesigned page shell should contain:
+
+1. Fixed top application bar
+2. Left off-canvas navigation drawer
+3. Expandable global-search overlay
+4. Existing vertically scrolling home page
+5. Existing floating “sPAM me” control
+6. No mobile bottom navigation
+7. No three-dot menu
+
+The navigation drawer becomes the single location for every major section currently split between the top navigation, bottom navigation, and “More” drawer.
+
+## 2. Mobile top bar
+
+Use one compact bar, approximately 50–56px high.
+
+Horizontal arrangement:
+
+- Hamburger button
+- MapIT/MI logo
+- Flexible space
+- Global-search button
+- Bookmarks button
+
+Do not include:
+
+- Notifications
+- Three-dot utilities
+- The present secondary horizontal navigation strip
+- Desktop-style buttons overflowing horizontally
+
+### Hamburger button
+
+Opens the new left navigation drawer.
+
+Its expanded/collapsed state should be communicated accessibly, and tapping the backdrop or pressing Escape should close the drawer.
+
+### MapIT identity
+
+Use the existing `MI` mark or a compact MapIT wordmark. Selecting it should return the user to Dash/home.
+
+Avoid making the logo visually compete with search and Bookmarks.
+
+### Global search
+
+On mobile, replace the permanently visible search input with a search icon. The existing placeholder remains:
+
+> Search all sections...
+
+Selecting the icon should open a search surface across most of the available width. It should search only the sections and content already supported by MapIT.
+
+Suggested result groups:
+
+- Career Domains
+- Resources
+- InterviewQ
+- Jobs & Referrals
+- HR Contacts
+- Path Planner
+- Comparator
+- Bookmarks
+- Relevant home-page content
+
+Results should identify their source section. For example:
+
+- “Cloud Security” — Career Domains
+- “System Administrator questions” — InterviewQ
+- “AWS documentation” — Resources
+
+### Bookmarks button
+
+Replace Google Cloud’s notification position with a Bookmarks icon.
+
+Behavior:
+
+- Opens the existing Bookmarks section directly.
+- Does not open a notification popover.
+- Uses the current bookmark visual language.
+- Can optionally show a small count badge if MapIT already tracks a meaningful bookmark count.
+- Needs an accessible label such as “Open Bookmarks.”
+
+Bookmarks should also remain listed inside the side drawer because it is a first-class MapIT section.
+
+## 3. Side-panel layout
+
+The drawer should open from the left and occupy approximately 78–84% of the mobile viewport, capped near 310–320px.
+
+The rest of the screen receives a translucent dark backdrop.
+
+### Drawer header
+
+Include:
+
+- Close button
+- MapIT wordmark
+- Optional current-version marker, such as `v1.4.3`
+
+Do not include an avatar or account selector unless MapIT already has an account system that needs it.
+
+A small subtitle could read:
+
+> IT Career Mind-Map & InterviewQ Bank
+
+### Primary navigation
+
+List the current bottom-navigation destinations first:
+
+- Dash
+- Career Domains
+- Resources
+- InterviewQ
+
+Use the full “Career Domains” label in the drawer rather than the abbreviated bottom-bar label “Domains.”
+
+### Planning and comparison
+
+Create a second labelled group:
+
+- Path Planner
+- Comparator
+
+These are currently available under “More” and should become immediately discoverable.
+
+### Opportunities
+
+Create another group:
+
+- Jobs & Referrals — retain the existing `beta` badge
+- HR Contacts — retain the existing `beta` badge
+
+The badges should be compact, aligned beside the label, and not change the row height substantially.
+
+### Personal
+
+Include:
+
+- Bookmarks
+
+Although Bookmarks also has a top-bar shortcut, retaining it in the drawer makes the complete information architecture understandable.
+
+### Drawer footer
+
+Move the existing non-navigation items from the bottom sheet into a pinned or end-of-scroll drawer footer:
+
+- Catalog v2026
+- Light/Dark mode status
+- Toggle theme control
+
+The footer may remain at the bottom when the menu is short. On smaller screens, it should follow the scrollable navigation content so that it never covers menu rows.
+
+The existing `sPAM me` button should not be added to the drawer. It is an independent communication/action control and can remain floating over the page.
+
+## 4. Final drawer hierarchy
+
+The complete drawer should be:
+
+- MapIT
+  - Dash
+- Explore
+  - Career Domains
+  - Resources
+  - InterviewQ
+- Plan
+  - Path Planner
+  - Comparator
+- Opportunities
+  - Jobs & Referrals `beta`
+  - HR Contacts `beta`
+- Personal
+  - Bookmarks
+- Footer
+  - Catalog v2026
+  - Theme status
+  - Toggle Theme
+
+This uses every functional destination currently visible on MapIT without inventing new product sections.
+
+## 5. Existing home-page structure to preserve
+
+The main page should continue as one long vertical document. Do not turn it into tabs or separate horizontally swiped panels.
+
+Preserve the current order:
+
+1. Pathfinder/ant companion strip
+2. Welcome to MapIT hero
+3. Hackathons & Tech Events
+4. What’s New
+5. MapIT/Ant framework game area
+6. Footer
+
+The top-bar and drawer redesign should not change the internal content hierarchy of these sections.
+
+### Welcome hero
+
+Retain:
+
+- “WELCOME TO”
+- Large “MAPIT” title
+- Existing ant/pathfinder visual treatment
+
+The hero can remain a bordered white panel, but its upper spacing should account for the fixed top bar.
+
+### Hackathons & Tech Events
+
+Retain:
+
+- Section heading
+- Live Synced status
+- Event cards
+- Days-left labels
+- Descriptions
+- Organiser/location metadata
+- Open details
+- Official-site links
+- Existing carousel/next control if still required
+
+Do not place this content inside the navigation drawer.
+
+### What’s New
+
+Preserve its existing feature cards:
+
+- InterviewQ database
+- Jobs & Referrals
+- HR Directory
+
+The cards should continue to link to the relevant existing modules.
+
+### ANT game
+
+Preserve:
+
+- Level selector
+- Shields/score
+- Sound control
+- Exit control
+- Play button
+- Direction controls
+
+This section remains farther down the scrolling home page. It does not need a separate navigation entry unless one already exists in MapIT’s product routing.
+
+## 6. Scroll behavior
+
+Use one primary page scroll.
+
+- Top bar: sticky or fixed
+- Main content: normal document scroll
+- Drawer body: independent vertical scroll
+- Search results: independent vertical scroll
+- Background page: locked while drawer or search is open
+- Floating `sPAM me`: remains above page content
+- No fixed bottom navigation
+
+Removing the bottom bar will expose more of the home content and prevent it from competing with the floating `sPAM me` control.
+
+Add enough bottom padding to the main page for the floating control, but not the large padding currently needed for the bottom navigation.
+
+## 7. Responsive behavior
+
+### Mobile
+
+- Hamburger menu visible
+- Search represented by icon
+- Bookmarks represented by icon
+- Left drawer used for all navigation
+- Existing bottom bar hidden
+- Existing horizontal top-section buttons hidden
+- Main content remains single-column
+
+### Tablet
+
+Use the same drawer model initially. The search field may become permanently visible when sufficient width exists.
+
+### Desktop
+
+Two reasonable states are possible:
+
+- Keep the existing full desktop navigation, with the new drawer limited to mobile.
+- Use a collapsible persistent left sidebar if a later desktop redesign is desired.
+
+For the initial implementation, limit the structural change to mobile so desktop behavior is not unintentionally destabilized.
+
+## 8. Component-level implementation plan
+
+### Phase 1: Navigation inventory and routing
+
+Create one route/action registry from the existing navigation destinations:
+
+- Dash
+- Career Domains
+- Resources
+- InterviewQ
+- Path Planner
+- Comparator
+- Jobs & Referrals
+- HR Contacts
+- Bookmarks
+
+Both the mobile drawer and desktop navigation should consume this same registry. This prevents label, badge, and destination inconsistencies.
+
+### Phase 2: New mobile application bar
+
+Build the mobile header with:
+
+- Menu trigger
+- MapIT home link
+- Search trigger
+- Bookmarks shortcut
+
+Remove the three-dot concept entirely.
+
+Hide the current mobile horizontal navigation strip at the mobile breakpoint.
+
+### Phase 3: Left navigation drawer
+
+Build an off-canvas drawer with:
+
+- Header and close control
+- Grouped navigation
+- Beta badges
+- Active-section indication
+- Theme footer
+- Backdrop
+- Focus management
+- Internal scrolling
+
+The active item should use MapIT green through an indicator, icon, text, or subtle tinted background.
+
+### Phase 4: Move existing mobile navigation
+
+Transfer:
+
+- Dash
+- Domains
+- Resources
+- InterviewQ
+
+from the bottom navigation into the new drawer.
+
+Transfer:
+
+- Path Planner
+- Comparator
+- Jobs & Referrals
+- HR Contacts
+- Bookmarks
+- Catalog/version information
+- Theme control
+
+from the current “More” bottom sheet into the drawer.
+
+Once navigation parity is verified, remove the mobile bottom bar and “More” sheet.
+
+### Phase 5: Search transformation
+
+Reuse the existing search logic, but change its mobile presentation:
+
+- Closed state: icon
+- Open state: overlay/search sheet
+- Automatic focus
+- Grouped results
+- Clear/close control
+- Background scroll lock
+- Keyboard and Escape support
+
+Do not create a separate search index if the current “Search all sections...” functionality already supplies the required results.
+
+### Phase 6: Home-page spacing adjustments
+
+After removing the bottom bar:
+
+- Recalculate main-page bottom padding.
+- Ensure the top of the welcome panel does not sit beneath the fixed header.
+- Check the Hackathons cards at 320, 360, 390, and 430px widths.
+- Reposition `sPAM me` so it does not cover interactive content.
+- Preserve the existing home-page section order.
+
+### Phase 7: Accessibility and interaction QA
+
+Verify:
+
+- Drawer trigger exposes expanded state.
+- Drawer has an accessible navigation label.
+- Focus moves into the drawer when opened.
+- Focus returns to the hamburger when closed.
+- Backdrop and Escape close it.
+- Search focus returns to the search button.
+- All icon-only controls have labels.
+- Touch targets are at least 44px.
+- Active route is not communicated by color alone.
+- Drawer and search cannot be open simultaneously.
+
+## 9. Visual direction
+
+Keep MapIT’s current identity rather than copying Google Cloud literally:
+
+- Continue using MapIT green as the primary active color.
+- Keep the existing dark navy text.
+- Preserve the lightly technical/grid-based background.
+- Use white surfaces and restrained borders.
+- Use pale green for selected or active states.
+- Retain purple only where it already distinguishes Comparator or related content.
+- Keep the beta badges currently used by Jobs & Referrals and HR Contacts.
+
+The Google Cloud reference should influence information architecture and responsive behavior, not MapIT’s branding.
+
+## 10. Completion criteria
+
+The redesign is complete when:
+
+- The bottom mobile navigation is gone.
+- The “More” bottom sheet is gone.
+- Every previous destination remains reachable.
+- The drawer lists all nine MapIT destinations.
+- Bookmarks is available in both the header and drawer.
+- Search opens from the top bar and searches existing MapIT content.
+- No three-dot menu appears.
+- Theme switching remains available.
+- The home page retains all existing sections in the current order.
+- The home page uses one uninterrupted vertical scroll.
+- Drawer/search overlays lock background scrolling.
+- Desktop navigation continues working unchanged.

@@ -1,0 +1,583 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "NPTEL",
+  "homepage": "https://nptel.ac.in/",
+  "catalog_url": "https://www.nptel.ac.in/courses",
+  "coverage_level": "discipline_and_domain_search_links",
+  "entries": [
+    {
+      "topic": "Aerospace Engineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Aerospace Engineering"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Aerospace+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Aerospace Engineering"
+    },
+    {
+      "topic": "Agriculture Engineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Agriculture Engineering"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Agriculture+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Agriculture Engineering"
+    },
+    {
+      "topic": "Architecture and Planning",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Architecture and Planning"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Architecture+and+Planning",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Architecture and Planning"
+    },
+    {
+      "topic": "Biotechnology and Bioengineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Biotechnology and Bioengineering",
+        "Internet of Things",
+        "Sensors",
+        "Embedded Systems",
+        "IoT Networking"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Biotechnology+and+Bioengineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Biotechnology and Bioengineering"
+    },
+    {
+      "topic": "Chemical Engineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Chemical Engineering"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Chemical+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Chemical Engineering"
+    },
+    {
+      "topic": "Chemistry",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Chemistry"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Chemistry",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Chemistry"
+    },
+    {
+      "topic": "Civil Engineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Civil Engineering"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Civil+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Civil Engineering"
+    },
+    {
+      "topic": "Computer Science and Engineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Computer Science and Engineering"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Computer+Science+and+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Computer Science and Engineering"
+    },
+    {
+      "topic": "Electrical Engineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Electrical Engineering"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Electrical+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Electrical Engineering"
+    },
+    {
+      "topic": "Electronics and Communication Engineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Electronics and Communication Engineering",
+        "Communication",
+        "Collaboration",
+        "Professional Skills"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Electronics+and+Communication+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Electronics and Communication Engineering"
+    },
+    {
+      "topic": "Engineering Design",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Engineering Design"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Engineering+Design",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Engineering Design"
+    },
+    {
+      "topic": "Humanities and Social Sciences",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Humanities and Social Sciences"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Humanities+and+Social+Sciences",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Humanities and Social Sciences"
+    },
+    {
+      "topic": "Law",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Law"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Law",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Law"
+    },
+    {
+      "topic": "Management",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Management"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Management",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Management"
+    },
+    {
+      "topic": "Mathematics",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Mathematics"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Mathematics",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Mathematics"
+    },
+    {
+      "topic": "Mechanical Engineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Mechanical Engineering"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Mechanical+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Mechanical Engineering"
+    },
+    {
+      "topic": "Metallurgical and Materials Engineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Metallurgical and Materials Engineering"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Metallurgical+and+Materials+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Metallurgical and Materials Engineering"
+    },
+    {
+      "topic": "Mining Engineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Mining Engineering"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Mining+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Mining Engineering"
+    },
+    {
+      "topic": "Multidisciplinary",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Multidisciplinary"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Multidisciplinary",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Multidisciplinary"
+    },
+    {
+      "topic": "Ocean Engineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Ocean Engineering"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Ocean+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Ocean Engineering"
+    },
+    {
+      "topic": "Physics",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Physics"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Physics",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Physics"
+    },
+    {
+      "topic": "Textile Engineering",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Textile Engineering"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Textile+Engineering",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Textile Engineering"
+    },
+    {
+      "topic": "Economics",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Economics"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Economics",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Economics"
+    },
+    {
+      "topic": "Sports Science",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Sports Science"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Sports+Science",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Sports Science"
+    },
+    {
+      "topic": "Artificial Intelligence",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Artificial+Intelligence",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Artificial Intelligence"
+    },
+    {
+      "topic": "Cyber Security",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Cyber Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Cyber+Security",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Cyber Security"
+    },
+    {
+      "topic": "Data Science",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Data Science",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Data+Science",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Data Science"
+    },
+    {
+      "topic": "Programming",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Programming"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Programming",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Programming"
+    },
+    {
+      "topic": "Computer Systems",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Computer Systems"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Computer+Systems",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Computer Systems"
+    },
+    {
+      "topic": "Communication and Signal Processing",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Communication and Signal Processing",
+        "Communication",
+        "Collaboration",
+        "Professional Skills"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Communication+and+Signal+Processing",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Communication and Signal Processing"
+    },
+    {
+      "topic": "Control and Instrumentation",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Control and Instrumentation"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Control+and+Instrumentation",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Control and Instrumentation"
+    },
+    {
+      "topic": "Power Systems and Power Electronics",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Power Systems and Power Electronics"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Power+Systems+and+Power+Electronics",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Power Systems and Power Electronics"
+    },
+    {
+      "topic": "VLSI Design",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "VLSI Design"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=VLSI+Design",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "VLSI Design"
+    },
+    {
+      "topic": "Robotics",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Robotics"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Robotics",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Robotics"
+    },
+    {
+      "topic": "Manufacturing",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Manufacturing"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Manufacturing",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Manufacturing"
+    },
+    {
+      "topic": "Product Design",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Product Design"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Product+Design",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Product Design"
+    },
+    {
+      "topic": "Operations Management",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Operations Management"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Operations+Management",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Operations Management"
+    },
+    {
+      "topic": "Marketing",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Marketing",
+        "Digital Marketing",
+        "Campaign Management",
+        "Analytics"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Marketing",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Marketing"
+    },
+    {
+      "topic": "Human Resource Management",
+      "category": "NPTEL Discipline or Domain",
+      "skills": [
+        "Human Resource Management"
+      ],
+      "url": "https://nptel.ac.in/courses?searchText=Human+Resource+Management",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "NPTEL offerings change each semester; this points to the official course catalog search.",
+      "search_term": "Human Resource Management"
+    },
+    {
+      "topic": "Discipline-wise Course List",
+      "category": "Catalog",
+      "skills": [
+        "Course Discovery",
+        "Engineering",
+        "Sciences",
+        "Management"
+      ],
+      "url": "https://nptel.ac.in/localchapter/discipline",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "NPTEL Domain Certifications",
+      "category": "Catalog",
+      "skills": [
+        "Domain Certification",
+        "Structured Learning Paths"
+      ],
+      "url": "https://nptel.ac.in/domains/discipline",
+      "url_type": "topic_page",
+      "access": "free_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "NPTEL Course Catalog",
+      "category": "Catalog",
+      "skills": [
+        "Engineering",
+        "Sciences",
+        "Humanities",
+        "Management"
+      ],
+      "url": "https://www.nptel.ac.in/courses",
+      "url_type": "topic_page",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true
+    }
+  ]
+}

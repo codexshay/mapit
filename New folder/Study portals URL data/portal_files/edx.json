@@ -1,0 +1,735 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "edX",
+  "homepage": "https://www.edx.org/",
+  "catalog_url": "https://www.edx.org/learn",
+  "coverage_level": "topic_pages",
+  "entries": [
+    {
+      "topic": "Artificial Intelligence",
+      "category": "edX Topic",
+      "skills": [
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.edx.org/learn/artificial-intelligence",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Machine Learning",
+      "category": "edX Topic",
+      "skills": [
+        "Machine Learning",
+        "Model Training",
+        "Feature Engineering",
+        "Model Evaluation"
+      ],
+      "url": "https://www.edx.org/learn/machine-learning",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Science",
+      "category": "edX Topic",
+      "skills": [
+        "Data Science",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://www.edx.org/learn/data-science",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Analysis",
+      "category": "edX Topic",
+      "skills": [
+        "Data Analysis"
+      ],
+      "url": "https://www.edx.org/learn/data-analysis",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Python",
+      "category": "edX Topic",
+      "skills": [
+        "Python",
+        "Programming Fundamentals",
+        "Scripting",
+        "Automation"
+      ],
+      "url": "https://www.edx.org/learn/python",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Computer Science",
+      "category": "edX Topic",
+      "skills": [
+        "Computer Science"
+      ],
+      "url": "https://www.edx.org/learn/computer-science",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Computer Programming",
+      "category": "edX Topic",
+      "skills": [
+        "Computer Programming"
+      ],
+      "url": "https://www.edx.org/learn/computer-programming",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Software Engineering",
+      "category": "edX Topic",
+      "skills": [
+        "Software Engineering",
+        "Testing",
+        "Design Patterns",
+        "Software Development Lifecycle"
+      ],
+      "url": "https://www.edx.org/learn/software-engineering",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Cybersecurity",
+      "category": "edX Topic",
+      "skills": [
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://www.edx.org/learn/cybersecurity",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Cloud Computing",
+      "category": "edX Topic",
+      "skills": [
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://www.edx.org/learn/cloud-computing",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "DevOps",
+      "category": "edX Topic",
+      "skills": [
+        "DevOps",
+        "CI/CD",
+        "Infrastructure Automation",
+        "Monitoring"
+      ],
+      "url": "https://www.edx.org/learn/devops",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Web Development",
+      "category": "edX Topic",
+      "skills": [
+        "Web Development"
+      ],
+      "url": "https://www.edx.org/learn/web-development",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Java",
+      "category": "edX Topic",
+      "skills": [
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://www.edx.org/learn/java",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "JavaScript",
+      "category": "edX Topic",
+      "skills": [
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://www.edx.org/learn/javascript",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "C Programming",
+      "category": "edX Topic",
+      "skills": [
+        "C Programming",
+        "Pointers",
+        "Memory Management"
+      ],
+      "url": "https://www.edx.org/learn/c-programming",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "SQL",
+      "category": "edX Topic",
+      "skills": [
+        "SQL",
+        "Database Design",
+        "Queries",
+        "Data Management"
+      ],
+      "url": "https://www.edx.org/learn/sql",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Excel",
+      "category": "edX Topic",
+      "skills": [
+        "Excel",
+        "Spreadsheets",
+        "Data Analysis",
+        "Formulas",
+        "Data Visualization"
+      ],
+      "url": "https://www.edx.org/learn/excel",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Statistics",
+      "category": "edX Topic",
+      "skills": [
+        "Statistics"
+      ],
+      "url": "https://www.edx.org/learn/statistics",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Mathematics",
+      "category": "edX Topic",
+      "skills": [
+        "Mathematics"
+      ],
+      "url": "https://www.edx.org/learn/mathematics",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Calculus",
+      "category": "edX Topic",
+      "skills": [
+        "Calculus"
+      ],
+      "url": "https://www.edx.org/learn/calculus",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Physics",
+      "category": "edX Topic",
+      "skills": [
+        "Physics"
+      ],
+      "url": "https://www.edx.org/learn/physics",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Chemistry",
+      "category": "edX Topic",
+      "skills": [
+        "Chemistry"
+      ],
+      "url": "https://www.edx.org/learn/chemistry",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Biology",
+      "category": "edX Topic",
+      "skills": [
+        "Biology"
+      ],
+      "url": "https://www.edx.org/learn/biology",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Engineering",
+      "category": "edX Topic",
+      "skills": [
+        "Engineering"
+      ],
+      "url": "https://www.edx.org/learn/engineering",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Electrical Engineering",
+      "category": "edX Topic",
+      "skills": [
+        "Electrical Engineering"
+      ],
+      "url": "https://www.edx.org/learn/electrical-engineering",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Mechanical Engineering",
+      "category": "edX Topic",
+      "skills": [
+        "Mechanical Engineering"
+      ],
+      "url": "https://www.edx.org/learn/mechanical-engineering",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Civil Engineering",
+      "category": "edX Topic",
+      "skills": [
+        "Civil Engineering"
+      ],
+      "url": "https://www.edx.org/learn/civil-engineering",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Architecture",
+      "category": "edX Topic",
+      "skills": [
+        "Architecture"
+      ],
+      "url": "https://www.edx.org/learn/architecture",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Robotics",
+      "category": "edX Topic",
+      "skills": [
+        "Robotics"
+      ],
+      "url": "https://www.edx.org/learn/robotics",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Blockchain",
+      "category": "edX Topic",
+      "skills": [
+        "Blockchain",
+        "Distributed Ledgers",
+        "Smart Contracts"
+      ],
+      "url": "https://www.edx.org/learn/blockchain",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Internet of Things",
+      "category": "edX Topic",
+      "skills": [
+        "Internet of Things",
+        "Sensors",
+        "Embedded Systems",
+        "IoT Networking"
+      ],
+      "url": "https://www.edx.org/learn/internet-of-things",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Quantum Computing",
+      "category": "edX Topic",
+      "skills": [
+        "Quantum Computing"
+      ],
+      "url": "https://www.edx.org/learn/quantum-computing",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Business Administration",
+      "category": "edX Topic",
+      "skills": [
+        "Business Administration"
+      ],
+      "url": "https://www.edx.org/learn/business-administration",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Management",
+      "category": "edX Topic",
+      "skills": [
+        "Management"
+      ],
+      "url": "https://www.edx.org/learn/management",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Leadership",
+      "category": "edX Topic",
+      "skills": [
+        "Leadership"
+      ],
+      "url": "https://www.edx.org/learn/leadership",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Project Management",
+      "category": "edX Topic",
+      "skills": [
+        "Project Management",
+        "Planning",
+        "Risk Management",
+        "Stakeholder Management"
+      ],
+      "url": "https://www.edx.org/learn/project-management",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Product Management",
+      "category": "edX Topic",
+      "skills": [
+        "Product Management",
+        "Product Strategy",
+        "Product Discovery",
+        "Roadmapping",
+        "User Research"
+      ],
+      "url": "https://www.edx.org/learn/product-management",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Finance",
+      "category": "edX Topic",
+      "skills": [
+        "Finance"
+      ],
+      "url": "https://www.edx.org/learn/finance",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Accounting",
+      "category": "edX Topic",
+      "skills": [
+        "Accounting"
+      ],
+      "url": "https://www.edx.org/learn/accounting",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Economics",
+      "category": "edX Topic",
+      "skills": [
+        "Economics"
+      ],
+      "url": "https://www.edx.org/learn/economics",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Marketing",
+      "category": "edX Topic",
+      "skills": [
+        "Marketing",
+        "Digital Marketing",
+        "Campaign Management",
+        "Analytics"
+      ],
+      "url": "https://www.edx.org/learn/marketing",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Digital Marketing",
+      "category": "edX Topic",
+      "skills": [
+        "Digital Marketing",
+        "Git",
+        "Version Control",
+        "Collaboration",
+        "Campaign Management",
+        "Analytics"
+      ],
+      "url": "https://www.edx.org/learn/digital-marketing",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Entrepreneurship",
+      "category": "edX Topic",
+      "skills": [
+        "Entrepreneurship"
+      ],
+      "url": "https://www.edx.org/learn/entrepreneurship",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Supply Chain Management",
+      "category": "edX Topic",
+      "skills": [
+        "Supply Chain Management"
+      ],
+      "url": "https://www.edx.org/learn/supply-chain-management",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Healthcare",
+      "category": "edX Topic",
+      "skills": [
+        "Healthcare"
+      ],
+      "url": "https://www.edx.org/learn/healthcare",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Public Health",
+      "category": "edX Topic",
+      "skills": [
+        "Public Health"
+      ],
+      "url": "https://www.edx.org/learn/public-health",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Psychology",
+      "category": "edX Topic",
+      "skills": [
+        "Psychology"
+      ],
+      "url": "https://www.edx.org/learn/psychology",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Education",
+      "category": "edX Topic",
+      "skills": [
+        "Education"
+      ],
+      "url": "https://www.edx.org/learn/education",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Instructional Design",
+      "category": "edX Topic",
+      "skills": [
+        "Instructional Design"
+      ],
+      "url": "https://www.edx.org/learn/instructional-design",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Sustainability",
+      "category": "edX Topic",
+      "skills": [
+        "Sustainability"
+      ],
+      "url": "https://www.edx.org/learn/sustainability",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Environmental Science",
+      "category": "edX Topic",
+      "skills": [
+        "Environmental Science"
+      ],
+      "url": "https://www.edx.org/learn/environmental-science",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Spanish",
+      "category": "edX Topic",
+      "skills": [
+        "Spanish"
+      ],
+      "url": "https://www.edx.org/learn/spanish",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "English",
+      "category": "edX Topic",
+      "skills": [
+        "English"
+      ],
+      "url": "https://www.edx.org/learn/english",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Writing",
+      "category": "edX Topic",
+      "skills": [
+        "Writing"
+      ],
+      "url": "https://www.edx.org/learn/writing",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Art and Design",
+      "category": "edX Topic",
+      "skills": [
+        "Art and Design"
+      ],
+      "url": "https://www.edx.org/learn/art-and-design",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "History",
+      "category": "edX Topic",
+      "skills": [
+        "History"
+      ],
+      "url": "https://www.edx.org/learn/history",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Law",
+      "category": "edX Topic",
+      "skills": [
+        "Law"
+      ],
+      "url": "https://www.edx.org/learn/law",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Communication",
+      "category": "edX Topic",
+      "skills": [
+        "Communication",
+        "Collaboration",
+        "Professional Skills"
+      ],
+      "url": "https://www.edx.org/learn/communication",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Research Methods",
+      "category": "edX Topic",
+      "skills": [
+        "Research Methods"
+      ],
+      "url": "https://www.edx.org/learn/research-methods",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    },
+    {
+      "topic": "Raspberry Pi",
+      "category": "edX Topic",
+      "skills": [
+        "Raspberry Pi"
+      ],
+      "url": "https://www.edx.org/learn/raspberry-pi",
+      "url_type": "topic_page",
+      "access": "free_audit_or_paid",
+      "official_domain": true
+    }
+  ]
+}

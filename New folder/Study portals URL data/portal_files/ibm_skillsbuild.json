@@ -1,0 +1,277 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "IBM SkillsBuild",
+  "homepage": "https://skillsbuild.org/",
+  "catalog_url": "https://skillsbuild.org/learning-catalog",
+  "coverage_level": "learning_paths_and_public_catalogs",
+  "entries": [
+    {
+      "topic": "Artificial Intelligence",
+      "category": "Technical Skills",
+      "skills": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Generative AI",
+        "Responsible AI"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/artificial-intelligence",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Science",
+      "category": "Technical Skills",
+      "skills": [
+        "Data Science",
+        "Data Analysis",
+        "Data Visualization",
+        "Python"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/data-science",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Cybersecurity",
+      "category": "Technical Skills",
+      "skills": [
+        "Cybersecurity",
+        "Network Security",
+        "Incident Response",
+        "Threat Intelligence"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/cybersecurity",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Cloud Computing",
+      "category": "Technical Skills",
+      "skills": [
+        "Cloud Computing",
+        "Cloud Infrastructure",
+        "Cloud Services"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/cloud-computing",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Web Development",
+      "category": "Technical Skills",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Web Development"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/web-development",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "IT Support",
+      "category": "Technical Skills",
+      "skills": [
+        "IT Support",
+        "Hardware",
+        "Operating Systems",
+        "Troubleshooting"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/it-support",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Software Engineering",
+      "category": "Technical Skills",
+      "skills": [
+        "Software Engineering",
+        "Programming",
+        "Testing",
+        "Version Control"
+      ],
+      "url": "https://skillsbuild.org/college-students/course-catalog",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Infrastructure and Operations",
+      "category": "Technical Skills",
+      "skills": [
+        "IT Infrastructure",
+        "System Administration",
+        "Cloud Operations"
+      ],
+      "url": "https://skillsbuild.org/college-students/course-catalog",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Quantum Computing",
+      "category": "Emerging Technology",
+      "skills": [
+        "Quantum Computing",
+        "Qubits",
+        "Quantum Circuits"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/quantum-computing",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Enterprise Computing",
+      "category": "Technical Skills",
+      "skills": [
+        "Enterprise Computing",
+        "Mainframes",
+        "Infrastructure"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/enterprise-computing",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "UX Design",
+      "category": "Design",
+      "skills": [
+        "UX Design",
+        "User Research",
+        "Prototyping",
+        "Design Thinking"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/ux-design",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Agile",
+      "category": "Workplace Skills",
+      "skills": [
+        "Agile",
+        "Scrum",
+        "Team Collaboration"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/agile",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Enterprise Design Thinking",
+      "category": "Workplace Skills",
+      "skills": [
+        "Design Thinking",
+        "Human-centered Design",
+        "Ideation",
+        "Prototyping"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/design-thinking",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Professional Skills",
+      "category": "Workplace Skills",
+      "skills": [
+        "Communication",
+        "Collaboration",
+        "Problem Solving",
+        "Career Readiness"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/professional-skills",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Job Readiness",
+      "category": "Workplace Skills",
+      "skills": [
+        "Resume Writing",
+        "Interviewing",
+        "Career Planning",
+        "Professional Branding"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/job-readiness",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Sustainability",
+      "category": "Sustainability",
+      "skills": [
+        "Sustainability",
+        "Green Technology",
+        "Environmental Literacy"
+      ],
+      "url": "https://skillsbuild.org/students/course-catalog/sustainability",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Adult Learner Pathways",
+      "category": "Catalog",
+      "skills": [
+        "AI",
+        "Customer Service",
+        "Cybersecurity",
+        "Data",
+        "IT",
+        "Project Management",
+        "UX",
+        "Web Development"
+      ],
+      "url": "https://skillsbuild.org/adult-learners/explore-learning",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "College Course Catalog",
+      "category": "Catalog",
+      "skills": [
+        "AI and Data Science",
+        "Software Engineering",
+        "Cybersecurity",
+        "Infrastructure and Operations"
+      ],
+      "url": "https://skillsbuild.org/college-students/course-catalog",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    },
+    {
+      "topic": "Learning Catalog",
+      "category": "Catalog",
+      "skills": [
+        "Artificial Intelligence",
+        "Cybersecurity",
+        "Data",
+        "Cloud",
+        "Technology Skills"
+      ],
+      "url": "https://skillsbuild.org/learning-catalog",
+      "url_type": "topic_page",
+      "access": "free_registration",
+      "official_domain": true
+    }
+  ]
+}

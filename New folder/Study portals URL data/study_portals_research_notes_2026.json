@@ -1,0 +1,37 @@
+{
+  "title": "Study Portal JSON Catalog — Research and Usage Notes",
+  "verified_on": "2026-08-05",
+  "schema": {
+    "topic": "Human-readable topic, discipline, product, role, or pathway.",
+    "category": "Provider-specific grouping.",
+    "skills": "Normalized skills useful for search, filtering, role mapping, and MapIT taxonomy.",
+    "url": "Official provider-domain link.",
+    "url_type": {
+      "topic_page": "Stable topic or tutorial landing page.",
+      "learning_path": "A structured provider learning path.",
+      "catalog_filter": "Official catalog pre-filtered to the topic.",
+      "catalog_search": "Official catalog search for a dynamic platform.",
+      "login_dependent_catalog": "The provider requires login and does not expose stable public item URLs.",
+      "platform_entry": "Main platform link where the search term should be used."
+    },
+    "access": "Broad access model; actual regional price or eligibility may change."
+  },
+  "important_limitations": [
+    "Coursera, edX, LinkedIn Learning, Microsoft Learn, AWS Skill Builder, Google Cloud Skills Boost, SWAYAM, and NPTEL change frequently.",
+    "The files index major topic areas and stable discovery routes instead of attempting to snapshot every individual course.",
+    "Infosys Springboard and CISA Learning require registration and do not expose reliable public deep links for every course.",
+    "FedVTE has been replaced by CISA Learning; the FedVTE file therefore maps current successor resources.",
+    "Some course availability, pricing, language, certification, and eligibility details are region-dependent."
+  ],
+  "recommended_mapit_fields": [
+    "portal_name",
+    "topic",
+    "category",
+    "skills",
+    "url",
+    "url_type",
+    "access",
+    "search_term",
+    "verified_on"
+  ]
+}

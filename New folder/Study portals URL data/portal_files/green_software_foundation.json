@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "Green Software Foundation Learn",
+  "homepage": "https://learn.greensoftware.foundation/",
+  "catalog_url": "https://learn.greensoftware.foundation/",
+  "coverage_level": "course_sections_and_official_standards",
+  "entries": [
+    {
+      "topic": "Welcome and Course Overview",
+      "category": "Green Software Principles",
+      "skills": [
+        "Welcome and Course Overview",
+        "Green Software",
+        "Carbon Efficiency",
+        "Energy Efficiency",
+        "Sustainable Computing"
+      ],
+      "url": "https://learn.greensoftware.foundation/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Introduction to Green Software",
+      "category": "Green Software Principles",
+      "skills": [
+        "Introduction to Green Software",
+        "Green Software",
+        "Carbon Efficiency",
+        "Energy Efficiency",
+        "Sustainable Computing"
+      ],
+      "url": "https://learn.greensoftware.foundation/introduction/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Carbon Efficiency",
+      "category": "Green Software Principles",
+      "skills": [
+        "Carbon Efficiency",
+        "Green Software",
+        "Energy Efficiency",
+        "Sustainable Computing"
+      ],
+      "url": "https://learn.greensoftware.foundation/carbon-efficiency/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Energy Efficiency",
+      "category": "Green Software Principles",
+      "skills": [
+        "Energy Efficiency",
+        "Green Software",
+        "Carbon Efficiency",
+        "Sustainable Computing"
+      ],
+      "url": "https://learn.greensoftware.foundation/energy-efficiency/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Carbon Awareness",
+      "category": "Green Software Principles",
+      "skills": [
+        "Carbon Awareness",
+        "Green Software",
+        "Carbon Efficiency",
+        "Energy Efficiency",
+        "Sustainable Computing"
+      ],
+      "url": "https://learn.greensoftware.foundation/carbon-awareness/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Hardware Efficiency",
+      "category": "Green Software Principles",
+      "skills": [
+        "Hardware Efficiency",
+        "Green Software",
+        "Carbon Efficiency",
+        "Energy Efficiency",
+        "Sustainable Computing"
+      ],
+      "url": "https://learn.greensoftware.foundation/hardware-efficiency/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Measurement",
+      "category": "Green Software Principles",
+      "skills": [
+        "Measurement",
+        "Green Software",
+        "Carbon Efficiency",
+        "Energy Efficiency",
+        "Sustainable Computing"
+      ],
+      "url": "https://learn.greensoftware.foundation/measurement/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Climate Commitments",
+      "category": "Green Software Principles",
+      "skills": [
+        "Climate Commitments",
+        "Green Software",
+        "Carbon Efficiency",
+        "Energy Efficiency",
+        "Sustainable Computing"
+      ],
+      "url": "https://learn.greensoftware.foundation/climate-commitments/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Green Software Patterns",
+      "category": "Practical Patterns",
+      "skills": [
+        "Green Software Patterns",
+        "Green Software",
+        "Carbon Efficiency",
+        "Energy Efficiency",
+        "Sustainable Computing"
+      ],
+      "url": "https://patterns.greensoftware.foundation/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Software Carbon Intensity Specification",
+      "category": "Measurement Standards",
+      "skills": [
+        "Software Carbon Intensity Specification",
+        "Green Software",
+        "Carbon Efficiency",
+        "Energy Efficiency",
+        "Sustainable Computing"
+      ],
+      "url": "https://sci.greensoftware.foundation/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    }
+  ]
+}

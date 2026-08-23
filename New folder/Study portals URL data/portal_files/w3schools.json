@@ -1,0 +1,925 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "W3Schools",
+  "homepage": "https://www.w3schools.com/",
+  "catalog_url": "https://www.w3schools.com/tutorials/",
+  "coverage_level": "individual_tutorial_entry_points",
+  "entries": [
+    {
+      "topic": "HTML",
+      "category": "HTML & CSS",
+      "skills": [
+        "HTML",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility",
+        "Responsive Design",
+        "Layouts",
+        "Styling"
+      ],
+      "url": "https://www.w3schools.com/html/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "CSS",
+      "category": "HTML & CSS",
+      "skills": [
+        "CSS",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility",
+        "Responsive Design",
+        "Layouts",
+        "Styling"
+      ],
+      "url": "https://www.w3schools.com/css/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Responsive Web Design",
+      "category": "HTML & CSS",
+      "skills": [
+        "Responsive Web Design",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility",
+        "Responsive Design",
+        "Layouts",
+        "Styling"
+      ],
+      "url": "https://www.w3schools.com/css/css_rwd_intro.asp",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Bootstrap",
+      "category": "HTML & CSS",
+      "skills": [
+        "Bootstrap",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility",
+        "Responsive Design",
+        "Layouts",
+        "Styling"
+      ],
+      "url": "https://www.w3schools.com/bootstrap5/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "W3.CSS",
+      "category": "HTML & CSS",
+      "skills": [
+        "W3.CSS",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility",
+        "Responsive Design",
+        "Layouts",
+        "Styling"
+      ],
+      "url": "https://www.w3schools.com/w3css/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Sass",
+      "category": "HTML & CSS",
+      "skills": [
+        "Sass",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility",
+        "Responsive Design",
+        "Layouts",
+        "Styling"
+      ],
+      "url": "https://www.w3schools.com/sass/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "SVG",
+      "category": "HTML & CSS",
+      "skills": [
+        "SVG",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility",
+        "Responsive Design",
+        "Layouts",
+        "Styling"
+      ],
+      "url": "https://www.w3schools.com/graphics/svg_intro.asp",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Canvas",
+      "category": "HTML & CSS",
+      "skills": [
+        "Canvas",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility",
+        "Responsive Design",
+        "Layouts",
+        "Styling"
+      ],
+      "url": "https://www.w3schools.com/graphics/canvas_intro.asp",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Web Graphics",
+      "category": "HTML & CSS",
+      "skills": [
+        "Web Graphics",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility",
+        "Responsive Design",
+        "Layouts",
+        "Styling"
+      ],
+      "url": "https://www.w3schools.com/graphics/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "HTML Colors",
+      "category": "HTML & CSS",
+      "skills": [
+        "HTML Colors",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility",
+        "Responsive Design",
+        "Layouts",
+        "Styling"
+      ],
+      "url": "https://www.w3schools.com/colors/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Web Icons",
+      "category": "HTML & CSS",
+      "skills": [
+        "Web Icons",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility",
+        "Responsive Design",
+        "Layouts",
+        "Styling"
+      ],
+      "url": "https://www.w3schools.com/icons/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "How To",
+      "category": "HTML & CSS",
+      "skills": [
+        "How To",
+        "Semantic HTML",
+        "Web Page Structure",
+        "Forms",
+        "Accessibility",
+        "Responsive Design",
+        "Layouts",
+        "Styling"
+      ],
+      "url": "https://www.w3schools.com/howto/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "JavaScript",
+      "category": "JavaScript",
+      "skills": [
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://www.w3schools.com/js/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "React",
+      "category": "JavaScript",
+      "skills": [
+        "React",
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Components",
+        "State Management",
+        "Frontend Development"
+      ],
+      "url": "https://www.w3schools.com/react/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Angular",
+      "category": "JavaScript",
+      "skills": [
+        "Angular",
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "TypeScript",
+        "Components",
+        "Frontend Architecture"
+      ],
+      "url": "https://www.w3schools.com/angular/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "AngularJS",
+      "category": "JavaScript",
+      "skills": [
+        "AngularJS",
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Angular",
+        "TypeScript",
+        "Components"
+      ],
+      "url": "https://www.w3schools.com/angularjs/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Vue",
+      "category": "JavaScript",
+      "skills": [
+        "Vue",
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Vue.js",
+        "Components",
+        "State Management"
+      ],
+      "url": "https://www.w3schools.com/vue/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "jQuery",
+      "category": "JavaScript",
+      "skills": [
+        "jQuery",
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://www.w3schools.com/jquery/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "JSON",
+      "category": "JavaScript",
+      "skills": [
+        "JSON",
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://www.w3schools.com/js/js_json_intro.asp",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "AJAX",
+      "category": "JavaScript",
+      "skills": [
+        "AJAX",
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://www.w3schools.com/js/js_ajax_intro.asp",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "AppML",
+      "category": "JavaScript",
+      "skills": [
+        "AppML",
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://www.w3schools.com/appml/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "W3.JS",
+      "category": "JavaScript",
+      "skills": [
+        "W3.JS",
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://www.w3schools.com/w3js/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Python",
+      "category": "Backend & Programming",
+      "skills": [
+        "Python",
+        "Programming Fundamentals",
+        "Scripting",
+        "Automation"
+      ],
+      "url": "https://www.w3schools.com/python/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "SQL",
+      "category": "Backend & Programming",
+      "skills": [
+        "SQL",
+        "Database Design",
+        "Queries",
+        "Data Management"
+      ],
+      "url": "https://www.w3schools.com/sql/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "MySQL",
+      "category": "Backend & Programming",
+      "skills": [
+        "MySQL",
+        "SQL",
+        "Database Design",
+        "Queries",
+        "Data Management"
+      ],
+      "url": "https://www.w3schools.com/mysql/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "PostgreSQL",
+      "category": "Backend & Programming",
+      "skills": [
+        "PostgreSQL",
+        "SQL",
+        "Database Design",
+        "Queries",
+        "Data Management"
+      ],
+      "url": "https://www.w3schools.com/postgresql/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "MongoDB",
+      "category": "Backend & Programming",
+      "skills": [
+        "MongoDB",
+        "NoSQL",
+        "Document Databases"
+      ],
+      "url": "https://www.w3schools.com/mongodb/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "PHP",
+      "category": "Backend & Programming",
+      "skills": [
+        "PHP"
+      ],
+      "url": "https://www.w3schools.com/php/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Java",
+      "category": "Backend & Programming",
+      "skills": [
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://www.w3schools.com/java/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "C",
+      "category": "Backend & Programming",
+      "skills": [
+        "C"
+      ],
+      "url": "https://www.w3schools.com/c/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "C++",
+      "category": "Backend & Programming",
+      "skills": [
+        "C++",
+        "Object-Oriented Programming",
+        "Memory Management"
+      ],
+      "url": "https://www.w3schools.com/cpp/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "C#",
+      "category": "Backend & Programming",
+      "skills": [
+        "C#",
+        ".NET",
+        "Object-Oriented Programming"
+      ],
+      "url": "https://www.w3schools.com/cs/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "R",
+      "category": "Backend & Programming",
+      "skills": [
+        "R"
+      ],
+      "url": "https://www.w3schools.com/r/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Go",
+      "category": "Backend & Programming",
+      "skills": [
+        "Go"
+      ],
+      "url": "https://www.w3schools.com/go/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Kotlin",
+      "category": "Backend & Programming",
+      "skills": [
+        "Kotlin"
+      ],
+      "url": "https://www.w3schools.com/kotlin/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Rust",
+      "category": "Backend & Programming",
+      "skills": [
+        "Rust"
+      ],
+      "url": "https://www.w3schools.com/rust/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Django",
+      "category": "Backend & Programming",
+      "skills": [
+        "Django"
+      ],
+      "url": "https://www.w3schools.com/django/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "TypeScript",
+      "category": "Backend & Programming",
+      "skills": [
+        "TypeScript",
+        "Static Typing",
+        "JavaScript Tooling"
+      ],
+      "url": "https://www.w3schools.com/typescript/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "ASP",
+      "category": "Backend & Programming",
+      "skills": [
+        "ASP"
+      ],
+      "url": "https://www.w3schools.com/asp/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Node.js",
+      "category": "Backend & Programming",
+      "skills": [
+        "Node.js"
+      ],
+      "url": "https://www.w3schools.com/nodejs/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Swift",
+      "category": "Backend & Programming",
+      "skills": [
+        "Swift"
+      ],
+      "url": "https://www.w3schools.com/swift/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Raspberry Pi",
+      "category": "Backend & Programming",
+      "skills": [
+        "Raspberry Pi"
+      ],
+      "url": "https://www.w3schools.com/raspberrypi/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Git",
+      "category": "Backend & Programming",
+      "skills": [
+        "Git",
+        "Version Control",
+        "Collaboration"
+      ],
+      "url": "https://www.w3schools.com/git/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "AWS Cloud",
+      "category": "Cloud",
+      "skills": [
+        "AWS Cloud",
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations",
+        "Amazon Web Services",
+        "AWS Services"
+      ],
+      "url": "https://www.w3schools.com/aws/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "XML",
+      "category": "Data Formats",
+      "skills": [
+        "XML"
+      ],
+      "url": "https://www.w3schools.com/xml/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Artificial Intelligence",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "Artificial Intelligence",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.w3schools.com/ai/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Generative AI",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "Generative AI",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy",
+        "Artificial Intelligence",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.w3schools.com/gen_ai/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "ChatGPT",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "ChatGPT",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://www.w3schools.com/gen_ai/chatgpt-3-5/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Machine Learning",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "Machine Learning",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy",
+        "Model Training",
+        "Feature Engineering",
+        "Model Evaluation"
+      ],
+      "url": "https://www.w3schools.com/python/python_ml_getting_started.asp",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Structures and Algorithms",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "Data Structures and Algorithms",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy",
+        "Data Structures",
+        "Algorithms",
+        "Problem Solving"
+      ],
+      "url": "https://www.w3schools.com/dsa/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Science",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "Data Science",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://www.w3schools.com/datascience/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "NumPy",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "NumPy",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://www.w3schools.com/python/numpy/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Pandas",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "Pandas",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://www.w3schools.com/python/pandas/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "SciPy",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "SciPy",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://www.w3schools.com/python/scipy/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Matplotlib",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "Matplotlib",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://www.w3schools.com/python/matplotlib_intro.asp",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Statistics",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "Statistics",
+        "Data Analysis",
+        "Data Visualization",
+        "Data Literacy"
+      ],
+      "url": "https://www.w3schools.com/statistics/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Excel",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "Excel",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy",
+        "Spreadsheets",
+        "Formulas"
+      ],
+      "url": "https://www.w3schools.com/excel/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Google Sheets",
+      "category": "Data Analytics & AI",
+      "skills": [
+        "Google Sheets",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://www.w3schools.com/googlesheets/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Cyber Security",
+      "category": "Security",
+      "skills": [
+        "Cyber Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://www.w3schools.com/cybersecurity/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    },
+    {
+      "topic": "Web Accessibility",
+      "category": "Web Development",
+      "skills": [
+        "Web Accessibility"
+      ],
+      "url": "https://www.w3schools.com/accessibility/",
+      "url_type": "topic_page",
+      "access": "free",
+      "official_domain": true
+    }
+  ]
+}

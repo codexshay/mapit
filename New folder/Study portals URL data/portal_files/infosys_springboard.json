@@ -1,0 +1,472 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "Infosys Springboard",
+  "homepage": "https://infyspringboard.onwingspan.com/web/en/web",
+  "catalog_url": "https://infyspringboard.onwingspan.com/web/en/web",
+  "coverage_level": "publicly_described_focus_areas_with_login_dependent_catalog",
+  "entries": [
+    {
+      "topic": "Artificial Intelligence",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Artificial Intelligence"
+    },
+    {
+      "topic": "Generative AI",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Generative AI",
+        "Artificial Intelligence",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Generative AI"
+    },
+    {
+      "topic": "Machine Learning",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Machine Learning",
+        "Model Training",
+        "Feature Engineering",
+        "Model Evaluation"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Machine Learning"
+    },
+    {
+      "topic": "Data Science",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Data Science",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Data Science"
+    },
+    {
+      "topic": "Data Analytics",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Data Analytics",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Data Analytics"
+    },
+    {
+      "topic": "Python",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Python",
+        "Programming Fundamentals",
+        "Scripting",
+        "Automation"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Python"
+    },
+    {
+      "topic": "Java",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Java"
+    },
+    {
+      "topic": "C Sharp",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "C Sharp"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "C Sharp"
+    },
+    {
+      "topic": "JavaScript",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "JavaScript",
+        "DOM Manipulation",
+        "Asynchronous Programming",
+        "Web APIs",
+        "Java",
+        "Object-Oriented Programming",
+        "Application Development"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "JavaScript"
+    },
+    {
+      "topic": "Full Stack Development",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Full Stack Development"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Full Stack Development"
+    },
+    {
+      "topic": "Web Development",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Web Development"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Web Development"
+    },
+    {
+      "topic": "Cloud Computing",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Cloud Computing"
+    },
+    {
+      "topic": "Cybersecurity",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Cybersecurity"
+    },
+    {
+      "topic": "Information Security",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Information Security",
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Information Security"
+    },
+    {
+      "topic": "DevOps",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "DevOps",
+        "CI/CD",
+        "Infrastructure Automation",
+        "Monitoring"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "DevOps"
+    },
+    {
+      "topic": "Agile",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Agile"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Agile"
+    },
+    {
+      "topic": "Database Management",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Database Management",
+        "SQL",
+        "Database Design",
+        "Queries",
+        "Data Management"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Database Management"
+    },
+    {
+      "topic": "SQL",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "SQL",
+        "Database Design",
+        "Queries",
+        "Data Management"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "SQL"
+    },
+    {
+      "topic": "Computer Networking",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Computer Networking",
+        "TCP/IP",
+        "Network Troubleshooting"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Computer Networking"
+    },
+    {
+      "topic": "Operating Systems",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Operating Systems",
+        "System Administration",
+        "Troubleshooting"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Operating Systems"
+    },
+    {
+      "topic": "Internet of Things",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Internet of Things",
+        "Sensors",
+        "Embedded Systems",
+        "IoT Networking"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Internet of Things"
+    },
+    {
+      "topic": "Blockchain",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Blockchain",
+        "Distributed Ledgers",
+        "Smart Contracts"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Blockchain"
+    },
+    {
+      "topic": "Robotic Process Automation",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Robotic Process Automation"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Robotic Process Automation"
+    },
+    {
+      "topic": "Digital Marketing",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Digital Marketing",
+        "Git",
+        "Version Control",
+        "Collaboration",
+        "Campaign Management",
+        "Analytics"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Digital Marketing"
+    },
+    {
+      "topic": "Project Management",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Project Management",
+        "Planning",
+        "Risk Management",
+        "Stakeholder Management"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Project Management"
+    },
+    {
+      "topic": "Design Thinking",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Design Thinking"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Design Thinking"
+    },
+    {
+      "topic": "Spoken English",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Spoken English"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Spoken English"
+    },
+    {
+      "topic": "Communication Skills",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Communication Skills",
+        "Communication",
+        "Collaboration",
+        "Professional Skills"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Communication Skills"
+    },
+    {
+      "topic": "Professional Skills",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Professional Skills",
+        "Communication",
+        "Collaboration"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Professional Skills"
+    },
+    {
+      "topic": "Career Skills",
+      "category": "Infosys Springboard Learning Area",
+      "skills": [
+        "Career Skills"
+      ],
+      "url": "https://infyspringboard.onwingspan.com/web/en/web",
+      "url_type": "login_dependent_catalog",
+      "access": "free_registration",
+      "official_domain": true,
+      "notes": "Infosys Springboard does not expose stable public deep links for most catalog items. Log in and search the listed term.",
+      "search_term": "Career Skills"
+    }
+  ],
+  "limitations": "Most course URLs are session-, region-, or login-dependent, so stable public course deep links are not reliably available."
+}

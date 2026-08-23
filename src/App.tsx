@@ -21,6 +21,8 @@ const ResourcesLaunch = React.lazy(() => import('./components/launch/ResourcesLa
 const FullWebsiteLaunch = React.lazy(() => import('./components/launch/FullWebsiteLaunch'));
 const JobsReferrals = React.lazy(() => import('./components/JobsReferrals'));
 const SearchResultsView = React.lazy(() => import('./components/SearchResultsView'));
+import MobileNavDrawer from './components/MobileNavDrawer';
+import MobileSearchOverlay from './components/MobileSearchOverlay';
 import { interviewQDatabase } from './data/interviewQDatabase';
 import { ALL_ROLES_DATA, IT_DOMAINS } from './data/rolesData';
 import { CORNER_TIPS, CERTIFICATIONS_LIBRARY } from './data/librariesData';
@@ -1783,8 +1785,20 @@ export default function App() {
   }, [activeTab, selectedRoleId]);
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
-  const [isMobileMoreSheetOpen, setIsMobileMoreSheetOpen] = useState<boolean>(false);
+  const [isMobileSearchOpen, setIsMobileSearchOpen] = useState<boolean>(false);
   const [isChatOpen, setIsChatOpen] = useState<boolean>(false);
+
+  // Lock body scroll when mobile drawer or mobile search overlay is open
+  useEffect(() => {
+    if (isMobile && (isMobileMenuOpen || isMobileSearchOpen)) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobile, isMobileMenuOpen, isMobileSearchOpen]);
 
   // Dynamic order of tabs: DASH - BOOKMARKS - RESOURCES - INTERVIEWQ - CAREER DOMAINS - COMPARATOR - PATH PLANNER - JOBS & REFERRALS beta - HR CONTACTS beta
   const [tabOrder, setTabOrder] = useState<string[]>(['about', 'saved', 'libraries', 'interviewq', 'map', 'comparison', 'pathfinder', 'jobs', 'hr-contacts']);
@@ -2542,149 +2556,104 @@ export default function App() {
           </div>
         </header>
 
-        {/* MOBILE COHESIVE UNIFIED SEARCH HEADER (LinkedIn App Standard) */}
-        <header className="flex md:hidden sticky top-0 z-[100] backdrop-blur-md bg-[#070b13]/90 border-b border-[#121c38]/60 p-2.5 flex-col gap-2">
-          <div className="flex items-center justify-between gap-2.5">
-            {/* Tiny brand logo showing the initials "MI" */}
-            <div className={`${introStage !== 'done' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-              <button 
-                type="button"
-                onClick={() => setShowMobileClocksRibbon(!showMobileClocksRibbon)}
-                className="w-10 h-8 rounded-md bg-[#10b981] text-[#070b13] flex items-center justify-center font-sans font-black text-sm shrink-0 cursor-pointer shadow-[0_0_10px_rgba(16,185,129,0.3)] hover:scale-105 active:scale-95 transition focus:outline-none border-0"
-                title="Click to view live world clocks and theme toggle!"
-              >
-                MI
-              </button>
-            </div>
-
-            {/* Unified Search Bar - Hidden on Comparator and Path Planner */}
-            {activeTab !== 'comparison' && activeTab !== 'pathfinder' && (
-              <div ref={topMobileSearchRef} className="relative flex-1">
-                <div className="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none text-gray-400">
-                  <Search className="w-4 h-4" />
-                </div>
-                <input
-                  type="text"
-                  value={searchInputVal}
-                  onChange={(e) => setSearchInputVal(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' && searchInputVal.trim()) {
-                      setSearchQuery(searchInputVal);
-                      setActiveTab('search');
-                    }
-                  }}
-                  placeholder="Search all sections..."
-                  className="w-full pl-8.5 pr-2.5 py-1.5 text-xs font-sans rounded-md border text-slate-100 placeholder-slate-400 bg-[#111827]/80 border-slate-700/60 focus:outline-none transition-all focus:bg-[#0f172a] focus:border-[#10b981] focus:ring-1 focus:ring-[#10b981]/50"
-                />
-                {searchInputVal && (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setSearchInputVal('');
-                      setSearchQuery('');
-                      setActiveTab('map');
-                    }}
-                    className="absolute inset-y-0 right-0 pr-2.5 flex items-center text-gray-400 hover:text-white cursor-pointer"
-                  >
-                    ✕
-                  </button>
-                )}
-              </div>
-            )}
-
-            {/* DASH Trigger Beside Search Bar */}
+        {/* MOBILE TOP APPLICATION BAR (Google Cloud style compact bar: 50-56px) */}
+        <header className={`flex md:hidden sticky top-0 z-[100] h-14 px-3 items-center justify-between gap-2 backdrop-blur-md border-b transition-colors ${
+          theme === 'light'
+            ? 'bg-white/95 border-slate-200 shadow-xs text-slate-900'
+            : 'bg-[#070b13]/95 border-[#121c38]/80 shadow-md text-white'
+        }`}>
+          {/* Left: Hamburger & MapIT Identity */}
+          <div className="flex items-center gap-2">
             <button
-              onClick={() => handleTabClick('about')}
-              className={`p-2 rounded-full flex items-center justify-center border transition shrink-0 cursor-pointer ${
-                activeTab === 'about'
-                  ? 'bg-[#10b981]/15 border-[#10b981] text-[#10b981]'
-                  : 'bg-[#111827]/80 border-slate-700/60 text-gray-300 hover:text-white'
+              type="button"
+              onClick={() => {
+                setIsMobileSearchOpen(false);
+                setIsMobileMenuOpen(true);
+              }}
+              aria-label="Open Navigation Menu"
+              aria-expanded={isMobileMenuOpen}
+              className={`w-11 h-11 flex items-center justify-center rounded-md transition-colors cursor-pointer ${
+                theme === 'light'
+                  ? 'text-slate-700 hover:text-slate-900 hover:bg-slate-100'
+                  : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
               }`}
-              title="DASH View"
             >
-              <ChevronRight className="w-4 h-4" />
+              <Menu className="w-5 h-5 text-[#10b981]" />
+            </button>
+
+            <div
+              onClick={() => {
+                handleTabClick('about');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="flex items-center gap-1.5 cursor-pointer select-none py-1"
+              role="button"
+              tabIndex={0}
+              title="Return to Dash"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  handleTabClick('about');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
+            >
+              <span className="font-black text-lg tracking-tight font-sans">
+                <span className={theme === 'light' ? 'text-slate-900' : 'text-white'}>MAP</span>
+                <span className="text-[#10b981]">IT</span>
+              </span>
+            </div>
+          </div>
+
+          {/* Flexible space */}
+          <div className="flex-1" />
+
+          {/* Right: Global Search & Bookmarks Buttons */}
+          <div className="flex items-center gap-1.5">
+            {/* Global Search Button */}
+            <button
+              type="button"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                setIsMobileSearchOpen(true);
+              }}
+              aria-label="Search all sections"
+              className={`w-11 h-11 flex items-center justify-center rounded-md transition-colors cursor-pointer ${
+                theme === 'light'
+                  ? 'text-slate-700 hover:text-slate-900 hover:bg-slate-100'
+                  : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+              }`}
+              title="Search all sections..."
+            >
+              <Search className="w-5 h-5 text-slate-300 hover:text-emerald-400" />
+            </button>
+
+            {/* Bookmarks Shortcut Button */}
+            <button
+              type="button"
+              onClick={() => {
+                handleTabClick('saved');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              aria-label="Open Bookmarks"
+              className={`relative w-11 h-11 flex items-center justify-center rounded-md transition-colors cursor-pointer ${
+                activeTab === 'saved'
+                  ? theme === 'light'
+                    ? 'bg-yellow-50 text-yellow-600 border border-yellow-400/50'
+                    : 'bg-yellow-950/30 text-yellow-400 border border-yellow-500/40 shadow-[0_0_8px_rgba(250,204,21,0.25)]'
+                  : theme === 'light'
+                    ? 'text-slate-700 hover:text-slate-900 hover:bg-slate-100'
+                    : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+              }`}
+              title="Open Bookmarks"
+            >
+              <CustomBookmarkIcon fill={activeTab === 'saved' || bookmarks.length > 0 ? "currentColor" : "none"} className="w-5 h-5" />
+              {bookmarks.length > 0 && (
+                <span className="absolute top-1.5 right-1.5 min-w-4 h-4 px-1 rounded-full bg-yellow-400 text-black font-mono font-black text-[9px] flex items-center justify-center shadow-xs">
+                  {bookmarks.length}
+                </span>
+              )}
             </button>
           </div>
-
-          {/* GOOGLE CLOUD CONSOLE STYLE MOBILE QUICK CATEGORY NAV RAIL */}
-          <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-1 border-t border-[#121c38]/40 whitespace-nowrap select-none font-mono">
-            {tabOrder.map((tabId) => {
-              const meta = TAB_METADATA[tabId];
-              if (!meta) return null;
-              const isActive = activeTab === tabId;
-              const Icon = meta.icon;
-              return (
-                <button
-                  key={tabId}
-                  type="button"
-                  onClick={() => {
-                    handleTabClick(tabId);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                  }}
-                  className={`px-2.5 py-1 rounded-full text-[10px] font-bold uppercase transition-all duration-150 flex items-center gap-1 shrink-0 border ${
-                    isActive
-                      ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/60 shadow-[0_0_8px_rgba(16,185,129,0.3)]'
-                      : 'bg-[#0e1628]/80 text-slate-400 border-slate-700/50 hover:text-white hover:bg-slate-800/60'
-                  }`}
-                >
-                  <Icon className="w-3 h-3 shrink-0" />
-                  <span>{meta.label}</span>
-                  {(tabId === 'jobs' || tabId === 'hr-contacts') && (
-                    <span className="text-[7.5px] bg-amber-400 text-black font-extrabold px-1 rounded-xs">beta</span>
-                  )}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Animated horizontal clocks & theme ribbon */}
-          <AnimatePresence>
-            {showMobileClocksRibbon && (
-              <motion.div
-                initial={{ opacity: 0, height: 0, marginTop: 0 }}
-                animate={{ opacity: 1, height: 'auto', marginTop: 4 }}
-                exit={{ opacity: 0, height: 0, marginTop: 0 }}
-                className="overflow-hidden bg-[#070b13] border border-[#1e2e54]/80 p-2 flex items-center justify-between gap-1"
-              >
-                {/* 4 live clocks with labels but horizontal, small, minimized layout */}
-                <div className="flex-1 flex items-center justify-around gap-1 overflow-x-auto py-0.5 scrollbar-none">
-                  <div className="flex flex-col items-center shrink-0">
-                    <span className="text-[7px] text-gray-400 font-mono font-bold leading-none uppercase mb-1">IND</span>
-                    <AnalogClock timeZone="Asia/Kolkata" label="IN" countryCode="IN" flag="🇮🇳" isMinimized={true} theme={theme} />
-                  </div>
-                  <div className="flex flex-col items-center shrink-0">
-                    <span className="text-[7px] text-gray-400 font-mono font-bold leading-none uppercase mb-1">USA</span>
-                    <AnalogClock timeZone="America/New_York" label="NY" countryCode="US" flag="🇺🇸" isMinimized={true} theme={theme} />
-                  </div>
-                  <div className="flex flex-col items-center shrink-0">
-                    <span className="text-[7px] text-gray-400 font-mono font-bold leading-none uppercase mb-1">JPN</span>
-                    <AnalogClock timeZone="Asia/Tokyo" label="TY" countryCode="JP" flag="🇯🇵" isMinimized={true} theme={theme} />
-                  </div>
-                  <div className="flex flex-col items-center shrink-0">
-                    <span className="text-[7px] text-gray-400 font-mono font-bold leading-none uppercase mb-1">GBR</span>
-                    <AnalogClock timeZone="Europe/London" label="UK" countryCode="GB" flag="🇬🇧" isMinimized={true} theme={theme} />
-                  </div>
-                </div>
-
-                <div className="h-8 w-px bg-[#1e2e54]/50 mx-1" />
-
-                {/* Dark mode / Light mode toggle icon with no label */}
-                <button
-                  type="button"
-                  data-theme-switch="true"
-                  onClick={toggleTheme}
-                  className={`p-2 cursor-pointer rounded-md shrink-0 flex items-center justify-center transition border ${isThemeButtonPulsing ? "animate-pulse ring-2 ring-cyan-400 border-cyan-400 bg-cyan-950/40 text-cyan-300 shadow-[0_0_12px_rgba(6,182,212,0.6)]" : "bg-[#0c1324] border-[#1e2e54] hover:border-[#10b981] text-gray-300 hover:text-white"}`}
-                  title={theme === 'dark' ? "Switch to Light Theme" : "Switch to Dark Theme"}
-                >
-                  {theme === 'dark' ? (
-                    <Sun className="w-3.5 h-3.5 text-amber-400" />
-                  ) : (
-                    <Moon className="w-3.5 h-3.5 text-cyan-400" />
-                  )}
-                </button>
-              </motion.div>
-            )}
-          </AnimatePresence>
         </header>
 
 
@@ -4207,7 +4176,7 @@ export default function App() {
           </AnimatePresence>
         </main>
 
-        <footer className="w-full max-w-full px-4 sm:px-6 md:px-8 border-t border-[#121c38]/40 pt-6 pb-24 md:pb-12 mt-12 text-center text-xs font-mono text-gray-600">
+        <footer className="w-full max-w-full px-4 sm:px-6 md:px-8 border-t border-[#121c38]/40 pt-6 pb-12 mt-12 text-center text-xs font-mono text-gray-600">
           <p className="leading-relaxed">
             MapIT
           </p>
@@ -4231,7 +4200,7 @@ export default function App() {
       {showScrollTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-36 md:bottom-24 right-5 md:right-6 z-[8500] bg-[#070b13]/95 border-2 border-cyan-500/80 hover:border-cyan-400 p-2 text-cyan-400 shadow-[2px_2px_0px_rgba(34,211,238,0.4)] hover:shadow-[4px_4px_0px_#22d3ee] active:translate-y-0.5 hover:bg-cyan-950/20 transition-all duration-300 cursor-pointer group flex items-center justify-center rounded-none"
+          className="fixed bottom-20 md:bottom-24 right-4 md:right-6 z-[8500] bg-[#070b13]/95 border-2 border-cyan-500/80 hover:border-cyan-400 p-2 text-cyan-400 shadow-[2px_2px_0px_rgba(34,211,238,0.4)] hover:shadow-[4px_4px_0px_#22d3ee] active:translate-y-0.5 hover:bg-cyan-950/20 transition-all duration-300 cursor-pointer group flex items-center justify-center rounded-none"
           title="Climb back to top"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="group-hover:-translate-y-1 transition-transform duration-300">
@@ -4270,7 +4239,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 15, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-20 left-4 md:bottom-6 md:left-6 z-[99999] pointer-events-none select-none font-mono"
+            className="fixed bottom-6 left-4 md:bottom-6 md:left-6 z-[99999] pointer-events-none select-none font-mono"
           >
             <div className="bg-[#070b13]/95 border-2 border-yellow-400/90 text-white px-4 py-3 shadow-[0_8px_24px_rgba(0,0,0,0.85)] backdrop-blur-md flex items-center gap-3">
               <div className="w-7 h-7 rounded-none bg-yellow-400 text-black flex items-center justify-center font-bold text-xs shrink-0 shadow-[0_0_10px_rgba(250,204,21,0.6)]">
@@ -4289,155 +4258,45 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      {/* GOOGLE CLOUD CONSOLE MOBILE SLIDE-UP BOTTOM ACTION SHEET DRAWER */}
-      <AnimatePresence>
-        {isMobile && isMobileMoreSheetOpen && (
-          <>
-            {/* Backdrop overlay */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsMobileMoreSheetOpen(false)}
-              className="fixed inset-0 z-[140] bg-black/75 backdrop-blur-xs md:hidden"
-            />
+      {/* MOBILE LEFT NAVIGATION DRAWER */}
+      <MobileNavDrawer
+        isOpen={isMobile && isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+        activeTab={activeTab}
+        onSelectTab={(tabId) => {
+          handleTabClick(tabId);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        bookmarksCount={bookmarks.length}
+        theme={theme}
+        onToggleTheme={toggleTheme}
+        appVersion={APP_VERSION}
+        catalogVersion={CATALOG_VERSION}
+      />
 
-            {/* Bottom Sheet Modal Container */}
-            <motion.div
-              initial={{ y: '100%' }}
-              animate={{ y: 0 }}
-              exit={{ y: '100%' }}
-              transition={{ type: 'spring', damping: 25, stiffness: 280 }}
-              className="fixed bottom-0 left-0 right-0 z-[150] bg-[#070b13] border-t-2 border-emerald-500/60 rounded-t-2xl p-4 md:hidden shadow-[0_-12px_32px_rgba(0,0,0,0.9)] select-none font-mono text-xs max-h-[85vh] overflow-y-auto"
-            >
-              {/* Drag Handle Bar */}
-              <div className="w-12 h-1 bg-slate-700 rounded-full mx-auto mb-4" />
-
-              <div className="flex items-center justify-between pb-3 border-b border-[#121c38]">
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                  <h3 className="text-sm font-black uppercase text-white tracking-wider">MapIT Console Drawer</h3>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setIsMobileMoreSheetOpen(false)}
-                  className="p-1 text-slate-400 hover:text-white bg-slate-900 border border-slate-700 rounded-full"
-                >
-                  ✕
-                </button>
-              </div>
-
-              {/* Auxiliary Navigation Grid */}
-              <div className="grid grid-cols-2 gap-2.5 my-4">
-                {[
-                  { id: 'pathfinder', label: 'Path Planner', icon: TAB_METADATA.pathfinder.icon, color: 'text-emerald-400 border-emerald-500/40 bg-emerald-950/30' },
-                  { id: 'comparison', label: 'Comparator', icon: TAB_METADATA.comparison.icon, color: 'text-purple-400 border-purple-500/40 bg-purple-950/30' },
-                  { id: 'jobs', label: 'Jobs & Referrals', icon: TAB_METADATA.jobs.icon, color: 'text-zinc-200 border-zinc-500/40 bg-zinc-900/40', isBeta: true },
-                  { id: 'hr-contacts', label: 'HR Contacts', icon: TAB_METADATA['hr-contacts'].icon, color: 'text-slate-200 border-slate-700/40 bg-slate-900/40', isBeta: true },
-                  { id: 'saved', label: 'Bookmarks', icon: TAB_METADATA.saved.icon, color: 'text-yellow-400 border-yellow-500/40 bg-yellow-950/30' },
-                ].map((item) => {
-                  const Icon = item.icon;
-                  const isActive = activeTab === item.id;
-                  return (
-                    <button
-                      key={item.id}
-                      type="button"
-                      onClick={() => {
-                        handleTabClick(item.id);
-                        setIsMobileMoreSheetOpen(false);
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                      }}
-                      className={`p-3 border rounded-md flex items-center gap-3 transition-all cursor-pointer ${
-                        isActive
-                          ? 'border-emerald-400 bg-emerald-500/20 text-white font-extrabold shadow-[0_0_12px_rgba(16,185,129,0.25)]'
-                          : `${item.color} hover:bg-slate-800/80`
-                      }`}
-                    >
-                      <Icon className="w-5 h-5 shrink-0" />
-                      <div className="flex flex-col items-start truncate">
-                        <span className="text-xs font-bold truncate flex items-center gap-1">
-                          {item.label}
-                          {item.isBeta && (
-                            <span className="text-[7.5px] bg-amber-400 text-black font-extrabold px-1 rounded-xs">beta</span>
-                          )}
-                        </span>
-                        <span className="text-[9px] text-slate-400 font-sans">Open module</span>
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-
-              {/* Bottom Console Stats & Theme Control */}
-              <div className="pt-3 border-t border-[#121c38] flex items-center justify-between text-[10px] text-slate-400">
-                <div className="flex items-center gap-2">
-                  <span className="text-emerald-400 font-bold">Catalog v2026</span>
-                  <span>•</span>
-                  <span>{theme === 'light' ? 'Light Mode' : 'Dark Mode'}</span>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => {
-                    toggleTheme();
-                    setIsMobileMoreSheetOpen(false);
-                  }}
-                  className="px-2.5 py-1 bg-slate-900 border border-slate-700 text-slate-200 rounded text-[10px] font-bold"
-                >
-                  Toggle Theme {theme === 'light' ? '🌙' : '☀️'}
-                </button>
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
-
-      {/* GOOGLE CLOUD CONSOLE MOBILE 5-SLOT FIXED BOTTOM NAVIGATION BAR */}
-      {isMobile && (
-        <div className="fixed bottom-0 left-0 right-0 z-[130] bg-[#070b13]/95 border-t border-[#121c38]/80 backdrop-blur-md px-1 py-1 flex items-center justify-around h-15 shadow-[0_-4px_16px_rgba(0,0,0,0.7)] font-mono">
-          {[
-            { id: 'about', label: 'DASH', icon: ChevronRight, activeColor: 'text-white border-white' },
-            { id: 'map', label: 'DOMAINS', icon: TAB_METADATA.map.icon, activeColor: 'text-yellow-400 border-yellow-400' },
-            { id: 'libraries', label: 'RESOURCES', icon: TAB_METADATA.libraries.icon, activeColor: 'text-cyan-400 border-cyan-400' },
-            { id: 'interviewq', label: 'INTERVIEWQ', icon: TAB_METADATA.interviewq.icon, activeColor: 'text-zinc-100 border-zinc-100' },
-            { id: 'more', label: 'MORE ☰', icon: Menu, activeColor: 'text-emerald-400 border-emerald-400', isActionSheet: true }
-          ].map((item) => {
-            const isActive = item.isActionSheet ? isMobileMoreSheetOpen : activeTab === item.id;
-            const Icon = item.icon;
-            return (
-              <button
-                key={item.id}
-                type="button"
-                onClick={() => {
-                  if (item.isActionSheet) {
-                    setIsMobileMoreSheetOpen(prev => !prev);
-                  } else {
-                    setIsMobileMoreSheetOpen(false);
-                    handleTabClick(item.id);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                  }
-                }}
-                className={`flex-1 flex flex-col items-center justify-center py-1 select-none transition-all duration-150 relative cursor-pointer ${
-                  isActive 
-                    ? `${item.activeColor.split(' ')[0]} font-extrabold` 
-                    : 'text-slate-400 hover:text-slate-200'
-                }`}
-              >
-                {/* Active top line indicator */}
-                {isActive && (
-                  <motion.div 
-                    layoutId="mobileActiveTabIndicator"
-                    className="absolute top-[-4px] left-1/4 right-1/4 h-0.5 rounded-full bg-emerald-400 shadow-[0_0_8px_#10b981]"
-                  />
-                )}
-                <div className={`p-0.5 ${isActive ? 'scale-110 transition-transform text-emerald-400' : ''}`}>
-                  <Icon className="w-4.5 h-4.5" />
-                </div>
-                <span className="text-[8.5px] mt-0.5 font-bold tracking-tight uppercase">{item.label}</span>
-              </button>
-            );
-          })}
-        </div>
-      )}
+      {/* EXPANDABLE MOBILE GLOBAL SEARCH OVERLAY */}
+      <MobileSearchOverlay
+        isOpen={isMobile && isMobileSearchOpen}
+        onClose={() => setIsMobileSearchOpen(false)}
+        initialQuery={searchInputVal}
+        onNavigateTab={(tabId) => {
+          handleTabClick(tabId);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        onSelectRole={(roleId) => {
+          handleToggleBookmark(roleId);
+          setSelectedRoleId(roleId);
+          setActiveTab('map');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        onFullSearchSubmit={(q) => {
+          setSearchInputVal(q);
+          setSearchQuery(q);
+          setActiveTab('search');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+        theme={theme}
+      />
     </div>
   );
 }

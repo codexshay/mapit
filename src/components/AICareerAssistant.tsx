@@ -213,7 +213,7 @@ export default function AICareerAssistant({
   return (
     <>
       {/* Retron-glowing Floating Toggle Button */}
-      <div className="fixed bottom-22 md:bottom-5 right-5 z-[9990]">
+      <div className="fixed bottom-5 right-4 md:bottom-5 md:right-6 z-[9990]">
         <button
           onClick={() => setIsOpen(!isOpen)}
           id="toggle-ai-assistant"

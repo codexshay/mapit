@@ -1,0 +1,507 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "LinkedIn Learning",
+  "homepage": "https://www.linkedin.com/learning/",
+  "catalog_url": "https://www.linkedin.com/learning/topics",
+  "coverage_level": "official_topic_hubs_and_search_links",
+  "entries": [
+    {
+      "topic": "Artificial Intelligence",
+      "category": "Technology",
+      "skills": [
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/artificial-intelligence",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Cloud Computing",
+      "category": "Technology",
+      "skills": [
+        "Cloud Computing",
+        "Cloud Architecture",
+        "Cloud Operations"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/cloud-computing",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Cybersecurity",
+      "category": "Technology",
+      "skills": [
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/cybersecurity",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Data Science",
+      "category": "Technology",
+      "skills": [
+        "Data Science",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/data-science",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Database Management",
+      "category": "Technology",
+      "skills": [
+        "Database Management",
+        "SQL",
+        "Database Design",
+        "Queries",
+        "Data Management"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/database-management",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "DevOps",
+      "category": "Technology",
+      "skills": [
+        "DevOps",
+        "CI/CD",
+        "Infrastructure Automation",
+        "Monitoring"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/devops",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Hardware",
+      "category": "Technology",
+      "skills": [
+        "Hardware"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/hardware",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "IT Help Desk",
+      "category": "Technology",
+      "skills": [
+        "IT Help Desk"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/it-help-desk",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Mobile Development",
+      "category": "Technology",
+      "skills": [
+        "Mobile Development"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/mobile-development",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Network and System Administration",
+      "category": "Technology",
+      "skills": [
+        "Network and System Administration",
+        "Computer Networking",
+        "TCP/IP",
+        "Network Troubleshooting"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/network-and-system-administration",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Software Development",
+      "category": "Technology",
+      "skills": [
+        "Software Development"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/software-development",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Web Development",
+      "category": "Technology",
+      "skills": [
+        "Web Development"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/web-development",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Business Analysis and Strategy",
+      "category": "Business",
+      "skills": [
+        "Business Analysis and Strategy"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/business-analysis-and-strategy",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Business Software and Tools",
+      "category": "Business",
+      "skills": [
+        "Business Software and Tools"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/business-software-and-tools",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Career Development",
+      "category": "Business",
+      "skills": [
+        "Career Development"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/career-development",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Customer Service",
+      "category": "Business",
+      "skills": [
+        "Customer Service"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/customer-service-3",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Finance and Accounting",
+      "category": "Business",
+      "skills": [
+        "Finance and Accounting"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/finance-and-accounting",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Human Resources",
+      "category": "Business",
+      "skills": [
+        "Human Resources"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/human-resources",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Leadership and Management",
+      "category": "Business",
+      "skills": [
+        "Leadership and Management"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/leadership-and-management",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Marketing",
+      "category": "Business",
+      "skills": [
+        "Marketing",
+        "Digital Marketing",
+        "Campaign Management",
+        "Analytics"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/marketing",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Professional Development",
+      "category": "Business",
+      "skills": [
+        "Professional Development",
+        "Communication",
+        "Collaboration",
+        "Professional Skills"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/professional-development",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Project Management",
+      "category": "Business",
+      "skills": [
+        "Project Management",
+        "Planning",
+        "Risk Management",
+        "Stakeholder Management"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/project-management",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Sales",
+      "category": "Business",
+      "skills": [
+        "Sales"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/sales",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Small Business and Entrepreneurship",
+      "category": "Business",
+      "skills": [
+        "Small Business and Entrepreneurship"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/small-business-and-entrepreneurship",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Training and Education",
+      "category": "Business",
+      "skills": [
+        "Training and Education"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/training-and-education",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Animation and Illustration",
+      "category": "Creative",
+      "skills": [
+        "Animation and Illustration"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/animation-and-illustration",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Audio and Music",
+      "category": "Creative",
+      "skills": [
+        "Audio and Music"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/audio-and-music",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Graphic Design",
+      "category": "Creative",
+      "skills": [
+        "Graphic Design"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/graphic-design",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Motion Graphics and VFX",
+      "category": "Creative",
+      "skills": [
+        "Motion Graphics and VFX"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/motion-graphics-and-vfx",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Photography",
+      "category": "Creative",
+      "skills": [
+        "Photography"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/photography",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Product and Manufacturing",
+      "category": "Creative",
+      "skills": [
+        "Product and Manufacturing"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/product-and-manufacturing",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "User Experience",
+      "category": "Creative",
+      "skills": [
+        "User Experience",
+        "User Experience Design",
+        "User Research",
+        "Prototyping",
+        "Usability"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/user-experience",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Video",
+      "category": "Creative",
+      "skills": [
+        "Video"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/video",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Visualization and Real-Time",
+      "category": "Creative",
+      "skills": [
+        "Visualization and Real-Time"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/visualization-and-real-time",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Web Design",
+      "category": "Creative",
+      "skills": [
+        "Web Design"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/web-design",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Professional Certificates",
+      "category": "Credentials",
+      "skills": [
+        "Professional Certificates",
+        "Communication",
+        "Collaboration",
+        "Professional Skills"
+      ],
+      "url": "https://www.linkedin.com/learning/topics/professional-certificates",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Generative AI",
+      "category": "Technology",
+      "skills": [
+        "Generative AI",
+        "Artificial Intelligence",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://www.linkedin.com/learning/search?keywords=Generative+AI",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Microsoft 365",
+      "category": "Technology",
+      "skills": [
+        "Microsoft 365"
+      ],
+      "url": "https://www.linkedin.com/learning/search?keywords=Microsoft+365",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "Power BI",
+      "category": "Technology",
+      "skills": [
+        "Power BI",
+        "Data Modeling",
+        "Dashboard Design",
+        "Business Intelligence"
+      ],
+      "url": "https://www.linkedin.com/learning/search?keywords=Power+BI",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "ServiceNow",
+      "category": "Technology",
+      "skills": [
+        "ServiceNow"
+      ],
+      "url": "https://www.linkedin.com/learning/search?keywords=ServiceNow",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    },
+    {
+      "topic": "ITIL",
+      "category": "Technology",
+      "skills": [
+        "ITIL"
+      ],
+      "url": "https://www.linkedin.com/learning/search?keywords=ITIL",
+      "url_type": "topic_page",
+      "access": "subscription_or_trial",
+      "official_domain": true
+    }
+  ]
+}

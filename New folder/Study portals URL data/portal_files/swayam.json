@@ -1,0 +1,334 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-08-05",
+  "data_scope": "Publicly accessible topic, pathway, catalog-filter, and learning-hub links from official provider domains.",
+  "skills_method": "Skills are normalized from the provider's topic names, public curriculum descriptions, and common job-market terminology. They are indexing tags, not a verbatim claim that every course teaches every listed skill.",
+  "portal_name": "SWAYAM",
+  "homepage": "https://swayam.gov.in/",
+  "catalog_url": "https://swayam.gov.in/search_courses",
+  "coverage_level": "subject_search_links_for_rotating_semester_catalog",
+  "entries": [
+    {
+      "topic": "Architecture and Planning",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Architecture and Planning"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Architecture+and+Planning",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Architecture and Planning"
+    },
+    {
+      "topic": "Design",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Design"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Design",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Design"
+    },
+    {
+      "topic": "Engineering and Technology",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Engineering and Technology"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Engineering+and+Technology",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Engineering and Technology"
+    },
+    {
+      "topic": "Health Sciences",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Health Sciences"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Health+Sciences",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Health Sciences"
+    },
+    {
+      "topic": "Humanities and Arts",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Humanities and Arts"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Humanities+and+Arts",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Humanities and Arts"
+    },
+    {
+      "topic": "Law",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Law"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Law",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Law"
+    },
+    {
+      "topic": "Management and Commerce",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Management and Commerce"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Management+and+Commerce",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Management and Commerce"
+    },
+    {
+      "topic": "Mathematics and Sciences",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Mathematics and Sciences"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Mathematics+and+Sciences",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Mathematics and Sciences"
+    },
+    {
+      "topic": "Education",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Education"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Education",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Education"
+    },
+    {
+      "topic": "Computer Science",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Computer Science"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Computer+Science",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Computer Science"
+    },
+    {
+      "topic": "Information Technology",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Information Technology"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Information+Technology",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Information Technology"
+    },
+    {
+      "topic": "Data Science",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Data Science",
+        "Data Analysis",
+        "Data Visualization",
+        "Statistics",
+        "Data Literacy"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Data+Science",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Data Science"
+    },
+    {
+      "topic": "Artificial Intelligence",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Artificial Intelligence",
+        "Generative AI",
+        "Responsible AI",
+        "Prompt Engineering"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Artificial+Intelligence",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Artificial Intelligence"
+    },
+    {
+      "topic": "Cybersecurity",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Cybersecurity",
+        "Risk Management",
+        "Threat Detection",
+        "Security Controls"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Cybersecurity",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Cybersecurity"
+    },
+    {
+      "topic": "Business Management",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Business Management"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Business+Management",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Business Management"
+    },
+    {
+      "topic": "Economics",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Economics"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Economics",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Economics"
+    },
+    {
+      "topic": "Social Sciences",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Social Sciences"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Social+Sciences",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Social Sciences"
+    },
+    {
+      "topic": "Languages",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Languages"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Languages",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Languages"
+    },
+    {
+      "topic": "Teacher Education",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Teacher Education"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Teacher+Education",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Teacher Education"
+    },
+    {
+      "topic": "School Education",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "School Education"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=School+Education",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "School Education"
+    },
+    {
+      "topic": "Vocational Education",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Vocational Education"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Vocational+Education",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Vocational Education"
+    },
+    {
+      "topic": "Agriculture",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Agriculture"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Agriculture",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Agriculture"
+    },
+    {
+      "topic": "Environmental Science",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Environmental Science"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Environmental+Science",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Environmental Science"
+    },
+    {
+      "topic": "Research Methodology",
+      "category": "SWAYAM Subject Area",
+      "skills": [
+        "Research Methodology"
+      ],
+      "url": "https://swayam.gov.in/search_courses?searchText=Research+Methodology",
+      "url_type": "catalog_search",
+      "access": "free_with_optional_paid_exam",
+      "official_domain": true,
+      "notes": "Course availability changes by semester; this opens the official SWAYAM search.",
+      "search_term": "Research Methodology"
+    }
+  ]
+}
