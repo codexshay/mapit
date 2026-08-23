@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -117,14 +117,14 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "devpost-reverie-hacks-2026",
     "title": "Reverie Hacks 2026",
     "organizer": "ReverieHacks",
     "region": "Global",
-    "prizes": "$<span data-currency-value>2,876,914</span>",
+    "prizes": "$<span data-currency-value>3,047,814</span>",
     "themes": [
       "Beginner Friendly",
       "Machine Learning/AI",
@@ -141,7 +141,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "devpost-ai-builders-hackathon",
@@ -155,7 +155,7 @@
       "Beginner Friendly"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 25,
+    "daysLeft": 24,
     "url": "https://ai-builders-hackathon-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -165,7 +165,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "devpost-africa-deep-tech-challenge-2026",
@@ -178,7 +178,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 3,
+    "daysLeft": 2,
     "url": "https://adtc-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -188,7 +188,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "devpost-volthacks",
@@ -212,7 +212,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "unstop-full-stack-python-with-gen-ai",
@@ -242,7 +242,143 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
+  },
+  {
+    "id": "unstop-turtlebot-pursuit-evasion-challenge",
+    "title": "TurtleBot Pursuit & Evasion Challenge",
+    "organizer": "Indian Institute Of Technology Bhubaneswar",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3847599,
+        "rank": "Winner",
+        "cash": 12000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742795,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3847600,
+        "rank": "1st runner up",
+        "cash": 8000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742795,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3847601,
+        "rank": "2nd runner up",
+        "cash": 5000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742795,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/turtlebot-pursuit-evasion-challenge-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742795",
+    "type": "Online",
+    "location": "online",
+    "description": "TurtleBot Pursuit & Evasion Challenge organized by Indian Institute Of Technology Bhubaneswar. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-23"
+  },
+  {
+    "id": "unstop-agentic-ai-hackathon",
+    "title": "Agentic AI Hackathon",
+    "organizer": "Indian Institute Of Technology Bhubaneswar",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3847605,
+        "rank": "Winner",
+        "cash": 16000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742838,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3847606,
+        "rank": "1st Runner Up",
+        "cash": 12000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742838,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3847607,
+        "rank": "2nd Ruuner Up",
+        "cash": 7000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742838,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/agentic-ai-hackathon-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742838",
+    "type": "Online",
+    "location": "online",
+    "description": "Agentic AI Hackathon organized by Indian Institute Of Technology Bhubaneswar. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "unstop-math-o-stellar",
@@ -310,7 +446,75 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
+  },
+  {
+    "id": "unstop-cadathon",
+    "title": "CADathon",
+    "organizer": "Indian Institute Of Technology Bhubaneswar",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3847593,
+        "rank": "Winner",
+        "cash": 12000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742714,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3847594,
+        "rank": "1st runner up",
+        "cash": 8000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742714,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3847595,
+        "rank": "2nd runner up",
+        "cash": 5000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742714,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/cadathon-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742714",
+    "type": "Online",
+    "location": "online",
+    "description": "CADathon organized by Indian Institute Of Technology Bhubaneswar. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "unstop-graviton",
@@ -384,7 +588,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "unstop-design-marathon",
@@ -458,7 +662,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "unstop-cp-contest",
@@ -526,29 +730,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
-  },
-  {
-    "id": "unstop-tech-zephyr-4-0-design-marathon",
-    "title": "Tech Zephyr 4.0 Design Marathon",
-    "organizer": "Indian Institute of Technology (IIT), Bhubaneswar",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/tech-zephyr-40-design-marathon-indian-institute-of-technology-iit-bhubaneswar-1736628",
-    "type": "Online",
-    "location": "online",
-    "description": "Tech Zephyr 4.0 Design Marathon organized by Indian Institute of Technology (IIT), Bhubaneswar. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "unstop-ml-hackathon",
@@ -616,7 +798,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "unstop-web-hackathon",
@@ -684,59 +866,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
-  },
-  {
-    "id": "unstop-innovation-unbound-prelims",
-    "title": "Innovation Unbound Prelims",
-    "organizer": "Vellore Institute of Technology (VIT), Chennai",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/innovation-unbound-prelims-vellore-institute-of-technology-vit-chennai-1742601",
-    "type": "In-person",
-    "location": "offline",
-    "description": "Innovation Unbound Prelims organized by Vellore Institute of Technology (VIT), Chennai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-22"
-  },
-  {
-    "id": "unstop-code-o-fiesta-prelims",
-    "title": "Code O' Fiesta Prelims",
-    "organizer": "Vellore Institute of Technology (VIT), Chennai",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/code-o-fiesta-prelims-vellore-institute-of-technology-vit-chennai-1742593",
-    "type": "In-person",
-    "location": "offline",
-    "description": "Code O' Fiesta Prelims organized by Vellore Institute of Technology (VIT), Chennai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -760,7 +890,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -784,7 +914,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -808,7 +938,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -832,7 +962,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -856,7 +986,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -880,7 +1010,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -904,7 +1034,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -928,7 +1058,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -952,7 +1082,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -976,7 +1106,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -1000,6 +1130,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-22"
+    "fetchedAt": "2026-08-23"
   }
 ]
