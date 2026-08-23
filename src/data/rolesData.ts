@@ -1836,7 +1836,1140 @@ export const ROLES_DATA: Record<string, RoleDetail> = {
   }
 };
 
+// Source-backed Certifications & Skills Engine from MapIT_sources_job_roles_certifications.pdf
+
+export function getDomainRoleCertifications(domainId: string, roleId: string, level: 'Entry-level' | 'Mid-level' | 'Advanced'): Certification[] {
+  const rLower = roleId.toLowerCase();
+
+  // 1. IT Support, Service Desk & End-User Computing
+  if (domainId === 'it-support' || domainId.includes('support') || domainId.includes('service-desk')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'CompTIA A+', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.comptia.org/en/certifications/a/', costEstimate: '$253 USD / exam' },
+        { name: 'Google IT Support Professional Certificate', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://grow.google/certificates/it-support/', costEstimate: 'Coursera Subscription (~$39-$49/mo)' },
+        { name: 'Microsoft 365 Certified: Fundamentals (MS-900)', level: 'Beginner', status: 'Optional', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/microsoft-365-fundamentals/', costEstimate: '$99 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'ITIL 4 Foundation (PeopleCert)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.peoplecert.org/Frameworks-Professionals/ITIL-framework', costEstimate: '$380 - $480 USD' },
+        { name: 'ServiceNow Certified System Administrator (CSA)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?achievement_id=208e1d77dbc27f40de3cdb85ca961987&id=amap_detail', costEstimate: '$300 USD' },
+        { name: 'CompTIA Network+', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.comptia.org/en/certifications/network/', costEstimate: '$392 USD' }
+      ];
+    } else {
+      return [
+        { name: 'ITIL 4 Managing Professional (MP)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.peoplecert.org/Frameworks-Professionals/ITIL-framework', costEstimate: '$500+ USD' },
+        { name: 'ServiceNow Certified Implementation Specialist - ITSM (CIS-ITSM)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?achievement_id=6c8e1d77dbc27f40de3cdb85ca961970&id=amap_detail', costEstimate: '$450 USD' },
+        { name: 'CompTIA Security+', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.comptia.org/en/certifications/security/', costEstimate: '$404 USD' }
+      ];
+    }
+  }
+
+  // 2. System Administration & Infrastructure
+  if (domainId === 'systems-infra' || domainId.includes('systems') || domainId.includes('infra')) {
+    if (rLower.includes('linux') || rLower.includes('rhel')) {
+      if (level === 'Entry-level') {
+        return [
+          { name: 'CompTIA Linux+', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.comptia.org/en/certifications/linux/', costEstimate: '$392 USD' },
+          { name: 'Red Hat Certified System Administrator (RHCSA EX200)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.redhat.com/en/services/certification/rhcsa', costEstimate: '$400 - $500 USD' },
+          { name: 'Linux Foundation Certified System Administrator (LFCS)', level: 'Beginner', status: 'Optional', resourceUrl: 'https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/', costEstimate: '$395 USD' }
+        ];
+      } else if (level === 'Mid-level') {
+        return [
+          { name: 'Red Hat Certified System Administrator (RHCSA EX200)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.redhat.com/en/services/certification/rhcsa', costEstimate: '$400 - $500 USD' },
+          { name: 'Linux Foundation Certified System Administrator (LFCS)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/', costEstimate: '$395 USD' },
+          { name: 'Red Hat Certified Engineer (RHCE EX294 - Ansible Automation)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.redhat.com/en/services/certification/rhce', costEstimate: '$400 - $500 USD' }
+        ];
+      } else {
+        return [
+          { name: 'Red Hat Certified Engineer (RHCE EX294)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.redhat.com/en/services/certification/rhce', costEstimate: '$400 - $500 USD' },
+          { name: 'Red Hat Certified Architect (RHCA)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.redhat.com/en/services/certifications', costEstimate: '$1,500+ USD' },
+          { name: 'Linux Foundation Certified Engineer (LFCE)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://training.linuxfoundation.org/certification-catalog/', costEstimate: '$395 USD' }
+        ];
+      }
+    }
+    if (rLower.includes('windows') || rLower.includes('server')) {
+      if (level === 'Entry-level') {
+        return [
+          { name: 'CompTIA Server+', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.comptia.org/en/certifications/server/', costEstimate: '$392 USD' },
+          { name: 'Microsoft Certified: Azure Fundamentals (AZ-900)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-fundamentals/', costEstimate: '$99 USD' },
+          { name: 'Microsoft 365 Certified: Endpoint Administrator Associate (MD-102)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/endpoint-administrator/', costEstimate: '$165 USD' }
+        ];
+      } else if (level === 'Mid-level') {
+        return [
+          { name: 'Microsoft Certified: Azure Administrator Associate (AZ-104)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-administrator/', costEstimate: '$165 USD' },
+          { name: 'CompTIA Server+', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://www.comptia.org/en/certifications/server/', costEstimate: '$392 USD' },
+          { name: 'Microsoft Certified: Windows Server Hybrid Administrator Associate', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator/', costEstimate: '$165 USD' }
+        ];
+      } else {
+        return [
+          { name: 'Microsoft Certified: Azure Solutions Architect Expert (AZ-305)', level: 'Advanced', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-solutions-architect/', costEstimate: '$165 USD' },
+          { name: 'VMware Certified Professional - Data Center Virtualization (VCP-DCV)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.vmware.com/learning/certification/vcp-dcv.html', costEstimate: '$250 USD' },
+          { name: 'Red Hat Certified System Administrator (RHCSA)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.redhat.com/en/services/certification/rhcsa', costEstimate: '$400 USD' }
+        ];
+      }
+    }
+    // General systems/infra
+    if (level === 'Entry-level') {
+      return [
+        { name: 'CompTIA Server+', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.comptia.org/en/certifications/server/', costEstimate: '$392 USD' },
+        { name: 'CompTIA Linux+', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://www.comptia.org/en/certifications/linux/', costEstimate: '$392 USD' },
+        { name: 'Microsoft Certified: Azure Fundamentals (AZ-900)', level: 'Beginner', status: 'Optional', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-fundamentals/', costEstimate: '$99 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'Red Hat Certified System Administrator (RHCSA EX200)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.redhat.com/en/services/certification/rhcsa', costEstimate: '$400 - $500 USD' },
+        { name: 'Microsoft Certified: Azure Administrator Associate (AZ-104)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-administrator/', costEstimate: '$165 USD' },
+        { name: 'Linux Foundation Certified System Administrator (LFCS)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/', costEstimate: '$395 USD' }
+      ];
+    } else {
+      return [
+        { name: 'Red Hat Certified Engineer (RHCE EX294)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.redhat.com/en/services/certification/rhce', costEstimate: '$400 - $500 USD' },
+        { name: 'VMware Certified Professional - Data Center Virtualization (VCP-DCV)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.vmware.com/learning/certification/vcp-dcv.html', costEstimate: '$250 USD' },
+        { name: 'Microsoft Certified: Azure Solutions Architect Expert (AZ-305)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-solutions-architect/', costEstimate: '$165 USD' }
+      ];
+    }
+  }
+
+  // 3. Networking & NOC Operations
+  if (domainId === 'networking') {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'Cisco Certified Support Technician (CCST) Networking', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/entry/ccst-networking.html', costEstimate: '$125 USD' },
+        { name: 'CompTIA Network+', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://www.comptia.org/en/certifications/network/', costEstimate: '$392 USD' },
+        { name: 'Cisco Certified Network Associate (CCNA 200-301)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/associate/ccna/index.html', costEstimate: '$300 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'Cisco Certified Network Associate (CCNA 200-301)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/associate/ccna/index.html', costEstimate: '$300 USD' },
+        { name: 'Cisco Certified CyberOps Associate (200-201 CBROPS)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/associate/cyberops-associate/index.html', costEstimate: '$300 USD' },
+        { name: 'Cisco Certified DevNet Associate (200-901 DEVASC)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/associate/devnet-associate/index.html', costEstimate: '$300 USD' }
+      ];
+    } else {
+      return [
+        { name: 'Cisco Certified Network Professional (CCNP Enterprise)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/professional/ccnp-enterprise/index.html', costEstimate: '$400 + $300 USD' },
+        { name: 'Cisco Certified Internetwork Expert (CCIE Enterprise Infrastructure)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/expert/ccie-enterprise-infrastructure/index.html', costEstimate: '$1,600 USD Lab' },
+        { name: 'Cisco Certified DevNet Professional', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/professional/devnet-professional/index.html', costEstimate: '$400 + $300 USD' }
+      ];
+    }
+  }
+
+  // 4. Cloud Computing
+  if (domainId === 'cloud') {
+    if (rLower.includes('aws')) {
+      if (level === 'Entry-level') {
+        return [
+          { name: 'AWS Certified Cloud Practitioner (CLF-C02)', level: 'Beginner', status: 'Required', resourceUrl: 'https://aws.amazon.com/certification/certified-cloud-practitioner/', costEstimate: '$100 USD' },
+          { name: 'AWS Certified Solutions Architect - Associate (SAA-C03)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/', costEstimate: '$150 USD' },
+          { name: 'AWS Certified SysOps Administrator - Associate (SOA-C02)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://aws.amazon.com/certification/certified-sysops-admin-associate/', costEstimate: '$150 USD' }
+        ];
+      } else if (level === 'Mid-level') {
+        return [
+          { name: 'AWS Certified Solutions Architect - Associate (SAA-C03)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/', costEstimate: '$150 USD' },
+          { name: 'AWS Certified SysOps Administrator - Associate (SOA-C02)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://aws.amazon.com/certification/certified-sysops-admin-associate/', costEstimate: '$150 USD' },
+          { name: 'AWS Certified Developer - Associate (DVA-C02)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://aws.amazon.com/certification/certified-developer-associate/', costEstimate: '$150 USD' }
+        ];
+      } else {
+        return [
+          { name: 'AWS Certified Solutions Architect - Professional (SAP-C02)', level: 'Advanced', status: 'Required', resourceUrl: 'https://aws.amazon.com/certification/certified-solutions-architect-professional/', costEstimate: '$300 USD' },
+          { name: 'AWS Certified DevOps Engineer - Professional (DOP-C02)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://aws.amazon.com/certification/certified-devops-engineer-professional/', costEstimate: '$300 USD' },
+          { name: 'AWS Certified Security - Specialty (SCS-C02)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://aws.amazon.com/certification/certified-security-specialty/', costEstimate: '$300 USD' }
+        ];
+      }
+    }
+    if (rLower.includes('azure')) {
+      if (level === 'Entry-level') {
+        return [
+          { name: 'Microsoft Certified: Azure Fundamentals (AZ-900)', level: 'Beginner', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-fundamentals/', costEstimate: '$99 USD' },
+          { name: 'Microsoft Certified: Azure Administrator Associate (AZ-104)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-administrator/', costEstimate: '$165 USD' },
+          { name: 'Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)', level: 'Beginner', status: 'Optional', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/security-compliance-and-identity-fundamentals/', costEstimate: '$99 USD' }
+        ];
+      } else if (level === 'Mid-level') {
+        return [
+          { name: 'Microsoft Certified: Azure Administrator Associate (AZ-104)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-administrator/', costEstimate: '$165 USD' },
+          { name: 'Microsoft Certified: Azure Developer Associate (AZ-204)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-developer/', costEstimate: '$165 USD' },
+          { name: 'Microsoft Certified: Azure Security Engineer Associate (AZ-500)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-security-engineer/', costEstimate: '$165 USD' }
+        ];
+      } else {
+        return [
+          { name: 'Microsoft Certified: Azure Solutions Architect Expert (AZ-305)', level: 'Advanced', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-solutions-architect/', costEstimate: '$165 USD' },
+          { name: 'Microsoft Certified: DevOps Engineer Expert (AZ-400)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/devops-engineer/', costEstimate: '$165 USD' },
+          { name: 'Microsoft Certified: Cybersecurity Architect Expert (SC-100)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/cybersecurity-architect-expert/', costEstimate: '$165 USD' }
+        ];
+      }
+    }
+    if (rLower.includes('gcp') || rLower.includes('google')) {
+      if (level === 'Entry-level') {
+        return [
+          { name: 'Google Cloud Digital Leader', level: 'Beginner', status: 'Required', resourceUrl: 'https://cloud.google.com/learn/certification/cloud-digital-leader', costEstimate: '$99 USD' },
+          { name: 'Google Cloud Associate Cloud Engineer (ACE)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://cloud.google.com/learn/certification/associate-cloud-engineer', costEstimate: '$125 USD' },
+          { name: 'Google IT Support Professional Certificate', level: 'Beginner', status: 'Optional', resourceUrl: 'https://grow.google/certificates/it-support/', costEstimate: 'Coursera Subscription' }
+        ];
+      } else if (level === 'Mid-level') {
+        return [
+          { name: 'Google Cloud Associate Cloud Engineer (ACE)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://cloud.google.com/learn/certification/associate-cloud-engineer', costEstimate: '$125 USD' },
+          { name: 'Google Cloud Professional Cloud Architect (PCA)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://cloud.google.com/learn/certification/cloud-architect', costEstimate: '$200 USD' },
+          { name: 'Google Cloud Professional Cloud Security Engineer', level: 'Advanced', status: 'Optional', resourceUrl: 'https://cloud.google.com/learn/certification/cloud-security-engineer', costEstimate: '$200 USD' }
+        ];
+      } else {
+        return [
+          { name: 'Google Cloud Professional Cloud Architect (PCA)', level: 'Advanced', status: 'Required', resourceUrl: 'https://cloud.google.com/learn/certification/cloud-architect', costEstimate: '$200 USD' },
+          { name: 'Google Cloud Professional Cloud DevOps Engineer', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://cloud.google.com/learn/certification/cloud-devops-engineer', costEstimate: '$200 USD' },
+          { name: 'Google Cloud Professional Cloud Security Engineer', level: 'Advanced', status: 'Optional', resourceUrl: 'https://cloud.google.com/learn/certification/cloud-security-engineer', costEstimate: '$200 USD' }
+        ];
+      }
+    }
+    // General cloud
+    if (level === 'Entry-level') {
+      return [
+        { name: 'AWS Certified Cloud Practitioner (CLF-C02)', level: 'Beginner', status: 'Required', resourceUrl: 'https://aws.amazon.com/certification/certified-cloud-practitioner/', costEstimate: '$100 USD' },
+        { name: 'Microsoft Certified: Azure Fundamentals (AZ-900)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-fundamentals/', costEstimate: '$99 USD' },
+        { name: 'Google Cloud Digital Leader', level: 'Beginner', status: 'Optional', resourceUrl: 'https://cloud.google.com/learn/certification/cloud-digital-leader', costEstimate: '$99 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'AWS Certified Solutions Architect - Associate (SAA-C03)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/', costEstimate: '$150 USD' },
+        { name: 'Microsoft Certified: Azure Administrator Associate (AZ-104)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-administrator/', costEstimate: '$165 USD' },
+        { name: 'Google Cloud Associate Cloud Engineer (ACE)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://cloud.google.com/learn/certification/associate-cloud-engineer', costEstimate: '$125 USD' }
+      ];
+    } else {
+      return [
+        { name: 'AWS Certified Solutions Architect - Professional (SAP-C02)', level: 'Advanced', status: 'Required', resourceUrl: 'https://aws.amazon.com/certification/certified-solutions-architect-professional/', costEstimate: '$300 USD' },
+        { name: 'Microsoft Certified: Azure Solutions Architect Expert (AZ-305)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-solutions-architect/', costEstimate: '$165 USD' },
+        { name: 'Google Cloud Professional Cloud Architect (PCA)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://cloud.google.com/learn/certification/cloud-architect', costEstimate: '$200 USD' }
+      ];
+    }
+  }
+
+  // 5. Cybersecurity, GRC & Security Operations
+  if (domainId === 'cybersecurity' || domainId.includes('security') || domainId === 'soc') {
+    if (rLower.includes('soc') || rLower.includes('incident') || rLower.includes('threat')) {
+      if (level === 'Entry-level') {
+        return [
+          { name: 'ISC2 Certified in Cybersecurity (CC)', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.isc2.org/certifications/cc', costEstimate: 'Free Promo / $50 USD' },
+          { name: 'Google Cybersecurity Professional Certificate', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://grow.google/certificates/cybersecurity/', costEstimate: 'Coursera Subscription (~$39/mo)' },
+          { name: 'CompTIA Security+ (SY0-701)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.comptia.org/en/certifications/security/', costEstimate: '$404 USD' }
+        ];
+      } else if (level === 'Mid-level') {
+        return [
+          { name: 'CompTIA Security+ (SY0-701)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.comptia.org/en/certifications/security/', costEstimate: '$404 USD' },
+          { name: 'CompTIA CySA+ (Cybersecurity Analyst)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.comptia.org/en/certifications/cysa/', costEstimate: '$404 USD' },
+          { name: 'Microsoft Certified: Security Operations Analyst Associate (SC-200)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/security-operations-analyst/', costEstimate: '$165 USD' }
+        ];
+      } else {
+        return [
+          { name: 'ISC2 Certified Information Systems Security Professional (CISSP)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.isc2.org/certifications/cissp', costEstimate: '$749 USD' },
+          { name: 'GIAC Certified Incident Handler (GCIH)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.giac.org/certifications/certified-incident-handler-gcih/', costEstimate: '$979 USD' },
+          { name: 'CompTIA SecurityX (CASP+)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.comptia.org/en/certifications/securityx/', costEstimate: '$494 USD' }
+        ];
+      }
+    }
+    if (rLower.includes('pentest') || rLower.includes('offensive') || rLower.includes('red-team') || rLower.includes('ethical')) {
+      return [
+        { name: 'CompTIA PenTest+', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.comptia.org/en/certifications/pentest/', costEstimate: '$404 USD' },
+        { name: 'Offensive Security Certified Professional (OSCP)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.offsec.com/courses/pen-200/', costEstimate: '$1,649 USD' },
+        { name: 'Certified Ethical Hacker (CEH v13 AI)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/', costEstimate: '$1,199 USD' }
+      ];
+    }
+    if (rLower.includes('grc') || rLower.includes('audit') || rLower.includes('compliance') || rLower.includes('risk')) {
+      if (level === 'Entry-level') {
+        return [
+          { name: 'ISC2 Certified in Cybersecurity (CC)', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.isc2.org/certifications/cc', costEstimate: 'Free Promo / $50 USD' },
+          { name: 'Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/security-compliance-and-identity-fundamentals/', costEstimate: '$99 USD' },
+          { name: 'CompTIA Security+', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.comptia.org/en/certifications/security/', costEstimate: '$404 USD' }
+        ];
+      } else if (level === 'Mid-level') {
+        return [
+          { name: 'ISACA Certified Information Systems Auditor (CISA)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.isaca.org/credentialing/cisa', costEstimate: '$575 - $760 USD' },
+          { name: 'ISO/IEC 27001 Lead Auditor (PECB / IRCA)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001', costEstimate: '$800 - $1,200 USD' },
+          { name: 'ISACA Certified in Risk and Information Systems Control (CRISC)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.isaca.org/credentialing/crisc', costEstimate: '$575 - $760 USD' }
+        ];
+      } else {
+        return [
+          { name: 'ISACA Certified Information Security Manager (CISM)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.isaca.org/credentialing/cism', costEstimate: '$575 - $760 USD' },
+          { name: 'ISC2 Certified Information Systems Security Professional (CISSP)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.isc2.org/certifications/cissp', costEstimate: '$749 USD' },
+          { name: 'ISACA Certified in the Governance of Enterprise IT (CGEIT)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.isaca.org/credentialing/cgeit', costEstimate: '$575 - $760 USD' }
+        ];
+      }
+    }
+    // General Cybersecurity
+    if (level === 'Entry-level') {
+      return [
+        { name: 'ISC2 Certified in Cybersecurity (CC)', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.isc2.org/certifications/cc', costEstimate: 'Free Promo / $50 USD' },
+        { name: 'CompTIA Security+ (SY0-701)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.comptia.org/en/certifications/security/', costEstimate: '$404 USD' },
+        { name: 'Google Cybersecurity Professional Certificate', level: 'Beginner', status: 'Optional', resourceUrl: 'https://grow.google/certificates/cybersecurity/', costEstimate: 'Coursera Subscription' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'CompTIA Security+ (SY0-701)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.comptia.org/en/certifications/security/', costEstimate: '$404 USD' },
+        { name: 'ISC2 Systems Security Certified Practitioner (SSCP)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.isc2.org/certifications/sscp', costEstimate: '$249 USD' },
+        { name: 'CompTIA CySA+', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.comptia.org/en/certifications/cysa/', costEstimate: '$404 USD' }
+      ];
+    } else {
+      return [
+        { name: 'ISC2 Certified Information Systems Security Professional (CISSP)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.isc2.org/certifications/cissp', costEstimate: '$749 USD' },
+        { name: 'ISACA Certified Information Security Manager (CISM)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.isaca.org/credentialing/cism', costEstimate: '$575 - $760 USD' },
+        { name: 'ISC2 Certified Cloud Security Professional (CCSP)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.isc2.org/certifications/ccsp', costEstimate: '$599 USD' }
+      ];
+    }
+  }
+
+  // 6. Software Development & Engineering
+  if (domainId === 'software-dev' || domainId.includes('software') || domainId.includes('dev')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'Meta Front-End / Back-End Developer Professional Certificate', level: 'Beginner', status: 'Required', resourceUrl: 'https://grow.google/certificates/', costEstimate: 'Coursera Subscription (~$39/mo)' },
+        { name: 'Oracle Certified Associate Java SE Programmer', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://education.oracle.com/oracle-certification-path/pFamily_48', costEstimate: '$245 USD' },
+        { name: 'GitHub Foundations Certification', level: 'Beginner', status: 'Optional', resourceUrl: 'https://resources.github.com/learn/certifications/', costEstimate: '$99 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'Microsoft Certified: Azure Developer Associate (AZ-204)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-developer/', costEstimate: '$165 USD' },
+        { name: 'AWS Certified Developer - Associate (DVA-C02)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://aws.amazon.com/certification/certified-developer-associate/', costEstimate: '$150 USD' },
+        { name: 'Oracle Certified Professional: Java SE 17 Developer', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://education.oracle.com/oracle-certification-path/pFamily_48', costEstimate: '$245 USD' }
+      ];
+    } else {
+      return [
+        { name: 'AWS Certified Solutions Architect - Professional (SAP-C02)', level: 'Advanced', status: 'Required', resourceUrl: 'https://aws.amazon.com/certification/certified-solutions-architect-professional/', costEstimate: '$300 USD' },
+        { name: 'Google Cloud Professional Cloud Developer', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://cloud.google.com/learn/certification/cloud-developer', costEstimate: '$200 USD' },
+        { name: 'The Open Group TOGAF Standard (Practitioner)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.opengroup.org/certifications/togaf', costEstimate: '$550 USD' }
+      ];
+    }
+  }
+
+  // 7. QA, Software Testing & Quality Engineering
+  if (domainId === 'qa-testing' || domainId.includes('qa') || domainId.includes('testing')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'ISTQB Certified Tester Foundation Level (CTFL 4.0)', level: 'Beginner', status: 'Required', resourceUrl: 'https://istqb.org/certifications/certified-tester-foundation-level/', costEstimate: '$229 USD' },
+        { name: 'ISTQB Agile Tester Foundation Extension', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://istqb.org/certifications/agile-tester/', costEstimate: '$229 USD' },
+        { name: 'Selenium WebDriver Certified Associate', level: 'Beginner', status: 'Optional', resourceUrl: 'https://istqb.org/certifications/', costEstimate: '$150 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'ISTQB Certified Tester Advanced Level - Test Automation Engineering (CTAL-TAE)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://istqb.org/certifications/test-automation-engineering/', costEstimate: '$250 USD' },
+        { name: 'ISTQB Certified Tester Advanced Level - Technical Test Analyst (CTAL-TTA)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://istqb.org/certifications/technical-test-analyst/', costEstimate: '$250 USD' },
+        { name: 'Postman API Fundamentals Student Expert', level: 'Beginner', status: 'Optional', resourceUrl: 'https://academy.postman.com/', costEstimate: 'Free' }
+      ];
+    } else {
+      return [
+        { name: 'ISTQB Certified Tester Advanced Level - Test Manager (CTAL-TM)', level: 'Advanced', status: 'Required', resourceUrl: 'https://istqb.org/certifications/test-manager/', costEstimate: '$250 USD' },
+        { name: 'ISTQB Certified Tester Expert Level - Improving the Test Process', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://istqb.org/certifications/expert-level/', costEstimate: '$375 USD' },
+        { name: 'PMI Agile Certified Practitioner (PMI-ACP)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.pmi.org/certifications/agile-acp', costEstimate: '$435 - $495 USD' }
+      ];
+    }
+  }
+
+  // 8. DevOps, SRE & Platform Engineering
+  if (domainId === 'devops-sre' || domainId.includes('devops') || domainId.includes('sre') || domainId.includes('platform')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'Linux Foundation Certified System Administrator (LFCS)', level: 'Beginner', status: 'Required', resourceUrl: 'https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/', costEstimate: '$395 USD' },
+        { name: 'CNCF Kubernetes and Cloud Native Associate (KCNA)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://www.cncf.io/training/certification/kcna/', costEstimate: '$250 USD' },
+        { name: 'HashiCorp Certified: Terraform Associate (003)', level: 'Beginner', status: 'Optional', resourceUrl: 'https://www.hashicorp.com/certification/terraform-associate', costEstimate: '$70.50 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'CNCF Certified Kubernetes Administrator (CKA)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.cncf.io/training/certification/cka/', costEstimate: '$395 USD' },
+        { name: 'HashiCorp Certified: Terraform Associate (003)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.hashicorp.com/certification/terraform-associate', costEstimate: '$70.50 USD' },
+        { name: 'AWS Certified DevOps Engineer - Professional (DOP-C02)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://aws.amazon.com/certification/certified-devops-engineer-professional/', costEstimate: '$300 USD' }
+      ];
+    } else {
+      return [
+        { name: 'CNCF Certified Kubernetes Security Specialist (CKS)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.cncf.io/training/certification/cks/', costEstimate: '$395 USD' },
+        { name: 'Microsoft Certified: DevOps Engineer Expert (AZ-400)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/devops-engineer/', costEstimate: '$165 USD' },
+        { name: 'Red Hat Certified Specialist in Ansible Automation', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.redhat.com/en/services/certification/rhcs-ansible-automation', costEstimate: '$400 USD' }
+      ];
+    }
+  }
+
+  // 9. Data, Analytics & Business Intelligence
+  if (domainId === 'data-analytics' || domainId.includes('analytics') || domainId.includes('bi')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'Google Data Analytics Professional Certificate', level: 'Beginner', status: 'Required', resourceUrl: 'https://grow.google/certificates/data-analytics/', costEstimate: 'Coursera Subscription (~$39/mo)' },
+        { name: 'Microsoft Certified: Power BI Data Analyst Associate (PL-300)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/power-bi-data-analyst/', costEstimate: '$165 USD' },
+        { name: 'CompTIA Data+ (DA0-001)', level: 'Beginner', status: 'Optional', resourceUrl: 'https://www.comptia.org/en/certifications/data/', costEstimate: '$392 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'Microsoft Certified: Power BI Data Analyst Associate (PL-300)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/power-bi-data-analyst/', costEstimate: '$165 USD' },
+        { name: 'Tableau Certified Data Analyst', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.tableau.com/learn/certification/certified-data-analyst', costEstimate: '$250 USD' },
+        { name: 'Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/fabric-analytics-engineer-associate/', costEstimate: '$165 USD' }
+      ];
+    } else {
+      return [
+        { name: 'Microsoft Certified: Azure Data Engineer Associate (DP-203)', level: 'Advanced', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-data-engineer/', costEstimate: '$165 USD' },
+        { name: 'Snowflake SnowPro Core Certification', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://learn.snowflake.com/certifications', costEstimate: '$175 USD' },
+        { name: 'Google Cloud Professional Data Engineer', level: 'Advanced', status: 'Optional', resourceUrl: 'https://cloud.google.com/learn/certification/data-engineer', costEstimate: '$200 USD' }
+      ];
+    }
+  }
+
+  // 10. Data Science, AI & Machine Learning
+  if (domainId === 'data-science-ai' || domainId.includes('ai') || domainId.includes('machine-learning') || domainId.includes('data-science')) {
+    if (rLower.includes('prompt') || rLower.includes('generative')) {
+      return [
+        { name: 'AWS Certified AI Practitioner (AIF-C01)', level: 'Beginner', status: 'Required', resourceUrl: 'https://aws.amazon.com/certification/certified-ai-practitioner/', costEstimate: '$75 USD' },
+        { name: 'Microsoft Certified: Azure AI Fundamentals (AI-900)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-ai-fundamentals/', costEstimate: '$99 USD' },
+        { name: 'Google Cloud Generative AI Leader Learning Path', level: 'Beginner', status: 'Optional', resourceUrl: 'https://cloud.google.com/learn/certification', costEstimate: 'Free' }
+      ];
+    }
+    if (level === 'Entry-level') {
+      return [
+        { name: 'Microsoft Certified: Azure AI Fundamentals (AI-900)', level: 'Beginner', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-ai-fundamentals/', costEstimate: '$99 USD' },
+        { name: 'IBM Data Science Professional Certificate', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://grow.google/certificates/', costEstimate: 'Coursera Subscription (~$39/mo)' },
+        { name: 'AWS Certified AI Practitioner (AIF-C01)', level: 'Beginner', status: 'Optional', resourceUrl: 'https://aws.amazon.com/certification/certified-ai-practitioner/', costEstimate: '$75 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'Microsoft Certified: Azure AI Engineer Associate (AI-102)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-ai-engineer/', costEstimate: '$165 USD' },
+        { name: 'Databricks Certified Machine Learning Associate', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.databricks.com/learn/training/certification', costEstimate: '$200 USD' },
+        { name: 'FutureSkills Prime nasscom Certified Data Scientist / AI Specialist', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.futureskillsprime.in/nasscom-certification/', costEstimate: '₹2,500 - ₹8,000 INR' }
+      ];
+    } else {
+      return [
+        { name: 'Google Cloud Professional Machine Learning Engineer', level: 'Advanced', status: 'Required', resourceUrl: 'https://cloud.google.com/learn/certification/machine-learning-engineer', costEstimate: '$200 USD' },
+        { name: 'AWS Certified Machine Learning - Specialty (MLS-C01)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://aws.amazon.com/certification/certified-machine-learning-specialty/', costEstimate: '$300 USD' },
+        { name: 'Databricks Certified Machine Learning Professional', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.databricks.com/learn/training/certification', costEstimate: '$200 USD' }
+      ];
+    }
+  }
+
+  // 11. Database Administration (DBA)
+  if (domainId === 'db-admin' || domainId.includes('database') || domainId.includes('dba')) {
+    if (rLower.includes('oracle')) {
+      return [
+        { name: 'Oracle Database Administration Certified Professional (OCP)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.oracle.com/in/education/certification/', costEstimate: '$245 USD' },
+        { name: 'Oracle Cloud Infrastructure Database Specialist', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.oracle.com/in/education/certification/', costEstimate: '$245 USD' },
+        { name: 'Oracle Database SQL Certified Associate', level: 'Beginner', status: 'Optional', resourceUrl: 'https://www.oracle.com/in/education/certification/', costEstimate: '$245 USD' }
+      ];
+    }
+    if (level === 'Entry-level') {
+      return [
+        { name: 'Oracle Database SQL Certified Associate', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.oracle.com/in/education/certification/', costEstimate: '$245 USD' },
+        { name: 'Microsoft Certified: Azure Data Fundamentals (DP-900)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-data-fundamentals/', costEstimate: '$99 USD' },
+        { name: 'MongoDB Certified DBA Associate', level: 'Beginner', status: 'Optional', resourceUrl: 'https://learn.mongodb.com/pages/certification-overview', costEstimate: '$150 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'Microsoft Certified: Azure Database Administrator Associate (DP-300)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-database-administrator-associate/', costEstimate: '$165 USD' },
+        { name: 'Oracle Database Administration Certified Professional (OCP)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.oracle.com/in/education/certification/', costEstimate: '$245 USD' },
+        { name: 'Snowflake SnowPro Core Certification', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://learn.snowflake.com/certifications', costEstimate: '$175 USD' }
+      ];
+    } else {
+      return [
+        { name: 'Google Cloud Professional Cloud Database Engineer', level: 'Advanced', status: 'Required', resourceUrl: 'https://cloud.google.com/learn/certification/cloud-database-engineer', costEstimate: '$200 USD' },
+        { name: 'Microsoft Certified: Azure Data Engineer Associate (DP-203)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-data-engineer/', costEstimate: '$165 USD' },
+        { name: 'Oracle Certified Master (OCM)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.oracle.com/in/education/certification/', costEstimate: '$2,000+ USD' }
+      ];
+    }
+  }
+
+  // 12. IT Operations, ITSM & Process Management
+  if (domainId === 'it-ops-itsm' || domainId.includes('itsm') || domainId.includes('operations')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'ITIL 4 Foundation (PeopleCert)', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.peoplecert.org/Frameworks-Professionals/ITIL-framework', costEstimate: '$380 - $480 USD' },
+        { name: 'ServiceNow Certified System Administrator (CSA)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?achievement_id=208e1d77dbc27f40de3cdb85ca961987&id=amap_detail', costEstimate: '$300 USD' },
+        { name: 'CompTIA A+', level: 'Beginner', status: 'Optional', resourceUrl: 'https://www.comptia.org/en/certifications/a/', costEstimate: '$253 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'ServiceNow Certified Implementation Specialist - ITSM (CIS-ITSM)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?achievement_id=6c8e1d77dbc27f40de3cdb85ca961970&id=amap_detail', costEstimate: '$450 USD' },
+        { name: 'ITIL 4 Managing Professional (CDS / DPI)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.peoplecert.org/Frameworks-Professionals/ITIL-framework', costEstimate: '$500 USD' },
+        { name: 'COBIT 2019 Foundation (ISACA)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.isaca.org/credentialing/cobit', costEstimate: '$435 USD' }
+      ];
+    } else {
+      return [
+        { name: 'ITIL 4 Strategic Leader (SL - Digital & IT Strategy)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.peoplecert.org/Frameworks-Professionals/ITIL-framework', costEstimate: '$500+ USD' },
+        { name: 'ISO/IEC 20000 Lead Implementer (IT Service Management)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://pecb.com/en/education-and-certification-for-individuals/iso-iec-20000', costEstimate: '$800 - $1,200 USD' },
+        { name: 'ISACA Certified in the Governance of Enterprise IT (CGEIT)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.isaca.org/credentialing/cgeit', costEstimate: '$575 - $760 USD' }
+      ];
+    }
+  }
+
+  // 13. ERP, CRM & Business Applications
+  if (domainId === 'erp-crm' || domainId.includes('crm') || domainId.includes('erp') || domainId.includes('sap') || domainId.includes('salesforce')) {
+    if (rLower.includes('salesforce')) {
+      if (level === 'Entry-level') {
+        return [
+          { name: 'Salesforce Certified Administrator', level: 'Beginner', status: 'Required', resourceUrl: 'https://trailhead.salesforce.com/credentials/administrator', costEstimate: '$200 USD' },
+          { name: 'Salesforce Certified Platform App Builder', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://trailhead.salesforce.com/credentials/platformappbuilder', costEstimate: '$200 USD' },
+          { name: 'Salesforce Certified Associate', level: 'Beginner', status: 'Optional', resourceUrl: 'https://trailhead.salesforce.com/credentials/associate', costEstimate: '$75 USD' }
+        ];
+      } else if (level === 'Mid-level') {
+        return [
+          { name: 'Salesforce Certified Platform Developer I (PDI)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://trailhead.salesforce.com/credentials/platformdeveloperi', costEstimate: '$200 USD' },
+          { name: 'Salesforce Certified Sales Cloud / Service Cloud Consultant', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://trailhead.salesforce.com/credentials/salescloudconsultant', costEstimate: '$200 USD' },
+          { name: 'Salesforce Certified Business Analyst', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://trailhead.salesforce.com/credentials/businessanalyst', costEstimate: '$200 USD' }
+        ];
+      } else {
+        return [
+          { name: 'Salesforce Certified Application Architect', level: 'Advanced', status: 'Required', resourceUrl: 'https://trailhead.salesforce.com/credentials/applicationarchitect', costEstimate: '$400 USD' },
+          { name: 'Salesforce Certified System Architect', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://trailhead.salesforce.com/credentials/systemarchitect', costEstimate: '$400 USD' },
+          { name: 'Salesforce Certified Technical Architect (CTA)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://trailhead.salesforce.com/credentials/technicalarchitect', costEstimate: '$6,000 USD Board' }
+        ];
+      }
+    }
+    if (rLower.includes('sap')) {
+      return [
+        { name: 'SAP Certified Associate - SAP S/4HANA (FICO / MM / SD / ABAP)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://learning.sap.com/certification', costEstimate: '$500 - $600 USD' },
+        { name: 'SAP Certified Professional - Enterprise Architect', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://learning.sap.com/certification', costEstimate: '$500 - $600 USD' },
+        { name: 'SAP Certified Associate - Integration Suite', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://learning.sap.com/certification', costEstimate: '$500 USD' }
+      ];
+    }
+    // General ERP/CRM
+    if (level === 'Entry-level') {
+      return [
+        { name: 'Salesforce Certified Administrator', level: 'Beginner', status: 'Required', resourceUrl: 'https://trailhead.salesforce.com/credentials/administrator', costEstimate: '$200 USD' },
+        { name: 'Microsoft Certified: Power Platform Fundamentals (PL-900)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/power-platform-fundamentals/', costEstimate: '$99 USD' },
+        { name: 'Microsoft Certified: Dynamics 365 Fundamentals (ERP / CRM)', level: 'Beginner', status: 'Optional', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/d365-fundamentals-erp/', costEstimate: '$99 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'Salesforce Certified Platform App Builder', level: 'Intermediate', status: 'Required', resourceUrl: 'https://trailhead.salesforce.com/credentials/platformappbuilder', costEstimate: '$200 USD' },
+        { name: 'SAP Certified Associate - SAP S/4HANA Cloud', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://learning.sap.com/certification', costEstimate: '$500 USD' },
+        { name: 'ServiceNow Certified Application Developer (CAD)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://learning.servicenow.com/lxp/', costEstimate: '$300 USD' }
+      ];
+    } else {
+      return [
+        { name: 'Salesforce Certified Application Architect', level: 'Advanced', status: 'Required', resourceUrl: 'https://trailhead.salesforce.com/credentials/applicationarchitect', costEstimate: '$400 USD' },
+        { name: 'SAP Certified Professional - Solution Architect', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://learning.sap.com/certification', costEstimate: '$600 USD' },
+        { name: 'Oracle Cloud ERP Certified Implementation Specialist', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.oracle.com/in/education/certification/', costEstimate: '$245 USD' }
+      ];
+    }
+  }
+
+  // 14. Product, Project & Program Management
+  if (domainId === 'product-mgmt' || domainId.includes('project') || domainId.includes('product-management')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'PMI Certified Associate in Project Management (CAPM)', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.pmi.org/certifications/certified-associate-capm', costEstimate: '$300 USD' },
+        { name: 'Google Project Management Professional Certificate', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://grow.google/certificates/project-management/', costEstimate: 'Coursera Subscription (~$39/mo)' },
+        { name: 'Scrum.org Professional Scrum Master I (PSM I)', level: 'Beginner', status: 'Optional', resourceUrl: 'https://www.scrum.org/assessments/professional-scrum-master-i-certification', costEstimate: '$150 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'PMI Project Management Professional (PMP)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.pmi.org/certifications/project-management-pmp', costEstimate: '$405 - $575 USD' },
+        { name: 'Scrum.org Professional Scrum Product Owner I (PSPO I)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.scrum.org/assessments/professional-scrum-product-owner-i-certification', costEstimate: '$200 USD' },
+        { name: 'PMI Agile Certified Practitioner (PMI-ACP)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.pmi.org/certifications/agile-acp', costEstimate: '$435 - $495 USD' }
+      ];
+    } else {
+      return [
+        { name: 'PMI Program Management Professional (PgMP)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.pmi.org/certifications/program-management-pgmp', costEstimate: '$800 - $1,000 USD' },
+        { name: 'SAFe Practice Consultant (SPC) / POPM', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://scaledagile.com/certifications/', costEstimate: '$995 - $1,295 USD' },
+        { name: 'PMI Portfolio Management Professional (PfMP)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.pmi.org/certifications/portfolio-management-pfmp', costEstimate: '$800 - $1,000 USD' }
+      ];
+    }
+  }
+
+  // 15. Business Analysis & Tech Consulting
+  if (domainId === 'business-analysis' || domainId.includes('consulting') || domainId.includes('analysis')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'IIBA Entry Certificate in Business Analysis (ECBA)', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.iiba.org/business-analysis-certifications/ecba/', costEstimate: '$150 - $305 USD' },
+        { name: 'Scrum.org Professional Scrum Product Owner I (PSPO I)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://www.scrum.org/assessments/professional-scrum-product-owner-i-certification', costEstimate: '$200 USD' },
+        { name: 'Salesforce Certified Business Analyst', level: 'Beginner', status: 'Optional', resourceUrl: 'https://trailhead.salesforce.com/credentials/businessanalyst', costEstimate: '$200 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'IIBA Certification of Capability in Business Analysis (CCBA)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.iiba.org/business-analysis-certifications/ccba/', costEstimate: '$250 - $405 USD' },
+        { name: 'PMI Professional in Business Analysis (PMI-PBA)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.pmi.org/certifications/business-analysis-pba', costEstimate: '$405 - $555 USD' },
+        { name: 'IIBA Agile Analysis Certification (IIBA-AAC)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.iiba.org/business-analysis-certifications/agile-analysis/', costEstimate: '$250 - $375 USD' }
+      ];
+    } else {
+      return [
+        { name: 'IIBA Certified Business Analysis Professional (CBAP)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.iiba.org/business-analysis-certifications/cbap/', costEstimate: '$350 - $505 USD' },
+        { name: 'IIBA Certification in Business Data Analytics (IIBA-CBDA)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.iiba.org/business-analysis-certifications/cbda/', costEstimate: '$250 - $375 USD' },
+        { name: 'The Open Group TOGAF Standard (Practitioner)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.opengroup.org/certifications/togaf', costEstimate: '$550 USD' }
+      ];
+    }
+  }
+
+  // 16. UI/UX, Product Design & Creative Technology
+  if (domainId === 'uiux-design' || domainId.includes('ui') || domainId.includes('ux') || domainId.includes('design')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'Google UX Design Professional Certificate', level: 'Beginner', status: 'Required', resourceUrl: 'https://grow.google/certificates/ux-design/', costEstimate: 'Coursera Subscription (~$39/mo)' },
+        { name: 'Figma Certified Creator', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://www.figma.com/education/', costEstimate: 'Free' },
+        { name: 'Interaction Design Foundation (IxDF) Certified UX Designer', level: 'Beginner', status: 'Optional', resourceUrl: 'https://www.interaction-design.org/', costEstimate: '$192/year' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'Human Factors International Certified Usability Analyst (CUA)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://humanfactors.com/certification/cua.aspx', costEstimate: '$850 USD' },
+        { name: 'IAAP Certified Professional in Accessibility Core Competencies (CPACC)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.accessibilityassociation.org/page/CPACC', costEstimate: '$485 USD' },
+        { name: 'Nielsen Norman Group (NN/g) UX Certified', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.nngroup.com/ux-certification/', costEstimate: '$1,500+ USD' }
+      ];
+    } else {
+      return [
+        { name: 'Nielsen Norman Group (NN/g) UX Master Certified', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.nngroup.com/ux-certification/', costEstimate: '$4,000+ USD' },
+        { name: 'Human Factors International Certified User Experience Analyst (CXA)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://humanfactors.com/certification/cxa.aspx', costEstimate: '$1,200 USD' },
+        { name: 'IAAP Web Accessibility Specialist (WAS)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.accessibilityassociation.org/page/WAS', costEstimate: '$530 USD' }
+      ];
+    }
+  }
+
+  // 17. Web, CMS & Digital Technology
+  if (domainId === 'web-cms' || domainId.includes('web') || domainId.includes('cms')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'Meta Front-End Developer Professional Certificate', level: 'Beginner', status: 'Required', resourceUrl: 'https://grow.google/certificates/', costEstimate: 'Coursera Subscription (~$39/mo)' },
+        { name: 'Google Analytics 4 (GA4) Individual Qualification', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://skillshop.docebosaas.com/learn', costEstimate: 'Free' },
+        { name: 'HubSpot Inbound & Content Marketing Certification', level: 'Beginner', status: 'Optional', resourceUrl: 'https://academy.hubspot.com/courses', costEstimate: 'Free' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'Shopify Certified App Developer / Partner Certification', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.shopify.com/partners/academy', costEstimate: 'Free' },
+        { name: 'Yoast Technical SEO & WordPress Expert Certification', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://yoast.com/academy/', costEstimate: '$99 USD' },
+        { name: 'W3Cx Front-End Web Developer Professional Certificate', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.edx.org/school/w3cx', costEstimate: '$199 USD' }
+      ];
+    } else {
+      return [
+        { name: 'Adobe Certified Expert - Adobe Experience Manager (AEM) Sites Architect', level: 'Advanced', status: 'Required', resourceUrl: 'https://certification.adobe.com/', costEstimate: '$225 USD' },
+        { name: 'Acquia Certified Grand Master (Drupal Architecture)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.acquia.com/careers/certification', costEstimate: '$450 USD' },
+        { name: 'Google Cloud Professional Cloud Developer', level: 'Advanced', status: 'Optional', resourceUrl: 'https://cloud.google.com/learn/certification/cloud-developer', costEstimate: '$200 USD' }
+      ];
+    }
+  }
+
+  // 18. Automation, RPA & Low-Code / No-Code
+  if (domainId === 'automation-rpa' || domainId.includes('rpa') || domainId.includes('low-code')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'Microsoft Certified: Power Platform Fundamentals (PL-900)', level: 'Beginner', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/power-platform-fundamentals/', costEstimate: '$99 USD' },
+        { name: 'UiPath Certified RPA Associate (UiRPA)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://www.uipath.com/learning/certification', costEstimate: '$150 USD' },
+        { name: 'Automation Anywhere Certified Essentials RPA Professional', level: 'Beginner', status: 'Optional', resourceUrl: 'https://university.automationanywhere.com/certification/', costEstimate: '$100 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'Microsoft Certified: Power Automate RPA Developer Associate (PL-500)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/power-automate-rpa-developer-associate/', costEstimate: '$165 USD' },
+        { name: 'UiPath Certified Professional Automation Developer (UiARD)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.uipath.com/learning/certification', costEstimate: '$200 USD' },
+        { name: 'Appian Certified Associate Developer', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://community.appian.com/learn/certifications', costEstimate: '$200 USD' }
+      ];
+    } else {
+      return [
+        { name: 'UiPath Certified Automation Solution Architect', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.uipath.com/learning/certification', costEstimate: '$300 USD' },
+        { name: 'Microsoft Certified: Power Platform Solution Architect Expert (PL-600)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/power-platform-solution-architect-expert/', costEstimate: '$165 USD' },
+        { name: 'Automation Anywhere Certified Master RPA Professional', level: 'Advanced', status: 'Optional', resourceUrl: 'https://university.automationanywhere.com/certification/', costEstimate: '$250 USD' }
+      ];
+    }
+  }
+
+  // 19. Technical Writing & Knowledge Management
+  if (domainId === 'tech-writing' || domainId.includes('writing') || domainId.includes('documentation')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'Google Technical Writing One & Two Certification', level: 'Beginner', status: 'Required', resourceUrl: 'https://developers.google.com/tech-writing', costEstimate: 'Free' },
+        { name: 'Society for Technical Communication (STC) Certified Professional Technical Communicator (CPTC Foundation)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://www.stc.org/certification/', costEstimate: '$260 USD' },
+        { name: 'Markdown & API Documentation Fundamentals', level: 'Beginner', status: 'Optional', resourceUrl: 'https://idratherbewriting.com/learnapidoc/', costEstimate: 'Free' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'STC Certified Professional Technical Communicator (CPTC Practitioner)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.stc.org/certification/', costEstimate: '$410 USD' },
+        { name: 'Knowledge-Centered Service (KCS) v6 Practices Certification', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.serviceinnovation.org/certification/kcs-practices/', costEstimate: '$450 USD' },
+        { name: 'DITA XML Authoring & Information Architecture Specialist', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.stc.org/', costEstimate: '$300 USD' }
+      ];
+    } else {
+      return [
+        { name: 'STC Certified Professional Technical Communicator (CPTC Expert)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.stc.org/certification/', costEstimate: '$510 USD' },
+        { name: 'Knowledge-Centered Service (KCS) v6 Certified Trainer', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.serviceinnovation.org/certification/', costEstimate: '$850 USD' },
+        { name: 'Information Mapping Certified Professional (IMCP)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://informationmapping.com/', costEstimate: '$500 USD' }
+      ];
+    }
+  }
+
+  // 20. Sales Engineering & Customer Success Technology
+  if (domainId === 'sales-customer-success' || domainId.includes('sales') || domainId.includes('customer-success')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'AWS Certified Cloud Practitioner (CLF-C02)', level: 'Beginner', status: 'Required', resourceUrl: 'https://aws.amazon.com/certification/certified-cloud-practitioner/', costEstimate: '$100 USD' },
+        { name: 'Salesforce Certified Associate', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://trailhead.salesforce.com/credentials/associate', costEstimate: '$75 USD' },
+        { name: 'SuccessHACKER Certified Customer Success Manager (CCSM Level 1)', level: 'Beginner', status: 'Optional', resourceUrl: 'https://www.successcoaching.co/ccsm-level-1', costEstimate: '$299 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'Certified Pre-Sales Consultant (CPSC) / Great Demo! Methodology', level: 'Intermediate', status: 'Required', resourceUrl: 'https://greatdemo.com/', costEstimate: '$500 USD' },
+        { name: 'AWS Certified Solutions Architect - Associate (SAA-C03)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/', costEstimate: '$150 USD' },
+        { name: 'Gainsight Certified Customer Success Manager', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.gainsight.com/education/gainsight-certified-csm/', costEstimate: '$150 USD' }
+      ];
+    } else {
+      return [
+        { name: 'Cisco Certified Solutions Specialist - Pre-Sales Architecture', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/index.html', costEstimate: '$400 USD' },
+        { name: 'SuccessHACKER Certified Customer Success Manager (CCSM Level 4)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.successcoaching.co/', costEstimate: '$899 USD' },
+        { name: 'The Open Group TOGAF Standard (Foundation & Practitioner)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.opengroup.org/certifications/togaf', costEstimate: '$550 USD' }
+      ];
+    }
+  }
+
+  // 21. Hardware, Embedded Systems & IoT Engineering
+  if (domainId === 'hardware-iot' || domainId.includes('hardware') || domainId.includes('embedded') || domainId.includes('iot')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'C-DAC PG Diploma in Embedded Systems Design (PG-DESD)', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.cdac.in/index.aspx?id=edu_acts_admission_booklet', costEstimate: '₹90,000 INR (Course/Exam)' },
+        { name: 'Arm Accredited Engineer (AAE)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://www.arm.com/resources/education/accreditation', costEstimate: '$200 USD' },
+        { name: 'IPC-A-610 Certified IPC Specialist (Electronic Assemblies)', level: 'Beginner', status: 'Optional', resourceUrl: 'https://www.ipc.org/ipc-certification-programs', costEstimate: '$350 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'AWS Certified IoT Specialist / Azure IoT Developer Specialty (AZ-220)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-iot-developer-specialty/', costEstimate: '$165 USD' },
+        { name: 'Arm Accredited System Architect', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.arm.com/resources/education/accreditation', costEstimate: '$250 USD' },
+        { name: 'NIELIT Advanced Diploma in VLSI and Embedded Systems Design', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.nielit.gov.in/', costEstimate: '₹25,000 INR' }
+      ];
+    } else {
+      return [
+        { name: 'Certified System on Chip (SoC) Architect - IEEE / Arm Professional', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.arm.com/resources/education/accreditation', costEstimate: '$500 USD' },
+        { name: 'IPC Certified Interconnect Designer (CID+ Advanced PCB Design)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.ipc.org/ipc-certification-programs', costEstimate: '$650 USD' },
+        { name: 'C-DAC Advanced Specialist in VLSI & High Performance Embedded Computing', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.cdac.in/', costEstimate: '₹90,000 INR' }
+      ];
+    }
+  }
+
+  // 22. Telecom, Voice & Collaboration
+  if (domainId === 'telecom-voice' || domainId.includes('telecom') || domainId.includes('voice')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'CompTIA Network+', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.comptia.org/en/certifications/network/', costEstimate: '$392 USD' },
+        { name: 'Microsoft 365 Certified: Fundamentals (MS-900)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/microsoft-365-fundamentals/', costEstimate: '$99 USD' },
+        { name: 'SIP School Certified Associate (SSCA)', level: 'Beginner', status: 'Optional', resourceUrl: 'https://www.thesipschool.com/courses/view', costEstimate: '$240 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'Microsoft Certified: Teams Administrator Associate (MS-700)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/teams-administrator/', costEstimate: '$165 USD' },
+        { name: 'Cisco Certified Network Associate (CCNA Collaboration / 200-301)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/associate/ccna/index.html', costEstimate: '$300 USD' },
+        { name: 'Zoom Certified Solutions Integrator', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://partnerlearning.zoom.us/', costEstimate: 'Free' }
+      ];
+    } else {
+      return [
+        { name: 'Cisco Certified Network Professional (CCNP Collaboration)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/professional/ccnp-collaboration/index.html', costEstimate: '$400 + $300 USD' },
+        { name: 'Cisco Certified Internetwork Expert (CCIE Collaboration)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/expert/ccie-collaboration/index.html', costEstimate: '$1,600 USD Lab' },
+        { name: 'SIP School Voice over IP Advanced Professional (SSVAP)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.thesipschool.com/', costEstimate: '$350 USD' }
+      ];
+    }
+  }
+
+  // 23. Governance, Risk, Compliance (GRC) & IT Audit
+  if (domainId === 'governance-audit' || domainId.includes('grc') || domainId.includes('governance')) {
+    if (level === 'Entry-level') {
+      return [
+        { name: 'ISC2 Certified in Cybersecurity (CC)', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.isc2.org/certifications/cc', costEstimate: 'Free Promo / $50 USD' },
+        { name: 'Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/security-compliance-and-identity-fundamentals/', costEstimate: '$99 USD' },
+        { name: 'CompTIA Security+', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.comptia.org/en/certifications/security/', costEstimate: '$404 USD' }
+      ];
+    } else if (level === 'Mid-level') {
+      return [
+        { name: 'ISACA Certified Information Systems Auditor (CISA)', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.isaca.org/credentialing/cisa', costEstimate: '$575 - $760 USD' },
+        { name: 'ISO/IEC 27001 Lead Auditor (PECB / IRCA)', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001', costEstimate: '$800 - $1,200 USD' },
+        { name: 'ISACA Certified in Risk and Information Systems Control (CRISC)', level: 'Intermediate', status: 'Optional', resourceUrl: 'https://www.isaca.org/credentialing/crisc', costEstimate: '$575 - $760 USD' }
+      ];
+    } else {
+      return [
+        { name: 'ISACA Certified Information Security Manager (CISM)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.isaca.org/credentialing/cism', costEstimate: '$575 - $760 USD' },
+        { name: 'ISACA Certified in the Governance of Enterprise IT (CGEIT)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.isaca.org/credentialing/cgeit', costEstimate: '$575 - $760 USD' },
+        { name: 'IAPP Certified Information Privacy Professional (CIPP/E / CIPP/US)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://iapp.org/certify/cipp/', costEstimate: '$550 USD' }
+      ];
+    }
+  }
+
+  // 24. Technology Architecture Track
+  if (domainId === 'architecture' || domainId.includes('architect')) {
+    return [
+      { name: 'The Open Group TOGAF Standard (Foundation & Practitioner 10th Ed)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.opengroup.org/certifications/togaf', costEstimate: '$550 USD' },
+      { name: 'AWS Certified Solutions Architect - Professional (SAP-C02)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://aws.amazon.com/certification/certified-solutions-architect-professional/', costEstimate: '$300 USD' },
+      { name: 'Microsoft Certified: Azure Solutions Architect Expert (AZ-305)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://learn.microsoft.com/credentials/certifications/azure-solutions-architect/', costEstimate: '$165 USD' }
+    ];
+  }
+
+  // 25. Executive & C-Level Tech Leadership
+  if (domainId === 'executive' || domainId.includes('leadership') || domainId.includes('c-level')) {
+    return [
+      { name: 'ISC2 Certified Information Systems Security Professional (CISSP)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.isc2.org/certifications/cissp', costEstimate: '$749 USD' },
+      { name: 'ISACA Certified in the Governance of Enterprise IT (CGEIT)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.isaca.org/credentialing/cgeit', costEstimate: '$575 - $760 USD' },
+      { name: 'ITIL 4 Strategic Leader (SL - Digital & IT Strategy)', level: 'Advanced', status: 'Optional', resourceUrl: 'https://www.peoplecert.org/Frameworks-Professionals/ITIL-framework', costEstimate: '$500+ USD' }
+    ];
+  }
+
+  // 26. Green Computing & Sustainable IT
+  if (domainId === 'green-computing' || domainId.includes('green') || domainId.includes('sustainable')) {
+    return [
+      { name: 'Green Software Foundation (GSF) Green Software Practitioner', level: 'Beginner', status: 'Required', resourceUrl: 'https://learn.greensoftware.foundation/', costEstimate: 'Free' },
+      { name: 'Sustainability and Climate Risk (SCR) by GARP', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.garp.org/scr', costEstimate: '$300 USD' },
+      { name: 'ISO 14001 Environmental Management Systems Lead Auditor', level: 'Advanced', status: 'Optional', resourceUrl: 'https://pecb.com/en/education-and-certification-for-individuals/iso-14001', costEstimate: '$800 USD' }
+    ];
+  }
+
+  // Final fallback based on general level
+  if (level === 'Entry-level') {
+    return [
+      { name: 'CompTIA A+', level: 'Beginner', status: 'Required', resourceUrl: 'https://www.comptia.org/en/certifications/a/', costEstimate: '$253 USD / exam' },
+      { name: 'Google IT Support Professional Certificate', level: 'Beginner', status: 'Preferred', resourceUrl: 'https://grow.google/certificates/it-support/', costEstimate: 'Coursera Subscription' }
+    ];
+  } else if (level === 'Mid-level') {
+    return [
+      { name: 'CompTIA Security+', level: 'Intermediate', status: 'Required', resourceUrl: 'https://www.comptia.org/en/certifications/security/', costEstimate: '$404 USD' },
+      { name: 'ITIL 4 Foundation', level: 'Intermediate', status: 'Preferred', resourceUrl: 'https://www.peoplecert.org/Frameworks-Professionals/ITIL-framework', costEstimate: '$380 USD' }
+    ];
+  } else {
+    return [
+      { name: 'ISC2 Certified Information Systems Security Professional (CISSP)', level: 'Advanced', status: 'Required', resourceUrl: 'https://www.isc2.org/certifications/cissp', costEstimate: '$749 USD' },
+      { name: 'The Open Group TOGAF Standard (Practitioner)', level: 'Advanced', status: 'Preferred', resourceUrl: 'https://www.opengroup.org/certifications/togaf', costEstimate: '$550 USD' }
+    ];
+  }
+}
+
+
+export function getDomainRoleProfile(domainId: string, roleId: string, level: 'Entry-level' | 'Mid-level' | 'Advanced', isCoding: boolean, title: string, domainName: string) {
+  const rLower = roleId.toLowerCase();
+  
+  // Default technical skills matching domain & certifications
+  let techSkills: string[] = [];
+  let processSkills: string[] = ['SLA requirements & ticket lifecycle management', 'Agile sprint collaboration & documentation'];
+  let tools: string[] = ['Jira Software', 'ServiceNow', 'GitHub', 'Enterprise Diagnostics Portal'];
+  let keywords: { keyword: string; priority: 'High' | 'Medium' | 'Low' }[] = [
+    { keyword: `${title} Architecture`, priority: 'High' },
+    { keyword: `${domainName} Best Practices`, priority: 'High' },
+    { keyword: 'Root Cause Analysis (RCA)', priority: 'Medium' }
+  ];
+  let interviewTopics = {
+    technical: [
+      `What are the core technical architectures and performance metrics in ${title}?`,
+      `How do you diagnose and troubleshoot complex system errors or integration failures in ${domainName}?`,
+      `How do modern security standards and automation apply to ${title} workflows?`
+    ],
+    scenario: [
+      `A high-priority production issue arises during peak operational hours. Detail your step-by-step resolution process.`,
+      `A cross-functional team member requests a configuration change that conflicts with established domain policies. How do you address this?`
+    ],
+    hr: [
+      `What motivated you to specialize in the ${title} career path?`,
+      `How do you stay updated with rapid industry advancements and emerging certifications in ${domainName}?`
+    ]
+  };
+
+  // 1. IT Support, Service Desk & EUC
+  if (domainId === 'it-support' || domainId.includes('support')) {
+    techSkills = ['Hardware & OS Diagnostics (Windows, macOS, Linux)', 'Active Directory / Entra ID User Management', 'Network Troubleshooting (TCP/IP, DHCP, DNS, VPN)', 'Endpoint Imaging & Remote Access Tools'];
+    processSkills = ['ITIL Incident, Request & Problem Management', 'SLA Urgency & First-Contact Resolution (FCR)', 'Knowledge Base Documentation (KCS)'];
+    tools = ['ServiceNow ITSM', 'Jira Service Management', 'Microsoft Intune', 'Active Directory Users & Computers', 'TeamViewer / Remote Assist', 'PowerShell'];
+    keywords = [
+      { keyword: 'IT Service Desk & EUC', priority: 'High' },
+      { keyword: 'Active Directory / Entra ID', priority: 'High' },
+      { keyword: 'Incident & SLA Management', priority: 'High' },
+      { keyword: 'CompTIA A+ / ITIL 4', priority: 'Medium' }
+    ];
+  }
+  // 2. Systems & Infrastructure
+  else if (domainId === 'systems-infra' || domainId.includes('systems') || domainId.includes('infra')) {
+    techSkills = ['Linux (RHEL/Ubuntu) & Windows Server Administration', 'Virtualization (VMware ESXi, vSphere, Hyper-V)', 'Storage Protocols (SAN/NAS, iSCSI, RAID)', 'System Backup, Disaster Recovery & Patch Management'];
+    processSkills = ['Change Management & Maintenance Window Protocols', 'Infrastructure Capacity Planning', 'High Availability (HA) Failover Architecture'];
+    tools = ['Red Hat Enterprise Linux', 'VMware vSphere', 'Bash & PowerShell Scripting', 'Ansible Automation', 'Veeam Backup', 'Nagios / Zabbix'];
+    keywords = [
+      { keyword: 'Linux & Windows Server Administration', priority: 'High' },
+      { keyword: 'Virtualization & Storage Management', priority: 'High' },
+      { keyword: 'Patch & Backup Orchestration', priority: 'High' },
+      { keyword: 'RHCSA / Azure Administrator', priority: 'Medium' }
+    ];
+  }
+  // 3. Networking
+  else if (domainId === 'networking') {
+    techSkills = ['Routing & Switching Protocols (BGP, OSPF, VLANs, STP)', 'Firewall & Security Appliances (Palo Alto, Fortinet, Cisco ASA)', 'Subnetting, IPv4/IPv6 Addressing & DNS/DHCP', 'Network Performance Monitoring & Packet Capture (Wireshark)'];
+    processSkills = ['Network Change Authorization Protocols', 'Outage Incident Escalation & Post-Mortems', 'NOC 24/7 Monitoring Protocols'];
+    tools = ['Cisco IOS / NX-OS', 'Wireshark Packet Analyzer', 'SolarWinds / PRTG Network Monitor', 'Palo Alto Panorama', 'Python Scapy / Netmiko', 'GNS3 / Cisco Packet Tracer'];
+    keywords = [
+      { keyword: 'Routing & Switching (OSPF/BGP)', priority: 'High' },
+      { keyword: 'Cisco CCNA / CCNP Networking', priority: 'High' },
+      { keyword: 'Network Security & Firewalls', priority: 'High' },
+      { keyword: 'Wireshark Packet Analysis', priority: 'Medium' }
+    ];
+  }
+  // 4. Cloud Computing
+  else if (domainId === 'cloud') {
+    techSkills = ['Multi-Cloud Infrastructure (AWS, Azure, GCP)', 'Infrastructure as Code (Terraform, CloudFormation, ARM/Bicep)', 'Virtual Networks, VPC Peering & Security Groups', 'Serverless Compute (AWS Lambda, Azure Functions) & Storage Tiers'];
+    processSkills = ['FinOps Cloud Cost Optimization & Budget Tracking', 'Well-Architected Framework Best Practices', 'Zero-Trust Cloud Governance & IAM Controls'];
+    tools = ['AWS Management Console / CLI', 'Microsoft Azure Portal', 'Google Cloud Platform', 'Terraform', 'Docker', 'CloudWatch / Azure Monitor'];
+    keywords = [
+      { keyword: 'Cloud Infrastructure Architecture (AWS/Azure/GCP)', priority: 'High' },
+      { keyword: 'Terraform & Infrastructure as Code (IaC)', priority: 'High' },
+      { keyword: 'IAM Security & VPC Networking', priority: 'High' },
+      { keyword: 'FinOps & Cloud Cost Optimization', priority: 'Medium' }
+    ];
+  }
+  // 5. Cybersecurity, GRC & Security Operations
+  else if (domainId === 'cybersecurity' || domainId.includes('security')) {
+    techSkills = ['SIEM Threat Detection & Log Analysis (Splunk, Microsoft Sentinel)', 'Vulnerability Assessment & Penetration Testing (Nessus, Burp Suite)', 'Identity & Access Management (IAM, MFA, SSO, Zero Trust)', 'Incident Response & Digital Forensics (DFIR)'];
+    processSkills = ['ISO/IEC 27001 & SOC 2 Compliance Frameworks', 'NIST Cybersecurity Framework (CSF) Alignment', 'Threat Triage, Containment & Forensic Reporting'];
+    tools = ['Splunk Enterprise Security', 'Microsoft Sentinel', 'Wireshark', 'Burp Suite Pro', 'CrowdStrike Falcon / Defender for Endpoint', 'Nessus Vulnerability Scanner'];
+    keywords = [
+      { keyword: 'SOC Threat Monitoring & SIEM', priority: 'High' },
+      { keyword: 'CompTIA Security+ / CISSP', priority: 'High' },
+      { keyword: 'Incident Response & DFIR', priority: 'High' },
+      { keyword: 'Zero Trust & Vulnerability Management', priority: 'Medium' }
+    ];
+  }
+  // 6. Software Development
+  else if (domainId === 'software-dev' || domainId.includes('dev')) {
+    techSkills = ['Modern Programming Languages (JavaScript/TypeScript, Python, Java, Go, C#)', 'RESTful API & GraphQL Backend Architecture', 'Database Design & ORM Query Optimization (PostgreSQL, MongoDB)', 'Data Structures, Algorithms & Design Patterns'];
+    processSkills = ['Agile Scrum Ceremonies & Sprint Estimations', 'Code Review, PR Lifecycle & Git Branching Strategies', 'Test-Driven Development (TDD) & Clean Architecture'];
+    tools = ['Node.js / Express / Next.js', 'React / Angular / Vue', 'PostgreSQL / MongoDB', 'Git & GitHub Actions', 'Postman API Testing', 'Docker Containers'];
+    keywords = [
+      { keyword: 'Full-Stack / Backend Engineering', priority: 'High' },
+      { keyword: 'REST APIs & Microservices', priority: 'High' },
+      { keyword: 'Database Modeling & SQL/NoSQL', priority: 'High' },
+      { keyword: 'GitOps & CI/CD Pipelines', priority: 'Medium' }
+    ];
+  }
+  // 7. QA & Testing
+  else if (domainId === 'qa-testing' || domainId.includes('testing')) {
+    techSkills = ['Test Automation Frameworks (Selenium, Cypress, Playwright, Appium)', 'API Testing & Validation (Postman, RestAssured)', 'Performance & Load Testing (JMeter, k6)', 'SQL Querying for Test Data Verification'];
+    processSkills = ['ISTQB Test Case Authoring & Defect Lifecycle Management', 'Agile Acceptance Criteria & BDD (Cucumber/Gherkin)', 'Regression & Exploratory Testing Strategies'];
+    tools = ['Playwright / Cypress', 'Selenium WebDriver', 'Postman', 'Jira / Xray', 'Apache JMeter', 'Git / GitHub CI'];
+    keywords = [
+      { keyword: 'Test Automation (Playwright/Selenium)', priority: 'High' },
+      { keyword: 'API & Performance Testing', priority: 'High' },
+      { keyword: 'ISTQB Certified Methodologies', priority: 'High' },
+      { keyword: 'CI/CD Regression Testing', priority: 'Medium' }
+    ];
+  }
+  // 8. DevOps & SRE
+  else if (domainId === 'devops-sre' || domainId.includes('devops')) {
+    techSkills = ['Container Orchestration (Kubernetes, Docker)', 'CI/CD Pipeline Automation (GitHub Actions, GitLab CI, Jenkins)', 'Infrastructure as Code (Terraform, Ansible)', 'Observability & Metrics (Prometheus, Grafana, OpenTelemetry)'];
+    processSkills = ['Site Reliability Engineering (SLI, SLO, SLA, Error Budgets)', 'GitOps Workflow & Automated Deployment Strategies', 'Blameless Post-Mortems & Incident Response'];
+    tools = ['Kubernetes (K8s)', 'Docker', 'Terraform', 'GitHub Actions', 'Prometheus & Grafana', 'ArgoCD'];
+    keywords = [
+      { keyword: 'Kubernetes (CKA) & Containers', priority: 'High' },
+      { keyword: 'CI/CD Pipeline Engineering', priority: 'High' },
+      { keyword: 'Terraform & GitOps IaC', priority: 'High' },
+      { keyword: 'Observability (Prometheus/Grafana)', priority: 'Medium' }
+    ];
+  }
+  // 9. Data, Analytics & BI
+  else if (domainId === 'data-analytics' || domainId.includes('analytics')) {
+    techSkills = ['Advanced SQL Querying, Window Functions & CTEs', 'Data Visualization & Dashboard Engineering (Power BI, Tableau)', 'Data Modeling (Star/Snowflake Schema, DAX)', 'Python / R for Exploratory Data Analysis (Pandas, NumPy)'];
+    processSkills = ['Business Metric Definition & KPI Alignment', 'Data Cleaning & Transformation Quality Assurance', 'Executive Stakeholder Storytelling & Presentation'];
+    tools = ['Microsoft Power BI', 'Tableau', 'SQL Server / PostgreSQL', 'Python (Pandas, Jupyter)', 'Excel Advanced (Power Query)', 'dbt / Snowflake'];
+    keywords = [
+      { keyword: 'Power BI & Tableau Dashboarding', priority: 'High' },
+      { keyword: 'Advanced SQL Data Modeling', priority: 'High' },
+      { keyword: 'Business Intelligence & DAX', priority: 'High' },
+      { keyword: 'KPI Storytelling & Analytics', priority: 'Medium' }
+    ];
+  }
+  // 10. Data Science & AI
+  else if (domainId === 'data-science-ai' || domainId.includes('ai') || domainId.includes('data-science')) {
+    techSkills = ['Machine Learning Algorithms (Regression, Classification, Clustering, XGBoost)', 'Deep Learning & Neural Networks (PyTorch, TensorFlow)', 'Generative AI, LLMs, Prompt Engineering & RAG Architectures', 'Feature Engineering, MLflow & MLOps Pipelines'];
+    processSkills = ['Hypothesis Testing & Statistical Validation', 'Model Evaluation (Precision, Recall, F1, ROC-AUC)', 'Responsible AI & Data Privacy Ethics'];
+    tools = ['Python (Scikit-Learn, PyTorch, Pandas)', 'Jupyter Notebooks', 'LangChain / LlamaIndex', 'Hugging Face Transformers', 'MLflow / Kubeflow', 'Databricks'];
+    keywords = [
+      { keyword: 'Machine Learning & PyTorch', priority: 'High' },
+      { keyword: 'Generative AI, LLMs & RAG', priority: 'High' },
+      { keyword: 'MLOps Pipeline Deployment', priority: 'High' },
+      { keyword: 'Statistical Data Science', priority: 'Medium' }
+    ];
+  }
+  // 11. Database Administration
+  else if (domainId === 'db-admin' || domainId.includes('database')) {
+    techSkills = ['RDBMS Administration (Oracle, PostgreSQL, MySQL, SQL Server)', 'Database Clustering, High Availability & Replication', 'Query Optimization, Index Tuning & Execution Plan Audits', 'Backup Strategies, Point-in-Time Recovery (PITR) & Disaster Recovery'];
+    processSkills = ['Database Capacity Planning & Storage Projections', 'Database Security, Encryption & User Privileges Audits', 'Production Maintenance Windows & Zero-Downtime Upgrades'];
+    tools = ['Oracle Database / Enterprise Manager', 'PostgreSQL / pgAdmin', 'MySQL Workbench', 'SQL Server Management Studio (SSMS)', 'Snowflake', 'MongoDB'];
+    keywords = [
+      { keyword: 'Database Administration (DBA)', priority: 'High' },
+      { keyword: 'Query Performance & Index Tuning', priority: 'High' },
+      { keyword: 'High Availability & Replication', priority: 'High' },
+      { keyword: 'Backup & Point-in-Time Recovery', priority: 'Medium' }
+    ];
+  }
+  // 12. IT Operations & ITSM
+  else if (domainId === 'it-ops-itsm' || domainId.includes('itsm')) {
+    techSkills = ['ITSM Platform Administration & Workflow Configuration', 'CMDB Asset Mapping & Configuration Item (CI) Tracking', 'Monitoring & Event Management Integration', 'Automation Scripts for Operations Tasks'];
+    processSkills = ['ITIL 4 Service Value System (Incident, Problem, Change)', 'SLA Governance, OLA Tracking & Metrics Reporting', 'Continuous Service Improvement (CSI) & RCA'];
+    tools = ['ServiceNow Enterprise Suite', 'Jira Service Management', 'PagerDuty', 'BMC Helix', 'Splunk Observability', 'Microsoft 365 Admin'];
+    keywords = [
+      { keyword: 'ITIL 4 Service Management', priority: 'High' },
+      { keyword: 'ServiceNow ITSM & CMDB', priority: 'High' },
+      { keyword: 'Incident, Problem & Change Management', priority: 'High' },
+      { keyword: 'SLA Governance & Operations', priority: 'Medium' }
+    ];
+  }
+  // 13. ERP & CRM
+  else if (domainId === 'erp-crm' || domainId.includes('erp') || domainId.includes('crm')) {
+    techSkills = ['Salesforce Platform Configuration & Flow Automation', 'SAP S/4HANA Module Implementation (FICO, MM, SD)', 'Data Migration, ETL & Integration via REST/SOAP APIs', 'Role-Based Access Controls & Security Profiles'];
+    processSkills = ['Enterprise Business Process Mapping (Order-to-Cash, Procure-to-Pay)', 'User Acceptance Testing (UAT) & Release Deployment', 'Functional Requirements Specification'];
+    tools = ['Salesforce Lightning / Flow Builder', 'SAP S/4HANA / Fiori', 'ServiceNow', 'MuleSoft / Integration Middleware', 'Microsoft Dynamics 365', 'Data Loader'];
+    keywords = [
+      { keyword: 'Salesforce Admin & Architecture', priority: 'High' },
+      { keyword: 'SAP S/4HANA ERP Modules', priority: 'High' },
+      { keyword: 'Business Workflow Automation', priority: 'High' },
+      { keyword: 'CRM/ERP Data Integration', priority: 'Medium' }
+    ];
+  }
+  // 14. Project & Product Management
+  else if (domainId === 'product-mgmt' || domainId.includes('product') || domainId.includes('project')) {
+    techSkills = ['Product Roadmap Strategy & Backlog Prioritization', 'Agile Frameworks (Scrum, Kanban, SAFe)', 'Data-Driven Decision Making & Product Analytics', 'Risk Management, Budget Forecasting & Resource Allocation'];
+    processSkills = ['Sprint Planning, Daily Standups, Reviews & Retrospectives', 'User Story Authoring with Acceptance Criteria', 'Cross-Functional Stakeholder Alignment & Executive Reporting'];
+    tools = ['Jira Software / Confluence', 'Miro / Figma for Roadmapping', 'Monday.com / Asana', 'Mixpanel / Amplitude', 'Trello', 'Productboard'];
+    keywords = [
+      { keyword: 'Agile Scrum & Sprint Leadership', priority: 'High' },
+      { keyword: 'Product Roadmap & Feature Strategy', priority: 'High' },
+      { keyword: 'PMI PMP / Scrum PSM/PSPO', priority: 'High' },
+      { keyword: 'Stakeholder & Release Management', priority: 'Medium' }
+    ];
+  }
+  // 15. Business Analysis & Tech Consulting
+  else if (domainId === 'business-analysis' || domainId.includes('consulting')) {
+    techSkills = ['Business Process Modeling & Notation (BPMN)', 'Requirements Elicitation & Functional Specifications (BRD/FRD)', 'SQL Data Analysis & Process Flow Mapping', 'Gap Analysis & Feasibility Study Frameworks'];
+    processSkills = ['BABOK v3 Business Analysis Methodology', 'Stakeholder Interviewing & Workshop Facilitation', 'User Story Mapping & Acceptance Testing Sign-off'];
+    tools = ['Jira / Confluence', 'Microsoft Visio / Lucidchart', 'Power BI / Excel Advanced', 'Balsamiq Wireframing', 'SQL Client', 'Enterprise Architect'];
+    keywords = [
+      { keyword: 'Business Analysis (IIBA BABOK / CBAP)', priority: 'High' },
+      { keyword: 'BPMN Process Modeling & BRD/FRD', priority: 'High' },
+      { keyword: 'Agile User Stories & Requirements', priority: 'High' },
+      { keyword: 'Gap Analysis & Solution Consulting', priority: 'Medium' }
+    ];
+  }
+  // 16. UI/UX & Design
+  else if (domainId === 'uiux-design' || domainId.includes('ui') || domainId.includes('ux')) {
+    techSkills = ['Wireframing & Interactive Prototyping (Figma, Adobe XD)', 'User Research, Persona Development & Usability Testing', 'Design Systems, Component Libraries & Token Architecture', 'Accessibility Standards (WCAG 2.1 AA/AAA) & Responsive Layouts'];
+    processSkills = ['Double Diamond Design Thinking Process', 'Usability Heuristic Evaluations', 'Developer Handoff & UI Quality Assurance'];
+    tools = ['Figma', 'Adobe Creative Cloud (XD, Photoshop, Illustrator)', 'Miro / FigJam', 'Maze / UsabilityHub', 'Zeplin / Storybook', 'Webflow'];
+    keywords = [
+      { keyword: 'UI/UX Design Systems (Figma)', priority: 'High' },
+      { keyword: 'User Research & Usability Testing', priority: 'High' },
+      { keyword: 'WCAG Accessibility & Wireframing', priority: 'High' },
+      { keyword: 'Design Thinking & Prototyping', priority: 'Medium' }
+    ];
+  }
+  // 17. Web & CMS
+  else if (domainId === 'web-cms' || domainId.includes('web')) {
+    techSkills = ['Frontend Web Technologies (HTML5, CSS3, JavaScript, Tailwind)', 'CMS Platform Development (WordPress, Shopify, Webflow, Drupal)', 'Technical SEO, Core Web Vitals & PageSpeed Optimization', 'Headless CMS Architecture & REST/GraphQL API Integrations'];
+    processSkills = ['Cross-Browser & Mobile Responsive Testing', 'Content Publishing Workflows & Editorial Governance', 'Website Security, SSL & CDN Configuration'];
+    tools = ['WordPress / Gutenberg', 'Shopify Liquid / Admin', 'Google Analytics 4 & Search Console', 'GitHub / Vercel', 'VS Code', 'Yoast SEO'];
+    keywords = [
+      { keyword: 'WordPress & Shopify Development', priority: 'High' },
+      { keyword: 'Technical SEO & Core Web Vitals', priority: 'High' },
+      { keyword: 'HTML5/CSS3/JavaScript', priority: 'High' },
+      { keyword: 'Headless CMS & Web Platforms', priority: 'Medium' }
+    ];
+  }
+  // 18. Automation & RPA
+  else if (domainId === 'automation-rpa' || domainId.includes('rpa')) {
+    techSkills = ['RPA Bot Architecture & Development (UiPath, Automation Anywhere, Power Automate)', 'Web & Desktop Automation Selectors, Regex & OCR', 'API Integration, Webhooks & Data Transformation', 'Exception Handling, Bot Scheduling & Queue Management'];
+    processSkills = ['Process Definition Document (PDD) & Solution Design Document (SDD)', 'ROI Calculation & Process Feasibility Assessment', 'Bot Deployment Lifecycle & Maintenance Governance'];
+    tools = ['UiPath Studio & Orchestrator', 'Microsoft Power Automate Desktop', 'Automation Anywhere A360', 'Python Automation (Playwright/BeautifulSoup)', 'n8n / Zapier', 'OCR Engines (ABBYY, Tesseract)'];
+    keywords = [
+      { keyword: 'UiPath & Power Automate RPA', priority: 'High' },
+      { keyword: 'Bot Orchestration & Automation', priority: 'High' },
+      { keyword: 'PDD/SDD Process Documentation', priority: 'High' },
+      { keyword: 'API & Low-Code Workflow Design', priority: 'Medium' }
+    ];
+  }
+  // 19. Technical Writing
+  else if (domainId === 'tech-writing' || domainId.includes('writing')) {
+    techSkills = ['Developer Documentation & API Reference Authoring (OpenAPI/Swagger, Markdown)', 'Static Site Generators (Docusaurus, MkDocs, Hugo, GitBook)', 'Information Architecture & Topic-Based Authoring (DITA XML)', 'Version Control for Documentation (Docs-as-Code, Git)'];
+    processSkills = ['Documentation Review Cycles with Subject Matter Experts (SMEs)', 'Style Guide Enforcement (Microsoft/Google Developer Documentation Style)', 'User Feedback Analysis & Content Maintenance'];
+    tools = ['Markdown / MDX', 'Swagger / Postman API Docs', 'Docusaurus / MkDocs', 'Git & GitHub', 'Snagit / Adobe Illustrator', 'Grammarly / Vale'];
+    keywords = [
+      { keyword: 'API Documentation & Swagger/OpenAPI', priority: 'High' },
+      { keyword: 'Docs-as-Code & Markdown/Docusaurus', priority: 'High' },
+      { keyword: 'Technical Writing & Style Guides', priority: 'High' },
+      { keyword: 'Knowledge Base & SME Collaboration', priority: 'Medium' }
+    ];
+  }
+  // 20. Sales Engineering & Customer Success
+  else if (domainId === 'sales-customer-success' || domainId.includes('sales')) {
+    techSkills = ['Technical Solution Architecture & Proof of Concept (PoC) Delivery', 'Enterprise Software Demonstrations & Competitive Positioning', 'Customer Onboarding, Technical Enablement & API Guidance', 'Health Score Analytics & Retention Risk Identification'];
+    processSkills = ['Pre-Sales Discovery & Value Proposition Alignment', 'Quarterly Business Reviews (QBRs) & Executive Presentations', 'Customer Journey Mapping & Escalation Management'];
+    tools = ['Salesforce CRM', 'Gainsight Customer Success Platform', 'Postman API Demonstrations', 'Jira / Confluence', 'Zoom / Microsoft Teams', 'Loom / Demo Automation'];
+    keywords = [
+      { keyword: 'Pre-Sales Solutions Engineering', priority: 'High' },
+      { keyword: 'Technical Demos & PoC Delivery', priority: 'High' },
+      { keyword: 'Customer Success & Retention Strategy', priority: 'High' },
+      { keyword: 'Cloud & API Integration Consulting', priority: 'Medium' }
+    ];
+  }
+  // 21. Hardware & IoT
+  else if (domainId === 'hardware-iot' || domainId.includes('hardware') || domainId.includes('iot')) {
+    techSkills = ['Embedded C/C++ Programming & RTOS (FreeRTOS, Zephyr)', 'Microcontroller Platforms (ARM Cortex, ESP32, STM32, Arduino)', 'Hardware Communication Protocols (I2C, SPI, UART, CAN, BLE, Zigbee)', 'PCB Schematic Design, Layout & Soldering (KiCad, Altium)'];
+    processSkills = ['Hardware Prototype Testing & Oscilloscope Diagnostics', 'Firmware Versioning & Over-The-Air (OTA) Update Management', 'EMI/EMC Compliance & Quality Standards'];
+    tools = ['Altium Designer / KiCad', 'Embedded C/C++', 'Keil uVision / STM32CubeIDE', 'Logic Analyzers & Oscilloscopes', 'FreeRTOS', 'MQTT / AWS IoT Core'];
+    keywords = [
+      { keyword: 'Embedded C/C++ & Microcontrollers', priority: 'High' },
+      { keyword: 'IoT Protocols (MQTT/BLE/UART)', priority: 'High' },
+      { keyword: 'PCB Design & Hardware Debugging', priority: 'High' },
+      { keyword: 'RTOS & Firmware Architecture', priority: 'Medium' }
+    ];
+  }
+  // 22. Telecom & Voice
+  else if (domainId === 'telecom-voice' || domainId.includes('telecom') || domainId.includes('voice')) {
+    techSkills = ['VoIP & SIP Protocol Signaling (Session Initiation Protocol, RTP, SDP)', 'Enterprise Telephony Platforms (Cisco Unified Communications Manager - CUCM, Avaya)', 'Microsoft Teams Voice & Zoom Phone Administration', 'Session Border Controllers (SBC) Configuration & Quality of Service (QoS)'];
+    processSkills = ['Telecom Carrier Trunk Management & Number Portability', 'Call Quality Diagnostics (MOS Scores, Jitter, Packet Loss)', 'Telephony Maintenance & E911 Compliance'];
+    tools = ['Cisco CUCM / Unity Connection', 'AudioCodes / Ribbon SBCs', 'Microsoft Teams Admin Center', 'Zoom Phone Management Portal', 'Wireshark Voice Analysis', 'SIP Workbench'];
+    keywords = [
+      { keyword: 'VoIP & SIP Protocol Engineering', priority: 'High' },
+      { keyword: 'Cisco CUCM & Collaboration', priority: 'High' },
+      { keyword: 'Microsoft Teams & Zoom Phone Voice', priority: 'High' },
+      { keyword: 'Session Border Controllers (SBC) & QoS', priority: 'Medium' }
+    ];
+  }
+  // 23. Governance, Risk, Compliance & Audit
+  else if (domainId === 'governance-audit' || domainId.includes('grc') || domainId.includes('governance')) {
+    techSkills = ['IT General Controls (ITGC) Testing & SOX 404 IT Audits', 'Information Security Standards (ISO/IEC 27001, SOC 2 Type II, NIST 800-53)', 'Privacy Regulations Compliance (GDPR, HIPAA, India DPDPA 2023)', 'Third-Party Vendor Risk Assessment & Continuous Monitoring'];
+    processSkills = ['Enterprise Risk Management (ERM) Framework Implementation', 'Audit Planning, Sampling & Management Evidence Workpapers', 'Corrective Action Plan (CAP) Tracking & Policy Governance'];
+    tools = ['ServiceNow GRC / MetricStream', 'AuditBoard / OneTrust', 'Microsoft Purview Compliance Manager', 'Excel Advanced Audit Workbooks', 'Jira Compliance', 'Vanta / Drata'];
+    keywords = [
+      { keyword: 'ISACA CISA / CISM Audit', priority: 'High' },
+      { keyword: 'ISO 27001 & SOC 2 Compliance', priority: 'High' },
+      { keyword: 'IT General Controls (ITGC) & SOX', priority: 'High' },
+      { keyword: 'Data Privacy & Vendor Risk Management', priority: 'Medium' }
+    ];
+  }
+  // 24. Technology Architecture
+  else if (domainId === 'architecture') {
+    techSkills = ['Enterprise Architecture Frameworks (TOGAF 10th Ed, Zachman)', 'Cloud & Hybrid Distributed Systems Architecture', 'Application Modernization, Microservices & Event-Driven Design', 'Technology Portfolio Evaluation & Vendor Roadmap Selection'];
+    processSkills = ['Architecture Review Board (ARB) Governance & Standards', 'Target State Architecture & Technology Migration Roadmaps', 'Business Capabilities Mapping & Technical Debt Management'];
+    tools = ['ArchiMate / Enterprise Architect', 'AWS / Azure Architecture Diagrams', 'Lucidchart / Miro', 'Confluence Architecture Repositories', 'LeanIX', 'Cloudcraft'];
+    keywords = [
+      { keyword: 'TOGAF Enterprise Architecture', priority: 'High' },
+      { keyword: 'Cloud & Distributed Systems Design', priority: 'High' },
+      { keyword: 'Architecture Review Board (ARB)', priority: 'High' },
+      { keyword: 'Microservices & Modernization Strategy', priority: 'Medium' }
+    ];
+  }
+  // 25. Executive Leadership
+  else if (domainId === 'executive') {
+    techSkills = ['Enterprise Technology Strategy & Digital Transformation Leadership', 'Cybersecurity Governance, Zero-Trust Posture & Resilience', 'Global IT Budgeting, Capex/Opex Optimization & Vendor Negotiations', 'AI Adoption Strategy, Ethics & Corporate Governance'];
+    processSkills = ['Board-Level Executive Communication & Risk Reporting', 'Talent Acquisition, Leadership Mentorship & Culture Building', 'Cross-Functional Business Unit Strategy Alignment'];
+    tools = ['Executive KPI Dashboards', 'ServiceNow Executive Insights', 'Jira Portfolio / Advanced Roadmaps', 'Power BI Executive Portals', 'Microsoft 365 Enterprise'];
+    keywords = [
+      { keyword: 'Executive Technology Leadership (CIO/CTO/CISO)', priority: 'High' },
+      { keyword: 'Digital Transformation & Strategic Roadmaps', priority: 'High' },
+      { keyword: 'IT Budgeting & Board-Level Governance', priority: 'High' },
+      { keyword: 'Enterprise Cybersecurity & AI Strategy', priority: 'Medium' }
+    ];
+  }
+  // 26. Green Computing
+  else if (domainId === 'green-computing') {
+    techSkills = ['Carbon Accounting Standards (GHG Protocol Scope 3)', 'Hardware Energy Telemetry (RAPL, Scaphandre)', 'Cloud Carbon Optimization Tools (Infracost, AWS Carbon Footprint Tool)', 'Carbon-Aware Software Engineering Principles'];
+    processSkills = ['Green IT Lifecycle & E-Waste Governance', 'Sustainable Procurement Metrics', 'Agile Energy Reporting Frameworks'];
+    tools = ['Scaphandre', 'Infracost', 'Kepler (Kubernetes Efficient Power Exporter)', 'Carbon Aware SDK', 'Cloud Carbon Footprint Tool'];
+    keywords = [
+      { keyword: 'Green Software & Carbon Accounting', priority: 'High' },
+      { keyword: 'Sustainable IT Infrastructure', priority: 'High' },
+      { keyword: 'Energy Telemetry Audits', priority: 'High' },
+      { keyword: 'Green Software Foundation (GSF)', priority: 'Medium' }
+    ];
+  }
+
+  return {
+    tech: techSkills,
+    process: processSkills,
+    tools,
+    keywords,
+    interview: interviewTopics
+  };
+}
+
 // Generates compliant fallbacks for the other roles to ensure no runtime crashes
+export const ALL_ROLES_DATA: Record<string, RoleDetail> = { ...ROLES_DATA };
+
 const FALLBACK_ROLES_LIST = [
   // 1. IT Support, Service Desk & End-User Computing
   { id: 'service-desk-analyst', title: 'Service Desk Analyst', domain: 'IT Support & Service Desk', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3L - ₹5L', globalSalary: '$40,000 - $60,000' },
@@ -1847,293 +2980,15 @@ const FALLBACK_ROLES_LIST = [
   { id: 'help-desk-technician', title: 'Help Desk Technician', domain: 'IT Support & Service Desk', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹2.8L - ₹5L', globalSalary: '$38,000 - $55,000' },
   { id: 'desktop-support-technician', title: 'Desktop Support Technician', domain: 'IT Support & Service Desk', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹3L - ₹5L', globalSalary: '$40,000 - $58,000' },
   { id: 'technical-support-associate', title: 'Technical Support Associate', domain: 'IT Support & Service Desk', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3L - ₹5.5L', globalSalary: '$42,000 - $60,000' },
-  { id: 'field-support-technician', title: 'Field Support Technician', domain: 'IT Support & Service Desk', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹2.8L - ₹5L', globalSalary: '$40,000 - $55,000' },
-  { id: 'customer-technical-support-representative', title: 'Customer Technical Support Representative', domain: 'IT Support & Service Desk', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹2.5L - ₹4.5L', globalSalary: '$35,000 - $50,000' },
-  { id: 'remote-support-technician', title: 'Remote Support Technician', domain: 'IT Support & Service Desk', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹2.8L - ₹5L', globalSalary: '$38,000 - $54,000' },
-  { id: 'it-operations-associate', title: 'IT Operations Associate', domain: 'IT Support & Service Desk', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹3L - ₹5.5L', globalSalary: '$42,000 - $60,000' },
-  { id: 'technical-support-engineer', title: 'Technical Support Engineer', domain: 'IT Support & Service Desk', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4.5L - ₹8.5L', globalSalary: '$60,000 - $90,000' },
-  { id: 'end-user-computing-engineer', title: 'End User Computing Engineer', domain: 'IT Support & Service Desk', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹11L', globalSalary: '$75,000 - $110,000' },
-  { id: 'it-service-desk-specialist', title: 'IT Service Desk Specialist', domain: 'IT Support & Service Desk', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4L - ₹7.5L', globalSalary: '$55,000 - $80,000' },
-  { id: 'vip-support-engineer', title: 'VIP Support Engineer', domain: 'IT Support & Service Desk', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹5.5L - ₹10L', globalSalary: '$70,000 - $105,000' },
-  { id: 'field-service-engineer', title: 'Field Service Engineer', domain: 'IT Support & Service Desk', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹4L - ₹7.5L', globalSalary: '$55,000 - $80,000' },
-  { id: 'hardware-support-engineer', title: 'Hardware Support Engineer', domain: 'IT Support & Service Desk', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹3.8L - ₹7L', globalSalary: '$50,000 - $75,000' },
-  { id: 'software-support-specialist', title: 'Software Support Specialist', domain: 'IT Support & Service Desk', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4.2L - ₹8L', globalSalary: '$60,000 - $85,000' },
-  { id: 'senior-it-support-analyst', title: 'Senior IT Support Analyst', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹7L - ₹12L', globalSalary: '$80,000 - $115,000' },
-  { id: 'senior-desktop-support-engineer', title: 'Senior Desktop Support Engineer', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹6L - ₹10L', globalSalary: '$70,000 - $95,000' },
-  { id: 'senior-technical-support-engineer', title: 'Senior Technical Support Engineer', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹7.5L - ₹13.5L', globalSalary: '$85,000 - $120,000' },
-  { id: 'escalation-engineer', title: 'Escalation Engineer', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹8L - ₹15L', globalSalary: '$95,000 - $140,000' },
-  { id: 'l2-support-engineer', title: 'L2 Support Engineer', domain: 'IT Support & Service Desk', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4.5L - ₹8.5L', globalSalary: '$62,000 - $88,000' },
-  { id: 'l3-support-engineer', title: 'L3 Support Engineer', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹7.5L - ₹14L', globalSalary: '$88,000 - $125,000' },
-  { id: 'euc-specialist', title: 'EUC Specialist', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹7L - ₹13L', globalSalary: '$85,000 - $122,000' },
-  { id: 'it-support-lead', title: 'IT Support Lead', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹8L - ₹14.5L', globalSalary: '$90,000 - $130,000' },
-  { id: 'service-desk-lead', title: 'Service Desk Lead', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹7.5L - ₹13L', globalSalary: '$85,000 - $125,000' },
-  { id: 'technical-support-lead', title: 'Technical Support Lead', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹8L - ₹15L', globalSalary: '$92,000 - $135,000' },
-  { id: 'service-desk-manager', title: 'Service Desk Manager', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹12L - ₹22L', globalSalary: '$105,000 - $155,000' },
-  { id: 'it-support-manager', title: 'IT Support Manager', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹13L - ₹24L', globalSalary: '$110,000 - $160,000' },
-  { id: 'end-user-computing-manager', title: 'End User Computing Manager', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹14L - ₹26L', globalSalary: '$115,000 - $170,000' },
-  { id: 'it-operations-manager', title: 'IT Operations Manager', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹14L - ₹27L', globalSalary: '$120,000 - $175,000' },
-  { id: 'head-of-it-support', title: 'Head of IT Support', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹18L - ₹32L', globalSalary: '$135,000 - $195,000' },
-  { id: 'global-service-desk-manager', title: 'Global Service Desk Manager', domain: 'IT Support & Service Desk', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹20L - ₹36L', globalSalary: '$140,000 - $210,000' },
-
-  // 2. System Administration & Infrastructure
-  { id: 'junior-system-administrator', title: 'Junior System Administrator', domain: 'System Administration & Infrastructure', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹3.5L - ₹6L', globalSalary: '$50,000 - $75,000' },
-  { id: 'it-infrastructure-trainee', title: 'IT Infrastructure Trainee', domain: 'System Administration & Infrastructure', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹2.5L - ₹4.5L', globalSalary: '$36,000 - $50,000' },
-  { id: 'windows-administrator-trainee', title: 'Windows Administrator Trainee', domain: 'System Administration & Infrastructure', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹2.8L - ₹4.8L', globalSalary: '$38,000 - $52,000' },
-  { id: 'linux-administrator-trainee', title: 'Linux Administrator Trainee', domain: 'System Administration & Infrastructure', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3L - ₹5.2L', globalSalary: '$40,000 - $58,000' },
-  { id: 'infrastructure-support-analyst', title: 'Infrastructure Support Analyst', domain: 'System Administration & Infrastructure', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3.2L - ₹6L', globalSalary: '$45,000 - $68,000' },
-  { id: 'server-support-technician', title: 'Server Support Technician', domain: 'System Administration & Infrastructure', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹3L - ₹5.5L', globalSalary: '$42,000 - $62,000' },
-  { id: 'system-administrator', title: 'System Administrator', domain: 'System Administration & Infrastructure', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹5L - ₹11L', globalSalary: '$65,000 - $110,000' },
-  { id: 'windows-system-administrator', title: 'Windows System Administrator', domain: 'System Administration & Infrastructure', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹11.5L', globalSalary: '$68,000 - $112,000' },
-  { id: 'linux-system-administrator', title: 'Linux System Administrator', domain: 'System Administration & Infrastructure', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹13L', globalSalary: '$72,000 - $120,000' },
-  { id: 'server-administrator', title: 'Server Administrator', domain: 'System Administration & Infrastructure', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹5L - ₹10.5L', globalSalary: '$65,000 - $105,000' },
-  { id: 'infrastructure-engineer', title: 'Infrastructure Engineer', domain: 'System Administration & Infrastructure', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹14L', globalSalary: '$75,000 - $125,000' },
-  { id: 'vmware-administrator', title: 'VMware Administrator', domain: 'System Administration & Infrastructure', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹6L - ₹12L', globalSalary: '$75,000 - $118,000' },
-  { id: 'storage-administrator', title: 'Storage Administrator', domain: 'System Administration & Infrastructure', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹5.8L - ₹11.5L', globalSalary: '$74,000 - $115,000' },
-  { id: 'backup-administrator', title: 'Backup Administrator', domain: 'System Administration & Infrastructure', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹5L - ₹10L', globalSalary: '$68,000 - $104,000' },
-  { id: 'patch-management-analyst', title: 'Patch Management Analyst', domain: 'System Administration & Infrastructure', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4.5L - ₹8.8L', globalSalary: '$60,000 - $95,000' },
-  { id: 'it-infrastructure-analyst', title: 'IT Infrastructure Analyst', domain: 'System Administration & Infrastructure', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹12L', globalSalary: '$70,000 - $118,000' },
-  { id: 'senior-system-administrator', title: 'Senior System Administrator', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹10L - ₹18L', globalSalary: '$95,000 - $145,000' },
-  { id: 'senior-infrastructure-engineer', title: 'Senior Infrastructure Engineer', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹11L - ₹20L', globalSalary: '$100,000 - $155,000' },
-  { id: 'infrastructure-specialist', title: 'Infrastructure Specialist', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹11.5L - ₹21L', globalSalary: '$105,000 - $160,000' },
-  { id: 'enterprise-systems-engineer', title: 'Enterprise Systems Engineer', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹12L - ₹22L', globalSalary: '$110,000 - $165,000' },
-  { id: 'virtualization-engineer', title: 'Virtualization Engineer', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹10.5L - ₹19L', globalSalary: '$98,000 - $148,000' },
-  { id: 'senior-windows-administrator', title: 'Senior Windows Administrator', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹9.5L - ₹17L', globalSalary: '$90,000 - $138,500' },
-  { id: 'senior-linux-administrator', title: 'Senior Linux Administrator', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹11L - ₹20L', globalSalary: '$100,000 - $150,000' },
-  { id: 'infrastructure-lead', title: 'Infrastructure Lead', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹13L - ₹24L', globalSalary: '$115,000 - $170,000' },
-  { id: 'infrastructure-architect', title: 'Infrastructure Architect', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹18L - ₹32L', globalSalary: '$140,000 - $210,000' },
-  { id: 'enterprise-infrastructure-architect', title: 'Enterprise Infrastructure Architect', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹20L - ₹36L', globalSalary: '$150,000 - $230,000' },
-  { id: 'it-infrastructure-manager', title: 'IT Infrastructure Manager', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹15L - ₹28L', globalSalary: '$120,000 - $180,000' },
-  { id: 'head-of-infrastructure', title: 'Head of Infrastructure', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹22L - ₹40L', globalSalary: '$160,000 - $240,000' },
-  { id: 'director-of-infrastructure', title: 'Director of Infrastructure', domain: 'System Administration & Infrastructure', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹25L - ₹45L', globalSalary: '$175,000 - $260,000' },
-
-  // 3. Networking
-  { id: 'network-support-engineer', title: 'Network Support Engineer', domain: 'Networking', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹3.8L - ₹7L', globalSalary: '$50,000 - $75,000' },
-  { id: 'noc-analyst', title: 'NOC Analyst', domain: 'Networking', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹3.5L - ₹6.5L', globalSalary: '$48,000 - $72,000' },
-  { id: 'network-administrator', title: 'Network Administrator', domain: 'Networking', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹5L - ₹9.5L', globalSalary: '$65,000 - $95,000' },
-  { id: 'network-support-trainee', title: 'Network Support Trainee', domain: 'Networking', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹2.4L - ₹4.2L', globalSalary: '$35,000 - $48,000' },
-  { id: 'junior-network-engineer', title: 'Junior Network Engineer', domain: 'Networking', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹3.2L - ₹5.8L', globalSalary: '$45,000 - $65,000' },
-  { id: 'network-support-technician', title: 'Network Support Technician', domain: 'Networking', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹2.8L - ₹5L', globalSalary: '$40,000 - $58,000' },
-  { id: 'network-operations-associate', title: 'Network Operations Associate', domain: 'Networking', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹3L - ₹5.5L', globalSalary: '$42,000 - $60,000' },
-  { id: 'network-monitoring-analyst', title: 'Network Monitoring Analyst', domain: 'Networking', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3L - ₹5.8L', globalSalary: '$44,000 - $64,000' },
-  { id: 'noc-engineer', title: 'NOC Engineer', domain: 'Networking', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹5L - ₹9L', globalSalary: '$60,000 - $90,000' },
-  { id: 'routing-and-switching-engineer', title: 'Routing and Switching Engineer', domain: 'Networking', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹6L - ₹12L', globalSalary: '$72,000 - $110,000' },
-  { id: 'wireless-network-engineer', title: 'Wireless Network Engineer', domain: 'Networking', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹5.5L - ₹10L', globalSalary: '$68,000 - $100,000' },
-  { id: 'network-security-engineer', title: 'Network Security Engineer', domain: 'Networking', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹7L - ₹14L', globalSalary: '$85,000 - $135,000' },
-  { id: 'telecom-support-engineer', title: 'Telecom Support Engineer', domain: 'Networking', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹4.5L - ₹8.5L', globalSalary: '$58,000 - $85,000' },
-  { id: 'voice-network-engineer', title: 'Voice Network Engineer', domain: 'Networking', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹5L - ₹9.5L', globalSalary: '$64,000 - $95,000' },
-  { id: 'sd-wan-engineer', title: 'SD-WAN Engineer', domain: 'Networking', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹7L - ₹13.5L', globalSalary: '$82,000 - $122,000' },
-  { id: 'senior-network-engineer', title: 'Senior Network Engineer', domain: 'Networking', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹10L - ₹18L', globalSalary: '$98,000 - $145,000' },
-  { id: 'senior-noc-engineer', title: 'Senior NOC Engineer', domain: 'Networking', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹8.5L - ₹15L', globalSalary: '$85,000 - $125,000' },
-  { id: 'network-specialist', title: 'Network Specialist', domain: 'Networking', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹11L - ₹20L', globalSalary: '$105,000 - $152,000' },
-  { id: 'senior-network-administrator', title: 'Senior Network Administrator', domain: 'Networking', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹9L - ₹16L', globalSalary: '$88,000 - $130,000' },
-  { id: 'network-operations-lead', title: 'Network Operations Lead', domain: 'Networking', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹11.5L - ₹20.5L', globalSalary: '$102,000 - $148,000' },
-  { id: 'network-design-engineer', title: 'Network Design Engineer', domain: 'Networking', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹12L - ₹21L', globalSalary: '$110,000 - $158,000' },
-  { id: 'network-automation-engineer', title: 'Network Automation Engineer', domain: 'Networking', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹12.5L - ₹22.5L', globalSalary: '$115,000 - $165,000' },
-  { id: 'network-architect', title: 'Network Architect', domain: 'Networking', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹18L - ₹32L', globalSalary: '$140,000 - $210,000' },
-  { id: 'enterprise-network-architect', title: 'Enterprise Network Architect', domain: 'Networking', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹20L - ₹35L', globalSalary: '$150,000 - $225,000' },
-  { id: 'network-manager', title: 'Network Manager', domain: 'Networking', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹14L - ₹26L', globalSalary: '$115,000 - $165,000' },
-  { id: 'head-of-network-operations', title: 'Head of Network Operations', domain: 'Networking', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹21L - ₹38L', globalSalary: '$145,000 - $215,000' },
-  { id: 'director-of-network-engineering', title: 'Director of Network Engineering', domain: 'Networking', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹24L - ₹44L', globalSalary: '$165,000 - $245,000' },
-
-  // 4. Cloud Computing
-  { id: 'cloud-support-associate', title: 'Cloud Support Associate', domain: 'Cloud Computing', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4L - ₹7L', globalSalary: '$50,000 - $75,000' },
-  { id: 'azure-administrator', title: 'Azure Administrator', domain: 'Cloud Computing', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹12L', globalSalary: '$75,000 - $115,000' },
-  { id: 'aws-cloud-practitioner', title: 'AWS Cloud Practitioner', domain: 'Cloud Computing', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4.5L - ₹7.5L', globalSalary: '$55,000 - $80,000' },
-  { id: 'cloud-engineer', title: 'Cloud Engineer', domain: 'Cloud Computing', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹8L - ₹18L', globalSalary: '$90,000 - $145,000' },
-  { id: 'cloud-operations-analyst', title: 'Cloud Operations Analyst', domain: 'Cloud Computing', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹11L', globalSalary: '$75,000 - $110,000' },
-  { id: 'junior-cloud-engineer', title: 'Junior Cloud Engineer', domain: 'Cloud Computing', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹4.5L - ₹8L', globalSalary: '$58,000 - $84,000' },
-  { id: 'cloud-operations-associate', title: 'Cloud Operations Associate', domain: 'Cloud Computing', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3.8L - ₹6.5L', globalSalary: '$50,000 - $72,000' },
-  { id: 'cloud-support-trainee', title: 'Cloud Support Trainee', domain: 'Cloud Computing', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3L - ₹5L', globalSalary: '$45,000 - $60,000' },
-  { id: 'aws-cloud-support-associate', title: 'AWS Cloud Support Associate', domain: 'Cloud Computing', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4.2L - ₹7.5L', globalSalary: '$55,000 - $78,000' },
-  { id: 'azure-support-associate', title: 'Azure Support Associate', domain: 'Cloud Computing', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4.2L - ₹7.5L', globalSalary: '$55,000 - $78,000' },
-  { id: 'google-cloud-support-associate', title: 'Google Cloud Support Associate', domain: 'Cloud Computing', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4.5L - ₹8L', globalSalary: '$58,000 - $82,000' },
-  { id: 'cloud-administrator', title: 'Cloud Administrator', domain: 'Cloud Computing', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6.5L - ₹12.5L', globalSalary: '$78,000 - $118,000' },
-  { id: 'cloud-operations-engineer', title: 'Cloud Operations Engineer', domain: 'Cloud Computing', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹7L - ₹13L', globalSalary: '$82,000 - $122,000' },
-  { id: 'aws-administrator', title: 'AWS Administrator', domain: 'Cloud Computing', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6.8L - ₹12.8L', globalSalary: '$76,000 - $116,000' },
-  { id: 'gcp-administrator', title: 'GCP Administrator', domain: 'Cloud Computing', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹7L - ₹13L', globalSalary: '$80,000 - $120,000' },
-  { id: 'cloud-support-engineer', title: 'Cloud Support Engineer', domain: 'Cloud Computing', level: 'Mid-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹5.5L - ₹10L', globalSalary: '$68,000 - $95,000' },
-  { id: 'cloud-infrastructure-engineer', title: 'Cloud Infrastructure Engineer', domain: 'Cloud Computing', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹8L - ₹16L', globalSalary: '$88,000 - $140,000' },
-  { id: 'cloud-migration-engineer', title: 'Cloud Migration Engineer', domain: 'Cloud Computing', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹7.5L - ₹15L', globalSalary: '$84,000 - $132,000' },
-  { id: 'cloud-monitoring-engineer', title: 'Cloud Monitoring Engineer', domain: 'Cloud Computing', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹5L - ₹9.5L', globalSalary: '$65,000 - $98,000' },
-  { id: 'senior-cloud-engineer', title: 'Senior Cloud Engineer', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹13L - ₹24L', globalSalary: '$115,000 - $175,000' },
-  { id: 'senior-cloud-administrator', title: 'Senior Cloud Administrator', domain: 'Cloud Computing', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹11L - ₹19L', globalSalary: '$98,000 - $144,000' },
-  { id: 'cloud-platform-engineer', title: 'Cloud Platform Engineer', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹14L - ₹26L', globalSalary: '$120,500 - $182,000' },
-  { id: 'cloud-infrastructure-specialist', title: 'Cloud Infrastructure Specialist', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹13L - ₹25L', globalSalary: '$118,000 - $170,000' },
-  { id: 'cloud-automation-engineer', title: 'Cloud Automation Engineer', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹13.5L - ₹26L', globalSalary: '$122,000 - $178,000' },
-  { id: 'cloud-security-engineer', title: 'Cloud Security Engineer', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹14L - ₹27L', globalSalary: '$125,000 - $185,000' },
-  { id: 'multi-cloud-engineer', title: 'Multi-Cloud Engineer', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹15L - ₹28L', globalSalary: '$130,000 - $190,000' },
-  { id: 'cloud-operations-lead', title: 'Cloud Operations Lead', domain: 'Cloud Computing', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹12L - ₹20.5L', globalSalary: '$105,000 - $150,000' },
-  { id: 'cloud-architect', title: 'Cloud Architect', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹18L - ₹32L', globalSalary: '$140,000 - $210,000' },
-  { id: 'aws-solutions-architect', title: 'AWS Solutions Architect', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹19L - ₹34L', globalSalary: '$145,000 - $215,000' },
-  { id: 'azure-solutions-architect', title: 'Azure Solutions Architect', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹18.5L - ₹33L', globalSalary: '$142,000 - $212,000' },
-  { id: 'gcp-cloud-architect', title: 'GCP Cloud Architect', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹19.5L - ₹35L', globalSalary: '$148,000 - $220,000' },
-  { id: 'multi-cloud-architect', title: 'Multi-Cloud Architect', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹22L - ₹40L', globalSalary: '$155,000 - $240,000' },
-  { id: 'cloud-infrastructure-architect', title: 'Cloud Infrastructure Architect', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹20L - ₹36L', globalSalary: '$150,000 - $230,000' },
-  { id: 'cloud-engineering-manager', title: 'Cloud Engineering Manager', domain: 'Cloud Computing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: false, indiaSalary: '₹16L - ₹30L', globalSalary: '$125,000 - $185,000' },
-  { id: 'head-of-cloud', title: 'Head of Cloud', domain: 'Cloud Computing', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹24L - ₹42L', globalSalary: '$165,000 - $245,000' },
-  { id: 'director-of-cloud-engineering', title: 'Director of Cloud Engineering', domain: 'Cloud Computing', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹26L - ₹46L', globalSalary: '$180,000 - $270,000' },
-
-  // 5. Cybersecurity
-  { id: 'soc-analyst', title: 'SOC Analyst', domain: 'Cybersecurity', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4L - ₹8L', globalSalary: '$60,000 - $85,000' },
-  { id: 'grc-analyst', title: 'GRC Analyst', domain: 'Cybersecurity', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹13L', globalSalary: '$80,000 - $125,000' },
-  { id: 'iam-analyst', title: 'IAM Analyst', domain: 'Cybersecurity', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹5L - ₹10L', globalSalary: '$70,000 - $105,000' },
-  { id: 'security-operations-analyst', title: 'Security Operations Analyst', domain: 'Cybersecurity', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6.5L - ₹14L', globalSalary: '$85,000 - $130,000' },
-  { id: 'cybersecurity-trainee', title: 'Cybersecurity Trainee', domain: 'Cybersecurity', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3L - ₹5L', globalSalary: '$40,000 - $55,000' },
-  { id: 'junior-security-analyst', title: 'Junior Security Analyst', domain: 'Cybersecurity', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3.5L - ₹6.5L', globalSalary: '$48,000 - $70,000' },
-  { id: 'soc-analyst-level-1', title: 'SOC Analyst Level 1', domain: 'Cybersecurity', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3.8L - ₹7L', globalSalary: '$52,000 - $78,000' },
-  { id: 'information-security-analyst', title: 'Information Security Analyst', domain: 'Cybersecurity', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4L - ₹7.5L', globalSalary: '$55,000 - $80,000' },
-  { id: 'security-operations-associate', title: 'Security Operations Associate', domain: 'Cybersecurity', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3.6L - ₹6.8L', globalSalary: '$48,000 - $72,000' },
-  { id: 'vulnerability-management-trainee', title: 'Vulnerability Management Trainee', domain: 'Cybersecurity', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3.2L - ₹5.8L', globalSalary: '$44,000 - $62,000' },
-  { id: 'grc-analyst-trainee', title: 'GRC Analyst Trainee', domain: 'Cybersecurity', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3.2L - ₹6L', globalSalary: '$45,000 - $65,000' },
-  { id: 'cybersecurity-analyst', title: 'Cybersecurity Analyst', domain: 'Cybersecurity', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹12.5L', globalSalary: '$76,000 - $115,000' },
-  { id: 'soc-analyst-level-2', title: 'SOC Analyst Level 2', domain: 'Cybersecurity', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹5.5L - ₹10.5L', globalSalary: '$68,000 - $96,000' },
-  { id: 'security-engineer', title: 'Security Engineer', domain: 'Cybersecurity', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹7.5L - ₹15L', globalSalary: '$88,000 - $138,000' },
-  { id: 'information-security-engineer', title: 'Information Security Engineer', domain: 'Cybersecurity', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹7L - ₹14.5L', globalSalary: '$84,000 - $130,000' },
-  { id: 'incident-response-analyst', title: 'Incident Response Analyst', domain: 'Cybersecurity', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6.5L - ₹13L', globalSalary: '$80,000 - $122,000' },
-  { id: 'vulnerability-analyst', title: 'Vulnerability Analyst', domain: 'Cybersecurity', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹5.5L - ₹10L', globalSalary: '$70,000 - $105,000' },
-  { id: 'threat-intelligence-analyst', title: 'Threat Intelligence Analyst', domain: 'Cybersecurity', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6.8L - ₹13.8L', globalSalary: '$85,000 - $128,000' },
-  { id: 'security-compliance-analyst', title: 'Security Compliance Analyst', domain: 'Cybersecurity', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹5.8L - ₹11L', globalSalary: '$74,000 - $112,000' },
-  { id: 'cloud-security-analyst', title: 'Cloud Security Analyst', domain: 'Cybersecurity', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹7L - ₹14L', globalSalary: '$85,000 - $132,000' },
-  { id: 'senior-cybersecurity-analyst', title: 'Senior Cybersecurity Analyst', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹11L - ₹20L', globalSalary: '$100,000 - $155,000' },
-  { id: 'soc-analyst-level-3', title: 'SOC Analyst Level 3', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹9.5L - ₹17L', globalSalary: '$92,000 - $135,000' },
-  { id: 'senior-security-engineer', title: 'Senior Security Engineer', domain: 'Cybersecurity', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹13L - ₹24L', globalSalary: '$120,000 - $175,000' },
-  { id: 'incident-response-specialist', title: 'Incident Response Specialist', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹12L - ₹21L', globalSalary: '$110,000 - $160,000' },
-  { id: 'threat-hunter', title: 'Threat Hunter', domain: 'Cybersecurity', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹13.5L - ₹25L', globalSalary: '$122,000 - $180,000' },
-  { id: 'malware-analyst', title: 'Malware Analyst', domain: 'Cybersecurity', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹12.5L - ₹23L', globalSalary: '$115,000 - $170,000' },
-  { id: 'digital-forensics-analyst', title: 'Digital Forensics Analyst', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹11L - ₹20L', globalSalary: '$105,000 - $152,000' },
-  { id: 'penetration-tester', title: 'Penetration Tester', domain: 'Cybersecurity', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹12L - ₹23L', globalSalary: '$110,000 - $170,000' },
-  { id: 'red-team-operator', title: 'Red Team Operator', domain: 'Cybersecurity', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹14L - ₹26L', globalSalary: '$125,000 - $185,000' },
-  { id: 'blue-team-specialist', title: 'Blue Team Specialist', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹11.5L - ₹21L', globalSalary: '$108,000 - $160,000' },
-  { id: 'senior-iam-engineer', title: 'Senior IAM Engineer', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: ' ₹10.5L - ₹18.5L', globalSalary: '$100,000 - $148,000' },
-  { id: 'senior-grc-consultant', title: 'Senior GRC Consultant', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹12L - ₹22L', globalSalary: '$112,000 - $164,000' },
-  { id: 'security-architect', title: 'Security Architect', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹18L - ₹32L', globalSalary: '$145,000 - $215,000' },
-  { id: 'cloud-security-architect', title: 'Cloud Security Architect', domain: 'Cybersecurity', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹19L - ₹35L', globalSalary: '$150,000 - $225,000' },
-  { id: 'enterprise-security-architect', title: 'Enterprise Security Architect', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹20L - ₹36L', globalSalary: '$155,000 - $230,000' },
-  { id: 'soc-manager', title: 'SOC Manager', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹14L - ₹25L', globalSalary: '$115,000 - $165,000' },
-  { id: 'cybersecurity-manager', title: 'Cybersecurity Manager', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹15L - ₹28L', globalSalary: '$120,000 - $175,000' },
-  { id: 'grc-manager', title: 'GRC Manager', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹13.5L - ₹26L', globalSalary: '$110,000 - $168,000' },
-  { id: 'head-of-cybersecurity', title: 'Head of Cybersecurity', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹22L - ₹40L', globalSalary: '$160,000 - $240,000' },
-  { id: 'director-of-information-security', title: 'Director of Information Security', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹25L - ₹45L', globalSalary: '$180,000 - $270,000' },
-  { id: 'vp-security', title: 'VP Security', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹30L - ₹55L', globalSalary: '$200,000 - $310,000' },
-  { id: 'chief-information-security-officer-ciso', title: 'Chief Information Security Officer', domain: 'Cybersecurity', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹35L - ₹70L', globalSalary: '$220,000 - $350,000' },
-
-  // 6. Software Development / Engineering
-  { id: 'backend-developer', title: 'Backend Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹15L', globalSalary: '$80,000 - $135,000' },
-  { id: 'full-stack-developer', title: 'Full Stack Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹7L - ₹18L', globalSalary: '$90,000 - $150,000' },
-  { id: 'qa-tester', title: 'QA Tester', domain: 'Software Development', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹3.5L - ₹7L', globalSalary: '$50,000 - $80,000' },
-  { id: 'software-support-engineer', title: 'Software Support Engineer', domain: 'Software Development', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹4L - ₹8L', globalSalary: '$55,000 - $85,000' },
-  { id: 'software-developer-intern', title: 'Software Developer Intern', domain: 'Software Development', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹2L - ₹3.5L', globalSalary: '$35,000 - $48,000' },
-  { id: 'junior-software-developer', title: 'Junior Software Developer', domain: 'Software Development', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹3.6L - ₹6.5L', globalSalary: '$52,000 - $78,000' },
-  { id: 'junior-software-engineer', title: 'Junior Software Engineer', domain: 'Software Development', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹4L - ₹7L', globalSalary: '$55,000 - $80,000' },
-  { id: 'trainee-developer', title: 'Trainee Developer', domain: 'Software Development', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹2.8L - ₹5L', globalSalary: '$40,000 - $55,000' },
-  { id: 'frontend-developer-trainee', title: 'Frontend Developer Trainee', domain: 'Software Development', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹3L - ₹5.5L', globalSalary: '$42,000 - $60,000' },
-  { id: 'backend-developer-trainee', title: 'Backend Developer Trainee', domain: 'Software Development', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹3.2L - ₹5.8L', globalSalary: '$45,000 - $62,000' },
-  { id: 'full-stack-developer-trainee', title: 'Full Stack Developer Trainee', domain: 'Software Development', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹3.5L - ₹6.2L', globalSalary: '$48,000 - $68,000' },
-  { id: 'web-developer', title: 'Web Developer', domain: 'Software Development', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹3L - ₹6L', globalSalary: '$45,000 - $70,000' },
-  { id: 'mobile-app-developer-trainee', title: 'Mobile App Developer Trainee', domain: 'Software Development', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹3.2L - ₹5.8L', globalSalary: '$46,000 - $64,000' },
-  { id: 'associate-software-engineer', title: 'Associate Software Engineer', domain: 'Software Development', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹4L - ₹7.5L', globalSalary: '$58,000 - $82,000' },
-  { id: 'software-developer', title: 'Software Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹12L', globalSalary: '$72,000 - $115,000' },
-  { id: 'software-engineer', title: 'Software Engineer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹14L', globalSalary: '$75,000 - $125,000' },
-  { id: 'mobile-app-developer', title: 'Mobile App Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹13.5L', globalSalary: '$78,000 - $120,000' },
-  { id: 'android-developer', title: 'Android Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹5.8L - ₹13L', globalSalary: '$76,000 - $118,000' },
-  { id: 'ios-developer', title: 'iOS Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹6.2L - ₹14L', globalSalary: '$80,000 - $125,000' },
-  { id: 'api-developer', title: 'API Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹12.5L', globalSalary: '$75,000 - $118,000' },
-  { id: 'java-developer', title: 'Java Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹13L', globalSalary: '$72,000 - $120,000' },
-  { id: 'python-developer', title: 'Python Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹5.8L - ₹12.5L', globalSalary: '$74,000 - $118,000' },
-  { id: '.net-developer', title: '.NET Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹12L', globalSalary: '$72,000 - $115,000' },
-  { id: 'php-developer', title: 'PHP Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹4.5L - ₹9.5L', globalSalary: '$60,000 - $95,000' },
-  { id: 'javascript-developer', title: 'JavaScript Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹12.5L', globalSalary: '$74,000 - $118,000' },
-  { id: 'react-developer', title: 'React Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹13L', globalSalary: '$78,000 - $122,000' },
-  { id: 'angular-developer', title: 'Angular Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹12.5L', globalSalary: '$75,000 - $116,000' },
-  { id: 'node-js-developer', title: 'Node.js Developer', domain: 'Software Development', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹14L', globalSalary: '$78,000 - $125,000' },
-  { id: 'senior-software-engineer', title: 'Senior Software Engineer', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹12L - ₹24L', globalSalary: '$110,000 - $170,000' },
-  { id: 'senior-frontend-developer', title: 'Senior Frontend Developer', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹10L - ₹20L', globalSalary: '$100,000 - $155,000' },
-  { id: 'senior-backend-developer', title: 'Senior Backend Developer', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹11L - ₹22L', globalSalary: '$105,000 - $162,000' },
-  { id: 'senior-full-stack-developer', title: 'Senior Full Stack Developer', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹13L - ₹25L', globalSalary: '$115,000 - $175,000' },
-  { id: 'senior-mobile-developer', title: 'Senior Mobile Developer', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹11L - ₹22L', globalSalary: '$105,000 - $160,000' },
-  { id: 'staff-software-engineer', title: 'Staff Software Engineer', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹16L - ₹30L', globalSalary: '$135,000 - $195,000' },
-  { id: 'principal-software-engineer', title: 'Principal Software Engineer', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹20L - ₹38L', globalSalary: '$150,000 - $220,000' },
-  { id: 'lead-software-engineer', title: 'Lead Software Engineer', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹14L - ₹26L', globalSalary: '$120,000 - $180,000' },
-  { id: 'tech-lead', title: 'Tech Lead', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹14L - ₹27L', globalSalary: '$122,000 - $182,500' },
-  { id: 'engineering-lead', title: 'Engineering Lead', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹15L - ₹28L', globalSalary: '$125,000 - $185,000' },
-  { id: 'software-architect', title: 'Software Architect', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹18L - ₹32L', globalSalary: '$140,000 - $210,000' },
-  { id: 'application-architect', title: 'Application Architect', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹19L - ₹33L', globalSalary: '$142,500 - $212,000' },
-  { id: 'solution-architect', title: 'Solution Architect', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹18L - ₹34L', globalSalary: '$140,000 - $215,000' },
-  { id: 'engineering-manager', title: 'Engineering Manager', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: false, indiaSalary: '₹16L - ₹30L', globalSalary: '$130,000 - $190,000' },
-  { id: 'software-development-manager', title: 'Software Development Manager', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: false, indiaSalary: '₹15L - ₹28L', globalSalary: '$125,000 - $180,000' },
-  { id: 'head-of-engineering', title: 'Head of Engineering', domain: 'Software Development', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹22L - ₹40L', globalSalary: '$165,000 - $245,000' },
-  { id: 'director-of-engineering', title: 'Director of Engineering', domain: 'Software Development', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹26L - ₹48L', globalSalary: '$180,000 - $265,000' },
-  { id: 'vp-engineering', title: 'VP Engineering', domain: 'Software Development', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹32L - ₹56L', globalSalary: '$210,000 - $315,000' },
-  { id: 'chief-technology-officer-cto', title: 'Chief Technology Officer', domain: 'Software Development', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: false, indiaSalary: '₹35L - ₹70L', globalSalary: '$220,000 - $360,000' },
-
-  // Helper additions for other categories (Data, QA, DevOps, BI etc.) matching user list
-  { id: 'qa-intern', title: 'QA Intern', domain: 'QA & Testing', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹1.8L - ₹3L', globalSalary: '$32,000 - $45,000' },
-  { id: 'qa-engineer', title: 'QA Engineer', domain: 'QA & Testing', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4.5L - ₹9L', globalSalary: '$60,000 - $95,000' },
-  { id: 'automation-tester', title: 'Automation Tester', domain: 'QA & Testing', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹11L', globalSalary: '$72,000 - $108,000' },
-  { id: 'sdet', title: 'SDET', domain: 'QA & Testing', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹9L - ₹18L', globalSalary: '$95,000 - $155,000' },
-  
-  { id: 'devops-trainee', title: 'DevOps Trainee', domain: 'DevOps', level: 'Entry-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹3.5L - ₹6L', globalSalary: '$50,000 - $72,000' },
-  { id: 'devops-engineer', title: 'DevOps Engineer', domain: 'DevOps', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹7L - ₹15L', globalSalary: '$90,000 - $145,000' },
-  { id: 'platform-engineer', title: 'Platform Engineer', domain: 'DevOps', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹8L - ₹16.5L', globalSalary: '$95,000 - $150,000' },
-
-  { id: 'data-scientist', title: 'Data Scientist', domain: 'Data Science, AI & Machine Learning', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹8L - ₹18L', globalSalary: '$95,000 - $155,000' },
-  { id: 'data-engineer', title: 'Data Engineer', domain: 'Data Science, AI & Machine Learning', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹7.5L - ₹16.5L', globalSalary: '$90,000 - $148,000' },
-  { id: 'machine-learning-engineer', title: 'Machine Learning Engineer', domain: 'Data Science, AI & Machine Learning', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹8.5L - ₹19L', globalSalary: '$100,000 - $160,000' },
-  { id: 'ai-engineer', title: 'AI Engineer', domain: 'Data Science, AI & Machine Learning', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹9L - ₹21L', globalSalary: '$105,000 - $170,000' },
-
-  { id: 'database-administrator', title: 'Database Administrator', domain: 'Database Administration', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹12L', globalSalary: '$78,000 - $115,000' },
-  { id: 'oracle-dba', title: 'Oracle DBA', domain: 'Database Administration', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹6.5L - ₹13L', globalSalary: '$80,000 - $122,000' },
-
-  { id: 'incident-manager', title: 'Incident Manager', domain: 'IT Operations & ITSM', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹5.5L - ₹10.5L', globalSalary: '$72,000 - $105,000' },
-  { id: 'service-delivery-manager', title: 'Service Delivery Manager', domain: 'IT Operations & ITSM', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹12L - ₹22L', globalSalary: '$100,000 - $150,000' },
-
-  { id: 'salesforce-administrator', title: 'Salesforce Administrator', domain: 'Business & IT Process Roles', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹5L - ₹11L', globalSalary: '$70,000 - $110,000' },
-  { id: 'servicenow-developer', title: 'ServiceNow Developer', domain: 'Business & IT Process Roles', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹6.5L - ₹14L', globalSalary: '$85,000 - $130,000' },
-
-  { id: 'it-project-manager', title: 'IT Project Manager', domain: 'Product & Project Management', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹8L - ₹16L', globalSalary: '$85,000 - $130,000' },
-  { id: 'product-manager', title: 'Product Manager', domain: 'Product & Project Management', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹10L - ₹22L', globalSalary: '$100,000 - $160,000' },
-
-  { id: 'business-analyst', title: 'Business Analyst', domain: 'Business Analysis & Consulting', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹12L', globalSalary: '$70,000 - $112,000' },
-  { id: 'solution-consultant', title: 'Solution Consultant', domain: 'Business Analysis & Consulting', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹7L - ₹15L', globalSalary: '$80,000 - $128,000' },
-
-  { id: 'ui-designer', title: 'UI Designer', domain: 'UI/UX Design', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4.5L - ₹9.5L', globalSalary: '$60,000 - $95,000' },
-  { id: 'ux-designer', title: 'UX Designer', domain: 'UI/UX Design', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹12L', globalSalary: '$70,000 - $115,000' },
-
-  { id: 'wordpress-developer', title: 'WordPress Developer', domain: 'Web & CMS Technology', level: 'Mid-level', isCoding: true, isHighPaying: false, isRemote: true, indiaSalary: '₹3.5L - ₹7.5L', globalSalary: '$50,000 - $80,000' },
-  { id: 'shopify-developer', title: 'Shopify Developer', domain: 'Web & CMS Technology', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹4.5L - ₹10L', globalSalary: '$65,000 - $110,000' },
-
-  { id: 'uipath-developer', title: 'UiPath Developer', domain: 'AI & Automation', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹12.5L', globalSalary: '$80,000 - $122,000' },
-  { id: 'power-automate-developer', title: 'Power Automate Developer', domain: 'AI & Automation', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹5.0L - ₹11L', globalSalary: '$75,000 - $115,000' },
-
-  { id: 'technical-writer', title: 'Technical Writer', domain: 'Technical Writing', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹4.5L - ₹9W', globalSalary: '$55,000 - $88,000' },
-  { id: 'api-documentation-writer', title: 'API Documentation Writer', domain: 'Technical Writing', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹11.5L', globalSalary: '$68,000 - $105,000' },
-
-  { id: 'sales-engineer', title: 'Sales Engineer', domain: 'Sales Engineering & Customer Success', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹14L', globalSalary: '$75,000 - $120,500' },
-  { id: 'customer-success-manager', title: 'Customer Success Manager', domain: 'Sales Engineering & Customer Success', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹5.5L - ₹12L', globalSalary: '$70,000 - $110,000' },
-
-  { id: 'hardware-engineer', title: 'Hardware Engineer', domain: 'Hardware & IoT', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹5.5L - ₹12.5L', globalSalary: '$75,000 - $118,000' },
-  { id: 'embedded-systems-engineer', title: 'Embedded Systems Engineer', domain: 'Hardware & IoT', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: false, indiaSalary: '₹6L - ₹14L', globalSalary: '$78,000 - $122,500' },
-
-  { id: 'telecom-engineer', title: 'Telecom Engineer', domain: 'Telecom & Collaboration', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹4.5L - ₹9.5L', globalSalary: '$60,000 - $95,000' },
-  { id: 'voice-engineer', title: 'Voice Engineer', domain: 'Telecom & Collaboration', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹4.8L - ₹10L', globalSalary: '$65,000 - $98,000' },
-
-  { id: 'it-auditor', title: 'IT Auditor', domain: 'Governance, IT Audit & GRC', level: 'Mid-level', isCoding: false, isHighPaying: true, isRemote: true, indiaSalary: '₹6L - ₹13L', globalSalary: '$80,000 - $124,000' },
-  { id: 'compliance-analyst', title: 'Compliance Analyst', domain: 'Governance, IT Audit & GRC', level: 'Mid-level', isCoding: false, isHighPaying: false, isRemote: true, indiaSalary: '₹5L - ₹10L', globalSalary: '$68,000 - $102,000' },
-  { id: 'big-data-developer', title: 'Big Data Developer', domain: 'Data, Analytics & Business Intelligence', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹8L - ₹17L', globalSalary: '$95,000 - $145,000' },
-  { id: 'hadoop-spark-developer', title: 'Hadoop/Spark Developer', domain: 'Data, Analytics & Business Intelligence', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹7.5L - ₹16L', globalSalary: '$90,000 - $140,000' },
-  { id: 'data-lakehouse-engineer', title: 'Data Lakehouse Engineer', domain: 'Data, Analytics & Business Intelligence', level: 'Mid-level', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹8.5L - ₹18L', globalSalary: '$100,000 - $155,000' },
-  { id: 'big-data-architect', title: 'Big Data Architect', domain: 'Data, Analytics & Business Intelligence', level: 'Advanced', isCoding: true, isHighPaying: true, isRemote: true, indiaSalary: '₹18L - ₹34L', globalSalary: '$145,000 - $215,000' },
-  { id: 'director-of-big-data-systems', title: 'Director of Big Data Systems', domain: 'Data, Analytics & Business Intelligence', level: 'Advanced', isCoding: false, isHighPaying: true, isRemote: false, indiaSalary: '₹22L - ₹42L', globalSalary: '$165,000 - $245,000' }
+  { id: 'field-support-technician', title: 'Field Support Technician', domain: 'IT Support & Service Desk', level: 'Entry-level', isCoding: false, isHighPaying: false, isRemote: false, indiaSalary: '₹2.8L - ₹5L', globalSalary: '$40,000 - $55,000' }
 ];
-
-// Combine the explicit detail roles and populate detail-compliant structures for the others.
-export const ALL_ROLES_DATA: Record<string, RoleDetail> = { ...ROLES_DATA };
 
 FALLBACK_ROLES_LIST.forEach((fallback) => {
   if (!ALL_ROLES_DATA[fallback.id]) {
-    // Generate logical details based on fallback properties.
-    const isMidNode = fallback.level === 'Mid-level';
     const isAdvNode = fallback.level === 'Advanced';
+    const isMidNode = fallback.level === 'Mid-level';
+    const profile = getDomainRoleProfile('it-support', fallback.id, fallback.level as any, fallback.isCoding, fallback.title, fallback.domain);
+    const certs = getDomainRoleCertifications('it-support', fallback.id, fallback.level as any);
 
     ALL_ROLES_DATA[fallback.id] = {
       id: fallback.id,
@@ -2146,7 +3001,7 @@ FALLBACK_ROLES_LIST.forEach((fallback) => {
       indiaSalary: fallback.indiaSalary,
       globalSalary: fallback.globalSalary,
       historyFuture: {
-        history: `Historically, the ${fallback.title} role emerged as systems specialized, requiring target handling for business integrations or platforms that didn't exist a decade ago.`,
+        history: `Historically, the ${fallback.title} role emerged as organizations formalized support tiers to maintain continuous enterprise uptime.`,
         future: `In the coming years, the ${fallback.title} will transition to integrate heavily with automated AI operations, low-code systems, and secure cloud endpoints.`
       },
       roleAsk: {
@@ -2154,29 +3009,14 @@ FALLBACK_ROLES_LIST.forEach((fallback) => {
         suitableFor: `Excellent for individuals who enjoy structured technology workflows, targeted problem solving, and looking to progress quickly inside ${fallback.domain}.`
       },
       mustHaves: {
-        tech: [
-          fallback.isCoding ? 'Core programming language structures' : 'Configuration management protocols',
-          'Standard database integrations',
-          'Enterprise troubleshooting tools'
-        ],
-        process: ['SLA urgency awareness', 'Cross-functional engineering communication']
+        tech: profile.tech,
+        process: profile.process
       },
-      cherries: ['Basic scripting in Python', 'Continuous delivery awareness'],
-      recommendedCertifications: [
-        { name: fallback.domain === 'Cloud Computing' ? 'AWS Cloud Practitioner' : fallback.domain === 'Cybersecurity' ? 'Google Cybersecurity Certificate' : 'ITIL 4 Foundation', level: 'Beginner', status: 'Required', resourceUrl: fallback.domain === 'Cloud Computing' ? 'https://aws.amazon.com/certification/certified-cloud-practitioner/' : fallback.domain === 'Cybersecurity' ? 'https://grow.google/certificates/cybersecurity/' : 'https://www.peoplecert.org/Frameworks-Professionals/ITIL-framework', costEstimate: 'Free/Subscription' },
-        { name: fallback.domain === 'Networking' ? 'Cisco CCNA' : 'CompTIA Security+', level: 'Intermediate', status: 'Preferred', resourceUrl: fallback.domain === 'Networking' ? 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/index.html' : 'https://www.comptia.org/en-us/certifications/security/', costEstimate: '$150-$300' }
-      ],
-      toolsToLearn: ['Jira Service Desk', 'ServiceNow Enterprise Suite', 'GitHub Versioning', 'SQL DB tools'],
-      interviewTopics: {
-        technical: [`What are the core technical constraints in ${fallback.title} systems?`, 'How do you handle log tracking to diagnose critical errors?'],
-        scenario: ['An active server database drop alert is signaled during team hours. What is your process to isolate the failure?', 'A business client reports an integration mismatch in records. How do you troubleshoot?'],
-        hr: [`Why did you decide to focus on the ${fallback.title} pathway?`, 'How do you prioritize busy tasks under a fast service deadline?']
-      },
-      resumeKeywords: [
-        { keyword: `${fallback.title} Operations`, priority: 'High' },
-        { keyword: 'Enterprise Support Ticketing', priority: 'High' },
-        { keyword: 'Log File Troubleshooting', priority: 'Medium' }
-      ],
+      cherries: ['Basic scripting in Python/Bash', 'Continuous delivery & cloud administration basics'],
+      recommendedCertifications: certs,
+      toolsToLearn: profile.tools,
+      interviewTopics: profile.interview,
+      resumeKeywords: profile.keywords,
       upskillingPath: [
         `Understand core operations and system structures in ${fallback.domain}.`,
         'Acquire foundational platform or cloud administrator certificates.',
@@ -2251,6 +3091,9 @@ IT_DOMAINS.forEach((domain) => {
         globalSalary = '$110,000 - $175,000';
       }
 
+      const certs = getDomainRoleCertifications(domain.id, roleId, level);
+      const profile = getDomainRoleProfile(domain.id, roleId, level, isCoding, title, domain.name);
+
       ALL_ROLES_DATA[roleId] = {
         id: roleId,
         title,
@@ -2270,31 +3113,21 @@ IT_DOMAINS.forEach((domain) => {
           suitableFor: `Excellent for individuals aiming to develop expertise in ${domain.name}, combining analytical focus with structured IT process solutions.`
         },
         mustHaves: {
-          tech: [
+          tech: profile.tech.length > 0 ? profile.tech : [
             isCoding ? 'Core coding or scripting proficiency' : 'Configuration management standards',
             'Relational database querying & data processing structures',
             'Standard troubleshooting or analytics tools'
           ],
-          process: ['SLA requirements awareness', 'Collaborative agile communication with team nodes']
+          process: profile.process
         },
-        cherries: ['System scripting (Python/Bash) basics', 'Continuous deployment pipelines awareness'],
-        recommendedCertifications: [
-          { name: domain.id === 'cloud' ? 'AWS Cloud Practitioner' : domain.id === 'cybersecurity' ? 'Google Cybersecurity Certificate' : 'ITIL 4 Foundation', level: 'Beginner', status: 'Required', resourceUrl: '#', costEstimate: 'Free/Subscription' },
-        ],
-        toolsToLearn: ['Jira Software', 'ServiceNow Enterprise Suite', 'GitHub Versioning', 'SQL Client Portal'],
-        interviewTopics: {
-          technical: [`What are the foundational challenges in maintaining ${title} workflows?`, 'How do you monitor and resolve system discrepancies?'],
-          scenario: ['A critical system interruption occurs during key business hours. What are your immediate troubleshooting steps?', 'A team member disagrees with your chosen system configuration. How do you align?'],
-          hr: [`Why are you passionate about the ${title} career pathway?`, 'How do you prioritize multiple tasks under tight deadlines?']
-        },
-        resumeKeywords: [
-          { keyword: `${title} Management`, priority: 'High' },
-          { keyword: 'System Diagnostics', priority: 'High' },
-          { keyword: 'Agile Team Collaboration', priority: 'Medium' }
-        ],
+        cherries: ['System scripting (Python/Bash) basics', 'Continuous deployment pipelines awareness', 'Cloud platform certifications'],
+        recommendedCertifications: certs,
+        toolsToLearn: profile.tools,
+        interviewTopics: profile.interview,
+        resumeKeywords: profile.keywords,
         upskillingPath: [
           `Learn foundational concepts and architectures of ${domain.name}.`,
-          'Acquire relevant beginner certifications and learn standard tools.',
+          `Acquire relevant credentials (${certs[0]?.name || 'Domain Certification'}) and master core toolsets.`,
           'Build personal laboratory projects and simulate real-world configurations.',
           'Optimize your portfolio and CV with technical keywords.',
           'Prepare for specialized technical and situational interview rounds.'

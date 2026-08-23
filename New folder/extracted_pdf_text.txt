@@ -1,0 +1,426 @@
+=== PAGE 1 ===
+MapIT Source Register - Job Roles and Certifications
+MapIT Source Register
+Sources used for IT role categories, job role mapping, and certification recommendations
+Prepared for: Akshay Kumar | Date: 8 June 2026
+Purpose: This PDF documents the official and reference sources used to build the earlier MapIT-style job role taxonomy and certification recommendation matrix. It is designed as a research-
+source sheet for a career pathway or mind-map website, not as a final legal/accreditation guide. Certification names, costs, exam codes, and validity can change, so MapIT should periodically 
+refresh source data from the official provider pages.
+1. How to read this source register
+• Role/category sources are workforce frameworks, occupation taxonomies, and official labor-market classifications. These help define role families such as IT Support, Cloud, Cybersecurity, 
+Software Engineering, Data, ITSM, ERP/CRM, and leadership roles.
+• Certification sources are primarily official vendor, standards-body, or government/industry skilling pages. These support recommendations such as CompTIA A+, ITIL, CCNA, AWS, Azure, 
+Google Cloud, CISSP, ServiceNow, Salesforce, NIELIT, NSDC, FutureSkills Prime, and C-DAC.
+• The earlier role list was synthesized from multiple taxonomies and market conventions. Some job titles are common industry titles and may not appear exactly in a single official taxonomy.
+• For a production MapIT database, treat these sources as seed sources and add live job-posting research from LinkedIn, Naukri, Indeed, Wellfound, company career pages, and ATS postings.
+2. Sources for IT and technology role categories
+Source URL What it covers How it supports MapIT
+SFIA Framework https://sfia-online.org/ Digital skills and competency framework for 
+professionals who design, develop, implement, 
+manage and protect data and technology.
+Used to support role-to-skills logic, seniority 
+levels, capability mapping, and 
+architecture/leadership pathways.
+SFIA Standard Industry Skills Profiles https://sfia-online.org/en/tools-and-resources/
+standard-industry-skills-profiles
+Example skills profiles for jobs such as 
+Software Developer using SFIA skills and levels.
+Useful template for MapIT role pages and skill-
+level expectations.
+O*NET Computer and Mathematical 
+Occupations
+https://www.onetonline.org/find/family?f=15 US occupational family listing for computer 
+and mathematical occupations such as support 
+specialists, analysts, network architects, DBAs, 
+developers, and security analysts.
+Used as an occupation-title backbone for IT 
+roles and role families.
+O*NET Database https://www.onetcenter.org/database.html Database of occupational variables including 
+work activities, skills, knowledge, and worker 
+characteristics.
+Useful for future MapIT skill extraction and 
+job-readiness scoring.
+US Bureau of Labor Statistics - Computer and 
+Mathematical Occupations
+https://www.bls.gov/oes/current/oes150000.htm Official occupational employment and wage 
+category for computer and mathematical roles.
+Useful for validating broad category names and 
+salary/demand modules.
+NICE Cybersecurity Workforce Framework - 
+CISA/NICCS
+https://niccs.cisa.gov/tools/nice-framework Cybersecurity work role categories and 
+common language for cybersecurity work.
+Used for cybersecurity role families such as 
+SOC, GRC, IAM, incident response, security 
+engineering, and governance.
+NIST NICE Framework Resource Center https://www.nist.gov/itl/applied-cybersecurity/
+nice/nice-framework-resource-center
+Common language for cybersecurity work and 
+the knowledge and skills needed to perform it.
+Used for structured cybersecurity work-role 
+mapping.
+ESCO - European Skills, Competences, 
+Qualifications and Occupations
+https://esco.ec.europa.eu/en European multilingual classification of skills, 
+competences, qualifications, and occupations.
+Used as a broad international reference for 
+occupation and skill taxonomy design.
+
+=== PAGE 2 ===
+MapIT Source Register - Job Roles and Certifications
+ESCO - What is ESCO https://esco.ec.europa.eu/en/about-esco/what-
+esco
+Explains ESCO as a multilingual classification of 
+occupations, skills, and qualifications.
+Useful model for MapIT database architecture.
+NSDC National Occupational Standards and 
+Model Curriculum
+https://nsdcindia.org/national-occupational-
+standards-and-model-curriculum
+India source for National Occupational 
+Standards and Qualification Packs aligned to 
+job roles.
+Used for India-national pathway and role 
+qualification mapping.
+NSDC IT-ITeS Sector Skill Council listing https://nsdcindia.org/nos-listing/24 IT-ITeS National Occupational Standards and 
+qualification-pack listings.
+Used for India-specific IT/ITeS role alignment.
+3. Role-category mapping notes
+MapIT role family Primary source logic
+IT Support and Service Desk O*NET Computer User/Network Support Specialists; CompTIA A+ role alignment; Google IT 
+Support Certificate; ITIL/ServiceNow for ITSM context.
+Systems, Infrastructure, Linux/Windows O*NET systems/network categories; Red Hat RHCSA/RHCE; Microsoft/Azure administrator paths; 
+Linux Foundation LFCS.
+Networking and Telecom O*NET network roles; Cisco certification paths; CompTIA Network+; Juniper/Fortinet can be added 
+in later MapIT source passes.
+Cloud Computing AWS, Microsoft, Google Cloud, Oracle certification pages; O*NET cloud-adjacent roles; SFIA skills 
+categories.
+Cybersecurity NICE/NIST cybersecurity work roles; ISC2, ISACA, Cisco CyberOps, Microsoft Security, CompTIA 
+Security+/CySA+/PenTest+.
+Software Development O*NET software developer roles; Oracle Java; Microsoft Developer; AWS/GCP developer 
+certifications; GitHub and OpenJS can be added.
+QA and Testing ISTQB certification framework and common QA title market usage.
+DevOps, SRE, Platform Engineering Linux Foundation, CNCF Kubernetes, HashiCorp Terraform, cloud DevOps certifications.
+Data Analytics and BI Google Data Analytics, Microsoft PL-300, Tableau, IBM Data Analyst, CompTIA Data+; O*NET 
+data/database roles.
+Data Engineering, Data Science, AI/ML AWS ML, Google ML/Data Engineer, Azure AI/Data, Databricks, Snowflake, C-DAC AI/BDA, 
+FutureSkills Prime.
+ERP, CRM, Business Applications Salesforce, ServiceNow, Oracle, Microsoft Dynamics/Power Platform, SAP as platform-specific 
+sources.
+Project, Product, BA, Consulting PMI, IIBA, Scrum/Agile sources, product-management market conventions.
+GRC, Audit, Privacy ISACA, ISC2, ISO/IEC 27001, IAPP, NICE governance categories.
+Architecture and Executive Leadership SFIA levels, TOGAF/Open Group, cloud architect certifications, ISACA/ISC2 governance and 
+security leadership credentials.
+4. Certification recommendation source list
+Source URL What it covers How it supports certification 
+recommendations
+CompTIA Certifications https://www.comptia.org/en/certifications/ Vendor-neutral IT, infrastructure, 
+cybersecurity, cloud, data, Linux and support 
+certifications.
+A+, Network+, Security+, Linux+, Server+, 
+Cloud+, Data+, CySA+, PenTest+, SecurityX; core 
+support/network/security backbone.
+CompTIA A+ https://www.comptia.org/en/certifications/a/ Entry IT support credential for hardware, 
+networking, operating systems and security.
+Mapped to Help Desk, Desktop Support, IT 
+Support Analyst, Field Support.
+
+=== PAGE 3 ===
+MapIT Source Register - Job Roles and Certifications
+Microsoft Credentials https://learn.microsoft.com/en-us/credentials/ Role-based certifications and Applied Skills for 
+technical and business professionals.
+Mapped to Azure, M365, Power Platform, 
+security, data, developer, administrator and 
+architect roles.
+Microsoft Browse Credentials https://learn.microsoft.com/en-us/credentials/
+browse/
+Microsoft credential catalog. Used to verify names such as AZ-900, MS-900, 
+SC-900, AZ-104, AZ-305, AZ-400, PL-900, PL-300, 
+DP-203.
+AWS Certification https://aws.amazon.com/certification/ AWS foundational, associate, professional and 
+specialty cloud credentials.
+Mapped to Cloud Support, Cloud Engineer, 
+DevOps, Architect, Security, ML.
+Google Cloud Certifications https://cloud.google.com/learn/certification Google Cloud foundational, associate and 
+professional certifications.
+Mapped to Associate Cloud Engineer, 
+Professional Cloud Architect, Data Engineer, 
+Cloud Security, DevOps, ML Engineer.
+Google Career Certificates https://www.skills.google/collections/career-
+certificates
+Google certificates for IT Support, Data 
+Analytics, Cybersecurity, Project Management, 
+UX, Digital Marketing and AI essentials.
+Entry-level pathway options for support, data, 
+cybersecurity, UX and project roles.
+Cisco Certifications https://www.cisco.com/site/us/en/learn/training-
+certifications/certifications/index.html
+Cisco entry, associate, professional and expert 
+certifications.
+Mapped to Networking, NOC, CyberOps, 
+Collaboration, Security, Data Center, Service 
+Provider.
+Cisco Certification Career Path PDF https://www.cisco.com/c/dam/en_us/training-
+events/certifications/career-path.pdf
+Cisco certification career path across CCST, 
+associate, professional and expert levels.
+Useful visual model for MapIT certification 
+ladder.
+Red Hat Certifications https://www.redhat.com/en/services/
+certifications
+Red Hat Linux, Ansible, OpenShift, automation 
+and cloud-native credentials.
+Mapped to Linux admin, infrastructure, 
+DevOps, automation, platform roles.
+Red Hat RHCSA https://www.redhat.com/en/services/
+certification/rhcsa
+Core Red Hat Enterprise Linux administration 
+credential.
+Mapped to Linux Administrator, System 
+Administrator, Infrastructure Engineer.
+ISC2 Certifications https://www.isc2.org/certifications Cybersecurity certifications including CC, SSCP, 
+CISSP, CCSP and others.
+Mapped to cybersecurity beginner to 
+leadership paths.
+ISACA Credentialing https://www.isaca.org/credentialing Audit, security management, risk, privacy, 
+governance and AI-risk credentials.
+Mapped to IT Audit, GRC, Risk, CISO, 
+Governance, Privacy and AI governance roles.
+ITIL / PeopleCert https://www.peoplecert.org/Frameworks-
+Professionals/ITIL-framework
+ITIL framework and certifications for digital 
+product and service management.
+Mapped to ITSM, Incident, Change, Problem, 
+Service Delivery and Operations roles.
+ServiceNow CSA https://learning.servicenow.com/lxp/en/pages/
+now-learning-get-certified?
+achievement_id=208e1d77dbc27f40de3cdb85ca
+961987&id=amap_detail
+Certified System Administrator exam confirms 
+ability to configure, implement and maintain 
+ServiceNow.
+Mapped to ServiceNow Admin, ITSM Analyst, 
+IT Operations and workflow roles.
+ServiceNow CIS-ITSM https://learning.servicenow.com/lxp/en/pages/
+now-learning-get-certified?
+achievement_id=6c8e1d77dbc27f40de3cdb85ca
+961970&id=amap_detail
+Validates ITSM implementation capability 
+across incidents, problems, changes and service 
+catalog.
+Mapped to ITSM Consultant, ServiceNow 
+Consultant and ITSM implementation roles.
+Salesforce Credentials https://trailhead.salesforce.com/credentials/
+administrator
+Salesforce administrator, app builder, 
+consultant and platform credentials.
+Mapped to CRM Support, Salesforce Admin, 
+Developer, Consultant, Architect and Business 
+Analyst roles.
+Oracle Certification https://www.oracle.com/in/education/
+certification/
+Oracle certification catalog for Oracle Cloud, 
+Database, Java and applications.
+Mapped to Java Developer, DBA, Oracle Cloud, 
+ERP/HCM/SCM, OCI roles.
+Oracle Java Certification Paths https://education.oracle.com/oracle-
+certification-path/pFamily_48
+Java certification paths and levels. Mapped to Java Developer and backend 
+developer paths.
+Linux Foundation Certification Catalog https://training.linuxfoundation.org/
+certification-catalog/
+Vendor-neutral Linux, Kubernetes, cloud-
+native and open-source certifications.
+Mapped to Linux, DevOps, SRE, platform 
+engineering and Kubernetes roles.
+CNCF Cloud Native Certifications https://www.cncf.io/training/certification/ Kubernetes and cloud-native certifications 
+including CKA, CKAD, CKS, KCNA/KCSA.
+Mapped to Kubernetes Engineer, DevOps 
+Engineer, SRE, Platform Engineer.
+HashiCorp Certification https://www.hashicorp.com/en/certification Terraform Associate and Professional 
+credentials.
+Mapped to DevOps, infrastructure automation, 
+platform, cloud engineering.
+PMI Certifications https://www.pmi.org/certifications Project, program, portfolio, agile and risk Mapped to Project Manager, Program Manager, 
+
+=== PAGE 4 ===
+MapIT Source Register - Job Roles and Certifications
+certifications. PMO, Scrum/Agile, Delivery roles.
+IIBA Certifications https://www.iiba.org/business-analysis-
+certifications/iiba-certifications/
+Business analysis certifications such as ECBA, 
+CCBA, CBAP, AAC, CBDA, CPOA.
+Mapped to Business Analyst, IT BA, Product 
+Analyst, Functional Consultant.
+ISTQB Certifications https://istqb.org/certifications/ Software testing certifications from foundation 
+to advanced and specialist levels.
+Mapped to QA Tester, Test Engineer, 
+Automation Tester, QA Lead, Test Manager.
+Tableau https://www.tableau.com/learn/certification Tableau analytics and visualization 
+certification source.
+Mapped to BI Analyst, Tableau Developer, Data 
+Visualization roles.
+Databricks Certification https://www.databricks.com/learn/training/
+certification
+Databricks data engineering and machine 
+learning certifications.
+Mapped to Data Engineer, Analytics Engineer, 
+ML Engineer, Lakehouse roles.
+Snowflake Certification https://learn.snowflake.com/certifications Snowflake SnowPro and advanced certification 
+source.
+Mapped to Data Engineer, Data Warehouse 
+Developer, Analytics Engineer, Cloud Data 
+Architect.
+NIELIT https://www.nielit.gov.in/ Government of India institution for 
+Information, Electronics and Communications 
+Technology examination/certification.
+Mapped to India-national foundation pathways 
+such as CCC, O Level, and short-term digital 
+courses.
+NSDC QP-NOS Search https://nsdcindia.org/qp-nos-results Search for Qualification Packs, National 
+Occupational Standards and curricula.
+Mapped to India role qualification and National 
+Occupational Standards alignment.
+FutureSkills Prime https://www.futureskillsprime.in/ Digital skilling initiative by nasscom and MeitY. Mapped to India emerging-tech pathways and 
+nasscom certifications.
+FutureSkills Prime nasscom Certifications https://www.futureskillsprime.in/nasscom-
+certification/
+Industry-relevant nasscom certifications for 
+digital technology roles.
+Mapped to data scientist, BI analyst, 
+information security analyst, ML engineer and 
+related roles.
+C-DAC ACTS Admission Booklet https://www.cdac.in/index.aspx?
+id=edu_acts_admission_booklet
+PG Certificate programmes in Advanced 
+Computing, Big Data Analytics, AI, Embedded 
+Systems, IT Infrastructure Systems and 
+Security, VLSI and Mobile Computing.
+Mapped to India advanced computing, data, AI, 
+embedded, infrastructure/security and mobile 
+pathways.
+5. Certification recommendations mapped to MapIT role families
+Role family Certifications to show in MapIT
+IT Support / Service Desk CompTIA A+, Google IT Support, Microsoft MS-900, AZ-900, ITIL Foundation, ServiceNow CSA, 
+NIELIT CCC/O Level
+Desktop / EUC / Field Support CompTIA A+, Microsoft 365/Endpoint credentials, ITIL Foundation, vendor hardware training, 
+Google IT Support
+ITSM / IT Operations ITIL Foundation/Managing Professional/Strategic Leader, ServiceNow CSA, ServiceNow CIS-ITSM, 
+COBIT, ISO 20000
+Networking / NOC / Telecom CompTIA Network+, Cisco CCST/CCNA/CCNP/CCIE, Cisco CyberOps, vendor-specific 
+security/network certs
+Systems / Infrastructure / Linux CompTIA Server+, Linux+, Red Hat RHCSA/RHCE/RHCA, Linux Foundation LFCS, Microsoft AZ-104, 
+VMware/VCP where relevant
+Cloud AWS Cloud Practitioner/SAA/SysOps/Developer/Professional/Specialty, Azure 
+AZ-900/AZ-104/AZ-305/AZ-400/AZ-500, Google Cloud CDL/ACE/Professional certs, OCI
+Cybersecurity / SOC / GRC / IAM ISC2 CC/SSCP/CISSP/CCSP, CompTIA Security+/CySA+/PenTest+, ISACA 
+CISA/CISM/CRISC/CGEIT/CDPSE/CCOA, Microsoft SC credentials, Cisco CyberOps
+Software Development Oracle Java, Microsoft AZ-204, AWS Developer Associate, Google Professional Cloud Developer, 
+GitHub certifications, platform-specific credentials
+QA / Testing ISTQB CTFL, ISTQB Agile Tester, ISTQB Advanced Test Analyst/Test Manager/Test Automation 
+Engineering, tool-specific automation credentials
+
+=== PAGE 5 ===
+MapIT Source Register - Job Roles and Certifications
+DevOps / SRE / Platform Linux Foundation LFCS, CNCF KCNA/CKA/CKAD/CKS, HashiCorp Terraform Associate/Professional, 
+AWS/Azure/GCP DevOps credentials, Red Hat Ansible/OpenShift
+Data Analytics / BI Google Data Analytics, IBM Data Analyst, Microsoft PL-300, Tableau, CompTIA Data+, Google BI, 
+Microsoft Fabric/Azure data certs
+Data Engineering / Big Data Azure DP-203, Google Professional Data Engineer, AWS Data Engineer, Databricks Data Engineer 
+Associate/Professional, Snowflake SnowPro, C-DAC Big Data
+Data Science / AI / ML Microsoft AI-900/AI-102, AWS AI Practitioner/ML Specialty, Google Professional ML 
+Engineer/Generative AI Leader, Databricks ML, IBM Data Science, C-DAC AI, FutureSkills Prime 
+AI/ML
+DBA / Database Oracle Database, Microsoft DP-300, Google Cloud Database Engineer, MongoDB, Snowflake, 
+Azure/OCI database certs
+ERP / CRM / Business Applications Salesforce Administrator/Developer/Consultant/Architect, ServiceNow CSA/CAD/CIS, Oracle 
+ERP/HCM/SCM, Microsoft Power Platform/Dynamics, SAP role-based certs
+Business Analyst / Product Analyst IIBA ECBA/CCBA/CBAP/AAC/CBDA/CPOA, PMI-PBA, Salesforce Business Analyst, Scrum Product 
+Owner
+Project / Program / Delivery PMI CAPM/PMP/PgMP/PfMP/ACP/RMP, PRINCE2, Scrum.org PSM/PSPO, Scrum Alliance CSM, SAFe
+UI/UX / Product Design Google UX Design, Nielsen Norman Group UX, HFI CUA/CXA, IAAP accessibility certs, product-
+management certificates
+Automation / RPA / Low-code Microsoft PL-900/PL-100/PL-200/PL-400, UiPath, Automation Anywhere, ServiceNow, 
+Appian/Mendix
+GRC / Audit / Privacy ISACA CISA/CISM/CRISC/CGEIT/CDPSE, ISC2 CISSP/CCSP, ISO 27001 Lead Auditor/Implementer, 
+IAPP privacy certs
+Architecture / Leadership / CTO-CIO-CISO TOGAF, AWS/Azure/GCP architect, CISSP/CISM/CRISC/CGEIT, ITIL Strategic Leader, PMI 
+PgMP/PfMP, DAMA CDMP, ISO/IEC 42001 AI management
+6. Recommended MapIT database fields for source-backed certification records
+Field Description
+Certification Name Official credential name from provider page.
+Provider CompTIA, Microsoft, AWS, Google, Cisco, NIELIT, etc.
+Official URL Canonical source page for verification and updates.
+Role Families MapIT role categories connected to the credential.
+Mapped Job Titles Specific job titles such as IT Support Analyst, Cloud Engineer, SOC Analyst.
+Level Beginner, Associate, Intermediate, Professional, Advanced, Expert, Leadership.
+Type Vendor-neutral, vendor-specific, national, academic, platform, framework.
+Region Global, India, US, EU, or platform-specific.
+Prerequisites Experience, training, exam prerequisites, or recommended background.
+Skills Covered Skills and tools validated by the certification.
+Exam / Assessment Exam code, project, performance-based exam, course completion, or badge.
+Validity / Renewal Validity period and renewal mechanism where applicable.
+Cost Range Public estimate or provider region-specific price, refreshed periodically.
+Best For Role-readiness use case.
+Not Best For Where the certification is weak or not necessary.
+Next Certifications Recommended next step in the career ladder.
+Market Signal How often it appears in job postings or whether it is optional/preferred/required.
+
+=== PAGE 6 ===
+MapIT Source Register - Job Roles and Certifications
+7. Refresh and validation rules for MapIT
+• Use official provider pages as the primary source for certification names, exam codes, retirement dates, validity, pricing and prerequisites.
+• Use role/occupation taxonomies such as O*NET, BLS, SFIA, NICE, ESCO and NSDC as taxonomy sources, but validate current hiring demand through recent job postings.
+• Separate three labels in the app: Required, Preferred, and Helpful. A certification should not be marked Required unless job postings frequently state it as mandatory for that specific role.
+• For India pages, keep a separate India-recognized filter using NIELIT, NSDC/QP-NOS, FutureSkills Prime, C-DAC, SWAYAM/NPTEL and sector skill councils.
+• Update cloud, AI, cybersecurity and vendor platform certifications at least every quarter because exam codes, names and versions change often.
+• Do not use unofficial blogs as authoritative sources for exam names. Blogs can be used only for exam-prep context, salary context, or market commentary.
+Appendix A - URL list for quick copy
+https://sfia-online.org/
+https://sfia-online.org/en/tools-and-resources/standard-industry-skills-profiles
+https://www.onetonline.org/find/family?f=15
+https://www.onetcenter.org/database.html
+https://www.bls.gov/oes/current/oes150000.htm
+https://niccs.cisa.gov/tools/nice-framework
+https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center
+https://esco.ec.europa.eu/en
+https://esco.ec.europa.eu/en/about-esco/what-esco
+https://nsdcindia.org/national-occupational-standards-and-model-curriculum
+https://nsdcindia.org/nos-listing/24
+https://www.comptia.org/en/certifications/
+https://www.comptia.org/en/certifications/a/
+https://learn.microsoft.com/en-us/credentials/
+https://learn.microsoft.com/en-us/credentials/browse/
+https://aws.amazon.com/certification/
+https://cloud.google.com/learn/certification
+https://www.skills.google/collections/career-certificates
+https://www.cisco.com/site/us/en/learn/training-certifications/certifications/index.html
+https://www.cisco.com/c/dam/en_us/training-events/certifications/career-path.pdf
+https://www.redhat.com/en/services/certifications
+https://www.redhat.com/en/services/certification/rhcsa
+https://www.isc2.org/certifications
+https://www.isaca.org/credentialing
+https://www.peoplecert.org/Frameworks-Professionals/ITIL-framework
+https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?achievement_id=208e1d77dbc27f40de3cdb85ca961987&id=amap_detail
+https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?achievement_id=6c8e1d77dbc27f40de3cdb85ca961970&id=amap_detail
+https://trailhead.salesforce.com/credentials/administrator
+https://www.oracle.com/in/education/certification/
+https://education.oracle.com/oracle-certification-path/pFamily_48
+https://training.linuxfoundation.org/certification-catalog/
+https://www.cncf.io/training/certification/
+https://www.hashicorp.com/en/certification
+https://www.pmi.org/certifications
+https://www.iiba.org/business-analysis-certifications/iiba-certifications/
+
+=== PAGE 7 ===
+MapIT Source Register - Job Roles and Certifications
+https://istqb.org/certifications/
+https://www.tableau.com/learn/certification
+https://www.databricks.com/learn/training/certification
+https://learn.snowflake.com/certifications
+https://www.nielit.gov.in/
+https://nsdcindia.org/qp-nos-results
+https://www.futureskillsprime.in/
+https://www.futureskillsprime.in/nasscom-certification/
+https://www.cdac.in/index.aspx?id=edu_acts_admission_booklet
+
