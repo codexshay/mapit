@@ -209,9 +209,19 @@ export default function RoleComparison({
   setPresetRoleBId
 }: RoleComparisonProps) {
   const [roleAId, setRoleAId] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlRoleA = params.get('roleA') || params.get('a');
+      if (urlRoleA && ALL_ROLES_DATA[urlRoleA]) return urlRoleA;
+    }
     return localStorage.getItem('comparator_roleAId') || '';
   });
   const [roleBId, setRoleBId] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlRoleB = params.get('roleB') || params.get('b');
+      if (urlRoleB && ALL_ROLES_DATA[urlRoleB]) return urlRoleB;
+    }
     return localStorage.getItem('comparator_roleBId') || '';
   });
 
@@ -242,6 +252,18 @@ export default function RoleComparison({
   useEffect(() => {
     localStorage.setItem('comparator_roleBId', roleBId);
   }, [roleBId]);
+
+  // Sync roleAId & roleBId into URL parameters dynamically for shareable links
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      if (roleAId) url.searchParams.set('roleA', roleAId);
+      else url.searchParams.delete('roleA');
+      if (roleBId) url.searchParams.set('roleB', roleBId);
+      else url.searchParams.delete('roleB');
+      window.history.replaceState({}, '', url.toString());
+    }
+  }, [roleAId, roleBId]);
 
   const roleA = roleAId ? ALL_ROLES_DATA[roleAId] : null;
   const roleB = roleBId ? ALL_ROLES_DATA[roleBId] : null;

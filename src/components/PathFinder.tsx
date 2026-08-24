@@ -976,44 +976,99 @@ export default function PathFinder(props: PathFinderProps) {
     }
   }, [selectedFallbackProfileId]);
 
-  // Onboarding wizard states
+  // Onboarding wizard states initialized from URL parameters if available, falling back to localStorage
   const [onboardStep, setOnboardStep] = useState<number>(0); // 0: Start, 1: Destination, 2: Theme/Track, 3: Dashboard
   const [hasCompletedOnboard, setHasCompletedOnboard] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('start') || params.get('target') || params.get('route') || params.get('skills')) {
+        return true;
+      }
+    }
     return localStorage.getItem('pathfinder_completed_onboard_v2') === 'true';
   });
 
-  // Wizard selections
+  // Wizard selections with URL parameter support
   const [currentStartRoleId, setCurrentStartRoleId] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlStart = params.get('start') || params.get('startRole') || params.get('from');
+      if (urlStart) return urlStart;
+    }
     return localStorage.getItem('pathfinder_currentStartRoleId') || 'career-switcher';
   });
+
   const [proficiencyLevel, setProficiencyLevel] = useState<'beginner' | 'intermediate' | 'advanced'>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlProf = params.get('proficiency') || params.get('level');
+      if (urlProf && ['beginner', 'intermediate', 'advanced'].includes(urlProf)) {
+        return urlProf as any;
+      }
+    }
     return (localStorage.getItem('pathfinder_proficiencyLevel') as 'beginner' | 'intermediate' | 'advanced') || 'beginner';
   });
+
   const [targetRoleId, setTargetRoleId] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlTarget = params.get('target') || params.get('targetRole') || params.get('to');
+      if (urlTarget) return urlTarget;
+    }
     return localStorage.getItem('pathfinder_targetRoleId') || 'cloud-support-associate';
   });
+
   const [preferredIndustry, setPreferredIndustry] = useState<string>(() => {
     const saved = localStorage.getItem('pathfinder_preferred_industry');
     if (saved) return saved;
-    const defaultTarget = localStorage.getItem('pathfinder_targetRoleId') || 'cloud-support-associate';
+    const defaultTarget = targetRoleId || 'cloud-support-associate';
     const targetRole = ALL_ROLES_DATA[defaultTarget];
     return mapRoleIdToPreference(defaultTarget, targetRole?.domain);
   });
+
   const [countryMarket, setCountryMarket] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlMarket = params.get('market') || params.get('country');
+      if (urlMarket) return urlMarket;
+    }
     return localStorage.getItem('pathfinder_country_market') || 'Global';
   });
+
   const [weeklyHours, setWeeklyHours] = useState<number>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlHours = params.get('hours');
+      if (urlHours) {
+        const parsed = parseInt(urlHours, 10);
+        if (!isNaN(parsed)) return parsed;
+      }
+    }
     const saved = localStorage.getItem('pathfinder_weeklyHours');
     return saved ? parseInt(saved, 10) : 15;
   });
   
   // Selected route option: balanced, cert, project, fast, budget
   const [selectedRoute, setSelectedRoute] = useState<'balanced' | 'cert' | 'project' | 'fast' | 'budget'>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlRoute = params.get('route') || params.get('track');
+      if (urlRoute && ['balanced', 'cert', 'project', 'fast', 'budget'].includes(urlRoute)) {
+        return urlRoute as any;
+      }
+    }
     return (localStorage.getItem('pathfinder_selected_route') as any) || 'balanced';
   });
 
   // User skills list
   const [selectedSkills, setSelectedSkills] = useState<string[]>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlSkills = params.get('skills');
+      if (urlSkills) {
+        return urlSkills.split(',').map(s => s.trim()).filter(Boolean);
+      }
+    }
     try {
       const saved = localStorage.getItem('pathfinder_selectedSkills');
       return saved ? JSON.parse(saved) : ['Windows troubleshooting', 'Networking basics'];
@@ -1024,6 +1079,13 @@ export default function PathFinder(props: PathFinderProps) {
 
   // Completed certs
   const [completedCerts, setCompletedCerts] = useState<string[]>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlCerts = params.get('certs');
+      if (urlCerts) {
+        return urlCerts.split(',').map(c => c.trim()).filter(Boolean);
+      }
+    }
     try {
       const saved = localStorage.getItem('pathfinder_completed_certs');
       return saved ? JSON.parse(saved) : [];
@@ -1131,6 +1193,34 @@ export default function PathFinder(props: PathFinderProps) {
   useEffect(() => {
     localStorage.setItem('pathfinder_completed_onboard_v2', hasCompletedOnboard ? 'true' : 'false');
   }, [hasCompletedOnboard]);
+
+  // Dynamic URL Parameter Synchronizer: Syncs active pathway configuration to URL search parameters for shareable links
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      if (hasCompletedOnboard) {
+        url.searchParams.set('start', currentStartRoleId);
+        url.searchParams.set('target', targetRoleId);
+        url.searchParams.set('route', selectedRoute);
+        if (selectedSkills.length > 0) {
+          url.searchParams.set('skills', selectedSkills.join(','));
+        } else {
+          url.searchParams.delete('skills');
+        }
+        if (completedCerts.length > 0) {
+          url.searchParams.set('certs', completedCerts.join(','));
+        } else {
+          url.searchParams.delete('certs');
+        }
+        if (skillSearchBoxQuery && skillSearchBoxQuery.trim()) {
+          url.searchParams.set('query', skillSearchBoxQuery.trim());
+        } else {
+          url.searchParams.delete('query');
+        }
+      }
+      window.history.replaceState({}, '', url.toString());
+    }
+  }, [currentStartRoleId, targetRoleId, selectedRoute, selectedSkills, completedCerts, skillSearchBoxQuery, hasCompletedOnboard]);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
