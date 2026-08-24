@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { ALL_ROLES_DATA, RoleDetail, IT_DOMAINS } from '../data/rolesData';
 import { CERTIFICATIONS_LIBRARY, SKILLS_LIBRARY, TOOLS_LIBRARY } from '../data/librariesData';
 import { RECOMMENDED_BOOKS, RecommendedBook } from './LibrariesDashboard';
@@ -1225,6 +1225,70 @@ export default function PathFinder(props: PathFinderProps) {
     return Array.from(new Set(list));
   };
 
+  // Master Extraction of ALL Database Skills & Keywords
+  const MASTER_DATABASE_SKILLS = useMemo(() => {
+    const skillsSet = new Set<string>();
+
+    // 1. Core Foundational & Additional Skills
+    [
+      ...skillOptions,
+      ...allAdditionalSkills
+    ].forEach(s => skillsSet.add(s));
+
+    // 2. Extract Tech Skills, Process Skills, Tools, Resume Keywords, & Interview Topics from ALL_ROLES_DATA
+    Object.values(ALL_ROLES_DATA).forEach((role) => {
+      if (role.mustHaves?.tech) role.mustHaves.tech.forEach(s => skillsSet.add(s));
+      if (role.mustHaves?.process) role.mustHaves.process.forEach(s => skillsSet.add(s));
+      if (role.toolsToLearn) role.toolsToLearn.forEach(t => skillsSet.add(t));
+      if (role.resumeKeywords) role.resumeKeywords.forEach(rk => {
+        if (rk && rk.keyword) skillsSet.add(rk.keyword);
+      });
+      if (role.interviewTopics?.technical) role.interviewTopics.technical.forEach(it => {
+        if (it) skillsSet.add(it);
+      });
+    });
+
+    // 3. Extract Skills from SKILLS_LIBRARY
+    SKILLS_LIBRARY.forEach(s => {
+      if (s.name) skillsSet.add(s.name);
+      if ((s as any).topic) skillsSet.add((s as any).topic);
+    });
+
+    // 4. Extract Tools from TOOLS_LIBRARY
+    TOOLS_LIBRARY.forEach(t => {
+      if (t.name) skillsSet.add(t.name);
+    });
+
+    // 5. Extract Certifications from CERTIFICATIONS_LIBRARY
+    CERTIFICATIONS_LIBRARY.forEach(c => {
+      if (c.name) skillsSet.add(c.name);
+    });
+
+    return Array.from(skillsSet).filter(Boolean);
+  }, [skillOptions, allAdditionalSkills]);
+
+  // Master Extraction of ALL Database Certifications
+  const MASTER_DATABASE_CERTS = useMemo(() => {
+    const certsSet = new Set<string>();
+
+    popularCertifications.forEach(c => certsSet.add(c));
+
+    CERTIFICATIONS_LIBRARY.forEach(c => {
+      if (c.name) certsSet.add(c.name);
+    });
+
+    Object.values(ALL_ROLES_DATA).forEach((role) => {
+      if (role.recommendedCertifications) {
+        role.recommendedCertifications.forEach((c: any) => {
+          if (typeof c === 'string') certsSet.add(c);
+          else if (c && c.name) certsSet.add(c.name);
+        });
+      }
+    });
+
+    return Array.from(certsSet).filter(Boolean);
+  }, [popularCertifications]);
+
   const handleAddCustomSkillDirectly = (skillName: string) => {
     const trimmed = skillName.trim();
     if (trimmed && !selectedSkills.includes(trimmed)) {
@@ -1264,26 +1328,53 @@ export default function PathFinder(props: PathFinderProps) {
     setCompletedCerts(prev => Array.from(new Set([...prev, ...certsToAdd])));
   };
 
-  const dynamicSkillOptions = Array.from(new Set([
-    ...skillOptions,
-    ...getRelevantRoleSkills(),
-    ...customSkills,
-    ...selectedSkills
-  ]));
+  const dynamicSkillOptions = useMemo(() => {
+    return Array.from(new Set([
+      ...getRelevantRoleSkills(),
+      ...customSkills,
+      ...selectedSkills,
+      ...MASTER_DATABASE_SKILLS
+    ]));
+  }, [getRelevantRoleSkills, customSkills, selectedSkills, MASTER_DATABASE_SKILLS]);
 
-  const dynamicCertOptions = Array.from(new Set([
-    ...popularCertifications,
-    ...getRelevantRoleCerts(),
-    ...completedCerts
-  ]));
+  const dynamicCertOptions = useMemo(() => {
+    return Array.from(new Set([
+      ...popularCertifications,
+      ...getRelevantRoleCerts(),
+      ...completedCerts,
+      ...MASTER_DATABASE_CERTS
+    ]));
+  }, [popularCertifications, getRelevantRoleCerts, completedCerts, MASTER_DATABASE_CERTS]);
 
-  const filteredSkillOptions = dynamicSkillOptions.filter(skill =>
-    skill.toLowerCase().includes(skillSearchBoxQuery.toLowerCase().trim())
-  );
+  const filteredSkillOptions = useMemo(() => {
+    const query = skillSearchBoxQuery.toLowerCase().trim();
+    if (!query) {
+      return Array.from(new Set([
+        ...getRelevantRoleSkills(),
+        ...selectedSkills,
+        ...customSkills,
+        ...skillOptions,
+        ...allAdditionalSkills.slice(0, 20)
+      ]));
+    }
+    return dynamicSkillOptions.filter(skill =>
+      skill.toLowerCase().includes(query)
+    );
+  }, [skillSearchBoxQuery, getRelevantRoleSkills, selectedSkills, customSkills, skillOptions, allAdditionalSkills, dynamicSkillOptions]);
 
-  const filteredCertOptions = dynamicCertOptions.filter(cert =>
-    cert.toLowerCase().includes(certSearchBoxQuery.toLowerCase().trim())
-  );
+  const filteredCertOptions = useMemo(() => {
+    const query = certSearchBoxQuery.toLowerCase().trim();
+    if (!query) {
+      return Array.from(new Set([
+        ...popularCertifications,
+        ...getRelevantRoleCerts(),
+        ...completedCerts
+      ]));
+    }
+    return dynamicCertOptions.filter(cert =>
+      cert.toLowerCase().includes(query)
+    );
+  }, [certSearchBoxQuery, popularCertifications, getRelevantRoleCerts, completedCerts, dynamicCertOptions]);
 
   const handleToggleSkill = (skill: string) => {
     if (selectedSkills.includes(skill)) {
@@ -1951,7 +2042,13 @@ export default function PathFinder(props: PathFinderProps) {
                     type="text"
                     value={skillSearchBoxQuery}
                     onChange={(e) => setSkillSearchBoxQuery(e.target.value)}
-                    placeholder="Search/filter tools & skills..."
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' && skillSearchBoxQuery.trim()) {
+                        e.preventDefault();
+                        handleAddCustomSkillDirectly(skillSearchBoxQuery);
+                      }
+                    }}
+                    placeholder="Search 500+ database skills & tools (e.g. 'Docker', 'React', 'Kubernetes', 'SQL')..."
                     className={`flex-1 ${isLight ? 'bg-white border-slate-300 text-slate-800 placeholder-slate-400' : 'bg-black/40 border-[#slate-700] text-white placeholder-slate-500'} border text-xs px-2.5 py-1.5 focus:outline-none focus:border-[#10b981]`}
                   />
                   {skillSearchBoxQuery.trim() && (
@@ -1967,7 +2064,16 @@ export default function PathFinder(props: PathFinderProps) {
 
                 <div className={`grid grid-cols-2 md:grid-cols-3 gap-2 max-h-40 overflow-y-auto border p-2.5 ${isLight ? 'bg-white border-slate-300' : 'bg-black/50 border-slate-800'}`}>
                   {filteredSkillOptions.length === 0 ? (
-                    <span className="text-[10px] text-gray-500 col-span-3 italic">No matching skills found. Type above to add a new custom skill.</span>
+                    <div className="col-span-3 flex items-center justify-between text-[10px] text-gray-500 italic p-1">
+                      <span>No matching database skills found for "{skillSearchBoxQuery}".</span>
+                      <button
+                        type="button"
+                        onClick={() => handleAddCustomSkillDirectly(skillSearchBoxQuery)}
+                        className="px-2 py-0.5 bg-[#10b981] text-black font-bold uppercase not-italic text-[9px] cursor-pointer"
+                      >
+                        + Add "{skillSearchBoxQuery.trim()}"
+                      </button>
+                    </div>
                   ) : (
                     filteredSkillOptions.map((skill) => {
                       const checked = selectedSkills.includes(skill);
@@ -1997,7 +2103,13 @@ export default function PathFinder(props: PathFinderProps) {
                     type="text"
                     value={certSearchBoxQuery}
                     onChange={(e) => setCertSearchBoxQuery(e.target.value)}
-                    placeholder="Search/filter certifications..."
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' && certSearchBoxQuery.trim()) {
+                        e.preventDefault();
+                        handleAddCustomCertDirectly(certSearchBoxQuery);
+                      }
+                    }}
+                    placeholder="Search database certifications (e.g. 'AWS', 'AZ-104', 'CCNA', 'Security+')..."
                     className={`flex-1 ${isLight ? 'bg-white border-slate-300 text-slate-800 placeholder-slate-400' : 'bg-black/40 border-[#slate-700] text-white placeholder-slate-500'} border text-xs px-2.5 py-1.5 focus:outline-none focus:border-amber-400 text-white`}
                   />
                   {certSearchBoxQuery.trim() && (

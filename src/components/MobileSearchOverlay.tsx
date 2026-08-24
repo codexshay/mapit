@@ -17,7 +17,7 @@ import {
   ArrowUpRight
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ALL_ROLES_DATA } from '../data/rolesData';
+import { ALL_ROLES_DATA, TECHNICAL_ROLE_ALIASES } from '../data/rolesData';
 import { interviewQDatabase } from '../data/interviewQDatabase';
 import { CERTIFICATIONS_LIBRARY, SKILLS_LIBRARY, TOOLS_LIBRARY } from '../data/librariesData';
 import { TOP_50_COMPANIES } from '../data/topCompaniesData';
@@ -95,7 +95,15 @@ export const MobileSearchOverlay: React.FC<MobileSearchOverlayProps> = ({
   const matchedRoles = useMemo(() => {
     if (!cleanQuery) return [];
     return allRolesList
-      .filter(r => matchesTerm(r.title) || matchesTerm(r.domain) || matchesTerm(r.level))
+      .filter(r => {
+        const directMatch = matchesTerm(r.title) || matchesTerm(r.domain) || matchesTerm(r.level);
+        const techMatch = Array.isArray(r.mustHaves?.tech) && r.mustHaves.tech.some(t => matchesTerm(t));
+        const processMatch = Array.isArray(r.mustHaves?.process) && r.mustHaves.process.some(p => matchesTerm(p));
+        const toolMatch = Array.isArray(r.toolsToLearn) && r.toolsToLearn.some(t => matchesTerm(t));
+        const aliasList = TECHNICAL_ROLE_ALIASES[r.id] || [];
+        const aliasMatch = aliasList.some(a => matchesTerm(a));
+        return directMatch || techMatch || processMatch || toolMatch || aliasMatch;
+      })
       .slice(0, 4);
   }, [cleanQuery, allRolesList]);
 
