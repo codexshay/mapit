@@ -79,12 +79,7 @@ const NAV_GROUPS: NavGroup[] = [
       { 
         id: 'map', 
         label: 'Career Domains', 
-        icon: Network,
-        subTabs: [
-          { id: 'mindmap', label: 'Interactive Mind Map', icon: Network, actionParams: { mode: 'mindmap' } },
-          { id: 'comparison', label: 'Role Comparator', icon: Scale, actionParams: { tab: 'comparison' } },
-          { id: 'branches', label: '18 Career Branches', icon: FolderTree, actionParams: { mode: 'mindmap' } }
-        ]
+        icon: Network
       },
       { 
         id: 'libraries', 
@@ -102,14 +97,7 @@ const NAV_GROUPS: NavGroup[] = [
       { 
         id: 'interviewq', 
         label: 'InterviewQ', 
-        icon: HelpCircle,
-        subTabs: [
-          { id: 'all-q', label: 'All Questions & Labs', icon: HelpCircle, actionParams: { query: '' } },
-          { id: 'system-design', label: 'System Design & Arch', icon: Layers, actionParams: { query: 'system design' } },
-          { id: 'coding-dsa', label: 'Coding & DSA', icon: Code2, actionParams: { query: 'coding' } },
-          { id: 'cloud-devops', label: 'Cloud & DevOps', icon: Cloud, actionParams: { query: 'cloud' } },
-          { id: 'ai-ml', label: 'AI & Data Science', icon: Cpu, actionParams: { query: 'machine learning' } }
-        ]
+        icon: HelpCircle
       }
     ]
   },
@@ -119,11 +107,7 @@ const NAV_GROUPS: NavGroup[] = [
       { 
         id: 'pathfinder', 
         label: 'Path Planner', 
-        icon: Compass,
-        subTabs: [
-          { id: 'advisor', label: 'Ambition Path Advisor', icon: Compass, actionParams: {} },
-          { id: 'saved-routes', label: 'Saved Career Pathways', icon: Bookmark, actionParams: { target: 'saved' } }
-        ]
+        icon: Compass
       },
       { id: 'comparison', label: 'Comparator', icon: Scale }
     ]
@@ -135,13 +119,7 @@ const NAV_GROUPS: NavGroup[] = [
         id: 'jobs', 
         label: 'Jobs & Referrals', 
         icon: Briefcase, 
-        isBeta: true,
-        subTabs: [
-          { id: 'all-companies', label: 'All 257+ Companies', icon: Building2, actionParams: { companyQuery: '' } },
-          { id: 'faang', label: 'FAANG & Tier 1', icon: Sparkles, actionParams: { companyQuery: 'Google' } },
-          { id: 'fintech', label: 'FinTech & Banking', icon: TrendingUp, actionParams: { companyQuery: 'Fintech' } },
-          { id: 'consulting', label: 'Consulting & Services', icon: Briefcase, actionParams: { companyQuery: 'Consulting' } }
-        ]
+        isBeta: true
       },
       { 
         id: 'hr-contacts', 

@@ -2392,47 +2392,6 @@ export default function App() {
                     {(() => {
                       const getSubTabs = () => {
                         switch (tabId) {
-                          case 'map':
-                            return [
-                              {
-                                id: 'mindmap',
-                                label: 'Interactive Mind Map',
-                                icon: Network,
-                                onClick: () => { setCareerMapViewMode('mindmap'); handleTabClick('map'); },
-                                isActive: activeTab === 'map' && careerMapViewMode === 'mindmap'
-                              },
-                              {
-                                id: 'comparison',
-                                label: 'Role Comparator',
-                                icon: Scale,
-                                onClick: () => { handleTabClick('comparison'); },
-                                isActive: activeTab === 'comparison'
-                              },
-                              {
-                                id: 'branches',
-                                label: '18 Career Branches',
-                                icon: FolderTree,
-                                onClick: () => { setCareerMapViewMode('mindmap'); handleTabClick('map'); },
-                                isActive: false
-                              }
-                            ];
-                          case 'pathfinder':
-                            return [
-                              {
-                                id: 'advisor',
-                                label: 'Ambition Path Advisor',
-                                icon: Compass,
-                                onClick: () => { handleTabClick('pathfinder'); },
-                                isActive: activeTab === 'pathfinder'
-                              },
-                              {
-                                id: 'saved-routes',
-                                label: `Saved Pathways (${savedPathways.length})`,
-                                icon: CustomBookmarkIcon,
-                                onClick: () => { handleTabClick('saved'); },
-                                isActive: activeTab === 'saved'
-                              }
-                            ];
                           case 'libraries':
                             return [
                               {
@@ -2476,75 +2435,6 @@ export default function App() {
                                 icon: Book,
                                 onClick: () => { setLibrariesActiveTab('bookshelf'); handleTabClick('libraries'); },
                                 isActive: activeTab === 'libraries' && librariesActiveTab === 'bookshelf'
-                              }
-                            ];
-                          case 'interviewq':
-                            return [
-                              {
-                                id: 'all-q',
-                                label: 'All Questions & Labs',
-                                icon: HelpCircle,
-                                onClick: () => { setInterviewQSearchQuery(''); setInterviewQSelectedRole('all'); handleTabClick('interviewq'); },
-                                isActive: activeTab === 'interviewq' && (!interviewQSearchQuery || interviewQSearchQuery === '')
-                              },
-                              {
-                                id: 'system-design',
-                                label: 'System Design & Arch',
-                                icon: Layers,
-                                onClick: () => { setInterviewQSearchQuery('system design'); handleTabClick('interviewq'); },
-                                isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('system')
-                              },
-                              {
-                                id: 'coding-dsa',
-                                label: 'Coding & DSA',
-                                icon: Code2,
-                                onClick: () => { setInterviewQSearchQuery('coding'); handleTabClick('interviewq'); },
-                                isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('coding')
-                              },
-                              {
-                                id: 'cloud-devops',
-                                label: 'Cloud & DevOps',
-                                icon: Cloud,
-                                onClick: () => { setInterviewQSearchQuery('cloud'); handleTabClick('interviewq'); },
-                                isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('cloud')
-                              },
-                              {
-                                id: 'ai-ml',
-                                label: 'AI & Data Science',
-                                icon: Cpu,
-                                onClick: () => { setInterviewQSearchQuery('machine learning'); handleTabClick('interviewq'); },
-                                isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('machine')
-                              }
-                            ];
-                          case 'jobs':
-                            return [
-                              {
-                                id: 'all-companies',
-                                label: 'All 257+ Companies',
-                                icon: Building2,
-                                onClick: () => { setJobsCompanySearchQuery(''); handleTabClick('jobs'); },
-                                isActive: activeTab === 'jobs' && (!jobsCompanySearchQuery || jobsCompanySearchQuery === '')
-                              },
-                              {
-                                id: 'faang',
-                                label: 'FAANG & Tier 1',
-                                icon: Sparkles,
-                                onClick: () => { setJobsCompanySearchQuery('Google'); handleTabClick('jobs'); },
-                                isActive: activeTab === 'jobs' && jobsCompanySearchQuery === 'Google'
-                              },
-                              {
-                                id: 'fintech',
-                                label: 'FinTech & Banking',
-                                icon: TrendingUp,
-                                onClick: () => { setJobsCompanySearchQuery('Fintech'); handleTabClick('jobs'); },
-                                isActive: activeTab === 'jobs' && jobsCompanySearchQuery === 'Fintech'
-                              },
-                              {
-                                id: 'consulting',
-                                label: 'Consulting & Services',
-                                icon: Briefcase,
-                                onClick: () => { setJobsCompanySearchQuery('Consulting'); handleTabClick('jobs'); },
-                                isActive: activeTab === 'jobs' && jobsCompanySearchQuery === 'Consulting'
                               }
                             ];
                           case 'hr-contacts':
@@ -2652,47 +2542,6 @@ export default function App() {
                   {(() => {
                     const getSubTabs = () => {
                       switch (tabId) {
-                        case 'map':
-                          return [
-                            {
-                              id: 'mindmap',
-                              label: 'Interactive Mind Map',
-                              icon: Network,
-                              onClick: () => { setCareerMapViewMode('mindmap'); handleTabClick('map'); },
-                              isActive: activeTab === 'map' && careerMapViewMode === 'mindmap'
-                            },
-                            {
-                              id: 'comparison',
-                              label: 'Role Comparator',
-                              icon: Scale,
-                              onClick: () => { handleTabClick('comparison'); },
-                              isActive: activeTab === 'comparison'
-                            },
-                            {
-                              id: 'branches',
-                              label: '18 Career Branches',
-                              icon: FolderTree,
-                              onClick: () => { setCareerMapViewMode('mindmap'); handleTabClick('map'); },
-                              isActive: false
-                            }
-                          ];
-                        case 'pathfinder':
-                          return [
-                            {
-                              id: 'advisor',
-                              label: 'Ambition Path Advisor',
-                              icon: Compass,
-                              onClick: () => { handleTabClick('pathfinder'); },
-                              isActive: activeTab === 'pathfinder'
-                            },
-                            {
-                              id: 'saved-routes',
-                              label: `Saved Pathways (${savedPathways.length})`,
-                              icon: CustomBookmarkIcon,
-                              onClick: () => { handleTabClick('saved'); },
-                              isActive: activeTab === 'saved'
-                            }
-                          ];
                         case 'libraries':
                           return [
                             {
@@ -2736,75 +2585,6 @@ export default function App() {
                               icon: Book,
                               onClick: () => { setLibrariesActiveTab('bookshelf'); handleTabClick('libraries'); },
                               isActive: activeTab === 'libraries' && librariesActiveTab === 'bookshelf'
-                            }
-                          ];
-                        case 'interviewq':
-                          return [
-                            {
-                              id: 'all-q',
-                              label: 'All Questions & Labs',
-                              icon: HelpCircle,
-                              onClick: () => { setInterviewQSearchQuery(''); setInterviewQSelectedRole('all'); handleTabClick('interviewq'); },
-                              isActive: activeTab === 'interviewq' && (!interviewQSearchQuery || interviewQSearchQuery === '')
-                            },
-                            {
-                              id: 'system-design',
-                              label: 'System Design & Arch',
-                              icon: Layers,
-                              onClick: () => { setInterviewQSearchQuery('system design'); handleTabClick('interviewq'); },
-                              isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('system')
-                            },
-                            {
-                              id: 'coding-dsa',
-                              label: 'Coding & DSA',
-                              icon: Code2,
-                              onClick: () => { setInterviewQSearchQuery('coding'); handleTabClick('interviewq'); },
-                              isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('coding')
-                            },
-                            {
-                              id: 'cloud-devops',
-                              label: 'Cloud & DevOps',
-                              icon: Cloud,
-                              onClick: () => { setInterviewQSearchQuery('cloud'); handleTabClick('interviewq'); },
-                              isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('cloud')
-                            },
-                            {
-                              id: 'ai-ml',
-                              label: 'AI & Data Science',
-                              icon: Cpu,
-                              onClick: () => { setInterviewQSearchQuery('machine learning'); handleTabClick('interviewq'); },
-                              isActive: activeTab === 'interviewq' && interviewQSearchQuery.toLowerCase().includes('machine')
-                            }
-                          ];
-                        case 'jobs':
-                          return [
-                            {
-                              id: 'all-companies',
-                              label: 'All 257+ Companies',
-                              icon: Building2,
-                              onClick: () => { setJobsCompanySearchQuery(''); handleTabClick('jobs'); },
-                              isActive: activeTab === 'jobs' && (!jobsCompanySearchQuery || jobsCompanySearchQuery === '')
-                            },
-                            {
-                              id: 'faang',
-                              label: 'FAANG & Tier 1',
-                              icon: Sparkles,
-                              onClick: () => { setJobsCompanySearchQuery('Google'); handleTabClick('jobs'); },
-                              isActive: activeTab === 'jobs' && jobsCompanySearchQuery === 'Google'
-                            },
-                            {
-                              id: 'fintech',
-                              label: 'FinTech & Banking',
-                              icon: TrendingUp,
-                              onClick: () => { setJobsCompanySearchQuery('Fintech'); handleTabClick('jobs'); },
-                              isActive: activeTab === 'jobs' && jobsCompanySearchQuery === 'Fintech'
-                            },
-                            {
-                              id: 'consulting',
-                              label: 'Consulting & Services',
-                              icon: Briefcase,
-                              onClick: () => { setJobsCompanySearchQuery('Consulting'); handleTabClick('jobs'); },
-                              isActive: activeTab === 'jobs' && jobsCompanySearchQuery === 'Consulting'
                             }
                           ];
                         case 'hr-contacts':
