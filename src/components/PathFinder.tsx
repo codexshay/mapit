@@ -1103,6 +1103,15 @@ export default function PathFinder(props: PathFinderProps) {
     }
   });
 
+  const [skillSearchBoxQuery, setSkillSearchBoxQuery] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('query') || params.get('q') || params.get('search') || '';
+    }
+    return '';
+  });
+  const [certSearchBoxQuery, setCertSearchBoxQuery] = useState<string>('');
+
   // Progress tracking inside stages
   const [completedStages, setCompletedStages] = useState<number[]>([]);
   const [expandedStageIndex, setExpandedStageIndex] = useState<number | null>(0);
@@ -1282,9 +1291,6 @@ export default function PathFinder(props: PathFinderProps) {
     'Microsoft Certified: Azure Fundamentals (AZ-900)', 'Microsoft Certified: Azure Administrator (AZ-104)', 
     'Google Cloud Digital Leader', 'Certified Ethical Hacker (CEH)'
   ];
-
-  const [skillSearchBoxQuery, setSkillSearchBoxQuery] = useState<string>('');
-  const [certSearchBoxQuery, setCertSearchBoxQuery] = useState<string>('');
 
   const getRelevantRoleSkills = () => {
     const list: string[] = [];
