@@ -1297,8 +1297,53 @@ export default function App() {
     return () => window.removeEventListener('popstate', handleLocationCheck);
   }, []);
 
-  // Tab states to isolate sections independently
-  const [activeTab, setActiveTab] = useState<string>('about');
+  // Tab states to isolate sections independently (initialized from URL path or default)
+  const [activeTab, setActiveTab] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const pathname = window.location.pathname.toLowerCase();
+      const hash = window.location.hash.toLowerCase();
+      const params = new URLSearchParams(window.location.search);
+      const tabParam = params.get('tab');
+
+      if (pathname.includes('/map') || hash === '#map' || tabParam === 'map') return 'map';
+      if (pathname.includes('/interviewq') || hash === '#interviewq' || tabParam === 'interviewq') return 'interviewq';
+      if (pathname.includes('/path-planner') || pathname.includes('/pathfinder') || hash === '#pathfinder' || tabParam === 'pathfinder') return 'pathfinder';
+      if (pathname.includes('/resources') || pathname.includes('/libraries') || hash === '#libraries' || tabParam === 'libraries') return 'libraries';
+      if (pathname.includes('/comparison') || hash === '#comparison' || tabParam === 'comparison') return 'comparison';
+      if (pathname.includes('/jobs') || hash === '#jobs' || tabParam === 'jobs') return 'jobs';
+      if (pathname.includes('/hr-contacts') || hash === '#hr-contacts' || tabParam === 'hr-contacts') return 'hr-contacts';
+      if (pathname.includes('/saved') || pathname.includes('/bookmarks') || hash === '#saved' || tabParam === 'saved') return 'saved';
+      if (pathname.includes('/dashboard') || hash === '#dashboard' || tabParam === 'dashboard') return 'about';
+    }
+    return 'map';
+  });
+
+  // Dynamic URL PushState Synchronizer: Updates browser URL bar when user switches sections
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const routeMap: Record<string, string> = {
+        about: '/dashboard',
+        map: '/map',
+        interviewq: '/interviewq',
+        pathfinder: '/path-planner',
+        libraries: '/resources',
+        comparison: '/comparison',
+        jobs: '/jobs',
+        'hr-contacts': '/hr-contacts',
+        saved: '/saved',
+        search: '/search'
+      };
+
+      const targetPath = routeMap[activeTab];
+      if (targetPath) {
+        const currentUrl = new URL(window.location.href);
+        if (currentUrl.pathname !== targetPath) {
+          currentUrl.pathname = targetPath;
+          window.history.pushState({ tab: activeTab }, '', currentUrl.toString());
+        }
+      }
+    }
+  }, [activeTab]);
   const [careerMapViewMode, setCareerMapViewMode] = useState<'mindmap' | 'comparison'>('mindmap');
   const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState<boolean>(false);
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({
