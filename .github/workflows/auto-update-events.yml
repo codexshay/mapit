@@ -2,8 +2,8 @@ name: Auto-Fetch Hackathons & Events
 
 on:
   schedule:
-    # Runs automatically every 12 hours (00:00, 12:00 UTC)
-    - cron: '0 */12 * * *'
+    # Runs automatically once every 3 days at 00:00 UTC
+    - cron: '0 0 */3 * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 permissions:
