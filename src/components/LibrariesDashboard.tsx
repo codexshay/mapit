@@ -3273,7 +3273,7 @@ export default function LibrariesDashboard({
 
       {/* 3. STUDY PORTALS MIND-MAP & SKILL BRANCHING TREE RENDER */}
       {activeTab === 'channels' && (
-        <div className="space-y-4 font-mono">
+        <div className="space-y-4 font-mono max-h-[750px] overflow-y-auto custom-scrollbar pr-1">
           {(() => {
             const activeKey = selectedPortalId || filteredChannels[0]?.id || filteredChannels[0]?.name;
             const activePortal = filteredChannels.find(p => (p.id || p.name) === activeKey) || filteredChannels[0];
