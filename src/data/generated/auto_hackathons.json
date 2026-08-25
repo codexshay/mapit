@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -35,7 +35,7 @@
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 18,
+    "daysLeft": 16,
     "url": "https://agentic-cinema.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -59,7 +59,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 9,
+    "daysLeft": 7,
     "url": "https://allthingsagentichackathon.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -83,7 +83,7 @@
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 23,
+    "daysLeft": 21,
     "url": "https://agentsforhumans.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -107,7 +107,7 @@
       "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 23,
+    "daysLeft": 21,
     "url": "https://call-e.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -117,31 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
-  },
-  {
-    "id": "devpost-reverie-hacks-2026",
-    "title": "Reverie Hacks 2026",
-    "organizer": "ReverieHacks",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>3,047,814</span>",
-    "themes": [
-      "Beginner Friendly",
-      "Machine Learning/AI",
-      "Open Ended"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 1,
-    "url": "https://reverie-hacks-2026.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "Reverie Hacks 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "devpost-ai-builders-hackathon",
@@ -155,7 +131,7 @@
       "Beginner Friendly"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 24,
+    "daysLeft": 22,
     "url": "https://ai-builders-hackathon-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -165,7 +141,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "devpost-africa-deep-tech-challenge-2026",
@@ -178,7 +154,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 2,
+    "daysLeft": 7,
     "url": "https://adtc-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -188,7 +164,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "devpost-volthacks",
@@ -202,7 +178,7 @@
       "Beginner Friendly"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 14,
+    "daysLeft": 12,
     "url": "https://volthacks.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -212,12 +188,148 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
-    "id": "unstop-full-stack-python-with-gen-ai",
-    "title": "Full Stack Python with Gen-AI",
-    "organizer": "Quality Thought Info Systems",
+    "id": "devpost-3d-websites-hackathon",
+    "title": "3D Websites Hackathon",
+    "organizer": "Tanishq Kumar",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>55</span>",
+    "themes": [
+      "Design",
+      "Web",
+      "Beginner Friendly"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 7,
+    "url": "https://3d-websites-hackathon.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "3D Websites Hackathon is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-25"
+  },
+  {
+    "id": "unstop-geeks2code",
+    "title": "Geeks2Code",
+    "organizer": "GeeksForGeeks Campus Body MIET",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3846975,
+        "rank": "Winner",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1740788,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Swags + E-Certificates",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 1,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3846976,
+        "rank": "First Runner Up",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1740788,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Swags + E-Certificates",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 1,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3846977,
+        "rank": "Second Runner Up",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1740788,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Swags + E-Certificates",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 1,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/geeks2code-geeksforgeeks-campus-body-miet-1740788",
+    "type": "Online",
+    "location": "online",
+    "description": "Geeks2Code organized by GeeksForGeeks Campus Body MIET. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-25"
+  },
+  {
+    "id": "unstop-knsit-tech-community",
+    "title": "KNSIT Tech Community",
+    "organizer": "KNS Institute of Technology, Karnataka",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3848385,
+        "rank": "1",
+        "cash": 1000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1743721,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/knsit-tech-community-kns-institute-of-technology-karnataka-1743721",
+    "type": "Online",
+    "location": "online",
+    "description": "KNSIT Tech Community organized by KNS Institute of Technology, Karnataka. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-25"
+  },
+  {
+    "id": "unstop-iridescence-1-0",
+    "title": "Iridescence 1.0",
+    "organizer": "SRM Insitute of Science and Technology",
     "region": "India",
     "prizes": [],
     "themes": [
@@ -227,384 +339,86 @@
       "Management",
       "Arts, Commerce, Sciences & Others",
       "Law",
-      "Medical",
-      "Fresher",
-      "Experienced Professionals"
+      "Medical"
     ],
     "difficulty": "Open to All",
     "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/full-stack-python-with-gen-ai-quality-thought-info-systems-1742888",
-    "type": "Online",
-    "location": "online",
-    "description": "Full Stack Python with Gen-AI organized by Quality Thought Info Systems. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "url": "https://unstop.com/https://unstop.com/hackathons/iridescence-10-srm-insitute-of-science-and-technology-1739836",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Iridescence 1.0 organized by SRM Insitute of Science and Technology. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
     "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
     "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
-  },
-  {
-    "id": "unstop-turtlebot-pursuit-evasion-challenge",
-    "title": "TurtleBot Pursuit & Evasion Challenge",
-    "organizer": "Indian Institute Of Technology Bhubaneswar",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3847599,
-        "rank": "Winner",
-        "cash": 12000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742795,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847600,
-        "rank": "1st runner up",
-        "cash": 8000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742795,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847601,
-        "rank": "2nd runner up",
-        "cash": 5000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742795,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/turtlebot-pursuit-evasion-challenge-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742795",
-    "type": "Online",
-    "location": "online",
-    "description": "TurtleBot Pursuit & Evasion Challenge organized by Indian Institute Of Technology Bhubaneswar. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "unstop-agentic-ai-hackathon",
     "title": "Agentic AI Hackathon",
-    "organizer": "Indian Institute Of Technology Bhubaneswar",
+    "organizer": "Indian Institute of Technology (IIT), Bombay",
     "region": "India",
-    "prizes": [
-      {
-        "id": 3847605,
-        "rank": "Winner",
-        "cash": 16000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742838,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847606,
-        "rank": "1st Runner Up",
-        "cash": 12000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742838,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847607,
-        "rank": "2nd Ruuner Up",
-        "cash": 7000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742838,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
+    "prizes": [],
     "themes": [
-      "All"
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
     ],
     "difficulty": "Open to All",
     "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/agentic-ai-hackathon-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742838",
+    "url": "https://unstop.com/https://unstop.com/hackathons/agentic-ai-hackathon-sarcathon-2026-iit-bombay-1743750",
     "type": "Online",
     "location": "online",
-    "description": "Agentic AI Hackathon organized by Indian Institute Of Technology Bhubaneswar. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "description": "Agentic AI Hackathon organized by Indian Institute of Technology (IIT), Bombay. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
     "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
     "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
-    "id": "unstop-math-o-stellar",
-    "title": "Math-O-Stellar",
-    "organizer": "Indian Institute Of Technology Bhubaneswar",
+    "id": "unstop-yc-fall-2026-x-moss-the-zero-latency-builder-sprint",
+    "title": "YC Fall 2026 x Moss: The Zero Latency Builder Sprint",
+    "organizer": "HiDevs",
     "region": "India",
-    "prizes": [
-      {
-        "id": 3847588,
-        "rank": "Winner",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742777,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Prize Worth : 7,000",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847589,
-        "rank": "1st Runner Up",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742777,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Prize Worth : 3,000",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847590,
-        "rank": "2nd Runner Up",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742777,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "Prize Worth : 3,000",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
+    "prizes": [],
     "themes": [
       "All"
     ],
     "difficulty": "Open to All",
     "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/math-o-stellar-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742777",
-    "type": "Online",
-    "location": "online",
-    "description": "Math-O-Stellar organized by Indian Institute Of Technology Bhubaneswar. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "url": "https://unstop.com/https://unstop.com/hackathons/yc-fall-2026-x-moss-the-zero-latency-builder-sprint-hidevs-1743636",
+    "type": "In-person",
+    "location": "offline",
+    "description": "YC Fall 2026 x Moss: The Zero Latency Builder Sprint organized by HiDevs. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
     "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
     "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
-    "id": "unstop-cadathon",
-    "title": "CADathon",
-    "organizer": "Indian Institute Of Technology Bhubaneswar",
+    "id": "unstop-buildsprint",
+    "title": "BuildSprint",
+    "organizer": "LatentForce.ai",
     "region": "India",
     "prizes": [
       {
-        "id": 3847593,
-        "rank": "Winner",
-        "cash": 12000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742714,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847594,
-        "rank": "1st runner up",
-        "cash": 8000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742714,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847595,
-        "rank": "2nd runner up",
-        "cash": 5000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742714,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/cadathon-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742714",
-    "type": "Online",
-    "location": "online",
-    "description": "CADathon organized by Indian Institute Of Technology Bhubaneswar. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-23"
-  },
-  {
-    "id": "unstop-graviton",
-    "title": "Graviton",
-    "organizer": "ISTE CGC UNIVERSITY",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3847596,
-        "rank": "The Supernova",
-        "cash": 75000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742794,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "For the team that shines brightest. Awarded to the most groundbreaking solution that demonstrates exceptional innovation, technical excellence, real-world impact, and execution—a project powerful enough to create its own orbit.",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847597,
-        "rank": "The Nebula",
-        "cash": 40000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742794,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "For an idea with limitless potential. Recognizing a highly innovative solution with strong creativity, scalability, technical implementation, and future potential—an idea ready to evolve into something extraordinary.",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847598,
-        "rank": "The Cosmic Pioneer",
+        "id": 3848296,
+        "rank": "1st Prize",
         "cash": 20000,
         "currency": "fa-rupee",
         "certificate": 1,
-        "entity_id": 1742794,
+        "entity_id": 1742504,
         "entity_type": "App\\Model\\Opportunity",
-        "others": "For those who dare to explore the unknown. Awarded to a team that demonstrates bold thinking, originality, and problem-solving ability, transforming an ambitious concept into a promising working solution.",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "Undergraduate",
-      "Postgraduate",
-      "Engineering Students",
-      "Management",
-      "Arts, Commerce, Sciences & Others",
-      "Law",
-      "Medical"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/graviton-iste-cgc-university-1742794",
-    "type": "In-person",
-    "location": "offline",
-    "description": "Graviton organized by ISTE CGC UNIVERSITY. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-23"
-  },
-  {
-    "id": "unstop-design-marathon",
-    "title": "Design Marathon",
-    "organizer": "Indian Institute Of Technology Bhubaneswar",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3847582,
-        "rank": "Winner",
-        "cash": 12000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742740,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
+        "others": "₹20,000 cash + $200 worth of LatentCode Credits.",
         "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
@@ -612,14 +426,14 @@
         "pre_placement_opportunity": 0
       },
       {
-        "id": 3847583,
-        "rank": "1st Runner Up",
-        "cash": 8000,
+        "id": 3848297,
+        "rank": "2nd Prize",
+        "cash": 15000,
         "currency": "fa-rupee",
         "certificate": 1,
-        "entity_id": 1742740,
+        "entity_id": 1742504,
         "entity_type": "App\\Model\\Opportunity",
-        "others": null,
+        "others": "₹15,000 cash + $150 worth of LatentCode Credits",
         "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
@@ -627,12 +441,123 @@
         "pre_placement_opportunity": 0
       },
       {
-        "id": 3847584,
-        "rank": "2nd Runner Up",
+        "id": 3848298,
+        "rank": "3rd Prize",
+        "cash": 10000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742504,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "₹10,000 cash + $100 worth of LatentCode Credits",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3848299,
+        "rank": "Best Build with SkillPatch",
         "cash": 5000,
         "currency": "fa-rupee",
         "certificate": 1,
-        "entity_id": 1742740,
+        "entity_id": 1742504,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "₹5,000 cash + $50 worth of LatentCode Credits",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/buildsprint-latentforceai-1742504",
+    "type": "Online",
+    "location": "online",
+    "description": "BuildSprint organized by LatentForce.ai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-25"
+  },
+  {
+    "id": "unstop-code-quest-2026-21-day-competitive-coding-challenge",
+    "title": "Code Quest 2026 – 21-Day Competitive Coding Challenge",
+    "organizer": "K. J. Somaiya Institute of Technology (KJSIT)",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/code-quest-2026-21-day-competitive-coding-challenge-k-j-somaiya-institute-of-technology-kjsit-1743505",
+    "type": "Online",
+    "location": "online",
+    "description": "Code Quest 2026 – 21-Day Competitive Coding Challenge organized by K. J. Somaiya Institute of Technology (KJSIT). Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-25"
+  },
+  {
+    "id": "unstop-hack-the-horizon-2-0-24-hour-hackathon",
+    "title": "Hack The Horizon 2.0 – 24-Hour Hackathon",
+    "organizer": "KPR Institute of Engineering and Technology Coimbatore",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3847287,
+        "rank": "1st",
+        "cash": 15000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742320,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3848278,
+        "rank": "2nd",
+        "cash": 10000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742320,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3848279,
+        "rank": "3rd",
+        "cash": 5000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1742320,
         "entity_type": "App\\Model\\Opportunity",
         "others": null,
         "currencyCode": null,
@@ -653,32 +578,32 @@
     ],
     "difficulty": "Open to All",
     "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/design-marathon-indian-institute-of-technology-bhubaneswar-1742740",
-    "type": "Online",
-    "location": "online",
-    "description": "Design Marathon organized by Indian Institute Of Technology Bhubaneswar. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "url": "https://unstop.com/https://unstop.com/hackathons/hack-the-horizon-20-24-hour-hackathon-hack-the-horizon-20-24-hour-hackathon-kpr-institute-of-engineering-and--1742320",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Hack The Horizon 2.0 – 24-Hour Hackathon organized by KPR Institute of Engineering and Technology Coimbatore. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
     "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
     "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
-    "id": "unstop-cp-contest",
-    "title": "CP Contest",
-    "organizer": "Indian Institute Of Technology Bhubaneswar",
+    "id": "unstop-artha-the-algorithmic-trading-challenge",
+    "title": "Artha - The Algorithmic Trading Challenge",
+    "organizer": "Netaji Subhas University of Technology (NSUT), Delhi",
     "region": "India",
     "prizes": [
       {
-        "id": 3847585,
+        "id": 3848056,
         "rank": "Winner",
-        "cash": null,
+        "cash": 75000,
         "currency": "fa-rupee",
         "certificate": 1,
-        "entity_id": 1742751,
+        "entity_id": 1743348,
         "entity_type": "App\\Model\\Opportunity",
-        "others": "Prize Worth: 7,000",
+        "others": "Rs. 7,500 Cash + Prizes Worth Rs. 67,500",
         "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
@@ -686,14 +611,88 @@
         "pre_placement_opportunity": 0
       },
       {
-        "id": 3847586,
+        "id": 3848057,
         "rank": "First Runner Up",
+        "cash": 50000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1743348,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Rs. 5,000 Cash + Prizes Worth Rs. 45,000",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3848058,
+        "rank": "Second Runner Up",
+        "cash": 25000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1743348,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Rs. 2,500 Cash + Prizes Worth Rs. 22,500",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3848059,
+        "rank": "National Finalist",
         "cash": null,
         "currency": "fa-rupee",
         "certificate": 1,
-        "entity_id": 1742751,
+        "entity_id": 1743348,
         "entity_type": "App\\Model\\Opportunity",
-        "others": "Prize Worth: 5,000",
+        "others": "National Finalist Certificate",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      }
+    ],
+    "themes": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/artha-the-algorithmic-trading-challenge-consilium26-netaji-subhas-university-of-technology-nsut-delhi-1743348",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Artha - The Algorithmic Trading Challenge organized by Netaji Subhas University of Technology (NSUT), Delhi. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-25"
+  },
+  {
+    "id": "unstop-fintechstico-v7-0-diving-into-the-world-of-fintech",
+    "title": "Fintechstico V7.0 - Diving into the World of Fintech",
+    "organizer": "Netaji Subhas University of Technology (NSUT), Delhi",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 3848072,
+        "rank": "Winner",
+        "cash": 75000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1743355,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Rs. 7,500 Cash + Prizes Worth Rs. 67,500",
         "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
@@ -701,14 +700,44 @@
         "pre_placement_opportunity": 0
       },
       {
-        "id": 3847587,
-        "rank": "2nd Runner Up",
+        "id": 3848073,
+        "rank": "First Runner Up",
+        "cash": 50000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1743355,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Rs. 5,000 Cash + Prizes Worth Rs. 45,000",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3848074,
+        "rank": "Second Runner Up",
+        "cash": 25000,
+        "currency": "fa-rupee",
+        "certificate": 1,
+        "entity_id": 1743355,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Rs. 2,500 Cash + Prizes Worth Rs. 22,500",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0
+      },
+      {
+        "id": 3848075,
+        "rank": "National Finalist",
         "cash": null,
         "currency": "fa-rupee",
         "certificate": 1,
-        "entity_id": 1742751,
+        "entity_id": 1743355,
         "entity_type": "App\\Model\\Opportunity",
-        "others": "Prize Worth : 3,000",
+        "others": "National Finalist Certificate",
         "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
@@ -721,152 +750,16 @@
     ],
     "difficulty": "Open to All",
     "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/cp-contest-indian-institute-of-technology-bhubaneswar-1742751",
-    "type": "Online",
-    "location": "online",
-    "description": "CP Contest organized by Indian Institute Of Technology Bhubaneswar. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "url": "https://unstop.com/https://unstop.com/hackathons/fintechstico-v70-diving-into-the-world-of-fintech-consilium26-netaji-subhas-university-of-technology-nsut-del-1743355",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Fintechstico V7.0 - Diving into the World of Fintech organized by Netaji Subhas University of Technology (NSUT), Delhi. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
     "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
     "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
-  },
-  {
-    "id": "unstop-ml-hackathon",
-    "title": "ML Hackathon",
-    "organizer": "Indian Institute Of Technology Bhubaneswar",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3847574,
-        "rank": "Winner",
-        "cash": 16000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742732,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847575,
-        "rank": "1st Runner Up",
-        "cash": 12000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742732,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847576,
-        "rank": "2nd Runner Up",
-        "cash": 7000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742732,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/ml-hackathon-indian-institute-of-technology-bhubaneswar-1742732",
-    "type": "Online",
-    "location": "online",
-    "description": "ML Hackathon organized by Indian Institute Of Technology Bhubaneswar. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-23"
-  },
-  {
-    "id": "unstop-web-hackathon",
-    "title": "Web Hackathon",
-    "organizer": "Indian Institute Of Technology Bhubaneswar",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3847568,
-        "rank": "Winner",
-        "cash": 16000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742721,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847569,
-        "rank": "1st Runner Up",
-        "cash": 12000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742721,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      },
-      {
-        "id": 3847570,
-        "rank": "2nd Runner Up",
-        "cash": 7000,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1742721,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": null,
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0
-      }
-    ],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/web-hackathon-indian-institute-of-technology-bhubaneswar-1742721",
-    "type": "Online",
-    "location": "online",
-    "description": "Web Hackathon organized by Indian Institute Of Technology Bhubaneswar. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -890,7 +783,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -914,7 +807,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -938,7 +831,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -962,7 +855,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -986,7 +879,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -1010,7 +903,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -1034,7 +927,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -1058,7 +951,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1082,7 +975,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1106,7 +999,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -1130,6 +1023,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-23"
+    "fetchedAt": "2026-08-25"
   }
 ]
