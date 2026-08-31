@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "devpost-all-things-agentic-hackathon",
@@ -35,7 +35,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 4,
+    "daysLeft": 7,
     "url": "https://allthingsagentichackathon.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -59,7 +59,7 @@
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 13,
+    "daysLeft": 10,
     "url": "https://agentic-cinema.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -83,7 +83,7 @@
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 18,
+    "daysLeft": 15,
     "url": "https://agentsforhumans.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "devpost-the-webmcp-challenge",
@@ -107,7 +107,7 @@
       "Web"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 6,
+    "daysLeft": 4,
     "url": "https://webmcp.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -117,7 +117,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
+  },
+  {
+    "id": "devpost-tiktok-techjam-2026",
+    "title": "TikTok TechJam 2026",
+    "organizer": "TikTok",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>34,500</span>",
+    "themes": [
+      "Machine Learning/AI",
+      "Cybersecurity",
+      "E-commerce/Retail"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 1,
+    "url": "https://tiktoktechjam2026.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "TikTok TechJam 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -131,7 +155,7 @@
       "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 17,
+    "daysLeft": 15,
     "url": "https://call-e.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -141,7 +165,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "devpost-ai-builders-hackathon",
@@ -155,7 +179,7 @@
       "Beginner Friendly"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 19,
+    "daysLeft": 16,
     "url": "https://ai-builders-hackathon-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -165,7 +189,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "devpost-volthacks",
@@ -179,7 +203,7 @@
       "Beginner Friendly"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 9,
+    "daysLeft": 6,
     "url": "https://volthacks.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -189,31 +213,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
-  },
-  {
-    "id": "devpost-3d-websites-hackathon",
-    "title": "3D Websites Hackathon",
-    "organizer": "Tanishq Kumar",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>55</span>",
-    "themes": [
-      "Design",
-      "Web",
-      "Beginner Friendly"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 4,
-    "url": "https://3d-websites-hackathon.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "3D Websites Hackathon is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "unstop-hackcelestial-3-0",
@@ -257,7 +257,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "unstop-inspiron-5-0",
@@ -392,7 +392,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "unstop-wce-hackathon-2026",
@@ -538,7 +538,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "unstop-innovate-x-hackathon",
@@ -607,7 +607,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "unstop-changethon",
@@ -636,7 +636,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "unstop-innerve-x-india-s-largest-student-driven-hackathon",
@@ -760,7 +760,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "unstop-india-s-biggest-ai-hackathon",
@@ -787,7 +787,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "unstop-myntra-hackerramp-weforshe-2025",
@@ -873,7 +873,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "unstop-swift-hack",
@@ -915,7 +915,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "unstop-code-uncode",
@@ -987,7 +987,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -1011,7 +1011,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -1035,7 +1035,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -1059,7 +1059,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -1083,7 +1083,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -1107,7 +1107,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -1131,7 +1131,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -1155,7 +1155,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -1179,7 +1179,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1203,7 +1203,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1227,7 +1227,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -1251,6 +1251,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-28"
+    "fetchedAt": "2026-08-31"
   }
 ]
