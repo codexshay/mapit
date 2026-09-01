@@ -21,31 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
-  },
-  {
-    "id": "devpost-all-things-agentic-hackathon",
-    "title": "All Things Agentic Hackathon",
-    "organizer": "Google",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>180,000</span>",
-    "themes": [
-      "Enterprise",
-      "Machine Learning/AI",
-      "Productivity"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 7,
-    "url": "https://allthingsagentichackathon.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "All Things Agentic Hackathon is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "devpost-agentic-cinema-the-blockbuster-hackathon",
@@ -59,7 +35,7 @@
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 10,
+    "daysLeft": 9,
     "url": "https://agentic-cinema.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -69,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "devpost-agents-for-humans-hackathon",
@@ -83,7 +59,7 @@
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 15,
+    "daysLeft": 14,
     "url": "https://agentsforhumans.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -93,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "devpost-the-webmcp-challenge",
@@ -107,7 +83,7 @@
       "Web"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 4,
+    "daysLeft": 3,
     "url": "https://webmcp.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -117,31 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
-  },
-  {
-    "id": "devpost-tiktok-techjam-2026",
-    "title": "TikTok TechJam 2026",
-    "organizer": "TikTok",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>34,500</span>",
-    "themes": [
-      "Machine Learning/AI",
-      "Cybersecurity",
-      "E-commerce/Retail"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 1,
-    "url": "https://tiktoktechjam2026.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "TikTok TechJam 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "devpost-call-e-your-code-is-calling",
@@ -155,7 +107,7 @@
       "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 15,
+    "daysLeft": 14,
     "url": "https://call-e.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -165,7 +117,55 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
+  },
+  {
+    "id": "devpost-tiktok-techjam-2026",
+    "title": "TikTok TechJam 2026",
+    "organizer": "TikTok",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>34,500</span>",
+    "themes": [
+      "Machine Learning/AI",
+      "Cybersecurity",
+      "E-commerce/Retail"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 7,
+    "url": "https://tiktoktechjam2026.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "TikTok TechJam 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-09-01"
+  },
+  {
+    "id": "devpost-nebius-x-nvidia-global-ai-hackathon",
+    "title": "Nebius x NVIDIA Global AI Hackathon",
+    "organizer": "nebius",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>50,000</span>",
+    "themes": [
+      "Machine Learning/AI",
+      "Beginner Friendly",
+      "Robotic Process Automation"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 7,
+    "url": "https://nebiusglobalaihackathon.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "Nebius x NVIDIA Global AI Hackathon is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "devpost-ai-builders-hackathon",
@@ -179,7 +179,7 @@
       "Beginner Friendly"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 16,
+    "daysLeft": 15,
     "url": "https://ai-builders-hackathon-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -189,7 +189,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "devpost-volthacks",
@@ -203,7 +203,7 @@
       "Beginner Friendly"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 6,
+    "daysLeft": 5,
     "url": "https://volthacks.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -213,7 +213,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "unstop-hackcelestial-3-0",
@@ -257,7 +257,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "unstop-inspiron-5-0",
@@ -392,7 +392,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "unstop-wce-hackathon-2026",
@@ -538,7 +538,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "unstop-innovate-x-hackathon",
@@ -607,7 +607,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "unstop-changethon",
@@ -636,7 +636,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "unstop-innerve-x-india-s-largest-student-driven-hackathon",
@@ -760,7 +760,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "unstop-india-s-biggest-ai-hackathon",
@@ -787,7 +787,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "unstop-myntra-hackerramp-weforshe-2025",
@@ -873,7 +873,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "unstop-swift-hack",
@@ -915,7 +915,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "unstop-code-uncode",
@@ -987,7 +987,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -1011,7 +1011,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -1035,7 +1035,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -1059,7 +1059,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -1083,7 +1083,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -1107,7 +1107,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -1131,7 +1131,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -1155,7 +1155,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -1179,7 +1179,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1203,7 +1203,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1227,7 +1227,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   },
   {
     "id": "hackerrank-hack-the-interview-iv-u-s",
@@ -1251,6 +1251,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-08-31"
+    "fetchedAt": "2026-09-01"
   }
 ]
