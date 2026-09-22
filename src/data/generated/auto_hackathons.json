@@ -11,7 +11,7 @@
       "Mobile"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 12,
+    "daysLeft": 9,
     "url": "https://revenuecat-shipaton-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "devpost-build-ship-shape-amazon-developer-hackathon",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "devpost-nebius-x-nvidia-global-ai-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "devpost-opencv-ai-competition-2026-powered-by-aws",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "devpost-global-innovation-build-challenge-v2",
@@ -107,7 +107,7 @@
       "Beginner Friendly"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 13,
+    "daysLeft": 10,
     "url": "https://gibc-v2.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "devpost-aws-communication-developer-services-cds-agentic-ai-partner-hackathon",
@@ -141,31 +141,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
-  },
-  {
-    "id": "devpost-nextstep-hacks-2026",
-    "title": "NextStep Hacks 2026",
-    "organizer": "HackAlphaX",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>1,750</span>",
-    "themes": [
-      "Beginner Friendly",
-      "Machine Learning/AI",
-      "Social Good"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 2,
-    "url": "https://nextstep2026.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "NextStep Hacks 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "devpost-beginner-s-paradise-firstcommit",
@@ -179,7 +155,7 @@
       "Web"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 12,
+    "daysLeft": 9,
     "url": "https://firstcommit.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -189,7 +165,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "devpost-oneaquahealth-ieee-global-hackathon",
@@ -203,7 +179,7 @@
       "Social Good"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 12,
+    "daysLeft": 9,
     "url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -213,7 +189,30 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
+  },
+  {
+    "id": "devpost-mlai-hackathon-2026",
+    "title": "MLAI Hackathon 2026",
+    "organizer": "Mạng Lưới AI",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>0</span>",
+    "themes": [
+      "Databases",
+      "Machine Learning/AI"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 25,
+    "url": "https://mlai-hackathon.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "MLAI Hackathon 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "unstop-hackcelestial-3-0",
@@ -253,7 +252,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "unstop-inspiron-5-0",
@@ -388,7 +387,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "unstop-wce-hackathon-2026",
@@ -534,7 +533,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "unstop-innovate-x-hackathon",
@@ -603,7 +602,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "unstop-changethon",
@@ -632,7 +631,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "unstop-innerve-x-india-s-largest-student-driven-hackathon",
@@ -756,7 +755,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "unstop-india-s-biggest-ai-hackathon",
@@ -783,7 +782,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "unstop-myntra-hackerramp-weforshe-2025",
@@ -869,7 +868,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "unstop-swift-hack",
@@ -911,7 +910,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "unstop-code-uncode",
@@ -983,7 +982,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
+  },
+  {
+    "id": "hackerrank-orchestrate-october-26",
+    "title": "Orchestrate October'26",
+    "organizer": "HackerRank Community",
+    "region": "Global",
+    "prizes": "HackerRank Badges & Global Leaderboard Ranking",
+    "themes": [
+      "Algorithms",
+      "Data Structures",
+      "Competitive Programming"
+    ],
+    "difficulty": "Intermediate / Advanced",
+    "daysLeft": 5,
+    "url": "https://www.hackerrank.com/contests/hackerrank-orchestrate-october26",
+    "type": "Online",
+    "location": "HackerRank Web Platform",
+    "description": "Orchestrate October'26 hosted on HackerRank. Solve algorithmic challenges, optimize code performance, and benchmark your ranking globally.",
+    "targetAudience": "Competitive Programmers, CS Students, and Software Engineers",
+    "careerBenefit": "Showcase verified problem-solving speed and algorithmic proficiency to top tech recruiters.",
+    "category": "Challenge",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -1007,7 +1030,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -1031,7 +1054,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -1055,7 +1078,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -1079,7 +1102,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -1103,7 +1126,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -1127,7 +1150,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -1151,7 +1174,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -1175,7 +1198,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1199,7 +1222,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1223,6 +1246,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-19"
+    "fetchedAt": "2026-09-22"
   }
 ]
