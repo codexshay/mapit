@@ -11,7 +11,7 @@
       "Mobile"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 9,
+    "daysLeft": 6,
     "url": "https://revenuecat-shipaton-2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "devpost-build-ship-shape-amazon-developer-hackathon",
@@ -35,7 +35,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 7,
+    "daysLeft": 29,
     "url": "https://amazonappdev2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "devpost-nebius-x-nvidia-global-ai-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "devpost-opencv-ai-competition-2026-powered-by-aws",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "devpost-global-innovation-build-challenge-v2",
@@ -107,7 +107,7 @@
       "Beginner Friendly"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 10,
+    "daysLeft": 7,
     "url": "https://gibc-v2.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "devpost-aws-communication-developer-services-cds-agentic-ai-partner-hackathon",
@@ -141,7 +141,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "devpost-beginner-s-paradise-firstcommit",
@@ -155,7 +155,7 @@
       "Web"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 9,
+    "daysLeft": 6,
     "url": "https://firstcommit.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -165,7 +165,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "devpost-oneaquahealth-ieee-global-hackathon",
@@ -179,7 +179,7 @@
       "Social Good"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 9,
+    "daysLeft": 6,
     "url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -189,30 +189,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
-    "id": "devpost-mlai-hackathon-2026",
-    "title": "MLAI Hackathon 2026",
-    "organizer": "Mạng Lưới AI",
+    "id": "devpost-build-with-ai-basics",
+    "title": "Build With AI: Basics",
+    "organizer": "Devpost",
     "region": "Global",
-    "prizes": "$<span data-currency-value>0</span>",
+    "prizes": "$<span data-currency-value>2,500</span>",
     "themes": [
-      "Databases",
-      "Machine Learning/AI"
+      "Machine Learning/AI",
+      "Beginner Friendly",
+      "Education"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 25,
-    "url": "https://mlai-hackathon.devpost.com/",
+    "daysLeft": 7,
+    "url": "https://learn-ai-basics.devpost.com/",
     "type": "Online",
     "location": "Online",
-    "description": "MLAI Hackathon 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "description": "Build With AI: Basics is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
     "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
     "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "unstop-hackcelestial-3-0",
@@ -252,7 +253,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "unstop-inspiron-5-0",
@@ -387,7 +388,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "unstop-wce-hackathon-2026",
@@ -533,7 +534,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "unstop-innovate-x-hackathon",
@@ -602,7 +603,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "unstop-changethon",
@@ -631,7 +632,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "unstop-innerve-x-india-s-largest-student-driven-hackathon",
@@ -755,7 +756,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "unstop-india-s-biggest-ai-hackathon",
@@ -782,7 +783,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "unstop-myntra-hackerramp-weforshe-2025",
@@ -868,7 +869,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "unstop-swift-hack",
@@ -910,7 +911,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "unstop-code-uncode",
@@ -982,7 +983,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "hackerrank-orchestrate-october-26",
@@ -1006,7 +1007,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -1030,7 +1031,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -1054,7 +1055,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -1078,7 +1079,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -1102,7 +1103,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -1126,7 +1127,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -1150,7 +1151,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -1174,7 +1175,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -1198,7 +1199,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1222,7 +1223,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1246,6 +1247,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-09-22"
+    "fetchedAt": "2026-09-25"
   }
 ]
