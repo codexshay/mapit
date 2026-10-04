@@ -11,7 +11,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 23,
+    "daysLeft": 20,
     "url": "https://amazonappdev2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -21,31 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
-  },
-  {
-    "id": "devpost-revenuecat-shipaton-2026",
-    "title": "RevenueCat Shipaton 2026",
-    "organizer": "RevenueCat",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>740,000</span>",
-    "themes": [
-      "Design",
-      "Gaming",
-      "Mobile"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 7,
-    "url": "https://revenuecat-shipaton-2026.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "RevenueCat Shipaton 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "devpost-nebius-x-nvidia-global-ai-hackathon",
@@ -59,7 +35,7 @@
       "Robotic Process Automation"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 30,
+    "daysLeft": 27,
     "url": "https://nebiusglobalaihackathon.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -69,7 +45,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
+  },
+  {
+    "id": "devpost-paypal-ai-hackathon",
+    "title": "PayPal AI Hackathon",
+    "organizer": "PayPal",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>67,500</span>",
+    "themes": [
+      "Low/No Code",
+      "Machine Learning/AI",
+      "Web"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 7,
+    "url": "https://paypalaihackathon.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "PayPal AI Hackathon is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "devpost-opencv-ai-competition-2026-powered-by-aws",
@@ -83,7 +83,7 @@
       "Serverless"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 26,
+    "daysLeft": 23,
     "url": "https://opencv26.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "devpost-build-with-ai-basics",
@@ -107,7 +107,7 @@
       "Education"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 26,
+    "daysLeft": 23,
     "url": "https://learn-ai-basics.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "devpost-meta-vr-start-developer-competition-2026",
@@ -141,31 +141,29 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
-    "id": "devpost-global-innovation-build-challenge-v2",
-    "title": "Global Innovation Build Challenge V2",
-    "organizer": "Kang Chiao International School Student ",
+    "id": "devpost-multimodal-ai-hackathon-2026",
+    "title": "Multimodal AI Hackathon 2026",
+    "organizer": "Kamand Prompt, IIT Mandi",
     "region": "Global",
-    "prizes": "$<span data-currency-value>0</span>",
+    "prizes": "₹ <span data-currency-value>100,000</span>",
     "themes": [
-      "Machine Learning/AI",
-      "Social Good",
-      "Beginner Friendly"
+      "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 7,
-    "url": "https://gibc-v2.devpost.com/",
+    "daysLeft": 11,
+    "url": "https://multimodal-ai-hackathon-2026-7.devpost.com/",
     "type": "Online",
     "location": "Online",
-    "description": "Global Innovation Build Challenge V2 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "description": "Multimodal AI Hackathon 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
     "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
     "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "devpost-aws-communication-developer-services-cds-agentic-ai-partner-hackathon",
@@ -179,7 +177,7 @@
       "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 28,
+    "daysLeft": 25,
     "url": "https://aws-cds-partner.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -189,29 +187,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
-    "id": "devpost-multimodal-ai-hackathon-2026",
-    "title": "Multimodal AI Hackathon 2026",
-    "organizer": "Kamand Prompt, IIT Mandi",
+    "id": "devpost-warriorhacks-2-0",
+    "title": "WarriorHacks 2.0",
+    "organizer": "Westwood Computer Science Club",
     "region": "Global",
-    "prizes": "₹ <span data-currency-value>100,000</span>",
+    "prizes": "$<span data-currency-value>0</span>",
     "themes": [
-      "Machine Learning/AI"
+      "Beginner Friendly",
+      "Machine Learning/AI",
+      "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 14,
-    "url": "https://multimodal-ai-hackathon-2026-7.devpost.com/",
+    "daysLeft": 10,
+    "url": "https://warriorhacks-2-0.devpost.com/",
     "type": "Online",
     "location": "Online",
-    "description": "Multimodal AI Hackathon 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "description": "WarriorHacks 2.0 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
     "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
     "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "unstop-iot-hackathon",
@@ -268,7 +268,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "unstop-capture-the-flag",
@@ -325,7 +325,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "unstop-webgators",
@@ -398,7 +398,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "unstop-cyber-o-day-2-0",
@@ -437,7 +437,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "unstop-password",
@@ -522,7 +522,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "unstop-waffle-hacks",
@@ -591,7 +591,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "unstop-gpu-hackathon-2023",
@@ -660,7 +660,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "unstop-cyberheist-capture-the-flag-ctf",
@@ -693,7 +693,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "unstop-12th-iacc-hackathon-2k23",
@@ -767,7 +767,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "unstop-quant-a-maze-2022",
@@ -784,7 +784,7 @@
         "entity_id": 432616,
         "entity_type": "App\\Model\\Opportunity",
         "others": null,
-        "currencyCode": "INR",
+        "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": null,
@@ -799,7 +799,7 @@
         "entity_id": 432616,
         "entity_type": "App\\Model\\Opportunity",
         "others": null,
-        "currencyCode": "INR",
+        "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": null,
@@ -814,7 +814,7 @@
         "entity_id": 432616,
         "entity_type": "App\\Model\\Opportunity",
         "others": null,
-        "currencyCode": "INR",
+        "currencyCode": null,
         "cash_postfix": null,
         "max_cash": null,
         "pre_placement_internship": null,
@@ -844,7 +844,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "hackerrank-orchestrate-october-26",
@@ -868,7 +868,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -892,7 +892,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -916,7 +916,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -940,7 +940,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -964,7 +964,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -988,7 +988,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -1012,7 +1012,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -1036,7 +1036,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -1060,7 +1060,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1084,7 +1084,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1108,6 +1108,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-01"
+    "fetchedAt": "2026-10-04"
   }
 ]
