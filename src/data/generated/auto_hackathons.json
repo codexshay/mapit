@@ -11,7 +11,7 @@
       "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 20,
+    "daysLeft": 17,
     "url": "https://amazonappdev2026.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "devpost-nebius-x-nvidia-global-ai-hackathon",
@@ -35,7 +35,7 @@
       "Robotic Process Automation"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 27,
+    "daysLeft": 24,
     "url": "https://nebiusglobalaihackathon.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -45,7 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "devpost-paypal-ai-hackathon",
@@ -69,7 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "devpost-opencv-ai-competition-2026-powered-by-aws",
@@ -83,7 +83,7 @@
       "Serverless"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 23,
+    "daysLeft": 20,
     "url": "https://opencv26.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "devpost-build-with-ai-basics",
@@ -107,7 +107,7 @@
       "Education"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 23,
+    "daysLeft": 20,
     "url": "https://learn-ai-basics.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "devpost-meta-vr-start-developer-competition-2026",
@@ -141,7 +141,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "devpost-multimodal-ai-hackathon-2026",
@@ -153,7 +153,7 @@
       "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 11,
+    "daysLeft": 8,
     "url": "https://multimodal-ai-hackathon-2026-7.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -163,31 +163,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
-    "id": "devpost-aws-communication-developer-services-cds-agentic-ai-partner-hackathon",
-    "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
-    "organizer": "AWS",
+    "id": "devpost-life-after-code",
+    "title": "Life After Code",
+    "organizer": "GitLab",
     "region": "Global",
-    "prizes": "$<span data-currency-value>40,000</span>",
+    "prizes": "$<span data-currency-value>45,000</span>",
     "themes": [
-      "Communication",
-      "Mobile",
-      "Machine Learning/AI"
+      "DevOps",
+      "Machine Learning/AI",
+      "Productivity"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 25,
-    "url": "https://aws-cds-partner.devpost.com/",
+    "daysLeft": 20,
+    "url": "https://gitlab-transcend.devpost.com/",
     "type": "Online",
     "location": "Online",
-    "description": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "description": "Life After Code is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
     "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
     "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "devpost-warriorhacks-2-0",
@@ -201,7 +201,7 @@
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 10,
+    "daysLeft": 7,
     "url": "https://warriorhacks-2-0.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -211,7 +211,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "unstop-iot-hackathon",
@@ -268,7 +268,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "unstop-capture-the-flag",
@@ -325,7 +325,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "unstop-webgators",
@@ -398,7 +398,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "unstop-cyber-o-day-2-0",
@@ -437,7 +437,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "unstop-password",
@@ -522,7 +522,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "unstop-waffle-hacks",
@@ -591,7 +591,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "unstop-gpu-hackathon-2023",
@@ -660,7 +660,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "unstop-cyberheist-capture-the-flag-ctf",
@@ -693,7 +693,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "unstop-12th-iacc-hackathon-2k23",
@@ -767,7 +767,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "unstop-quant-a-maze-2022",
@@ -844,7 +844,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "hackerrank-orchestrate-october-26",
@@ -868,7 +868,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -892,7 +892,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -916,7 +916,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -940,7 +940,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -964,7 +964,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -988,7 +988,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -1012,7 +1012,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -1036,7 +1036,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -1060,7 +1060,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "hackerrank-hack-the-interview-v-asia-pacific",
@@ -1084,7 +1084,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1108,6 +1108,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-04"
+    "fetchedAt": "2026-10-07"
   }
 ]
