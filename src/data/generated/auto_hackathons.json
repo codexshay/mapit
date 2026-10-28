@@ -11,7 +11,7 @@
       "Robotic Process Automation"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 6,
+    "daysLeft": 3,
     "url": "https://nebiusglobalaihackathon.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -21,7 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "devpost-paypal-ai-hackathon",
@@ -35,7 +35,7 @@
       "Web"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 19,
+    "daysLeft": 16,
     "url": "https://paypalaihackathon.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -45,55 +45,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
-  },
-  {
-    "id": "devpost-opencv-ai-competition-2026-powered-by-aws",
-    "title": "OpenCV AI Competition 2026, powered by AWS",
-    "organizer": "OpenCV",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>20,250</span>",
-    "themes": [
-      "IoT",
-      "Machine Learning/AI",
-      "Serverless"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 2,
-    "url": "https://opencv26.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "OpenCV AI Competition 2026, powered by AWS is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-10-25"
-  },
-  {
-    "id": "devpost-build-with-ai-basics",
-    "title": "Build With AI: Basics",
-    "organizer": "Devpost",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>2,500</span>",
-    "themes": [
-      "Machine Learning/AI",
-      "Beginner Friendly",
-      "Education"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 2,
-    "url": "https://learn-ai-basics.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "Build With AI: Basics is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "devpost-meta-vr-start-developer-competition-2026",
@@ -107,7 +59,7 @@
       "Web"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 25,
+    "daysLeft": 22,
     "url": "https://start-developer-competition-26.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -117,31 +69,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
-  },
-  {
-    "id": "devpost-life-after-code",
-    "title": "Life After Code",
-    "organizer": "GitLab",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>45,000</span>",
-    "themes": [
-      "DevOps",
-      "Machine Learning/AI",
-      "Productivity"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 2,
-    "url": "https://gitlab-transcend.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "Life After Code is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "devpost-qloo-agentic-hackathon",
@@ -153,7 +81,7 @@
       "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 6,
+    "daysLeft": 3,
     "url": "https://qloo.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -163,31 +91,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
-    "id": "devpost-aws-communication-developer-services-cds-agentic-ai-partner-hackathon",
-    "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
-    "organizer": "AWS",
+    "id": "devpost-codex-x-twitchcon-hackathon",
+    "title": "Codex x TwitchCon Hackathon",
+    "organizer": "Twitch",
     "region": "Global",
-    "prizes": "$<span data-currency-value>40,000</span>",
+    "prizes": "$<span data-currency-value>25,000</span>",
     "themes": [
       "Communication",
-      "Mobile",
+      "Gaming",
       "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 4,
-    "url": "https://aws-cds-partner.devpost.com/",
+    "daysLeft": 6,
+    "url": "https://twitchcon-codex.devpost.com/",
     "type": "Online",
     "location": "Online",
-    "description": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "description": "Codex x TwitchCon Hackathon is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
     "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
     "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "devpost-youcam-api-skin-ai-ecommerce-vto-hackathon",
@@ -201,7 +129,7 @@
       "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 9,
+    "daysLeft": 6,
     "url": "https://youcam-api-skin-ai-ecommerce.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -211,7 +139,79 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
+  },
+  {
+    "id": "devpost-aws-communication-developer-services-cds-agentic-ai-partner-hackathon",
+    "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
+    "organizer": "AWS",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>40,000</span>",
+    "themes": [
+      "Communication",
+      "Mobile",
+      "Machine Learning/AI"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 7,
+    "url": "https://aws-cds-partner.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-10-28"
+  },
+  {
+    "id": "devpost-learn-ar-with-specs",
+    "title": "Learn AR with SPECS",
+    "organizer": "Devpost",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>2,500</span>",
+    "themes": [
+      "AR/VR",
+      "Machine Learning/AI",
+      "Design"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 13,
+    "url": "https://learn-specs.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "Learn AR with SPECS is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-10-28"
+  },
+  {
+    "id": "devpost-ugreen-hackathon-2026-on-ai-nas",
+    "title": "UGREEN Hackathon 2026 on AI NAS",
+    "organizer": "UGREEN",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>46,000</span>",
+    "themes": [
+      "Lifehacks",
+      "Machine Learning/AI",
+      "Productivity"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 19,
+    "url": "https://ugreenhackathon.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "UGREEN Hackathon 2026 on AI NAS is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "unstop-iot-hackathon",
@@ -268,7 +268,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "unstop-capture-the-flag",
@@ -325,7 +325,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "unstop-webgators",
@@ -398,7 +398,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "unstop-cyber-o-day-2-0",
@@ -437,7 +437,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "unstop-password",
@@ -522,7 +522,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "unstop-waffle-hacks",
@@ -591,7 +591,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "unstop-gpu-hackathon-2023",
@@ -660,7 +660,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "unstop-cyberheist-capture-the-flag-ctf",
@@ -693,7 +693,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "unstop-12th-iacc-hackathon-2k23",
@@ -767,7 +767,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "unstop-quant-a-maze-2022",
@@ -844,7 +844,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "hackerrank-orchestrate-october-26",
@@ -868,7 +868,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -892,7 +892,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -916,7 +916,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -940,7 +940,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -964,7 +964,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -988,7 +988,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -1012,31 +1012,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
-  },
-  {
-    "id": "hackerrank-hack-the-interview-vi-asia-pacific",
-    "title": "Hack the Interview VI (Asia Pacific)",
-    "organizer": "HackerRank Community",
-    "region": "Global",
-    "prizes": "HackerRank Badges & Global Leaderboard Ranking",
-    "themes": [
-      "Algorithms",
-      "Data Structures",
-      "Competitive Programming"
-    ],
-    "difficulty": "Intermediate / Advanced",
-    "daysLeft": 5,
-    "url": "https://www.hackerrank.com/contests/hack-the-interview-vi-asia-pacific",
-    "type": "Online",
-    "location": "HackerRank Web Platform",
-    "description": "Hack the Interview VI (Asia Pacific) hosted on HackerRank. Solve algorithmic challenges, optimize code performance, and benchmark your ranking globally.",
-    "targetAudience": "Competitive Programmers, CS Students, and Software Engineers",
-    "careerBenefit": "Showcase verified problem-solving speed and algorithmic proficiency to top tech recruiters.",
-    "category": "Challenge",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -1060,11 +1036,11 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
-    "id": "hackerrank-hack-the-interview-v-asia-pacific",
-    "title": "Hack the Interview V (Asia Pacific)",
+    "id": "hackerrank-hack-the-interview-vi-asia-pacific",
+    "title": "Hack the Interview VI (Asia Pacific)",
     "organizer": "HackerRank Community",
     "region": "Global",
     "prizes": "HackerRank Badges & Global Leaderboard Ranking",
@@ -1075,16 +1051,16 @@
     ],
     "difficulty": "Intermediate / Advanced",
     "daysLeft": 5,
-    "url": "https://www.hackerrank.com/contests/hack-the-interview-v-asia-pacific",
+    "url": "https://www.hackerrank.com/contests/hack-the-interview-vi-asia-pacific",
     "type": "Online",
     "location": "HackerRank Web Platform",
-    "description": "Hack the Interview V (Asia Pacific) hosted on HackerRank. Solve algorithmic challenges, optimize code performance, and benchmark your ranking globally.",
+    "description": "Hack the Interview VI (Asia Pacific) hosted on HackerRank. Solve algorithmic challenges, optimize code performance, and benchmark your ranking globally.",
     "targetAudience": "Competitive Programmers, CS Students, and Software Engineers",
     "careerBenefit": "Showcase verified problem-solving speed and algorithmic proficiency to top tech recruiters.",
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -1108,6 +1084,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-25"
+    "fetchedAt": "2026-10-28"
   }
 ]
