@@ -11,7 +11,7 @@
       "Web"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 13,
+    "daysLeft": 12,
     "url": "https://paypalaihackathon.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -21,31 +21,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "id": "devpost-meta-vr-start-developer-competition-2026",
-    "title": "Meta VR Start Developer Competition 2026",
-    "organizer": "Meta",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>1,000,000</span>",
-    "themes": [
-      "AR/VR",
-      "Machine Learning/AI",
-      "Web"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 19,
-    "url": "https://start-developer-competition-26.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "Meta VR Start Developer Competition 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "devpost-kiroween-2026",
@@ -69,7 +45,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
+  },
+  {
+    "id": "devpost-meta-vr-start-developer-competition-2026",
+    "title": "Meta VR Start Developer Competition 2026",
+    "organizer": "Meta",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>1,000,000</span>",
+    "themes": [
+      "AR/VR",
+      "Machine Learning/AI",
+      "Web"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 18,
+    "url": "https://start-developer-competition-26.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "Meta VR Start Developer Competition 2026 is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "devpost-codex-x-twitchcon-hackathon",
@@ -83,7 +83,7 @@
       "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 3,
+    "daysLeft": 2,
     "url": "https://twitchcon-codex.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -93,7 +93,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "devpost-youcam-api-skin-ai-ecommerce-vto-hackathon",
@@ -107,7 +107,7 @@
       "Machine Learning/AI"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 3,
+    "daysLeft": 1,
     "url": "https://youcam-api-skin-ai-ecommerce.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -117,7 +117,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "devpost-learn-ar-with-specs",
@@ -131,7 +131,7 @@
       "Design"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 10,
+    "daysLeft": 9,
     "url": "https://learn-specs.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -141,31 +141,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "id": "devpost-ugreen-hackathon-2026-on-ai-nas",
-    "title": "UGREEN Hackathon 2026 on AI NAS",
-    "organizer": "UGREEN",
-    "region": "Global",
-    "prizes": "$<span data-currency-value>46,000</span>",
-    "themes": [
-      "Lifehacks",
-      "Machine Learning/AI",
-      "Productivity"
-    ],
-    "difficulty": "All Developer Levels",
-    "daysLeft": 16,
-    "url": "https://ugreenhackathon.devpost.com/",
-    "type": "Online",
-    "location": "Online",
-    "description": "UGREEN Hackathon 2026 on AI NAS is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
-    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
-    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "devpost-codegeist-2026-build-with-context-ship-with-confidence",
@@ -189,7 +165,31 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
+  },
+  {
+    "id": "devpost-ugreen-hackathon-2026-on-ai-nas",
+    "title": "UGREEN Hackathon 2026 on AI NAS",
+    "organizer": "UGREEN",
+    "region": "Global",
+    "prizes": "$<span data-currency-value>46,000</span>",
+    "themes": [
+      "Lifehacks",
+      "Machine Learning/AI",
+      "Productivity"
+    ],
+    "difficulty": "All Developer Levels",
+    "daysLeft": 15,
+    "url": "https://ugreenhackathon.devpost.com/",
+    "type": "Online",
+    "location": "Online",
+    "description": "UGREEN Hackathon 2026 on AI NAS is an active developer hackathon hosted on Devpost. Build innovative projects, collaborate globally, and win cash prizes & certificates.",
+    "targetAudience": "Developers, Designers, Data Scientists, and Tech Enthusiasts",
+    "careerBenefit": "Direct portfolio feature, global project visibility, and networking with sponsor hiring teams.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "devpost-dsh-hacks-v2-100k-in-prizes",
@@ -203,7 +203,7 @@
       "Open Ended"
     ],
     "difficulty": "All Developer Levels",
-    "daysLeft": 15,
+    "daysLeft": 14,
     "url": "https://dsh-hacks-v2.devpost.com/",
     "type": "Online",
     "location": "Online",
@@ -213,21 +213,43 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
-    "id": "unstop-shaastra-2027",
-    "title": "SHAASTRA 2027",
+    "id": "unstop-code-shift-2026",
+    "title": "CODE SHIFT 2026",
+    "organizer": "InfoTechiezz",
+    "region": "India",
+    "prizes": [],
+    "themes": [
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/code-shift-2026-infotechiezz-1786387",
+    "type": "Online",
+    "location": "online",
+    "description": "CODE SHIFT 2026 organized by InfoTechiezz. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-11-01"
+  },
+  {
+    "id": "unstop-rovermaggedon",
+    "title": "Rovermaggedon",
     "organizer": "Indian Institute of Technology (IIT), Madras",
     "region": "India",
     "prizes": [
       {
-        "id": 3871533,
-        "rank": "1",
-        "cash": 50000,
+        "id": 3872125,
+        "rank": "Winner",
+        "cash": 20000,
         "currency": "fa-rupee",
         "certificate": 0,
-        "entity_id": 1784543,
+        "entity_id": 1783515,
         "entity_type": "App\\Model\\Opportunity",
         "others": "",
         "currencyCode": null,
@@ -238,12 +260,12 @@
         "prize_type": "cash"
       },
       {
-        "id": 3871534,
-        "rank": "2",
-        "cash": 25000,
+        "id": 3872126,
+        "rank": "1st Runner Up",
+        "cash": 12000,
         "currency": "fa-rupee",
         "certificate": 0,
-        "entity_id": 1784543,
+        "entity_id": 1783515,
         "entity_type": "App\\Model\\Opportunity",
         "others": "",
         "currencyCode": null,
@@ -254,12 +276,44 @@
         "prize_type": "cash"
       },
       {
-        "id": 3871535,
-        "rank": "3",
-        "cash": 15000,
+        "id": 3872127,
+        "rank": "2nd Runner Up",
+        "cash": 8000,
         "currency": "fa-rupee",
         "certificate": 0,
-        "entity_id": 1784543,
+        "entity_id": 1783515,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0,
+        "prize_type": "cash"
+      },
+      {
+        "id": 3872128,
+        "rank": "3rd Runner Up",
+        "cash": 6000,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1783515,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "",
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": 0,
+        "pre_placement_opportunity": 0,
+        "prize_type": "cash"
+      },
+      {
+        "id": 3872129,
+        "rank": "4th Runner Up",
+        "cash": 4000,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 1783515,
         "entity_type": "App\\Model\\Opportunity",
         "others": "",
         "currencyCode": null,
@@ -281,126 +335,21 @@
     ],
     "difficulty": "Open to All",
     "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/shaastra-2027-iit-madras-1784543",
+    "url": "https://unstop.com/https://unstop.com/hackathons/rovermaggedon-iit-madras-1783515",
     "type": "In-person",
     "location": "hybrid",
-    "description": "SHAASTRA 2027 organized by Indian Institute of Technology (IIT), Madras. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "description": "Rovermaggedon organized by Indian Institute of Technology (IIT), Madras. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
     "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
     "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
-    "id": "unstop-tatusta",
-    "title": "Tatusta",
-    "organizer": "Thakur College of Engineering and Technology (TCET), Mumbai",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "Engineering Students",
-      "Postgraduate",
-      "Undergraduate",
-      "Management",
-      "Medical",
-      "Law",
-      "Arts, Commerce, Sciences & Others"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/tatusta-thakur-college-of-engineering-and-technology-tcet-mumbai-1785430",
-    "type": "Online",
-    "location": "online",
-    "description": "Tatusta organized by Thakur College of Engineering and Technology (TCET), Mumbai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "id": "unstop-madlab-the-ultimate-innovation-hackathon",
-    "title": "Madlab - The Ultimate Innovation Hackathon",
-    "organizer": "Shri Chinai College of Commerce & Economics",
-    "region": "India",
-    "prizes": [
-      {
-        "id": 3870859,
-        "rank": "Champions",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1785416,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "PRE-PLACEMENT INTERVIEW AND OFFER AND A CHANCE TO JOIN OUR GLOBAL TEAM JOIN AND WORK WITH THEM",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0,
-        "prize_type": "kind"
-      },
-      {
-        "id": 3870860,
-        "rank": "1st Runner Up",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1785416,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "PRE-PLACEMENT OFFER AND INTERVIEW",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0,
-        "prize_type": "kind"
-      },
-      {
-        "id": 3870861,
-        "rank": "2nd Runner Up",
-        "cash": null,
-        "currency": "fa-rupee",
-        "certificate": 1,
-        "entity_id": 1785416,
-        "entity_type": "App\\Model\\Opportunity",
-        "others": "",
-        "currencyCode": null,
-        "cash_postfix": null,
-        "max_cash": null,
-        "pre_placement_internship": 0,
-        "pre_placement_opportunity": 0,
-        "prize_type": "kind"
-      }
-    ],
-    "themes": [
-      "Engineering Students",
-      "Postgraduate",
-      "Undergraduate",
-      "Management",
-      "Medical",
-      "Law",
-      "Arts, Commerce, Sciences & Others"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/madlab-the-ultimate-innovation-hackathon-shri-chinai-college-of-commerce-economics-1785416",
-    "type": "Online",
-    "location": "online",
-    "description": "Madlab - The Ultimate Innovation Hackathon organized by Shri Chinai College of Commerce & Economics. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "id": "unstop-innovate-online-hackathon",
-    "title": "Innovate - Online Hackathon",
-    "organizer": "Aveeranex (OPC) Private Limited",
+    "id": "unstop-technova-2027",
+    "title": "Technova 2027",
+    "organizer": "Burhani College, Mumbai",
     "region": "India",
     "prizes": [],
     "themes": [
@@ -408,66 +357,16 @@
     ],
     "difficulty": "Open to All",
     "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/innovate-online-hackathon-aveeranex-opc-private-limited-1783838",
-    "type": "Online",
-    "location": "online",
-    "description": "Innovate - Online Hackathon organized by Aveeranex (OPC) Private Limited. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "url": "https://unstop.com/https://unstop.com/hackathons/technova-2027-burhani-college-mumbai-1786992",
+    "type": "In-person",
+    "location": "offline",
+    "description": "Technova 2027 organized by Burhani College, Mumbai. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
     "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
     "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "id": "unstop-hackday",
-    "title": "Hackday",
-    "organizer": "TrishulX",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "All"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/hackday-trishulx-1784666",
-    "type": "Online",
-    "location": "online",
-    "description": "Hackday organized by TrishulX. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "id": "unstop-ml-codeathon-1-0",
-    "title": "ML Codeathon 1.0",
-    "organizer": "K.S.Rangasamy College of Technology College, Thiruchengode, Tamil Nadu",
-    "region": "India",
-    "prizes": [],
-    "themes": [
-      "Engineering Students",
-      "Postgraduate",
-      "Undergraduate",
-      "Management",
-      "Medical",
-      "Law",
-      "Arts, Commerce, Sciences & Others"
-    ],
-    "difficulty": "Open to All",
-    "daysLeft": 10,
-    "url": "https://unstop.com/https://unstop.com/hackathons/ml-codeathon-10-ksrangasamy-college-of-technology-college-thiruchengode-tamil-nadu-1786140",
-    "type": "Online",
-    "location": "online",
-    "description": "ML Codeathon 1.0 organized by K.S.Rangasamy College of Technology College, Thiruchengode, Tamil Nadu. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
-    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
-    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
-    "category": "Hackathon",
-    "scheduleStatus": "Active",
-    "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "unstop-iot-hackathon",
@@ -524,7 +423,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "unstop-capture-the-flag",
@@ -581,7 +480,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "unstop-webgators",
@@ -654,7 +553,7 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "unstop-cyber-o-day-2-0",
@@ -693,7 +592,230 @@
     "category": "Hackathon",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
+  },
+  {
+    "id": "unstop-password",
+    "title": "PASSWORD",
+    "organizer": "Vellore Institute of Technology (VIT), Vellore",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 2142869,
+        "rank": "Winner",
+        "cash": 5000,
+        "currency": "fa-rupee",
+        "certificate": null,
+        "entity_id": 682926,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Internship",
+        "currencyCode": "INR",
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": null,
+        "pre_placement_opportunity": null
+      },
+      {
+        "id": 2142870,
+        "rank": "First Runner Up",
+        "cash": 3000,
+        "currency": "fa-rupee",
+        "certificate": null,
+        "entity_id": 682926,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Internship",
+        "currencyCode": "INR",
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": null,
+        "pre_placement_opportunity": null
+      },
+      {
+        "id": 2142871,
+        "rank": "Second Runner Up",
+        "cash": 2000,
+        "currency": "fa-rupee",
+        "certificate": null,
+        "entity_id": 682926,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Internship",
+        "currencyCode": "INR",
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": null,
+        "pre_placement_opportunity": null
+      },
+      {
+        "id": 2142896,
+        "rank": "Participants",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": 0,
+        "entity_id": 682926,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": "Goodies to all Participants.",
+        "currencyCode": "INR",
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": null,
+        "pre_placement_opportunity": null
+      }
+    ],
+    "themes": [
+      "Treasure Hunt",
+      "Workshops",
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/password-vit-chennai-682926",
+    "type": "In-person",
+    "location": "offline",
+    "description": "PASSWORD organized by Vellore Institute of Technology (VIT), Vellore. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-11-01"
+  },
+  {
+    "id": "unstop-waffle-hacks",
+    "title": "Waffle Hacks",
+    "organizer": "Belmont Data Collaborative",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 2122911,
+        "rank": "Winner",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": null,
+        "entity_id": 675134,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": null,
+        "pre_placement_opportunity": null
+      },
+      {
+        "id": 2122912,
+        "rank": "First Runner Up",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": null,
+        "entity_id": 675134,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": null,
+        "pre_placement_opportunity": null
+      },
+      {
+        "id": 2122913,
+        "rank": "Second Runner Up",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": null,
+        "entity_id": 675134,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": null,
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": null,
+        "pre_placement_opportunity": null
+      }
+    ],
+    "themes": [
+      "Hackathon",
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/waffle-hacks-belmont-data-collaborative-675134",
+    "type": "Online",
+    "location": "online",
+    "description": "Waffle Hacks organized by Belmont Data Collaborative. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-11-01"
+  },
+  {
+    "id": "unstop-gpu-hackathon-2023",
+    "title": "GPU Hackathon 2023",
+    "organizer": "Bengaluru City University, Bengaluru, Karnataka",
+    "region": "India",
+    "prizes": [
+      {
+        "id": 2122875,
+        "rank": "Winner",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": null,
+        "entity_id": 675122,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": "INR",
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": null,
+        "pre_placement_opportunity": null
+      },
+      {
+        "id": 2122876,
+        "rank": "First Runner Up",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": null,
+        "entity_id": 675122,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": "INR",
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": null,
+        "pre_placement_opportunity": null
+      },
+      {
+        "id": 2122877,
+        "rank": "Second Runner Up",
+        "cash": null,
+        "currency": "fa-rupee",
+        "certificate": null,
+        "entity_id": 675122,
+        "entity_type": "App\\Model\\Opportunity",
+        "others": null,
+        "currencyCode": "INR",
+        "cash_postfix": null,
+        "max_cash": null,
+        "pre_placement_internship": null,
+        "pre_placement_opportunity": null
+      }
+    ],
+    "themes": [
+      "Hackathon",
+      "All"
+    ],
+    "difficulty": "Open to All",
+    "daysLeft": 10,
+    "url": "https://unstop.com/https://unstop.com/hackathons/gpu-hackathon-2023-bengaluru-city-university-675122",
+    "type": "Online",
+    "location": "online",
+    "description": "GPU Hackathon 2023 organized by Bengaluru City University, Bengaluru, Karnataka. Participate in live problem statements, gain hands-on experience, and accelerate your career credentials.",
+    "targetAudience": "Engineering Students, Fresh Graduates, Developers & Innovation Teams",
+    "careerBenefit": "Industry recognition, direct skill validation badges, and recruitment pathways.",
+    "category": "Hackathon",
+    "scheduleStatus": "Active",
+    "autoIngested": true,
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "hackerrank-orchestrate-december-26",
@@ -717,7 +839,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "hackerrank-orchestrate-october-26",
@@ -741,7 +863,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "hackerrank-orchestrate-september-26",
@@ -765,7 +887,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "hackerrank-orchestrate-august-26",
@@ -789,7 +911,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "hackerrank-orchestrate-june-26",
@@ -813,7 +935,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "hackerrank-orchestrate-may-26",
@@ -837,7 +959,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "hackerrank-justice-league-1639642697",
@@ -861,7 +983,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "hackerrank-hackerrank-hackfest-2020",
@@ -885,7 +1007,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-u-s",
@@ -909,7 +1031,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "hackerrank-hack-the-interview-vi-asia-pacific",
@@ -933,7 +1055,7 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   },
   {
     "id": "hackerrank-hack-the-interview-v-u-s",
@@ -957,6 +1079,6 @@
     "category": "Challenge",
     "scheduleStatus": "Active",
     "autoIngested": true,
-    "fetchedAt": "2026-10-31"
+    "fetchedAt": "2026-11-01"
   }
 ]
